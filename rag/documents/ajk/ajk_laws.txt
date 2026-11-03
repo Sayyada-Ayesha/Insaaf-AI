@@ -1,0 +1,70 @@
+# Azad Jammu and Kashmir — Legal System and Laws
+# Coverage: AJK Interim Constitution Act, 1974 framework; AJK codes mirroring Pakistani law;
+# AJK courts; relationship with Pakistan. Coverage levels and verification status are stated
+# per section. Sources: AJK Interim Constitution Act, 1974; AJK law department compilations.
+
+[SECTION: AJK_READING_NOTE]
+AJK has its own constitutional document — the Azad Jammu and Kashmir Interim Constitution Act,
+1974 — and its own legislative assembly and courts. Federal Pakistani statutes do NOT
+automatically apply in AJK; AJK enacts parallel codes (AJK Penal Code, AJK CrPC, AJK CPC) that
+largely mirror the Pakistani codes. Always answer AJK questions from AJK law, not from the
+federal statute text.
+
+[SECTION: AJK_CONSTITUTION_1974]
+LAW: Azad Jammu and Kashmir Interim Constitution Act, 1974. COVERAGE: PARTIAL.
+STRUCTURE (summary of the operative framework):
+- President of AJK, elected by the AJK Legislative Assembly; Prime Minister and Council of
+  Ministers responsible to the Assembly.
+- AJK Legislative Assembly enacts laws for AJK subjects; seat allocations and reserved seats
+  are as provided in the Act (including provision for representation of Jammu and Kashmir
+  refugees settled in Pakistan, as fixed by law).
+- AJK Supreme Court and AJK High Court exercise judicial power; appeals from the AJK High Court
+  lie to the AJK Supreme Court.
+- Azad Jammu and Kashmir Council: chaired by the Prime Minister of Pakistan, with the AJK Prime
+  Minister as Vice-Chairman; the Council legislates on subjects in the Council Legislative List
+  (larger matters listed in the Interim Constitution) and exercises administrative oversight
+  over listed matters.
+- Fundamental rights provisions mirror many of the guarantees in the Constitution of Pakistan.
+SOURCE: AJK Interim Constitution Act, 1974. VERIFICATION: verified as to framework (structure of
+President, Prime Minister, Assembly, courts and Council is well-established; exact seat numbers
+and list entries should be checked against the current text).
+
+[SECTION: AJK_CODES_PARALLEL]
+LAWS: AJK Penal Code; AJK Code of Criminal Procedure; AJK Code of Civil Procedure.
+COVERAGE: SUMMARY.
+SUBSTANCE: the AJK codes are modelled on the Pakistan Penal Code 1860, the Code of Criminal
+Procedure 1898 and the Code of Civil Procedure 1908 with AJK adaptations; section numbering of
+the AJK Penal Code largely follows the PPC (offence definitions and punishments are generally
+parallel, but AJK amendments may differ — do not assume a PPC section number is identical in AJK
+without checking the AJK code).
+SOURCE: AJK law department compilations. VERIFICATION: metadata-verified (parallelism
+well-established; individual AJK amendments need the AJK gazette).
+
+[SECTION: AJK_LAND_REVENUE]
+LAW: AJK land revenue legislation. COVERAGE: SUMMARY.
+SUBSTANCE: AJK revenue administration (patwari, tehsildar, collector hierarchy) and
+record-of-rights/mutation procedures follow the West Pakistan Land Revenue Act pattern adapted
+for AJK; land settlement and tenancy rules are AJK-specific.
+SOURCE: AJK revenue laws. VERIFICATION: metadata-verified.
+
+[SECTION: AJK_FAMILY_LAWS]
+LAW: AJK family-law legislation. COVERAGE: SUMMARY.
+SUBSTANCE: AJK applies its own Muslim family laws administration, with nikah registration,
+divorce notification and family courts following the Muslim Family Laws Ordinance 1961 pattern
+as adopted in AJK (AJK Muslim Family Laws Ordinance — verify exact title); family disputes are
+heard by AJK family courts.
+SOURCE: AJK family-law compilations. VERIFICATION: metadata-verified (verify exact instrument
+titles in the AJK gazette).
+
+[SECTION: AJK_LOCAL_GOVT]
+LAW: AJK local government legislation (AJK Local Government Act, as enacted/amended).
+COVERAGE: SUMMARY.
+SUBSTANCE: district and union council structure with elected local bodies delivering municipal
+functions in AJK districts.
+SOURCE: AJK Local Government Act. VERIFICATION: metadata-verified.
+
+[SECTION: AJK_LIMITS]
+LIMITS OF THIS FILE: AJK statutes are NOT reproduced end-to-end here; operative provisions for
+the Interim Constitution framework and the code parallelism are given, with honest
+metadata-verified labels. Exact AJK statutory text must be confirmed against AJK official
+sources before it is quoted as law.

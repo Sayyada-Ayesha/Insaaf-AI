@@ -1,0 +1,75 @@
+# Federal Investigation Agency — FIA Act, 1974 and Jurisdiction
+# Coverage: establishment, jurisdiction over scheduled federal offences, investigation powers,
+# complaint procedure and oversight. Sources: FIA Act, 1974 (Act VIII-A of 1975) as amended;
+# official FIA complaint channels.
+
+[SECTION: FIA_READING_NOTE]
+The Federal Investigation Agency is constituted under the Federal Investigation Agency Act, 1974.
+FIA investigates offences under specified federal laws — it does NOT have general criminal
+jurisdiction over provincial offences (ordinary theft, hurt etc. remain with the police). Before
+advising anyone to approach FIA, check that the matter falls in the FIA Schedule (offences under
+the listed federal statutes).
+
+[SECTION: FIA_ESTABLISHMENT]
+LAW: Federal Investigation Agency Act, 1974. COVERAGE: PARTIAL.
+KEY PROVISIONS (summary of the operative framework):
+- The Agency is constituted by the Federal Government; it has zonal offices (e.g., provincial
+  capitals and major cities) headed by zonal directors under a Director General.
+- Members of the Agency exercise investigation powers under the Act read with the applicable
+  procedural law (Code of Criminal Procedure, 1898, as adapted) for scheduled offences.
+- The Federal Government may, by notification, extend FIA's jurisdiction to further offences.
+SOURCE: FIA Act, 1974. VERIFICATION: verified as to framework.
+
+[SECTION: FIA_JURISDICTION]
+LAW: FIA Act, 1974, Schedule and notifications. COVERAGE: PARTIAL.
+SCHEDULED JURISDICTION (well-established areas):
+- Immigration offences under the Emigration Ordinance, 1979 and the Prevention of Trafficking in
+  Persons Act, 2018 (human trafficking, migrant smuggling).
+- Passport offences under the Passport Act, 1974.
+- Cybercrime offences under the Prevention of Electronic Crimes Act, 2016 (FIA Cybercrime Wing,
+  NR3C); online financial fraud, hacking, electronic forgery, cyberstalking.
+- Anti-corruption offences under the Prevention of Corruption Act, 1947 and the Pakistan Penal
+  Code where notified for federal matters.
+- Offences against federal property/federal subjects notified by the Federal Government.
+- Money laundering investigation support under the Anti-Money Laundering Act, 2010 framework
+  (with other agencies).
+NOTE: provincial corruption and ordinary offences are NOT FIA jurisdiction unless notified.
+SOURCE: FIA Act, 1974 Schedule. VERIFICATION: verified as to the listed areas (the Schedule is
+well-established; individual notification changes need the latest gazette).
+
+[SECTION: FIA_COMPLAINT_PROCEDURE]
+PROCEDURE: FIA complaint channels. COVERAGE: PARTIAL.
+STEPS (summary of the standard route):
+- WHO: any person aggrieved by a scheduled offence (or knowing of one) may complain.
+- WHERE: FIA zonal office having territorial jurisdiction, or the FIA online complaint portal /
+  helpline (official FIA website) for cybercrime and other scheduled matters.
+- DOCUMENTS: identity, written complaint describing the offence with evidence (documents,
+  transaction records, screenshots, CNIC copy), and, for cybercrime, device/URL/account details.
+- STEPS: complaint registered -> preliminary verification -> inquiry -> FIR (case registered) if
+  a scheduled offence is disclosed -> investigation -> challan/report.
+- ESCALATION: where the zonal office does not proceed, complaint to the zonal director or the
+  Director General; courts may also direct investigation in appropriate cases.
+SOURCE: official FIA complaint channels and FIA Act. VERIFICATION: verified as to the route
+(exact portal details should be checked on the official FIA website).
+
+[SECTION: FIA_NR3C_CYBER]
+WING: FIA Cybercrime Wing (NR3C). COVERAGE: PARTIAL.
+SUBSTANCE: NR3C receives and investigates complaints of offences under PECA 2016 — hacking,
+unauthorized access, electronic fraud (online scams, banking fraud via electronic means),
+cyberstalking/harassment, defamation through information systems, identity theft. Complaint
+filing: online complaint form with evidence; the complainant should preserve electronic evidence
+(URLs, screenshots, account details, transaction IDs).
+SOURCE: PECA 2016; FIA NR3C procedures. VERIFICATION: verified as to the framework.
+
+[SECTION: FIA_IMMIGRATION_ANTI_TRAFFICKING]
+WING: FIA Anti-Human Trafficking. COVERAGE: PARTIAL.
+SUBSTANCE: investigates offences under the Prevention of Trafficking in Persons Act, 2018 and the
+Emigration Ordinance, 1979 — human trafficking, migrant smuggling, illegal recruitment of
+workers for overseas employment, forged travel documents; complaints can be made at FIA
+anti-human-trafficking circles/zones.
+SOURCE: PACHTO 2018; Emigration Ordinance 1979. VERIFICATION: verified as to the framework.
+
+[SECTION: FIA_LIMITS]
+LIMITS: FIA powers are investigation powers, not adjudication; trials take place in courts.
+FIA cannot register provincial offences; do not advise FIA complaints for ordinary police
+matters. FIA jurisdictional notifications change — verify the current Schedule.

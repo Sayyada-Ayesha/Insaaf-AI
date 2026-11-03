@@ -1,0 +1,456 @@
+// ============================================================================
+// Insaaf AI — Fine-Tuning Dataset: Curated Content Banks (Part 2)
+// Offence definitions, legal terminology, document drafting behavior.
+// All legal statements are grounded in the RAG corpus (rag/indexes/
+// rag_index.json and src/config/documentSchemas.ts). No facts are invented.
+// ============================================================================
+
+// ---------------------------------------------------------------------------
+// Plain-language restatements of key PPC definitions. The generator builds
+// "What is X?" definition QAs from these; the definition key must exist in
+// the PPC chunks of the RAG index.
+// ---------------------------------------------------------------------------
+export const DEFINITIONS = [
+  { key: '300', name: 'qatl-i-amd', ur: 'قتلِ عمد', rom: 'qatl-e-amd',
+    en: 'Qatl-i-amd is the intentional causing of death of a person. It is committed when a person causes death with the intention of causing death, or with the intention of causing bodily injury that is likely to cause death.',
+    ur: 'قتلِ عمد کسی شخص کی جان بوجھ کر موت کا باعث بننا ہے۔ یہ اس وقت واقع ہوتا ہے جب کوئی شخص موت کا ارادہ رکھتے ہوئے یا ایسی جسمانی چوٹ کا ارادہ رکھتے ہوئے جس سے موت واقع ہونے کا امکان ہو، کسی کی موت کا سبب بنے۔',
+    rom: 'Qatl-e-amd kisi shakhs ki jaan boojh kar maut ka bais banna hai. Yeh us waqt hota hai jab koi shakhs maut ke irade se, ya aisi jismani chot ke irade se jo maut ka sabab ban sakti ho, kisi ki maut ka bais banay.' },
+  { key: '319', name: 'qatl-i-khata', ur: 'قتلِ خطا', rom: 'qatl-e-khata',
+    en: 'Qatl-i-khata is the causing of death of a person without any intention to cause death or harm, either by mistake of act or by mistake of fact.',
+    ur: 'قتلِ خطا کسی شخص کی موت کا سبب بننا ہے جس میں موت یا نقصان پہنچانے کا کوئی ارادہ نہ ہو، چاہے وہ فعل کی غلطی سے ہو یا حقیقت کی غلطی سے۔',
+    rom: 'Qatl-e-khata kisi shakhs ki maut ka bais banna hai jis mein maut ya nuqsan pahunchane ka koi irada na ho, chahe woh amal ki ghalti se ho ya haqeeqat ki ghalti se.' },
+  { key: '332', name: 'hurt', ur: 'چوٹ (زخم)', rom: 'chot (zakhm)',
+    en: 'Hurt means causing pain, disease or infirmity to any person. Sections 337 onward of the PPC prescribe the punishment and compensation rules for different kinds of hurt.',
+    ur: 'چوٹ کا مطلب ہے کسی شخص کو درد، بیماری یا کمزوری کا باعث بننا۔ تعزیرات پاکستان کی دفعہ 337 سے آگے مختلف قسم کی چوٹوں کی سزا اور معاوضے کے قواعد مقرر ہیں۔',
+    rom: 'Chot ka matlab hai kisi shakhs ko dard, bemari ya kamzori ka bais banna. PPC ke Section 337 se aagey mukhtalif qisam ki choton ki saza aur muawzay ke qawaid muqarrar hain.' },
+  { key: '339', name: 'wrongful restraint', ur: 'غیر قانونی طور پر روکنا', rom: 'ghair qanooni tor par rokna',
+    en: 'Wrongful restraint is voluntarily obstructing a person so as to prevent that person from proceeding in any direction in which the person has a right to proceed.',
+    ur: 'غیر قانونی طور پر روکنے کا مطلب ہے کسی شخص کو جان بوجھ کر اس سمت جانے سے روکنا جس میں جانے کا اسے قانونی حق حاصل ہو۔',
+    rom: 'Ghair qanooni tor par rokne ka matlab hai kisi shakhs ko jaan boojh kar us simt jane se rokna jis mein jane ka use qanooni haq hasil ho.' },
+  { key: '340', name: 'wrongful confinement', ur: 'غیر قانونی حراست', rom: 'ghair qanooni hirasat',
+    en: 'Wrongful confinement is wrongfully restraining a person in such a way as to prevent that person from proceeding beyond certain limits.',
+    ur: 'غیر قانونی حراست کا مطلب ہے کسی شخص کو اس طرح غیر قانونی طور پر روکنا کہ وہ مخصوص حدود سے آگے نہ جا سکے۔',
+    rom: 'Ghair qanooni hirasat ka matlab hai kisi shakhs ko is tarah ghair qanooni tor par rokna ke woh makhsoos hudood se aagey na ja sake.' },
+  { key: '362', name: 'kidnapping', ur: 'اغوا (kidnapping)', rom: 'ighwa (kidnapping)',
+    en: 'Kidnapping is taking or enticing a person out of Pakistan, or taking or enticing a minor or a person of unsound mind away from their lawful guardian, without the consent of that guardian.',
+    ur: 'اغوا کا مطلب ہے کسی شخص کو پاکستان سے باہر لے جانا، یا نابالغ یا دماغی طور پر غیر صحت مند شخص کو اس کے قانونی سرپرست کی رضامندی کے بغیر اس سرپرست سے دور لے جانا۔',
+    rom: 'Ighwa ka matlab hai kisi shakhs ko Pakistan se bahar le jana, ya nabaligh ya dimaghi tor par ghair sehat mand shakhs ko us ke qanooni sarparast ki razamandi ke baghair us sarparast se door le jana.' },
+  { key: '378', name: 'theft', ur: 'چوری', rom: 'chori',
+    en: 'Theft is moving movable property out of the possession of any person without that person\'s consent, dishonestly, with the intention of taking it away.',
+    ur: 'چوری کا مطلب ہے کسی شخص کے قبضے میں موجود منقولہ جائیداد کو اس کی رضامندی کے بغیر، بے ایمانی سے، لے جانے کے ارادے سے ہٹانا۔',
+    rom: 'Chori ka matlab hai kisi shakhs ke qabzay mein mojood manqola jaidad ko us ki razamandi ke baghair, be-imani se, le jane ke irade se hatana.' },
+  { key: '383', name: 'extortion', ur: 'جبری وصولی (بھتہ)', rom: 'jabri wasooli (bhata)',
+    en: 'Extortion is intentionally putting a person in fear of injury and thereby dishonestly inducing that person to deliver property or valuable security.',
+    ur: 'جبری وصولی کا مطلب ہے کسی شخص کو جان بوجھ کر چوٹ کا خوف دلا کر بے ایمانی سے اس سے جائیداد یا قیمتی ضمانت حاصل کرنا۔',
+    rom: 'Jabri wasooli ka matlab hai kisi shakhs ko jaan boojh kar chot ka khauf dila kar be-imani se us se jaidad ya qeemti zamanat hasil karna.' },
+  { key: '390', name: 'robbery', ur: 'رہزنی (ڈکیتی)', rom: 'rahzani (daketi)',
+    en: 'Robbery is theft or extortion committed while the offender, in order to commit it, causes or attempts to cause death, hurt or wrongful restraint, or the fear of instant death, hurt or wrongful restraint.',
+    ur: 'رہزنی ایسی چوری یا جبری وصولی ہے جس کے ارتکاب کے دوران مجرم موت، چوٹ یا غیر قانونی طور پر روکنے کا سبب بنے یا اس کی کوشش کرے، یا فوری موت، چوٹ یا روکنے کا خوف دلائے۔',
+    rom: 'Rahzani aisi chori ya jabri wasooli hai jis ke irtikab ke dauran mujrim maut, chot ya ghair qanooni tor par rokne ka bais banay ya us ki koshish kare, ya fori maut, chot ya rokne ka khauf dilaye.' },
+  { key: '405', name: 'criminal breach of trust', ur: 'خیانت میں امانت', rom: 'khiyanat mein amanat',
+    en: 'Criminal breach of trust is committed when a person entrusted with property, or having dominion over it, dishonestly misappropriates or converts it to his own use, or dishonestly uses or disposes of it in violation of the direction of law or of the trust.',
+    ur: 'خیانت میں امانت اس وقت واقع ہوتی ہے جب کوئی شخص جس کے سپرد جائیداد ہو یا جو اس پر اختیار رکھتا ہو، اسے بے ایمانی سے اپنے استعمال میں لائے، یا قانون کی ہدایت یا امانت کی خلاف ورزی کرتے ہوئے اسے بے ایمانی سے استعمال یا تصرف کرے۔',
+    rom: 'Khiyanat mein amanat us waqt hoti hai jab koi shakhs jis ke supurd jaidad ho ya jo is par ikhtiyar rakhta ho, ise be-imani se apne istemal mein laye, ya qanoon ki hidayat ya amanat ki khilaf warzi karte hue ise be-imani se istemal ya tasarruf kare.' },
+  { key: '415', name: 'cheating', ur: 'دھوکہ دہی', rom: 'dhoka dahi',
+    en: 'Cheating is deceiving a person fraudulently or dishonestly to induce that person to deliver property, or to consent to retain property, or to do or omit an act which causes wrongful loss to that person.',
+    ur: 'دھوکہ دہی کا مطلب ہے کسی شخص کو دھوکے یا بے ایمانی سے ایسا کرنے پر آمادہ کرنا جس سے وہ جائیداد دے دے، یا جائیداد رکھنے پر رضامند ہو، یا کوئی ایسا فعل کرے یا ترک کرے جس سے اسے نقصان ہو۔',
+    rom: 'Dhoka dahi ka matlab hai kisi shakhs ko dhokay ya be-imani se aisa karne par amada karna jis se woh jaidad de de, ya jaidad rakhne par razi ho, ya koi aisa amal kare ya tark kare jis se use nuqsan ho.' },
+  { key: '463', name: 'forgery', ur: 'جعل سازی', rom: 'jaal saazi',
+    en: 'Forgery is making a false document or part of a document, or falsely altering a document, with intent to cause damage or injury to any person, or to support any claim or title, or to cause any person to part with property.',
+    ur: 'جعل سازی کا مطلب ہے جھوٹی دستاویز یا دستاویز کا جھوٹا حصہ بنانا، یا دستاویز میں جھوٹی تبدیلی کرنا، اس ارادے سے کہ کسی کو نقصان پہنچے، یا کسی دعوے یا حق کی حمایت ہو، یا کوئی شخص جائیداد سے محروم ہو۔',
+    rom: 'Jaal saazi ka matlab hai jhooti document ya document ka jhoota hissa banana, ya document mein jhooti tabdeeli karna, is irade se ke kisi ko nuqsan pahunchay, ya kisi daaway ya haq ki himayat ho, ya koi shakhs jaidad se mahroom ho.' },
+  { key: '499', name: 'defamation', ur: 'ہتکِ عزت', rom: 'hatak-e-izzat',
+    en: 'Defamation is making or publishing a statement concerning a person, by words, signs or visible representations, with intent to harm or knowing that it will harm that person\'s reputation.',
+    ur: 'ہتکِ عزت کا مطلب ہے کسی شخص کے بارے میں الفاظ، علامات یا ظاہری اشکال کے ذریعے ایسا بیان دینا یا شائع کرنا جس سے اس کی ساکھ کو نقصان پہنچانے کا ارادہ ہو یا معلوم ہو کہ نقصان پہنچے گا۔',
+    rom: 'Hatak-e-izzat ka matlab hai kisi shakhs ke baray mein alfaz, alamaat ya zahiri ashkal ke zariye aisa bayan dena ya shaya karna jis se us ki neknami ko nuqsan pahunchane ka irada ho ya maloom ho ke nuqsan pahunchega.' },
+  { key: '503', name: 'criminal intimidation', ur: 'مجرمانہ دھمکی', rom: 'mujrimana dhamki',
+    en: 'Criminal intimidation is threatening a person with injury to his person, reputation or property, or to that of someone in whom he is interested, with intent to alarm him, or to cause him to do an act he is not legally bound to do, or to omit an act he is legally entitled to do.',
+    ur: 'مجرمانہ دھمکی کا مطلب ہے کسی شخص کو اس کی جان، عزت یا جائیداد، یا اس کے کسی قریبی شخص کی جان، عزت یا جائیداد کو نقصان پہنچانے کی دھمکی دینا، اس ارادے سے کہ وہ خوف زدہ ہو، یا کوئی ایسا کام کرے جس کا وہ قانوناً پابند نہ ہو، یا ایسا کام ترک کرے جس کا اسے قانونی حق ہو۔',
+    rom: 'Mujrimana dhamki ka matlab hai kisi shakhs ko us ki jaan, izzat ya jaidad, ya us ke kisi qareebi shakhs ki jaan, izzat ya jaidad ko nuqsan pahunchane ki dhamki dena, is irade se ke woh khauf zada ho, ya koi aisa kaam kare jis ka woh qanoonan paband na ho, ya aisa kaam tark kare jis ka use qanooni haq ho.' }
+];
+
+// ---------------------------------------------------------------------------
+// Legal terminology with plain-language definitions in three languages.
+// Terms are drawn from the PPC, CrPC, CPC, PECA, family law, property,
+// labour, consumer and legal-aid chunks of the corpus.
+// ---------------------------------------------------------------------------
+export const TERMS = [
+  { id: 'adult', enName: 'adult', urName: 'بالغ', romName: 'baligh', refs: ['PPC Section 299'],
+    en: 'A person who has attained the age of eighteen years.', ur: 'وہ شخص جس کی عمر اٹھارہ سال مکمل ہو چکی ہو۔', rom: 'Woh shakhs jis ki umar 18 saal mukammal ho chuki ho.' },
+  { id: 'arsh', enName: 'arsh', urName: 'ارش', romName: 'arsh', refs: ['PPC Section 299'],
+    en: 'The compensation specified in the PPC to be paid to the victim or the victim\'s heirs for certain hurt.', ur: 'تعزیرات پاکستان میں مخصوص چوٹوں کے لیے متاثرہ شخص یا اس کے ورثا کو ادا کیا جانے والا معاوضہ۔', rom: 'PPC mein makhsoos choton ke liye mutasira shakhs ya us ke warison ko ada kiya jane wala muawza.' },
+  { id: 'daman', enName: 'daman', urName: 'دمن', romName: 'daman', refs: ['PPC Section 299'],
+    en: 'Compensation determined by the court to be paid by the offender to the victim for hurt not liable to arsh.', ur: 'ایسی چوٹ کے لیے جو ارش کے قابل نہ ہو، عدالت کی مقرر کردہ معاوضہ رقم جو مجرم متاثرہ شخص کو ادا کرے۔', rom: 'Aisi chot ke liye jo arsh ke qabil na ho, court ki muqarrara muawza raqam jo mujrim mutasira shakhs ko ada kare.' },
+  { id: 'diyat', enName: 'diyat', urName: 'دیت', romName: 'diyat', refs: ['PPC Section 299'],
+    en: 'The compensation specified in Section 323 PPC, payable to the heirs of the victim.', ur: 'تعزیرات پاکستان کی دفعہ 323 میں مخصوص معاوضہ جو متوفی کے ورثا کو ادا کیا جاتا ہے۔', rom: 'PPC ke Section 323 mein makhsoos muawza jo mutawaffi ke warison ko ada kiya jata hai.' },
+  { id: 'ikrah_e_tam', enName: 'ikrah-e-tam', urName: 'اکراہِ تام', romName: 'ikrah-e-tam', refs: ['PPC Section 299'],
+    en: 'Putting a person, his spouse or a close blood relation in fear of instant death, instant permanent impairment of an organ, or instant sodomy or zina-bil-jabr.', ur: 'کسی شخص، اس کی بیوی یا قریبی خون کے رشتہ دار کو فوری موت، عضو کی فوری مستقل معذوری یا فوری فعلِ بد کے خوف میں ڈالنا۔', rom: 'Kisi shakhs, us ki biwi ya qareebi khoon ke rishtedar ko fori maut, azoo ki fori mustaqil mazoori ya fori fi\'l-e-bad ke khauf mein daalna.' },
+  { id: 'ikrah_e_naqis', enName: 'ikrah-e-naqis', urName: 'اکراہِ ناقص', romName: 'ikrah-e-naqis', refs: ['PPC Section 299'],
+    en: 'Any form of duress which does not amount to ikrah-e-tam.', ur: 'ہر وہ دباؤ جو اکراہِ تام کے درجے تک نہ پہنچے۔', rom: 'Har woh dabao jo ikrah-e-tam ke darjay tak na pahunchay.' },
+  { id: 'qisas', enName: 'qisas', urName: 'قصاص', romName: 'qisas', refs: ['PPC Section 299'],
+    en: 'Punishment by causing similar hurt at the same part of the body of the convict as caused to the victim, or by causing the convict\'s death for qatl-i-amd, exercised by the victim or a wali.', ur: 'مجرم کے جسم کے اسی حصے پر ویسی ہی چوٹ پہنچا کر سزا دینا جیسی متاثرہ کو پہنچی تھی، یا قتلِ عمد پر مجرم کی موت، جو متاثرہ یا ولی کے حق کے طور پر دی جاتی ہے۔', rom: 'Mujrim ke jism ke usi hissay par waisi hi chot pahuncha kar saza dena jaisi mutasira ko pahunchi thi, ya qatl-e-amd par mujrim ki maut, jo mutasira ya wali ke haq ke taur par di jati hai.' },
+  { id: 'tazir', enName: 'ta\'zir', ur: 'تعزیر', rom: 'ta\'zir', refs: ['PPC Section 299'],
+    en: 'Punishment other than qisas, diyat, arsh or daman, awarded by the court at its discretion.', ur: 'قصاص، دیت، ارش یا دمن کے علاوہ سزا جو عدالت اپنے صوابدید سے دیتی ہے۔', rom: 'Qisas, diyat, arsh ya daman ke ilawa saza jo court apni discretion se deti hai.' },
+  { id: 'wali', enName: 'wali', urName: 'ولی', romName: 'wali', refs: ['PPC Section 299'],
+    en: 'A person entitled to claim qisas on behalf of a victim.', ur: 'وہ شخص جو متاثرہ کی جانب سے قصاص کا مطالبہ کرنے کا حقدار ہو۔', rom: 'Woh shakhs jo mutasira ki janib se qisas ka mutalba karne ka haqdar ho.' },
+  { id: 'fir', enName: 'FIR (First Information Report)', urName: 'ایف آئی آر', romName: 'FIR', refs: ['CrPC Section 154'],
+    en: 'The first written record of information about a cognizable offence, recorded by the police under Section 154 CrPC.', ur: 'ضابطہ فوجداری کی دفعہ 154 کے تحت پولیس کا درج کردہ کسی قابلِ دست اندازی جرم کی اطلاع کا پہلا تحریری ریکارڈ۔', rom: 'CrPC Section 154 ke tehat police ka darj karda kisi qabil-e-dast andazi jurm ki ittila ka pehla tehreeri record.' },
+  { id: 'challan', enName: 'challan (police report)', urName: 'چالان', romName: 'challan', refs: ['CrPC Section 173'],
+    en: 'The police report submitted to the Magistrate after investigation, stating whether an offence appears committed and by whom.', ur: 'تفتیش مکمل ہونے پر مجسٹریٹ کو پیش کی جانے والی پولیس رپورٹ جس میں بتایا جاتا ہے کہ جرم ہوا یا نہیں اور کس نے کیا۔', rom: 'Investigation mukammal hone par Magistrate ko pesh ki jane wali police report jis mein bataya jata hai ke jurm hua ya nahi aur kis ne kiya.' },
+  { id: 'cognizable', enName: 'cognizable offence', urName: 'قابلِ دست اندازی جرم', romName: 'qabil-e-dast andazi jurm', refs: ['CrPC Section 154'],
+    en: 'An offence for which the police may arrest without a warrant and start investigation without a court order.', ur: 'ایسا جرم جس میں پولیس بغیر وارنٹ گرفتار کر سکتی ہے اور عدالتی حکم کے بغیر تفتیش شروع کر سکتی ہے۔', rom: 'Aisa jurm jis mein police baghair warrant giraftar kar sakti hai aur court ke hukm ke baghair investigation shuru kar sakti hai.' },
+  { id: 'bailable', enName: 'bailable offence', urName: 'ضمانتی جرم', romName: 'bailable jurm', refs: ['CrPC Section 496'],
+    en: 'An offence in which bail is a matter of right; the police or court must release the accused on a bail bond.', ur: 'ایسا جرم جس میں ضمانت حق ہو؛ پولیس یا عدالت ضمانتی مچلکے پر ملزم کو رہا کرنے کی پابند ہو۔', rom: 'Aisa jurm jis mein bail haq ho; police ya court bail bond par mulzim ko reha karne ki paband ho.' },
+  { id: 'remand', enName: 'remand', urName: 'ریمانڈ', romName: 'remand', refs: ['CrPC Section 167'],
+    en: 'Detention of an accused authorized by a Magistrate during investigation, limited to fifteen days in police custody.', ur: 'تفتیش کے دوران مجسٹریٹ کی اجازت سے ملزم کی حراست، جو پولیس حراست میں پندرہ دن سے زیادہ نہیں ہو سکتی۔', rom: 'Investigation ke dauran Magistrate ki ijazat se mulzim ki hirasat, jo police hirasat mein 15 din se zyada nahi ho sakti.' },
+  { id: 'warrant', enName: 'warrant of arrest', urName: 'وارنٹ گرفتاری', romName: 'giraftari warrant', refs: ['CrPC Section 75'],
+    en: 'A written order of a court directing the police or another officer to arrest and produce a person before the court.', ur: 'عدالت کا تحریری حکم جو پولیس یا کسی افسر کو کسی شخص کی گرفتاری اور عدالت میں پیشی کا حکم دیتا ہے۔', rom: 'Court ka tehreeri hukm jo police ya kisi officer ko kisi shakhs ki giraftari aur court mein peshi ka hukm deta hai.' },
+  { id: 'information_system', enName: 'information system', urName: 'انفارمیشن سسٹم', romName: 'information system', refs: ['PECA Section 2'],
+    en: 'An electronic system for creating, generating, sending, receiving, storing, reproducing, displaying, recording or processing any information or data.', ur: 'کوئی بھی معلومات یا ڈیٹا بنانے، بھیجنے، وصول کرنے، محفوظ کرنے، دکھانے، ریکارڈ کرنے یا پروسیس کرنے کا الیکٹرانک نظام۔', rom: 'Koi bhi maloomat ya data banane, bhejne, wasool karne, mehfooz karne, dikhane, record karne ya process karne ka electronic nizam.' },
+  { id: 'critical_infrastructure', enName: 'critical infrastructure', urName: 'اہم بنیادی ڈھانچہ', romName: 'critical infrastructure', refs: ['PECA Section 2'],
+    en: 'Assets, facilities, systems, networks or processes whose loss or compromise could severely affect national security, the economy, public health, safety or welfare.', ur: 'ایسے اثاثے، تنصیبات، نظام، نیٹ ورک یا عمل جن کا نقصان قومی سلامتی، معیشت، عوامی صحت، تحفظ یا فلاح کو شدید متاثر کر سکتا ہو۔', rom: 'Aise asasa, tanseehaat, nizam, network ya amal jin ka nuqsan qaumi salamati, maeeshat, awaami sehat, tahaffuz ya falah ko shadeed mutasir kar sakta ho.' },
+  { id: 'decree', enName: 'decree', urName: 'ڈگری', romName: 'decree', refs: ['CPC Order XX'],
+    en: 'The formal expression of the final decision of a civil court determining the rights of the parties.', ur: 'سول عدالت کے حتمی فیصلے کا باقاعدہ اظہار جو فریقین کے حقوق کا تعین کرتا ہے۔', rom: 'Civil court ke nihai faisle ka baqaida izhar jo fareeqain ke haqooq ka taiyun karta hai.' },
+  { id: 'judgment', enName: 'judgment', urName: 'فیصلہ', romName: 'faisla', refs: ['CPC Order XX'],
+    en: 'The statement given by the judge of the grounds of a decree or order.', ur: 'جج کا وہ بیان جس میں ڈگری یا حکم کی وجوہات درج ہوں۔', rom: 'Judge ka woh bayan jis mein decree ya order ki wajohat darj hon.' },
+  { id: 'plaint', enName: 'plaint', urName: 'عرضیِ دعویٰ', romName: 'plaint', refs: ['CPC Order VII'],
+    en: 'The written statement of claim filed by the plaintiff which starts a civil suit.', ur: 'مدعی کی دائر کردہ تحریری دعویٰ جو سول مقدمے کا آغاز کرتی ہے۔', rom: 'Muddai ki dakhil karda tehreeri dawa jo civil suit ka aaghaz karti hai.' },
+  { id: 'written_statement', enName: 'written statement', urName: 'جوابِ دعویٰ', romName: 'jawab-e-dawa', refs: ['CPC Order VIII'],
+    en: 'The defendant\'s written reply to the plaint, answering the plaintiff\'s claims.', ur: 'مدعا علیہ کا عرضی دعویٰ کا تحریری جواب جس میں مدعی کے دعووں کا جواب دیا جاتا ہے۔', rom: 'Defendant ka plaint ka tehreeri jawab jis mein muddai ke daawon ka jawab diya jata hai.' },
+  { id: 'res_judicata', enName: 'res judicata', urName: 'ریز جوڈیکیٹا', romName: 'res judicata', refs: ['CPC Section 11'],
+    en: 'The rule that a matter finally decided by a competent court between the same parties cannot be raised again between them.', ur: 'یہ اصول کہ مجاز عدالت کا انہی فریقین کے درمیان حتمی طور پر طے شدہ معاملہ ان کے درمیان دوبارہ نہیں اٹھایا جا سکتا۔', rom: 'Yeh usool ke majaz court ka unhi fareeqain ke darmiyan nihai tor par tay shuda maamla un ke darmiyan dobara nahi uthaya ja sakta.' },
+  { id: 'temporary_injunction', enName: 'temporary injunction', urName: 'عارضی حکم امتناعی', romName: 'temporary injunction', refs: ['CPC Order XXXIX'],
+    en: 'An interim court order restraining a party from doing a particular act while the suit is pending, to prevent irreparable harm.', ur: 'مقدمے کے زیرِ سماعت رہتے ہوئے عدالت کا عبوری حکم جو کسی فریق کو مخصوص فعل سے روکتا ہے تاکہ ناقابلِ تلافی نقصان نہ ہو۔', rom: 'Muqadme ke zair-e-samaat rehte hue court ka interim order jo kisi fareeq ko makhsoos amal se rokta hai taake na qabil-e-talafi nuqsan na ho.' },
+  { id: 'khula', enName: 'khula', urName: 'خلع', romName: 'khula', refs: ['Khula Procedure'],
+    en: 'A wife-initiated dissolution of marriage obtained through the Family Court.', ur: 'بیوی کی جانب سے فیملی کورٹ کے ذریعے حاصل کی جانے والی نکاح کی تحلیل۔', rom: 'Biwi ki janib se Family Court ke zariye hasil ki jane wali nikah ki tehleel.' },
+  { id: 'mehr', enName: 'dower (mehr)', urName: 'حق مہر', romName: 'haq mehr', refs: ['Muslim Family Laws Ordinance, 1961 Section 10'],
+    en: 'The amount fixed in the Nikah Nama that the husband must pay to the wife under the marriage contract.', ur: 'نکاح نامے میں طے شدہ رقم جو شوہر نکاح کے معاہدے کے تحت بیوی کو ادا کرتا ہے۔', rom: 'Nikah Nama mein tay shuda raqam jo shohar nikah ke muahide ke tehat biwi ko ada karta hai.' },
+  { id: 'iddat', enName: 'iddat', urName: 'عدت', romName: 'iddat', refs: ['Khula Procedure'],
+    en: 'The waiting period a wife observes after dissolution of marriage, during which she cannot remarry.', ur: 'نکاح کی تحلیل کے بعد بیوی کی وہ انتظار کی مدت جس میں وہ دوبارہ شادی نہیں کر سکتی۔', rom: 'Nikah ki tehleel ke baad biwi ki woh intezar ki muddat jis mein woh dobara shadi nahi kar sakti.' },
+  { id: 'hizanat', enName: 'hizanat (child custody)', urName: 'حضانت', romName: 'hizanat', refs: ['Child Custody (Hizanat) Law'],
+    en: 'The right to the care and upbringing of a minor child, decided with the welfare of the child as the paramount consideration.', ur: 'نابالغ بچے کی نگہداشت اور پرورش کا حق، جس کا فیصلہ بچے کی بہبود کو سب سے اہم رکھتے ہوئے کیا جاتا ہے۔', rom: 'Nabaligh bachay ki nigahdasht aur parwarish ka haq, jis ka faisla bachay ki bhalai ko sab se aham rakhte hue kiya jata hai.' },
+  { id: 'nafaqa', enName: 'nafaqa (maintenance)', urName: 'نفقہ', romName: 'nafaqa', refs: ['Maintenance (Nafaqa) Rights'],
+    en: 'The financial support a husband must provide to his wife and a father to his minor children, covering food, clothing and shelter.', ur: 'وہ مالی کفالت جو شوہر اپنی بیوی کو اور باپ اپنے نابالغ بچوں کو فراہم کرنے کا پابند ہے، جس میں کھانا، لباس اور رہائش شامل ہے۔', rom: 'Woh mali kafalat jo shohar apni biwi ko aur baap apne nabaligh bachon ko faraham karne ka paband hai, jis mein khana, libaas aur rehaish shamil hai.' },
+  { id: 'talaq', enName: 'talaq (divorce)', urName: 'طلاق', romName: 'talaq', refs: ['Muslim Family Laws Ordinance, 1961 Section 7'],
+    en: 'Dissolution of marriage by the husband, which requires written notice to the Chairman of the Union Council and a copy to the wife.', ur: 'شوہر کی جانب سے نکاح کی تحلیل، جس کے لیے یونین کونسل کے چیئرمین کو تحریری اطلاع اور بیوی کو اس کی نقل دینا ضروری ہے۔', rom: 'Shohar ki janib se nikah ki tehleel, jis ke liye Union Council ke Chairman ko tehreeri ittila aur biwi ko us ki copy dena zaroori hai.' },
+  { id: 'nikah_nama', enName: 'nikah nama', urName: 'نکاح نامہ', romName: 'nikah nama', refs: ['Nikah Nama Registration'],
+    en: 'The marriage certificate filled by a licensed Nikah Registrar and registered with the Union Council.', ur: 'شادی کا سرٹیفکیٹ جو لائسنس یافتہ نکاح رجسٹرار بھرتا ہے اور یونین کونسل میں رجسٹر ہوتا ہے۔', rom: 'Shadi ka certificate jo licensed Nikah Registrar bharta hai aur Union Council mein register hota hai.' },
+  { id: 'mutation', enName: 'mutation (inteqal)', urName: 'انٹقال', romName: 'inteqal', refs: ['Mutation (Inteqal) — Land Record Transfer'],
+    en: 'The process of updating revenue records to reflect a change in ownership or possession of land.', ur: 'زمین کے محصولاتی ریکارڈ میں ملکیت یا قبضے کی تبدیلی درج کرنے کا عمل۔', rom: 'Zameen ke revenue record mein milkiyat ya qabzay ki tabdeeli darj karne ka amal.' },
+  { id: 'stamp_duty', enName: 'stamp duty', urName: 'اسٹامپ ڈیوٹی', romName: 'stamp duty', refs: ['Stamp Duty on Property Transactions'],
+    en: 'The tax payable on property transactions and on the registration of documents.', ur: 'جائیداد کے لین دین اور دستاویزات کی رجسٹریشن پر ادا کیا جانے والا ٹیکس۔', rom: 'Jaidad ke lain dein aur documents ki registration par ada kiya jane wala tax.' },
+  { id: 'eobi', enName: 'EOBI', urName: 'ای او بی آئی', romName: 'EOBI', refs: ['EOBI'],
+    en: 'The Employees\' Old-Age Benefits Institution, which provides old-age, invalidity and survivors\' pensions to registered workers.', ur: 'ملازمین کا بڑھاپا فوائد ادارہ جو رجسٹرڈ ملازمین کو بڑھاپا، معذوری اور ورثا پنشن فراہم کرتا ہے۔', rom: 'Mulazmeen ka barhapa fawaid idara jo registerd mulazmeen ko barhapa, mazoori aur warisa pension faraham karta hai.' },
+  { id: 'minimum_wage', enName: 'minimum wage', urName: 'کم از کم اجرت', romName: 'minimum wage', refs: ['Minimum Wages in Pakistan'],
+    en: 'The lowest wage an employer may legally pay, set by the provincial government.', ur: 'وہ کم ترین اجرت جو آجر قانوناً ادا کر سکتا ہے اور جو صوبائی حکومت مقرر کرتی ہے۔', rom: 'Woh kam tareen ujrat jo aajir qanoonan ada kar sakta hai aur jo soobai hukoomat muqarrar karti hai.' },
+  { id: 'defective_goods', enName: 'defective goods', urName: 'ناقص سامان', romName: 'naqis saman', refs: ['Defective Goods and Products Liability'],
+    en: 'Products that fail to meet the promised quality or are unfit for their purpose, giving the buyer a right to refund, replacement or compensation.', ur: 'ایسی مصنوعات جو وعدہ کردہ معیار پر پوری نہ اتریں یا اپنے مقصد کے لیے ناموزوں ہوں، جس پر خریدار کو رقم کی واپسی، متبادل یا معاوضے کا حق حاصل ہو۔', rom: 'Aisi products jo waada karda mayaar par poori na utrein ya apne maqsad ke liye namozoon hon, jis par khareedar ko refund, replacement ya muawzay ka haq hasil ho.' },
+  { id: 'unfair_trade', enName: 'unfair trade practice', urName: 'غیر منصفانہ تجارتی عمل', romName: 'ghair munasifana tijarati amal', refs: ['Unfair Trade Practices'],
+    en: 'Deceptive or misleading trade conduct, such as false advertising, that the provincial consumer protection acts prohibit.', ur: 'فریب دہ یا گمراہ کن تجارتی رویہ، جیسے جھوٹی تشہیر، جس پر صوبائی صارفین کے قوانین پابندی لگاتے ہیں۔', rom: 'Fareb dahi ya gumrah kun tijarati rawaiya, jaise jhooti tashheer, jis par soobai consumer protection acts pabandi lagate hain.' },
+  { id: 'dlac', enName: 'DLAC (District Legal Advisory Committee)', urName: 'ڈسٹرکٹ لیگل ایڈوائزری کمیٹی', romName: 'DLAC', refs: ['DLAC'],
+    en: 'A district-level committee that provides free legal advice and assistance to eligible citizens.', ur: 'ضلعی سطح کی کمیٹی جو اہل شہریوں کو مفت قانونی مشورہ اور امداد فراہم کرتی ہے۔', rom: 'Zila satah ki committee jo ahal shehriyon ko muft qanooni mashwara aur imdad faraham karti hai.' },
+  { id: 'ombudsman', enName: 'Wafaqi Mohtasib (Ombudsman)', urName: 'وفاقی محتسب', romName: 'Wafaqi Mohtasib', refs: ['Ombudsman (Wafaqi Mohtasib)'],
+    en: 'A federal institution that investigates complaints of maladministration against federal government departments.', ur: 'ایک وفاقی ادارہ جو وفاقی سرکاری محکموں کے خلاف بدانتظامی کی شکایات کی تحقیقات کرتا ہے۔', rom: 'Aik waqfati idara jo waqfati sarkari mahkamon ke khilaf bad-intezami ki shikayaat ki tehqeeq karta hai.' }
+];
+
+// ---------------------------------------------------------------------------
+// Document explanation examples, grounded in the 23 document templates of
+// src/config/documentSchemas.ts. The generator turns these into QAs about
+// what information each document needs.
+// ---------------------------------------------------------------------------
+export const DOC_EXPLAIN = [
+  { id: 'fir', cat: 'legal', refs: ['Drafting Template: FIR Application'],
+    enQ: 'What details do I need to prepare an FIR application?',
+    urQ: 'ایف آئی آر کی درخواست کے لیے کون سی معلومات درکار ہیں؟',
+    romQ: 'FIR ki darkhwast ke liye kaun si maloomat darkar hai?',
+    ansEn: 'An FIR application needs: the police station, your name and father\'s name, CNIC number, residential address, date/time of the incident, exact location, suspect details or description, nature of the crime, witness names if any, and a detailed description of the event.',
+    ansUr: 'ایف آئی آر کی درخواست کے لیے درکار معلومات: متعلقہ تھانہ، آپ کا نام اور والد کا نام، شناختی کارڈ نمبر، رہائشی پتہ، واقعہ کی تاریخ و وقت، صحیح مقام، ملزم کی تفصیلات، جرم کی نوعیت، گواہان کے نام (اگر ہوں) اور واقعہ کی مکمل تفصیل۔',
+    ansRom: 'FIR ki darkhwast ke liye darkar maloomat: mutaliqa thana, aap ka naam aur walid ka naam, CNIC number, rehaishi pata, waqia ki tareekh o waqt, sahih maqam, mulzim ki tafseelat, jurm ki qisam, gawahon ke naam (agar hon) aur waqia ki mukammal tafseel.' },
+  { id: 'defamation', cat: 'legal', refs: ['Drafting Template: Defamation Notice'],
+    enQ: 'What details are needed for a defamation notice?',
+    urQ: 'ہتکِ عزت کے نوٹس کے لیے کیا معلومات چاہیے؟',
+    romQ: 'Hatak-e-izzat ke notice ke liye kya maloomat chahiye?',
+    ansEn: 'A defamation notice needs: your name, the recipient\'s name, the exact defamatory statement, the platform where it appeared, your counsel\'s name, the damages demanded in PKR, and the deadline given for an apology.',
+    ansUr: 'ہتکِ عزت کے نوٹس کے لیے: آپ کا نام، وصول کنندہ کا نام، ہتک آمیز بیان، وہ ذریعہ جہاں بیان آیا، آپ کے وکیل کا نام، مطالبہ کردہ ہرجانہ اور معافی کی آخری مہلت درکار ہے۔',
+    ansRom: 'Hatak-e-izzat ke notice ke liye: aap ka naam, wasool kunninda ka naam, hatak amaiz bayan, woh zariya jahan bayan aaya, aap ke wakeel ka naam, mutalba karda harjana aur maafi ki aakhri mohlat darkar hai.' },
+  { id: 'rental', cat: 'legal', refs: ['Drafting Template: Rental Agreement'],
+    enQ: 'What details are needed for a rental agreement?',
+    urQ: 'کرایہ داری معاہدے کے لیے کیا معلومات چاہیے؟',
+    romQ: 'Kiraya dari muahide ke liye kya maloomat chahiye?',
+    ansEn: 'A rental agreement needs: landlord and tenant names, property address, monthly rent, security deposit, agreement period, and two witnesses with their names and CNIC numbers.',
+    ansUr: 'کرایہ داری معاہدے کے لیے: مالک مکان اور کرائے دار کے نام، جائیداد کا پتہ، ماہانہ کرایہ، سیکیورٹی ڈپازٹ، معاہدے کی مدت اور نام و شناختی کارڈ سمیت دو گواہ درکار ہیں۔',
+    ansRom: 'Kiraya dari muahide ke liye: landlord aur kirayedar ke naam, jaidad ka pata, mahana kiraya, security deposit, muahide ki muddat aur naam o CNIC samet do gawah darkar hain.' },
+  { id: 'consumer_court', cat: 'legal', refs: ['Drafting Template: Consumer Court Complaint'],
+    enQ: 'What details are needed for a consumer court complaint?',
+    urQ: 'صارفین کی عدالت میں شکایت کے لیے کیا معلومات چاہیے؟',
+    romQ: 'Consumer court ki shikayat ke liye kya maloomat chahiye?',
+    ansEn: 'A consumer court complaint needs: your name, the seller or company name, the product or service, the purchase date, the defect details, the relief you demand (refund or replacement), and the receipt or invoice number.',
+    ansUr: 'صارفین کی عدالت کی شکایت کے لیے: آپ کا نام، فروشندہ یا کمپنی کا نام، مصنوعات یا سروس، خریداری کی تاریخ، نقص کی تفصیل، مطلوبہ ریلیف اور رسید نمبر درکار ہے۔',
+    ansRom: 'Consumer court ki shikayat ke liye: aap ka naam, seller ya company ka naam, product ya service, khareedari ki tareekh, naqs ki tafseel, matlooba relief aur receipt number darkar hai.' },
+  { id: 'custody', cat: 'legal', refs: ['Drafting Template: Child Custody Petition'],
+    enQ: 'What details are needed for a child custody petition?',
+    urQ: 'بچے کی حضانت کی درخواست کے لیے کیا معلومات چاہیے؟',
+    romQ: 'Child custody petition ke liye kya maloomat chahiye?',
+    ansEn: 'A custody petition needs: the petitioner\'s and respondent\'s names, the child\'s name and age, who currently has custody, the grounds for seeking custody, and the relevant court where the petition will be filed.',
+    ansUr: 'حضانت کی درخواست کے لیے: سائل اور فریقِ مخالف کے نام، بچے کا نام اور عمر، موجودہ تحویل کس کے پاس ہے، حضانت کی بنیاد اور وہ عدالت جہاں درخواست دائر ہوگی درکار ہے۔',
+    ansRom: 'Custody petition ke liye: petitioner aur respondent ke naam, bachay ka naam aur umar, mojooda custody kis ke paas hai, custody ki bunyaad aur woh court jahan darkhwast dakhil hogi darkar hai.' },
+  { id: 'bail', cat: 'legal', refs: ['Drafting Template: Bail Application'],
+    enQ: 'What details are needed for a bail application?',
+    urQ: 'درخواستِ ضمانت کے لیے کیا معلومات چاہیے؟',
+    romQ: 'Bail application ke liye kya maloomat chahiye?',
+    ansEn: 'A bail application needs: the accused\'s name, FIR or case number, police station, the PPC sections involved, the court where bail is sought, and the grounds for bail.',
+    ansUr: 'درخواستِ ضمانت کے لیے: ملزم کا نام، ایف آئی آر یا کیس نمبر، تھانہ، متعلقہ دفعات، وہ عدالت جہاں ضمانت مانگی جا رہی ہے اور ضمانت کی وجوہات درکار ہیں۔',
+    ansRom: 'Bail application ke liye: mulzim ka naam, FIR ya case number, thana, mutaliqa dafaat, woh court jahan bail mangi ja rahi hai aur bail ki wajohat darkar hain.' },
+  { id: 'showcause', cat: 'business', refs: ['Drafting Template: Show-Cause Notice'],
+    enQ: 'What details are needed for a show-cause notice to an employee?',
+    urQ: 'ملازم کو شوکاز نوٹس کے لیے کون سی تفصیلات درکار ہیں؟',
+    romQ: 'Mulazim ko show-cause notice ke liye kaun si details darkar hain?',
+    ansEn: 'A show-cause notice needs: the employee\'s name and ID, the misconduct details, the date of the misconduct, the issuing authority, and the deadline for the employee\'s written response.',
+    ansUr: 'شوکاز نوٹس کے لیے: ملازم کا نام اور شناختی نمبر، بدانتظامی کی تفصیلات، واقعے کی تاریخ، جاری کرنے والا ادارہ اور ملازم کے تحریری جواب کی آخری مہلت درکار ہے۔',
+    ansRom: 'Show-cause notice ke liye: mulazim ka naam aur ID, bad-intizami ki tafseelat, waqia ki tareekh, jari karne wala idara aur mulazim ke tehreeri jawab ki aakhri mohlat darkar hai.' },
+  { id: 'contract', cat: 'business', refs: ['Drafting Template: Employment Contract'],
+    enQ: 'What details are needed for an employment contract?',
+    urQ: 'ملازمت نامے کے لیے کون سی تفصیلات درکار ہیں؟',
+    romQ: 'Employment contract ke liye kaun si details darkar hain?',
+    ansEn: 'An employment contract needs: the employer and employee names, designation, offered monthly salary, contract period, probation months, notice period, and the joining date.',
+    ansUr: 'ملازمت نامے کے لیے: آجر اور ملازم کے نام، عہدہ، مجوزہ ماہانہ تنخواہ، معاہدے کی مدت، آزمائشی مدت، نوٹس کی مدت اور شمولیت کی تاریخ درکار ہے۔',
+    ansRom: 'Employment contract ke liye: employer aur employee ke naam, ohda, tajweez shuda mahana tankhwah, contract ki muddat, probation months, notice period aur joining ki tareekh darkar hai.' },
+  { id: 'nda', cat: 'business', refs: ['Drafting Template: Non-Disclosure (NDA)'],
+    enQ: 'What details are needed for a non-disclosure agreement (NDA)?',
+    urQ: 'رازداری معاہدے (این ڈی اے) کے لیے کون سی تفصیلات درکار ہیں؟',
+    romQ: 'Non-disclosure agreement (NDA) ke liye kaun si details darkar hain?',
+    ansEn: 'An NDA needs: the disclosing party, the receiving party, the project or purpose, the confidentiality period, and the legal jurisdiction (for example, Lahore).',
+    ansUr: 'این ڈی اے کے لیے: معلومات فراہم کرنے والا فریق، معلومات وصول کرنے والا فریق، منصوبہ یا مقصد، رازداری کی مدت اور قانونی دائرہ اختیار (مثلاً لاہور) درکار ہے۔',
+    ansRom: 'NDA ke liye: maloomat faraham karne wala party, maloomat hasil karne wala party, project ya maqsad, raazdari ki muddat aur qanooni jurisdiction (maslan Lahore) darkar hai.' },
+  { id: 'resignation', cat: 'business', refs: ['Drafting Template: Resignation Letter'],
+    enQ: 'What details are needed for a resignation letter?',
+    urQ: 'استعفے کے خط کے لیے کون سی تفصیلات درکار ہیں؟',
+    romQ: 'Resignation letter ke liye kaun si details darkar hain?',
+    ansEn: 'A resignation letter needs: your name, employee ID, designation, your reporting manager\'s name, the optional reason for leaving, and your last working day.',
+    ansUr: 'استعفے کے خط کے لیے: آپ کا نام، ملازم شناختی نمبر، عہدہ، آپ کے رپورٹنگ مینیجر کا نام، چھوڑنے کی اختیاری وجہ اور آپ کا آخری کام کا دن درکار ہے۔',
+    ansRom: 'Resignation letter ke liye: aap ka naam, employee ID, ohda, aap ke reporting manager ka naam, chhorne ki ikhtiyari wajah aur aap ka aakhri kaam ka din darkar hai.' },
+  { id: 'warning', cat: 'business', refs: ['Drafting Template: Warning Letter'],
+    enQ: 'What details are needed for an employee warning letter?',
+    urQ: 'ملازم کو وارننگ لیٹر کے لیے کون سی تفصیلات درکار ہیں؟',
+    romQ: 'Employee warning letter ke liye kaun si details darkar hain?',
+    ansEn: 'A warning letter needs: the employee\'s name, the subject of the warning, the incident details, any previous warnings given, and the improvement required.',
+    ansUr: 'وارننگ لیٹر کے لیے: ملازم کا نام، وارننگ کا موضوع، واقعے کی تفصیلات، پہلے دی گئی کوئی وارننگ اور مطلوبہ بہتری درکار ہے۔',
+    ansRom: 'Warning letter ke liye: mulazim ka naam, warning ka mauzoo, waqia ki tafseelat, pehle di gayi koi warning aur matlooba behtari darkar hai.' },
+  { id: 'vendor_reminder', cat: 'business', refs: ['Drafting Template: Vendor Payment Reminder'],
+    enQ: 'What details are needed for a vendor payment reminder?',
+    urQ: 'وینڈر کو ادائیگی کی یاد دہانی کے لیے کون سی تفصیلات درکار ہیں؟',
+    romQ: 'Vendor payment reminder ke liye kaun si details darkar hain?',
+    ansEn: 'A payment reminder needs: the vendor name, invoice number, outstanding amount, the original due date, and the number of days overdue.',
+    ansUr: 'ادائیگی یاد دہانی کے لیے: وینڈر کا نام، انوائس نمبر، بقایا رقم، اصل مقررہ تاریخ اور زائد المیعاد دنوں کی تعداد درکار ہے۔',
+    ansRom: 'Payment reminder ke liye: vendor ka naam, invoice number, baqaya raqam, asal muqarrara tareekh aur zaid-ul-miyad dinon ki tadaad darkar hai.' },
+  { id: 'leave', cat: 'academic', refs: ['Drafting Template: Formal Leave Application'],
+    enQ: 'What details are needed for a formal leave application?',
+    urQ: 'رسمی چھٹی کی درخواست کے لیے کون سی تفصیلات درکار ہیں؟',
+    romQ: 'Formal leave application ke liye kaun si details darkar hain?',
+    ansEn: 'A leave application needs: the student\'s name, roll number, class or degree, the leave dates, the reason, and the total number of days.',
+    ansUr: 'چھٹی کی درخواست کے لیے: طالب علم کا نام، رول نمبر، کلاس یا ڈگری، چھٹی کی تاریخیں، وجہ اور دنوں کی کل تعداد درکار ہے۔',
+    ansRom: 'Leave application ke liye: student ka naam, roll number, class ya degree, chutti ki tareekhein, wajah aur dinon ki kul tadaad darkar hai.' },
+  { id: 'concession', cat: 'academic', refs: ['Drafting Template: Fee Concession Request'],
+    enQ: 'What details are needed for a fee concession request?',
+    urQ: 'فیس میں رعایت کی درخواست کے لیے کون سی تفصیلات درکار ہیں؟',
+    romQ: 'Fee concession request ke liye kaun si details darkar hain?',
+    ansEn: 'A fee concession request needs: the student\'s name, roll number, last semester GPA, family income, the reason for the need, and the father\'s occupation.',
+    ansUr: 'فیس رعایت کی درخواست کے لیے: طالب علم کا نام، رول نمبر، گزشتہ سمسٹر کا جی پی اے، خاندان کی آمدنی، ضرورت کی وجہ اور والد کا پیشہ درکار ہے۔',
+    ansRom: 'Fee concession request ke liye: student ka naam, roll number, last semester GPA, khandan ki aamdani, zaroorat ki wajah aur walid ka pesha darkar hai.' },
+  { id: 'complaint', cat: 'academic', refs: ['Drafting Template: Faculty Complaint'],
+    enQ: 'What details are needed for a faculty complaint?',
+    urQ: 'فیکلٹی کے خلاف شکایت کے لیے کون سی تفصیلات درکار ہیں؟',
+    romQ: 'Faculty complaint ke liye kaun si details darkar hain?',
+    ansEn: 'A faculty complaint needs: your name, the faculty member\'s name, the course code, the incident or issue, and any witnesses or evidence.',
+    ansUr: 'فیکلٹی شکایت کے لیے: آپ کا نام، فیکلٹی ممبر کا نام، کورس کوڈ، واقعہ یا مسئلہ اور کوئی گواہ یا ثبوت درکار ہے۔',
+    ansRom: 'Faculty complaint ke liye: aap ka naam, faculty member ka naam, course code, waqia ya masla aur koi gawah ya saboot darkar hai.' },
+  { id: 'proposal', cat: 'academic', refs: ['Drafting Template: Project Proposal'],
+    enQ: 'What details are needed for a research project proposal?',
+    urQ: 'تحقیقی منصوبے کی تجویز کے لیے کون سی تفصیلات درکار ہیں؟',
+    romQ: 'Research project proposal ke liye kaun si details darkar hain?',
+    ansEn: 'A project proposal needs: university name, department, student name, roll number, supervisor, project title, executive summary, objectives, methodology, estimated budget, and timeline.',
+    ansUr: 'منصوبے کی تجویز کے لیے: یونیورسٹی کا نام، شعبہ، طالب علم کا نام، رول نمبر، نگران، عنوان، خلاصہ، مقاصد، طریقہ کار، تخمینی بجٹ اور مدت درکار ہے۔',
+    ansRom: 'Project proposal ke liye: university ka naam, department, student ka naam, roll number, supervisor, title, khulasa, maqasid, tareeqa-e-kaar, takhmeeni budget aur muddat darkar hai.' },
+  { id: 'transcript', cat: 'academic', refs: ['Drafting Template: Transcript Request'],
+    enQ: 'What details are needed for a transcript request?',
+    urQ: 'ٹرانسکرپٹ کی درخواست کے لیے کون سی تفصیلات درکار ہیں؟',
+    romQ: 'Transcript request ke liye kaun si details darkar hain?',
+    ansEn: 'A transcript request needs: the student\'s name, roll number, academic session, purpose, and the number of copies required.',
+    ansUr: 'ٹرانسکرپٹ کی درخواست کے لیے: طالب علم کا نام، رول نمبر، تعلیمی سیشن، مقصد اور مطلوبہ نقول کی تعداد درکار ہے۔',
+    ansRom: 'Transcript request ke liye: student ka naam, roll number, academic session, maqsad aur matlooba naqlein ki tadaad darkar hai.' },
+  { id: 'bank', cat: 'personal', refs: ['Drafting Template: Bank Closure Letter'],
+    enQ: 'What details are needed for a bank account closure letter?',
+    urQ: 'بینک اکاؤنٹ بند کرنے کے خط کے لیے کون سی تفصیلات درکار ہیں؟',
+    romQ: 'Bank account closure letter ke liye kaun si details darkar hain?',
+    ansEn: 'A closure letter needs: the account holder\'s name, account number, bank name, branch name, the closure reason, and instructions for transferring the remaining balance.',
+    ansUr: 'اکاؤنٹ بند کرنے کے خط کے لیے: کھاتے دار کا نام، اکاؤنٹ نمبر، بینک کا نام، برانچ کا نام، بند کرنے کی وجہ اور باقی ماندہ رقم منتقل کرنے کی ہدایات درکار ہیں۔',
+    ansRom: 'Closure letter ke liye: account holder ka naam, account number, bank ka naam, branch ka naam, band karne ki wajah aur baqi manda raqam transfer karne ki hidayat darkar hain.' },
+  { id: 'lostcnic', cat: 'personal', refs: ['Drafting Template: Lost CNIC Application'],
+    enQ: 'What details are needed for a lost CNIC application?',
+    urQ: 'گمشدہ شناختی کارڈ کی درخواست کے لیے کون سی تفصیلات درکار ہیں؟',
+    romQ: 'Lost CNIC application ke liye kaun si details darkar hain?',
+    ansEn: 'A lost CNIC application needs: your name, the lost CNIC number, current address, the date of loss, and the place where it was lost.',
+    ansUr: 'گمشدہ شناختی کارڈ کی درخواست کے لیے: آپ کا نام، گمشدہ کارڈ کا نمبر، موجودہ پتہ، گم ہونے کی تاریخ اور وہ مقام جہاں گم ہوا درکار ہے۔',
+    ansRom: 'Lost CNIC application ke liye: aap ka naam, gumshuda CNIC number, mojooda pata, gum hone ki tareekh aur woh maqam jahan gum hua darkar hai.' },
+  { id: 'character', cat: 'personal', refs: ['Drafting Template: Character Certificate'],
+    enQ: 'What details are needed for a character certificate request?',
+    urQ: 'کریکٹر سرٹیفکیٹ کی درخواست کے لیے کون سی تفصیلات درکار ہیں؟',
+    romQ: 'Character certificate request ke liye kaun si details darkar hain?',
+    ansEn: 'A character certificate request needs: the full name, father\'s name, permanent address, the purpose, and a reference name.',
+    ansUr: 'کریکٹر سرٹیفکیٹ کی درخواست کے لیے: مکمل نام، والد کا نام، مستقل پتہ، مقصد اور ایک حوالہ جاتی شخص کا نام درکار ہے۔',
+    ansRom: 'Character certificate request ke liye: mukammal naam, walid ka naam, mustaqil pata, maqsad aur aik hawala jati shakhs ka naam darkar hai.' },
+  { id: 'apology', cat: 'personal', refs: ['Drafting Template: Apology Letter'],
+    enQ: 'What details are needed for an apology letter?',
+    urQ: 'معذرت نامے کے لیے کون سی تفصیلات درکار ہیں؟',
+    romQ: 'Apology letter ke liye kaun si details darkar hain?',
+    ansEn: 'An apology letter needs: your name, the recipient\'s name, the mistake you are apologizing for, and your message of regret.',
+    ansUr: 'معذرت نامے کے لیے: آپ کا نام، وصول کنندہ کا نام، وہ غلطی جس پر آپ معذرت کر رہے ہیں اور آپ کا افسوس کا پیغام درکار ہے۔',
+    ansRom: 'Apology letter ke liye: aap ka naam, wasool kunninda ka naam, woh ghalati jis par aap maazrat kar rahe hain aur aap ka afsos ka paigham darkar hai.' },
+  { id: 'property_transfer', cat: 'personal', refs: ['Drafting Template: Property Transfer'],
+    enQ: 'What details are needed for a property transfer document?',
+    urQ: 'جائیداد کی منتقلی کی دستاویز کے لیے کون سی تفصیلات درکار ہیں؟',
+    romQ: 'Property transfer document ke liye kaun si details darkar hain?',
+    ansEn: 'A property transfer document needs: the seller\'s name, the buyer\'s name, property details (plot or house number and area), the total price, and the registry number.',
+    ansUr: 'جائیداد کی منتقلی کی دستاویز کے لیے: فروشندہ کا نام، خریدار کا نام، جائیداد کی تفصیلات (پلاٹ یا مکان کا نمبر اور رقبہ)، کل قیمت اور رجسٹری نمبر درکار ہے۔',
+    ansRom: 'Property transfer document ke liye: seller ka naam, buyer ka naam, jaidad ki tafseelat (plot ya ghar ka number aur raqba), kul qeemat aur registry number darkar hai.' }
+];
+
+// ---------------------------------------------------------------------------
+// Full formal drafting examples. Instruction = drafting task, input = the
+// user's details, output = a complete formal document in Pakistani style.
+// ---------------------------------------------------------------------------
+export const DOC_DRAFTS = [
+  {
+    id: 'draft_fir', language: 'en',
+    instruction: 'Draft a formal FIR application for the following details.',
+    input: 'Police Station: Gulberg, Lahore. Complainant: Ali Raza s/o Muhammad Yousaf. CNIC: 35202-1234567-1. Address: House 12, Model Town, Lahore. Incident: 5 August 2026, 9:00 pm. Location: Main Market, Model Town, Lahore. Suspect: Unknown man, about 30 years old, dark complexion. Crime: Mobile phone theft. Witness: Kashif Ahmed, shopkeeper. Details: The suspect snatched my mobile phone from my hand and ran towards the bus stop.',
+    output: 'To\nThe Station House Officer\nPolice Station Gulberg, Lahore\n\nSubject: Application for Registration of FIR\n\nRespected Sir,\n\nI, Ali Raza son of Muhammad Yousaf, holder of CNIC 35202-1234567-1, resident of House 12, Model Town, Lahore, beg to report the following incident.\n\nOn 5 August 2026 at about 9:00 pm, while I was walking in Main Market, Model Town, Lahore, an unknown man of about 30 years of age and dark complexion snatched my mobile phone from my hand and ran towards the bus stop. The incident was witnessed by Kashif Ahmed, a shopkeeper in the market.\n\nThe offence falls within the Pakistan Penal Code, 1860 (theft). I request you to register an FIR against the unknown accused under the relevant provisions of law and to provide me a free copy of the FIR as required under Section 154 of the Code of Criminal Procedure, 1898.\n\nYours faithfully,\nAli Raza\nContact: [your phone number]'
+  },
+  {
+    id: 'draft_defamation', language: 'en',
+    instruction: 'Draft a formal defamation legal notice using the following details.',
+    input: 'Sender: Fatima Noor. Recipient: Ahmed Khan. Statement: "Fatima stole money from her office." Platform: Facebook post. Lawyer: Barrister Salman Ahmed. Damages: PKR 10 million. Deadline: 14 days.',
+    output: 'Legal Notice\n\nFrom:\nBarrister Salman Ahmed, Counsel for Ms. Fatima Noor\n[Address]\n\nTo:\nMr. Ahmed Khan\n[Address]\n\nSubject: Legal Notice for Defamation\n\nDear Sir,\n\nUnder the instructions of my client, Ms. Fatima Noor, I serve this notice upon you.\n\nOn or about [date], you published on Facebook the statement: "Fatima stole money from her office." The said statement is false, defamatory and malicious, and has seriously damaged the reputation of my client in her social and professional circles. Your act amounts to defamation under Sections 499 and 500 of the Pakistan Penal Code, 1860.\n\nMy client demands that within 14 days of receipt of this notice you:\n1. Publish a written apology withdrawing the said statement;\n2. Pay damages of PKR 10,000,000 (rupees ten million) for the loss caused.\n\nFailing compliance, my client has instructions to initiate civil and criminal proceedings against you, at your cost and risk.\n\nThis notice is issued without prejudice to all legal rights of my client.\n\nBarrister Salman Ahmed\n[Date]'
+  },
+  {
+    id: 'draft_rental', language: 'en',
+    instruction: 'Draft a formal rental agreement using the following details.',
+    input: 'Landlord: Imran Sheikh. Tenant: Bilal Ahmed. Property: Flat 5-B, Gulshan Block, Johar Town, Lahore. Rent: PKR 40,000 per month. Security deposit: PKR 80,000. Period: 11 months. Witnesses: Tariq Mehmood and Usman Ali.',
+    output: 'RENTAL AGREEMENT\n\nThis Rental Agreement is made on [date] at Lahore between:\n\n1. Mr. Imran Sheikh, CNIC [number], resident of [address] (hereinafter called the "Landlord"); and\n2. Mr. Bilal Ahmed, CNIC [number], resident of [address] (hereinafter called the "Tenant").\n\nWHEREAS the Landlord is the owner of Flat 5-B, Gulshan Block, Johar Town, Lahore (the "Premises") and has agreed to rent it to the Tenant on the following terms:\n\n1. TERM: The tenancy shall run for a period of 11 months commencing on [date].\n2. RENT: The Tenant shall pay monthly rent of PKR 40,000, payable in advance by the 5th of each month.\n3. SECURITY DEPOSIT: The Tenant has deposited PKR 80,000 as a refundable security deposit, to be returned on vacating the premises after deduction of any lawful dues.\n4. USE: The Premises shall be used for residential purposes only.\n5. UTILITIES: The Tenant shall pay all utility bills for the period of tenancy.\n6. TERMINATION: Either party may terminate this agreement by one month\'s written notice.\n7. DISPUTES: Disputes shall be subject to the applicable provincial rent law and the jurisdiction of the competent court at Lahore.\n\nIN WITNESS WHEREOF, the parties have signed this agreement before the following witnesses:\n\nLandlord: __________    Tenant: __________\n\nWitnesses:\n1. Tariq Mehmood, CNIC [number]\n2. Usman Ali, CNIC [number]'
+  },
+  {
+    id: 'draft_consumer', language: 'en',
+    instruction: 'Draft a consumer court complaint using the following details.',
+    input: 'Complainant: Hina Malik. Seller: Bright Electronics, Lahore. Product: Washing machine, model BX-200. Purchase date: 20 July 2026. Defect: Machine does not drain water since installation. Relief demanded: Full refund. Receipt No: BE-8845.',
+    output: 'IN THE HONOURABLE DISTRICT CONSUMER COURT, LAHORE\n\nComplaint No. [number]\n\nHina Malik, daughter of [father name], resident of [address], Lahore .......... Complainant\n\nVersus\n\nBright Electronics, [address], Lahore .......... Respondent\n\nCOMPLAINT UNDER THE PUNJAB CONSUMER PROTECTION ACT, 2005\n\n1. That the Complainant purchased a washing machine, model BX-200, from the Respondent on 20 July 2026 vide receipt number BE-8845.\n2. That since installation, the machine fails to drain water, which amounts to a defect in the product.\n3. That the Complainant approached the Respondent for a refund or replacement, but the Respondent refused.\n4. That the Respondent is therefore liable for supplying defective goods under the Punjab Consumer Protection Act, 2005.\n\nRELIEF SOUGHT\n\nThe Complainant prays that this Honourable Court may direct the Respondent to:\na) Refund the full purchase price of the product;\nb) Pay reasonable compensation for the mental agony caused;\nc) Bear the costs of this complaint.\n\nComplainant\n[Date]'
+  },
+  {
+    id: 'draft_custody', language: 'en',
+    instruction: 'Draft a child custody petition using the following details.',
+    input: 'Petitioner: Sana Javed (mother). Respondent: Omar Javed (father). Child: Ali Omar, age 5. Current custody: With the father since March 2026. Grounds: The father neglects the child\'s education and health. Guardian Court: Lahore.',
+    output: 'IN THE COURT OF THE HONOURABLE GUARDIAN JUDGE, LAHORE\n\nGuardianship Petition No. [number]\n\nSana Javed, wife of Omar Javed, resident of [address], Lahore .......... Petitioner\n\nVersus\n\nOmar Javed, son of [father name], resident of [address], Lahore .......... Respondent\n\nPETITION FOR CUSTODY OF MINOR CHILD\n\n1. That the Petitioner is the mother and the Respondent is the father of the minor child, Ali Omar, aged 5 years.\n2. That since March 2026 the child has been in the custody of the Respondent.\n3. That the Respondent neglects the child\'s education and health, which is not in the interest of the minor.\n4. That the welfare of the minor lies in his custody being granted to the Petitioner, his mother.\n\nPRAYER\n\nIt is respectfully prayed that this Honourable Court may be pleased to appoint the Petitioner as guardian of the person of the minor and to direct the Respondent to hand over custody of the minor to the Petitioner.\n\nPetitioner\nThrough Counsel\n[Date]'
+  },
+  {
+    id: 'draft_bail', language: 'en',
+    instruction: 'Draft a post-arrest bail application using the following details.',
+    input: 'Accused: Rashid Mehmood. FIR: 512/2026. Police Station: Faisal Town, Lahore. Sections: 379, 411 PPC. Court: Court of Sessions, Lahore. Grounds: Accused is innocent, has no criminal record, and the alleged property was recovered from a third person.',
+    output: 'IN THE COURT OF THE HONOURABLE ADDITIONAL SESSIONS JUDGE, LAHORE\n\nBail Application No. [number]\n\nRashid Mehmood, son of [father name], resident of [address] .......... Accused/Petitioner\n\nVersus\n\nThe State .......... Respondent\n\nAPPLICATION FOR BAIL AFTER ARREST UNDER SECTION 497 CrPC\n\n1. That the Petitioner has been arrested in FIR No. 512/2026, Police Station Faisal Town, Lahore, under Sections 379 and 411 PPC.\n2. That the Petitioner is innocent and has been falsely implicated in this case.\n3. That the Petitioner has no previous criminal record and is not a flight risk.\n4. That the alleged property was recovered from a third person and not from the Petitioner.\n5. That the Petitioner undertakes to appear before this Honourable Court whenever required and to abide by all conditions.\n\nPRAYER\n\nIt is respectfully prayed that the Petitioner may be released on bail pending trial.\n\nPetitioner\nThrough Counsel\n[Date]'
+  },
+  {
+    id: 'draft_showcause', language: 'en',
+    instruction: 'Draft a show-cause notice to an employee using the following details.',
+    input: 'Employee: Danish Qureshi, ID EMP-2210. Misconduct: Repeated unauthorized absence on 12 and 13 August 2026. Issuing authority: HR Manager. Deadline: 3 days.',
+    output: 'SHOW-CAUSE NOTICE\n\nDate: [date]\n\nTo:\nMr. Danish Qureshi\nEmployee ID: EMP-2210\n[Department]\n\nSubject: Show-Cause Notice for Unauthorized Absence\n\nIt has been observed that you remained absent from duty on 12 and 13 August 2026 without prior approval or intimation, which amounts to misconduct under the company\'s employment rules.\n\nYou are hereby required to submit a written explanation within 3 days of receipt of this notice as to why disciplinary action should not be taken against you.\n\nIf no satisfactory reply is received within the stipulated period, it will be presumed that you have no explanation to offer and further action will be taken in accordance with company policy.\n\nHR Manager\n[Company Name]'
+  },
+  {
+    id: 'draft_resignation', language: 'en',
+    instruction: 'Draft a formal resignation letter using the following details.',
+    input: 'Name: Ayesha Siddiqui. Employee ID: 4051. Designation: Assistant Manager, Sales. Manager: Mr. Fahad Raza. Reason: Pursuing higher studies. Last working day: 30 September 2026.',
+    output: 'To\nThe Human Resources Department\n[Company Name]\n\nSubject: Resignation Letter\n\nDear Sir,\n\nI, Ayesha Siddiqui, Employee ID 4051, Assistant Manager, Sales, hereby tender my resignation from my position with effect from 30 September 2026, in accordance with my employment contract.\n\nI am resigning to pursue higher studies, and I am grateful for the opportunities and support I received during my time with the company.\n\nI request the company to process my full and final settlement, including any outstanding dues, and to issue my experience certificate.\n\nI remain available to assist with a smooth handover of my responsibilities before my last working day.\n\nYours sincerely,\nAyesha Siddiqui\nAssistant Manager, Sales\n[Date]'
+  },
+  {
+    id: 'draft_warning', language: 'en',
+    instruction: 'Draft a warning letter to an employee using the following details.',
+    input: 'Employee: Zain ul Abideen. Subject: Repeated late arrival. Details: Arrived late on 6, 7 and 8 August 2026 without valid reason. Previous warnings: One verbal warning given on 15 July 2026. Required action: Report on time by 9:00 am daily.',
+    output: 'WARNING LETTER\n\nDate: [date]\n\nTo:\nMr. Zain ul Abideen\n[Department]\n\nSubject: Warning Letter for Repeated Late Arrival\n\nThis is to bring to your attention that you arrived late to work on 6, 7 and 8 August 2026 without any valid reason, despite a verbal warning given to you on 15 July 2026.\n\nYou are required to report for duty on time by 9:00 am every working day. Repeated lateness disrupts the team and is treated as misconduct under company policy.\n\nThis is your first written warning. Any further violation may lead to disciplinary action, including termination of employment.\n\nYour cooperation in this regard is expected.\n\n[Manager Name]\n[Company Name]'
+  },
+  {
+    id: 'draft_nda', language: 'en',
+    instruction: 'Draft a non-disclosure agreement using the following details.',
+    input: 'Disclosing party: TechNova (Pvt) Ltd. Receiving party: Solution House (Pvt) Ltd. Purpose: Technical evaluation of a software product. Confidentiality period: 2 years. Jurisdiction: Lahore.',
+    output: 'NON-DISCLOSURE AGREEMENT\n\nThis Non-Disclosure Agreement is made on [date] between:\n\n1. TechNova (Pvt) Ltd, [address] ("Disclosing Party"); and\n2. Solution House (Pvt) Ltd, [address] ("Receiving Party").\n\nWHEREAS the Disclosing Party wishes to share confidential information with the Receiving Party for the technical evaluation of a software product.\n\n1. CONFIDENTIAL INFORMATION: All technical, commercial and business information disclosed in connection with the said purpose.\n2. OBLIGATION: The Receiving Party shall keep all confidential information secret, shall not disclose it to any third party, and shall use it solely for the stated purpose.\n3. EXCLUSIONS: Information already public or independently developed by the Receiving Party shall not be confidential.\n4. TERM: The confidentiality obligation shall continue for 2 years from the date of disclosure.\n5. JURISDICTION: This agreement is governed by the laws of Pakistan and subject to the exclusive jurisdiction of the courts at Lahore.\n\nIN WITNESS WHEREOF the parties have signed this agreement.\n\nDisclosing Party: __________    Receiving Party: __________'
+  },
+  {
+    id: 'draft_lostcnic', language: 'en',
+    instruction: 'Draft an application for a lost CNIC using the following details.',
+    input: 'Name: Kamran Hussain. Lost CNIC: 35202-7654321-3. Address: House 8, Street 4, Gulshan-e-Iqbal, Karachi. Date of loss: 2 August 2026. Place: On a bus, route 2-D, Karachi.',
+    output: 'To\nThe National Database and Registration Authority (NADRA)\nRegional Head Office, Karachi\n\nSubject: Application for Duplicate CNIC (Lost CNIC)\n\nRespected Sir,\n\nI, Kamran Hussain, holder of CNIC 35202-7654321-3, resident of House 8, Street 4, Gulshan-e-Iqbal, Karachi, beg to state that my original CNIC was lost on 2 August 2026 while travelling on a bus on route 2-D, Karachi.\n\nI request that a duplicate CNIC be issued in my name. The details of the lost card are as follows:\n\nCNIC Number: 35202-7654321-3\nName: Kamran Hussain\nCurrent Address: House 8, Street 4, Gulshan-e-Iqbal, Karachi\nDate of Loss: 2 August 2026\nPlace of Loss: On a bus, route 2-D, Karachi\n\nI have attached the required fee and documents. Kindly process my application at the earliest.\n\nYours faithfully,\nKamran Hussain\n[Date]'
+  },
+  {
+    id: 'draft_property_transfer', language: 'en',
+    instruction: 'Draft a property transfer document using the following details.',
+    input: 'Seller: Abdul Ghaffar. Buyer: Salman Yousaf. Property: Plot 45-C, Block D, Bahria Town, Lahore, measuring 10 marla. Price: PKR 1,50,00,000. Registry: To be registered with the Sub-Registrar, Lahore.',
+    output: 'AGREEMENT TO SELL AND TRANSFER PROPERTY\n\nThis Agreement is made on [date] at Lahore between:\n\n1. Mr. Abdul Ghaffar, son of [father name], CNIC [number], resident of [address] ("Seller"); and\n2. Mr. Salman Yousaf, son of [father name], CNIC [number], resident of [address] ("Buyer").\n\nWHEREAS the Seller is the lawful owner of Plot 45-C, Block D, Bahria Town, Lahore, measuring 10 marla ("the Property"), and has agreed to transfer it to the Buyer.\n\n1. SALE PRICE: The total sale consideration is PKR 1,50,00,000 (rupees one crore fifty lakh), payable as agreed between the parties.\n2. TITLE: The Seller confirms that the Property is free from all encumbrances and disputes.\n3. TRANSFER: The Seller shall execute the sale deed and complete registration before the Sub-Registrar, Lahore, upon receipt of the balance consideration.\n4. POSSESSION: Possession of the Property shall be handed over to the Buyer at the time of registration.\n5. DEFAULT: In case of default by either party, the other party may enforce this agreement through the competent court at Lahore.\n\nIN WITNESS WHEREOF the parties have signed this agreement.\n\nSeller: __________    Buyer: __________\n\nWitnesses:\n1. __________    2. __________'
+  },
+  {
+    id: 'draft_fir_ur', language: 'ur',
+    instruction: 'مندرجہ ذیل تفصیلات کی بنیاد پر ایف آئی آر کی باقاعدہ درخواست تحریر کریں۔',
+    input: 'تھانہ: گلبرگ، لاہور۔ مدعی: علی رضا ولد محمد یوسف۔ شناختی کارڈ: 35202-1234567-1۔ پتہ: مکان 12، ماڈل ٹاؤن، لاہور۔ واقعہ: 5 اگست 2026، رات 9 بجے۔ مقام: مین مارکیٹ، ماڈل ٹاؤن، لاہور۔ ملزم: نامعلوم شخص، تقریباً 30 سالہ۔ جرم: موبائل فون چوری۔ گواہ: کاشف احمد، دکاندار۔',
+    output: 'بخدمت\nتھانہ صدر (ایس ایچ او)\nپولیس اسٹیشن گلبرگ، لاہور\n\nموضوع: ایف آئی آر کے اندراج کی درخواست\n\nمحترم جناب،\n\nمیں علی رضا ولد محمد یوسف، شناختی کارڈ نمبر 35202-1234567-1، ساکن مکان 12، ماڈل ٹاؤن، لاہور، درج ذیل واقعہ کی اطلاع دینا چاہتا ہوں۔\n\nبتاریخ 5 اگست 2026 بروز بدھ رات تقریباً 9 بجے مین مارکیٹ، ماڈل ٹاؤن، لاہور میں ایک نامعلوم شخص، جس کی عمر تقریباً 30 سال ہے، نے میرے ہاتھ سے میرا موبائل فون چھین لیا اور بس اسٹاپ کی جانب فرار ہو گیا۔ یہ واقعہ مارکیٹ کے دکاندار کاشف احمد نے اپنی آنکھوں سے دیکھا۔\n\nیہ جرم تعزیرات پاکستان 1860 کے تحت چوری کے زمرے میں آتا ہے۔ گزارش ہے کہ نامعلوم ملزم کے خلاف متعلقہ دفعات کے تحت ایف آئی آر درج کر کے مجھے ضابطہ فوجداری 1898 کی دفعہ 154 کے تحت اس کی مفت نقل فراہم کی جائے۔\n\nعاجز\nعلی رضا\nرابطہ نمبر: [آپ کا فون نمبر]'
+  },
+  {
+    id: 'draft_rental_ur', language: 'ur',
+    instruction: 'مندرجہ ذیل تفصیلات کی بنیاد پر کرایہ نامہ (رینٹل معاہدہ) تحریر کریں۔',
+    input: 'مالک مکان: عمران شیخ۔ کرائے دار: بلال احمد۔ جائیداد: فلیٹ 5-بی، جوہر ٹاؤن، لاہور۔ ماہانہ کرایہ: 40,000 روپے۔ سیکیورٹی: 80,000 روپے۔ مدت: 11 ماہ۔ گواہ: طارق محمود اور عثمان علی۔',
+    output: 'کرایہ نامہ\n\nیہ کرایہ نامہ بتاریخ [تاریخ] بروز [دن] لاہور میں درج ذیل فریقین کے درمیان طے پایا:\n\n1. جناب عمران شیخ ولد [والد کا نام]، ساکن [پتہ] (مالک مکان)؛\n2. جناب بلال احمد ولد [والد کا نام]، ساکن [پتہ] (کرائے دار)۔\n\nچونکہ مالک مکان فلیٹ 5-بی، جوہر ٹاؤن، لاہور کا مالک ہے اور اس نے درج ذیل شرائط پر کرائے دار کو کرایہ پر دینے پر اتفاق کیا ہے:\n\n1. مدت: یہ کرایہ داری [تاریخ] سے شروع ہو کر 11 ماہ تک جاری رہے گی۔\n2. کرایہ: کرائے دار ہر ماہ کی 5 تاریخ تک 40,000 روپے ماہانہ کرایہ پیشگی ادا کرے گا۔\n3. سیکیورٹی: کرائے دار نے 80,000 روپے بطور ضمانتی رقم جمع کرائے ہیں جو مکان خالی کرنے پر جائز کٹوتیوں کے بعد واپس کیے جائیں گے۔\n4. استعمال: مکان صرف رہائشی مقاصد کے لیے استعمال ہوگا۔\n5. بل: کرایہ داری کی مدت کے تمام یوٹیلیٹی بل کرائے دار ادا کرے گا۔\n6. تنسیخ: کوئی بھی فریق ایک ماہ کے تحریری نوٹس پر معاہدہ ختم کر سکتا ہے۔\n7. تنازعات: تنازعات صوبائی کرایہ داری قانون اور لاہور کی مجاز عدالت کے دائرہ اختیار میں ہوں گے۔\n\nگواہان کی موجودگی میں دونوں فریقین نے دستخط کیے۔\n\nمالک مکان: __________    کرائے دار: __________\n\nگواہ:\n1. طارق محمود، شناختی کارڈ [نمبر]\n2. عثمان علی، شناختی کارڈ [نمبر]'
+  },
+  {
+    id: 'draft_resignation_ur', language: 'ur',
+    instruction: 'مندرجہ ذیل تفصیلات کی بنیاد پر استعفیٰ کا خط تحریر کریں۔',
+    input: 'نام: عائشہ صدیقی۔ ملازم آئی ڈی: 4051۔ عہدہ: اسسٹنٹ منیجر، سیلز۔ منیجر: جناب فہد رضا۔ وجہ: اعلیٰ تعلیم۔ آخری دن: 30 ستمبر 2026۔',
+    output: 'بخدمت\nشعبہ انسانی وسائل\n[کمپنی کا نام]\n\nموضوع: استعفیٰ\n\nمحترم جناب،\n\nمیں عائشہ صدیقی، ملازم آئی ڈی 4051، عہدہ اسسٹنٹ منیجر، سیلز، اپنے عہدے سے 30 ستمبر 2026 سے استعفیٰ پیش کرتی ہوں، جو میرے ملازمت کے معاہدے کے مطابق ہے۔\n\nمیں اعلیٰ تعلیم کے سلسلے میں استعفیٰ دے رہی ہوں۔ کمپنی میں قیام کے دوران ملنے والے مواقع اور اعتماد پر میں شکر گزار ہوں۔\n\nدرخواست ہے کہ میرے تمام واجبات اور حتمی تصفیہ کی کارروائی مکمل کی جائے اور تجربہ سرٹیفکیٹ جاری کیا جائے۔\n\nمیں اپنے آخری دن تک اپنی ذمہ داریوں کی مکمل منتقلی کے لیے حاضر رہوں گی۔\n\nوالسلام،\nعائشہ صدیقی\nاسسٹنٹ منیجر، سیلز\n[تاریخ]'
+  },
+  {
+    id: 'draft_fir_rom', language: 'roman_ur',
+    instruction: 'Neche di gayi details ki buniyad par FIR ki baqaida darkhwast likhein.',
+    input: 'Thana: Gulberg, Lahore. Muddai: Ali Raza walid Muhammad Yousaf. CNIC: 35202-1234567-1. Pata: Makan 12, Model Town, Lahore. Waqia: 5 August 2026, raat 9 baje. Maqam: Main Market, Model Town, Lahore. Mulzim: Namaloom shakhs, taqreeban 30 saal. Jurm: Mobile phone chori. Gawah: Kashif Ahmed, dukandar.',
+    output: 'Bakhidmat\nThana Sadar (SHO)\nPolice Station Gulberg, Lahore\n\nMozu: FIR ke andaraj ki darkhwast\n\nMohtaram Janab,\n\nMain Ali Raza walid Muhammad Yousaf, CNIC number 35202-1234567-1, sakin Makan 12, Model Town, Lahore, darj zail waqia ki ittila dena chahta hoon.\n\nBatarikh 5 August 2026 raat taqreeban 9 baje Main Market, Model Town, Lahore mein aik namaloom shakhs, jis ki umar taqreeban 30 saal hai, ne mere hath se mera mobile phone chheen liya aur bus stop ki taraf farar ho gaya. Yeh waqia market ke dukandar Kashif Ahmed ne apni aankhon se dekha.\n\nYeh jurm Pakistan Penal Code 1860 ke tehat chori ke zamray mein aata hai. Guzarish hai ke namaloom mulzim ke khilaf mutaliqa dafaat ke tehat FIR darj kar ke mujhe CrPC 1898 ke Section 154 ke tehat is ki muft copy faraham ki jaye.\n\nAajiz\nAli Raza\nRabta number: [aap ka phone number]'
+  },
+  {
+    id: 'draft_consumer_rom', language: 'roman_ur',
+    instruction: 'Neche di gayi details ki buniyad par consumer court ki shikayat likhein.',
+    input: 'Shikayat kunninda: Hina Malik. Seller: Bright Electronics, Lahore. Product: Washing machine, model BX-200. Khareedari ki tareekh: 20 July 2026. Naqs: Machine lagnay ke baad se pani nahi nikal rahi. Matlooba relief: Poori raqam wapas. Receipt: BE-8845.',
+    output: 'Bakhidmat\nHonourable District Consumer Court, Lahore\n\nShikayat number: [number]\n\nHina Malik dukhtar [walid ka naam], sakin [pata], Lahore .......... Shikayat Kunninda\n\nBa muqabla\n\nBright Electronics, [pata], Lahore .......... Jawab Deh\n\nPUNJAB CONSUMER PROTECTION ACT 2005 KE TEHAT SHIKAYAT\n\n1. Ke shikayat kunninda ne 20 July 2026 ko receipt number BE-8845 par respondent se washing machine, model BX-200 khareedi.\n2. Ke lagane ke baad se machine pani nahi nikal rahi, jo product mein naqs hai.\n3. Ke shikayat kunninda ne refund ya replacement ka mutalba kiya lekin respondent ne inkar kar diya.\n4. Ke respondent defective goods faraham karne ka zimmedar hai.\n\nMATLOOBA RELIEF\n\nShikayat kunninda guzarish karti hai ke yeh court respondent ko hukm de:\n(a) Product ki poori qeemat wapas kare;\n(b) Zehni aziyat ka munasib muawza ada kare;\n(c) Shikayat ke akhrajat bardasht kare.\n\nShikayat Kunninda\n[Tareekh]'
+  }
+];
+
+// ---------------------------------------------------------------------------
+// Missing-information handling: the model must ask for required details
+// instead of inventing them.
+// ---------------------------------------------------------------------------
+export const DOC_MISSING = [
+  {
+    id: 'missing_fir', language: 'en',
+    instruction: 'Draft a formal FIR application for me.',
+    input: 'My phone was stolen yesterday in Lahore. I want to report it.',
+    output: 'I can draft the FIR application, but I need the following missing details first: the police station where the report will be filed, your full name and father\'s name, your CNIC number, your residential address, the exact date and time of the incident, the exact location of the incident, a description of the suspect, the nature of the crime, and any witnesses. Please provide these details and I will prepare the draft.'
+  },
+  {
+    id: 'missing_rental', language: 'en',
+    instruction: 'Draft a rental agreement for my flat.',
+    input: 'I am renting out my flat in Karachi.',
+    output: 'I can draft the rental agreement, but I need the missing details first: the landlord\'s name, the tenant\'s name, the full property address, the monthly rent, the security deposit, the agreement period, and the names and CNIC numbers of two witnesses. Please share these details and I will prepare the agreement.'
+  },
+  {
+    id: 'missing_bail', language: 'ur',
+    instruction: 'میرے بھائی کے لیے ضمانت کی درخواست تحریر کریں۔',
+    input: 'میرے بھائی کو پولیس نے گرفتار کیا ہوا ہے۔',
+    output: 'میں ضمانت کی درخواست تحریر کر سکتا ہوں، لیکن پہلے درج ذیل معلومات درکار ہیں: ملزم کا پورا نام، ایف آئی آر یا کیس نمبر، متعلقہ تھانہ، مقدمے کی دفعات، وہ عدالت جہاں ضمانت کی درخواست دائر ہوگی، اور ضمانت کی وجوہات۔ یہ تفصیلات فراہم کریں تو میں درخواست تیار کر دوں گا۔'
+  },
+  {
+    id: 'missing_consumer', language: 'roman_ur',
+    instruction: 'Mere liye consumer court ki shikayat likhein.',
+    input: 'Maine aik shop se kharab phone khareeda tha.',
+    output: 'Main consumer court ki shikayat likh sakta hoon, lekin pehle yeh maloomat darkar hai: aap ka naam, seller ya company ka naam, product ki tafseel, khareedari ki tareekh, naqs ki tafseel, aap kya relief chahte hain (refund ya replacement), aur receipt ya invoice number. Yeh details faraham karein to main shikayat tayyar kar doon ga.'
+  }
+];

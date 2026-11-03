@@ -1,0 +1,191 @@
+[SECTION: GCUH_UG_ONLINE_REGISTRATION_AND_PROCESSING_FEE]
+Title: GCU Hyderabad undergraduate online registration and non-refundable processing fee (2026-27)
+Authority: Government College University Hyderabad (GCUH), Directorate/Office of Admissions
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Undergraduate Admission Policy 2026-27 (official university page)
+Source URL: https://gcuh.edu.pk/pages/undergraduate_policy.html
+
+Candidates applying for bachelor's degree programs at GC University Hyderabad for the academic year 2026-27 "may fill in online registration / admission form at (https://adm.gcuh.edu.pk)".
+"A valid CNIC, email address, mobile number with WhatsApp number are mandatory to complete the registration process."
+"Applicants are required to deposit Rs. 3,000/- (non-refundable) as registration/processing fee through a challan generated via the prescribed Allied Bank Limited Account No. 0010158949730040".
+Payment may be made "at any ABL branch across Pakistan or through the 1Bill option available in Mobile Banking Apps, Mobile Wallets, ATMs, etc." No other modes are listed on the page.
+Students are required to use the GCUH Campus Management System (CMS) for generating/downloading challan forms and uploading paid challans.
+Scope limit: this is GCU Hyderabad's own undergraduate process for the 2026-27 cycle. It is not the rule of any other Sindh university, and it does not state nationwide HEC requirements.
+Text read from the official policy page on 2026-10-16.
+
+[SECTION: GCUH_UG_MINIMUM_ELIGIBILITY_CRITERIA]
+Title: GCU Hyderabad minimum undergraduate eligibility criteria (morning / evening programs)
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Undergraduate Admission Policy 2026-27, "GENERAL ELIGIBILITY CRITERIA (MORNING / EVENING PROGRAMS)"
+Source URL: https://gcuh.edu.pk/pages/undergraduate_policy.html
+
+1. "Candidate must have passed HSC (Intermediate) in Pre-Medical, Pre-Engineering, General Science, Commerce, Humanities or equivalent examination."
+2. "Minimum 50% marks in HSC or equivalent examination."
+3. "Candidate must obtain at least 40% marks in the GCUH Pre-Entry Test."
+4. "Any other condition prescribed by GCUH for a specific subject/program."
+5. "Candidates who passed HSC Part-II or equivalent/O-Level & A-Level with at least 50% aggregate marks are eligible under Regular or Self Supporting Scheme (Self Finance) or Any other quota."
+6. "Admissions shall be strictly on merit and subject to availability of seats."
+7. "Candidates without Mathematics at Intermediate level must complete deficiency Mathematics courses (06 credit hours) for admission in IT, Computer Science, Data Science, and Artificial Intelligence programs."
+These figures are GCUH's published undergraduate minima for the 2026-27 policy document. Another university may set different minima; do not apply these numbers to any other institution.
+Text read from the official policy page on 2026-10-16.
+
+[SECTION: GCUH_UG_MERIT_WEIGHTAGE_FORMULA]
+Title: GCU Hyderabad undergraduate merit weightage — SSC 10%, HSC 40%, Pre-Entry Test 50%
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Undergraduate Admission Policy 2026-27, merit computation table
+Source URL: https://gcuh.edu.pk/pages/undergraduate_policy.html
+
+GCUH computes undergraduate merit from the Pre-Entry Test, SSC/Matriculation, HSC/Intermediate or equivalent examinations. The published weightage table is: SSC (Matriculation) 10%; HSC (Intermediate) 40%; Pre-Entry Test 50%.
+"A candidate must secure at least 40% marks in the Pre-Entry Test to qualify for consideration for admission."
+Consequence for a student: the Pre-Entry Test carries the largest single share of merit at GCUH, so a low matriculation score is not by itself disqualifying if the test and intermediate marks are strong.
+Weightage percentages are institution-specific and session-specific; verify the current prospectus before relying on them for a later cycle.
+Text read from the official policy page on 2026-10-16.
+
+[SECTION: GCUH_UG_RESERVED_QUOTAS_AND_APPLICATION_ROUTE]
+Title: GCU Hyderabad reserved quotas (Sports, Disability, Employees, Religious Minorities, Self-Finance, Armed Forces / Shuhada) and how each is applied for
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Undergraduate Admission Policy 2026-27
+Source URL: https://gcuh.edu.pk/pages/undergraduate_policy.html
+
+Reserved quota categories named in the policy: "Sports Quota, Disability Quota, GCUH Employees Quota, and Religious Minorities Quota".
+"any candidate wishing to apply under any reserved quota category ... shall be required to submit a separate physical application at the Admissions Desk, GC University Hyderabad (GCUH) along with the required supporting documents/proof for the respective quota category, such as a Disability Certificate, Sports Certificate, Employee Proof, or other relevant documents, as applicable. Admission under all reserved quota categories shall be strictly made on merit and subject to fulfillment of the prescribed eligibility criteria."
+Self-Finance: the candidate "shall submit a DD Demand Draft/Pay Order in favour of \"GOVERNMENT COLLEGE UNIVERSITY HYDERABAD ADMISSION FEES (UG)\" along with the separate application form at the Admissions Desk"; the page states "(DD will be return if not selected on merit)".
+Armed Forces / Shuhada Quota: "Seats under this quota may be allocated to eligible candidates nominated/recommended by the General Headquarters (GHQ)".
+Sports quota seats "will be filled on the basis of trials conducted for the candidates".
+"In case any seats remain vacant under any reserved quota, such seats shall be transferred" to the general pool per the policy's own clause.
+Practical point for a student: applying online is not sufficient for a quota seat — the separate physical application with quota proof at the Admissions Desk is required by the same policy document.
+Text read from the official policy page on 2026-10-16.
+
+[SECTION: GCUH_ADMISSION_CONFIRMATION_CHALLAN_IS_FINAL]
+Title: GCU Hyderabad PKR 500 confirmation challan — confirming an offered department is final, no later transfer
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Undergraduate Admission Policy 2026-27
+Source URL: https://gcuh.edu.pk/pages/undergraduate_policy.html
+
+"A candidate who is offered admission in a department/program other than his/her first preference may confirm admission in the offered department/program at any stage of the merit list by depositing the prescribed Confirmation Challan of PKR 500/- (Rupees Five Hundred only). Once a candidate confirms admission in a department/program, the confirmation shall be treated as final, and no change of department/program or transfer to another department/program shall be allowed at any later stage of the admission process."
+A student who wants a possible later department change must therefore not deposit the confirmation challan for a program accepted only as a fallback.
+Text read from the official policy page on 2026-10-16.
+
+[SECTION: GCUH_ADMISSION_CANCELLATION_AND_FEE_REFUND_ROUTE]
+Title: GCU Hyderabad admission cancellation application route and HEC Fee Refund Policy linkage
+Authority: Government College University Hyderabad (GCUH); refund quantified by the latest HEC Fee Refund Policy
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Undergraduate Admission Policy 2026-27, clauses (xvi) and General Information item 6
+Source URL: https://gcuh.edu.pk/pages/undergraduate_policy.html
+
+"For cancellation of admission, the candidate/student shall submit an application to the Director Admissions through the concerned Head of Department and Dean of the Faculty for further processing."
+"A candidate who secures admission by paying the prescribed fee against a seat and subsequently applies for cancellation of provisional admission shall be eligible for a fee refund in accordance with the latest HEC Fee Refund Policy."
+Different situation, different result — the same policy states: "An applicant who is already registered or admitted in any degree program at GC University Hyderabad shall be required to cancel their existing admission on or before the closing date of admissions for the current session. Failure to do so may result in the cancellation of the new application/admission, and any fee deposited shall not be refundable."
+So at GCUH: cancellation of a provisional admission after paying against a seat is refund-eligible under the HEC policy, while the fee on a new application cancelled for duplicate registration is expressly non-refundable. The route is always a written application through the Head of Department and the Dean of the Faculty to the Director Admissions — not a bank claim.
+The percentage slabs of the HEC Fee Refund Policy itself are recorded in the HEC corpus records, not here.
+Text read from the official policy page on 2026-10-16.
+
+[SECTION: GCUH_FEE_STRUCTURE_HEADS_2026_27]
+Title: GCU Hyderabad fee structure 2026-27 — the published fee heads and how the tables are split
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Fee Structure document (official university download)
+Source URL: https://gcuh.edu.pk/downloads/admissions/Fee-Structure-2026-27.pdf
+
+The published GCUH fee structure for bachelor's degree programs (Morning) is organised under these heads: Admission Fee; Marks Certificate Verification Fee; Enrollment Card Fee; Identity Card Fee; Sports Fee; Extra-Curricular Activities Fee; Project Visit Fee; University Development Fund; Library Development Fund; Laboratory / Computer / Lab Fee; Transport Fee; Tuition Fee; PERN Fee.
+Separate tables are published for the CS-group disciplines versus the general disciplines, and for Merit seats versus Self-Finance seats. A student comparing two challans must therefore match program group and seat category, not only the total.
+Verification status: the head names above were read from the text layer of the official PDF on 2026-10-16. The per-program four-year numeric totals in that PDF could not be confirmed by machine extraction because the column order drifted, so no amount is stated here. Read the amount on the challan generated in the GCUH CMS and match it against the PDF table for your own program group and seat category.
+Not published in this document: hostel charges and any fee concession rates.
+
+[SECTION: GCUH_ID_CARD_BONAFIDE_AND_LOST_CARD_FEES]
+Title: GCU Hyderabad duplicate Student ID card Rs 500 and Bonafide Certificate Rs 250, by challan
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Undergraduate Admission Policy 2026-27, clause (xiv)
+Source URL: https://gcuh.edu.pk/pages/undergraduate_policy.html
+
+"In case of loss of a Student ID Card, the student shall be required to deposit a fee of Rs. 500/- through the prescribed challan form for issuance of a duplicate Student ID Card. Similarly, for issuance of a Bonafide Certificate, a fee of Rs. 250/- shall be deposited through the prescribed challan form."
+Both are paid on a challan form; the same policy also requires that "All students are required to wear and visibly display their University Student Identity Card while on campus."
+Text read from the official policy page on 2026-10-16.
+
+[SECTION: GCUH_ATTENDANCE_REQUIRED_TO_SIT_EXAMINATIONS]
+Title: GCU Hyderabad 75% attendance requirement to be eligible for examinations
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Undergraduate Admission Policy 2026-27, General Information item 4
+Source URL: https://gcuh.edu.pk/pages/undergraduate_policy.html
+
+"All students of GC University Hyderabad must maintain a minimum of 75% attendance to be eligible to appear in examinations."
+GCUH "operates only two teaching sessions, namely the Morning Session (8:30 AM onwards) and the Evening Session (3:00 PM onwards)".
+This is the only examination-related eligibility rule published on the undergraduate policy page. Whether attendance is computed per course or per semester, and what remedy exists for a shortfall, is not stated on that page.
+Text read from the official policy page on 2026-10-16.
+
+[SECTION: GCUH_FORGED_DOCUMENT_CONSEQUENCES]
+Title: GCU Hyderabad consequences of forged documents or false information — cancellation, three-year debarment, forfeiture
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Undergraduate Admission Policy 2026-27, clause (xiii)
+Source URL: https://gcuh.edu.pk/pages/undergraduate_policy.html
+
+"GCUH has zero tolerance for submission of fraudulent or forged documents or for misrepresentation of any kind by applicants. In case of provision of wrong or false information, the applicant shall be held responsible, and the University reserves the right to cancel the degree of such a candidate, at any stage, who succeeds in getting admission by submitting forged / false document(s) or making false entries or take any other action as deemed appropriate. Additionally, they may also be debarred for a period of three years for future admission and all payments made to the University shall be forfeited in favor of the University."
+Note the reach: the power to cancel is expressed as exercisable "at any stage", i.e. after graduation as well as at admission.
+Text read from the official policy page on 2026-10-16.
+
+[SECTION: GCUH_INQUIRY_COMMITTEE_ANTI_HARASSMENT_NOTIFICATION]
+Title: GCU Hyderabad Inquiry Committee constituted under Section 14(3) of the GCUH Act 2018 and the HEC anti-harassment policy
+Authority: Vice-Chancellor, Government College University Hyderabad, notified by the Registrar
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Notification No. GCUH/2024-25/217, dated 03-09-2024 (published as an image on the university's HEC policy downloads)
+Source URL: https://gcuh.edu.pk/downloads/hec/Notification-REG-GCUH202425-217.jpg
+
+The notification states that "In exercise of powers vested in her vide Section 14(3) of Government College University Hyderabad Act 2018 and in accordance with the terms of subsection 4.2 of the HEC's Policy on Protection Against Sexual Harassment in Higher Education Institutions, the Vice-Chancellor ... has been pleased to constitute the Inquiry Committee to investigate and adjudicate any allegations of prohibited conduct".
+Committee as published: Chairperson Prof. Dr. Altaf Ahmed Simair; Members Dr. Abdul Razzaque Larik and Dr. Sheeba Memon. Signed Dr. Ghulam Muhammad Bhutto, Registrar.
+Verification status: the notification is published as a scanned image, not as text. The reference number, date, statutory basis and the named members were read from that published image on 2026-10-16; membership may have changed since 03-09-2024 and must be re-checked against the current notification before a complaint is addressed to a named person.
+GCUH does not publish its own step-by-step complaint filing procedure; the general HEC policy procedure is recorded in the HEC corpus records and applies to all chartered institutions.
+
+[SECTION: GCUH_PHD_ADMISSION_DATES_AND_TEST_EXEMPTION]
+Title: GCU Hyderabad PhD admission — published dates, processing fee, prerequisites and GRE exemption
+Authority: Government College University Hyderabad (GCUH), Office of Admissions
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH PhD Programs admission page
+Source URL: https://gcuh.edu.pk/pages/admissions_phd.html
+
+Prerequisites as published: "MS/MPHIL degree in the relevant discipline or equivalent qualification from any HEC recognized university/institution"; "Minimum CGPA of 3.00 on a scale of 4.00 in the semester system"; "Admission test by GCUH (Subjective) OR A valid GAT-General/Subjective test as per HEC criteria"; and an interview.
+Application route: "register on the university's portal https://adm.gcuh.edu.pk/", "Sign in to download the challan for registration", and "Submit the online application along with all the required documents through the portal."
+"The admission processing fee is Rs. 4000/ -(non-refundable)".
+Important Dates as published for this cycle: "Announcement date: 07-09-2026"; "Last date of application: 27-09-2026"; test and interview dates "To be announced later"; "Commencement of classes: January 2027"; "Time of classes: After 1:00 PM".
+"Those candidates who have already passed the GRE subjective test will be exempted from the GCUH admission test."
+Dates are cycle-specific: they are the dates on the page as read on 2026-10-16 and must be re-checked for any later intake.
+
+[SECTION: GCUH_PUBLISHED_GAP_EXAMINATION_RULES]
+Title: GCU Hyderabad — what the university does NOT publish about examinations (recorded evidence gap)
+Authority: Government College University Hyderabad (GCUH), Controller of Examinations
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH examinations page and results URL, checked 2026-10-16
+Source URL: https://gcuh.edu.pk/pages/examinations.html
+
+The Controller of Examinations page lists the office holder ("Mr. Muhammad Hanif Brohi, Designation: Controller of Examinations") and two assistant staff; it publishes no rule text.
+As verified on 2026-10-16, https://gcuh.edu.pk/pages/results returns HTTP 404, and no published GCUH document states the procedure or timeline for result declaration, re-checking, re-evaluation, supplementary examination or improvement exams at GCUH.
+How to answer a student: state that GCUH has not published these rules, name the Controller of Examinations as the office to apply to, and give the general HEC position only as the national layer. Do not supply re-checking fees, forms or deadlines for GCUH — none is verifiable from the university's own pages.
+The only examination-related GCUH rule that is published is the 75% attendance requirement recorded in these files.
+
+[SECTION: GCUH_PUBLISHED_GAP_GRIEVANCE_PROCEDURE]
+Title: GCU Hyderabad student grievance handling — remit published, procedure not published (recorded evidence gap)
+Authority: Directorate of Students Affairs, Government College University Hyderabad
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Directorate of Students Affairs page
+Source URL: https://gcuh.edu.pk/pages/student_affairs.html
+
+The published remit is: "Promotion and enforcement of student discipline based on established rules, principles of fairness, and due process." and "Receiving, processing, and addressing student grievances through established mechanisms, ensuring confidentiality and impartiality."
+As verified on 2026-10-16, GCUH publishes no grievance form, no addressed-to designation for a grievance, no acknowledgement or decision timeline, and no internal appeal ladder. No disciplinary procedure (show-cause, suspension, rustication) is published on that page either.
+How to answer a student: the university owes "established rules, principles of fairness, and due process" by its own published wording, so a written complaint to the Director of Students Affairs, kept with proof of receipt, is the documented first step; the general national layers (HEC policy, provincial Ombudsman, High Court writ jurisdiction for a quasi-judicial body) must be labelled as national, not as GCUH's own rules.
+
+[SECTION: GCUH_PUBLISHED_GAP_FINANCIAL_AID]
+Title: GCU Hyderabad financial aid office and the absence of published university scholarship or concession rules (recorded evidence gap)
+Authority: Directorate of Financial Aid, Government College University Hyderabad
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Directorate of Financial Aid page
+Source URL: https://gcuh.edu.pk/pages/finaid.html
+
+The page publishes staff only: "Mr. Hakim Ali, Designation: Director Financial Aid, Phone: +92 300 9230621".
+As verified on 2026-10-16, GCUH publishes no need-based scholarship rule, no fee-concession slab, no quota of aid seats and no application form on its own pages. Links on the university homepage to SEEF (seef.sindh.gov.pk), the Sindh Benazir Bhusha Education Support / Rural Development type schemes (bbshrrdb.pk) and the PM laptop scheme are provincial or federal programmes, not GCUH rules, and their eligibility conditions are not stated by GCUH.
+How to answer a student: name the Directorate of Financial Aid as the office to approach at GCUH, then route the substantive scheme to its own source (HEC need-based scholarships, Sindh Endowment Education Fund) and label which province or programme the conditions belong to. Do not present a provincial scheme's conditions as GCUH's rules.

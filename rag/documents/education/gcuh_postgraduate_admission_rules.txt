@@ -1,0 +1,85 @@
+[SECTION: GCUH_PG_2027_MSPHD_PROGRAMS_AND_ELIGIBILITY]
+Title: GCU Hyderabad 2027 postgraduate admissions — MS/MPhil/MBA programmes and eligibility
+Authority: Government College University Hyderabad (GCUH), Directorate of Postgraduate Studies
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH official admissions page "2027 - Admissions MS/M.PHIL/MBA"
+Source URL: https://gcuh.edu.pk/pages/admissions_mphil.html
+Version: admission cycle announced as 2027 (page banner "2027 - Admissions MS/M.PHIL/MBA"; the fee sheet it links is "Fees Structure for Batch 2027")
+Legal status: Published admission announcement for the 2027 postgraduate cycle; dates on the page are the ones printed there and the window may already have closed — re-check before relying on it
+Retrieved: 2026-10-18
+Extraction note: text extracted from the official page with the site navigation removed; wording is verbatim.
+
+"Government College University, Hyderabad, is pleased to announce MS/MPhil/MBA admissions in the following programs: Mathematics, Chemistry, Information Technology, Education, English (Linguistics), Zoology, MBA Business Stream (1.5 years), Non-Business Stream (2.5 years), Islamic Studies."
+For both MBA streams the page prints: "Eligibility Criteria (16 years education is compulsory for both streams)" and "2.5 CGPA is required for 16 years education on the scale of 4 CGPA".
+"MS/MPhil/MBA Programs Pre-requisite": "Masters/ 04 years BS degree in the relevant discipline or equivalent qualification from any HEC recognized university/institution."; "Minimum CGPA of 2.5 on a scale of 4.00 in the semester system."; "50% marks in the annual system."; "Admission test by GCUH OR A valid GAT-General test as per HEC criteria."; "Interview".
+
+[SECTION: GCUH_PG_2027_MSPHD_APPLICATION_AND_DATES]
+Title: GCU Hyderabad 2027 MS/MPhil/MBA — how to apply, Rs. 4,000 non-refundable processing fee and the published dates
+Authority: Government College University Hyderabad (GCUH), Directorate of Postgraduate Studies
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH official admissions page "2027 - Admissions MS/M.PHIL/MBA"
+Source URL: https://gcuh.edu.pk/pages/admissions_mphil.html
+Version: 2027 postgraduate cycle
+Legal status: Published instructions and dates for the 2027 cycle; the page itself prints "To be announced later" against two steps, so the schedule is not complete
+Retrieved: 2026-10-18
+
+Instructions as published: "To apply for any 18 Years program/ discipline admission, students are advised to register on the university's portal https://adm.gcuh.edu.pk"; "Sign in to download the challan for registration."; "The admission processing fee is Rs. 4000/ -(non-refundable)"; "Submit the online application along with all the required documents through the portal."
+Important Dates as published: "Last date of application: 27-09-2026"; "GAT (General) Test by GCUH: To be announced later"; "Departmental test and interview: To be announced later"; "Commencement of classes: January 2027"; "Class timings: After 1:00 PM".
+Exemption as published: "Those candidates who have already passed the GRE General will be exempted from the GCUH admission test."
+
+[SECTION: GCUH_PG_2027_MSPHD_ADMISSION_TEST_STANDARD]
+Title: GCU Hyderabad — MS/MPhil/MBA admission test standard: 16 years of schooling, 50% passing score, 100 MCQs in 70:30 ratio
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH admissions page, "MS/MPhil/MBA Admission Test" block (the block reproduces the HEC minimum-standard wording)
+Source URL: https://gcuh.edu.pk/pages/admissions_mphil.html
+Version: 2027 postgraduate cycle page text
+Legal status: Published standard; the national-origin wording is HEC's, applied by GCUH on this page
+Retrieved: 2026-10-18
+
+"Admission to an MS/MPhil/MBA/Equivalent Degree Programs — i. Basic Academic Qualification 1: Sixteen years of schooling or 4 year education (124 credit hours) after HSSC/F.A./F.Sc/Grade 12 or Equivalent shall be required for admission in the MPhil/MS/MBA/Equivalent program."
+"ii. Admission Test: University is required to: a) Enter a 3rd party arrangement under the University rules with any testing bodies recognized by HEC for conducting GRE/GAT/HAT General or equivalent as an eligibility condition for admission to MS/MPhil/MBA/Equivalent programs, with the passing score of 50%. OR b) Conduct the test equivalent to GRE/GAT/HAT General developed at the University, with the passing score of 50%."
+"Note: Question paper will be objective, comprising 100 MCQS Admission Test Paper will be comprised of 70:30 ratio (70 questions will be from the relevant subject and 30 questions will be from general Mathematics and English)".
+Attribution: this block is published on GCUH's own page but states the requirement in HEC's general-standards wording; the institution-specific parts are the programmes, the portal, the fee and the dates recorded in the other sections of this document.
+
+[SECTION: GCUH_PHD_2027_ELIGIBILITY_AND_DATES]
+Title: GCU Hyderabad 2027 PhD admissions — programmes, prerequisite of CGPA 3.00, test options and dates
+Authority: Government College University Hyderabad (GCUH), Directorate of Postgraduate Studies
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH official admissions page "2027 - Admissions PhD"
+Source URL: https://gcuh.edu.pk/pages/admissions_phd.html
+Version: 2027 PhD cycle
+Legal status: Published announcement; two steps are printed as "To be announced later", and re-check the window before relying on the dates
+Retrieved: 2026-10-18
+
+"Government College University, Hyderabad, is pleased to announce PhD admissions in the following programs: Education, Mathematics, Islamic Studies."
+"PhD Programs Pre-requisite": "MS/MPHIL degree in the relevant discipline or equivalent qualification from any HEC recognized university/institution."; "Minimum CGPA of 3.00 on a scale of 4.00 in the semester system."; "Admission test by GCUH (Subjective) OR A valid GAT-General/Subjective test as per HEC criteria."; "Interview".
+Instructions: register at https://adm.gcuh.edu.pk/ , "Sign in to download the challan for registration.", "The admission processing fee is Rs. 4000/ -(non-refundable)", submit online with all required documents.
+Important Dates as printed: "Admissions Announcement date: 07-09-2026"; "Last date of application: 27-09-2026"; "Test by GCUH (Subjective): To be announced later"; "Departmental test and interview date: To be announced later"; "Commencement of classes: January 2027"; "Time of classes: After 1:00 PM".
+Exemption: "Those candidates who have already passed the GRE subjective test will be exempted from the GCUH admission test."
+
+[SECTION: GCUH_PHD_2027_TEST_STANDARD]
+Title: GCU Hyderabad PhD admission test — 60% under a recognised testing body, 70% for a university-developed test, optional subject test
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH admissions page, "PHD Admission Test" block
+Source URL: https://gcuh.edu.pk/pages/admissions_phd.html
+Version: 2027 PhD cycle page text
+Legal status: Published standard
+Retrieved: 2026-10-18
+
+"a) University is required to: i. Enter a 3rd party arrangement under the University rules with any testing bodies recognized by HEC for conducting GRE/GAT/HAT General or equivalent as an eligibility condition for admission to PhD programs, with the passing score of 60%. OR ii. Conduct the test equivalent to GRE/GAT/HAT General developed at the University, with the passing score of 70%."
+"b) In addition to clause 3.4(a), the university may conduct a subject test for admission in PhD programs, if required."
+"Note: Question paper will be objective, comprising 100 MCQS — Admission Test Paper will be comprised of 70:30 ratio (70 questions will be from the relevant subject and 30 questions will be from general Mathematics and English)".
+
+[SECTION: GCUH_PG_FEES_NOT_VERIFIED]
+Title: GCU Hyderabad postgraduate fees — source not readable, no amounts recorded
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH postgraduate fee sheets linked from the 2027 admissions pages
+Source URL: https://www.gcuh.edu.pk/downloads/admissions/Fees%20Structure%20for%20batch%202027%20(MBA%20MS%20IT%20Mphil%20PhD).pdf
+Version: batch 2027 fee sheet (file name as published)
+Legal status: Source-recovery gap
+Retrieved: 2026-10-18
+
+The 2027 postgraduate pages link a single fee sheet ("Fees Structure for Batch 2027 (MBA MSIT MPhil PhD)"). That PDF was downloaded in full (18,493,723 bytes) but its text layer returned only 364 bytes: it is an image-only document for this repository's tooling, and no PDF rasterizer or cached OCR data is available here, so its amounts could not be read. The only postgraduate amount that IS verified from GCUH's own page text is the non-refundable admission processing fee of Rs. 4,000/-. Semester-wise postgraduate fee heads, instalment counts and any GCUH-specific refund practice are NOT recorded, and no national or other-university figure may be substituted for them.

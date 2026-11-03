@@ -1,0 +1,317 @@
+{
+  "generatedAt": "2026-10-10T15:48:12.464Z",
+  "federal_laws": [
+    {
+      "id": "constitution_1973",
+      "title": "Constitution of the Islamic Republic of Pakistan 1973",
+      "year": 1973,
+      "status": "CURRENT",
+      "chunks": 35,
+      "provisions": 35
+    },
+    {
+      "id": "ppc_1860",
+      "title": "Pakistan Penal Code 1860 (Act XLV of 1860)",
+      "year": 1860,
+      "status": "CURRENT",
+      "chunks": 73,
+      "provisions": 73
+    },
+    {
+      "id": "crpc_1898",
+      "title": "Code of Criminal Procedure 1898 (Act V of 1898)",
+      "year": 1898,
+      "status": "CURRENT",
+      "chunks": 47,
+      "provisions": 47
+    },
+    {
+      "id": "cpc_1908",
+      "title": "Code of Civil Procedure 1908 (Act V of 1908)",
+      "year": 1908,
+      "status": "CURRENT",
+      "chunks": 29,
+      "provisions": 29
+    },
+    {
+      "id": "peca_2016",
+      "title": "Prevention of Electronic Crimes Act 2016",
+      "year": 2016,
+      "status": "CURRENT",
+      "chunks": 32,
+      "provisions": 32
+    },
+    {
+      "id": "contract_act_1872",
+      "title": "Contract Act 1872 (Act IX of 1872)",
+      "year": 1872,
+      "status": "CURRENT",
+      "chunks": 74,
+      "provisions": 74
+    },
+    {
+      "id": "family_laws_1961",
+      "title": "Muslim Family Laws Ordinance 1961",
+      "year": 1961,
+      "status": "CURRENT",
+      "chunks": 19,
+      "provisions": 19
+    },
+    {
+      "id": "transfer_of_property_1882",
+      "title": "Transfer of Property Act 1882",
+      "year": 1882,
+      "status": "CURRENT",
+      "chunks": 9,
+      "provisions": 9
+    },
+    {
+      "id": "qanun_e_shahadat_1984",
+      "title": "Qanun-e-Shahadat Order 1984",
+      "year": 1984,
+      "status": "CURRENT",
+      "chunks": 33,
+      "provisions": 33
+    },
+    {
+      "id": "limitation_act_1908",
+      "title": "Limitation Act 1908 (Act IX of 1908)",
+      "year": 1908,
+      "status": "CURRENT",
+      "chunks": 28,
+      "provisions": 28
+    },
+    {
+      "id": "specific_relief_act_1877",
+      "title": "Specific Relief Act 1877 (Act I of 1877)",
+      "year": 1877,
+      "status": "CURRENT",
+      "chunks": 15,
+      "provisions": 15
+    },
+    {
+      "id": "sales_of_goods_act_1930",
+      "title": "Sale of Goods Act 1930 (Act III of 1930)",
+      "year": 1930,
+      "status": "CURRENT",
+      "chunks": 15,
+      "provisions": 15
+    },
+    {
+      "id": "nab_ordinance_1999",
+      "title": "National Accountability Bureau Ordinance 1999",
+      "year": 1999,
+      "status": "CURRENT",
+      "chunks": 22,
+      "provisions": 22
+    },
+    {
+      "id": "ata_1997",
+      "title": "Anti-Terrorism Act 1997 (Act XXVII of 1997)",
+      "year": 1997,
+      "status": "CURRENT",
+      "chunks": 19,
+      "provisions": 19
+    },
+    {
+      "id": "companies_act_2017",
+      "title": "Companies Act 2017 (Act XIX of 2017)",
+      "year": 2017,
+      "status": "CURRENT",
+      "chunks": 27,
+      "provisions": 27
+    },
+    {
+      "id": "banking_companies_ordinance_1962",
+      "title": "Banking Companies Ordinance 1962",
+      "year": 1962,
+      "status": "CURRENT",
+      "chunks": 10,
+      "provisions": 10
+    },
+    {
+      "id": "negotiable_instruments_act_1881",
+      "title": "Negotiable Instruments Act 1881 (PPC 489-F related)",
+      "year": 1881,
+      "status": "CURRENT",
+      "chunks": 10,
+      "provisions": 10
+    },
+    {
+      "id": "income_tax_ordinance_2001",
+      "title": "Income Tax Ordinance 2001",
+      "year": 2001,
+      "status": "CURRENT",
+      "chunks": 10,
+      "provisions": 10
+    },
+    {
+      "id": "sales_tax_act_1990",
+      "title": "Sales Tax Act 1990",
+      "year": 1990,
+      "status": "CURRENT",
+      "chunks": 6,
+      "provisions": 6
+    },
+    {
+      "id": "customs_act_1969",
+      "title": "Customs Act 1969",
+      "year": 1969,
+      "status": "CURRENT",
+      "chunks": 7,
+      "provisions": 7
+    },
+    {
+      "id": "motor_vehicle_ordinance_1965",
+      "title": "Motor Vehicle Ordinance 1965",
+      "year": 1965,
+      "status": "CURRENT",
+      "chunks": 8,
+      "provisions": 8
+    },
+    {
+      "id": "arbitration_act_1940",
+      "title": "Arbitration Act 1940 (Act X of 1940)",
+      "year": 1940,
+      "status": "CURRENT",
+      "chunks": 11,
+      "provisions": 11
+    },
+    {
+      "id": "competition_act_2010",
+      "title": "Competition Act 2010 (Act XIX of 2010)",
+      "year": 2010,
+      "status": "CURRENT",
+      "chunks": 7,
+      "provisions": 7
+    },
+    {
+      "id": "police_order_2002",
+      "title": "Police Order 2002",
+      "year": 2002,
+      "status": "CURRENT",
+      "chunks": 13,
+      "provisions": 13
+    },
+    {
+      "id": "women_harassment_act_2010",
+      "title": "Protection against Harassment of Women at Workplace Act 2010",
+      "year": 2010,
+      "status": "CURRENT",
+      "chunks": 5,
+      "provisions": 5
+    },
+    {
+      "id": "acid_crime_act_2010",
+      "title": "Acid Control and Acid Crime Prevention Act 2010",
+      "year": 2010,
+      "status": "CURRENT",
+      "chunks": 3,
+      "provisions": 3
+    },
+    {
+      "id": "juvenile_justice_2000",
+      "title": "Juvenile Justice System Ordinance 2000",
+      "year": 2000,
+      "status": "CURRENT",
+      "chunks": 18,
+      "provisions": 18
+    },
+    {
+      "id": "pak_epa_1997",
+      "title": "Pakistan Environmental Protection Act 1997",
+      "year": 1997,
+      "status": "CURRENT",
+      "chunks": 17,
+      "provisions": 17
+    },
+    {
+      "id": "elections_act_2017",
+      "title": "Elections Act 2017 (Act XXXIII of 2017)",
+      "year": 2017,
+      "status": "CURRENT",
+      "chunks": 11,
+      "provisions": 11
+    },
+    {
+      "id": "trademarks_ordinance_2001",
+      "title": "Trademarks Ordinance 2001",
+      "year": 2001,
+      "status": "CURRENT",
+      "chunks": 4,
+      "provisions": 4
+    },
+    {
+      "id": "patents_ordinance_2000",
+      "title": "Patents Ordinance 2000",
+      "year": 2000,
+      "status": "CURRENT",
+      "chunks": 4,
+      "provisions": 4
+    },
+    {
+      "id": "copyright_ordinance_1962",
+      "title": "Copyright Ordinance 1962",
+      "year": 1962,
+      "status": "CURRENT",
+      "chunks": 4,
+      "provisions": 4
+    },
+    {
+      "id": "prisons_act_1894",
+      "title": "Prisons Act 1894",
+      "year": 1894,
+      "status": "CURRENT",
+      "chunks": 8,
+      "provisions": 8
+    },
+    {
+      "id": "passport_act_1974",
+      "title": "Pakistan Passport Act 1974",
+      "year": 1974,
+      "status": "CURRENT",
+      "chunks": 4,
+      "provisions": 4
+    }
+  ],
+  "provincial_laws": {
+    "punjab": [
+      "Punjab Land Revenue Act 1967",
+      "Punjab Consumer Protection Act 2005",
+      "Punjab Rented Premises Act 2009",
+      "Punjab Local Government Act 2022",
+      "Punjab Protection of Women against Violence Act 2016"
+    ],
+    "sindh": [
+      "Sindh Consumer Protection Act 2014",
+      "Sindh Local Government Act 2013",
+      "Sindh Domestic Violence Act 2013"
+    ],
+    "khyber_pakhtunkhwa": [
+      "KP Consumer Protection Act 2013",
+      "KP Local Government Act 2013",
+      "KP Domestic Violence Act 2021",
+      "KP Child Protection and Welfare Act 2010"
+    ],
+    "balochistan": [
+      "Balochistan Consumer Protection Act",
+      "Balochistan Local Government Act"
+    ],
+    "islamabad": [
+      "ICT Rent Restriction Ordinance 2001",
+      "ICT Local Government Act 2015",
+      "CDA Ordinance 1960"
+    ],
+    "ajk": [
+      "AJK Constitution 1974",
+      "AJK Penal Code",
+      "AJK CrPC"
+    ],
+    "gilgit_baltistan": [
+      "GB Governance Order 2018",
+      "GB Local Government Act"
+    ]
+  },
+  "total_federal_provisions": 637,
+  "total_provincial_act_records": 22
+}

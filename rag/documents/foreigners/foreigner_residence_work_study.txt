@@ -1,0 +1,110 @@
+# Foreigners in Pakistan — Residence, Registration, Work, Study, Family and Emergencies
+# Depth expansion over foreigner_entry_stay_registration.txt and pakistan_visa_categories.txt.
+# Every record distinguishes PAKISTAN LAW (the Foreigners Act 1946, the Pakistan Online Visa
+# System, citizenship law) from the FOREIGNER'S HOME-COUNTRY LAW (consular protection, own
+# embassy services) — the two are never conflated below.
+
+[SECTION: FOREIGN_RESIDENCE_FRAMEWORK]
+PAKISTAN LAW: Foreigners Act, 1946 (as applicable) and the Ministry of Interior's visa and
+residence framework. COVERAGE: PARTIAL.
+KEY FRAMEWORK (summary):
+- Entry: foreigners enter on a valid visa (Pakistan Online Visa System) or visa-free
+  arrangements; the visa states duration of stay and number of entries.
+- Registration: foreigners staying beyond the visa-free period may be required to register
+  with the police under the Foreigners Act, 1946 framework (Foreigners Registration
+  requirement) — check current MoI practice.
+- Residence permit: long-stay foreigners (work/study/business) obtain a Residence Permit
+  from the Ministry of Interior; the permit evidences lawful residence and is renewable.
+- Pakistan Origin Card (POC): available to foreign nationals of Pakistani origin (including
+  former citizens) for visa-free entry and indefinite stay, subject to the POC Rules.
+SOURCE: Foreigners Act, 1946; MoI visa/residence practice. VERIFICATION: metadata-verified
+(exact current registration and permit procedures change; check MoI's official pages).
+
+[SECTION: FOREIGN_VISA_EXTENSION]
+PAKISTAN LAW: visa extension and re-entry. COVERAGE: PARTIAL.
+KEY FRAMEWORK (summary):
+- Extensions: visa extensions are applied to the Ministry of Interior (visa extension
+  process) before expiry; overstay without extension is an immigration offence (fine,
+  detention and/or deportation exposure).
+- Exit/re-entry: a single-entry visa does not permit re-entry; multi-entry visas state the
+  re-entry conditions; departure before expiry and re-entry on a fresh visa is the standard
+  route; exit permits may be required in specific cases (e.g., where an exit permit is
+  endorsed).
+- Documentation to carry: passport with valid visa/stamp, residence permit where issued,
+  and proof of registration where required.
+SOURCE: MoI visa rules. VERIFICATION: metadata-verified.
+
+[SECTION: FOREIGN_WORK_STUDY_BUSINESS]
+PAKISTAN LAW: work, study and business categories under the Online Visa System. COVERAGE: PARTIAL.
+KEY FRAMEWORK (summary):
+- Work: a work visa requires a sponsoring Pakistani employer/invitation letter and sectoral
+  clearance where required (e.g., Board of Investment recommendation for employment);
+  the visa is tied to the employer and period of employment.
+- Business: business visas for investors/entrepreneurs with the prescribed invitation and
+  documentation; long-stay business activity may require the residence permit route.
+- Study: study visas for students enrolled at HEC-recognized institutions, with admission
+  letter and, where required, No-Objection Certificate; age/eligibility per the current
+  rules.
+- Each category has its own document list in the Online Visa System — always use the
+  official checklist for the category.
+SOURCE: Pakistan Online Visa System categories. VERIFICATION: metadata-verified (category
+checklists change; the visa portal is the authoritative source).
+
+[SECTION: FOREIGN_POLICE_IMMIGRATION]
+PAKISTAN LAW: interaction with police and immigration authorities. COVERAGE: PARTIAL.
+KEY FRAMEWORK (summary):
+- Routine checks: foreigners may be asked to show passport, visa and registration documents
+  by police/immigration officials; carrying the passport or attested copies with the visa
+  page is advisable.
+- Offences: overstay, breach of visa conditions (unauthorized work on a study visa etc.) and
+  entry without valid documents are immigration offences; remedies include fine,
+  imprisonment for serious cases, and deportation.
+- Arrest/detention: a detained foreigner has the right to legal representation under
+  Pakistani law and to consular notification — the foreigner's embassy/consulate is
+  contacted (home-country consular channel, not a Pakistani-law remedy).
+- Registration complaints: complaints about police/immigration conduct go to the
+  department, the ombudsman, or the courts (see civic-services complaint workflow).
+SOURCE: Foreigners Act, 1946; CrPC rights framework. VERIFICATION: metadata-verified.
+
+[SECTION: FOREIGN_FAMILY_MATTERS]
+PAKISTAN LAW vs HOME-COUNTRY LAW: family matters. COVERAGE: PARTIAL.
+KEY FRAMEWORK (summary):
+- Marriage: a marriage in Pakistan involving a foreign national is registered under
+  Pakistani law (nikahnama) where performed in Pakistan; marriage to a Pakistani citizen
+  does NOT by itself confer Pakistani citizenship.
+- Citizenship through marriage (Citizenship Act, 1951 framework): a foreign woman married
+  to a Pakistani citizen may acquire citizenship on the prescribed conditions; a foreign
+  man married to a Pakistani woman does not gain citizenship through the marriage alone
+  (gender-specific historical rule — verify the current act).
+- Divorce/child custody: governed by Pakistani family law where the matter is within
+  Pakistani jurisdiction; a foreign court order may need recognition/execution in Pakistan,
+  and vice versa — the applicable law depends on jurisdiction (see cross-border family
+  records).
+- Birth of a child: children born in Pakistan to foreign parents do not automatically
+  become Pakistani citizens (citizenship is by descent/documented grounds under the
+  Citizenship Act, 1951).
+SOURCE: Citizenship Act, 1951; family-law framework. VERIFICATION: metadata-verified
+(citizenship conditions should be checked against the current act).
+
+[SECTION: FOREIGN_EMERGENCY_CONS]
+DISTINCTION: emergency and consular support. COVERAGE: PARTIAL.
+- PAKISTAN SIDE: emergency services (Rescue 1122, hospitals, police 15) serve everyone in
+  Pakistan regardless of nationality; the foreigner pays for medical treatment like any
+  private patient unless covered.
+- HOME-COUNTRY SIDE: consular protection (lost passport, emergency travel document, legal
+  referrals, welfare checks) is provided by the foreigner's own embassy/consulate — this is
+  the home country's service, NOT a Pakistani government function. Pakistan's Ministry of
+  Foreign Affairs facilitates access to foreign missions but does not provide consular
+  services to foreign nationals.
+- Lost documents: report the loss to the local police (FIR/duly reported) and to the home
+  embassy; the embassy issues replacement/emergency travel documents, then the Ministry of
+  Interior/immigration is approached for exit formalities where required.
+SOURCE: MOFA facilitation practice; consular practice of foreign missions.
+VERIFICATION: metadata-verified.
+
+[SECTION: FOREIGN_HOME_COUNTRY_LAW_NOTE]
+RULE FOR ANSWERS: whenever a question concerns what a foreigner's OWN country can or must do
+(consular assistance, home-country documents, home-country marriage/divorce rules), answer
+from the home country's framework and say it is home-country law — do not answer it with
+Pakistani law. Pakistani law governs entry, stay, registration, offences and remedies within
+Pakistan.

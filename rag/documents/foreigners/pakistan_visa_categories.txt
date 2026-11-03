@@ -1,0 +1,36 @@
+[SECTION: Pakistan Online Visa System]
+Title: Where foreigners apply for a Pakistan visa
+The Pakistan Online Visa System (visa.nadra.gov.pk) is the official Government of Pakistan visa-application portal for foreigners. The Ministry of Foreign Affairs directs visa applicants to apply for a Pakistan visa only through this website; there is no other official channel for these applications.
+Visa categories listed on the portal: Tourist/Visit, Family Visit, Business, Work, Study, Medical, SIFC, Religious Tourism, Official, NGO/INGO, and Other (cultural activities).
+Source: Pakistan Online Visa System - Government of Pakistan (visa.nadra.gov.pk); Ministry of Foreign Affairs direction
+Source URL: https://visa.nadra.gov.pk/visa-categories/
+Status: Active
+
+[SECTION: Tourist and Family Visits]
+Title: Visa categories for tourism and family visits
+Tourist/Visit Visa: travel to Pakistan for tourism purposes.
+Family Visit Visa: visit Pakistan as an individual or with family.
+Religious Tourism: travel to Pakistan for religious tourism.
+Source: Pakistan Online Visa System - Government of Pakistan (visa.nadra.gov.pk)
+Source URL: https://visa.nadra.gov.pk/visa-categories/
+Status: Active
+
+[SECTION: Business, Work and Investment Visas]
+Title: Visa categories for business, work and investment
+Business Visa: visit Pakistan for business purposes.
+SIFC Visa: travel to Pakistan for investment/business purposes.
+Work Visa: travel to Pakistan for employment purposes.
+Source: Pakistan Online Visa System - Government of Pakistan (visa.nadra.gov.pk)
+Source URL: https://visa.nadra.gov.pk/visa-categories/
+Status: Active
+
+[SECTION: Study, Medical, Official and NGO Visas]
+Title: Visa categories for study, medical treatment, official assignments and NGOs
+Study Visa: travel to Pakistan for educational purposes.
+Medical Visa: travel to Pakistan for medical treatment.
+Official Visa: travel to Pakistan for official assignments.
+NGO/INGO Visa: travel to Pakistan to work for an NGO/INGO.
+Other Visa: travel to Pakistan for cultural activities.
+Source: Pakistan Online Visa System - Government of Pakistan (visa.nadra.gov.pk)
+Source URL: https://visa.nadra.gov.pk/visa-categories/
+Status: Active

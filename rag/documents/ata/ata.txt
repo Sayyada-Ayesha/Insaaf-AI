@@ -1,0 +1,37 @@
+[SECTION: 1] The Anti-Terrorism Act, 1997 (Act No. XXVII of 1997) — Provides for the prevention of terrorism, sectarian violence and for the establishment of Anti-Terrorism Courts. Source: Pakistan Code (pakistancode.gov.pk). Status: CURRENT.
+
+[SECTION: 2] Definitions — 'Terrorist act' means any act or threat of action that: (a) involves grievous violence against a person, damage to property, or interference with critical infrastructure; (b) is designed to create a sense of fear in the public, or intimidate the government; (c) is for a political, religious or ideological purpose. 'Terrorist' includes any person who commits, attempts, or abets a terrorist act.
+
+[SECTION: 3] Punishment for terrorist acts — A person who commits a terrorist act shall be punished with: (a) death or imprisonment for life if the act causes death; (b) imprisonment up to 30 years if the act causes hurt; (c) imprisonment up to 15 years for other cases.
+
+[SECTION: 4] Punishment for financing terrorism — Whoever provides, collects or makes available funds for terrorism shall be punished with imprisonment of 10 to 25 years and fine.
+
+[SECTION: 5] Punishment for membership of terrorist groups — Being a member of a proscribed organization or terrorist group: imprisonment up to 10 years.
+
+[SECTION: 6] Enhanced penalties — Offences under PPC when committed with terrorist intent attract enhanced penalties as specified in the Schedule to this Act.
+
+[SECTION: 7] Proscribed organizations — The federal government may proscribe organizations involved in terrorism. Proscription is notified in the official Gazette and laid before Parliament.
+
+[SECTION: 8] Habeas corpus for missing persons — The High Court or Supreme Court may order production of any person alleged to be in illegal custody. Special provisions for terrorism-related detentions.
+
+[SECTION: 9] Arrest and detention — A person arrested under this Act may be detained for up to 90 days for investigation. Magistrate must authorize detention beyond 24 hours.
+
+[SECTION: 10] Anti-Terrorism Courts — The federal government may establish Anti-Terrorism Courts (ATC). ATCs have exclusive jurisdiction over offences under this Act and scheduled offences committed with terrorist intent.
+
+[SECTION: 11] Trial by ATC — Trials before ATC are conducted summarily. The court must conclude trial within 7 working days, extendable up to 30 days. Adjournments are limited.
+
+[SECTION: 12] Evidence — Qanun-e-Shahadat Order applies. The court may receive evidence in the absence of the accused if the accused has absconded. Confessions made to police are admissible subject to conditions.
+
+[SECTION: 13] Appeal — Appeals from ATC lie to the High Court within 30 days. Decisions of the High Court may be appealed to the Supreme Court within 30 days.
+
+[SECTION: 14] ATC procedures — ATC may hold proceedings in camera. The court may issue directives for protection of judges, witnesses and prosecutors. An ATC judge holds office for 3 years.
+
+[SECTION: 15] Protection of judges, prosecutors and witnesses — No suit or proceeding shall lie against any judge, prosecutor or authorized officer for acts done in good faith under this Act. Witness protection measures may be ordered.
+
+[SECTION: 16] National Counter Terrorism Authority (NACTA) — NACTA is established to formulate anti-terrorism strategies, coordinate intelligence sharing, and maintain a database of terrorist individuals and organizations.
+
+[SECTION: 17] Scheduled offences — Certain PPC offences (murder, attempted murder, kidnapping, dacoity, robbery, mischief by fire/explosives, etc.) when committed with terrorist intent become scheduled offences triable by ATC.
+
+[SECTION: 18] Review Committee — A Review Committee reviews detention orders. The Committee may confirm, modify or revoke detention.
+
+[SECTION: 19] Cyber-terrorism — Acts of terrorism carried out through electronic systems, networks or cyber means are punishable under this Act in addition to PECA provisions.

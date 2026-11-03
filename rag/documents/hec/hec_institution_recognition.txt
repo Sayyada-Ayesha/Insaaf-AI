@@ -1,0 +1,1507 @@
+# HEC recognition of universities and campuses, affiliated institutions and unaccredited institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: Pakistan (Federal) — higher education
+Version: Live HEC register, retrieved 2026-10-10 | Published/notified: 2026-10-10 | Effective: 2026-10-10 | Status: Current (list as published on the HEC site)
+Provenance: sections below carry the canonical HEC URL for the document they were extracted from.
+Coverage area: A
+Verification note: Recognised-university and recognised-campus lists are reproduced as published by HEC on the retrieval date. A list can change without a new notification: re-verify before relying on an entry. "Unaccredited Institutions" and "HEC NOC suspended/withdrawn" markers are HEC’s own status labels.
+
+[SECTION: hec_institution_recognition_1_HEC_RECOGNITION_OF_UNIVERSITIES_AND_CAMPUSES_A]
+# HEC recognition of universities and campuses, affiliated
+Title: HEC recognition of universities and campuses, affiliated institutions and unaccredited institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC recognition of universities and campuses, affiliated
+Official page: https://www.hec.gov.pk/english/universities/Pages/recognised.aspx
+Source file: https://www.hec.gov.pk/english/universities/Pages/recognised.aspx
+Version: Live HEC register, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current (list as published on the HEC site)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# University
+HEC
+Universities
+ We Recommend Using Mozilla Firefox for the Best Experience ( Download Mozilla Firefox
+here .
+)
+
+Sector
+Private
+Public
+Chartered By
+Government of Khyber Pakhtunkhwa
+Government of Sindh
+Government of Pakistan
+Government of Balochistan
+Government of Punjab
+Government of AJK
+Discipline
+General
+Arts & Design
+Engineering & Technology
+Agriculture & Veterinary
+Medical
+Province
+Khyber Pakhtunkhwa
+Sindh
+Islamabad Capital Territory
+Balochistan
+Punjab
+Azad Jammu & Kashmir
+Gilgit Baltistan
+City
+Peshawar
+Abbottabad
+Mardan
+Karachi
+Islamabad
+Quetta
+Multan
+Lahore
+Bhera
+Bhimber
+Sukkur
+Nankana Sahib
+Charsada
+Khuzdar
+Khairpur
+Bahawal Pur
+Faisalabad
+Rawalpindi
+Dera Ghazi Khan
+Gujranwala
+Dera Ismail Khan
+Sialkot
+Hyderabad
+Mansehra
+Mirpur Khas
+Bannu
+Gilgit
+Rahim Yar Khan
+Karak
+Kohat
+Lasbella
+Jamshoro
+Sibi
+Mirpur
+Nerian Sharif
+Gujrat
+Mianwali
+Sheikhupura
+Nowshehra
+Haripur
+Rawat
+Nawabshah
+Sargodha
+Upper Dir
+Larkana
+Bhakkar
+Pakpatan
+Shikarpur
+Swat
+Muzaffarabad
+Skardu
+Bunair
+Chakwal
+Chitral
+Gawadar
+Jhang
+Kamalia
+Kotli
+Lakki Marwat
+Layyah
+Loralai
+Punjgur
+Malakand
+Tando Muhammad Khan
+Narowal
+Okara
+Poonch
+Mandi Bahauddin
+Sahiwal
+Shangla
+Bhit Shah
+Swabi
+Turbat
+Bagh
+- Abasyn University
+- Khyber Pakhtunkhwa
+- Abbottabad University of Science and Technology (AUST)
+- Khyber Pakhtunkhwa
+- Abdul Wali Khan University
+- Khyber Pakhtunkhwa
+- Adam Institute of Social & Management Science (AISMS), Karachi
+- Sindh
+- Aga Khan University
+- Sindh
+- Air University
+- Islamabad Capital Territory
+- Al-Ghazali University
+- Sindh
+- Al-Hamd Islamic University
+- Balochistan
+- Ali Bin Usman Institute, Multan
+- Punjab
+- Ali Institute of Education
+- Punjab
+- Al-Karam International Institute, Bhera
+- Punjab
+- Al-Kawthar University, Karachi
+- Sindh
+- Al-Khair University
+- Azad Jammu & Kashmir
+- Allama Iqbal Open University
+- Islamabad Capital Territory
+- Aror University of Art, Architecture, Design and Heritage, Sukkur
+- Sindh
+- Baba Guru Nanak University, Nankana Sahib
+- Punjab
+- Bacha Khan University
+- Khyber Pakhtunkhwa
+- Bahauddin Zakariya University
+- Punjab
+- Bahria University
+- Islamabad Capital Territory
+- Balochistan University of Engineering & Technology
+- Balochistan
+- Balochistan University of Information Technology, Engineering & Management Sciences (BUITEMS)
+- Balochistan
+- Baqai Medical University
+- Sindh
+- Beaconhouse National University
+- Punjab
+- Begum Nustrat Bhutto Women University, Sukkur
+- Sindh
+- Benazir Bhutto Shaheed University Lyari
+- Sindh
+- Benazir Bhutto Shaheed University of Technology & Skill Development, Khairpur Mirs
+- Sindh
+- Brains Institute Peshawar
+- Khyber Pakhtunkhwa
+- Capital University of Science & Technology
+- Islamabad Capital Territory
+- CECOS University of Information Technology & Emerging Sciences
+- Khyber Pakhtunkhwa
+- Cholistan University of Veterinary and Animal Sciences, Bahawalpur
+- Punjab
+- City University of Science and Information Technology
+- Khyber Pakhtunkhwa
+- Commecs Institute of Business & Emerging Sciences
+- Sindh
+- COMSATS University, Islamabad
+- Islamabad Capital Territory
+- Dadabhoy Institute of Higher Education
+- Sindh
+- Dar-ul-Madina International University, Islamabad
+- Islamabad Capital Territory
+- Dawood University of Engineering & Technology
+- Sindh
+- Denning Institute of Technology and Entrepreneurship, Karachi
+- Sindh
+- DHA Suffa University
+- Sindh
+- DOW University of Health Sciences
+- Sindh
+- Emaan Institute of Management & Sciences, Karachi
+- Sindh
+- Emerson University, Multan
+- Punjab
+- Faisalabad Medical University, Faisalabad
+- Punjab
+- Fatima Jinnah Medical University, Lahore
+- Punjab
+- Fatima Jinnah Women University, Rawalpindi
+- Punjab
+- Federal Urdu University of Arts, Sciences & Technology
+- Islamabad Capital Territory
+- Forman Christian College
+- Punjab
+- Foundation University
+- Islamabad Capital Territory
+- Gambat Institute of Medical Sciences
+- Sindh
+- Gandhara University
+- Khyber Pakhtunkhwa
+- Ghazi National Institute of Engineering and Sciences, Dera Ghazi Khan
+- Punjab
+- Ghazi University, Dera Ghazi Khan
+- Punjab
+- Ghulam Ishaq Khan Institute of Engineering Sciences & Technology
+- Khyber Pakhtunkhwa
+- GIFT University
+- Punjab
+- Global Institute, Lahore [HEC-NOC SUSPENDED] (ADMISSIONS HAVE BEEN STOPPED BY HEC FROM FALL 2016)
+- Punjab
+- Gomal University
+- Khyber Pakhtunkhwa
+- Government College for Women University, Sialkot
+- Punjab
+- Government College University, Faisalabad
+- Punjab
+- Government College University, Hyderabad
+- Sindh
+- Government College University, Lahore
+- Punjab
+- Government College Women University, Faisalabad
+- Punjab
+- Government Sadiq College Women University
+- Punjab
+- Grand Asian University, Sialkot
+- Punjab
+- Greenwich University
+- Sindh
+- Habib University
+- Sindh
+- Hajvery University
+- Punjab
+- Hamdard University
+- Sindh
+- Hands-Institute of Development Studies, Karachi
+- Sindh
+- Hazara University
+- Khyber Pakhtunkhwa
+- Health Services Academy (HSA), Islamabad
+- Islamabad Capital Territory
+- HITEC University
+- Punjab
+- Hyderabad Institute for Technology & Management Sciences
+- Sindh
+- Ibadat International University, Islamabad
+- Islamabad Capital Territory
+- Ibn-e-Sina University, Mirpurkhas
+- Sindh
+
+[SECTION: hec_institution_recognition_2_HEC_RECOGNITION_OF_UNIVERSITIES_AND_CAMPUSES_A]
+# HEC recognition of universities and campuses, affiliated (part 2)
+Title: HEC recognition of universities and campuses, affiliated institutions and unaccredited institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC recognition of universities and campuses, affiliated (part 2)
+Official page: https://www.hec.gov.pk/english/universities/Pages/recognised.aspx
+Source file: https://www.hec.gov.pk/english/universities/Pages/recognised.aspx
+Version: Live HEC register, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current (list as published on the HEC site)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+- ILMA University
+- Sindh
+- Imperial College of Business Studies
+- Punjab
+- Indus University
+- Sindh
+- Indus Valley School of Art & Architecture
+- Sindh
+- Information Technology University of the Punjab
+- Punjab
+- Institute for Art and Culture
+- Punjab
+- Institute of Business Administration
+- Sindh
+- Institute of Business Management
+- Sindh
+- Institute of Management Science
+- Khyber Pakhtunkhwa
+- Institute of Management Sciences
+- Punjab
+- Institute of Space Technology
+- Islamabad Capital Territory
+- International Institute of Science, Arts and Technology, Gujranwala
+- Punjab
+- International Islamic University
+- Islamabad Capital Territory
+- Iqra National University
+- Khyber Pakhtunkhwa
+- Iqra University
+- Sindh
+- Islamabad University of Health Sciences and Emerging Technologies (IUHT) ,Islamabad
+- Islamabad Capital Territory
+- Islamia College Peshawar
+- Khyber Pakhtunkhwa
+- Islamia University
+- Punjab
+- Isra University
+- Sindh
+- Jinnah Sindh Medical University
+- Sindh
+- Jinnah University for Women
+- Sindh
+- Kalam Bibi International Women Institute, Bannu
+- Khyber Pakhtunkhwa
+- Karachi Institute of Economics & Technology
+- Sindh
+- Karachi Institute of Technology and Entrepreneurship (KITE), Karachi
+- Sindh
+- Karachi Metropolitan University, Karachi
+- Sindh
+- Karachi School of Business and Leadership
+- Sindh
+- Karakurum International University
+- Gilgit Baltistan
+- KASB Institute of Technology
+- Sindh
+- Khawaja Freed University of Engineering & Information Technology, Rahim Yar Khan
+- Punjab
+- Khushal Khan Khattak University
+- Khyber Pakhtunkhwa
+- Khyber Medical University
+- Khyber Pakhtunkhwa
+- King Edward Medical University
+- Punjab
+- Kinnaird College for Women
+- Punjab
+- Kohat University of Science and Technology
+- Khyber Pakhtunkhwa
+- Kohsar University, Murree
+- Punjab
+- Lahore College for Women University
+- Punjab
+- Lahore Garrison University
+- Punjab
+- Lahore Leads University
+- Punjab
+- Lahore School of Economics
+- Punjab
+- Lahore University of Biological and Applied Sciences, Lahore
+- Punjab
+- Lahore University of Management Sciences
+- Punjab
+- Lasbela University of Agriculture, Water & Marine Sciences
+- Balochistan
+- Liaquat University of Medical & Health Sciences
+- Sindh
+- Malir University of Science & Technology, Karachi
+- Sindh
+- Mehran University of Engineering & Technology
+- Sindh
+- Metropolitan University Karachi
+- Sindh
+- Millennium Institute of Technology and Entrepreneurship, Karachi
+- Sindh
+- Minhaj University
+- Punjab
+- Mir Chakar Khan Rind University of Technology, Dera Ghazi Khan
+- Punjab
+- Mir Chakar Khan Rind University, Sibi Balochistan
+- Balochistan
+- Mirpur University of Science & Technology
+- Azad Jammu & Kashmir
+- Mohi-ud-Din Islamic University
+- Azad Jammu & Kashmir
+- Muhammad Ali Jinnah University
+- Sindh
+- Muhammad Nawaz Shareef University of Agriculture
+- Punjab
+- Muhammad Nawaz Sharif University of Engineering & Technology
+- Punjab
+- Mukabbir University of Science & Technology, Gujrat
+- Punjab
+- Multan University of Science & Technology, Multan
+- Punjab
+- MY University
+- Islamabad Capital Territory
+- Namal University, Mainwali
+- Punjab
+- National College of Arts
+- Punjab
+- National College of Business Administration & Economics
+- Punjab
+- National Defense University
+- Islamabad Capital Territory
+- National Excellence Institute (NEI), Rawalpindi
+- Punjab
+- National Institute of Technology, Lahore
+- Punjab
+- National Skills University, Islamabad
+- Islamabad Capital Territory
+- National Textile University
+- Punjab
+- National University of Computer & Emerging Sciences
+- Islamabad Capital Territory
+- National University of Medical Sciences
+- Punjab
+- National University of Modern Languages
+- Islamabad Capital Territory
+- National University of Pakistan
+- Punjab
+- National University of Sciences & Technology
+- Islamabad Capital Territory
+- National University of Technology (NUTECH), Islamabad
+- Islamabad Capital Territory
+- NED University of Engineering & Technology
+- Sindh
+- Newport Institute of Communications & Economics
+- Sindh
+- NFC Institute of Engineering & Technology
+- Punjab
+- Nippon Institute of Advanced Sciences, Sheikhupura
+- Punjab
+- Nishtar Medical University, Multan
+- Punjab
+- Northern University
+- Khyber Pakhtunkhwa
+- Nur International University
+- Punjab
+- PAF Air War College Institute, Karachi
+- Sindh
+- Pak-Austria Fachhochschule Institute of Applied Sciences and Technology, Haripur
+- Khyber Pakhtunkhwa
+- Pakistan Global Institute, Rawat
+- Punjab
+- Pakistan Institute of Development Economics
+- Islamabad Capital Territory
+- Pakistan Institute of Engineering & Applied Sciences
+- Islamabad Capital Territory
+- Pakistan Institute of Fashion & Design
+- Punjab
+- Pakistan Military Academy
+- Khyber Pakhtunkhwa
+- Pakistan Naval Academy
+- Sindh
+- Peoples University of Medical & Health Sciences for Women
+- Sindh
+- Pir Mehr Ali Shah Arid Agriculture University
+- Punjab
+- Preston Institute of Management, Science & Technology
+- Sindh
+- Preston University, Karachi
+- Sindh
+- Preston University, Kohat
+- Khyber Pakhtunkhwa
+- Punjab Tianjin University of Technology, Lahore
+- Punjab
+- Qarshi University
+- Punjab
+- Quaid e Azam Institute of Management Sciences Sargodha
+- Punjab
+
+[SECTION: hec_institution_recognition_3_HEC_RECOGNITION_OF_UNIVERSITIES_AND_CAMPUSES_A]
+# HEC recognition of universities and campuses, affiliated (part 3)
+Title: HEC recognition of universities and campuses, affiliated institutions and unaccredited institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC recognition of universities and campuses, affiliated (part 3)
+Official page: https://www.hec.gov.pk/english/universities/Pages/recognised.aspx
+Source file: https://www.hec.gov.pk/english/universities/Pages/recognised.aspx
+Version: Live HEC register, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current (list as published on the HEC site)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+- Quaid-e-Awam University of Engineering, Sciences & Technology
+- Sindh
+- Quaid-i-Azam University
+- Islamabad Capital Territory
+- Qurtaba University of Science & Information Technology
+- Khyber Pakhtunkhwa
+- Rashid Latif Khan University, Lahore
+- Punjab
+- Rawalpindi Medical University
+- Punjab
+- Rawalpindi Women University, Rawalpindi
+- Punjab
+- Riphah International University
+- Islamabad Capital Territory
+- Saifee Burhani University, Karachi
+- Sindh
+- Salim Habib University (Former Barret Hodgson University), Karachi
+- Sindh
+- Sardar Bahadur Khan Women University
+- Balochistan
+- Sarhad University of Science & Information Technology
+- Khyber Pakhtunkhwa
+- Shah Abdul Latif University
+- Sindh
+- Shaheed Allah Buksh Soomro University of Arts, Design and Heritages, Jamshoro
+- Sindh
+- Shaheed Benazir Bhutto City University
+- Sindh
+- Shaheed Benazir Bhutto Dewan University
+- Sindh
+- Shaheed Benazir Bhutto University
+- Khyber Pakhtunkhwa
+- Shaheed Benazir Bhutto University of Veterinary & Animal Sciences
+- Sindh
+- Shaheed Benazir Bhutto University, Shaheed Benazirabad
+- Sindh
+- Shaheed Benazir Bhutto Women University
+- Khyber Pakhtunkhwa
+- Shaheed Mohtarma Benazir Bhutto Medical University
+- Sindh
+- Shaheed Zulfikar Ali Bhutto Institute of Science & Technology
+- Sindh
+- Shaheed Zulfiqar Ali Bhutto Medical University
+- Islamabad Capital Territory
+- Shaheed Zulfiqar Ali Bhutto University of Law
+- Sindh
+- Shifa Tameer-e-Millat University
+- Islamabad Capital Territory
+- Shuhada-e-Army Public School University of Technology, Nowshera
+- Khyber Pakhtunkhwa
+- Sindh Agriculture University, Tandojam
+- Sindh
+- Sindh Institute of Management & Technology
+- Sindh
+- Sindh Institute of Medical Sciences
+- Sindh
+- Sindh Madresatul Islam University
+- Sindh
+- Sir Syed (CASE) Institute of Technology, Islamabad
+- Islamabad Capital Territory
+- Sir Syed University of Engineering & Technology
+- Sindh
+- Sohail University, Karachi
+- Sindh
+- South Punjab Institute of Science and Technology, Dera Ghazi Khan
+- Punjab
+- Sukkur IBA University
+- Sindh
+- Textile Institute of Pakistan
+- Sindh
+- Thal University, Bhakkar
+- Punjab
+- The Azad Jammu & Kashmir University of Bhimber
+- Azad Jammu & Kashmir
+- The Bolan University of Medical and Health Sciences, Quetta
+- Balochistan
+- The Ganj Shakar University, Pakpattan
+- Punjab
+- The Green International University, Lahore
+- Punjab
+- The Nazeer Hussain University
+- Sindh
+- The Shaikh Ayaz University, Shikarpur Sindh
+- Sindh
+- The Sindh Institute of Physical Medicine and Rehabilitation, Karachi
+- Sindh
+- The Superior University
+- Punjab
+- The University of Agriculture, D. I. Khan
+- Khyber Pakhtunkhwa
+- The University of Agriculture, Peshawar
+- Khyber Pakhtunkhwa
+- The University of Agriculture, Swat
+- Khyber Pakhtunkhwa
+- The University of Faisalabad
+- Punjab
+- The University of Larkano
+- Sindh
+- The University of Mirpurkhas
+- Sindh
+- The University of Veterinary & Animal Sciences, Swat
+- Khyber Pakhtunkhwa
+- The Women University
+- Punjab
+- TIMES University, Multan
+- Punjab
+- UIT University, Karachi
+- Sindh
+- University of Agriculture
+- Punjab
+- University of Art and Culture, Jamshoro
+- Sindh
+- University of Azad Jammu & Kashmir
+- Azad Jammu & Kashmir
+- University of Balochistan
+- Balochistan
+- University of Baltistan, Skardu
+- Gilgit Baltistan
+- University of Buner
+- Khyber Pakhtunkhwa
+- University of Central Punjab
+- Punjab
+- University of Chakwal, Chakwal
+- Punjab
+- University of Chenab, Gujrat
+- Punjab
+- University of Child Health Sciences, Lahore
+- Punjab
+- University of Chitral
+- Khyber Pakhtunkhwa
+- University of Education
+- Punjab
+- University of Engineering & Technology
+- Khyber Pakhtunkhwa
+- University of Engineering & Technology
+- Punjab
+- University of Engineering & Technology (UET), Mardan
+- Khyber Pakhtunkhwa
+- University of Engineering & Technology, Taxila
+- Punjab
+- University of Engineering and Applied Sciences, Swat
+- Khyber Pakhtunkhwa
+- University of FATA
+- Khyber Pakhtunkhwa
+- University of Gujrat
+- Punjab
+- University of Gwadar
+- Balochistan
+- University of Haripur
+- Khyber Pakhtunkhwa
+- University of Health Sciences
+- Punjab
+- University of Home Economics, Lahore
+- Punjab
+- University of Jhang
+- Punjab
+- University of Kamalia
+- Punjab
+- University of Karachi
+- Sindh
+- University of Kotli
+- Azad Jammu & Kashmir
+- University of Lahore
+- Punjab
+- University of Lakki Marwat
+- Khyber Pakhtunkhwa
+- University of Layyah
+- Punjab
+- University of Loralai
+- Balochistan
+- University of Makran, Panjgur
+- Balochistan
+- University of Malakand
+- Khyber Pakhtunkhwa
+- University of Management & Technology
+- Punjab
+- University of Mianwali
+- Punjab
+- University of Modern Sciences, Tando Muhammad Khan
+- Sindh
+- University of Narowal
+- Punjab
+- University of Okara
+- Punjab
+- University of Peshawar
+- Khyber Pakhtunkhwa
+- University of Poonch
+- Azad Jammu & Kashmir
+- University of Rasul-Mandi Bahauddin
+- Punjab
+- University of Sahiwal
+- Punjab
+- University of Sargodha
+- Punjab
+- University of Science & Technology
+- Khyber Pakhtunkhwa
+- University of Science and Technology, Lahore
+- Punjab
+- University of Shangla
+- Khyber Pakhtunkhwa
+- University of Sialkot, Sialkot
+- Punjab
+- University of Sindh
+- Sindh
+
+[SECTION: hec_institution_recognition_4_HEC_RECOGNITION_OF_UNIVERSITIES_AND_CAMPUSES_A]
+# HEC recognition of universities and campuses, affiliated (part 4)
+Title: HEC recognition of universities and campuses, affiliated institutions and unaccredited institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC recognition of universities and campuses, affiliated (part 4)
+Official page: https://www.hec.gov.pk/english/universities/Pages/recognised.aspx
+Source file: https://www.hec.gov.pk/english/universities/Pages/recognised.aspx
+Version: Live HEC register, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current (list as published on the HEC site)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+- University of South Asia
+- Punjab
+- University of Southern Punjab
+- Punjab
+- University of Sufism and Modern Sciences, Bhitshah Sindh
+- Sindh
+- University of Swabi
+- Khyber Pakhtunkhwa
+- University of Swat
+- Khyber Pakhtunkhwa
+- University of the Punjab
+- Punjab
+- University of Turbat
+- Balochistan
+- University of Veterinary & Animal Sciences
+- Punjab
+- University of Wah
+- Punjab
+- Virtual University of Pakistan
+- Punjab
+- Woman University Swabi
+- Khyber Pakhtunkhwa
+- Women University Mardan
+- Khyber Pakhtunkhwa
+- Women University of Azad Jammu & Kashmir
+- Azad Jammu & Kashmir
+- Zia-ud-Din University
+- Sindh
+
+[SECTION: hec_institution_recognition_5_HEC_RECOGNIZED_CAMPUSES]
+# HEC recognized Campuses
+Title: HEC recognition of universities and campuses, affiliated institutions and unaccredited institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC recognized Campuses
+Official page: https://www.hec.gov.pk/english/universities/Pages/DAIs/HEC-recognized-Campuses.aspx
+Source file: https://www.hec.gov.pk/english/universities/Pages/DAIs/HEC-recognized-Campuses.aspx
+Version: Live HEC register, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current (list as published on the HEC site)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+HEC
+Universities
+HEC recognized Campuses
+ FASfaHigher Education Commission (HEC) only recognizes the campuses of Public and Private sector Universities/Degree Awarding Institutes listed here:
+Total No. of Campuses (Both Public and Private) = 96+55=151
+| CAMPUSES OF PUBLIC SECTOR UNIVERSITIES/DEGREE AWsARDING INSTITUTIONS
+Total: 96
+| Federal Territory  
+| S. No | University/DAI | Campuses Location
+| 1 | COMSATS Institute of Information Technology, Islamabad
+|
+- Abbottabad
+- Attock
+- Lahore
+- Wah
+- Vehari
+- Sahiwal
+| 2
+| Federal Urdu University of Arts, Sciences & Technology, Islamabad
+|
+- Karachi
+| 3
+| National University of Modern Language (NUML), Islamabad
+|
+- Lahore
+- Faisalabad
+- Peshawar
+- Multan
+- Karachi
+- Hyderabad
+- Quetta
+- Rawalpindi
+- Mirpur-AJ&K
+| 4
+| National College of Arts (NCA), Lahore
+|
+- Rawalpindi
+| 4
+| Bahria University, Islamabad
+|
+- Karachi
+- Lahore
+- BSEAS- H-11/4 Islamabad
+| 5
+| Air University, Islamabad
+|
+- Multan
+- Kamra
+- Kharian
+- H-11 Campus (Islamabad)
+- Lahore (NIIT)
+- Karachi
+- Short Kot
+| 6
+| Virtual University of Pakistan, Lahore
+(Study Centers)
+|
+- Islamabad
+- Rawalpindi
+- DG Khan
+- Faisalabad
+- Gujranwala
+- Multan
+- Sahiwal
+- Badin
+- Ghotki
+- Karachi
+- Pashin
+- Peshawar
+- Muzaffargarh
+- Hyderabad
+- Jhelum
+| 7
+| Karakorum International University (KIU), Gilgit Baltistan
+|
+- Hunza
+- Diamer (Chilas)
+- Ghizer
+| 8
+| National Textile University (NTU), Faisalabad
+|
+- Karachi
+| 9
+| National University of Science & Technology (NUST), Islamabad
+|
+- Quetta
+Program allowed:
+- BE-Civil Engineering (subject to aprpoval of PEC)
+- BS Computer Science
+| 10
+| Institute of Space & Technology (IST), Islamabad
+|
+- KICSIT Kahauta
+- Karachi
+| PUNJAB
+| S. No
+| University/DAI
+| Campuses Location
+| 1
+| University of Engineering and Technology (UET), Lahore
+|
+- Kalashah Kako
+- Faisalabad
+- Rachna College, Gujranwala
+- Narowal
+| 2
+| University of Punjab, Lahore
+|
+- Gujranwala
+- Jehlum
+| 3
+| Lahore College of Women University (LCWU), Lahore
+|
+- Jhang (merged as Constiutent College of University of Jhang w.e.f. 31-8-2020)
+| 4
+| University of Education, Lahore
+|
+- Okara(upgraded to full fledged University w.e.f. 01-04--2016)
+- DG Khan
+- Faisalabad
+- Joharabad
+- Multan
+- Vehari
+- Attock
+| 5
+| University of Veterinary & Animal Sciences (UVAS), Lahore
+|
+- Patoki
+- Jhang
+- Narowal
+| 6
+| Bahauddin Zakarai University (BZU), Multan
+|
+- Layyah (upgraded to University of Layyah, w.e.f. 08-12-2022)
+- Vehari
+- Lodhran
+| 7
+| Islamia University, Bahawalpur
+|
+- Rahim Yar Khan
+- Bahawalnagar
+| 8
+| University of Engineering & Technology (UET), Taxila
+|
+- Chakwal (upgraded to University of Chakwal, w.e.f. 09=01-2020)
+| 9
+| University of Agriculture (UAF), Faisalabad
+|
+- Toba Tek Singh
+- Depalpur
+- Burewala
+| 10
+| University of Gujrat, Gujrat
+|
+- Lahore (Admissions Closed w.e.f. 03-09-2019 )
+- Mandi Bahauddin ( Admissions Banned w.e.f. Fall 2024 )
+- Sialkot (upgraded to University of Sailkot w.e.f 20-3-2018)
+- Narrowal (upgraded to University of Narowal w.e.f 20-3-2018)
+- Rawalpindi (upgraded to Rawalpindi Women University w.e.f. 13-8-2019)
+| 11.
+| Government College University (GCU), Faisalabad
+|
+- Chiniot (valid up to December 31, 2027)
+- Layyah
+- Sahiwal
+- Hafizabad, (valid up to December 31, 2026)
+| 12.
+| University of Sargodha, Sargodha
+|
+- Bhakkar (upgraded to Thal University, Bhakkar, w.e.f. 02-9-2022)
+- Mianwali (upgraded to University of Mianwali w.e.f. 13-12-2019)
+(Admissions in Following Campuses have been stopped w.e.f. Fall 2018 & operations of these campuses have been permanently shut down).
+- Lahore
+- Mandi Bahauddin
+- Gujranwala
+- Faisalabad (Women)
+- Lyallpur
+| 13
+| Pir Mehr Ali Shah Arid Agriculture University (Formerly University of Arid Agriculture), Rawalpindi
+|
+- Attock ( valid up to June 30, 2027) for the following undergraduate degree Programs:
+BSc (Hons) Agriculture, BS Computer Science, BS Human Nutrition & Dietetics
+| 14
+| Al-Kawthar University, Karachi
+|
+- Rashidabad, District Tando Allahyar (Valid up to 31-August-2027
+Programs:
+BS Computer Science
+BS Nursing
+B.Ed(Hons) Elementary
+| SINDH
+| S. No
+| University/DAI
+| Campuses Location
+| 1
+| University of Sindh, Jamshoro
+|
+- Mirpur Khas
+- Badin
+- Dadu
+| 2
+| Mehran University of Engineering & Technology, Jamshoro
+|
+- Khairpur
+| 3
+| Shah Abdul Latif University, Khairpur
+|
+- Shikarpur (upgraded to Shaikh Ayaz University, Shikarpur w.e.f. 07-6-2018)
+- Ghotki
+- Shahdadkot
+| 4
+| Quaid-i-Awan University of Engineering & Technology, Nawabshah
+|
+- Larkana
+| 5
+| Shaheed Benazir Bhutto University, Shaheed Benazirabad
+|
+- Naushahro Feroze
+| 6
+| The Sukkur IBA University
+|
+- Kandkot
+- Khairpur ( valid up to June 30, 2027)
+| 7
+| Sindh Agriculture University, Tandojam
+|
+- Umerkot
+| 8
+| NED University of Engineering & Technology, Karachi
+|
+-  TIEST Mithi-Tharparkar
+| 9
+| Dow University of Health Sciences, Karachi
+|
+-  Ojha Campus
+| KHYBER PAKHTUNKHWA
+| S. No
+| University/DAI
+| Campuses Location
+| 1
+| University of Engineering & Technology (UET), Peshawar
+|
+- Abbottabad
+- Swat (upgraded to UEAS Swat, w.e.f. 21-09-2021)
+
+[SECTION: hec_institution_recognition_6_HEC_RECOGNIZED_CAMPUSES]
+# HEC recognized Campuses
+Title: HEC recognition of universities and campuses, affiliated institutions and unaccredited institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC recognized Campuses
+Official page: https://www.hec.gov.pk/english/universities/Pages/DAIs/HEC-recognized-Campuses.aspx
+Source file: https://www.hec.gov.pk/english/universities/Pages/DAIs/HEC-recognized-Campuses.aspx
+Version: Live HEC register, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current (list as published on the HEC site)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+- Mardan (upgraded to the status of full fledged University w.e.f. 20-07-2018)
+- Bannu
+- Jalozai
+- Kohat
+| 2
+| Shaheed Benazir Bhutto University, Sheringal, District Dir (Upper)
+|
+- Wari
+| 3
+| University of Swat, Swat
+|
+- Shangla (upgraded to University of Shangla, w.e.f. 01-08-2022)
+- Women Campus Swat (w.e.f 15-01-2024 to 30-09-2025)
+| 4
+| Kohat University of Sciencce & Technology (KUST), Kohat
+|
+- Hangu
+| 5
+| Gomal University, Dera Ismail Khan
+|
+- Tank
+| 6
+| Hazara University, Manshera
+|
+- Battagram
+| 7
+| University of Malakand, Malakand
+|
+Batkhela
+
+|  BALOCHISTAN
+| S. No.
+| University/DAI
+| Campus Location
+| 1
+| University of Turbat
+|
+- Gwadar (upgraded to University of Gwadar, w.e.f. 20-09-2018)
+- Pangjur
+| 2
+| Sardar Bahadur Khan Women University, Quetta
+|
+- Pishin
+- Noshki
+- Khuzdar
+| 3
+| Balochistan University of Information Technology, Engineering and Management Sciences (BUITEMS), Quetta
+|
+- University College of Zhob
+| 4
+| Balochistan University of Engineering & Technology (BUET), Khuzdar
+|
+- Uthal
+| 5
+| Lasbela University of Agriculture, Water & Marine Sciences (LUAWMS), Uthal, District Lasbela
+|
+- Wadh
+- Dera Murad Jamali
+| 6
+| University of Balochistan, Quetta
+|
+- Mastung
+- Kharan (w.e.f. 14-01-2024 to 31-01-2025)
+| AZAD JAMMU & KASHMIR
+| 1
+| University of Poonch, Rawalakot
+|
+- Kahuta Haveli
+| 2
+| University of Azad Jammu & Kashmir, Muzaffarabad
+|
+- Athmuqam (Neelam Campus)
+
+| CAMPUSES OF PRIVATE SECTOR UNIVERSITIES/DEGREE AWARDING INSTITUTES
+Total: 54
+| S. No
+| University/DAI
+| Campuses Location
+| 1
+| University of Lahore, Lahore
+|
+- Islamabad (Intake stopped after Fall 2019) and afterwards campus has been upgraded to fullfledge university (i.e. Ibadat International University, Islamabad) w.e.f. 08-10-2021.
+- Sargodha
+- Gujrat (Intake stopped after Fall 2019) and
+afterwards campus has been upgraded to fullfledge university (i.e.
+University of Chenab, Gujrat) w.e.f. 01-10-2021.
+| 2
+| Preston University, Kohat
+|
+- Islamabad (Admissions allowed w.e.f. 09-9-020)
+- Peshawar (Admissions stopped)
+- Lahore (Admissions stopped)
+| 3
+| SZABIST, Karachi
+|
+- Islamabad
+- Larkana
+- Dubai
+- Hyderabad
+- Gharo-Distt Thatta
+| 4
+| Sarhad University of Science & Information Technology, Peshawar (Campus and Student Support Centers (SSC’s)
+|
+- Ras-Al-Khaimah, UAE (Campus)- Admissions discontinued w.e.f. 01-1-2022
+- Mardan- Admissions discontinued w.e.f. 01-1-2023
+- Islamabad (Rawat)
+- Admissions are allowed through Distance Education mode only at approved Student Support Centers (SSC’s) of Islamabad and Khyber Pakhtunkhwa for undergraduate degree programs in arts, humanities, social sciences, education, business and commerce only:
+- Comwave Institute of Information Technology, F-8 Markaz, Islamabad.
+- National Textile Institute (NTI), Main Park Road, Lane # 7, Chak Shehzad, Islamabad
+- Islamabad Federal College (IFC), Plaza # 154, St. No # 30, I&T Center, G-9/1, Islamabad.
+- Abbott Group of Colleges,
+Islamabad Expressway, Near TM CNG Station, Khanapul, Islamabad.
+- College of Business & Technologies, Comsats University Road, Mandian, Abbottabad.
+- Comwave Institute of Sciences & I.T Opposite New China Market, Near Noor Surgical Hospital, D-Stop, Abbottabad Road, Haripur.
+- Abbott Group of Colleges,
+Adjacent Zarai Taraqiati Bank, P.O Jhangi, Mansehra Road, Abbottabad.
+- Abbott Group of Colleges,
+Opposite WAPDA Grid Station, Near Dhangri Chowk, Shahra-E-Resham, Mansehra.
+- Comwave Institute of Sciences & I.T, Near Sultan Plaza, Supply Area, Mansehra Road, Abbottabad.
+- ANSI Institute of Education, Science &Technology (AIMS), Nowshera Road, Mardan.
+- Institute of Education & Management Sciences, University Road, D.I. Khan
+- Bannu Institute of Education, Science &Technology (BEST), Kacharey Road, Bannu.
+- Al Noor College of Engineering & Technology, Rawalpindi Road, Near Bypass Bridge, Opposite U.E.T Campus, Kohat.
+- Swabi Engineering College of Technology (SECT), Ahmadabad, Shah Mansoor, Swabi.
+- College of Business & I.T, Khaar Road, Opposite Saddam Petrol Pump, College Colony, Batkhela.
+- Chakdara Polytechnic Institute, G.T Road, Amir Abad, Chakdara Distt: Dir (L)
+- Dir College of Science & Technology, Saddo, Timergara, Dir Lower.
+- Saidu Polytechnic Institute,
+Park Avenue, College Colony, Saidu Sharif, Swat.
+- Indus Polytechnic Institute,
+G.T Road, Odigram, Swat.
+| 5
+| ISRA University, Hyderabad
+|
+- Islamabad
+- Karachi
+| 6
+| IQRA University, Karachi
+|
+- Islamabad (Sector H-9, Islamabad)
+- Quetta (Operations Stopped)
+- Karachi (Bahria Town)- Campus closed w.e.f. 08-08-2024
+- Karachi (Gulshan Campus)
+- Karachi (North Campus)-Programs Allowed- Computer Science & Managment Sciences
+- Chak Shahzad, Islamabad
+- Malir (Airport Road) Karachi-Programs Allowed- Bachelors of Business Administration, Masters of Business Administration, Bachelors of Computer Science, Bachelors of Media Studies and Bachelors of Artifical Intelligence.
+- M-9 (8-B, Scheme 33, Deh Songal Tappo Gujro, East Karachi)- Programs Allowed-BBA, BSCS and BSSE, subject to permission of relevant council.
+- Hyderabad (Programs Allowed-BBA, BSCS and BSSE, subject to permission of relevant council).
+| 7
+
+[SECTION: hec_institution_recognition_7_HEC_RECOGNIZED_CAMPUSES]
+# HEC recognized Campuses
+Title: HEC recognition of universities and campuses, affiliated institutions and unaccredited institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC recognized Campuses
+Official page: https://www.hec.gov.pk/english/universities/Pages/DAIs/HEC-recognized-Campuses.aspx
+Source file: https://www.hec.gov.pk/english/universities/Pages/DAIs/HEC-recognized-Campuses.aspx
+Version: Live HEC register, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current (list as published on the HEC site)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+| National University of Computer and Emerging Sciences, Islamabad (FAST)
+|
+- Lahore
+- Karachi
+- Peshawar
+- Chiniot
+- Multan (Valid up to June 30, 2028), the currently enrolled students of the Sub Campus Multan of FAST-NUCES Islamabad shall be dully recognized.
+| 8
+| Abasyn University, Peshawar
+|
+- Islamabad
+| 9
+| Hamdard University, Karachi
+|
+- Islamabad (Admissions allowed in following programs up til 31-12-2024)
+BE (Electrical Engineering), BS (CS), BS (Digital System & Web Technology), BS (Digital Forensic & Cyber Security), BBA, BS (A&F), Pharm-D, BS (Education) , (B.Ed),
+- I ntake is allowed only for Spring-2025 in the below programs :
+(BS-HND), (BS-Psychology), (BS-English), (BS-Computer Arts), (BS-Eastern Medicine), 
+| 10
+| National College of Business Administration & Economics, Lahore
+|
+- Multan
+- Bahawalpur
+- Rahim Yar Khan
+| 11
+| Qurtuba University of Science and Information Technology, Dera Ismail Khan
+|
+- Peshawar
+| 12
+| University of Management & Technology, Lahore
+|
+- Sialkot
+| 13
+| The Riphah International University, Islamabad
+|
+- Lahore
+- Faisalabad
+- Malakand (up til Fall 2024)
+- Islamabad (Gulberg Greens) up til December 31, 2024
+- Sahiwal ( up til December 31, 2027
+- Peshawar (up til December 31, 2026)
+- Gujranwala (up till December 31, 2026)
+| 14
+| Al-Hamd Islamic University, Quetta
+|
+- Islamabad
+| 15
+| Greenwich University, Karachi
+|
+- Mauritius
+| 16
+| Hajvery University, Lahore
+|
+- Sheikhupura (Admissions stopped)
+| 17
+| Aga Khan University, Karachi
+|
+- Institute For the Study of Muslim Civilizations, London
+| 18
+| Iqra National University, Peshawar
+|
+- Swat
+| 19
+| Ilma University, Karachi
+|
+Gulshan Campus is allowed for intake in the following department/degree programs w.e.f. 13-5-2020 till 31-12-2024:
+Department of Business Administration:
+- BBA
+- BS Digital Marketing
+- BS Accouting & Finance/Islamic Finance
+| 20
+| Zia uddin University, Karachi
+|
+- Sukkur
+| 21
+|  Mohi-ud-Din Islamic University, Nerian Sharif, AJ&K
+| 
+- Mirpur-AJ&K
+| 22
+| Karachi Institute of Economics & Technology (KIET), Karachi
+|
+- City Campus ( Shahrah-e-Faisal (PECHS) and
+North Nazimabad, Karachi) merged into Main Campus (i.e. Ahsanabad Campus, Karachi) .
+
+| 23
+| The Superior University, Lahore
+|
+- Okara
+- Sargodha
+- Rahim Yar Khan
+- Faisalabad
+- Layyah
+| 24
+| Ibadat International University, Islamabad
+|
+- Pakpattan (w.e.f. 01-08-2023 to 31-12-2024 in undergraduate programs of BS (Computer Science and BS Mathematics)
+Allied Health Sciences Programs (24-11-2023 to 31-12-2024):
+- BS (MLT), BS (Human Nutrition & Dietetics), DPT, BS (Medical Utrasound Technology) and BS (Radiography & Imaging Technology)
+| 25 | DHA Suffa University, Karachi
+|
+-  DHA City-Karachi (Programs Allowed- BS (Computer Science) and B.E (Civil) w.e.f. July 29, 2024 to December 31, 2025.
+| 26 | Indus University, Karachi
+| North Campus-Karachi, w.e.f. 03-09-2024 to Fall 2025
+| 27
+| Islamabad University of Health Sciences & Emerging Technologies, Islamabad
+| Sialkot Campus, w.e.f. February 02, 2026 to December 31, 2026
+BS-Informatics , BS Nursing, BS Computer Science, BBA
+| 28
+| Lahore Leads University, Lahore
+| Islamabad Sub Campus, w.e.f. June 06 to December 31, 2027
+Bachelor of Science in Computer Science (BS. CS)
+Bachelor of Business Administration (BBA)
+
+[SECTION: hec_institution_recognition_8_HEC_RECOGNIZEDCAMPUSES]
+# HEC - RecognizedCampuses
+Title: HEC recognition of universities and campuses, affiliated institutions and unaccredited institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC - RecognizedCampuses
+Official page: https://www.hec.gov.pk/english/universities/Pages/DAIs/HEC-recognized-Campuses.aspx
+Source file: https://www.hec.gov.pk/english/universities/Pages/DAIs/HEC-recognized-Campuses.aspx
+Version: Live HEC register, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current (list as published on the HEC site)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+## HEC - RecognizedCampuses
+| University Name
+| Recognized Campuses
+| Sector
+| Charter By
+| Discipline
+| Province
+| City
+
+[SECTION: hec_institution_recognition_9_UNACCREDITED_INSTITUTIONS]
+# Unaccredited Institutions
+Title: HEC recognition of universities and campuses, affiliated institutions and unaccredited institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Unaccredited Institutions
+Official page: https://www.hec.gov.pk/english/universities/Pages/Unaccredited-Institutions.aspx
+Source file: https://www.hec.gov.pk/english/universities/Pages/Unaccredited-Institutions.aspx
+Version: Live HEC register, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current (list as published on the HEC site)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+Universities
+Unaccredited Institutions
+- Accreditation Section
+- HEC Recognised TNE Institutions
+- Unaccredited Institutions
+- Institution Accredited under the Old TNE Policy
+Unaccredited Institutions
+ The following institutions are not authorized/permitted to admit/enroll students under their own seal and signature. Therefore, the public at large is hereby advised not to seek admission in these institution;
+| 
+Institutions Imparting Education Through Foreign Collaboration
+:
+| 
+Sr . #
+| 
+Name of Institutions
+| Programs
+| 1
+| 
+Vanadium Law School, Lahore
+| 
+| 
+|
+
+| 
+Unaccredited Universities/Institutes:
+| Sr . # | Name of Institutions
+| 
+Public Sector Institutions
+|
+| Private Sector Institutions
+
+| 1
+| Salar International University, Sheikhupura
+| 2
+| Bahawalpur Metropolitan University
+| 3
+| University of Arts Sciences, Lahore
+| 4
+| Aspire University, Lahore
+| 5
+| Sahara University, Narowal
+| 6
+| Lahore City University, Lahore
+| 7
+| Global Institute, Lahore
+| 8
+| Preston Institute of Management Sciences & Information Technology (PIMSAT), Karachi
+| 9
+| Al-Khair University, Bhimber
+| 10
+| University of EAST
+, Hyderabad
+(The institution remained recognized by the Higher Education Commission (HEC) from the date of promulgation of the University of EAST Act No. XI of 2004 (i.e., 28 July 2004) until 31 December 2010. The recognition status is applicable to graduates included in the list, submitted by the University to HEC.)
+
+[SECTION: hec_institution_recognition_10_HEC_RECOGNITION_OF_UNIVERSITIES_AND_CAMPUSES_A]
+# HEC recognition of universities and campuses, affiliated (part 5)
+Title: HEC recognition of universities and campuses, affiliated institutions and unaccredited institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC recognition of universities and campuses, affiliated (part 5)
+Official page: https://www.hec.gov.pk/english/policies/Pages/HEC-Institutional-Affiliation-Policy.aspx
+Source file: https://www.hec.gov.pk/english/policies/Pages/HEC-Institutional-Affiliation-Policy.aspx
+Version: Live HEC register, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current (list as published on the HEC site)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+HEC
+Policies and Procedures
+HEC Institutional Affiliation Policy-2024 (Public Sector Universities/DAIs ONLY)
+The Higher Education Commission has been empowered by Section 10-1(d) of Ordinance No. LIII of 2002, “to prescribe conditions under which institutions, including those that are not part of the state educational system, may be opened and operated" across the country. The Commission is also mandated to devise policies, set standards and define priorities in various fields, pertinent to institutional regulations/guidelines/rules to enhance the quality of education, and vide Section 10-1(a) of the Ordinance, “formulate policies, guiding principles, and priorities for higher education institutions for the promotion of socio-economic development of the country."
+Click here to download HEC Institutional Affiliation Policy-2024 (Public Sector Universities/DAIs ONLY)
+
+[SECTION: hec_institution_recognition_11_HEC_RECOGNITION_OF_UNIVERSITIES_AND_CAMPUSES_A]
+# HEC recognition of universities and campuses, affiliated (part 6)
+Title: HEC recognition of universities and campuses, affiliated institutions and unaccredited institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC recognition of universities and campuses, affiliated (part 6)
+Official page: https://www.hec.gov.pk/english/services/universities/Fsnoc/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/Fsnoc/Pages/default.aspx
+Version: Live HEC register, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current (list as published on the HEC site)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+HEC
+Services
+Universities
+Grant of No Objection Certificate (NOC) to Foreign Students
+Higher Education Commission grants No Objection Certificate (NOC) to foreign national students for educational purpose in order to complete formal requirements of admission and visa processing under the intimation to the Ministry of Interior.
+As per the existing policy, foreign students approach the desired Universities/DAIs directly to secure admission, after confirmation of the admission the Universities/DAIs refer the case to HEC for issuance of NOC for student visa process.
+Following documents are required by Higher Education Commission to process NOC cases. The NOC application must be submitted by the International Student Office along with duly verified documents:
+- Copy of Admission Letter
+Student Information Sheet
+- Copy of Passport
+The request for issuance of NOC must be initiated by International Student Office of the respective university only. HEC will not entertain any NOC application submitted by the foreign students personally.
+The complete NOC application in softcopy should be emailed to HEC on the following email address:
+nocforeign@hec.gov.pk
+Furthermore, HEC requires five (05) working days for processing of NOC application from the date of receipt of complete application. The university may request for application status update officially and discourage the foreign students from visiting HEC office for personal enquiries in order to avoid any inconvenience.
+Letter Admission of Foreign Students in Educational Institution of Pakistan
+Contacts:
+ Dr. Farida Anjum
+
+Director (Academics)
+Higher Education Commission
+H-8, Islamabad
+fdanjum@hec.gov.pk  
+Saher Mirza
+ Assistant Director (Academics)
+ smirza@hec.gov.pk
+
+[SECTION: hec_institution_recognition_12_HEC_RECOGNITION_OF_UNIVERSITIES_AND_CAMPUSES_A]
+# HEC recognition of universities and campuses, affiliated (part 7)
+Title: HEC recognition of universities and campuses, affiliated institutions and unaccredited institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC recognition of universities and campuses, affiliated (part 7)
+Official page: https://www.hec.gov.pk/english/policies/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/policies/Pages/default.aspx
+Version: Live HEC register, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current (list as published on the HEC site)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Policies
+HEC
+Policies and Procedures
+
+Type
+Academic
+Research
+- Framework on use of Generative AI (GenAI) Tools in Higher Education Institutes (HEIs)
+- Academic
+- Framework for Recognition of Liberal Arts Undergraduate Programs
+- Academic
+- Policy on Dual, Double and Joint Degree Programmes
+- Academic
+- Guidelines for Engagement of Visiting Faculty in HEIs
+- Academic
+- Framework for HEC Best University Teacher Award (BUTA)
+- Academic
+- Revised Policy Document for Access to Scientific Instruments Program
+- Academic
+- Framework for Appointment of Professor Emeritus in the Higher Education Institutions (HEIs)
+- Academic
+- Framework for Appointment of Meritorious Professor in the Higher Education Institutions (HEIs)
+- Academic
+- Framework for HEC Distinguished National Professor (DNP) Program
+- Academic
+- Policy Guidelines for Appointment of Professor of Practice by the Higher Education Institutions (HEIs) In Pakistan
+- Academic
+- HEC National Fee Refund Policy
+- Academic
+- HEC Institutional Affiliation Policy-2024 (Public Sector Universities/DAIs ONLY)
+- Academic
+- Interim Placement of Fresh PhDs (IPFP) Policy
+- Academic
+- Undergraduate Education Policy (V 1.1)
+- Academic
+- Graduate Education Policy (GEP-2023)
+- Academic
+- Campus Security and Surveillance Policy
+- Academic
+- Research & Innovation Policies
+- Research
+- National Fee-Refund Policy
+- Academic
+- Open and Distance Learning (ODL) Policy
+- Academic
+- Policy on Drug and Tobacco Abuse in Higher Education Institutions
+- Academic
+- Revised Policy on Protection against Harassment in Higher Education Institutions
+- Academic
+- Standardization of SEMESTER System in HEIs
+- Academic
+- Transnational Education Policy (TNE)
+- Academic
+- Plagiarism Policy
+- Research
+- Policy for Student with Disabilities at Higher Education Institutions in Pakistan
+- Academic
+Reset Filters

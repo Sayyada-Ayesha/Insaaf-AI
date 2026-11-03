@@ -1,0 +1,179 @@
+[SECTION: APPLICABLE_LAW_AND_AUTHORITY]
+Title: Student Discipline and Grievance — Applicable Legal Framework
+Authority: University Statutes (under relevant University Act); Higher Education Commission (HEC) Guidelines; Constitution of Pakistan, 1973
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Statutory and Regulatory
+Source: University Acts and Statutes; HEC Guidelines; Constitution of Pakistan, 1973
+
+Overview:
+- Student discipline in Pakistani universities is governed primarily by the respective University Act and the Statutes/Rules framed thereunder.
+- Each university (established under its own Act — e.g., University of Sindh Act, MUET Act, Liaquat University Act) has statutory authority to make rules for student discipline.
+- HEC has issued guidelines on academic integrity, student grievances, and due process in disciplinary proceedings.
+- The Constitution of Pakistan guarantees fundamental rights to students, including the right to fair hearing (Article 10-A) and the right to approach courts for enforcement of rights (Article 199 — writ jurisdiction of High Court).
+- Disciplinary action must follow the principles of natural justice: notice of charges, opportunity to be heard, reasoned decision, and right to appeal.
+
+Note: Specific disciplinary rules, codes of conduct, and penalty structures vary by university. Consult your university's applicable Statutes and Rules.
+
+[SECTION: CODE_OF_CONDUCT]
+Title: Student Code of Conduct — General Principles
+Authority: University Statutes and Regulations (varies by institution)
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Institutional Regulation
+Source: University Statutes
+
+General Principles (common across universities):
+- Students are expected to maintain academic integrity, respect for others, and adherence to institutional rules.
+- Prohibited conduct typically includes: academic dishonesty (cheating, plagiarism, fabrication), disruption of university activities, damage to property, harassment of any kind, ragging/hazing, unauthorized possession of weapons, substance abuse on campus, and violation of university policies.
+- The code of conduct applies to student behaviour on campus, at university events, and in some cases, off-campus conduct that affects the university community.
+- Students must comply with directions of university authorities acting in their official capacity.
+
+Note: The specific code of conduct, including prohibited acts and definitions, is set by each university's Statutes. Consult your university's applicable regulations for the complete and current code.
+
+[SECTION: DISCIPLINARY_PROCEEDINGS]
+Title: Disciplinary Proceedings — Due Process Requirements
+Authority: University Statutes; Constitution of Pakistan, Article 10-A (Right to Fair Trial)
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Statutory and Constitutional Requirement
+Source: University Statutes; Constitution of Pakistan, 1973
+
+Due Process Requirements:
+- Before any disciplinary action is taken, the student must be afforded due process:
+  1. Written Notice: The student must receive a written notice (show-cause notice) specifying the charges/allegations in sufficient detail to enable preparation of a defence.
+  2. Time to Respond: The student must be given reasonable time (typically 7 to 14 days, as prescribed by the university's regulations) to submit a written response/defence.
+  3. Personal Hearing: The Disciplinary Committee must grant the student a personal hearing before imposing any major penalty.
+  4. Evidence: The student has the right to know the evidence against them and to present their own evidence and witnesses.
+  5. Reasoned Decision: The Committee's decision must be based on the evidence presented and must include reasons.
+  6. Record: Proceedings should be properly recorded and documented.
+
+Note: The specific procedural requirements (timelines, committee composition, evidence rules) are set by each university's Statutes. Consult your university's applicable regulations.
+
+[SECTION: AVAILABLE_DISCIPLINARY_MEASURES]
+Title: Available Disciplinary Measures — By Authority and Regulation
+Authority: University Statutes and Regulations (varies by institution)
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Institutional Regulation
+Source: University Statutes
+
+Disciplinary measures (as available under university regulations) may include:
+- Minor measures:
+  - Written warning or censure
+  - Fine (as prescribed by university regulations)
+  - Community service within the institution
+  - Restriction from certain university facilities or activities for a specified period
+- Major measures:
+  - Suspension from the university for a specified period
+  - Rustication (temporary expulsion)
+  - Expulsion from the university
+  - Debarment from examinations
+  - Cancellation of admission
+  - Withholding of degree or transcript
+
+Note: The specific measures available, their applicability to particular offences, and the authority empowered to impose each measure are defined by each university's Statutes. There is no universal penalty sequence — the measure must be proportionate to the offence and as prescribed by the applicable regulations. Consult your university's applicable regulations for the specific disciplinary measures and their applicability.
+
+[SECTION: SHOW_CAUSE_NOTICE]
+Title: Show-Cause Notice — Content and Response
+Authority: University Statutes; Principles of Natural Justice
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Statutory and Constitutional Requirement
+Source: University Statutes; Constitution of Pakistan, Article 10-A
+
+Show-Cause Notice Requirements:
+- A show-cause notice must be in writing and must contain:
+  1. Full name and details of the student (name, roll number, department, semester).
+  2. Clear and specific description of the alleged misconduct/charges.
+  3. Reference to the specific rule(s) or regulation(s) allegedly violated.
+  4. Date, time, and place of the alleged incident(s).
+  5. The time allowed for the student to respond (as per university regulations, typically 7-14 days).
+  6. The authority issuing the notice (Disciplinary Committee, Dean, Provost, etc.).
+  7. Information about the student's right to a personal hearing.
+  8. Consequences of failure to respond (the Committee may proceed ex parte).
+
+How to Respond:
+- Submit a written reply addressing each allegation specifically.
+- Include any evidence, documents, or witness statements that support your defence.
+- Request a personal hearing if one has not already been scheduled.
+- Keep a copy of your reply and obtain a receipt/acknowledgment of submission.
+- If you need more time to prepare, you may request an extension (grant depends on the authority's discretion).
+
+Note: The specific format, content requirements, and timelines for show-cause notices vary by university. Consult your university's applicable regulations.
+
+[SECTION: RIGHT_TO_APPEAL]
+Title: Student Right to Appeal Disciplinary Decisions
+Authority: University Statutes; Constitution of Pakistan, Article 199
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Statutory and Constitutional Right
+Source: University Statutes; Constitution of Pakistan, 1973
+
+Appeal Process:
+- A student aggrieved by a disciplinary decision has the right to appeal:
+  1. First Appeal: To the Vice-Chancellor, Syndicate, or designated Appellate Authority within the university (as prescribed by the university's Statutes). The appeal must typically be filed within 15 to 30 days of the disciplinary order.
+  2. Further Appeal: If the university's internal appeal mechanism does not resolve the matter, the student may approach:
+ a. The relevant Provincial or Federal Ombudsman (if the matter involves maladministration).
+ b. The High Court via writ petition under Article 199 of the Constitution (if fundamental rights are violated, or the disciplinary proceedings were conducted without due process, or the punishment is disproportionate).
+
+Grounds for Appeal may include:
+- Procedural irregularity (e.g., no notice, no hearing, biased Committee).
+- Insufficient evidence to support the finding.
+- Disproportionate punishment relative to the offence.
+- Misapplication of university rules.
+- New evidence that was not available during the original proceedings.
+
+Note: The specific appellate authority, timelines, and grounds for appeal are set by each university's Statutes. Consult your university's applicable regulations.
+
+[SECTION: GRIEVANCE_REDRRESSAL]
+Title: Student Grievance Redressal Mechanisms
+Authority: University Statutes; HEC Guidelines
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Institutional and Regulatory
+Source: University Statutes; HEC Guidelines
+
+Grievance Mechanisms:
+- Universities are required to establish mechanisms for addressing student grievances (academic and non-academic):
+  1. Departmental Level: Head of Department / Departmental Committee for academic grievances (grading disputes, course-related issues).
+  2. Faculty/Dean Level: Dean of Faculty for inter-departmental or escalated grievances.
+  3. University Level: Proctor, Dean of Student Affairs, or designated Grievance Committee for non-academic grievances (hostel, transport, facilities, harassment).
+  4. Vice-Chancellor: Final internal appellate authority for unresolved grievances.
+  5. External: If internal mechanisms fail, students may approach the Ombudsman, HEC, or High Court as appropriate.
+
+Note: The specific grievance mechanism structure, offices, and procedures vary by university. Consult your university's applicable regulations.
+
+[SECTION: RAGGING_PROHIBITION]
+Title: Prohibition of Ragging and Hazing
+Authority: University Statutes; HEC Guidelines; Pakistan Penal Code
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Statutory and Institutional Prohibition
+Source: University Statutes; PPC; HEC Guidelines
+
+Key Provisions:
+- Ragging, hazing, and any form of physical or psychological abuse of students by seniors is strictly prohibited in all educational institutions.
+- Ragging may constitute criminal offences under the Pakistan Penal Code, including:
+  - Section 337 PPC: Hurt
+  - Section 339 PPC: Wrongful restraint
+  - Section 340 PPC: Wrongful confinement
+  - Section 506 PPC: Criminal intimidation
+  - Section 354A PPC: Stalking
+  - Section 509 PPC: Insulting modesty
+- Universities may impose disciplinary action (including expulsion) against students found guilty of ragging.
+- Victims of ragging may file complaints with the university Disciplinary Committee, the Anti-Harassment Committee (if applicable), or law enforcement.
+
+Note: The specific definition of ragging and the disciplinary consequences vary by university. Consult your university's applicable regulations.
+
+[SECTION: HYDERABAD_SPECIFIC_RESOURCES]
+Title: Disciplinary and Grievance Resources for Students in Hyderabad
+Authority: University of Sindh Act, 1972; MUET Act, 1976; LUMHS Act, 2006; Government of Sindh; HEC
+Jurisdiction: Hyderabad, Sindh
+Legal Status: Statutory and Institutional
+Source: University Acts and Statutes; HEC Guidelines
+
+Hyderabad-Specific Information:
+- University of Sindh (Jamshoro/Hyderabad): Governed by the University of Sindh Act, 1972 and Statutes. Students may approach the Proctor, Dean of Student Affairs, or the Vice-Chancellor for grievances. The Sindh Provincial Ombudsman is available for external complaints.
+- Mehran University of Engineering and Technology (MUET), Jamshoro: Governed by the MUET Act, 1976 and Statutes. Students may approach the Provost (for hostel matters), Proctor, or Dean of Student Affairs.
+- Liaquat University of Medical and Health Sciences (LUMHS), Hyderabad: Governed by the LUMHS Act, 2006 and Statutes. Students may approach the designated grievance authority as per LUMHS regulations.
+- University of Sindh: Official website: https://www.usindh.edu.pk | Student Affairs: https://www.usindh.edu.pk (Dean of Student Affairs section)
+- MUET: Official website: https://www.muet.edu.pk | Admissions: https://www.muet.edu.pk/admissions
+- LUMHS: Official website: https://www.lumhs.edu.pk | Admissions: https://www.lumhs.edu.pk/admissions/undergraduate_admission.php
+- All Hyderabad universities are subject to HEC guidelines on student discipline and grievance redressal.
+- Legal aid may be available through university legal aid clinics or the Sindh Bar Council.
+- Students may approach the Sindh High Court (Hyderabad Bench) via writ petition under Article 199 of the Constitution if fundamental rights are violated.
+
+Note: Specific offices, procedures, and contact details vary by university. Consult your university's applicable regulations for current information.

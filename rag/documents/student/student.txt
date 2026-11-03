@@ -1,0 +1,106 @@
+[SECTION: ARTICLE_25A_RIGHT_TO_EDUCATION]
+Right to Education — Constitutional Guarantee (Article 25-A)
+The State shall provide free and compulsory education to all children of the age of five to sixteen years in such manner as may be determined by law.
+Source: Constitution of Pakistan, 1973, Article 25-A (inserted by 18th Amendment, 2010).
+Applicability: Federal and all Provincial Governments are bound to implement free and compulsory education up to age 16.
+Provincial laws enacted: Punjab Free and Compulsory Education Act, 2014; Sindh Right of Children to Free and Compulsory Education Act, 2013; KPK Right to Free and Compulsory Education Act, 2017; Balochistan Free and Compulsory Education Act, 2014.
+
+[SECTION: HEC_DEGREE_RECOGNITION]
+Higher Education Commission (HEC) — Degree Recognition and Attestation
+The Higher Education Commission of Pakistan (HEC) is the statutory body responsible for recognition, accreditation, and degree equivalence of higher education institutions in Pakistan.
+Key functions:
+- Recognition of universities and degree-awarding institutions in Pakistan.
+- Attestation of degrees issued by Pakistani universities.
+- Equivalence certificates for degrees earned from foreign universities.
+- Quality assurance and accreditation through the National Qualifications Framework (NQF).
+- Regulation of PhD programmes and academic standards.
+Procedure for Degree Attestation:
+1. Obtain transcript and degree certificate from the university.
+2. Submit online application on the HEC official portal (hec.gov.pk).
+3. Pay the prescribed attestation fee.
+4. Submit physical documents to the HEC Regional Centre or HEC Islamabad.
+5. HEC verifies with the issuing institution.
+6. Attested degree returned/collected.
+Source: Higher Education Commission Act, 2002; HEC official website: https://www.hec.gov.pk
+
+[SECTION: UNIVERSITY_DISCIPLINARY_RIGHTS]
+Student Rights in University Disciplinary Proceedings
+Pakistani students are entitled to due process (fair hearing) before any disciplinary action, including suspension, expulsion, or examination debarment.
+Key protections:
+- Right to be informed in writing of charges against them.
+- Right to respond to charges (show-cause notice must be given).
+- Right to appear before the Disciplinary Committee.
+- Right to be represented (in some institutions, a nominated representative may assist).
+- Right to appeal to the Vice-Chancellor, Syndicate, or relevant appellate body.
+Authorities:
+- University statutes and regulations govern disciplinary proceedings.
+- HEC has issued guidelines on academic integrity and student grievances.
+- Aggrieved students may also approach the High Court via writ petition (Article 199) if fundamental rights are violated.
+Source: Individual University Statutes; HEC Policy on Academic Integrity; Constitution of Pakistan, Article 10-A (Right to Fair Trial).
+
+[SECTION: ANTI_HARASSMENT_EDUCATION]
+Anti-Harassment in Educational Institutions
+The Protection against Harassment of Women at the Workplace Act, 2010 applies to educational institutions as workplaces.
+HEC Anti-Harassment Policy (2020):
+- All HEC-recognized universities must implement an Anti-Harassment Policy.
+- Every institution must establish an Inquiry Committee for harassment complaints.
+- Students (including male students) experiencing harassment may file complaints.
+- The Inquiry Committee must complete the inquiry within 30 days.
+- If institution fails to act, complaint can be made to the Federal/Provincial Ombudsperson.
+- Sexual harassment includes: unwelcome sexual advances, requests for favours, verbal/physical conduct of a sexual nature.
+Penalties: Minor penalties (warning, censure) to major penalties (dismissal, debarment).
+Source: Protection against Harassment of Women at the Workplace Act, 2010; HEC Anti-Harassment Policy.
+
+[SECTION: SCHOLARSHIP_RIGHTS]
+Student Scholarship Rights and Grievances
+Major scholarship programmes in Pakistan:
+- HEC Need-Based Scholarships: For deserving students of public sector universities.
+- HEC Merit Scholarships: For top-performing undergraduate and postgraduate students.
+- Prime Minister's Laptops and Youth Programmes.
+- Ehsaas Undergraduate Scholarship: For students from low-income families.
+- Provincial scholarship programmes (Punjab, Sindh, KP, Balochistan).
+Rights of scholarship recipients:
+- Right to receive scholarship amounts on time as per disbursement schedule.
+- Right to appeal against cancellation or disqualification before the relevant committee.
+- Right to know the criteria and be assessed fairly.
+Complaint mechanism:
+- For HEC scholarships: Email the HEC Scholarship Division or visit hec.gov.pk/scholarships.
+- For Ehsaas: Contact BISP/Ehsaas help desk.
+- For Provincial scholarships: Contact relevant Education Department.
+Source: HEC website (hec.gov.pk); Ehsaas Programme portal; respective provincial education departments.
+
+[SECTION: STUDENT_LEGAL_AID]
+Legal Resources for Students
+Students who cannot afford a lawyer or need legal guidance:
+- University Legal Aid Clinics: Several Pakistani law schools (e.g., Punjab University, Quaid-i-Azam University, University of Karachi) operate free legal aid clinics.
+- Pakistan Bar Council Free Legal Aid: Available for deserving persons, including students. Contact: Pakistan Bar Council, Islamabad.
+- Wafaqi Mohtasib (Federal Ombudsman): For complaints against federal government institutions including federally-chartered universities. Helpline: 1055.
+- Provincial Ombudsman: For complaints against provincial universities and public schools.
+- Human Rights Cell: Punjab Human Rights Department operates a helpline for rights violations.
+- Legal literacy workshops: HEC periodically organizes awareness sessions at universities.
+Source: Pakistan Bar Council; Wafaqi Mohtasib Secretariat; HEC.
+
+[SECTION: STUDENT_EXAMINATION_RIGHTS]
+Student Rights in Examinations
+- Students have the right to see their marked examination papers (rechecking/re-evaluation) as per university policy.
+- Rechecking fee is prescribed by each university.
+- Examination misconduct proceedings must follow due process (show-cause, hearing, right of appeal).
+- A student wrongly failed or unfairly marked may file an appeal to the relevant examination board/committee.
+- For Board of Intermediate and Secondary Education (BISE) examinations, rechecking petitions must be filed within 15 days of result declaration.
+- For matriculation and intermediate exams, the competent authority is the respective BISE.
+- For degree examinations, the University Controller of Examinations/Academic Council is the authority.
+Source: Individual University Examination Regulations; BISE regulations; HEC.
+
+[SECTION: STUDENT_FEE_RIGHTS]
+Student Fee Rights and Fee Concession Policies
+- Right to Fee Concession: Under provincial laws and university statutes, deserving, orphaned, and disabled students are entitled to fee concessions or waivers.
+- Punjab University Fee Concession: PU provides fee concessions (half/full tuition fee waiver) to deserving students under specific rules.
+- Fee Hikes: University syndicates/governing bodies regulate fee hikes. Unreasonable or arbitrary hikes can be challenged through university representation channels or student unions/societies.
+- Refund Policy: HEC National Fee Refund Policy at Higher Education Institutions:
+  1. Full (100%) refund of tuition fee if applied up to 7th day of commencement of classes.
+  2. Half (50%) refund of tuition fee if applied from 8th to 15th day of commencement of classes.
+  3. No (0%) refund of tuition fee if applied after 15th day of commencement of classes.
+Source: HEC National Fee Refund Policy; respective university fee concession guidelines.
+Status: Active
+URL: https://www.hec.gov.pk
+

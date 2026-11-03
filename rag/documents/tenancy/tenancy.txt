@@ -1,0 +1,64 @@
+[SECTION: PUNJAB_RENTED_PREMISES_ACT]
+Title: Punjab Rented Premises Act, 2009 (Tenancy Rights & Eviction Rules)
+Authority: Provincial Assembly of the Punjab
+Jurisdiction: Punjab Province, Pakistan
+Legal Status: Active statutory law
+Source URL: https://punjabcode.punjab.gov.pk
+
+Key Provisions & Rights:
+- Section 4: Written Tenancy Agreement. All tenancy agreements in Punjab must be in writing and registered with the Rent Registrar.
+- Section 7: Payment of Rent. Tenant must pay rent on or before the date specified in the agreement, or by the 10th of the following month if no date is specified. Tenant is entitled to a written receipt signed by the landlord.
+- Section 10: Prohibition of Discontinuance of Essential Services. Landlord CANNOT cut off water, electricity, gas, or sanitation services to the rented premises. Doing so is a punishable offence.
+- Section 13: Eviction Grounds. Landlord cannot evict a tenant except by order of the Rent Tribunal on specified grounds:
+  1. Default in payment of rent for more than 30 days.
+  2. Breach of tenancy agreement terms.
+  3. Subletting the premises without landlord's written consent.
+  4. Using premises for a purpose other than agreed.
+  5. Personal bona fide need of the landlord or landlord's spouse/children.
+  6. Material structural damage caused by tenant.
+- Section 15: Application for Eviction. Landlord must file eviction petition before the Rent Tribunal. Forceful self-help eviction or locking out the tenant is strictly illegal.
+
+[SECTION: SINDH_RENTED_PREMISES_ORDINANCE]
+Title: Sindh Rented Premises Ordinance, 1979 (Sindh Tenancy Law)
+Authority: Provincial Assembly of Sindh
+Jurisdiction: Sindh Province, Pakistan
+Legal Status: Active statutory law
+Source URL: https://sindh.gov.pk
+
+Key Provisions & Rights:
+- Section 3: Rent Controller Jurisdiction. All landlord-tenant disputes in Sindh are heard by the Rent Controller.
+- Section 10: Unlawful Eviction Barred. No landlord shall evict any tenant except in execution of an order of the Controller.
+- Section 11: Discontinuance of Essential Amenities. Landlord shall not disconnect electricity, gas, or water supply without just cause. If disconnected, Rent Controller may order immediate restoration.
+- Section 14: Eviction Grounds in Sindh:
+  1. Non-payment of rent within 60 days of due date.
+  2. Subletting without landlord's consent.
+  3. Premises required for personal bona fide use of landlord.
+  4. Tenant causing nuisance to neighbors.
+
+[SECTION: ISLAMABAD_RENT_RESTRICTION_ORDINANCE]
+Title: Islamabad Rent Restriction Ordinance, 2001
+Authority: Ministry of Interior / Federal Capital Administration
+Jurisdiction: Islamabad Capital Territory (ICT)
+Legal Status: Active statutory law
+Source URL: https://pakistancode.gov.pk
+
+Key Provisions & Rights:
+- Governs residential and commercial tenancy disputes in Islamabad.
+- Landlord must register lease agreement with the Islamabad Rent Controller.
+- Annual rent escalation capped as per agreement or statutory limit (typically 10% per year).
+- Tenant has right to security deposit refund within 30 days of vacation after deducting lawful arrears.
+
+[SECTION: TENANCY_DISPUTE_PROCEDURE]
+Title: Landlord-Tenant Dispute Resolution Procedure in Pakistan
+Authority: Rent Controllers / Rent Tribunals of Pakistan
+Jurisdiction: All Provinces of Pakistan
+Legal Status: Statutory Procedure
+Source URL: https://pakistancode.gov.pk
+
+Step-by-Step Practical Workflow:
+Step 1: Check Tenancy Agreement & Receipts. Ensure tenancy agreement copy and rent payment receipts or bank transfer records are available.
+Step 2: Legal Notice / Demand. Party sends 15-day written notice to resolve default or grievance.
+Step 3: Filing Petition before Rent Controller/Tribunal. File eviction or restoration petition in the Rent Court of the district where property is located.
+Step 4: Written Statement & Leave to Contest. Opposing party submits reply/written statement within 30 days.
+Step 5: Summary Proceedings / Evidence. Rent Court holds summary inquiry; evidence recorded if factual dispute exists.
+Step 6: Final Order & Appeal. Rent Court issues order. Dissatisfied party may appeal to District Judge within 30 days.

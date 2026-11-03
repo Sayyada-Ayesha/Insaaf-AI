@@ -1,0 +1,313 @@
+{
+  "artifact": "INSAaf AI — Pakistan document & drafting taxonomy (corpus-grounded) for final_v3 drafting/editing training rows",
+  "corpus": "2.4.0-pre-freeze",
+  "generatedAt": "2026-09-06T15:05:20.815Z",
+  "status_scale": {
+    "FULL": "required content/steps verified in indexed corpus or official pages (canonical for drafting rows)",
+    "PARTIAL": "only part of the drafting rules indexed; drafting rows must teach caveats, never invent omitted rules",
+    "SUMMARY": "digest-level summaries only (topic areas, not section text); drafting rows stay strictly at digest level",
+    "GAP": "governing law not indexed; document type listed so drafting rows are NOT generated for it"
+  },
+  "types": [
+    {
+      "id": "sale_deed",
+      "name": "Sale deed (immovable property)",
+      "domain": "property",
+      "purpose": "Registered transfer of title to immovable property",
+      "corpus": "property.txt MUTATION_INTEQAL: mutation does NOT create title — legal title comes from the registered sale deed; mutation updates revenue records (Patwari application, Tehsildar notice, Fard-e-Malkiat). property dispute records list title-deed/fard needs.",
+      "flow": "draft deed with parties/property/consideration -> execute + register sale deed -> buyer applies for mutation to Patwari -> Revenue Officer (Tehsildar/Naib Tehsildar) notice -> sanction -> Fard update",
+      "status": "PARTIAL",
+      "note": "Registration Act 1908 and Stamp Act 1899 not indexed (stamp duty/registration-office rules = gap); drafting rows must mark fee/registration details as verify-in-office"
+    },
+    {
+      "id": "mutation_application",
+      "name": "Mutation (Inteqal) application",
+      "domain": "property",
+      "purpose": "Update government land revenue records (Fard) after a property transaction",
+      "corpus": "property.txt MUTATION_INTEQAL (steps verified above); contestation via revision before Collector/Board of Revenue or civil suit for declaration",
+      "flow": "apply to local Patwari -> Tehsildar/Naib-Tehsildar notice -> no objection + verification -> sanction -> new owner recorded",
+      "status": "FULL",
+      "note": ""
+    },
+    {
+      "id": "rent_agreement",
+      "name": "Rent/lease agreement",
+      "domain": "tenancy",
+      "purpose": "Record landlord-tenant terms",
+      "corpus": "tenancy.txt digests: rent control by province (Punjab Rented Premises Act 2009, Sindh Rented Premises Ordinance 1979, KP Urban Rent Restriction Ordinance 1959, ICT Rent Restriction Ordinance 2001); Rent Controller adjudicates; eviction grounds digested (default in rent, sublet without permission, nuisance, personal need)",
+      "flow": "parties + premises + rent + term + permitted use -> agree eviction-law grounds awareness -> dispute route = Rent Controller",
+      "status": "PARTIAL",
+      "note": "no prescribed-form text indexed; drafting rows must not assert mandatory clauses beyond the digested grounds"
+    },
+    {
+      "id": "eviction_application",
+      "name": "Eviction application (Rent Controller)",
+      "domain": "tenancy",
+      "purpose": "Landlord seeks eviction on statutory grounds",
+      "corpus": "tenancy digests (grounds above) + rent tribunals in court_hierarchy (Rent Tribunals under provincial Rent Acts; appeals to District Judge/HC)",
+      "flow": "notice to tenant -> application on statutory ground -> Rent Tribunal/Controller -> appeal",
+      "status": "PARTIAL",
+      "note": "province-specific form/prescribed procedure not indexed"
+    },
+    {
+      "id": "nikah_record",
+      "name": "Nikah (marriage) registration record",
+      "domain": "family",
+      "purpose": "Solemnization + registration of marriage (Muslim)",
+      "corpus": "family.txt covers nikah, dower (mahr) and Muslim marriage registration areas of the MFLO 1961 digest",
+      "flow": "consent of parties -> two male (or one male + two female) witnesses -> dower stated -> nikah registrar record -> registration per MFLO rules as digested",
+      "status": "PARTIAL",
+      "note": "rule-level detail of MFLO (registration time limits, forms) not fully indexed — drafting rows keep to digested facts"
+    },
+    {
+      "id": "talaq_notice",
+      "name": "Talaq notice (s.7 MFLO route)",
+      "domain": "family",
+      "purpose": "Effective divorce by husband with statutory notice",
+      "corpus": "family.txt MFLO areas (talaq + arbitration-council route digested)",
+      "flow": "notice in writing to Chairman Union Council + copy to wife -> 90-day period -> arbitration council attempt -> effective on expiry as digested",
+      "status": "PARTIAL",
+      "note": "exact s.7 wording not verbatim in corpus; rows teach the digested route only"
+    },
+    {
+      "id": "khula_suit",
+      "name": "Khula suit / dissolution petition",
+      "domain": "family",
+      "purpose": "Wife-initiated dissolution of marriage",
+      "corpus": "family.txt: Dissolution of Muslim Marriages Act 1939 digests (grounds incl. cruelty/desertion/missing husband/failure to maintain) + Family Courts Act 1964 exclusive jurisdiction; court hierarchy family courts",
+      "flow": "petition in Family Court -> conciliation attempt -> decree on proved ground (khula on restitution basis as digested) -> appeal to HC",
+      "status": "PARTIAL",
+      "note": "post-1961 khula doctrine not exhaustively indexed; rows teach digest-level grounds"
+    },
+    {
+      "id": "maintenance_petition",
+      "name": "Maintenance petition",
+      "domain": "family",
+      "purpose": "Financial support for wife/children",
+      "corpus": "family.txt maintenance digests + Family Courts Act 1964 exclusive jurisdiction",
+      "flow": "petition in Family Court -> quantum hearing on means of parties as digested -> enforcement route as digested",
+      "status": "PARTIAL",
+      "note": ""
+    },
+    {
+      "id": "custody_guardianship_petition",
+      "name": "Child custody / guardianship petition",
+      "domain": "family",
+      "purpose": "Care and custody of minor children",
+      "corpus": "family.txt guardianship digests + Family Courts Act 1964 jurisdiction (court hierarchy: family courts custody)",
+      "flow": "petition in Family Court -> welfare-of-the-minor standard as digested -> interim custody as digested",
+      "status": "PARTIAL",
+      "note": "Guardians and Wards Act 1890 detail not fully indexed"
+    },
+    {
+      "id": "will",
+      "name": "Will (wasiyat)",
+      "domain": "succession",
+      "purpose": "Testamentary disposition",
+      "corpus": "succession.txt digests: Muslim wills — bequeathable one-third, bequest to heir requires consent of other heirs (as digested)",
+      "flow": "declaration + witnesses -> limit 1/3 to non-heirs -> bequest to heir void unless heirs consent after death (digest level)",
+      "status": "PARTIAL",
+      "note": "Succession Act 1925 probate/admin areas partially digested"
+    },
+    {
+      "id": "inheritance_distribution",
+      "name": "Inheritance distribution statement",
+      "domain": "succession",
+      "purpose": "Division among legal heirs",
+      "corpus": "succession.txt + property.txt PROPERTY_INHERITANCE (son double daughter share; wife 1/8 with children, 1/4 without — as digested)",
+      "flow": "identify heirs -> apply shares by class as digested -> partition suit route (Partition Act 1893) for joint property",
+      "status": "PARTIAL",
+      "note": "comprehensive share tables (e.g., 12-class table) not indexed — rows must refuse exhaustive claims"
+    },
+    {
+      "id": "fir_information",
+      "name": "FIR (first information report)",
+      "domain": "criminal_procedure",
+      "purpose": "Set criminal process in motion for a cognizable offence",
+      "corpus": "police.txt (s.154 CrPC registration duty; refusal remedies) + procedure/procedures.txt FIR records (free copy entitlement; investigation start) + workflows",
+      "flow": "oral/written information at police station -> SHO registers cognizable offence FIR (free) -> complainant gets free copy -> investigation",
+      "status": "FULL",
+      "note": "rows: FIR must be registered for cognizable offences; refusal ladder = SHO -> SP/DSP -> JP 22A/22B -> magistrate s.200 -> HC Art 199 -> Citizen Portal 8171 -> IGP cell"
+    },
+    {
+      "id": "jp_application",
+      "name": "Application to Justice of Peace (s.22A(6) CrPC)",
+      "domain": "criminal_procedure",
+      "purpose": "Direction to register FIR after police refusal",
+      "corpus": "court-procedure/procedures.txt FIR_REFUSAL_REMEDY_22A (5 steps incl. 7-day SP window, evidence attachments, JP direction)",
+      "flow": "written complaint SP/SSP/DPO -> wait 7 days -> s.22A(6) application before DSJ (ex-officio JP) with affidavit + postal receipts + evidence -> JP calls police report -> direction to SHO",
+      "status": "FULL",
+      "note": ""
+    },
+    {
+      "id": "private_complaint",
+      "name": "Private complaint (s.200 CrPC)",
+      "domain": "criminal_procedure",
+      "purpose": "Direct complaint to Magistrate when FIR route fails",
+      "corpus": "procedures.txt remedy 4 + crpc.txt s.200 areas (magistrate takes cognizance; complainant evidence; 265C supply rules)",
+      "flow": "complaint in writing to Judicial Magistrate -> statement on oath as digested -> inquiry/summons -> trial",
+      "status": "PARTIAL",
+      "note": ""
+    },
+    {
+      "id": "bail_application",
+      "name": "Bail application (pre-arrest s.498A / post-arrest s.497 CrPC)",
+      "domain": "criminal_procedure",
+      "purpose": "Release pending trial",
+      "corpus": "court-procedure/procedures.txt PRE_ARREST_BAIL_PROCEDURE record (s.498A) + crpc digests (497 bail when not bailable; case law: bail is rule, jail exception — expanded_case_law)",
+      "flow": "application before Sessions/HC as digested -> grounds (prima facie, flight risk, tampering) -> conditions as digested",
+      "status": "PARTIAL",
+      "note": ""
+    },
+    {
+      "id": "plaint",
+      "name": "Civil suit plaint",
+      "domain": "civil_procedure",
+      "purpose": "Commence a civil suit",
+      "corpus": "cpc.txt digests (plaint essentials areas, s.9 jurisdiction, pecuniary limits court hierarchy) + property dispute procedures (declaration s.42 SRA, possession s.8, injunction s.54-56 SRA; limitation Art 144 12-year recovery)",
+      "flow": "cause of action + parties + valuation -> court of competent jurisdiction -> court fee (fee law not indexed) -> service -> written statement -> trial",
+      "status": "PARTIAL",
+      "note": "CPC Orders 6/7 not systematically indexed; court-fee specifics = gap"
+    },
+    {
+      "id": "written_statement",
+      "name": "Written statement / defence",
+      "domain": "civil_procedure",
+      "purpose": "Defence to a plaint",
+      "corpus": "cpc.txt digest level (defence filing areas; 265C is criminal-side supply rule — do not conflate)",
+      "flow": "file within prescribed CPC period as digested -> deny/confess paragraphs -> set-off/counterclaim areas as digested",
+      "status": "PARTIAL",
+      "note": "Order 8 detail not fully indexed"
+    },
+    {
+      "id": "writ_petition",
+      "name": "Constitutional writ petition (Art 199)",
+      "domain": "constitution",
+      "purpose": "Challenge executive/administrative action or enforce rights",
+      "corpus": "court_hierarchy HC jurisdiction Art 199 (habeas corpus, certiorari, prohibition, mandamus, quo warranto) + remedies digests + aid.txt letter-to-CJP alternative for FR enforcement (Art 184(3) SC)",
+      "flow": "identify illegal action/absence of alternative remedy -> petition in provincial HC or IHC -> interim relief -> final order as digested",
+      "status": "PARTIAL",
+      "note": "locus/alternative-remedy doctrine only at digest level"
+    },
+    {
+      "id": "ombudsman_complaint",
+      "name": "Complaint to Federal Ombudsman (WMS Form A)",
+      "domain": "administrative",
+      "purpose": "Maladministration redress against federal agencies",
+      "corpus": "civic_services.txt + citizen_official_procedures.txt (solemn affirmation 4 points; 72h receipt; annexures; first-approach-agency practice; child helpline 1056)",
+      "flow": "Form A / online -> affirmation (if not Form A) -> annex CNIC + correspondence -> submit Secretariat/regional -> receipt immediate/72h -> inquiry",
+      "status": "FULL",
+      "note": ""
+    },
+    {
+      "id": "voter_forms",
+      "name": "Voter registration forms (21/22/23)",
+      "domain": "elections",
+      "purpose": "Enrol/object/correct electoral roll",
+      "corpus": "civic_services.txt + citizen_official_procedures.txt + elections.txt (eligibility incl. s.27 Elections Act 2017 residence; expired CNIC deemed valid)",
+      "flow": "Form 21 (enrol/transfer) / 22 (objection/deletion) / 23 (correction) + CNIC copy -> DEC/RO/ARO -> SMS 8300 check",
+      "status": "FULL",
+      "note": ""
+    },
+    {
+      "id": "nicop_application",
+      "name": "NICOP application (overseas Pakistani)",
+      "domain": "immigration",
+      "purpose": "Identity/nationality proof for Pakistanis abroad (s.12 NADRA Ordinance 2000)",
+      "corpus": "civic_services.txt (types, eligibility bullets, document categories, PakID + Registration Centre routes)",
+      "flow": "PakID app (New NICOP -> details -> documents -> RC visit if needed -> track) or in person at Registration Centre",
+      "status": "FULL",
+      "note": "fees/timelines = NADRA fee page (not frozen)"
+    },
+    {
+      "id": "passport_application",
+      "name": "Passport application",
+      "domain": "immigration",
+      "purpose": "New/renewal/modification of Pakistani passport",
+      "corpus": "civic_services.txt + citizen_official_procedures.txt (8 in-person steps; online path; ECL/BL stop; minors gazetted-officer attestation; SMS 9988/Rabta; one-window desks)",
+      "flow": "counter -> photo+QR token -> biometrics -> data entry verify/sign -> ECL/BL check -> AD interview -> QR fee -> delivery to self/blood relative",
+      "status": "FULL",
+      "note": ""
+    },
+    {
+      "id": "fia_complaint",
+      "name": "FIA complaint (Public Services Portal)",
+      "domain": "criminal_law",
+      "purpose": "Complaint within FIA jurisdiction + feedback",
+      "corpus": "civic_services.txt + citizen_official_procedures.txt",
+      "flow": "portal -> register complaint (FIA jurisdiction) -> reference for status -> feedback on FIA offices/immigration counters",
+      "status": "FULL",
+      "note": ""
+    },
+    {
+      "id": "legal_aid_application",
+      "name": "Legal-aid application (DLAC/DLEC)",
+      "domain": "legal_aid",
+      "purpose": "Free legal representation for those who cannot afford it",
+      "corpus": "aid.txt (DLAC via District Bar Association/District Court; state counsel capital cases s.340 CrPC + Art 10; priority categories) + workflows.txt DLEC route (LAJA for women/children criminal; DLEC via Deputy Commissioner or District Judge; Zakat certificate/income affidavit)",
+      "flow": "prove indigency -> DLAC (bar association/court) for civil/criminal OR DLEC/LAJA per forum -> committee review -> lawyer from panel, fee by state",
+      "status": "FULL",
+      "note": ""
+    },
+    {
+      "id": "power_of_attorney",
+      "name": "Power of attorney",
+      "domain": "property",
+      "purpose": "Authorize another to act",
+      "corpus": "none indexed",
+      "flow": "—",
+      "status": "GAP",
+      "note": "no drafting rows; registered-POA rules (Registration Act) not indexed"
+    },
+    {
+      "id": "harassment_complaint",
+      "name": "Workplace harassment complaint (Act 2010 committee)",
+      "domain": "labour",
+      "purpose": "Internal redress under Protection against Harassment of Women at the Workplace Act 2010",
+      "corpus": "women.txt (Committee + complaint areas digested)",
+      "flow": "written complaint to Inquiry Committee -> inquiry as digested -> Ombudsperson/appeal route as digested",
+      "status": "PARTIAL",
+      "note": "section-level detail of Act 2010 not fully indexed"
+    },
+    {
+      "id": "employment_contract",
+      "name": "Employment contract / appointment letter",
+      "domain": "labour",
+      "purpose": "Terms of employment",
+      "corpus": "labour.txt digests (contract/regularization areas; SCP 2026 official records add regularization/pension doctrine: KPK regularization acts deeming clauses, Punjab Civil Services Pension Rules qualifying service)",
+      "flow": "offer -> terms (pay/leave/termination notice) -> regularization rules per service law as digested",
+      "status": "PARTIAL",
+      "note": "provincial service rules not indexed beyond case records"
+    },
+    {
+      "id": "company_incorporation",
+      "name": "Company incorporation documents",
+      "domain": "companies",
+      "purpose": "Register a company under Companies Act 2017",
+      "corpus": "companies.txt topic digests (incorporation/memorandum/registration areas — topic numbering not act sections)",
+      "flow": "name reservation -> MoA/AoA -> SECP registration as digested -> post-incorporation filings as digested",
+      "status": "SUMMARY",
+      "note": "drafting rows only at digest level; exact forms = SECP (not indexed)"
+    },
+    {
+      "id": "cyber_complaint",
+      "name": "PECA cybercrime complaint",
+      "domain": "cybercrime",
+      "purpose": "Report online offences",
+      "corpus": "peca.txt digests (offences + FIA jurisdiction areas) + FIA portal records",
+      "flow": "FIA complaint portal / cybercrime wing -> report offence (defamation s.20, harassment s.21 areas as digested) -> investigation",
+      "status": "PARTIAL",
+      "note": ""
+    },
+    {
+      "id": "consumer_complaint",
+      "name": "Consumer complaint (Consumer Court)",
+      "domain": "consumer",
+      "purpose": "Redress defective goods/services",
+      "corpus": "consumer.txt digests (provincial consumer acts; no/minimal court fee; summary trial) + SCP 2026 consumer-protection points (official record) + court hierarchy consumer courts",
+      "flow": "complaint to Consumer Court -> summary procedure -> relief as digested -> appeal to HC",
+      "status": "PARTIAL",
+      "note": ""
+    }
+  ]
+}

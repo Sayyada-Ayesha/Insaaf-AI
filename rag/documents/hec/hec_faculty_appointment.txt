@@ -1,0 +1,1859 @@
+# HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: Pakistan (Federal) — higher education
+Version: Frameworks as published; notification dates from the HEC register | Published/notified: 2026-10-10 | Effective: 2026-10-10 | Status: Mixed — per-framework status recorded in each section
+Provenance: sections below carry the canonical HEC URL for the document they were extracted from.
+Coverage area: H
+Verification note: Eligibility for appointment is HEC framework text; individual HEI statutes add requirements on top of it.
+
+[SECTION: hec_faculty_appointment_1_HEC_FACULTY_APPOINTMENT_AND_ELIGIBILITY_FRAMEW]
+# HEC faculty appointment and eligibility frameworks
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC faculty appointment and eligibility frameworks
+Official page: https://www.hec.gov.pk/english/policies/Pages/IPFP-Policy.aspx
+Source file: https://www.hec.gov.pk/english/NAHE/IPFP/Documents/IPFP-Policy.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+INTERIM PLACEMENT OF FRESH PHDs PHASE - II (202 5 ) 1. Short Titl e : This program will be called “Interim Placement of Fresh PhDs (IPFP), Phase - I I ”.
+2. Backgroun d : The IPFP was established in 2009, and last revised in 2019. The core objective of the program is to assist fresh PhD graduates in acquiring the competencies and professional characteristics required for effective teaching and research and ultimately for success in the academic profession.
+3. Objective s : The Fellowship program has four inter - related objectives:
+a. Opportunity for Fresh PhDs : The primary objective is to create an opportunity for fresh PhDs to obtain academic experience and mentorship, for one yea r, in public sector universities, prior to their formal entry into the academic job market.
+b. Opportunity for Universitie s : A related objective is to support universities in their recruitment processes, by enabling them both to introduce their campuses to emerging scholars and reducing their eventual search costs. Subject to availability of vacant positions at the department of placement of the IPFP Fellow, host institutions are encouraged to advertise regular faculty positions during the term of the Fellowship in order to provide an opportunity to the IPFP Fellows. IPFP Fellow may apply, if eligible and compete for regular faculty positions on merit as per the recruitment rules of the Host Institution.
+c. Gap Assessment and Feedbac k : Third, t he Fellowship is preceded by a gap assessment
+exercise both to identify optimal capacity building investments, and to provide feedback to universities on the strengths and weaknesses of their PhD programs.
+d. Capacity Buildin g : Finally, the Fellowship includes an intensive capacity building program
+designed to equip the Fellows with skills required to become effective teachers, researchers, or university administrators, and thus enhance the probability of future success in academic life.
+4. Position Titl e : The selected candidates will carry the title of “IPFP Fello w ” throughout the period of their Fellowship i.e., NFDP and subsequent placements.
+5. Experience weightage: One year’s IPFP Fellowship would be counted equivalent to professional experience of Assistant Professor.
+6. Remuneration and Benefit s : In line with international practice, the remuneration of the IPFP Fellow is fixed between the salary of regular faculty members (Assistant Professors) and the stipend provided to gr aduate students.
+a. Amount : For IPFP Phase - II, the revised remuneration is fixed at PKR 150,000 per month for the duration of the placement.
+b. Additional Benefit s : The program will facilitate the participation of incumbents in voluntary benefit schemes that would be transferable to regular academic positions , including a voluntary pension scheme (VPS) and a voluntary health insurance scheme.
+7. Scope of Work : Universities may assign a teaching load of up to one full course per semester to IPFP Fellows. The remaining time will be allocated to research and professional development.
+8. Host Institution s : IPFP Fellows may be placed in the public sector HEIs and federal or provincial government post - graduate college s .
+9. Eligibility criteri a : Individuals who fulfil the following conditions may apply for selection as IPFP Fellows:
+a. Pakistani/AJK nationality.
+b. Age at the time of applying should not be over 40 years.
+c. Holder of a PhD degree from a HEC - recognized university (Pakistani or foreign) completed
+within the two years preceding the advertisement. Scanned copies of HEC attested PhD degree, and/or an equivalence certificate issued by the HEC Equivalence Cell must be uploaded together with the application.
+d. Should have published at least two research pu blications in HEC - recognized or indexed
+journals.
+e. Individuals holding regular faculty positions are not eligible. However, those holding irregular or contract positions (or other sub - optimal jobs) in universities or elsewhere may apply, and if selected, wi ll have to resign, and submit a clearance certificate from their previous employer.
+Exceptions are non - gazette employees (i.e., below BP S - 17), who wish to retain their lien.
+10. Submission of Applicatio n : All submissions will be online on the HEC e - Portal ( http://eportal.hec.gov.pk/ipf p ) and should include the following information and supporting documents (which should also be uploaded directly to the e - portal):
+I. Curriculum vitae on the standard format, including:
+a) A Statement of Purpose (of no more than 150 words), b) A list of publications (online link to the publications is mandatory), and
+c) Abstract of PhD dissertation.
+II. Scanned copies of the following:
+a) HEC attested PhD degree or equivalence certificate (in case of foreign PhD) b) Other degrees or certificates
+c) CNIC
+III. Three letters of reference, including one from the PhD supervisor. Applicants who obtained their
+PhD from another country must submit at least one letter of reference from an internat ional referee.
+IV. HEC scholars must submit an NOC from the HEC scholarship section.
+
+[SECTION: hec_faculty_appointment_2_V_SELECTION_OF_TEST_CENTRE]
+# V. Selection of Test Centre
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: V. Selection of Test Centre
+Official page: https://www.hec.gov.pk/english/policies/Pages/IPFP-Policy.aspx
+Source file: https://www.hec.gov.pk/english/NAHE/IPFP/Documents/IPFP-Policy.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+V. Selection of Test Centre
+11. Procedure for Selection and Placemen t : The following are the key steps in the process of selection and placement of IPFP Fellows:
+a. Submission of complete application on the HEC portal.
+b. Preliminary scrutiny of the applications to ensure conformity with the eligibility criteria.
+c. Pre - assessment test for eligible applicants.
+d. Declaration of pre - assessment result on HEC website
+e. Circulation of the list of successful NFDP graduates to all public sector universities and HEIs, post - graduate colleges of federal, GB. AJK, and provincial governments.
+f. Receipt of Consent Form from all public sector universities and HEI’s, post - graduate colleges of Federal, GB, AJK and provincial governments g. Receipt of Willingness from IPFP Fellow against the Consent Forms received from all public sector universities and HEI’s, post - graduate colleges of Federal, GB, AJK and provincial governments. On receipt of willingness, host institute could be changed only once subject to the approval from competent Authority before training .
+h. Training under NFDP of applicants whose consent of placement received by the universities.
+i. Announcement of the list of successful graduates of the N FDP.
+j. IPFP Fellows will be facilitated placement at a host institution within three (03) months on completion of their NFDP training program / commencement of upcoming semester, after which they will not be eligible for placement 12. Capacity Buildin g : Only to p 350 shortlisted applicants will undergo training in an integrated capacity building program, with the following components:
+a. NFD P : A mandatory training program of up to four - week period, will be given prior to the placement.
+b. Continuous Professional Development ( CPD) : Undertaking regular online activities recommended by NAHE during the period of the Fellowship.
+c. Mentorshi p : Assignment of a faculty mentor at the host university for guidance on major
+career - related issues. The mentors may also assist the Fellow through network development activities, e.g., interactions throughout the year with relevant private and public sector institutions, participating in job fairs.
+d. Assistant Mentors/Junior Instructorshi p : Top performing IPFP Fellows from each cohort
+may be trained and engaged to work as Assistant Mentors/Junior Instructors for succeeding batches of NFDP. This will expand the pool of indigenous trained resources trained by eminent National/ International trainers . Remuneration of these fellows will be fixed to maximum of Rs.100,000 / - per workshop up to a four - week perio d .
+13. Placemen t : IPFP Fellows will be encouraged to follow up on the information circulated by HRD and get in touch with public sector HEIs and post - graduate colleges to identify potential host institutions.
+a. Once the consent is received from a potential host institution, HRD will issue placement offers to the IPFP Fello w s subject to completion of NFDP successful training b. Before training IPFP fellow has to submit the willingness to join that institution which cannot be changed.
+c. IPFP Fellows will join the host institution within one month failing which placement offer
+will stand cancel led automatically.
+d. As soon as HEC receives the joining report in original, it will process payment of monthly
+remuneratio n .
+e. IPFP Fellows may not change their host institution without prior permission from the HEC as well as both the host institutions.
+f. Validity Period for Placement at Host Institutio n : IPFP Fellows will be facilitated placement at a host institution within 03 months / commencement of upcoming semester of completion of their NFDP training program, after which they will not be eligible for placement.
+14. Duration of IPFP Assignmen t : The duration of IPFP placement will be one year from the date of joining. The host institution may extend the affiliation as per their recruitment rules without any financial liability on part of HEC.
+a. IPFP Fellows may avail paid leave during their placement period as per leave rules of the host institution, with the prior approval of Host Institution under intimation to HEC. However, such leave shall not exceed one month period in any case whats oever.
+b. In case of family leave or prolonged illness (beyond one month) , the IPFP Fellow may obtain leave without pay, upon recommendation of the faculty supervisor by the host institution under intimation to HEC. Such leave shall not be treated as part of the regular assignment period to be counted as placement period and the total paid period will remain the same i.e., one year.
+
+[SECTION: hec_faculty_appointment_3_V_SELECTION_OF_TEST_CENTRE]
+# V. Selection of Test Centre
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: V. Selection of Test Centre
+Official page: https://www.hec.gov.pk/english/policies/Pages/IPFP-Policy.aspx
+Source file: https://www.hec.gov.pk/english/NAHE/IPFP/Documents/IPFP-Policy.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+15. Responsibilities of HEC : HEC will pay a fixed remuneration of PKR 150,000 per month for a period of not more than 12 months from the date of joining to IPFP Fellows. The remuneration amount will be released in two tranches in favor of the head of the host institution; the first tranche will be paid in advance for six months. Whereas, the second tranche, covering the remaining six months, will be released upon receipt of satisfactory performance report from the host institution. The funds for the program will be provided from HEC's recurring budget head, “IPFP program".
+16. Responsibilities of IPFP Fellow s : The responsibilities of IPFP Fellows include but are not limited to teaching undergraduate as well as graduate courses as assigned by the concerned academic department at the host institution. However, the teaching load should be less than that of fulltime faculty members in order to allow them to sustain their research momentum.
+Currently, the expected teaching load is one course per semester.
+a. Contribution to Host Institution : More generally, IPFP Fellows are expected to contribute actively to the academic mission of the university, in all three traditional areas, i.e., teaching, research, and service to the institution, and make meaningful contribution to the academic life of the host institution, including through participation in conferences, seminars, or workshops.
+b. Researc h : IPFP Fellows are expected to be active researchers and submit their work for publication in academic journal articles or in the form of occasional papers, monographs, book chapters, or books, at a pace consistent with future tenure requirements.
+c. Research Record : IPFP Fellows are expected to maintain a research log ( e.g. , a laboratory
+notebook and/or other comparable research records), which will remain the property of the host institution upon the termination of the Fellowship. The records should provide evidence of adherence to the research standards of the host institution , including , e.g. , standards on research ethics (especially with regard to research on human subjects or living entities), use of hazardous substances (e.g., isotopes, chemicals, or infectious agents), and on use of published or unpublished material.
+d. Professional Conduct : IPFP Fellows are expected to conform to the highest standards of
+academic conduct, including re sponsible conduct in research, teaching, and public behavior , exhibit collegial conduct towards others, including members of their department, other faculty members, personnel of research laboratories, students, or other members of the academic community, and comply with all applicable university policies and applicable terms of sponsored support agreements.
+17. Responsibilities of the Host Institution s : Host institutions will accept IPFP Fellows on merit, and provide them with adequate office space, research facilities, access to laboratories, libraries, and other research facilities, and access to capacity enhancement programs and learning opportunities at par with those available to other faculty members.
+a. Timely Payments : Host institutions wi ll ensure the release of remuneration on monthly basis in a timely manne r .
+b. Opportunity for Regular Employmen t : Subject to availability of vacant positions at the department of placement of the IPFP Fello w s, host institutions are encouraged to advertise regular faculty positions during the term of their Fellowship to provide an opportunity to the IPFP Fellows.
+c. IPFP Fellows may apply, if eligible and compete for regular faculty positions on merit as per the
+recruitment rules of Host Institution.
+d. Mentorin g : The host institution is responsible for appointing a senior faculty member as a
+mentor of each IPFP Fellow, in order to provide guidance on career related issues.
+e. Maintenance and Reporting of Record s : The host institution will designate a focal point responsible for maintaining the updated records of IPFP Fellows. The focal point will be required to submit six - monthly performance reports along with expenditure utilization statements on IPFP Fellows to HRD .
+f. In the Event of Termin atio n : In the event of the premature termination of the contract, due to resignation, termination, or otherwise, the payment of remuneration will be stopped forthwith by the host institution and reported to HRD . The placement during the period of contract shall be liable to termination on thirty days’ notice on either side or payment of basic pay in lieu thereof, without assigning any reasons .
+g. Refund of Unspent Remuneratio n : In case of resignation or premature termination of the contract, due to any reason whatsoever, the IPFP Focal Point shall immediately arrange refund of the unspent balance pending out of the released remuneration against the concerned IPFP Fello w (s). The refund (through cross cheque in favor of D.G. Finance HEC) must be reached at HEC within a period of 15 days following the resignation or termination of an IPFP Fellow.
+
+[SECTION: hec_faculty_appointment_4_V_SELECTION_OF_TEST_CENTRE]
+# V. Selection of Test Centre
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: V. Selection of Test Centre
+Official page: https://www.hec.gov.pk/english/policies/Pages/IPFP-Policy.aspx
+Source file: https://www.hec.gov.pk/english/NAHE/IPFP/Documents/IPFP-Policy.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+18. Terminatio n : The appointment of an IPFP Fellow may be terminated during the contract period because of resignation, loss of funding support, or dismissal for just cause. "Just cause" includes poor performance, work - related misconduct, violation of university policies, or other serious reason as determined by the university. In cas e , an IPFP Fellow is appointed to a faculty position or any other job during the Fellowship period, he/she would be allowed to leave the position on formal request to HEC through the concerned office of the respective institutio n .
+19. For HEC Scholarship holders : To facilitate HEC scholarships holders, intake should be open throughout the year. They will be required to obtain NOC from relevant scholarship section of HEC along with other pre - requisite documents. Their eligibility will be evaluated on the date of submission of applic ation. However, the HEC scholars will appear and qualify the scheduled Aptitude Test if agreed and subsequently participate the training subject to provision of consent from universities/HEIS. Furthermore, two years age relaxation may be granted to HEC Ph. D .
+Scholarship holders (i - e 42 Years )
+
+[SECTION: hec_faculty_appointment_5_HEC_FACULTY_APPOINTMENT_AND_ELIGIBILITY_FRAMEW]
+# HEC faculty appointment and eligibility frameworks (part 2)
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC faculty appointment and eligibility frameworks (part 2)
+Official page: https://www.hec.gov.pk/english/policies/Pages/Guidelines-APP.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Appointment-Prof-Practice.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+POLICY GUIDELINES FOR APPOINTMENT OF PROFESSOR OF PRACTICE BY THE HIGHER EDUCATION INSTITUTIONS (HEI s ) IN PAKISTAN
+20 2 5
+Policy Guidelines for Appointment of Professor of Practice by the Higher Education Institutions (HEIs) in Pakistan
+
+[SECTION: hec_faculty_appointment_6_1_BACKGROUND]
+# 1. Background
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 1. Background
+Official page: https://www.hec.gov.pk/english/policies/Pages/Guidelines-APP.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Appointment-Prof-Practice.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+1. Background:
+The rapidly evolving academic landscape across the globe makes it crucial for the HEIs to integrate practical application with theoretical knowledge in its study programs, which in turn suppor ts bridging the gap between the academia and industry/profession. Universities across the world have adopted approaches to provide students with progressive professional instructions from faculty having extensive practical experience in the profession. One such strategy being practiced is including Professors of Practice in the faculty of professional degree programs who bring substantial professional experience and industry/sectoral insights to the academia . Having such professionals within the faculty als o brings distinction to the academic discipline and improvement in the quality and repute of the universities.
+Pakistan is 6 th populous country of the world and as per UNDP statistics, 64 % of its population is below 30 years old and 29% fall between the age of 15 - 29 years. It could become a potential resource for the uplift of economy if skill - based education is provided at the universities.
+The curriculum of the academic programs demands continuous update for making it relevant and aligned with the requi rements of industry/profession. At the same time, the students at HEIs need an enabling environment where they can receive leadership and mentorship support for developing innovative and entrepreneurial skills and capabilities along with professional knowl edge. Engaging experts from various fields as faculty can enable the HEIs to address these challenges and utilize their expertise for achieving excellence in professional qualifications of the students. While the significance of value gained by universitie s from having such professionals can vary , the fundamental principles/guidelines that support appointment of Professors of Practice within the universities/HEIs include the following:
+i. Expertise in industry/profession: The professionals with significant p ractical experience in
+their respective fields including but not limited to industry, entrepreneurship, government, journalism, law, clinical or creative/performing arts etc. can help students to gain knowledge related to the profession. It will help stud ents to learn and demonstrate practical skills which are in demand in the market.
+ii. Acting as Bridge Between Academia and Industry/Profession: They will serve as a bridge
+between the Academia and the Industry/Profession. HEIs are expected to develop partnerships, collaboration and knowledge transfer among various entities. Such collaboration can lead to collaborative research projects, internshi ps, and job placements for students, and will also foster the culture of innovation and entrepreneurship.
+iii. Improving Curriculum: The practical experience of professionals can contribute to
+curriculum development as their first - hand knowledge in the domain w ill make it more practical. They are expected to incorporate industrial/sectoral/professional trends and practices into the academic programs. It will help students to gain skills which are relevant to the industry and/or profession for better job opportun ities and better service - oriented market.
+iv. Professional Development: Professors of Practice can also mentor students, providing them
+with guidance, mentorship, and networking opportunities. This mentorship can help students navigate their career paths, make informed decisions, and develop the soft skills necessary for succ ess in the workplace.
+v. Enhanced Employability: Engagement of experienced professionals will help the Universities
+to offer qualifications with skills and practical experience. It will help the graduates to get employment on immediate basis because graduat es with strong theoretical and relevant professional knowledge are always preferred by various entities.
+Objectives:
+• Inducting individuals with extensive practical experience to enrich the educational
+experience for students by providing real - world insigh ts and knowledge.
+• Bringing in practitioners who can offer unique perspectives and skills that complement
+traditional academic teaching, thereby enhancing the quality and relevance of educational programs.
+• Encouraging innovative teaching methods and approac hes that bridge the gap between
+theory and practice, preparing students for success in their future careers.
+• Contributing to scholarly activities, such as applied research and industry collaborations,
+to advance knowledge and address real - world challenges in relevant fields.
+• Attracting renowned practitioners who can enhance the reputation of the institution
+and create networking opportunities for students, faculty, and alumni within relevant industries and professions.
+• Offering mentorship and guidance to st udents based on practical experience, helping
+them navigate career paths and make informed decisions about their professional goals.
+
+[SECTION: hec_faculty_appointment_7_2_ELIGIBILITY_CRITERIA_FOR_APPOINTMENT_ENGAGEM]
+# 2. Eligibility Criteria for Appointment/Engagement
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 2. Eligibility Criteria for Appointment/Engagement
+Official page: https://www.hec.gov.pk/english/policies/Pages/Guidelines-APP.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Appointment-Prof-Practice.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+2. Eligibility Criteria for Appointment/Engagement
+Professionals who are distinguished practitioners , demonstrate eminence in their areas of expertise and have sustained accomplishments can be hired as Professor of Practice within the HEIs.
+The following criteria shall be considered for their selection:
+i. Professional Experience: Minimum of 1 5 years of pro fessional experience in a relevant
+industry/ field .
+In case a person holds a Masters/PhD degree in Practice (from HEC recognized university/HEI), that will be credited/counted as professional experience (maximum 5 years for PhD including M . Phil .
+and 2 years for M . Phil . /MS).
+Professional experience means practical experience of the industry/sector/area, however, an expert having both the practical experience and some teaching/coaching experience at an academic set up can be also considered.
+Can didates are required to have extensive practical/professional experience and achievements in their respective fields. This could include significant work experience in industry, government, non - profit organizations, or other relevant sectors.
+They should have in - depth knowledge and practical skills relevant to the courses they will be teaching. They must hold an applicable license/ relevant certification, where necessary.
+ii. Educational Background: A traditional academic background (such as a Ph.D.) is prefe rable
+but not mandatory. Candidates should possess at least a bachelor’s degree/Level - 6 qualification in their field. In some cases (as determined through need assessment), a terminal degree or equivalent professional qualification may be preferred.
+iii. Reput ation and Recognition: A strong reputation within the relevant profession or
+academic community can be a significant asset. This might be demonstrated through awards, honors, collaborative projects, leadership roles, or keynote speeches at conferences and events.
+iv. Commitment to Education: Candidates should demonstrate a passion for
+teaching/education and a willingness to engage with students, provide mentorship and contribute to the academic community.
+3. Roles and Responsibilities:
+i. Teaching
+• Conduct lectures in accordance with institutional guidelines with particular
+emphasis on quality and improving student experience.
+• Introduce fresh courses, develop and design educational programs, curriculum and
+course materials.
+• Collaborate with resident faculty members to organize workshops, seminars,
+special lectures, and training sessions.
+• Contribute to development of initiatives relevant to the research, education or
+enterprise mission of a faculty.
+ii. Entrepreneurial /Industry Guidance
+• Motivate and mentor stude nts to engage in innovation and entrepreneurial
+endeavors
+• Emphasize stronger partnerships between academia/industry/sector. Undertake
+collaborative projects or provide consultancy services alongside regular faculty members.
+The concerned HEI may assign any other role/task to the Professor of Practice, through the approval of the Vice Chancellor/Head of the Institute, that contributes towards achievement of the objective anticipated from the role.
+4. Procedure for Selection:
+• The Higher Education Institution (HEI) may invite applications from the eminent
+serving/retired experts for the position of Professor of Practice through an advertisement or head hunt who qualify the laid down criteria.
+• The Selection Board, after intervie wing the eligible candidates, may submit its
+recommendations to the Syndicate or Statutory Body of the HEI for his/her engagement.
+• The HEIs can appoint Professors of Practice up to 10 % of the sanctioned posts.
+
+[SECTION: hec_faculty_appointment_8_5_TERMS_OF_APPOINTMENT_ENGAGEMENT]
+# 5. Terms of Appointment /Engagement
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 5. Terms of Appointment /Engagement
+Official page: https://www.hec.gov.pk/english/policies/Pages/Guidelines-APP.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Appointment-Prof-Practice.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+5. Terms of Appointment /Engagement
+i. Contract Duration: The appointment will be purely on a contract basis (Full - time/Part -
+time/Adjunct). The duration of the appointment/engagement may span up to one year initially. Upon completion of the initial term or any subsequent extension, the Higher E ducation Institution (HEI) may evaluate and determine the possibility of further extension. The HEI may establish its own evaluation process for extensions, considering the contributions and needs of the experts serving as Professors of Practice. The maxim um period of service for a Professor of Practice within a single institution may be for a period of three years with the spirit that existing faculty will get advantage of interaction with industry/professional experts and then carry forward the gained kno wledge in teaching and research .
+ii. Workload: The university concerned shall define the workload including teaching hours,
+mentoring sessions, and other commitments as per the requirement of the program.
+iii. Compensation/Salary Package: The salary package for th e appointments of Professor of
+Practice shall be the same as that of the tenure track appointment of the same rank.
+Alternatively, a competitive remuneration package, aligned with industry/sector standards and HEI’s policies, must be defined and mutually a greed between the HEI and the selected expert.
+In any of the above options, the concerned HEI will pay the remuneration out of its own resources and there will be no financial liability on HEC.
+iv. Performance Evaluation: Host institutes will evaluate perfor mance of Professor of
+Practice on the basis of teaching effectiveness, student feedback, contributions to university’s objectives and/or any other indicator (s) HEI seems relevant to assess effectiveness of the position.
+v. Dismissal/Other Conditions: Dismiss al of a Professor of Practice holding a fixed - term
+appointment may only occur upon maturity of the contract, however, dismissal shall be executed prematurely on the grounds of professional incompetence, serious personal or professional misconduct. A notice period of 30 days will be allowed by the HEIs in cases of dismissal or resignation.
+The Professor of Practice appointments may not be converted to tenure - track positions and they are also not eligible for academic administrative appointments at and above the department chair level.
+The appointed Professor of Practice is expected to follow HEI’s policies and the HEIs are required to address all the appointment matters/terms and conditions in the contract.
+Under these policy guidelines, universities/HEIs may appoint only a ‘Professor of Practice,’ with no provision for the appointment of Assistant or Associate Professors of Practice.
+
+[SECTION: hec_faculty_appointment_9_HEC_FACULTY_APPOINTMENT_AND_ELIGIBILITY_FRAMEW]
+# HEC faculty appointment and eligibility frameworks (part 3)
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC faculty appointment and eligibility frameworks (part 3)
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-MP.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-MP.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+FRAMEWORK FOR APPOINTMENT OF MERITORIOUS PROFESSOR IN THE HIGHER EDUCATION INSTITUTIONS ( HEI s)
+20 24
+Purpose and Objective :
+The purpose and objective of appointing a Meritorious Professor is to recognize and reward academic excellence and contributions within a specific field. This title is conferred to acknowledge outstanding achievements in research, teaching, and service to the academic community. The appointment aims to motivate continued high performance, inspire other faculty members, and uphold the institution's standards of excellence. Additionally, it enhances the institution's prestige by associating it with distinguis hed scholars, thus attracting top - tier students, faculty, and research opportunities.
+T he universiti es may appoint Meritorious Professor on prescribed guidelines of the Higher Education Commission (HEC) through their statutory process.
+1. Provision of Posts:
+1.1. The number of Professors to be promoted to BPS - 22 in each u niversity shall be calculated on the basis of 12.5% of the filled posts of the Professors in BPS - 21.
+
+[SECTION: hec_faculty_appointment_10_2_ELIGIBILITY_CRITERIA]
+# 2. Eligibility Criteria
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 2. Eligibility Criteria
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-MP.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-MP.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+2. Eligibility Criteria:
+2.1. Only those Professors who have served at least for 05 years in BPS - 21 in the university.
+2.2. Should have minimum of 06 research publications as a corresponding author in the past 5 years with at least 03 research publications in the past 2 years in HEC recognized Journals.
+2.3. Must have supervised min imum of 03 PhDs as a main supervisor in the last 5 years.
+2.4. Must have secured research funding of at least Rs. 5.0 million from external sources .
+3. Procedure for Promotion :
+3.1. Requirement for advertisement of posts as provided in the relevant section of the U niversity A ct will be dispensed with.
+3.2. The dossier of each eligible University Professor will be considered in the Special Selection Board (permanent / r egular members of the Selection Board, one representative of Chairman, HEC and one representative of the Chancellor) for the award of BPS - 22. The recommendations of the Selection Board will be placed before the Syndicate/ BoG/ e quivalent b ody for endorsement bef ore submitting to the Chancellor for final approval.
+In case Syndicate/BoG/Equivalent body does not endorse recommendation of Selection Board, the case will be referred back to Selection Board along with its comments for reconsideration .
+3.3. The Registrar Office shall prepare the cases of Professors in BPS - 21 for the award of BPS - 22 and present the record of each such Professor on the proforma designed for this purpose, and approved as a part of the statutes along with (a) Annual Confidential Report (ACRs) for the last five years in BPS - 21, and (b) a resume of the Professor and his/her achievements in research, teaching, university services and community engagement etc.
+3.4. The University shall calculate the total score of each eligible applicant according to the parameters detailed in c lause - 4 (Grading Procedure). Those who secure a minimum score of 60 % will be presented before the S election Board for consideration.
+3.5. All pro motions to BPS - 22 shall be effective from the date of recommendations by the Syndicate/BoG/ e quivalent b ody.
+4. Grading Procedure (Total 100 marks ) :
+4.1. Research Output (max. 38 marks):
+4.1.1. Invention/Innovation (max. 10 marks)
+a. Product/process or service developed only ( P hysical and Virtual) but not commercialized ( max. 4 marks ) :
+- Patents granted (0 1 mark each)
+- Process or Service (01 mark each)
+b. Product/process or service commercialized ( P hysical and Virtual) ( max. 4 marks ) :
+- Patents licensed (02 marks each)
+- Process or website implemented for service (02 marks each)
+c. Crop variety (max. 4 marks) :
+- Crop variety registered ( 1 mark each)
+- Crop variety commercialized (2 marks each)
+Note: Maximum marks under 4.1. 1. “Invention/Innovation” should be 10, even if the candidate obtains full marks in all indicators under this head .
+
+[SECTION: hec_faculty_appointment_11_4_1_2_CUMULATIVE_IMPACT_FACTOR_IF_OF_JOURNAL_P]
+# 4.1.2 Cumulative Impact Factor (IF) of Journal Publications (m ax . 10 marks )
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 4.1.2 Cumulative Impact Factor (IF) of Journal Publications (m ax . 10 marks )
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-MP.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-MP.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+4.1.2. Cumulative Impact Factor (IF) of Journal Publications (m ax . 10 marks )
+4.1.2.1. All Journal Publications (max. 5 marks)
+- 1 mark for each IF of 40 .
+- 5 marks for cumulative IF of 200 and above .
+4.1.2.2. Journal publications as a Corresponding Author (max. 5 marks)
+- 01 mark for each IF of 20 .
+- 05 marks for cumulative IF of 100 and above .
+4.1.3. Citation Index ( max . 1 8 marks)
+4.1.3.1. Total number of citations (max . 9 marks)
+- 1 mark for each 500 citations .
+- 9 marks for total citations of 4,500 and above .
+4.1.3.2. H - Index (max. 9 marks)
+- 1 mark for each h - index of 4 .
+- 9 marks for h - index of 36 and above .
+4.2. Research Funding (max. 13 marks):
+- 1 mark each for cumulative grant funding of Rs. 1 .0 million as PI .
+- 1 3 marks for a cumulative grant funding of Rs.13.0 million and above .
+4.3. Mentoring of Graduate Students (max. 12 marks) :
+4.3.1 Number of PhD students supervised (max. 5 marks )
+- 1 mark for each PhD student supervised .
+4.3.2 Quality of PhD student supervision (max . 7 marks)
+- 1 mark for each cumulative impact factor of 3 of Journal publications emerged
+from PhD thesis .
+- 7 marks for cumulative impact factor of 21 and above .
+4.4. Recognitions, Engagement, and O ther C ontributions in the field
+(max. 25 marks) :
+4.4.1. Awards (max. 8 marks )
+4.4.1.1. National ( max . 5 marks ) : -
+- 2 marks per award of excellence in Teaching (HEC’s Best University Teacher
+Award) or Award of Excellence in Research ( C ivil A wards) or Life - T ime Academic Achievement Award.
+- 1 mark each for other awards such as PAS awards or HEC Research/Teaching
+awards includin g Izaz - e - Kamal and Izaz - e - Fazeelat (max . 2 marks) .
+- 1 mark if the University Professor holds the title of HEC Distinguished National
+Professor .
+4.4.1.2. International ( m ax . 3 marks) : -
+- 3 marks per international award, as per list at Annex - I.
+4.4.2. Fellowship/Membership ( m ax . marks 7) : -
+Membership/Fellowship of renowned international/national academies as below: -
+d. Fellow of PAS (2 marks).
+e. Fellow of discipline - wise professional s ocieties (1 mark for each with maximum of 2 marks ) .
+f. Fellow (member) of TWAS (3 marks).
+4.4.3. Other Professional Contribution (m ax . 10 marks)
+- Served as Chair of Academic Chairs abroad (max. 2 marks) .
+- Chief Editor of a journal with IF of 0.5 to 01 ( 1 mark ) . Chief Editor of a Journal
+with IF above 1 ( 2 marks ) (max . 2 marks) .
+- Member of Editorial Board of a Journal with an Impact Factor of 0.5 to 1 (1
+mark) and for a journal with IF of more than 1 (2 marks ) ( max. 2 marks ) .
+- 2 mark s per tangible collaboration internationally or with industry /profession
+( max. 2 marks ) .
+- 1 mark for i nvited keynote speaker in reputed national/international
+c onference (regularly held at least for last five years) ( m ax. 2 marks) .
+
+[SECTION: hec_faculty_appointment_12_4_5_UNIVERSITY_COMMUNITY_SERVICE_12_MARKS]
+# 4.5 University/Community Service (12 marks):
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 4.5 University/Community Service (12 marks):
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-MP.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-MP.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+4.5. University/Community Service (12 marks):
+- 1 mark for completing a tenure as Head of Dept, Director ORIC/QEC/BASR etc.
+( max. 2 marks ) .
+- 1.5 marks for completing a tenure of Dean of Faculty/Director of Institute.
+( max. 3 marks ).
+- 2 marks per advocacy campaign, awareness on societal issues or engagement
+in national dialogue that enabled policy formulation and/or supported social inclusion ( max. 4 marks ) .
+- 1.5 marks each on policy formulation, talk shows on national media,
+articles/columns in popular press (max. 3 marks).
+
+5. Miscellaneous:
+5.1. In case of numbers in fraction, then 0.50 or above will be considered as 1 (e.g. 59.5 or above will be 60.0 whereas 59.49 or less will be 59).
+5.2. A Professor appointed as Vice - Chancellor in BPS - 22 shall be allowed personal grade of BPS - 22 as Professor after he / she relinquishes the charge of the office of Vice Chancellor, provided he/she has comp leted one tenure as Vice Chancellor and has been a regular Professor in a Public Sector University prior to his/her appointment as Vice - Chancellor. The personal grade so granted to him shall not be counted towards the 12.5% quota of BPS - 22 .
+Annex - I LIST OF INTERNATIONAL AWARDS
+
+1. Ahmed Zewail Foundation Prize for Science and Technology
+
+2. Al - Mustafa Prize, Government of Iran
+
+3. Berson - Yalow Award
+
+4. Blue Planet Prize (for Environment) of Asahi Glass Foundation
+
+5. Boehringer International Research Award
+
+6. Economic C ooperation Organization (ECO) Prizes
+
+7. Engro Excellence Award
+
+8. Federation of Asian Chemical Societies
+
+9. Fellowship of Kings College
+
+10. Foreign Fellow of Chinese Academy of Sciences
+
+11. Gold Medal of the Scientific Partnership Charitable Foundation
+
+12. High Citation Awar d (Elsevier/Web of Science)
+
+13. Highest Civil Award of Austria
+
+14. International Science Foundation (IFS) Sven - Brohult Award/ Prize
+
+15. International Scientific Corporation Award
+
+16. ISESCO Awards
+
+17. Islamic Development Bank Prize
+
+18. Kalinga Prize for Science Popularization
+
+19. Kh awarzami International Award (KIA)
+
+20. King Faisal Award
+
+21. Kuwait Foundation Prizes
+
+22. Mahathir Mohamad Prize
+
+23. OIC - COMSTECH Prizes
+
+24. Prestigious Einstein Professorship
+
+25. Rolex Awards
+
+26. Royal Society of London Fellowship
+
+27. The Friendship Award of China
+
+28. The Islamic Organization Prize
+
+29. The World Academy of Science (TWAS) Awards
+
+30. TRIESTE Science Prize
+
+31. UNESCO Awards and Prizes
+
+32. United National Organizations Awards and Prizes
+
+33. World Food Prize (USA)
+NOTE:
+The above list of international awards is not an exhaustive list and will be reviewed & updated periodically by experts.
+
+[SECTION: hec_faculty_appointment_13_HEC_FACULTY_APPOINTMENT_AND_ELIGIBILITY_FRAMEW]
+# HEC faculty appointment and eligibility frameworks (part 4)
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC faculty appointment and eligibility frameworks (part 4)
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-PE.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-PE.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+FRAMEWORK FOR APPOINTMENT OF PROFESSOR E MERITUS IN THE HIGHER EDUCATION INSTITUTIONS ( HEI s)
+20 24
+Purpose and Objective :
+T he purpose and objective of appointing a Professor Emeritus is to recognize and honor the distinguished academic service and contributions of the Professor beyond superannuation . This title acknowledges their professional achievements, dedication, and impa ct on their field, w hile also encouraging their continued involvement with the institution. By bestowing this title, the institution benefits from the E meritus P rofessor's ongoing engagement in research, mentorship, and intellectual activities, thereby enh ancing its reputation and fostering a rich academic environment.
+T he universit ies may appoint Professor Emeritus on prescribed guidelines of the Higher Education Commission (HEC) through their statutory process .
+1. Provision of Ti t les :
+1.1. The appointment of Professor Emeritus is to be decided by the Syndicate/Appointing Authority of the respective university .
+1.2. The number of Professors Emeritus would vary from university to university depending on its size and demand, but total number should not exceed 10% of the total working strength of the regular working Professors in a faculty .
+
+[SECTION: hec_faculty_appointment_14_2_ELIGIBILITY_CRITERIA]
+# 2. Eligibility Criteria
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 2. Eligibility Criteria
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-PE.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-PE.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+2. Eligibility Criteria:
+2.1. University Syndicate/Appointing Authority may confer status of an Emeritus
+Professorship to a Professor retired or retired with th e tenured status in recognition of his/her scholarship and service to university education who has served university or a constituent institute or a Centre of E xcellence of the University for a minimum period of 10 years as Professor . However, those who h old the title of Distinguished National Professor (DNP) or Meritorious Professor qualify to be considered even if the experience as Professor is less than 10 years .
+OR 2.2. A Professor who has completed at least one tenure as a Vice - Chancellor in the public sector university shall be conferred the status of Professor Emeritus (PE) after attaining the age of superannuation. He/she can apply for joining as Professor Emeritus at t he parent university or at a university other than the parent university, preferably in a newly developed universit y .
+In case s of the Vice Chancellors join ing as PE at newly developed universit ies , other than the parent universities, HEC may invite three preferences from newly developed universities and / or the interested Vic e Chancellors may themselves offer their services as Professor Emeritus for other such universities where their services are more valued.
+In that case, NoC from parent university and the consent from host university would be required. Young universities, where senior faculty is not yet available for PE, are encouraged to advertise positions of PE, through approval of its Syndicate/Appointing Authority .
+
+[SECTION: hec_faculty_appointment_15_3_PROCEDURE]
+# 3. Procedure
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 3. Procedure
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-PE.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-PE.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+3. Procedure:
+3.1. All such cases be decided by the concerned university through Syndicate/Appointing Authority in light of the HEC’s guidelines .
+3.2. Those who are desirous to join as Professor Emeritus in the concerned university may submit or get no minated by the concerned Chair or Dean in writing , preferably 06 months before the age of superannuation .
+4. Terms and Conditions:
+4.1. Whereas the conferment of PE status will be for life time, the financial benefits will be given for a maximum period of 10 years or up to the age of 70 years , whichever is earlier .
+The PE is expected to contribute to the academic life of the university to a great extent in consonance with the status and caliber of the title and PE shall carry no formal statutory administrative positions in a university, where other senior faculty is/are available for such positions. However, at young universities, where se nior faculty is not available to take up administrative positions, PE may be asked to take up administrative position s .
+4.2. Professor Emeritus up to the age of 65 years, would be eligible to apply for HEC research funding, but he/she would be required to include at least one Co - PI from the host Institution .
+4.3. The Professor Emeritus, at least for the period during which he/she enjoys financial bene fits from the University, will have the following responsibilities:
+4.3.1. Mandatory presence on campus at least for three working days a week.
+4.3.2. Provide guidance or continue research with faculty and/or students.
+4.3.3. G raduate student’s supervision.
+4.3.4. Seminars and/or writing o f textbooks in the field of his/her specialization.
+4.3.5. Any other assignment by the Vice Chancellor, including statutory academic administrative positions temporarily, particularly in young universities where indigenous senior faculty is not yet available.
+5. Honorarium/Remuneration:
+5.1. Professor Emeritus shall be entitled for financial benefits for a maximum period of 10 years or up to the age of 70 years whichever is earlier and draw a consolidated amount of honorarium of Rs. 200,000/p.m . (all inclusive) with an annual increase of 5%.
+5.2. The concerned parent u niversity will bear financial liability of Professor Emeritus out of its own resources for both categories of PE i.e. Professors/Vice Chancellors .
+However, HEC will bear remunerations of only those category of Vice Chancellors who offer their services as Professor Emeritus in newly developed universities, other than their parent university (reference Section 2) .
+5.3. The initial offer of appointment will be for a period of 5 years , extendable on a yearly basis for the purpose of financial benefits .
+5.4. The conferment of Emeritus Status shall normally be for lifetime but can be terminated if the Professor so desired or the Syndicate terminates by ¾ majority on groun ds of inefficiency, moral turpitude or physical or mental incapacity or gross misconduct .
+5.5. During the paid tenure of Prof essor Emeritus, he/she will not get financial benefits from any other university/institution/organization . In case, PE gets appointed o n any other full time position during the paid tenure, within or outside parent university, the payment for PE will be discontinued for that period.
+Similarly, those Vice Chancellors who join as Professor Emeritus at a newly developed university, other than the parent university , will also not be paid the honorarium of PE if he/she is employed with any other university/institution/organization , or employed by the host university on another position within the paid tenure of P rofessor Emeritus .
+
+[SECTION: hec_faculty_appointment_16_HEC_FACULTY_APPOINTMENT_AND_ELIGIBILITY_FRAMEW]
+# HEC faculty appointment and eligibility frameworks (part 5)
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC faculty appointment and eligibility frameworks (part 5)
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-DNP.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-DNP.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+FRAMEWORK FOR HEC DISTINGUISHED NATIONAL PROFESSOR (DNP) PROGRAM
+20 2 5
+FRAMEWORK FOR HEC DISTINGUISHED NATIONAL PROFESSOR (DNP)
+
+1. Purposes and Principles
+For the purpose of recognizing the achievements of outstanding academicians and researchers , the title of Distinguished National Professor (D N P) shall be awarded to scholars who are leaders in their respective fields and have made significant contributions to their academic disciplines at national and international level s .
+DNP is a prestigious title and an exceptional honor, which shall be awarded solely based on merit as assessed against prescribed eligibility and evaluation criteria as well as upon the recommendation s of a high - level HEC selection committee , mentioned at Section - 4 .
+
+[SECTION: hec_faculty_appointment_17_2_ELIGIBILITY_AND_EVALUATION_CRITERIA]
+# 2. Eligibility and Evaluation Criteria
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 2. Eligibility and Evaluation Criteria
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-DNP.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-DNP.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+2. Eligibility and Evaluation Criteria
+The title of DNP shall only be awarded to full - time permanent serving Professors with at least 05 years of experience as Professor (BPS/ Tenured/Long - term contract) at an HEC recognized public or private sector university/HEI in Pakistan .
+The Distinguished National Professors will retain the title for life however, the associated financial benefits will cease 3 years after selection or on the date of their superannuation, whichever is earlier .
+2.1 Evaluation Criteria. The purpose is to establish that the nominees are professionals of international eminence who are active in their respective fields and would be able to make significant contributions to the educational vision of the university. Candidates shall be evaluated based on their excellence in teaching, research, academic leader ship, and contributions at national and international levels. Emphasis would be placed on quality and impact, rather than quantity. The following indicators & weights will be used in this regard :
+(Guidelines at Section 2.2 must be considered while grading the candidates based on the below given indicators) Table 1: Evaluation Criteria and Indicators Activity Criteria Indicators Marks Research Contributions Should have made an impact in their field. This includes Inventions , Innovati o n s and published research.
+Patents, Discoveries, Products, Services, Processes, Impact Factor (IF) of journals, Citation Index of publications .
+Max. marks (30)
+1. Invention/Innovation (max. 10
+marks):
+a. Product/process or service developed only (physical and Virtual) but not commercialized ( max. 4 marks ) :
+- Patents granted ( 0 1 mark
+each)
+- Process or website (0 1 mark
+each) b. Product/process or service commercialized (physical and Virtual) (max. 4 marks):
+Table 1: Evaluation Criteria and Indicators Activity Criteria Indicators Marks
+- Patents licensed (02 marks
+each)
+- Process or website
+implemented for service (02 marks each)
+c. Crop Variety ( max. 4 marks )
+- Crop variety registered (0 1
+mark each)
+- Crop variety commercialized
+(0 2 marks each)
+2. Impact Factor/Citations : (max. 20
+marks )
+- Cumulative Impact Factor as
+Corresponding Author (max. 0 5 marks)
+- Number of Citations (max. 0 5
+marks)
+- Citations per article (max. 0 5
+marks)
+- Highest H - Index (max. 0 5 marks)
+Note:
+M aximum marks under 1.
+“Invention/Innovation” should be 10, even if the candidate obtains full marks in all indicators under this head .
+Mentorship Should have supervised research of at least 05 PhD graduates.
+Number of PhD graduates supervised as main Supervisor, together with quality of PhD thes i s , measured in terms of impact factor of journals in which papers from PhD thesis got published.
+Max marks (1 2 )
+- 0 . 6 marks allocated for each PhD
+student supervised ( max. 0 6 marks).
+- Cumulative Impact F actor of
+p ublications emerged from PhD thes i s of respective mentees (max. 0 6 marks ) .
+Research Grants Have a strong record in grant writing and soliciting research funding .
+Should have won local and/or international research grants and Max. marks (1 2 )
+- O ne mark each for cumulative
+grant funding worth Rs. 5 mil lion (max. 1 2 marks for cumulative Table 1: Evaluation Criteria and Indicators Activity Criteria Indicators Marks executed the projects as Principal Investigator .
+This does not inclu de grants received from parent university .
+grant funding worth Rs. 60 million or above ) .
+Services to Community Should have experien c e of service not only to university but also to the community.
+Outreach community activities or projects, a dvocacy campaigns , a wareness created on societal issues , n ational dialogue, e ngagement in Policy formulation on higher education, talk shows on TV, articles/columns in popular press.
+Max. marks ( 10 )
+- 0 2 marks per advocacy campaign ,
+awareness on societal issues or engagement in national dialogue that enabled policy formulation and/or supported social inclusion (max. 0 4 marks)
+- 1.5 marks each on policy
+formulation, talk shows on national media, articles/columns in popular press (max. 6 marks).
+Recognition , Engagement and other contributions in the field Be recognized for their work , engaged with professional societies/organizati ons. Have demonstr able contributions in the field .
+Should have received prestigious national or international award s , e.g., national civil award, or best teacher award .
+Elected as the fellow of the prestigious national/internationa l a cademies, such as Pakistan Academy of Sciences (PAS) and TWAS (The World Academy of Sciences).
+Developed academia industry linkages with tangible outcomes.
+Invited keynote speaker in semi nars, Max. marks ( 3 0 ) Awards : maximum 12 marks National ( Max. marks 06)
+- 02 marks per award of excellence
+in Teaching ( HEC’s Best University T eacher Award) or Award of Excellence in Research or Life - time Academic Achievement Award.
+- 01 mark each for other awards
+such as PAS awards or HEC research / teaching awards (maximum 02 marks) International ( Max marks 0 6 )
+- 0 3 marks per international
+award, as per list provided at Annex - II.
+Fellowship/Membership: ( Max marks 0 7 ) Table 1: Evaluation Criteria and Indicators Activity Criteria Indicators Marks workshops, T V talk shows etc. on promotion of research in the relevant discipline.
+Contribution in editorial services (Chief editor of international Journal).
+M embership/ F ellowship of renowned international/national academies /societies as below:
+- Elected fellow of PAS ( 0 2 marks).
+- Elected fellow of discipline - wise
+professional s ocieties (01 mark for each with maximum of 0 2 marks )
+- Elected Fellow /Member of
+reputed Foreign Science Academy, such as TWAS or IAS (03 marks).
+Other Contributions: Max marks 1 1
+- Served as Chair of Academic
+Chairs abroad (max. 0 2 marks)
+- Chief E ditor ship (CE) of journal ( s )
+(Max 0 3 marks) as below:
+- 01 mark per CE of a journal
+with IF 01 to <02
+- 02 marks per C E of a journal
+with IF 02 to <03
+- 03 marks for CE of a journal
+with IF 03 and above
+- 0 2 mark per tangible
+collaboration internationally or with industry (max . 0 4 marks)
+- 0 1 mark for i nvited keynote
+speaker at a reputable conference /seminar (Max. 0 2 marks) .
+Endorsement Recommendations from recognized experts in the field.
+Have at least 3 referee reports from renowned professors from top 500 ranked Max. marks (6)
+- Up to 0 2 marks per referee (max.
+0 6 marks)
+Table 1: Evaluation Criteria and Indicators Activity Criteria Indicators Marks international universities / institutes or indigenous eminent scholars (Fellows of IAS, TWAS or PAS )
+
+[SECTION: hec_faculty_appointment_18_2_2_GUIDELINES_FOR_GRADING_THE_CANDIDATES]
+# 2.2 Guidelines for grading the candidates
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 2.2 Guidelines for grading the candidates
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-DNP.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-DNP.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+2.2 Guidelines for grading the candidates
+The following principles will be observed w hile grad ing the candidates under various indicators , given at Table - 1 above:
+i. Research Contributions :
+• The maximum marks to be given under “ Invention /Innovation” should be 10 , even if the
+candidate obtains full marks in all indicators under this head.
+• The candidates will be ranked within one broad subject category on percentile basis,
+which means that a candidate with the highest Cumulative Impact Factor of his/her publications as a Corresponding Author in a given broad category of subjects will get maximum marks (100%) . Other candidates will get marks accordingly (e.g. if 0 5 is taken as the benchmark for the highest Cumulative IF, then the others will get 0 4 marks for IF of 0 4, 0 3 marks for IF of 3 and so on).
+• Similarly, the candidate with the highest number of total citations, h - index and ci tation
+per article will get max imum marks (100%) , while o thers will get marks accordingly.
+• In case, there is only one candidate in the broad discipline, top percentile scores to be
+used will be mean/average of top scores candidates in all disciplines .
+ii. Mentorship
+• The h ighest Cumulative Impact Factor of publications emerged from PhD thesis of
+respective PhD graduate(s) will get maximum marks (100%) , while others will get marks accordingly.
+iii. Research Grants :
+• M arks on research projects will be given only , if the applicant is Principal Investigator
+(PI).
+iv. Recognition & Engagement
+• Only those International Awards that are listed in the Annex - II of this framework will be
+considered for grading .
+• No marks will be awarded for certificate of appreciation/participation or research
+fellowship/scholarship.
+• No marks will be assigned in case of membership of Boards, Committees & other
+Governing bodies within the universities .
+
+[SECTION: hec_faculty_appointment_19_3_PROCEDURE_FOR_NOMINATION_AND_RECOMMENDATIONS]
+# 3. Procedure for nomination and recommendations
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 3. Procedure for nomination and recommendations
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-DNP.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-DNP.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+3. Procedure for nomination and recommendations
+T he following procedure wil l be adopted for receiving nominations and finalization of recommendations:
+I. The nomination and selection of Distinguished National Professors will take place annually.
+II. The universities will issue a call for nomination from all faculties and departments upon
+initiation of the annual cycle by HEC .
+III. The application/nomination will be supported with the following:
+a. A covering note and complete data on D N P Evaluation Parameters (Table 1).
+b. Latest CV of the candidate .
+c. Evidence/supporting documents required for achievements claimed under :
+i. Research Contributions :
+• Official documents or evidence of patents /service/process/crops
+( c ommercialized /not commercialize d) .
+• List of articles published including authors, title, name of journal, year of publication,
+pages and DOI assigned along with impact factor of each article in the respective year of publication , as well as citation index (total citations, H - Index and citations per article), using Web of Science (WOS) as the data source. The weblink allowing access to Web of Science Profile ID must also be provided .
+ii. Mentorship :
+• Evidence/notifications of supervis ion as main supervisor, list of PhD scholars
+supervised along with research titles of PhD thesis and list of publications emerged from PhD thesis combined with IF of respective journal(s), degree completion year/status, copies of degrees and registration n umber in HEC Directory .
+• A statement by candidate that publications listed under this category are from PhD
+thesis under his/her supervision (as main supervisor) and that he/she is corresponding author in all publication under this category . Incorrect state ment can lead to debar for three years, applying to DNP; debarring to other facilities of HEC, such as research funding and other awards may also be affected depending on level of violation of ethics .
+iii. R esearch G rants :
+• List of local/international research grants won/received including information on
+funding source, start & end dates of project, grant amount and role of candidate i.e.
+PI/Co - PI .
+iv. Services to Community :
+• Evidence/official documents of campaigns, policies (developed or contributed in its
+formulation) , tv/media shows, articles in print media etc.
+v. Recognition, Engagement and other C ontributions :
+• List and certificates of national/international awards received .
+• N otifications /evidence of editorship of journal including weblink of the respective
+journal as well as evidence for Chair of Academic Chair(s) .
+• List and letters of fellowships/memberships along with engagement status
+(Lifetime/ specific t erm) .
+• L etters / evidence of industry collaboration (s) and data/reports on outcomes.
+• L ist and dates of reputed conferences / seminars (regularly held at least for the
+last 05 years), where the candidate was invit ed as keynote speaker .
+vi. Endorsement :
+• List of three referees with name s, academic title, postal address, email IDs
+(institutional email, in case still serving) as well as their short biography and assessment of DNP candidate’s contributions/impact in the relevant field(s). At least one of the referees must describe/assess the impact of the DNP candidate’s contribution in service to the university, community and country .
+• A statement on Conflict of Interest , that the candidate ha s not collaborated with
+the referee at least in last 5 years , either in terms of joint publication, co supervision of a graduate student, or Co - PI in a r esearch g rant .
+• It will be the responsibility of the university to examine profiles of the referees
+who are themselves qualified and willing to make judgement of the DNP candidates .
+d. Two one - page statements prepared by the candidates, covering the below:
+i. Contributions in relevant field at national and international level and its impact .
+ii. S ervice s rendered at the community /university le vel and its impact.
+IV. Each participating university will set up a permanent /Standing selection committee, to be
+chaired by the Vice Chancellor including the Registrar, Director QEC, up to two existing DNPs and up to three senior Deans to review the applications and recommend one candidate for the award of D N P.
+V. The selection committee wo uld make the decision and convey the results to HEC within
+deadlines specified by HEC.
+VI. All the documents of the recommended nominee would be provided by the universities to
+HEC in the form of a dossier, duly tagged and page numbers inserted. Soft copies of the dossier must also be provided in a USB or uploaded on online storage/file sharing platforms.
+VII. Candidates recommended by the universities shall be evaluated at national level by the HEC
+Se lection Committee ( Table 2 ), which shall meet annually to finalize its recommendations.
+VIII. The candidates can be called to appear in an interview if the national level selection
+committee deems it necessary .
+IX. Only those whose applications and supporting docum ents were submitted on or before the
+specified deadline and recommended by the parent university will be considered for the award of title .
+X. The National Level Selection Committee will review the recommendations and approve
+select ion of the DNPs under the below subjects/categories . A maximum of five DNPs will be selected per cycle with not more than one DNP in any of the below mentioned subject s /categor ies :
+i. Education .
+ii. Social Sciences, Journalism and Information
+iii. Information and Communication Technology
+iv. Health and Welfare
+v. Arts and Humanities
+vi. Natural Sciences, Mathematics and Statistics .
+vii. Engineering, Manufacturing and Construction .
+viii. Agriculture, Forestry, Fisheries and Veterinary
+ix. Services
+x. Business, Administration and Law
+4. Selection Committee .
+The composition of the national level selection committee shall be as follows:
+Table 2: D N P Selection Committee HEC
+
+[SECTION: hec_faculty_appointment_20_1_EXECUTIVE_DIRECTOR_HEC_CHAIRPERSON]
+# 1. Executive Director, HEC Chairperson
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 1. Executive Director, HEC Chairperson
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-DNP.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-DNP.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+1. Executive Director, HEC Chairperson
+
+2. Three (0 3 ) existing DNPs from different fields Members
+
+3. Chair person , Vice Chancellors Committee Member
+
+4. Director General /In charge (Academics), HEC Member
+
+5. Director (Academics), HEC Secretary
+The Committee may co - opt any member in its constitution, if required (Refer to “T erms and C onditions ” at Annex - I for further details).
+Annex - I TERMS AND CONDITIONS OF THE HEC DNP AWARD
+
+[SECTION: hec_faculty_appointment_21_1_ELIGIBILITY]
+# 1. Eligibility
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 1. Eligibility
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-DNP.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-DNP.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+1. Eligibility
+a. Full - time permanent serving Professors (BPS/Tenured/Long - term contract) with at least 05 years of experience as Professor at an HEC recognized public or private sector u niversity/ HEI of Pakistan .
+i. The applicants must be under 60 years of age .
+ii. Individuals who have disciplinary proceed ings pending against them or have been
+penalized on charges of plagiarism or other forms of misconduct are not eligible .
+iii. There should be no adverse remarks in their ACRs during the previous five (0 5 ) years .
+b. A Professor who had received the HEC DNP award under the old framework can apply provided he/she is eligible . Also, if she/he reappl ies , will have to provide his/her information and supporting documents for the entire intervening period since the receipt o f the award.
+The university’s internal committee would have the right to examine the entire dossier in order to judge eligibility for the subsequent award.
+c. Candidates for DNP award will not be part of the University’s Selection Committee . Similarly,
+Conflict of Interest if any, has to be declared by the selection committee members that the candidate has not collaborated with any member, at least in the last 5 years, either in terms of joint publication, co - supervision of a graduate student, or Co - PI in a Research Grant .
+
+[SECTION: hec_faculty_appointment_22_2_TERMS]
+# 2. Terms
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 2. Terms
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-DNP.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-DNP.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+2. Terms
+a. The Distinguished National Professor will retain the title for life however, t he associated financial benefits w ill cease 3 years after selection or on the date of his/her superannuation , whichever is earlier .
+b. The Distinguished Professor a wardee will receive an honorarium of Rs. 2 00,000/ - on bi annual basis for 3 years or until superannuation date , whichever is earlier . Funds for the DNP remunerations will be provide d by HEC to the univers ities.
+c. It shall be the responsibility of the host university to monitor the performance of the DNP ,
+which may be shared with HEC on annual basis.
+d. The DNP title may not be terminated from the holder except in case of proven charges of
+gross misconduct or plagiarism, which will require a process to follow .
+
+[SECTION: hec_faculty_appointment_23_3_SELECTION_PROCEDURE]
+# 3. Selection Procedure
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 3. Selection Procedure
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-DNP.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-DNP.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+3. Selection Procedure
+a. All names will be subm itted by the universities to HEC after a transparent scrutiny process .
+b. The initial screening will take place at the university level. The universities are required to ensure circulation of the opportunity across all the departments, within the application period, to ensure fair competition and maximum participation .
+i. The university will notify a S election C ommittee for this purpose (see S ection 3
+“Procedure for nomination and finalization” ) .
+ii. The S election C ommittee will undertake the university - level scrutiny, and submit its
+recommendation, duly signed by all members, to HEC
+iii. While submitting the nomination, the S election Committee at the university will certify
+that all eligibility criteria have been met .
+iv. The department head and dean o f relevant faculty will add their remarks in the
+candidates’ dossier for facilitation of the S election C ommittee.
+v. The university will set up a mechanism to address grievances if any.
+c. N omination s and supporting documents received after due date, will not be considered .
+d. The nominees are required to provide detailed justification of the proposed title in the
+covering letter, specifically addressing the criteria outlined in Table 1. The CV must include supporting information, consistent with the required cri teria.
+4. HEC will only entertain nominations received according to the prescribed channel and procedure. HEC's decision will be based solely on the documentary record provided by the university on or before the deadline, and on the recommendation s of the un iversity ’s S election C ommittee .
+5. HEC has the right not to make an award in a particular year or under a particular category.
+6. Maximum of 05 Distinguished National Professors will be appointed in a cycle under the list of broad categories of disciplines (mentioned at Section 3 “ Procedure for nomination and recommendations” ) and that no t more than one from a broad category of discipline will be appointed in a cycle . The decision of HEC will be final.
+7. Anyone who provides false or misleading evidence will b e barred for three years from the competition as well as from other facilities of HEC ( Res ea rch Funding or Awards) . An award granted on the basis of false an d misleading evidence will be withdrawn and penalty implemented .
+
+[SECTION: hec_faculty_appointment_24_8_ROLES_AND_A_CTIVITIES_OF_DNP]
+# 8. Roles and a ctivities of DNP
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 8. Roles and a ctivities of DNP
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-DNP.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-DNP.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+8. Roles and a ctivities of DNP
+The DNP shall engage in such activities as expected from a full professor, however, being holder of the national award and an extraordinary honor, he/she will also be entrusted with national responsibilities, including, but not limited to, the following :
+• Research - based policy advice to the government.
+• Representation of the university in international forums, including those for fundraising or
+income generation.
+• Facilitating national and intern ational partnerships.
+• Organizing national/international conferences.
+• Contributing to improvements or innovations in research and teaching programs and
+methodologies.
+• Engaging students in community - oriented work/projects.
+Annex - I I LIST OF INTERNATIONAL AWARDS
+
+1. Ahmed Zewail Foundation Prize for Science and Technology
+
+2. Al - Mustafa Prize, Government of Iran
+
+3. Berson - Yalow Award
+
+4. Blue Planet Prize (for Environment) of Asahi Glass Foundation
+
+5. Boehringer International Research Award
+
+6. Economic Cooperation Organization (ECO) Prizes
+
+7. Engro Excellence Award
+
+8. Federation of Asian Chemical Societies
+
+9. Fellowship of Kings College
+
+10. Foreign Fellow of Chinese Academy of Sciences
+
+11. Gold Medal of the Scientific Partnership Charitable Foundation
+
+12. High Citation Awa rd (Elsevier/Web of Science)
+
+13. Highest Civil Award of Austria
+
+14. International Science Foundation (IFS) Sven - Brohult Award/ Prize
+
+15. International Scientific Corporation Award
+
+16. ISESCO Awards
+
+17. Islamic Development Bank Prize
+
+18. Kalinga Prize for Science Popularization
+
+19. K hawarzami International Award (KIA)
+
+20. King Faisal Award
+
+21. Kuwait Foundation Prizes
+
+22. Mahathir Mohamad Prize
+
+23. OIC - COMSTECH Prizes
+
+24. Prestigious Einstein Professorship
+
+25. Rolex Awards
+
+26. Royal Society of London Fellowship
+
+27. The Friendship Award of China
+
+28. The Islamic Organizat ion Prize
+
+29. The World Academy of Science (TWAS) Awards
+
+30. TRIESTE Science Prize
+
+31. UNESCO Awards and Prizes
+
+32. United National Organizations Awards and Prizes
+
+33. World Food Prize (USA)
+NOTE:
+The above list of international awards is not an exhaustive list and will be reviewed & updated periodically by experts.
+
+[SECTION: hec_faculty_appointment_25_I_ELIGIBILITY_REQUIREMENTS]
+# i. Eligibility Requirements
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: i. Eligibility Requirements
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-BUTA.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-BUTA.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+FRAMEWORK FOR HEC BEST UNIVERSITY TEACHER AWARD (HEC BUTA) 202 5 FRAMEWORK FOR HEC BEST UNIVERSIY TEACHER AWARD The Best University Teacher Award was established in 2003 to recognize outstanding teachers, and incentivize all teachers to enhance their pedagogical skills. It is open to BPS, TTS, and contract teacher from public as well as private universities.
+The framework of Best University Teacher Award was revised in 2019 wherein a different set of awards criteria, based on indicators of effective teaching, was incorporated with an aim to encourage more attention to teaching.
+Objectives : Best University Teacher Award has three objectives.
+• Incentive : Provide an incentive to teachers to improve the quality of their teaching and
+andr agogy;
+• Andr agogical : build a national consensus on what constitutes good teaching;
+• Capacity Building : build a national database, accessible to all teachers, especially
+junior teachers, of syllabuses, grading systems (including tests, exams, quizzes), lesson plans, and lecture slides (PPTs).
+A. Award Levels The Best University Teacher Award has been split into two levels:
+a. University - Level Best University Teacher Award The university level awards would be conferred directly by the universities. Each university's best teacher awards will consist of a certificate of merit, plus, if a university Syndicate so decides, a cash award of up to Rs. 200,000/ - .
+Only the winners of uni versity level awards would be eligible for competing in the HEC national award competition.
+b. National - Level Best University Teacher Award HEC would confer one or more national awards, to a limited number of recipients, to ensure their exclusivity and prestige. The HEC National Level Best University Teacher Award consists of a cash prize of Rs. 1,000,000/ - (Rupees ten l ac s only) along with a certificate of merit and a n HEC Medal .
+B. Award Criteria and Assessment Mechanism The basic eligibility and revised set of criteria is placed below and at Annex - I .
+i. Eligibility Requirements
+Only those teachers who meet all these eligibility requirements will be considered for University - Level as well as National - Level Best University Teacher Awards. Selecting “ No ” will render the applicant ineligible to compete for BUTA.
+Table 1: Eligibility Requirements SN Check List (Please check all the boxes) Response (Yes/No) Attach E vidence
+
+[SECTION: hec_faculty_appointment_26_1_IS_THE_TEACHER_A_FULL_TIME_PERMANENT_UNIVERS]
+# 1. Is the teacher a full - time permanent university
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 1. Is the teacher a full - time permanent university
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-BUTA.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-BUTA.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+1. Is the teacher a full - time permanent university
+teacher member, on TTS, BPS, or long - term contract, at an HEC recognized public or private sector university or DAI?
+Yes ☐ No ☐ Employment Letter
+
+2. Has the teacher completed three years of
+consecutive /active service as a permanent university teacher at the nominating university or DAI?
+Yes ☐ No ☐ Letter from Registrar/VC/ Director QEC
+3. Is the teacher less than 60 years of age? Yes ☐ No ☐ Copy of CNIC
+
+4. Was the teacher physically present at the
+university in the previous three years?
+Yes ☐ No ☐ Letter (s) from VC/Registrar/ Director QEC
+
+5. Did the teacher teach a minimum of 6 credit
+hours in each semester during the evaluation period (Fall - Spring)?
+Yes ☐ No ☐
+
+6. Did the teacher attend every class during the
+period of evaluation?
+Yes ☐ No ☐
+
+7. In case the teacher missed a class, was it on
+account of ill health or medical emergency (documentary evidence to be provided), and was the absence compensated by a make - up class?
+Yes ☐ No ☐
+8. T he teacher did not avail long - term leave (i.e.,
+exceeding 3 weeks during the period of evaluation .
+Yes ☐ No ☐
+
+9. T here are no disciplinary proceedings against
+the teacher during the previous three (03) years .
+Yes ☐ No ☐
+
+10. There are no adverse remark s recorded in the
+ACRs of the teacher during the previous three (03) years .
+Yes ☐ No ☐
+
+11. The teacher did not receive the HEC Best
+University Teacher Award after 2019.
+Yes ☐ No ☐
+
+[SECTION: hec_faculty_appointment_27_12_THE_T_EACHER_DID_NOT_SERVE_AS_VICE_CHANCELL]
+# 12. The t eacher did not serve as Vice Chancellor or
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 12. The t eacher did not serve as Vice Chancellor or
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-BUTA.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-BUTA.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+12. The t eacher did not serve as Vice Chancellor or
+any other key administrative position at the university during the past three years .
+Yes ☐ No ☐ Parameters and Assessment Mechanism Table 2: Parameters and Assessment Mechanism Item Description How Assessed Weight Command of the Subject Teachers should demonstrate effective command of the subject. In this regard, the relevant information includes their degrees and certificates, the course syllabus, tests, exams, and assignments prepared, classroom interaction and contribution in assessing faculty program s as part of the program evaluation process .
+Review all relevant materials to assign a grade.
+Quality is based on qualifications plus direct evidence from syllabus, lectures, and tests, program evaluations etc.
+10% Teaching Philosophy and Ethics Teachers should submit a one - page statement of their teaching philosophy and Ethics .
+Evaluate quality and originality of statement.
+10% Course Syllabus, including the grading system, tests, and assignments, and the Lesson Plan "Syllabus" includes (a) succinct description of the subject of the course, (b) the learning objectives of the course (i.e., what would the students learn by taking the course), (c) the textbook (or textbooks) and supplementary course materials if needed, (d) expectations from the students, (e) grading syste m (see below), (f) the lesson plan (see below), (g) reference to any relevant university or HEC rules (e.g., on plagiarism), and (h) any special condition or requirement.
+The good grading system should induce students to undertake the work required for eff ective learning. Besides the grading scheme, it also includes tests, quizzes, if any, assignments, both in - class and homework, class participation, field work, lab work, and group work.
+The detailed lesson plan divides the course materials into individual lectures, each with its own (clearly defined) content, learning objectives, assigned readings, other homework assignments, and power point slides, if any Assign a grade based on the assessment of the syllabus, grading system, tests, etc., and lesson plan s ubmitted by teachers.
+25% (10% for Course Syllabus,
+10 % for
+Grading and 5 % for Lesson Plan) Classroom Teaching Evaluation of (at least one) videotaped lecture by a teacher, including assessment of how the teacher set out the learning objectives at the start of the lecture, his/ her lecture style, classroom atmosphere, use of active learning, use of current event examples, student engagement. It should also be examined whether the teacher was able to ach ieve the learning objectives in the lecture.
+Moreover, it should be observed whether the teacher invited field experts to the classrooms and incorporated real world scenarios into a ssignments, exams and presentations.
+Assign a grade based on review of the videotape, PPTs and background material (e.g., announcements regarding active learning practices).
+20% Use of Technology Teachers will submit a statement on their approach to using modern technology tools in teaching, including audiovisual materials, flipped classrooms, automated grading systems, class blogs and social media, and others. Evidence should be provided on whether and how they deployed such tools.
+Assign a grade based on review of the teacher's statemen on the technology tools us ed by her/ him.
+Given that good faculties are looking for ways in which t echnology can help a ndr agogy, these questionnaires in Table 3 (Annex - I) can reveal the interest and c ommitment of teachers.
+5% Student interaction and mentoring Teachers will provide a statement describing whether they were available for office hours, the time they spent per week on mentoring students, their approach to mentoring and supervision of research scholars and research teams, and their engagement in classroom blogs an d social media channels.
+Assign a grade based on review of teacher's statement and background materials.
+Beside interaction with course students, the questions in table
+3 (Annex - I) provides
+a M etric to determine the quality of the mentorship provided 10% T hese criteria may be revised from time to time. However, any future change in criteria will take effect only in the following year.
+The questionnaire at Table - 3 (Annex - I) is to be filled as per the “ Parameters and Assessment Mechanism ” provided in Table - 2 above.
+
+[SECTION: hec_faculty_appointment_28_C_PROCEDURE]
+# C. PROCEDURE
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: C. PROCEDURE
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-BUTA.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-BUTA.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+C. PROCEDURE
+a. All awards pertain to a particular academic year (Fall to Spring).
+b. Upon announcement by HEC, the participating universities will issue the call f or nominations, widely disseminating the information to all the departments, for University - Level Best University Teacher Award competitions.
+c. Each participating university would set up a permanent selection committee, chaired by
+the Vice Chancellor (and including the Registrar, Director QEC, and two senior most Deans ) to review the applications or nominations and select the winners. The selectio n committee would finalize its decision and the results conveyed to HEC within the prescribed deadline.
+d. University - level best university teacher awards would be distributed at the time of the
+university convocation.
+e. The winners of the university - level best teacher awards would automatically be entered into the competition for the HEC national best university teacher award. Only those whose application and supporting documents that were submitted for university - level a ward will be eligible for the national award.
+f. One copy of the complete dossier, comprising all the documents and assessment (properly ordered, tagged/annexed with page numbers inserted) of the winner of the university - level best teacher award, must be subm itted to HEC for consideration for National - Level Best University Teacher Award. The dossier must include the following:
+i. A covering note prepared by the teacher.
+ii. Filled nomination form, duly signed by the VC/Registrar.
+iii. Latest CV of the teacher.
+iv. A certificate, duly signed by all members of the University’s Selection
+Committee (in original), certifying that all eligibility criteria has been met by the to g raduate students.
+Student Evaluations Student evaluations are one of the means of assessing teaching effectiveness. Students’ feedback will also show the improvement in teaching.
+This helps make comparative assessment of teachers.
+Assign a comparative grade based on review of all evaluation results .
+20% university - level award winner.
+v. Completed questionnaire (see Annex - I ) with marks added and supporting
+documents of the teacher included, pertaining to the particular assessment period. The supporting documents must include the following:
+• The syllabus or syllabuses, including grading systems, exams, tests, quizzes,
+assignments and lesson plans.
+• Video tapes of lectures and PowerPoint presentation (PPTs). The videos are
+to be provided within a USB or uploaded at any hosting service over internet, for which a working link along with access rights assigned to everyone, is to be provided.
+• Student evaluations of the courses being considered for the award, and the
+average evaluation scores of teacher and courses across the department, faculty, and the entire university. Student evaluations are confidential documents, and would be av ailable only to the evaluation committees and will be shared with HEC.
+• Three one - page statements prepared by the teacher. The three statements
+are:
+1. Statement of teaching philosophy and ethics .
+
+[SECTION: hec_faculty_appointment_29_2_STATEMENT_ON_HOW_THE_TEACHER_USED_TECHNOLOGY]
+# 2. Statement on how the teacher used technology in the courses being
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 2. Statement on how the teacher used technology in the courses being
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-BUTA.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-BUTA.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+2. Statement on how the teacher used technology in the courses being
+evaluated.
+3. Statement on student interaction and mentoring.
+g. HEC will set up a national evaluation committee (EC) to review the dossiers of eligible teachers. Members of the EC will be selected carefully from amongst the best teachers in the country .
+h. The EC will finalize its recommendations, and the Commission will review the recommendations and approve the final selection.
+
+[SECTION: hec_faculty_appointment_30_D_TERMS_AND_CONDITIONS_OF_THE_AWARD]
+# D. TERMS AND CONDITIONS OF THE AWARD
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: D. TERMS AND CONDITIONS OF THE AWARD
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-BUTA.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-BUTA.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+D. TERMS AND CONDITIONS OF THE AWARD
+1. The HEC Best University Teacher Award consists of a cash prize of Rs. 1,000,000 (Rupees ten Lac only) and a certificate of merit with a n HEC Medal.
+2. Each university level best teacher award will consist of a certificate of merit, plus, if a university Syndicate so decides, a cash award of up to Rs. 200,000.
+3. Only those who have won the competition for the University - Level Best Teacher Award are eligible to compete for the national level Best University Teacher Award.
+4. The following are the eligibility requirements for university - level best teacher awards as well as the national level best university teacher awards:
+i. They are full - time permanent teachers, including those on TTS, BPS, or long - term
+contract, at any public or private sector university or DAI recognized by the HEC.
+ii. They have completed a minimum of three years of consecutive /active service as a
+teacher of the nominating university or DAI prior to the date of the award.
+iii. They are less than 60 years of age.
+iv. They should have been physically present at the nominating university in the
+previous three years.
+v. They did not miss any class during the calendar year. An exemption may be provided
+in cases of ill health or medical emergency, on the production of documentary evidence, and if the absence was compensated by the organization of make - up classes in consultation with the students. QEC is responsible for validating this information.
+vi. They did not avail long - term leave (i.e., exceeding 3 weeks during the year of
+evaluation).
+vii. There were no disciplinary proceedings against them, e.g., on charges of plagiarism.
+viii. There are no adverse remarks in their ACRs during the previous three (03) years.
+ix. They did not serve as Vice - Chancellors or on other key administrative positions in
+the university in the past three years.
+x. Their application/ nomination along with all supporting documents have been
+provided on or before the annual deadline.
+xi. The teacher must have taught a minimum of 6 credit hours in each semester during
+the evaluation period (Fall - Spring) . The number of courses taught will be verified through student evaluations.
+xii. The teacher did not receive national level Best University Teacher Award after 2019.
+5. The Selection Committee will certify that all eligibility criteria have been met by the nominee , and send the certificate, duly signed by all members, to HEC.
+6. The Selection Committee of the University/DAI will select a winner and two runners up for the university - level award process.
+7. HEC will only entertain nominations received according to the prescribed chan nel and procedure. HEC's decision will be based solely on the documentary record, plus the recommendation of the university ’s selection committee.
+8. A teacher may receive Best University Teacher Award once in their life time.
+9. The university will set up a mechanism to address grievances , if any.
+10. The University/DAI is responsible to ensure the transparency of the process.
+11. HEC has the right to not make an award in a particular year.
+12. The decision of the HEC will be final.
+13. Anyone who provides false or misleading evidence will be barred from the competition for life. An award granted on the basis of false and misleading evidence will be withdrawn.
+14. The teacher shall have no pending liabilities with any D ivision of HEC. He/ s he will provide a certificate countersigned by the Director QEC/Registrar of the university .
+ANNEX - I Questionnaires on Best University Teacher Award Evaluation Parameters Important Notes:
+i). Universities are required to follow “Parameters and Assessment Mechanism” mentioned in Table 2
+above while responding to questions and assigning weights against each of the parameters.
+ii). Response to all the questions within the questionnaires is mandatory. The questions carry equal
+marks, as below , except question xviii in Parameter - 6 (Classroom Teaching) :
+Yes = 2, Somewhat = 1, No = 0
+iii). Weightage against each parameter must be calculated as per the following formulae:
+(Marks Secured divided by Maximum Marks multiply by Weightage) x 100 Below is the solved example for Parameter 3 (Course Syllabus) in a scenario where the teacher’s answer to 9 questions is “Yes” and to 2 questions is “Somewhat”:
+Total questions in parameter 3 are 1 2 , thus maximum marks of the parameter are 2 4 Weightage of parameter 3, as per Table 2 above, is 10 % or 10/100 Marks Secured for “Yes”: 9 x 2 = 18 and for “Somewhat”: 2x1 = 2, so total marks secured are 20 Weight calculation as per above mentioned formulae = (20/2 4 x 10/100) x 100 = 8 . 33 (weight obtained by the teacher in parameter 3) The total weight obtained by the teacher in all parameters will be the sum of weights obtained by the teacher in each of the nine parameters.
+(Weight calculated on any other method or without responding against all questions will not be accepted) .
+iv). Universities are required to use the provided template in responding against each question under
+various evaluation parameters. Questionnaires not filled as per the below format will not be accepted.
+
+[SECTION: hec_faculty_appointment_31_D_TERMS_AND_CONDITIONS_OF_THE_AWARD]
+# D. TERMS AND CONDITIONS OF THE AWARD
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: D. TERMS AND CONDITIONS OF THE AWARD
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-BUTA.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-BUTA.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+v). No marks will be accepted if the required documentary ev idence is not attached in support of
+accomplishments claimed. The evidences must be attached in order against each parameter and must be tagged properly to facilitate evaluation. The entire dossier must be page numbered.
+vi). The filled questionnaires are to be submitted to HEC along with other documents of the teacher for
+consideration of HEC National - Level Best University Teacher Award.
+Table 3 – Questionnaires on Best University Teacher Award Evaluation Parameters Name of Teacher:
+Designation & Department:
+University:
+Assessment Period:
+SN Parameter Check List Response (Yes/Somewhat/No) Attach evidences (with appropriate title/Annex number) 1.
+i. Does teacher have a degree in the
+discipline?
+Yes ☐ No ☐ For example:
+Copies of Degree, Command of the Subject Maximum marks (1 2 ); Weight (10%)
+ii. Does teacher have a certificate,
+diploma, or other qualification in the course topic?
+Yes ☐ No ☐ Diploma, certificates etc.
+iii. Does the syllabus demonstrate
+command of the subject?
+Yes ☐ Somewhat ☐ No ☐ Course Syllabus (s) developed during the assessment period
+iv. D o the exams/assignments
+demonstrate command?
+Yes ☐ Somewhat ☐ No ☐
+v. Does the lecture and classroom
+interaction demonstrate command of the subject?
+Yes ☐ Somewhat ☐ No ☐
+vi. Does the teacher contribute to
+assessing the faculty programs as part of program evaluation process?
+Yes ☐ Somewhat ☐ No ☐ Evidence from QEC/Concerned Faculty Weight obtained by the teacher under “Command of Subject” Table - 3 – Questionnaires on Best University Teacher Award Evaluation Parameters SN Parameter Check List Response (Yes/Somewhat/No) Attach evidences (with appropriate title/Annex number) 2.
+Teaching Philosophy and Ethics Weight (10%)
+i. Has the teacher submitted the
+statement of his/her teaching philosophy and ethics?
+Yes ☐ No ☐ One page statement on Teaching Philosophy and Ethics Weight obtained by the teacher under “Teaching Philosophy and Ethics ” Weight should be assigned upon evaluating the quality and originality of the statement.
+Table - 3 – Questionnaires on Best University Teacher Award Evaluation Parameters SN Parameter Check List Response (Yes/Somewhat/No) Attach evidences (with appropriate title/Annex number)
+i. Was the syllabus made available
+ahead of time?
+Yes ☐ No ☐ 3.
+Course Syllabus Maximum marks (2 4 ); Weight (10%)
+ii. Does the syllabus describe the
+subject matter effectively?
+Yes ☐ Somewhat ☐ No ☐ Course Syllabus (s) developed during the assessment period
+iii. Are the learning objectives clear and
+well crafted?
+Yes ☐ Somewhat ☐ No ☐
+iv. Does the syllabus address
+prerequisites for the course?
+Yes ☐ No ☐
+v. Is there a main textbook for the
+course?
+Yes ☐ No ☐
+vi. Did the recommended textbook
+cover contemporary knowledge?
+Yes ☐ No ☐
+vii. Are other course materials (if any)
+selected professionally?
+Yes ☐ Somewhat ☐ No ☐
+viii. Does the syllabus list the
+expectations from the students?
+Yes ☐ No ☐
+ix. Does the course ask students to read
+the assigned materials ahead of time?
+Yes ☐ No ☐
+x. Does the syllabus list or refer to
+relevant university or HEC rules (e.g., on plagiarism)?
+Yes ☐ No ☐
+xi. Does the syllabus describe any
+special condition or requirement for the course?
+Yes ☐ No ☐
+xii. Does the teacher provide feedback
+to ensure that the syllabus reflect current trends and international developments?
+Yes ☐ Somewhat ☐ No ☐ Weight obtained by the teacher under “Course Syllabus” Table - 3 – Questionnaires on Best University Teacher Award Evaluation Parameters SN Parameter Check List Response (Yes/Somewhat/No) Attach evidences (with appropriate title/Annex number)
+i. Does the syllabus describe the
+grading system (i.e., distribution of grades for different exams, tests, assignments, etc.)?
+Yes ☐ Somewhat ☐ No ☐ Grading System, Tests, Quizzes, Assignments, developed during the assessment period
+ii. Have the tests, if any, been
+prepared professionally?
+Yes ☐ Somewhat ☐ No ☐
+iii. Do the test questions assess
+proficiency in the learning objectives?
+Yes ☐ Somewhat ☐ No ☐ 4.
+Grading System, Tests, and Assignments Maximum marks (30);
+iv. Have the quizzes, if any, been
+prepared professionally?
+Yes ☐ Somewhat ☐ No ☐
+v. Do the quizzes reward preparation
+or insight?
+Yes ☐ Somewhat ☐ No ☐
+vi. Has the teacher given in - class
+assignments?
+Yes ☐ No ☐ Weight (10%)
+vii. Has the teacher given homework
+assignments?
+Yes ☐ No ☐
+viii. Do the students receive grades for
+completion of the assignments?
+Yes ☐ No ☐
+ix. Does the grading system
+encourage students to act in ways as to achieve learning objectives?
+Yes ☐ Somewhat ☐ No ☐
+x. Does the teacher assign grades for
+class participation?
+Yes ☐ No ☐
+xi. Do the course describe how class
+participation will be graded?
+Yes ☐ No ☐
+xii. Does the course require lab/field
+work/research/capstone project?
+Yes ☐ No ☐
+xiii. Does the course outline describe
+how field work, lab work, research or project, if relevant, will be graded?
+Yes ☐ Somewhat ☐ No ☐
+xiv. Does the course require group
+work?
+Yes ☐ No ☐
+xv. Does the course outline describe
+how group work will be graded?
+
+[SECTION: hec_faculty_appointment_32_D_TERMS_AND_CONDITIONS_OF_THE_AWARD]
+# D. TERMS AND CONDITIONS OF THE AWARD
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: D. TERMS AND CONDITIONS OF THE AWARD
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-BUTA.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-BUTA.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Yes ☐ No ☐ Weight obtained by the teacher under “ Grading System, Tests, and Assignments ” Table - 3 – Questionnaires on Best University Teacher Award Evaluation Parameters SN Parameter Check List Response (Yes/Somewhat/No) Attach evidences (with appropriate title/Annex number) 5.
+Lesson Plan Maximum marks (14); Weight (5%)
+i. Has the teacher submitted a
+detailed lesson plan for the entire semester (i.e., division of the course materials into individual lectures, with clearly defined content, learning objectives for each lecture, assigned readings, other homework assignments, and power point slides, if any)?
+Yes ☐ No ☐ Lesson Plan (s) developed during the assessment period
+ii. Does the lesson plan provide
+learning objectives for each lecture?
+Yes ☐ Somewhat ☐ No ☐
+iii. Does the lesson plan provide a
+precise reading assignment (both textbook and other readings) for each lecture?
+Yes ☐ Somewhat ☐ No ☐
+iv. Is the volume of assigned readings
+for each lecture feasible for students to undertake?
+Yes ☐ Somewhat ☐ No ☐
+v. Does the lesson plan include
+homework assignments?
+Yes ☐ No ☐
+vi. Does the lesson plan include in - class
+assignments or quizzes?
+Yes ☐ No ☐
+vii. Does the lesson plan provide for
+active learning in the classroom?
+Yes ☐ Somewhat ☐ No ☐ Weight obtained by the teacher under “Lesson Plan” Table - 3 – Questionnaires on Best University Teacher Award Evaluation Parameters SN Parameter Check List Response (Yes/Somewhat/No) Attach evidences (with appropriate title/Annex number) 6.
+Classroom Teaching Maximum marks (3 6 ); Weight (20%)
+i. Does the teacher use PPTs? Yes ☐ Somewhat ☐ No ☐
+PPTs developed during the assessment period
+ii. Have the PPTs been made available
+to the students?
+Yes ☐ No ☐
+iii. Is the length of the PPTs suitable for
+the time allotted for the lecture?
+Yes ☐ No ☐
+iv. Are the PPTs designed professionally
+(i.e., they are not just a handful of slides thrown together without regard to the learning objectives, assigned readings, in - class assignments, or active learning modules)?
+Yes ☐ Somewhat ☐ No ☐
+v. Do the PPTs demonstrate the
+teacher's command of the subject?
+Yes ☐ Somewhat ☐ No ☐
+vi. Has the university submitted a
+videotaped lecture by the teacher?
+Yes ☐ No ☐ Videotape (s) of Lectures captured during the assessment period
+vii. In the videotape, did the teacher
+introduce the learning objectives for that specific lecture?
+Yes ☐ Somewhat ☐ No ☐
+viii. In the videotape, did the teacher
+succeed in achieving the learning objectives for the specific lecture?
+Yes ☐ Somewhat ☐ No ☐
+ix. In the videotape, does the teacher
+demonstrate adequate command of the subject?
+Yes ☐ Somewhat ☐ No ☐
+x. In the videotape, does the teacher's
+lecture style engage the attention and interest of the students?
+Yes ☐ Somewhat ☐ No ☐
+xi. In the videotape, was the
+quantitative/qualitative problem explained effectively to students?
+Yes ☐ Somewhat ☐ No ☐
+xii. In the videotape, does the teacher
+create a respectful classroom atmosphere?
+Yes ☐ Somewhat ☐ No ☐
+xiii. In the videotape, is there a use of
+active learning?
+Yes ☐ Somewhat ☐ No ☐
+xiv. In the videotape, are the active
+learning modules effective and have been designed carefully?
+Yes ☐ Somewhat ☐ No ☐
+xv. In the videotape, does the teacher
+use current event examples to illustrate the issues and motivate the discussion?
+Yes ☐ Somewhat ☐ No ☐
+xvi. In the videotape, was the teacher
+leading the academic discourse and discussions in an adequate manner?
+Yes ☐ Somewhat ☐ No ☐
+xvii. Does the teacher invite field experts
+to classrooms and incorporate real world scenarios into assignments/exams/presentations?
+Yes ☐ Somewhat ☐ No ☐ Letter/Evidence
+xviii. Has the teacher taught a minimum
+of 6 Credit Hours each in both the semesters of the e valuation p eriod ?
+Yes ☐ ( 1 mark for meeting the mandatory
+6 credit
+hours teaching requireme nt per semester during the evaluation period ) Yes ☐ ( 2 marks for credit hours taught over and above minimum requiremen t, u p to a max . of 18 credit hours in two semesters ) No ☐ ( Teacher is in eligible for BUTA ) Timetable and student feedback/ evaluation forms Weight obtained by the teacher under “Classroom Teaching” Table - 3 – Questionnaires on Best University Teacher Award Evaluation Parameters SN Parameter Check List Response (Yes/Somewhat/No) Attach evidences (with appropriate title/Annex number) 7.
+Use of Technology One page Statement (Question i) Weight (2%) Maximum marks (14) for Questions a - g; Weight (3%)
+i. Did the teacher submit a statement
+on their use of technology in teaching?
+Yes ☐ No ☐ One page statement by the teacher on Use of Technology.
+(Weight to the statement should be assigned upon evaluating its quality and originality)
+ii. Does the teacher use any of the
+modern technological tools listed below?
+a. Assign any audiovisual materials as homework assignment or use them in the classroom?
+Yes ☐ No ☐ b. The flipped classroom approach? Yes ☐ No ☐
+c. An automated grading system,
+e.g., for in - class quizzes?
+Yes ☐ No ☐
+d. Ask students to participate in a
+class blog or class - related social media pages?
+Yes ☐ No ☐ e. Communicate with students through email list servers or other group arrangements?
+
+[SECTION: hec_faculty_appointment_33_D_TERMS_AND_CONDITIONS_OF_THE_AWARD]
+# D. TERMS AND CONDITIONS OF THE AWARD
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: D. TERMS AND CONDITIONS OF THE AWARD
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-BUTA.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-BUTA.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Yes ☐ No ☐ f. Encourage or require assignments to be submitted electronically?
+Yes ☐ No ☐ g. Smart classroom technology for interactive learning?
+Yes ☐ No ☐ Weight obtained by the teacher under “Use of Technology” Table - 3 – Questionnaires on Best University Teacher Award Evaluation Parameters SN Parameter Check List Response (Yes/Somewhat/No) Attach evidences (with appropriate title/Annex number) 8.
+Student interaction and mentoring One page statement (Question i) Weight (5%) Maximum marks (1 6 ) for questions ii ix Weight (5%)
+i. Did the teacher provide a statement
+regarding their mentoring and student interaction activities?
+Yes ☐ No ☐ Statement by the teacher on Mentoring and Student Interaction Activities (Weight to the statement should be assigned upon evaluating its quality and originality)
+ii. Does the teacher announce regular
+office hours in which students could see her/him for follow up questions or course - related help?
+Yes ☐ No ☐
+iii. In the videotape, does the teacher
+try to create an interactive learning environment in which students feel comfortable in asking questions?
+Yes ☐ Somewhat ☐ No ☐
+iv. Does the teacher make an attempt
+to link the subject to current events or other issues that might be of interest to students?
+Yes ☐ Somewhat ☐ No ☐
+v. (For teachers advising graduate
+students) Does the teacher have a clearly articulated system for supervising graduate students and research teams?
+Yes ☐ Somewhat ☐ No ☐
+vi. (For teachers advising
+undergraduate and graduate students) Does the teacher meet regularly with their graduate student mentees?
+Yes ☐ Somewhat ☐ No ☐
+vii. (For teachers advising
+undergraduate and graduate students) Does the teacher allocate a minimum of 8 hours per week on mentoring students outside of the classroom?
+Yes ☐ Somewhat ☐ No ☐
+viii. Does the teacher participate
+personally in classroom blogs or class - related social media pages, e.g., by commenting on posts, raising issues, or providing guidance?
+Yes ☐ Somewhat ☐ No ☐
+ix. Does the teacher regularly update
+and facilitate access to instructional resources, including support materials and labs, for assignments and projects?
+Yes ☐ Somewhat ☐ No ☐ Weight obtained by the teacher under “ Student Interaction and Mentoring ” Table - 3 – Questionnaires on Best University Teacher Award Evaluation Parameters SN Parameter Check List Response (Yes/Somewhat/No) Attach evidences (with appropriate title/Annex number) 9.
+Student Evaluations Maximum marks (0 6 ); Weigh t (20%)
+i. Has the university submitted student
+evaluations for the teacher of all the courses taught during evaluation period?
+Yes ☐ No ☐ Student Evaluation Forms/Results For the assessment period
+ii. Has the university provided
+evaluation averages across the entire university and for the department and faculty of the teacher?
+Yes ☐ No ☐
+iii. Did the teacher show improvements
+in his/her communication and andragogical skills based on students’ feedback?
+Yes ☐ Somewhat ☐ No ☐ Weight obtained by the teacher under “ Student Evaluations ”
+
+[SECTION: hec_faculty_appointment_34_HEC_FACULTY_APPOINTMENT_AND_ELIGIBILITY_FRAMEW]
+# HEC faculty appointment and eligibility frameworks (part 6)
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC faculty appointment and eligibility frameworks (part 6)
+Official page: https://www.hec.gov.pk/english/policies/Pages/Visiting-Faculty.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Guidelines%20for%20Engagement%20of%20Visiting%20Faculty%20in%20Higher%20Education%20Institutions.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+GUIDELINES FOR ENGAGEMENT OF VISITING FACULTY IN HEIs
+1.0 Preamble and Authority
+1.1 The Higher Education Commission (HEC) acknowledges the critical contribution of Visiting Faculty in enhancing the academic rigor and practical relevance of programs offered by Pakistani universities. They provide indispensable in dustry expertise, specialized skills, and contemporary knowledge that complement the permanent faculty.
+1.2 However, unregulated or excessive reliance on Visiting Faculty, particularly in public sector institutions, poses significant risks to academic qual ity, the sustainability of research culture, and long - term institutional development. These guidelines are established to standardize the engagement, roles, and management of Visiting Faculty across HEC recognized public and private sector HEIs. The object ive is to leverage their expertise while safeguarding educational standards, institutional integrity, and student welfare.
+1.3 These guidelines are issued under the powers vested in the HEC by its Ordinance No.
+LIII of 2002, Section 10(1)(q) & (r) . All HEIs are required to develop their own policy guidelines for hiring Visiting Faculty, which must be fully aligned with these guidelines and contemporary best practices. The institutional policy must be reviewed by the Institutional Quality Circle (IQ C) or equivalent body and receive formal ratification from the relevant statutory forum.
+2.0 Definition and Scope
+2.1 A Visiting Faculty member is an individual engaged on a temporary basis , typically part - time , to deliver specific courses or provide instr uctional support that addresses academic needs . Such an engagement does not confer any implicit or automatic right to a permanent, regular position within the HEI.
+3.0 Eligibility Criteria
+3.1 The minimum qualification for any Visiting Faculty position must be equivalent to the HEC's prescribed criteria for the corresponding regular faculty rank, as specified for general and professional disciplines. The current criteria are available at the official HEC website :
+https://www.hec.gov.pk/english/services/universities/qa/Pages/faculty appointmentcriteria.aspx 3.2 HEIs are encouraged to establish and apply more stringent criteria than the HE C minimums, commensurate with the specific requirements and strategic objectives of their academic programs.
+..
+4.0 Permissible Limits
+To maintain academic quality and ensure the primacy of a strong core faculty, the following limits are mandated:
+4.1 Overall Limit at Department Level : The total number of Visiting Faculty members within an academic department must not exceed 25% of the department's total full - time regular faculty strength.
+
+[SECTION: hec_faculty_appointment_35_4_2_OVERALL_LIMIT_AT_PROGRAM_LEVEL_FOR_ANY_DEG]
+# 4.2 Overall Limit at Program Level: For any degree program, the core and major courses tau
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 4.2 Overall Limit at Program Level: For any degree program, the core and major courses tau
+Official page: https://www.hec.gov.pk/english/policies/Pages/Visiting-Faculty.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Guidelines%20for%20Engagement%20of%20Visiting%20Faculty%20in%20Higher%20Education%20Institutions.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+4.2 Overall Limit at Program Level: For any degree program, the core and major courses taught by Visiting Faculty must not constitute more than 25% of the total core/major credit hours required for degree completion.
+4.3 Student - Teacher Ratio Calculation: Visiting Faculty shall not be count ed in the calculation of the student - teacher ratio, which shall be determined exclusively based on the number of full - time regular faculty.
+5.0 Recruitment and Selection Procedure
+5.1 Advertisement: Vacancies for Visiting Faculty positions must be publicly advertised on the HEI’s official website and prominent institutional notice boards. Wider circulation through local or national newspapers may be employed if deemed necessary.
+5.2 Advertisement Content: The advertisement must explicitly state:
+i. The minimum eligibility criteria, aligned with HEC standards.
+ii. The intended duration of the appointment (e.g., semester, academic year).
+iii. The approved remuneration structure (e.g., per credit hour, fixed honorarium).
+5.3 Selection Committee for V isiting Faculty : A Selection Committee, constituted by the Vice Chancellor/Rector upon the recommendation of the relevant Dean, shall be responsible for the hiring process. The respective Dean shall oversee the recruitment and subsequent performance of the Visiting Facult y.
+5.4 Documentation: The entire selection process — including application screening, interviews, and teaching demonstrations — must be formally documented. A standardized scorecard with evaluation criteria must be used and the records duly approved by the com petent authority.
+5.5 Formal Document of Engagement: A comprehensive, standardized agreement must
+be executed with each Visiting Faculty member. The engagement shall, at a minimum, stipulate :
+i. The specific course title(s) and code(s) assigned.
+ii. The duration of the engagement (not to exceed one academic year without a
+formal performance review).
+..
+iii. Detailed remuneration and payment terms.
+iv. A clear outline of roles, responsibilities, and the institution's code of conduct.
+v. Intellectual Property (IP) rights and confidentiality clauses.
+5.6 Conflict of Interest Declaration: Prior to engagement , the candidate must submit a formal declaration disclosing any potential conflicts of interest and confirming their current professional affiliation s with any other institution or organization.
+6.0 Roles, Responsibilities, and Institutional Integration
+6.1 Primary Responsibilities: The primary role of Visiting Faculty is confined to course delivery, student assessment and evaluation, and contributing to course design and development as requested.
+
+[SECTION: hec_faculty_appointment_36_6_2_GOVERNANCE_AND_ADMINISTRATIVE_ROLES_VISITI]
+# 6.2 Governance and Administrative Roles: Visiting Faculty are expressly prohibited from ho
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 6.2 Governance and Administrative Roles: Visiting Faculty are expressly prohibited from ho
+Official page: https://www.hec.gov.pk/english/policies/Pages/Visiting-Faculty.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Guidelines%20for%20Engagement%20of%20Visiting%20Faculty%20in%20Higher%20Education%20Institutions.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+6.2 Governance and Administrative Roles: Visiting Faculty are expressly prohibited from holding substantive administrative positions (e.g., Head of Department, Dean) or exercising voting rights in statutory bodies such as the Syndicate, Senate, or Academic Council. Their advisory participation in academic bodies is however, encouraged.
+6.3 Mandatory Orientation: The HEI must conduct a comprehensive orientation
+program for all new Visiting Faculty. This program shall cover university policies, academic regulations, the use of the Learning Management System (LMS), examination procedures, and pedagogical guidelines. Orientation materials must explicitly communicate expected ethical, moral, and professi onal conduct.
+7.0 Performance Monitoring and Evaluation
+7.1 Student Feedback: Mandatory, anonymous student feedback must be collected for every course at the conclusion of each semester. The summarized results must be formally communicated to the relevant Head of Department and Dean.
+7.2 Performance Dossier: The concerned academic department is responsible for
+maintaining a continuous performance dossier for each Visiting Faculty member, which shall include student feedback, peer observation reports (if any), and other relevant performance metrics.
+7.3 Agreement Renewal and Termination:
+i. Renewal: Any agreement renewal is strictly contingent upon a documented
+record of satisfactory performance.
+ii. Termination: The HEI reserves the right to terminate the agreement by providing
+due notice in cases of unsatisfactory performance, violation of university policies, or professional misconduct.
+************************************** ..
+
+[SECTION: hec_faculty_appointment_37_HEC_FACULTY_APPOINTMENT_AND_ELIGIBILITY_FRAMEW]
+# HEC faculty appointment and eligibility frameworks (part 7)
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC faculty appointment and eligibility frameworks (part 7)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/55/Notification%20-%20Guidelines%20for%20Engagement%20of%20Visiting%20Faculty%20in%20HEIs,%202026.pdf
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+For enquiries, please contact Quality Assurance Division | 051 - 90 40 2700 Coordination Division H - 9, Islamabad (Pakistan)
+1 5 - 54/Coord/2019 / QAD /HEC/ 3 47 May 1 8 , 2026
+NOTIFICATION In pursuance of the approval of the Commission in its 4 6 th meeting held on April 1 6 , 202 6 , the ‘ Guidelines for Engagement of Visiting Faculty in HEIs ’ are hereby notified with immediate effect .
+0 2 . The Guidelines are available a t http://www.hec.gov.pk/site/GVF .
+Distribution :
+i. The Vice Chancellors/Rectors/Heads of all Universities / DAIs
+ii. The Offices of the Chancellors of Public Sector Universities / DAIs
+iii. The Secretary, Ministry of Federal Education & Professional Training, Govt. of Pakistan
+iv. The Secretary, Higher Education Department, Govt. of the Punjab
+v. The Secretary, Colleges, Higher & Technical Education Department, Govt. of Balochistan
+vi. The Secretary, Higher Education, Archives & Libraries Department, Govt. of Khyber Pakhtunkhwa
+vii. The Secretary, Universities & Boards Department, Govt. of Sindh
+viii. The Secretary, Higher Education Department, Govt. of Azad Jammu & Kashmir
+ix. The Secretary, Higher, Technical & Special Education Dep artment, Govt of Gilgit - Baltistan
+x. P.S. to the Chairman, HEC
+xi. P.S. to the Executive Director, HEC
+xii. All Divisions & Regional Centers of HEC
+HIG HER EDUC ATIO N COMMISSION
+
+[SECTION: hec_faculty_appointment_38_HEC_FACULTY_APPOINTMENT_AND_ELIGIBILITY_FRAMEW]
+# HEC faculty appointment and eligibility frameworks (part 8)
+Title: HEC faculty appointment and eligibility frameworks: Tenure Track, IPFP, Professor of Practice, Meritorious Professor, DNP, Professor Emeritus, Visiting Faculty, BUTA
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC faculty appointment and eligibility frameworks (part 8)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Version: Frameworks as published; notification dates from the HEC register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — per-framework status recorded in each section
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Notifications
+HEC
+Notifications
+
+Type
+Academic
+University
+General Public
+- Recognition of the degree awarded by foreign chartered universities/institutions through virtual/online/distance learning/Blended learning
+Friday, July 22, 2022
+- Academic
+- Deferment of Post PhD Experience for Professors and Associate Professors
+Wednesday, July 20, 2022
+- Academic
+- Extension in maximum duration of MS/MPhil/PhD/equivalent degree programs due to Covid-19
+Friday, April 15, 2022
+- Academic
+- Appointment of TTS faculty on Academic-administrative positions
+Wednesday, March 2, 2022
+- Academic
+- Withdrawal of Migration Certificate/NOC as an admission requirement to the Graduate/ Postgraduate Programs
+Monday, February 28, 2022
+- Academic
+- Collecting hard copies of PhD dissertation to register record in PhD Country Directory (PCD)
+Sunday, December 19, 2021
+- Academic
+- Salary Package for the Vice-Chancellors of Public Sector Universities
+Friday, October 22, 2021
+- University
+- Graduate Education Policy-2023 (GEP-2023)
+Monday, July 10, 2023
+- Academic
+- Applicants having CAF qualification duly verified by ICAP shall be eligible for admission in BS AF
+Wednesday, June 9, 2021
+- Academic
+- Clarification regarding TTS Leave Policy
+Friday, March 5, 2021
+- University
+- Initial appointment of faculty members on TTS
+Friday, March 5, 2021
+- University
+- Amendment of the clause 1.4.1.2 of Model Tenure Track Process Statutes
+Saturday, October 16, 2021
+- University
+- Amendment of the clause 1.1 (d) and Annexure -A of Model Tenure Track Process Statutes
+Friday, October 16, 2020
+- University
+- Transition of BA/BSc Programs to Associate Degree Programs, Phasing Out of MA/ MSc Programs
+Thursday, July 11, 2019
+- Academic
+- Acceptance of USAT (Undergraduate Studies Admission Test)
+Tuesday, July 5, 2022
+- Academic
+- The Requirement of Post-PhD Experience
+Thursday, May 25, 2023
+- Academic
+- Undergraduate Education Policy
+Wednesday, July 12, 2023
+- Academic
+- Revised Interim Placement of Fresh PhDs (IPFP) Policy
+Friday, July 21, 2023
+- Academic
+- Anti-Plagiarism Policy 2023
+Wednesday, August 2, 2023
+- Academic
+- Framework of The HEC Distinguished National Professor (DNP) Program
+Tuesday, September 30, 2025
+- Academic
+- Clarification one time relaxation based on Covid-19 Situation for completion of MS-MPhil equivalent and PhD Degree till 28.02.2023
+Tuesday, April 26, 2022
+- Academic
+- Discontinuation of HEC Approved Supervisor Post Promulgation GEP- 2023
+Friday, December 22, 2023
+- Academic
+- Open and Distance Learning: Policy Provisions and Regulatory Framework
+Wednesday, August 28, 2024
+- Academic
+- Transnational Education (TNE) Policy 2024
+Monday, September 9, 2024
+- Academic
+- Partial Relaxation in Requirement of Full-Time PhD Faculty Members to Launch MS/MPhil or Equivalent and PhD Programs in Basic Medical Sciences and Clinical Health Sciences
+Wednesday, October 2, 2024
+- Academic
+- Journals & Publications Policy 2024
+Monday, September 30, 2024
+- Academic
+- HEC National Fee Refund Policy
+Friday, December 20, 2024
+- Academic
+- Notification Framework for Appointment of Meritorious Professor in HEIs
+Tuesday, September 30, 2025
+- University
+- Notification Framework for Appointment of Professor Emeritus in HEIs
+Tuesday, September 30, 2025
+- University
+- Policy Guidelines for Appointment of Professor of Practice by the Higher Education Institution (HEIs) in Pakistan
+Tuesday, September 30, 2025
+- University
+- HEC-Notification Interim Placement of Fresh PhDs (IPFP)Phase-II
+Friday, February 21, 2025
+- University
+- Notification Post-PhD experience for appointment of Professors (08 years) and Associate Professors (04 years)
+Thursday, July 30, 2026
+- Academic
+- Framework for HEC Best Teacher Award (BUTA)
+Tuesday, September 30, 2025
+- University
+- Policy on Protection Against Harassment in Higher Education Institutions (Revised 2025)
+Tuesday, September 30, 2025
+- University
+- Guidelines for Admissibility of Leave for Professor Emeritus
+Tuesday, December 23, 2025
+- University
+- UNESCO's International Standard Classification of Education-ISCED-F
+Tuesday, January 13, 2026
+- Academic
+- HEC Journals & Publications Policy, 2024
+Monday, March 2, 2026
+- Academic
+- Guidelines for Engagement of Visiting Faculty in HEIs, 2026
+Sunday, May 17, 2026
+- University
+- Mandatory Conduct of GREHAT General & Subject Test through HEC-Education Testing Council (ETC)
+Tuesday, May 12, 2026
+- University
+- Policy on Dual, Double & Joint Degree Programmes, 2026
+Wednesday, May 13, 2026
+- University
+- Notification - Amendments in TNE Policy, 2024
+Wednesday, May 13, 2026
+- University
+- Establishment of the National Chair on AI and Robotics
+Tuesday, May 5, 2026
+- University
+- Notification - Deferred Implementation of Mandatory Conduct of GRE_HAT-General & Subject Test
+Sunday, May 24, 2026
+- General Public
+- Framework for Recognition of Liberal Arts Undergraduate Programs under the HEC Undergraduate Education Policy 2023
+Tuesday, August 4, 2026
+- Academic
+- Framework on the Use of AI (Gen-AI) Tools in HEIs
+Friday, September 4, 2026
+- University
+- HEC Notification | Salary Package for the Vice Chancellors of Public Sector Universities
+Friday, October 2, 2026
+- University
+- HEC Notification | Deferment of Post-PhD Experience Requirement until 31.12.2026
+Friday, October 2, 2026
+- University

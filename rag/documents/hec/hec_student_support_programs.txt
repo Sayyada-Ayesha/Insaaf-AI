@@ -1,0 +1,1088 @@
+# HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: Pakistan (Federal) — higher education
+Version: HEC program pages as published, retrieved 2026-10-10 | Published/notified: 2026-10-10 | Effective: 2026-10-10 | Status: Mixed — see per-section status
+Provenance: sections below carry the canonical HEC URL for the document they were extracted from.
+Coverage area: E,D
+Verification note: TIME-SENSITIVE: these HEC pages carry their own status text (for example "The project is closed for further intake", or an offer "valid till June 30, 2023"). Status is reproduced exactly as HEC published it and must be re-checked before advising a student.
+
+[SECTION: hec_student_support_programs_1_HEC_STUDENT_SUPPORT_FINANCIAL_ASSISTANCE_AND_S]
+# HEC student support, financial assistance and skilling
+Title: HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC student support, financial assistance and skilling
+Official page: https://www.hec.gov.pk/english/services/students/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/students/Pages/default.aspx
+Version: HEC program pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — see per-section status
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+HEC
+Services
+Students
+
+- Access to scientific instruments program
+- Declamation Contest
+- Degree Attestation
+- Education Testing Council
+- HEC Digital Library
+- HEC Skilling and Certification Program
+- Higher Education Commission Library
+- Imagine Academy Program
+- PM's National Laptop Scheme
+- Prime Minister’s Electric Wheelchair Scheme for University Students
+- Prime Minister's Youth Programme
+- Science Talent Farming Scheme for Undergraduate Program
+- Sports & Extra Curricular Activities
+- Undergraduate Education
+The lack of access to high-tech research equipment in Pakistani universities is a significant barrier to scientific progress. Due to the high costs of acquiring and maintaining modern equipment, the Higher Education Commission has launched an innovative program to share scientific instrumentation facilities. This initiative aims to provide the scientific community with access to advanced equipment while also offering a funding source for institutions that make their instruments available.
+The objectives of this program are:
+ - Provide spectroscopic, analytical, chromatographic and other services to researchers working in different public sector universities on cost plus basis, which will be paid by the Higher Education Commission.
+ - Through this program the institutions with instrumentation facilities will get financial resources to optimally utilize their instruments.
+ - The PhD scholars in Pakistani HEIs will have access to available facilities within the country, which will promote research collaboration and save foreign exchange, which is otherwise, required.
+
+The Higher Education Commission (HEC) is dedicated to actively involve university students in initiatives designed to sharpen their critical thinking, public speaking, and argumentation skills. Through such competitions, participants not only build self-confidence but also cultivate teamwork and the capacity to engage in constructive discussions, embracing diverse viewpoints. Aligned with this vision, we are pleased to announce the Pakistan Universities Debating Championship (PUDC) 2024-25. This prestigious event serves as a dynamic platform for students to showcase their intellectual prowess, foster meaningful dialogue, and participate in healthy, spirited competition that promotes academic growth and mutual respect.
+The five Regional Rounds of PUDC will be held in the following cities:
+ - ICT, Rawalpindi, Wah, Taxila, FATA, AJK, Gilgit-Baltistan (Islamabad)
+ - Punjab (Lahore)
+ - Sindh (Karachi)
+ - Khyber-Pakhtunkhwa (Peshawar)
+ - Balochistan (Quetta)
+The top three winners from each region will compete in the final National Round to be held in Islamabad in the month of April 2025.
+The prize money for teams securing 1st, 2nd, and 3rd positions in the Regional Round (English & Urdu categories) is Rs. 100,000/-, Rs. 80,000/-, and Rs. 60,000/-, respectively.
+Downloads:
+ - HEC Letter Dated 14-01-2025
+ - Focal Persons from HEC Regional Centers 
+ - SOPs for Pakistan Universities Debating Championship
+ - Registration Form
+Focal Persons:
+Dr. Farida Anjum
+Director (Academics)
+Higher Education Commission
+H-8, Islamabad
+fdanjum@hec.gov.pk
+Ms. Saher Mirza
+Assistant Director (Academics)
+Higher Education Commission
+H-8, Islamabad
+smirza@hec.gov.pk
+
+ Introducing a Fully Online & Paperless Degree Attestation System
+ - User Manual New Degree Attestation System
+The Higher Education Commission (HEC) has introduced a fully online, paperless Degree Attestation System, replacing the previous process of attestation. This modern system is fast, convenient, and hassle-free, removing the need for applicants to visit HEC offices or submit original documents in hard copy. Applications can be submitted anytime (24/7) through online portal at www.eservices.hec.gov.pk.
+2. Applicants are advised to carefully read and understand all instructions before submitting an online application for attestation. The system operates through the following four steps:
+ - Submission of the online application by the applicant
+ - Scrutiny of the application by HEC
+ - Verification of academic documents by the respective university/HEI
+ - Issuance of the e-Attestation Certificate by HEC
+Submission of online Application by the Applicant
+To obtain an HEC e-Attestation Certificate, applicants must complete the online process on the portal in the following sequence:
+
+[SECTION: hec_student_support_programs_2_1_SIGN_IN_SIGN_UP]
+# 1. Sign-in / Sign-up
+Title: HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 1. Sign-in / Sign-up
+Official page: https://www.hec.gov.pk/english/services/students/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/students/Pages/default.aspx
+Version: HEC program pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — see per-section status
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+1. Sign-in / Sign-up
+New users must create an account by selecting the “Sign-up" option, while existing users can log-in using their registered credentials at www.eservices.hec.gov.pk. Applicants are then required to select the “Degree Attestation" option from the menu available on the left side of their dashboard.
+
+2. Personal Details
+Applicants are required to enter personal information, including name, father's name, date of birth, marital status, gender, and address etc. (Applicants must ensure, prior to submitting the application, that their personal details on the CNIC and all educational documents are identical. Failing this, the attestation process will not be initiated).
+
+3. Degree Details
+i. Applicants must provide complete academic information of educational document(s) including level of education, duration, degree title, campus/affiliated college, session and registration/roll/seat/serial number (whichever is applicable) for the attestation of degree / transcript / Provisional Certificate / Equivalence Certificate issued by HEC.
+ii. The applicant must select, from the checkbox options, only the degree program for which attestation is required.
+
+4. Attestation Details
+Based on the selected degree program, the following document types will be available for attestation under this section:
+ i. Degree
+ ii. Transcript (Result Card/Result Intimation Card/Detailed Marks Certificate)
+ iii. Provisional Certificate (only those issued by the university's examination office)
+ iv. HEC Equivalence Letter
+The system automatically calculates the fee based on the selected documents. Applicants are advised to select only those degree programs and documents that are required and readily available for attestation.
+
+5. Document Upload
+Applicants are required to upload clear and legible scanned copies of their CNIC (both front and back) along with degree(s) / transcript(s) / Provisional Certificate(s) / Equivalence Certificate(s) issued by HEC. Any additional supporting documents may also be uploaded under the “Other Documents" tab.
+
+[SECTION: hec_student_support_programs_3_6_VERIFY_DETAILS]
+# 6. Verify Details
+Title: HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 6. Verify Details
+Official page: https://www.hec.gov.pk/english/services/students/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/students/Pages/default.aspx
+Version: HEC program pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — see per-section status
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+6. Verify Details
+Applicants must carefully review all entered information and uploaded documents before proceeding. After ensuring accuracy, they should select the undertaking checkbox. The applicant bears full responsibility for the correctness of the provided information and uploaded documents.
+7. Payment through 1-Link. (1-Bill)
+The attestation fee is Rs. 3,000 per document (degree, transcript, provisional certificate, or HEC equivalence letter). Applicants are advised to carefully select the documents for attestation and ensure that the fee is paid in accordance with their requirements. It is the sole responsibility of the applicant to verify the completeness and accuracy of all attestation details before submitting the application. In case of any incorrect selection, the fee will neither be refunded, adjusted, nor transferred.
+To pay the attestation fee, a Consumer Number is automatically generated when the applicant clicks the “Proceed for Payment" button in their account. Applicants should then complete the payment using their preferred online banking channel or platform. After the payment is successfully made, they must click the “Verify Payment" button in their account. Once the payment is verified, the application is automatically submitted to HEC.
+Scrutiny of Application by HEC
+i. HEC conducts an initial review to ensure:
+ - Verification of personal details with NADRA
+ - Availability of all required documents
+ - Consistency of information across CNIC and academic documents.
+ - To ensure the HEC guidelines are followed to issue such degrees.
+ - Accuracy of university/campus and degree details.
+ - Inclusion of name of degree holder in the PhD Country Directory (for PhD cases)
+ - Applicant's name in approved lists, where applicable
+ii. If any deficiencies are identified, the application is returned to the applicant with remarks, and a task is assigned in the “Task Assigned to Me" section of the e-services account of applicant. The applicant is required to fulfill the deficiency or upload required document as per HEC remarks and resubmit the application for re-scrutiny/evaluation.
+iii. If the application is found complete and accurate, it is forwarded to the concerned university for verification. Applicants are notified via SMS, email, and the system, where they can also track the real-time status of their application.
+Verification by the University/HEI
+The concerned university verifies the applicant's credentials against its official records and conveys its verification decision to HEC for consideration.
+Issuance of e-Attestation Certificate
+After receiving verification from the university, HEC conducts a final review. If the case meets all requirements and complies with applicable policies, an e-Attestation Certificate is issued against documents applied for attestation. Applicants are notified via SMS and email for issuance of e-Attestation Certificate. The applicants can download the certificate from their online account at HEC Portal.
+General Guidelines:
+ - Attestation of photocopies is no longer offered.
+ - Documents with overwriting, erasures, or alterations will not be attested. Applicants should obtain corrected/non-altered documents from the awarding university.
+ - Transcripts (complete or incomplete) can be attested even if the final degree has not been issued.
+ - In cases of incomplete transcripts, the university must clearly indicate the academic status (e.g., degree in progress/incomplete degree program/incomplete transcript). Applicants must also select the appropriate option during online application.
+ - Degrees awarded by foreign Universities/DAIs are not attested by HEC. HEC issue equivalence letters against foreign qualifications and ONLY such equivalence letters are attested by HEC through this web portal. The web link for equivalence of foreign degrees is https://eservices.hec.gov.pk.
+ - If your degree is in the field of Medical or Nursing, then please upload your professional registration card/certificate of the relevant professional body/council such as PMDC/PNMC, (under heading of other documents) at the time of applying for degrees attestation;
+ - For MS/MPhil or equivalent programs launched after 7 November 2013, an HEC-issued NOC is mandatory.
+ - For PhD degrees, the applicant's name must appear in the PhD Country Directory (PCD).
+
+[SECTION: hec_student_support_programs_4_5_APPLICANT_S_SUPPORT_AND_ASSISTANCE]
+# 5. Applicant's Support and Assistance
+Title: HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 5. Applicant's Support and Assistance
+Official page: https://www.hec.gov.pk/english/services/students/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/students/Pages/default.aspx
+Version: HEC program pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — see per-section status
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+5. Applicant's Support and Assistance
+In case of any assistance, applicants are advised to consult the “FAQs" available on the HEC website. For further support & queries, drop your concern at onlinehelp.hec.gov.pk or contact at UAN: 111-119-432 or, 0334 - 111 9432.
+Note:
+ - Submission of fake, forged, or bogus documents will result in strict action under applicable laws and policies.
+ - Providing incomplete or incorrect information may lead to delays or complications during processing.
+Education Testing Council (ETC) was setup by the Higher Education Commission of Pakistan (HEC) vide notification No. 19-54 HEC/HRM/14/584, dated 25th January 2017. Later, the Supreme Court of Pakistan directed the HEC in August 2018 to conduct assessment tests for admission into LLB degree programs and enrollment of law graduates with Pakistan Bar Council. Thus, recognizing the need for a state-of-the-art, independent, financially viable, transparent, and accountable testing service provider, the Commission approved the establishment of a revamped Education Testing Council (ETC) in its 34th meeting held on August 30-31, 2018.
+Our Vision:
+“Be the enabler for coming generations of students to unlock their true potential in service of the nation, as well as establish and help ensure merit at all levels of education, public service and professional endeavor through uncompromising commitment to quality, equity and fairness in all our efforts.”
+Our Mission:
+To realize the vision of developing a merit-based induction system for higher education, novel methods involving stochastic modeling and probability theory are essential. These methods will help create testing systems that determine students' merit, aptitude, and inclinations, providing feedback on their strengths and areas needing reinforcement. The system aims to standardize assessments across diverse educational backgrounds and align with international best practices, such as those of SAT, GRE, and GMAT.
+Technology plays a crucial role in achieving this goal by reducing human involvement in the testing process. The use of the internet, cloud computing, blockchain, and AI can streamline registration, testing, and result dissemination, ensuring secure, efficient, and timely feedback. An interim plan has been implemented to improve current processes, automating and digitizing some aspects while enhancing printing and binding with better hardware.
+ETC Objectives:
+ - To develop, Administer and score tests for admission into higher education programs, in such areas and fields as determined by the BOG or as may be directed by the superior judiciary of Pakistan;
+ - To develop, Administer and score tests for the assessment of graduates of higher education programs with respect to general skills and specific expertise for the purpose of having a pool of duly benchmarked candidates for employment in public and private sectors, in such areas and fields as determined by the BOG;
+ - To provide an objective measurement of students' and graduates' knowledge, skills and aptitude, thereby providing a uniform, transparent and standardized evaluation of candidates' abilities;
+ - To provide highly effective and efficient testing services by utilizing latest technologies, at a reasonable cost;
+ - To provide advisory services and training/ capacity building on educational testing to relevant stakeholders;
+ - To undertake high quality research in the field of educational assessment, including focusing on global best practices, for the purpose of developing more effective and innovative assessment tools; and
+ - To develop and evolve into a globally recognized testing and assessment solutions provider.
+
+The Application process of NDLP is online now. Please visit the portal https://research.hec.gov.pk/ and follow the guidelines Guidelines-NDLP.pdf- Prior to submitting the application, please read about the cost-sharing charges here: Digital Library's Cost-Sharing Charges
+In case of any query, please reach out to ndlp@hec.gov.pk
+HEC National Digital Library Programme (NDLP) provides researchers within public and private universities/institutions and non-profit research & development organizations in Pakistan with access to international scholarly literature. It provides subscription to high quality, peer-reviewed journals, databases, and other electronic content across a wide range of disciplines.
+Basic Resources:
+ - These resources are extended countrywide to universities, colleges and other academic and research institutes.
+Premium Resources:
+ - These are expensive resources whose access is given to limited public and private sector universities / institutions based on demand and availability of licenses.
+ Basic Resources Premium Resources
+ - Wiley
+ - Springer Link
+ - Taylor & Francis (T&F)
+ - IEEE
+ - Science Direct
+ - JSTOR
+ - Emerald
+ - Institute of Physics (IoP)
+ - American Institute of Physics
+ - American Chemical Society (ACS)
+ - Association of Computing Machinery (ACM)
+ - Web of Science
+ - Scopus
+
+[SECTION: hec_student_support_programs_5_5_APPLICANT_S_SUPPORT_AND_ASSISTANCE]
+# 5. Applicant's Support and Assistance
+Title: HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 5. Applicant's Support and Assistance
+Official page: https://www.hec.gov.pk/english/services/students/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/students/Pages/default.aspx
+Version: HEC program pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — see per-section status
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+HEC brings the top 8 Microsoft Fundamental Exam Resources and Certification completely free of cost valid till June 30, 2023. HEC Offers the best for free to its students. Get hired, stay ahead, be productive, and receive the recognition you deserve with Microsoft Certified Fundamentals. These highly marketable, industry-respected certifications offer foundational training and exams that provide a practical, high-level overview of Microsoft technology and validate your up-to-date knowledge of the topics.
+Microsoft Certifications start with foundational skills, but additional topics are covered ranging from Azure to AI, to data analytics and cybersecurity so you can acquire the technical skills you will need to perform industry roles.
+
+ - Pakistan Research Repository (Phd. Dissertation / Thesis )
+ - Library Catalogue (Within HEC Premises Only)
+ - HEC Digital Library
+HEC Library serves research scholars, teachers and students and also provides services to HEC employees. The full texts of more than 9000 theses are available online on the HEC website (www.eprints.hec.gov.pk) where users have the option to retrieve information by subject, title, name of researcher, year and name of the university.
+The HEC Library also provides its users with the facility of Current Contents Services (CSS) and it plays a pivotal role to provide full access of National Digital Library Resources. Turnitin facility for plagiarism purpose has also been started for the scholars.
+The purpose of the HEC Library:
+ - To facilitate HEC employees and scholars of universities.
+ - To provide current and back volumes of national and international journals.
+ - To provide access of digital library resources.
+ - To provide archive of journals.
+ - To provide Turnitin facility for plagiarism.
+ - To provide the access to thesis online and also in hard form (few).
+ - To provide the facility of Ulrich's International Periodical directory.
+
+HEC's Imagine Academy Initiative is a huge step towards the realization of HEC's vision of having an education system which produces graduates and scholars whose skills are certified against a singular scale, a scale recognized in every country around the globe. HEC & Microsoft is setting up and awarding status of Microsoft Imagine Academy to all private and public sector universities and Certiport Testing Center to all public sector universities across Pakistan and AJ&K.
+The Microsoft IT Academy program provides a complete IT education solution that bridges the world of education with the world of work. The program is designed to help drive employability, digital literacy, technical and STEM-focused training and certification, and 21st-century workforce development for students. 
+Providing benefits for students, educators, academic institutions and your community.
+Studies suggest that in the next 5 to 10 years there will be a significant shortage in the supply of skilled IT professionals. Microsoft Imagine Academy helps bridge the skills gap by providing institutions the curriculum for technology education and learning tools that will enable students and educators to achieve success. Membership is open to all accredited educational institutions of HEC and benefits include: 
+ Curriculum
+ Professional development
+ - Microsoft Official Academic Course (MOAC) teaching framework
+ - Microsoft Online Learning curriculum
+ - Microsoft Digital Literacy curriculum
+ - Ready-to-use, customizable lesson plans
+ Guides and exam vouchers for Educators: -
+ - Microsoft Office Specialist (MOS)
+ - Microsoft Technology Associate (MTA)
+ - Microsoft Certified Educator (MCE)
+ - Teaching with Technology Curriculum
+ Certification Resources and partnership
+ - Academic discounts on Certification exams
+ - Validate students technology skills:
+ - Microsoft Office Specialist (MOS) exams
+ - Microsoft Technology Associate (MTA)
+ - Microsoft Certifications Solutions Associate/ Expert (MCSA/MCSE)
+ - Microsoft Certified Educator (MCE) exams measure competency in the area of Information and CommunicationTechnologies (ICT)
+ - Become a testing center and offer onsite exams
+ - Microsoft Imagine Academy members website:
+ - Program information, support materials and resources
+ - Posters to promote Microsoft ImagineAcademy with students
+ - Marketing materials, press kits and videos
+ - Customizable, print-ready Certificate of Completion
+
+Supporting Youth and promoting Higher Education is one of the top priorities of the current democratic government of Pakistan. It has a broad canvas of schemes aimed at enabling youth to get access to higher education, internships, trainings and then getting relevant jobs or entrepreneurship career path.
+In this connection, one of the great initiatives of the Government is the scheme for distributing Motorized/Electric Wheelchairs to disabled students studying in Public Sector Universities of Pakistan with the objective to facilitate them in their movements in order to complete their higher education, and enable them to contribute effectively towards the progress of the country.
+
+[SECTION: hec_student_support_programs_6_5_APPLICANT_S_SUPPORT_AND_ASSISTANCE]
+# 5. Applicant's Support and Assistance
+Title: HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 5. Applicant's Support and Assistance
+Official page: https://www.hec.gov.pk/english/services/students/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/students/Pages/default.aspx
+Version: HEC program pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — see per-section status
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+This scheme is aligned with the United Nation's Standard Development Goals (SDGs) projecting, 'By 2030 eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable persons with disabilities, indigenous people and children in vulnerable situations'. Pakistan has signed a treaty on September 15, 2008 in the United Nations Convention on "Rights of Persons with Disabilities", and ratified on July 5, 2011. As per data of Census 1998, there were 622,025 disabled (crippled) persons in Pakistan. Out of these 21,925 were enrolled in different public and private sector schools, colleges and universities in Pakistan.
+OBJECTIVE
+The main objective of the scheme is to facilitate special students having ambulatory disability, so that they can be assisted in their movements and contribute effectively towards the progress of the country.
+VISION:
+Inclusive Development Leaving No One Behind
+DESCRIPTION:
+Ambulatory disabilities are those that have an impact on one's ambulation. This includes people who limp, who experience pain when walking, who cannot walk unaided, who use wheelchairs-canes-walkers and whose walk is impaired because of a physical difference.
+Ambulatory disability means a disability because of which a person:
+ - Has a physical and permanent disability to such a degree that the person is unable to move from place to place without the aid of a wheelchair;
+ - Is not able to cross curbs because of paralysis or loss of function of the person's legs;
+ - Is missing one or both legs; or
+ - Has a permanently impaired or unsteady gait that makes it impossible or impractical to walk as a means of transportation.
+EXECUTION:
+ - The execution and operational phases would be looked after by HEC, via ensuring that the distribution is being made transparently and on merit to those students, who fulfill the eligibility criteria for the program.
+ - Based on the criteria, the list of students declared eligible to receive the wheel chair would be shared with the respective universities. The student would also be informed via email and a letter addressed at his residential address to collect the wheel chair through the University's relevant department. The Universities via HEC Regional Centers would be responsible to deliver the wheel chair to the concerned student and forward a receiving to the HEC in this regard.
+ - The details of the vendor would be shared with the student, so that any repair or service during the warranty period may be made immediately and free of cost.
+
+Youth is the most precious asset of Pakistan. In 2013, the journey of Prime Minister's Youth Programme began with a mission to Engage, Empower and Educate this asset in a meaningful and productive manner. Recently, this mission was renewed with three additional focus areas to address the modern problems faced by our youth. These three additional areas include Girls Learn Girls Earn to enhance the inclusion of women in our workforce; Mehnat Mien Azmat to promote blue-collar dignified jobs and Jobs of The Future to devise effective policies for youth employment in the modern world.
+The project is closed for further intake.
+Sports plays an important role in the overall development of human personality, character building and offer a diversion from monotonous routine and other societal evils. It is particularly important for youth to help in their physical and mental growth and enhancing their capabilities. Higher Education Commission since its inception has been focusing on Sports and aims to inculcate the values and sense of healthy competition among students through Sports Division.
+Pakistan University Sports Board (PUSB):
+Sports Division under the banner of PUSB is collaborating with National, Regional and International Federation of Sports for developing an ecosystem of sports across the country. It is also providing facilitation to student players through their universities by awarding funds for promotion of sports and encourage them for active participation by giving scholarships, medals, trophies, prize money and certificates etc.
+PUSB is performing below mentioned roles and responsibilities:
+ - To organize inter-university sports championships and to develop the interest of the students in sports
+ - PUSB selects Pakistan university teams for national/ international championships.
+ - PUSB arranges Coaching Courses/ Training Camps to provide training and development to sports leaders, young players, and university students
+ - PUSB acts as a representative of the universities of Pakistan in sports and games
+ - PUSB also assists universities in the development of their sports infrastructure
+National & International Affiliations:
+ - Affiliations with National Sports Federation
+PUSB is an affiliated body with 25 National Sports Federations including Pakistan Olympic Association and Pakistan Sports Board
+ - Affiliations with International Sports Federation
+PUSB is affiliated below mentioned International University Sports Federations:
+ - International University Sports Federation
+ - Asian University Sports Federation
+
+[SECTION: hec_student_support_programs_7_5_APPLICANT_S_SUPPORT_AND_ASSISTANCE]
+# 5. Applicant's Support and Assistance
+Title: HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 5. Applicant's Support and Assistance
+Official page: https://www.hec.gov.pk/english/services/students/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/students/Pages/default.aspx
+Version: HEC program pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — see per-section status
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Undergraduate Education in Pakistan is going through a major paradigm shift with the implementation of the latest policy (UEP 2020). The policy aims to raise the quality of undergraduate education to international standards so that graduate can succeed in life.
+To access, please click on:
+Undergraduate Education Policy 2020 (UEP)
+Model Gen Ed Courses and Teacher's Manual
+UEP Implementation Manual
+ Academic Advisement and Student Orientation Guidelines
+ - Internship Guidelines
+ - Practical Learning Labs (PLLs) Guidelines
+" />
+Apply For Attestation
+
+[SECTION: hec_student_support_programs_8_ACCESS_TO_SCIENTIFIC_INSTRUMENTATION_PROGRAM]
+# Access to Scientific Instrumentation Program
+Title: HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Access to Scientific Instrumentation Program
+Official page: https://www.hec.gov.pk/english/services/students/ASIP/Pages/ASIP.aspx
+Source file: https://www.hec.gov.pk/english/services/students/ASIP/Pages/ASIP.aspx
+Version: HEC program pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — see per-section status
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Services
+Access to scientific instruments program
+- Introduction
+- Eligibility Criteria
+- How to Apply
+- Evaluation Criteria
+- Reimbursement Claims
+- Focal Person
+Access to Scientific Instrumentation Program
+The lack of access to high-tech research equipment in Pakistani universities is a significant barrier to scientific progress. Due to the high costs of acquiring and maintaining modern equipment, the Higher Education Commission has launched an innovative program to share scientific instrumentation facilities. This initiative aims to provide the scientific community with access to advanced equipment while also offering a funding source for institutions that make their instruments available.
+The objectives of this program are:
+- Provide spectroscopic, analytical, chromatographic and other services to researchers working in different public sector universities on cost plus basis, which will be paid by the Higher Education Commission.
+- Through this program the institutions with instrumentation facilities will get financial resources to optimally utilize their instruments.
+- The PhD scholars in Pakistani HEIs will have access to available facilities within the country, which will promote research collaboration and save foreign exchange, which is otherwise, required.
+
+[SECTION: hec_student_support_programs_9_Q_2_WHAT_ARE_THE_OBJECTIVES_OF_ASIP]
+# Q.2 What are the objectives of ASIP ?
+Title: HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Q.2 What are the objectives of ASIP ?
+Official page: https://www.hec.gov.pk/english/services/students/ASIP/Pages/FAQs.aspx
+Source file: https://www.hec.gov.pk/english/services/students/ASIP/Pages/FAQs.aspx
+Version: HEC program pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — see per-section status
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+Access to scientific instruments program
+FAQs
+- Introduction
+- Eligibility Criteria
+- How to Apply
+- Evaluation Criteria
+- Reimbursement Claims
+- Focal Person
+FAQs
+Q.1 What is ASIP ?
+ASIP stands for Access to Scientific Instrumentation Program.
+Q.2 What are the objectives of ASIP ?
+Under Access to Scientific Instrumentation Program (ASIP), the Higher Education Commission (HEC) supports the researchers to get access to sophisticated equipment. Provide spectroscopic, analytical, chromatographic and other services to PhD researchers enrolled in different public sector universities on cost plus basis, which will be paid by the HEC.
+Q.3 Who is eligible to get support under ASIP ?
+The facility is exclusively for enrolled PhD students from HEC-recognized public sector local universities. Their synopsis must be approved by a competent university forum (such as the Advanced Studies & Research Board, Directorate of Research, or Ethical Review Board) and they must be admitted according to HEC admission criteria, following the terms and conditions in section C of the policy.
+Q.4 Is every student from any university eligible to apply under ASIP?
+Only the students of such public sector universities may apply who do not have that facility at their own university.
+Q.5 How much funding is available under ASIP?
+The maximum funding available for sample analysis for each applicant is Rs. 200,000/year (i.e. from 1st July to 30th June). While multiple applications may be submitted, but the total amount must not exceed the limit of Rs 200,000/year of three disbursements over the course of their program to support the completion of their research.
+Q.6 Can a faculty member apply for ASIP?
+No. Under ASIP only Ph.D students can apply.
+Q.7 What are the prerequisites to apply under ASIP?
+- Student's with approved Research synopsis/proposal by the competent forum (Ethical Review Board / Advance Studies & Research Board / Directorate of Research etc.) in university.
+- Research supervisor of student should be approved supervisor as per university policy and a full-time faculty member of the university.
+Q.8 Any other condition to apply under ASIP?
+- Students can apply for such lab tests, for which they do not have analytical facility at their own university.
+- Tests could only be performed from labs of public sector universities/public sector R&D organizations.
+- If the test equipment is available in the institute and the applicant is not using that facility, he/she must provide detailed justification for using the facility at other institute/test facility.
+- The only well-justified proposals duly signed/endorsed by the supervisor are eligible under ASIP funding.
+- Student must report results of his/her research samples' analysis, in the research work.
+- Declaration by student that he/she has not been funded for desired tests from any other funding agency.
+Q.9 Does the applicant need to attach his/her research synopsis /proposal?
+- The applicant needs to fill out the APPLICATION FORM for the Access to Scientific Instrumentation Program by providing all required information including supervisor details, research details, sample details, and three preferred sample analysis facilities.
+- The applicant must attach one page summary/description of a research proposal with the application form. The summary must reflect the total number of samples to be analyzed during the whole research work.
+Q.10 For what types of tests, students can apply under ASIP?
+Students can apply for such lab tests for spectroscopic, analytical, chromatographic and other services to PhD researchers enrolled in different public sector universities which are not accessible.
+Q.11 From which labs can the students get samples analyzed?
+Tests could only be performed from labs, which are either at public sector universities or public sector organizations.
+Q.12 Can a student apply for multiple tests in one application?
+Yes. Student can apply for multiple tests from one lab by submitting a single application.
+Q.13 Can a student apply for multiple tests from multiple labs in one application?
+No. Separate application(s) must be submitted if tests are to be performed from more than one lab.
+Q.14 For how many research samples' lab tests, can student apply?
+PhD students can not get analysis of more than 50 samples for any test.
+Q.15 Can a student avail itself of permission for analysis more than once a year?
+Yes. Students can apply more than one time in a financial year, but he/she is restricted to an overall limit of Rs.200,000/- in a financial year of three disbursements over the course of their program to support the completion of their research.
+Q.16 How much time does it take to get permission for research samples analysis under ASIP?
+The applicant must apply at least 12 weeks prior to research samples' analysis.
+Q.17 How to apply under ASIP?
+- Applicant needs to register/login him/her-self through HEC-Research Grants Management System (RGMS) portal by using link https://research.hec.gov.pk
+- He/she will have to complete his/her personal profile by entering the required information.
+
+[SECTION: hec_student_support_programs_10_Q_2_WHAT_ARE_THE_OBJECTIVES_OF_ASIP]
+# Q.2 What are the objectives of ASIP ?
+Title: HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Q.2 What are the objectives of ASIP ?
+Official page: https://www.hec.gov.pk/english/services/students/ASIP/Pages/FAQs.aspx
+Source file: https://www.hec.gov.pk/english/services/students/ASIP/Pages/FAQs.aspx
+Version: HEC program pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — see per-section status
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+- Under RGMS portal applicant will be offered multiple tabs, he/she will have to click “Access to Scientific Instrumentation Program” tab. Then onward the system will lead step by step. Enter the required details and submit the application.
+Q.18 May I chose the university supervisor other than HEC approved supervisor?
+Research supervisor of student should be approved supervisor as per university policy and a full-time faculty member of the university.
+Q.19 I do not find the lab name from where I like to get research samples analyzed?
+The lab you desired, to get samples analyzed from, might not be HEC-registered. You may opt for any other available lab. Your required lab may request HEC to get itself registered (if in the public sector).
+Q.20 My application is successfully submitted, what to do next?
+Your application has been forwarded to your research supervisor, ask him/her to endorse it.
+Q.21 My application is being shown at HEC, what is its status?
+Your application is in process. Upon recommendation from competent forum, the decision will be communicated to you.
+Q.22 My application has been approved by HEC, but I have not been issued award letter?
+Login to RGMS-portal and download your award letter from your dashboard.
+Q.23 I have got award letter, how to get research samples analyzed?
+As advised in the award letter, present research samples to the lab focal person, get them analyzed.
+Q.24 I have received results from research lab, they have asked me to submit duly signed copy of “Result Acceptance Voucher" and “Payment Form" ?
+If you are satisfied with the tests' results, provided by lab. You will have to furnish duly signed copy of “Result Acceptance Voucher" and “Payment Form", to lab for official use.
+Q.25 When should an applicant apply for reimbursement of claim?
+Reimbursement is made to labs directly. Applicant will have to furnish duly signed copy of “Result Acceptance Voucher" and “Payment Form", to lab for official use.
+Q. 26 Who will receive the reimbursement ?
+Reimbursement is made to labs directly. Reimbursements will be released in favor head of the institution.
+Q. 27 How are the payments made ?
+Upon receipt of claims from labs, HEC disburses the research samples analysis cost directly to the labs.
+Q. 28 How much time does it take, till the lab is paid the charges w.r.t. services it renders ?
+On receipt of claims from labs (with proper documents), payment is made by HEC within a month.
+Q. 29 How can a service provider (lab) submit claim to HEC ?
+Upon delivery of results to applicants and collection of a duly signed copy of “Result Acceptance Voucher" and “Payment Form" from applicants, lab focal person can submit the claim directly to HEC, within two months time, by providing the following :
+- Original Invoice from Service Provider (Duly Signed & stamped by Service Provider/Lab Focal Person)
+- Payment Form, Result Acceptance Voucher, Copy of Award Letter (collected by Lab from applicant)
+Q. 30 Applicant's funds limit i.e. 200,000 is exhausted. Is he/she eligible for more funds ?
+If maximum amount i.e. Rs. 200,000/financial year is exhausted, applicant is not allowed to submit application for further analysis in that financial year.
+Q. 31 Student and his/her supervisor are not satisfied with the results, what to do ?
+Do not furnish the “Result Acceptance Voucher" and “Payment Form" to lab.
+Q. 32 Where can applicant/service provider find “Result Acceptance Voucher" and “Payment Form"?
+While delivering results to applicant, lab focal person will provide system generated “Result Acceptance Voucher" and “Payment Form" to the applicant.
+Q. 33 How is ASIP helpful for scholars/students ?
+Costs of acquiring research samples analysis can be a major hurdle for students, if students do not have facility at their own university, they can get access to labs of other HEIs and organizations.
+Q. 34 How is ASIP helpful for institution ?
+HEI's labs can offer research samples analysis and share state-of-the-art research equipment to students of other HEIs. HEC provides financial support to the universities and R&D organizations for giving access to other HEIs' students, to use their laboratories.
+Q. 35 If, student already has an account at eportal.hec.gov.pk, does he/she need to sign up again ?
+Students, once registered online, will have to sign in to RGMS portal. He/she will have to go through the process of selection of lab and the tests.
+Q. 36 Applicant want to apply again under ASIP does he/she need to register again ?
+Applicant can use the same credentials to login/apply on research.hec.gov.pk
+Q. 37 I have forgotten my password, what to do ?
+Share your CNIC number, name, department and HEI title, via Email to HEC (email ID : asip@hec.gov.pk).
+Q. 38 My query is not addressed in the above listed questions, whom should I contact ?
+You can write your concern at asip@hec.gov.pk and our team will revert in due course.
+
+[SECTION: hec_student_support_programs_11_HEC_SKILLING_CERTIFICATION_PROGRAMS]
+# HEC Skilling & Certification Programs
+Title: HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Skilling & Certification Programs
+Official page: https://www.hec.gov.pk/english/services/students/scp/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/students/scp/Pages/default.aspx
+Version: HEC program pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — see per-section status
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Services
+HEC Skilling and Certification Program
+- Introduction
+- Microsoft Certifications
+- Eligibility Criteria
+- How to Register
+HEC Skilling & Certification Programs
+HEC brings the top 8 Microsoft Fundamental Exam Resources and Certification completely free of cost valid till June 30, 2023. HEC Offers the best for free to its students. Get hired, stay ahead, be productive, and receive the recognition you deserve with Microsoft Certified Fundamentals. These highly marketable, industry-respected certifications offer foundational training and exams that provide a practical, high-level overview of Microsoft technology and validate your up-to-date knowledge of the topics.
+Microsoft Certifications start with foundational skills, but additional topics are covered ranging from Azure to AI, to data analytics and cybersecurity so you can acquire the technical skills you will need to perform industry roles.
+
+[SECTION: hec_student_support_programs_12_IMAGINE_ACADEMY_PROGRAM]
+# Imagine Academy Program
+Title: HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Imagine Academy Program
+Official page: https://www.hec.gov.pk/english/services/students/msia/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/students/msia/Pages/default.aspx
+Version: HEC program pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — see per-section status
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Services
+HEC
+Services
+Students
+Imagine Academy Program
+- Microsoft Office Specialist
+Imagine Academy Program
+HEC's Imagine Academy Initiative is a huge step towards the realization of HEC's vision of having an education system which produces graduates and scholars whose skills are certified against a singular scale, a scale recognized in every country around the globe. HEC & Microsoft is setting up and awarding status of Microsoft Imagine Academy to all private and public sector universities and Certiport Testing Center to all public sector universities across Pakistan and AJ&K.
+The Microsoft IT Academy program provides a complete IT education solution that bridges the world of education with the world of work. The program is designed to help drive employability, digital literacy, technical and STEM-focused training and certification, and 21st-century workforce development for students. 
+Providing benefits for students, educators, academic institutions and your community.
+Studies suggest that in the next 5 to 10 years there will be a significant shortage in the supply of skilled IT professionals. Microsoft Imagine Academy helps bridge the skills gap by providing institutions the curriculum for technology education and learning tools that will enable students and educators to achieve success. Membership is open to all accredited educational institutions of HEC and benefits include: 
+| Curriculum
+| Professional development
+|
+- Microsoft Official Academic Course (MOAC) teaching framework
+- Microsoft Online Learning curriculum
+- Microsoft Digital Literacy curriculum
+- Ready-to-use, customizable lesson plans
+| Guides and exam vouchers for Educators: -
+- Microsoft Office Specialist (MOS)
+- Microsoft Technology Associate (MTA)
+- Microsoft Certified Educator (MCE)
+- Teaching with Technology Curriculum
+| Certification | Resources and partnership
+|
+- Academic discounts on Certification exams
+- Validate students technology skills:
+- Microsoft Office Specialist (MOS) exams
+- Microsoft Technology Associate (MTA)
+- Microsoft Certifications Solutions Associate/ Expert (MCSA/MCSE)
+- Microsoft Certified Educator (MCE) exams measure competency in the area of Information and Communication Technologies (ICT)
+- Become a testing center and offer onsite exams
+|
+- Microsoft Imagine Academy members website:
+- Program information, support materials and resources
+- Posters to promote Microsoft Imagine Academy with students
+- Marketing materials, press kits and videos
+- Customizable, print-ready Certificate of Completion
+
+[SECTION: hec_student_support_programs_13_HEC_STUDENT_SUPPORT_FINANCIAL_ASSISTANCE_AND_S]
+# HEC student support, financial assistance and skilling (part 2)
+Title: HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC student support, financial assistance and skilling (part 2)
+Official page: https://www.hec.gov.pk/english/services/students/PMYP/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/students/PMYP/Pages/default.aspx
+Version: HEC program pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — see per-section status
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Services
+Prime Minister's Youth Programme
+- Introduction
+- Prime Minister's National Innovation Award
+- Talent Hunt Youth Sports League
+- Green Youth Movement
+- Youth Development Centers
+Objectives
+Youth is the most precious asset of Pakistan. In 2013, the journey of Prime Minister's Youth Programme began with a mission to Engage, Empower and Educate this asset in a meaningful and productive manner. Recently, this mission was renewed with three additional focus areas to address the modern problems faced by our youth. These three additional areas include Girls Learn Girls Earn to enhance the inclusion of women in our workforce; Mehnat Mien Azmat to promote blue-collar dignified jobs and Jobs of The Future to devise effective policies for youth employment in the modern world.
+
+[SECTION: hec_student_support_programs_14_HEC_STUDENT_SUPPORT_FINANCIAL_ASSISTANCE_AND_S]
+# HEC student support, financial assistance and skilling (part 3)
+Title: HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC student support, financial assistance and skilling (part 3)
+Official page: https://www.hec.gov.pk/english/services/students/PMYP/Pages/NIA.aspx
+Source file: https://www.hec.gov.pk/english/services/students/PMYP/Pages/NIA.aspx
+Version: HEC program pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — see per-section status
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+Prime Minister's Youth Programme
+Prime Minister's National Innovation Award
+- Introduction
+- Prime Minister's National Innovation Award
+- Talent Hunt Youth Sports League
+- Green Youth Movement
+- Youth Development Centers
+Prime Minister's National Innovation Award
+I. General Information:
+The Prime Minister's National Innovation Award (PMNIA), is an initiative of the Prime Minister's Youth Programme being executed by the Higher Education Commission, Islamabad.
+The PMNIA is providing an open opportunity for Pakistani youth within the age limit of 15 to 30 years to propose innovative ideas and get funding as well as technical support to augment their ideas into a business.
+Young innovators/entrepreneurs are invited to submit applications for the competition. The objective of the competition denotes new digital, technical, governance, and social ideas that could motivate the youth to use their innovative and novel skills and help society and the country's economy at the national level. This will also help in resolving the local challenges faced by Pakistan through creative ideas.
+The objectives of the Innovation Award are;
+- Improving Pakistan's Ranking in the Global Innovation Index,
+- Foster Entrepreneurial Culture among the Youth
+- Transforming Ideas into a Successful Business
+A. Innovation Thematic Areas /Disciplinary Domains:
+The innovation challenge aims to support solutions to the indigenous problems pertaining to the following thematic areas:
+- Food Security (agriculture, nutrition, sustainable food eco-system, etc.)
+- Water Management and Sustainability (irrigation, water conservation, waste & water treatment, etc.)
+- Sustainable Energy (electric mobility, smart energy, transmission, and grid issues, etc.)
+- Urban planning (preservation of urban space and life, planning of second-tier cities & towns, transportation, Waste collection and disposal, water and sanitation, healthcare, law, and order, etc
+- Climate Change and Environment (climate mitigation, disaster management, metro-scale pollution reduction, climate modeling, mitigation of large climate change impacts, climate, and disaster surveillance, etc.)
+- Information Technology and Telecom (Artificial Intelligence, Cybersecurity, Cloud Computing, Big Data, disparities in excess of technology, 5G networks, healthcare delivery through the use of ICT)
+- Innovative Governance and Reforms (responsiveness to citizen services, accountability reforms through Right to Information (RTI), citizen scorecards),
+- Sociology and Philosophy (intellectual heritage, material culture, future of work and family, politics, gender, population, work ethics, etc.)
+- Health Care and Medical Sciences
+- Others
+The solution must impact any of the following SDG goals:
+- No Poverty
+- Zero Hunger
+- Good Health and Well-being
+- Quality Education
+- Gender Equality
+- Clean Water and Sanitation
+- Affordable and Clean Energy
+- Decent Work and Economic Growth
+- Industry, Innovation, and Infrastructure
+- Reduced Inequality
+- Sustainable Cities and Communities
+- Responsible Consumption and Production
+- Climate Action
+- Life Below Water
+- Life on Land
+- Peace and Justice Strong Institutions
+- Partnerships to achieve the Goal
+B. Award Categories:
+Awards are given in two stages:
+Stage 1:
+- Top 10 winners are awarded the cash amount of Rs. 1.00 Million each
+- 40 runner-ups are awarded a cash amount of Rs. 0.5 Million each
+Stage 2:
+- The 50 winners selected in Stage 1 are inducted into follow-up programs to scale up their ideas and are also encouraged to opt for incubation so that their ideas may lead to startups. The 50 winners may also request supplementary funds up to Rs. 1 million in addition to the award money as per their requirement, to scale up their ideas through Business Incubation Centers as a follow-up program. For this purpose, a tripartite agreement is signed between respective BICs, Awardee, and HEC. The additional funding is given through respective Business Incubation Centers and is tied to startup deliverables and approved cash plan/budget.
+
+[SECTION: hec_student_support_programs_15_II_GENERAL_ELIGIBILITY]
+# II. General Eligibility
+Title: HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: II. General Eligibility
+Official page: https://www.hec.gov.pk/english/services/students/PMYP/Pages/NIA.aspx
+Source file: https://www.hec.gov.pk/english/services/students/PMYP/Pages/NIA.aspx
+Version: HEC program pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — see per-section status
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+II. General Eligibility:
+Young participants within the age bracket of 15 to 30 years are eligible to apply.
+- Participant must be a Pakistani/AJK National.
+ Due Date:
+Currently applications are not open.
+
+[SECTION: hec_student_support_programs_16_III_PROPOSAL_SUBMISSION_AND_EVALUATION_PROCESS]
+# III. Proposal Submission and Evaluation Process
+Title: HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: III. Proposal Submission and Evaluation Process
+Official page: https://www.hec.gov.pk/english/services/students/PMYP/Pages/NIA.aspx
+Source file: https://www.hec.gov.pk/english/services/students/PMYP/Pages/NIA.aspx
+Version: HEC program pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — see per-section status
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+III. Proposal Submission and Evaluation Process
+The selection of awards is made through an open, rigorous, transparent, competitive, and merit-based process that proceeds through the following phases:
+A. Submission of Concept Notes
+- Parallel to the Opening of the call, road shows, drives, and interactive sessions are also in progress. The aspiring students learn the core concepts of innovation around the thematic areas of the PMNIA.
+- The students submit the concept notes in consultation with their mentors, based on the competition and submission criteria while following the eligibility benchmarks.
+B. Evaluation Process
+All applications submitted in response to Call for applications are evaluated by respective review panels. The Evaluation process consists of the following sequential steps:
+Phase 1 Evaluation:
+The evaluation consists of Administrative Scrutiny and Review by the shortlisting committee through Review Panels.
+After initial administrative scrutiny, the evaluation committee broadly rate the idea/concept based on 3 key sets of criteria – creativity & innovation; objectives, planning & execution; and effectiveness & results i.e., problem-solving techniques.
+Prior to the Pitching Competition approx. 250 shortlisted applicants go through a rigourous Idea Pitching Training.
+Phase 2 Pitching Competition:
+The shortlisted applicants rationalize their projects during the training before appearing in the region-wise pitching competitions in front of the juries. The partner universities arrange these trainings as well as host the “Pitching Competitions". The project Experts Committee of PMNIA finalize region-wise juries. Approx. 250 applicants prepare pitches and participate in the pitching competition. Logistics support is also provided to the students appearing in the pitching competition.
+The young contestants pitch their ideas in front of the PMNIA jury members, entrepreneurs, academic experts, and members from the industry. The Jury rate the idea/concept based on 3 key sets of criteria – creativity & innovation; objectives, planning & execution; and effectiveness & results i.e., problem-solving techniques. The jury members discuss each pitch and recommend the best ones for the award.
+After Pitching Competition, 50 top contestants are shortlisted for award.
+Awards Ceremony
+The top 50 ideas are awarded in a National level Awards Ceremony.
+Award Categories:
+Awards are given in two stages:
+Stage 1:
+- Top 10 winners are awarded the cash amount of Rs. one million each
+- 40 runners-up are awarded the cash amount of Rs. 0.5 million each
+Stage 2:
+The 50 winners selected in Stage 1 are inducted into follow-up programs to scale up their ideas and are also encouraged to opt for incubation so that their ideas may lead to startups. The 50 winners may also request supplementary funds up to Rs. 1 Million in addition to the award money as per their requirement, to scale up their ideas through Business Incubation Centers as a follow-up program. For this purpose, a tripartite agreement is signed between respective BICs, Awardee, and HEC. The additional funding is given through respective Business Incubation Centers and is tied to startup deliverables and approved cash plan/budget.
+If any of the top awardees opts for incubation, an additional amount of up to Rs. one Million is
+awarded to scale up their ideas into reality. The release of the additional amount is based on their approved cash plan approved by HEC.
+Incubation of awardees at Business Incubation Centers
+The 50 selected winners are further given chance to avail the incubation opportunity in any Business Incubation Center of public sector universities.
+Project Website
+Updated information of the Prime Minister National Innovation Award will be available on the program's website provided below:
+https://pmyp.gov.pk
+
+[SECTION: hec_student_support_programs_17_TALENT_HUNT_YOUTH_SPORTS_LEAGUE]
+# Talent Hunt Youth Sports League
+Title: HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Talent Hunt Youth Sports League
+Official page: https://www.hec.gov.pk/english/services/students/Sports/Pages/THYSL.aspx
+Source file: https://www.hec.gov.pk/english/services/students/Sports/Pages/THYSL.aspx
+Version: HEC program pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — see per-section status
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+HEC
+Services
+Students
+Sports & Extra Curricular Activities
+Talent Hunt Youth Sports League
+- Introduction
+- Pakistan University Sports Board
+- Introduction
+- Roles & Responsibilities
+- Intervarsity Sports Championship
+- Introduction
+- Criteria for Participation
+- Sports (Men & Women)
+- Sports Results
+- PSDP Funded Projects
+- Talent Hunt Youth Sports League
+- Establishment of Sports Academies
+Talent Hunt Youth Sports League
+Talent Hunt Youth Sports League project intends to hunt talent in various games including Badminton, Boxing, Cricket, Football, Handball, Hockey, Judo, Squash, Table Tennis, and Volleyball for men and women whereas Weightlifting and Wrestling for men only.
+Moreover, the project provides equal growth opportunities to both males and females and promotes excellence in sports with a view of spotting right talent for right sports to nurture them systematically through coaching and mentorship.
+Aims & Objectives:
+One of the long-term objectives of the project is to develop HEC's team and to develop a pool of talented young players to produce professional players (men and women), compete and represent Pakistan at national and international front. The project aims to initiate talent hunt sports movement in the country to develop sports culture.
+Current Status:
+During the project of Talent Hunt Youth Sports League, trials, provincial leagues and national leagues of the following 12 sports are successfully completed.
+- Weightlifting (Men)
+- Wrestling (Men)
+- Hockey (Men & Women)
+- Badminton (Men & Women)
+- Volleyball (Men & Women)
+- Football (Men & Women)
+- Table Tennis (Men & Women)
+- Squash (Men & Women)
+- Handball (Men & Women)
+- Judo (Men & Women)
+- Boxing (Men & Women)
+- Cricket (Men & Women)
+
+Eligibility Criteria for Players:
+- Aged between 15-25 years
+- Pakistani & AJK Nationals
+- Departmental players are not eligible to participate in the games
+Trials for both men and women players will be conducted in 25 different locations
+The locations are:
+|
+Balochistan |
+Islamabad, Azad Jammu & Kashmir, Gilgit Baltistan |
+Khyber Pakhtunkhwa |
+Punjab |
+Sindh
+| Dera Murad Jamali/Sibi/Turbat | Mirpur | Bannu
+| Rawalpindi | Hyderabad
+| Khuzdar | Islamabad | Swat | Sialkot | Karachi
+| Uthal-Hub | Gilgit | Peshawar | Faisalabad | Sukkur
+| Quetta | Muzaffarabad | Hazara | Lahore | Larkana
+| Loralai | Skardu | Mardan | Bahawalpur/ Multan | Shaheed Benazirabad
+How to Apply?
+Interested players may get themselves registered online through the web link:
+Youth Programme (pmyp.gov.pk)
+Way Forward:
+HEC under the Talent Hunt Youth Sports League intends to provide unlimited opportunities to the selected players after winning National Leagues in their respective games. The opportunities include provision of coaching and development facility under the patronage of Pakistan Sports Board and award of scholarships for pursuing higher education. Also, the selected players (men and women) will be attached with Sports Academies (High Performance and Resource Center) to continuously develop their skills, competency and physical fitness that are required to be a professional player.
+Success Stories: 
+"Click Here"
+Contact Details:
+For any queries, feel free to contact HEC Call Centre at UAN: 111-119-432 or 0334-1119432
+Web link: https://onlinehelp.hec.gov.pk/
+Mr. Rizwan Shoukat
+Director/ In-charge Sports & Co-curricular Division
+Email ID:
+rshoukat@hec.gov.pk
+Mr. Adnan Saeed
+Project Manager
+Email ID:
+adsaeed@hec.gov.pk 
+
+[SECTION: hec_student_support_programs_18_INDIGENOUS_ELT_SCHOLARSHIPS]
+# Indigenous ELT scholarships
+Title: HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Indigenous ELT scholarships
+Official page: https://www.hec.gov.pk/english/services/faculty/ELTR/Pages/Indigenous-ELT-scholarships.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/ELTR/Pages/Indigenous-ELT-scholarships.aspx
+Version: HEC program pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — see per-section status
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+Faculty
+English Language Teaching Reforms Project
+Indigenous ELT scholarships
+- Introduction
+- Indigenous ELT scholarships
+- Continuous Professional Development Courses
+- IRP Trainings for Local ELT Faculty
+- ELT Seminars/Conferences
+Indigenous ELT scholarships
+English Language Teaching Reforms (ELTR) Phase-II offered ELT Scholarships of 1 to 2 year duration for in-service English teachers of public sector colleges and universities in the following programs:
+- MPhil /MS in Applied Linguistics and related disciplines
+- Masters in Applied Linguistics, TEFL, TESL, ELT
+- PGD, ADP in TEFL, TESL, ELT
+Eligibility Criteria
+- Pakistani/AJK Nationals
+- Fulltime/ permanent English faculty of public sector colleges and universities
+- Teaching English at the graduate and post graduate level
+- Maximum 50 years of age, with minimum 16 years of education, with at least one year experience of teaching English as a subject
+- Already enrolled candidates into the specified programs may also apply for the scholarships. They will get funding for the remaining period of their study.
+- ELTR fellows of Phase-I can apply for higher degree programs (MS/MPhil) in Phase-II only after completion of service period as per their previous deed of agreement.
+Who is ineligible?
+- The candidates who are above 50 years of age at the time of application or currently enrolled in any other scholarship program offered by HEC/ Government.
+- Any candidate who is not from the public sector HEIs.
+How to Apply
+- Submission of hard copy of application and documents to Ms Rubina Mustafa, Project Manager ELTR Phase-II, HEC. (For Application Form Click Here)
+.Documents required with Application:
+- Photocopies of all educational testimonials
+- Photocopy of CNIC
+- The candidates will apply through proper channel.
+- For college faculty NOC must be obtained from the Directorate of Colleges and university faculty must submit NOC from VC /Registrar. (Sample NOC)
+- Original online bank deposit slip of Rs. 400/- (non-refundable) in favor of the Director General Finance, Higher Education Commission, on Account No. 17427900133401, Habib Bank Ltd, Shalimar Recording Company Branch, H-9, Islamabad, as processing fee.
+- Undertaking for the Indigenous Scholarship on the judicial stamp paper. (Sample Undertaking)
+- Admission letter of the university offering the specified programs. If the candidate has not secured admission in any university, s/he will be issued a provisional award letter and s/he will be required to submit admission letter within next six months for final award of scholarship otherwise his scholarship will be cancelled.
+Terms & Conditions
+- The scholarship awardee is not to hold any other scholarship/stipend during the scholarship period of his/her study.
+- The awardee has to execute a bond with HEC/Government of Pakistan to serve in his parent institution for at least 2 years after completion of his degree.
+- The Higher Education Commission would monitor the Academic progress/ performance of the awardee.
+- No extension will be entertained.
+- The outstation candidates must take fulltime leave from their respective institutions.
+- HEC reserves the right for any change.
+- The awardee will be required to submit the following at the end of semester:
+- Progress Report (Click Here)
+- Semester Results and Final Result at the end of program
+Grants & Benefits
+- The scholarship covers tuition fee of the participants up to Rs 100,000/- that will be transferred to the university directly after receiving the invoice duly vetted by internal auditor of the university.
+- A stipend of Rs 2000/ month at the end of each semester (for on campus months only excluding the semester break).
+- In case a candidate drops out or fails to complete the degree, the HEC will get reimbursement from the candidate.
+- No TA/DA will be admissible for test/interview.
+- No Hostel charges will be paid to the candidates. 
+
+[SECTION: hec_student_support_programs_19_HEC_STUDENT_SUPPORT_FINANCIAL_ASSISTANCE_AND_S]
+# HEC student support, financial assistance and skilling (part 4)
+Title: HEC student support, financial assistance and skilling programs (eligibility, application and current intake status)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC student support, financial assistance and skilling (part 4)
+Official page: https://www.hec.gov.pk/english/services/students/DL/Pages/Announcements.aspx
+Source file: https://www.hec.gov.pk/english/services/students/DL/Pages/Announcements.aspx
+Version: HEC program pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Mixed — see per-section status
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+HEC
+HEC Digital Library
+Announcements
+- Introduction
+- Basic resources
+- Premium resources
+- Subscription Process
+- Eligibility Criteria
+- Terms and Conditions
+- Applicable Charges
+- Institutional Focal Person
+- Announcements
+- Archives
+Announcements
+ ACM: Annual Training/Webinar Schedule 2026
+|  Title
+|  Date and Time (PST)
+|  Registration Link
+|  Overview of ACM and HEC's Digital Library platform
+|  Monday, Aug 10, 03:00 pm
+|  Click here for Registration
+Emerald: Annual Training/Webinar Schedule 2026
+| Title
+| Date and Time (PST)
+| Registration Link
+| From Insights to Integrity: Using AI Responsibly in Research & Publishing
+| Monday, Feb 16, 12:00 pm
+| 
+Concluded
+| Exploring Emerald Resources: Your Gateway to Excellence
+| Monday, Mar 2, 12:00 pm
+| Concluded
+| Publishing Excellence: A Professional Guide to International Journals
+| Monday, Apr 6, 12:00 pm
+|  Concluded
+| How to Start Your Journey as an International Reviewer: Practical Tips and Insights
+| Monday, May 4, 11:00 am
+Monday, May 18, 11:00 am
+|  Concluded
+| How to become a case author?
+| Monday, Jun 8, 11:00 am
+|  Concluded
+| The Art of teaching with cases
+| Monday, Jul 6, 11:00 am
+|  Concluded
+| Get to know Emerald resources: Your Gateway to Excellence
+| Sunday, Aug 16, 11:00 am
+|  Click here for Registration
+|  From Insights to Integrity: Using AI Responsibly in Research & Publishing
+|  Thursday, Sep 3, 12:00 pm
+|  Click here for Registration
+| Publishing Excellence: A Professional Guide to International Journals
+| Tuesday, Sep 29, 11:00 am
+|  Click here for Registration
+Springer Nature: Annual Training/Webinar Schedule 2026
+|  Title
+| Date and Time (PST) |  Registration Link
+| Mastering the Art of Writing for Peer-Reviewed Publications
+| Thursday, Mar 26, 11:00 am
+| Concluded
+| Find the Right Research Fast: Easy Navigation of the Springer Nature Platform
+| Wednesday, May 06, 11:00 am
+| Concluded
+Wiley: Annual Training/Webinar Schedule 2026
+|  Title
+|  Date and Time (PST)
+|   Registration Link
+| Unlocking the Value of Wiley Scientific Journals: Making the Most Out of Wiley Online Library
+| Tuesday, Feb 10
+| Concluded
+| Introduction to Cochrane Library for True Beginners
+| Tuesday, Feb 17
+| Concluded
+| The Open Access Advantage: How Open Access Improves Your Impact
+| Wednesday, March 18
+| Concluded
+| Navigating AI in Healthcare: Policies and Considerations With Cochrane Library
+| Tuesday, March 24
+| Concluded
+| AI Tools for Writing and Research
+| Tuesday, March 31
+| Concluded
+| Demystifying the Publication Process and Tips for Early Career Researchers
+| Thursday, April 09
+| Concluded
+| Evidence-Based Decision Making: Applying Best Practices From Cochrane Library
+| Tuesday, April 21
+| Concluded
+| Beyond the Journal Article: Navigating Wiley's Research Ecosystem
+| Tuesday, April 28
+| Concluded
+| From Evidence to Action: Building on Decision-Making Research and Integrating Cochrane Reviews in Clinical Decision Making
+| Tuesday, May 19
+| Concluded
+| Publishing with Purpose: Research Integrity and Ethics
+| Tuesday, May 19
+| Concluded
+| Responsible AI Use for Journal Publishing
+| Thursday, May 28
+| Concluded
+| AI and the Future of Publishing
+| Wednesday, June 03
+| Concluded
+| Transparent Reporting in Clinical Research
+| Thursday, June 03
+| Concluded
+| Accessibility in Practice: Content Accessibility and Disability Inclusion in Scholarly Publishing
+| Tuesday, June 30
+| Concluded
+| Transparent Reporting in Clinical Research: From Registration to Publication
+| Tuesday, Oct 06, 07:00 pm
+|  Click here for Registration
+Elsevier SCOPUS, Science Direct: Annual Training/Webinar Schedule 2026
+| Title | Date and Time (PST)
+| Registration Link 
+| Improving Research Performance using Elsevier's Scopus & Scopus AI
+| Thursday, Jan 22, 11:00 am
+| Concluded
+| See LeapSpace TM in Action - The Research-Grade AI Workspace for R&D
+| Thursday, Feb 12
+01:00 pm (Session 1)
+08:00 pm (Session 2)
+| Concluded
+| Improving Research Performance using Elsevier’s Scopus
+| Wednesday, May 06
+| Concluded
+| Enabling a perfect research ecosystem with Elsevier's ScienceDirect
+| Wednesday, June 10
+| Concluded
+| The Author's Journey: From Manuscript to Global Market- An Expert Session on Academic Book Publishing
+| Monday, July 20
+| Concluded
+IEEE: Annual Training/Webinar Schedule 2026
+|  Title
+|  Date and Time (PST)
+|  Registration Link
+| IEEE Learning & Research for Pakistan students & researchers: an overview of IEEE Xplore Digital Library
+| Wednesday, April 15
+| Concluded
+| Maximizing IEEE Xplore resources for your study and research
+| Tuesday, May 26
+| Concluded
+| From research to Publication: An overview on IEEE Publication Process
+| Wednesday, June 17
+| Concluded
+| Publishing in Open Access with IEEE Journals
+| Thursday, June 18
+| Concluded
+| Power User in Locating Technical Resources: An in-depth dive with IEEE Xplore Digital Library
+| Tuesday, July 14
+| Concluded
+|  Integrating IEEE Xplore Resources into your teaching: A dedicated session for lecturers
+|  Tuesday, Aug 18, 02:00 pm
+|  Click here for Registration
+AIP: Annual Training/Webinar Schedule 2026
+|  Title |  Date and Time (PST)
+|  Registration Link
+| Advancing Science, Together: Supporting Pakistan's Research Community Through HEC-NDLP Confirmation
+| Tuesday, July 14
+| Concluded
+Clarivate Web of Science: Annual Training/Webinar Schedule 2026
+| Title | Date and Time (PST) | Registration Link
+| Discover the Latest Enhancements and Updates to Web of Science and InCites Benchmarking and Analytics
+| Wednesday, Feb 04, 11:00 am
+| Concluded
+| Strategic Research Collaboration: Unlocking Collaboration Insights with Web of Science and InCites
+| Wednesday, Feb 10, 11:00 am
+| Concluded
+| Find What Matters: Powerful Searching on the Web of Science Platform
+| Thursday, Feb 19, 12:00 pm
+| Concluded
+| Journal Citation Reports: Redefining Research Impact
+| Thursday, Mar 05, 12:00 pm
+| Concluded
+| From Data to Decisions: Supporting Collection Management and Transformative Agreements
+| Tuesday, Mar 10, 12:00 pm
+| Concluded
+| Getting Academic AI Right: Clarivate Tools for AI-Powered Research Workflows
+| Thursday, April 16, 12:00 pm
+| Concluded
+| Research Smarter: Using Web of Science for Academic Success
+| Thursday, May 21, 12:00 pm
+| Concluded
+| Why Structured Research Data Matters: Building Reliable Search, Discovery, and Analytics
+| Thursday, May 28, 12:00 pm
+| Concluded
+| Journal Citiation Reports Edition TM 2026
+| Tuesday, Jun 30, 02:00 pm
+| Concluded
+In case of any query, please reach out at ndlp@hec.gov.pk

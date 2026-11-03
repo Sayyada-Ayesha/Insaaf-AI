@@ -1,0 +1,111 @@
+[SECTION: CASE_SCP_FCC_INDEX]
+Supreme Court of Pakistan and Federal Constitutional Court of Pakistan — Official Judgment Records (web-published metadata, verified 2026-09-06)
+This document transcribes the official judgment records published on the Supreme Court of Pakistan "Latest Judgments" page (25 records) and the Federal Constitutional Court of Pakistan Judgements page (10 records). Each record states the case subject, case number, case title, author judge, judgment date and upload date exactly as published by the court; where the Supreme Court page published legal points, they are included. Full judgment text is available as PDF on the court websites (scp.gov.pk; fccp.gov.pk). These records are METADATA records: they verify that these cases exist, were decided on the stated dates and by the stated judges, and carry the stated citations; they are not substitutes for reading the full judgment.
+Source: Supreme Court of Pakistan official website; Federal Constitutional Court of Pakistan official website
+Source URL: https://www.scp.gov.pk/LatestJudgments ; https://fccp.gov.pk/judgements
+Status: Metadata records from official court pages (verified 2026-09-06)
+
+[SECTION: CASE_SCP_2026_01]
+Court: Supreme Court of Pakistan. Subject: Banking / Recovery Suits. Case No: C.P.L.A.1481-L/2019. Title: M/s. Crescent Spinning Mills Ltd. v. Citibank N.A., etc. Author Judge: Mr. Justice Muhammad Ali Mazhar. Judgment Date: 01-06-2026. Upload Date: 02-09-2026. Points (as published by the court): (1) Section 6 of Banking Tribunals Ordinance, 1984 and Section 15 of the Banking Companies (Recovery of Loans, Advances, Credits and Finances) Act, 1997; (2) doctrines of "intra petita / infra petita / ultra petita"; (3) effect of repeal under Section 6 of the General Clauses Act; (4) the purpose of Section 152 CPC is to correct typographical, mathematical, or clerical errors but not to alter the substratum of judgment.
+
+[SECTION: CASE_SCP_2026_02]
+Court: Supreme Court of Pakistan. Subject: Seniority / Challenge to seniority list. Case No: C.P.L.A.5091/2025. Title: Sahibzada Hassan Ali and others v. The Govt. of Khyber Pakhtunkhwa through Chief Secretary, Peshawar and others. Author Judge: Mr. Justice Muhammad Ali Mazhar. Judgment Date: 19-05-2026. Upload Date: 27-08-2026. Points (as published by the court): (1) delayed publication of notification of regularization of service under KPK Employees Regularization of Service Act, 2018 and its effect under Section 20A of the General Clauses Act, 1897 when employees were regularized from the effective date of the 2018 Act by fiction of law; (2) public authorities should act fairly; (3) employees cannot be made a victim due to delay in publication; (4) the department was responsible to complete the paperwork timely as per law and rules.
+
+[SECTION: CASE_SCP_2026_03]
+Court: Supreme Court of Pakistan. Subject: Competition Commission of Pakistan / Monopolistic Practices and Abuse of Dominant Position. Case No: C.A.367/2025. Title: Pakistan Vanaspati Manufacturers Association (PVMA) v. Competition Commission of Pakistan. Author Judge: Mr. Justice Jamal Khan Mandokhail. Judgment Date: 25-08-2026. Upload Date: 25-08-2026. Points (as published by the court): the Competition Act, 2010 mandates that the Commission shall be administratively and functionally independent; the Commission alone is competent to advise undertakings individually to pass on to consumers the benefit of reduction in the price of raw materials, enabling each undertaking to independently determine the prices of its finished products in accordance with its own commercial considerations.
+
+[SECTION: CASE_SCP_2026_04]
+Court: Supreme Court of Pakistan. Subject: Regularization of Service / Project Employment. Case No: C.P.L.A.578-P/2024. Title: Dean, Pakistan Institute of Community of Ophthalmology (PICO), Peshawar v. Nasira Begum and others. Author Judge: Mr. Justice Muhammad Ali Mazhar. Judgment Date: 13-05-2026. Upload Date: 22-08-2026. Points (as published by the court): (1) deeming clause under KPK Medical and Health Institution and Regulations of Health Care Services Ordinance, 2002 whereby contract employees were deemed to have been appointed on regular basis from the date of continuous appointment; (2) the Amended Act was enacted to facilitate employees who served for a considerable period.
+
+[SECTION: CASE_SCP_2026_05]
+Court: Supreme Court of Pakistan. Subject: Death Sentence / Sessions. Case No: Crl.R.P.89/2025. Title: Zahir Zakir Jaffar v. The State through A.G. Islamabad and another. Author Judge: Mr. Justice Ishtiaq Ibrahim. Judgment Date: 04-06-2026. Upload Date: 20-08-2026.
+
+[SECTION: CASE_SCP_2026_06]
+Court: Supreme Court of Pakistan. Subject: Life Imprisonment / Sessions. Case No: J.P.73/2020. Title: Abdul Razzaq v. The State. Author Judge: Mr. Justice Ishtiaq Ibrahim. Judgment Date: 11-08-2026. Upload Date: 19-08-2026.
+
+[SECTION: CASE_SCP_2026_07]
+Court: Supreme Court of Pakistan. Subject: Life Imprisonment / Sessions. Case No: J.P.326/2021. Title: Faheem alias Babbly v. The State. Author Judge: Mr. Justice Ishtiaq Ibrahim. Judgment Date: 11-08-2026. Upload Date: 19-08-2026.
+
+[SECTION: CASE_SCP_2026_08]
+Court: Supreme Court of Pakistan. Subject: Life Imprisonment / Sessions. Case No: J.P.21/2020. Title: Muhammad Nadeem alias Babloo and Tanveer alias Suleman v. The State. Author Judge: Mr. Justice Ishtiaq Ibrahim. Judgment Date: 11-08-2026. Upload Date: 19-08-2026.
+
+[SECTION: CASE_SCP_2026_09]
+Court: Supreme Court of Pakistan. Subject: Life Imprisonment / Sessions. Case No: J.P.562/2022. Title: Nadeem v. The State. Author Judge: Mr. Justice Ishtiaq Ibrahim. Judgment Date: 03-08-2026. Upload Date: 19-08-2026.
+
+[SECTION: CASE_SCP_2026_10]
+Court: Supreme Court of Pakistan. Subject: Life Imprisonment / Drug Laws. Case No: Crl.A.20-Q/2023. Title: Muhammad Hussain v. The State. Author Judge: Mr. Justice Ishtiaq Ibrahim. Judgment Date: 05-08-2026. Upload Date: 19-08-2026.
+
+[SECTION: CASE_SCP_2026_11]
+Court: Supreme Court of Pakistan. Subject: Contempt of Court / Non-compliance of Court Order. Case No: Crl.A.400/2025. Title: Mashal Azam v. Ghafoor Anjum, Superintendent Central Jail, Adyala, tehsil and district Rawalpindi and others. Author Judge: Mr. Justice Shahid Waheed. Judgment Date: 18-08-2026. Upload Date: 18-08-2026.
+
+[SECTION: CASE_SCP_2026_12]
+Court: Supreme Court of Pakistan. Subject: Against Remand Order. Case No: C.P.L.A.624/2023. Title: Muhammad Iftikhar Shoukat v. Haji Muhammad Hayat (deceased) through L.Rs and others. Author Judge: Mr. Justice Yahya Afridi. Judgment Date: 10-08-2026. Upload Date: 18-08-2026.
+
+[SECTION: CASE_SCP_2026_13]
+Court: Supreme Court of Pakistan. Subject: Regularization of Service / From date of initial appointment. Case No: C.P.L.A.2354-L/2025. Title: The Secretary, Schools Education Department, Government of the Punjab, Lahore and another v. Mst. Najma Parveen. Author Judge: Mr. Justice Muhammad Ali Mazhar. Judgment Date: 09-04-2026. Upload Date: 17-08-2026. Points (as published by the court): (1) qualifying service for pension under Rule 1.5, 1.10 and 2.3 of Punjab Civil Services Pension Rules; (2) the period of service on contract should not be discarded from the qualifying period of service for pension if the contractual employee is regularized; (3) the purpose of pension is to provide old-age security and economic refuge as a constitutional right.
+
+[SECTION: CASE_SCP_2026_14]
+Court: Supreme Court of Pakistan. Subject: Declaration / Ownership. Case No: C.A.19-P/2015. Title: Ghani Rehman since dead through L.Rs and others v. Masal Khan and others. Author Judge: Mr. Justice Shakeel Ahmad. Judgment Date: 24-06-2026. Upload Date: 15-08-2026. Citation: 2026 SCP 254.
+
+[SECTION: CASE_SCP_2026_15]
+Court: Supreme Court of Pakistan. Subject: Death Sentence / Sessions. Case No: J.P.617/2025. Title: Wasim Abbas v. The State. Author Judge: Mr. Justice Muhammad Hashim Khan Kakar. Judgment Date: 10-06-2026. Upload Date: 15-08-2026. Citation: 2026 SCP 253.
+
+[SECTION: CASE_SCP_2026_16]
+Court: Supreme Court of Pakistan. Subject: Death Sentence / Sessions. Case No: J.P.321/2019. Title: Muhammad Irfan and 2 others v. The State. Author Judge: Mr. Justice Malik Shahzad Ahmad Khan. Judgment Date: 09-07-2026. Upload Date: 15-08-2026. Citation: 2026 SCP 252.
+
+[SECTION: CASE_SCP_2026_17]
+Court: Supreme Court of Pakistan. Subject: Review Jurisdiction. Case No: Crl.M.Appeal.9/2017. Title: Sher Azam v. The State through A.G. Khyber Pakhtunkhwa. Author Judges: (1) Mr. Justice Malik Shahzad Ahmad Khan; (2) Mr. Justice Shakeel Ahmad. Judgment Date: 19-05-2026. Upload Date: 15-08-2026. Citation: 2026 SCP 251.
+
+[SECTION: CASE_SCP_2026_18]
+Court: Supreme Court of Pakistan. Subject: Family / Guardian and Wards / Jactitation of Marriage. Case No: C.A.193-L/2010. Title: Mst. Sarwar Mai, etc v. Judge, Family Court, Muzaffargarh, etc. Author Judge: Mr. Justice Irfan Saadat Khan. Judgment Date: 23-06-2026. Upload Date: 15-08-2026. Citation: 2026 SCP 250.
+
+[SECTION: CASE_SCP_2026_19]
+Court: Supreme Court of Pakistan. Subject: Land Acquisition / Compensation. Case No: C.A.8-P/2017. Title: Land Acquisition Collector / Provincial Housing Authority, Peshawar v. Ali Akbar and others. Author Judge: Mr. Justice Yahya Afridi. Judgment Date: 21-05-2026. Upload Date: 15-08-2026. Citation: 2026 SCP 249.
+
+[SECTION: CASE_SCP_2026_20]
+Court: Supreme Court of Pakistan. Subject: Major Penalty / Dismissal from Service / Misconduct. Case No: C.P.L.A.4364/2024. Title: Ellahi Bakhsh Bugti v. Government of Balochistan, through the Chief Secretary, Quetta and others. Author Judge: Mr. Justice Muhammad Ali Mazhar. Judgment Date: 11-03-2026. Upload Date: 13-08-2026. Citation: 2026 SCP 248. Points (as published by the court): (1) a Service Tribunal is deemed to be a civil court with the powers vested in CPC; (2) the inquiry officer recommended forensic examination of the signature on challans but reckless conduct of not following it destroyed the case at departmental level; (3) forensic laboratory test is a prominent tool of criminology for reaching a just conclusion in a case of denial of handwriting.
+
+[SECTION: CASE_SCP_2026_21]
+Court: Supreme Court of Pakistan. Subject: Specific performance / Agreement to Sell. Case No: C.A.435-L/2012. Title: Saad Younis, etc v. Ghulam Bari and others. Author Judge: Mr. Justice Shahid Bilal Hassan. Judgment Date: 10-08-2026. Upload Date: 11-08-2026. Citation: 2026 SCP 247.
+
+[SECTION: CASE_SCP_2026_22]
+Court: Supreme Court of Pakistan. Subject: Tax Laws / Federal Tax / Income Tax. Case No: C.A.2480/2016. Title: Commissioner Inland Revenue (Legal) RTO, Rawalpindi v. Khadim Hussain and others. Author Judge: Mr. Justice Aqeel Ahmed Abbasi. Judgment Date: 05-08-2026. Upload Date: 10-08-2026. Citation: 2026 SCP 246.
+
+[SECTION: CASE_SCP_2026_23]
+Court: Supreme Court of Pakistan. Subject: Consumer Protection. Case No: C.P.L.A.5395/2025. Title: Muhammad Ishaq v. Fardayaz Khan and others. Author Judge: Mr. Justice Muhammad Ali Mazhar. Judgment Date: 10-03-2026. Upload Date: 08-08-2026. Citation: 2026 SCP 245. Points (as published by the court): (1) universally, consumer protection laws safeguard the consumer from deceptive business practices; (2) the laws ensure that products are safe for use and prevent the sale of defective goods even through e-commerce/digital transactions and provide the remedy of filing complaints; (3) advertisements should not mislead consumers with exaggerated claims.
+
+[SECTION: CASE_SCP_2026_24]
+Court: Supreme Court of Pakistan. Subject: Bail After Arrest / Foreigners Act, 1946. Case No: Crl.P.L.A.894/2026. Title: Jalat Khan v. The State through A.G. Khyber Pakhtunkhwa and another. Author Judge: Mr. Justice Muhammad Hashim Khan Kakar. Judgment Date: 03-08-2026. Upload Date: 06-08-2026. Citation: 2026 SCP 244.
+
+[SECTION: CASE_SCP_2026_25]
+Court: Supreme Court of Pakistan. Subject: Pre-emption Cases. Case No: C.A.357-L/2013. Title: Shakeel Ahmad, etc v. Abdul Ghaffar. Author Judge: Mr. Justice Shahid Bilal Hassan. Judgment Date: 03-08-2026. Upload Date: 06-08-2026. Citation: 2026 SCP 243.
+
+[SECTION: CASE_FCC_2026_01]
+Court: Federal Constitutional Court of Pakistan. Case No: C.P.L.A. No. 1560 of 2025. Title: C.P.L.A. No. 1560 of 2025 (case title not published on the FCC judgements page). Author Judge: Mr. Justice Ali Baqar Najafi. Type: Judgement. Upload Date: 2026-09-02. Note: metadata-only record — the FCC website lists case number, author judge and upload date without case title or judgment text preview; full text is available as a download on fccp.gov.pk.
+
+[SECTION: CASE_FCC_2026_02]
+Court: Federal Constitutional Court of Pakistan. Case No: F.C.P.L.A. No. 1183 of 2026. Title: F.C.P.L.A. No. 1183 of 2026 (case title not published on the FCC judgements page). Author Judge: Mr. Justice Ali Baqar Najafi. Type: Judgement. Upload Date: 2026-09-02. Note: metadata-only record.
+
+[SECTION: CASE_FCC_2026_03]
+Court: Federal Constitutional Court of Pakistan. Case No: C.A.192-P of 2010. Title: C.A.192-P of 2010. Author Judge: Mr. Chief Justice Amin-ud-Din Khan. Type: Judgement. Upload Date: 2026-08-25. Note: an Additional Note by Mr. Justice Syed Arshad Hussain Shah in Civil Appeals No.192-P of 2010 was also published on the same date (see separate record).
+
+[SECTION: CASE_FCC_2026_04]
+Court: Federal Constitutional Court of Pakistan. Case No: (Additional Note) Civil Appeals No.192-P of 2010. Title: Additional Note from Mr. Justice Syed Arshad Hussain Shah in Civil Appeals No.192-P of 2010. Author Judge: Mr. Justice Syed Arshad Hussain Shah. Type: Judgement. Upload Date: 2026-08-25. Note: metadata-only record.
+
+[SECTION: CASE_FCC_2026_05]
+Court: Federal Constitutional Court of Pakistan. Case No: C.P.L.A. No. 1836-L of 2019. Title: C.P.L.A. No. 1836-L of 2019 (case title not published on the FCC judgements page). Author Judge: Mr. Justice Syed Arshad Hussain Shah. Type: Judgement. Upload Date: 2026-08-21. Note: metadata-only record.
+
+[SECTION: CASE_FCC_2026_06]
+Court: Federal Constitutional Court of Pakistan. Case No: F.C.P.L.A. No. 1276 of 2026. Title: F.C.P.L.A. No. 1276 of 2026 (case title not published on the FCC judgements page). Author Judge: Mr. Justice Aamer Farooq. Type: Judgement. Upload Date: 2026-08-17. Note: metadata-only record.
+
+[SECTION: CASE_FCC_2026_07]
+Court: Federal Constitutional Court of Pakistan. Case No: C.P.L.A. No. 4153 of 2022. Title: C.P.L.A. No. 4153 of 2022 (case title not published on the FCC judgements page). Author Judge: Mr. Justice Syed Arshad Hussain Shah. Type: Judgement. Upload Date: 2026-08-13. Note: metadata-only record.
+
+[SECTION: CASE_FCC_2026_08]
+Court: Federal Constitutional Court of Pakistan. Case No: C.P.L.A. No. 4245/2022 and C.M.A. No. 10808/2022 (dissenting note). Title: Dissenting Note of C.P.L.A. No. 4245/2022 and C.M.A. No. 10808/2022. Author Judge: Mr. Justice Syed Arshad Hussain Shah. Type: Judgement. Upload Date: 2026-08-07. Note: metadata-only record.
+
+[SECTION: CASE_FCC_2026_09]
+Court: Federal Constitutional Court of Pakistan. Case No: C.P.L.A. 2793-L of 2022. Title: C.P.L.A. 2793-L of 2022 (case title not published on the FCC judgements page). Author Judge: Mr. Justice Syed Arshad Hussain Shah. Type: Judgement. Upload Date: 2026-07-30. Note: metadata-only record.
+
+[SECTION: CASE_FCC_2026_10]
+Court: Federal Constitutional Court of Pakistan. Case No: C.P.L.A. No. 4245/2022 and C.M.A. No. 10808/2022. Title: C.P.L.A. No. 4245/2022 and C.M.A. No. 10808/2022 (case title not published on the FCC judgements page). Author Judge: Mr. Justice Syed Hasan Azhar Rizvi. Type: Judgement. Upload Date: 2026-07-22. Note: metadata-only record; a dissenting note in the same case was uploaded 2026-08-07 (see separate record).

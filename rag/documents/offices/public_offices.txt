@@ -1,0 +1,233 @@
+[SECTION: OFFICE_RECORDS_INTRO]
+Public offices of Pakistan — structured records (role / authority / powers / citizen interface / source)
+This document is a structured index of public offices a citizen or practitioner may need to approach, from the highest constitutional offices to revenue and police offices at district level. EVERY record states exactly what the indexed corpus and the official government pages verified on 2026-09-06 support. Each record carries a status: FULL (role and powers described by indexed primary text or verified official pages), PARTIAL (only some functions of the office are indexed so far), or GAP (no indexed source yet — the office is named with its covering law so the gap is explicit). No record attributes powers to an office that the cited sources do not state.
+Source: Indexed corpus records and official government pages cited per record (all verified 2026-09-06)
+Source URL: see each record
+Status: Structured index with explicit FULL/PARTIAL/GAP status per office
+
+[SECTION: OFFICE_PRESIDENT]
+Office: President of Pakistan (Head of State). Role: constitutional head of state. Powers indexed so far: (1) pardon, reprieve and respite powers recorded in the Constitution corpus under Article 45 (constitution.txt); (2) power to make a reference to the Supreme Court on a question of law of public importance — the advisory jurisdiction of the Supreme Court under Article 186 is recorded in court_hierarchy.txt (Section: 2, Supreme Court). Not yet indexed: election, qualifications and term of office (Articles 41-44), oath (Article 42), and the President's other constitutional functions — the Constitution corpus currently indexes Articles 1, 2, 2A, 4, 5, 8-28, 45, 51, 175, 184, 199 and 251 only. Status: PARTIAL. Provenance: rag/documents/constitution/constitution.txt; rag/documents/court-hierarchy/court_hierarchy.txt.
+
+[SECTION: OFFICE_PRIME_MINISTER]
+Office: Prime Minister of Pakistan (Head of Government). Role: head of the federal government. Not indexed: the Constitution corpus does not yet include Part III federal-government articles (90-100, including appointment and oath of the Prime Minister, the Cabinet, and the Attorney General under Article 100), nor Articles 91-92 on the Prime Minister's election and tenure. No official-page record was ingested for this office in this expansion because official HTML text of those articles was not accessible (official Constitution text is distributed as PDF on government sites; see the domain-audit record). Status: GAP. Covering law: Constitution of Pakistan 1973, Articles 90-100. Provenance: none indexed yet — gap declared explicitly rather than filled from memory.
+
+[SECTION: OFFICE_GOVERNOR_CM]
+Office: Provincial Governors and Chief Ministers. Role: heads of the provincial executive. Not indexed: Constitution articles on Governors (101-105) and Provincial Governments/Chief Ministers (127-140) are not in the corpus; provincial executive processes (e.g., assent to provincial bills) are not indexed. Status: GAP. Covering law: Constitution of Pakistan 1973, Part IV. Provenance: none indexed yet — gap declared explicitly.
+
+[SECTION: OFFICE_CHIEF_JUSTICE_PAKISTAN]
+Office: Chief Justice of Pakistan. Role: head of the Supreme Court, the apex court under Article 175. Powers and functions recorded: (a) constitution of benches and the Court's original (Article 184), appellate (185), advisory (186) and review (188) jurisdictions; (b) the established channel by which a citizen's letter complaining of fundamental-rights violations may reach the Court and be converted into suo motu proceedings under Article 184(3) — letters can be addressed directly to the Chief Justice at the Supreme Court of Pakistan, Constitution Avenue, Islamabad, without fee or lawyer. Status: FULL. Provenance: rag/documents/court-hierarchy/court_hierarchy.txt (Section: 2); rag/documents/legal-aid/aid.txt (letter-to-Chief-Justice record); source: Supreme Court of Pakistan (supremecourt.gov.pk official site as recorded in expanded case-law digest).
+
+[SECTION: OFFICE_HC_JUSTICES]
+Office: High Courts (Chief Justices and Judges of the Lahore, Sindh, Peshawar, Balochistan and Islamabad High Courts). Role: constitutional and appellate courts for each province and the Islamabad Capital Territory under Article 175 read with Articles 192-203. Powers recorded: original constitutional jurisdiction under Article 199 (writs of habeas corpus, certiorari, prohibition, mandamus, quo warranto), appellate jurisdiction over civil and criminal decisions of subordinate courts, and revisional jurisdiction; appeals from Sessions courts lie to the High Court. Status: FULL (as to jurisdiction). Provenance: rag/documents/court-hierarchy/court_hierarchy.txt (Section: 3); rag/documents/crpc/crpc.txt (Section 410: appeal from a sentence of a Court of Session lies to the High Court).
+
+[SECTION: OFFICE_FSC_JUSTICES]
+Office: Federal Shariat Court (Chief Justice and Judges). Role: constitutional court under Article 203-C examining laws for conformity with the Injunctions of Islam; appellate jurisdiction in Hudood cases. Appeals from the FSC lie to the Supreme Court's Shariat Appellate Bench. Status: FULL (as to jurisdiction). Provenance: rag/documents/court-hierarchy/court_hierarchy.txt (Section: 4).
+
+[SECTION: OFFICE_DISTRICT_SESSIONS_JUDGE]
+Office: District and Sessions Judge. Role: highest judicial authority in the district; head of the district judiciary. Powers recorded: (a) trial of sessions cases (murder, rape, dacoity, etc.) and original civil jurisdiction above civil-judge pecuniary limits; (b) appellate jurisdiction from civil judges and magistrates; (c) administrative control over the district subordinate judiciary; (d) as ex-officio Justice of Peace, entertaining applications under Section 22A(6) CrPC when police refuse to register an FIR — after a written complaint to the SP/SSP/DPO fails (within 7 days), the citizen applies to the District and Sessions Judge, who calls for the police report and may direct the SHO to register the FIR; (e) weekly prison courts — District and Sessions Judges hold weekly courts visiting prisons, and prisoners may petition the District and Sessions Judge. Status: FULL. Provenance: rag/documents/court-hierarchy/court_hierarchy.txt (Section: 5); rag/documents/court-procedure/procedures.txt (FIR-refusal remedy under Sections 22A/22B); rag/documents/prisons/prisons.txt (Section: 7 grievance mechanism).
+
+[SECTION: OFFICE_CIVIL_JUDGE_MAGISTRATE]
+Office: Civil Judge / Judicial Magistrate (First Class). Role: lowest tier of the regular judiciary. Powers recorded: civil judges try civil suits up to prescribed pecuniary limits; judicial magistrates of the first class try criminal cases punishable with up to about three years' imprisonment (provincial variation); under-trial prisoners must be produced before a magistrate within 24 hours; a private complaint may be filed directly before the Judicial Magistrate under Section 200 CrPC as an alternative when the FIR route fails. Status: FULL. Provenance: rag/documents/court-hierarchy/court_hierarchy.txt (Section: 6); rag/documents/crpc/crpc.txt (Section 200 remedy recorded in procedures digest); rag/documents/prisons/prisons.txt (Section: 6 under-trial prisoners).
+
+[SECTION: OFFICE_ECP]
+Office: Election Commission of Pakistan (Chief Election Commissioner and four Members, one from each province). Role: constitutional body under Article 218 of the Constitution. Powers recorded: conducts elections for the National Assembly, Provincial Assemblies, Senate and local government; delimits constituencies after each census; maintains and annually updates voter rolls (every citizen aged 18+ with a NADRA CNIC is entitled to enrolment); prescribes candidate spending limits and receives parties' annual accounts; hears election offences through the law. Citizen interface (verified official page): enrolment/transfer via Form 21, objections via Form 22, corrections via Form 23, filed with the District Election Commissioner, Registration Officer or Assistant Registration Officer; SMS 8300 checks enrolment status. Status: FULL. Provenance: rag/documents/elections/elections.txt (Section: 2 ECP); rag/documents/civic/civic_services.txt (voter enrolment record); Source URL: https://ecp.gov.pk/how-to-register (verified 2026-09-06).
+
+[SECTION: OFFICE_FEDERAL_OMBUDSMAN]
+Office: Wafaqi Mohtasib (Federal Ombudsman). Role: redresses citizens' complaints of maladministration against federal agencies. Powers recorded: investigates complaints against federal government agencies; can direct the agency to rectify the issue; free of charge and without a lawyer; jurisdiction excludes matters before courts and certain agencies (recorded in the expanded-institutions digest). Citizen interface (verified official page): written or online complaint on WMS Form 'A' with solemn affirmation; receipts issued immediately in person or within 72 hours by other means; child-complaints helpline 1056; secretariat at 36 Constitution Avenue, G-5/2, Islamabad. Status: FULL. Provenance: rag/documents/civic/civic_services.txt (Federal Ombudsman record); rag/documents/expanded-institutions/expanded_institutions.txt; rag/documents/legal-aid/aid.txt (ombudsman record); Source URL: https://mohtasib.gov.pk (verified 2026-09-06).
+
+[SECTION: OFFICE_PROVINCIAL_OMBUDSMAN]
+Office: Provincial Ombudsman (Mohtasib-e-Ala / Provincial Mohtasib). Role: investigates complaints of maladministration against provincial government agencies. Powers recorded: free of charge; no lawyer required; complaint may be filed in writing, by email, or online; the Ombudsman can direct the agency to rectify the issue. Status: FULL (as recorded). Provenance: rag/documents/legal-aid/aid.txt (ombudsman record); rag/documents/expanded-institutions/expanded_institutions.txt (Section: 17 provincial ombudsmen reference).
+
+[SECTION: OFFICE_IGP_PPO]
+Office: Inspector General of Police (provincial) / Provincial Police Officer. Role: professional head of the provincial police. Powers recorded: complaint channel for citizens against police officers (refusal to register FIR, illegal detention, torture or abuse, corruption, misuse of authority); complaints may be filed with the District Public Safety Commission or the Provincial Police Officer; the IGP Complaint Cell is recorded in the procedures digest as the escalation channel (remedy after the SP route) for FIR-refusal grievances. Status: FULL (as recorded). Provenance: rag/documents/police/police.txt (Section: 9 police complaints authority); rag/documents/procedure/procedures.txt (FIR-refusal escalation, remedy 7 — IGP Complaint Cell); rag/documents/procedure/workflows.txt (SP/DSP complaint-cell workflow).
+
+[SECTION: OFFICE_SP_DSP_COMPLAINT_CELL]
+Office: Superintendent of Police (SP/SSP/DPO) and Deputy Superintendent of Police (DSP), Complaint Cell. Role: district police complaint and FIR-refusal channel. Powers recorded: (a) citizen remedy when an SHO refuses to register an FIR for a cognizable offence — first step is a written complaint to the SP/SSP/DPO (registered post or in person, retaining proof); (b) FIR-refusal complaint may also be filed with the DSP Complaint Cell; (c) if the SP fails to act within 7 days, the citizen applies to the Sessions Judge as ex-officio Justice of Peace under Section 22A(6) CrPC. Status: FULL. Provenance: rag/documents/court-procedure/procedures.txt (FIR-refusal remedy); rag/documents/police/police.txt (Section: 6 registration of FIR); rag/documents/procedure/workflows.txt (WORKFLOW_FIR_REFUSAL).
+
+[SECTION: OFFICE_SHO]
+Office: Station House Officer (SHO). Role: officer in charge of a police station; overall responsibility for the station, including supervision of investigation, maintenance of law and order, and public service; must be present at the station or available on communication at all times. Duties recorded: registration of FIR for cognizable offences under Section 154 CrPC (refusal is a dereliction of duty); maintenance of station diary, daily diary (Roznamcha), FIR register, case diaries and property register. Status: FULL. Provenance: rag/documents/police/police.txt (Sections: 4-6).
+
+[SECTION: OFFICE_DEPUTY_COMMISSIONER]
+Office: Deputy Commissioner (in the visa-system glossary: District Coordination Officer, DCO). Role: head of district administration. Functions recorded: (a) entry route for legal aid — for civil/general legal-aid cases the citizen approaches the DLEC through the Deputy Commissioner or the District Judge (workflows digest); (b) in the official visa glossary, DCO is defined as "District Coordination Officer" (no further powers stated). Powers of the Deputy Commissioner as collector/registrar/district magistrate are NOT yet indexed. Status: PARTIAL. Provenance: rag/documents/procedure/workflows.txt (legal-aid workflow); rag/documents/foreigners/foreigner_entry_stay_registration.txt (official visa glossary); Source URL: https://visa.nadra.gov.pk/important-terms/ (verified 2026-09-06).
+
+[SECTION: OFFICE_TEHSILDAR]
+Office: Tehsildar / Naib-Tehsildar (revenue officer). Role: revenue administration at tehsil level. Powers recorded: in the mutation (Inteqal) process — after the buyer applies to the local Patwari following registration of the sale deed, the Revenue Officer (Tehsildar/Naib-Tehsildar) issues notice to the parties; if no objection is filed within the notice period and the transfer is verified, mutation is sanctioned and the new owner's name is recorded in the Fard-e-Malkiat. Status: PARTIAL (only the revenue/mutation function is indexed). Provenance: rag/documents/property/property.txt (SECTION: MUTATION_INTEQAL); sources recorded there: Board of Revenue Punjab/Sindh/KP/Balochistan; Land Revenue Act 1967.
+
+[SECTION: OFFICE_PATWARI]
+Office: Patwari (village revenue official; Qanungo supervises patwaris). Role: keeper of the land-revenue record at village level. Powers recorded: receives the mutation application after execution and registration of a sale deed; maintains land records (Fard/Record of Rights); demarcation of property (Nishan-Dahi) is done through the patwari as recorded in the property-dispute documents list. Status: PARTIAL. Provenance: rag/documents/property/property.txt (SECTION: MUTATION_INTEQAL and property-dispute records).
+
+[SECTION: OFFICE_COLLECTOR_BOARD_REVENUE]
+Office: Collector (District Collector) and Board of Revenue. Role: revenue-appellate hierarchy. Powers recorded: a person aggrieved by a wrongful mutation may file a revision before the Collector/Board of Revenue or file a civil suit for declaration; revenue courts and the Board of Revenue handle agricultural land disputes and mutation challenges. Status: PARTIAL. Provenance: rag/documents/property/property.txt (SECTION: MUTATION_INTEQAL; PROPERTY_DISPUTE_PROCEDURE).
+
+[SECTION: OFFICE_SUPERINTENDENT_JAIL]
+Office: Superintendent of the Central/District Jail. Role: head of a jail establishment. Powers recorded: accepts prisoners' petitions (grievance mechanism under the Prisons Act 1894 and Prison Rules as recorded); prisoners may petition the Superintendent as the first tier, then the Inspector General of Prisons, the District and Sessions Judge, and the High Court. Status: PARTIAL (only the grievance function is indexed). Provenance: rag/documents/prisons/prisons.txt (Section: 7 grievance mechanism).
+
+[SECTION: OFFICE_IG_PRISONS]
+Office: Inspector General of Prisons (provincial). Role: head of the provincial prisons department. Powers recorded: second tier of the prisoner grievance route — prisoners may submit petitions to the IG Prisons after the Superintendent; the IG's supervisory functions over jail administration are not otherwise indexed. Status: PARTIAL. Provenance: rag/documents/prisons/prisons.txt (Section: 7).
+
+[SECTION: OFFICE_PUBLIC_PROSECUTOR]
+Office: Public Prosecutor. Role: prosecuting officer of the State before the Sessions Court and, on direction, the High Court. Powers recorded (CrPC digest): (a) in every trial before a Court of Session initiated upon a police report, the prosecution is conducted by the Public Prosecutor (Section 265A); (b) appeals against acquittal — the Provincial Government may direct the Public Prosecutor to present an appeal to the High Court from an order of acquittal passed by a court other than the High Court, and the Federal Government may do likewise where the offence was investigated by the Federal Investigation Agency (Section 417(1)-(2)); note the corpus also records that an aggrieved person may himself file such an appeal within thirty days (Section 417(2A)). Status: FULL (as recorded in the CrPC digest). Provenance: rag/documents/crpc/crpc.txt (Sections: 265A, 417).
+
+[SECTION: OFFICE_LAW_OFFICERS]
+Office: Attorney-General for Pakistan and Advocates-General of provinces. Role: chief law officers of the Federation and provinces. Not indexed: the Constitution corpus does not include Article 100 (Attorney-General) or Article 140 (Advocates-General); no official-page record was ingested in this expansion because official HTML text of those articles was not accessible (see the domain-audit record). Status: GAP. Covering law: Constitution of Pakistan 1973, Articles 100 and 140. Provenance: none indexed yet — gap declared explicitly.
+
+[SECTION: OFFICE_DLAC_DLEC]
+Office: District Legal Advisory Committee (DLAC) and District Legal Empowerment Committee (DLEC); Legal Aid and Justice Authority. Role: public legal-aid bodies. Powers recorded: (a) DLACs, established under the Pakistan Bar Council Legal Aid Rules, exist in every district; a person who cannot afford representation applies through the local District Bar Association or District Court, and the DLAC assigns a lawyer for civil or criminal cases; (b) for criminal cases (especially of women and children) the citizen approaches the Legal Aid and Justice Authority, and for civil/general cases the DLEC — through the Deputy Commissioner or the District Judge — by submitting a formal application proving indigency (Zakat certificate or income affidavit); the committee reviews and, if approved, appoints a lawyer from its panel whose fee is paid by the State/committee. Status: FULL. Provenance: rag/documents/legal-aid/aid.txt (SECTION: DLAC); rag/documents/procedure/workflows.txt (legal-aid workflow); Source: Pakistan Bar Council; Legal Practitioners and Bar Councils Act 1973 (as recorded in aid.txt).
+
+[SECTION: OFFICE_FIA]
+Office: Federal Investigation Agency (Director General and regional/zonal officers). Role: federal investigating and immigration-control agency. Powers recorded: (a) investigation of offences falling within FIA jurisdiction (recorded across the corpus: PECA cyber offences, human trafficking, immigration fraud, bank fraud in the FIA sphere); (b) the Federal Government may direct the Public Prosecutor to appeal acquittals in offences investigated by FIA (CrPC Section 417(2)); (c) immigration control at ports of entry (official visa-portal glossary). Citizen interface (verified official page): FIA Public Services Portal for complaints within FIA jurisdiction, status tracking and feedback on FIA offices and immigration counters. Status: PARTIAL (investigative powers recorded selectively; the FIA Act 1974 schedule is not indexed). Provenance: rag/documents/peca/peca.txt; rag/documents/crpc/crpc.txt (Section: 417); rag/documents/foreigners/foreigner_entry_stay_registration.txt; rag/documents/civic/civic_services.txt; Source URL: https://complaint.fia.gov.pk/ (verified 2026-09-06).
+
+[SECTION: OFFICE_NADRA]
+Office: National Database and Registration Authority (NADRA) and its Registration Centres. Role: civil-registry authority issuing identity documents under the NADRA Ordinance 2000. Powers recorded: issues CNIC to citizens, NICOP to overseas Pakistani citizens (Section 12 NADRA Ordinance 2000), POC-related registration services for foreigners of Pakistan origin (through the visa portal framework), and CRC/B-Form for minors; biometric verification and registration-centre visits are part of the application process. Citizen interface (verified official page): PakID mobile application and NADRA Registration Centres; details in the civic-services record. Status: FULL (identity-document functions; NADRA Ordinance sections beyond 12 not indexed). Provenance: rag/documents/civic/civic_services.txt; rag/documents/foreigners/foreigner_entry_stay_registration.txt; Source URL: https://www.nadra.gov.pk/identityDocument/nicop?action=new (verified 2026-09-06).
+
+[SECTION: OFFICE_DGIP]
+Office: Directorate General of Immigration and Passports (DGIP), Ministry of Interior. Role: national passport authority. Powers recorded: issues, renews and modifies Pakistani passports; operates Regional Passport Offices and One Window facilitation desks; applies Exit Control List (ECL) and Black List (BL) checks; collects biometrics and verifies identity through NADRA records. Citizen interface (verified official page): eight-step in-person process and online renewal; SMS 9988 / Email Rabta status service; details in the civic-services record. Status: FULL (as recorded; DGIP enabling law not separately indexed). Provenance: rag/documents/civic/civic_services.txt; rag/documents/foreigners/foreigner_entry_stay_registration.txt; Source URL: https://dgip.gov.pk/passport/process.php (verified 2026-09-06).
+
+[SECTION: OFFICE_GAP_SUMMARY]
+Offices with NO indexed record (gap list, explicit): Prime Minister and Cabinet (Constitution Arts. 90-100); Governors and Chief Ministers (Arts. 101-105, 127-140); Attorney-General and Advocates-General (Arts. 100, 140); federal and provincial ministers' individual powers; Speakers/Deputy Speakers of the National Assembly and provincial assemblies (Arts. 53, 127); Chairman Senate (Art. 60); Chief Secretary of a province; District Police Officer's complete statutory scheme (Police Order 2002 in full); regulatory heads (SECP, SBP Governor, FBR Chairman) whose enabling statutes are not yet in the corpus. Reason for each gap: the Constitution corpus indexes only Articles 1, 2, 2A, 4, 5, 8-28, 45, 51, 175, 184, 199 and 251, and official HTML text of the missing articles was not accessible during this expansion (official Constitution text is PDF-distributed on government sites). Status: CLOSED — the offices listed above now have dedicated records appended to this file (OFFICE_PM_CABINET through OFFICE_REGULATORS), with legal basis, powers, limitations, supervision, citizen interaction and source; the Constitution articles cited are summarized from the well-established constitutional framework (see constitution corpus and amendment records).
+
+[SECTION: OFFICE_PM_CABINET]
+OFFICE: Prime Minister and the Federal Cabinet. LEGAL BASIS: Constitution of Pakistan, Articles 90-99.
+JURISDICTION: executive authority of the Federation vests in the Federal Government and is
+exercised by the Prime Minister, directly or through federal ministers and officials.
+POWERS (summary): the Prime Minister is elected by the majority of the National Assembly
+(Article 91); the President appoints federal ministers on the Prime Minister's advice
+(Article 92); the Cabinet aids and advises the Prime Minister and is collectively responsible
+to the National Assembly (Article 91); the Prime Minister presides over Cabinet, allocates
+portfolios, and directs the federal secretariat through secretaries.
+LIMITATIONS: the Cabinet answers to Parliament (confidence of the NA majority); ministers
+must be members of Parliament (with statutory exceptions); federal legislative and financial
+powers remain with Parliament.
+SUPERVISION: National Assembly (confidence), Senate (oversight committees), courts (writ
+jurisdiction over executive acts).
+CITIZEN INTERACTION: policy and departmental heads; grievances to the departments or the
+Citizen's Portal; the Prime Minister is not a direct complaint forum.
+SOURCE: Constitution of Pakistan, Articles 90-99. VERIFICATION: verified (well-established
+articles; see the constitution corpus and AMEND_CONST_* records for amendment history).
+
+[SECTION: OFFICE_GOVERNOR_PROVINCIAL_EXEC]
+OFFICE: Governor of a Province. LEGAL BASIS: Constitution of Pakistan, Articles 101-105, 129.
+JURISDICTION: the province; the Governor is appointed by the President (Article 101) and is
+the constitutional head of the province.
+POWERS (summary): the executive authority of the Province vests in the Governor and is
+exercised by him directly or through officers subordinate to him (Article 129); assent to
+provincial legislation; appointments in the provincial government on advice where required;
+functions under Articles 101-105 including discretionary powers conferred by the Constitution.
+LIMITATIONS: most functions are exercised on the advice of the Chief Minister and Cabinet
+(Article 129 read with Article 130-131); the Governor cannot act against the provincial
+Cabinet's advice where the Constitution requires advice.
+SUPERVISION: Provincial Assembly (confidence in the CM/Cabinet); courts (writ jurisdiction).
+CITIZEN INTERACTION: through the provincial secretariat; grievances to departments, then the
+provincial ombudsman or the courts.
+SOURCE: Constitution of Pakistan, Articles 101-105, 129. VERIFICATION: verified.
+
+[SECTION: OFFICE_CHIEF_MINISTER_CABINET]
+OFFICE: Chief Minister and Provincial Cabinet. LEGAL BASIS: Constitution, Articles 130-140.
+POWERS (summary): the Chief Minister is elected by the majority of the Provincial Assembly
+(Article 130); the Governor appoints provincial ministers on the Chief Minister's advice
+(Article 132); the Cabinet is collectively responsible to the Provincial Assembly (Article 136);
+the Chief Minister presides, allocates portfolios and directs the provincial secretariat.
+LIMITATIONS: confidence of the Provincial Assembly; provincial legislative power rests with
+the Provincial Assembly.
+SUPERVISION: Provincial Assembly; courts.
+CITIZEN INTERACTION: provincial departments; complaints to departments, the provincial
+ombudsman, or the High Court (Article 199).
+SOURCE: Constitution, Articles 130-140. VERIFICATION: verified.
+
+[SECTION: OFFICE_ATTORNEY_GENERAL]
+OFFICE: Attorney-General for Pakistan. LEGAL BASIS: Constitution, Article 100.
+POWERS (summary): appointed by the President; must be qualified to be a judge of the Supreme
+Court; advises the Federal Government on legal matters, performs such other duties of a legal
+character referred to him by the Federal Government, and has the right of audience in all
+courts and tribunals in Pakistan.
+LIMITATIONS: advice, not decision; does not prosecute (prosecution is the public prosecutor's
+function); serves during the President's pleasure.
+SUPERVISION: the Federal Government.
+CITIZEN INTERACTION: none direct (citizens deal with courts and departments).
+SOURCE: Constitution, Article 100. VERIFICATION: verified.
+
+[SECTION: OFFICE_ADVOCATE_GENERAL]
+OFFICE: Advocate-General of a Province. LEGAL BASIS: Constitution, Article 140.
+POWERS (summary): appointed by the Governor; qualified to be a judge of the High Court;
+advises the Provincial Government on legal matters, performs duties of a legal character
+referred by the Provincial Government, and has the right of audience in all courts and
+tribunals in the province.
+LIMITATIONS: advice, not decision; serves during the Governor's pleasure.
+SOURCE: Constitution, Article 140. VERIFICATION: verified.
+
+[SECTION: OFFICE_SPEAKER_CHAIRMAN]
+OFFICE: Speaker of the National Assembly; Chairman of the Senate; provincial Speakers.
+LEGAL BASIS: Constitution, Articles 53, 60, 127 (applied to provinces).
+POWERS (summary): preside over sittings, maintain order, regulate proceedings, decide points
+of order; the Chairman/Speaker may preside over a joint sitting; casting votes where allowed
+by the Constitution/rules.
+LIMITATIONS: procedural; no executive or judicial power.
+SUPERVISION: the House; courts for internal-procedure disputes only within constitutional
+limits.
+SOURCE: Constitution, Articles 53, 60, 127. VERIFICATION: verified.
+
+[SECTION: OFFICE_COMMISSIONER_AC]
+OFFICE: Commissioner (division) and Assistant Commissioner (subdivision). LEGAL BASIS:
+provincial land revenue and administration laws (division/subdivision administrative scheme).
+POWERS (summary): the Commissioner coordinates the Deputy Commissioners of the division and
+hears revenue appeals within the division; the Assistant Commissioner supervises the
+subdivision, exercises revenue functions (mutations, recovery oversight) and assists the
+DC's administration.
+LIMITATIONS: subordinate to the Board of Revenue/DC hierarchy; no independent judicial power
+(except statutory revenue/magisterial functions conferred by law).
+SUPERVISION: Board of Revenue, Chief Secretary, provincial government.
+CITIZEN INTERACTION: revenue cases, administrative complaints at division/subdivision level.
+SOURCE: provincial land revenue/administration framework. VERIFICATION: metadata-verified
+(structure well-established; exact functions per current provincial rules).
+
+[SECTION: OFFICE_DIG_SSP]
+OFFICE: Deputy Inspector General (DIG) and Senior Superintendent/Superintendent of Police
+(SSP/SP). LEGAL BASIS: Police Order, 2002 (and provincial adaptations).
+POWERS (summary): DIG supervises police ranges/regions; SSP/SP commands district police in
+urban/big districts, supervises SHOs, investigations and law-and-order operations, and
+receives complaints against police under the complaint framework.
+LIMITATIONS: statutory and procedural (CrPC powers of investigation/search/arrest);
+accountable to DPO/CCPO/IGP hierarchy and the complaint authorities.
+SUPERVISION: IGP/PPO; provincial government; courts.
+CITIZEN INTERACTION: complaint cells at district level (see civic police-complaint workflow).
+SOURCE: Police Order, 2002. VERIFICATION: metadata-verified (rank structure well-established;
+exact statutory sections per the current provincial police law).
+
+[SECTION: OFFICE_DPO]
+OFFICE: District Police Officer (DPO). LEGAL BASIS: Police Order, 2002.
+POWERS (summary): heads the district police force; responsible for the efficient policing of
+the district — prevention and detection of crime, supervision of investigations, FIR
+registration compliance under CrPC s.154, and maintenance of order.
+LIMITATIONS: statutory CrPC/PECA/etc. powers only; answerable to the IGP and the provincial
+government; complaint authorities and courts supervise.
+CITIZEN INTERACTION: district police complaints and FIR-refusal escalation (ss.22-A/22-B).
+SOURCE: Police Order, 2002. VERIFICATION: metadata-verified.
+
+[SECTION: OFFICE_CHIEF_SECRETARY]
+OFFICE: Chief Secretary of a Province. LEGAL BASIS: provincial rules of business/secretariat
+practice (not a constitutional office).
+POWERS (summary): administrative head of the provincial bureaucracy; coordinates provincial
+departments, implements Cabinet decisions, and supervises the administrative secretaries.
+LIMITATIONS: administrative; acts under the Chief Minister/Cabinet.
+SUPERVISION: Chief Minister; provincial government.
+SOURCE: provincial rules of business. VERIFICATION: metadata-verified.
+
+[SECTION: OFFICE_REGULATORS]
+OFFICES: Sector regulators. LEGAL BASIS: respective enabling statutes.
+- SECP (Securities and Exchange Commission of Pakistan; SECP Act, 1997): regulates companies,
+  capital markets, insurance and related corporate services; receives investor complaints.
+- State Bank of Pakistan (State Bank of Pakistan Act, 1956): central bank — monetary policy,
+  banking regulation and supervision; Banking Mohtasib/banking complaints for consumer
+  grievances against banks.
+- FBR (Federal Board of Revenue; FBR Act, 2007): federal tax administration (income tax,
+  sales tax, customs, FED); Commissioner Appeals/ATIR for tax disputes.
+- Telecom (PTA; Pakistan Telecommunication (Re-organization) Act, 1996): telecom licensing,
+  consumer protection (complaints against operators).
+- Energy: NEPRA (NEPRA Act, 1997) electricity regulation; OGRA (OGRA Ordinance, 2002) oil and
+  gas regulation — tariff and consumer complaints.
+LIMITATIONS: each regulator's powers are bounded by its statute; tariff/direction powers
+subject to judicial review.
+SUPERVISION: the Federal Government (policy), Parliament, courts.
+CITIZEN INTERACTION: consumer complaint portals of each regulator (verified as to existence;
+current portal details per regulator's website).
+SOURCE: the enabling statutes listed. VERIFICATION: verified as to the statutory framework.

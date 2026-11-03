@@ -1,0 +1,57 @@
+[SECTION: GCUH_QUALITY_POLICY_PRINCIPLES]
+Title: GCU Hyderabad Quality Policy — commitment, guiding principles and HEC/PSG alignment
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: "Quality Policy — Government College University Hyderabad", published on the official site
+Source URL: https://www.gcuh.edu.pk/downloads/Quality%20Policy%20GCUH.pdf
+Version: Quality Policy as published; the preamble aligns it with "the Higher Education Commission's (HEC) Quality Assurance Policy, PSG-2023" — the document's own date line was not readable as a notification date, so none is asserted
+Legal status: Institutional policy statement; amendment status not independently verified
+Retrieved: 2026-10-18
+Extraction note: text extracted with pdftotext -layout from the official PDF; wording verbatim.
+
+Preamble: "Government College University Hyderabad is steadfastly committed to achieving and sustaining the highest standards of excellence in all its endeavors, including academic programs, research, and administrative functions. Our mission is to provide an educational environment that fosters intellectual growth, innovative research, and community engagement. This Quality Policy serves as our guiding document, establishing the principles and framework for ensuring continuous improvement and accountability across the institution. We are dedicated to aligning our quality assurance practices with the Higher Education Commission's (HEC) Quality Assurance Policy, PSG-2023, and fostering a culture where quality is the shared responsibility of every member of the university community."
+Guiding Principles as numbered in the document: "1. Student-Centricity: We place our students at the heart of our mission, striving to meet their needs and exceed their expectations through quality education and support services." "2. Continuous Improvement: We embrace a culture of Continuous Quality Improvement (CQI), using systematic feedback and data analysis to regularly evaluate and enhance our academic and administrative processes." "3. Accountability: We are committed to transparency and accountability in our operations, ensuring that all quality assurance activities are conducted with integrity and the outcomes are communicated to relevant stakeholders." "4. Stakeholder Engagement: We actively involve all stakeholders—including students, faculty, staff, alumni, and employers—in our quality assurance processes to ensure that our programs remain relevant and impactful." "5. Compliance: We are committed to full compliance with all national quality assurance standards and policies, including those mandated by the HEC."
+
+[SECTION: GCUH_QEC_ROLE_AND_CONTACT]
+Title: GCU Hyderabad Quality Enhancement Cell — mandate, objectives and contact route
+Authority: Government College University Hyderabad (GCUH), Quality Enhancement Cell
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH official QEC page
+Source URL: https://gcuh.edu.pk/pages/qec.html
+Version: page text as published on 2026-10-18; the page's "Activity Calandar" attachment is dated 2024-25 in its file name
+Legal status: Institutional unit description — not an operative student regulation; it creates no entitlement or deadline by itself
+Retrieved: 2026-10-18
+
+"The Quality Enhancement Cell (QEC) at Government College (GC) University aims to elevate a culture of sustainable mechanism of quality assurance at GC University Hyderabad through stake holder's engagement, enduring self-evaluation and ongoing development. The QEC's operations orbit around the quality of teaching, learning, research and management under the umbrella of HEC criterion."
+Objectives as published include: "Implementation of the HEC assessment procedures to ensure quality standards for the promotion of academic and research excellence."; "To develop tangible feedback mechanism and carrying out multidimensional analysis of each academic and research programs to ensure the quality assurance for further improvements in policy standards."; "To Act as a co-ordination office between University and national and international organizations for capacity building and training programs."; "To facilitate academic departments to Adopt appropriate standards to get accreditation with relevant accreditation councils."
+Contact as published: "Department Of Quality Enhancement Cell, GC UNIVERSITY HYDERABAD, SINDH, PAKISTAN - 71000, Telephone: +92-022 (2664198)".
+Scope note: the QEC page publishes quality-assurance activity and a calendar, not a student complaint-handling procedure with time limits. A student seeking a grievance route must not be told that the QEC page establishes one.
+
+[SECTION: GCUH_ICPC_AND_DEVELOPMENT_OFFICES]
+Title: GCU Hyderabad ICT services (ICPC) and University Development Office — what each unit actually provides
+Authority: Government College University Hyderabad (GCUH), Directorate of ICPC / University Development Office
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH official pages
+Source URL: https://gcuh.edu.pk/pages/icpc_mis.html , https://gcuh.edu.pk/pages/udo.html
+Version: page text as published on 2026-10-18
+Legal status: Institutional service description — no sanction, deadline or entitlement is created by these pages
+Retrieved: 2026-10-18
+
+ICPC: "The Information Communication Processing Center (ICPC) is the central technology and IT services unit of Government College University Hyderabad (GCUH). ICPC is responsible for managing and supporting the University's digital infrastructure, software systems, network services, and technology initiatives in support of academic and administrative operations." It "operates through three major areas": "Software & IT Services" (official email, Turnitin, Microsoft Windows/Office, custom web applications, online systems); "Network & Infrastructure Services" (PERN Internet connectivity, optical fiber networks, security surveillance systems, telephone exchange); "Technology Initiatives" (smart classrooms, computer laboratories, video conferencing systems, computers and laptops for faculty and administration). Key services include "Official Email Management for Faculty, Staff, and Students".
+UDO: "The University Development Office (UDO) is dedicated to enhancing the financial independence and infrastructure of public sector universities in Pakistan. A key focus of the UDO is to help faculty members secure funding for research-based, sustainable projects." It supports "Funding opportunities for faculty to launch research-based projects", "Diversification of revenue streams through partnerships, intellectual property management, and commercialization of research", and "The development of eco-friendly campuses and energy-efficient infrastructure".
+Relevance for a student: the digital service that matters procedurally is the GCUH Campus Management System (CMS) recorded in the admission and fee documents — CMS, not ICPC, is where challans are generated and uploaded.
+
+[SECTION: GCUH_RULES_PUBLISHED_ONLY_AS_OFFICE_DIRECTORY]
+Title: GCU Hyderabad categories with no rule text on the official pages — recorded as a coverage gap
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH official pages, retrieved 2026-10-18
+Source URL: https://gcuh.edu.pk/pages/examinations.html , https://gcuh.edu.pk/pages/finaid.html , https://gcuh.edu.pk/pages/finance.html , https://gcuh.edu.pk/pages/dpd.html , https://gcuh.edu.pk/pages/dpgs.html , https://gcuh.edu.pk/pages/registrar.html , https://gcuh.edu.pk/pages/sports.html , https://gcuh.edu.pk/pages/affiliated-colleges.html , https://gcuh.edu.pk/pages/points_routes.html
+Version: retrieval of 2026-10-18
+Legal status: Coverage gap — verified absence of rule text on these pages, not absence of the rules themselves
+Retrieved: 2026-10-18
+
+These official pages were fetched successfully (HTTP 200) but publish staff directories, designations and contact details rather than operative rules. Extractable body text after removing the site navigation, measured on 2026-10-18: examinations 257 characters, finaid 224, finance 175, dpd 120, dpgs 155, registrar 254, sports 121, affiliated-colleges 54, points_routes 88. The Controller of Examinations page names the post-holder and staff only; the Directorate of Financial Aid page names a Director, an Assistant and a Clerk only.
+Consequently the following GCUH-specific categories have NO verified institutional rule text in this corpus and must not be answered as though they did: examination ordinances and grading/degree-completion regulations; grade-sheet and transcript procedure; hostel rules; discipline, rustication and appeal schedules; the university's own scholarship/financial-aid eligibility criteria and deadlines; and any GCUH-specific fee-refund practice beyond the admission policy's reference to the HEC Fee Refund Policy.
+What IS verified for GCUH in this corpus is narrower: the 2026-27 undergraduate admission policy (including the 75% attendance floor, the 40% pre-entry-test minimum, the CPN weightage, quota and self-finance routes, the challan/CMS payment channel, the fraud consequences and the admission-cancellation route), the published undergraduate fee schedule tables, the 2027 postgraduate admission announcements with their processing fee and dates, the Quality Policy, and the QEC/ICPC/UDO unit descriptions.
+A separate transport document ("GC UNIVERSITY POINTS ROUTES.pdf", https://www.gcuh.edu.pk/downloads/GC%20UNIVERSITY%20POINTS%20ROUTES.pdf) was readable (3,746 bytes of text) but contains vehicle route/stop tables with driver and incharge contact numbers — facility information, not a rule, and it is not indexed as a rule source.

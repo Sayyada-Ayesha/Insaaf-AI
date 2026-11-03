@@ -1,0 +1,871 @@
+# HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: Pakistan (Federal) — higher education
+Version: As published on the HEC policies pages, retrieved 2026-10-10 | Published/notified: 2026-10-10 | Effective: 2026-10-10 | Status: Current
+Provenance: sections below carry the canonical HEC URL for the document they were extracted from.
+Coverage area: D
+Verification note: Three separate HEC policies kept in one document because students ask about them together. Each section carries its own source URL.
+
+[SECTION: hec_student_welfare_policies_1_HEC_STUDENT_WELFARE_POLICIES]
+# HEC student welfare policies
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC student welfare policies
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Disability.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/Documents/HEC%20-%20POLICY%20FOR%20STUDENTS%20WITH%20DISABILITIES%20AT%20HEIs%20IN%20PAKISTAN.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Policy for Students with Disabilities at Higher Education Institutions in Pakistan 2021 (Amended) CONTENTS 1. Purposes And Principles of The Policy  2 2. Scope of The Policy  3 3. The Accessibility Committee and Disability Coordinators  3 4. Admissions - Related Matters  6 5. Process for Requesting Re asonable Accommodations  9 6. Types of Accommodations  11 7. Grievances  12 8. Funds to Support Reasonable Accommodations  13 9. Responsibilities of the Higher Education Commission……………………………………………………………….13 10. Re p orting Requirement, Further Advice and Guidance …………………………………………………………..13 POLICY FOR STUDENTS WITH DISABILITIES AT HIGHER EDUCATION INSTITUTIONS IN PAKISTAN
+
+[SECTION: hec_student_welfare_policies_2_1_PURPOSES_AND_PRINCIPLES_OF_THE_POLICY]
+# 1. PURPOSES AND PRINCIPLES OF THE POLICY
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 1. PURPOSES AND PRINCIPLES OF THE POLICY
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Disability.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/Documents/HEC%20-%20POLICY%20FOR%20STUDENTS%20WITH%20DISABILITIES%20AT%20HEIs%20IN%20PAKISTAN.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+1. PURPOSES AND PRINCIPLES OF THE POLICY
+1.1. The Higher Education Commission (“HEC”) is committed to the objective that no one should be denied access to higher education in Pakistan, which includes ensuring that people with disabilities have equal opportunities to access and attain higher education.
+1.2. This policy for students with disabilities at Higher Education Institutions (“HEIs”) aims to create an enabling environment for inclusive education in colleges and universities and facilitate the participation of students with disabilities in all academic and extra - curricular aspects of college and university education.
+1.3. The policy recognizes that disability covers a wide range of impairments and different disabilities can have varying impacts on study, work, and other aspects of life, warra nting special considerations by HEIs.
+1.4. This policy affirms that persons with disabilities are valuable members of society and the HEC and all HEIs have an obligation to undertake all reasonable actions to enable persons with disabilities to avail th e opportunities for higher education available to other students. Through this policy, the HEC endeavors to eliminate regulatory, physical, organizational, academic and social obstacles at HEIs that might hamper the academic and career pursuits of persons with disabilities and provide people with disabilities with equal educational opportunities, recognition of their inherent dignity, and protection of their rights.
+1.5. This policy has been made pursuant to the powers granted to the HEC under the Higher Education Commission Ordinance, 2002, and is binding on all HEIs in the country, whether operating in the public or private sectors, in accordance with the prescribed phased execution plan.
+1.6. This policy complements relevant national and provincial legislation for persons with disabilities. HEIs are advised to strictly follow the provisions of applicable law and the comply with the regulatory framework prescribed under the legislation and through this policy.
+1.7. Pakistan is a partner in the glob al movement for the socio - economic well - being of persons with disabilities having signed and ratified the UN Convention on the Rights of Persons with Disabilities and adopted the Sustainable Development Goals 2030 agenda. This policy is also intended to fu rther advance the objectives of these international commitments. Sustainable Development Goal 10, Reduce inequality within and among countries, includes empowerment and promotion of social, economic and political inclusion of all irrespective of age, sex, disability, race, ethnicity, origin, religion or economic or other status.
+1.8. This policy sets forth the HEC’s minimum standards with respect to students with disabilities at HEIs. It is mandated that no student shall be subjected to discrimination at any stage during their academic or professional pursuits on the basis of any disability.
+1.9. This policy supersedes all previous HEC policies on matters covered under this policy, which shall stand repealed from the date of notification of this policy.
+
+[SECTION: hec_student_welfare_policies_3_2_SCOPE_OF_THE_POLICY]
+# 2. SCOPE OF THE POLICY
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 2. SCOPE OF THE POLICY
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Disability.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/Documents/HEC%20-%20POLICY%20FOR%20STUDENTS%20WITH%20DISABILITIES%20AT%20HEIs%20IN%20PAKISTAN.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+2. SCOPE OF THE POLICY
+2.1. This policy is applicable to all students with disabilities at HEIs, including enrolled students, prospective students and students that acquire disabilities during their studies.
+2.2. For the purposes of this policy, the term “disability” shall mean an y long - term physical, mental, intellectual, or sensory impairments which may hinder a student’s ability to effectively participate in normal day - to - day activities on an equal basis with others; provided, that the definition will also include any additional conditions covered under the applicable disability focused laws of the jurisdiction in which the HEI is located.
+2.3. The term “Disability Certificate” as used in this policy shall mean the disability certificate issued for persons with disabilities from the National/Provincial Council for the Rehabilitation of Disabled Persons or a CNIC with a disability logo or proof of registration in NADRA’s database as a ‘special person’.
+
+[SECTION: hec_student_welfare_policies_4_3_THE_ACCESSIBILITY_COMMITTEE_AND_DISABILITY_C]
+# 3. THE ACCESSIBILITY COMMITTEE AND DISABILITY COORDINATORS
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 3. THE ACCESSIBILITY COMMITTEE AND DISABILITY COORDINATORS
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Disability.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/Documents/HEC%20-%20POLICY%20FOR%20STUDENTS%20WITH%20DISABILITIES%20AT%20HEIs%20IN%20PAKISTAN.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+3. THE ACCESSIBILITY COMMITTEE AND DISABILITY COORDINATORS
+3.1. The Accessibility Committee: HEIs shall establish a standing Accessibility Committee comprising of five (05) members to be appointe d by the Vice Chancellor/Rector of the HEI, which shall include:
+a. Director Student Affairs or senior university officer / faculty designated as Chair of the accessibility committee.
+b. two members from the faculty (one male and one female, both female in case of all women university)
+c. at least one member from the student body as detailed subsection 3.2 (e)
+d. one representative of psychological wellbeing committee / university’s medical
+center / planning & development department e. one staff member d eputed as secretary to the accessibility committee.
+3. 1(a) General Provisions for work of the Accessibility Committee:
+a. in absence of the Chair, the senior most member shall act as Chair of the meeting.
+b. the Chair and the members shall hold office for th e period of three years and shall in no case be eligible for re - appointment for more than one similar term.
+c. the Vice Chancellor shall appoint all members of the accessibility committee
+except the ex - officio members and the representative of the student bo dy
+d. the disabled students shall nominate their representative on the accessibility
+committee.
+3.2. Roles and Responsibilities of the Accessibility Committee: The Accessibility Committee shall be responsible for the following:
+a. determining what accommodations are needed for students with disabilities at the HEI including, where necessary, arranging for disability assessment by a professional; b. arranging and overseeing the provision of reasonable accommodations in accordance with this policy;
+c. arranging for counseling by a psychiatrist for students with disabilities if a student
+requests or whenever substantial need is established;
+d. providing information and advice to students and parents on the facilities and
+support available at the HEI for persons with disabilities; e. advising the faculty on the policies and procedures relevant to students with disabilities and how best to include and accommodate these students; f. advising the HEI on ways to improve access for students with disabilities vis - à - vis admissions, examinations, dissertations and other affairs of the institution and on the implementation of all relevant disability - related legislation; g. raising funds for the provision or development of facilities for students with disabilities at the HEI whenever needed; h. promoting awareness on different disabilities and disability related issues and the need to protect and promote the rights of persons with disabilities at the HEI through dedicated seminars, fundraising events, discussions, workshops and community engagement activities and communicating the role of the Disability C oordinators to students, staff and faculty; and
+i. liaising with philanthropic organizations working for persons with disabilities to
+enhance the capacities of their institutions to engage with persons with disabilities and to improve the facilities availa ble for them at the HEI.
+
+[SECTION: hec_student_welfare_policies_5_3_3_DECISIONS_OF_THE_ACCESSIBILITY_COMMITTEE_T]
+# 3.3 Decisions of the Accessibility Committee : The quorum requirement for meetings of the 
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 3.3 Decisions of the Accessibility Committee : The quorum requirement for meetings of the 
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Disability.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/Documents/HEC%20-%20POLICY%20FOR%20STUDENTS%20WITH%20DISABILITIES%20AT%20HEIs%20IN%20PAKISTAN.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+3.3. Decisions of the Accessibility Committee : The quorum requirement for meetings of the Accessibility Committee shall be at least three members of the committee. Decisions shall be made by a majority of the members present.
+3.4. The Disability Coordinators: The Vice Chancellor/Rector of the HEI shall designate two (02) non - student members of the Accessibility Committee to be the Disability Coordinators for students with disabilities at the HEI, provided that in the case of coeducation al or all - women HEIs, at least one of the Disability Coordinators shall be a woman. The name and contact details of the Disability Coordinators will be displayed on the website, prospectus, brochures, and student handbooks of the HEI and outside the Offic es of Vice Chancellor/Rector and Registrar.
+3.5. Roles and Responsibilities of the Disability Coordinators: The Disability Coordinators shall be responsible for the following:
+a. to be a point of liaison between the Accessibility Committee and students with disabilities including connecting students with disabilities to the Accessibility Committee for determination of their accommodation requirements; b. guide and advise students with disabilities interested in seeking admission and enrollment at the HEI on t he facilities and accommodations available and arrangeable at the HEI for persons with disabilities;
+c. have regular, periodic meetings with enrolled students with disabilities and maintain
+records of these interactions. This practice should be used to ass ess any emerging needs the students may have and to decide the appropriate course of action to facilitate the student;
+d. advise and facilitate enrolled students with disabilities during their studies on how to
+fulfill the administrative requirements of the institution and benefit from other services provided at the HEI such as accommodations, library, career counselling, extra - curricular opportunities etc.
+e. refer students with disabilities to the Accessibility Committee for arrangement of psychiatric counseling if a student requests or academic coaching whenever needed; f. ensure that the students’ access requirements are identified and made known to relevant faculty well ahead of commencement of classes; g. advise students with disabili ties before the commencement of each semester or academic year on their course selection and learning activities entailed; and h. seek and record information on access requirements of individual student with disability enrolled at the HEI.
+
+[SECTION: hec_student_welfare_policies_6_4_ADMISSIONS_RELATED_MATTERS]
+# 4. ADMISSIONS - RELATED MATTERS
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 4. ADMISSIONS - RELATED MATTERS
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Disability.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/Documents/HEC%20-%20POLICY%20FOR%20STUDENTS%20WITH%20DISABILITIES%20AT%20HEIs%20IN%20PAKISTAN.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+4. ADMISSIONS - RELATED MATTERS
+4.1. Application Process: Before applying for admission, students with disabilities should be encouraged to visit the HEI and the HEI’s website to assess the suitability of the premises and its surroundings. The HEI shall ensure that applicants have full information about the supp ort available and can request additional accommodations as needed. The following are the details of the process that must be followed with respect to HEI admissions:
+a. Admission application forms will include a section where students can convey informatio n on their disability. In certain circumstances, such as to avail the accommodations under Section 4.2 of this policy, applicants shall be required to provide attested copies of a Disability Certificate (as defined in Section 2.3 of this policy). The admis sion application form shall also include a questionnaire for students with disabilities to explain their need for accommodations related to any entrance exams. Moreover, the universities shall take steps to improve accessibility of the admission forms / pr ospectus and all other additional details that might be required or useful for students with disabilities in the manner that accommodate the needs of the different disabilities.
+b. It is important to note that there shall not be any adverse impact on the a pplication of a prospective student based on his or her disclosure of a disability. The application will be processed in the same manner as other applications, without any discrimination on the basis of the disclosed disability.
+c. Applicants will be made aware that if they disclose their disability, the information
+provided on their application will, subject to applicable legislation, be retained on the HEI’s confidential records and made available to relevant individuals involved in the admissions process and the members of the Accessibility Committee, which will provide necessary support during the application, interview, and entrance test process for students with disabilities.
+d. Applicants who have declared a disability on their application form will b e consulted
+about their needs and given advice on how the HEI will accommodate their needs.
+e. The HEI shall provide contact details for the Disability Coordinators and information on facilities available for students with disabilities on their prospectus, website, and advertisement for admission.
+f. In case, the HEI does not have appropriate facilities to provide reasonable accommodations for students with disabilities to study at their institution on legitimate grounds, and the student has otherwise been deemed eligible to be admitted to the university in terms of the admission criteria, the Accessibility Committee shall report the matter to the Vice Chancellor/Rector of the institution and the HEI shall make necessary arrangements to provide the opportuni ty for the student to undertake the program of study at the HEI.
+g. Upon admission, students with disabilities will be offered an opportunity to provide additional information and documentation about their accessibility needs.
+
+[SECTION: hec_student_welfare_policies_7_4_2_ENTRANCE_EXAM_SEVERAL_HEIS_REQUIRE_APPLICA]
+# 4.2 Entrance exam: Several HEIs require applicants to take an entrance exam. Any such exam
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 4.2 Entrance exam: Several HEIs require applicants to take an entrance exam. Any such exam
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Disability.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/Documents/HEC%20-%20POLICY%20FOR%20STUDENTS%20WITH%20DISABILITIES%20AT%20HEIs%20IN%20PAKISTAN.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+4.2. Entrance exam: Several HEIs require applicants to take an entrance exam. Any such exam must conform to the following requirements:
+a. Students with disabilities must be able to request special arrangements for entrance tests or interviews as per their needs, subject to the requirements of Section 4.1(a).
+b. The HEI will ensure the provision of reasonable accommodations for students with disabilities depending on the type of their disability and need during their entrance exam. For example, students with visual impairment may be provided modified exam materials such as Braille papers (Grade 1/un - contracted or Grade 2/contracted), large print exams: either A4 size (18pt bold font) or A3 size (15.5pt font). Students with hearing impairments may be provided special materials or lip - reading test.
+Depending on the type of disability, including learning disabilities, arrangements such as the following may be made: extra time (25 - 100 per cent extra time depending on the student’s need), supervised breaks during the examination, u se of a computer, use of an amanuensis, use of a reader or a scribe, option for an oral exam, separate invigilation, or a private area to take tests. For physical disabilities, appropriate accommodations shall be provided depending on the individual case, including providing wheelchair access etc. However, the Accessibility Committee shall ensure that the accommodation provided is reasonably related to the type of disability, so that while providing the accommodation, no one is given an unfair advantage.
+c. In some cases, students with disabilities may be exempted from a part of an
+examination because of a disability. The HEI may decide to use an alternate assessment tool to ascertain suitability of the student for the degree program. This will be decided by the Academic Council of the HEI.
+d. Students with disabilities must be informed well in advance about the arrangements
+being provided for them to undertake the entrance exam.
+e. In case the entrance exam is administered by a third party, if the designated test administrator does not provide appropriate facilities for students with disabilities to suitably take the test, the HEI will arrange for an alternate entrance exam for students with disabilities.
+4.3. Financial aid, quotas, and age relaxation requirements: People with disabilities may qualify for several benefits including those presented below:
+a. Students with disabilities may qualify for certain benefits under the provisions of the applicable disability laws of the jurisdiction in which they are located. The HEI shall ensure the provision of such benefits in accordance with relevant legislation. I n the absence of, or in addition to, any such benefits, the HEI shall adopt a needs - based system to facilitate students with disabilities whose financial situation may not otherwise permit them to afford their educational and any additional expenses relate d to their needs. The need basis of students with disabilities shall be determined in accordance with the criteria applicable in any government program prescribed for needy students. Presently, the benchmark laid down in Ehsaas Undergraduate Scholarship Pr ogram may be used as standard. For all needy students, all institutional charges including tuition fee, hostel fee and utility charges shall be waived, to the extent not covered from any other scholarship / support program. The website and prospectus for t he HEI will clearly mention any available fee waivers and concessions.
+b. Students with disabilities may qualify for age relaxation in admission requirements and disability quotas under applicable legislation, and the HEI shall ensure compliance in accorda nce with relevant legislation. The HEI’s website and prospectus will clearly mention any designated quota for persons with disabilities and any age relaxation options.
+c. Reservation of at least one seat for higher qualification i.e. MS/MPhil and PhD for
+s tudents with disabilities in all public sector universities / institutions
+d. Age relaxation up to ten years for admission to all educational programs.
+
+[SECTION: hec_student_welfare_policies_8_5_PROCESS_FOR_REQUESTING_REASONABLE_ACCOMMODAT]
+# 5. PROCESS FOR REQUESTING REASONABLE ACCOMMODATIONS
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 5. PROCESS FOR REQUESTING REASONABLE ACCOMMODATIONS
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Disability.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/Documents/HEC%20-%20POLICY%20FOR%20STUDENTS%20WITH%20DISABILITIES%20AT%20HEIs%20IN%20PAKISTAN.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+5. PROCESS FOR REQUESTING REASONABLE ACCOMMODATIONS
+5.1. The HEIs shall provide reasonable accommodations to students with disabilities whenever necessary to encourage their participation in higher education including in classrooms, libraries, laboratories, cafeterias and sports centers. The website of the HEI and other web - based services such as student portals, LMS etc. shall accordingly conform to level AA of the Web Content Accessibility Guidelines (WCAG).
+5.2. It is important to note that the duty of HEIs to provide support and necessary accommodations to students wit h disabilities is an anticipatory duty. In other words, the HEIs should have preparedness to offer reasonable accommodations to students and should not wait to initiate action until requested.
+5.3. All students will be informed about options to request reasonable accommodations commensurate with their need during the orientation session. Students with disabilities will be offered an assessment of their study and support needs at the earliest opportunity, preferably before they enroll, or shortly after th e commencement of their program. As evidence of their disability for the purposes of this assessment, the Accessibility Committee may rely on a medical certificate from a registered medical practitioner, documenting the disability and the need for any acco mmodations.
+5.4. At the commencement of each course, staff * shall also clearly inform the students that any student who, because of a disability, may require special accommodations in order to meet the course requirements should contact the instructor o r the Disability Coordinators as soon as possible so that requisite arrangements can be made. Faculty are encouraged to use textbooks that are available in alternate format. It may not be necessary to rewrite a course to accommodate students with disabilit ies; simply modifying the presentation of materials may make it fully accessible.
+5.5. It is important to note that in making its assessment, the Accessibility Committee will strive to understand and recommend reasonable accommodations specifically focusi ng on the needs of the individual student rather than recommending generic accommodations that may apply to a certain category a disability. Once an assessment has been conducted, the Accessibility Committee shall forward its directions to the relevant imp lementing authority, provided that in case of any accommodations that are directly related to examinations and assessments (i.e.
+listed under Section 6.2), approval of the competent authority designated by the HEI shall be required before implementation.
+5.6. The views of the student with disabilities will be taken into consideration at all times during the assessment of their n eeds. The assessment report, containing detailed recommendations, will be shared with the student prior to its implementation.
+5.7. Alternatively, the class instructor, the Disability Coordinators and the student may mutually discuss and decide on any s pecial requirements needed (including those needed for mid - term or final examinations) and accommodations at the start of the course and share them with the Accessibility Committee if its support is needed.
+5.8. These accommodations may take considerab le time, and students should be informed of their course requirements, course components and reading materials well before the commencement of a course and on their accessibility requirements at the start of the course.
+5.9. The Accessibility Committee will monitor the implementation of any accommodations deemed necessary and reasonable.
+5.10. The University will ensure the provision of the same level of services and support to students who acquire any disability (or become aware of their disability) during the course of their study. Every reasonable opportunity will be provided to them to compl ete their studies successfully.
+5.11. Clause d eleted**.
+5.12. Faculty and staff should be aware of the use of accommodations and learning aides for students with disabilities.
+5.13. HEIs shall have training programs to train faculty, staff, and memb ers of the accessibility committee on best practices for accommodating students with disabilities and especially encourage its staff, faculty, and students to participate in development opportunities related to the provision of education to persons with di sabilities.
+5.14. Students with disabilities shall be encouraged to suggest improvements in accessibility and accommodation services available at the HEI. If one student with a particular type of disability had difficulty with a specific task, the faculty, the Accessibility Committee, and the Disability Coordinators may not assume that the next student with the same type of disability will experience similar problems. Students with disabilities are frequently sensitive about their disabilities, so faculty, the Disability Coo rdinators and staff should make every effort to treat these issues sensitively and confidentially.
+
+[SECTION: hec_student_welfare_policies_9_6_TYPES_OF_ACCOMMODATIONS]
+# 6. TYPES OF ACCOMMODATIONS
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 6. TYPES OF ACCOMMODATIONS
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Disability.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/Documents/HEC%20-%20POLICY%20FOR%20STUDENTS%20WITH%20DISABILITIES%20AT%20HEIs%20IN%20PAKISTAN.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+6. TYPES OF ACCOMMODATIONS
+6.1. Reasonable accommodations . In determining the accommodations to be provided, the Accessibility Committee shall make sure that these are reasonably tied to the nature and extent of the disability suffered. It is important to remember that accommodations are not advantages, but are a means of providing each student w ith full access to study programs.
+Depending on the case, accommodations may include:
+a. medical and mental health assistance such as access to counselling; b. changes to physical infrastructure of HEIs including addition of footpaths, road crossings, sign age etc., provision of ramps or special pathways, wheel chairs, furniture, boards, dedicated washrooms and other basic facilities retrofitting in the existing buildings and to ensure the same in future construction;
+c. Provision of free transport service w ithin the campus for students with disabilities in
+particular;
+d. human, digital and assistive technology support including (but not limited to) readings,
+lecture tape recordings, audiotaped or Brailled handouts, laptops or high - tech computers capable of r unning heavy screen reading, optical character readers, Braille displays, and other special software, Braille embossers, books, and magazines, Braille lab signs and equipment for students with visual impairments, lecture notes, headphones and induction, as sistive hearing devices, video cameras, recordings and video conferencing, for students with auditory impairments, wheelchair assistance, lecture notes, scribes for students with ambulatory difficulties, scanners and printers, special books/tutorials inclu ding large print versions, e - books or audio books, media with closed captioning, and wheelchair assistance; e. additional time, explanation and quiet areas; and f. any other accommodation as may be necessary as determined by the Accessibility Committee from time to time, provided that any such accommodations that are directly related to examinations and assessments, such as those under Section 6.2, shall require the student to provide a Disability Certificate (as defined in Section 2.3 of this policy).
+6.2. Examinations and assessments: At the commencement of each course appropriate arrangements for examination and assessment will be determined through mutual consultati on between the faculty, the Disability Coordinators and the student. To qualify for an accommodation, the student must provide a Disability Certificate (as defined in Section 2.3 of this policy). Alternate arrangements will be made with the view that stude nts are able to demonstrate their learning appropriately and suitably meet the criteria for progression or the conferment of an award. In general, standards for academic credit should not be modified. They may need accommodations in testing, but the conten t should not be changed unless necessary. Alternate arrangements for examination (for example, extra time, reduced distractions, use of assistive technology such as laptops, scribes etc.) must be approved in accordance with the provisions of Section 5.5 in advance. Where needed, students with disabilities can choose whether or not to have their disability declared on their exam booklet so an external examiner is alerted to their disability.
+6.3. Residential/on - campus housing related accommodations: The HEI wi ll ensure the provision of on - campus residential facilities/hostel to students with disabilities if they require it. In case of large universities with numerous hostel facilities, it is advised that special rooms be allocated to people with disabilities wi th washrooms, privacy and other necessary arrangements.
+6.4. Participation in sports, cultural, and recreational facilities: Students should be able to participate equally in all aspects of student life. HEIs must provide reasonable accommodations to allow stu dents with disabilities to take part in student activities and athletics if they wish to.
+6.5. Continuing education, vocational training, online education, skill development, distance learning, adult education, and training: Students with disabilities should have access to all necessary accommodations that would allow them to pursue all educational and skill related activities offered to their peers at HEIs.
+6.6. Accommodations during convocation: The HEI shall make every effort to ensure that students with dis abilities are able to participate fully in their convocations and enjoy this day along with all their fellow graduates.
+
+[SECTION: hec_student_welfare_policies_10_7_GRIEVANCES]
+# 7. GRIEVANCES
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 7. GRIEVANCES
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Disability.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/Documents/HEC%20-%20POLICY%20FOR%20STUDENTS%20WITH%20DISABILITIES%20AT%20HEIs%20IN%20PAKISTAN.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+7. GRIEVANCES
+7.1. Any grievances pertaining to disability services available at the HEI or any complaint by a student with disability concerning discrimination, abuse or mistreatment by another student, staff or faculty will be submitted to the Disability Coordinators. HEIs will ensure that students are aware of the process for filing a grievance. If they are unable to resolve the concern, the Accessibility Committee may be approached. The matter may be referred to the Vice Chancellor if the issue is not appropriately resolv ed by the Accessibility Committee.
+7.2. If the grievance concerns a Disability Coordinator or a member of the Accessibility Committee, the complaint shall be received directly by the office of the Vice Chancellor/Rector, who shall replace the person aga inst whom the complaint has been made if substantial grounds for removal are established on grounds such as harassment, discrimination, indolence etc.
+7.3. If any complaint made in accordance with Sections 7.1 and 7.2 has not adequately been addressed b y the office of the Vice Chancellor, the student may contact the HEC Disability Officer regarding the lack of compliance of the HEI with the provisions of this policy.
+
+[SECTION: hec_student_welfare_policies_11_8_FUNDS_TO_SUPPORT_REASONABLE_ACCOMMODATIONS]
+# 8. FUNDS TO SUPPORT REASONABLE ACCOMMODATIONS
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 8. FUNDS TO SUPPORT REASONABLE ACCOMMODATIONS
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Disability.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/Documents/HEC%20-%20POLICY%20FOR%20STUDENTS%20WITH%20DISABILITIES%20AT%20HEIs%20IN%20PAKISTAN.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+8. FUNDS TO SUPPORT REASONABLE ACCOMMODATIONS
+8.1. The HEIs shall establish a spec ial fund to support students with disabilities and annually contribute sufficient funds therein through exclusive budgetary provision. Additionally, all funds and contributions raised through philanthropy shall accrue in this fund. Whenever the HEI or a st udent with disabilities’ own financial resources are deficient in meeting an accessibility requirement pertaining to his or her studies, the HEI will use this fund to provide the necessary accommodations after a thorough evaluation of each case.
+
+9. RESP ONSIBILITIES OF THE HIGHER EDUCATION COMMISSION
+9.1. The HEC will designate a Disability Officer who will provide guidance on the matters pertaining to this policy and facilitate vis - à - vis disability - related interactions with the HEIs .*** 9.2. The HEC may require the Disability Officer to assign weightage to the HEI’s c ompliance with this policy in the recurring grant formula, the ranking criteria and the Institutional Performance Evaluation (IPE).
+9.3. Proposals for infrastructure development at HEIs may be submitted to the HEC’s Disability Officer and will be reviewed to ensure that any new building infrastructure comply with international accessibility codes for persons with disabilities.
+9.4. Th e HEC will collaborate with international and national organizations for the advancement of persons with disabilities.
+
+[SECTION: hec_student_welfare_policies_12_10_REPORTING_REQUIREMENT_FURTHER_ADVICE_AND_GU]
+# 10. REPORTING REQUIREMENT, FURTHER ADVICE AND GUIDANCE
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 10. REPORTING REQUIREMENT, FURTHER ADVICE AND GUIDANCE
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Disability.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/Documents/HEC%20-%20POLICY%20FOR%20STUDENTS%20WITH%20DISABILITIES%20AT%20HEIs%20IN%20PAKISTAN.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+10. REPORTING REQUIREMENT, FURTHER ADVICE AND GUIDANCE
+10.1. Each HEI shall establish the standing Accessibility Committee and designate Disability Coordinators in accordance with the provisions of the policy no later than September 30, 2021 and submit a statement of compliance with this provision (as well as with o ther applicable provisions, including Section 3.1 & 3.4) to the HEC by the aforementioned date (including the names and designations of the appointed members). Each HEI shall be required to submit to the HEC an annual report demonstrating compliance with t he provisions of the policy by December 31 st of each year. The HEC Disability Officer shall notify the form on which the HEIs shall report compliance
+10.2. M erged with clause 10.1 **** .
+10.3. The HEC’s Disability Officer may be consulted for clarificat ion and advice in regard to the implementation of this policy.
+10.4. In case of any difference of opinion regarding the interpretation of this policy, the HEC’s decision***** shall be considered final.
+10. 5 . The Disability Officer at the HEC will assist students with disabilities during the degree attestation/equivalence process. No attestation / equivalence fee will be charged from students with disabilities as per criteria mentioned at clause 2.3. However, t his waiver shall not cover fee for urgent cases.
+* ** *** **** ***** Amendments approved in 39 th meeting of Higher Education Commission held on December 16 - 17, 2021 (Item No. 2)
+
+[SECTION: hec_student_welfare_policies_13_HEC_STUDENT_WELFARE_POLICIES_PART_2]
+# HEC student welfare policies (part 2)
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC student welfare policies (part 2)
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Drug-and-Tobacco-Abuse-in-Higher-Education-Institutions.aspx
+Source file: https://www.hec.gov.pk/english/Documents/Policy%20on%20drugs%20and%20tobacco%20control%20at%20HEIs.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Policy on Drug and Tobacco Abuse in Higher Education Institutions Glossary of Terms and Abbreviations ADTC Anti - Drug And Tobacco Committee constituted under Section 3 of this policy ANF Anti - Narcotics Force Drug(s) This includes “narcotic drugs” as defined in the Control of Narcotics Substances Act, 1997 as well as “psychotropic substance” listed in the Schedule to the Act, pharmaceutical drugs, sedatives and tranquilizers described in The Drugs Act, 1976 if used without a prescription or authorization, and alcohol prohibited by The Prohibition (Enforcement of Hadd) Order (4 of 1979) Drug Abuse Possession, use or the sale or distribution of such drugs Focal Person The Focal Person appointed under Section 3 of this Policy HEC Higher Education Commission HEI Higher Education Institute NGO Non - governmental organization Smoking Smoking shall have the same meaning as it does under the Prohibition of Smoking and Protection of Non - Smokers Health Ordinance, 2002 Smoke free Smoke free shall mean the prohibition of smoking and other use of tobacco in accordance with the provisions of the Prohibition of Smoking and Protection of Non - Smokers Health Ordinance, 2002 Anti - Tobacco Legislation The ‘Prohibition of Smoking and Protection of Non - Smokers Health Ordinance, 2002,’ or any other anti - tobacco legislation in the HEI’s jurisdiction, as applicable Illicit Smoking Smoking in any form for the consumption of drug and is considered as drug abuse.
+
+[SECTION: hec_student_welfare_policies_14_1_AIMS_AND_OBJECTIVES]
+# 1. AIMS AND OBJECTIVES
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 1. AIMS AND OBJECTIVES
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Drug-and-Tobacco-Abuse-in-Higher-Education-Institutions.aspx
+Source file: https://www.hec.gov.pk/english/Documents/Policy%20on%20drugs%20and%20tobacco%20control%20at%20HEIs.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+1. AIMS AND OBJECTIVES
+1.1. Drug abuse and smoking pose serious risks to human health and the social life of the community and have significant economic and environmental costs.
+1.2. According to the United Nations Office of Drugs and Crime (UNODC)’s 2020 World Drug Report, in 2018, more than 35 million people suffered from the consequences of drug abuse. In fact, the number of drug users worldwide is on the rise with cannabis being the most commonly used drug.
+Other commonly used drugs include alcohol, methamphetamine, heroin, amphetamine - type stimulus (ATS), cocaine, ecstasy, opium, poly drug (a combination of several drugs), pharmaceutical cocktails, tranquilizers and sedatives.
+Factors contributing towards drug abuse include easy access to drugs at low prices, rapidly changing social norms, existence and presence of drug dens and cartels, unemployment and economic dis tress, lack of awareness on drug abuse within the family and in educational institutions, mental health problems (such as anxiety, depression, anger, guilt, grief, low self - esteem, frustration, rejection etc.), curiosity/urge to experiment, influence of me dia portrayals, peer pressure, lack of support by parents, the family and the community. To address the problem, the Federal Government has passed various laws including the Control of Narcotics Substance Act, 1997 and the Drugs Act, 1976, which proscribes the possession and distribution of illicit drugs and alcohol with penalties for violations provided in the Code of Criminal Procedure up to and including capital punishment.
+1.3. With respect to smoking, the World Health Organization documents that more than 8 million people die each year from tobacco use with 1.2 million of these deaths from passive smoking alone and many others facing tobacco - related health complications.
+Accordingly, the Federal Government enacted the Prohibition of Smoking and Protection of Non - smokers Health Ordinance, 2002 (Ordinance No. LXXIV of 2002) to limit smoking at public places of work or use and in public service vehicles (except in designated areas) and to outlaw tobacco storage, sale, or distribution in the vicinity of educational institutions.
+Individuals and institutions who violate the law may face the penalty set out in sections 11 (a) and (b) of the Ordinance.
+1.4. Like all other institutions, universities have a legal responsibility to implement all relevan t national laws and policies and should join hands with all stakeholders including psychologists and psychiatrists, social workers, NGOs, and others to address the problem of unlawful drug and tobacco abuse.
+1.5. To ensure that HEIs contribute to the reduction of drug abuse and smoking, this policy has been made pursuant to the powers granted to the HEC under the Higher Education Commission Ordinance, 2002. It is binding on all HEIs in the country, whether operating in the public or private sectors. Violations or failures to comply with the HEC’s policies may lead to regulatory action being taken against non compliant HEIs. The policy supplements national and provincial legislation on drug and tobacco use including the Drugs Act, 1976, the Control of Narcotics Substances Act XXV, 1997, the Drug Regulatory Act, 2012, and the Prohibition of Smoking in Enclosed Places and Protection of Non - smokers Health Ordinance, 2002 (Ordinance No. LXXIV of 2002) UNODC World Drug Report 2020, https://www.unodc.org/unodc/press/releases/2020/June/media - advisory --- global launch - of - the - 2020 - world - drug - report.html .
+Tobacco, Key facts, World Health Organization, https://www.who.int/news - room/fact sheets/detail/tobacco#:~:text=Tobacco%20kills%20more%20than%208,%2D%20and%20middle%2Din come%20count ries .
+
+[SECTION: hec_student_welfare_policies_15_2_SCOPE]
+# 2. SCOPE
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 2. SCOPE
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Drug-and-Tobacco-Abuse-in-Higher-Education-Institutions.aspx
+Source file: https://www.hec.gov.pk/english/Documents/Policy%20on%20drugs%20and%20tobacco%20control%20at%20HEIs.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+2. SCOPE
+2.1. This policy covers all public and privat e sector HEIs and is applicable to students, faculty, staff and visitors (including individuals associated with outsourced services) in the premises of HEIs (campus, class rooms, hostels, play grounds, libraries, laboratories, cafeterias & transport etc.)
+3. ANTI - DRUG & TOBACCO COMMITTEE AND FOCAL PERSONS FOR DRUG AND TOBACCO ABUSE
+3.1. Anti - Drug & Tobacco Committee (ADTC): Each HEIs shall constitute an “Anti - Drug & Tobacco Committee” comprising of five members duly notified by the Vice Chancellor/Rector of the HEI. Any sub - campus of the HEI shall also establish its own sub - committee constituted on a similar pattern to perform similar duties.
+3.2. Composition of the ADTC: The committee shall be headed by the senior most committee member and i nclude:
+a. Director Student Affairs or senior university officer / faculty designated as Chair of the accessibility committee.
+b. two members from the faculty (one male and one female, both female in case of all women university)
+c. at least one member from the student body as may be prescribed by the university
+d. one representative of psychological wellbeing committee / university’s medical center /
+planning & development department e. one staff member deputed as secretary to the ADTC .
+General Provisions for work of the ADTC :
+a. for the purpose of a meeting of the accessibility committee, three members shall constitute a quorum.
+b. in absence of the Chair, the senior most member shall act as Chair of the meeting.
+c. the Chair and the members shall hold office for the period of three years and shall in no
+case be eligible for re - appointment for more than one similar term.
+d. the Vice Chancellor shall appoint all members of the ADTC except the ex - officio members
+and the representative of the student body 3.3. Roles and Responsibilities of the ADTC: The committee will be responsible for ensuring a drug free and smoke free environment in the HEI and to take measures to safeguard the interests of the students in the following ways:
+i. by inquiring into, investigating and resol ving any matter regarding the usage/consumption,
+sale and distribution illegal drugs in the HEI;
+ii. by inquiring into, investigating and resolving any matter regarding the violation of Anti -
+Tobacco Legislation at the HEI;
+iii. by coordinating with and connecting students to rehabilitative services including counselling,
+medical care and helplines when needed; ________________________ E ach university may develop its own regulations for application of the policy on campus residential areas.
+iv. b y raising awareness on the prevalence, problems and persistence of drug abuse and tobacco
+consumption;
+v. b y providing advice to HEIs regarding the implementation of this policy and relevant
+legislation; and
+vi. by ensuring effective coordination with all relevant stakeholders inside and outside the HEI.
+vii. maintain close liaison with hostel wardens for implementation of this policy and may relocate
+the reasonably suspected student for drug abuse or found addicted student.
+viii. By taking any other appropriate measures including but not limited to testing of an accused
+from any authorized laboratory 3.4. Focal Person for Drug and Tobacco Abuse: The member of the ADTC who is from the HEI’s administration shall be appointed a Focal Person for matters related to Drug Abuse and unlawful tobacco consumption.
+The Focal Person will act as a liaison for the members of the HEI to the ADTC. If a student, staff, or faculty member feels that he or she needs medical and/or mental health assistance and counselling or would like to report Drug Abuse or smoking, the student, faculty or staff member may reach out to the Focal Person who will connect the individual to the services requested or refer the matter to the ADTC to begin an inquiry as the case may be.
+
+[SECTION: hec_student_welfare_policies_16_4_EFFORTS_TO_PREVENT_DRUG_AND_TOBACCO_ABUSE]
+# 4. EFFORTS TO PREVENT DRUG AND TOBACCO ABUSE
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 4. EFFORTS TO PREVENT DRUG AND TOBACCO ABUSE
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Drug-and-Tobacco-Abuse-in-Higher-Education-Institutions.aspx
+Source file: https://www.hec.gov.pk/english/Documents/Policy%20on%20drugs%20and%20tobacco%20control%20at%20HEIs.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+4. EFFORTS TO PREVENT DRUG AND TOBACCO ABUSE
+4.1. HEIs must undertake efforts to prevent drug abuse , smoking and illicit smoking. This section lists actions that HEIs must take as facilitated by the ADTC and the Focal Person.
+4.2. Awareness raising against drug abuse and tobacco consumption:
+i. Drug abuse: Possession, use, distribution and sale of drugs is prohibited in Pakistan. Each HEI
+must ensure that students, staff and faculty are aware of the legal and disciplinary penalties for drug possession, distribution and sale.
+ii. Smoking: HEIs must display labels in accordance with the prohibition of smoking under Anti -
+Tobacco Legislation. Additionally, all students should be made aware of the adverse effects of smoking on health.
+4.3. Awareness raising strategies: In order to create and promote awareness and to educate people about the negative effects of drug and tobacco use and i ts prohibition, HEIs, through the ADTC, shall take the following measures: -
+i. All newly admitted students and newly appointed faculty/staff members shall attend a
+mandatory hour - long orientation session, arranged by the HEI. The session shall make them aware of this policy and the hazards of drug abuse and smoking.
+ii. An undertaking in the form set forth in Annex - A &B shall be signed by all existing and newly
+recruited/admitted faculty, staff members, and students, and shall be submitted to the relevant off ice of the university.
+iii. The HEI shall distribute drug and tobacco awareness material through student handbooks
+and pamphlets, including in the admissions materials (for awareness of both parents and students), incorporating details about the HEC policy (as well as its web link). This may include graphical images/pictorial illustrations of the adverse health effects of drug and tobacco consumption.
+iv. The relevant warnings under this policy as well provisions related to punishments for
+violations shall be displayed on the notice board of each department in the HEIs.
+v. Awareness raising campaigns throughout the academic year including seminars, walks,
+workshops, and lectures shall be arranged in collaboration with ANF, NGOs, and professionals from reputable rehabilitation centers. Events may be organized if the HEI is in session in connection with the ‘International Drug Abuse Day’ (June 26 th ) and ‘World No Tobacco Day’ (May 31 st ).
+vi. To create awareness against drugs abuse and smok ing and strengthen prevention
+interventions, HEC in collaboration with national and international entities will develop and offer self - paced E - Course through National Academy of Higher Education that will be mandatory for all students (before completion of the degree), faculty and administrative staff during one year of launch of this policy.
+vii. A ny other programs the ADTC may determine appropriate from time to time.
+
+[SECTION: hec_student_welfare_policies_17_4_4_ACTIVITIES_AND_PROGRAMS_STUDENTS_MUST_BE_E]
+# 4.4 Activities and programs: Students must be encouraged to participate in a diverse array
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 4.4 Activities and programs: Students must be encouraged to participate in a diverse array
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Drug-and-Tobacco-Abuse-in-Higher-Education-Institutions.aspx
+Source file: https://www.hec.gov.pk/english/Documents/Policy%20on%20drugs%20and%20tobacco%20control%20at%20HEIs.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+4.4. Activities and programs: Students must be encouraged to participate in a diverse array of programs as healthy engagements that may prevent any inclination toward smoking or Drug Abuse. These include (but are not limited to):
+i. extra and co - curricular activities on campus such as t heater, dramatics etc.
+ii. community service including plantation, distribution of food amongst the disadvantaged,
+volunteer work at old/shelter homes (the HEI may require community engagement & service hours at the undergraduate level);
+iii. fitness, exercise, s ports and athletic activities;
+iv. Students, faculty and administrative staff of the university who have volunteered and
+worked extraordinarily for implementation of this policy shall be publicly acknowledged and conferred upon the certificate of appreciation on ‘International Drug Abuse Day’ (June 26 th ) and/or ‘World No Tobacco Day’ (May 31 st ) annually;
+v. hosting and monitoring of recreational events by HEIs to provide an avenue to bring
+together students without drug and tobacco use; and
+vi. any other program the ADTC may determine from time to time.
+4.5. Engaging student clubs, organizations and societies and collaboration with other organizations: Student societies can additionally be engaged by the HEI in awareness raising activities. HEIs can collaborate with various governmental/non - governmental organizations, effectively working for the cause to eradicate drug abuse and discourage tobacco consumption. Through these liaisons, the students can also be provided with an opportunity to volunteer a nd facilitate ADTC’s workings.
+5. SUPPORT FOR MEMBERS OF HEIs DEALING WITH DRUG AND/OR TOBACCO ADDICTION/DEPENDENCE 5.1. HEIs should ensure that students, faculty, and staff facing drug and/or tobacco addiction/dependence are provided with adequate support. This section lists some of the support HEIs must provide. HEIs are encouraged to provide additional support as they choose.
+5.2. On campus counsellor/psychologist/psychiatrist: A counsellor, psychologist, or psychiatrist available at the HEI shall help students, staff and faculty members by guiding them through any problems or issues such as peer pressure and demotivation which often lead to drug and tobacco consumption. Any student suffering from any mental health issues, such as anxiety, depression, or post - traumatic stress disorder may also seek assistance of the trained professional. If the student requires further assistance, the counsellor/psychologist/psychiatrist may refer the student to rehabilitative services. For this pur pose, the HEI shall maintain a list of such services.
+
+[SECTION: hec_student_welfare_policies_18_5_3_COORDINATION_WITH_PARENTS_IN_CASE_A_STUDEN]
+# 5.3 Coordination with Parents: In case a student’s parents have been notified pursuant to 
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 5.3 Coordination with Parents: In case a student’s parents have been notified pursuant to 
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Drug-and-Tobacco-Abuse-in-Higher-Education-Institutions.aspx
+Source file: https://www.hec.gov.pk/english/Documents/Policy%20on%20drugs%20and%20tobacco%20control%20at%20HEIs.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+5.3. Coordination with Parents: In case a student’s parents have been notified pursuant to the provisions of Section 7.2 or Section 7.3 of this policy, the HEI shall endeavor to coordinate with the parents of such students for purposes of helping the students with rehabilitation and facilitating their return to their studies in case of any gap.
+5.4. Helpline: All HEIs shall establish a helpline that students, faculty and staff can call whenever they face a menta l health issue or a situation in which they may have been tempted to use drugs or tobacco. This helpline will be staffed by a trained counsellor and a team of trained volunteers. Volunteers may include student, faculty, or staff. The helpline may refer students to the on - campus counsellor/psychologist/psychiatrist, rehabilitative services, the ADTC or the relevant Focal Person.
+5.5. De - stigmatization of the affected students and university members: Because students, faculty and staff using drugs may ne ed significant medical and psychological assistance, all those who seek support for drug or tobacco dependence and addiction from the Focal Persons, counsellors/psychologists/psychiatrists and the helpline will receive counselling on a confidential basis.
+Provided that, in the event that a student requires medical attention for drug use the HEI shall promptly inform the student’s parents of the matter and coordinate with them to assure the best care for the student.
+
+[SECTION: hec_student_welfare_policies_19_6_COMPLAINT_PROCEDURE]
+# 6. COMPLAINT PROCEDURE
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 6. COMPLAINT PROCEDURE
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Drug-and-Tobacco-Abuse-in-Higher-Education-Institutions.aspx
+Source file: https://www.hec.gov.pk/english/Documents/Policy%20on%20drugs%20and%20tobacco%20control%20at%20HEIs.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+6. COMPLAINT PROCEDURE
+6.1. Regular inspection/monitoring: Campus security shall undertake frequent and random visits to the cafeterias, canteens, tuck shops, and other such places susceptible to the sale, usage and distribution of drugs/tobacco and stop any suspicious and illicit activity occurring in contravention of this policy and relevant legislation.
+6.2. Training programs: Staff and faculty may receive training aimed at understanding behavior indicative of drug abuse so that they may refer such matters to t he Focal Person in order to protect the health of the students.
+6.3. Complaint: Any person associated with the HEI including (but not limited to) the student, faculty member , non - teaching staff, administrative staff, or a visitor may submit a complaint in writ ing to the Vice Chancellor , stating that any person has engaged in drug abuse, illicit smoking, or the unlawful sale or distribution of drugs/tobacco at the HEI. The identity of the whistle blowe r/complainant shall be kept confidential. The Vice Chancellor will forward the complaint to the committee without revealing the identity of the whistl e blower. The Focal Person shall maintain a proper record of all complaints.
+6.4. Initial Scrutiny: Each complaint shall be assessed based on shared information. Complaints substantive in nature and associated with sufficient supporting documents/evidence shall be considered for further investigation by the ADTC.
+6.5. Investigation: The ADTC shall investigate all non - frivolous complaints before making its decision through the following process:
+i. Initiation of an inquiry.
+ii. The body of facts or information (evidence) that the ADTC uses could be:
+• Eye witness evidence
+• Physical evidence – individual found in possession of any illegal substance, individual
+found intoxicated (proven by a drug test) or individual caught distributing any illegal drugs or tobacco on campus
+• Video recording of the security cameras
+iii. A personal hearing/s with the accused prior to any checking.
+iv. Random testing/checking of possessions/individuals by campus security on the recommendation
+of a committee member.
+6.6. Decision: All complaints shall be decided by the ADTC within one mont h of their receipt and the ADTC’s recommendation shall be communicated to the concerned in writing. The HEI may assign penalties as detailed in section 7 of this policy.
+6.7. Appeal: An appeal to the decision may be made by the aggrieved within seven working days of the receipt of the decision to the Vice Chancellor / Rector, who shall review the recommendations of the ADTC and uphold, minimize, or revert the decision made by the committee within seven working days. The decision taken by the Vice Chanc ellor / Rector shall be final.
+6.8. False Complaint: In the event that the ADTC determines that a false allegation was made in the complaint with mala fide intent, it may send its findings to the Vice Chancellor / Rector and recommend the Vice Chancellor / Rector take disciplinary action against the complainant.
+
+[SECTION: hec_student_welfare_policies_20_7_PENALTIES]
+# 7. PENALTIES
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 7. PENALTIES
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Drug-and-Tobacco-Abuse-in-Higher-Education-Institutions.aspx
+Source file: https://www.hec.gov.pk/english/Documents/Policy%20on%20drugs%20and%20tobacco%20control%20at%20HEIs.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+7. PENALTIES
+7.1. To discourage drug abuse and smoking, the HEI may impose the penalties detailed below.
+7.2. Drug Abuse: For drug - related violations, the HEI may, on recommendation by the ADTC, take disciplinary action against students, staff, faculty, and visitors in the following way:
+i. For first time offenders in case of minor infractions, the ADTC may refer the offender to the
+in - house counsellor/psychologist/psychiatrist to undergo medical and mental health treatment. This referral must be in writing and require the completion of the counselling or rehabilitative program within a set period .
+ii. In the event of a significant violation and/o r repeated violations of this policy, the ADTC may
+recommend that the HEI issue a warning and ultimately suspend or expel the offender (and in case of students, notify the student’s parents). Further, the HEI would have to comply with any reporting requirements under any applicable law.
+iii. If a student, faculty, or staff member is involved in the distribution or sale of illicit drugs, the
+HEI shall report the violation to the appropriate authorities including law enforcement agencies.
+iv. In the event a visitor is found on the premises engaging in any drug - related offense, campus
+security shall immediately report the violation to the appropriate authorities including law enforcement agencies.
+7.3. Smoking: For smoking - related violations, the HEI may, on recommendation by the ADTC, impose the following penalties:
+i. For a first violation, the ADTC may recommend the HEI issue a warning letter and a notice of
+displeasure;
+ii. For a second violation, the ADTC may recommend suspension of the student for one week
+or more from the premises of the HEI with parental notification for students and disciplinary action for faculty and staff as per the HEI’s regulations;
+iii. For a third violation or more, the ADTC may recommend a longer suspension depending on
+the severity of the violation and further disciplinary action for faculty and staff as per HEI’s regulations;
+iv. In case any visitor is found smoking in the HEI’s premises, the visitor shall be fined Rs. 1,000
+by th e HEI, and any further necessary action shall be taken in accordance with the Anti Tobacco Legislation.
+v. In case of any unlawful sale or distribution of tobacco on the premises of the HEI, the violator
+shall be fined Rs. 5,000 by the HEI and shall be repo rted to the appropriate authorities including law enforcement agencies.
+
+[SECTION: hec_student_welfare_policies_21_8_ENFORCEMENT_OF_THIS_POLICY]
+# 8. ENFORCEMENT OF THIS POLICY
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 8. ENFORCEMENT OF THIS POLICY
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Drug-and-Tobacco-Abuse-in-Higher-Education-Institutions.aspx
+Source file: https://www.hec.gov.pk/english/Documents/Policy%20on%20drugs%20and%20tobacco%20control%20at%20HEIs.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+8. ENFORCEMENT OF THIS POLICY
+8.1. Survey/ Feedback mechanism: An annual survey shall be conducted, asking students and staff members to respond to an anonymous close ended questionnaire related to matters covered under this policy. In case the student body is large, survey shall be conducted through random sampling. The office of the Focal Person shall analyze the findings and present them to the ADTC for review and comment.
+8.2. Compliance reports: HEIs must submit annual compliance reports along with survey reports by December st of each year to the HEC in a format prescribed by the HEC from time to time.
+8.3. Implementation of this policy: Each HEI shall establish the standing ADTC and designate the Focal Person in accordance with the provisions of the policy no later than October 31, 2021 and submit a statement of compliance with this provision to the HEC by the aforementioned date (including the names and designations of the appointed members). Further, HEIs that do not currently have an on - campus counsellor/psychologist/psychiatrist, or a helpline must make arrangements in this regard by December 01, 2021 (and submit a statement of compliance to the HEC by the aforementioned timeline).
+8.4 HEC may assign weightage to the HEIs compliance with this policy in the recurrent grant formula, the ranking criteria and the Institutional Performance Evaluation (IPE) Annex - A UNDERTAKING Roll number/ Registration Number Program Title Name CNIC/CRC Number Contact Number Father/ Guardian’s Name Father/ Guardian’s Contact Number Gender Date of Birth Mark of Identification Blood Group Any Disability Any Existing Medical Problem or Mental - Health Issues Taking any Medicine on a Regular Basis (if yes, please give details) I son/daughter of certify that I am/shall not be involved in any kind of drug abuse (bringing into the campus/consuming or encouraging consumption of drug and narcotics substances) or the unlawful use of tobacco products at the HEI. The HEI is authorized t o examine me for drug abuse at any time and to take any measure to ensure the implementation of its policies . Moreover, parents will be informed if I will be involved in any drug / tobacco related unlawful activity. Further, I have read and am aware of the provisions of the Higher Education Commission’s Policy on Drug and Tobacco Abuse in Higher Education Institutions.
+Signature Signature of Father/ Guardian (for students) Dated: ……………………………………… Dated: …………………………………………… Note: Please submit this undertaking form at the concerned office after joining the HEI. For current members of the HEI, please submit in accordance with the timelines prescribed by the HEI.
+ANNEX - B UNDERTAKING FOR FACULTY AND STAFF Name Designation Department CNIC/CRC Number Contact Number Gender Date of Birth Mark of Identification Blood Group Any Disability Any Medical Problem or Mental - Health Issues Taking any Medicine on a Regular Basis (if yes, please give details) I ________________________________________ son/daughter of _________________________________ certify that I am/shall not be involved in any kind of drug abuse (bringing into the camp us/consuming or encouraging consumption of drug and narcotics substances) or the unlawful use of tobacco products at the HEI. The HEI is authorized to examine me for drug abuse at any time and to take any measure to ensure the implementation of its policie s . Further, I have read and am aware of the provisions of the Higher Education Commission’s Policy on Drug and Tobacco Abuse in Higher Education Institutions.
+Signature Dated: ……………………………………… Note: Please submit this undertaking form at the concerned office after joining the HEI. For current members of the HEI, please submit in accordance with the timelines prescribed by the HEI.
+
+[SECTION: hec_student_welfare_policies_22_HEC_STUDENT_WELFARE_POLICIES_PART_3]
+# HEC student welfare policies (part 3)
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC student welfare policies (part 3)
+Official page: https://www.hec.gov.pk/english/policies/Pages/Campus-Security-Policy.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Campus-Security-surveillance-policy.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+CAMPUS SECURITY AND SURVEILLANCE POLICY
+
+[SECTION: hec_student_welfare_policies_23_I_GENERAL_POLICY]
+# I. GENERAL POLICY
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: I. GENERAL POLICY
+Official page: https://www.hec.gov.pk/english/policies/Pages/Campus-Security-Policy.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Campus-Security-surveillance-policy.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+I. GENERAL POLICY
+The purpose of this policy is to regulate the installation, placement and use of security cameras under Safe campus project to monitor and record public areas for safety and security. This policy applies to the use of security cameras for monitoring and recording and therefore applies to the premises of University and to all members of this community, including faculty, staff, students, visitors, vendors and contractors. In general, cameras are intended to serve two main purposes for the university’s community:
+Monitoring of Personal Safety – To capture video, in the event an individual is the subject of harm or crime, that prov ides information or evidence of what occurred and who is responsible, and thereby deter crimes or harmful conduct toward individuals.
+Monitoring of Property Protection – To capture video, in the case of lost, stolen or damaged property, that provides infor mation or evidence of what occurred and who is responsible, and thereby deter property crimes or violations.
+
+[SECTION: hec_student_welfare_policies_24_II_DEFINITIONS]
+# II. DEFINITIONS
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: II. DEFINITIONS
+Official page: https://www.hec.gov.pk/english/policies/Pages/Campus-Security-Policy.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Campus-Security-surveillance-policy.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+II. DEFINITIONS
+Security Cameras – a device used to transmit a signal containing images that can be viewed remotely by authorized ---- University personnel; Security Camera Monitoring – the viewing of security camera images in real - time by authorized Rice University personnel.
+Security Camera Recording – the digital, analog or other electronic storage of security camera images.
+Operators – those authorized to view live or “real - time” sec urity camera video feeds.
+Security Systems Manager – the Sergeant in charge of Command and Control Center (C C C Room) who is most directly responsible for maintaining university ’s security camera operation in compliance with this policy.
+
+[SECTION: hec_student_welfare_policies_25_III_ELABORATION_OF_POLI_CY]
+# III. ELABORATION OF POLI CY
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: III. ELABORATION OF POLI CY
+Official page: https://www.hec.gov.pk/english/policies/Pages/Campus-Security-Policy.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Campus-Security-surveillance-policy.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+III. ELABORATION OF POLI CY
+A. RESTRICTIONS The use of security cameras, monitoring of cameras, or recording must conform to applicable University Policies, and applicable federal / provincial and state laws. Such cameras may not be used where audio and video recordings are prohibited . Further, security cameras shall not be used in areas where there are legitimate personal privacy concerns. Examples of such areas at University generally include, but are not limited to;
+• The interior of residential/dormitory rooms
+• Restrooms
+• Locker Rooms, shower areas, or other areas where persons change clothes
+• Private Offices
+• Any space used to provide physical, medical or psychological care
+An exception may be made for legitimate investigations, with approval from the Office of General Counsel and consistent with state and federal law.
+B. PRINCIPLES HEC is committed to enhancing the quality of life of the every campus community by integrating the use of technology into its safety and security program. A key component is to utilize electronic security cameras and their recordings.
+To maintain personal privacy in accordance with University values and applicable laws, this policy establishes procedures and regulates the use of cameras that observe public or common areas.
+1. HEC’s contractor will con duct a survey and will share TSR (Technical Survey Report) regarding placement of Cameras. However, t he decision of whether to deploy security cameras and the specific placement of those cameras falls under the authority of university’s Security Manager or designated POC (Point of Contact) of University to HEC . These decisions will be based on risk assessments, safety concerns, vulnerabilities and historical acts of criminal behavior.
+2. Video cameras recordings can only be accessed by in charge of Command an d Control Center neither HEC nor any other person from University is allowed to access these video cameras recordings.
+3. Video cameras (and their recorded images) by will not be used to monitor the conduct of faculty, staff, students, vendors, contractors o r other visitors except as part of a legitimate investigation pertaining to conduct violating the law or University policy (usually resulting from a written complaint or report). While real - time viewing is not the typical use for security cameras, this pol icy does not prohibit (nor does it imply or promise) real - time viewing.
+4. The live or “real - time” monitoring of security cameras will be limited. University’s Chief Security officer or State security agencies/ police will be permitted to view live video whe n necessary and will be conducted only by trained, authorized personnel and at all times will be consistent with this policy and applicable law. Violations of this policy or applicable law may result in disciplinary action by the University (up to and incl uding termination of employment) or prosecution.
+
+[SECTION: hec_student_welfare_policies_26_C_ROLES_AND_RESPONSIBILITIES]
+# C. ROLES AND RESPONSIBILITIES
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: C. ROLES AND RESPONSIBILITIES
+Official page: https://www.hec.gov.pk/english/policies/Pages/Campus-Security-Policy.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Campus-Security-surveillance-policy.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+C. ROLES AND RESPONSIBILITIES
+1. University is responsible for the implementation of this policy and is authorized to oversee and coordinate the use of all University security cameras, including installation and monitoring.
+2. Recordings will reside on a secure Informational Technology server and are not considered to be law enforcement records until a copy is obtained by authorized university’s security in charge from the secured server and placed i nto an incident report, investigative file or other University documentation. HEC will not be responsible any loss and misuse of recordings.
+3. The University’s Chief Security officer is the primarily responsible for departmental compliance with this policy a nd will review requests for release of video recordings. No release will occur without consultation with the Vice chancellor/ Rector and University legal counsel. The Chief Security officer will review and determine camera locations to ensure that each fix ed location camera conforms to this policy and will be responsible for compiling the master list of camera placements at University under Safe campus project . Included with the list of camera locations will be a general description of the technology deploy ed and the capabilities of the cameras.
+The location of temporary cameras that are to be used for special events or investigations will be reviewed by the Chief Security officer to ensure compliance with this policy and must be approved before deployment.
+4. If concerns arise regarding camera placement, written requests can be made to the Chief Security officer to forgo the installation of a proposed camera or for the removal of an existing camera. The Chief Security officer will determine the appropriateness of an installation or removal after weighing the concern of the person(s) making the request and the saf ety and security of the community.
+5. In consultation with the University’s higher authority , the Chief Security officer will review any complaints regarding camera locations and determine whether the policy is being followed.
+The Chief of Police will decide the merits of any complaint while weighing the potential benefits in community safety against any impact on privacy and other issues raised in the complaint.
+6. The Chief Security officer will review all requests received by the university to release recordi ngs made under this policy. No release of recordings shall occur without authorization as required by law or in accordance with official requests for digital recordings directly related to a criminal investigation, arrest, prosecution, subpoena or applicab le law. Absent other legal requirements, the Chief Security officer will approve release of recordings only for legitimate purposes, such as to protect the University and its members from harm or for purposes of legal defense.
+7. The in charge CCC Room will audit camera operations, including the recording storage, on a regular basis and should recommend any procedural changes needed to ensure standards and operations conform to this policy.
+
+[SECTION: hec_student_welfare_policies_27_D_PROCEDURES]
+# D. PROCEDURES
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: D. PROCEDURES
+Official page: https://www.hec.gov.pk/english/policies/Pages/Campus-Security-Policy.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Campus-Security-surveillance-policy.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+D. PROCEDURES
+HEC will maintain written procedures on the installation and use of security cameras. These procedures are provided as Appendix 1 of this policy, and may be updated by HEC E. REQUEST FOR SECURITY CAMERAS/INSTALLATION 1. All requests to install new or additional se curity cameras must be made Vice Chancellor/ Rector to HEC and must include the following:
+Proposed Location Purpose Name and position of departmental point of contact 2. HEC shall review all requests to ensure compliance with the policy and to provide subjec t matter expertise to the department regarding camera placement, fields of view and to coordinate installation and training.
+3. HEC shall be responsible for the coordination and installation of security camera systems finalized by university POC and shall mon itor only Up/down status of these cameras along with accessories from HEC Central NOC by working with University ’s IT team and Security departments .
+4. A ny security cameras Purchased , contract, install or attempt to install security cameras or recording equipment other than HEC Safe campus will independent of this policy.
+5. Display clear caution at locations where cameras are installed for information of the public that they are being o bserved.
+
+[SECTION: hec_student_welfare_policies_28_IV_CROSS_REFERENCES_TO_RELATED_POLICIES]
+# IV. CROSS REFERENCES TO RELATED POLICIES
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: IV. CROSS REFERENCES TO RELATED POLICIES
+Official page: https://www.hec.gov.pk/english/policies/Pages/Campus-Security-Policy.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Campus-Security-surveillance-policy.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+IV. CROSS REFERENCES TO RELATED POLICIES
+Policy 805, Environmental Health and Occupational Safety Program Policy 815, Equal Opportunity/Non - Discrimination/ Affirmative Action Policy
+
+[SECTION: hec_student_welfare_policies_29_V_RESPONSIBLE_OFFICIAL_AND_KEY_OFFICES]
+# V. RESPONSIBLE OFFICIAL AND KEY OFFICES
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: V. RESPONSIBLE OFFICIAL AND KEY OFFICES
+Official page: https://www.hec.gov.pk/english/policies/Pages/Campus-Security-Policy.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Campus-Security-surveillance-policy.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+V. RESPONSIBLE OFFICIAL AND KEY OFFICES
+Responsible officers In - charge of Command and Control Center POC to HEC Other Key Offices: Chief Security officer Vice Chancellor Rector/ Pro - Rector Appendix. Additional NOC Procedures (Version 1.1 ) 1. Any University personnel with access to view or retrieve camera recordings are subject to this policy and are required to acknowledge their understanding and compliance with this policy prior to being gran ted access to security camera systems 2. All information acquired from the use of security cameras (either viewed in real - time or recorded) is considered confidential. Any dissemination of observations or other information other than for official purposes is prohibited.
+3. University is responsible for oversight, enforcement and quality assurance of all security cameras covered by this policy and shall randomly review camera recordings to ensure compliance with this policy 4. HEC on request of University will limit camera positions, fields of view and capabilities such as “zooming” so as to conform to policy.
+5. Individual departments with approved security cameras in their workspaces shall be granted access to view camera feeds, but not retrieve stored recordings exce pt through request procedures outlined in this policy. If post - incident investigation is required, departments should contact the Chief Security officer and complete an official report.
+6. In situations where application of this policy is not clear, the Chief Security officer will maintain the status quo of the recordings at issue but seek clarification from University higher authorities or HEC .
+7. No attempt shall be made to alter any part of camera recordings. In - charge of Command and Control Center will c onfigure security camera recording systems to reasonably prevent operators from tampering with, duplicating, reproducing or disseminating in an unauthorized manner any recorded information.
+8. Recordings will be maintained on a secure server. In most cases, recordings will be stored for a period of no less than 07 days and no more than 15 days, depending on configuration settings in the recording device. Once the storage of an archival device reaches capacity, stored images may become overwritten and unavaila ble. An exception to this procedure is a recording retained as part of a criminal investigation or judicial or administrative proceeding (criminal, civil or internal), preservation of evidence or other bona fide use as approved by the Chief Security office r . Images saved for such purposes may be recorded to another storage device in accordance with applicable evidentiary procedures.
+9. All Operators will be trained in the technical and policy parameters of appropriate camera use.
+10. Operators will receive and rev iew a copy of this policy with the RUPD Security Systems Manager and must provide written acknowledgment that they have read and understood its content.
+11. Operators will receive training on site after the installation of Safe campus project.
+12. Operators will n ot alter or augment camera angles to view private or excluded areas identified within this policy, including residential spaces or windows to such spaces.
+a. Operators will not monitor individuals based on general characteristics of race, gender, ethnicity, sexual orientation, disability or other protected class covered by University non - discrimination policies. Operators in control of cameras shall only monito r suspicious behavior or search for suspects or particular individuals, without regard to irrelevant individual characteristics.
+b. Mobile or portable video equipment may be used in criminal investigations if approved by the Chief Security officer . This equip ment may also be used in non - criminal investigations or during events but only for a limited duration, when there is significant risk to public safety or security, and with approval of the Chief.
+c. Security cameras may be viewed live or in real - time by autho rized and trained
+operators, though such monitoring is expected to be very limited. In each case, the monitoring of cameras shall be consistent with this policy.
+d. Secondary recording of live video feeds, such as through the use of a mobile phone or
+other vi deo camera, is strictly prohibited.
+e. The policy will be reviewed periodically in light of the feedback received from the universities, faculty, students, etc., and revised as may be necessary.
+
+[SECTION: hec_student_welfare_policies_30_VI_UNDERTAKING]
+# VI. UNDERTAKING
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: VI. UNDERTAKING
+Official page: https://www.hec.gov.pk/english/policies/Pages/Campus-Security-Policy.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Campus-Security-surveillance-policy.pdf
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+VI. UNDERTAKING
+On behalf of University ------- it is acknowledge d that the above policies, proc edures, codes, and instructions have been read, understoo d , circulated and will be abide Name: _____________________________________ (Vice Chancellor/ Rector/ Chief Security officer) Date: ___ _________________________ Signature/ Stamp: ________________________
+
+[SECTION: hec_student_welfare_policies_31_HEC_STUDENT_WELFARE_POLICIES_PART_4]
+# HEC student welfare policies (part 4)
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC student welfare policies (part 4)
+Official page: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Drug-and-Tobacco-Abuse-in-Higher-Education-Institutions.aspx
+Source file: https://www.hec.gov.pk/english/policies/Pages/Policy-on-Drug-and-Tobacco-Abuse-in-Higher-Education-Institutions.aspx
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+HEC
+Policies and Procedures
+Policy on Drug and Tobacco Abuse in Higher Education Institutions
+Drug abuse and smoking pose serious risks to human health and the social life of the community and
+have significant economic and environmental costs.
+According to the United Nations Office of Drugs and Crime (UNODC)’s 2020 World Drug Report, in 2018,
+more than 35 million people suffered from the consequences of drug abuse. In fact, the number of drug
+users worldwide is on the rise with cannabis being the most commonly used drug.1 Other commonly used
+drugs include alcohol, methamphetamine, heroin, amphetamine-type stimulus (ATS), cocaine, ecstasy,
+opium, poly drug (a combination of several drugs), pharmaceutical cocktails, tranquilizers and sedatives.
+Factors contributing towards drug abuse include easy access to drugs at low prices, rapidly changing
+social norms, existence and presence of drug dens and cartels, unemployment and economic distress,
+lack of awareness on drug abuse within the family and in educational institutions, mental healthproblems
+(such as anxiety, depression, anger, guilt, grief, low self-esteem, frustration, rejection etc.), curiosity/urge
+to experiment, influence of media portrayals, peer pressure, lack of support by parents, the family and
+the community. To address the problem, the Federal Government has passed various laws including the
+Control of Narcotics Substance Act, 1997 and the Drugs Act, 1976, which proscribes the possession and
+distribution of illicit drugs and alcohol with penalties for violations provided in the Code of Criminal
+Procedure up to and including capital punishment.
+- Click here to download Policy Document 
+
+[SECTION: hec_student_welfare_policies_32_PRIME_MINISTER_S_ELECTRIC_WHEELCHAIR_SCHEME_FO]
+# Prime Minister’s Electric Wheelchair Scheme for University Students
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Prime Minister’s Electric Wheelchair Scheme for University Students
+Official page: https://www.hec.gov.pk/english/services/students/wheelchair/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/students/wheelchair/Pages/default.aspx
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Services
+Prime Minister’s Electric Wheelchair Scheme for University Students
+- Eligibility Criteria
+- PM Electric Wheelchairs Phase-I Report
+- How to Apply
+- Benefits Scheme
+- Distribution Ceremonies
+- Picture Gallery
+Prime Minister’s Electric Wheelchair Scheme for University Students
+Supporting Youth and promoting Higher Education is one of the top priorities of the current democratic government of Pakistan. It has a broad canvas of schemes aimed at enabling youth to get access to higher education, internships, trainings and then getting relevant jobs or entrepreneurship career path.
+In this connection, one of the great initiatives of the Government is the scheme for distributing Motorized/Electric Wheelchairs to disabled students studying in Public Sector Universities of Pakistan with the objective to facilitate them in their movements in order to complete their higher education, and enable them to contribute effectively towards the progress of the country.
+This scheme is aligned with the United Nation's Standard Development Goals (SDGs) projecting, 'By 2030 eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable persons with disabilities, indigenous people and children in vulnerable situations'. Pakistan has signed a treaty on September 15, 2008 in the United Nations Convention on "Rights of Persons with Disabilities ", and ratified on July 5, 2011. As per data of Census 1998, there were 622,025 disabled (crippled) persons in Pakistan. Out of these 21,925 were enrolled in different public and private sector schools, colleges and universities in Pakistan.
+OBJECTIVE
+The main objective of the scheme is to facilitate special students having ambulatory disability, so that they can be assisted in their movements and contribute effectively towards the progress of the country.
+VISION:
+Inclusive Development Leaving No One Behind
+DESCRIPTION:
+Ambulatory disabilities are those that have an impact on one's ambulation. This includes people who limp, who experience pain when walking, who cannot walk unaided, who use wheelchairs-canes-walkers and whose walk is impaired because of a physical difference.
+Ambulatory disability means a disability because of which a person:
+- Has a physical and permanent disability to such a degree that the person is unable to move from place to place without the aid of a wheelchair;
+- Is not able to cross curbs because of paralysis or loss of function of the person's legs;
+- Is missing one or both legs; or
+- Has a permanently impaired or unsteady gait that makes it impossible or impractical to walk as a means of transportation.
+EXECUTION:
+- The execution and operational phases would be looked after by HEC, via ensuring that the distribution is being made transparently and on merit to those students, who fulfill the eligibility criteria for the program.
+- Based on the criteria, the list of students declared eligible to receive the wheel chair would be shared with the respective universities. The student would also be informed via email and a letter addressed at his residential address to collect the wheel chair through the University's relevant department. The Universities via HEC Regional Centers would be responsible to deliver the wheel chair to the concerned student and forward a receiving to the HEC in this regard.
+- The details of the vendor would be shared with the student, so that any repair or service during the warranty period may be made immediately and free of cost.
+
+[SECTION: hec_student_welfare_policies_33_HEC_STUDENT_WELFARE_POLICIES_PART_5]
+# HEC student welfare policies (part 5)
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC student welfare policies (part 5)
+Official page: https://www.hec.gov.pk/english/services/students/wheelchair/Pages/Eligibility-Criteria.aspx
+Source file: https://www.hec.gov.pk/english/services/students/wheelchair/Pages/Eligibility-Criteria.aspx
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+Prime Minister’s Electric Wheelchair Scheme for University Students
+Eligibility Criteria
+- Eligibility Criteria
+- PM Electric Wheelchairs Phase-I Report
+- How to Apply
+- Benefits Scheme
+- Distribution Ceremonies
+- Picture Gallery
+Eligibility Criteria
+Special students of HEC recognized universities and degree awarding institutions of Pakistan and AJ&K, requiring ambulatory assistance.
+- Valid Certificate of special ambulatory need from relevant government institution duly verified by head of the respective institution ( Annex-A )
+
+[SECTION: hec_student_welfare_policies_34_HEC_STUDENT_WELFARE_POLICIES_PART_6]
+# HEC student welfare policies (part 6)
+Title: HEC student welfare policies: students with disabilities, drug and tobacco abuse, campus security and surveillance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC student welfare policies (part 6)
+Official page: https://www.hec.gov.pk/english/services/students/wheelchair/Pages/How-To-Apply.aspx
+Source file: https://www.hec.gov.pk/english/services/students/wheelchair/Pages/How-To-Apply.aspx
+Version: As published on the HEC policies pages, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+Prime Minister’s Electric Wheelchair Scheme for University Students
+How to Apply
+- Eligibility Criteria
+- PM Electric Wheelchairs Phase-I Report
+- How to Apply
+- Benefits Scheme
+- Distribution Ceremonies
+- Picture Gallery
+How to Apply
+- Click here to download User manual for Electric Wheelchair
+- Prospective students would fill in their particulars via online application forms on a given link at HEC website. The form would be printed, necessary documents attached and submitted through office of the respective Vice Chancellor or designated person at the university/Degree Awarding Institute.
+- Universities will forward all eligible cases to HEC for distribution of wheel chairs.
+Verification of Applications:
+- T
+he Applications received would be forwarded through the Vice Chancellors' office and would be accompanied by a medical certificate satisfying the verification criteria. 

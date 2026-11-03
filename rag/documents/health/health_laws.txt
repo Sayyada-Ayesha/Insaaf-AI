@@ -1,0 +1,72 @@
+# Health Law of Pakistan — Regulators, Facilities, Practitioners, Food and Drugs
+# Coverage: DRAP drug regulation, healthcare establishment regulation, medical/dental
+# practitioner regulation, food safety authorities, mental health framework. Sources: DRAP Act
+# 2012; PMDC Act 2022 (replacing PMDC Ordinance 1962 regime); Islamabad Healthcare Regulation
+# Act 2018; provincial food authority acts; provincial mental health acts.
+
+[SECTION: HEALTH_READING_NOTE]
+Health regulation in Pakistan is split: the Drug Regulatory Authority of Pakistan (DRAP) regulates
+drugs, medical devices and health products federally; healthcare practitioners are regulated by
+councils (PM&DC for medical/dental practitioners; provincial nursing and allied-health councils);
+healthcare establishments (hospitals, clinics, labs) are regulated provincially (e.g., Islamabad
+Healthcare Regulation Act 2018 in ICT, Punjab Healthcare Commission Act 2010 in Punjab, Sindh
+Healthcare Commission Act 2013 in Sindh, KP Healthcare Commission Act 2015); food safety is
+provincial (food authorities). Complaints route to the relevant regulator, not a single body.
+
+[SECTION: HEALTH_DRAP_DRUGS]
+LAW: Drug Regulatory Authority of Pakistan Act, 2012. COVERAGE: PARTIAL.
+KEY PROVISIONS (summary of the operative framework):
+- DRAP regulates: registration/marketing authorization of drugs and medical devices, licensing
+  of drug manufacturing and sales premises, clinical trial oversight, pharmacovigilance,
+  quality control, and enforcement against spurious, adulterated and unregistered drugs.
+- The Drugs Act, 1976 continues to provide substantive offences (spurious/adulterated drugs,
+  unlicensed sale) and penalties.
+- Complaints about unsafe or unregistered medicines/devices: DRAP complaint channels (official
+  DRAP website/helplines) and provincial drug inspectors.
+SOURCE: DRAP Act, 2012; Drugs Act, 1976. VERIFICATION: verified as to framework.
+
+[SECTION: HEALTH_HEALTHCARE_REGULATION]
+LAWS: Islamabad Healthcare Regulation Act, 2018 (ICT); Punjab Healthcare Commission Act, 2010;
+Sindh Healthcare Commission Act, 2013; Khyber Pakhtunkhwa Healthcare Commission Act, 2015.
+COVERAGE: SUMMARY-PARTIAL.
+KEY PROVISIONS (summary): each commission licenses and regulates healthcare establishments
+(hospitals, clinics, diagnostic labs) in its territory; sets minimum service delivery standards;
+receives and investigates complaints of medical negligence/malpractice against registered
+establishments; may suspend/cancel licences and impose penalties.
+SOURCE: the respective commission acts. VERIFICATION: verified as to the acts' existence and
+purpose; complaint procedures should be checked on each commission's official website.
+
+[SECTION: HEALTH_PRACTITIONER_REGULATION]
+LAW: Pakistan Medical and Dental Council regime (PMDC Act, 2022, following the PMDC Ordinance
+1962 and its successors) and provincial nursing councils. COVERAGE: SUMMARY.
+KEY PROVISIONS (summary): PM&DC registers medical and dental practitioners, regulates medical
+and dental education and colleges, and disciplines professional misconduct; practising without
+registration is an offence. Complaints against practitioners go to PM&DC (or the provincial
+council for nursing/allied professionals) in addition to the healthcare commission route for
+establishment-level negligence.
+SOURCE: PMDC Act, 2022. VERIFICATION: metadata-verified (PMDC's governing statute has been
+re-enacted; check the current act).
+
+[SECTION: HEALTH_FOOD_SAFETY]
+LAWS: Punjab Food Authority Act, 2011 (Punjab Food Authority); Sindh Food Authority Act, 2016;
+KP Food Safety and Halal Food Authority Act, 2014; Balochistan Food Authority Act (verify);
+food-safety enforcement in ICT. COVERAGE: SUMMARY.
+KEY PROVISIONS (summary): provincial food authorities license and inspect food businesses,
+enforce hygiene and labelling standards, act against adulteration (also punishable under the
+Pakistan Penal Code sections on food/drink adulteration), and receive consumer complaints.
+SOURCE: provincial food authority acts. VERIFICATION: metadata-verified (acts exist; current
+authority names and procedures should be checked per province).
+
+[SECTION: HEALTH_MENTAL_HEALTH]
+LAWS: Mental Health Ordinance, 2001 (federal, largely superseded provincially) and provincial
+mental health acts (e.g., Punjab Mental Health Act, 2020; Sindh Mental Health Act, 2013; KP
+Mental Health Act, 2017 — verify titles). COVERAGE: SUMMARY.
+KEY PROVISIONS (summary): provide for assessment, voluntary and involuntary admission safeguards,
+treatment standards, and rights of persons with mental health conditions; involuntary admission
+requires prescribed procedures and safeguards.
+SOURCE: Mental Health Ordinance 2001 and provincial acts. VERIFICATION: metadata-verified.
+
+[SECTION: HEALTH_LIMITS]
+LIMITS: exact licensing fees, application forms and current complaint portals change; answer
+with the framework and point to the relevant authority's official channels. Medical advice is
+out of scope for legal guidance — route treatment questions to qualified health professionals.

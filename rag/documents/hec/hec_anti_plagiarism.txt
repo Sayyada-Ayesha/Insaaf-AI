@@ -1,0 +1,1302 @@
+# HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: Pakistan (Federal) — higher education
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes | Published/notified: 2023-08-02 | Effective: 2023-08-02 | Status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Provenance: sections below carry the canonical HEC URL for the document they were extracted from.
+Coverage area: H,B
+Verification note: The notification attachment "Notification-ANTI-PLAGIARISM-POLICY.pdf" is an image scan; the policy text used is HEC’s published Plagiarism-Policy.pdf plus the Plagiarism Directorate SOPs.
+
+[SECTION: hec_anti_plagiarism_1_HEC_ANTI_PLAGIARISM_POLICY_AND_COMPLAINT_PROCE]
+# HEC Anti-Plagiarism Policy and complaint procedure (Turnitin,
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin,
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+ANTI-PLAGIARISM POLICY V ERSION 2.0 August 2023 i Table of Contents List of Abbreviations  ii 1. Preamble  1 2. The HEC’s Mandate to Prevent Plagiarism  1 3. Principles of the Policy  2 4. Definition of Plagiarism  2 5. Common Types of Plagiarism  4 6. Aims of the Policy  5 7. Applicability  5 8. Responsibility of the Higher Education Institutions and Organizations  6 9. Lodging a Plagiarism Complaint  6 10. Investigating Plagiarism Complaints  7 11. Role of the University Anti-Plagiarism Standing Committee  9 12. Submission of Findings by UAPSC  10 13. Penalties for Plagiarism  10 13.1 Grounds to Determine the Penalty:  10 13.2 Illustration/Examples:  12 13.3 Co-author(s)/Declarations 13 14. Additional Actions Required  13 15. National Plagiarism Standing Committee  14 16. Appeal  15 17. Spurious/Malicious Accusations of Plagiarism  16 Annexure-1:  18 Annexure 2:  20 Annexure-3:  21 Frequently Asked Questions (FAQs)  23 References:  25 ii List of Abbreviations APA: American Psychological Association CNIC: Computerized National Identity Card COPE: Committee on Publication Ethics DAI: Degree Awarding Institution DOI: Digital Object Identifier E&D: Efficiency and Discipline EDS: Electronic Detection System HEC: Higher Education Commission HEI: Higher Education Institution IPR: Intellectual Property Rights MLA: Modern Language Association NPSC: National Plagiarism Standing Committee QEC: Quality Enhancement Cell R&D: Research and Development Organizations ToR Term of Reference UAPSC: University Anti-Plagiarism Standing Committee
+
+[SECTION: hec_anti_plagiarism_2_VC_VICE_CHANCELLOR]
+# VC. Vice Chancellor
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: VC. Vice Chancellor
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+VC: Vice Chancellor
+
+[SECTION: hec_anti_plagiarism_3_1_PREAMBLE]
+# 1. Preamble
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 1. Preamble
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+1. Preamble
+The Higher Education Commission introduced the first Plagiarism Policy in 2007 intending to protect, respect, credit, and recognize the original research and scholarly publications and curb the menace of plagiarism through systemic improvements based on process, development, and punitive actions besides safeguarding against the bogus or false complaints. Since its launch in 2007, a few challenges and concerns were raised about the policy related in general to the interpretation of plagiarism (definitions) across various disciplines, clarity of roles and responsibilities of HEIs vis-à-vis HEC, lack of appeal process, subjective determination of penalties and incomplete articulation of processes of complaints. Given the circumstances, it became essential to review and improve the HEC Plagiarism Policy to incorporate various forms and illustrations in which plagiarism exhibits itself, present a methodology of investigation, cater for punitive action proportional to the extent of the offence, address the issue of false or spurious complaints, institute appellate process, etc. Efficiency & Discipline Rules and the Service Statutes of research institutions and organizations.
+The revised Anti-Plagiarism Policy reflects several improvements in terms of principles of the policy, definitions, and types of plagiarism, clear complaint lodging procedure, the composition of the University Anti-Plagiarism Standing Committee, grounds and penalties of plagiarism, the constitution of National Plagiarism Standing Committee at HEC, appellate process, etc.
+Introducing this policy, the Commission firmly believes that its implementation would significantly enhance academic integrity, thereby the overall quality of the higher education system.
+
+[SECTION: hec_anti_plagiarism_4_2_THE_HEC_S_MANDATE_TO_PREVENT_PLAGIARISM]
+# 2. The HEC’s Mandate to Prevent Plagiarism
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 2. The HEC’s Mandate to Prevent Plagiarism
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+2. The HEC’s Mandate to Prevent Plagiarism
+The Higher Education Commission (HEC) Ordinance of 2002, under section 10(a), demands that the Commission needs to develop guidelines or policies for improving and promoting quality and ethical research culture. The relevant section of the Ordinance is reproduced below:
+Section 10 (a) : Formulate policies, guiding principles, and priorities for higher education institutions for the promotion of socio-economic development of the country.
+Given the quoted section, the HEC tasked the Experts Committee on June 29, 2021, to review and revise the Anti-Plagiarism Policy (HEC Plagiarism Policy 2007). This revised Policy intends to uphold the autonomy and responsibility of HEIs/DAIs to ensure the authenticity of ethical research and eliminate the scourge of plagiarism. Anti-plagiarism is just one component of the broader policy framework that deals with Academic Dishonesty and Research Ethics (Gift authorship, Dispute of authorship, Citation Racketeering, etc.). The policy review has to be a dynamic process, due to the evolving National and International ground realities. It is recommended that the Anti-Plagiarism Policy be reviewed, at least once every three to five years, to reflect upon, and respond to, emerging developments.
+
+[SECTION: hec_anti_plagiarism_5_3_PRINCIPLES_OF_THE_POLICY]
+# 3. Principles of the Policy
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 3. Principles of the Policy
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+3. Principles of the Policy
+The Policy is based on the following general principles:
+a. Awareness for Preventing Plagiarism: Universities and faculty members should arrange regular capacity-building activities, within each calendar year, to create awareness about avoiding plagiarism in its various forms.
+b. Following Research Ethics: Universities, faculty, students, and staff should follow research ethics to avoid plagiarism in their academic and research contributions.
+c. Respecting Intellectual Contribution: Researchers/Scholars and Faculty members
+should acknowledge other researchers’ intellectual work, as per the norms of their respective disciplines.
+d. Devising Process for Probing Plagiarism: Plagiarism is considered a serious matter,
+and there is a need to curb this menace through proper, detailed, and defined processes.
+
+[SECTION: hec_anti_plagiarism_6_4_DEFINITION_OF_PLAGIARISM]
+# 4. Definition of Plagiarism
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 4. Definition of Plagiarism
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+4. Definition of Plagiarism
+The online Oxford Learner’s Dictionary defines the term Plagiarism as follows:
+“The practice of copying another person's ideas, words or work and pretending that they are your own.” The online Merriam-Webster dictionary’s definition of Plagiarism is as follows:
+“To steal and pass off (the ideas or words of another) as one’s one: use (another’s production) without crediting the source” https://www.oxfordlearnersdictionaries.com/us/definition/english/plagiarism?q=plagiarism https://www.merriam-webster.com/dictionary/plagiarized Furthermore, the following acts fall within the scope and definition of plagiarism:
+a. To steal and present the ideas or words of others as one’s own b. To use another person’s production, without citing and crediting the source
+c. To commit literary theft
+d. To present as a new and original idea or product derived from an existing
+scholarly source.
+e. Turning in someone else’s work as one’s own f. Copying words or ideas from someone else without giving credit g. Failing to put a quote or quotation marks, when copying the exact language from a source h. Giving incorrect information about the source of a quotation
+i. Changing words but copying the sentence structure of a source without giving
+credit j. Copying a bulk of words or ideas from other references and including them in your work, whether you give credit or not.
+The following activities are prevalent in today’s technology-driven society. Despite their everyday use, they still count as academic cheating and plagiarism if done without permission from the original artists/creators.
+a. Copying media (especially images) from other websites to paste them into your work or websites.
+b. Making a video using footage from others’ videos or copyrighted art and music as part of a soundtrack.
+c. Performing another person’s copyrighted music (i.e., playing a cover) without
+permission.
+d. Composing a piece of music which is heavily borrowed from another
+composition.
+Indeed, some media can create challenging situations to determine if the copyrights of a work are being violated. For example:
+a. A photograph or scan of a copyrighted image (using a picture of a book cover to represent that book on one’s website) b. Recording audio or video in which copyrighted music or video is playing in the background.
+c. Re-creating a visual work in the same medium. (Shooting a photograph that uses
+the same composition and subject matter as someone else’s photograph)
+d. Re-creating a graphic work in a different medium (making a painting closely
+resembling another person’s photo without permission).
+e. Re-mixing or altering copyrighted images, videos, audio, or other artistic expressions.
+f. Use of ChatGPT and similar machine-generated text.
+For determining/avoiding unauthorized use of somebody else’s copyrighted material, guidelines from the Committee on Publication Ethics (COPE) are available at https://publicationethics.org/guidance/Guidelines
+
+[SECTION: hec_anti_plagiarism_7_5_COMMON_TYPES_OF_PLAGIARISM]
+# 5. Common Types of Plagiarism
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 5. Common Types of Plagiarism
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+5. Common Types of Plagiarism
+a. Students Collusion: Working with other students on an assignment meant for individual assessment.
+b. Word-for-Word Plagiarism: Copying and pasting content without proper attribution/ reference.
+c. Self-Plagiarism: Reusing one’s previously published or submitted work without
+proper attribution.
+d. Mosaic Plagiarism: Weaving phrases and text from several sources into one’s work.
+Adjusting sentences without quotation marks or attribution.
+e. Software-based Text Modification: Taking content written by another person and running it through a software tool (text spinner, translation engine) to evade plagiarism detection.
+f. Contract Cheating: Engaging a third party (for a fee, for free or in-kind compensation) to complete an assignment and representing that as one’s work, if proven.
+g. Inadvertent Plagiarism: Forgetting to properly cite or quote a source or unintentional paraphrasing or violation of stylistic norms.
+h. Paraphrase Plagiarism: Rephrasing a source’s ideas without proper attribution.
+i. Computer Code Plagiarism: Copying or adapting source code without permission
+from, and attribution to, the original creator.
+j. Data Plagiarism: Falsifying or fabricating data or improperly appropriating someone else’s work, putting a researcher, institution, or publisher’s reputation in jeopardy.
+k. Manual Text Modification: Manipulating text with the intention of misleading the plagiarism detection software.
+l. Source-based Plagiarism: Providing inaccurate or incomplete information about
+sources which do not exist.
+
+[SECTION: hec_anti_plagiarism_8_6_AIMS_OF_THE_POLICY]
+# 6. Aims of the Policy
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 6. Aims of the Policy
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+6. Aims of the Policy
+This Policy seeks to create awareness about avoiding all kinds of plagiarism among the stakeholders i.e., students, mentors/supervisors, researchers, faculty members, and staff of universities or Degree Awarding Institutions (DAIs), constituent colleges, affiliated colleges, and affiliated R&D institutes/organizations. It addresses a central problem regarding academic dishonesty and the processes involved in probing any complaint of plagiarism.
+
+[SECTION: hec_anti_plagiarism_9_7_APPLICABILITY]
+# 7. Applicability
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 7. Applicability
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+7. Applicability
+The Policy applies to students, employees of universities/organizations, faculty members, researchers, and staff of all Universities and DAIs of Pakistan, whether operating in the private or public sectors. The Policy applies to all degree programs at undergraduate and graduate levels. In this context, A “Student” is a person who, on the date of the submission of his/her paper/work, is a registered student at any university, DAI, constituent, or affiliated college, recognized by the Higher Education Commission (HEC).
+A “Faculty Member/Researcher” includes a faculty member or equivalent at a University/Organization, constituent or affiliated college, or researcher of an organization or any such other person as may be declared so by regulations. A Faculty Member/Researcher may be working on a regular, contractual, visiting, ad hoc, or adjunct basis, or engaged online.
+All such scholars/supervisors/stakeholders, who are researching in HEIs/DAIs and have placed their CVs or any other publication(s) on the institutional website, and are applying for any benefit, based on their published or presented works, which later prove to be plagiarized, will be liable to be punished, as per the prescribed rules.
+
+[SECTION: hec_anti_plagiarism_10_8_RESPONSIBILITY_OF_THE_HIGHER_EDUCATION_INSTI]
+# 8. Responsibility of the Higher Education Institutions and
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 8. Responsibility of the Higher Education Institutions and
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+8. Responsibility of the Higher Education Institutions and
+Organizations All HEIs/DAIs must effectively communicate this Policy to their students, faculty members, researchers, and staff. Author(s) are deemed individually and collectively responsible for the contents of their paper(s)/book i.e. published work of literature or scholarship (https://www.britannica.com/topic/book-publication)/book chapters, etc. Please see ‘ Sample Undertaking ’ in Annexure-1.
+All HEIs/DAIs and research organizations must provide orientation to young scholars, embarking on ethical research activities, in a bid to spread awareness among them regarding the recognized manuals, such as the MLA Style Sheet, APA User Manual, and other international scholarly norms of conducting, reporting, and sharing of research. Violations of Intellectual Property Rights (IPR), including Plagiarism, is a severe crime with legal ramifications. For details, please visit https://publicationethics.org/guidance/Guidelines .
+Faculty members/supervisors are strongly encouraged to use their subject knowledge and familiarity with the skills/aptitude of students to confidently reinforce in them the highest ethical standards, in terms of discouraging any kind of plagiarism and academic cheating, through the existing detection and academic evaluation mechanisms at their disposal.
+Universities which do not follow the HEC Anti-Plagiarism Policy will get reported as non-compliant in the QA criteria for future rankings and funding.
+
+[SECTION: hec_anti_plagiarism_11_9_LODGING_A_PLAGIARISM_COMPLAINT]
+# 9. Lodging a Plagiarism Complaint
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 9. Lodging a Plagiarism Complaint
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+9. Lodging a Plagiarism Complaint
+A complaint regarding plagiarism may be lodged with the VC/President/Rector or Head/Principal of the respective university/DAI for further probe. In cases, where the accused person is the Vice-Chancellor/Rector or Head of the Institution, the complaint should be forwarded to the National Plagiarism Standing Committee (NPSC), through Chairperson HEC/ Quality Assurance Division of HEC, with a copy to the Appointing Authority i.e., Chancellor/President as well as the Provincial Higher Education Department/Commission.
+However, the findings/decision of the NPSC shall be shared with the Appointing Authority/HEIs for implementation/action. The complaint may be forwarded to the respective institution or organization through post, fax, email, or other means. The complainant may be a faculty member, student, or researcher of any of the HEC-recognized universities/DAIs or a concerned citizen. To file a complaint, the complainant is required to share:
+a. A copy of his/her own Computerized National Identity Card (CNIC), if from Pakistan, or Passport, in the case of foreigners, or other legally valid proof of identity b. Citation of the original paper or document or idea, which was plagiarized, (paper title, author(s), publication title, month and year of publication, and the journal, in which it was published, with all the details)
+c. Citation of the alleged plagiarized paper (paper title, author(s), publication title, month
+and year of publication, the journal details where it was published along with the DOI number, if available). If the report is unpublished (e.g., institutional, technical writing), the complainant must provide as much information as possible to ensure proper investigation.
+d. Original Journals or Certified Copies of both the allegedly plagiarized document and the
+original document e.g., papers or theses or electronic copy with DOI number, where applicable.
+e. Any other information that would help the university/DAI or HEC to efficiently probe the claim/allegation.
+f. Name, Designation, Organization, email address, and telephone number of the complainant.
+g. In case there is a report of an examiner or reviewer that indicates a thesis/work is plagiarized, that report can become the basis of a plagiarism case/investigation. This also applies to a report by a concerned citizen.
+h. In case of failure, on the part of the university/DAI, to take up the case as per the procedure, within 90 days, HEC may forward the complaint to the Chancellor of the university/DAI for information.
+i. The VC/Rector/Head of the organization may become the complainant if there is
+overwhelming evidence of plagiarism. However, anonymous complaints shall not be considered for any further action.
+
+[SECTION: hec_anti_plagiarism_12_10_INVESTIGATING_PLAGIARISM_COMPLAINTS]
+# 10. Investigating Plagiarism Complaints
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 10. Investigating Plagiarism Complaints
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+10. Investigating Plagiarism Complaints
+The respective university/organization will, initially, deal with complaints regarding plagiarism, according to the procedure, given below:
+For investigation of plagiarism cases, the VC/Rector/Head of the organization shall:
+a. Consider an allegation of plagiarism by students, faculty, and others and constitute a “University Anti-Plagiarism Standing Committee” (UAPSC) with the following composition:
+i. HEC Nominee - The Quality Assurance Division, HEC will nominate a faculty
+member, well-conversant with the HEC Anti-plagiarism policy.
+ii. Senior dean and two (02) senior professors from outside University/DAI
+iii. Three subject experts: one from the university/DAI, and two (02) from other
+universities to be nominated by the Academic Council and approved by Syndicate.
+The university should maintain a panel of experts, preferably from all major disciplines, duly approved by the Academic Council.
+iv. Director QEC as a member/secretary
+b. Senior faculty members (of the same or other universities) who have unblemished careers and integrity and who meet other parameters indicative of a commitment to research ethics and excellence. The quorum of the committee will be comprised of four (04) members. The seniority/rank of the University Anti-Plagiarism Standing Committee members should be equal to or greater than the accused, keeping in view the seniority/rank of the individual being investigated and the nature and gravity of the offense. The opinion of the subject experts should be given due weightage. However, the decision shall be based on principle, not on the majority. The senior member will chair the UAPSC. Policy guidelines and SOPs may be provided by the university to the UAPSC for assistance.
+c. Provide clear Terms of Reference (ToR) to the UAPSC for the investigation. Sample
+ToRs are enclosed as Annexure-2 .
+d. Provide a fair opportunity to the accused or author(s) under investigation to defend the
+originality of their concepts and research work. A similar opportunity will also be provided to the author(s) whose paper(s) is/are deemed to have been plagiarized and/or the complainant (if any), to testify to the veracity of the allegations in the plagiarism complaint.
+e. Facilitate the UAPSC to use all available means, including legal and E&D provisions, to investigate the plagiarism case.
+f. All members of the UAPSC are to sign confidentiality and conflict of interest statements.
+If a conflict of interest occurs, the member(s) are to recuse themselves. During the investigation, the committee members will not disclose any individual author’s name, paper titles, referees, or any other personal or specific information concerning the plagiarism complaint under investigation, nor shall they reveal their names. The findings of the respective committee would be placed before the Appointing/Administrative Authority (Syndicate for Students/Faculty and Chancellor for VC) for review and necessary action. In case of a complaint against VCs, the HEC can assist the Appointing Authority. This would apply to both VCs currently serving and those who are retired as VCs if the allegation corresponds to their tenure(s) as VCs.
+g. The University Anti-Plagiarism Standing Committee will submit an investigation report to the Head of the institution within 60 days which will also be shared with the complainant. In case of disagreement, the complainant may file an appeal to the Syndicate within the next 30 days.
+h. The head of the Institution or Registrar or Director QEC will notify the outcome/ decision to the complainant, accuser (s), and HEC.
+
+[SECTION: hec_anti_plagiarism_13_11_ROLE_OF_THE_UNIVERSITY_ANTI_PLAGIARISM_STAN]
+# 11. Role of the University Anti-Plagiarism Standing Committee
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 11. Role of the University Anti-Plagiarism Standing Committee
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+11. Role of the University Anti-Plagiarism Standing Committee
+The University Anti-Plagiarism Standing Committee shall conduct the investigation.
+Depending on the details of the complaint, the investigation may include the following steps:
+a. Automated Check through Electronic Detection System (EDS) for content similarity or its extent by the Subject expert(s). Please see Annexure-3 .
+b. Hard copies/Manually generated content can be scanned and converted to a searchable format.
+c. Determine the magnitude and quantum of significant material plagiarized.
+d. Solicit comments from the publishers and other relevant quarters.
+e. Contact relevant witnesses to gather and record statements when necessary.
+f. If needed, interview the present and/or past employers/supervisors/collaborators or any other persons of interest related to the author(s).
+g. Consult with the legal counsel of the concerned University on all related matters throughout the inquiry process.
+h. Take any other necessary step(s), if deems fit to take.
+
+[SECTION: hec_anti_plagiarism_14_12_SUBMISSION_OF_FINDINGS_BY_UAPSC]
+# 12. Submission of Findings by UAPSC
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 12. Submission of Findings by UAPSC
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+12. Submission of Findings by UAPSC
+The UAPSC will submit its findings and recommendations to the ViceChancellor/Rector/ Head of the Organization within sixty (60) days. It should also be communicated to the publisher where applicable. Decisions made by the committee and approved by the Syndicate are to be implemented as soon as possible. Appeal against the decision of UAPSC will be made before the Syndicate within thirty (30) days of UAPSC decision.
+
+[SECTION: hec_anti_plagiarism_15_13_PENALTIES_FOR_PLAGIARISM]
+# 13. Penalties for Plagiarism
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 13. Penalties for Plagiarism
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+13. Penalties for Plagiarism
+Plagiarism is an unacceptable intellectual offense. As such, the penalties for plagiarism should be commensurate with the severity and recurrence of the offense as well as based on the impact of the academic standing of the offender. This entails a proportional increase in punitive action with minimum punishment for a first-time offense by a student/scholar who copies a homework assignment to a maximum punishment for a teacher/researcher/staff who publishes plagiarized material.
+13.1 Grounds to Determine the Penalty:
+When an act of plagiarism, as described above, is established, the UAPSC in its recommendations, DEPENDING UPON THE SERIOUSNESS OF THE PROVEN OFFENCE, will advise the Competent Authority of the University/DAIs to take any one or a combination of the following disciplinary action(s) against those found guilty of the offence:
+A. Grounds for Major Penalty:
+If the act of plagiarism is determined to be:
+a. Deliberate b. Constitutes much of the publication.
+c. Is a duplicate publication claimed for credit more than once by the author(s)
+d. Is between 35% and 50% in the similarity index and/ or over 30% in the findings.
+e. Is simply a translation of another work.
+f. The result of collusion or falsification.
+g. Is a work of junk science (presenting untested and unproved theories, as scientific facts are known as junk science).
+h. Is material in which reference to the original material is not given.
+Major Penalty:
+a. Removal from service from the current institution/university as a faculty/non-faculty employee.
+b. Dismissal from the services as faculty/ non-faculty employee
+c. The awards/grants/benefits received based on plagiarized content shall be
+withdrawn, including promotion.
+d. Expulsion from the HEI (in the case of students).
+e. Suspension of studies for two (02) semesters (in the case of students) f. The offender may be barred from joining any institution of Higher Education in Pakistan for one year (in the case of the student) g. HEC or University/DAI may debar the offender from sponsorship of research funding, travel grant, scholarship, fellowship, or any other funded program for two (02) years.
+h. In the case of a published work, University or DAI should inform the publisher about the findings and request them to withdraw the plagiarized work forthwith.
+i. The offender may be stopped for supervision of new students (MPhil & Ph.D.
+students) for two (02) years. However, the students who are already in supervision will continue as supervisees of the offender(s).
+j. A notice may be circulated among all academic institutions and research organizations.
+B. Grounds for Moderate Penalty: If plagiarism is determined to be:
+a. Deliberate b. Spread over a substantial part of the paper.
+c. Is between 25% and 35% in the similarity index (exclusive of tables, figures, and
+references) and/or 20-30% in the findings.
+d. The results of collusion or falsification.
+e. Is a work of junk science (presenting untested and unproved theories, as scientific facts are known as junk science) Moderate Penalty:
+a. The offender may fail the course (in the case of the student) b. The offender may be stopped from increments/promotions/new appointments for two (02) years.
+c. The offender may be stopped for supervision of new students (both MPhil & Ph.D.
+students) for one (01) year. However, the students who are already in supervision will continue as supervisees of the offender.
+d. The offender shall not be eligible to seek and avail the funding for any national/
+international projects/grants and will not be eligible to become part of any joint project for one (01) year.
+C. Grounds for Minor Penalty: If the plagiarism is determined to be:
+a. Unintentional; however, neither claimed for benefit nor mentioned in the CV.
+b. Concentrated on one part of the paper.
+c. Not more than 20 to 25% similarity index overall and/ or 10% in the findings
+d. Does not materially affect the results.
+e. Due to an error or omission or lapse of judgment.
+Minor Penalty:
+a. Proposal revision (in the case of students) b. Mandatory to pass the “Research Ethics Course” before completing the degree.
+c. The offender may be given a formal warning which must be placed in the dossier/
+personal file.
+
+[SECTION: hec_anti_plagiarism_16_13_2_ILLUSTRATION_EXAMPLES]
+# 13.2 Illustration/Examples:
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 13.2 Illustration/Examples:
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+13.2 Illustration/Examples:
+1. In this scenario, a paper has over 25% Similarity Index (SI) and 15% of that is in the findings because the author did not properly rephrase the paper and was derived from an existing theoretical model. The author accepts the error while the findings are credible.
+The UAPSC, in this case, may award a minor penalty.
+2. In this scenario, a paper is found to have been deliberately copied in part and is clearly the result of collusion among several authors. However, the findings are not necessarily inaccurate, and the SI is around 35% overall and 15% in the findings. In this case, a moderate penalty can be imposed.
+3. In this scenario, the author(s) have published modified versions of the same paper in multiple journals and claimed credit for them. There is clear evidence of collusion and intent to defraud academia. This is a case that merits a severe penalty.
+Note: It is worth noting that UAPSC may impose one or more than one penalty in all cases i.e., minor, moderate, and major penalties. Of course, it needs to be emphasized that these guidelines are meant to be employed with due caution and reason on the part of the UAPSC, keeping in view the particularities of a given case.
+If a paper is published in a supervisor-student relationship, then the student (s) will be the first author. This condition applies when a student is enrolled in a degree program and the supervisor is advising him/her in research work i.e., thesis or dissertation.
+13.3 Co-author(s)/Declarations
+a. The primary responsibility for plagiarism in a publication lies with the Principal Authors (Corresponding Author/First Author). Any co-author(s) may be deemed partly responsible for plagiarism if the UAPSC investigation reveals that they were aware of the wrongdoing and chose to benefit from it, with their consent for publication duly taken. If the published work is part of a thesis of student and the co-author is not a supervisor, then justifications will be required in the form of no conflict of interest in publication.
+b. All authors/co-authors of a publication must sign a declaration that the material presented is not plagiarized (Sample attached as Annexure-1 ) and must exercise caution and diligence in associating themselves with any research work.
+
+[SECTION: hec_anti_plagiarism_17_14_ADDITIONAL_ACTIONS_REQUIRED]
+# 14. Additional Actions Required
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 14. Additional Actions Required
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+14. Additional Actions Required
+In addition to the above punishments/considerations, the following additional actions must be taken, if the offence of plagiarism is established:
+a. If the plagiarized publication is accessible on the webpage, its access will be retracted.
+b. The publication itself will be kept in the database for future research or legal purposes.
+c. The author(s) will be asked to write a formal letter of apology to the authors of
+the original publication that was plagiarized.
+d. If the publication is submitted but not published, the draft publication will be
+rejected. However, a written warning shall be served to the author/ co-authors.
+
+[SECTION: hec_anti_plagiarism_18_15_NATIONAL_PLAGIARISM_STANDING_COMMITTEE]
+# 15. National Plagiarism Standing Committee
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 15. National Plagiarism Standing Committee
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+15. National Plagiarism Standing Committee
+The HEC will establish a National Plagiarism Standing Committee (NPSC) to probe complaints against VC/Rectors/Head of Institution.
+If a plagiarism complaint is not addressed by the university despite multiple attempts by the complainant, the complainant has the option to forward that complaint to HEC NPSC through the Chairperson, HEC, or the Head of the Quality Assurance Division. However, to have his/her complaint considered, the complainant shall be required to produce evidence that he/ she has submitted the complaint to the Vice Chancellor of the concerned university at least three (03) times.
+Once the complaint is forwarded to HEC, the matter will be taken up with the university to place the complaint before the UAPSC. The University will be liable to submit a report to HEC within sixty (60) days. In case of non-compliance by the university, HEC NPSC will take up the matter for resolution and the Vice Chancellor will receive a formal ‘ Note of Displeasure ’ consequently.
+Membership of the National Plagiarism Standing Committee (NPSC) shall be for an initial period of two (02) years, extendable for another term(s). If a member does not show up consecutively for three (03) meetings without any strong justification, membership may be replaced. The NPSC will comprise of:
+a. Chair of the Committee- The Executive Director, HEC will Chair the Committee.
+b. Eminent Educationist/ Professors of known integrity to be nominated by the Chairperson, HEC.
+c. Four (04) subject experts to be proposed by the Quality Assurance Division in
+consultation with Academics and Research & Innovation Division from the broad disciplines viz. (medical, engineering, agriculture, and social sciences) of the study. The Executive Director of HEC will approve the experts from the jointly suggested list.
+d. Director General/Head of the Quality Assurance Division.
+e. The Quality Assurance Division shall provide the Secretariat Support to NPSC. The Chairperson HEC will approve the recommendations of NPSC.
+f. The Convener of the NPSC may co-opt additional members if needed. The quorum of the committee will be two-thirds of the members including at least one (01) subject expert.
+
+[SECTION: hec_anti_plagiarism_19_16_APPEAL]
+# 16. Appeal
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 16. Appeal
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+16. Appeal
+HEC NPSC will be responsible to process the appeal in the following scenarios:
+a. All plagiarism complaints against students, faculty members, researchers, and other stakeholders shall be lodged at the university/organization where the accused is employed. The University Anti-Plagiarism Standing Committee shall investigate and conclude the matter. The first appeal against the UAPSC decision shall be lodged in the university through Syndicate within 30 days of the notification of the UAPSC decision.
+However, the complainant/accuser may lodge the second appeal to NPSC through Chairperson, HEC/ Head of Quality Assurance Division of HEC within six (06) months of the first complaint.
+b. The plagiarism complaint of the VC/Rector/Head of the organization is investigated by the NPSC as an initial complaint, and if the complainant or accused is dissatisfied with the NPSC recommendations then an appeal against the NPSC recommendations may be filed to the Chairperson HEC. However, in this scenario, NPSC subject experts will be different in entertaining the appeal.
+A. The process of appeal for NPSC is given below:
+a. Appeals filed by the complainant/accused in plagiarism case(s) should be submitted before the Chairperson HEC/ Head of the Quality Assurance Division in writing through application in hard form or email or fax.
+b. The National Plagiarism Standing Committee (NPSC) shall review the appeal and co-opt the subject expert (s) accordingly (if required).
+c. The complainant and accused shall be given the opportunity to justify or
+provide evidence before the appeal committee in their defense.
+d. The NPSC shall review complaint(s) in the light of evidence/ justification produced
+by the accused.
+e. The Law Officer shall provide an opinion about the legal aspects of the Appeal.
+f. The Minutes of the Meeting shall be recorded by the Secretary of the Committee/ by his supporting staff and approved by the Chairperson with the consent of the members.
+g. Final decision made by the Committee shall be conveyed to the appellant, Institution as well as to the Appointing Authority (if the complaint is against the Vice Chancellor/Head of the organization) through a letter after the approval of the HEC’s competent authority.
+B. The process of appeal for the University Anti-Plagiarism Standing Committee (UAPSC) is given below:
+a. Appeals filed by the complainant/accused in plagiarism case(s) should be submitted before the Syndicate in writing through application in hard form or email.
+b. The UAPSC shall review the appeal and co-opt the subject expert (s) accordingly (if required).
+c. The complainant and accused shall be given the opportunity to justify or
+provide evidence before the appeal committee in their defense.
+d. The UAPSC shall review complaint(s) in the light of evidence/ justification
+produced by the accused.
+e. UAPSC may also seek legal opinion through University Law Officer.
+f. The Minutes of the Meeting shall be recorded by the Secretary of the Committee/ by his/ her supporting staff and approved by the Chairperson with the consent of the members.
+g. The final decision made by the Committee shall be conveyed to the appellant, Head of the Institution/ Rector/ Vice Chancellor as well as to the Syndicate. A copy of the decision shall also be forwarded to the Head of the Quality Assurance Division. In case of dissatisfaction, the accused may file an appeal to the Chairperson HEC/ Head of the Quality Assurance Division.
+
+[SECTION: hec_anti_plagiarism_20_17_SPURIOUS_MALICIOUS_ACCUSATIONS_OF_PLAGIARIS]
+# 17. Spurious/Malicious Accusations of Plagiarism
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 17. Spurious/Malicious Accusations of Plagiarism
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+17. Spurious/Malicious Accusations of Plagiarism
+If the case of plagiarism is not proven, and it is suspected that a spurious allegation was lodged, the Vice-Chancellor/Rector/Appointing Authority may initiate disciplinary proceedings under the Organization’s Statutes and E&D/Student University Disciplinary rules against the accuser. Defamation Laws may also be applicable, in case of loss of reputation. If the accuser is from another organization, the Head of the Organization will be informed about the false allegation(s) with the request to proceed with disciplinary action against the accused. The name(s) of the false accuser(s) be subject to blacklisting as specified on the HEC website for a fixed period. Further, false accusers will not be eligible for the award of any grant/benefit from HEC. At each step of the process, HEC ought to be kept informed by the concerned organization.
+Annexure-1:
+Sample Undertaking HIGHER EDUCATION COMMISSION OF PAKISTAN (Monograph & Textbook Writing Scheme) Monograph/Textbook Proposal Submission Undertaking Corresponding Author(s) name: ___________________________________ Corresponding Author(s) Address: ____________________________________ Title of Work: ___________________________________ The Higher Education Commission (Publisher) and the Monograph/Textbook Proposal Author (Authors if a multi-author Work) agree on the following:
+1. The Monograph/Book will contain the original work of the author(s).
+2. It will not violate the copyright or intellectual property rights of any person or entity.
+3. It will not contain previously published material in whole or in part for which permission from the concerned parties has not been secured.
+4. The author(s) recognize that if any material submitted for consideration to the HEC is found to be plagiarized, the HEC may bar the author(s) from participating in all HEC programs, and a public notice to this effect may be issued in print as well as electronic media. The HEC reserves the right to recover all amounts spent on evaluation/publication etc. and may take any other action deemed necessary to serve as deterrence against plagiarism.
+5. The author(s) shall indemnify and hold the publisher harmless against loss or expenses arising from breach of any such warranties.
+6. In consideration of the HEC’s agreement to publish the work, the author(s) hereby grants HEC a nonexclusive, royalty-free license to print, publish, reproduce, or distribute the work throughout the world by all means of expression, including electronic format. The author(s) further grants HEC the right to use the author’s name in association with the work in published form and promotional materials.
+7. The copyrights are duly reserved by the Higher Education Commission of Pakistan.
+All authors are requested to sign this form. If not signed by all authors, the corresponding author acknowledges that s/he is signing on behalf of all the authors and with their authorization. Faxed signatures and multiple forms are acceptable provided the corresponding author collates all the material and submits it in one batch.
+Author Signature: _______________________ Name: _____________________ Date: ____ Publisher Signature: _____________________Name: __________________ Date: ________ Similar Schemes could be developed for authors or theses etc.
+Annexure 2:
+Sample TORs for UAPSC 1. Director QEC/Registrar/Authorized Officer shall check that the complaint is not anonymous and shall verify the identity of the complainant.
+2. They shall run an initial plagiarism test to verify that the complaint is genuine.
+3. Experts may be engaged (if required) and asked to provide their individual opinion on the case.
+4. They shall prepare questions for the hearing opportunity to the complainant and accused.
+5. The convenor shall complete the final report on the case.
+6. The investigation process must be completed within 60 days.
+
+[SECTION: hec_anti_plagiarism_21_7_THE_COMMITTEE_RECOMMENDATIONS_SHALL_BE_NOTIF]
+# 7. The committee recommendations shall be notified by the Director
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 7. The committee recommendations shall be notified by the Director
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+7. The committee recommendations shall be notified by the Director
+QEC/Registrar/Rector/Vice Chancellor of the University It is important to consider that each institution should create its terms of reference (TORs) for assessing and evaluating a plagiarism complaint based on the given sample and then seek approval from their statutory bodies.
+Annexure-3:
+Guidelines for Use of Electronic Detection System: Interpreting and Applying the Similarity Index 1. The similarity score is just a percentage of material in the paper that matches sources in the Electronic Detection System (EDS) databases. The Similarity Index is meant as a guideline and an alert but is not by itself conclusive evidence of plagiarism.
+2. Text that is quoted and cited may appear as a match in the Similarity Report if quotes have not been excluded from the report; this offers a great opportunity to check for proper citation.
+3. The similarity score must be interpreted in the context of the assignment and the actual writing. The only way to do this is to look at the Similarity Report.
+4. If similarities in the Electronic Detection Systems (EDS) report are significant, i.e., without citation of the source, then the scholar/student or Faculty may be guided accordingly. In case, if he/she repeats the same action (Plagiarism) then it may be reported to the University Anti-Plagiarism Standing Committee with relevant evidence.
+5. The similarities in the EDS report may contain matches with the author’s previous work, i.e., thesis, paper, or report; these may be ignored if properly cited and are not too much.
+This is decided by the respective Instructor/subject expert.
+6. Bibliography, Quoted/Cited material may be excluded from the EDS report after verification. Furthermore, the use of multiple sources without proper citations is also not acceptable.
+7. Common phrases, proper nouns, universal truths, formulae, etc. may also appear as similarities in the EDS report, therefore every instructor/faculty member may ignore these.
+This also applies to small matches of less than five to ten words.
+8. The EDS Similarity Report/Originality report will show similarities from three major sources: the Internet (Information available publicly), periodicals (subscribed sources i.e., Academic databases), and Student repository (Database of documents uploaded in the Turnitin by Instructors or Students). Similarity with student repository may be ignored if it is the author’s work as principal investigator. Similarities from the Student repository may help detect complicity in the documents.
+9. EDS is a text-matching tool, therefore, similarity across graphs, formulae, mathematical equations, models, and other pictorial materials cannot necessarily be discerned with this software.
+10. The similarity score must be interpreted by the relevant subject expert or faculty member supervising the student as they know the context of the assignment/paper/thesis/report, etc.
+In case of forwarding a complaint, the EDS report can be used as evidence if it supports the allegations raised by the complainant.
+11. For submission of assignments, theses, and research papers, the 19% Similarity Index score for all disciplines is indicative of the possibility of plagiarism. In the case of theses/dissertations etc., the Ph.D./Supervisory Committee will function as an Expert Committee in this regard.
+12. The Similarity index should be considered very seriously in the section of findings and conclusion of the document. The similarity index for that section should not be more than 9%. The results, conclusion, and recommendations may be separated in a suitable searchable format for uploading to EDS distinct from the remainder of the document.
+13. If the report has a minimum similarity index <=19%, then the benefit of the doubt may be given to the author but, in case, any single source has a similarity index >=5% then it needs to be checked as a basis of potential plagiarism; due to its drawing upon the author(s) own work(s), these may be considered acceptable and not be used to penalize the author(s), provided it does not result in a duplicate publication Levels of EDS may also be considered for further interpretation as per the EDS Manual Note: Before the availability of Turnitin services in Pakistan, the ability of supervisors to verify that student’s work i.e., Thesis, Research Papers, Reports, Assignments, etc. was limited in terms of checking similarities with previous works. Therefore, it is recommended that the applicability of the collective responsibility of supervisor/student be limited to the period from January 1, 2008. Any act of plagiarism committed before January 1, 2008, shall be treated as the individual responsibility of the author(s) and after January 1, 2008, supervisors and principal investigators will be responsible for any act of plagiarism committed by their students/coauthor(s).
+Frequently Asked Questions (FAQs) Q1. What is plagiarism?
+Plagiarism is using someone else's ideas, research, thoughts, words, graphics, tables, etc.
+either directly or indirectly, without properly acknowledging where the information is from.
+
+[SECTION: hec_anti_plagiarism_22_7_THE_COMMITTEE_RECOMMENDATIONS_SHALL_BE_NOTIF]
+# 7. The committee recommendations shall be notified by the Director
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 7. The committee recommendations shall be notified by the Director
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Youplagiarize when you pass off someone else's work as your own by using their exact words or intellectual property (ideas). Whether you are trying to cheat or not, if you do not tell your readerswhere you found your ideas or words in your paper, you are plagiarizing.
+Q2. Is plagiarism a serious offense?
+Yes, according to the HEC Anti-plagiarism policy, plagiarism is a serious crime with legal ramifications.
+Q3. Is it allowed to change the words (paraphrase) in the document?
+Rephrasing a source's ideas without proper attribution is considered plagiarism.
+Q4. What are the types of penalties for plagiarism?
+There are three types of plagiarism penalties:
+a. Major penalty.
+b Moderate penalty.
+c. Minor penalty.
+Q6. How to lodge a plagiarism complaint?
+The complaint relevant to plagiarism may be lodged with the VC/President/Rector or Head of the respective University/ DAI for probing the matter.
+Q7. How to complain if the accused person is VC/Head of Organization?
+In case the accused person is VC/ Head of Organization then the complaint should be forwarded t oHEC for further probe through National Plagiarism Standing Committee.
+Q8. What can HEIs do to avoid plagiarism?
+To avoid plagiarism HEIs must provide orientation to young scholars embarking on ethical research activities. Scholars should be strongly encouraged to use subject knowledge and familiarity with the skills of students to confidently enforce the highest ethical standards to discourage plagiarism and academic cheating through existing detection and academic evaluation mechanism.
+Q9. Can the Co-author be deemed responsible for plagiarism?
+Co-Author can be deemed partly responsible for plagiarism if UAPSC investigations reveal that they were aware of wrongdoings and chose to benefit from it, with their consent for publication having been duly taken .
+Q10. Are anonymous complaints entertained by HEIs or HEC?
+No, anonymous complaints would not be considered for any action. The complainant must providelegally valid proof of Identity. (CNIC or Passport) as per government rule.
+Q11. What are the penalties against spurious allegations?
+The Universities/HEIs are required to take disciplinary action against the accuser if the plagiarism claim is false. The HEC website will put the false accuser’s name on a blacklist for a certain duration.
+Q12. Is it plagiarism to use ChatGPT?
+Yes, if copied and reproduced without proper attribution. Researchers may use AI and AIassisted technologies to understand basic phenomena of anything and should not replace the key researcher tasks such as producing scientific insights analyzing and interpreting data or drawing scientific conclusions. The authors are responsible and accountable for the contents of the work and should not rely solely on AI-generated content.
+Q13. If I summarize the work in my own words, would it be considered Plagiarism?
+Summarizing data from any source without proper citation will be considered plagiarism because copying someone else’s ideas is not allowed without proper reference or acknowledgment.
+Q14. What if I cite the source from which I copied in the Bibliography?
+No, a bibliography is a list of sources consulted not copied.
+Q15. If I use multiple sources and cited them, how can it be plagiarism?
+Using sources and copying from them without using inverted commas or discipline-relevant conventions would be considered plagiarism.
+Q16. How much plagiarism is allowed in HEC?
+Plagiarism is not allowed at all. HEC allows the similarity index to be less than or equal to 19% which is supposed to be a connection with the existing knowledge and 80% of research is contributed by the author. Further, less than 5% from a single source is allowed. Moreover, the faculty member, instructor, or subject expert may justify similarities in the report. The similarity index is just an indication of similar text which needs to be properly interpreted for determining plagiarism in the document.
+Q17. What do you mean by proper citation?
+It is acknowledging the academic sources which are consulted for the research work. The scholars are required to follow a proper documenting style relevant to their discipline.
+References:
+1. APA Resources - What is Plagiarism? (nova.edu) visited on December 13, 2021
+2. What is Plagiarism? - Plagiarism.org visited on December 13, 2021
+
+[SECTION: hec_anti_plagiarism_23_3_TURNITIN_THE_PLAGIARISM_SPECTRUM_VISITED_ON_]
+# 3. Turnitin - The Plagiarism Spectrum visited on December 13, 2021
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 3. Turnitin - The Plagiarism Spectrum visited on December 13, 2021
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Plagiarism-Policy.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+3. Turnitin - The Plagiarism Spectrum visited on December 13, 2021
+
+[SECTION: hec_anti_plagiarism_24_HEC_ANTI_PLAGIARISM_POLICY_AND_COMPLAINT_PROCE]
+# HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, (part 2)
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, (part 2)
+Official page: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Documents/Plagiarism/Time%20bound%20SOPs%20for%20Plagiarism%20Cases.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Time bound Standard Operating Procedures For Plagiarism Cases
+1. Cases received at HEC will be forwarded to QA Division.
+2. DD (QA) will check that complaint is not anonymous and will verify the identity of the complainant.
+3. HEC will run an initial plagiarism test to verify if the complaint is genuine, in which case the following steps will be pursued.
+4. In a case if overwhelming evidence of plagiarism is found, even anonymous
+complaints will be considered to deal as per plagiarism policy with approval of the competent authority.
+5. The case will be forwarded by HEC to the concerned University/Institution within one week for further investigation through the Plagiarism Standing Committee constituted by the University/Institution. The University will provide interim response/acknowledgement within 4 weeks.
+6. Every letter regarding plagiarism cases will be copied to PS to Vice Chancellor, so that issue of Plagiarism may be taken up at the highest level.
+7. In case the plagiarism complaint is against VC/Head of Institution, then investigation will be initiated by the HEC under intimation to the Chancellor office. The report will be submitted to the Chancellor office within 90 days for appropriate action.
+8. Plagiarism Standing Committee will submit investigation report to the Head of the Institution within 90 days after receiving the case from HEC.
+9. Plagiarism Policy is applicable to all employees whether they are regular or contractual employee of the University/Degree Awarding Institution.
+10. In case of no response/acknowledgment from the University within 4 weeks, first reminder for update on the case will be sent by DD-QA (the dealing officer of the QAD) during the fifth week after sending the case to respective institution.
+11. Head of the Institution/Registrar will notify the final outcome/decision to the HEC as per plagiarism policy.
+12. After notification of the decision the alleged person has right to appeal against the decision of the Institution within 30 days.
+13. Head of the institution has to finalize decision on the appeal to complete all formalities under E&D rules within 60 days after receiving the appeal and decision is required to be notified.
+14. The Universities which are not following HEC Plagiarism Policy will get reflection of noncompliance of QA criteria in future rankings and funds as well.
+In Case of Delay at the University End After Receiving the Case:
+15. In case of failure at University end to conclude the case in 90 days, Letter from ED to VC requesting finalizing of case in 4 weeks.
+16. In case of expiry of two weeks after final reminder, Chancellor of the University will be informed.
+17. In case of no response, even after 4 weeks, the case will be placed on agenda of HEC Plagiarism Committee.
+18. HEC Plagiarism Standing Committee may co-opt expert/s from outside the HEC as member of the Committee as and when required.
+19. HEC Plagiarism Standing Committee can award all those punishments mentioned in the Plagiarism Policy, keeping in view the level of Plagiarism committed.
+20. The decisions made by the HEC PSC and Independent Expert committees are required to be followed with the respective University within one month; in case of non-compliance again two week time will be given through reminder for compliance.
+
+[SECTION: hec_anti_plagiarism_25_HEC_ANTI_PLAGIARISM_POLICY_AND_COMPLAINT_PROCE]
+# HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, (part 3)
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, (part 3)
+Official page: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Documents/Plagiarism/How%20does%20HEC%20deals%20with%20Plagiarism%20Cases.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+How does HEC deals with Plagiarism Cases-A process Note There is a well thought out process to assess if Plagiarism has taken place or not. Such a decision cannot be made by any software such as Turnitin. Plagiarism detection Software are tools to assist experts so that they can determine if Plagiarism has taken place. At HEC when a complaint is received with supporting documents, HEC first undertakes a preliminary check using Turnitin. Subsequently the matter is internally assessed to determine if there is sufficient cause to refer the matter to the University. Only then is the matter referred to the concerned university, confidentially. HEC does NOT release plagiarism details to the media. This is primarily done by the accuser.
+Once a matter is referred to the University, HEC expects that the matter will be dealt with professionally by an independent and neutral committee that includes subject experts. A requirement of the Plagiarism policy is that all processing be done in an expeditious manner. If the case is processed by the University as per Plagiarism policy then the decision is conveyed to the HEC. At this time the case is normally closed. If the decision of the university is blatantly wrong, e.g. in cases of verbatim copying, then the matter is referred to the HEC Plagiarism Committee whose decision is final.
+HEC is aware that people may use the Plagiarism Policy as a tool to victimize other people and we therefore try our best to ensure that merit and transparency are the only consideration while applying the Plagiarism Policy. HEC is an organization that is open and professional and all complaints are dealt with in a purely professional manner.
+
+[SECTION: hec_anti_plagiarism_26_HEC_ANTI_PLAGIARISM_POLICY_AND_COMPLAINT_PROCE]
+# HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, (part 4)
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, (part 4)
+Official page: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Documents/Plagiarism/Little%20Book%20of%20Plagiarism.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+This booklet is based upon “The Little Book of Plagiarism” produced by Leeds Metropolitan University, and is reproduced, with amendments, with their kind permission.
+The little book of plagiarism What it is and how to avoid it This short booklet is designed to help students to understand more fully what plagiarism is and equally important how to avoid it CONTENTS What is Plagiarism?  3 Why Shouldn’t I plagiarise?  4 Positive Reasons for Not Plagiarising  4 Pride in Your Work  4 Real Level of Attainment  4 UK Academic Traditions  5 Plagiarism in Practice – what is it?  5 Copying from a single source  5 Copying from several sources  6 Paraphrasing  6 Collusion  7 Reuse of programming code  8 Use of Multimedia  8 Plagiarism – how do I avoid it?  9 Use of Quotations  9 Making Notes  9 Paraphrasing  9 Cite all sources used  9 How do I know when to include a reference in my work?  10 Your Lecturer’s Views  10 The Textbook  11 Collusion  11 Copying from the Web or purchasing essays  11 Conclusions  12 Plagiarism – identification  12 Electronic Detection  12 Penalties  12 The Best Approach  13 Glossary  13 What is Plagiarism?
+Everyone knows that plagiarism is something to be avoided, but not everyone is sure precisely what it is. This short booklet is designed to help students to understand more fully what plagiarism is, and equally important, how to avoid it.
+Plagiarism is a specific form of cheating which is almost wholly found in respect of course assignments completed by students independently.
+The University of Greenwich has a definition of plagiarism:
+Plagiarism includes, but is not limited to:
+
+[SECTION: hec_anti_plagiarism_27_1_USING_PUBLISHED_WORK_WITHOUT_REFERENCING_THE]
+# 1. using published work without referencing (the most common)
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 1. using published work without referencing (the most common)
+Official page: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Documents/Plagiarism/Little%20Book%20of%20Plagiarism.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+1. using published work without referencing (the most common)
+
+2. copying coursework essays
+3. collaborating with any other person when the work is supposed to be individual
+
+4. taking another person's computer file/program
+
+5. submitting another person's work as one's own
+
+6. the use of unacknowledged material published on the web
+
+7. purchase of model assignments from whatever source
+
+8. copying another student's results
+
+[SECTION: hec_anti_plagiarism_28_9_FALSIFYING_RESULTS]
+# 9. falsifying results
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 9. falsifying results
+Official page: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Documents/Plagiarism/Little%20Book%20of%20Plagiarism.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+9. falsifying results
+Chambers Dictionary defines a plagiarist as a kind of thief – “one who steals the thoughts or writings of others and gives them out as his [sic] own”. When this is also used for gain – in the University to gain credits for a module or modules – then an additional dimension of dishonesty is added.
+As the examples above show, plagiarism can take many forms. There are grey areas e.g.
+when is discussion with fellow students good practice and when does it become collusion? There are also degrees of plagiarism, from, for example, copying the whole of the assignment, to copying only part of it; or paraphrasing much of a source rather than copying the actual words used.
+The key element of a submitted assignment is that (unless it is assessed as a group project) it should be your own work entirely . How can you tell? Try testing yourself against this declaration:
+"I certify that this is my own work. The work has not, in whole or in part, been presented elsewhere for assessment. Where material has been used from other sources it has been properly acknowledged. If this statement is untrue I acknowledge that I will have committed an assessment offence.
+The rest of this short booklet gives you more information on plagiarism and how to avoid it.
+Why Shouldn’t I plagiarise?
+There are many reasons why students plagiaries, for example:
+not being fully aware of what plagiarism is short-term panic response when an assignment is due and time is short feeling a desperate need not to be seen as a failure and so copying to try to ensure “success” different academic traditions Whatever the reason, though, plagiarism is nevertheless cheating. It is not only cheating the University but, probably more importantly for your fellow students, it is cheating them. But there are more reasons that the negative ones (cheating others, unfairness, and possibly discovery and disciplinary action) for not plagiarizing. Essentially, plagiarism is also cheating yourself and letting yourself down.
+The Students Union at the University of Greenwich is whole-heartedly against the practice of plagiarism. It is well aware of the injustice of some students sitting up all night, possibly after working during the day, to complete an assignment; while others decide simply to try to download the answers from the internet. One makes a massive effort; the other makes no effort at all.
+Positive Reasons for Not Plagiarizing Pride in Your Work Students should be able to take pride in their work and in the achievements they have attained. There is considerable satisfaction in knowing that the work you have submitted is your own, and the marks obtained reflect your own effort. There can be little real satisfaction in knowing that your mark (however good) was because you were a good cheat, rather than a good student.
+Real Level of Attainment It is possible that someone might plagiarise widely and not be discovered throughout their University career. But they will not really have learned anything. The discovery that their apparent attainment does not match their real abilities will then become apparent Sometimes, of course, plagiarism is a determined and deliberate attempt to gain the credits for the course without doing the work.
+when they find a job. In the end this could lead to dismissal and the termination of a career.
+UK Academic Traditions It is important to recognise that plagiarism as described here is what is understood in UK Academic Institutions. Rules which may apply anywhere else are simply not relevant here. So, it is not valid to offer as a reason for plagiarism traditions which may operate elsewhere. Check the details of the next section to ensure that you are fully aware of what constitutes plagiarism in the UK so that you don‟t end up unwittingly being found to have plagiarised and therefore unable to be awarded any credits for your module or modules. If in doubt – ask your tutor before you submit the assignment!
+Plagiarism in Practice – what is it?
+Plagiarism takes many forms. Some of the more common are identified here.
+Copying from a single source This is where the student uses one of the following as the basis for the whole or a substantial part of the assignment a published book a published article the internet an essay from an essay bank a piece of work previously submitted by another student for the same or a similar assignment copying from a text which is about to be submitted for the same assignment (see also Collusion below) Note that this list is comprised of both published and unpublished sources. The first three are published, the second three are not. Plagiarism therefore is not copying from published sources only . It can also arise from the copying of unpublished sources like essays.
+
+[SECTION: hec_anti_plagiarism_29_9_FALSIFYING_RESULTS]
+# 9. falsifying results
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 9. falsifying results
+Official page: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Documents/Plagiarism/Little%20Book%20of%20Plagiarism.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Where substantial copying takes place the words, arrangement of material and ideas are those of the source, not the student, and the work rarely answers the questions set. Where plagiarism is of this nature and extent it is very difficult to see how it could have been accidental , (especially if the text were derived from an essay bank or previous submission) and therefore it is viewed very seriously indeed. This kind of plagiarism is also increasingly detectable with modern software.
+Unacceptable Excuses A. “The book/article was cited in the bibliography”. No – a bibliography is a list of sources consulted not copied from.
+B. “The book was writte n by the lecturer and he/she would expect to find their work repeated in the assignment.” No – lecturers would expect several sources to be read and used, and would not be flattered to find their own work simply copied out.
+Copying from several sources This is similar to the above, except that more than one source is used. A student obtains (say) 4 sources of information, and copies a sentence or group of sentences from A, then one from B, one from C and one from D and so on.
+This is an example of plagiarism where a student might genuinely have thought that they were not doing anything wrong. The sources used might well have been cited in the bibliography, the essay might answer the question set, the organisation of the material may well be the student‟s own. However, this is still plagiarism.
+Why? The reason is that although the structure and composition is the student‟s own work, the words are not. Rules of academic presentation require that whenever a direct quote from a source is used, this should be cited.
+In this type of plagiarism no quotations are given in the text and thus the work is being dishonest about who actually wrote what. Further, the student‟s only contribution is cutting and pasting, which is not what the assignment was designed to assess, and there is no demonstration by the student concerned of the required skills of analysis, interpretation, judgment or opinion.
+Paraphrasing This is putting someone else’s vie ws into your own words, and this is one of the grey areas in plagiarism. To a certain extent any essay or assignment which relies on reading a series of texts as the basis of assignments will contain a significant amount of paraphrasing. There are two key things to remember in this case to ensure that it cannot be thought to be plagiarism:
+Do not use only one source Unacceptable Excuses A. “The sour ces in question put it better than I could.” No – you are expected to use the sources constructively and demonstrate that you have understood them and been able to use them effectively in the assignment.
+B. “I did use several sources and cited them.” No – yo u did not use several sources, you copied from them, and did not use inverted commas to show that it was their words and not yours.
+Acknowledge all sources used Take care when taking notes.
+Collusion This can occur when students work together, and it is very important to distinguish when this is required, and when it has to end.
+Some assignments require students to work together as part of a group project. Where the group as a whole gets the mark then it is joint work throughout and the group cooperation is part of what is being assessed.
+Some group projects, though, require students to work together at the planning stage, but then to submit individual assignments. Here the co-operation has to end at the point where you begin to compile your own individual submission, which must be your own work from this stage onwards.
+A grey area is when students discuss their work together. A line needs to be drawn between legitimate discussions of the current assignment with student colleagues, especially where you share a house, and collusion. Where students share a house they often also share the same resources – for example a common pool of books borrowed from the library.
+The important thing to remember is that ( except on group projects where the group as a whole gets the mark) whilst general discussion of the issues involved, or approaches to be taken, is acceptable, the final submission must be your own individual effort. Discussion before the assignment is undertaken is one thing, discussion, correction and improvement during it is quite another and might lead to the suspicion of copying.
+Also, remember that if you allow a fellow student to copy your work you will be considered as guilty of collusion as the actual copyist, and will be subject to the same penalties under the University Regulations.
+Unacceptable Excuses A. “I used my own words”. You may have – but if all you have done is summarised someone else‟s ideas then you have still copied because you have made it appear as if the ideas, arrangement of material etc. were your own.
+B. “I cited all the sources in the bibliography”. Again, you may have, but the issue is how you have used the works cited, and simply to summarise the work of others whether or not the works are in the bibliography is still trying to pass someone else‟s work off as your own.
+
+[SECTION: hec_anti_plagiarism_30_9_FALSIFYING_RESULTS]
+# 9. falsifying results
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 9. falsifying results
+Official page: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Documents/Plagiarism/Little%20Book%20of%20Plagiarism.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Unacceptable Excuses A. “The essays are very similar but I don‟t know how this could have happened”.
+In this case you could expect to be very closely questioned on the sources used and why you used the material in the specific form shown in the assignment. If you are the person who actually wrote the piece you will be able to answer, but the copyist will not.
+B. “We must have jus t thought along the same lines.” Again you could expect to be closely questioned on the language used – thoughts may arguably go along Reuse of programming code In industry reuse of code is to be encouraged and both Web sites and books will provide numerous examples of code BUT you should realise that part of the purpose of doing a programming coursework is for you to develop your own skills. If most of your code comes from other sources then you will not be awarded a very high mark and also you will have learnt very little.
+If however you choose to make use of other people‟s code then in orde r to avoid an accusation of plagiarism, you must annotate your listing identifying the lines of code which are not your own. You must clearly state their source e.g. name of author, page in the book that you have taken the code from, Web page address. Failing to reference work taken from other sources is a plagiarism offence and will be dealt with as such.
+Note that you will be awarded more marks for the code you write yourself, than the code you use from others. Obviously if you copy the entire program from someone else (and reference the work) you will be awarded zero as you have not made a contribution to your coursework solution.
+Use of Multimedia It is your responsibility to credit all such material appropriately. You should be aware that copyright material must not be published (for example on a website) unless you have permission from the owner of the copyright.
+Plagiarism – how do I avoid it?
+The following good practice guidelines will help you to avoid plagiarism.
+Use of Quotations Remember that if you use the exact words in your source these should appear in quotation marks and be referenced by the book or article and the page on which the quote appears. Never use direct quotation from any source unless quotation marks are used and full references are given.
+Try to use quotations sparingly. Use them only when the author has expressed something so well and so succinctly that you feel that the words cannot be bettered. If you do this you will probably reduce the number of your quotations and be aware of when you are quoting.
+Making Notes During note taking it is possible subconsciously to use the language of your source. Try to be aware of this when you are making notes. To avoid it, try not to make notes as you read, but read first, consider what the author has said, and then make notes. If you do this you will copy less of the text.
+Paraphrasing Remember here to attribute the broad ideas or content to the author in question. You will probably carry over some of their language, but as long as you are making it clear which sources you are using, and not attempting to pass it off as your own work then this should not arouse suspicion of plagiarism.
+The more sources you look at, the less likely it is that you will seem to be repeating without acknowledgement the content of one of them. And if you take care when you are taking notes (see above) you will also reduce the chance of unacknowledged paraphrasing.
+Cite all sources used You should cite all the sources you have used. Al ways cite any web sources used. If they have contributed to the completion of your assignment they are required to be listed just as much as printed books or articles.
+If you only cite some, and the lecturer recognises an extract from another source which has not been included in the bibliography, then you can expect that he or she will look very closely at the assignment in question.
+Absence of source citation can very easily be seen as an attempt to prevent the lecturer possibly comparing your assignment text with that of the actual text used to check for the degree of similarity. If there is considerable similarity (either direct copying or paraphrasing) and you have not cited the work in question, then you might have some difficulty in convincing your lecturer that this was not done to try to conceal the plagiarism which has been identified.
+Also, it is not good practice to pad out a bibliography with lots of titles which you have not read. Try to keep to those which you have actually consulted. A short list of well-used sources is much better than a long list of sources which you have never looked at.
+How do I know when to include a reference in my work?
+When you are writing an essay or completing a similar kind of assignment it is not always necessary to include a reference to everything you say. If that were so, your work would be more references than substance. When you give a reference is partly a matter of judgment, and conventions will vary from one discipline to another.
+
+[SECTION: hec_anti_plagiarism_31_9_FALSIFYING_RESULTS]
+# 9. falsifying results
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 9. falsifying results
+Official page: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Documents/Plagiarism/Little%20Book%20of%20Plagiarism.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+This example from an English history assignment gives a good indication of when you would and would not give a source reference. The sentence “The Battle of Hastings was fought in the south of England in 1066” would not need references to where you obtained the information, because it is very well known and is not contentious.
+However, if you then wish to discuss the various opinions of historians on the conduct and outcome of that battle, then you should reference the source e.g. „Spring considers that the Norman tactics were misguided but ultimately successful (Spring, 1998) while Summer has long argued that it was only the exhaustion of the Anglo-Saxon forces which permitted the Norman victory (Summer, 1992).‟ You might then continue; „A more modern view has recently been expressed by Winter (2002) which regards both these views as too simplistic and I want to consider her ideas in more detail here’ . Note here, the way that you have moved from simply stating what scholars might think about this battle, to how you are going to consider and deal with their views. In this part of the essay it will then be clear to what extent you have relied on the information and views in this particular source, and which views are your own.
+Your Lecturer’s Views It is a common assumption that your lecturer wants you to repeat his or her views in your assignment, especially if these have been published in a book or article. Try to remember that this is not the case. All lecturers want you to use the sources suggested in the reading list (including their own if relevant), but they want you to use them constructively to answer the question, or complete the assignment. They do not want you simply to repeat the views contained in their own works.
+The Textbook If a lecturer recommends a textbook, then obviously he or she wants you to read it. But, as above, they do not want you to copy it out when completing an assignment. Once again, the idea is to use the information constructively. You want to show that you have understood the issues and concepts involved, but in order to show that you have understood them, there has to be clear input from you. This cannot be there if you simply copy out the text of the textbook, however good this is.
+If it helps you to avoid doing this – remember that your lecturer will have read the textbook and will therefore be very likely to spot direct copying.
+Collusion To avoid suspicion of collusion you are advised to do the following:
+have any discussions and sharing of ideas before you start completing the assignment do not as k to look at anyone else‟s assignment and do not show yours to anyone else if they ask to see it remember that if sequence, style and content are very similar between two pieces of work it will lead the lecturer to wonder whether there has been collusion remember that there are now electronic devices available to test for linguistic similarity between two pieces of work.
+Copying from the Web or purchasing essays There is only one simple piece of advice here – do not do this . You may know some fellow stude nt who has done so and “got away with it”. However, remember, that such a student may not have similar “success” next time, and that even if he or she has been successful in passing off work which is not their own, it does not mean that you will be.
+Students who have been found to have downloaded or purchased work will not only automatically fail that module or modules, but will also seriously risk their career in the University being terminated by being required to withdraw from their course.
+Conclusions Plagiarism – identification In this booklet we have tried to identify how students may plagiarise without being fully aware that they are doing so. In doing so we have also given you some indications of how lecturers might recognise that the work is not your own.
+Electronic Detection There are now various and increasingly sophisticated electronic aids to assist lecturers who may be in doubt about the originality of work submitted. These include programmes which look at linguistic similarities and others which can identify when essays have been bought from websites.
+Essentially however clever web-packages or essay purchase schemes may be, there will be software which is able to detect it – and in such a case it is hard to imagine any acceptable explanation.
+Penalties Regrettably, however, plagiarism and cheating does occur. The University does have penalties for students who plagiarise and it will use them. The relevant regulations and procedures will be used to investigate the suspicion of plagiarism and if plagiarism is held to have taken place, various penalties can be imposed, up to requiring a student to withdraw from the University.
+Normal CMS Penalties for Plagiarism Type of offence Penalty First minor offence e.g. unreferenced material, joint submission Coursework mark is set to zero Authors who let others have copies of their work Coursework mark is set to zero Second offences will be referred to a panel Referred to Assessment Offences Panel student may be asked to leave the university.
+
+[SECTION: hec_anti_plagiarism_32_9_FALSIFYING_RESULTS]
+# 9. falsifying results
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 9. falsifying results
+Official page: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Documents/Plagiarism/Little%20Book%20of%20Plagiarism.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+If more than one offence occurs at the same time All courses (not components) are set to zero First major offence e.g. plagiarism bulk of a project Referred to Assessment Offences Panel student may be asked to leave the university.
+We hope that this short booklet has assisted you both to identify what you should not do and helped you towards good practice which would avert the risk of plagiarism.
+The Best Approach The best approach is to ensure that you have not plagiarised in the first place. The advice contained in this booklet will help you to do this.
+If you feel in doubt, look again at the declaration at the start of the booklet. If you think you have not quite met the requirements of this kind of declaration – look at your work again before you submit it, and make sure that it is wholly your own work. If you still feel in doubt – ask your tutor before you submit the assignment.
+If you follow this advice should be able to avoid any risk of the work being thought of as plagiarised and you will be able to take pride in achievements which have been produced by your effort alone.
+Glossary Citing Formally recognising in your text the source or sources from which you obtained the information. An example has already been given in this booklet on p. 7: „Spring considers that the Norman tactics were misguided but ultimately successful (Spring, 1998) while Summer has long argued that it was only the exhaustion of the Anglo-Saxon forces which permitted the Norman victory (Summer, 1992).‟ Citation This is the act of quoting. It means the passage or words which you have directly taken from a source and reproduced in your text. The source of the quote should always be given with it.
+Bibliography This is literally a list of books, but it now means a list of all the sources which you have used in completing the assignment, including electronic sources. Quote, Unquote gives examples of how you would list all major sources.
+Reference This is the detailed description of the item from which you have obtained a specific piece of information. So, in the fictitious example above, you would place in your bibliography the details of the work as Spring, A.B.
+(1998) The Norman Conquest: new approaches . Clarendon Press, Oxford.
+
+[SECTION: hec_anti_plagiarism_33_HEC_ANTI_PLAGIARISM_POLICY_AND_COMPLAINT_PROCE]
+# HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, (part 5)
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, (part 5)
+Official page: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Documents/Plagiarism/Guidelines%20on%20Turnitin.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+How to Interpret Originality Report (Guidelines)
+1. Similarity index of the originality report is showing matches of submitted
+work with internet content. It is not verdict that document with high similarity index is plagiarized.
+
+2. Similarity index is based on percentage of matched text out of total
+number of words in the document.
+
+3. Instructor/Faculty member has to verify each and every similarity index
+for potential clue of plagiarism.
+4. If similarities in the document are significant then scholar/studen t may
+be guided accordingly or case may be reported on the basis of that evidence.
+
+5. The similarities in the document may contain matches with author's
+previous work; it may be ignored if it is the same work.
+6. Bibliography and quoted material may be excluded after verifying. It is
+important to note that too much quoted material is not desired as per policy.
+
+7. Common phrases and proper nouns also appear as similarities in the
+report, therefore every instructor/faculty member should ignore matches returned from them.
+8. Originality report will show similarities from three major sources:
+internet, periodicals and student repository. Similarities returned from student repository may be ignored if it is author's own same work.
+Similarities from Student repository helps in detecting collusion in the documents.
+
+9. The graphs, tables, formulae and other pictorial material is not matched
+through the service therefore, it will only offer similarities with only text.
+
+10. The instructor/faculty member supervising students/scholars can give
+verdict of plagiarism after interpreting report. The report will be used as evidence of the report.
+Guidelines on 'Ethics of Using Turnitin' for Administrators
+
+1. Universities/Institutions need to apprise students/faculty members about
+the HEC Plagiarism Policy and Turnitin service.
+
+2. The Administrator needs to create accounts of all faculty members of his
+University/Institution.
+3. The Administrator will maintain the privacy and will not disclose any report
+to anyone except the concerned person and to the concerned authorities, if required.
+4. If Instructor/Scholar is involved in screening of papers and of theses of
+other authors then the Administrator shall report to the University authorities with evidence.
+
+5. In case of any conflict the decision of Plagiarism Standing Committee
+according to Plagiarism Policy of HEC will be final.
+Guidelines on 'Ethics of Using Turnitin' for Instructors
+
+1. Instructors are required to create classes and enroll students in these
+classes.
+
+2. Students/Scholars should be informed that their work will be checked
+through anti-plagiarism service, therefore, they must follow proper documenting style in writing report/paper/thesis.
+
+[SECTION: hec_anti_plagiarism_34_3_REFERENCES_BIBLIOGRAPHY_AND_TABLE_OF_CONTENT]
+# 3. References/bibliography and table of contents must be removed from
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 3. References/bibliography and table of contents must be removed from
+Official page: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Documents/Plagiarism/Guidelines%20on%20Turnitin.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+3. References/bibliography and table of contents must be removed from
+document which is submitted. If these are included then similarity index of the document will be increased.
+4. Instructor may allow students to view their reports.
+
+5. Instructor will maintain the privacy and will not disclose any report to
+anyone except the concerned person and to the concerned authorities, if required.
+6. If Scholar/Student is involved in checking of papers and of theses of any
+other person, then Instructor shall report to University authorities about that with valid proof.
+7. Originality/Similarity reports generated by the Turnitin provide clues in
+form of text matches. Proverbs, Universal Truths, phrases etc.
+
+8. Scholars/Students must make sure that document they are submitting is in
+proper documenting style (i.e. IEEE, Chiacago, MLA, APA etc.) and is free of plagiarism.
+9. If the report has similarity index <=19%, then benefit of doubt may be given
+to the author but, in case, any single source has similarity index >=5% without citation then it needs to be revised.
+10. If similarities of a report are from author's own (previous) work then these may be ignored only if the material has been cited by the author.
+11. As documents which are checked through this service are not yet published
+and no benefit is acquired, therefore, no punishment or penalty i s recommended. It is advised that similarities at greater level may be taken care of in the light of the HEC plagiarism policy.
+
+[SECTION: hec_anti_plagiarism_35_HEC_ANTI_PLAGIARISM_POLICY_AND_COMPLAINT_PROCE]
+# HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, (part 6)
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, (part 6)
+Official page: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Turnitin-SOPs.pdf
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+SOPs - Use of Turnitin Similarity Detection Software These SOPs establish standardized protocols for the responsible use of Turnitin Similarity Detection Software under the Higher Education Commission (HEC) framework. They aim to prevent misuse, ensure compliance with HEC policies, and safeguard academic and research integrity across all participating institutions.
+These SOPs apply to:
+• Institutional Administrators
+• Instructor Accounts
+• Student Accounts
+Roles & Responsibilities Institutional Administrators
+• Create, manage, suspend, and deactivate user acc ounts in accordance with these SOPs.
+• Ensure correct role assignment (Instructor vs. Student).
+• Maintain accurate and updated user records.
+• Monitor account usage at the institutional level.
+• Act immediately upon detection or suspicion of misuse.
+• Coo perate fully with HEC during audits, reviews, and investigations.
+Instructors
+• Use Turnitin exclusively for institutional academic and research purposes.
+• Ensure submissions belong to enrolled students or supervised research.
+• Maintain confidentiality o f login credentials.
+• Refrain from sharing access with students, colleagues, or third parties.
+Students
+• Access Turnitin only through officially assigned Student accounts.
+• Submit only their own academic work related to enrolled courses or research.
+• N ever use Instructor accounts under any circumstances.
+Account Creation & Role Assignment Instructor Accounts
+• Issued only to permanent or contract faculty members.
+• Verification through official institutional email is mandatory.
+• Only one Instructor acc ount per individual is permitted.
+• Accounts must be deactivated prior to faculty clearance in case of disaffiliation (to be reflected in NDC
+records).
+• Re - issuance of accounts to previously suspended users requires prior HEC approval.
+Student Accounts
+• Issued for a defined academic timeframe only.
+• Access must be revoked upon course completion, graduation, or withdrawal.
+• Sharing of Instructor creden tials with students is strictly prohibited.
+Account Approval & Record Maintenance Institutions shall maintain a secure log containing:
+• User name
+• Role assigned
+• CNIC / Employee ID / Registration No.
+• Official institutional email
+• Date of account crea tion
+• Date of deactivation (where applicable)
+..
+Account Usage Protocols Institutional Custodianship
+• The Vice Chancellor / Head of Institution shall ensure the responsible use of Turnitin in full compliance
+with HEC policy.
+• A formally notified Turnitin A dministrator shall be responsible and accountable for secure management
+of the account.
+• In the event of a change in the Turnitin Administrator, the HEI shall formally notify the newly appointed
+administrator and inform HEC accordingly.
+• The administrato r account shall be used exclusively by the notified individual; any violation shall result in
+permanent suspension of the institutional account.
+Authorized Academic Use Turnitin access shall be utilized exclusively for institutional academic and research p urposes, including:
+• Theses and dissertations
+• Research manuscripts
+• Assignments of duly enrolled students
+• Academic supervision and evaluation (e.g., plagiarism checking to support research guidance, assessment
+of originality, feedback on scholarly wr iting, and quality assurance in teaching and learning processes) All submissions must originate from enrolled students or HEI faculty and must be directly related to assigned courses or formally approved research supervision. Usage is strictly confined to academic and research work conducted within the institution.
+Prohibited Use:
+• Submissions on behalf of third parties, foreign institutions, or commercial entities.
+• Paid plagiarism or AI - detection services.
+• Automated or bot - like submission behavior.
+• Credential sharing with external users.
+Monitoring & Compliance
+• Administrators shall quarter ly review submission activity.
+• Periodic reconciliation of active users is mandatory.
+• Irregular or excessive activity shall be investigated.
+• Suspected misuse requires immediate suspension and reporting to HEC.
+Disciplinary Proceedings Offense Level User Category Description Penalty Minor Instructor Limited misuse due to negligence Warning, mandatory training, temporary suspension Major Instructor Repeated misuse, account sharing, third party/commercial use Permanent access termination, disciplinary proceedings Severe Administrator / Instructor Issuing Instructor accounts to students/non - HEI personnel, organized misuse, repeat violations Terminatio n of institutional account; disciplinary action under statutes Suspension & Reinstatement
+• Immediate Action: Temporary suspension of the account, documentation of findings, and notific ation to
+UAPSC.
+• Case Evaluation: UAPSC shall evaluate cases in accordance with the Anti - Plagiarism Policy and
+established Academic Integrity practices, and conclude the case within 30 days.
+• Reporting: Findings of the committee shall be communicated to HEC immediately.
+..
+• Reinstatement Conditions: Written justification, signed acknowledgment of the Acceptable Use Policy,
+completion of an awareness session, and final approval from HEC.
+• Repeat Offenders: Permanent suspension of the account, formal notific ation to the institution, and no re -
+issuance of accounts.
+Prevention of Commercial Misuse
+• Institutions shall prohibit use of Turnitin for commercial purposes.
+• Quarter ly audits must be conducted to identify third - party linkages.
+• Evidence of commercial exploitation shall be reported to HEC immediately.
+Awareness & Capacity Building
+• Biannual awareness sessions conducted jointly by Turnitin and HEC for Institutional Administrators and
+Instructors (mandatory attendance).
+• Annual awareness sessions at HE I level for all instructors, conducted by Institutional Administrators.
+Topics include:
+➢ Acceptable Use Policy ➢ Consequences of misuse ➢ Ethical use of similarity detection tools User Declarations All instructors shall sign an annual declaration confirming compliance with these SOPs.
+Reporting & Escalation
+• Institutions shall submit quarter ly compliance reports to HEC.
+• Immediate incident reporting is required in case of suspected misuse.
+• HEC shall maintain a centralized misuse tracking record.
+..
+
+[SECTION: hec_anti_plagiarism_36_HEC_ANTI_PLAGIARISM_POLICY_AND_COMPLAINT_PROCE]
+# HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, (part 7)
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, (part 7)
+Official page: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Source file: https://www.hec.gov.pk/english/policies/Pages/Plagiarism.aspx
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+HEC
+Policies and Procedures
+Plagiarism Policy
+
+Plagiarism Chambers Dictionary defines a plagiarist as a kind of thief "one who steals the thoughts or writings of others and gives them out as his [sic] own". When this is also used for gain in the University to gain credits for a module or modules then an additional dimension of dishonesty is added.
+Anti-Plagiarism Policy 2023
+-  HEC Anti-Plagiarism Policy 2023  
+Anti-Plagiarism Policy till 31st July 2023
+The Little Book of Plagiarism
+Plagiarism Policy till 31st July 2023
+Updates on Plagiarism Policy (Notification)
+SOPs for Procesing of Plagiarism Complaints
+How does HEC deals with Plagiarism- A process note
+- 
+Turnitin Guidelines
+Turnitin Training Videos ( Instructor Videos , Student Videos , Administrator Videos , Live Expert )
+- 
+Checklist for Plagiarism Standing Committee of the University
+
+[SECTION: hec_anti_plagiarism_37_COMPLAINANTS_WHO_LODGED_FALSE_PLAGIARISM_ALLEG]
+# Complainants who lodged false plagiarism allegations
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Complainants who lodged false plagiarism allegations
+Official page: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Pages/People-Who-Provided-Wrong-Complaint.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Pages/People-Who-Provided-Wrong-Complaint.aspx
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+Faculty
+Plagiarism & Blacklisted faculty
+Complainants who lodged false plagiarism allegations
+- Plagiarism Policy & Blacklisted Faculty Members
+- Complainants who lodged false plagiarism allegations
+Complainants who lodged false plagiarism allegations
+As per policy, if the case of plagiarism is not proved and it is confirmed that false allegations was lodged, the Vice Chancellor/Rector/Head of the Organization will inform the complainant's Organization and will recommend disciplinary action against the complainant, to be taken by his/her parent organization.
+Complainants who lodged false allegations of plagiarism
+- Mr. Saad Hafiz, Graduate Consultant-Environmental Planning & Management, Middle East WSP
+- Malik SR, Email: maliknfc5@gmail.com
+
+[SECTION: hec_anti_plagiarism_38_HEC_ANTI_PLAGIARISM_POLICY_AND_COMPLAINT_PROCE]
+# HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, (part 8)
+Title: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, thresholds, sanctions, PSC SOPs)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Anti-Plagiarism Policy and complaint procedure (Turnitin, (part 8)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Version: Plagiarism Policy as published + time-bound SOPs and complaint-handling notes
+Notification / publication date: 2023-08-02
+Effective date: 2023-08-02
+Legal status: Current (Anti-Plagiarism Policy 2023 notified 2023-08-02)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Notifications
+HEC
+Notifications
+
+Type
+Academic
+University
+General Public
+- Recognition of the degree awarded by foreign chartered universities/institutions through virtual/online/distance learning/Blended learning
+Friday, July 22, 2022
+- Academic
+- Deferment of Post PhD Experience for Professors and Associate Professors
+Wednesday, July 20, 2022
+- Academic
+- Extension in maximum duration of MS/MPhil/PhD/equivalent degree programs due to Covid-19
+Friday, April 15, 2022
+- Academic
+- Appointment of TTS faculty on Academic-administrative positions
+Wednesday, March 2, 2022
+- Academic
+- Withdrawal of Migration Certificate/NOC as an admission requirement to the Graduate/ Postgraduate Programs
+Monday, February 28, 2022
+- Academic
+- Collecting hard copies of PhD dissertation to register record in PhD Country Directory (PCD)
+Sunday, December 19, 2021
+- Academic
+- Salary Package for the Vice-Chancellors of Public Sector Universities
+Friday, October 22, 2021
+- University
+- Graduate Education Policy-2023 (GEP-2023)
+Monday, July 10, 2023
+- Academic
+- Applicants having CAF qualification duly verified by ICAP shall be eligible for admission in BS AF
+Wednesday, June 9, 2021
+- Academic
+- Clarification regarding TTS Leave Policy
+Friday, March 5, 2021
+- University
+- Initial appointment of faculty members on TTS
+Friday, March 5, 2021
+- University
+- Amendment of the clause 1.4.1.2 of Model Tenure Track Process Statutes
+Saturday, October 16, 2021
+- University
+- Amendment of the clause 1.1 (d) and Annexure -A of Model Tenure Track Process Statutes
+Friday, October 16, 2020
+- University
+- Transition of BA/BSc Programs to Associate Degree Programs, Phasing Out of MA/ MSc Programs
+Thursday, July 11, 2019
+- Academic
+- Acceptance of USAT (Undergraduate Studies Admission Test)
+Tuesday, July 5, 2022
+- Academic
+- The Requirement of Post-PhD Experience
+Thursday, May 25, 2023
+- Academic
+- Undergraduate Education Policy
+Wednesday, July 12, 2023
+- Academic
+- Revised Interim Placement of Fresh PhDs (IPFP) Policy
+Friday, July 21, 2023
+- Academic
+- Anti-Plagiarism Policy 2023
+Wednesday, August 2, 2023
+- Academic
+- Framework of The HEC Distinguished National Professor (DNP) Program
+Tuesday, September 30, 2025
+- Academic
+- Clarification one time relaxation based on Covid-19 Situation for completion of MS-MPhil equivalent and PhD Degree till 28.02.2023
+Tuesday, April 26, 2022
+- Academic
+- Discontinuation of HEC Approved Supervisor Post Promulgation GEP- 2023
+Friday, December 22, 2023
+- Academic
+- Open and Distance Learning: Policy Provisions and Regulatory Framework
+Wednesday, August 28, 2024
+- Academic
+- Transnational Education (TNE) Policy 2024
+Monday, September 9, 2024
+- Academic
+- Partial Relaxation in Requirement of Full-Time PhD Faculty Members to Launch MS/MPhil or Equivalent and PhD Programs in Basic Medical Sciences and Clinical Health Sciences
+Wednesday, October 2, 2024
+- Academic
+- Journals & Publications Policy 2024
+Monday, September 30, 2024
+- Academic
+- HEC National Fee Refund Policy
+Friday, December 20, 2024
+- Academic
+- Notification Framework for Appointment of Meritorious Professor in HEIs
+Tuesday, September 30, 2025
+- University
+- Notification Framework for Appointment of Professor Emeritus in HEIs
+Tuesday, September 30, 2025
+- University
+- Policy Guidelines for Appointment of Professor of Practice by the Higher Education Institution (HEIs) in Pakistan
+Tuesday, September 30, 2025
+- University
+- HEC-Notification Interim Placement of Fresh PhDs (IPFP)Phase-II
+Friday, February 21, 2025
+- University
+- Notification Post-PhD experience for appointment of Professors (08 years) and Associate Professors (04 years)
+Thursday, July 30, 2026
+- Academic
+- Framework for HEC Best Teacher Award (BUTA)
+Tuesday, September 30, 2025
+- University
+- Policy on Protection Against Harassment in Higher Education Institutions (Revised 2025)
+Tuesday, September 30, 2025
+- University
+- Guidelines for Admissibility of Leave for Professor Emeritus
+Tuesday, December 23, 2025
+- University
+- UNESCO's International Standard Classification of Education-ISCED-F
+Tuesday, January 13, 2026
+- Academic
+- HEC Journals & Publications Policy, 2024
+Monday, March 2, 2026
+- Academic
+- Guidelines for Engagement of Visiting Faculty in HEIs, 2026
+Sunday, May 17, 2026
+- University
+- Mandatory Conduct of GREHAT General & Subject Test through HEC-Education Testing Council (ETC)
+Tuesday, May 12, 2026
+- University
+- Policy on Dual, Double & Joint Degree Programmes, 2026
+Wednesday, May 13, 2026
+- University
+- Notification - Amendments in TNE Policy, 2024
+Wednesday, May 13, 2026
+- University
+- Establishment of the National Chair on AI and Robotics
+Tuesday, May 5, 2026
+- University
+- Notification - Deferred Implementation of Mandatory Conduct of GRE_HAT-General & Subject Test
+Sunday, May 24, 2026
+- General Public
+- Framework for Recognition of Liberal Arts Undergraduate Programs under the HEC Undergraduate Education Policy 2023
+Tuesday, August 4, 2026
+- Academic
+- Framework on the Use of AI (Gen-AI) Tools in HEIs
+Friday, September 4, 2026
+- University
+- HEC Notification | Salary Package for the Vice Chancellors of Public Sector Universities
+Friday, October 2, 2026
+- University
+- HEC Notification | Deferment of Post-PhD Experience Requirement until 31.12.2026
+Friday, October 2, 2026
+- University

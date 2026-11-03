@@ -1,0 +1,96 @@
+[SECTION: CONSUMER_RIGHTS]
+Consumer Rights in Pakistan
+Consumers in Pakistan are entitled to the following rights under provincial consumer protection legislation:
+1. Right to Safety: Protection from hazardous goods and services that are detrimental to health and safety.
+2. Right to Information: Right to be informed about quality, quantity, potency, purity, standard and price of goods or services.
+3. Right to Choice: Right to choose from a variety of goods and services at competitive prices.
+4. Right to Redressal: Right to seek redressal against unfair trade practices, restrictive trade practices, and exploitation.
+5. Right to Consumer Education: Right to be educated about consumer rights and responsibilities.
+Source: Punjab Consumer Protection Act, 2005; Sindh Consumer Protection Act, 2014; KPK Consumer Protection Act, 1997; Balochistan Consumer Protection Act, 2003.
+
+[SECTION: PUNJAB_CONSUMER_PROTECTION_ACT]
+Punjab Consumer Protection Act, 2005 — Key Provisions
+Section 2(c): "Consumer" means any person who buys goods or avails of services for a consideration, but not for commercial resale.
+Section 3: Rights of consumers as enumerated above.
+Section 8: Establishment of Consumer Courts at the District level.
+Section 9: Jurisdiction of Consumer Court — complaints where goods/services value does not exceed the prescribed limit (as amended).
+Section 12: Power of Consumer Court to call for information.
+Section 15: Any consumer or registered consumer association may file a complaint.
+Section 16: Complaint Procedure — complaint filed in writing, court issues notice to opposite party, parties heard, inspection may be ordered.
+Section 17: Relief available to complainant:
+  - Removal of defect in goods.
+  - Replacement of goods.
+  - Refund of price paid.
+  - Compensation for any loss or injury suffered.
+  - Discontinuation of unfair trade practice.
+  - Award of costs.
+Section 18: Appeal — Any party aggrieved by the order of Consumer Court may appeal to the Consumer Appellate Court within 30 days.
+No court fee is required for filing a consumer complaint.
+Complaint must be filed within 30 days of purchase or discovery of defect (limitation period).
+Source: Punjab Consumer Protection Act, 2005; Punjab Gazette.
+
+[SECTION: SINDH_CONSUMER_PROTECTION_ACT]
+Sindh Consumer Protection Act, 2014 — Key Provisions
+The Sindh Consumer Protection Act, 2014 established the Sindh Consumer Protection Council and Consumer Courts in Sindh.
+Key features:
+- Establishes District Consumer Courts and Consumer Appellate Courts.
+- Covers both goods and services.
+- Provides for compensation, refund, replacement, and award of costs.
+- Complaint must be filed within 90 days of cause of action.
+- No court fee for consumer complaints.
+- Consumer Protection Council advises Government on consumer matters.
+Source: Sindh Consumer Protection Act, 2014; Sindh Gazette.
+
+[SECTION: CONSUMER_COMPLAINT_PROCEDURE]
+Consumer Complaint Procedure — Step-by-Step
+Step 1 — Send Legal Notice: Before filing a consumer court case, send a mandatory 15-day legal notice to the manufacturer, seller, or service provider in writing. State the defect/issue and the relief sought.
+Step 2 — No Response or Unsatisfactory Response: If no satisfactory response is received within 15 days, proceed to file a complaint.
+Step 3 — File Complaint in District Consumer Court: Prepare a written complaint including:
+  - Name, address, and contact of complainant.
+  - Name and address of the opposite party (seller/manufacturer/service provider).
+  - Description of goods/services purchased and defect/issue.
+  - Details of legal notice and response (if any).
+  - Relief sought.
+  - Attach: Receipt/invoice, warranty card, photographs of defective product, copy of legal notice, any correspondence.
+Step 4 — Consumer Court Issues Notice: The Court registers the complaint and issues notice to the opposite party.
+Step 5 — Reply by Opposite Party: The opposite party must file a written reply.
+Step 6 — Hearing and Evidence: Both parties present their evidence. Court may order inspection of the defective goods/premises.
+Step 7 — Order: Consumer Court passes a reasoned order — refund, replacement, compensation, or dismissal.
+Step 8 — Appeal: Any aggrieved party may appeal to the Consumer Appellate Court within 30 days of the order.
+No court fee is payable at any stage for consumer complaints.
+Source: Provincial Consumer Protection Acts; Punjab Consumer Protection Act, 2005.
+
+[SECTION: DEFECTIVE_GOODS]
+Defective Goods and Products Liability
+- Any trader or manufacturer who sells a defective product is liable under consumer protection law.
+- Defect includes: manufacturing defect, design defect, inadequate warnings/instructions.
+- The warranty period stated at the time of sale must be honored.
+- If a product causes injury or damage due to a defect, the manufacturer/seller is liable for compensation.
+- Misleading advertisements that induce purchase constitute unfair trade practice and are actionable.
+- After-sale service promised at the time of sale must be provided.
+- Sale of goods not conforming to declared standards (adulterated food, substandard medicines, etc.) is also actionable under other sector-specific laws.
+Source: Provincial Consumer Protection Acts; Sale of Goods Act, 1930; Punjab Pure Food Act; Pakistan Standards and Quality Control Authority (PSQCA) Act.
+
+[SECTION: UNFAIR_TRADE_PRACTICES]
+Unfair Trade Practices
+The following are prohibited unfair trade practices under Pakistani consumer law:
+- False representation of goods or services.
+- False representation that goods are new or of a particular grade.
+- False representation of sponsorship, approval, or affiliation.
+- Misleading price claims (e.g., false "sale" prices).
+- Offering prizes/gifts with intent not to provide them.
+- Misleading advertising.
+- Withholding relevant information about goods or services from a consumer.
+Consumers may file complaints in Consumer Court against unfair trade practices.
+Source: Punjab Consumer Protection Act, 2005; Sindh Consumer Protection Act, 2014.
+
+[SECTION: PSQCA_STANDARDS]
+Pakistan Standards and Quality Control Authority (PSQCA)
+PSQCA is the national body responsible for standardization and quality control of goods in Pakistan.
+- PSQCA issues Pakistani Standards (PS) for goods.
+- Mandatory standards apply to specified categories of goods.
+- Goods not meeting mandatory standards cannot be legally sold in Pakistan.
+- PSQCA can conduct inspections and seize non-conforming goods.
+- Complaints about substandard goods can be filed with PSQCA.
+Contact: PSQCA Helpline, psqca.com.pk
+Source: Pakistan Standards and Quality Control Authority Act, 1996.

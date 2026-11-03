@@ -1,0 +1,35 @@
+[SECTION: INSTITUTION_FIA_CYBERCRIME]
+Title: Federal Investigation Agency (FIA) Cybercrime Wing
+Authority: Federal Government of Pakistan
+Jurisdiction: Pakistan (National)
+Legal Status: Official Cybercrime Investigation Agency
+Source URL: https://complaint.fia.gov.pk
+Helpline: 1991
+Email: helpdesk@fia.gov.pk
+Purpose: Investigates electronic crimes, cyber stalking, online financial fraud, website hacking, and digital harassment under PECA 2016.
+
+[SECTION: INSTITUTION_MOHTASIB_HARASSMENT]
+Title: Federal & Provincial Ombudsperson for Protection Against Harassment (FPOPAH)
+Authority: Protection Against Harassment of Women at Workplace Act, 2010
+Jurisdiction: Pakistan (Federal & Provincial Offices)
+Legal Status: Statutory Quasi-Judicial Ombudsman Forum
+Source URL: https://fospah.gov.pk
+Helpline: 1098 / 1099
+Purpose: Hears workplace sexual harassment complaints from private and public sector employees and university students.
+
+[SECTION: INSTITUTION_DLAC_BAR_COUNCIL]
+Title: District Legal Advisory Committees (DLAC) & Pakistan Bar Council Free Legal Aid
+Authority: Pakistan Bar Council / Provincial Bar Councils
+Jurisdiction: All District Courts of Pakistan
+Legal Status: Official Free Legal Aid Mechanism
+Source URL: https://pakistanbarcouncil.org
+Helpline: 1099 (Ministry of Human Rights Free Legal Aid Helpline)
+Purpose: Provides free lawyers and legal representation to indigent, poor, women, juveniles, and marginalized litigants unable to afford private advocate fees.
+
+[SECTION: INSTITUTION_CONSUMER_COURTS]
+Title: District Consumer Courts of Pakistan
+Authority: Provincial Consumer Protection Departments
+Jurisdiction: District Level (Punjab, Sindh, KP, Balochistan, ICT)
+Legal Status: Specialized Judicial Courts
+Source URL: https://pcpc.punjab.gov.pk
+Purpose: Resolves consumer grievances regarding defective goods, substandard services, misleading advertisements, and warranty violations without court fee.

@@ -1,0 +1,19 @@
+[SECTION: 1] Tax Laws of Pakistan — Federal Board of Revenue (FBR) administers federal taxes: Income Tax, Sales Tax, Customs, Federal Excise. Source: FBR (fbr.gov.pk). Status: CURRENT.
+
+[SECTION: 2] Income Tax Ordinance, 2001 — The primary income tax law. Income tax is charged on: salary, business/profession income, capital gains, property income, dividend, interest, and other sources. Tax rates are progressive for individuals (0% to 35%) and flat for companies (29%).
+
+[SECTION: 3] Filer vs Non-Filer — Active taxpayers (filers) who file annual returns benefit from lower withholding tax rates. Non-filers pay higher rates on banking transactions, property purchases, vehicle registration, and utility bills.
+
+[SECTION: 4] NTN Registration — Every person with taxable income must obtain a National Tax Number (NTN). Companies require NTN upon incorporation. NTN is mandatory for property transactions, business registration, and banking.
+
+[SECTION: 5] Sales Tax Act, 1990 — Sales tax is charged at 18% on goods supplied in Pakistan. Some services are taxed by provinces under the Sindh Sales Tax, Punjab Sales Tax, etc. Registered persons must file monthly returns.
+
+[SECTION: 6] Customs Act, 1969 — Customs duties on imports and exports. Valuation of goods, tariff classification, and assessment by Pakistan Customs. Appeals to the Customs Appellate Tribunal, then High Court.
+
+[SECTION: 7] Federal Excise Act, 2005 — Federal excise duty on certain goods manufactured in Pakistan and on services. Administered by FBR.
+
+[SECTION: 8] Appellate system — FBR assessments may be appealed: (a) Commissioner (Appeals); (b) Appellate Tribunal Inland Revenue; (c) High Court on substantial question of law; (d) Supreme Court.
+
+[SECTION: 9] Tax avoidance and evasion — Tax evasion (illegal non-payment) is an offence punishable with imprisonment and fine. Tax avoidance (legal minimization) is distinguished. FBR has anti-avoidance powers.
+
+[SECTION: 10] Property tax — Provincial governments levy property tax on immovable property (urban immovable property tax). Rates vary by province. Mutation and transfer require payment of capital gains tax and withholding tax.

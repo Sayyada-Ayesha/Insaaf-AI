@@ -1,0 +1,71 @@
+{
+  "plan_version": "1.0",
+  "date": "2026-09-03",
+  "description": "Future fine-tuning change-set plan for INSAaf AI V2. DO NOT overwrite V1 dataset (server/fineTuneData/). Add new training examples alongside existing V1 entries to support F12-F18 features.",
+  "v1_coverage": {
+    "domains": "Constitution, PPC, CrPC, CPC, PECA, Family, Property, Labour, Consumer, Contract, Evidence, bank/tax/NAB/ATA/ women/environment/juvenile/police/succession/commercial/ elections/local/ip/prisons/traffic/arbitration/competition/provincial/immigration",
+    "formats": "Single-turn legal Q&A, statutory interpretation, procedural explanations",
+    "entry_count": "~1200 examples (approximate)",
+    "location": "server/fineTuneData/"
+  },
+  "v2_additions": [
+    {
+      "feature": "F12/F13: Legal Agent (AgentSection)",
+      "rationale": "V1 only covers single-turn Q&A. The agent handles multi-turn conversations, directory lookups (lawyers/orgs), route intents, and emergency actions.",
+      "new_examples_needed": 80,
+      "example_types": [
+        "Multi-turn agent conversation (user asks for lawyer → agent narrows by city/spec → returns directory card)",
+        "Route-intent queries (\"I need to file a case\" → agent suggests Drafting tab)",
+        "Emergency triage (\"I'm being threatened\" → agent shows emergency contacts + next steps)",
+        "Greeting/handling (\"Assalam-o-Alaikum\" → agent introduces capabilities)",
+        "Directory search: lawyer by city + specialization with honest fee note",
+        "Directory search: legal-aid organization by domain"
+      ]
+    },
+    {
+      "feature": "F14: Source behavior (compact citations)",
+      "rationale": "V1 may include source mentions but not the new compact format with domain tags.",
+      "new_examples_needed": 40,
+      "example_types": [
+        "Response with compact footer: \"Source: {title}, {type} {key} · Verified\"",
+        "Response with domain-mapped library link target",
+        "Response distinguishing official source from general reference",
+        "Response with \"Open in Library\" call-to-action"
+      ]
+    },
+    {
+      "feature": "F15: Case-law knowledge integration",
+      "rationale": "V1 has case-law chunks in RAG but the model may not cite them compactly or hedge comparisons.",
+      "new_examples_needed": 50,
+      "example_types": [
+        "In-line case citation: \"Case: {Title} ({Citation}, {Court} {Year})\"",
+        "Case comparison with hedging: \"The facts in {Case A} are similar to your situation in that both involve {X}, but the court in {Case A} emphasized {Y} which may not apply here.\"",
+        "Response using PLD/SCMR/CLC citation format",
+        "Response linking case-law to current user query with \"may apply\"/\"could be relevant\" qualifiers"
+      ]
+    },
+    {
+      "feature": "F16: Professional guidance model (10-step)",
+      "rationale": "V1 may give flat answers. V2 should structure responses using the 10-step guidance framework.",
+      "new_examples_needed": 60,
+      "example_types": [
+        "Structured response: (1) The issue, (2) Facts that matter, (3) Law that may apply, (4) Relevant authority/court, (5) What to do now, (6) Documents/evidence needed, (7) Available remedy/procedure, (8) Limitations/risks, (9) Next step, (10) Source",
+        "Response with ethical hedging: \"may\", \"could\", \"should consider\", \"it is possible that\"",
+        "Response refusing to overstate certainty: \"Based on the limited facts provided, I cannot say definitively whether...\"",
+        "Response deferring to lawyer: \"You should consult a practicing advocate for specific advice on...\""
+      ]
+    }
+  ],
+  "total_new_examples": 230,
+  "data_format": "Same JSONL format as V1 (server/fineTuneData/training.jsonl): {\"messages\": [{\"role\":\"system\",\"content\":\"...\"},{\"role\":\"user\",\"content\":\"...\"},{\"role\":\"assistant\",\"content\":\"...\"}]}",
+  "output_file": "server/fineTuneData/v2_changeset.jsonl",
+  "generation_script": "server/generateFineTuneDataset.js (to be updated with V2 templates)",
+  "constraints": [
+    "DO NOT overwrite server/fineTuneData/training.jsonl (V1 dataset)",
+    "DO NOT delete server/fineTuneData/refs.js or any V1 file",
+    "V2 examples should be appended to a NEW file: v2_changeset.jsonl",
+    "When fine-tuning is run, combine V1 + V2 datasets",
+    "All new examples must reference the verified RAG corpus (rebuild before generating)",
+    "No fabricated case names, citations, or facts (use only verified corpus entries)"
+  ]
+}

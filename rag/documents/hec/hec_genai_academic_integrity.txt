@@ -1,0 +1,573 @@
+# HEC Framework for Generation AI use in Higher Education Institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: Pakistan (Federal) — higher education
+Version: Framework-Gene-AI as published; HEC GenAI notification attached in the register | Published/notified: 2026-10-10 | Effective: 2026-10-10 | Status: Current
+Provenance: sections below carry the canonical HEC URL for the document they were extracted from.
+Coverage area: H,B
+Verification note: GenAI rules interact with the Anti-Plagiarism Policy: read both before advising on AI-assisted submissions.
+
+[SECTION: hec_genai_academic_integrity_1_HEC_FRAMEWORK_FOR_GENERATION_AI_USE_IN_HIGHER_]
+# HEC Framework for Generation AI use in Higher Education
+Title: HEC Framework for Generation AI use in Higher Education Institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Framework for Generation AI use in Higher Education
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-GenAI.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-Gene-AI.pdf
+Version: Framework-Gene-AI as published; HEC GenAI notification attached in the register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Framew ork on Use of Generative AI (GenAI) Tools in Higher Education Institutes (HEIs) Table of Contents 1. Introduction  3 2 . The HEC’s Mandate  3 3. Objec tives  3 4. Principles  4 5. Common Misuses and Responsible Use  5 6. Applicability  6 7. Institutional Responsibility  7 8. Const ructive and Encouraged Uses  10 9. Data Sovereignty and Protection  11 10. Rules and Penalties of Plagiarism  12 Flowchart  15 Applications of Generative AI Tools in Higher Education  16 Appendix 2  18 Responsibilities of HEIs and Organizations  18
+
+[SECTION: hec_genai_academic_integrity_2_1_INTRODUCTION]
+# 1. Introduction
+Title: HEC Framework for Generation AI use in Higher Education Institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 1. Introduction
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-GenAI.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-Gene-AI.pdf
+Version: Framework-Gene-AI as published; HEC GenAI notification attached in the register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+1. Introduction
+Generative AI (GenAI) refers to artificial intelligence (AI) systems capable of producing written, visual, audio, or code content in response to user prompts. These systems are designed to simulate human - like understanding and g enerate contextually appropriate responses. GenAI tools include but are not limited to Chat GPT - 5 , Claude, Gemini, DeepSeek, and similar large language models.
+The emergence of such tools represents a significant technological shift with implications for te aching, learning, research, and administration in higher education.
+Since 2023, generative AI technology has advanced dramatically with increased capabilities, accessibility, and real - world applications. This framework adopts a technology - agnostic approac h, focusing on principles rather than specific tools, ensuring relevance as AI capabilities continue to evolve. The rapid pace of AI development requires Higher Education Institutes ( HEIs ) to maintain flexibility and regularly review policies to reflect cu rrent technological reality.
+This framework takes a balanced approach that protects academic integrity while enabling productive use of AI as a professional tool. Rather than broad prohibitions, the framework distinguishes misuse from responsible use, recognizes that AI literacy is essential for graduates, and empowers institutions to develop context - appropriate policies reflecting their educational mission.
+2 . The HEC’s Mandate
+In accordance with Section 10(a) in the Higher Education Commission (HEC) Ordinance of 2002 , the HEC is entrusted with the responsibility to promote, coordinate, and supervise university education and research in Pakistan, ensuring that educational standards are maintained and that institutions adhere to best practices in their academic operations. It further encourages the HEIs to make policies and priorities for guiding principles that support socio - economic development of the country.
+The HEC recognizes that the adoption and use of generative AI tools in HEIs requires clear governance, transparent policies, and systematic monitoring. This framework provides guidance to ensure that AI use supports learning outcomes, maintains academic integrity, and prepares students for careers in an AI - integrated professional landscape. The framework will be reviewed every six months to assess emerging issues and incorporate updated guidance based on institutional experience and technological developments.
+The HEC will issue quarterly guidance bulletins on emerging AI use cases, best practice s from member institutions, and implementation updates to support HEIs in navigating this rapidly evolving landscape.
+
+[SECTION: hec_genai_academic_integrity_3_3_OBJECTIVES]
+# 3. Objectives
+Title: HEC Framework for Generation AI use in Higher Education Institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 3. Objectives
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-GenAI.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-Gene-AI.pdf
+Version: Framework-Gene-AI as published; HEC GenAI notification attached in the register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+3. Objectives
+The framework addresses a variety of academic community members , including students, faculty, researchers, mentors , and academic staff , to demonstrate proper GenAI tool usage. The document presents possible destructive effects of GenAI technology on today's academic methods while establishing essential standards for ethical use throughout universities and their Degree Awarding Institutes ( DAIs ) and their respective colleges and research establishments.
+The objectives of this framework are to:
+i. Maintain academic integrity and ensure that assessment accurately reflects student
+learning and understanding;
+ii. Provide clear guid ance to students, faculty, and administrators on ethical and
+appropriate use of generative AI tools;
+iii. Ensure transparency in the use of AI tools to facilitate accountability and informed
+decision - making;
+iv. Protect student data privacy and ensure compliance wi th applicable laws and
+regulations;
+v. Promote fairness and prevent bias in the application of AI tools;
+vi. Support institutional capacity building and professional development in AI literacy;
+vii. Enable productive and responsible use of generative AI as a professi onal and
+educational tool, recognizing that AI literacy is essential for graduate competency;
+viii. Build institutional and student AI literacy, ensuring understanding of capabilities,
+limitations, and ethical implications of generative AI; and
+ix. Prepare graduates for careers in AI - integrated professions where generative AI use is a
+standard practice, ensuring they develop critical judgment about appropriate and ethical use.
+4 . Principles
+The Framework operates under these main principles as its foundation :
+ Every year , educational institutions alongside their teaching staff from Universities and DAIs must conduct skills development activities to build knowledge on Gen erative AI tool creation and methods to stop misuse.
+ Higher Education Institutions (HEIs) need to d evelop specific formal permission systems for students and teaching staff when conducting Generative AI T ool implementations in their academic processes.
+ Promise of Generative AI Tools lead to a dependency problem , which causes students and researchers to avoid critical thinking while delaying primary research , and stops them from developing their writing and creative talent.
+ The training process of Large Language Models (LLMs) in Generative AI Tools on extensive datasets sometimes spread biased stereotype s and destructive narrative , which produce unethical content during academic use.
+ All parties at Universities and DAI s along with faculty members students and staff should ad a pt research ethics to prevent plagiarism issues from Generative AI Tools in their scholarly work and research output .
+i. Academic Integrity: Assessment and evaluation mechanisms must accurately measure
+student learning and competency. AI - assisted work must be transparent, appropriately attributed, and aligned with learning objectives.
+ii. Transparency: All stakeholders must understand when, how, and why AI tools are used
+in learning, teaching, and research contexts.
+iii. Informed Consent: Individuals should understand how their data is used in AI systems
+and provide explicit consent where requir ed.
+iv. Fairness and Equity: AI tools must not discriminate based on protected characteristics.
+Institutions must monitor for and mitigate algorithmic bias.
+v. Data Privacy: Collection, storage, and processing of personal data must comply with
+applicable privacy laws and regulations.
+vi. Accessibility: AI policies should not disadvantage students with disabilities. Institutions
+must ensure equitable access to learning and assessment.
+vii. AI as a Professional Tool: Transparent and responsible use of generative AI demonstrates
+professional competency in contemporary workplaces. Using AI as a shortcut to avoid learning or deliberate misrepresentation is misuse; using AI as a documented tool for productivity and learning is responsible practice.
+viii. Context - Dependent Gove rnance: Appropriate AI use varies by context.
+Foundational learning contexts (first - year courses, core competencies) require stricter controls than research contexts. Assessment rules differ from collaboration tools. Policies must reflect this differentiat ion rather than applying blanket restrictions.
+ix. Evidence - Based Enforcement: Detection of AI use alone is insufficient to establish
+misconduct. Adverse actions require corroborating evidence of intent to misrepresent or circumvent learning objectives. Disclosure of AI use should not be an adverse factor in evaluation.
+5 . Common Misuses and Responsible Use
+This section distinguishes misuse of generative AI from responsible use. Misuse occurs when AI is used to avoid learning in foundational contexts, to deliberately misrepresent authorship, or to violate explicit course policies. Responsible use — with proper disclosure and learning intent — differs fundamentally and should be encouraged. The examples below identify behaviors that constitute misuse when perf ormed without proper disclosure or in violation of course requirements.
+A. Undergraduate Level
+
+[SECTION: hec_genai_academic_integrity_4_3_OBJECTIVES]
+# 3. Objectives
+Title: HEC Framework for Generation AI use in Higher Education Institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 3. Objectives
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-GenAI.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-Gene-AI.pdf
+Version: Framework-Gene-AI as published; HEC GenAI notification attached in the register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+i. Shortcut Learning: GenAI Tools allow you to Shortcut Learning by pre - generating answers
+such that they never have to really study the subject material to get answers.
+ii. Impersonation: Academic environments are vulnerable to impersonation when the GenAI Tools
+are misused to impersonate professors, teaching assistants , or students in the online communication systems , thus creating unverified information which confuses the audience.
+iii. Automated grading manipulation: GenAI Tools will allow one to fake answers that automated
+grading systems will accept because they will be deceived by these sy stems. However, such grade inflation is practiced artificially to undermine students' real academic success and, at the same time, to help students who prefer this approach earn advantages.
+iv. Cheating in Assessments: GenAI Tools are used by students who chea t in assessments by trying
+to uncover the answers during exams and tests, other assessment activities , and against the rules of school integrity.
+v. Creating fake reviews or endorsements: The content created by GenAI Tools are designed to
+help users create fa lse reviews and endorsements, as well as fake testimonials across all products and academic work. This would deceive customers and future partners in the process of deciding if the deal is real or not.
+vi. Spreading misinformation: GenAI Tools produces the output that can be really believable, but
+the output is wrong, which helps spread the misinformation in the academic field through academic papers and articles. Misinformation may create confusion in the field and may make true research difficult to do.
+vii. Bias and Ethical Concerns: However, the educational settings have ethical problems and issues
+in propagating bias because GenAI tools are trained by the huge datasets of potential biased and unethical educational content.
+viii. Exploiting sensi tive data: GenAI Tools can accidentally memorize the description of sensitive
+or confidential information when they were taught, thereby inadvertently disclosing secret data.
+ix. Academic fraud: GenAI Tools training displays can receive private information tha t may release
+protected data against unwanted disclosure.
+x. Misleading Citations: Users can use GenAI Tools to create false citations or false references
+that can give wrong academic support to their claims.
+xi. Bypassing plagiarism detection tools: GenAI Tools to create content that doesn’t get caught as
+plagiarized by plagiarism detection tools , thanks to being rewritten or paraphrased completely from an original text in such a way that it becomes undetectable by automated systems.
+B. Graduate Level
+i. Plagiarism : The misuse of Generative AI t ools by students or researchers can result in
+academic work plagiarism through content creation that lacks proper references to sources.
+Educational standards , along with research quality , suffer because of plagiarism resulting from using this technology.
+ii. Ghostwriting : People can use Generative AI Tools to produce written articles or
+academic papers that they present as their work despite not mentioning the AI's participation. These tools enable researchers to create realistic - looking fabricated research papers which contain no genuine scientific proof or new data. Using fabricated research documents at academic conferences and scholarly publications creates a trust deception among the scie ntific community while lowering both research quality and scholarly reputation.
+iii. Fabrication of Results: Research teams sometimes utilize Generative AI Tools to create
+incorrect , falsified, or deceptive research outcomes that result in deceptive scholarly findings .
+iv. Automating Research: The use of GenAI Tools for automating research produces valuable
+assistance in research and analysis , yet improper validation without human supervision creates potentially wrong conclusions .
+v. Laziness in research : The regular use of GenAI Tools might cause students and researchers
+to stop their critical thinking practice and primary research and writing skill development .
+6 . Applicability
+This Framework applies to all students together with university staff and faculty members , researchers , and personnel at Degree Awarding Institutes throughout Pakistan without sectoral distinctions. This guideline applies uniformly to both undergraduate studies and graduate courses.
+
+[SECTION: hec_genai_academic_integrity_5_3_OBJECTIVES]
+# 3. Objectives
+Title: HEC Framework for Generation AI use in Higher Education Institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 3. Objectives
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-GenAI.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-Gene-AI.pdf
+Version: Framework-Gene-AI as published; HEC GenAI notification attached in the register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+The term "Student" in this framework applies t o every person who maintains their official registration status either in universities or Degree Awarding Institutes or affiliated/constituent colleges acknowledged by HEC when they submit their work or paper. This definition includes all academic research ers and equivalent personnel working at universities and organizations and their constituent and affiliated colleges. The definition includes researchers who fulfill any formal criteria according to governing regulations for their employment. Individuals w ho work in university positions are classified based on their roles as regular employees or contractual workers , visiting personnel , and people who perform duties as needed or do online research. Research entities within HEIs/DAIs will need to hold their e mployee stakeholders responsible for plagiarism discovery if they presented their academic work or scholarly activities on institutional sites for promotion or funding purposes. Every instance of violation will receive suitable penalties established by reg ulatory rules. The guidelines of Generative AI tools in higher education appear in Appendix 1.
+This framework should be adapted and implemented by each institution in accordance with its own governance structures, academic traditions, and educational missi on. Institutions retain the authority to establish more restrictive policies reflecting their specific context, while maintaining alignment with the principles and objectives outlined herein.
+7 . Institutional Responsibility
+A . Transparency and Disclosure Transparency in the context of Generative AI Tools refers to the open communication and disclosure of the use of AI technologies within educational institutes. HEIs must establish clear institutional policies on the use of generative AI tools that are communicated to all students, faculty, and staff. These policies must specify what uses are permitted, prohibited, or require disclosure in different contexts (teaching, learning, assessment, research, administration).
+Institutions must ensure that policie s are easily accessible and regularly updated.
+B . Informed Consent Generative AI Tools imply both within information on the possible consequences of the use of Generative AI Tools and a voluntary choice on the application of the same. If Generative AI Tools are to be implemented in educational processes, then educational institutions must set up the processes to obtain informed consent from students and faculty. It includes defining the purposes, potential impacts , and the levels of risk associated with AI applications in the context of higher education. Specific details c an be obtained from Appendix 2.
+C . Fairness and Bias Mitigation Institutions must ensure that AI tools are evaluated for potential bias before deployment.
+Institutions should establish processes for monitoring and addressing discriminatory outcomes.
+AI - based assessment tools should be audited for fairness, particularly regarding protected characteristics. Such a udits should be conducted regularly to identify and fix biases .
+D . Data Privacy Data privacy is the protection of personal information of the students and faculty from unauthorized access, use , and disclosure. It should also be borne in mind that educational institutes must, as per stipulated regulations, ensure that the applicable data protection regulations are followed and that students a nd faculty data are protected by robust security measures. All the data used in Generative AI Tools/applications should be anonymized and always treated as confidential .
+Data should not be transmitted to third parties without explicit consent. When using cloud - based AI services, institutions should verify data protection standards and ensure compliance with applicable laws, including the Prevention of Electronic Crimes Act (PECA), 2016 and the Draft Personal Data Protection Bill (PDPB), 2023 if/when approv ed .
+E . Accessibility Institutions must ensure that AI policies do not create barriers to learning for students with disabilities. Where AI is recommended or required, alternatives must be available. Institutions should proactively consider how AI tools can enhance accessibility through features such as text to - speech, transcription, and translation. To make a product more accessible, educational institutions should solicit feedback from various end - user groups .
+F . Explainability Generative AI Tools/systems explain the capacity for them to provide understandable explanations of their decisions and actions.
+However, w hen AI systems are used to make decisions affecting students (such as automated assessment, plagiarism detection, or admissions sc reening), institutions must be able to explain how the AI system reached its conclusions. Students should have access to information about factors that influenced AI - based decisions about them.
+
+[SECTION: hec_genai_academic_integrity_6_3_OBJECTIVES]
+# 3. Objectives
+Title: HEC Framework for Generation AI use in Higher Education Institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 3. Objectives
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-GenAI.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-Gene-AI.pdf
+Version: Framework-Gene-AI as published; HEC GenAI notification attached in the register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+G . Department al AI Stewardship Committee As an aspirational and alerting body to act against academic abuse of Generative AI Tools, the Departmental AI Stewardship Committee (DSC), Unfair - Means Control Committee ( UMCC ) or any equivalent statutory body is crucial in fighting to prevent the misuse of Generative AI Tools in tertiary educational institutions. These responsibilities consist of oversight, policy formulation , and the implementation of measures that prevent ethical use of Generative AI technologies .
+H . Review and Develop Ins titutional Guidelines HEIs must develop detailed guidelines for AI use in specific contexts (undergraduate teaching, graduate research, assessment, etc.). Guidelines should provide examples of appropriate and inappropriate uses and be made available to all community members.
+I . Educational Initiatives HEIs must r aise awareness among the faculty, staff, and students about the capabilities of Generative AI Tools including capabilities, limitations, ethical considerations, and proper disclosure practices through educational programs. Such workshops, seminars , and training sessions Should address both misuse detection and appropriate use encouragement.
+J. Review and Approval Mechanism Institutions should establish clear mechanisms for review and approval of AI tools before deployment. Assessment tools relying on AI should be reviewed by relevant academic committees.
+Major deployments should be approved by appropriate institutional bodies.
+K. Monitoring and Enforcement It is important to monitor the use of Generative AI Tools on a regular basis, as well as auditing to make sure that the tools are being used in an ethically compliant manner. There is learning from reviewing projects, assignments , and assessments to discov er any academic dishonesty and unethical practices.
+
+[SECTION: hec_genai_academic_integrity_7_L_COLLABORATION_WITH_OTHER_DEPARTMENTS_AND_ETH]
+# L. Collaboration with other departments and Ethics Committees
+Title: HEC Framework for Generation AI use in Higher Education Institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: L. Collaboration with other departments and Ethics Committees
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-GenAI.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-Gene-AI.pdf
+Version: Framework-Gene-AI as published; HEC GenAI notification attached in the register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+L. Collaboration with other departments and Ethics Committees
+Liaise with other departments , such as Computer Science and ethics committees , to survey the company’s Generative AI Tools and how the techn ology is implemented to comply with data privacy and security standards.
+
+[SECTION: hec_genai_academic_integrity_8_M_REPORTING_MECHANISMS]
+# M. Reporting Mechanisms
+Title: HEC Framework for Generation AI use in Higher Education Institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: M. Reporting Mechanisms
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-GenAI.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-Gene-AI.pdf
+Version: Framework-Gene-AI as published; HEC GenAI notification attached in the register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+M. Reporting Mechanisms
+Institutions must p ut in place reporting mechanism to the HEC on implementation of this framework, including number of violations processed on undergraduate and graduate level, institutional guidelines developed, and trainings conducted. This data will enable HEC identify and mitigate emerging issues in t he framework.
+N. Framework Review and Continuous Improvement HEIs should review the AI policies and practices adapted by Universities/DAIs at least six monthly intervals to assess effectiveness, identify emerging issues, and incorporate institutional experience. Institutions should submit an annual AI Integration Report to the HEC documenting:
+(i) number and nature of AI - related academic integrity cases; (ii) institutional guidelines and
+policies developed; (iii) training and awareness programs conduct ed; (iv) technology infrastructure deployed; (v) emerging issues or challenges identified; and (vi) recommendations for framework updates. Given the fact that GenAI technology is dynamic, the committee should reexamine the existing policies on the appropri ate usage of GenAI tools periodically . Annual AI use reports and phased rollout can be integrated with the HEI’s internal policy for the use of Gen - AI tools aligned with the HEC ’s framework .
+N - A. Assessment Resilience Institutions should establish a comprehensive assessment review plan to ensure that all major assessments (examinations, major assignments, projects) are resilient to AI use — meaning they reliably measure student learning even when students have access to g enerative AI. This review should be completed within 12 months of framework adoption and should consider: (i) assessment design that emphasizes critical thinking, analysis, and application rather than content generation;
+(ii) in - class and supervised assess ments for foundational skills; (iii) oral examinations or
+presentations in key courses; (iv) authentic tasks requiring local knowledge or realtime problem solving; and (v) portfolio assessment capturing development over time.
+N - B. AI Literacy in Curricula Institutions should integrate AI literacy into curricula, ensuring graduates understand AI capabilities, limitations, ethical implications, and appropriate workplace use. This integration should be completed within two years of framework adoption and shou ld include: (i) foundational AI literacy for all students covering concepts, capabilities, and responsible use; (ii) discipline specific applications and implications; (iii) ethical frameworks for AI decision - making; and (iv) technical literacy for relevan t programs.
+O. Ethics Training Offer ongoing ethics training and seminars for those in the faculty and students who are engaged in Generative AI tool projects. Responsible use, academic integrity , and the consequences of misuse are key points that should be focused on in this training.
+P. Coordination with Higher Authorities Additionally, HEC’s policies shall be reflected in the departmental policies for fighting academic misuse of generative AI tools coherently .
+Q. Ethically Promoting Research Be an advocate and advocate for ethical research practices in the department. It includes a focus on building an academic integrity and responsible innovation culture, not only in faculty, but also in students.
+Therefore, the Departmental AI Stewardship Committee acts as an important avenue for legal protection against the inappropriate use of Generative AI tools in academic contexts t hrough the policies formulated with clear measures of accountability, an awareness mechanism, and constant checking of any Generative AI technologies within the academic domain.
+
+[SECTION: hec_genai_academic_integrity_9_8_CONSTRUCTIVE_AND_ENCOURAGED_USES]
+# 8. Constructive and Encouraged Uses
+Title: HEC Framework for Generation AI use in Higher Education Institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 8. Constructive and Encouraged Uses
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-GenAI.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-Gene-AI.pdf
+Version: Framework-Gene-AI as published; HEC GenAI notification attached in the register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+8. Constructive and Encouraged Uses
+This section identifies uses of generative AI that should be encouraged and supported as they enhance teaching, learning, and research. Institutions should actively promote these uses through professional development, infrastructure support, and policy clarity.
+8 A . Teaching a nd Learning Applications
+Faculty are encouraged to use generative AI in teaching contexts such as: (i) possibility engine — generating multiple examples, case studies, or problem variations to illustrate concepts; (ii) Socratic opponent — providing counterarguments or alternative pers pectives to deepen student thinking; (iii) collaboration coach — offering feedback on group dynamics, presentation skills, or project management; (iv) personal tutor — explaining concepts in different ways tailored to individual student needs; (v) co - designer — assisting in course design, learning objectives, and assessment alignment; (vi) study buddy — generating practice problems, study guides, or quiz questions for student self - study; (vii) motivator — providing encouragement and learning strategies during challen ging coursework; (viii) writing coach — offering feedback on clarity, organization, and argumentation in student drafts; and (ix) research assistant — supporting literature review, data synthesis, and research methodology planning .
+Faculty should share pract ices and lessons learned through faculty development programs and departmental colloquia to build institutional knowledge and help colleagues implement these tools effectively 8B . Research Applications Researchers are encouraged to use generative AI to s upport research processes including: (i) literature review — identifying relevant studies, synthesizing findings, and mapping research landscapes; (ii) hypothesis generation — brainstorming research questions and theoretical frameworks; (iii) data analysis — ex ploring patterns, generating initial interpretations, and suggesting statistical approaches (subject to verification); (iv) writing improvement — enhancing clarity and coherence of research manuscripts; (v) translation — making research accessible across langu ages; (vi) citation verification — checking accuracy of citations and references; and (vii) replication checking — identifying potential methodological issues or alternative explanations.
+Generative AI should never be listed as a research author. The researche r bears full responsibility for all content and claims in publications regardless of AI assistance used. AI use in research should be disclosed in appropriate sections (methods, acknowledgments) of published work and should comply with journal guidelines.
+8 C . Administrative Applications
+Administrative staff and managers are encouraged to use generative AI for: (i) translation — providing multilingual support for communications; (ii) document processing — organizing, summarizing, and categorizing administrativ e documents; (iii) communication drafting — preparing routine correspondence, announcements, and reports; and (iv) data management — assisting with data organization and basic analysis. Administrative use should comply with data privacy requirements and instit utional information security policies .
+
+[SECTION: hec_genai_academic_integrity_10_9_DATA_SOVEREIGNTY_AND_PROTECTION]
+# 9. Data Sovereignty and Protection
+Title: HEC Framework for Generation AI use in Higher Education Institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 9. Data Sovereignty and Protection
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-GenAI.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-Gene-AI.pdf
+Version: Framework-Gene-AI as published; HEC GenAI notification attached in the register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+9. Data Sovereignty and Protection
+Data sovereignty — the right of institutions to maintain control over institutional and student data — is a critical consideration in AI tool selection and deployment. Many cloud - based AI services process data on servers outside Pakistan or within jurisdictions with different data protection standards. Institutions should be aware of data flows and make informed choices about tools and data types. Sensitive institutional data (including student records, financial information, research data from government projects) should be processed using enterprise - grade AI tools with data residency guarantees or local hosting options. Publicly available or anonymized data may be processed using commer cial AI services, subject to explicit consent and compliance policies.
+Institutions should consider deployment of local AI solutions where feasible, including open source language models and institutional AI services with on - premises hosting. These soluti ons provide greater data control and align with national data sovereignty objectives. Anonymization techniques — removing identifying information before processing — should be employed where sensitive data use cannot be avoided with commercial services.
+The HEC will conduct a feasibility study within 12 months of framework adoption examining: (i) national AI infrastructure capacity; (ii) options for institutional or sectoral AI platforms with data residency in Pakistan; (iii) open - source AI model deployment i n HEIs; and (iv) procurement guidance for enterprise AI tools with appropriate data sovereignty provisions.
+
+[SECTION: hec_genai_academic_integrity_11_10_RULES_AND_PENALTIES_OF_PLAGIARISM]
+# 10. Rules and Penalties of Plagiarism
+Title: HEC Framework for Generation AI use in Higher Education Institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 10. Rules and Penalties of Plagiarism
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-GenAI.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-Gene-AI.pdf
+Version: Framework-Gene-AI as published; HEC GenAI notification attached in the register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+10. Rules and Penalties of Plagiarism
+Academic integrity is something students really need to be aware of , and how their institution stands about it . When in doubt, make sure they know what is going on , but also contact teachers or have a meeting with their academic advisor. The use of generative AI tools such as ChatGPT helps enhance learning, particularly outside the academic setting (e.g. brainstor ming ideas, exploring concepts, etc.) while its use to complete assignments and Thesis will have very serious consequences. However, the information that these tools produce was originally written and published , and it may be incorrect or out of date . Plag iarism occurs when students use text generators without proper citation. The information supplied by these tools may be deficient as well as mistaken , which necessitates students to verify their work . The University expects students to present original wor k that they produced independently in all graded assignments and theses.
+Academic misconduct , together with a zero grade , follows both plagiarism detection and unauthorized tool usage of Generative AI in student work.
+The following rules shall be incorporated at the institutional level:
+i. Author credit must not go to generative AI tools in any writing project. The usage of these
+tools should remain limited to make texts more readable but safety precautions should always be deployed. O ne must include a declaration statement regarding all AI - assisted technologies or generative AI tool use before references in the final manuscript section.
+Declaration of G enerative AI tools and AI - assisted technologies in the writing process:
+“During the preparation of this work , the author(s) used [NAME TOOL / SERVICE] in order to [REASON]. After using this tool/service, the author(s) reviewed and edited the content as needed and take(s) full responsibility (legal, moral, etc.) for the content of the publication.”
+ii. Universities need to create internal protocols that establish how students should acknowledge
+the integration of Generative AI tools when preparing academic papers. Any content produced by AI systems needs to receive appropriate acknowledgment in addition to proper recognition of the original authors who provided referenced material.
+iii. Generative AI tools have specific conditions where their academic implementation meets
+approval according to Section 6. Educational researchers should not rely on Generative AI tools for collecting data because they yield inadequate information that includ es outmoded facts as well as spurious references and artificial research findings. Students must avoid all activities of data generation and fabrication , including data manipulation that utilizes Generative AI tools. The student will face responsibility fo r misconduct when this situation occurs.
+iv. Plagiarism detection software, including tools capable of identifying AI - generated text, may
+be used to assess content originality when available. The evaluation of similarity and acceptable use of AI - assisted cont ent shall be guided by the prevailing policies and guidelines issued by the HEC, with final determinations made by the DSC and the relevant statutory bodies of the respective HEIs. HEC periodically updates these guidelines in line with global best practice s and feedback from the academic community. Detection as a single indicator is insufficient for disciplinary action; detection must be accompanied by additional corroborating evidence of intent to misrepresent.
+v. Aligned with the recent plagiarism policy of HEC
+, the student of UG as well as PG must add the updated plagiarism undertaking statement stating:
+“ I, [Name of Student] , declare on oath that the research work presented in my UG/MS/PhD project/thesis, where applicable, entitled “[Project/Thesis Title]” is my own research work and is not substantially contributed by any other person or Generative AI Tools. Any small contribution/assistance wherever received has been duly acknowledged/cited , and the whole project/thesis has been written by me under the latest plagiarism policy declared by HEC and [Name of University] , as per the policy on use of Generative AI Tools.
+Where Generative Artificial Intelligence (GenAI) tools have been used during the preparation of this project/thesis, such use has been limited to purposes permitted under the applicable HEC and University policies and guidelines. Any use of GenAI that has materially contributed to th e content, analysis, or presentation of this work has been appropriately acknowledged or disclosed, where required.
+I further declare that GenAI tools have not been used to fabricate or falsify research data, results, references, citations, or sources, no r to generate work that is presented as my own in violation of applicable academic integrity requirements.
+I understand that the use of GenAI does not relieve me of responsibility for the accuracy, originality, authenticity, proper citation, and academic integrity of this project/thesis. Any violation identified in this work shall be dealt with in accordance with the applicable policies and procedures of HEC and [Name of University]. ” The above undertaking statement s might be updated by HEC from time to time.
+Policy Reference: ANTI - PLAGIARISM POLICY by HEC
+vi. Ensure that the use of AI Generative Tools complies with existing copyright and intellectual
+property laws. Universities should internally develop /implement guidelines that prevent the generation of content that infringes upon copyright, trademarks, or an y other legal rights (IPO, Ministry of Commerce, is a relevant government body in Pakistan) .
+The project / Thesis shall be checked by the supervisor according to the rules mentioned above.
+However, in case of any criteria under the rules that are not met , the supervisor may ask the student to revise the project/thesis report and resubmit it to the supervisor. If the revised project/thesis does not meet the criteria set under the rules, the student sha ll be held responsible, and the case sha ll be referred to the UMCC/ DSC or any other relevant committee of the department for awarding a penalty depending upon the level of severity. The participation of an AI - relevant member should also be mandatory in the constitution of these committees to ensure that AI - related concerns are properly addressed. If the departmental committee agrees, the case can be raised to respective university lev el committee and would be dealt with according to the rules and regulation s of the University/DAI .
+https:// ipo.gov.pk Flowchart Appendix 1 Applications of Generative AI Tools in Higher Education Some applications of Generative AI Tools in higher education are:
+A. Teaching & Learning Generative AI Tools can be used to augment the process and experience of learning for students.
+These can be used as standalone tools , or they can be integrated into other platforms used by Universities and DAIs. Although Generative AI tools are evolving and improving at a rapid pace, some possible roles of the tools are described in the table below UNESCO (2023) ChatGPT and Artificial Intelligence in higher education Appendix 1 B. Research Generative AI tools can be employed at different stages of the research process or processes relating to research. Some examples are:
+i. Research Design: Generate ideas for research questions or projects.
+ii. Writing Up: Improve writing quality, language translation, refo rmat references and citations
+iii. Quality Check (language, content, flow of document, etc.)
+Some of the famous Gen AI tools include: ChatGPT, Claude, Microsoft Copilot, Researchrabbit, Gemini, etc.
+
+[SECTION: hec_genai_academic_integrity_12_C_ADMINISTRATION]
+# C. Administration
+Title: HEC Framework for Generation AI use in Higher Education Institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: C. Administration
+Official page: https://www.hec.gov.pk/english/policies/Pages/Framework-GenAI.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Framework-Gene-AI.pdf
+Version: Framework-Gene-AI as published; HEC GenAI notification attached in the register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+C. Administration
+Employing Generative AI Tools to improve the administrative processes efficiency. Some examples are :
+i. Information translation for regional/international students
+ii. Finding resources and other information
+Appendix 2 Responsibilities of HEIs and Organizations Promoting responsible GenAI Tools use in HEIs involves a combination of proactive measures, policy implementation, and educational initiatives.
+i. Ethical Guidelines : Instructors/Supervisors should develop clear and comprehensive
+guidelines specifically addressing the use of GenAI Too ls within the academic setting – how and when these tools can be used and when they cannot. These guidelines should outline acceptable use, potential risks, and consequences of misuse and must be referred/mentioned clearly in the course outlines and projec t proposal documents.
+ii. Continuous Ethical Review : Create a AI Stewardship committee or ethical review board to
+periodically assess GenAI Tools' use and address emerging ethical concerns related to AI technologies. Continuously assess the research manuscripts by field specialists for unethical use of GenAI Tools in light of relevant policies at the national level
+iii. Connecting GenAI Tools Use to Learn ing Outcomes : At the outset of course, teachers /
+supervisors should connect the use of AI Generative Tools to Outcome - Based Education (OBE)mapping it with learning outcomes (Program Learning Outcomes – PLOs & Course Learning Outcomes - CLOs). This helps students to understand how these tools can support their learning and what the guidelines/expectations are for them.
+iv. Transparent Attribution : Encourage students and researchers to transparently attribute the
+use of AI - generated content in their work, ensur ing proper acknowledgment and citation.
+v. Faculty and Staff Capacity Building : Arrange awareness seminars and workshops to
+faculty, staff, and administrators on the responsible and ethical use of GenAI Tools. Educators should understand the capabilities and limitations of GenAI Tools and be equipped to guide students appropriately. Emphasize the importance of academic honesty and integrity through these orientation programs, research seminars, and ongoing awareness campaigns. The universities can include the module related to Gen AI in the courses like “Introduction to ICT” (for BE/BS) or “Research Methodology” for (MS/PhD) , as these subjects are offered in all disciplines.
+vi. Incorporate AI Ethics into Curriculum : Integrate discussions on AI ethics, bias, and
+r esponsible AI use into relevant courses across various disciplines, including computer science, engineering, management , and social sciences.
+vii. Critical Thinking and Information Literacy: Promote critical thinking skills among
+students and researchers to hel p them critically evaluate AI - generated content and distinguish it from credible, validated sources.
+viii. Originality and Creativity: Encourage and celebrate originality and creativity in student
+work, discouraging the overreliance on AI - generated content for a ssignments and research.
+ix. Collaboration with AI Developers: Establish collaborations with AI developers and
+researchers to explore the ethical implications of AI and work together on responsible AI initiatives.
+Appendix 2
+x. Support Research on AI Ethics: Support and conduct research on AI ethics and bias, aiming
+to develop best practices and guidelines for responsible AI use in academia.
+xi. Peer Support & Collaborative Efforts: Faculty and staff share their experiences and best
+practices for teaching & ways to use Generative AI Tools in learning, research & administration to increase skill level and bring efficiency in the institution. Foster Collaboration with other educational institutions, industry partners, public sector entities, and AI ethics organizati ons to share knowledge and best practices in promoting responsible and ethical use of AI , as well as in line with other applicable policies.
+xii. Adapting Innovative Assessment Methods and Learning Tools: The faculty/advisors are
+encouraged to adapt global bes t practices for micro - management of the content at the course/research level. Instructors should provide guidelines regarding acceptable use of Generative AI Tools referred/mentioned clearly in the course outlines and project proposal documents, ensuring t ransparency & ethical considerations. Moreover, a declaration , if asked by the instructor , can also be added. Innovative assessment methods will be developed and put into practice to complement the integration of Generative AI Tools into course learning and evaluation.
+In addition to the above , HEIs may ensure compliance with the following agenda through developing DSC / UMCC/ or any equivalent statutory body to practice ethical use of GenAI.
+
+[SECTION: hec_genai_academic_integrity_13_HEC_FRAMEWORK_FOR_GENERATION_AI_USE_IN_HIGHER_]
+# HEC Framework for Generation AI use in Higher Education (part 2)
+Title: HEC Framework for Generation AI use in Higher Education Institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Framework for Generation AI use in Higher Education (part 2)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/62/HEC%20Notification%20AI%20Gen-AI-HEIs.pdf
+Version: Framework-Gene-AI as published; HEC GenAI notification attached in the register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+For enquiries, please contact Quality Assurance Division | 051 - 90 40 2 7 00 Coordination Division H - 9, Islamabad (Pakistan)
+1 5 - 54/Coord/2019 / HEC ( QAD ) / 705 September 4, 2026
+NOTIFICATION In pursuance of the approval accorded by the Commission in its 4 7 th meeting held on July 0 2 , 202 6 , the ‘ Framework on the Use of Generative AI (Gen - AI) Tools in Higher Education Institutions (HEIs) ’ is hereby notified for implementation with immediate effect .
+0 2 . The Framework is available at www.hec.gov.pk/Site/GenAI .
+( Shahzaib Abbasi) Director General ( Coordination ) Distribution :
+i. The Vice Chancellors / Rectors / Heads of Institutions of a ll Universities / DAIs
+ii. The Offices of the Chancellors of Public Sector Universities / DAIs
+iii. The Secretary, Ministry of Federal Education & Professional Training, Govt. of Pakistan
+iv. The Secretary, Higher Education Department, Govt. of the Punjab
+v. The Secretary, Colleges, Higher & Technical Education Department, Govt. of Balochistan
+vi. The Secretary, Higher Education, Archives & Libraries Department, Govt. of Khyber Pakhtunkhwa
+vii. Th e Secretary, Universities & Boards Department, Govt. of Sindh
+viii. The Secretary, Higher Education Department, Govt. of Azad Jammu & Kashmir
+ix. The Secretary, Higher, Technical & Special Education Department, Govt of Gilgit - Baltistan
+x. All Divisions & Regional Centers of HEC
+xi. P.S. to the Chairman, HEC
+xii. P.S. to the Executive Director, HEC
+HIG HER EDUC ATIO N COMMISSION
+
+[SECTION: hec_genai_academic_integrity_14_HEC_FRAMEWORK_FOR_GENERATION_AI_USE_IN_HIGHER_]
+# HEC Framework for Generation AI use in Higher Education (part 3)
+Title: HEC Framework for Generation AI use in Higher Education Institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Framework for Generation AI use in Higher Education (part 3)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Version: Framework-Gene-AI as published; HEC GenAI notification attached in the register
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Notifications
+HEC
+Notifications
+
+Type
+Academic
+University
+General Public
+- Recognition of the degree awarded by foreign chartered universities/institutions through virtual/online/distance learning/Blended learning
+Friday, July 22, 2022
+- Academic
+- Deferment of Post PhD Experience for Professors and Associate Professors
+Wednesday, July 20, 2022
+- Academic
+- Extension in maximum duration of MS/MPhil/PhD/equivalent degree programs due to Covid-19
+Friday, April 15, 2022
+- Academic
+- Appointment of TTS faculty on Academic-administrative positions
+Wednesday, March 2, 2022
+- Academic
+- Withdrawal of Migration Certificate/NOC as an admission requirement to the Graduate/ Postgraduate Programs
+Monday, February 28, 2022
+- Academic
+- Collecting hard copies of PhD dissertation to register record in PhD Country Directory (PCD)
+Sunday, December 19, 2021
+- Academic
+- Salary Package for the Vice-Chancellors of Public Sector Universities
+Friday, October 22, 2021
+- University
+- Graduate Education Policy-2023 (GEP-2023)
+Monday, July 10, 2023
+- Academic
+- Applicants having CAF qualification duly verified by ICAP shall be eligible for admission in BS AF
+Wednesday, June 9, 2021
+- Academic
+- Clarification regarding TTS Leave Policy
+Friday, March 5, 2021
+- University
+- Initial appointment of faculty members on TTS
+Friday, March 5, 2021
+- University
+- Amendment of the clause 1.4.1.2 of Model Tenure Track Process Statutes
+Saturday, October 16, 2021
+- University
+- Amendment of the clause 1.1 (d) and Annexure -A of Model Tenure Track Process Statutes
+Friday, October 16, 2020
+- University
+- Transition of BA/BSc Programs to Associate Degree Programs, Phasing Out of MA/ MSc Programs
+Thursday, July 11, 2019
+- Academic
+- Acceptance of USAT (Undergraduate Studies Admission Test)
+Tuesday, July 5, 2022
+- Academic
+- The Requirement of Post-PhD Experience
+Thursday, May 25, 2023
+- Academic
+- Undergraduate Education Policy
+Wednesday, July 12, 2023
+- Academic
+- Revised Interim Placement of Fresh PhDs (IPFP) Policy
+Friday, July 21, 2023
+- Academic
+- Anti-Plagiarism Policy 2023
+Wednesday, August 2, 2023
+- Academic
+- Framework of The HEC Distinguished National Professor (DNP) Program
+Tuesday, September 30, 2025
+- Academic
+- Clarification one time relaxation based on Covid-19 Situation for completion of MS-MPhil equivalent and PhD Degree till 28.02.2023
+Tuesday, April 26, 2022
+- Academic
+- Discontinuation of HEC Approved Supervisor Post Promulgation GEP- 2023
+Friday, December 22, 2023
+- Academic
+- Open and Distance Learning: Policy Provisions and Regulatory Framework
+Wednesday, August 28, 2024
+- Academic
+- Transnational Education (TNE) Policy 2024
+Monday, September 9, 2024
+- Academic
+- Partial Relaxation in Requirement of Full-Time PhD Faculty Members to Launch MS/MPhil or Equivalent and PhD Programs in Basic Medical Sciences and Clinical Health Sciences
+Wednesday, October 2, 2024
+- Academic
+- Journals & Publications Policy 2024
+Monday, September 30, 2024
+- Academic
+- HEC National Fee Refund Policy
+Friday, December 20, 2024
+- Academic
+- Notification Framework for Appointment of Meritorious Professor in HEIs
+Tuesday, September 30, 2025
+- University
+- Notification Framework for Appointment of Professor Emeritus in HEIs
+Tuesday, September 30, 2025
+- University
+- Policy Guidelines for Appointment of Professor of Practice by the Higher Education Institution (HEIs) in Pakistan
+Tuesday, September 30, 2025
+- University
+- HEC-Notification Interim Placement of Fresh PhDs (IPFP)Phase-II
+Friday, February 21, 2025
+- University
+- Notification Post-PhD experience for appointment of Professors (08 years) and Associate Professors (04 years)
+Thursday, July 30, 2026
+- Academic
+- Framework for HEC Best Teacher Award (BUTA)
+Tuesday, September 30, 2025
+- University
+- Policy on Protection Against Harassment in Higher Education Institutions (Revised 2025)
+Tuesday, September 30, 2025
+- University
+- Guidelines for Admissibility of Leave for Professor Emeritus
+Tuesday, December 23, 2025
+- University
+- UNESCO's International Standard Classification of Education-ISCED-F
+Tuesday, January 13, 2026
+- Academic
+- HEC Journals & Publications Policy, 2024
+Monday, March 2, 2026
+- Academic
+- Guidelines for Engagement of Visiting Faculty in HEIs, 2026
+Sunday, May 17, 2026
+- University
+- Mandatory Conduct of GREHAT General & Subject Test through HEC-Education Testing Council (ETC)
+Tuesday, May 12, 2026
+- University
+- Policy on Dual, Double & Joint Degree Programmes, 2026
+Wednesday, May 13, 2026
+- University
+- Notification - Amendments in TNE Policy, 2024
+Wednesday, May 13, 2026
+- University
+- Establishment of the National Chair on AI and Robotics
+Tuesday, May 5, 2026
+- University
+- Notification - Deferred Implementation of Mandatory Conduct of GRE_HAT-General & Subject Test
+Sunday, May 24, 2026
+- General Public
+- Framework for Recognition of Liberal Arts Undergraduate Programs under the HEC Undergraduate Education Policy 2023
+Tuesday, August 4, 2026
+- Academic
+- Framework on the Use of AI (Gen-AI) Tools in HEIs
+Friday, September 4, 2026
+- University
+- HEC Notification | Salary Package for the Vice Chancellors of Public Sector Universities
+Friday, October 2, 2026
+- University
+- HEC Notification | Deferment of Post-PhD Experience Requirement until 31.12.2026
+Friday, October 2, 2026
+- University

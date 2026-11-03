@@ -1,0 +1,534 @@
+{
+  "artifact": "INSAaf AI — domain audit for corpus 2.4.0-final expansion (spec part 2)",
+  "corpus": "2.4.0-pre-freeze (post 2026-09-06 expansion)",
+  "generatedAt": "2026-09-06T15:00:56.533Z",
+  "status_scale": {
+    "FULL_TEXT": "official/verbatim provision text present in the corpus",
+    "PARTIAL": "numbered provision-level digests for a SUBSET of the act (numbers preserved, wording summarized)",
+    "SUMMARY": "act- or topic-level digests without systematic provision coverage",
+    "MISSING": "no indexed record in the corpus"
+  },
+  "federal": [
+    {
+      "domain": "Constitution",
+      "status": "PARTIAL",
+      "evidence": [
+        "constitution_1973",
+        "fundamental_rights",
+        "court_hierarchy"
+      ],
+      "note": "35 of ~280 articles indexed (1,2,2A,4,5,8-28,45,51,175,184,199,251) as digests; executive articles 41-49, 90-140, 218+ not yet; official HTML text inaccessible (PDF-only official distribution) — declared gap"
+    },
+    {
+      "domain": "Criminal law (PPC)",
+      "status": "PARTIAL",
+      "evidence": [
+        "ppc_1860"
+      ],
+      "note": "71 of 299 sections as numbered provision digests; offense chapters beyond those not indexed"
+    },
+    {
+      "domain": "Criminal procedure (CrPC)",
+      "status": "PARTIAL",
+      "evidence": [
+        "crpc_1898"
+      ],
+      "note": "47 sections incl. 22A/22B, 154, 161, 164, 200, 265A-H, 340, 344, 410, 411, 417, 435, 497, 498A as provision digests"
+    },
+    {
+      "domain": "Civil law (general)",
+      "status": "PARTIAL",
+      "evidence": [
+        "contract_act_1872",
+        "specific_relief_act_1877",
+        "sales_of_goods_act_1930",
+        "limitation_act_1908"
+      ],
+      "note": "contract 74, specific relief 15, sale of goods 15, limitation 28 numbered sections as provision digests"
+    },
+    {
+      "domain": "Civil procedure (CPC)",
+      "status": "PARTIAL",
+      "evidence": [
+        "cpc_1908"
+      ],
+      "note": "29 numbered provision digests incl. s.9, 100, 115, 151, 152, Order 39 areas; many orders/schedules not indexed"
+    },
+    {
+      "domain": "Family law",
+      "status": "PARTIAL",
+      "evidence": [
+        "family_laws_1961"
+      ],
+      "note": "MFLO 1961 + Dissolution of Muslim Marriages Act 1939 + Family Courts Act 1964 + guardianship digests (19 chunks)"
+    },
+    {
+      "domain": "Property / transfer",
+      "status": "SUMMARY",
+      "evidence": [
+        "property_laws"
+      ],
+      "note": "Transfer of Property Act 1882 topics (sale/mortgage/lease/gift) digested without systematic section numbers; registration process and mutation recorded"
+    },
+    {
+      "domain": "Land / revenue",
+      "status": "SUMMARY",
+      "evidence": [
+        "property_laws"
+      ],
+      "note": "mutation (Inteqal) process anchored to Land Revenue Act 1967; no section-level revenue law text; provincial codes are PDF-only (access gap)"
+    },
+    {
+      "domain": "Tenancy / rent",
+      "status": "SUMMARY",
+      "evidence": [
+        "tenancy_laws"
+      ],
+      "note": "provincial rent acts digested (Punjab Rented Premises 2009, Sindh 1979, KP urban 1959, ICT 2001 listed); no full text"
+    },
+    {
+      "domain": "Contracts",
+      "status": "PARTIAL",
+      "evidence": [
+        "contract_act_1872"
+      ],
+      "note": "Contract Act 1872 provisions incl. offer/acceptance/consideration/capacity/free consent/void agreements/indemnity/guarantee as digests"
+    },
+    {
+      "domain": "Torts",
+      "status": "MISSING",
+      "evidence": [],
+      "note": "common-law domain without Pakistani statute; only incidental coverage (vicarious liability case record; remedies digests). No negligence/defamation/trespass doctrine corpus — declared gap"
+    },
+    {
+      "domain": "Labour & employment",
+      "status": "SUMMARY",
+      "evidence": [
+        "labour_employment"
+      ],
+      "note": "IR Act 2012, factories, minimum wage, EOBI, workers compensation digested at act level (8 chunks)"
+    },
+    {
+      "domain": "Companies",
+      "status": "SUMMARY",
+      "evidence": [
+        "companies_act_2017"
+      ],
+      "note": "27 topic digests of Companies Act 2017 — topic numbering is NOT act section numbering (audit correction); incorporation/management/liquidation covered at digest level"
+    },
+    {
+      "domain": "Banking",
+      "status": "SUMMARY",
+      "evidence": [
+        "banking_laws"
+      ],
+      "note": "10 topic digests (banking companies ordinance areas, NI Act 1881, SBP role) — invented topic numbering; official SCP 2026 record adds s.6 BTO 1984 / s.15 BCRA 1997 points"
+    },
+    {
+      "domain": "Finance (securities/NBFC)",
+      "status": "MISSING",
+      "evidence": [],
+      "note": "no Securities Act 2015 / NBFC / capital-markets corpus; only incidental SBP/banking notes — declared gap"
+    },
+    {
+      "domain": "Tax",
+      "status": "SUMMARY",
+      "evidence": [
+        "tax_laws"
+      ],
+      "note": "income tax / sales tax / customs topic digests (10 chunks) + registry entries for ITO 2001, Sales Tax Act 1990, Customs Act 1969; no section-level text"
+    },
+    {
+      "domain": "Customs",
+      "status": "SUMMARY",
+      "evidence": [
+        "tax_laws"
+      ],
+      "note": "customs topic digest; Customs Act 1969 registry entry only"
+    },
+    {
+      "domain": "Competition",
+      "status": "SUMMARY",
+      "evidence": [
+        "competition_act_2010"
+      ],
+      "note": "Competition Act 2010 digests (7 chunks); official SCP 2026 case (C.A.367/2025) adds Commission independence points"
+    },
+    {
+      "domain": "Consumer protection",
+      "status": "SUMMARY",
+      "evidence": [
+        "consumer_protection"
+      ],
+      "note": "provincial consumer acts + courts digested (7 chunks); SCP 2026 consumer case points added"
+    },
+    {
+      "domain": "Cybercrime",
+      "status": "PARTIAL",
+      "evidence": [
+        "peca_2016"
+      ],
+      "note": "PECA 2016 numbered provision digests (32 chunks)"
+    },
+    {
+      "domain": "Intellectual property (general)",
+      "status": "SUMMARY",
+      "evidence": [
+        "ip_laws"
+      ],
+      "note": "IPO framework, trademarks/patents/copyright topic digests (8 chunks)"
+    },
+    {
+      "domain": "Copyright",
+      "status": "SUMMARY",
+      "evidence": [
+        "ip_laws"
+      ],
+      "note": "Copyright Ordinance 1962 digested at topic level"
+    },
+    {
+      "domain": "Trademark",
+      "status": "SUMMARY",
+      "evidence": [
+        "ip_laws"
+      ],
+      "note": "Trademarks Ordinance 2001 digested at topic level"
+    },
+    {
+      "domain": "Patents",
+      "status": "SUMMARY",
+      "evidence": [
+        "ip_laws"
+      ],
+      "note": "Patents Ordinance 2000 digested at topic level"
+    },
+    {
+      "domain": "Environment",
+      "status": "SUMMARY",
+      "evidence": [
+        "environmental_laws"
+      ],
+      "note": "PEPA 1997 + related topic digests (17 chunks); environmental tribunal recorded in court hierarchy"
+    },
+    {
+      "domain": "Health",
+      "status": "MISSING",
+      "evidence": [],
+      "note": "no health-regulation corpus (drugs, medical practice, hospitals); only incidental education/student records — declared gap"
+    },
+    {
+      "domain": "Education",
+      "status": "SUMMARY",
+      "evidence": [
+        "education_student_rights",
+        "student_rights"
+      ],
+      "note": "education rights + harassment policy + student resources digested; HEC attestation in cross-border study record"
+    },
+    {
+      "domain": "Immigration & passport",
+      "status": "PARTIAL",
+      "evidence": [
+        "immigration_laws",
+        "foreigner_entry_stay_registration",
+        "civic_services"
+      ],
+      "note": "passport/immigration digests + official visa-entry/stay/registration rules and DGIP passport process (verified 2026-09-06); Immigration Ordinance full text not indexed"
+    },
+    {
+      "domain": "Citizenship",
+      "status": "PARTIAL",
+      "evidence": [
+        "civic_services",
+        "foreigner_entry_stay_registration",
+        "immigration_laws"
+      ],
+      "note": "NICOP under s.12 NADRA Ordinance 2000, POC, dual-nationality definitions, passport act digests; Citizenship Act 1951 text missing — declared gap"
+    },
+    {
+      "domain": "Elections",
+      "status": "SUMMARY",
+      "evidence": [
+        "elections_act_2017"
+      ],
+      "note": "Elections Act 2017 topics + ECP Article 218 role digested (11 chunks); official ECP voter-enrolment process added (Forms 21/22/23, SMS 8300)"
+    },
+    {
+      "domain": "Police",
+      "status": "PARTIAL",
+      "evidence": [
+        "police_order_2002"
+      ],
+      "note": "Police Order 2002 digests incl. SHO/FIR duties + FIR-refusal remedies; provincial police acts (KP 2017, Sindh 2020) referenced only"
+    },
+    {
+      "domain": "Prisons",
+      "status": "SUMMARY",
+      "evidence": [
+        "prisons_laws"
+      ],
+      "note": "Prisons Act 1894 topic digests (8 chunks) incl. grievance route; provincial prison rules not indexed"
+    },
+    {
+      "domain": "Juvenile justice",
+      "status": "SUMMARY",
+      "evidence": [
+        "juvenile_justice_2000"
+      ],
+      "note": "JJSO 2000 digests (18 chunks)"
+    },
+    {
+      "domain": "Child protection",
+      "status": "SUMMARY",
+      "evidence": [
+        "juvenile_justice_2000",
+        "labour_employment"
+      ],
+      "note": "child-labour and juvenile protections digested; provincial child protection acts listed (KP 2010) without text"
+    },
+    {
+      "domain": "Women protection",
+      "status": "SUMMARY",
+      "evidence": [
+        "women_protection_laws"
+      ],
+      "note": "harassment-at-workplace act 2010, acid-control laws, provincial DV acts digested (15 chunks)"
+    },
+    {
+      "domain": "Human rights / fundamental rights",
+      "status": "PARTIAL",
+      "evidence": [
+        "fundamental_rights",
+        "constitution_1973",
+        "legal_aid_services"
+      ],
+      "note": "26 fundamental-rights digests (Arts 8-28 areas) + enforcement routes (letter to CJP, Art 184(3), writs, legal aid)"
+    },
+    {
+      "domain": "Anti-corruption / NAB",
+      "status": "PARTIAL",
+      "evidence": [
+        "nab_ordinance_1999"
+      ],
+      "note": "NAB Ordinance 1999 numbered provision digests (22 chunks); accountability courts recorded"
+    },
+    {
+      "domain": "FIA",
+      "status": "PARTIAL",
+      "evidence": [
+        "civic_services",
+        "crpc_1898",
+        "peca_2016"
+      ],
+      "note": "FIA complaint portal (official), FIA-investigated acquittal appeals (CrPC 417(2)), PECA investigation role; FIA Act 1974 schedule not indexed — declared gap"
+    },
+    {
+      "domain": "Public service (civil service)",
+      "status": "SUMMARY",
+      "evidence": [
+        "scp_fcc_official_records"
+      ],
+      "note": "service regularization/pension law through official SCP 2026 records (KPK regularization acts, Punjab pension rules, service tribunal powers); civil servants acts not indexed"
+    },
+    {
+      "domain": "Administrative law",
+      "status": "PARTIAL",
+      "evidence": [
+        "expanded_institutions",
+        "public_offices",
+        "civic_services"
+      ],
+      "note": "ombudsman framework (federal/provincial), writ jurisdiction, office grievance channels; no administrative-procedure statute (Pakistan has none at federal level)"
+    },
+    {
+      "domain": "Local government",
+      "status": "SUMMARY",
+      "evidence": [
+        "local_government_laws"
+      ],
+      "note": "provincial LG acts digested (8 chunks)"
+    },
+    {
+      "domain": "Traffic / transport",
+      "status": "SUMMARY",
+      "evidence": [
+        "traffic_laws"
+      ],
+      "note": "Motor Vehicle Ordinance 1965 digests (8 chunks)"
+    },
+    {
+      "domain": "Succession / inheritance",
+      "status": "SUMMARY",
+      "evidence": [
+        "succession_laws"
+      ],
+      "note": "Muslim personal-law shares + wills + Succession Act 1925 areas digested (17 chunks)"
+    },
+    {
+      "domain": "Arbitration",
+      "status": "SUMMARY",
+      "evidence": [
+        "arbitration_act_1940"
+      ],
+      "note": "Arbitration Act 1940 topics + ADR — topic numbering is NOT act section numbering (audit correction)"
+    },
+    {
+      "domain": "ADR / mediation",
+      "status": "SUMMARY",
+      "evidence": [
+        "arbitration_act_1940",
+        "remedies",
+        "expanded_remedies"
+      ],
+      "note": "CPC s.89 ADR reference + conciliation digests"
+    },
+    {
+      "domain": "Evidence",
+      "status": "PARTIAL",
+      "evidence": [
+        "evidence_qso_1984"
+      ],
+      "note": "Qanun-e-Shahadat Order 1984 numbered provision digests (33 chunks)"
+    },
+    {
+      "domain": "Limitation",
+      "status": "PARTIAL",
+      "evidence": [
+        "limitation_act_1908"
+      ],
+      "note": "Limitation Act 1908 numbered provision digests (28 chunks)"
+    },
+    {
+      "domain": "Narcotics control",
+      "status": "MISSING",
+      "evidence": [
+        "court_hierarchy"
+      ],
+      "note": "only Special Court (Central) drug-offence mention; Control of Narcotic Substances Act 1997 not indexed — declared gap"
+    },
+    {
+      "domain": "Partnership / trusts",
+      "status": "MISSING",
+      "evidence": [],
+      "note": "Partnership Act 1932 and Trusts Act 1882 not indexed — declared gap"
+    },
+    {
+      "domain": "Maritime / admiralty",
+      "status": "MISSING",
+      "evidence": [],
+      "note": "not indexed — declared gap"
+    },
+    {
+      "domain": "Military justice",
+      "status": "MISSING",
+      "evidence": [],
+      "note": "Army Act 1952 and related laws intentionally out of civilian scope — not indexed by design (scope note)"
+    },
+    {
+      "domain": "Media / press laws",
+      "status": "MISSING",
+      "evidence": [],
+      "note": "PEMRA and press laws not indexed — declared gap"
+    }
+  ],
+  "provincial": {
+    "punjab": {
+      "status": "SUMMARY",
+      "records": 5,
+      "note": "registry lists 5 Punjab acts; provincial_laws doc digests 7 (Land Revenue 1967, Consumer Protection 2005, Rented Premises 2009, LG 2022, Women Violence 2016, Agri Land Tax, SST 2012); punjablaws.punjab.gov.pk act text is PDF-embedded only — full text NOT ingestible (verified access gap)"
+    },
+    "sindh": {
+      "status": "SUMMARY",
+      "records": 3,
+      "note": "3 registry records; doc digests Consumer Protection 2014, LG 2013, Rented Premises 1979, DV 2013, SST 2011, culture/tourism acts; full text not accessible"
+    },
+    "khyber_pakhtunkhwa": {
+      "status": "SUMMARY",
+      "records": 4,
+      "note": "doc digests Consumer Protection 2013, LG 2013, Tenancy, DV 2021, Child Protection 2010, Police Act 2017, SST 2014; full text not accessible"
+    },
+    "balochistan": {
+      "status": "SUMMARY",
+      "records": 2,
+      "note": "doc lists Consumer Protection, LG, Tenancy, SST, Land Revenue acts/ordinances; full text not accessible"
+    },
+    "islamabad_capital_territory": {
+      "status": "SUMMARY",
+      "records": 3,
+      "note": "ICT Rent Restriction 2001, ICT LG 2015, CDA Ordinance 1960 digested; ICT tenancy case law absent"
+    },
+    "ajk": {
+      "status": "SUMMARY",
+      "records": 3,
+      "note": "AJK Constitution 1974, Penal/Procedure Codes, Interim Act 2018 listed only; no AJK gazette text accessible — declared gap"
+    },
+    "gilgit_baltistan": {
+      "status": "SUMMARY",
+      "records": 2,
+      "note": "GB Governance Order 2018, LG Act, Legal Framework Order listed; GB Council Art 152 note; full text not accessible"
+    }
+  },
+  "case_law": {
+    "total_records": 72,
+    "by_court": {
+      "supreme_court_of_pakistan": 51,
+      "federal_constitutional_court": 10,
+      "federal_shariat_court": 1,
+      "other_reported_to_verify": 3,
+      "suo_motu_no_formal_citation": 4,
+      "case_studies": 3
+    },
+    "composition": {
+      "digest_records_before_expansion": 37,
+      "official_court_metadata_added_2026_09_06": 35
+    },
+    "full_text_in_corpus": 0,
+    "metadata_only_in_corpus": 72,
+    "note": "Registry totals before 2026-09-06: 37 digest records (by court: SC 26, FSC 1, other-reported 3, suo motu 4, case studies 3). Added 2026-09-06 from official court pages: 25 SCP web-published records (subjects/case numbers/titles/judges/dates; 2026 SCP 243-254 citations on 12 records; legal points on 7 records where the Court published them) + 10 FCC official metadata records = 35. New total 72. NO fabricated judgments/citations/holdings. Full judgment text remains external (court PDFs). High Court official-portal records: not yet ingested (HC portals not machine-readable this session) — declared gap."
+  },
+  "civic": {
+    "status": "DEDICATED DOC ADDED",
+    "evidence": [
+      "civic_services",
+      "citizen_official_procedures",
+      "public_offices"
+    ],
+    "note": "dedicated civic folder (civic/) + citizen-procedure workflows + offices records now exist instead of fragmented coverage only"
+  },
+  "history": {
+    "status": "PARTIAL",
+    "evidence": [
+      "pakistan_constitutional_history"
+    ],
+    "note": "6 sections (1947-2002 official Senate record era digest + later context). Amendment-history tables for 1973 Constitution: all fetch routes blocked (Wikipedia 403, FAFEN 403, senate.gov.pk JS-empty, pakp.gov.pk PDF-only, na.gov.pk 404) — declared gap; current-vs-historical status flags only where the corpus records them"
+  },
+  "procedures": {
+    "status": "EXPANDED",
+    "evidence": [
+      "court_procedures",
+      "court_workflows",
+      "legal_workflows",
+      "expanded_procedures",
+      "citizen_official_procedures"
+    ],
+    "note": "registry curated workflows: 22; procedure chunks indexed: 60 (9 new citizen official procedures added 2026-09-06 with structured fields)"
+  },
+  "offices": {
+    "status": "DEDICATED DOC ADDED",
+    "evidence": [
+      "public_offices"
+    ],
+    "note": "25 structured office records (President to Patwari) each with role/authority/powers/citizen-interface/source and explicit FULL/PARTIAL/GAP status; 6 constitutional-executive gaps declared (Art 41-44, 90-100, 101-105, 127-140 not indexed)"
+  },
+  "foreigners_overseas": {
+    "status": "EXPANDED",
+    "evidence": [
+      "foreigner_entry_stay_registration",
+      "pakistan_visa_categories",
+      "civic_services",
+      "cross-border/*"
+    ],
+    "note": "entry/stay/police-registration/residential-permit/glossary from official visa portal; NICOP/POC identity framework; overseas Pakistanis cross-border set (6 docs) pre-existing"
+  },
+  "generatedBy": "server/tmp_audit_gen.mjs (temp, deleted after run)"
+}

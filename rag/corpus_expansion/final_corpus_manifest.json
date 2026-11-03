@@ -1,0 +1,516 @@
+{
+  "corpus_version": "2.6.0-final",
+  "freeze_timestamp": "2026-09-07T18:44:46.948Z",
+  "freeze_hash": "1d25a823ff700b734508c3109fb1ca4d66314cff1aa7f2e6750e04bc9ae3e24c",
+  "reproducible": true,
+  "method": "Read-only aggregation of the live index (rag/indexes/rag_index.json) + rag/manifest.json + the rag/corpus_expansion registries maintained by server/corpusTools.js. See final_corpus_freeze.json for the content hash lock.",
+  "totals": {
+    "documents": 83,
+    "index_chunks": 1554,
+    "unique_indexed_doc_ids": 83,
+    "provision_markers": {
+      "SECTION": 1518,
+      "ARTICLE": 36,
+      "GENERAL": 0
+    },
+    "source_domains": 25,
+    "primary_sources_registered": 20,
+    "local_embedding_vectors": {
+      "non_zero": 1554,
+      "dimension": 384
+    }
+  },
+  "amendments": {
+    "records": 27,
+    "laws_with_history": 15,
+    "registry": "rag/corpus_expansion/amendment_registry.json"
+  },
+  "pakistan": {
+    "federal_law_documents": 34,
+    "federal_provisions_indexed": 635,
+    "provincial_act_records": 22,
+    "case_law": {
+      "total_records": 465,
+      "by_court": {
+        "supreme_court": 51,
+        "federal_constitutional_court": 10,
+        "federal_shariat_court": 1,
+        "lahore_high_court": 50,
+        "islamabad_high_court": 20,
+        "peshawar_high_court": 270,
+        "balochistan_high_court": 53,
+        "sindh_high_court": 0,
+        "other_reported_to_verify": 3,
+        "suo_motu_no_formal_citation": 4,
+        "case_studies": 3
+      }
+    },
+    "procedures": {
+      "procedure_chunks": 60,
+      "curated_workflows": 22
+    },
+    "chunk_counts_by_category": {
+      "constitution_rights": 47,
+      "remedies": 4,
+      "institutions": 4
+    }
+  },
+  "domain_counts_by_folder": {
+    "constitution": {
+      "documents": 1,
+      "chunks": 35
+    },
+    "ppc": {
+      "documents": 1,
+      "chunks": 73
+    },
+    "crpc": {
+      "documents": 1,
+      "chunks": 47
+    },
+    "cpc": {
+      "documents": 1,
+      "chunks": 29
+    },
+    "peca": {
+      "documents": 1,
+      "chunks": 32
+    },
+    "family": {
+      "documents": 1,
+      "chunks": 19
+    },
+    "property": {
+      "documents": 1,
+      "chunks": 9
+    },
+    "tenancy": {
+      "documents": 1,
+      "chunks": 4
+    },
+    "labour": {
+      "documents": 1,
+      "chunks": 8
+    },
+    "consumer": {
+      "documents": 1,
+      "chunks": 7
+    },
+    "education": {
+      "documents": 1,
+      "chunks": 4
+    },
+    "student": {
+      "documents": 1,
+      "chunks": 8
+    },
+    "procedure": {
+      "documents": 3,
+      "chunks": 39
+    },
+    "court-procedure": {
+      "documents": 1,
+      "chunks": 4
+    },
+    "legal-aid": {
+      "documents": 1,
+      "chunks": 8
+    },
+    "case-law": {
+      "documents": 2,
+      "chunks": 45
+    },
+    "case-studies": {
+      "documents": 1,
+      "chunks": 3
+    },
+    "remedies": {
+      "documents": 1,
+      "chunks": 4
+    },
+    "institutions": {
+      "documents": 1,
+      "chunks": 4
+    },
+    "contract": {
+      "documents": 1,
+      "chunks": 74
+    },
+    "evidence": {
+      "documents": 1,
+      "chunks": 33
+    },
+    "limitation": {
+      "documents": 1,
+      "chunks": 28
+    },
+    "companies": {
+      "documents": 1,
+      "chunks": 27
+    },
+    "banking": {
+      "documents": 1,
+      "chunks": 10
+    },
+    "tax": {
+      "documents": 1,
+      "chunks": 10
+    },
+    "nab": {
+      "documents": 1,
+      "chunks": 22
+    },
+    "ata": {
+      "documents": 1,
+      "chunks": 19
+    },
+    "women": {
+      "documents": 1,
+      "chunks": 15
+    },
+    "environment": {
+      "documents": 1,
+      "chunks": 17
+    },
+    "juvenile": {
+      "documents": 1,
+      "chunks": 18
+    },
+    "police": {
+      "documents": 1,
+      "chunks": 13
+    },
+    "succession": {
+      "documents": 1,
+      "chunks": 17
+    },
+    "commercial": {
+      "documents": 2,
+      "chunks": 30
+    },
+    "elections": {
+      "documents": 1,
+      "chunks": 11
+    },
+    "local-govt": {
+      "documents": 1,
+      "chunks": 8
+    },
+    "ip": {
+      "documents": 1,
+      "chunks": 8
+    },
+    "prisons": {
+      "documents": 1,
+      "chunks": 8
+    },
+    "traffic": {
+      "documents": 1,
+      "chunks": 8
+    },
+    "arbitration": {
+      "documents": 1,
+      "chunks": 11
+    },
+    "competition": {
+      "documents": 1,
+      "chunks": 7
+    },
+    "provincial": {
+      "documents": 2,
+      "chunks": 28
+    },
+    "immigration": {
+      "documents": 1,
+      "chunks": 8
+    },
+    "court-hierarchy": {
+      "documents": 1,
+      "chunks": 17
+    },
+    "rights-corpus": {
+      "documents": 1,
+      "chunks": 26
+    },
+    "expanded-institutions": {
+      "documents": 1,
+      "chunks": 22
+    },
+    "expanded-remedies": {
+      "documents": 1,
+      "chunks": 16
+    },
+    "expanded-procedures": {
+      "documents": 1,
+      "chunks": 17
+    },
+    "expanded-case-law": {
+      "documents": 1,
+      "chunks": 9
+    },
+    "cross-border": {
+      "documents": 6,
+      "chunks": 69
+    },
+    "history": {
+      "documents": 1,
+      "chunks": 6
+    },
+    "foreigners": {
+      "documents": 3,
+      "chunks": 17
+    },
+    "civic": {
+      "documents": 2,
+      "chunks": 16
+    },
+    "offices": {
+      "documents": 1,
+      "chunks": 39
+    },
+    "hc-judgments": {
+      "documents": 8,
+      "chunks": 401
+    },
+    "amendments": {
+      "documents": 1,
+      "chunks": 28
+    },
+    "ajk": {
+      "documents": 1,
+      "chunks": 7
+    },
+    "gb": {
+      "documents": 1,
+      "chunks": 8
+    },
+    "customs": {
+      "documents": 1,
+      "chunks": 7
+    },
+    "health": {
+      "documents": 1,
+      "chunks": 7
+    },
+    "fia": {
+      "documents": 1,
+      "chunks": 7
+    },
+    "admin-service": {
+      "documents": 1,
+      "chunks": 7
+    },
+    "torts": {
+      "documents": 1,
+      "chunks": 6
+    },
+    "poa": {
+      "documents": 1,
+      "chunks": 10
+    }
+  },
+  "cross_border": {
+    "documents": 6,
+    "chunks": 69,
+    "per_document": {
+      "cross_border_consular": {
+        "title": "Overseas Pakistanis: Consular Services & Pakistani Missions Abroad",
+        "chunks": 15,
+        "file": "rag/documents/cross-border/consular_services.txt",
+        "sourceURL": "https://www.mofa.gov.pk"
+      },
+      "cross_border_travel": {
+        "title": "International Travel, Visa & Immigration Basics for Pakistani Citizens",
+        "chunks": 15,
+        "file": "rag/documents/cross-border/travel_visa_immigration.txt",
+        "sourceURL": "https://www.dgip.gov.pk"
+      },
+      "cross_border_employment": {
+        "title": "Overseas Employment, Emigration Clearance & Migrant Worker Protection",
+        "chunks": 10,
+        "file": "rag/documents/cross-border/overseas_employment.txt",
+        "sourceURL": "https://beoe.gov.pk"
+      },
+      "cross_border_education": {
+        "title": "Study Abroad, Foreign Universities, Scholarships & HEC Attestation",
+        "chunks": 10,
+        "file": "rag/documents/cross-border/study_abroad.txt",
+        "sourceURL": "https://www.hec.gov.pk"
+      },
+      "cross_border_diplomacy": {
+        "title": "Pakistan Foreign Policy, Missions, Treaties & International Cooperation",
+        "chunks": 9,
+        "file": "rag/documents/cross-border/diplomacy_treaties.txt",
+        "sourceURL": "https://www.mofa.gov.pk"
+      },
+      "cross_border_legal": {
+        "title": "Cross-Border Family, Property, Inheritance & Foreign Court Matters",
+        "chunks": 10,
+        "file": "rag/documents/cross-border/cross_border_legal.txt",
+        "sourceURL": "https://www.mofa.gov.pk"
+      }
+    },
+    "countries_referenced_in_corpus": [
+      "United Arab Emirates (UAE)",
+      "Saudi Arabia",
+      "Qatar",
+      "Kuwait",
+      "Oman",
+      "Bahrain",
+      "United Kingdom",
+      "United States",
+      "Canada",
+      "Australia",
+      "China",
+      "Japan",
+      "Türkiye (Turkey)",
+      "Germany",
+      "France",
+      "Netherlands",
+      "Italy",
+      "Schengen / European states (region)"
+    ],
+    "countries_note": "Countries appear as official-source links, named scholarship/programme examples, or illustrative references (e.g. \"a U.S. court summons\"). This is NOT verified per-country foreign substantive law and does NOT claim coverage of all international law.",
+    "official_source_hosts_in_corpus": [
+      "beoe.gov.pk",
+      "beoe.gov.pk,",
+      "beoe.gov.pk.",
+      "campuschina.org",
+      "canada.ca",
+      "chevening.org",
+      "daad.de",
+      "dgip.gov.pk",
+      "dvprogram.state.gov",
+      "fbr.gov.pk",
+      "gov.uk",
+      "hec.gov.pk",
+      "hec.gov.pk.",
+      "immi.homeaffairs.gov.au",
+      "mofa.gov.pk",
+      "mofa.gov.pk.",
+      "nadra.gov.pk",
+      "nadra.gov.pk.",
+      "ophrd.gov.pk",
+      "ophrd.gov.pk,",
+      "sbp.org.pk,",
+      "studyinaustralia.gov.au",
+      "travel.state.gov",
+      "turkiyeburslari.gov.tr",
+      "uscis.gov;"
+    ],
+    "behavior": "Answers triage by jurisdiction, keep Pakistan-law and foreign-law layers separate, route to the correct official authority, and refuse to invent foreign rules."
+  },
+  "coverage_gaps": {
+    "high_court_case_law": "High Court (LHC/IHC/PHC/BHC) judgments ingested with full-text+metadata records in 2.5.0-final. SHC online repository unreachable (Cloudflare 522); FSC/SCP/FCC hosts unreachable from this environment. Prior 72 SC/FSC digests retained.",
+    "case_law_provenance": "All case records are DIGEST METADATA requiring verification against official reporters before citation.",
+    "provincial_full_text": "CLOSED in 2.6.0-final: provincial_fulltext.txt (20 sections, per-province operative provisions + full/partial/summary matrix) + ajk_laws.txt + gb_laws.txt indexed.",
+    "missing_domains": "CLOSED in 2.6.0-final: customs, health, FIA, administrative law/public service, torts added and indexed (34 domains covered; see coverage_matrix).",
+    "amendment_history": "CLOSED in 2.6.0-final: 28-section amendment corpus + amendment_registry.json (27 chains). Corpus is current only up to the 26th Constitutional Amendment (Oct 2024); yearly Finance-Act changes are not enumerated by design.",
+    "cross_border_foreign_law": "NO country-specific FOREIGN substantive law is stored. The cross-border layer gives Pakistan-side rules + routing to official foreign authorities for named countries only; it never asserts foreign rules it has not verified. Countries listed are MENTIONED (as official-source links / examples), not comprehensively covered.",
+    "dual_nationality_list": "The permitted-countries list for Pakistani dual nationality is deliberately NOT enumerated (changes by official notification; confirmed via MOFA/NADRA).",
+    "semantic_embeddings": "Local semantic embeddings ACTIVE: 1554/1554 non-zero vectors (Xenova/multilingual-e5-small, dim 384, offline).",
+    "unindexed_docs": [],
+    "orphan_indexed_docs": []
+  },
+  "files_used_for_snapshot": [
+    "rag/manifest.json",
+    "rag/indexes/rag_index.json",
+    "rag/indexes/local_vectors.json",
+    "rag/documents/cross-border/consular_services.txt",
+    "rag/documents/cross-border/travel_visa_immigration.txt",
+    "rag/documents/cross-border/overseas_employment.txt",
+    "rag/documents/cross-border/study_abroad.txt",
+    "rag/documents/cross-border/diplomacy_treaties.txt",
+    "rag/documents/cross-border/cross_border_legal.txt",
+    "rag/corpus_expansion/coverage_matrix.json",
+    "rag/corpus_expansion/law_registry.json",
+    "rag/corpus_expansion/case_law_registry.json",
+    "rag/corpus_expansion/procedure_registry.json",
+    "rag/corpus_expansion/source_registry.json",
+    "rag/corpus_expansion/amendment_registry.json",
+    "rag/documents/constitution/constitution.txt",
+    "rag/documents/ppc/ppc.txt",
+    "rag/documents/crpc/crpc.txt",
+    "rag/documents/cpc/cpc.txt",
+    "rag/documents/peca/peca.txt",
+    "rag/documents/family/family.txt",
+    "rag/documents/property/property.txt",
+    "rag/documents/tenancy/tenancy.txt",
+    "rag/documents/labour/labour.txt",
+    "rag/documents/consumer/consumer.txt",
+    "rag/documents/education/education.txt",
+    "rag/documents/student/student.txt",
+    "rag/documents/procedure/procedures.txt",
+    "rag/documents/court-procedure/procedures.txt",
+    "rag/documents/legal-aid/aid.txt",
+    "rag/documents/case-law/selected_judgments.txt",
+    "rag/documents/case-studies/case_studies.txt",
+    "rag/documents/remedies/remedies.txt",
+    "rag/documents/institutions/institutions.txt",
+    "rag/documents/procedure/workflows.txt",
+    "rag/documents/contract/contract.txt",
+    "rag/documents/evidence/evidence.txt",
+    "rag/documents/limitation/limitation.txt",
+    "rag/documents/companies/companies.txt",
+    "rag/documents/banking/banking.txt",
+    "rag/documents/tax/tax.txt",
+    "rag/documents/nab/nab.txt",
+    "rag/documents/ata/ata.txt",
+    "rag/documents/women/women.txt",
+    "rag/documents/environment/environment.txt",
+    "rag/documents/juvenile/juvenile.txt",
+    "rag/documents/police/police.txt",
+    "rag/documents/succession/succession.txt",
+    "rag/documents/commercial/sales_of_goods.txt",
+    "rag/documents/commercial/specific_relief.txt",
+    "rag/documents/elections/elections.txt",
+    "rag/documents/local-govt/local_govt.txt",
+    "rag/documents/ip/ip.txt",
+    "rag/documents/prisons/prisons.txt",
+    "rag/documents/traffic/traffic.txt",
+    "rag/documents/arbitration/arbitration.txt",
+    "rag/documents/competition/competition.txt",
+    "rag/documents/provincial/provincial_laws.txt",
+    "rag/documents/immigration/immigration.txt",
+    "rag/documents/court-hierarchy/court_hierarchy.txt",
+    "rag/documents/rights-corpus/rights_corpus.txt",
+    "rag/documents/expanded-institutions/expanded_institutions.txt",
+    "rag/documents/expanded-remedies/expanded_remedies.txt",
+    "rag/documents/expanded-procedures/expanded_procedures.txt",
+    "rag/documents/expanded-case-law/expanded_case_law.txt",
+    "rag/documents/history/pakistan_constitutional_history.txt",
+    "rag/documents/foreigners/pakistan_visa_categories.txt",
+    "rag/documents/civic/civic_services.txt",
+    "rag/documents/foreigners/foreigner_entry_stay_registration.txt",
+    "rag/documents/case-law/scp_fcc_official_records.txt",
+    "rag/documents/offices/public_offices.txt",
+    "rag/documents/procedure/citizen_official_procedures.txt",
+    "rag/documents/hc-judgments/lhc_fulltext_2026.txt",
+    "rag/documents/hc-judgments/lhc_index_2026.txt",
+    "rag/documents/hc-judgments/ihc_fulltext_2026.txt",
+    "rag/documents/hc-judgments/ihc_index_2026.txt",
+    "rag/documents/hc-judgments/phc_fulltext_2026.txt",
+    "rag/documents/hc-judgments/phc_index_2026.txt",
+    "rag/documents/hc-judgments/bhc_fulltext_2026.txt",
+    "rag/documents/hc-judgments/bhc_index_2026.txt",
+    "rag/documents/amendments/amendment_history.txt",
+    "rag/documents/provincial/provincial_fulltext.txt",
+    "rag/documents/ajk/ajk_laws.txt",
+    "rag/documents/gb/gb_laws.txt",
+    "rag/documents/customs/customs_act_1969.txt",
+    "rag/documents/health/health_laws.txt",
+    "rag/documents/fia/fia_act_1974.txt",
+    "rag/documents/admin-service/admin_service_laws.txt",
+    "rag/documents/torts/torts_laws.txt",
+    "rag/documents/civic/civic_workflows.txt",
+    "rag/documents/poa/poa_laws.txt",
+    "rag/documents/foreigners/foreigner_residence_work_study.txt"
+  ],
+  "integrity": {
+    "unindexed_manifest_docs": [],
+    "indexed_docs_missing_from_manifest": [],
+    "all_manifest_docs_indexed": true,
+    "no_orphans": true
+  },
+  "disclaimer": "This is the maximum verified, publicly-sourced Pakistan-law + cross-border ROUTING corpus currently implemented in this project. It is NOT all Pakistani law and NOT all international law. Case records are digests to be verified against official reporters before citation. No foreign-country substantive law is fabricated."
+}

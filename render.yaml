@@ -1,0 +1,44 @@
+# INSAaf AI — Render blueprint (free tier, one service).
+#
+# Why a single service: every front-end call is a relative `/api/...` fetch and
+# server/index.js serves dist/ plus an SPA fallback whenever dist/ exists, so one
+# origin hosts the UI and the API. Firebase Hosting cannot reverse-proxy /api to
+# Render, so splitting the two would break every API call in the built SPA.
+#
+# Secrets are entered once in the Render dashboard (sync: false below) and are
+# never read by the browser: the front-end bundles only the public Firebase
+# web app config from firebase-applet-config.json.
+services:
+  - type: web
+    name: insaaf-ai
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm ci && npm run build
+    startCommand: node server/index.js
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: '24'
+      # Render assigns PORT; TRUST_PROXY makes req.ip / req.protocol correct
+      # behind Render's load balancer.
+      - key: TRUST_PROXY
+        value: '1'
+      - key: APP_URL
+        fromService:
+          type: web
+          name: insaaf-ai
+          property: url
+      # LoRA stays off until a real T4 generation passes the answer contract.
+      - key: INSAF_LORA_ENABLED
+        value: 'false'
+      # Entered once in the dashboard — never committed, never printed.
+      - key: FIREBASE_PROJECT_ID
+        sync: false
+      - key: FIREBASE_SERVICE_ACCOUNT_B64
+        sync: false
+      - key: INSAF_ADMIN_UIDS
+        sync: false

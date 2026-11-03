@@ -1,0 +1,1431 @@
+{
+  "artifact": "INSAaf knowledge-architecture layer registry (master spec Part 1)",
+  "generatedAt": "2026-09-06T14:58:12.914Z",
+  "generatedFrom": {
+    "manifest": "rag/manifest.json",
+    "index": "rag/indexes/rag_index.json",
+    "training": "rag/training/final_v2/manifest.json"
+  },
+  "layerDefinitions": [
+    {
+      "layer": "A",
+      "name": "Pakistan Legal Knowledge",
+      "scope": "Constitution, federal/provincial statutes, rules, regulations, amendments, subordinate legislation; provision-level exact text/digests."
+    },
+    {
+      "layer": "B",
+      "name": "Pakistan Civic / Citizen Knowledge",
+      "scope": "Citizenship, NADRA/CNIC, passports, voting/elections, citizen complaints, government offices, ombudsman, commissions, legal aid, emergency services, public-service processes."
+    },
+    {
+      "layer": "C",
+      "name": "Pakistan History / Institutional Knowledge",
+      "scope": "Creation of Pakistan, constitutional developments (Objectives Resolution, 1956/1962/1973), institutions of state, major national legal milestones."
+    },
+    {
+      "layer": "D",
+      "name": "Overseas Pakistanis / Cross-Border Knowledge",
+      "scope": "Pakistanis abroad: consular assistance, travel/visa/immigration, overseas employment, study abroad, foreign courts/authorities, dual nationality, repatriation."
+    },
+    {
+      "layer": "E",
+      "name": "Foreigner-in-Pakistan Knowledge",
+      "scope": "Foreigners dealing with Pakistan: visa/entry/exit, residence, work/study, business, property restrictions, documentation, consular routing. Never asserts unverified foreign substantive law."
+    },
+    {
+      "layer": "F",
+      "name": "Legal Procedures / Practical Workflows",
+      "scope": "FIR, bail, remand, trials, appeals, revisions, writs, suits, family proceedings, consumer/labour/cyber complaints, ADR, attestation, consular/official workflows."
+    },
+    {
+      "layer": "G",
+      "name": "Case Law / Precedent",
+      "scope": "SC/FSC/HC judgments and digests, case reasoning (facts/issues/holding/principle), similarity handling without fabricated outcomes."
+    },
+    {
+      "layer": "H",
+      "name": "Legal Documents / Drafting",
+      "scope": "Document taxonomy, structures, mandatory/optional fields, complete-prose drafting, OCR-to-draft, draft editing, EN + Urdu Script formal output."
+    },
+    {
+      "layer": "I",
+      "name": "INSAaf App Knowledge",
+      "scope": "Actual app features/routes: AI Consultant/Chat, Legal Agent, Library, Analyzer/OCR, Drafter, Legal Aid, Lawyers, Emergency, My Vault, settings/language/voice, source/Read More, cross-border mode."
+    },
+    {
+      "layer": "J",
+      "name": "Safety / Scope / Uncertainty Behavior",
+      "scope": "Refusal rules, no fabrication (citations/sections/deadlines/fees/contacts/foreign rules), jurisdiction clarification, general-information vs advice, incorrect/misstated questions, out-of-scope politeness."
+    }
+  ],
+  "mappingBasis": {
+    "note": "Document layers are derived from an authored folder->layer rule table plus explicit per-document overrides; layers are ARCHITECTURE tags, not legal assertions. A record may carry multiple layers (primary first).",
+    "folderRules": {
+      "constitution": [
+        "A"
+      ],
+      "rights-corpus": [
+        "A",
+        "B"
+      ],
+      "ppc": [
+        "A"
+      ],
+      "crpc": [
+        "A"
+      ],
+      "cpc": [
+        "A"
+      ],
+      "peca": [
+        "A"
+      ],
+      "family": [
+        "A"
+      ],
+      "property": [
+        "A"
+      ],
+      "tenancy": [
+        "A"
+      ],
+      "labour": [
+        "A"
+      ],
+      "consumer": [
+        "A"
+      ],
+      "contract": [
+        "A"
+      ],
+      "evidence": [
+        "A"
+      ],
+      "limitation": [
+        "A"
+      ],
+      "commercial": [
+        "A"
+      ],
+      "companies": [
+        "A"
+      ],
+      "banking": [
+        "A"
+      ],
+      "tax": [
+        "A"
+      ],
+      "nab": [
+        "A"
+      ],
+      "ata": [
+        "A"
+      ],
+      "women": [
+        "A"
+      ],
+      "environment": [
+        "A"
+      ],
+      "juvenile": [
+        "A"
+      ],
+      "police": [
+        "A"
+      ],
+      "succession": [
+        "A"
+      ],
+      "elections": [
+        "A"
+      ],
+      "local-govt": [
+        "A"
+      ],
+      "ip": [
+        "A"
+      ],
+      "prisons": [
+        "A"
+      ],
+      "traffic": [
+        "A"
+      ],
+      "arbitration": [
+        "A"
+      ],
+      "competition": [
+        "A"
+      ],
+      "provincial": [
+        "A"
+      ],
+      "immigration": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "case-law": [
+        "G"
+      ],
+      "case-studies": [
+        "G"
+      ],
+      "expanded-case-law": [
+        "G"
+      ],
+      "procedure": [
+        "F"
+      ],
+      "court-procedure": [
+        "F"
+      ],
+      "expanded-procedures": [
+        "F"
+      ],
+      "court-hierarchy": [
+        "F",
+        "C"
+      ],
+      "remedies": [
+        "F"
+      ],
+      "expanded-remedies": [
+        "F"
+      ],
+      "legal-aid": [
+        "B",
+        "A"
+      ],
+      "institutions": [
+        "C",
+        "B"
+      ],
+      "expanded-institutions": [
+        "C",
+        "B"
+      ],
+      "education": [
+        "B",
+        "A"
+      ],
+      "student": [
+        "B",
+        "A"
+      ],
+      "cross-border": [
+        "D",
+        "E"
+      ],
+      "history": [
+        "C"
+      ],
+      "foreigners": [
+        "E"
+      ],
+      "civic": [
+        "B"
+      ],
+      "offices": [
+        "B"
+      ]
+    },
+    "docOverrides": {
+      "cross_border_legal": [
+        "D",
+        "E"
+      ],
+      "cross_border_consular": [
+        "D",
+        "E"
+      ],
+      "cross_border_travel": [
+        "D",
+        "E"
+      ],
+      "cross_border_employment": [
+        "D"
+      ],
+      "cross_border_education": [
+        "D"
+      ],
+      "cross_border_diplomacy": [
+        "D",
+        "C"
+      ],
+      "fundamental_rights": [
+        "A",
+        "B"
+      ],
+      "court_workflows": [
+        "F"
+      ],
+      "legal_workflows": [
+        "F"
+      ],
+      "court_procedures": [
+        "F"
+      ],
+      "sc_judgments": [
+        "G"
+      ],
+      "landmark_case_studies": [
+        "G"
+      ]
+    }
+  },
+  "documents": [
+    {
+      "id": "constitution_1973",
+      "title": "The Constitution of the Islamic Republic of Pakistan, 1973",
+      "folder": "constitution",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 35
+    },
+    {
+      "id": "ppc_1860",
+      "title": "The Pakistan Penal Code (Act XLV of 1860)",
+      "folder": "ppc",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 71
+    },
+    {
+      "id": "crpc_1898",
+      "title": "The Code of Criminal Procedure (Act V of 1898)",
+      "folder": "crpc",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 47
+    },
+    {
+      "id": "cpc_1908",
+      "title": "The Code of Civil Procedure (Act V of 1908)",
+      "folder": "cpc",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 29
+    },
+    {
+      "id": "peca_2016",
+      "title": "Prevention of Electronic Crimes Act (PECA), 2016",
+      "folder": "peca",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 32
+    },
+    {
+      "id": "family_laws_1961",
+      "title": "Muslim Family Laws Ordinance, 1961 and Related Family Legislation",
+      "folder": "family",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 19
+    },
+    {
+      "id": "property_laws",
+      "title": "Property, Land Transfer and Registration Laws of Pakistan",
+      "folder": "property",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 9
+    },
+    {
+      "id": "tenancy_laws",
+      "title": "Tenancy, Rent Restriction and Eviction Laws of Pakistan",
+      "folder": "tenancy",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 4
+    },
+    {
+      "id": "labour_employment",
+      "title": "Labour and Employment Laws of Pakistan",
+      "folder": "labour",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 8
+    },
+    {
+      "id": "consumer_protection",
+      "title": "Consumer Protection Laws of Pakistan",
+      "folder": "consumer",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 7
+    },
+    {
+      "id": "education_student_rights",
+      "title": "Education Rights, Harassment Policy and Student Regulations",
+      "folder": "education",
+      "layers": {
+        "primary": "B",
+        "secondary": [
+          "A"
+        ]
+      },
+      "layerCodes": [
+        "B",
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 4
+    },
+    {
+      "id": "student_rights",
+      "title": "Student and Practical Academic Resources",
+      "folder": "student",
+      "layers": {
+        "primary": "B",
+        "secondary": [
+          "A"
+        ]
+      },
+      "layerCodes": [
+        "B",
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 8
+    },
+    {
+      "id": "court_procedures",
+      "title": "Legal Procedures and Practical Guides for Pakistani Justice System",
+      "folder": "procedure",
+      "layers": {
+        "primary": "F",
+        "secondary": []
+      },
+      "layerCodes": [
+        "F"
+      ],
+      "documents": 1,
+      "chunks": 10
+    },
+    {
+      "id": "court_workflows",
+      "title": "Structured Court Workflows and Procedural Steps",
+      "folder": "court-procedure",
+      "layers": {
+        "primary": "F",
+        "secondary": []
+      },
+      "layerCodes": [
+        "F"
+      ],
+      "documents": 1,
+      "chunks": 4
+    },
+    {
+      "id": "legal_aid_services",
+      "title": "Legal Aid Services, Organizations and Public Protection Helplines",
+      "folder": "legal-aid",
+      "layers": {
+        "primary": "B",
+        "secondary": [
+          "A"
+        ]
+      },
+      "layerCodes": [
+        "B",
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 8
+    },
+    {
+      "id": "sc_judgments",
+      "title": "Selected Landmark Judgments of the Supreme Court of Pakistan",
+      "folder": "case-law",
+      "layers": {
+        "primary": "G",
+        "secondary": []
+      },
+      "layerCodes": [
+        "G"
+      ],
+      "documents": 1,
+      "chunks": 9
+    },
+    {
+      "id": "landmark_case_studies",
+      "title": "Landmark Pakistani Legal Case Studies & Practical Takeaways",
+      "folder": "case-studies",
+      "layers": {
+        "primary": "G",
+        "secondary": []
+      },
+      "layerCodes": [
+        "G"
+      ],
+      "documents": 1,
+      "chunks": 3
+    },
+    {
+      "id": "situation_remedies",
+      "title": "Situation to Action Practical Legal Remedies Guide",
+      "folder": "remedies",
+      "layers": {
+        "primary": "F",
+        "secondary": []
+      },
+      "layerCodes": [
+        "F"
+      ],
+      "documents": 1,
+      "chunks": 4
+    },
+    {
+      "id": "public_institutions",
+      "title": "Directory of Public Legal Institutions, Ombudspersons and Regulators",
+      "folder": "institutions",
+      "layers": {
+        "primary": "C",
+        "secondary": [
+          "B"
+        ]
+      },
+      "layerCodes": [
+        "C",
+        "B"
+      ],
+      "documents": 1,
+      "chunks": 4
+    },
+    {
+      "id": "legal_workflows",
+      "title": "Comprehensive Legal Workflows & Procedures",
+      "folder": "procedure",
+      "layers": {
+        "primary": "F",
+        "secondary": []
+      },
+      "layerCodes": [
+        "F"
+      ],
+      "documents": 1,
+      "chunks": 20
+    },
+    {
+      "id": "contract_act_1872",
+      "title": "The Contract Act, 1872 (Act IX of 1872)",
+      "folder": "contract",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 74
+    },
+    {
+      "id": "evidence_qso_1984",
+      "title": "Qanun-e-Shahadat Order, 1984 (President's Order No. 10 of 1984)",
+      "folder": "evidence",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 33
+    },
+    {
+      "id": "limitation_act_1908",
+      "title": "The Limitation Act, 1908 (Act IX of 1908)",
+      "folder": "limitation",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 28
+    },
+    {
+      "id": "companies_act_2017",
+      "title": "The Companies Act, 2017 (Act XIX of 2017)",
+      "folder": "companies",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 27
+    },
+    {
+      "id": "banking_laws",
+      "title": "Banking, Negotiable Instruments and SBP Laws",
+      "folder": "banking",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 10
+    },
+    {
+      "id": "tax_laws",
+      "title": "Tax Laws of Pakistan (Income Tax, Sales Tax, Customs)",
+      "folder": "tax",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 10
+    },
+    {
+      "id": "nab_ordinance_1999",
+      "title": "National Accountability Bureau Ordinance, 1999 (Ordinance XVIII of 1999)",
+      "folder": "nab",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 22
+    },
+    {
+      "id": "ata_1997",
+      "title": "Anti-Terrorism Act, 1997 (Act XXVII of 1997)",
+      "folder": "ata",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 19
+    },
+    {
+      "id": "women_protection_laws",
+      "title": "Women Protection Laws of Pakistan",
+      "folder": "women",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 15
+    },
+    {
+      "id": "environmental_laws",
+      "title": "Pakistan Environmental Protection Act, 1997 and Related Laws",
+      "folder": "environment",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 17
+    },
+    {
+      "id": "juvenile_justice_2000",
+      "title": "Juvenile Justice System Ordinance, 2000 and Child Protection Laws",
+      "folder": "juvenile",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 18
+    },
+    {
+      "id": "police_order_2002",
+      "title": "Police Order, 2002",
+      "folder": "police",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 13
+    },
+    {
+      "id": "succession_laws",
+      "title": "Muslim Personal Law of Succession, Inheritance and Wills",
+      "folder": "succession",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 17
+    },
+    {
+      "id": "sales_of_goods_act_1930",
+      "title": "Sale of Goods Act, 1930 (Act III of 1930)",
+      "folder": "commercial",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 15
+    },
+    {
+      "id": "specific_relief_act_1877",
+      "title": "Specific Relief Act, 1877 (Act I of 1877)",
+      "folder": "commercial",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 15
+    },
+    {
+      "id": "elections_act_2017",
+      "title": "Elections Act, 2017 (Act XXXIII of 2017)",
+      "folder": "elections",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 11
+    },
+    {
+      "id": "local_government_laws",
+      "title": "Provincial Local Government Laws of Pakistan",
+      "folder": "local-govt",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 8
+    },
+    {
+      "id": "ip_laws",
+      "title": "Intellectual Property Laws of Pakistan",
+      "folder": "ip",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 8
+    },
+    {
+      "id": "prisons_laws",
+      "title": "Prisons Act, 1894 and Prison Administration",
+      "folder": "prisons",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 8
+    },
+    {
+      "id": "traffic_laws",
+      "title": "Motor Vehicle Ordinance, 1965 and Traffic Laws",
+      "folder": "traffic",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 8
+    },
+    {
+      "id": "arbitration_act_1940",
+      "title": "Arbitration Act, 1940 and ADR Mechanisms",
+      "folder": "arbitration",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 11
+    },
+    {
+      "id": "competition_act_2010",
+      "title": "Competition Act, 2010 (Act XIX of 2010)",
+      "folder": "competition",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 7
+    },
+    {
+      "id": "provincial_laws",
+      "title": "Provincial Laws of Pakistan (Punjab, Sindh, KPK, Balochistan, ICT, AJK, GB)",
+      "folder": "provincial",
+      "layers": {
+        "primary": "A",
+        "secondary": []
+      },
+      "layerCodes": [
+        "A"
+      ],
+      "documents": 1,
+      "chunks": 8
+    },
+    {
+      "id": "immigration_laws",
+      "title": "Immigration, Passport and Citizenship Laws of Pakistan",
+      "folder": "immigration",
+      "layers": {
+        "primary": "A",
+        "secondary": [
+          "B",
+          "D",
+          "E"
+        ]
+      },
+      "layerCodes": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "documents": 1,
+      "chunks": 8
+    },
+    {
+      "id": "court_hierarchy",
+      "title": "Court Hierarchy and Structure of Pakistan",
+      "folder": "court-hierarchy",
+      "layers": {
+        "primary": "F",
+        "secondary": [
+          "C"
+        ]
+      },
+      "layerCodes": [
+        "F",
+        "C"
+      ],
+      "documents": 1,
+      "chunks": 17
+    },
+    {
+      "id": "fundamental_rights",
+      "title": "Fundamental Rights under the Constitution of Pakistan, 1973",
+      "folder": "rights-corpus",
+      "layers": {
+        "primary": "A",
+        "secondary": [
+          "B"
+        ]
+      },
+      "layerCodes": [
+        "A",
+        "B"
+      ],
+      "documents": 1,
+      "chunks": 26
+    },
+    {
+      "id": "expanded_institutions",
+      "title": "Expanded Directory of Public Institutions, Regulators and Authorities",
+      "folder": "expanded-institutions",
+      "layers": {
+        "primary": "C",
+        "secondary": [
+          "B"
+        ]
+      },
+      "layerCodes": [
+        "C",
+        "B"
+      ],
+      "documents": 1,
+      "chunks": 22
+    },
+    {
+      "id": "expanded_remedies",
+      "title": "Expanded Situation-to-Action Legal Remedies Guide",
+      "folder": "expanded-remedies",
+      "layers": {
+        "primary": "F",
+        "secondary": []
+      },
+      "layerCodes": [
+        "F"
+      ],
+      "documents": 1,
+      "chunks": 16
+    },
+    {
+      "id": "expanded_procedures",
+      "title": "Expanded Legal Workflows & Procedures",
+      "folder": "expanded-procedures",
+      "layers": {
+        "primary": "F",
+        "secondary": []
+      },
+      "layerCodes": [
+        "F"
+      ],
+      "documents": 1,
+      "chunks": 17
+    },
+    {
+      "id": "expanded_case_law",
+      "title": "Expanded Pakistani Case Law Registry (SC, HC, FSC)",
+      "folder": "expanded-case-law",
+      "layers": {
+        "primary": "G",
+        "secondary": []
+      },
+      "layerCodes": [
+        "G"
+      ],
+      "documents": 1,
+      "chunks": 26
+    },
+    {
+      "id": "cross_border_consular",
+      "title": "Overseas Pakistanis: Consular Services & Pakistani Missions Abroad",
+      "folder": "cross-border",
+      "layers": {
+        "primary": "D",
+        "secondary": [
+          "E"
+        ]
+      },
+      "layerCodes": [
+        "D",
+        "E"
+      ],
+      "documents": 1,
+      "chunks": 15
+    },
+    {
+      "id": "cross_border_travel",
+      "title": "International Travel, Visa & Immigration Basics for Pakistani Citizens",
+      "folder": "cross-border",
+      "layers": {
+        "primary": "D",
+        "secondary": [
+          "E"
+        ]
+      },
+      "layerCodes": [
+        "D",
+        "E"
+      ],
+      "documents": 1,
+      "chunks": 15
+    },
+    {
+      "id": "cross_border_employment",
+      "title": "Overseas Employment, Emigration Clearance & Migrant Worker Protection",
+      "folder": "cross-border",
+      "layers": {
+        "primary": "D",
+        "secondary": []
+      },
+      "layerCodes": [
+        "D"
+      ],
+      "documents": 1,
+      "chunks": 10
+    },
+    {
+      "id": "cross_border_education",
+      "title": "Study Abroad, Foreign Universities, Scholarships & HEC Attestation",
+      "folder": "cross-border",
+      "layers": {
+        "primary": "D",
+        "secondary": []
+      },
+      "layerCodes": [
+        "D"
+      ],
+      "documents": 1,
+      "chunks": 10
+    },
+    {
+      "id": "cross_border_diplomacy",
+      "title": "Pakistan Foreign Policy, Missions, Treaties & International Cooperation",
+      "folder": "cross-border",
+      "layers": {
+        "primary": "D",
+        "secondary": [
+          "C"
+        ]
+      },
+      "layerCodes": [
+        "D",
+        "C"
+      ],
+      "documents": 1,
+      "chunks": 9
+    },
+    {
+      "id": "cross_border_legal",
+      "title": "Cross-Border Family, Property, Inheritance & Foreign Court Matters",
+      "folder": "cross-border",
+      "layers": {
+        "primary": "D",
+        "secondary": [
+          "E"
+        ]
+      },
+      "layerCodes": [
+        "D",
+        "E"
+      ],
+      "documents": 1,
+      "chunks": 10
+    },
+    {
+      "id": "pakistan_constitutional_history",
+      "title": "Constitutional History of Pakistan - Official Senate Record (1947-2002)",
+      "folder": "history",
+      "layers": {
+        "primary": "C",
+        "secondary": []
+      },
+      "layerCodes": [
+        "C"
+      ],
+      "documents": 1,
+      "chunks": 6
+    },
+    {
+      "id": "pakistan_visa_categories",
+      "title": "Pakistan Visa Categories for Foreigners - Official Online Visa System",
+      "folder": "foreigners",
+      "layers": {
+        "primary": "E",
+        "secondary": []
+      },
+      "layerCodes": [
+        "E"
+      ],
+      "documents": 1,
+      "chunks": 4
+    },
+    {
+      "id": "civic_services",
+      "title": "Pakistan Civic Services - NADRA Identity, DGIP Passport, ECP Voter Enrolment, Federal Ombudsman, FIA Complaints",
+      "folder": "civic",
+      "layers": {
+        "primary": "B",
+        "secondary": []
+      },
+      "layerCodes": [
+        "B"
+      ],
+      "documents": 1,
+      "chunks": 6
+    },
+    {
+      "id": "foreigner_entry_stay_registration",
+      "title": "Foreigners in Pakistan - Entry, Stay, Police Registration and Residential Permit (Official Visa System Terms)",
+      "folder": "foreigners",
+      "layers": {
+        "primary": "E",
+        "secondary": []
+      },
+      "layerCodes": [
+        "E"
+      ],
+      "documents": 1,
+      "chunks": 6
+    },
+    {
+      "id": "scp_fcc_official_records",
+      "title": "Official Judgment Records - Supreme Court of Pakistan (25) and Federal Constitutional Court (10), web-published metadata",
+      "folder": "case-law",
+      "layers": {
+        "primary": "G",
+        "secondary": []
+      },
+      "layerCodes": [
+        "G"
+      ],
+      "documents": 1,
+      "chunks": 36
+    },
+    {
+      "id": "public_offices",
+      "title": "Public Offices of Pakistan - Structured Records (Role/Authority/Powers/Jurisdiction/Source with FULL-PARTIAL-GAP status)",
+      "folder": "offices",
+      "layers": {
+        "primary": "B",
+        "secondary": []
+      },
+      "layerCodes": [
+        "B"
+      ],
+      "documents": 1,
+      "chunks": 28
+    },
+    {
+      "id": "citizen_official_procedures",
+      "title": "Citizen Official Procedures - Passport, NICOP, Voter Enrolment, Ombudsman, FIA, FIR Escalation, Foreigner Registration",
+      "folder": "procedure",
+      "layers": {
+        "primary": "F",
+        "secondary": []
+      },
+      "layerCodes": [
+        "F"
+      ],
+      "documents": 1,
+      "chunks": 9
+    }
+  ],
+  "corpusLayerCounts": [
+    {
+      "layer": "A",
+      "documents": 38,
+      "chunks": 717,
+      "docIds": [
+        "constitution_1973",
+        "ppc_1860",
+        "crpc_1898",
+        "cpc_1908",
+        "peca_2016",
+        "family_laws_1961",
+        "property_laws",
+        "tenancy_laws",
+        "labour_employment",
+        "consumer_protection",
+        "education_student_rights",
+        "student_rights",
+        "legal_aid_services",
+        "contract_act_1872",
+        "evidence_qso_1984",
+        "limitation_act_1908",
+        "companies_act_2017",
+        "banking_laws",
+        "tax_laws",
+        "nab_ordinance_1999",
+        "ata_1997",
+        "women_protection_laws",
+        "environmental_laws",
+        "juvenile_justice_2000",
+        "police_order_2002",
+        "succession_laws",
+        "sales_of_goods_act_1930",
+        "specific_relief_act_1877",
+        "elections_act_2017",
+        "local_government_laws",
+        "ip_laws",
+        "prisons_laws",
+        "traffic_laws",
+        "arbitration_act_1940",
+        "competition_act_2010",
+        "provincial_laws",
+        "immigration_laws",
+        "fundamental_rights"
+      ]
+    },
+    {
+      "layer": "B",
+      "documents": 9,
+      "chunks": 114,
+      "docIds": [
+        "education_student_rights",
+        "student_rights",
+        "legal_aid_services",
+        "public_institutions",
+        "immigration_laws",
+        "fundamental_rights",
+        "expanded_institutions",
+        "civic_services",
+        "public_offices"
+      ]
+    },
+    {
+      "layer": "C",
+      "documents": 5,
+      "chunks": 58,
+      "docIds": [
+        "public_institutions",
+        "court_hierarchy",
+        "expanded_institutions",
+        "cross_border_diplomacy",
+        "pakistan_constitutional_history"
+      ]
+    },
+    {
+      "layer": "D",
+      "documents": 7,
+      "chunks": 77,
+      "docIds": [
+        "immigration_laws",
+        "cross_border_consular",
+        "cross_border_travel",
+        "cross_border_employment",
+        "cross_border_education",
+        "cross_border_diplomacy",
+        "cross_border_legal"
+      ]
+    },
+    {
+      "layer": "E",
+      "documents": 6,
+      "chunks": 58,
+      "docIds": [
+        "immigration_laws",
+        "cross_border_consular",
+        "cross_border_travel",
+        "cross_border_legal",
+        "pakistan_visa_categories",
+        "foreigner_entry_stay_registration"
+      ]
+    },
+    {
+      "layer": "F",
+      "documents": 8,
+      "chunks": 97,
+      "docIds": [
+        "court_procedures",
+        "court_workflows",
+        "situation_remedies",
+        "legal_workflows",
+        "court_hierarchy",
+        "expanded_remedies",
+        "expanded_procedures",
+        "citizen_official_procedures"
+      ]
+    },
+    {
+      "layer": "G",
+      "documents": 4,
+      "chunks": 74,
+      "docIds": [
+        "sc_judgments",
+        "landmark_case_studies",
+        "expanded_case_law",
+        "scp_fcc_official_records"
+      ]
+    }
+  ],
+  "registryLayerMap": {
+    "law_registry": "A (federal/provincial law records; CURRENT status only; amendment history = documented gap)",
+    "case_law_registry": "G",
+    "procedure_registry": "F",
+    "coverage_matrix": "cross-domain",
+    "source_registry": "all (provenance, not a knowledge layer)"
+  },
+  "offlineKnowledgeLayerMap": {
+    "Constitution": "A",
+    "Criminal Law (PPC & CrPC)": "A",
+    "Family Law": "A",
+    "Cyber Law (PECA)": "A",
+    "Property Law": "A",
+    "Labour Law": "A",
+    "Consumer Protection": "A",
+    "Tenancy Law": "A",
+    "Women's Rights": "A",
+    "Education Law": [
+      "B",
+      "A"
+    ],
+    "Traffic Law": "A",
+    "Tax Law": "A",
+    "Court Process": "F",
+    "Legal Aid": [
+      "B",
+      "A"
+    ]
+  },
+  "trainingLayerMap": {
+    "note": "Training rows are tagged by domain/task (final_v2); task->layer mapping above yields example counts per layer. behaviour/agent rows (93) cover layers I/J/F/H; document examples (84) cover H; safety rows (41) cover J.",
+    "tasksToLayer": {
+      "offence_punishment": "A",
+      "legal_qa": "A",
+      "legal_terminology": "A",
+      "domain_classification": "A",
+      "fundamental_rights": [
+        "A",
+        "B"
+      ],
+      "legal_procedures": "F",
+      "situation_action": [
+        "F",
+        "A"
+      ],
+      "case_law": "G",
+      "similar_case": "G",
+      "document_explanation": [
+        "H",
+        "A"
+      ],
+      "document_drafting": "H",
+      "en_legal_answer": [
+        "A",
+        "J"
+      ],
+      "ur_legal_answer": [
+        "A",
+        "J"
+      ],
+      "rom_legal_answer": [
+        "A",
+        "J"
+      ],
+      "legal_remedies": "F",
+      "refusal": "J",
+      "source_aware": [
+        "J",
+        "A"
+      ]
+    },
+    "trainExamplesByLayer": {
+      "A": 940,
+      "F": 268,
+      "B": 93,
+      "G": 63,
+      "H": 84,
+      "J": 98
+    },
+    "behaviourAreasTracked": [
+      "base_v1_data",
+      "new_v2_additions_rows",
+      "cross_border_examples",
+      "behaviour_examples",
+      "document_examples",
+      "safety_examples"
+    ]
+  },
+  "coverageByLayer": {
+    "A": "Broad: 34 federal law docs + provincial records; 632 federal provisions indexed. Gaps: customs, health, FIA, public service, administrative law, torts, AJK/GB, full provincial texts.",
+    "B": "Thin but present: elections/NADRA/CNIC/voter, immigration, legal-aid, education/student, procedures. No dedicated civic-services guide document.",
+    "C": "Layer C now has a dedicated verified document: Pakistan Constitutional History (Senate of Pakistan official record, 6 sections, 1947-2002) + institutions/expanded-institutions + court-hierarchy.",
+    "D": "Strong: 6 cross-border documents, 69 chunks (consular/travel/employment/education/diplomacy/legal), 18 countries referenced as official links/examples; no foreign substantive law stored (by design).",
+    "E": "Partial-to-good: dedicated Pakistan Online Visa System document (visa.nadra.gov.pk, 4 sections) + immigration/cross-border fragments; residence/registration/extension detail remains a documented gap.",
+    "F": "Strong: procedure + court-procedure + expanded-procedures + court-hierarchy + remedies; 22 curated workflows, 51 procedure chunks.",
+    "G": "37 case records (26 SC digests, 1 FSC, 3 other reported, 4 suo motu, 3 case studies). GAP: High Court judgments not ingested.",
+    "H": "No corpus folder (by design): drafting knowledge lives in src/config/documentStructures.ts, server/docModel.js/docUrdu.js, templates, and 84 document training examples.",
+    "I": "No corpus folder (by design): app knowledge lives in the agent prompt/routes + training behavior rows (agent_actions 6, behaviour 93).",
+    "J": "Training-layer: 40 refusal + 32 source-aware examples (+ safety 41 rows total) teach no-fabrication/scope rules; no corpus document needed."
+  }
+}

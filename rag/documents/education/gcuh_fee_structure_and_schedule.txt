@@ -1,0 +1,88 @@
+[SECTION: GCUH_FEE_STRUCTURE_2027_BACHELORS_MORNING_COMPUTER_STREAM]
+Title: GCU Hyderabad fee structure for Bachelor's degree programs (Morning), Computer stream — merit, batch 2027
+Authority: Government College University Hyderabad (GCUH), Directorate of Finance / Accounts
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH fee structure PDF published under the admissions section of the official site
+Source URL: https://www.gcuh.edu.pk/downloads/admissions/Fee-Structure-2026-27.pdf
+Version: the document's own first heading line reads "GCUH - Fee Structure 2027" and the table banner reads "MERIT - BATCH 2027", although the published file name is Fee-Structure-2026-27.pdf. Both are recorded as found; no year has been assigned by inference.
+Legal status: Published fee schedule for the batch shown on the table banner; supersession of earlier batches is not stated in the document
+Retrieved: 2026-10-18
+Extraction note: values below are the fee heads and the amounts as laid out by `pdftotext -layout` for the table headed "Computer Science (CS, BBA, IT, AI, Data Science) - Morning". The per-year columns of the TOTAL row wrap across lines in the text layer, so the year totals must be read from the PDF itself and are not asserted here.
+
+Table banner: "FEE STRUCTURE FOR BACHELOR'S DEGREE PROGRAMS (Morning)" / "MERIT - BATCH 2027".
+Columns as printed: S.NO | HEAD | 1st Year | 2nd Year | 3rd Year | Final Year.
+1 Admission Fee — 12,500 / 12,500 / 12,500 / 12,500
+2 Marks Certificate Verification Fee — 2,500 / - / - / -
+3 Enrollment Card Fee — 1,000 / 0 / 0
+4 Identity Card Fee — 500 / 500 / 0 / 500
+5 Sports Fee — 500 / 500 / 500 / 500
+6 Extra-Curricular Activities Fee — 1,000 / 500 / 1,000
+7 Project Visit Fee — 1,500 / 1,000 / 1,000 / 1,500
+8 University Development Fund — 1,500 / 1,500 / 1,500 / 1,500
+9 Library Development Fund — 1,000 / 1,500 / 1,500 / 1,000
+10 Laboratory/Computer/Lab Fee — 2,000 / 1,000 / 1,000 / 2,000
+11 Transport Fee — 2,000 / 2,000 / 12,000
+12 Tuition Fee — 12,000 / 12,000 / 12,000 / 23,000
+13 PERN Fee — 23,000 / 23,000 / 23,000 / 1,000
+TOTAL row as printed in the text layer: "1,000 56,500 56,500 60,000" spread over wrapped lines.
+
+[SECTION: GCUH_FEE_STRUCTURE_2027_BACHELORS_MORNING_GENERAL_DISCIPLINE]
+Title: GCU Hyderabad fee structure for Bachelor's general-discipline programs (Morning) — merit, batch 2027
+Authority: Government College University Hyderabad (GCUH), Directorate of Finance / Accounts
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH fee structure PDF
+Source URL: https://www.gcuh.edu.pk/downloads/admissions/Fee-Structure-2026-27.pdf
+Version: "MERIT - BATCH 2027" banner; file name Fee-Structure-2026-27.pdf (see the note on the first section of this document)
+Legal status: Published fee schedule for the batch shown on the table banner
+Retrieved: 2026-10-18
+Extraction note: table headed "General Discipline - Morning". The TOTAL line of this table is the one place the text layer renders cleanly across columns, so the year totals are recorded and the head-wise values are given as printed.
+
+Head-wise values as printed: Admission Fee 7,000 (all four years); Marks Certificate Verification Fee 2,500 (1st year only); Enrollment Card Fee 1,000 (1st year); Identity Card Fee 500 / 500 / 500; Sports Fee 500 across years; Extra-Curricular Activities Fee 500; Project Visit Fee 1,000 across years; University Development Fund 1,500 across years; Library Development Fund 1,500 across years; Laboratory/Computer/Lab Fee 1,000 across years; Transport Fee 2,000 across years; Tuition Fee 12,000 across years; PERN Fee 13,500 across years; and a final unlabelled head of 1,000 across years.
+TOTAL row as printed: "TOTAL 45,000 41,500 41,500 41,500".
+
+[SECTION: GCUH_FEE_STRUCTURE_2027_SELF_FINANCE_AND_EVENING_TABLES]
+Title: GCU Hyderabad fee structure 2027 — self-finance and evening tables published in the same schedule
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH fee structure PDF
+Source URL: https://www.gcuh.edu.pk/downloads/admissions/Fee-Structure-2026-27.pdf
+Version: batch 2027 banners as printed
+Legal status: Published fee schedule for the batches shown
+Retrieved: 2026-10-18
+Extraction note: the schedule publishes separate banners for the self-finance and evening variants. Their head-wise amounts did not survive column-aligned extraction as reliably attributable rows, so this record names the tables and their printed totals exactly as the text layer emits them and points to the source; no amount has been reassigned between heads.
+
+Banners present in the document, in order: "MERIT - BATCH 2027 / Computer Science (CS, BBA, IT, AI, Data Science) - Morning"; "MERIT - BATCH 2027 / General Discipline - Morning"; "SELF-FINANCE - BATCH 2027 / Computer Science (CS, BBA, IT, AI, Data Science) - Morning" (TOTAL row printed as "1,000 95,400 95,400"); "SELF-FINANCE - BATCH 2027 / General Discipline - Morning" (TOTAL row printed as "1,000 81,500 81,500"); "FEE STRUCTURE FOR BACHELOR'S DEGREE PROGRAMS (Evening)" with "Computer Science (CS, IT, AI, Data Science) - Evening" (TOTAL printed as "1,000 71,500 71,500"), "BBA - Evening", and the two matching "SELF-FINANCE - BATCH 2027" evening tables for the same streams.
+Reading the same schedule side by side, the self-finance variants are the higher-priced category of the same programme, and the evening stream has its own tables — a student's payable amount therefore depends on category (merit / self-finance) and session (morning / evening), not only on the department.
+
+[SECTION: GCUH_FEE_CHALLAN_AND_PAYMENT_CHANNEL]
+Title: GCU Hyderabad — challan generation through the Campus Management System (CMS) and the ABL / 1Bill payment channel
+Authority: Government College University Hyderabad (GCUH), Directorate of Admissions / Finance
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Undergraduate Admission Policy 2026-27 (challan and payment instructions)
+Source URL: https://www.gcuh.edu.pk/downloads/admissions/GCUH-Admission-Policy-2026-27-Website.pdf
+Version: Undergraduate Admission Policy 2026-27
+Legal status: Active for the 2026-27 undergraduate cycle
+Retrieved: 2026-10-18
+
+"Students are required to use the GCUH Campus Management System (CMS) for generating/downloading challan forms and uploading paid challans through their student portal for record purposes and further processing."
+"Applicants are required to deposit Rs. 3,000/- (non-refundable) as registration/processing fee through a challan generated via the prescribed Allied Bank Limited Account No. 0010158949730040".
+"Payment may be made at any ABL branch across Pakistan or through the 1Bill option available in Mobile Banking Apps, Mobile Wallets, ATMs, etc. No other modes of payment (such as Fund Transfer, Credit Card, etc.) shall be accepted."
+Consequence of not paying on time, as published: "any seat remaining vacant due to non-payment of fees within the prescribed time limit shall be treated as a leftover seat and filled according to the prescribed procedure."
+Other published institutional charges in the same policy: duplicate Student ID Card Rs. 500/-, Bonafide Certificate Rs. 250/-, admission confirmation challan PKR 500/- (undergraduate, 2026-27).
+
+[SECTION: GCUH_FEE_AND_SCHEDULE_EXTRACTION_GAPS]
+Title: GCU Hyderabad fee coverage — documents that could not be read (recorded, not filled in)
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH official downloads
+Source URL: https://gcuh.edu.pk/pages/downloads.html
+Version: retrieval attempt of 2026-10-18
+Legal status: Source-recovery gap — no amounts recorded for the documents below
+Retrieved: 2026-10-18
+
+These official GCUH documents were located and downloaded (or attempted) but yielded no usable text layer, so no rule or amount from them is stored here:
+1. "Fees Structure for batch 2027 (MBA MS IT Mphil PhD).pdf" — https://www.gcuh.edu.pk/downloads/admissions/Fees%20Structure%20for%20batch%202027%20(MBA%20MS%20IT%20Mphil%20PhD).pdf — 18,493,723 bytes downloaded, text extraction returned 364 bytes: an image-only document in this repository's tooling (no PDF rasterizer, no cached OCR data). The postgraduate fee amounts are therefore NOT in this corpus.
+2. "notification-fees.pdf" — https://www.gcuh.edu.pk/downloads/notification-fees.pdf — 449,804 bytes downloaded, text extraction returned 13 bytes: image-only, not readable.
+3. "Prospectus_2022.pdf" — the link published as ../downloads/Prospectus_2022.pdf returned HTTP 404 on 2026-10-18 (1,251-byte error page). The university prospectus is consequently not a source in this corpus, which is why no GCUH-specific discipline, rustication or appeal *schedule* is asserted anywhere in these records.
+4. Per-programme fee PDFs published for 2026 (MPhil Chemistry/Education/English/Mathematics/Zoology, MS IT, MBA business and non-business streams) are listed on the site but were not retrieved in this window; they remain unverified, not absent.
+Consequence for answering: for a GCUH postgraduate fee, or for a GCUH discipline/penalty amount, the correct answer is that the institution's published figure has not been verified — the HEC national fee-refund tiers and the discipline law of general application must not be presented as GCUH's own amounts.

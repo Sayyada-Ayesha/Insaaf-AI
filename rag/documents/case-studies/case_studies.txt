@@ -1,0 +1,41 @@
+[SECTION: CASE_STUDY_1_FIR_REFUSAL]
+Title: Case Study 1: Registration of FIR Against Police Refusal (State v. SHO)
+Authority: High Courts of Pakistan Judicial Precedents
+Jurisdiction: Pakistan
+Legal Status: Practical Legal Case Study
+Source URL: https://www.supremecourt.gov.pk
+
+Case Structure:
+Facts: A citizen's vehicle was stolen. The local police station (SHO) refused to record the FIR and kept delaying the complainant for 3 weeks without registering the case.
+Legal Issue: What is the appropriate legal action when police refuse to record an FIR for a cognizable offence?
+Applicable Law: Code of Criminal Procedure, 1898, Section 154 read with Section 22A(6).
+Court Decision & Reasoning: The Sessions Court (Ex-Officio Justice of Peace) held that registration of FIR in cognizable offences under Section 154 CrPC is a mandatory statutory duty of police. The Court issued strict direction to SHO to register FIR within 24 hours.
+Practical Takeaway: If police refuse to file your FIR, do not lose hope. Send a written complaint to SP Police, and if unresolved in 7 days, file Section 22A CrPC petition in Sessions Court.
+
+[SECTION: CASE_STUDY_2_CYBER_STALKING]
+Title: Case Study 2: Online Cyber Stalking and Blackmail Conviction under PECA
+Authority: FIA Cybercrime Court Judgments
+Jurisdiction: Pakistan
+Legal Status: Practical Legal Case Study
+Source URL: https://complaint.fia.gov.pk
+
+Case Structure:
+Facts: An individual created fake social media profiles using a victim's photos, sent threatening messages, and attempted online extortion.
+Legal Issue: Whether creation of fake profiles, unauthorized image sharing, and online threats constitute offences under PECA 2016.
+Applicable Law: Prevention of Electronic Crimes Act (PECA), 2016 — Sections 13, 19, 20, and 24.
+Court Decision & Reasoning: The Special Court Cybercrime convicted the accused under Sections 19 and 24 PECA, sentencing him to 3 years imprisonment and fine. Digital forensic reports from FIA Forensics Lab were accepted as conclusive electronic evidence.
+Practical Takeaway: Always preserve screenshots, URL links, and chat logs. File immediate complaint with FIA Cybercrime Wing at complaint.fia.gov.pk or call 1991.
+
+[SECTION: CASE_STUDY_3_TENANCY_EVICTION]
+Title: Case Study 3: Protection of Tenant against Forced Utility Disconnection
+Authority: Punjab Rent Tribunal Precedents
+Jurisdiction: Punjab, Pakistan
+Legal Status: Practical Legal Case Study
+Source URL: https://punjabcode.punjab.gov.pk
+
+Case Structure:
+Facts: A landlord cut off the electricity and water supply to a rented house to force the tenant to vacate without court order.
+Legal Issue: Can a landlord disconnect essential utility services to evict a tenant?
+Applicable Law: Punjab Rented Premises Act, 2009, Section 10.
+Court Decision & Reasoning: The Rent Tribunal held that disconnecting utility amenities is an illegal act of coercion. The Tribunal ordered immediate restoration of electricity/water and fined the landlord.
+Practical Takeaway: A landlord cannot evict a tenant forcefully or cut utilities. Any eviction must be granted by the Rent Tribunal through proper legal process.

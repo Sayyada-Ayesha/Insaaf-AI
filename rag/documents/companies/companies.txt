@@ -1,0 +1,53 @@
+[SECTION: 1] The Companies Act, 2017 (Act No. XIX of 2017) — Consolidates and amends the law relating to companies in Pakistan. Repeals the Companies Ordinance 1984. Source: SECP (secp.gov.pk). Status: CURRENT. Administering Authority: Securities and Exchange Commission of Pakistan (SECP).
+
+[SECTION: 2] Definitions — 'Company' means a company formed and registered under this Act. 'Public company' means a company not being a private company. 'Private company' means a company which restricts the right to transfer shares, limits membership to 50, and prohibits public subscription. 'Member' means the subscriber to the memorandum. 'Director' includes any person occupying the position of director.
+
+[SECTION: 3] Incorporation — Any seven or more persons (two for private company) may form a company by subscribing their names to the memorandum and complying with registration requirements. Members must be of age of majority.
+
+[SECTION: 4] Memorandum of Association — The memorandum must state: (1) the company name (ending with 'Limited' or '(Pvt) Ltd'); (2) the province of registered office; (3) the principal line of business; (4) the liability of members (limited or unlimited); (5) the authorized share capital.
+
+[SECTION: 5] Articles of Association — The articles contain regulations for the management of the company. Public companies must file articles. Private companies require articles. Table A in Schedule 1 applies where articles are not registered.
+
+[SECTION: 6] Name — No company shall be registered with a name which is identical or deceptively similar to an existing company. Names must not be offensive or prohibited under the Emblems and Names Act.
+
+[SECTION: 7] Registered office — Every company must have a registered office in Pakistan, open to the public during business hours. Notice of registered office must be given to the registrar within 30 days.
+
+[SECTION: 8] Commencement of business — A public company having a share capital cannot commence business until the certificate of commencement is obtained.
+
+[SECTION: 9] Alteration of memorandum — A company may alter its memorandum by special resolution, subject to confirmation by the registrar or court for certain changes.
+
+[SECTION: 10] Doctrine of ultra vires — Any act of the company beyond the objects stated in the memorandum is void and cannot be ratified even by unanimous consent of shareholders.
+
+[SECTION: 11] Shares and debentures — Shares means the share capital of the company. Debentures includes debenture stock, bonds and any other securities of the company whether constituting a charge on assets or not.
+
+[SECTION: 12] Prospectus — A public company offering shares to the public must issue a prospectus containing all material information for investors. Civil and criminal liability attaches to misstatements in prospectus.
+
+[SECTION: 13] Share capital — Minimum paid-up capital for a public company: PKR 200,000. For a private company: PKR 100,000. The company may increase, reduce or reorganize share capital by special resolution.
+
+[SECTION: 14] Directors — Every company must have at least two directors (private) or three directors (public). Directors must be natural persons of sound mind and not disqualified.
+
+[SECTION: 15] Chief Executive — Every company must have a chief executive appointed by the board from among the directors.
+
+[SECTION: 16] Meetings — Annual General Meeting: every company must hold an AGM each year within 4 months of the close of the financial year. Extraordinary General Meeting: may be called by directors or by members holding 10% of paid-up capital.
+
+[SECTION: 17] Accounts — Every company must keep proper books of account reflecting true and fair view of affairs. Financial statements must be approved by the board and audited by a chartered accountant.
+
+[SECTION: 18] Audit — Every company must appoint an auditor at each AGM. The auditor must be a chartered accountant or firm of chartered accountants. Auditor's report must be attached to financial statements.
+
+[SECTION: 19] Dividends — Dividends may be declared only out of profits. No dividend shall be declared without providing for depreciation. Directors may recommend dividend subject to approval by members.
+
+[SECTION: 20] Winding up — A company may be wound up by the court (compulsory) or voluntarily. Grounds for compulsory winding up include: inability to pay debts, default in filing statutory documents, just and equitable ground.
+
+[SECTION: 21] Oppression and mismanagement — A member may petition the court if affairs of the company are being conducted oppressively or prejudicial to public interest or the members. The court may pass orders including removal of directors.
+
+[SECTION: 22] Removal of directors — A company may remove a director by ordinary resolution before the expiry of his term. Special notice of at least 14 days is required.
+
+[SECTION: 23] Insider trading — No director, officer or employee of a company shall deal in securities of the company while in possession of unpublished price-sensitive information. Penalty: imprisonment up to 5 years or fine.
+
+[SECTION: 24] Single member company — A single member may form a private company limited by shares. Only natural persons who are citizens and residents of Pakistan may form a single member company.
+
+[SECTION: 25] SECP powers — SECP has regulatory authority over companies, may conduct investigations, issue directions, impose penalties for non-compliance, and compound offences.
+
+[SECTION: 26] Offences and penalties — Failure to file returns, hold meetings, maintain accounts or comply with SECP requirements attract penalties. Continuing default attracts daily penalties.
+
+[SECTION: 27] Merger and amalgamation — Two or more companies may amalgamate by order of the court or SECP under the Mergers (Courts and SECP) Procedure. Scheme of arrangement requires board approval, member approval (75%), and court sanction.

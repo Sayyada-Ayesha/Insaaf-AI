@@ -1,0 +1,21 @@
+[SECTION: 1] Arbitration Act, 1940 (Act X of 1940) — Governs domestic arbitration in Pakistan. Source: Pakistan Code (pakistancode.gov.pk). Status: CURRENT (used alongside alternative mechanisms).
+
+[SECTION: 2] Arbitration agreement — Parties may agree to submit present or future disputes to arbitration. The agreement must be in writing. It may be a separate agreement or a clause in a contract.
+
+[SECTION: 3] Appointment of arbitrator — Parties may appoint a single arbitrator or multiple arbitrators. If parties cannot agree, the court may appoint. An arbitrator must be impartial and independent.
+
+[SECTION: 4] Powers of arbitrator — Arbitrator may: (a) administer oath; (b) order discovery and production of documents; (c) examine witnesses; (d) proceed ex parte if a party fails to appear; (e) state a case for court opinion.
+
+[SECTION: 5] Arbitration award — The arbitrator must make an award in writing within 4 months (extendable by court). The award is final and binding on parties. Award must be reasoned unless parties waive reasoning.
+
+[SECTION: 6] Setting aside an award — The court may set aside an award on grounds: (a) misconduct by arbitrator; (b) error of law on the face of the award; (c) corruption or improper procurement; (d) award was made after the award period expired.
+
+[SECTION: 7] Judgment on award — Where an award remains unchallenged, the court may pronounce judgment according to the award. The decree is executable as a court decree.
+
+[SECTION: 8] Conciliation — Courts may refer disputes to conciliation/mediation under CPC Section 89. The conciliator facilitates settlement. Settlement agreement has the force of a decree.
+
+[SECTION: 9] International arbitration — Pakistan is a signatory to the New York Convention (1958) on recognition and enforcement of foreign arbitral awards. Foreign awards are enforced under the Recognition and Enforcement (Arbitration Agreements and Foreign Arbitral Awards) Act, 2011.
+
+[SECTION: 10] Alternative Dispute Resolution (ADR) — ADR mechanisms in Pakistan: (a) mediation/conciliation; (b) arbitration; (c) negotiation; (d) court-annexed mediation (pilot programs in Lahore and Karachi High Courts). ADR saves time and cost compared to litigation.
+
+[SECTION: 11] Judicial ADR — The Lahore High Court and Sindh High Court have established Mediation Centres. Cases (civil, family, commercial) may be referred to mediation by consent of parties. Mediators are trained lawyers/retired judges.

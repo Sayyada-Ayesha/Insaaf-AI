@@ -1,0 +1,74 @@
+# Law of Torts in Pakistan
+# Coverage: defamation, negligence, nuisance, trespass, malicious prosecution, damages and
+# limitation. Tort law in Pakistan is largely uncodified common law (except defamation under
+# the Defamation Ordinance 2002); principles below reflect the settled position applied by
+# Pakistani courts. Sources: Defamation Ordinance, 2002; common-law principles as applied by
+# Pakistani courts; Limitation Act, 1908.
+
+[SECTION: TORTS_READING_NOTE]
+A tort is a civil wrong (not a breach of contract or trust) for which the law provides damages.
+Pakistani courts apply the common-law tort framework as modified by statute (defamation) and by
+the Constitution (fundamental rights can support claims against the State). Tort claims are
+brought in civil courts; criminal remedies (e.g., criminal defamation under the PPC) are
+separate.
+
+[SECTION: TORTS_DEFAMATION]
+LAW: Defamation Ordinance, 2002 (civil defamation); Pakistan Penal Code, Section 499-501
+(criminal defamation). COVERAGE: PARTIAL.
+KEY PROVISIONS (summary):
+- Defamation is publication of a false statement that injures a person's reputation.
+- Civil: under the Defamation Ordinance 2002, an aggrieved person may sue for damages; defences
+  include truth (justification), fair comment on a matter of public interest, and privilege
+  (absolute for judicial/parliamentary proceedings; qualified for fair and accurate reports).
+- Criminal: PPC Section 499 defines defamation; Section 500 prescribes punishment (imprisonment
+  up to two years or fine or both — check the current text for the exact range); defences in
+  Section 499's explanations (truth for public good, fair comment, etc.).
+- Defamation through electronic systems is also punishable under PECA 2016 (online defamation).
+SOURCE: Defamation Ordinance, 2002; PPC ss.499-501; PECA 2016. VERIFICATION: verified as to the
+framework (exact penalty text should be checked against the current statute).
+
+[SECTION: TORTS_NEGLIGENCE]
+LAW: common-law negligence as applied in Pakistan. COVERAGE: PARTIAL.
+ELEMENTS (summary of the settled test):
+- Duty of care: the defendant owed the plaintiff a duty to take reasonable care (the
+  neighbour principle — persons so closely affected by one's acts that one ought reasonably to
+  have them in contemplation).
+- Breach: the defendant's conduct fell below the standard of a reasonable person in the
+  circumstances (professional negligence judged by professional standards).
+- Causation: the breach caused the plaintiff's loss (cause-in-fact and proximate cause).
+- Damage: the plaintiff suffered recoverable loss (personal injury, property damage, economic
+  loss in recognized cases).
+- Medical negligence: judged by the standard of the ordinary skilled practitioner of the
+  relevant specialty (Bolam-type standard as applied in Pakistan), and also actionable before
+  healthcare commissions as establishment-level negligence.
+SOURCE: settled case law. VERIFICATION: verified as settled principles.
+
+[SECTION: TORTS_NUISANCE_TRESPASS]
+LAW: common law. COVERAGE: SUMMARY.
+- Private nuisance: substantial and unreasonable interference with a person's use or enjoyment
+  of land (noise, fumes, encroaching structures, blocked passages); remedies: injunction
+  and/or damages. Public nuisance affects the public at large and is also a PPC offence
+  (Section 268).
+- Trespass to land: unauthorized entry on another's land; trespass to goods: unauthorized
+  interference with goods. Remedies: damages, injunction, recovery of possession.
+SOURCE: common law; PPC s.268. VERIFICATION: verified as settled principles.
+
+[SECTION: TORTS_MALICIOUS_PROSECUTION]
+LAW: common law. COVERAGE: SUMMARY.
+ELEMENTS (summary): the defendant prosecuted the plaintiff without reasonable and probable
+cause, actuated by malice, and the prosecution ended in the plaintiff's favour (acquittal or
+discharge), causing damage. Applies to criminal proceedings; suits for malicious prosecution
+must plead and prove these elements.
+SOURCE: settled case law. VERIFICATION: verified as settled principles.
+
+[SECTION: TORTS_DAMAGES_LIMITATION]
+LAW: common-law damages; Limitation Act, 1908. COVERAGE: SUMMARY.
+- Damages: compensatory (to put the plaintiff in the position before the wrong) and, in
+  exceptional cases, exemplary/punitive damages; aggravated damages for injury to feelings in
+  defamation.
+- Limitation: tort suits (defamation, negligence etc.) are barred after the limitation period
+  applicable to the wrong under the Limitation Act, 1908 (defamation suits are subject to a
+  short limitation period — check the current Schedule); delay can defeat an otherwise valid
+  claim.
+SOURCE: Limitation Act, 1908. VERIFICATION: verified as to the general framework (exact periods
+for each tort should be checked against the Schedule).

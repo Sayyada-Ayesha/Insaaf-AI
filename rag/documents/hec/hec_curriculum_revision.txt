@@ -1,0 +1,692 @@
+# HEC curriculum revision policy, revised curricula and model curricula guidance
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: Pakistan (Federal) — higher education
+Version: Curriculum Revision / Revised Curricula pages as published, retrieved 2026-10-10 | Published/notified: 2026-10-10 | Effective: 2026-10-10 | Status: Current
+Provenance: sections below carry the canonical HEC URL for the document they were extracted from.
+Coverage area: G,B
+Verification note: Discipline model curricula are published as Word documents by HEC and are not machine-readable here; the corpus keeps the HEC process pages only.
+
+[SECTION: hec_curriculum_revision_1_NATIONAL_CURRICULUM_REVISION_COMMITTEE_NCRC_PR]
+# National Curriculum Revision Committee (NCRC) Process
+Title: HEC curriculum revision policy, revised curricula and model curricula guidance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: National Curriculum Revision Committee (NCRC) Process
+Official page: https://www.hec.gov.pk/english/services/universities/cr/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/cr/Pages/default.aspx
+Version: Curriculum Revision / Revised Curricula pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Services
+Universities
+Curriculum Revision
+- Curriculum Revision
+- General Education Courses
+- Revised Curricula
+Curriculum Revision
+ National Curriculum Revision Committee (NCRC) Process
+Under Section 3, Sub-section (1) of the Federal Supervision of Curricula Textbooks and Maintenance of Standards of Education Act 1976, the Government of Pakistan has appointed the HEC to oversee curriculum revision. 
+The curriculum revision work relates to Class XII at the bachelor's level and onwards regarding all degrees, certificates and diplomas awarded by institutions of higher education. The HEC may at any time choose to advise the chancellor of an institution on its statutes and regulations.
+Based on the decision of the 44th Vice-Chancellors Committee to review the curriculum of each subject every three years, the HEC regularly collaborates with universities on curriculum revision.
+To facilitate these changes, committees comprising senior academics nominated by the universities are established at the national level. If required, teachers from local degree colleges and experts from user organizations can also be included in the committees.
+Proforma for Constitution of NCRC
+Draft SOPs for Curriculum Revision
+Steps Involved in Curriculum Review/Revision Process
+The curriculum review and revision process has been divided in two phases:
+PHASE - I: Curricula under consideration
+PHASE - II: Circulation of the draft curriculum
+Details of steps involved in the said process under each phase is as follows:
+PHASE – I: Curricula under consideration
+Step – I: Constitution of NCRC in the subject
+The Vice Chancellors of all public and private sector universities, R&D organizations, Directorate of colleges and industries in relation to the subject under consideration, requested to nominate their representatives, for appointment as member of National Curriculum Review Committee (NCRC).
+Step –II: Assessment/Analysis of the existing curriculum
+T
+he existing curricula are circulated amongst the members of NCRC to discuss it with their colleagues and bring collective proposals for review and revision of existing curricula in relation to:
+Learning Outcomes (of teaching the subject)
+Scheme of studies
+Course-content
+Weightage
+Reading materials
+Teaching strategies
+Methods of evaluation.
+In this way participation of maximum number of subject experts is ensured.
+Step – III: NCRC Meeting-I: Draft Preparation
+The first meeting of the NCRC is organized at the HEC Headquarter Islamabad or one of its Regional Centers at Peshawar, Lahore and Karachi. During this meeting maximum local input could be made available in the exercise of revising a curriculum. Universities at different places may also be chosen to serve the purpose. The meeting which normally runs for three consecutive days comes up with a draft of the revised curricula, after detailed discussion and deliberation on the proposals prepared by the NCRC members.
+PHASE – II: Circulation of the Draft Curriculum
+Step – I: Appraisal of the first draft
+The first draft prepared is circulated amongst the local as well expatriate Pakistani experts, universities, institutions and organization soliciting their views for its further improvement. The view/recommendations collected on the first draft curriculum were deliberated upon to design and finalize the curriculum of specific subject of study in a final meeting.
+Step – II: NCRC meeting-II - Finalization of draft
+The second meeting of the NCRC is held to finalize the draft of the revised curriculum in the light of comments/suggestions/ recommendations received from the college and university teachers and institutions all over the country. The meeting would again take three days to finalize curriculum. The draft, so finalized, has expertise of all faculty members of the subject under consideration, who are directly or indirectly involved in this process.
+Implementation
+The curricula d
+esigned is printed and sent to universities/institutions for its adoption/implementation after the approval of the Competent Authority.
+
+[SECTION: hec_curriculum_revision_2_REVISED_CURRICULUM]
+# Revised Curriculum
+Title: HEC curriculum revision policy, revised curricula and model curricula guidance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Revised Curriculum
+Official page: https://www.hec.gov.pk/english/services/universities/RevisedCurricula/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/RevisedCurricula/Pages/default.aspx
+Version: Curriculum Revision / Revised Curricula pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+Universities
+HEC Revised Curriculum
+- Introduction
+- Framework for Revision of Curricula
+- Revised Curriculum
+- Skills Catalogue Data
+Revised Curriculum
+In order to impart quality education which is at par with international standards the Curriculum Division of HEC undertakes the revision of curricula after every three years through respective National Curriculum Revision Committees (NCRCs) which consist of eminent professors and researchers of relevant fields from public and private sector universities, R&D organizations, councils, industry and civil society by seeking nominations from their organizations.
+CURRICULA REVISED IN 2025-26
+|  Fine Arts (AD, BFA, MFA) 
+| Computer Science  
+|  Business and Management Studies 
+| Pakistan Studies (AD, BS, MPhil/MS)
+| Bioinformatics (AD, BS, MPhil/MS)
+|  Geography (AD, BS, MS/ MPhil)
+|  Allied Health Sciences (BS Programs)
+|  Cyber Security
+|  Agriculture
+|  MS Program (Women, Development and Seerah Studies)
+|  MS Program (Women, Entrepreneurship and Seerah Studies)
+|  MS Program (Women, Leadership and Seerah Studies)
+CURRICULA REVISED IN 2024-25
+| Biochemistry (BS, MS)
+|  Physical Education
+|  Microbiology (BS, MS) 
+|  Architecture
+|  Physics (AD, BS, MS)
+| Political Science
+| Zoology (AD, BS, MS)
+| Sociology (AD, BS, MS)
+|  Psychology (AD, BS, MS)
+| Chemistry (AD, BS, MS)
+| Islamic Studies
+|  Remote Sensing and GIS
+| Public Health (AD, BS, MS)
+|  Mathematics (AD, BS, MS)
+|  International Relations (AD, BS, MPhil)
+|  Media & Communication Studies (AD, BS, MS)
+| Commerce (AD, BS, MS)
+|  Geology (AD, BS, MS)
+| Home Economics (AD, BS, MS)
+|  Education
+|  Pediatric Nursing (BS, POST RN)
+|  Doctor of Physical Therapy
+|  Statistics (AD, BS, MPhil)
+|  Biology (AD, BS)
+
+| Environmental Science (AD, BS, MS)
+|  English (AD, BS, MS)
+|  Social Work (AD, BS, MS)
+| Library and Information Science
+|  History (AD, BS, MS)
+|  Curriculum of LLB
+| Doctor of Pharmacy (Pharm.D)
+|  Food Science & Technology 
+| Human Nutrition and Dietetics  
+
+CURRICULA REVISED IN 2023-24
+|  Nursing (BSN, MSN)
+|  Midwifery (BSM)
+| Biotechnology (AD, BS, MS) 
+|  Botany (AD
+
+, BS,
+MS)
+|  Computing Disciplines 
+| 
+
+CURRICULA REVISED IN 2017-18
+|  Energy System Engineering |
+Crop Physiology
+|  Biochemistry
+|  Economics |
+International Relations 
+|
+Geology 
+
+|
+Zoology 
+ |
+Agronomy 
+|
+Statistics 
+|
+Food Engineering 
+ |
+Disaster Management
+ |  Media- Communication Studies
+
+CURRICULA REVISED IN 2016-17
+|  Electrical Engineering |
+English | 
+|
+Industrial Engineering |  Computer Science |
+Mechanical Engineering
+|  Electronics |  M.Arch |  City & Regional Planning
+|  Gender Studies |  Meat Science |
+Metallurgy Materials Engg
+|
+Petroleum & Gas Engg |  Remote Sensing |  Bio-Medical Engineering
+|  Genetics |  Mining Engineering |
+Civil Engineering
+|  Environmental Engineering |  Tourism Hospitality |  History
+CURRICULA REVISED IN 2015-16
+|
+Archaeology  |  Engineering Technologies | 
+|  B-Tech |  Chemical Engineering |
+Doctor of Physical Therapy
+|  Fresh Water Biology |  Human Nutrition & Dietetics |  Marine Science
+|  Mechatronics Engineering |
+Molecular Biology |  Peace & Conflict Studies
+|
+Public Health |  Punjabi |  Special Education
+CURRICULA REVISED IN 2014-15
+
+|  Aerospace Engineering
+|  |
+|
+
+Computer Engineering
+|
+
+Electronic Engineering
+|
+
+Fashion Design
+| 
+Agricultural Chemistry
+|
+
+Telecommunication Engineering
+|
+
+L.L.B
+|
+Plant Protection
+|
+
+Eastern Medicine
+|
+
+Bioinformatics
+|
+
+Social Work
+|
+
+Agricultural Engineering
+|
+Agricultural Extension Education
+|
+CURRICULA REVISED IN 2013-14
+|
+ Agricultural Economics
+|
+ Library and Information Science
+|
+ DVM Curriculum
+|
+Agronomy
+|
+Plant Breeding and Genetics
+|
+Health and Physical Education
+|
+Disaster Management
+|
+Plant Pathology
+|
+
+Soil Sciences
+|
+Energy Systems Engineering
+|
+Arabic Language
+|
+Commerce
+|
+
+Entomology
+|
+
+Food Science
+|
+
+Horticulture
+|
+Islamic Studies
+|
+Library Science
+|
+
+Telecommunication System
+|
+
+Water Management
+|
+Forestry
+|
+
+Fine Arts
+
+CURRICULA REVISED IN 2012-13
+
+|
+Architecture
+|
+
+Food Engineering
+|
+
+Physics
+|
+
+Biochemistry
+|
+Geography
+|
+Political Science
+|
+
+Biotechnology
+|
+
+Geology
+|
+
+Public Administration
+|
+
+Botany
+|
+
+International Relations
+|
+
+Psychology
+|
+
+Chemistry
+|
+
+Math
+|
+
+Statistics
+|
+
+Computer Science
+|
+
+Microbiology
+|
+
+Sociology Rural and Urban
+|
+
+Economics
+|
+
+Mass Communication
+|
+
+Zoology
+|
+
+Environmental Science
+|
+
+Pakistan Studies
+|
+
+Urdu
+|    CURRICULA REVISED IN 2011-12
+|
+
+Aerospace Engineering
+|
+
+City & Regional Planning
+|
+
+|  Avionic Engineering
+|
+
+Civil Engineering
+|
+
+Environmental Engineering
+|
+
+Biomedical Engineering
+|
+ Criminology
+|
+
+History
+|
+
+Business Administration
+|
+
+Crop Physiology
+|
+Industrial Engineering
+|
+
+Chemical Engineering
+|
+ Electrical Engineering
+|
+
+Mechanical Engineering
+|
+
+Metallurgy & Material Engineering
+|
+
+Mining Engineering
+|
+
+Persian
+|
+
+Petroleum Engineering
+|
+
+Physiology
+|
+
+Space Sciences
+|
+
+Textile Engineering
+|
+
+Women Studies
+|
+Education
+CURRICULA REVISED IN 2010-11
+|
+ Archaeology
+|
+Fresh Water Biology
+|
+MBBS [Draft]
+|
+
+BDS [Draft]
+|
+
+Home Economics
+|
+ Nursing
+|
+
+Bioinformatics
+|
+Law (LLB)
+|
+
+Mechatronic Engineering
+|
+Fashion Design
+|
+
+Marine Sciences
+|
+Pharmacy
+|
+
+Physical Therapy
+|
+
+Special Education
+| 
+CURRICULA REVISED IN 2009-10
+|  Agriculture Chemistry
+|
+B.Tech
+|
+Food Science and Technology
+|
+
+Agriculture Economics
+|
+Commerce
+|
+
+Forestry
+|
+
+Agriculture Extension
+|
+DVM
+|
+Horticulture
+|
+Agricultural Engineering
+|
+Education
+|
+
+Plant Breeding & Genetics
+|
+Agronomy
+|
+Entomology
+|
+
+Plant Pathology
+|
+BHMS
+|
+Fine Arts
+|
+Plant Protection
+|
+
+Soil Science
+|
+
+Water Management
+| 
+CURRICULA REVISED IN 2008-09
+|
+Arabic
+|
+
+Urdu
+|
+
+Islamic Studies
+|
+
+Biochemistry
+|
+
+Environmental Science
+|
+Library & Information Science
+|
+B iotechnology
+|
+
+Geography
+|
+Psychology
+|
+Computer Engineering
+|
+Geology
+|
+
+Public Administration
+|
+Computer Science, Software Eng. and Information Technology
+|
+
+Health & Physical Education
+|
+
+Social Work
+|
+
+Sociology
+|
+
+Telecommunication Systems
+| 
+CURRICULA REVISED IN 2007-08
+|  Architecture
+|
+
+Electronic Engineering
+|
+
+Microbiology
+|
+
+Botany
+|
+
+International Relation
+|
+
+Pakistan Studies
+|
+
+Chemical Engineering
+|
+
+Material Engineering
+|
+
+Physics
+|
+
+Chemistry
+|
+
+Mathematics
+|
+
+Political Science
+|
+
+Economics
+|
+
+Mass Communication
+|
+
+Statistics
+|
+
+Telecommunication Engineering
+|
+
+Textile Engineering
+|
+
+Zoology
+CURRICULA REVISED IN 2005-06
+|  City And Regional Planning
+|
+
+Genetics
+|
+
+Remote Sensing
+|
+
+Rural Sociology
+|
+
+L.L.M.
+| 
+Curricula Revised in 2004-05
+|  Eastern Medicine
+|  | 
+
+[SECTION: hec_curriculum_revision_3_HEC_CURRICULUM_REVISION_POLICY_REVISED_CURRICU]
+# HEC curriculum revision policy, revised curricula and model
+Title: HEC curriculum revision policy, revised curricula and model curricula guidance
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC curriculum revision policy, revised curricula and model
+Official page: https://www.hec.gov.pk/english/policies/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/policies/Pages/default.aspx
+Version: Curriculum Revision / Revised Curricula pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Policies
+HEC
+Policies and Procedures
+
+Type
+Academic
+Research
+- Framework on use of Generative AI (GenAI) Tools in Higher Education Institutes (HEIs)
+- Academic
+- Framework for Recognition of Liberal Arts Undergraduate Programs
+- Academic
+- Policy on Dual, Double and Joint Degree Programmes
+- Academic
+- Guidelines for Engagement of Visiting Faculty in HEIs
+- Academic
+- Framework for HEC Best University Teacher Award (BUTA)
+- Academic
+- Revised Policy Document for Access to Scientific Instruments Program
+- Academic
+- Framework for Appointment of Professor Emeritus in the Higher Education Institutions (HEIs)
+- Academic
+- Framework for Appointment of Meritorious Professor in the Higher Education Institutions (HEIs)
+- Academic
+- Framework for HEC Distinguished National Professor (DNP) Program
+- Academic
+- Policy Guidelines for Appointment of Professor of Practice by the Higher Education Institutions (HEIs) In Pakistan
+- Academic
+- HEC National Fee Refund Policy
+- Academic
+- HEC Institutional Affiliation Policy-2024 (Public Sector Universities/DAIs ONLY)
+- Academic
+- Interim Placement of Fresh PhDs (IPFP) Policy
+- Academic
+- Undergraduate Education Policy (V 1.1)
+- Academic
+- Graduate Education Policy (GEP-2023)
+- Academic
+- Campus Security and Surveillance Policy
+- Academic
+- Research & Innovation Policies
+- Research
+- National Fee-Refund Policy
+- Academic
+- Open and Distance Learning (ODL) Policy
+- Academic
+- Policy on Drug and Tobacco Abuse in Higher Education Institutions
+- Academic
+- Revised Policy on Protection against Harassment in Higher Education Institutions
+- Academic
+- Standardization of SEMESTER System in HEIs
+- Academic
+- Transnational Education Policy (TNE)
+- Academic
+- Plagiarism Policy
+- Research
+- Policy for Student with Disabilities at Higher Education Institutions in Pakistan
+- Academic
+Reset Filters

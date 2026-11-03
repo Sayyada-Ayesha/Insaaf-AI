@@ -1,0 +1,19 @@
+# Keep the build context lean and NEVER bake secrets into the image.
+node_modules
+dist
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+*.log
+npm-debug.log*
+puppeteer-out.txt
+# Local Windows launchers and scratch/test harnesses are not needed in the image.
+*.bat
+test*.cjs
+test*.js
+_anprobe*.cjs
+# Local Firebase emulator / tooling caches
+.firebase
+coverage

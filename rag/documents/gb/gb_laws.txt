@@ -1,0 +1,69 @@
+# Gilgit-Baltistan — Legal System and Laws
+# Coverage: GB constitutional framework (GB Governance Order 2018, successor of the 2009
+# Empowerment and Self-Governance Order), GB Assembly and courts, application of Pakistani
+# federal laws with adaptations, and GB Council. Coverage level and verification status are
+# stated per section.
+
+[SECTION: GB_READING_NOTE]
+Gilgit-Baltistan is administered under the GB Governance Order 2018 (replacing the Gilgit-Baltistan
+(Empowerment and Self-Governance) Order, 2009). GB has a Legislative Assembly, a Chief Minister,
+a Governor, and its own courts (GB Chief Court and GB Supreme Appellate Court). Federal statutes
+apply in GB to the extent provided by the GB Orders; GB-specific laws adapt the Pakistani codes.
+Do not answer GB questions with Islamabad's exact statutory regime without noting the GB layer.
+
+[SECTION: GB_GOVERNANCE_ORDER_2018]
+LAW: Gilgit-Baltistan Governance Order, 2018 (President's Order). COVERAGE: PARTIAL.
+STRUCTURE (summary of the operative framework):
+- GB Legislative Assembly with reserved seats for women and minorities (seat allocation as fixed
+  in the Order) legislates on GB subjects in the GB Legislative List.
+- Chief Minister and Cabinet exercise executive authority for GB subjects, headed by a Governor.
+- Judicial system: GB Chief Court (High Court-equivalent) and GB Supreme Appellate Court for
+  appeals; Supreme Court of Pakistan's jurisdiction over GB is not automatic (constitutional
+  status of GB remains distinct; litigation about GB's constitutional status continues).
+- Gilgit-Baltistan Council: chaired by the Prime Minister of Pakistan; legislates and oversees
+  subjects in the Council Legislative List under the Order.
+- Fundamental rights: the Order provides for fundamental rights modelled on the Constitution of
+  Pakistan.
+SOURCE: Gilgit-Baltistan Governance Order, 2018. VERIFICATION: verified as to framework (2018
+Order replaced the 2009 Order; Assembly, Chief Minister, Governor, Chief Court, Supreme Appellate
+Court and GB Council structure is well-established).
+
+[SECTION: GB_ORDER_2009_HISTORY]
+HISTORY: Gilgit-Baltistan (Empowerment and Self-Governance) Order, 2009 was the predecessor
+framework (elected Legislative Assembly replacing the earlier Northern Areas Legislative Council);
+it was superseded by the GB Governance Order 2018. The 2009 Order is retained here for amendment
+history: original framework -> 2018 Order -> current text.
+SOURCE: GB (Empowerment and Self-Governance) Order, 2009; GB Governance Order 2018.
+VERIFICATION: verified as to the succession.
+
+[SECTION: GB_CODES_APPLICATION]
+LAWS: application of Pakistani codes in GB. COVERAGE: SUMMARY.
+SUBSTANCE: the Pakistan Penal Code 1860, Code of Criminal Procedure 1898, Code of Civil Procedure
+1908 and related federal statutes apply in GB with adaptations made under the GB Orders and GB
+legislation; GB amendments may differ from federal amendments. Do not assume a PPC or CrPC
+section applies in GB in the same form without checking the GB adaptation.
+SOURCE: GB Orders and adaptations. VERIFICATION: metadata-verified.
+
+[SECTION: GB_LAND_REVENUE]
+LAW: GB land and revenue administration. COVERAGE: SUMMARY.
+SUBSTANCE: GB revenue administration follows the settlement/record-of-rights pattern (patwari,
+tehsildar hierarchy) with GB-specific rules; land in GB is predominantly state/community land
+with special settlement arrangements.
+SOURCE: GB revenue rules. VERIFICATION: metadata-verified.
+
+[SECTION: GB_LOCAL_GOVT]
+LAW: GB local government legislation. COVERAGE: SUMMARY.
+SUBSTANCE: GB local government framework provides district councils and local bodies delivering
+municipal functions.
+SOURCE: GB local government legislation. VERIFICATION: metadata-verified.
+
+[SECTION: GB_FAMILY_LAWS]
+LAW: GB family-law administration. COVERAGE: SUMMARY.
+SUBSTANCE: family-law administration (nikah registration, divorce notification, family courts)
+follows the Muslim Family Laws Ordinance 1961 pattern with GB adaptations.
+SOURCE: GB family-law instruments. VERIFICATION: metadata-verified.
+
+[SECTION: GB_LIMITS]
+LIMITS OF THIS FILE: GB Orders are NOT reproduced end-to-end; framework provisions are given
+with honest verification labels. GB's constitutional status litigation and any post-2018 Orders
+must be checked against official sources before being quoted.

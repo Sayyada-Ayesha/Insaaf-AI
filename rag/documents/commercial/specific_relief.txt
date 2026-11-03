@@ -1,0 +1,29 @@
+[SECTION: 1] Specific Relief Act, 1877 (Act I of 1877) — Relates to specific relief available in civil courts in Pakistan. Source: Pakistan Code (pakistancode.gov.pk). Status: CURRENT.
+
+[SECTION: 2] Specific relief defined — Specific relief is relief in the form of a decree for specific performance of a contract, or for an injunction, or for a declaratory decree.
+
+[SECTION: 3] Specific performance of contract — The court may decree specific performance of a contract when: (a) damages are not an adequate remedy; (b) the contract is for the transfer of identified immovable property; (c) the contract is for the transfer of unique movable property; (d) damages cannot be ascertained.
+
+[SECTION: 4] Contracts which cannot be specifically enforced — Contracts for personal service or dependent on personal qualifications; contracts requiring continuous supervision; contracts where consent was not free; contracts where defendant could not be compensated by damages.
+
+[SECTION: 5] Discretion of court — Specific performance is a discretionary remedy. The court may refuse if: (a) claimant's conduct has been unfair; (b) contract is unfair or oppressive; (c) enforcement would cause undue hardship; (d) claimant has failed to perform his part.
+
+[SECTION: 6] Declaratory decrees — Any person entitled to any legal character or right to any property may institute a suit for a declaration of his right, against any person denying or interested in denying that right.
+
+[SECTION: 7] Effect of declaratory decree — A declaratory decree binds only the parties and those claiming through them. The court may not make a declaration which is useless or which relates to a matter which has already been decided.
+
+[SECTION: 8] Injunctions — An injunction is a judicial order requiring a person to do or refrain from doing a particular act. Injunctions may be: (a) temporary (pending disposal of suit); (b) perpetual (final decree); (c) mandatory (requiring positive act); (d) prohibitory (restraining from act).
+
+[SECTION: 9] Temporary injunctions — Governed by CPC Order 39. The court may grant temporary injunction where: (a) property is in danger of being wasted, damaged or alienated; (b) defendant threatens to dispossess plaintiff; (c) defendant threatens to remove/dispose of property.
+
+[SECTION: 10] Perpetual injunctions — Granted by final decree to permanently restrain the defendant from doing a particular act. The existence of a legal right and its actual or threatened infringement must be established.
+
+[SECTION: 11] Mandatory injunctions — Compel the defendant to perform a positive act to remedy a wrong. Granted where the plaintiff has a strong case and damages are inadequate.
+
+[SECTION: 12] Quia timet injunctions — Preventive injunctions granted where an injury is imminent or threatened, before actual harm occurs. The plaintiff must show a strong probability of injury.
+
+[SECTION: 13] Recovery of specific immovable property — A person entitled to possession of specific immovable property may recover it by a suit for possession. Title must be proved.
+
+[SECTION: 14] Recovery of specific movable property — A person entitled to possession of specific movable property may recover it. If the property has been wrongfully taken, the suit must be within 3 years.
+
+[SECTION: 15] Pre-emption — A right to pre-emption allows a co-sharer or neighbor to purchase property sold to a third party, subject to fulfilling conditions and making payment. Governed by provincial pre-emption laws (Punjab Pre-emption Act 1991).

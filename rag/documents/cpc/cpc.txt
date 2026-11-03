@@ -1,0 +1,124 @@
+[SECTION: 9]
+Courts to try all civil suits unless barred
+The Courts shall (subject to the provisions herein contained) have jurisdiction to try all suits of a civil nature excepting suits of which their cognizance is either expressly or impliedly barred.
+
+[SECTION: 10]
+Stay of suit (res sub judice)
+No Court shall proceed with the trial of any suit in which the matter in issue is also directly and substantially in issue in a previously instituted suit between the same parties, or between parties under whom they or any of them claim litigating under the same title where such suit is pending in the same or any other Court in Pakistan having jurisdiction to grant the relief claimed.
+
+[SECTION: 11]
+Res judicata
+No Court shall try any suit or issue in which the matter directly and substantially in issue has been directly and substantially in issue in a former suit between the same parties, or between parties under whom they or any of them claim, litigating under the same title, in a Court competent to try such subsequent suit.
+
+[SECTION: 12]
+Bar to further suit
+Where a plaintiff is precluded by rules from instituting a further suit in respect of any particular cause of action, he shall not be entitled to institute a suit in respect of such cause of action in any Court to which this Code applies.
+
+[SECTION: 26]
+Institution of suits
+Every suit shall be instituted by the presentation of a plaint or in such other manner as may be prescribed.
+
+[SECTION: 27]
+Summons to defendants
+Where a suit has been duly instituted, a summons may be issued to the defendant to appear and answer the claim and may be served in manner prescribed.
+
+[SECTION: 33]
+Interest
+The Court may, in the decree, order interest at such rate as it deems reasonable to be paid on the principal sum adjudged.
+
+[SECTION: 35]
+Costs
+Subject to such conditions and limitations as may be prescribed, and to the provisions of any law for the time being in force, the costs of and incident to all suits shall be in the discretion of the Court.
+
+[SECTION: 39]
+Transfer of cases
+The Court which passed a decree may, on the application of the decree-holder, send it for execution to another Court of competent jurisdiction.
+
+[SECTION: 47]
+Questions to be determined by Court executing decree
+All questions arising between the parties to the suit in which the decree was passed, or their representatives, and relating to the execution, discharge or satisfaction of the decree, shall be determined by the Court executing the decree and not by a separate suit.
+
+[SECTION: 51]
+Powers of Court to enforce execution
+Subject to such conditions and limitations as may be prescribed, the Court may, on the application of the decree-holder, order execution of the decree.
+
+[SECTION: 54]
+Arrest and detention
+A judgment-debtor may be arrested in execution of a decree at any hour and on any day, and shall, as soon as practicable, be brought before the Court.
+
+[SECTION: 94]
+Supplemental proceedings (temporary injunction, etc.)
+In order to prevent the ends of justice from being defeated the Court may, if it is so prescribed, issue a warrant to arrest the defendant, direct the defendant to furnish security, or grant a temporary injunction.
+
+[SECTION: 96]
+Appeal from original decree
+Save where otherwise expressly provided in the body of this Code or by any other law for the time being in force, an appeal shall lie from every decree passed by any Court exercising original jurisdiction.
+
+[SECTION: 100]
+Second appeal
+Save where otherwise expressly provided in the body of this Code or by any other law for the time being in force, an appeal shall lie to the High Court from every decree passed in appeal by any Court subordinate to a High Court.
+
+[SECTION: 104]
+Appeal from orders
+An appeal shall lie from the following orders, and save as otherwise expressly provided in the body of this Code or by any law for the time being in force, from no other orders.
+
+[SECTION: 114]
+Review
+Subject as aforesaid, any person considering himself aggrieved may apply for a review of judgment to the Court which passed the decree or made the order.
+
+[SECTION: 115]
+Revision
+The High Court may call for the record of any case which has been decided by any Court subordinate to such High Court and in which no appeal lies thereto.
+
+[SECTION: ORDER_VI]
+Pleadings generally
+"Pleading", shall mean plaint or written statement.
+
+[SECTION: ORDER_VII]
+Plaint
+The plaint shall contain the name of the Court, name, description and place of residence of the plaintiff and defendant, and facts constituting the cause of action.
+
+[SECTION: ORDER_VIII]
+Written statement, set-off, and counter-claim
+The defendant shall, at or before the first hearing or within such time as the Court may permit, present a written statement of his defence.
+
+[SECTION: ORDER_IX]
+Appearance of parties and consequence of non-appearance
+On the day fixed in the summons for the defendant to appear and answer, the parties shall be in attendance at the Court-house in person or by their respective pleaders.
+
+[SECTION: ORDER_XIV]
+Settlement of issues
+Issues arise when a material proposition of fact or law is affirmed by the one party and denied by the other.
+
+[SECTION: ORDER_XVIII]
+Hearing of suit and examination of witnesses
+The plaintiff has the right to begin unless the defendant admits the facts alleged by the plaintiff and contends that either in point of law or on some additional facts alleged by the defendant the plaintiff is not entitled to any part of the relief.
+
+[SECTION: ORDER_XX]
+Judgment and decree
+The Court, after the case has been heard, shall pronounce judgment in open Court, either at once or on some future day, of which due notice shall be given to the parties or their pleaders.
+
+[SECTION: ORDER_XXI]
+Execution of decrees and orders
+The provisions relating to the execution of decrees and orders.
+
+[SECTION: ORDER_XXXVIII]
+Arrest before judgment
+Where at any stage of a suit, the Court is satisfied that the defendant, with intent to delay the plaintiff, or to avoid any process of the Court or to obstruct or delay the execution of any decree that may be passed against him, is about to abscond or leave the local limits of the jurisdiction of the Court, it may issue a warrant to arrest the defendant.
+
+[SECTION: ORDER_XXXIX]
+Temporary injunctions and interlocutory orders
+Where in any suit it is proved by affidavit or otherwise that any property in dispute in a suit is in danger of being wasted, damaged or alienated by any party to the suit, the Court may by order grant a temporary injunction.
+
+[SECTION: CIVIL_SUIT_PROCEDURE]
+Civil Suit Procedure in Pakistan
+1. Institution: Plaintiff files plaint (written complaint) in appropriate Civil Court with requisite court fee.
+2. Summons: Court issues summons to defendant.
+3. Written Statement: Defendant files written statement within 30 days.
+4. Framing of Issues: Court frames the disputed issues to be decided.
+5. Evidence: Both parties present documentary and oral evidence.
+6. Arguments: Final arguments by both sides.
+7. Judgment & Decree: Court pronounces judgment and passes decree.
+8. Appeal: Dissatisfied party may file appeal in the appellate court within 30 days.
+9. Execution: Successful party may apply for execution of decree.
+Source: Code of Civil Procedure, 1908 (Act V of 1908); available at pakistancode.gov.pk

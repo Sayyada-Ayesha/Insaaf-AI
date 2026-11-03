@@ -1,0 +1,19 @@
+[SECTION: KP_QAC_HED_NOTIFICATION_LIST_WITH_PUBLISHED_DATES]
+Title: KP QAC HED notification list with published dates
+Authority: Quality Assurance Cell, Higher Education Department, Government of Khyber Pakhtunkhwa
+Jurisdiction: Pakistan (Khyber Pakhtunkhwa)
+Source: Quality Assurance Cell, Higher Education Department, Government of Khyber Pakhtunkhwa official website
+Source URL: https://qac.hed.gkp.pk/notifications
+Retrieved: 2026-10-14
+
+1 Admission Guidelines for Associate Degree Holders — 13 Jul 2022
+2 Updated Status Report on Feedback Data of BS Colleges (Spring 2023) — 16 Jan 2024
+3 Updated Status Report on Feedback Data of Non-BS Colleges (Spring 2023) — 16 Jan 2024
+4 Updated Status Report on Feedback Data of BS Colleges For (Fall 2022) — 16 Jan 2024
+5 Updated Status Report on Feedback Data of Non-BS Colleges For (Fall 2022) — 16 Jan 2024
+6 QAC Feedback Survey Form — 24 Apr 2025
+7 QAC Feedback Survey Form — 24 Apr 2025
+Retrieval date: 2026-10-14. Verification status: list titles and published dates as shown on the page.
+The only student-facing entry in this list is "Admission Guidelines for Associate Degree Holders" (13 Jul 2022), and its attachment text was not retrieved; the register therefore proves the notice exists and is dated, not what it requires. The remaining entries are internal quality-assurance monitoring reports and a feedback survey addressed to QEC focal persons, principals and teachers, not to students.
+The main HED KP site hed.gkp.pk could not be reached on the retrieval date (no connection), so no KP Act, rules or scholarship scheme has been verified here.
+

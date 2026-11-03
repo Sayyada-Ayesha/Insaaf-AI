@@ -1,0 +1,55 @@
+[SECTION: FIR_FILING_PROCEDURE]
+Title: How to File an FIR (First Information Report) under Section 154 CrPC
+Authority: Code of Criminal Procedure, 1898 / Police Rules 1934
+Jurisdiction: All Police Stations in Pakistan
+Legal Status: Statutory Procedure
+Source URL: https://pakistancode.gov.pk
+
+Step-by-Step Procedure:
+Step 1: Go to Police Station. Visit the police station having jurisdiction over the area where offence occurred.
+Step 2: Inform Officer in Charge (SHO). Give oral or written statement of the cognizable offence.
+Step 3: Signature & Verification. If statement is oral, police officer writes it down and reads it back to complainant. Complainant signs or thumb-impresses.
+Step 4: Registration in FIR Register (Form 24.5). Police enters details into official FIR book / digital PSRMS portal.
+Step 5: Free Copy to Complainant. Police officer MUST provide a free copy of the registered FIR immediately to the complainant (Section 154 CrPC).
+
+[SECTION: FIR_REFUSAL_REMEDY_22A]
+Title: Legal Remedy When Police Refuses to Register FIR (Section 22A / 22B CrPC Application)
+Authority: Code of Criminal Procedure, 1898 (Section 22A(6) read with Section 22B)
+Jurisdiction: District Sessions Courts / High Courts of Pakistan
+Legal Status: Statutory Judicial Remedy
+Source URL: https://pakistancode.gov.pk
+
+Step-by-Step Practical Remedy:
+Step 1: Written Complaint to SP/SSP Police. Send written application via registered post or in person to the Superintendent of Police (SP / SSP / DPO) detailing refusal by SHO.
+Step 2: File Section 22A(6) Application before Ex-Officio Justice of Peace. If SP fails to act within 7 days, file an application under Section 22A(6) CrPC before the District & Sessions Judge (Ex-Officio Justice of Peace).
+Step 3: Attach Evidence. Attach affidavit, copy of written police complaint, postal receipts, and evidence of cognizable offence.
+Step 4: Court Order. The Justice of Peace calls for police report and, if cognizable offence is disclosed, issues direction to SHO to register FIR immediately.
+Step 5: Private Complaint Alternative (Section 200 CrPC). Alternatively, file a direct private complaint before the Judicial Magistrate under Section 200 CrPC.
+
+[SECTION: PRE_ARREST_BAIL_PROCEDURE]
+Title: Pre-Arrest Bail (Anticipatory Bail) Procedure under Section 498A CrPC
+Authority: High Courts & Sessions Courts of Pakistan
+Jurisdiction: All Districts of Pakistan
+Legal Status: Judicial Precedent & Statutory Provision
+Source URL: https://pakistancode.gov.pk
+
+Step-by-Step Procedure:
+Step 1: Apprehension of Unlawful Arrest. Accused facing ulterior motive, malice, or false FIR applies before Sessions Court or High Court.
+Step 2: File Petition with Affidavit. Counsel files bail application supported by affidavit, copy of FIR, and proof of ulterior motive.
+Step 3: Interim Pre-Arrest Bail Granted. Court grants interim pre-arrest bail and orders accused to join police investigation.
+Step 4: Confirmation Hearing. Court examines police investigation report (challan) and confirms pre-arrest bail or dismisses petition.
+
+[SECTION: WRIT_PETITION_199_PROCEDURE]
+Title: High Court Constitutional Writ Jurisdiction Procedure under Article 199
+Authority: Constitution of the Islamic Republic of Pakistan, 1973 (Article 199)
+Jurisdiction: Provincial High Courts (Lahore, Sindh, Peshawar, Balochistan, Islamabad)
+Legal Status: Fundamental Constitutional Remedy
+Source URL: https://pakistancode.gov.pk
+
+Types of Writs & Procedure:
+1. Habeas Corpus: To produce a person illegally detained by police, law enforcement agencies, or private persons.
+2. Mandamus: To compel a public authority to perform a statutory duty.
+3. Prohibition: To restrain a lower court/authority from exceeding its jurisdiction.
+4. Quo Warranto: To challenge illegal holding of a public office.
+5. Certiorari: To quash illegal orders of lower judicial or administrative authorities.
+Procedure: File constitutional petition directly before High Court with supporting affidavit and annexures. High Court issues notice to government/authority.

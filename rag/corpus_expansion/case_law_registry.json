@@ -1,0 +1,3199 @@
+{
+  "generatedAt": "2026-10-10T15:48:12.464Z",
+  "version": "2.0.0",
+  "disclaimer": "This registry does NOT claim to contain all Pakistani case law, nor does it claim verified full-text judgments. Entries are retrieval digests derived from the corpus (citations as recorded in each digest). provenanceStatus=DIGEST_METADATA_VERIFY_BEFORE_CITATION means the record must be verified against the official reporter before any citation or reliance.",
+  "total_records": 448,
+  "courts": {
+    "supreme_court_of_pakistan": {
+      "total_cases": 37,
+      "cases": [
+        {
+          "id": "CASE_BENAZIR_BHUTTO_V_FEDERATION",
+          "title": "Case: Benazir Bhutto v. Federation of Pakistan",
+          "docId": "sc_judgments",
+          "citation": "PLD 1988 SC 416",
+          "provenanceStatus": "DIGEST_METADATA_VERIFY_BEFORE_CITATION"
+        },
+        {
+          "id": "CASE_DARSHAN_MASIH_V_STATE",
+          "title": "Case: Darshan Masih v. The State",
+          "docId": "sc_judgments",
+          "citation": "PLD 1990 SC 513",
+          "provenanceStatus": "DIGEST_METADATA_VERIFY_BEFORE_CITATION"
+        },
+        {
+          "id": "CASE_SHEHLA_ZIA_V_WAPDA",
+          "title": "Case: Shehla Zia v. WAPDA",
+          "docId": "sc_judgments",
+          "citation": "PLD 1994 SC 693",
+          "provenanceStatus": "DIGEST_METADATA_VERIFY_BEFORE_CITATION"
+        },
+        {
+          "id": "CASE_PAKISTAN_V_PUBLIC_AT_LARGE",
+          "title": "Case: Pakistan v. Public at Large (Suo Motu)",
+          "docId": "sc_judgments",
+          "citation": "PLD 2013 SC 279",
+          "provenanceStatus": "DIGEST_METADATA_VERIFY_BEFORE_CITATION"
+        },
+        {
+          "id": "CASE_MAULVI_IQBAL_HAIDER",
+          "title": "Case: Maulvi Iqbal Haider v. Capital Development Authority",
+          "docId": "sc_judgments",
+          "citation": "PLD 2006 SC 394",
+          "provenanceStatus": "DIGEST_METADATA_VERIFY_BEFORE_CITATION"
+        },
+        {
+          "id": "CASE_SALMAN_AKRAM_RAJA",
+          "title": "Case: Salman Akram Raja v. Government of Punjab",
+          "docId": "sc_judgments",
+          "citation": "PLD 2013 SC 111",
+          "provenanceStatus": "DIGEST_METADATA_VERIFY_BEFORE_CITATION"
+        },
+        {
+          "id": "CASE_IMRANA_TIWANA",
+          "title": "Case: Imrana Tiwana v. Province of Punjab",
+          "docId": "sc_judgments",
+          "citation": "SCMR 2015",
+          "provenanceStatus": "DIGEST_METADATA_VERIFY_BEFORE_CITATION"
+        },
+        {
+          "id": "CASE_MUHAMMAD_NAWAZ_SHARIF",
+          "title": "Case: Muhammad Nawaz Sharif v. President of Pakistan",
+          "docId": "sc_judgments",
+          "citation": "PLD 1993 SC 473",
+          "provenanceStatus": "DIGEST_METADATA_VERIFY_BEFORE_CITATION"
+        },
+        {
+          "id": "CASE_ASMA_JILANI",
+          "title": "Asma Jilani v. Government of Punjab (PLD 1972 SC 139) — Supreme Court rejected the doctrine of revolutionary legality. Held: the recognition of a revo",
+          "docId": "expanded_case_law",
+          "citation": "PLD 1972 SC 139",
+          "provenanceStatus": "DIGEST_METADATA_VERIFY_BEFORE_CITATION"
+        },
+        {
+          "id": "CASE_ZULFIQAR_ALI",
+          "title": "Zulfiqar Ali Bhutto v. State (PLD 1979 SC 53) — The first and only conviction of a former Prime Minister for murder. Constitutional questions on trial",
+          "docId": "expanded_case_law",
+          "citation": "PLD 1979 SC 53",
+          "provenanceStatus": "DIGEST_METADATA_VERIFY_BEFORE_CITATION"
+        },
+        {
+          "id": "CASE_INAMUL_HAQ",
+          "title": "Al-Jihad Trust v. Federation of Pakistan (PLD 1996 SC 324) — Consultation process for appointment of judges under Article 175-A/177. Court held that '",
+          "docId": "expanded_case_law",
+          "citation": "PLD 1996 SC 324",
+          "provenanceStatus": "DIGEST_METADATA_VERIFY_BEFORE_CITATION"
+        },
+        {
+          "id": "AUDIT_NOTE",
+          "title": "The following entries were removed during the 2026-09-07 source audit due to unverifiable or fabricated citations: Mehrunisa v. Government of Punjab (",
+          "docId": "expanded_case_law",
+          "citation": "PLD 2000 SC 494",
+          "provenanceStatus": "DIGEST_METADATA_VERIFY_BEFORE_CITATION"
+        },
+        {
+          "id": "CASE_SCP_2026_01",
+          "title": "Court: Supreme Court of Pakistan. Subject: Banking / Recovery Suits. Case No: C.P.L.A.1481-L/2019. Title: M/s. Crescent Spinning Mills Ltd. v. Citiban",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_02",
+          "title": "Court: Supreme Court of Pakistan. Subject: Seniority / Challenge to seniority list. Case No: C.P.L.A.5091/2025. Title: Sahibzada Hassan Ali and others",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_03",
+          "title": "Court: Supreme Court of Pakistan. Subject: Competition Commission of Pakistan / Monopolistic Practices and Abuse of Dominant Position. Case No: C.A.36",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_04",
+          "title": "Court: Supreme Court of Pakistan. Subject: Regularization of Service / Project Employment. Case No: C.P.L.A.578-P/2024. Title: Dean, Pakistan Institut",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_05",
+          "title": "Court: Supreme Court of Pakistan. Subject: Death Sentence / Sessions. Case No: Crl.R.P.89/2025. Title: Zahir Zakir Jaffar v. The State through A.G. Is",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_06",
+          "title": "Court: Supreme Court of Pakistan. Subject: Life Imprisonment / Sessions. Case No: J.P.73/2020. Title: Abdul Razzaq v. The State. Author Judge: Mr. Jus",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_07",
+          "title": "Court: Supreme Court of Pakistan. Subject: Life Imprisonment / Sessions. Case No: J.P.326/2021. Title: Faheem alias Babbly v. The State. Author Judge:",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_08",
+          "title": "Court: Supreme Court of Pakistan. Subject: Life Imprisonment / Sessions. Case No: J.P.21/2020. Title: Muhammad Nadeem alias Babloo and Tanveer alias S",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_09",
+          "title": "Court: Supreme Court of Pakistan. Subject: Life Imprisonment / Sessions. Case No: J.P.562/2022. Title: Nadeem v. The State. Author Judge: Mr. Justice ",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_10",
+          "title": "Court: Supreme Court of Pakistan. Subject: Life Imprisonment / Drug Laws. Case No: Crl.A.20-Q/2023. Title: Muhammad Hussain v. The State. Author Judge",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_11",
+          "title": "Court: Supreme Court of Pakistan. Subject: Contempt of Court / Non-compliance of Court Order. Case No: Crl.A.400/2025. Title: Mashal Azam v. Ghafoor A",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_12",
+          "title": "Court: Supreme Court of Pakistan. Subject: Against Remand Order. Case No: C.P.L.A.624/2023. Title: Muhammad Iftikhar Shoukat v. Haji Muhammad Hayat (d",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_13",
+          "title": "Court: Supreme Court of Pakistan. Subject: Regularization of Service / From date of initial appointment. Case No: C.P.L.A.2354-L/2025. Title: The Secr",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_14",
+          "title": "Court: Supreme Court of Pakistan. Subject: Declaration / Ownership. Case No: C.A.19-P/2015. Title: Ghani Rehman since dead through L.Rs and others v. ",
+          "docId": "scp_fcc_official_records",
+          "citation": "2026 SCP 254",
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_15",
+          "title": "Court: Supreme Court of Pakistan. Subject: Death Sentence / Sessions. Case No: J.P.617/2025. Title: Wasim Abbas v. The State. Author Judge: Mr. Justic",
+          "docId": "scp_fcc_official_records",
+          "citation": "2026 SCP 253",
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_16",
+          "title": "Court: Supreme Court of Pakistan. Subject: Death Sentence / Sessions. Case No: J.P.321/2019. Title: Muhammad Irfan and 2 others v. The State. Author J",
+          "docId": "scp_fcc_official_records",
+          "citation": "2026 SCP 252",
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_17",
+          "title": "Court: Supreme Court of Pakistan. Subject: Review Jurisdiction. Case No: Crl.M.Appeal.9/2017. Title: Sher Azam v. The State through A.G. Khyber Pakhtu",
+          "docId": "scp_fcc_official_records",
+          "citation": "2026 SCP 251",
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_18",
+          "title": "Court: Supreme Court of Pakistan. Subject: Family / Guardian and Wards / Jactitation of Marriage. Case No: C.A.193-L/2010. Title: Mst. Sarwar Mai, etc",
+          "docId": "scp_fcc_official_records",
+          "citation": "2026 SCP 250",
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_19",
+          "title": "Court: Supreme Court of Pakistan. Subject: Land Acquisition / Compensation. Case No: C.A.8-P/2017. Title: Land Acquisition Collector / Provincial Hous",
+          "docId": "scp_fcc_official_records",
+          "citation": "2026 SCP 249",
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_20",
+          "title": "Court: Supreme Court of Pakistan. Subject: Major Penalty / Dismissal from Service / Misconduct. Case No: C.P.L.A.4364/2024. Title: Ellahi Bakhsh Bugti",
+          "docId": "scp_fcc_official_records",
+          "citation": "2026 SCP 248",
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_21",
+          "title": "Court: Supreme Court of Pakistan. Subject: Specific performance / Agreement to Sell. Case No: C.A.435-L/2012. Title: Saad Younis, etc v. Ghulam Bari a",
+          "docId": "scp_fcc_official_records",
+          "citation": "2026 SCP 247",
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_22",
+          "title": "Court: Supreme Court of Pakistan. Subject: Tax Laws / Federal Tax / Income Tax. Case No: C.A.2480/2016. Title: Commissioner Inland Revenue (Legal) RTO",
+          "docId": "scp_fcc_official_records",
+          "citation": "2026 SCP 246",
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_23",
+          "title": "Court: Supreme Court of Pakistan. Subject: Consumer Protection. Case No: C.P.L.A.5395/2025. Title: Muhammad Ishaq v. Fardayaz Khan and others. Author ",
+          "docId": "scp_fcc_official_records",
+          "citation": "2026 SCP 245",
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_24",
+          "title": "Court: Supreme Court of Pakistan. Subject: Bail After Arrest / Foreigners Act, 1946. Case No: Crl.P.L.A.894/2026. Title: Jalat Khan v. The State throu",
+          "docId": "scp_fcc_official_records",
+          "citation": "2026 SCP 244",
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_SCP_2026_25",
+          "title": "Court: Supreme Court of Pakistan. Subject: Pre-emption Cases. Case No: C.A.357-L/2013. Title: Shakeel Ahmad, etc v. Abdul Ghaffar. Author Judge: Mr. J",
+          "docId": "scp_fcc_official_records",
+          "citation": "2026 SCP 243",
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        }
+      ]
+    },
+    "federal_shariat_court": {
+      "total_cases": 0,
+      "cases": []
+    },
+    "other_reported_court_to_verify": {
+      "total_cases": 0,
+      "cases": [],
+      "note": "CLC/CLD reporter citations; issuing court must be verified from the reporter volume"
+    },
+    "suo_motu_records_no_formal_citation": {
+      "total_cases": 5,
+      "cases": [
+        {
+          "id": "CASE_KHAKI_V_RAWALPINDI",
+          "title": "Case: Dr. Muhammad Aslam Khaki v. SSP (Operations) Rawalpindi",
+          "docId": "sc_judgments",
+          "citation": null,
+          "provenanceStatus": "DIGEST_METADATA_VERIFY_BEFORE_CITATION"
+        },
+        {
+          "id": "CASE_SUO_MOTU_1",
+          "title": "Supreme Court Suo Motu Case No. 1 of 2019 (Missing Persons Case) — Constitutional jurisdiction under Article 184(3). Court ordered production of enfor",
+          "docId": "expanded_case_law",
+          "citation": null,
+          "provenanceStatus": "DIGEST_METADATA_VERIFY_BEFORE_CITATION"
+        },
+        {
+          "id": "CASE_SUO_MOTU_ELECTION",
+          "title": "Suo Motu Case No. 4 of 2010 (Election Delay Case) — Supreme Court held that elections must be held within 90 days of dissolution under Article 224. Co",
+          "docId": "expanded_case_law",
+          "citation": null,
+          "provenanceStatus": "DIGEST_METADATA_VERIFY_BEFORE_CITATION"
+        },
+        {
+          "id": "CASE_SUO_MOTU_GAS",
+          "title": "Suo Motu Case No. 12 of 2013 (Gas Load Management) — Supreme Court took suo motu notice of discriminatory gas load management by SNGPL/SSGC. Ordered f",
+          "docId": "expanded_case_law",
+          "citation": null,
+          "provenanceStatus": "DIGEST_METADATA_VERIFY_BEFORE_CITATION"
+        },
+        {
+          "id": "CASE_SUO_MOTU_SUGAR",
+          "title": "Suo Motu Case No. 7 of 2020 (Sugar Crisis) — Supreme Court took notice of sugar price manipulation and hoarding. Directed FIA investigation. Resulted ",
+          "docId": "expanded_case_law",
+          "citation": null,
+          "provenanceStatus": "DIGEST_METADATA_VERIFY_BEFORE_CITATION"
+        }
+      ],
+      "note": "Suo motu constitutional-jurisdiction records; official cause-title citations to be added when published"
+    },
+    "case_studies": {
+      "total_cases": 3,
+      "cases": [
+        {
+          "id": "CASE_STUDY_1_FIR_REFUSAL",
+          "title": "Title: Case Study 1: Registration of FIR Against Police Refusal (State v. SHO)",
+          "docId": "landmark_case_studies",
+          "citation": null,
+          "provenanceStatus": "CASE_STUDY"
+        },
+        {
+          "id": "CASE_STUDY_2_CYBER_STALKING",
+          "title": "Title: Case Study 2: Online Cyber Stalking and Blackmail Conviction under PECA",
+          "docId": "landmark_case_studies",
+          "citation": null,
+          "provenanceStatus": "CASE_STUDY"
+        },
+        {
+          "id": "CASE_STUDY_3_TENANCY_EVICTION",
+          "title": "Title: Case Study 3: Protection of Tenant against Forced Utility Disconnection",
+          "docId": "landmark_case_studies",
+          "citation": null,
+          "provenanceStatus": "CASE_STUDY"
+        }
+      ],
+      "note": "Illustrative case studies (situational teaching records), not reported judgments"
+    },
+    "federal_constitutional_court": {
+      "total_cases": 10,
+      "cases": [
+        {
+          "id": "CASE_FCC_2026_01",
+          "title": "Court: Federal Constitutional Court of Pakistan. Case No: C.P.L.A. No. 1560 of 2025. Title: C.P.L.A. No. 1560 of 2025 (case title not published on the",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_FCC_2026_02",
+          "title": "Court: Federal Constitutional Court of Pakistan. Case No: F.C.P.L.A. No. 1183 of 2026. Title: F.C.P.L.A. No. 1183 of 2026 (case title not published on",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_FCC_2026_03",
+          "title": "Court: Federal Constitutional Court of Pakistan. Case No: C.A.192-P of 2010. Title: C.A.192-P of 2010. Author Judge: Mr. Chief Justice Amin-ud-Din Kha",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_FCC_2026_04",
+          "title": "Court: Federal Constitutional Court of Pakistan. Case No: (Additional Note) Civil Appeals No.192-P of 2010. Title: Additional Note from Mr. Justice Sy",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_FCC_2026_05",
+          "title": "Court: Federal Constitutional Court of Pakistan. Case No: C.P.L.A. No. 1836-L of 2019. Title: C.P.L.A. No. 1836-L of 2019 (case title not published on",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_FCC_2026_06",
+          "title": "Court: Federal Constitutional Court of Pakistan. Case No: F.C.P.L.A. No. 1276 of 2026. Title: F.C.P.L.A. No. 1276 of 2026 (case title not published on",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_FCC_2026_07",
+          "title": "Court: Federal Constitutional Court of Pakistan. Case No: C.P.L.A. No. 4153 of 2022. Title: C.P.L.A. No. 4153 of 2022 (case title not published on the",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_FCC_2026_08",
+          "title": "Court: Federal Constitutional Court of Pakistan. Case No: C.P.L.A. No. 4245/2022 and C.M.A. No. 10808/2022 (dissenting note). Title: Dissenting Note o",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_FCC_2026_09",
+          "title": "Court: Federal Constitutional Court of Pakistan. Case No: C.P.L.A. 2793-L of 2022. Title: C.P.L.A. 2793-L of 2022 (case title not published on the FCC",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        },
+        {
+          "id": "CASE_FCC_2026_10",
+          "title": "Court: Federal Constitutional Court of Pakistan. Case No: C.P.L.A. No. 4245/2022 and C.M.A. No. 10808/2022. Title: C.P.L.A. No. 4245/2022 and C.M.A. N",
+          "docId": "scp_fcc_official_records",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_COURT_METADATA"
+        }
+      ]
+    },
+    "lahore_high_court": {
+      "total_cases": 50,
+      "cases": [
+        {
+          "id": "LHC_CASE_001",
+          "title": "Service 17945/25 (Baber Maseeh Vs Cantonment Executive Officer Sargodha etc).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5569",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_002",
+          "title": "Crl. Misc. 43416/26 (Ali Shahzad alias Shan Ali Vs The State etc).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5543",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_003",
+          "title": "Writ Petition 17594/20 (All Pakistan Markazi Union Pan Vs Federation of Pakistan etc).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5508",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_004",
+          "title": "Service 45728/24 (Azim Uddin Zahid Vs Government of Punjab etc.).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5482",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_005",
+          "title": "Misc. Writ 55244/25 (Farah Hassan & 5 others Vs Additional District & Sessions Judge etc.).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5473",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_006",
+          "title": "Misc. Writ 30572/26 (Hafiz Ghazanfar Ali Vs Province of Punjab etc).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5456",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_007",
+          "title": "Crl. Misc-Post-arrest Bail-PPC 2598-B-26 (MUHAMMAD SHAKEEL VS STATE ETC ).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5453",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_008",
+          "title": "Crl. Appeal-Against Interim Order-CNSA 221-25 (MUHAMMAD ARSLAN VS THE STATE ETC.).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2025LHC8715",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_009",
+          "title": "Crl. Appeal-Against Conviction-Anti-Rape Act 572-24 (MUHAMMAD AZHAR VS THE STATE ETC).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2025LHC8707",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_010",
+          "title": "Writ Petition-Service-Suspension 4833-26 (SHAHBAZ ANWAR VS PROVINCE OF PUNJAB ETC.).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5439",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_011",
+          "title": "Writ Petition 33829/26 (LESCO Through Secretary Vs Federation of Pakistan etc.).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5409",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_012",
+          "title": "Service 44193/22 (Muhammad Akram Vs Province of Punjab etc).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5401",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_013",
+          "title": "Criminal Proceedings 46868/26 (Muhammad Aslam Vs Additional Sessions Judge etc).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5390",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_014",
+          "title": "Crl. Misc.-Post-arrest Bail 1313-B-26 (MUHAMMAD FAZIL VS STATE ETC ).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5385",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_015",
+          "title": "Crl. Misc.-Pre-arrest Bail-Under Section 498 Cr.PC 2930-B-26 (SYED TARIQ HUSSAIN BUKHARI VS THE STATE ETC).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5381",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_016",
+          "title": "First Appeal Against Order(F.A.O.) 244285/18 (Mr. Ghulam Ali Zahid Chaudhry etc. Vs. Damas Jewellary LLC).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2025LHC8701",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_017",
+          "title": "Family 21804/20 (Dr. Rukhsana Kausar etc Vs Shahid Nazeer etc).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5363",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_018",
+          "title": "Crl. Misc.-Post-arrest Bail 5377-B-26 (RIAZ HUSSAIN VS STATE & 1 OTHER ).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5349",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_019",
+          "title": "Crl. Misc. 35608/26 (Muhammad Sarwar Vs The State etc).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5345",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_020",
+          "title": "Jail Appeal 12055/22 (Umar Hayat Vs The State).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5317",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_021",
+          "title": "Crl. Appeal-Against Conviction-CNSA 500-24 (ZULFIQAR ALI VS STATE).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2025LHC8693",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_022",
+          "title": "Crl. Misc. 40200/26 (Austin Sabir Vs The State etc).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5313",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_023",
+          "title": "Crl. Misc.-Pre-arrest Bail-Under Section 498 Cr.PC 3115-B-26 (MUHAMMAD ISHFAQ ALIAS ISHTIAQ VS THE STATE ETC.).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5308",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_024",
+          "title": "Crl. Misc. 33563/26 (Muhammad Abbas Vs The State etc).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5300",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_025",
+          "title": "Service 6323/26 (Shafique Khushnood Vs MS General Hospital etc.).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5289",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_026",
+          "title": "Crl. Misc.-Post-arrest Bail 5827-B-26 (MUHAMMAD AKHTAR & 1 OTHER VS STATE ETC ).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5264",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_027",
+          "title": "Crl. Misc. 46375/26 (Masood Aslam Vs The State etc).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC5260",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_028",
+          "title": "Writ Petition-Civil Proceedings-Rent 4596-26 (MUHAMMAD MEHBOOB VS ADJ ETC.).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC4955",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_029",
+          "title": "C.Ref. (Customs Reference) 7-25 (COLLECTOR COLLECTORATE OF CUSTOMS (ENFORCEMENT) MULTAN VS CUSTOMS APPELLATE TRIBUNAL ETC ).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC4944",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_030",
+          "title": "Regular First Appeal-Regular First Appeal (Final Decree) 161-24 (MUHAMMAD ABID SALEEM VS MST. JAFARAN BIBI ).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC4936",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_031",
+          "title": "Regular First Appeal-Regular First Appeal (Final Decree)-Appeal u/s. 96 CPC 298-25 (SHEIKH SAEED AHMAD VS RUKHSANA JABEEN ETC ).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC4929",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_032",
+          "title": "Crl. Appeal 7335/22 (Tanveer . Vs The State etc.).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC4903",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_033",
+          "title": "Crl. Misc. 76474/25 (Muhammad Usman Vs The State etc.).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC4884",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_034",
+          "title": "Writ Petition-Civil Proceedings-Rent 1877-26 (MST. BALQEES BEGUM VS ADJ ETC ).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC4874",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_035",
+          "title": "Crl. Misc.-Pre-arrest Bail 1974-B-26 (HAMMAD ALI ETC VS STATE ).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC4849",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_CASE_036",
+          "title": "Writ Petition-Civil Proceedings-Rent 2765-26 (MUHAMMAD WASEEM TAHIR & 1 OTHERS VS ADJ ETC ).",
+          "docId": "lhc_fulltext_2026",
+          "citation": "2026LHC4835",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "LHC_IDX_001",
+          "title": "Court: Lahore High Court, Lahore. Case No: Crl. Misc. 33164/26. Title: Crl. Misc. 33164/26 (Iftikhar Ahmad Vs The State etc). Author Judge: Mr. Justic",
+          "docId": "lhc_index_2026",
+          "citation": "2026LHC4824",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "LHC_IDX_002",
+          "title": "Court: Lahore High Court, Lahore. Case No: Crl. Misc. 41170/26. Title: Crl. Misc. 41170/26 (Muhammad Tahir Vs The State etc). Author Judge: Mr. Justic",
+          "docId": "lhc_index_2026",
+          "citation": "2026LHC4814",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "LHC_IDX_003",
+          "title": "Court: Lahore High Court, Lahore. Case No: Crl. Appeal 31263/22. Title: Crl. Appeal 31263/22 (Manazir Ali Vs The State etc). Author Judge: Mr. Justice",
+          "docId": "lhc_index_2026",
+          "citation": "2026LHC4807",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "LHC_IDX_004",
+          "title": "Court: Lahore High Court, Lahore. Case No: Criminal Proceedings 41376/26. Title: Criminal Proceedings 41376/26 (Faisal Manzoor Vs District & Sessions ",
+          "docId": "lhc_index_2026",
+          "citation": "2026LHC4800",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "LHC_IDX_005",
+          "title": "Court: Lahore High Court, Lahore. Case No: Crl. Misc. 39870/26. Title: Crl. Misc. 39870/26 (Umer Farooq alias Ahtisham Vs The State etc). Author Judge",
+          "docId": "lhc_index_2026",
+          "citation": "2026LHC4789",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "LHC_IDX_006",
+          "title": "Court: Lahore High Court, Lahore. Case No: Crl. Appeal 20513/21. Title: Crl. Appeal 20513/21 (Abid Ali Vs The State etc). Author Judge: Mr. Justice Ta",
+          "docId": "lhc_index_2026",
+          "citation": "2026LHC4772",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "LHC_IDX_007",
+          "title": "Court: Lahore High Court, Lahore. Case No: Family 20300/23. Title: Family 20300/23 (Arslan . Vs Nisha Shahid etc). Author Judge: Mr. Justice Mohsin Ak",
+          "docId": "lhc_index_2026",
+          "citation": "2026LHC4758",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "LHC_IDX_008",
+          "title": "Court: Lahore High Court, Lahore. Case No: Civil Revision 20710/20. Title: Civil Revision 20710/20 (Mushtaq Ahmad etc Vs POP Through DC etc). Author J",
+          "docId": "lhc_index_2026",
+          "citation": "2026LHC4741",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "LHC_IDX_009",
+          "title": "Court: Lahore High Court, Lahore. Case No: Family 40585/26. Title: Family 40585/26 (Muhammad Iqbal Afzal Vs Judge Family Court etc). Author Judge: Mr.",
+          "docId": "lhc_index_2026",
+          "citation": "2026LHC4731",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "LHC_IDX_010",
+          "title": "Court: Lahore High Court, Lahore. Case No: Civil Revision 182375/18. Title: Civil Revision 182375/18 (Lesco etc Vs Sardar Muhammad Yaseen). Author Jud",
+          "docId": "lhc_index_2026",
+          "citation": "2026LHC4722",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "LHC_IDX_011",
+          "title": "Court: Lahore High Court, Lahore. Case No: Development Authorities 49830/22. Title: Development Authorities 49830/22 (AGRICS Cooperative Housing Socie",
+          "docId": "lhc_index_2026",
+          "citation": "2026LHC4699",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "LHC_IDX_012",
+          "title": "Court: Lahore High Court, Lahore. Case No: Criminal Proceedings 30718/26. Title: Criminal Proceedings 30718/26 (Muhammad Abid Vs The State etc). Autho",
+          "docId": "lhc_index_2026",
+          "citation": "2026LHC4694",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "LHC_IDX_013",
+          "title": "Court: Lahore High Court, Lahore. Case No: Writ Petition-Religion-License of Tazia 5411-22. Title: Writ Petition-Religion-License of Tazia 5411-22 (SY",
+          "docId": "lhc_index_2026",
+          "citation": "2026LHC4681",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "LHC_IDX_014",
+          "title": "Court: Lahore High Court, Lahore. Case No: Misc. Writ 42647/26. Title: Misc. Writ 42647/26 (Ms Al-Kabir Town Ptv Ltd. through Ammad Naseer Chaudhary V",
+          "docId": "lhc_index_2026",
+          "citation": "2026LHC4672",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        }
+      ]
+    },
+    "islamabad_high_court": {
+      "total_cases": 20,
+      "cases": [
+        {
+          "id": "IHC_CASE_001",
+          "title": "Fauji Fertilizer Company Ltd. VS FOP etc.",
+          "docId": "ihc_fulltext_2026",
+          "citation": null,
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "IHC_CASE_002",
+          "title": "Muhammad Muneeb Arshad VS Mst. Ammara Maroof etc.",
+          "docId": "ihc_fulltext_2026",
+          "citation": "2026 YLR 1121",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "IHC_CASE_003",
+          "title": "Iskander M. Khan VS Chairman, Pakistan Standards and Quality Control Authority, Islamabad.",
+          "docId": "ihc_fulltext_2026",
+          "citation": null,
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "IHC_CASE_004",
+          "title": "Ms. Asifa Furqan VS Custom Appellate Tribunal, Islamabad etc..",
+          "docId": "ihc_fulltext_2026",
+          "citation": null,
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "IHC_CASE_005",
+          "title": "Allied Bank Ltd VS M/s Electromech Engineering Service, etc.",
+          "docId": "ihc_fulltext_2026",
+          "citation": null,
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "IHC_CASE_006",
+          "title": "Khalid Anwar VS FIA etc.",
+          "docId": "ihc_fulltext_2026",
+          "citation": null,
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "IHC_IDX_001",
+          "title": "Court: Islamabad High Court, Islamabad. Case No: Writ Petition-2239-2018. Title: Pakistan Telecommunication Company Ltd VS Pakistan & others. Author J",
+          "docId": "ihc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "IHC_IDX_002",
+          "title": "Court: Islamabad High Court, Islamabad. Case No: Writ Petition-4348-2016. Title: M/s Pak Telecom Mobile Ltd. VS Chief Commissioner IR, etc.. Author Ju",
+          "docId": "ihc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "IHC_IDX_003",
+          "title": "Court: Islamabad High Court, Islamabad. Case No: Writ Petition-1125-2026. Title: M/s CMPAK Limited VS FOP etc.. Author Judge: Honourable Mr. Justice M",
+          "docId": "ihc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "IHC_IDX_004",
+          "title": "Court: Islamabad High Court, Islamabad. Case No: Writ Petition-2665-2025. Title: Maliha Malik VS FOP & others. Author Judge: Honourable Mr. Justice Mu",
+          "docId": "ihc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "IHC_IDX_005",
+          "title": "Court: Islamabad High Court, Islamabad. Case No: Writ Petition-4971-2025. Title: Rana Muhammad Irfan VS Secretary Jammu & Kashmir Housing Society etc.",
+          "docId": "ihc_index_2026",
+          "citation": "2026 YLR 1248",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "IHC_IDX_006",
+          "title": "Court: Islamabad High Court, Islamabad. Case No: Writ Petition-3124-2023. Title: M/s Ajmal & Brothers VS FOP through Secretary Revenue Division/Chairm",
+          "docId": "ihc_index_2026",
+          "citation": "2026 PTD 816",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "IHC_IDX_007",
+          "title": "Court: Islamabad High Court, Islamabad. Case No: Intra Court Appeal-214-2022. Title: Gul Faraz VS ED, FAB etc.. Author Judge: Honourable Mr. Justice M",
+          "docId": "ihc_index_2026",
+          "citation": "2026 PLCCS 181",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "IHC_IDX_008",
+          "title": "Court: Islamabad High Court, Islamabad. Case No: Criminal Revision-152-2025. Title: Muhammad Shoaib Hassan VS The State etc.. Author Judge: Honourable",
+          "docId": "ihc_index_2026",
+          "citation": "2026 PCRLJ 277",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "IHC_IDX_009",
+          "title": "Court: Islamabad High Court, Islamabad. Case No: Writ Petition-2820-2025. Title: RAHEELA ZAHEER VS ADJ WEST ISB ETC. Author Judge: Honourable Mr. Just",
+          "docId": "ihc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "IHC_IDX_010",
+          "title": "Court: Islamabad High Court, Islamabad. Case No: Writ Petition-3748-2024. Title: Zafar Yaqoob Khan etc. VS FOP etc. Author Judge: Honourable Mr. Justi",
+          "docId": "ihc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "IHC_IDX_011",
+          "title": "Court: Islamabad High Court, Islamabad. Case No: Criminal Miscellaneous-1626-2025. Title: Muhammad Hammad VS The State etc.. Author Judge: Honourable ",
+          "docId": "ihc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "IHC_IDX_012",
+          "title": "Court: Islamabad High Court, Islamabad. Case No: Criminal Appeal-89-2025. Title: Mst. Razia Khatoon VS Dr. Arifa Manzoor. Author Judge: Honourable Mr.",
+          "docId": "ihc_index_2026",
+          "citation": "2026 PLD 105",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "IHC_IDX_013",
+          "title": "Court: Islamabad High Court, Islamabad. Case No: Writ Petition-3767-2025. Title: M/s Nasir Trading Company VS FOP etc.. Author Judge: Honourable Mr. J",
+          "docId": "ihc_index_2026",
+          "citation": "2026 CLC 25",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "IHC_IDX_014",
+          "title": "Court: Islamabad High Court, Islamabad. Case No: Writ Petition-2307-2023. Title: Malik Muhammad Ahsan VS Federal Ombudsman etc.. Author Judge: Honoura",
+          "docId": "ihc_index_2026",
+          "citation": "2026 CLC 552",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        }
+      ]
+    },
+    "peshawar_high_court": {
+      "total_cases": 270,
+      "cases": [
+        {
+          "id": "PHC_CASE_001",
+          "title": "RFA No. 127-A of 2026 Fiber Pak Kids Planet & other-vs-Fiber Pak Kids Planet & others.",
+          "docId": "phc_fulltext_2026",
+          "citation": null,
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "PHC_CASE_002",
+          "title": "CR No. 35-P of 2013 Rizwanullah Khan and others Vs Muhammad Usman Khan and others.",
+          "docId": "phc_fulltext_2026",
+          "citation": null,
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "PHC_CASE_004",
+          "title": "CR No. 283-P of 2015 Zulfiqar Ali & others Vs Muhammad Amin Jan etc.",
+          "docId": "phc_fulltext_2026",
+          "citation": null,
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "PHC_CASE_007",
+          "title": "L.R No. 17-P of 2026 United Municipal Workers Union, CBA/CBU, All TMA(s) Vs Registrar of Trade Unions..",
+          "docId": "phc_fulltext_2026",
+          "citation": null,
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "PHC_IDX_001",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 9066-P of 2026 with IR with C.M No. 2387-P of 2026 Dr. Aziz Hasan Aamir and another Vs Governme",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_002",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: FAO No. 143-P of 2025 Gulzar Ahmad Khan Vs The Director General, Provionial Housing Authority, KP Pesha",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_003",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 499-B of 2026 Managing-Director, Saydon Pharmaceutical Industries Pvt Ltd, Peshawar Vs Sadiq Ni",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_004",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 392-A of 2026 Muhammad Ashrafand others Vs Additional Assistant Commissioner (Revenue), Haripur",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_005",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 8397-P of 2026 Dr. Zahid Khan Vs Mst. Mehreen etc. Judgment Date (as displayed): 27-07-2026. Rec",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_006",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 211-P of 2014 Mst. Zarin Taja Vs Saifullah and others. Judgment Date (as displayed): 21-07-2026",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_007",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 381-A of 2021 Saleem Akhtar and anther Vs Shahid Saleem and others. Judgment Date (as displayed",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_008",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 139-D of 2026 Muhammad Asfraf Vs Nasrullah. Judgment Date (as displayed): 09-07-2026. Record Ty",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_009",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 182-D of 2026 Amanullah and others Vs Hamad Ali etc. Judgment Date (as displayed): 08-07-2026. ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_010",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 1238-P of 2025 Mian Sohrab Gul Vs Muneer & others. Judgment Date (as displayed): 03-07-2026. Re",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_011",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: RFA No. 12/2024 Muhammad Ijaz Vs Zia-Ul-Haq. Judgment Date (as displayed): 02-07-2026. Record Type: MET",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_012",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 1233-P of 2026 Ghulam Rasool Vs Secty. Mines & Minerals etc. Judgment Date (as displayed): 02-07",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_013",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 850-P of 2026 Muhammad Zeeshan Ud Din Vs Mst. Rukhsana Shafique & another. Judgment Date (as di",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_014",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: CR No. 864-P of 2019 Mst. Nighat Sultana alias Kherogai Vs Javed Akhtar and 31 others. Judgment Date (a",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_015",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr. Misc Q.P No. 38-D of 2025 Muhammad Usman Ali Khan Vs The State etc. Judgment Date (as displayed): 2",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_016",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: CR No. 1292-P of 2019 Shams-ul-Haq vs. Provincial Government through Secretary, Board of Revenue, Pesha",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_017",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 1216-P of 2025 Habib Ullah Vs The State. Judgment Date (as displayed): 24-06-2026. Record Type",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_018",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 641-P of 2025 Sharafat Kazmi Vs The State. Judgment Date (as displayed): 24-06-2026. Record Ty",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_019",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 112-M of 2024 Sajid Ullah Vs State & others. Judgment Date (as displayed): 24-06-2026. Record ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_020",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: RFA No. 109-P of 2025 Ayaz Ahmed Paracha Vs Dost Muhammad Khan. Judgment Date (as displayed): 22-06-202",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_021",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: FAO No. 232-P of 2024 Janas Khan and others Vs Director General (Headquarter) Civil Works Organization,",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_022",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 1863-P of 2025 Mst. Salma Bibi etc VS Nawzb Zada. Judgment Date (as displayed): 22-06-2026. Reco",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_023",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: CR No. 201-P of 2025 Mirbad (late) through legal heirs Anwar Khan and others vs. Muhammad Umer and othe",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_024",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 10023-P of 2025 Mian Junaid Sardar Vs Govt. Judgment Date (as displayed): 19-06-2026. Record Ty",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_025",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: CR No. 768-P of 2023 Ismail Vs Alam Shah etc. Judgment Date (as displayed): 19-06-2026. Record Type: ME",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_026",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: RFA No. 263-A of 2023 Shahid Gul and another Vs Ziaullah Wazir and another. Judgment Date (as displayed",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_027",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 345-P of 2026 Qamar Zaman S.I Vs The State. Judgment Date (as displayed): 18-06-2026. Record T",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_028",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 8159-P of 2025 Muhammad Arshad Khanm vs The State through AG KP. Judgment Date (as displayed): 1",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_029",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 530-M of 2025 Dr. Raqib Khan Vs Federation of Pakistan & others. Judgment Date (as displayed): ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_030",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 1517-M of 2025 Dilawar Khan Vs The State. Judgment Date (as displayed): 16-06-2026. Record Type",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_031",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr. Rev No. 120-P of 2026 Jalal Ahmad Vs Bilal etc. Judgment Date (as displayed): 15-06-2026. Record Ty",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_032",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: RFA No. 215-P of 2025 Rooh Ullah and others vs. Administrator Auqaf, Khyber Pakhtunkhwa and others. Jud",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_033",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr. A No. 424-P of 2025 Jehanzeb Vs The State etc. Judgment Date (as displayed): 11-06-2026. Record Typ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_034",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: CM No. 193-B of 2026 in WP No. 437-B of 2024 Dilawar Khan & 02 others v. Government of Khyber Pakhtunkh",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_035",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 4949-P of 2023 Mian Zahir Shah Vs Raza Jan & others. Judgment Date (as displayed): 10-06-2026. ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_036",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 6436-P of 2026 Rafiq Khan and others Vs Federation of Pakistan through Federation Secretary and",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_037",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: F.A.O No. 14-P of 2022 Mst. Badam Zari Vs Z.T.B.L. Judgment Date (as displayed): 10-06-2026. Record Typ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_038",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr. R No. 17-P of 2026 Amjid Ali Vs Muhammad Saleem etc. Judgment Date (as displayed): 10-06-2026. Reco",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_039",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 1129-P of 2025 M/s Kundi Paper Mills Vs Enviromental Protection Agency, KP Peshawar.. Judgment",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_040",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 245-P of 2025 Shahid Ali Khan Vs Olas Khan etc. Judgment Date (as displayed): 08-06-2026. Recor",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_041",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 308-P of 2025 Usman Vs The State & another. Judgment Date (as displayed): 04-06-2026. Record T",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_042",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 401-P of 2026 with C.M No. 14-P of 2026 Muhammad Umair Vs Inspector General of Police, KP at Ce",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_043",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 1431-P of 2025 Muhammad Iqbal Vs Abdul Khaliq & another. Judgment Date (as displayed): 03-06-20",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_044",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 518-A of 2025 Hazir Khan and others Vs Government of Khyber Pakhtunkhwa. Judgment Date (as disp",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_045",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 2695-P of 2021 & STR No. 23-P of 2021 Wateen Telecom Limited v. Khyber Pakhtunkhwa Revenue Autho",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_046",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 187-B of 2026 Syed Muhammad Vs Khan Bahadur alias Fazal-ur-Rehman, etc. Judgment Date (as displ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_047",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 7034-P of 2025 Muhammad Jamal Nasir Vs Governement of Khyber Pakhtunkhwa.. Judgment Date (as di",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_048",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 3663-P of 2024 Aniqa Waheed Vs Govt of Pakistan through Secretary Communications, Pak Secretari",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_049",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: J. Cr. Appeal No. 1066-P of 2025 Muhammad Amir Vs The State etc. Judgment Date (as displayed): 21-05-20",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_050",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr. Appeal No. 1211-P of 2025 Riaz Khan Vs The State. Judgment Date (as displayed): 21-05-2026. Record ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_051",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 12-P of 2026 with IR M/S Zalan Logistics Vs Federation of Pakistan and 10 others. Judgment Date",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_052",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: RFA No. 02-A of 2026 M/s Tariq and Saad Associates Vs M/s Coronet Foods (Pvt) Ltd. Judgment Date (as di",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_053",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.M (BA) No. 326-A of 2026 Noor Muhammad Vs The State, etc.. Judgment Date (as displayed): 21-05-2026.",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_054",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: CR No. 27-P of 2017 Muhammad Iqbal Vs. Abdul Khaliq & another.. Judgment Date (as displayed): 21-05-202",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_055",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 448-M of 2026 Dilasa Khan & others Vs Shah Zaheer & others. Judgment Date (as displayed): 20-05",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_056",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: CR Nos. 1379 & 1221 of 2025 The Khyber Pakhtunkhwa Public Service Commission (KPPSC) through its Chairm",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_057",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 654-P of 2026 M/S Diamond Taste & Health (Pvt) Ltd Vs Pakistan through Federal Secretary, Minis",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_058",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 197-A of 2024 with MR No. 05-A of 2024 Syed Mubarak Shah Vs. The State. Judgment Date (as disp",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_059",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 5613-P of 2024 Mohammad Rasool Vs Chairman Selection Board & others. Judgment Date (as displaye",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_060",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: RFA No. 174-P of 2025 Shoaib Rehman Vs Muhammad Ishaq. Judgment Date (as displayed): 19-05-2026. Record",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_061",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 06-D of 2026 Jamshed Vs The State etc. Judgment Date (as displayed): 19-05-2026. Record Type: ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_062",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 672-A of 2026 Waheed Ahmed Vs The State. Judgment Date (as displayed): 19-05-2026. Record Type: ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_063",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 7875-P of 2025 Muhammad Ishaq Khan Vs Govt: of KP, through Chief Secretary Civil Secretariat, P",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_064",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 4234-P of 2026 Dr. Mian Saeed Ahmad CCPO, Peshawar etc Vs Saleema Masood etc. Judgment Date (as",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_065",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 71-A of 2013 Syed Muzammal Shah & others Vs Gohar Aman & others. Judgment Date (as displayed): ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_066",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 124-A of 2025 Riasat Zaman Vs Govt of Pakistan etc. Judgment Date (as displayed): 13-05-2026. Re",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_067",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 5552-P of 2025 Muhammad Usman Vs Cantonment Board through its Executive Officer, Peshawar Cantt",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_068",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 27-D of 2024 Dr. Hafiz Muhammad Tahir Vs Muhammad Salam. Judgment Date (as displayed): 12-05-2",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_069",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr. A No. 179-B of 2025 with MR No. 06-B of 2025 Sajjid Ullah etc Vs The State etc. Judgment Date (as d",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_070",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 1344-M of 2023 Shah Afzal Shinwari Vs Mst Sara Ihsan. Judgment Date (as displayed): 11-05-2026.",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_071",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr. Appeal No. 169-P of 2026 Bilawal Vs The State etc. Judgment Date (as displayed): 11-05-2026. Record",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_072",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: CR No. 584-P of 2023 Mst. Farkhanda Jabeen and others vs. Sakhi Gul and others&rdquo;. Judgment Date (a",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_073",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Labour Appeal No. 28-P of 2024 Asim Nisar Vs Ministry of Energy. Judgment Date (as displayed): 11-05-20",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_074",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: R.F.A No. 193-P of 2025 Mumtaz Khan and another Vs Collector Land Acquisition Nowshera. Judgment Date (",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_075",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: BA No. 258-B of 2026 Naqib Ullah Vs The State. Judgment Date (as displayed): 07-05-2026. Citation (as d",
+          "docId": "phc_index_2026",
+          "citation": "2026 MLD 1391",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_076",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 437-B of 2024 Dilawar Khan & 02 others v. Government of Khyber Pakhtunkhwa through Secretary Hom",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_077",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 744-B of 2025 Maqsood Ahmad Vs The State. Judgment Date (as displayed): 05-05-2026. Record Type",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_078",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Tax Reference No. 02-A of 2024 Ehsanullah Vs The Commissioner Inland Revenue. Judgment Date (as display",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_079",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: L.A No. 01-D of 2024 Principal Father Emmanual Fazal OP St: Helen`s School and College, D.I Khan Vs The",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_080",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: F.A.O No. 22-A of 2009 Wazir Zada Afridi Vs Muhammad Akram & others. Judgment Date (as displayed): 04-0",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_081",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: RFA No. 61-P of 2024 Muhammad Tariq Khan vs. Ameer Bahader Khan. Judgment Date (as displayed): 04-05-20",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_082",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 99 of 2008 Muhammad Akram and others Vs Qazi Muhammad Ajmal & others. Judgment Date (as display",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_083",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 68-A of 2023 Tahir Rafique Vs The State. Judgment Date (as displayed): 04-05-2026. Citation (a",
+          "docId": "phc_index_2026",
+          "citation": "2026 PLJ Cr",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_084",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 222-P of 2021 Province of Khyber Pakhtunkhwa through the Secretary to Government of Khyber Pakh",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_085",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr. A No. 242-B of 2025 Shakir Ullah etc The State etc. Judgment Date (as displayed): 04-05-2026. Recor",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_086",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 392-B of 2024 Mst. Amtari Jana Vs Naqeeb Ullah etc. Judgment Date (as displayed): 04-05-2026. Re",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_087",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 401-B of 2023 Muhammad Yaqoob Khan & others Vs Mst. Bibi Tahira. Judgment Date (as displayed): ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_088",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 42-A of 2024 Shahzad Vs The State. Judgment Date (as displayed): 30-04-2026. Citation (as disp",
+          "docId": "phc_index_2026",
+          "citation": "2026 PLJ Cr",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_089",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: R.S.A No. 2-C of 2019 Muhammad Nasir Khan Vs Fardad Ali Shah. Judgment Date (as displayed): 30-04-2026.",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_090",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 177-B of 2026 Khan Malook Vs Khan Bahadur and others. Judgment Date (as displayed): 30-04-2026.",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_091",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 406-B of 2024 Muhammad Bilal alias Hazrat Bilal Vs Mst. Naveela Akhtar & others. Judgment Date ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_092",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Syed Muhammad Abeq Vs Mst. Sajida and others CM 12(2) No. 14-P of 2023 in W.P No. 2154 of 2010. Judgmen",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_093",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 307-P of 2025 Shah Room Vs Jehanzeb & others. Judgment Date (as displayed): 29-04-2026. Record",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_094",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 1040-P of 2025 Abdul Wakeel Vs The State & another. Judgment Date (as displayed): 29-04-2026. ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_095",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Q.P No. 02-C of 2021 Fardad Ahmed Vs Muhammad Zafar and another. Judgment Date (as displayed): 29-04-20",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_096",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 116-A of 2025 Janis alias Jan Muhammad VS The State. Judgment Date (as displayed): 29-04-2026.",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_097",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 69-A of 2009 Mst. Jameela Khanum Vs Chanzeb and others. Judgment Date (as displayed): 27-04-202",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_098",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 9313-P of 2025 Azizullah Vs Farah Naz etc. Judgment Date (as displayed): 27-04-2026. Record Type",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_099",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: CR No. 360-A of 2014 Fateh Muhammad Khan etc Vs Ghulam Muhammad Khan etc. Judgment Date (as displayed):",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_100",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: RFA No. 135-D of 2018 Said Badshah Vs Muhammad Nauman Khan Kundi. Judgment Date (as displayed): 27-04-2",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_101",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 2725-P of 2023 Syed Waqar Hussain Gilani Vs Federation of Pakistan etc. Judgment Date (as displa",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_102",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 6100-P of 2023 Dr. Samdana Wahab Vs The State & another. Judgment Date (as displayed): 22-04-20",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_103",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 944-P of 2025 Zakir Hussain & others Vs The State & another. Judgment Date (as displayed): 22-",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_104",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 1536-A of 2025 Muhammad Asim Vs DSJ Mansehra. Judgment Date (as displayed): 22-04-2026. Record T",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_105",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: J.Cr.A No. 11-M of 2025 with M.R No. 1-M of 2025 Khaista Rahman Vs The State. Judgment Date (as display",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_106",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 184-P of 2024 Murad Ali and another Vs The State and another. Judgment Date (as displayed): 22",
+          "docId": "phc_index_2026",
+          "citation": "2026 PLJ Cr",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_107",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr. Rev. No. 78-P of 2026 Waseem Vs Aqib etc. Judgment Date (as displayed): 21-04-2026. Record Type: ME",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_108",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 4251-P of 2025 Shakir Farid Vs Government of Khyber Pakhtunkhwa through Chief Secretary & other",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_109",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 6182-P of 2024 Abdul Haseeb Vs Govt of Kp etc. Judgment Date (as displayed): 21-04-2026. Record ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_110",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 793-B of 2025 Muhammad Younas Vs Government of KP through Chief Secretary, etc. Judgment Date (",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_111",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 678-P of 2017 Zulfiqar Khan & others Vs Fazal Ghafoor & others. Judgment Date (as displayed): 2",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_112",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: FAO No. 175-P of 2020 Farman Ullah deceased thrpugh LRs Vs Haji Said Janan etc. Judgment Date (as displ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_113",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 1160-P of 2023 Khyber Pakhtunkhwa Riffle Association, through its president & others Vs Governm",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_114",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 263-P of 2024 Iqrar Khan Vs Govt og KP etc. Judgment Date (as displayed): 16-04-2026. Record Typ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_115",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 30-A of 2025 Khanpur Boats Association Vs Government of Pakistan through Secretary Water & Powe",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_116",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 841-B of 2018 Muhammad Kamran Khan, etc Vs The Chief Secretry (Education), FATA Secretariat, Pe",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_117",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 8691-P of 2025 Shahid Zaman Vs Federation of Pakistan through Secty. Cabinat Division Govt. of P",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_118",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: RFA No. 13-A of 2024 Abdul Razzaq Vs Abdul Ghafoor. Judgment Date (as displayed): 14-04-2026. Record Ty",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_119",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 825-M of 2025 Mst. Gulshan Ara Vs Govt: of KPK. Judgment Date (as displayed): 14-04-2026. Recor",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_120",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 1462-P of 2024 Faiz Ali Vs United Bank Limited. Judgment Date (as displayed): 14-04-2026. Recor",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_121",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: RFA No. 87-A of 2021 Mst. Rukhsana Bibi etc Vs Mst. Parveen Bibi etc. Judgment Date (as displayed): 14-",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_122",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 3948-P of 2024 Hajira Sarwar, Assistant Women Coach PCB, Vs Federation of Pakistan, through Sec",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_123",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: F.A.O No. 195-P of 2025 Israr Khan Shinwari Vs Dr. Naimat Ullah Khan. Judgment Date (as displayed): 09-",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_124",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Tax Reference No. 93-P of 2024 M/s Sher Ahmad, Proprietor of M/s General Tyre Merchant, Tous Banda Vs C",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_125",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Office Objection No.46-P/2026 in Writ Petition No.3523-P/2026 Zia Ullah vs. Govt. of Khyber Pakhtunkhwa",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_126",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: CR No. 717-P of 2019 Shahid Sultan Durani etc Vs Khalid Mehmood. Judgment Date (as displayed): 08-04-20",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_127",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 975-P of 2025 Abdur Rehman Vs The State & another. Judgment Date (as displayed): 08-04-2026. R",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_128",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 812-A of 2015 Imran Yousaf Vs Govt of KP, etc. Judgment Date (as displayed): 08-04-2026. Record",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_129",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: J Cr A No. 120-A of 2026 Mst. Haleema Bibi Vs The State etc. Judgment Date (as displayed): 08-04-2026. ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_130",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 1494-P of 2025 Naveed Vs Muhammad Bilal, etc. Judgment Date (as displayed): 07-04-2026. Record ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_131",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 951-P of 2025 Zahir Hussain & another Vs The State & Musarat Ali. Judgment Date (as displayed)",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_132",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 4300-P of 2024 Anwar Shamim Vs Secretary Elementary & Secondary Education KP & others. Judgment",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_133",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 3417-P of 2023 Salim Shah Hoti Advocate vs. The Government of Khyber Pakhtunkhwa through Chief S",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_134",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 1267-A of 2021 Muhammad Naeem Haider etc Vs Mst. Shazia Riaz & others. Judgment Date (as displa",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_135",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 1017-P of 2025 Hamza Mushtaq Malik Vs The State. Judgment Date (as displayed): 02-04-2026. Rec",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_136",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 1157-P of 2025 Arshad Vs The State. Judgment Date (as displayed): 02-04-2026. Record Type: MET",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_137",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: R.F.A No. 74-D of 2025 Malik Zeeshan Ul Haq Vs Farman Ali. Judgment Date (as displayed): 02-04-2026. Re",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_138",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 5576-P of 2025 Zafar Ul Islam Vs The Federation of Pakistan etc. Judgment Date (as displayed): 0",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_139",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 5048-P of 2022 MCB Bank Ltd Vs Rashid Ullah Khan and 03 others. Judgment Date (as displayed): 0",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_140",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: J.Cr.A No. 327-M of 2025 Hussain Gul Vs The State. Judgment Date (as displayed): 01-04-2026. Record Typ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_141",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: CR No. 422-P of 2017 Roidad Khan etc Vs Khurshid Muhammad etc. Judgment Date (as displayed): 01-04-2026",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_142",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No 39-P of 2026 Sher Wali & 07 others Vs Deputy Commissioner Khyber (Land Acquisition Collector), K",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_143",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 6445-P of 2024 National Fertilizers Vs Govt of Pakistan etc. Judgment Date (as displayed): 31-0",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_144",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 69-B of 2025 Muhammad Umar Vs The State etc. Judgment Date (as displayed): 31-03-2026. Record ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_145",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 739-P of 2025 Awal Sher & others Vs Enam Ullah & another. Judgment Date (as displayed): 31-03-",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_146",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: R.F.A No. 15-A of 2013 Mst. Azram Jan widow & others Vs Muhammad sultan through L.Rs. Judgment Date (as",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_147",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 1274-P of 2019 Muhammad Farooq Vs The State etc. Judgment Date (as displayed): 31-03-2026. Rec",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_148",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.MBA No. 170-P of 2026 Sharif Vs The State etc. Judgment Date (as displayed): 30-03-2026. Record Type",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_149",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 1040-P of 2022 Sui Northern Gas Pipe Line Limited through its General Manager and others Vs Sha",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_150",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: B.A No. 82-B of 2026 Naib Gul Vs The State & 03 others. Judgment Date (as displayed): 30-03-2026. Recor",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_151",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 144-A of 2015 Syed Mustajab Shah and another Vs Syed Hussain Shah. Judgment Date (as displayed)",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_152",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 233-B of 2023 Mashal Khan Vs Government of Khyber Pakhtunkhwa through Secretary LG & RDD, etc. ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_153",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 36-D of 2021 Nawabzada Farooq Khan etc Vs Qamar-u-Hakeem etc. Judgment Date (as displayed): 30-0",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_154",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: R.F.A No. 99-P of 2024 Dunya Gul & another Vs Niaz Muhammad & 02 others. Judgment Date (as displayed): ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_155",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 237- D of 2025 Amanullah Vs Abdul Qayyum. Judgment Date (as displayed): 26-03-2026. Record Type",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_156",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: B.A No. 152-M of 2026 Hazrat Ullah Vs The State. Judgment Date (as displayed): 26-03-2026. Record Type:",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_157",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 1092-P of 2025 Islam Noor Vs The State. Judgment Date (as displayed): 26-03-2026. Record Type:",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_158",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 1287-A of 2025 Muhammad Raqeeb Vs District Police officer, Haripure and other. Judgment Date (a",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_159",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: B.A No. 63-B of 2026 sher Ali Vs The State etc.. Judgment Date (as displayed): 18-03-2026. Record Type:",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_160",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: F.A.B No. 18-P of 2024 Intikhab Alam Vs M/S Meezan Bank Limited. Judgment Date (as displayed): 18-03-20",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_161",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 234-P of 2025 Qayyum Jan Vs Jehangir Khan & another. Judgment Date (as displayed): 17-03-2026.",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_162",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 30-A of 2026 Muhammad Riaz & another Vs The State & others. Judgment Date (as displayed): 17-0",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_163",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 680-P of 2020 Abdul Khaliq Vs Wasi Ud Din Khattak etc. Judgment Date (as displayed): 17-03-2026",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_164",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 2197-P of 2024 Najeeb Ullah Vs Collector Customs, Model Collectorate, Jamrud road Peshawar. Jud",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_165",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 620-P of 2026 Fakhr-e-Alam Vs The Chairman NAB Islamabad. Judgment Date (as displayed): 17-03-2",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_166",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 351-P of 2026 Ali Haider Shinwari & others Vs Muhammad Qubais & others. Judgment Date (as displ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_167",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 370-A of 2025 Abdul Maroof Vs Abdul Sudais and others. Judgment Date (as displayed): 16-03-2026",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_168",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 370-A of 2026 Ghulam Said Khan, etc Vs State, etc. Judgment Date (as displayed): 16-03-2026. Re",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_169",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: B.A No. 73-B of 2026 Saadullah Khan Vs The State etc. Judgment Date (as displayed): 16-03-2026. Record ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_170",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: BCA No. 87-B of 2025 Aman Ullah Khan Vs The State etc.. Judgment Date (as displayed): 16-03-2026. Recor",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_171",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 1280-B of 2019 Mst. Nayab Akbar etc, Vs Mst. Shamim Begum, etc.. Judgment Date (as displayed): ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_172",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 1246-M of 2025 Najib Ullah Vs Akbar Zada & others. Judgment Date (as displayed): 11-03-2026. Re",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_173",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 57-A of 2024 Muhammad Adeel Vs State. Judgment Date (as displayed): 11-03-2026. Record Type: M",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_174",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 414-A of 2026 Jaffar Mansoor Abbasi Vs Government of Khyber Pakhtunkhwa. Judgment Date (as disp",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_175",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 320-A of 2019 Mst. Mukhtiar Bibi Vs The State. Judgment Date (as displayed): 11-03-2026. Recor",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_176",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 23-D of 2026 Sadar Shaheed Vs Government of Khyber Pakhtunkhwa through Secretary Mines and Mine",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_177",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 2260-P of 2026 Dr. Asad Ali Khan Vs Government of Khyber Pakhtunkhwa through Chief Secretary Ci",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_178",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr. A No. 404-A of 2019 Muhammad Afzal Vs The State. Judgment Date (as displayed): 09-03-2026. Record T",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_179",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: R.F.A No. 19-A of 2019 Syed Aftab Islam Shah VS Naeem Arshid. Judgment Date (as displayed): 09-03-2026.",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_180",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 145-D of 2025 Mst. Khansa Bibi Vs Javed Iqbal and others. Judgment Date (as displayed): 05-03-2",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_181",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 344-A of 2025 Mst. Motiyan Jan Vs Maqsood & others. Judgment Date (as displayed): 05-03-2026. R",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_182",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 994-P of 2025 Abid Ullah Vs The State. Judgment Date (as displayed): 05-03-2026. Record Type: ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_183",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 5367-P of 2023 Dr Azmat Ullah Khattak & others Vs Government of Pakistan & others. Judgment Dat",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_184",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 744-P of 2026 Azmat Khan & others Vs The Government of KP through its Secretary Revenue Civil S",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_185",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 2581-P of 2025 Waris Khan Vs District Collector Nowshera/Collector Land Acquisition Nowshera & ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_186",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 93-P of 2012 TMA Mansehra Vs Forest Development Corporation. Judgment Date (as displayed): 03-0",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_187",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 754-P of 2026 M/S Maidan Ghee & Oil Mills (Pvt) Ltd Vs Government of Pakistan through Federal S",
+          "docId": "phc_index_2026",
+          "citation": "2026 PLJ Pesh",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_188",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.R No. 66-D of 2025 Fauzia Batool Vs The State and others. Judgment Date (as displayed): 03-03-2026. ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_189",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 1570-P of 2025 Mst. Yasmeen Shamsher Vs Mst. Alia Zahir & others. Judgment Date (as displayed):",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_190",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 6420-P of 2024 Abdul Ali and others Vs Senior Member (Judl-1) Board of Revenue, Peshawar and ot",
+          "docId": "phc_index_2026",
+          "citation": "2026 PLJ Pesh",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_191",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 87-A of 2025 Khursheed Vs The State & 1 other. Judgment Date (as displayed): 02-03-2026. Recor",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_192",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Writ Petition No.1518-P/2026 Mushtaq Ahmad & others vs. Federation of Pakistan & others. Judgment Date ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_193",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 9663-P of 2025 Niaz Ahmad and another Vs Federation of Pakistan. Judgment Date (as displayed): ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_194",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 5526-P of 2018 Saif Textile Mills Ltd and others Vs Government of Khyber Pakhtunkhwa through it",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_195",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 1535-A of 2025 Sohail Abid Vs The State and others. Judgment Date (as displayed): 25-02-2026. R",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_196",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 901-P of 2025 with Murder Reference No. 18-P of 2025 Zeeshan Durrani Vs The State & another. J",
+          "docId": "phc_index_2026",
+          "citation": "2026 PCrLJ 1504",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_197",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 650-P of 2025 Jamil Khan Vs The State etc. Judgment Date (as displayed): 25-02-2026. Record Ty",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_198",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 459-P of 2024 Inhabitants of Jungle Khel Vs CEO PESCO etc.. Judgment Date (as displayed): 24-02",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_199",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr. Misc (B.A) No. 66-A of 2026 Azhar Khan Vs The State. Judgment Date (as displayed): 23-02-2026. Reco",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_200",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 9815-P of 2025 Mohammad Jamil etc Vs Federation of Pakistan etc. Judgment Date (as displayed): ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_201",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: COC No. 249-P of 2025 State Vs Asadullah, Advocate. Judgment Date (as displayed): 23-02-2026. Citation ",
+          "docId": "phc_index_2026",
+          "citation": "2026 PLJ Pesh",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_202",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 18-D of 2024 Muhammad Jawad Ahmad Vs The State etc.. Judgment Date (as displayed): 23-02-2026.",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_203",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.R No. 04-D of 2026 Jamshed Ahmad and others Vs Allah Noor and another. Judgment Date (as displayed):",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_204",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 4958-P of 2024 Muhammad Wakeel Khattak Vs Government of KP through Secretary Industries, Commer",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_205",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: R.F.A No. 41-D of 2024 Sami Ullah Khan Vs President Faisal Bank Ltd, and others. Judgment Date (as disp",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_206",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 582-P of 2018 Ashfaq Ahmad Vs Mst Mehrun Nisa. Judgment Date (as displayed): 17-02-2026. Record",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_207",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 332-A of 2017 Muhammad Malook Vs Mst. Sabah Sultan etc. Judgment Date (as displayed): 16-02-202",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_208",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 03-D of 2020 Government of KP through Secretary Fisheries Department & another Vs Ghulam Sarwar",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_209",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 532-P of 2025 Arshad & another Vs Abdul Khaliq & another. Judgment Date (as displayed): 10-02-",
+          "docId": "phc_index_2026",
+          "citation": "2026 PLJ Cr",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_210",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 395-A of 2010 Zardad & others Vs Mst. Muhammad Zubair & others. Judgment Date (as displayed): 1",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_211",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 165-M of 2026 Dr. Amjad Vs The State etc. Judgment Date (as displayed): 10-02-2026. Record Type:",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_212",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 476-P of 2025 Ihsan Ullah Vs Jehangir Khan etc. Judgment Date (as displayed): 10-02-2026. Recor",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_213",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R NO. 368-A of 2009 Mst. Habib Un Nisa Vs Mst. Jameela Khatoon. Judgment Date (as displayed): 09-02-2",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_214",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: F.A.O No. 103-P of 2024 SDO Sub Division Sheikh Maltoon & others Vs Murad Ali Shah. Judgment Date (as d",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_215",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 342-M of 2024 Mst. Fatima & others Vs Rahim Ullah & others. Judgment Date (as displayed): 09-02",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_216",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 974-P of 2024 Nazir Khan & others Vs Noor Shah. Judgment Date (as displayed): 09-02-2026. Recor",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_217",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 2892-P of 2025 Mst. Minhas Begum & others Vs Manir Akbar Khan & others. Judgment Date (as displ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_218",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 6141-P of 2025 Qaisar Khan & others Vs Hamshaid & others. Judgment Date (as displayed): 06-02-2",
+          "docId": "phc_index_2026",
+          "citation": "2026 PLJ Pesh",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_219",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 439-P of 2025 Mushtaq Ali Vs The State. Judgment Date (as displayed): 04-02-2026. Record Type:",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_220",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 932-P of 2025 Muhammad Tariq Vs The State. Judgment Date (as displayed): 04-02-2026. Record Ty",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_221",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 1539-M of 2025 Muhammad Safdar Khan Vs Assiatant Commissioner Nawagai etc. Judgment Date (as dis",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_222",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 5560-P of 2024 Manzoor Ahmad Pahsteen Vs Federation of Pakistan & others. Judgment Date (as dis",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_223",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 7810-P of 2022 Barrister Muhammad Yousaf Khan Vs Government of KPK and others. Judgment Date (a",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_224",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 119-P of 2026 Bakht Jamal and others Vs Khushdil. Judgment Date (as displayed): 02-02-2026. Rec",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_225",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 1807-P of 2019 Shams-ur-Rehman & others Vs Said Shah & others. Judgment Date (as displayed): 02",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_226",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: RFA No. 426-P of 2023 Pakistan Water & Power Develeopment Authority Vs M/s Zardad Khan & Co. Judgment D",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_227",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 733-D of 2025 Dr. Qaisar Anwar Vs Controlling Authority BISE, K.P and others. Judgment Date (as",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_228",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 360-M of 2019 Muhammad Zuhrab Khan Vs Falak Nawab. Judgment Date (as displayed): 29-01-2026. Re",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_229",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 847-M of 2025 Khurshid Ali Vs Govt. of KP. Judgment Date (as displayed): 28-01-2026. Record Type",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_230",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 356-P of 2025 Muhammad Ali Vs The State & another. Judgment Date (as displayed): 27-01-2026. R",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_231",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: STR No. 131-P of 2025 Commissioner Inland Revenue (Refund Zone), Regional Tax Office, Peshawar Vs M/s A",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_232",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr. A No. 668-P of 2025 Muhammad Sajid Vs The State. Judgment Date (as displayed): 27-01-2026. Record T",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_233",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 469-M of 2022 Fazalullah Vs Managing Director PTV & others. Judgment Date (as displayed): 27-01",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_234",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: RFA No. 162-P of 2023 SNGPL through its GM at Peshawar Vs M/S Fuel Zone through its Authorized officer,",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_235",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 1321-A of 2024 Abid Niyyar etc Vs Ghulam Kibriya and others. Judgment Date (as displayed): 26-0",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_236",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: CR No. 917-P opf 2025 Hahiz Hussain Ahmad etc Vs Sartaj Ali etc. Judgment Date (as displayed): 26-01-20",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_237",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 274-P of 2026 Dr. Azhar Jadoon Vs Registrar, Peshawar High Court, Peshawar & others. Judgment D",
+          "docId": "phc_index_2026",
+          "citation": "2026 PLJ Pesh",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_238",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 40-P of 2025 Yousaf Vs The state & another. Judgment Date (as displayed): 22-01-2026. Record T",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_239",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 5372-P of 2024 with IR M/s Ghazi Security Guards Pvt Ltd Vs EOBI. Judgment Date (as displayed):",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_240",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 5588-P of 2025 Ali Azim Afridi Vs Syed Wiqar Shah & others. Judgment Date (as displayed): 22-01",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_241",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: R.F.A No. 116-M of 2024 Muhammad Sadiq Vs Government of KP through Secretary Board of Revenue and other",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_242",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 868-P of 2024 Salman Akbar Vs The State etc. Judgment Date (as displayed): 21-01-2026. Record ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_243",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Intra Court Appeal No. 01-P of 2017 Chairman Privatization Commission Vs M/S Swat Ceramic Company Pvt L",
+          "docId": "phc_index_2026",
+          "citation": "2026 PLJ Pesh",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_244",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: FAO No. 206-P of 2025 M/S Shah Medicos Vs Government of Khyber Pakhtunkhwa and 02 others. Judgment Date",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_245",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 208-D of 2025 Noor Jamal Vs Muhammad Shakoor. Judgment Date (as displayed): 21-01-2026. Record ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_246",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 2732-P of 2023 Zulfiqar Ali Shah etc Vs Government of KP through Chief Secretary, Peshawar etc.",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_247",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 10041-P of 2025 Wilayat Ali Vs Federation of Pakistan & others. Judgment Date (as displayed): 2",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_248",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 1142-M of 2022 Iqbal Hussain Vs Govt. of KP & others. Judgment Date (as displayed): 20-01-2026.",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_249",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 761-P of 2022 Ayaz ul Haq Vs Haji Gul Rehman and another. Judgment Date (as displayed): 19-01-2",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_250",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 376-M of 2019 Fazal Karim Vs Said Karim Khan & others. Judgment Date (as displayed): 19-01-2026",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_251",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Service Appeal No. 07 of 2013 Syed Ali Raza Vs Hon`ble Administratiion Committee Peshawar High Court, P",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_252",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: WP No. 5504-P and WP No. 5560-P of 2025 Asif Ullah Vs Govt of KP etc and Shabbir Hussain Gigyani Vs DG ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_253",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 158-M of 2025 Sawab Khan Vs The State and others. Judgment Date (as displayed): 14-01-2026. Re",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_254",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 905-P of 2025 Said Jalal Vs Anwar Ali & another. Judgment Date (as displayed): 14-01-2026. Rec",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_255",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 212-B of 2018 Nausher Khan Vs The State etc. Judgment Date (as displayed): 13-01-2026. Record ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_256",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 446-P of 2025 Amjid Hussain Vs The State & another. Judgment Date (as displayed): 13-01-2026. ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_257",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 104-M of 2025 Asghar Ali Vs The State. Judgment Date (as displayed): 13-01-2026. Record Type: ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_258",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 721-P of 2025 Tariq Vs Khitab Gul & another. Judgment Date (as displayed): 12-01-2026. Record ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_259",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 3028-P of 2025 Mst. Saira Noor Vs Nisar Ahmad & others. Judgment Date (as displayed): 12-01-202",
+          "docId": "phc_index_2026",
+          "citation": "2026 PLJ Pesh",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_260",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 965-M of 2025 Amjad Ali Vs M/S DKT Pakistan (Pvt) Ltd. through Its authorized representative.. ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_261",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 1241-P of 2011 Secretary to Government of Pakistan, Ministry of Defence, Islamabad Vs M/S Model",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_262",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 128-P of 2025 Daulat Khan Khilji etc Vs Ministry of Interior through Secretary Interior, Govern",
+          "docId": "phc_index_2026",
+          "citation": "2026 PLJ Pesh",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_263",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: C.R No. 1027-P of 2024 Sher Ali Khan and another Vs Muhammad Sher Khan and others. Judgment Date (as di",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_264",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: CR No. 369-P of 2020 Farhat Ullah etc Vs Abdul Malik etc. Judgment Date (as displayed): 12-01-2026. Rec",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_265",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 9509-P of 2025 Tehmina Bibi Vs Shaheed Banazir Bhutto Women University, Peshawar through its Re",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "PHC_IDX_266",
+          "title": "Court: Peshawar High Court, Peshawar. Case No: W.P No. 10473-P of 2025 Kamran Khan Vs University of Malakand through its Registrar & others. Judgment ",
+          "docId": "phc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        }
+      ]
+    },
+    "balochistan_high_court": {
+      "total_cases": 53,
+      "cases": [
+        {
+          "id": "BHC_CASE_001",
+          "title": "Criminal Jail Appeal no 74 of 2021.",
+          "docId": "bhc_fulltext_2026",
+          "citation": null,
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "BHC_CASE_002",
+          "title": "Civil Misc Appeal no 15 of 2020.",
+          "docId": "bhc_fulltext_2026",
+          "citation": null,
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "BHC_CASE_003",
+          "title": "Service Judicial Appeal no 01, 04, 05, 06 & others of 2017.",
+          "docId": "bhc_fulltext_2026",
+          "citation": null,
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "BHC_CASE_005",
+          "title": "Constitutional Petition no 869 of 2016.",
+          "docId": "bhc_fulltext_2026",
+          "citation": null,
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "BHC_CASE_006",
+          "title": "Lal Bakhsh V. The Federation of Pakistan, through Ministry of Interior, Government of Pakistan at Islamabad and 2 others,.",
+          "docId": "bhc_fulltext_2026",
+          "citation": "MLD 2026 125",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "BHC_CASE_007",
+          "title": "Mir Zaman alias Muhammad Alam V. The State,.",
+          "docId": "bhc_fulltext_2026",
+          "citation": "PCrLJ 2026 486",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "BHC_CASE_008",
+          "title": "Muhammad Rashid and others V. Government of Balochistan, Quetta through Chief Secretary and others,.",
+          "docId": "bhc_fulltext_2026",
+          "citation": "PLCS 2026 121",
+          "provenanceStatus": "FULL_TEXT_VERBATIM_OFFICIAL_PDF"
+        },
+        {
+          "id": "BHC_IDX_001",
+          "title": "Court: Balochistan High Court, Quetta. Title: Muhammad Ishaq and others V. Government of Balochistan and others,. Citation (as displayed): PLJ 2025 Qu",
+          "docId": "bhc_index_2026",
+          "citation": "PLJ 2025 Quetta 161",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_002",
+          "title": "Court: Balochistan High Court, Quetta. Title: Balochistan Bar Council through Vice-Chairman V. Government of Balochistan through Chief Secretary Baloc",
+          "docId": "bhc_index_2026",
+          "citation": "CLD 2024 462",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_003",
+          "title": "Court: Balochistan High Court, Quetta. Title: Palwasha Sherani and others V. Pakistan Medical and Dental Council (PMDC) and others,. Citation (as disp",
+          "docId": "bhc_index_2026",
+          "citation": "MLD 2024 623",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_004",
+          "title": "Court: Balochistan High Court, Quetta. Title: Messrs Sara Enterprises Government Contractors through Proprietor V. Secretary Finance, Government of Ba",
+          "docId": "bhc_index_2026",
+          "citation": "PDT 2024 196",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_005",
+          "title": "Court: Balochistan High Court, Quetta. Title: Messrs Sara Enterprises Government Contractors through Proprietor V. Secretary Finance, Government of Ba",
+          "docId": "bhc_index_2026",
+          "citation": "PLD 2024 Balochistan 13",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_006",
+          "title": "Court: Balochistan High Court, Quetta. Title: Muhammad Hassan V. The State,. Citation (as displayed): MLD 2023 1054. Record Type: METADATA_ONLY (offic",
+          "docId": "bhc_index_2026",
+          "citation": "MLD 2023 1054",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_007",
+          "title": "Court: Balochistan High Court, Quetta. Title: Ramzan and others V. The State,. Citation (as displayed): PCrLJ 2023 1489. Record Type: METADATA_ONLY (o",
+          "docId": "bhc_index_2026",
+          "citation": "PCrLJ 2023 1489",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_008",
+          "title": "Court: Balochistan High Court, Quetta. Title: Muhammad Saleem and others V. The State,. Citation (as displayed): PCrLJ 2022 1356. Record Type: METADAT",
+          "docId": "bhc_index_2026",
+          "citation": "PCrLJ 2022 1356",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_009",
+          "title": "Court: Balochistan High Court, Quetta. Title: Ajmal and 2 others V. Additional Sessions Judge-IV, Quetta and 4 others,. Citation (as displayed): PCrLJ",
+          "docId": "bhc_index_2026",
+          "citation": "PCrLJ 2022 1659",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_010",
+          "title": "Court: Balochistan High Court, Quetta. Title: Hafiz Zubair and another V. Mst. Hazar Naz (Widow) and 13 others,. Citation (as displayed): PLJ 2022 Que",
+          "docId": "bhc_index_2026",
+          "citation": "PLJ 2022 Quetta 124",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_011",
+          "title": "Court: Balochistan High Court, Quetta. Title: The State through Deputy Attorney General V. Zahid Khan and others,. Citation (as displayed): CLD 2022 4",
+          "docId": "bhc_index_2026",
+          "citation": "CLD 2022 484",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_012",
+          "title": "Court: Balochistan High Court, Quetta. Title: Sui Southern Gas Company Ltd., Regional office and others V. Muhammad Rahim and others,. Citation (as di",
+          "docId": "bhc_index_2026",
+          "citation": "MLD 2022 1664",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_013",
+          "title": "Court: Balochistan High Court, Quetta. Title: Jamal-Ud-Din V. The State,. Citation (as displayed): MLD 2026 451. Record Type: METADATA_ONLY (official ",
+          "docId": "bhc_index_2026",
+          "citation": "MLD 2026 451",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_014",
+          "title": "Court: Balochistan High Court, Quetta. Title: Zulekha V. Muhammad Nabi and another,. Citation (as displayed): CLC 2026 92. Record Type: METADATA_ONLY ",
+          "docId": "bhc_index_2026",
+          "citation": "CLC 2026 92",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_015",
+          "title": "Court: Balochistan High Court, Quetta. Title: Abdul Qayyum V. The State,. Citation (as displayed): YLR 2025 1817. Record Type: METADATA_ONLY (official",
+          "docId": "bhc_index_2026",
+          "citation": "YLR 2025 1817",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_016",
+          "title": "Court: Balochistan High Court, Quetta. Title: Muhammad Hamayun V. Shamsullah and 5 others,. Citation (as displayed): PCrLJ 2026 393. Record Type: META",
+          "docId": "bhc_index_2026",
+          "citation": "PCrLJ 2026 393",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_017",
+          "title": "Court: Balochistan High Court, Quetta. Title: Muhammad Afzal V. The State,. Citation (as displayed): YLR 2025 2239. Record Type: METADATA_ONLY (offici",
+          "docId": "bhc_index_2026",
+          "citation": "YLR 2025 2239",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_018",
+          "title": "Court: Balochistan High Court, Quetta. Title: Muhammad Asad V. The State,. Citation (as displayed): PCrLJ 2025 1540. Record Type: METADATA_ONLY (offic",
+          "docId": "bhc_index_2026",
+          "citation": "PCrLJ 2025 1540",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_019",
+          "title": "Court: Balochistan High Court, Quetta. Title: Daroo Khan and 2 others V. Haji Abdul Zahir and 2 others,. Citation (as displayed): YLR 2025 1213. Recor",
+          "docId": "bhc_index_2026",
+          "citation": "YLR 2025 1213",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_020",
+          "title": "Court: Balochistan High Court, Quetta. Title: Naimatullah V. The State,. Citation (as displayed): MLD 2025 894. Record Type: METADATA_ONLY (official c",
+          "docId": "bhc_index_2026",
+          "citation": "MLD 2025 894",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_021",
+          "title": "Court: Balochistan High Court, Quetta. Title: Mir Hassan V. The State,. Citation (as displayed): YLR 2025 645. Record Type: METADATA_ONLY (official co",
+          "docId": "bhc_index_2026",
+          "citation": "YLR 2025 645",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_022",
+          "title": "Court: Balochistan High Court, Quetta. Title: Mir Hassan V. The State,. Citation (as displayed): YLR 2025 838. Record Type: METADATA_ONLY (official co",
+          "docId": "bhc_index_2026",
+          "citation": "YLR 2025 838",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_023",
+          "title": "Court: Balochistan High Court, Quetta. Title: Sadam Khan and another V. The State,. Citation (as displayed): YLR 2025 327. Record Type: METADATA_ONLY ",
+          "docId": "bhc_index_2026",
+          "citation": "YLR 2025 327",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_024",
+          "title": "Court: Balochistan High Court, Quetta. Title: Osama and another V. The State and another,. Citation (as displayed): YLR 2025 215. Record Type: METADAT",
+          "docId": "bhc_index_2026",
+          "citation": "YLR 2025 215",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_025",
+          "title": "Court: Balochistan High Court, Quetta. Title: Muhammad Ismail V. The State,. Citation (as displayed): MLD 2025 778. Record Type: METADATA_ONLY (offici",
+          "docId": "bhc_index_2026",
+          "citation": "MLD 2025 778",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_026",
+          "title": "Court: Balochistan High Court, Quetta. Title: Najeeb Ullah V. The State,. Citation (as displayed): YLR 2025 1170. Record Type: METADATA_ONLY (official",
+          "docId": "bhc_index_2026",
+          "citation": "YLR 2025 1170",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_027",
+          "title": "Court: Balochistan High Court, Quetta. Title: Mushtaq Ahmed and 6 others V. Fouzia Nawaz and 14 others,. Citation (as displayed): PLD 2025 Balochistan",
+          "docId": "bhc_index_2026",
+          "citation": "PLD 2025 Balochistan 60",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_028",
+          "title": "Court: Balochistan High Court, Quetta. Title: Muhammad Qaseem V. The State,. Citation (as displayed): PCrLJ 2025 328. Record Type: METADATA_ONLY (offi",
+          "docId": "bhc_index_2026",
+          "citation": "PCrLJ 2025 328",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_029",
+          "title": "Court: Balochistan High Court, Quetta. Title: Bashir Ahmed V. The State,. Citation (as displayed): YLR 2025 777. Record Type: METADATA_ONLY (official ",
+          "docId": "bhc_index_2026",
+          "citation": "YLR 2025 777",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_030",
+          "title": "Court: Balochistan High Court, Quetta. Title: Muhammad Yousaf V. The State,. Citation (as displayed): MLD 2025 907. Record Type: METADATA_ONLY (offici",
+          "docId": "bhc_index_2026",
+          "citation": "MLD 2025 907",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_031",
+          "title": "Court: Balochistan High Court, Quetta. Title: Hajj Organizers Association of Pakistan (HOAP) Balochistan Zone through Executive Body Member V. Governm",
+          "docId": "bhc_index_2026",
+          "citation": "PLD 2025 Balochistan 137",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_032",
+          "title": "Court: Balochistan High Court, Quetta. Title: Bibi PATO and another V. Government of Pakistan, through Secretary Ministry of Interior, Islamabad and 2",
+          "docId": "bhc_index_2026",
+          "citation": "CLC 2025 558",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_033",
+          "title": "Court: Balochistan High Court, Quetta. Title: Sardar Hafeez Loni and others V. The State and others,. Citation (as displayed): PCrLJ 2025 648. Record ",
+          "docId": "bhc_index_2026",
+          "citation": "PCrLJ 2025 648",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_034",
+          "title": "Court: Balochistan High Court, Quetta. Title: Naimatullah and others V. The State and another,. Citation (as displayed): PCrLJ 2025 963. Record Type: ",
+          "docId": "bhc_index_2026",
+          "citation": "PCrLJ 2025 963",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_035",
+          "title": "Court: Balochistan High Court, Quetta. Title: Wazir Ahmed V. Sana Habib and 2 others,. Citation (as displayed): MLD 2025 198. Record Type: METADATA_ON",
+          "docId": "bhc_index_2026",
+          "citation": "MLD 2025 198",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_036",
+          "title": "Court: Balochistan High Court, Quetta. Title: Mst. Zainab Bibi V. Muhammad Rizwan and another,. Citation (as displayed): YLR 2025 1. Record Type: META",
+          "docId": "bhc_index_2026",
+          "citation": "YLR 2025 1",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_037",
+          "title": "Court: Balochistan High Court, Quetta. Title: Muhammad Rafiq V. The State through Prosecutor General Balochistan,. Citation (as displayed): PCrLJ 2025",
+          "docId": "bhc_index_2026",
+          "citation": "PCrLJ 2025 1028",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_038",
+          "title": "Court: Balochistan High Court, Quetta. Title: Aziz Ahmed V. The State,. Citation (as displayed): YLR 2025 713. Record Type: METADATA_ONLY (official co",
+          "docId": "bhc_index_2026",
+          "citation": "YLR 2025 713",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_039",
+          "title": "Court: Balochistan High Court, Quetta. Title: Hotak alias Sapak V. The State,. Citation (as displayed): MLD 2025 70. Record Type: METADATA_ONLY (offic",
+          "docId": "bhc_index_2026",
+          "citation": "MLD 2025 70",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_040",
+          "title": "Court: Balochistan High Court, Quetta. Title: Hotak alias Sapak V. The State,. Citation (as displayed): MLD 2025 139. Record Type: METADATA_ONLY (offi",
+          "docId": "bhc_index_2026",
+          "citation": "MLD 2025 139",
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_041",
+          "title": "Court: Balochistan High Court, Quetta. Title: Civil Revision Petition no 182 of 2014. Record Type: METADATA_ONLY (official court listing entry; full j",
+          "docId": "bhc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_042",
+          "title": "Court: Balochistan High Court, Quetta. Title: Constitutional Petition no 964, 965, 966, 967, 968, 969 and 970 of 2017. Record Type: METADATA_ONLY (off",
+          "docId": "bhc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_043",
+          "title": "Court: Balochistan High Court, Quetta. Title: Civil Revision Petition no 22 of 2016. Record Type: METADATA_ONLY (official court listing entry; full ju",
+          "docId": "bhc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_044",
+          "title": "Court: Balochistan High Court, Quetta. Title: Civil Revision Petition no 182 of 2014. Judgment Date (as displayed): December 30, 2019. Record Type: ME",
+          "docId": "bhc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_045",
+          "title": "Court: Balochistan High Court, Quetta. Title: Constitutional Petition no 964, 965, 966, 967, 968, 969 and 970 of 2017. Judgment Date (as displayed): N",
+          "docId": "bhc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        },
+        {
+          "id": "BHC_IDX_046",
+          "title": "Court: Balochistan High Court, Quetta. Title: Civil Revision Petition no 22 of 2016. Judgment Date (as displayed): November 19, 2019. Record Type: MET",
+          "docId": "bhc_index_2026",
+          "citation": null,
+          "provenanceStatus": "OFFICIAL_METADATA_ONLY"
+        }
+      ]
+    },
+    "sindh_high_court": {
+      "total_cases": 0,
+      "cases": []
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "plan_version": "1.0",
+  "date": "2026-09-04",
+  "status": "PLAN ONLY — no model has been trained and no existing dataset has been modified by this change-set.",
+  "description": "Future fine-tuning change-set plan for the PAKISTAN + FOREIGN COUNTRIES / OVERSEAS PAKISTANIS knowledge layer. This file is a proposal describing what WOULD be added to the supervised fine-tuning corpus the next time training data is regenerated. It is intentionally NOT wired into server/generateFineTuneDataset.js, so running the current generator produces the identical V1 dataset (train/validation/test, incl. the held-out 433-example test.jsonl). Nothing here retrains a model or contaminates the current evaluation set.",
+  "central_principle": "A Pakistani asking about a matter that involves another country must not be answered as if only Pakistani law applies. The applicable jurisdiction is decided by context, and Pakistan-facing guidance (Layer A) is kept strictly separate from foreign official procedure (Layer B).",
+  "v1_baseline": {
+    "domains": "Constitution, PPC, CrPC, CPC, PECA, Family, Property, Tenancy, Labour, Consumer, Education, Legal Aid, Court Procedure, Case Law, Documents, General, Immigration",
+    "entry_count": "train=957, validation=173, test=433 (held-out)",
+    "location": "rag/training/*.jsonl generated from server/fineTuneData/ content banks",
+    "generator": "server/generateFineTuneDataset.js",
+    "validator": "server/validateFineTuneDataset.js"
+  },
+  "no_contamination_guarantees": [
+    "DO NOT modify or regenerate the existing held-out test.jsonl (433 examples). The cross-border examples live in a SEPARATE, currently-unused file until a future, explicitly-approved dataset rebuild.",
+    "DO NOT delete or edit any server/fineTuneData/ V1 file, the rag/documents/ V1 corpus, or the RAG index. The cross-border corpus is additive and already registered separately (see rag/manifest.json cross_border_* docs).",
+    "When the dataset is eventually rebuilt to include cross-border, the existing near-duplicate union-find and forced-test collision checks in generateFineTuneDataset.js MUST run first: any cross-border example within Jaccard >= 0.9 of an existing held-out test item is rejected (test-set contamination guard).",
+    "Uploaded personal foreign documents (court notices, visas, contracts belonging to a user) MUST NEVER enter the training corpus or the public RAG corpus. Only de-identified, officially-sourced procedural records are eligible.",
+    "Every source_ref must resolve against the verified RAG corpus (server/fineTuneData/refs.js resolveRef) or the generator ABORTS — no fabricated sections, treaties, fees, URLs, embassy details, or university requirements."
+  ],
+  "jurisdiction_teaching_goals": [
+    "Never default to Pakistani law merely because the user is Pakistani; identify the forum/authority named in the query.",
+    "Layer A vs Layer B separation: Pakistan-side policy/consular/procedure vs foreign-country official procedure, presented as distinct and never merged.",
+    "No false universality: never claim coverage of 'all countries'. The required framing is 'Insaaf provides verified Pakistan-facing cross-border guidance for the countries and topics covered by its current official-source corpus.'",
+    "Time-sensitive facts (visa fees, processing times, hotline numbers, deadlines, country lists) are deferred to the live official source with a verification date and status, not asserted as static truth.",
+    "Safety-first routing for distress abroad (arrest, trafficking, abandoned worker, lost passport) toward the nearest Pakistani mission and verified national helplines without inventing numbers.",
+    "Language rule: reply in English or Roman Urdu; final legal documents only in English or Urdu script (never Roman Urdu)."
+  ],
+  "cross_border_additions": [
+    {
+      "feature": "Foreign court / authority document triage",
+      "rationale": "Core scenario: a Pakistani (in Pakistan or abroad) receives a summons/notice/judgment from a foreign court. The model must recognise the foreign forum, avoid Pakistani civil/criminal procedure, and give jurisdiction-aware next steps.",
+      "new_examples_needed": 30,
+      "example_types": [
+        "US court summons received -> identify foreign jurisdiction, advise local foreign-qualified counsel + response deadline, note Pakistan CPC does not govern",
+        "Foreign judgment enforcement in Pakistan -> recognition/enforcement limits, not automatic effect",
+        "Service of process abroad -> cross-border service channel, no assumption Pakistani procedure applies",
+        "Refusal to fabricate the foreign statute/fee; defer to the named court's official source"
+      ],
+      "source_refs_examples": ["foreign_court_document", "foreign_judgment_enforcement", "cross_border_service_of_documents"]
+    },
+    {
+      "feature": "Overseas employment & emigration safety",
+      "rationale": "Most-frequent Pakistan-facing cross-border need; must route to Pakistan-side emigration protections AND the foreign country's labour authority as two separate layers.",
+      "new_examples_needed": 30,
+      "example_types": [
+        "Saudi/Gulf employer unpaid wages -> Layer A: BE&OE/Protector of Emigrants, recruiting-agent licence, POEA-equivalent complaint channel; Layer B: foreign labour ministry, not Pakistani labour law alone",
+        "Passport confiscated by employer -> consular + emigration authority, safety-first",
+        "Recruiting-agent verification before departure -> licensed-agent check, avoid trafficking",
+        "Trafficking / abandoned-worker indicators -> emergency consular repatriation routing"
+      ],
+      "source_refs_examples": ["unpaid_wages_abroad", "passport_confiscation_abroad", "recruiting_agent_verification", "emigration_clearance", "worker_rights_abroad", "human_trafficking_indicators", "bilateral_labour_agreements"]
+    },
+    {
+      "feature": "Consular, passport & travel-abroad assistance",
+      "rationale": "Lost passport, emergency travel document, attestation/apostille, visa no-guarantee framing; official-mission lookup without invented contact details.",
+      "new_examples_needed": 25,
+      "example_types": [
+        "Lost passport abroad -> emergency certificate / new passport via mission + NADRA/DGIP, no fabricated embassy phone number",
+        "Document attestation vs apostille -> MOFA attestation process; foreign-country acceptance verified against official source",
+        "Visa application general steps -> 'no guarantee' framing, official embassy/consulate channel only",
+        "Find the correct Pakistani mission (embassy vs high commission vs consulate)"
+      ],
+      "source_refs_examples": ["lost_passport_abroad", "emergency_travel_document", "document_attestation_abroad", "apostille_legalization", "how_to_find_pakistani_mission", "passport_services_abroad", "visa_no_guarantee", "visa_application_general", "travel_abroad_overview"]
+    },
+    {
+      "feature": "Cross-border family, property & nationality",
+      "rationale": "Foreign marriage/divorce recognition, custody jurisdiction, overseas inheritance/property, dual nationality/NICOP/POC — recognition in Pakistan is the Pakistan-facing question.",
+      "new_examples_needed": 25,
+      "example_types": [
+        "Foreign divorce -> recognition conditions in Pakistan + NADRA/registration, distinct from the foreign decree itself",
+        "Cross-border child custody -> which forum has jurisdiction; no unilateral assumption",
+        "Inheritance/property spanning Pakistan + abroad -> separate the two jurisdictions, POA use",
+        "Dual nationality / NICOP / POC -> Pakistan Citizenship Act permitted-countries framing, list verified against official source"
+      ],
+      "source_refs_examples": ["foreign_marriage_recognition", "foreign_divorce_recognition", "cross_border_child_custody", "cross_border_inheritance", "foreign_property_matters", "dual_nationality_pakistan"]
+    },
+    {
+      "feature": "Study abroad & HEC attestation",
+      "rationale": "HEC degree attestation, foreign-university equivalence, student-visa basics, official scholarships only — never invent university requirements or scholarships.",
+      "new_examples_needed": 20,
+      "example_types": [
+        "HEC degree attestation for foreign use -> process + HEC official source",
+        "Equivalence of a foreign degree -> HEC recognised-institution check, no fabrication",
+        "Student visa basics -> 'no guarantee', official immigration channel",
+        "Scholarships -> official government programs only, direct to the verified portal, no invented awards"
+      ],
+      "source_refs_examples": ["hec_degree_attestation", "equivalence_foreign_degree", "student_visa_basics", "scholarships_official_programs", "foreign_university_registry", "study_abroad_overview"]
+    },
+    {
+      "feature": "Treaties, extradition & MLA awareness (informational)",
+      "rationale": "Users ask whether a treaty/extradition/MLA applies; must reference MOFA/institutional process and never assert specific treaty contents not in the corpus.",
+      "new_examples_needed": 15,
+      "example_types": [
+        "Is there extradition between Pakistan and country X -> explain channel via MOFA, verify against official source, no invented treaty",
+        "Mutual legal assistance basics -> state-to-state process, not a private remedy",
+        "Treaty registration / bilateral agreement overview"
+      ],
+      "source_refs_examples": ["extradition_mla_basics", "treaties_registration", "foreign_policy_institutions", "international_organizations"]
+    },
+    {
+      "feature": "Cross-border refusal & coverage-boundary behavior",
+      "rationale": "Teach the model to say what it does NOT cover instead of guessing a foreign rule, and to state the exact coverage framing.",
+      "new_examples_needed": 20,
+      "example_types": [
+        "Query about an uncovered country/topic -> honest coverage-boundary statement + direct to live official source",
+        "Request for a specific visa fee / processing time -> defer to official source with verification date, refuse to invent",
+        "Request to 'just apply Pakistani law' to a foreign forum -> correct the jurisdiction assumption politely",
+        "Statement of the standard coverage sentence (no 'all countries' claim)"
+      ],
+      "source_refs_examples": ["foreign_country_registry_note", "visa_no_guarantee"]
+    }
+  ],
+  "total_new_examples": 165,
+  "languages": ["en", "roman_ur"],
+  "data_format": "Same JSONL schema as V1 (instruction, input, output, language, domain, task, source_refs). Proposed new domain value 'cross_border'; proposed tasks: 'cross_border_jurisdiction', 'consular_assistance', 'overseas_employment', 'study_abroad', 'cross_border_family_property', 'cross_border_recognition', 'coverage_boundary_refusal'.",
+  "output_file": "server/fineTuneData/cross_border_changeset.jsonl",
+  "integration_point_when_approved": "server/generateFineTuneDataset.js: import the new cross_border bank, add 'cross_border' to VALID_DOMAINS and the proposed tasks to VALID_TASKS, and append via add({...}, 'CROSS_BORDER'). Held-out cross-border refusal/coverage examples should be marked forceTest so they land in a NEW quarantined test partition, not the existing 433-example file.",
+  "holdout_strategy": "A dedicated cross-border held-out set (foreign-forum triage + coverage-boundary refusals, ~40 examples) is kept out of training to measure jurisdiction correctness without ever editing the existing V1 test.jsonl.",
+  "constraints": [
+    "DO NOT retrain or run any training now — this is a data plan only.",
+    "DO NOT overwrite rag/training/*.jsonl (esp. the 433-example test.jsonl) or any server/fineTuneData V1 file.",
+    "New examples go to a NEW file (cross_border_changeset.jsonl); combine V1 + cross-border only at an explicitly-approved future dataset rebuild.",
+    "Every example's source_refs must resolve against the rebuilt cross-border RAG corpus (npm run rag:build) or the generator aborts.",
+    "URLs inside outputs must already appear in the corpus (server/fineTuneData/refs.js URL_ALLOWED_DOMAINS / checkUrls); otherwise use a plain authority name with no link.",
+    "No fabricated foreign law, visa/immigration rules, university requirements, jobs, scholarships, treaties, embassies, phone numbers, fees, or URLs.",
+    "Never merge Layer A (Pakistan) and Layer B (foreign) into one 'applicable law' claim; keep them labelled and separate.",
+    "Uploaded personal foreign documents are excluded from training and from the public RAG corpus."
+  ]
+}

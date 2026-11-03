@@ -1,0 +1,172 @@
+[SECTION: HEC_NEED_BASED_SCHOLARSHIP]
+Title: HEC Need-Based Merit Scholarship Programme
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: All HEC-Recognized Public Sector Universities
+Legal Status: HEC Policy Programme
+Source: HEC Scholarship Guidelines; https://www.hec.gov.pk
+
+Programme Overview:
+- The HEC Need-Based Merit Scholarship programme provides financial assistance to deserving students enrolled in public sector universities.
+- Eligibility criteria (as per HEC guidelines):
+  - Enrolled in a public sector university recognized by HEC.
+  - Family monthly income below the prescribed threshold (as defined by HEC from time to time).
+  - Minimum CGPA/academic performance as prescribed by HEC.
+  - Not receiving any other scholarship/stipend from another government source.
+- Scholarship amount: As prescribed by HEC (varies by programme level — undergraduate, masters, PhD).
+- Application procedure:
+  1. Check eligibility on the HEC scholarship portal (hec.gov.pk/scholarships).
+  2. Submit online application through the HEC portal.
+  3. Submit required documents (income certificate, academic transcripts, CNIC/B-form, university enrollment proof).
+  4. University verifies and forwards applications to HEC.
+  5. HEC reviews and approves scholarships.
+  6. Disbursement is made directly to the student's bank account or through the university.
+
+Note: Specific eligibility thresholds, amounts, and deadlines are set by HEC and may change from year to year. Consult the HEC scholarship portal for current information.
+
+[SECTION: HEC_MERIT_SCHOLARSHIP]
+Title: HEC Merit Scholarship Programmes
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: All HEC-Recognized Universities
+Legal Status: HEC Policy Programme
+Source: HEC Scholarship Guidelines; https://www.hec.gov.pk
+
+Programme Overview:
+- HEC offers merit-based scholarships for high-performing students at undergraduate and postgraduate levels.
+- Eligibility is based on academic merit (minimum CGPA/percentage as prescribed by HEC).
+- Scholarships may cover tuition fee, stipend, or both, as per the specific programme guidelines.
+- Application is typically through the HEC portal or through the university's scholarship office.
+- Renewal of merit scholarships is subject to maintaining the prescribed minimum CGPA.
+
+Note: Specific merit scholarship programmes, eligibility criteria, and amounts vary by HEC programme. Consult the HEC scholarship portal for current programmes and criteria.
+
+[SECTION: PROVINCIAL_SCHOLARSHIP_PROGRAMMES]
+Title: Provincial Government Scholarship Programmes
+Authority: Provincial Education Departments (Punjab, Sindh, KPK, Balochistan)
+Jurisdiction: Respective Province
+Legal Status: Provincial Government Programme
+Source: Provincial Education Department Notifications
+
+Sindh Scholarship Programmes:
+- The Government of Sindh offers various scholarship and stipend programmes for students through the Education Department and Social Welfare Department.
+- Programmes may include need-based scholarships, merit scholarships, and special scholarships for minorities, disabled students, and orphans.
+- Eligibility and application procedures are notified by the Sindh Education Department from time to time.
+- Students may inquire at the Sindh Education Department or their university's scholarship/financial aid office.
+
+Other Provincial Programmes:
+- Punjab: Punjab Education Sector Reform Programme scholarships, Chief Minister's scholarship schemes.
+- KPK: KPK Higher Education Department scholarships.
+- Balochistan: Balochistan Education Department scholarships.
+
+Note: Provincial scholarship programmes, eligibility, and amounts change periodically. Consult the respective provincial education department for current programmes.
+
+[SECTION: EHSAS_AND_BISP_PROGRAMMES]
+Title: Ehsaas and BISP Education Scholarship Programmes
+Authority: Benazir Income Support Programme (BISP) / Ehsaas Programme
+Jurisdiction: Pakistan (Federal)
+Legal Status: Federal Government Programme
+Source: BISP/Ehsaas Programme Guidelines; https://ehsaas.gov.pk
+
+Programme Overview:
+- The Ehsaas Undergraduate Scholarship Programme (administered through BISP) provides financial assistance to students from low-income families.
+- Eligibility: Students from families registered with BISP or meeting the Ehsaas poverty scorecard criteria.
+- Scholarship amount and coverage as prescribed by the programme guidelines.
+- Application through the Ehsaas/BISP portal or designated help desks.
+- The programme covers tuition fees and may provide a monthly stipend.
+
+Note: Ehsaas/BISP scholarship programmes and eligibility criteria may change. Consult the Ehsaas Programme portal (ehsaas.gov.pk) or BISP help desk for current information.
+
+[SECTION: UNIVERSITY_WAIVERS_AND_CONCESSIONS]
+Title: University Fee Waivers and Concessions
+Authority: University Statutes and Regulations (varies by institution)
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Institutional Regulation
+Source: University Statutes and Fee Regulations
+
+General Principles:
+- Universities may offer fee waivers and concessions to deserving students based on:
+  - Academic merit (merit-based fee waiver for top-performing students).
+  - Financial need (need-based concession for students from low-income families).
+  - Special categories: orphans, disabled students, children of university employees, minorities.
+- The eligibility criteria, percentage of waiver, and application procedure are determined by each university's competent authority (Syndicate/Board).
+- Students may apply through the university's financial aid/scholarship office.
+- Fee waivers are typically reviewed each semester/year based on the student's academic performance and continued eligibility.
+
+Note: Specific waiver categories, percentages, and procedures vary significantly by university. Consult your university's applicable fee concession regulations.
+
+[SECTION: ZAKAT_AND_CHARITY_SCHOLARSHIPS]
+Title: Zakat and Charity-Based Educational Assistance
+Authority: Central Zakat Council / Provincial Zakat Councils; Charitable Organizations
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Statutory and Charitable
+Source: Zakat Ordinance, 1980; Charitable Organization Guidelines
+
+Overview:
+- Zakat funds are distributed for educational assistance to deserving students through Central and Provincial Zakat Councils.
+- Eligibility: Students whose families meet the Zakat eligibility criteria (nisab threshold).
+- Assistance may include: tuition fee payment, stipend, book grants, and other educational expenses.
+- Application through the local Zakat Committee or the university's financial aid office (which may forward applications to the Zakat Council).
+- Various charitable organizations (Edhi Foundation, JDC, Saylani, etc.) also offer educational assistance programmes.
+
+Note: Zakat scholarship availability, eligibility, and amounts vary by council and organization. Consult your local Zakat Committee or the university's financial aid office.
+
+[SECTION: FOREIGN_SCHOLARSHIPS]
+Title: Foreign Scholarship Programmes for Pakistani Students
+Authority: Higher Education Commission (HEC); Foreign Governments
+Jurisdiction: Pakistan (Federal)
+Legal Status: HEC/International Programme
+Source: HEC Scholarship Guidelines; https://www.hec.gov.pk
+
+Overview:
+- HEC administers various foreign scholarship programmes for Pakistani students to study abroad:
+  - Fulbright Scholarships (USA)
+  - Chevening Scholarships (UK)
+  - DAAD Scholarships (Germany)
+  - Chinese Government Scholarships (China)
+  - Turkish Scholarships (Türkiye Burslari)
+  - Commonwealth Scholarships (UK)
+  - Erasmus+ (EU)
+  - Various bilateral programmes.
+- Eligibility criteria, application procedures, and deadlines are specified by each programme and administered by HEC.
+- Applications are typically submitted through the HEC scholarship portal.
+- HEC screens and forwards applications to the respective foreign government/organization.
+
+Note: Foreign scholarship programmes, eligibility, and deadlines change annually. Consult the HEC scholarship portal for current programmes.
+
+[SECTION: SCHOLARSHIP_GRIEVANCE]
+Title: Scholarship Grievance Redressal
+Authority: HEC; University Financial Aid Offices; Provincial Education Departments
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Regulatory and Institutional
+Source: HEC Guidelines; University Regulations
+
+Grievance Mechanism:
+- For HEC scholarships: Students may contact the HEC Scholarship Division or file a grievance through the HEC portal.
+- For university fee waivers/concessions: Students may approach the university's financial aid office, Dean of Student Affairs, or Vice-Chancellor.
+- For provincial scholarships: Students may approach the respective provincial education department.
+- For Ehsaas/BISP: Contact the BISP/Ehsaas help desk.
+- If the grievance is not resolved internally, students may approach the relevant Ombudsman or the High Court under Article 199.
+
+Note: Specific grievance procedures vary by scholarship programme. Consult the relevant scholarship authority.
+
+[SECTION: HYDERABAD_SPECIFIC_RESOURCES]
+Title: Scholarship Resources for Students in Hyderabad
+Authority: University of Sindh Act, 1972; MUET Act, 1976; LUMHS Act, 2006; HEC Ordinance, 2002; Government of Sindh
+Jurisdiction: Hyderabad, Sindh
+Legal Status: Statutory, Government, and Institutional
+Source: University Acts; HEC Ordinance, 2002; HEC Guidelines; Sindh Government
+
+Hyderabad-Specific Information:
+- Students at University of Sindh, MUET, and LUMHS may apply for HEC scholarships through the HEC portal and their university's financial aid office.
+- Sindh provincial scholarships are available through the Sindh Education Department.
+- University of Sindh (Jamshoro/Hyderabad): Financial Aid Office handles need-based and merit-based fee waivers under the University of Sindh Act, 1972 and Statutes.
+- MUET (Jamshoro): Financial aid/scholarship office processes university-specific scholarships and HEC scholarship applications under the MUET Act, 1976.
+- LUMHS (Hyderabad): Financial aid office handles scholarship applications under the LUMHS Act, 2006.
+- University of Sindh: Official website: https://www.usindh.edu.pk | Admissions: https://admissions.usindh.edu.pk
+- MUET: Official website: https://www.muet.edu.pk | Admissions: https://www.muet.edu.pk/admissions
+- LUMHS: Official website: https://www.lumhs.edu.pk | Admissions: https://www.lumhs.edu.pk/admissions/undergraduate_admission.php
+- HEC Scholarship Portal: https://www.hec.gov.pk (online application for need-based and merit-based scholarships)
+- Local Zakat Committees in Hyderabad may provide educational assistance to eligible students.
+- Students may also explore charitable organizations operating in Hyderabad for educational assistance.
+- If scholarship grievances are not resolved internally, students may approach the Sindh Provincial Ombudsman.
+
+Note: Specific scholarship availability, eligibility, and application procedures vary by programme and institution. Consult your university's financial aid office and the HEC scholarship portal for current information.

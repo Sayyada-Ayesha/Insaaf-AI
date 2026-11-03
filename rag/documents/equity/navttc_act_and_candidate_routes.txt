@@ -1,0 +1,13 @@
+[SECTION: NAVTTC_ACT_AND_REGULATION_PAGE_INSTRUMENT_LISTING_AND_CAND]
+Title: NAVTTC Act & Regulation page — instrument listing, candidate routes and published contacts
+Authority: National Vocational and Technical Training Commission (NAVTTC)
+Jurisdiction: Pakistan (Federal)
+Source: NAVTTC — Act & Regulation page
+Source URL: https://navttc.gov.pk/act-and-regulation/
+Retrieval Method: Official page text read on 2026-10-14
+
+The page presents NAVTTC's "Act & Regulation" section under Resources / Notifications, described on the site as "The NAVTTC Act & regulations". The full text of the Act and of the regulations was NOT retrieved on 2026-10-14, so no section number, power, fee or penalty from the instruments can be quoted from this record.
+Candidate-facing routes published by NAVTTC: "Apply for Trainings" and "Institute Registration". Published commission contact channels on the same site include the helpline 0800-88866 and an Mon-Fri 08:00 AM - 04:00 PM office window.
+Training and qualification structures named on the site: Competency Based Training (CBT) qualifications by level, Conventional Courses including DAE and short courses by duration, the NVQF 8-level qualifications framework, Recognition of Prior Learning (RPL), the Matric-Tech Program, PMYSDP Batch 03, Skills of Tomorrow, Skills Impact Bond and the Job Portal (NEXT).
+Region-level programme scheduling is published per batch; the page shows an example KPK Region 3-month PMYSDP Batch-III assessment plan listing programme, district, institute and trade with assessment dates.
+Scope limit: NAVTTC's listing of a programme is not an offer of admission. Age limits, qualification requirements, tuition or fee amounts, free-of-cost status, seat numbers and current intake openness are set per programme and are NOT established by this record. Do not state that all technical or vocational programmes are free, open, or share one eligibility rule. Do not apply HEC degree-awarding recognition rules as though they governed every technical-training programme.

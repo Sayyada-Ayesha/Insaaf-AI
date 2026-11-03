@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  @apply antialiased;
+}
+
+/* Scrollbar Customization */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #E5E7EB;
+  border-radius: 10px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #D1D5DB;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Markdown Styling */
+.ProseMirror p {
+  @apply mb-3;
+}
+.ProseMirror strong {
+  @apply text-[#01411C] font-bold;
+}
+.ProseMirror ul {
+  @apply list-disc ml-5 mb-3;
+}
+.ProseMirror ol {
+  @apply list-decimal ml-5 mb-3;
+}
+
+@media print {
+  header, footer, nav, button, .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .printable-document {
+    background: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .printable-document * {
+    color: black !important;
+  }
+}
+
+.a4-page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 30mm;
+  margin: 10mm auto;
+  background: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  overflow-wrap: break-word;
+}
+
+/* Dark Mode Global Overrides */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body,
+.dark .min-h-screen {
+  background-color: #0B0F17 !important;
+  color: #f1f5f9 !important;
+}
+
+/* Header */
+.dark header {
+  background-color: rgba(15, 23, 42, 0.9) !important;
+  border-color: #1e293b !important;
+}
+
+/* Cards, containers, white backgrounds */
+.dark .bg-white {
+  background-color: #111827 !important;
+}
+
+.dark .bg-gray-50,
+.dark .bg-\[\#F9FAFB\] {
+  background-color: #1f2937 !important;
+}
+
+/* Text colors for readable contrast */
+.dark .text-gray-900 {
+  color: #f9fafb !important;
+}
+
+.dark .text-gray-800 {
+  color: #f3f4f6 !important;
+}
+
+.dark .text-gray-700 {
+  color: #e5e7eb !important;
+}
+
+.dark .text-gray-600 {
+  color: #d1d5db !important;
+}
+
+.dark .text-gray-500 {
+  color: #9ca3af !important;
+}
+
+.dark .text-gray-400 {
+  color: #9ca3af !important;
+}
+
+.dark .text-gray-300 {
+  color: #6b7280 !important;
+}
+
+/* Borders */
+.dark .border-gray-100,
+.dark .border-gray-200 {
+  border-color: #1f2937 !important;
+}
+
+/* Inputs */
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: #1f2937 !important;
+  border-color: #374151 !important;
+  color: #f9fafb !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #9ca3af !important;
+}
+
+/* Shadows */
+.dark .shadow-2xl,
+.dark .shadow-xl {
+  --tw-shadow-color: rgba(0,0,0,0.4) !important;
+}
+
+/* Footer */
+.dark footer {
+  background-color: #0B0F17 !important;
+  border-color: #1f2937 !important;
+}
+
+/* Specific bg colors */
+.dark .bg-gray-100 {
+  background-color: #1f2937 !important;
+}
+
+/* Nav/Tab pill backgrounds */
+.dark nav .bg-gray-100,
+.dark .bg-gray-100 {
+  background-color: #111827 !important;
+}
+
+/* Modal backdrop */
+.dark .bg-gray-900\/40 {
+  background-color: rgba(0,0,0,0.7) !important;
+}
+
+/* Scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: #111827;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #374151;
+}
+
+/* Emerald accents remain vibrant in dark */
+.dark .bg-emerald-50 {
+  background-color: rgba(1, 65, 28, 0.25) !important;
+  color: #34d399 !important;
+}
+
+.dark .text-\[\#01411C\] {
+  color: #34d399 !important;
+}
+
+.dark .bg-\[\#01411C\] {
+  background-color: #01411C !important;
+}
+
+/* Info modal backgrounds */
+.dark .bg-\[\#01411C\]\/5 {
+  background-color: rgba(1, 65, 28, 0.2) !important;
+}
+
+/* Custom Selection & Focus style for inputs & text */
+::selection {
+  background-color: #01411C;
+  color: white;
+}
+
+.dark ::selection {
+  background-color: #34d399;
+  color: #000000;
+}
+
+/* Ensure inputs are fully legible, placeholders have high contrast, and caret/cursor is visible */
+input, textarea, select {
+  caret-color: #01411C;
+}
+
+.dark input, .dark textarea, .dark select {
+  caret-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
+/* Preserve print styles - never dark */
+@media print {
+  .dark body,
+  .dark .bg-white,
+  .dark .text-gray-900 {
+    background-color: white !important;
+    color: black !important;
+  }
+}
+
+/* Part Z: Font size setting — larger root text scaling */
+.insaaf-font-large {
+  font-size: 112.5%;
+}
+
+/* Part Z: Reduced motion setting — disable animations/transitions app-wide */
+.insaaf-reduced-motion *,
+.insaaf-reduced-motion *::before,
+.insaaf-reduced-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+
+/* Page atmosphere: one fixed, non-interactive layer behind the whole product.
+   The sage light follows the pointer across the page background only. */
+.app-atmosphere {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background:
+    radial-gradient(1100px 720px at 10% -12%, rgba(214, 236, 220, 0.55), transparent 68%),
+    radial-gradient(900px 620px at 102% 4%, rgba(238, 244, 232, 0.7), transparent 64%),
+    linear-gradient(180deg, #f8faf6 0%, #f6f8f4 48%, #f9faf7 100%);
+}
+
+.atmosphere-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(70px);
+  opacity: 0.55;
+  will-change: transform;
+}
+
+.atmosphere-blob-a {
+  width: 54vw;
+  height: 46vw;
+  left: -14vw;
+  top: -12vh;
+  background: radial-gradient(circle, rgba(167, 214, 181, 0.34), rgba(167, 214, 181, 0) 70%);
+  animation: atmosphere-drift-a 52s ease-in-out infinite alternate;
+}
+
+.atmosphere-blob-b {
+  width: 46vw;
+  height: 42vw;
+  right: -16vw;
+  top: 24vh;
+  background: radial-gradient(circle, rgba(201, 226, 198, 0.3), rgba(201, 226, 198, 0) 70%);
+  animation: atmosphere-drift-b 68s ease-in-out infinite alternate;
+}
+
+.atmosphere-glow {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 700ms ease;
+  background:
+    radial-gradient(620px circle at var(--bg-x, 50%) var(--bg-y, 28%),
+      rgba(74, 222, 128, 0.11) 0%,
+      rgba(16, 185, 129, 0.055) 38%,
+      transparent 72%);
+}
+
+.app-atmosphere.is-active .atmosphere-glow {
+  opacity: 1;
+}
+
+.dark .app-atmosphere {
+  background:
+    radial-gradient(1100px 720px at 10% -12%, rgba(6, 78, 59, 0.35), transparent 68%),
+    radial-gradient(900px 620px at 102% 4%, rgba(20, 83, 45, 0.22), transparent 64%),
+    linear-gradient(180deg, #0b0f17 0%, #0d1411 55%, #0b0f17 100%);
+}
+
+.dark .atmosphere-blob {
+  opacity: 0.24;
+}
+
+@keyframes atmosphere-drift-a {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(5vw, 4vh, 0) scale(1.08); }
+}
+
+@keyframes atmosphere-drift-b {
+  from { transform: translate3d(0, 0, 0) scale(1.04); }
+  to { transform: translate3d(-4vw, -5vh, 0) scale(0.96); }
+}
+
+/* Touch and reduced-motion users get the calm static atmosphere only. */
+@media (hover: none), (pointer: coarse) {
+  .atmosphere-glow {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .atmosphere-blob {
+    animation: none !important;
+  }
+  .atmosphere-glow {
+    transition: none;
+  }
+}
+
+.insaaf-reduced-motion .atmosphere-blob {
+  animation: none !important;
+}

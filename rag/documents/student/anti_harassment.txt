@@ -1,0 +1,152 @@
+[SECTION: APPLICABLE_LAW_AND_AUTHORITY]
+Title: Protection Against Harassment of Women at the Workplace Act, 2010 — Applicability to Educational Institutions
+Authority: Parliament of Pakistan (Federal Statute)
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Active Statutory Law
+Source: Gazette of Pakistan, 2010
+
+Key Provisions:
+- The Act defines "workplace" to include any organization, institution, or premises where employees, students, or other persons carry out activities related to employment or education.
+- Educational institutions (universities, colleges, schools, madrassas, training centres) are covered workplaces under this Act.
+- Harassment means any unwelcome sexual advance, request for sexual favours, sexual conduct, or sexually coloured remarks, or any other conduct of a sexual nature that creates a hostile, intimidating, or offensive environment.
+- The Act protects all persons within the covered workplace, regardless of gender, though the statutory title references women.
+- Provincial governments have adopted or mirrored this Act through provincial legislation (e.g., Sindh Protection Against Harassment of Women at the Workplace Act, 2010; Punjab Protection Against Harassment of Women Act, 2012).
+
+Note: The specific provincial version applicable to you depends on your institution's location. Consult the relevant provincial Act for your jurisdiction.
+
+[SECTION: INQUIRY_COMMITTEE_COMPOSITION]
+Title: Inquiry Committee — Composition and Mandate
+Authority: Protection Against Harassment of Women at the Workplace Act, 2010 (Section 3) / HEC Anti-Harassment Policy Guidelines
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Statutory Requirement
+Source: Gazette of Pakistan, 2010; HEC Policy Guidelines
+
+Key Requirements:
+- Every covered institution (including educational institutions) must constitute an Inquiry Committee to investigate harassment complaints.
+- The Committee shall consist of at least three (3) members.
+- At least one member must be a woman.
+- At least one member should be a senior faculty member or administrator.
+- The Committee's mandate is to inquire into complaints of harassment and submit findings and recommendations to the competent authority.
+- The Committee must act in a time-bound manner as prescribed by the applicable Act.
+
+Note: The specific composition, nomination process, and term of Committee members varies by institution. Consult your university's applicable regulations for the current Committee members and procedures.
+
+[SECTION: COMPLAINT_PROCEDURE]
+Title: Filing a Harassment Complaint — Procedure
+Authority: Protection Against Harassment of Women at the Workplace Act, 2010 (Sections 4-5) / HEC Anti-Harassment Policy
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Statutory Procedure
+Source: Gazette of Pakistan, 2010; HEC Policy Guidelines
+
+Procedure:
+1. The complainant (or any person with knowledge of the incident) may file a written complaint to the Inquiry Committee.
+2. The complaint should describe the incident(s), including date(s), time, location, nature of harassment, and any witnesses.
+3. The complainant may also report to the institution's designated focal person for harassment complaints, if one has been appointed.
+4. Upon receipt of the complaint, the Inquiry Committee shall initiate an inquiry.
+5. The Committee shall provide the respondent (the person accused) a copy of the complaint and an opportunity to respond.
+6. Both parties have the right to present evidence and witnesses.
+7. The Committee must complete its inquiry and submit its report within the timeframe prescribed by the applicable Act (typically 30 days from receipt of complaint).
+8. The Committee's report shall include findings of fact and recommendations for action, if any.
+
+Note: Specific timelines, forms, and submission procedures vary by institution and province. Consult your university's applicable regulations and the relevant provincial Act.
+
+[SECTION: RELIEF_AND_REMEDIES]
+Title: Available Relief and Remedies for Harassment
+Authority: Protection Against Harassment of Women at the Workplace Act, 2010 (Sections 6-7)
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Statutory Remedies
+Source: Gazette of Pakistan, 2010
+
+Available Remedies (as per applicable law):
+- The competent authority, upon receiving the Inquiry Committee's report, may take appropriate disciplinary action against the respondent if the complaint is substantiated.
+- Disciplinary measures available under the applicable law may include written warning, censure, withholding of promotion, recovery of losses, suspension, dismissal, or other measures as prescribed by the relevant statute and institutional regulations.
+- The complainant may also seek interim protection measures during the pendency of the inquiry.
+- The complainant retains the right to approach law enforcement authorities if the conduct constitutes a criminal offence under the Pakistan Penal Code (e.g., Section 354A PPC — stalking, Section 509 PPC — word, gesture or act intended to insult the modesty of a woman).
+
+Note: The specific disciplinary measures and their applicability depend on the relevant Act and institutional regulations. Consult the applicable provincial Act and your university's regulations.
+
+[SECTION: APPEAL_MECHANISM]
+Title: Appeal Against Inquiry Committee Decision
+Authority: Protection Against Harassment of Women at the Workplace Act, 2010 (Section 8)
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Statutory Right
+Source: Gazette of Pakistan, 2010
+
+Appeal Process:
+- Any aggrieved party (complainant or respondent) may appeal against the decision or order passed by the competent authority.
+- The appeal lies to the Federal Ombudsman or Provincial Ombudsman (as applicable based on the institution's jurisdiction) within the timeframe prescribed by the Act.
+- The Ombudsman shall hear the appeal and pass an order.
+- Further appeal against the Ombudsman's order lies to the competent court as prescribed by the applicable law.
+
+Note: The specific appellate authority and timelines depend on whether the institution falls under federal or provincial jurisdiction. Consult the relevant Ombudsman's office for your area.
+
+[SECTION: EXTERNAL_COMPLAINT_ROUTES]
+Title: External Complaint Routes — When Institution Fails to Act
+Authority: Protection Against Harassment of Women at the Workplace Act, 2010; Constitution of Pakistan
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Statutory and Constitutional Rights
+Source: Gazette of Pakistan, 2010; Constitution of Pakistan, 1973
+
+External Routes:
+- If the institution fails to constitute an Inquiry Committee or fails to act on a complaint within a reasonable time, the complainant may approach:
+  1. Federal Ombudsman (Wafaqi Mohtasib) — for federal institutions. Helpline: 1055.
+  2. Provincial Ombudsman — for provincial institutions.
+  3. HEC Complaint Cell — for HEC-recognized universities. HEC may issue directives to the institution.
+  4. Law enforcement (local police station) — if the conduct constitutes a criminal offence under PPC.
+  5. High Court — via writ petition under Article 199 of the Constitution if fundamental rights are violated or the institution/inquiry mechanism is failing to perform its statutory duty.
+
+Note: Jurisdiction determines which route is appropriate. Federal institutions go to the Federal Ombudsman; provincial institutions go to the Provincial Ombudsman.
+
+[SECTION: HEC_POLICY_REQUIREMENTS]
+Title: HEC Anti-Harassment Policy Requirements for Universities
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: All HEC-Recognized Universities and Degree-Awarding Institutions
+Legal Status: HEC Policy Regulation
+Source: HEC Policy Guidelines; https://www.hec.gov.pk
+
+HEC Requirements:
+- All HEC-recognized universities must adopt and implement an Anti-Harassment Policy consistent with the Protection Against Harassment of Women at the Workplace Act, 2010.
+- Universities must constitute an Inquiry Committee as required by the Act.
+- Universities must designate a focal person for harassment complaints.
+- Universities must display the Anti-Harassment Policy and complaint procedure prominently on campus and on the university website.
+- Universities must conduct awareness sessions on harassment prevention and student rights.
+- HEC may take action against universities that fail to comply, including directives, show-cause notices, or other regulatory measures.
+
+Note: HEC policy sets minimum standards. Individual universities may have additional provisions. Consult your university's applicable Anti-Harassment Policy for specific procedures and contacts.
+
+[SECTION: HYDERABAD_SPECIFIC_RESOURCES]
+Title: Anti-Harassment Resources for Students in Hyderabad
+Authority: University of Sindh Act, 1972; MUET Act, 1976; LUMHS Act, 2006; Sindh Protection Against Harassment of Women at the Workplace Act, 2010; HEC
+Jurisdiction: Hyderabad, Sindh
+Legal Status: Statutory and Institutional
+Source: Sindh Protection Against Harassment of Women at the Workplace Act, 2010; University Acts; HEC Guidelines
+
+Hyderabad-Specific Information:
+- University of Sindh (Jamshoro/Hyderabad): Required under the Sindh Protection Against Harassment of Women at the Workplace Act, 2010 and HEC policy to constitute an Inquiry Committee. Students may file complaints through the Committee or designated focal person. Governed by the University of Sindh Act, 1972.
+  Anti-Harassment Cell: https://usindh.edu.pk/page/365 | Harassment Policy: https://usindh.edu.pk/page/32
+- MUET (Jamshoro): Required to constitute an Inquiry Committee under the applicable law. Students may file complaints through the Committee or focal person. Governed by the MUET Act, 1976.
+  Official website: https://www.muet.edu.pk (contact Registrar or Student Affairs for harassment complaint procedure)
+- LUMHS (Hyderabad): Required to constitute an Inquiry Committee under the applicable law. Students may file complaints through the Committee or focal person. Governed by the LUMHS Act, 2006.
+  Harassment Policy PDF: https://lumhs.edu.pk/circulars/THE_PROTECTION_AGAINST_HARASSMENT_OF_WOMEN_AT_THE_WORKPLACE_ACT2011.pdf | Official website: https://www.lumhs.edu.pk
+- If the university fails to act on a complaint, students may approach the Sindh Provincial Ombudsman for Harassment.
+- Criminal complaints may be filed at the local police station if the conduct constitutes an offence under PPC.
+- Students may also approach the HEC Complaint Cell if the university is not complying with HEC Anti-Harassment Policy requirements.
+- Legal aid may be available through university legal aid clinics or the Sindh Bar Council.
+- Sindh High Court (Hyderabad Bench) is available for writ petitions under Article 199 of the Constitution.
+
+Note: Specific committee members, focal persons, and contact details vary by university. Consult your university's applicable Anti-Harassment Policy for current information.
+
+[SECTION: FALSE_COMPLAINT_PROVISIONS]
+Title: Protection Against False or Malicious Complaints
+Authority: Protection Against Harassment of Women at the Workplace Act, 2010
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Statutory Provision
+Source: Gazette of Pakistan, 2010
+
+Key Provisions:
+- The Act provides that if a complaint is found to be false or malicious, the Inquiry Committee may recommend action against the complainant.
+- The respondent has the right to defend against the complaint and present evidence.
+- The principle of natural justice (audi alteram partem — hear the other side) applies throughout the inquiry process.
+- Both parties have the right to a fair hearing and to present their case.
+
+Note: The standard of proof and specific provisions for false complaints vary by jurisdiction. Consult the applicable Act and institutional regulations.

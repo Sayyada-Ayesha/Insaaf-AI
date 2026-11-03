@@ -1,0 +1,116 @@
+[SECTION: CASE_BENAZIR_BHUTTO_V_FEDERATION]
+Case: Benazir Bhutto v. Federation of Pakistan
+Citation: PLD 1988 SC 416
+Court: Supreme Court of Pakistan
+Year: 1988
+Legal Issue: Whether the right to form and be a member of a political party is a fundamental right under Article 17 of the Constitution.
+Facts: The petitioner challenged certain provisions restricting political party activities.
+Decision: The Supreme Court held that the right to form and be a member of a political party is a fundamental right guaranteed under Article 17 of the Constitution. Restrictions on political parties must be reasonable and in accordance with law.
+Relevant Law: Constitution of Pakistan, Article 17 (Freedom of Association).
+Principle: Freedom of association includes the right to form political parties. Restrictions must be reasonable.
+Source: Supreme Court of Pakistan official reports.
+Source URL: https://www.supremecourt.gov.pk
+
+[SECTION: CASE_DARSHAN_MASIH_V_STATE]
+Case: Darshan Masih v. The State
+Citation: PLD 1990 SC 513
+Court: Supreme Court of Pakistan
+Year: 1990
+Legal Issue: Bonded labour and fundamental rights under Articles 9, 11, and 14 of the Constitution.
+Facts: Bonded labourers in brick kilns petitioned the Supreme Court for release from bonded servitude.
+Decision: The Supreme Court declared all forms of bonded labour unconstitutional and violative of fundamental rights. The Court directed the government to take steps to eliminate bonded labour practices.
+Relevant Law: Constitution of Pakistan, Articles 9, 11, 14; Bonded Labour System (Abolition) Act, 1992.
+Principle: Bonded labour is a violation of the constitutional right to life, liberty, and human dignity.
+Source: Supreme Court of Pakistan official reports.
+Source URL: https://www.supremecourt.gov.pk
+
+[SECTION: CASE_SHEHLA_ZIA_V_WAPDA]
+Case: Shehla Zia v. WAPDA
+Citation: PLD 1994 SC 693
+Court: Supreme Court of Pakistan
+Year: 1994
+Legal Issue: Right to life under Article 9 includes right to a clean and healthy environment.
+Facts: Residents challenged the construction of a high-voltage grid station near residential areas, claiming health hazards.
+Decision: The Supreme Court broadened the interpretation of 'right to life' under Article 9 to include the right to a clean and unpolluted environment. The Court ordered WAPDA to commission a study on health effects.
+Relevant Law: Constitution of Pakistan, Article 9.
+Principle: The right to life under Article 9 encompasses the right to a healthy and clean environment.
+Source: Supreme Court of Pakistan official reports.
+Source URL: https://www.supremecourt.gov.pk
+
+[SECTION: CASE_PAKISTAN_V_PUBLIC_AT_LARGE]
+Case: Pakistan v. Public at Large (Suo Motu)
+Citation: PLD 2013 SC 279
+Court: Supreme Court of Pakistan
+Year: 2013
+Legal Issue: Enforced disappearances and the constitutional rights of detained persons.
+Facts: The Supreme Court took suo motu notice of multiple cases of enforced disappearances across Pakistan.
+Decision: The Court held that enforced disappearances violate Articles 9, 10, and 14 of the Constitution. The Court directed intelligence agencies to produce missing persons and established a Commission of Inquiry on Enforced Disappearances.
+Relevant Law: Constitution of Pakistan, Articles 9, 10, 14, 199.
+Principle: Every person detained by the State has the right to be produced before a court. Enforced disappearances are unconstitutional.
+Source: Supreme Court of Pakistan official reports.
+Source URL: https://www.supremecourt.gov.pk
+
+[SECTION: CASE_KHAKI_V_RAWALPINDI]
+Case: Dr. Muhammad Aslam Khaki v. SSP (Operations) Rawalpindi
+Citation: Islamabad High Court, 2010
+Court: Islamabad High Court
+Year: 2010
+Legal Issue: Transgender persons' rights and legal identity.
+Facts: Petition filed for recognition of rights of transgender persons (khawaja sira) in Pakistan.
+Decision: The Supreme Court recognized the fundamental rights of transgender persons including the right to identity, dignity, education, and inheritance. NADRA was directed to issue identity cards.
+Relevant Law: Constitution of Pakistan, Articles 9, 14, 25.
+Principle: Transgender persons are entitled to all fundamental rights guaranteed by the Constitution.
+Source: Supreme Court of Pakistan official reports.
+Source URL: https://www.supremecourt.gov.pk
+
+[SECTION: CASE_MAULVI_IQBAL_HAIDER]
+Case: Maulvi Iqbal Haider v. Capital Development Authority
+Citation: PLD 2006 SC 394
+Court: Supreme Court of Pakistan
+Year: 2006
+Legal Issue: Right to information and public interest litigation.
+Facts: Petitioner sought disclosure of public expenditure information by CDA.
+Decision: The Supreme Court upheld the right of citizens to access information about public spending. The Court recognized transparency as essential to good governance.
+Relevant Law: Constitution of Pakistan, Article 19A (Right to Information).
+Principle: Citizens have a fundamental right to access information on matters of public importance.
+Source: Supreme Court of Pakistan official reports.
+Source URL: https://www.supremecourt.gov.pk
+
+[SECTION: CASE_SALMAN_AKRAM_RAJA]
+Case: Salman Akram Raja v. Government of Punjab
+Citation: PLD 2013 SC 111
+Court: Supreme Court of Pakistan
+Year: 2013
+Legal Issue: Right to fair trial and due process under Article 10A.
+Facts: Challenge to the proceedings of special tribunals and military courts.
+Decision: The Supreme Court affirmed that Article 10A guarantees the right to a fair trial to every person, and this right cannot be curtailed by special procedures unless they meet the minimum standards of fairness.
+Relevant Law: Constitution of Pakistan, Article 10A.
+Principle: Right to fair trial is an inviolable fundamental right that applies to all judicial and quasi-judicial proceedings.
+Source: Supreme Court of Pakistan official reports.
+Source URL: https://www.supremecourt.gov.pk
+
+[SECTION: CASE_IMRANA_TIWANA]
+Case: Imrana Tiwana v. Province of Punjab
+Citation: 2015 SCMR 1739
+Court: Supreme Court of Pakistan
+Year: 2015
+Legal Issue: Right to access public parks and preservation of government property.
+Facts: Government of Punjab sought to convert Jilani Park (formerly Racecourse Park) in Lahore for commercial purposes.
+Decision: The Supreme Court held that public parks and green spaces are held in trust for citizens and cannot be commercialized or privatized. The right to a healthy environment under Article 9 includes access to parks.
+Relevant Law: Constitution of Pakistan, Articles 9, 14; Punjab Parks and Green Areas Ordinance.
+Principle: Public parks are held in public trust and cannot be converted for private commercial use.
+Source: Supreme Court of Pakistan official reports.
+Source URL: https://www.supremecourt.gov.pk
+
+[SECTION: CASE_MUHAMMAD_NAWAZ_SHARIF]
+Case: Muhammad Nawaz Sharif v. President of Pakistan
+Citation: PLD 1993 SC 473
+Court: Supreme Court of Pakistan
+Year: 1993
+Legal Issue: Dissolution of National Assembly under Article 58(2)(b) and judicial review.
+Facts: The President dissolved the National Assembly. The deposed Prime Minister challenged the dissolution.
+Decision: The Supreme Court restored the National Assembly, holding that the President had failed to demonstrate adequate grounds for dissolution. The Court exercised judicial review over executive actions.
+Relevant Law: Constitution of Pakistan, Article 58(2)(b) (since repealed by 18th Amendment), Article 184(3).
+Principle: Dissolution of the National Assembly is subject to judicial review. The executive must justify its actions before the courts.
+Source: Supreme Court of Pakistan official reports.
+Source URL: https://www.supremecourt.gov.pk

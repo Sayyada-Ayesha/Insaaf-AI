@@ -1,0 +1,33 @@
+[SECTION: 1] Muslim Personal Law of Succession and Inheritance — Governed by Muslim Personal Law (Shariat) Application Act 1962 and classical Islamic jurisprudence. Source: Pakistan Code. Status: CURRENT.
+
+[SECTION: 2] Quranic Heirs — Fixed-share heirs (Quranic heirs) include: husband, wife, daughter, son's daughter (how low soever), father, mother, grandfather (how high soever), grandmother (how high soever), full sister, consanguine sister, uterine brother, and uterine sister.
+
+[SECTION: 3] Residuary heirs — After Quranic shares are allocated, residue passes to residuary heirs: son, son's son (how low soever), father (as residuary), grandfather, full brother, consanguine brother, full nephew, consanguine nephew, full first cousin, etc.
+
+[SECTION: 4] Husband's share — If wife has no child: husband gets 1/4. If wife has child: husband gets 1/8.
+
+[SECTION: 5] Wife's share — If husband has no child: wife (or wives collectively) gets 1/4. If husband has child: wife (or wives collectively) gets 1/8. If multiple wives, they share equally in the share.
+
+[SECTION: 6] Daughter's share — One daughter: gets 1/2. Multiple daughters (2+): get 2/3 collectively. Daughter with son: daughter takes half of son's share (son:daughter = 2:1).
+
+[SECTION: 7] Mother's share — If no child: mother gets 1/3. If child exists: mother gets 1/6. If spouse and both parents survive: mother gets 1/3 of the remainder after spouse's share.
+
+[SECTION: 8] Father's share — If no child: father gets 1/6 (as Quranic heir) plus residue (as residuary). If child exists: father gets 1/6.
+
+[SECTION: 9] Full sister — If no child, no father, no brother: full sister gets 1/2. Multiple full sisters (2+): 2/3. Full sister with full brother: 2:1 ratio.
+
+[SECTION: 10] Grandfather — When no father exists, grandfather takes father's place in inheritance.
+
+[SECTION: 11] Exclusion from inheritance — Grounds of exclusion: (a) homicide (killing the testator/intestate); (b) difference of religion (Muslim/non-Muslim); (c) slavery. A valid will (wasiyat) can distribute up to 1/3 of the estate to non-Quranic heirs.
+
+[SECTION: 12] Wasiyat (Will) — A Muslim may bequeath up to 1/3 of his estate to any person not already an heir. Bequest to an heir requires consent of all other heirs after death. Will must be in writing, signed by testator and two witnesses.
+
+[SECTION: 13] Gift (Hiba) — A gift inter vivos (hiba) must be made with: (a) declaration by donor; (b) acceptance by donee; (c) delivery of possession. Gift to a minor may be accepted by guardian. Gift of property requires registration.
+
+[SECTION: 14] Succession Certificate — The Family Court grants succession certificates entitling the holder to collect debts, securities and other assets of the deceased. Application includes: names of all legal heirs, their shares, and details of the deceased's assets.
+
+[SECTION: 15] Letters of Administration — Where the deceased dies intestate (without will), letters of administration are granted by the court to the person entitled to administer the estate (usually the nearest heir willing to administer).
+
+[SECTION: 16] Probate — Where the deceased left a will, probate is granted by the court confirming the will's validity and the executor's authority. Probate is mandatory in the four major cities (Karachi, Lahore, Rawalpindi, Islamabad) for immovable property.
+
+[SECTION: 17] Non-Muslim succession — Non-Muslims (Christians, Hindus, Parsis) are governed by their respective personal laws for succession. The Succession Act 1925 applies to certain non-Muslim communities.

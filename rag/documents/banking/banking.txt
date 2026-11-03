@@ -1,0 +1,19 @@
+[SECTION: 1] Banking Companies Ordinance, 1962 (Ordinance No. LVII of 1962) — Regulates banking companies in Pakistan. Source: Pakistan Code (pakistancode.gov.pk). Status: CURRENT.
+
+[SECTION: 2] State Bank of Pakistan Act, 1956 — SBP is the central bank of Pakistan. Functions: issue currency, regulate money supply, supervise banks, manage foreign exchange, advise government. SBP sets monetary policy through the Monetary Policy Committee. SBP licenses and regulates all banks.
+
+[SECTION: 3] Banking regulation — No company may carry on banking business without a license from SBP. Minimum paid-up capital for banks is prescribed by SBP. Banks must maintain cash reserve and liquidity ratios.
+
+[SECTION: 4] Types of banks — (a) Commercial banks (HBL, NBP, UBL, etc.); (b) Islamic banks (Meezan, Dubai Islamic, etc.); (c) Microfinance banks; (d) Development finance institutions (SME Bank, ZTBL). Islamic banking operates on Shariah-compliant principles (Murabaha, Ijara, Musharaka, Mudaraba).
+
+[SECTION: 5] Depositor protection — Deposits are insured by the Deposit Protection Corporation up to PKR 500,000 per depositor per bank. Banks must maintain secrecy of customer accounts.
+
+[SECTION: 6] Loans and advances — Banks may grant loans, advances, overdrafts and cash finance. Loans must be secured. NPL (non-performing loan) classification: substandard (90 days overdue), doubtful (180 days), loss (365 days).
+
+[SECTION: 7] Banking Court — Banking disputes involving amounts above PKR 500,000 are tried by Banking Courts. Summary procedure applies. Appeals lie to the High Court within 30 days.
+
+[SECTION: 8] Negotiable Instruments Act, 1881 — Cheques, promissory notes and bills of exchange are negotiable instruments. A cheque is a bill of exchange drawn on a specified banker. Dishonour of cheque: PPC Section 489-F criminalizes cheque dishonour. Holder must give notice within 30 days. Offender punishable with imprisonment up to 3 years.
+
+[SECTION: 9] Foreign Exchange Regulation Act, 1947 — SBP regulates foreign currency transactions. Restrictions on taking foreign currency out of Pakistan. Authorized dealers (banks) may deal in foreign exchange.
+
+[SECTION: 10] Digital banking — SBP has issued regulations for digital/online banking, branchless banking (Raast, JazzCash, Easypaisa), and payment service providers. E-money institutions are regulated by SBP.

@@ -1,0 +1,1154 @@
+# HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: Pakistan (Federal) — higher education
+Version: GEP-2023 | Published/notified: 2023-07-10 | Effective: 2023-07-10 | Status: Current
+Provenance: sections below carry the canonical HEC URL for the document they were extracted from.
+Coverage area: B,H
+Verification note: Notification "Graduate Education Policy-2023 (GEP-2023)", dated Monday, July 10, 2023.
+
+[SECTION: hec_gep_graduate_1_HEC_GRADUATE_EDUCATION_POLICY_GEP_2023]
+# HEC Graduate Education Policy (GEP-2023)
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Graduate Education Policy (GEP-2023)
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+T H E H I G H ER E DU C ATI O N C O M M ISSI O N G RADUATE E DUCATION P OLICY ii | P a g e Contents INTRODUCTION  iv PURPOSE  v MANDATE  v APPLICABI LITY  v GUIDING PRINCIPLES  vi DEFINITIONS  vii ACRONYMS  ix PART - I: LAUNCHING A PROGRAM AND A WARDING DEGREE  1
+1. MINIMUM REQUIREMENTS TO LAUNCH GRADUATE PROGRAMS AT UNIVERSITIES  1
+2. MINIMUM REQUIREMENTS TO AWARD MS/MPHIL/EQUIVALENT DEGREES (LEVEL 7)  2
+
+[SECTION: hec_gep_graduate_2_HEC_GRADUATE_EDUCATION_POLICY_GEP_2023_PART_2]
+# HEC Graduate Education Policy (GEP-2023) (part 2)
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Graduate Education Policy (GEP-2023) (part 2)
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+2.1 Admission to an MS/MPhil/Equivalent Degree Programs  2 2.2 Coursework Requirement for Award of MS/MPhil/Equivalent Degrees  2 2.3 Degree Completion Timeline  3 2.4 Credits Transfer, Evaluation and Grading  3 3. MINIMUM REQUIREMENTS FOR AWARD OF DOCTORAL DEGREE (LEVEL 8)  3 3.1 Qualification  3 3.2 Intra - disciplinary Qualifications  4 3.3 CGPA  4 3.4 Admission T e st  4 3.5 Statement of P u r p o s e  5 3.6 Coursework and Re s i d en c y Re q u i r e m en t  5 3.7 Comprehensive E xa m i na t i o n  5 3.8 D o c tor a l D i s s e rt a t i o n  6 3.8.1 Selection of Research Area  6 3.8.2 Quality in Reporting  6 3.8.3 Methodological Quality  6 3.8 .4 Appropriateness of the Methods to the Aims of the Study  7 3.8.5 Relevance to the Policy and Practice  7 3.9 External Evaluation of PhD Dissertation  7 3.10 Plagiarism, Similarity Test and Open Defense  8 3.11 Re s ea rc h P u b l i c a t i o n  9 iii | P a g e 3.12 Degree Completion Timeline  10 3.13 Credits Transfer, Evaluation and Grading  10 3.14 Award of Post Graduate Diploma/Certificate  10 PART - II: GOVERERNING THE SYSTEMS OF DOCTORAL RESEARCH  11 4. GOVERNING THE RESEARCH SUPERVISION  11 4.1 P r i n c i ple s and P u r p os e s  11 4.2 Supervision of Doctoral Dissertation  11 4.2.1. General Conditions to Supervise Doctoral Research  11 4.2.2. Criteria to Be a PhD Supervisor  12 4.2.3. Supervisory Process  13 4 . 3 University Directorate of Advance Studies and Research or Equivalent Department  13 4.4 Teaching Assistantships and Research Assistantships:  14 5. PRACTICING THE ACADEMIC RESEARCH ETHICS  14 5.1 P r i n c i ple s and P u r p os e s  14 5 . 2 Guidelines to Ensure Academic Research Integrity :  14 5 . 3 Guidelines on Ethics of Using Similarity Detection Software (for Administrators )  15 5.4 Guidelines on Ethics of Using Similarity Detection Software (for Instructors)  15 5.5 Guidelines on Interpreting Originality Report  16 6. MANAGING THE GRIEVANCES OF GRADUATE STUDENTS  16 6.1 P r i n c i ple s and P u r p os e s  16 6.2 Guidelines to Establish a Grievance Management System  17 PART - III: QUALITY ASSURANCE  19 7. QUALITY ASSURANCE  19 7.1 Minimum Requirement for Academic HR  19 7.1.1 Faculty and supervisory requirement  19 7.1.2 Determining relevance of faculty with subject/degree program  19 7.2 NOC Requirements for Launching Graduate Programs  20 7.2.1 Classification - based application of NOC requirement  20 7.2.2 Process and timelines for obtaining an NOC to launch grad uate programs  20 7.2.3 Continuing compliance with the HEC’s policies  21 7.2.4 Cancellation of NOC and/or demotion to the lower category  21 7.3 Retributive Actions for violation of rules  22 7.4 Re q u i r e m en t s for Entering PhD Country Directory (PCD)  24 iv | P a g e H I G H E R E DU C A T I O N C O MM I SS I ON , PAKISTAN GRADUATE EDUCATION POLICY INTRODUCTION Over a period of two decades, the Higher Education Commission (HEC) introduced various policies to enhance the quality of graduate programs in Pakistan. More or less, these policies were focused on program - level minimum criteria , such as qualification, entry test, CGPA, CH, coursework, publication, dissertation, supervisory load and criteria, and faculty requirements. Meanwhile, HEC also issued several supplementary notifications elaborating the given criteria in pieces. Despite this , the worth of graduate education has always been a matter of concern . Lastly, HEC issued its policy on PhD Program in 2021 ; however, it received little support from the academia across the country due to disagreement with several aspects of the policy. Many fel t that the policy was too focused on coursework and not on research. Despite extensive discussions at the institutional level , various VC forums , and technical experts' committees, a consensus could not be developed . Learning through the experience, the Ch airman HEC decided to review the policy afresh through feedback from the entire academia .
+
+[SECTION: hec_gep_graduate_3_HEC_GRADUATE_EDUCATION_POLICY_GEP_2023_PART_3]
+# HEC Graduate Education Policy (GEP-2023) (part 3)
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Graduate Education Policy (GEP-2023) (part 3)
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+As a result , the HEC introduc ed the revised Graduate Education Policy - 2023 (GEP - 2023).
+2 . In line with its name, GEP - 2023 encompasses all the minimum standards and
+gu idelines to impart L evel 7 and 8 qualifications , with a special emphasis on governance of the doctoral research system in HEIs and quality assurance, while all the previous policies, including the PhD Policy 2021, focus ed merely on program - l evel requirements. Accordingly, the revised policy , while addre ssing the concerns of the stakeholders regarding admission and Credit Hours requirements, also embarks on various aspects of a quality dissertation along with research ethics, the roles and responsibilities of research supervisors and supervisees , and the conditions regulating their relationship and the handling of grievances.
+3 . Further, the new policy , while appreciating university autonomy within the ambit of their charters/acts, seeks to strike the right balance between autonomy and regulatory constrai nts. Hence, the requirement of obtaining NOC for the launch of a new graduate program has been relaxed for the top HEIs , ranked through a system as may be prescribed, while the lower - ranked HEIs must seek HEC’s NOC. However, these HEIs can exercise their a utonomy in determining faculty relevanc e at their end by adopting the mechanism prescribed in the policy. Lastly, this policy also suggests retributive actions for the HEIs violating the provisions that it prescribes.
+4 . Overall, the policy has three part s : (i) M inimum S tandards and G uidelines for L aunching a P rogram and A warding D egrees , Part - I ; (ii) G overnance of D octoral R esearch S ystem , Part - II ; and (iii) Q uality A ssurance , Part - III.
+v | P a g e PURPOSE Doctor of Philosophy (or PhD) is the highest university degree , awarded in most disciplines. Those who qualify at this level , are expected to serve highly consequential functions in the society, including in the fields of teaching and research. With in - depth training and immersion in a particular field of study, which includes making an original contribution to the area of study through the PhD dissertation, those holding PhD degrees are expected to have expertise in their area of study that they can utilize in teaching and further research, as well as in problem - solving and innovation to address important societal challenges. While other degree programs aim to teach students the things th at we ( the academic community) know, the purpose of a PhD program is to enable students to investigate what we do n o t know.
+2. In view of the highly consequential functions served by PhD degree holders , one of the most important guiding principles of the H EC’s Graduate Education Policy is quality. Hence, the p olicy is intended to ensure that PhD programs are open only to individuals , who carry a passion for , and deep interest in , academics and research, and who have demonstrated that they can handle the academic rigor required to complete a PhD degree. The overall goal of this policy is that PhD graduates from Pakistani universities should possess expertise in their field of study , be able to conduct high - quality research, and have strong scholarly writing skills relevant to their field of study. Therefore, it may be preferable to not confer a PhD degree than to confer a PhD degree based on substandard academic and research work.
+3. Since the PhD is a highly specialized degree, it is intended that only higher education institutions (HEIs) that possess resources to offer quality education at the highest level should offer PhD degree programs. The HEC has prescribed standards for lau nching PhD programs, and universities must obtain H EC approval by submitting evidence of compliance with these standards before launching a PhD program. However, it is critical to note that the prescribed standards are the minimum that every PhD candidate must satisfy before being awarded a degree . Universities are encouraged to formulate their own admission and completion requirements that would further enhance the quality of their PhD programs, provided that such internal policies are consistent with the minimum requirements set forth by the HEC.
+M ANDATE This policy has been made pursuant to the powers granted to the HEC under the Higher Education Commission Ordinance, 2002, and is binding on all HEIs in the country, whether operating in the public or private sector. Violations or failure to comply with HE C policies may lead to regulatory action being taken against non - compliant HEIs including, but not limited to, issuance of warnings , direction to stop further admissions , suspension or cancellation of NOCs , issuance of public alerts , and non - recognition of deficient degrees.
+APPLICABILITY
+i. T h i s p o l i cy s h al l b e e ff e c t i v e f r o m Fall 2023 ( th e “ Eff e c t i v e D a t e ” ) . A n y a dd i t i o na l
+
+[SECTION: hec_gep_graduate_4_HEC_GRADUATE_EDUCATION_POLICY_GEP_2023_PART_4]
+# HEC Graduate Education Policy (GEP-2023) (part 4)
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Graduate Education Policy (GEP-2023) (part 4)
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+r e q u i r e m en t s i n t h i s p o l i c y i n c o m pa r i s o n w i t h th e H E C ’ s p r e v i o u s l y appl i c a b l e polic ies vi | P a g e on MS/MPhil/Equivalent & PhD Programs (2016 and 2021) s h al l appl y f r o m th e Eff e c t i v e D a t e and sh al l n o t b e r e tro a c t i v el y appl i c a b le .
+ii. To assess whether a graduating student is compliant with the HEC’s policies, the HEC shall
+generally consider th is policy applicable to the date of student enrollment in the graduate program.
+iii. Notwithstanding the foregoing, the university and currently enrolled students may t ake
+advantage of the revisions in the policy, even if the student ha s enrolled before the Effective Date, provided that the u niversity/HEI/DAI has adopted or adapted the policy through its statutory bodies. It is, however, to be noted that the Graduate Edu cation Policy prescribes broader outlines /guidelines and minimum standards that cannot be lowered. Only the enhancement of standards is admissible.
+GUIDING PRINCIPLES
+i. University Autonomy: W ithin the ambit of their Charter/Act and HEC’s policies
+ii. Access: A ll qualified individuals with equal opportunity.
+iii. Relevance: L ocal needs and national policies.
+iv. Alignment: T he outcomes defined in National Qualification Framework and G raduate
+Education Policy.
+v. Contextualizing: W ithout compromising over the global standards.
+vi. Academic Freedom: T houghts and conceiving ideas.
+vii. Originality: T houghts leading to innovation by adhering to academic ethics.
+viii. Academic Flexibility: C onducting research activities without violating disciplinary
+guidelines.
+ix. Collabor ation, networking, and partnerships: A t the local, national, and international
+level s for the development and execution of graduate programs.
+x. Quality: Promoting high standards of academic and research excellence and student
+success vii | P a g e DEFINITIONS Academic Calendar: A schedule of the whole academic year (including fall, spring and summer semesters, s emester starting date, h olidays during the semester, s emester termination date, Mid - Term exam week, Final exam week, Result notification date etc.)
+Accreditation Councils: A council establi shed either by the Act of Parliament or under clause 10(e) of the HEC ordinance 2002 to carry out accreditation of institutions including their departments, faculties, and disciplines by giving them appropriate ratings.
+Adjunct Faculty: A contractual facu lty member, temporary or part - time, hired outside their fulltime profession such as researcher s and scientist s at any R&D or public/private sector organization, by educational institutions, typically colleges or universities, to teach specific courses or p rovide instructional support.
+Credits Hours: A uniformly recognized measure of time and effort expended to acquire knowledge, skills, competencies, and recognition that a learner has successfully completed the prior course of learning, corresponding to the qualification at a given level. One credit hour is equal to one hour of student – teacher contact per week for the aforementioned purpose.
+Graduate level: As defined in the National Qualifications Framework , th is is equivalent to level - 7 and level - 8 qualifications.
+Guidelines for the Implementation of Uniform Semester System: Policy guidelines issued by the Academic Division of HEC providing a uniform system to make Academic Year of Pakistani universities compa tible with international standards .
+H Index: M easured by Web of Science.
+Intra - disciplinary Qualifications: Refers to sub - disciplines occurring within one of the ten broad disciplines defined by UNESCO's International Standard Classification of Educati on (ISCED - F - 2013).
+Level 5 Degree Programs: D efined and mentioned in the National Qualifications Framework , including Ordinary Bachelor which includes associate degrees.
+Level 6 Degree Programs: As defined and mentioned in the National Qualifications Fram ework including Bachelor (Hons): BS, B.E . , B Arch . , BSc (Eng), BSc (Agri), B.Tech (Hons), LLB, B.Com, MBBS, DVM, BDS, Pharm D etc.
+Level 7 Degree Programs: As defined and mentioned in the National Qualifications Framework including MS, MPhil, MBA, MSc (En g.), ME, M. Tech . , LLM etc.
+Level 8 Degree Programs: As defined and mentioned in the National Qualifications Framework , this includes PhD.
+viii | P a g e National Qualification Framework: An approved framework of Pakistan’s national qualifications classifying them into eight hierarchical levels that is from level - 1 to level - 8, based on learning outcomes i.e., skill, competence and knowledge specified against each.
+Sustainable D evelopment G oals (SDGs): A framework of seventeen goals established by United Nations in 2015 addressing various social, economic, and environmental challenges to be met by 2030.
+
+[SECTION: hec_gep_graduate_5_HEC_GRADUATE_EDUCATION_POLICY_GEP_2023_PART_5]
+# HEC Graduate Education Policy (GEP-2023) (part 5)
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Graduate Education Policy (GEP-2023) (part 5)
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+ix | P a g e ACRONYMS APA: American Psychological Association CGPA: Cumulative Grade P oint A verage CH: Credit Hour COPE: Committee on Publication Ethics DAI: Degree Awarding Institute DASR: Directorate of Advance Studies and Research F.A: Faculty of Arts F.Sc: Faculty of Science G EP: Graduate Education Policy GRE: Graduate Record Examination HAT: Higher Education Aptitude test HEC: Higher Education Commission HEIs: Higher education institutions HJRS: HEC Journal Recognition System HSSC: Higher Secondary School Certificate IEEE: Institute for Electrical and Electronics Engineers ISCED: International Standard Classification of Education MLA: Modern Language Association MOOCS: Massive Open Online Courses MPhil: Master of Philosophy MS: Master of Science NAHE: National Academy of Higher Education NOCs: No Objection Certificates NQF: National Qualification Framework PhD: Doctor of Philosophy RAC: Relevance Assessment Committee SDGs: Sustainable development goals UNESCO: United Nations Educational, Scientific and Cultural Organization WOS: Web of Science PART - I: LAUNCHING A PROGRAM AND AWARDING DEGREE
+
+[SECTION: hec_gep_graduate_6_1_MINIMUM_REQUIREMENTS_TO_LAUNCH_GRADUATE_PROG]
+# 1. MINIMUM REQUIREMENTS TO LAUNCH GRADUATE PROGRAMS AT
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 1. MINIMUM REQUIREMENTS TO LAUNCH GRADUATE PROGRAMS AT
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+1. MINIMUM REQUIREMENTS TO LAUNCH GRADUATE PROGRAMS AT
+UNIVERSITIES Organizational autonomy is crucial for developing self - reliance and resilience within an organization. In an academic context, it creates an environment conducive to research. The HEC recognizes the importance of universities' autonomy in acco rdance with their Charter/Act. However, regulatory constraints are also necessary to ensure that the objectives of the sector align with the national goals. This policy seeks to strike a balance between academic autonomy and regulatory requirements. The Gr aduate Education Policy provides a broad framework for achieving national goals through academic and research excellence, and universities are expected to program graduate degree award s within the guidelines set forth in this policy.
+1.1 To launch a new gr aduate program, universities are required to ensure the following :
+a. The Act/Charter of the university allows the program to be offered.
+b. The r ationale for launch ing the program is established. It delineates that the need, scope, and objectives of launching the degree program in terms of market demand and supply (both students and resources) have been assessed; societal problems expected to be resolved have been ident ified, and employability of graduates that the prospective program is expected to enhance has been determined, satisfactorily through all the statutory bodies keeping in view the national research agenda and sustainable development goals.
+c. The title of the program is defined in light of the “Criteria for Use of
+Titles/Nomenclature for the Degree” as listed in the National Qualification Framework (2015).
+d. The curriculum of the program is consistent with the guidelines issued by the HEC and
+international bes t practices.
+e. A dmission policy with the following information:
+i. An Academic Calendar as per HEC and University policy
+ii. Procedures and processes to submit appl ication for admission explaining the
+manual and electronic ways.
+iii. P rocesses ensuring the dissemina tion of admission information to prospective
+students.
+iv. The documentary requirements for admission
+v. M erit determination criteria defined and explained.
+vi. M inimum eligibility criteria for gra n ting admission.
+f. The program completion requirements satisfy the HEC’s minimum criteria for award ing graduate degrees .
+g. The other requirements of HEC regarding the arrangement of relevant faculty (in terms of numbers, level, student - to - teacher ratio, student - to - supervisor ratio etc.), establishment of a libra ry and laboratory have been met.
+h. The degree program has been approved for launch by all relevant statutory bodies of the university/HEI/DAI.
+i. If applicable, any necessary approvals are obtained by accreditation councils to launch
+the program .
+j. Policies to inculcate a research culture by incorporating a system of research supervision that has been approved by relevant statutory bodies and governed following the guidelines delineated in this policy.
+k. Policies to ensure academic research ethics ha ve been developed, approved by the relevant statutory bodies and implemented as prescribed in this policy.
+l. Policies to address academic grievances of graduate students have been outlined,
+approved by the relevant statutory bodies and implemented through a grievance management system, as advised in this policy.
+m. If applicable, HEC ’s permission has been sought to launch a new graduate program.
+
+[SECTION: hec_gep_graduate_7_2_MINIMUM_REQUIREMENTS_TO_AWARD_MS_MPHIL_EQUIV]
+# 2. MINIMUM REQUIREMENTS TO AWARD MS/MPHIL/EQUIVALENT
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 2. MINIMUM REQUIREMENTS TO AWARD MS/MPHIL/EQUIVALENT
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+2. MINIMUM REQUIREMENTS TO AWARD MS/MPHIL/EQUIVALENT
+DEGREES (LEVEL 7)
+2 .1 Admission to an MS/MPhil/Equivalent Degree Programs
+i. Basic Academic Qualification: Sixteen years of schooling or 4 year education
+( minimum 12 0 credit hours) after HSSC/F.A./F.Sc/Grade 12 or Equivalent shall be required for admission in the MPhil/MS/Equivalent program.
+ii. Admission Test: University is required to:
+a) Conduct a rigorous admission test as an eligibility condition for admission to MS/MPhil/Equivalent programs, with a passing score of 50%.
+OR b) Accept the GRE/HAT General/Equivalent tests, with a passing score of 50%.
+iii. Intr a disciplinary
+Qualifications The intr a disciplinary admission may only be allowed, if:
+a) The university/HEI policy allows, and b) The applicant has a strong interest in pursuing a n MS/MPhil/ e quivalent degree in a different discipline.
+c) The applicant has passed GRE - Subject / e quivalent t est
+with minimum 50% marks in the discipline of admission and ha s taken 6 - 9 CH of deficiency courses of level 6 .
+d) The admission committee is satisfied that the applicant ’s knowledge of primary
+area (level 6) has sufficiently prepared him or her to undertake the course of studies of the MS/MPhil/ e quivalent program (or, in the opinion of the admission committee, the preparation can be deemed satisfactory b y taking a few additional courses after starting the program).
+2 .2 Coursework R equirement for Award of MS/MPhil/Equivalent Degrees
+For award of MPhil/MS/ e quivalent degree, candidates shall :
+Intradisciplinary refers to sub - disciplines occurring within one of the ten broad disciplines defined by UNESCO's International Standard Classification of Education (ISCED - F - 2013).
+In case the GRE - Subject test for a specific field/discipline is not available/conducted in Pakistan a. Either need to complete 30 credit hours of course work or b. Complete 24 credit hours of coursework along with a minimum of six ( 6 ) credit hours for research work/thesis.
+c. In case a degree is offered with research work, the university shall develop a
+policy regarding thesis defense and evaluation through its statutory bodies.
+2.3 Degree Completion Timeline
+i. The MS/MPhil degree shall be awarded by the universities not befo re the
+completion of 1.5 years or three (03) regular semesters and not after completion of four (04) years or eight ( 08 ) regular semesters, save exceptions mentioned at clause 2.3(ii).
+ii. In case a student is unable to secure a n MS/MPhil within the prescribed timeframe
+and claims for extension in duration, the university may constitute appropriate authority and determine the causes of delay. In the event of force majeure ( i.e., delay on account of circumstance beyond the control of studen t ), the university may grant an extension in the period of award of MS/MPhil degree in accordance with the duration limiting factor(s) and shall also take corrective measures in case the delay is caused by process or administrative reasons .
+2. 4 Credits T ransfer, Evaluation and Grading
+i. The c redit transfer of coursework from one university/DAI/HEI to another as well as
+to evaluate students’ academic performance (both formative and summative) and award of grad e s , HEC ’s Policy Guidelines , issued from time to time, for i mplementation of the Uniform Semester Examination System in Higher Education Institutes of Pakistan shall be referred .
+ii. The t ransfer of research work is permissible, provided that the host university accepts
+the research conducted at the parent university prior to the credit transfer.
+
+[SECTION: hec_gep_graduate_8_3_MINIMUM_REQUIREMENTS_FOR_AWARD_OF_DOCTORAL_D]
+# 3. MINIMUM REQUIREMENTS FOR AWARD OF DOCTORAL DEGREE (LEVEL 8)
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 3. MINIMUM REQUIREMENTS FOR AWARD OF DOCTORAL DEGREE (LEVEL 8)
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+3. MINIMUM REQUIREMENTS FOR AWARD OF DOCTORAL DEGREE (LEVEL 8)
+3.1 Qualification
+i. Prior to admission into a PhD program, the student shall have been awarded MS/MPhil
+or equivalent degree as described in this policy OR
+ii. Students pursuing MS/MPhil s tu dies and interested in continu ing to PhD may be granted
+provisional admission upon satisfaction with the Admission Committee regarding Statement of Purpose and students ’ commitment to the PhD program, provided that confirmation of the admission shall be subject to the fulfilment of the following conditions within a period of one year from the date of provisional admission:
+a. Award of MS/MPhil degree , as prescribed in this policy.
+b. Clearance of the admission test , as prescribed in this policy.
+The students enrolled before the enact ment of this policy shall also be dealt following the procedure outlined in this document.
+The admitting university has the right to accept or reject a candidate based on an MS degree without research.
+3.2 Intr a - disciplinary
+Qualifications Consistent with best practices internationally (including leading global universities), intr a disciplinary admissions may only be allowed, if:
+i. The university/HEI policy allows, and
+ii. The applicant has a strong interest in pursuing a PhD in a different disci pline.
+iii. The applicant has passed GRE - Subject /Equivalent Test
+with minimum 50% marks in the discipline of admission and ha s taken 6 - 9 CH of deficiency courses of level 7 .
+iv. The admission committee is satisfied that the applicant ’ s knowledge of the primary
+area (level 7) has sufficiently prepared him or her t o undertake the course of stud y of the doctoral program (or, in the opinion of the admissions committee, the preparation can be deemed satisfactory by taking a few additional courses after starting the p rogram).
+3.3 CGPA
+a) For admission in PhD programs, a minimum CGPA of 3.0 (out of 4.0 in the semester system ) or 60% (in the annual system) in the MS/MPhil/ e quivalent degree being considered for admission, is required, whether such degree was obtained from Paki stani or foreign universities.
+b) I f the CGPA/ Percentage is not mentioned on the transcript, the candidate must produce equivalent weightage from the parent university.
+c) The students having strong demonstrated interest in obtaining PhD degree, but their
+CGPA is be low 3.00 (out of 4.0 in the semester system) or 60 % marks (in the annual system) in the most recent degree obtained, may be admitted to a PhD program after fulfilling the following requirements :
+i. Shall stud y additional courses of 9 - 12 CH of level 7 taking a zero semester at
+admission awarding university/HEI/DA I and score minimum 3.00 o ut of 4.00 GPA , a nd
+ii. The admission committee is satisfied that the applicant’s knowledge of primary
+area (level 7) has sufficie ntly prepared him or her to undertake the course of studies of the doctoral program .
+iii. These requirements shall be in addition to any other requirement s set in this
+policy for admission to a PhD program.
+
+[SECTION: hec_gep_graduate_9_3_4_ADMISSION_T_E_ST]
+# 3.4 Admission T e st
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 3.4 Admission T e st
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+3.4 Admission T e st
+a) University is required to:
+i. Conduct the test equivalent to GRE/HAT General developed at the University,
+with the passing score of 60%. OR
+ii. Accept a test equivalent to GRE/HAT General, conducted by testing bodies
+accredited by HEC, with a passing score of 60%.
+Intra - disciplinary refers to sub - disciplines th at occur within one of the ten broad disciplines defined by UNESCO's International Standard Classification of Education (ISCED - F - 2013).
+In case the GRE - Subject test for a specific field/discipline is not available/conducted in Pakistan As decided by the NQAD, in its 22 nd meeting held on January 09, 2017, the HEIs should preferably use four (04) grade point system (Ref. 1 - 22/NQAC/QAD/2017/HEC/03 - 360, dated March 24, 2017). However, the HEIs using other grade point scales shall refer to H EC’s Policy Guidelines, issued from time to time, for Implementation of Uniform Semester Examination System in Higher Education Institutes of Pakistan .
+b) In addition to clause 3.4(a), the university may conduct subject test for admission in PhD programs, if required.
+3.5 Statement of P u r p o s e
+A s pa r t o f th e appl i c a t i o n f o r a d mi s s i o n t o P h D p ro g r a m s , appl i c an ts sh al l b e r e q u i r e d t o s u b m i t a st a t e m en t o f p u r p o s e , w h i c h s h al l f o r m a n i n t e g r a l pa r t o f t h e appl i c a t i o n . T h e a d mi s s i o n s c o m m i tt e e sh al l u s e th e i n f o r m a t i o n p rov i d e d t o a sc e rt a i n t h e p r epa r e d ne s s an d i n t e r e s t o f th e c an d i d a t e i n p u rs u i n g d o c tor a l st ud i e s , an d w h e th e r th e d epa rt m en t h a s th e r e q u i s i t e r e so u r c e s t o tr a i n an d s u pe rv i s e th e d o c tor a l c an d i d a t e i n th e s u bs pe c i al i t y in which the applicant i s i n t e r e st e d. A statement of purpose shall, at least, include the following :
+i. Title of the potential research p roposal
+ii. Clear articulation of the current understanding of the intended field and ideas for
+potential research
+iii. Explanation of the intended impact of the proposed research
+iv. The prospective candidates shall demonstrate passion and enthusiasm for the area
+of research .
+3.6 Coursework and Re s i d en c y Re q u i r e m en t
+T h e following r e q u i r e m en t s s h al l b e f u l f i lle d b e f o r e th e a w a r d o f a P h D D e g r ee :
+a. T h e st ud en t s sh al l co m ple t e the c o u rs e w o r k o f a t lea s t :
+i. 18 credit hours if they are from the same discipline.
+ii. The c ourses shall be offered through regular classes (i.e., classes taught on
+campus by full - time faculty members of the university)
+iii. The courses shall preferably be of 800 level.
+iv. PhD degree should be based on research , not only on credit hours.
+
+[SECTION: hec_gep_graduate_10_3_7_COMPREHENSIVE_E_XA_M_I_NA_T_I_O_N]
+# 3.7 Comprehensive E xa m i na t i o n
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 3.7 Comprehensive E xa m i na t i o n
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+3.7 Comprehensive E xa m i na t i o n
+i. Following the completion of coursework, every PhD student shall be required to pass the
+comprehensive examination to be granted candidacy as a PhD researcher , with the provision that the student failing to pass the comprehensive exam , shall be allowed to r etake the exam once .
+ii. The required coursework, comprehensive exam, and defense of synopsis/research
+proposal s should be completed within the 1 st six semesters of the registration into a PhD program. The responsibility in this regard rests collectively with the PhD student and the university. In case of noncompliance, the registration shall be cancelled and transcripts for completion of c oursework m ay be issued to the student.
+iii. In an event of force majeure i.e., noncompliance on account of circumstances beyond
+the control of student, the university may consider the matter in accordance with the procedure prescribed at 3.12(iv).
+iv. The f ollowing are th e guidelines for a conducting Comprehensive Examination:
+a. The exam should be based on recapitulation of the conceptual knowledge of the discipline to which the student is admitted.
+b. The exam shall cover the courses studied , preferably at the graduate level , conducted on one composite question paper.
+c. The evaluation shall be on an aggregate basis , expressed in terms of p ass/ f ail and shall not be
+graded.
+3.8 D o c tor a l D i s s e rt a t i o n
+Each PhD researcher shall write a doctoral dissertation reflecting relevance, credibility, effectiveness, and legitimacy of the research. The dissertation must be an original and innovative contribution to knowledge that contributes to solving socioeconomi c problems. To improve the quality of a doctoral dissertation, some regulations have been suggested in the following areas:
+3 . 8 .1 Selection of Research Area
+The research area of the PhD researcher shall :
+i. C orrespond to the community needs at regional and local levels and comply with the priority
+national research agenda.
+ii. R eflect the basic and pure research.
+iii. S ignif y emerging areas of research that coincide preferably with sustainable development
+goals (S D Gs)
+3 . 8 .2 Quality in Reporting
+The quality of presentation and reporting in dissertation shall reflect the following characteristics:
+i. The document is well written.
+ii. The contents are balanced, well organized, appropriately styled; clearly structured, and well
+cohered; and
+iii. The document is free from grammatical and spelling errors and flawed terminology.
+iv. Minor shortcomings such as inaccurate use of acronyms and clumsy looking sentence
+structure have been addressed.
+v. Quantitative research proposals must include a valid statistical design for data analysis.
+vi. F ormatting shall be compatible with international standards.
+3 . 8 .3 Methodological Quality
+To produce PhD researchers capable of conducting research independently , ensuring the technical soundness of their PhD dissertation s is integral. The f ollowing g uidelines shall be useful in mak ing the PhD research methodologically sound:
+A. Guidelines ensuring the quality of Qualitative Research: A PhD research dissertation, based on the Qualitative Research methods should satisfy , at least, the following questions :
+a. “Does the research, as reported, illuminate the subjective meaning, actions and contexts of those being researched?” b. “Is there evidence of the ad aption and responsiveness of the research design to the circumstances and issues of real - life social settings met during the course of the study?”
+c. “Does the sample produce the type of knowledge necessary to understand the structures
+and processes within wh ich the individuals or situations are located?”
+d. “Is the description provided detailed enough to allow the researcher or reader to interpret
+the meaning and context of what is being researched?’ e. “How are the different sources of knowledge about the same iss ue compared and contrasted?” f. “Are subjective perceptions and experiences treated as knowledge in their own right?” Boaz and Ashby (2003 ) g. “How does the research move from a description of the data through quotation or examples to an analysis and interpretation of the meaning and significance of it?” B. Guidelines ensuring the quality of Quantitative Research : A PhD dissertation with Quantitative Research methods should satisfy , at least, the following questions a. Reliability – are the results repeatable?
+b. Validity – does it measure what it says?
+c. Internal validity – do the research results indicate what they appear to be ?
+d. External validity – can the results be generalized to other settings (ecological validity)
+and to other populations (population validity?
+e. Replicability – are the results of the study reproducible?
+3 . 8 .4 Appropriateness of the Methods to the Aims of the Study
+To achieve the research objectives, the alignment of the research approach and methods is n ecessary. Therefore, a PhD dissertation , at least , shall :
+a. R eflect a fair proportion of latest knowledge of contemporary techniques and methods in relation to study objectives.
+b. C ontain detailed and easily comprehensible discussions regarding the applied methods and techniques.
+c. J ustif y the use of methods and techniques to achieve study objectives.
+d. S how evaluation of obtained results in relation with study objectives.
+And:
+e. T he methods and techn iques used should justify the results obtained.
+f. T he obtained results should support the study objectives.
+3 . 8 .5 Relevance to the Policy and Practice
+The research should have significantly answered questions related to policy and practice in that area , establishing its usefulness and usability. Accordingly, a PhD dissertation , at least , shall :
+a. R eflect judicious evaluation of study results in relation with policy related aims and goals undertaken while starting the research.
+b. D iscuss the practical implications of the study results in association with the developing practices in that area.
+c. E stablish usefulness of the study results for devising policy as stated in the beginning.
+d. D iscuss how the resulting policy would be useful for the organ ization / society.
+And:
+e. T he study output should be significant enough to be published or patented.
+f. T he assessment of the results performed by the author must not be superficial and lack ing substance.
+
+[SECTION: hec_gep_graduate_11_3_9_EXTERNAL_EVALUATION_OF_PHD_DISSERTATION]
+# 3.9 External Evaluation of PhD Dissertation
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 3.9 External Evaluation of PhD Dissertation
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+3.9 External Evaluation of PhD Dissertation
+i. The PhD dissertation must be evaluated by:
+a. At least two external experts who shall be:
+Popay, Rogers, and Williams (1998 )
+i. PhD faculty member from the world top 500 universities ranked by the Times
+Higher Education or QS World Ranking in the year corresponding to dissertation evaluation year OR
+ii. Paki stan - based Distinguished National Professors, Meritorious Professors from
+any national university; or p rofessor s from top universities ranked by HEC; or p rofessor s from any Pakistani University having a minimum H - Index 30 for S ciences, 15 for S ocial S cienc e s or 8 for Art & Humanities as determined by Web of Science.
+OR b. At least one external expert qualifying any one of the conditions mentioned at ‘a’ above if the PhD candidate publishes dissertation research in a peer - reviewed journal that is classified by the HEC in category W for S ciences and X or above for S ocial S ciences.
+ii. T he following general guidelines shall , at least, be observed while selecting external evaluator :
+a. Relevance of Expertise: in the same or related field s as in the dissertation .
+b. No Conflict of Interest: in personal, financial, or professional stake s in a particular decision or outcome.
+c. Objectivity: capable of making unbiased evaluation s .
+d. Diversity: in terms of geography, culture, professiona l backgrounds etc.
+e. Reputation: must be good in the field, with a track record of fair and thorough evaluations.
+f. Availability: should have the time and availability to review the dissertation .
+g. Professionalism: capable of conducting themselves in a profess ional and respectful manner throughout the evaluation and defense process (if appli c able) .
+h. Communication: capable of providing clear and constructive feedback on the dissertation.
+i. Confidentiality: capable of maintain ing confidentiality and protecting the intellectual
+property of the dissertation.
+j. Compatibility: well - versed with the research methodology, approach, and theories used in the dissertation.
+3.10 Plagiarism, Similarity Test and Open Defense
+a. Under no circumstances shall a dissertation based on plagiarized research be acceptable. It is the primary responsibility of both PhD researchers and their supervisors to prevent plagiarism. To avoid plagiarism, it is important to follow the provisions out lined in th is document i.e., Governing Research Supervision and Research Ethics .
+b. For Plagiarism COPE guidelines must be followed.
+c. If a PhD dissertation is found to be plagiarized, it will be handled in accordance with
+the Anti - Plagiarism Policy issued by the Higher Education Commission, Pakistan, as updated from time to time.
+d. A similarity t e s t ,
+i n a cc or d an ce w i t h t h e H E C ’ s Anti - P la g i a r i s m P o l i c y , m u st b e c o n du ct e d o n th e d i ss e rt a t i o n b e f or e i t s s u b m i s s i o n t o th e ex t e r na l expe rt s by the student.
+e. An o pe n defense of the dissertation is required after positive evaluation of the dissertation by committee members. In general , the following minimum principles and guidelines shall be ensured:
+i. Public Announcement: O n the university website and other for u ms of
+communication , so that anyone interested can participate .
+ii. Public Access : Within or outside the university such as community/town halls
+or important public venues.
+iii. Neutral Chair : T o ensure that defense was conducted fairly and in accordance
+with the rules and regulations.
+iv. Review Committee : To evaluate the dissertation and defense.
+v. Presentation : of the dissertation by the PhD researcher
+vi. Question and Answer Session : To provide a basis for defense evaluation.
+vii. Objective Evaluation : based on the quality of the research and the researcher’s
+ability to defend.
+viii. Final Decision : expressed in the following terms :
+• Pass or
+• Pass with minor amend ments or
+• Deferred for resubmission and re - defense or .
+• Fail (in exceptional circumstances and for the reasons to be recorded by the defense
+committee)
+
+[SECTION: hec_gep_graduate_12_3_11_RE_S_EA_RC_H_P_U_B_L_I_C_A_T_I_O_N]
+# 3.11 Re s ea rc h P u b l i c a t i o n
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 3.11 Re s ea rc h P u b l i c a t i o n
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+3.11 Re s ea rc h P u b l i c a t i o n
+For award of PhD degree, a P h D r e s ea r ch e r s h al l b e r e q u i r e d t o p u b l i s h research articles meeting the following criteria:
+i. At least:
+a. One research article in W category journal or two research articles in X category journals, for S cience disciplines b. One research article in X category journal or two research articles in Y cat egory journals, for S ocial S cience disciplines
+ii. The PhD researcher shall be the first author of these publications.
+iii. The research article shall be relevant to the PhD research work of the PhD researcher.
+iv. The article shall be published after approval of the research synopsis.
+v. The article shall be published in a relevant research journal.
+See relevant section of this policy for detailed guidelines on ethics of using similarity detection software and interpreting the similarity reports .
+A research article appearing online with valid DOI on website of an HEC’s recognized re search journal shall be considered published w.e.f. the date it appeared online with DOI.
+As categorized in HJRS at the time of acceptance of the research article
+3.12 Degree Completion Timeline
+i. The PhD degree shall be awarded by the universities not before the completion of
+three years or six regular semesters and not after completion of eight years or 16 regular semesters , save exceptions mentioned at clause 3.12(iv).
+ii. The completion date of PhD degree shall be reckoned with the date of notification
+of the award of PhD degree.
+iii. The maximum duration shall be determined from the date of student enrollment
+untill the date of the completion notification of the PhD degree.
+iv. In case a student is unable to secure a PhD degree within the prescribed timeframe
+and claims for extension in duration, the university may constitute appropriate authority and determine the causes for delay. In event of force majeure i.e., delay on account o f circumstance beyond the control of student, the university may grant an extension in the period of award of PhD degree in accordance with the duration limiting factor(s) and shall also take corrective measures in case the delay is caused due to process o r administrative reasons.
+3.13 Credits Transfer, Evaluation and Grading
+i. HEC’s Policy Guidelines for the Implementation of Uniform Semester System shall also
+be applicable to Level - 8 programs for credit transfer of coursework from one university to another, students’ assessment, award s of grades, etc.
+The transfer of research work is permissible, provided that the host university accepts the research conducted at the parent university prior to the credit transfer.
+
+[SECTION: hec_gep_graduate_13_3_14_AWARD_OF_POST_GRADUATE_DIPLOMA_CER_TIFICA]
+# 3.14 Award of Post Graduate Diploma/Cer tificate
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 3.14 Award of Post Graduate Diploma/Cer tificate
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+3.14 Award of Post Graduate Diploma/Cer tificate
+A student who successfully completes coursework and passes the comprehensive examination but is unable to defend a PhD synopsis/research proposal or does not complete the required research for obtaining a PhD degree within the specified timeframe, may be granted a Graduate Level Diploma/Certificate/transcripts or another MS/MPhil upon completion of necessary requirements as per HEC policies and the university rules and regulations .
+The students enrolled before the enactment of this policy shall also be dealt following the procedure outlined in this document.
+PART - II: GOVERERNING THE SYSTEMS OF DOCTORAL RESEARCH
+
+[SECTION: hec_gep_graduate_14_4_GOVERNING_THE_RESEARCH_SUPERVISION]
+# 4. GOVERNING THE RESEARCH SUPERVISION
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 4. GOVERNING THE RESEARCH SUPERVISION
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+4. GOVERNING THE RESEARCH SUPERVISION
+4.1 P r i n c i ple s and P u r p os e s
+To inculcate a research culture to produc e high - quality research, policies and procedures governing the overall system of research in a university/DAI/HEI must be in place. The HEC guidelines for improvements are as follows.
+4.2 Supervision of Doctoral Dissertation
+4 .2.1. General Conditions to Supervise Doctoral Research
+T he following general guidelines shall , at least, be observed while allocating a PhD supervisor . At the time of supervisor allocation, the supervisors :
+i. S hall be a P hD degree holder complying with the criteria and standards provided in
+this policy.
+ii. M ust be relevant to the field of research in which the student intends to conduct
+research.
+iii. S hould have NO CONFLICT OF INTEREST in personal, financial, or professional
+stakes .
+iv. Should have the time and availability to supervise PhD dissertation and give clear and
+constructive feedback.
+v. Should be c apable of conducting themselves in a professional and respectful manner
+throughout the supervision process.
+vi. Should be c apable of maintaining confidentiality an d protecting the intellectual
+property of the dissertation.
+vii. Should, p rimarily, be a regular/adjunct faculty member of the supervisee’s
+University/HEI/DAI In addition to the aforementioned guidelines :
+viii. The research supervisor shall be allocated to a doctoral student from the date of
+enrollment.
+ix. The supervisory workload of research supervisors should be determined based on the
+nature of the institution, availability of teaching and research facilities, an d the academic standing of supervisors. However, it is mandated that the maximum supervisory load shall not exceed five PhD students , simultaneously. Further, fresh PhDs can supervise MS/MPhil and co - supervise PhD students, while a PhD faculty member, afte r two years of obtaining a PhD degree, can supervise one PhD student in 3rd year, two PhD students in 4th year and maximum up to 5 PhD students from 5th year onward, subject to fulfillment of other conditions provided in this policy .
+The “G eneral C onditions to Supervise Doctoral Research” along with the “Criteria to be a PhD Supervisor” are a pplicable on fresh PhDs intending to supervise PhD research and effective from the date of enactment of this policy.
+All the previously approved supervisor shall remain approved until the date mentioned on their award letter .
+x. The university/DAI/HE I shall allocate supervision /research space to the doctoral
+student s .
+xi. PhD r esearch work completed under supervision is a shared property of supervisor
+and supervisee. All publications resulting from such research shall reflect the authorship of both partie s and shall be subject to mutual consent.
+xii. The guidelines for PhD supervision should be followed in letter and spirit , as
+prescribed in this policy .
+
+[SECTION: hec_gep_graduate_15_4_2_2_CRITERIA_TO_B_E_A_PHD_S_UPERVISOR]
+# 4.2 2 . Criteria to B e a PhD S upervisor
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 4.2 2 . Criteria to B e a PhD S upervisor
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+4.2. 2 . Criteria to B e a PhD S upervisor
+To be a PhD research supervisor, an individual shall meet the following requirements:
+i. General Requirements:
+a) A PhD degree from an HEC recognized national/ i nternational university/degree awarding institute (DAI).
+b) The research supervisor shall be given opportunities to attend and qualify course(s) on MS/MPhil/PhD Supervision which should also have contents on research ethics, publications, patents, etc. Such courses may include certified self paced MOOCS, or a course designed/offered by National Academy of Higher Education (NAHE) or by a university in the following manner :
+i. Basic level course: to supervise students of MS/MPhil/ e quivalent degrees.
+ii. Advance level course: to supervise PhD researchers .
+c) A r egular/adjunct faculty member or researcher at a public or private university or
+DAI, or position of researcher or scientist at any R&D or public/private sector organization. However, in the case of a non - faculty PhD supervisor, who otherwise meets the cri teria of being a PhD supervisor, shall be taken as an adjunct faculty member, for a period not less than the minimum time required to complete the student’s PhD research, prior to assigning a PhD supervision. Such a person shall also provide an NOC from th e parent organization.
+ii. Publication Requirements:
+In addition to fulfilling the General Requirements, a PhD supervisor must publish research articles in the HEC’s recognized research journals and the category specified in the HJRS for the publication yea r. These conditions are different for different disciplines and aim to ensure that the potential PhD supervisor is an active researcher :
+A. Specific Requirements for Science and Technology:
+For indigenous and foreign PhDs:
+i. Within the last 3 years after PhD: at least one research publications in W
+category journal. OR
+ii. Within last 5 years after PhD: at least five research publications in X category
+journal .
+B. Specific Requirements for Social Science, Arts and Humanities and Bu siness Education:
+For i ndigenous and foreign PhDs:
+i. Within the last 3 years after PhD: at least one research publication in W
+category journal. OR Within the last 5 years after PhD: at least five research publications in X and Y category journal.
+C. Specific Requirements for Regional and National Languages:
+For indigenous and foreign PhDs:
+i. Within the last 3 years after PhD: at least one research publication in X
+category journal. OR
+ii. Within the last 5 years after PhD: at least five research publications in X o r
+Y category journal.
+4 .2. 3 . Supervisory Process
+To guide the supervisory process of doctoral dissertation towards the desired goals , the universities/DAIs/HEIs shall : i ) d evise a supervision manual and ensure its impl emen tation , and ii ) Constitute a Supervisory Committee for each individual doctoral student .
+i. The research supervision manual shall elaborate the following areas to guide the
+supervisory process :
+a. Description of roles of supervisor & supervisee b. Prescription of supervision timespan
+c. Guidance about preparation for best supervision
+d. Guidance to discuss questions and problems with constructive comments by
+observing the element s of mutual respect.
+e. Guidance on setting reasonable amount of work and receiving constructi ve feedback.
+f. Directions for supervision as per the social norms g. Provision of tentative timetable and schedule of meetings h. Provision of proformas/registers showing meetings and research records etc.
+i. Provision of grievances policy
+ii. HEC recommends the follo wing composition to constitute a Supervisory Committee ,
+for each doctoral researcher, to s upervise the doctoral research :
+a. Supervisor Convener b. Co - supervisor (if any) Member
+c. Expert(s) from the field of research Member
+
+[SECTION: hec_gep_graduate_16_4_3_UNIVERSITY_DIRECTORATE_OF_ADVANCE_STUDIES_]
+# 4.3 University Directorate of Advance Studies and Research or Equivalent Department
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 4.3 University Directorate of Advance Studies and Research or Equivalent Department
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+4.3 University Directorate of Advance Studies and Research or Equivalent Department
+i. The head of the Directorate of Advance Studies and Research (DASR) or equivalent
+department shall not be less than a Dean or equivalent position.
+ii. The Directorate shall serve as the secretariate of the Board of Advance
+Studies/Equivalent Body. Such a board/body shall be responsible for the quality of all the graduate degree programs being offered by the university/DAI/HEI , as well as the research tha t shall be conducted under these programs.
+iii. The DAS R /Equivalent D epartment shall prepare a graduate Studies Prospectus ,
+describing the complete process for award of a graduate degree and ensur ing that the booklet shall be available for guidance of all graduate students.
+“Supervisor” means the research supervisor of the PhD researcher.
+iv. The DAS R /Equivalent department shall monitor and ensure that thesis/ dissertation is
+progressing in accordance with the time prescribed in the booklet. It includes, but is not limited to, the timely approval of the research synopsis, evaluation of the research thesis/dissertation in accordance with the HEC guidelines as well as its submission , and finally the conduct of open defense .
+4.4 Teaching Assistantships and Research Assistantships:
+The university departments may offer Teaching and Research Assistantships to outstanding PhD enrolled students at various stages of their enrollment.
+i. Teaching assistantship provide s an opportunity to PhD students to assist
+professor s in prepar ing teachin g and research materials for groups of students enrolled in their classes.
+ii. Research assistants hips are pai d f ellowship stipend s for outstanding r esearch
+scholars for assist ing a professor , who pays the research assistant out of the research grant s/he has received . The stipend varies based on the level of effort and budget available to the Principal Investigator.
+iii. Universities may have named scholarships to promote quality r esearch by
+philanthropic donors based on priority themes and topics on the national research agenda.
+
+[SECTION: hec_gep_graduate_17_5_PRACTIC_ING_THE_ACADEMIC_RESEARCH_ETHICS]
+# 5. PRACTIC ING THE ACADEMIC RESEARCH ETHICS
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 5. PRACTIC ING THE ACADEMIC RESEARCH ETHICS
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+5. PRACTIC ING THE ACADEMIC RESEARCH ETHICS
+5.1 P r i n c i ple s and P u r p os e s
+The I nternational Center for Academic Integrity (2022) defines Academic Integrity as “ commitment, even in the face of adversity, to six fundamental values: honesty, trust, fairness, respect, responsibility, and courage. From these values flow principles of behavior that enable academic communities to translate ideals into action. ” Thus, the main purpose of this section is to guide academics on how to put these core values into practice in universities/HEIs/DAIs , so that academic communities c an be protected by preventing academic misconduct . H owever, it may be noted that these guide lines are not binding , but rather prescriptive in nature. In this regard, the main regulatory framework to prevent academic misconduct lies with the Anti - Plagiarism policy issued by the Higher Education Commission, Pakistan .
+5.2 Guidelines to Ensure Academic Research Integrity
+:
+To inculcate a culture of academic integrity, t he u niversities/HEIs/DAIs shall:
+i. D evelop/adopt/adapt and regularly publicize policies promoting academic integrity
+and dealing with allegations of academic misconduct.
+ii. Develop procedures to prevent foreseeable risks to academic and research integrity.
+iii. Strengthen the system governing the conduct of doctoral research.
+iv. All governing bodies must ensure that the occurrence of academic misconduct and
+breaches are monitored, a nd action t aken to document and address the underlying cause.
+International Center for Academic Integrity, https://academicintegrity.org/ Tertiary Education Quality and Standard Agency, Australia
+v. Regularly educate and t rain students/faculty and admin staff about what constitutes
+academic or research misconduct and maintain good practices .
+vi. Ensure that information to maintain academic in tegrity is available to all prospective
+and current students.
+vii. Ensure that unauthorized access to private and sensitive information is
+detained/controlled.
+viii. Regularly assess and e nsure that academic and research integrity is maintained in
+accordance with developed policies and procedures. In this regard, it shall be ensured that a self - assessment checklist has been prepared and implemented.
+ix. Acquire a license f or similarity detection software and develop policies and
+procedures to ensure productive use. In this regard, some guidelines are provided in the following section s :
+5.3 Guidelines on Ethics of Using Similarity Detection Software (for Administrators )
+i. Univer sities/ i nstitutions need to apprise students/faculty members about the HEC
+Anti - Plagiarism Policy and Turnitin service.
+ii. Administrator s need to create accounts of all faculty members of their respective
+u niversity/ i nstitution.
+iii. The Administrator s shall maintain their privacy and shall not disclose any report to
+anyone except the concerned person or to the concerned authorities, if required.
+iv. If the i nstructor / s cholar is involved in the screening of papers and theses of other
+authors, then the a dministrator shall report to the u niversity authorities with evidence.
+
+[SECTION: hec_gep_graduate_18_5_4_GUIDELINES_ON_ETHICS_OF_USING_SIMILARITY_D]
+# 5.4 Guidelines on Ethics of Using Similarity Detection Software (for Instructors)
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 5.4 Guidelines on Ethics of Using Similarity Detection Software (for Instructors)
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+5.4 Guidelines on Ethics of Using Similarity Detection Software (for Instructors)
+i. COPE (Committee on Publication Ethics) guidelines shall be followed for
+publication and thes e s.
+ii. Instructors are required to create classes and enroll students in the m .
+iii. Students/ s cholars should be informed that their work will be checked through anti -
+plagi arism service s; therefore, they must follow proper document ation style in writing report s /paper s /thes e s.
+iv. References/bibliograph ies and table s of contents must be removed from the
+submitted document s . If these are included, the similarity index of the doc ument will increase.
+v. Instructor s may allow students to view reports. The i nstructor shall maintain privacy
+and will not disclose any report to anyone except the concerned person and to the concerned authorities, if required.
+vi. If a s cholar/ s tudent is invol ved in checking papers and theses of any other person,
+the i nstructor shall report to u niversity authorities about that with valid proof.
+vii. Originality/ s imilarity reports generated by Turnitin provide clues in the form of text
+matches as well as p roverbs, u niversal t ruths, phrases , etc. Scholars/ s tudents must ensure that the document s they are submitting are in proper document ation style ( i.e., IEEE, Chicago , MLA, APA , etc.) and are free of plagiarism.
+HEC guidelines on using Turnitin.
+viii. If the report has a similarity i ndex of ≤ 19%, then the benefit of doubt may be given
+to the author ; however, if any single source has a similarity index ≥ 5% without citation s then it needs to be revised.
+ix. If the similarities of a report are from the author's own (previous) work, then the y
+may be ignored only if the material has been cited by the author.
+x. D ocuments that are checked through this service have not yet been published and
+no benefit is acquired ; therefore, no punishment or penalty is recommended. It is advised that si milarities at a greater level should be taken care of in the light of the HEC plagiarism policy.
+5.5 Guidelines on Interpreting Originality Report
+i. The s imilarity index of the originality report showing matches of submitted work
+with internet content does not mean that the document is plagiarized.
+ii. The s imilarity index is based on the percentage of matched text out of the total
+number of words in a document.
+iii. Instructor/ f aculty member s must verify each similarity index to identify potential
+clue t o plagiarism.
+iv. If similarities in the document are significant , then the scholar/student may be
+guided , accordingly , or a case may be reported based on th e evidence.
+v. The similarities in the document may contain matches with the author's previous
+work; the y may be ignored if it is the same work.
+vi. Bibliography and quoted material may be excluded after verif ication . It is important
+to note that too much quoted material is not desired as per the policy.
+vii. Common phrases and proper nouns also appear as similari ties in the report;
+therefore, every instructor or faculty member should ignore the matches returned from them.
+viii. The o riginality report will show similarities from three major sources : the I nternet,
+periodicals, and student repositor ies . Similarities retur ned from the student repository may be ignored if they are the author's own work . Similarities from the s tudent repository help in detecting collusion s in the documents.
+ix. The graphs, tables, formulae, and other pictorial material s are not matched through
+the service ; therefore, they will only offer similarities with text.
+x. I nstructor/faculty member s supervising students/scholars can provide verdict s of
+plagiarism after interpreting report s .
+
+[SECTION: hec_gep_graduate_19_6_MANAG_ING_THE_GRIEVANCES_OF_GRADUATE_STUDENT]
+# 6. MANAG ING THE GRIEVANCES OF GRADUATE STUDENTS
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 6. MANAG ING THE GRIEVANCES OF GRADUATE STUDENTS
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+6. MANAG ING THE GRIEVANCES OF GRADUATE STUDENTS
+6.1 P r i n c i ple s and P u r p os e s
+The purpose of this section is to provi de the minimum guidelines for u niversities/HEIs enabling them to establish a grievance management system , so that all grievances/complaints of graduate students / prospective students and s takeholders are addressed in a fair, equitable , and timely manner , by adhering to the following princip les :
+a. Provide timely responses to grievances from students, potential students, or stakeholders.
+Health Educa tion Collaborative Grievance and Harassment Policy (2020), ( https://healthec.com.au/ ) b. The a im is to develop a culture in wh ich grievances are viewed as opportunit ies for improvement.
+c. Ensure that students or potential students are free to complain wit hout fear of
+discrimination .
+d. Ensure that staff are aware of grievance processes and are appropriately trained to
+ensure that the processes are consistently applied.
+e. Require s respectful behavior among all parties when handling grievances.
+f. Communicate effe ctively in a timely manner to keep all parties up to date with the progress of grievance s .
+g. Ensure that all information is held at the utmost confidence .
+h. Ensure that the principles of natural justice are applied.
+i. T o ensure that grievances are resolved to the satisfaction of all parties.
+6.2 Guidelines to Establish a Grievance Management System
+i. The u niversities/HEIs shall develop/adopt/adapt a grievance management policy
+through their statutory bodies, covering :
+a. Aims of policy and nature of grievances. In general, all grievances of an academic nature includ e , but are not limited to, issues related to student progress, assessment, curriculum, and awards during study.
+b. Values to inculcate a culture in wh ich grievances are viewed as an opportunity for improvement. In general, such values may include , but are not limited to, valuing diversity, inclusiveness, equality, confidentiality , and showing respect for all parties involved. Therefore, a culture of reporting through appropriate forums should be encouraged .
+c. Roles and responsibilities of t he princip al authorities responsible for
+address ing academic grievances/complaints : In general, the Heads of the Departments/Directors/Deans and the Vice Chancellor /Rectors/Heads of Universities/HEIs shall be responsible for addressing the grievances of graduate students/prospective students and stakeholders in line with the grievance management policy of their relevant university/HEI .
+d. Complain ant ’s r ights, roles, and responsibilities : Procedures/processes and
+timelines for easily accessing grievance settlement procedure /system , lodging grievances/complaints , timely response thereto , and settlement thereof, up to the satisfaction of all parties must be ensured .
+e. Rules ensuring that the complainant s shall have a fair opportunity to formally present their case and each party to a grievance may be accompanied and assisted by a support person (such as a family member, friend, counsellor, or ot her professional support person other than a legal representative) at any relevant meeting must be ensured .
+f. Methods and rules ensuring that complainants and respondents shall not be victimized and/or discriminated against at any time.
+g. Procedures of mainta ining records and confidentiality.
+h. Guidance to give hearing to the parties involved , taking notes , reasoning for decisions to be written , and actions taken.
+i. Process elaborating how and when to launch an appeal in case the decision
+does not support the complainer or the accused .
+j. Process to implement the decision and/or required corrective and preventive actions in case the decision supports the complaint.
+ii. The structure of the grievance management system shall be hierarchal, starting from
+the lowest aut hority such as Head/Chair of the Department , then Dean/Director of the faculty/institute , and shall finally be presented to the Academic Board/C ommittee constituted to hear grievances in case the grievance/complaint is not settled at each level. However, t he intent of the system should be to resolve grievance s /complaint s at the lowest level with minimal impact.
+iii. To make the system more effective and efficient, the u niversities/HEIs shall develop
+a parallel, informal system to preempt grievances/complaints by allocating counselors to the students and m entors to employees. Counselors and m entors should be competent to use consultative and teaching approaches to raise a wareness and prevent issues.
+iv. Further, t o create awareness about the grievance management system and inculcate
+its values , the u niversities/HEIs shall conduct seminars and training for students, faculty, and non - academic staff.
+v. The system/policy shall be reviewed after an appropriate time to be decided by the
+b oard/ c ommittee constituted to hear the grievances.
+PART - III: QUALITY ASSURANCE
+
+[SECTION: hec_gep_graduate_20_7_QUALITY_ASSURANCE]
+# 7. QUALITY ASSURANCE
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 7. QUALITY ASSURANCE
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+7. QUALITY ASSURANCE
+In preceding sections , t he HEC prescribed minimum standards /guidelines for launch of new programs at the g raduate level . In this section, it requires universities to provide evidence of compliance with these standards /guidelines to obtain approval from the HEC before starting the graduate p rogram s . The purpose of this policy is that only those universities should start graduate p rograms that have the necessary faculty and infrastructure resources to impart education at the highest level in the discipline . The Quality Assurance Agency ( HEC ) shall va lidate the implementation of these standards/guidelines prescribed in Part - I and Part - II as well as mentioned hereafter through its QA Framework :
+7.1 Minimum Requirement for Academic HR
+7.1.1 Faculty and supervisory r equirement
+a. At least two (2) full time faculty members holding PhD degrees in the relevant field shall be available/appointed to the department to launch an MS/MPhil/Equivalent program that may be increased up to three (3) i f a PhD program is also to be launched in th e same discipline and department .
+b. The minimum appointment tenure f or full - time faculty member s must not be less than the duration of the intended degree program.
+c. The teacher to student ratio shall be 1:12, where a supervisor can supervise a total of twelve
+(12) MS/MPhil/PhD students at a time with no more than five (5) of these students being PhD students. Graduate teaching and supervision load shall be adjusted , accordingly.
+7.1. 2 Determining relevance of faculty with subject /degree program
+a) Wherever required, t he subject and supervisory relevance of faculty members shall be determined based on:
+i. Qualifications including b achelor, m aster, and doctoral degrees.
+ii. The r esearch includes t hesis/ d issertation and published articles.
+iii. Experience consisting of teaching and administrative domains.
+b) To ascertain the relevance of the faculty in the related discipline to the program and supervision of theses, the university shall:
+i. constitute a Relevance Assessment Committee (RAC) /equivalent body , with the
+approval of the Vice Chancellor/Rector/Head of the HEI.
+ii. The RAC shall consist of at l east five ( 5 ) members :
+a. Respective Dean of the university b. Director QEC of the university
+c. Two External subject expert not less than a professor /Associate Professor level
+d. Program Team/Assessment Team member who was involved in preparing self -
+assessment report of the program.
+c) The RAC shall submit a report with detailed reasons and rationale f or the assessment decision .
+save exceptions granted by the Commission for specified fields/disciplines .
+d) The Report shall be effecti ve with the approval of relevant statutory bodies.
+
+[SECTION: hec_gep_graduate_21_7_2_NOC_REQUIREMENTS_FOR_LAUNCHING_GRADUATE_PR]
+# 7.2 NOC Requirements for Launching Graduate Programs
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 7.2 NOC Requirements for Launching Graduate Programs
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+7.2 NOC Requirements for Launching Graduate Programs
+7 .2.1 C lassification - based
+a pplication of NOC r equirement a. Effective from the enactment date of this policy, the top - ranked universities/DAIs/HEIs need NOT obtain the N o O bjection C ertificate (NOC) from HEC, provided that these universities/DAIs have not violate d the HEC’s rules, regulations or policies in any material respect in the last two years. The top ranked universities/ DAIs/HEIs , found violating the HEC’s rules/regulations/policies , shall be included in the lower category and may be dealt with in accordance with the HEC’s policy for violation of rules .
+b. All the universities/DAIs/HEIs enlisted in the categories below the top category must obtain NOC , prior to the launch of any graduate program , adhering to the following timelines:
+i. Graduate P ro g r a m s L a u n ch e d P r i o r t o November 7 , 2 0 1 3 :
+F o r a n y graduate p ro g r a m la u n ch e d b e f or e N ov e m b e r 7, 2 0 1 3 , u n i v e r s i t i e s sh al l b e r e q ui r e d t o en s u r e co m pl i an c e with this policy . HEC shall ensure compliance systematically by applying an approved quality assurance mechanism.
+ii. Graduate P ro g r a m s L a u n ch e d A f t e r N o v e m b e r 7 , 2 0 1 3 :
+A n y graduate p ro g r a m st a rt e d a f t e r N o v e m b e r 7 , 2 0 1 3, w i t h o u t g e tt i n g a n NO C f r o m t h e H EC , sh al l n o t b e r e c o g n i z e d, an d d e g r ee s a w a r d e d b y s u ch p ro g r a m s sh al l n o t b e a tt e s t e d b y th e H E C .
+c. The lower - category universities/DAIs/HEIs that have taken adequate and timely
+remedial measures to rectify the deficiencies/violations and have demonstrated an ability of sustainable compliance with the HEC’s requirements may be included in the top category at the sole discr etion of HEC.
+d. Similarly, the top category universities may also be demoted to lower category
+where such universities have been found violating HEC’s requirements within the past two years. For this purpose, the under - observation universities/DAIs/HEIs mus t take adequate and timely remedial measures to rectify violations.
+e. The lowest category (Unclassified /Ineffective ) universities shall not be allowed to launch more than two (2) PhD programs in a single year.
+f. The Higher Education Commission shall issue lis ts of universities that are categorized in the aforementioned terms .
+g. The universit ies /DAI s /HEI s, which are found violating the HEC’s rules/regulations/policies, shall be dealt with in accordance with the HEC’s policy .
+7 .2.2 Process and t imelines for o btaining an NOC to l aunch g raduate p rograms The process and timeline for requesting NOCs to launch graduate programs shall be as follows:
+a. U n i v e r s i t i e s i n t en d i n g to la u n ch a ne w graduate p ro g r a m s h al l s u b m i t a prescribed dossier , duly s i g ne d b y th e Dean, Registrar, Director Quality Enhancement, and h ea d As classified by HEC o f th e r ele v an t university , who sh al l c e r t i f y th e c orr e c t ne s s o f th e i n f o r m a t i o n p r o v i d e d an d sh al l en s u r e th a t al l r e q u i r e d d o c u m en t s a r e a tt a c h e d to t h e appl i c a t i o n dossier .
+b. Universities shall apply for the NOC , before launching any new graduate programs, and no admissions shall be advertised unless the NOC has been obtained from the HEC.
+c. Universities requesting NOCs to launch graduate programs in the fa ll semester
+shall apply no later than March 31 of the same year.
+d. Universities requesting NOCs to launch a graduate program in the spring semester,
+shall apply no later than September 30 of the last year.
+e. The HEC may, at its discretion, require an external review or zero visit in connection with the launch of graduate programs by a university.
+7 .2.3 Continuing c ompliance with the HEC’s p olicies
+If a university’s application for launching a graduate program is successful, it shall be granted an NOC to start the program. Upon receiving NOC from the HEC, the university may launch the program subject to the following conditions:
+a. T h e u n i v e rs i t y s h al l en s u r e th a t i t w i l l c o n t i n u e t o c o m pl y w i t h th e r e q u i r e m en t s s e t in this policy du r i n g th e en t i r e pe r i o d in which i t o ff e r s th e graduate p ro g r a m .
+b. If a n o n g o i n g p ro g r a m f a i l s to m ee t an y o f t h e r e q u i r e m en ts s e t in this policy , the university sh al l i m m e d i a t el y sto p f u rth e r a d m i ss i o n s t o th e p ro g r a m an d n ot i fy th e H E C , i n c l ud i n g p rov i d i n g i n f o r m a t i o n o n r e m e d i a l a ct i o n s b e i n g t a k e n .
+7 . 2 .4 Cancellation of NOC and/ or d emotion to the l ower c ategory
+If a graduate program fails to meet the requirements set in this policy, HEC may:
+a. Stop all activities of the program for six months to compensate for the deficiencies , save exceptions mentioned at clause 7.2.4(c . iv) .
+b. Further intake may be stopped if deficiencies are not fulfilled within six ( 6 ) months of the date of the review report.
+c. I n case the major deficiencies are not fulfilled even one year after the date of
+review report, HEC may take the following actions:
+i. The university may be demoted to lower categories (if applicable), and
+ii. NOC of the deficient graduate program may be cancelled; and/or
+iii. Further , NOC for the under - consideration program may be banned for at least
+two years.
+iv. In case a program is stopped, or NOC is cancelled, the students who are at an
+advance d stage i.e., have passed Comprehensive Examinations and their research synopses have been notified by the Directorate of Advance Studies (or equivalent department ), may be allowe d to continue with their research if research supervisors are available. However, those who are yet to pass a comprehensive exam may stop or be allowed to quit or shift to another university at the risk and cost of the parent university.
+d. The officers responsible for the cancellation of the NOC shall be subject to deal ing
+under the retributive action policy .
+
+[SECTION: hec_gep_graduate_22_7_3_RETRIBUTIVE_ACTIONS_FOR_VIOLATION_OF_RULES]
+# 7.3 Retributive Actions for violation of rules
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 7.3 Retributive Actions for violation of rules
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+7.3 Retributive Actions for violation of rules
+In addition to the aforementioned, the following retributive actions shall also be applicable in case the rules and regulations mentioned in this policy are violated:
+Sr. Quality Parameter Nature of Violation Proposed Action(s) if Existing Policy is Violated i Admission Criteria Violation of admission criteria
+i. Admission be cancelled.
+ii. University to return three ti m e s the
+amount received from student s .
+iii. Disciplinary action against
+responsible staff.
+ii Illegal Admission Admission of students without NOC from HEC iii Course Work Degree awarded without fulfilling the minimum credit hours requirement
+i. The d egree shall be considered
+equivalent to the MS/MPhil/Equivalent degree.
+ii. Disciplinary action against
+Department Chair and relevant staff.
+iv Comprehensive Examination Failure to pass Comprehensive Examination within the prescribed number of attempts .
+i. Termination of PhD
+candidature/registration of student.
+v Supervision of dissertation Supervision of a PhD dissertation by a person who does not fulfil the minimum criter ia for a PhD supervisor.
+i. Disciplinary action against the
+Department Chair vii Maximum number of Supervisee A supervisor , supervising PhD students beyond the maximum number specified by the HEC.
+i. The supervisor shall be banned
+from supervising new PhD researchers for a maximum of five ( 5 ) years.
+ii. Disciplinary action against the
+Department Chair.
+viii External Evaluation of PhD dissertation The external evaluation of a thesis is not in accordance with the prescribed cr iteria of HEC.
+i. One additional paper shall be
+published by the student from his/her dissertation before degree attestation.
+ii. Disciplinary action against
+Department Chair and officer(s) responsible for sending dissertation s for external evaluation.
+Apart from the above - mentioned details, any other violation may also be dealt in accordance with its nature and significance through university’s statutory process.
+These are the minimum examples and shall include all such other cases those shall be i dentified time to time.
+Unjustified delay in sending dissertation for external evaluation
+i. O fficer(s) responsible for sending
+dissertation s for external evaluation shall be warned.
+ix Relevance The dissertation has no relevancy to the Title and Scope of the degree
+i. Supervisor shall be banned from
+supervising new PhD researchers for a maximum of five ( 5 ) years.
+ii. Disciplinary action against
+Department Chair.
+x Research Publication
+i. No research paper s
+w ere published but a degree was awarded.
+ii. Paper s published but
+not in HEC’s recognized journal.
+iii. Paper s published but
+not in the required category of journal s .
+iv. Paper published
+after the award of a PhD degree.
+v. Degree awarded
+based on a paper published before the approval of the PhD resea rch synopsis.
+vi. Degree awarded
+based on a paper that has no relevanc e to the dissertation.
+i. Paper to be published in the required
+category of the HEC recognized journal before attestation of degree.
+ii. Supervisor be banned from
+supervising the new PhD researchers for maximum 05 years.
+iii. Disciplinary action against the
+Department Chair and the releva nt staff of the Controller of Examinations.
+xii Plagiarism Degree awarded , and major or minor plagiarism found in the thesis at any stage in the future.
+i. The PhD researcher/degree holder
+and his supervisor will be penalized as per the provisions of the Anti Plagiarism Policy of the HEC.
+xiii Degree Issued in Violation of University’s Own Rules / Law Degree issued in violation of the university’s PhD Polic y/rules in addition to HEC guidelines.
+i. Supervisor be banned from
+supervising the new PhD researchers for a maximum of 05 years.
+i. Disciplinary action against the
+Department Chair and the Controller of Examination.
+xiv Poor Governance System of the Doctoral Research Absence of the systems elaborated in Part - II of this policy i.e., Governing the Systems of Doctoral Research
+i. In addition to the actions mentioned
+in clause “Cancellation of NOC and/or demotion to the lower category”, disciplinary actions shall be taken against the relevant officers/heads of the Directorate of Advance d Studies and Research/Equivalent Body, Quality Assurance/Equivalent Body, Controller of Examinations etc. , if applicable.
+
+[SECTION: hec_gep_graduate_23_7_4_RE_Q_U_I_R_E_M_EN_T_S_FOR_ENTERING_PHD_COU]
+# 7.4 Re q u i r e m en t s for Entering PhD Country Directory (PCD)
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 7.4 Re q u i r e m en t s for Entering PhD Country Directory (PCD)
+Official page: https://www.hec.gov.pk/english/policies/Pages/GEP.aspx
+Source file: https://www.hec.gov.pk/english/services/faculty/Plagiarism/Documents/Graduate-Education-Policy.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+7.4 Re q u i r e m en t s for Entering PhD Country Directory (PCD)
+For inclusion in PCD, graduates and universities/HEIs/DAIs are required to submit an online application following the prescribed procedure .
+
+[SECTION: hec_gep_graduate_24_HEC_GRADUATE_EDUCATION_POLICY_GEP_2023_PART_6]
+# HEC Graduate Education Policy (GEP-2023) (part 6)
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Graduate Education Policy (GEP-2023) (part 6)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Notifications
+HEC
+Notifications
+
+Type
+Academic
+University
+General Public
+- Recognition of the degree awarded by foreign chartered universities/institutions through virtual/online/distance learning/Blended learning
+Friday, July 22, 2022
+- Academic
+- Deferment of Post PhD Experience for Professors and Associate Professors
+Wednesday, July 20, 2022
+- Academic
+- Extension in maximum duration of MS/MPhil/PhD/equivalent degree programs due to Covid-19
+Friday, April 15, 2022
+- Academic
+- Appointment of TTS faculty on Academic-administrative positions
+Wednesday, March 2, 2022
+- Academic
+- Withdrawal of Migration Certificate/NOC as an admission requirement to the Graduate/ Postgraduate Programs
+Monday, February 28, 2022
+- Academic
+- Collecting hard copies of PhD dissertation to register record in PhD Country Directory (PCD)
+Sunday, December 19, 2021
+- Academic
+- Salary Package for the Vice-Chancellors of Public Sector Universities
+Friday, October 22, 2021
+- University
+- Graduate Education Policy-2023 (GEP-2023)
+Monday, July 10, 2023
+- Academic
+- Applicants having CAF qualification duly verified by ICAP shall be eligible for admission in BS AF
+Wednesday, June 9, 2021
+- Academic
+- Clarification regarding TTS Leave Policy
+Friday, March 5, 2021
+- University
+- Initial appointment of faculty members on TTS
+Friday, March 5, 2021
+- University
+- Amendment of the clause 1.4.1.2 of Model Tenure Track Process Statutes
+Saturday, October 16, 2021
+- University
+- Amendment of the clause 1.1 (d) and Annexure -A of Model Tenure Track Process Statutes
+Friday, October 16, 2020
+- University
+- Transition of BA/BSc Programs to Associate Degree Programs, Phasing Out of MA/ MSc Programs
+Thursday, July 11, 2019
+- Academic
+- Acceptance of USAT (Undergraduate Studies Admission Test)
+Tuesday, July 5, 2022
+- Academic
+- The Requirement of Post-PhD Experience
+Thursday, May 25, 2023
+- Academic
+- Undergraduate Education Policy
+Wednesday, July 12, 2023
+- Academic
+- Revised Interim Placement of Fresh PhDs (IPFP) Policy
+Friday, July 21, 2023
+- Academic
+- Anti-Plagiarism Policy 2023
+Wednesday, August 2, 2023
+- Academic
+- Framework of The HEC Distinguished National Professor (DNP) Program
+Tuesday, September 30, 2025
+- Academic
+- Clarification one time relaxation based on Covid-19 Situation for completion of MS-MPhil equivalent and PhD Degree till 28.02.2023
+Tuesday, April 26, 2022
+- Academic
+- Discontinuation of HEC Approved Supervisor Post Promulgation GEP- 2023
+Friday, December 22, 2023
+- Academic
+- Open and Distance Learning: Policy Provisions and Regulatory Framework
+Wednesday, August 28, 2024
+- Academic
+- Transnational Education (TNE) Policy 2024
+Monday, September 9, 2024
+- Academic
+- Partial Relaxation in Requirement of Full-Time PhD Faculty Members to Launch MS/MPhil or Equivalent and PhD Programs in Basic Medical Sciences and Clinical Health Sciences
+Wednesday, October 2, 2024
+- Academic
+- Journals & Publications Policy 2024
+Monday, September 30, 2024
+- Academic
+- HEC National Fee Refund Policy
+Friday, December 20, 2024
+- Academic
+- Notification Framework for Appointment of Meritorious Professor in HEIs
+Tuesday, September 30, 2025
+- University
+- Notification Framework for Appointment of Professor Emeritus in HEIs
+Tuesday, September 30, 2025
+- University
+- Policy Guidelines for Appointment of Professor of Practice by the Higher Education Institution (HEIs) in Pakistan
+Tuesday, September 30, 2025
+- University
+- HEC-Notification Interim Placement of Fresh PhDs (IPFP)Phase-II
+Friday, February 21, 2025
+- University
+- Notification Post-PhD experience for appointment of Professors (08 years) and Associate Professors (04 years)
+Thursday, July 30, 2026
+- Academic
+- Framework for HEC Best Teacher Award (BUTA)
+Tuesday, September 30, 2025
+- University
+- Policy on Protection Against Harassment in Higher Education Institutions (Revised 2025)
+Tuesday, September 30, 2025
+- University
+- Guidelines for Admissibility of Leave for Professor Emeritus
+Tuesday, December 23, 2025
+- University
+- UNESCO's International Standard Classification of Education-ISCED-F
+Tuesday, January 13, 2026
+- Academic
+- HEC Journals & Publications Policy, 2024
+Monday, March 2, 2026
+- Academic
+- Guidelines for Engagement of Visiting Faculty in HEIs, 2026
+Sunday, May 17, 2026
+- University
+- Mandatory Conduct of GREHAT General & Subject Test through HEC-Education Testing Council (ETC)
+Tuesday, May 12, 2026
+- University
+- Policy on Dual, Double & Joint Degree Programmes, 2026
+Wednesday, May 13, 2026
+- University
+- Notification - Amendments in TNE Policy, 2024
+Wednesday, May 13, 2026
+- University
+- Establishment of the National Chair on AI and Robotics
+Tuesday, May 5, 2026
+- University
+- Notification - Deferred Implementation of Mandatory Conduct of GRE_HAT-General & Subject Test
+Sunday, May 24, 2026
+- General Public
+- Framework for Recognition of Liberal Arts Undergraduate Programs under the HEC Undergraduate Education Policy 2023
+Tuesday, August 4, 2026
+- Academic
+- Framework on the Use of AI (Gen-AI) Tools in HEIs
+Friday, September 4, 2026
+- University
+- HEC Notification | Salary Package for the Vice Chancellors of Public Sector Universities
+Friday, October 2, 2026
+- University
+- HEC Notification | Deferment of Post-PhD Experience Requirement until 31.12.2026
+Friday, October 2, 2026
+- University
+
+[SECTION: hec_gep_graduate_25_HEC_GRADUATE_EDUCATION_POLICY_GEP_2023_PART_7]
+# HEC Graduate Education Policy (GEP-2023) (part 7)
+Title: HEC Graduate Education Policy (GEP-2023) — MS/MPhil and PhD requirements, supervision and grievances
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Graduate Education Policy (GEP-2023) (part 7)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/64/Deferment-Post-PhD-Experience.pdf
+Version: GEP-2023
+Notification / publication date: 2023-07-10
+Effective date: 2023-07-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Coordination Division H - 9, Islamabad (Pakistan) Phone: (051) 9040160 4 | Email: sabbasi @hec.gov.pk
+1 5 - 54/Coord/2019/HEC/(QAD)/ 768 October 02 , 2026
+NOTIFICATION In continuation of HEC Notification No. 15 - 54/Coord/2019/HEC/(QAD)/613 dated July 30, 2026, and in pursuance of the decision taken by the Commission in its 14 th U rgent M eeting held on September 21, 2026, the implementation of the post - PhD experience requir ement for the appointment of Professors (08 years) and Associate Professors (04 years) on BPS in universities/DAIs is hereby further deferred until December 31, 2026.
+02. It is further notified that the matter shall not be considered for any further defe rment beyond December 31, 2026. Accordingly, the requirement of post - PhD experience shall strictly become applicable effective January 0 1, 2027.
+( Shahzaib Abbasi) Director General ( Coordination ) Distribution :
+i. The Vice Chancellors/Rectors/Heads of all Universities/DAIs
+ii. All Divisions & Regional Centers of HEC
+iii. P.S. to the Chairman, HEC
+iv. P.S. to the Executive Director, HEC
+HIG HER EDUC ATIO N COMMISSION

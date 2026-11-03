@@ -1,0 +1,187 @@
+[SECTION: HEC_RECOGNITION_FRAMEWORK]
+Title: HEC Degree Recognition and Accreditation Framework
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: Pakistan (Federal)
+Legal Status: Statutory Body under HEC Act, 2002
+Source: Higher Education Commission Act, 2002; https://www.hec.gov.pk
+
+Overview:
+- The Higher Education Commission (HEC) of Pakistan is the statutory body established under the Higher Education Commission Act, 2002, responsible for recognition, accreditation, and quality assurance of higher education institutions in Pakistan.
+- HEC recognizes universities and Degree Awarding Institutions (DAIs) in Pakistan.
+- Only degrees from HEC-recognized institutions are valid for government employment, further education, and professional licensing in Pakistan.
+- HEC maintains a list of recognized universities and DAIs on its official website (hec.gov.pk).
+- Students should verify that their institution is HEC-recognized before enrollment.
+
+Note: HEC recognition status may change. Always verify the current status on the HEC website.
+
+[SECTION: DEGREE_EQUIVALENCE]
+Title: Degree Equivalence Certificate — Procedure
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: Pakistan (Federal)
+Legal Status: HEC Policy
+Source: HEC Equivalence Guidelines; https://www.hec.gov.pk
+
+Overview:
+- HEC issues equivalence certificates for degrees obtained from foreign universities or from Pakistani institutions that need to be equated to a specific Pakistani degree level.
+- Equivalence is required for:
+  - Government employment in Pakistan.
+  - Admission to Pakistani universities for further studies.
+  - Professional licensing (e.g., PMC, PEC, PNC, Bar Council).
+  - Immigration purposes where Pakistani degree equivalence is needed.
+
+Procedure:
+1. Visit the HEC website (hec.gov.pk) and navigate to the Equivalence section.
+2. Submit an online application for equivalence.
+3. Pay the prescribed fee.
+4. Submit required documents (attested degree certificate, transcripts, detailed marks sheet, passport copy, CNIC).
+5. HEC evaluates the foreign degree against Pakistani standards.
+6. Equivalence certificate is issued (or the application is rejected with reasons).
+
+Note: Equivalence is not automatic. HEC evaluates each case based on the institution's accreditation status, programme duration, curriculum, and other factors. Processing times vary. Consult the HEC website for current requirements.
+
+[SECTION: FOREIGN_DEGREE_ATTESTATION]
+Title: Foreign Degree Attestation by HEC
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: Pakistan (Federal)
+Legal Status: HEC Policy
+Source: HEC Attestation Guidelines; https://www.hec.gov.pk
+
+Overview:
+- Degrees obtained from foreign universities must be attested by HEC before they can be used for employment or further education in Pakistan.
+- HEC verifies the degree with the issuing institution and confirms its authenticity.
+
+Procedure:
+1. Visit the HEC website and navigate to the Attestation section.
+2. Submit an online application for attestation.
+3. Pay the prescribed attestation fee.
+4. Submit the original degree certificate and transcripts (or attested copies as specified by HEC).
+5. HEC verifies the degree with the foreign institution.
+6. Attested documents are returned to the applicant.
+
+Requirements:
+- The foreign institution must be recognized/accredited in its home country.
+- The degree must be from a programme of study that meets HEC's minimum requirements.
+- Additional documents may be required (e.g., IBCC equivalence for pre-university qualifications, embassy attestation).
+
+Note: HEC attestation of foreign degrees may take several weeks. Apply well in advance of any deadline. Consult the HEC website for current requirements and processing times.
+
+[SECTION: PAKISTANI_DEGREE_ATTESTATION]
+Title: Pakistani Degree Attestation by HEC
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: Pakistan (Federal)
+Legal Status: HEC Policy
+Source: HEC Attestation Guidelines; https://www.hec.gov.pk
+
+Overview:
+- Degrees issued by Pakistani universities must be attested by HEC for use abroad or for certain purposes within Pakistan.
+- The university issues the degree; HEC attests (verifies) it.
+
+Procedure:
+1. Obtain the original degree certificate and transcript from the university.
+2. Visit the HEC website and submit an online attestation application.
+3. Pay the prescribed fee.
+4. Submit the original degree and transcript to the HEC office (Islamabad or Regional Centre).
+5. HEC verifies the degree with the issuing university.
+6. Attested documents are returned or sent to the designated authority.
+
+Note: HEC attestation is required for degrees to be used abroad (for employment, immigration, or further education). Some foreign embassies and employers also require attestation by the Ministry of Foreign Affairs (MOFA) after HEC attestation. Consult the HEC website for current procedures.
+
+[SECTION: TRANSCRIPT_REQUEST_PROCEDURE]
+Title: Official Transcript Request Procedure
+Authority: University Examination Departments; HEC
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Institutional Procedure
+Source: University Regulations; HEC Guidelines
+
+Overview:
+- Official transcripts are issued by the university's Examination Department/Controller of Examinations.
+- Transcripts are required for:
+  - HEC degree attestation.
+  - Foreign university admissions.
+  - Employment applications.
+  - Professional licensing.
+
+Procedure (general):
+1. Apply to the university's Examination Department/Controller of Examinations for an official transcript.
+2. Submit the prescribed form and pay the transcript fee.
+3. The university prepares and issues the official transcript (typically in a sealed envelope).
+4. For HEC attestation, the transcript must be sent directly to HEC or submitted in a sealed envelope.
+5. Some universities offer online transcript request portals.
+
+Note: Transcript fees, processing times, and request procedures vary by university. Consult your university's Examination Department for specific requirements.
+
+[SECTION: DEGREE_VERIFICATION]
+Title: Degree Verification by Employers and Institutions
+Authority: HEC; Universities; Employers
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Regulatory
+Source: HEC Guidelines; University Regulations
+
+Overview:
+- Employers (especially government and semi-government organizations) and foreign universities often require degree verification before accepting a degree.
+- Verification is typically done by:
+  1. The employer/institution contacts HEC for verification.
+  2. HEC verifies with the issuing university.
+  3. The issuing university confirms the degree details.
+- Students may also request a "degree verification letter" from their university for submission to employers.
+
+Note: Degree verification processes vary by employer and institution. Consult the requesting organization for their specific verification requirements.
+
+[SECTION: UNRECOGNIZED_DEGREES]
+Title: Risks of Unrecognized Degrees and Institutions
+Authority: HEC
+Jurisdiction: Pakistan (Federal)
+Legal Status: HEC Regulatory Warning
+Source: HEC Guidelines; https://www.hec.gov.pk
+
+Key Warnings:
+- Degrees from institutions not recognized by HEC are NOT valid for:
+  - Government employment in Pakistan.
+  - Further education at HEC-recognized Pakistani universities.
+  - Professional licensing in Pakistan.
+  - HEC attestation (HEC will not attest degrees from unrecognized institutions).
+- Students should verify HEC recognition status BEFORE enrolling in any institution.
+- HEC publishes a list of recognized universities and DAIs on its website.
+- HEC also warns against "degree mills" — institutions that sell degrees without proper academic programmes.
+
+Note: Always verify the current HEC recognition status on the official HEC website (hec.gov.pk). Recognition status may change.
+
+[SECTION: PROFESSIONAL_BODY_RECOGNITION]
+Title: Professional Body Recognition of Degrees
+Authority: Pakistan Medical Commission (PMC); Pakistan Engineering Council (PEC); Pakistan Nursing Council (PNC); Bar Councils; other professional bodies
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Statutory Requirement
+Source: Relevant Professional Body Acts and Regulations
+
+Overview:
+- In addition to HEC recognition, certain professions require recognition by the relevant professional body:
+  - Medical degrees: Pakistan Medical Commission (PMC) registration required to practice.
+  - Engineering degrees: Pakistan Engineering Council (PEC) registration required to practice as an engineer.
+  - Nursing degrees: Pakistan Nursing Council (PNC) registration required.
+  - Law degrees: Bar Council enrollment required to practice as an advocate.
+  - Pharmacy degrees: Pharmacy Council of Pakistan registration required.
+- Professional bodies have their own eligibility criteria, examinations, and registration procedures.
+- HEC recognition of the degree is a prerequisite, but professional body registration is a separate requirement.
+
+Note: Professional body requirements vary by profession. Consult the relevant professional body for specific registration requirements.
+
+[SECTION: HYDERABAD_SPECIFIC_RESOURCES]
+Title: Degree Recognition Resources for Students in Hyderabad
+Authority: University of Sindh Act, 1972; MUET Act, 1976; LUMHS Act, 2006; HEC Ordinance, 2002
+Jurisdiction: Hyderabad, Sindh
+Legal Status: Statutory and Institutional
+Source: University Acts; HEC Ordinance, 2002; HEC Guidelines
+
+Hyderabad-Specific Information:
+- University of Sindh (Jamshoro/Hyderabad): Degrees issued under the University of Sindh Act, 1972 are recognized by HEC (verify current status on hec.gov.pk). Transcript and attestation requests are processed through the Controller of Examinations, University of Sindh.
+- MUET (Jamshoro): Degrees issued under the MUET Act, 1976 are recognized by HEC and PEC (for engineering programmes). Transcript requests go through the MUET Examination Department.
+- LUMHS (Hyderabad): Degrees issued under the LUMHS Act, 2006 are recognized by HEC and PMC (for medical programmes). Transcript requests go through the LUMHS Examination Department.
+- University of Sindh: Official website: https://www.usindh.edu.pk | Examinations Wing: https://www.usindh.edu.pk (Examinations section)
+- MUET: Official website: https://www.muet.edu.pk | Admissions: https://www.muet.edu.pk/admissions
+- LUMHS: Official website: https://www.lumhs.edu.pk | Admissions: https://www.lumhs.edu.pk/admissions/undergraduate_admission.php
+- HEC Attestation & Equivalence: https://www.hec.gov.pk (online services for degree attestation and equivalence)
+- Students from Hyderabad universities may visit the HEC Regional Centre (if available) or apply online for attestation and equivalence services.
+- For professional licensing (PMC, PEC, Bar Council), students must apply separately to the relevant professional body after obtaining their degree.
+- If degree recognition issues are not resolved, students may approach the Sindh Provincial Ombudsman or the Sindh High Court (Hyderabad Bench) under Article 199.
+
+Note: Specific procedures, offices, and contacts vary by university. Consult your university's Examination Department and the HEC website for current information.

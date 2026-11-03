@@ -1,0 +1,194 @@
+[SECTION: ATTENDANCE_REQUIREMENTS]
+University Attendance Requirements
+Authority: Higher Education Commission (HEC) / Individual University Statutes
+Jurisdiction: All HEC-recognized universities in Pakistan
+Legal Status: HEC Policy + University Statutes
+
+HEC and universities prescribe minimum attendance requirements:
+- Minimum attendance: Most universities require 75-80% attendance in each course to be eligible for examinations.
+- Shortage of attendance: If a student falls below the minimum attendance threshold:
+  - University may debar the student from appearing in examinations for that course.
+  - Student may be required to repeat the course.
+  - Some universities allow condonation of shortage on medical or genuine grounds with supporting evidence.
+- Medical exemption: Students with certified medical conditions may apply for attendance condonation with medical certificates.
+- Practical/laboratory courses: Higher attendance requirements (often 80-90%) apply for lab-based courses.
+- Distance learning: HEC-recognized distance learning programmes have relaxed attendance requirements.
+Source: HEC Policy on Academic Standards; Individual University Academic Regulations.
+Note: Specific attendance percentages and condonation rules vary by university. Consult your university's applicable regulations.
+
+[SECTION: GRADING_AND_CGPA]
+University Grading System and CGPA Calculation
+Authority: Higher Education Commission (HEC) / Individual University Statutes
+Jurisdiction: All HEC-recognized universities in Pakistan
+Legal Status: HEC Policy + University Statutes
+
+HEC recommends a standardized grading system for universities:
+Grade scale (typical):
+- A: 85-100% (4.0 grade points)
+- B+: 80-84% (3.5 grade points)
+- B: 75-79% (3.0 grade points)
+- C+: 70-74% (2.5 grade points)
+- C: 65-69% (2.0 grade points)
+- D: 50-64% (1.0 grade point) — minimum passing grade in most universities
+- F: Below 50% (0 grade points) — fail
+
+CGPA calculation:
+- CGPA = Sum of (Credit Hours × Grade Points) / Total Credit Hours
+- Minimum CGPA for degree completion: typically 2.0 on a 4.0 scale.
+- Minimum CGPA for good academic standing: varies by university (often 2.0-2.5).
+Source: HEC Policy on Grading System; Individual University Academic Regulations.
+Note: Grading scales and CGPA requirements vary by university. Consult your university's applicable regulations.
+
+[SECTION: BACKLOG_AND_COURSE_REPEAT]
+Backlog and Course Repeat Policies
+Authority: Individual University Statutes
+Jurisdiction: All Universities in Pakistan
+Legal Status: University Statutes
+
+When a student fails a course (receives F grade):
+- The student must repeat the course in a subsequent semester.
+- Maximum attempts: Most universities allow 2-3 attempts to pass a course. If the student fails after maximum attempts:
+  - The student may be required to change programme.
+  - In some cases, the student may be rusticated/expelled from the programme.
+- Backlog: A failed course that has not yet been repeated. Students must clear backlogs within the maximum programme duration.
+- Maximum programme duration: Typically, universities allow 1.5-2 times the normal programme duration (e.g., for a 4-year BS, maximum 6-8 years).
+- Improvement: Some universities allow students to reappear in examinations to improve grades in passed courses.
+Source: Individual University Academic Regulations.
+Note: Backlog policies, maximum attempts, and programme duration limits vary by university. Consult your university's applicable regulations.
+
+[SECTION: DEGREE_COMPLETION_REQUIREMENTS]
+Degree Completion Requirements
+Authority: Higher Education Commission (HEC) / Individual University Statutes
+Jurisdiction: All HEC-recognized universities in Pakistan
+Legal Status: HEC Policy + University Statutes
+
+To complete a degree, a student must:
+- Pass all required courses with minimum passing grades.
+- Achieve minimum CGPA (typically 2.0 on 4.0 scale).
+- Complete the required credit hours for the programme.
+- Fulfil any additional requirements (thesis, project, internship, comprehensive exam).
+- Clear all university dues (fees, library, laboratory).
+- Complete the programme within the maximum allowed duration.
+Degree conferral:
+- Degrees are conferred by the Syndicate/Academic Council of the university.
+- Convocation ceremonies are held annually or biannually.
+- Students who complete requirements between convocations receive provisional certificates.
+Source: HEC Policy on Degree Requirements; Individual University Statutes.
+
+[SECTION: ACADEMIC_PROBATION]
+Academic Probation and Academic Standing
+Authority: Individual University Statutes
+Jurisdiction: All Universities in Pakistan
+Legal Status: University Statutes
+
+Academic probation is imposed when a student's academic performance falls below the minimum standard:
+- Criteria: Typically, CGPA below 2.0 in a semester, or failure in multiple courses.
+- Consequences of academic probation:
+  - Student is placed on academic warning/probation.
+  - Student may be required to meet with academic advisor.
+  - Course load may be reduced.
+  - If performance does not improve in subsequent semesters:
+ - Student may be required to withdraw from the programme.
+ - Student may be rusticated/expelled.
+- Appeal: Student has the right to appeal against academic probation/rustication to the relevant academic committee or Vice-Chancellor.
+- Due process: Student must be given notice and opportunity to explain before rustication.
+Source: Individual University Academic Regulations; Constitutional Article 10-A (Right to Fair Trial).
+Note: Academic probation criteria and consequences vary by university. Consult your university's applicable regulations.
+
+[SECTION: TRANSCRIPT_AND_MARK_SHEET]
+Transcript and Mark Sheet Issuance
+Authority: Individual University Registrar/Controller of Examinations
+Jurisdiction: All Universities in Pakistan
+Legal Status: University Statutes + HEC Guidelines
+
+Transcripts and mark sheets are official academic records:
+- Transcript: Comprehensive record of all courses, grades, and CGPA across all semesters.
+- Mark sheet/Detailed Marks Certificate: Semester-wise breakdown of marks and grades.
+- Issuance:
+  - Students can apply for transcripts through the Registrar/Controller of Examinations.
+  - Processing time: Typically 7-30 days.
+  - Fee: Prescribed transcript fee applies.
+- Universities cannot withhold transcripts for:
+  - Unpaid fees unrelated to the student's own dues.
+  - Disciplinary disputes (unless there are legitimate outstanding dues).
+- HEC attestation: Transcripts must be attested by HEC for use abroad or for employment in government.
+- Digital transcripts: Some universities now issue digital transcripts with QR verification.
+Source: HEC Guidelines on Transcript Issuance; Individual University Regulations.
+
+[SECTION: ACADEMIC_INTEGRITY_AND_PLAGIARISM]
+Academic Integrity and Plagiarism Policy
+Authority: Higher Education Commission (HEC) / Individual University Statutes
+Jurisdiction: All HEC-recognized universities in Pakistan
+Legal Status: HEC Policy + University Statutes
+
+HEC has issued comprehensive guidelines on academic integrity:
+- Plagiarism: Using someone else's work, ideas, or words without proper attribution.
+- HEC Plagiarism Policy:
+  - All thesis/dissertations must be checked through plagiarism detection software (e.g., Turnitin).
+  - Acceptable similarity index: Typically below 19% for thesis/dissertations.
+  - Assignments and coursework: Universities set their own plagiarism policies.
+- Consequences of plagiarism:
+  - Minor: Warning, requirement to resubmit.
+  - Major: Zero grade in the course, academic probation.
+  - Severe: Rustication/expulsion, degree cancellation.
+- Fabrication/falsification: Submitting fake data, forged documents, or fabricated research is a serious academic offence.
+- Due process: Students accused of plagiarism must be given notice, hearing, and right to appeal.
+Source: HEC Plagiarism Policy; Individual University Academic Integrity Policies.
+
+[SECTION: EXAMINATION_REGULATIONS]
+Examination Regulations and Student Rights
+Authority: Individual University Examination Committees
+Jurisdiction: All Universities in Pakistan
+Legal Status: University Statutes
+
+University examination regulations cover:
+- Examination scheduling: Universities must publish examination schedules at least 30 days in advance.
+- Date sheet conflicts: If two exams are scheduled on the same date, student may request rescheduling.
+- Examination hall rules: Students must follow prescribed conduct (no unfair means, no electronic devices).
+- Unfair means: Copying, use of prohibited materials, impersonation, and other malpractices are punishable.
+- Right to re-evaluation: Students have the right to apply for rechecking/re-evaluation of answer scripts within the prescribed timeframe (typically 15-30 days of result declaration).
+- Result declaration: Universities must declare results within the timeframe prescribed by their statutes (typically 60-90 days after examinations).
+- Supplementary examinations: Students who fail in up to a specified number of courses may appear in supplementary exams.
+Source: Individual University Examination Regulations.
+Note: Examination rules vary by university. Consult your university's applicable regulations.
+
+[SECTION: TRANSFER_AND_MIGRATION]
+Student Transfer and Migration Between Universities
+Authority: Higher Education Commission (HEC) / Individual University Statutes
+Jurisdiction: All Universities in Pakistan
+Legal Status: HEC Policy + University Statutes
+
+Transfer/migration between universities:
+- Inter-university transfer: Students may apply to transfer from one university to another, subject to:
+  - Availability of seats in the receiving university.
+  - Equivalence of courses completed.
+  - No-Objection Certificate (NOC) from the current university.
+  - Meeting the admission criteria of the receiving university.
+- Migration: Temporary study at another university (e.g., for a semester) with credit transfer.
+- HEC role: HEC facilitates inter-university transfers and ensures credit equivalence.
+- Limitations:
+  - Most universities do not allow transfer into final year.
+  - Professional programmes (medicine, engineering) have stricter transfer rules.
+Source: HEC Guidelines on Credit Transfer; Individual University Transfer Policies.
+Note: Transfer policies vary by university and programme. Consult your university's applicable regulations.
+
+[SECTION: HYDERABAD_SPECIFIC_RESOURCES]
+Title: Academic Rules and Resources for Students in Hyderabad
+Authority: University of Sindh Act; MUET Act; LUMHS Act; HEC
+Jurisdiction: Hyderabad, Sindh
+Legal Status: Statutory and Institutional
+Source: University of Sindh Act, 1972; MUET Act, 1976; LUMHS Act, 2006; HEC Guidelines
+
+Hyderabad-Specific Information:
+- University of Sindh (Jamshoro/Hyderabad): Academic rules governed by the University of Sindh Act, 1972 and Statutes framed thereunder. Attendance, grading, CGPA, backlog, and examination rules are set by the Academic Council and notified by the Registrar. Students may consult the Registrar's office or the university website for current academic regulations. Appeals against academic decisions lie with the Academic Committee / Vice-Chancellor as per the University of Sindh Statutes.
+  Official website: https://www.usindh.edu.pk | Admissions: https://admissions.usindh.edu.pk | Examinations Wing: https://www.usindh.edu.pk (Examinations section)
+- MUET (Jamshoro): Academic rules governed by the Mehran University of Engineering and Technology Act, 1976 and Statutes. Engineering programmes have specific attendance and examination rules set by the Academic Council. Students may consult the Registrar or the Academic Office for current regulations.
+  Official website: https://www.muet.edu.pk | Admissions: https://www.muet.edu.pk/admissions
+- LUMHS (Hyderabad): Academic rules governed by the Liaquat University of Medical and Health Sciences Act, 2006 and Statutes. Medical programmes follow HEC/PMDC (now PMC) academic standards with specific attendance, clinical training, and examination requirements. Students may consult the university's Academic Office for current regulations.
+  Official website: https://www.lumhs.edu.pk | Admissions: https://www.lumhs.edu.pk/admissions/undergraduate_admission.php
+- Inter-university transfer: Students in Hyderabad may apply for transfer between University of Sindh, MUET, and LUMHS subject to HEC guidelines, seat availability, and the receiving university's transfer policies. Professional programmes (engineering, medicine) have stricter transfer rules.
+- Sindh Higher Education Commission (SHEC): Oversees higher education in Sindh and may be approached for grievances not resolved at the university level.
+- Students may approach the Sindh Provincial Ombudsman for complaints against provincial universities.
+- Sindh High Court (Hyderabad Bench) is available for writ petitions under Article 199 of the Constitution.
+
+Note: Specific academic rules, regulations, and procedures vary by university. Consult your university's applicable regulations and statutes for current information.

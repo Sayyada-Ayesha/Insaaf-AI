@@ -1,0 +1,654 @@
+{
+  "corpus_version": "2.6.0-final",
+  "freeze_timestamp": "2026-09-07T18:44:46.948Z",
+  "freeze_hash": "1d25a823ff700b734508c3109fb1ca4d66314cff1aa7f2e6750e04bc9ae3e24c",
+  "hash_algorithm": "sha256",
+  "note": "To verify the corpus has not mutated, recompute sha256 of each file below and compare. `final_corpus_hash` recomputation logic lives in server/freezeFinalCorpus.js (content-only, timestamp-independent).",
+  "file_count": 92,
+  "files": [
+    {
+      "path": "rag/manifest.json",
+      "role": "corpus-manifest",
+      "present": true,
+      "sha256": "6fac850cfc687c0bb821ca92dec8f1bef8cf8f00d4a6ebc391e8384c19af0c64",
+      "bytes": 63726
+    },
+    {
+      "path": "rag/indexes/rag_index.json",
+      "role": "search-index",
+      "present": true,
+      "sha256": "e216d217dec4c00c088137f41f25a01afc474d3ad6a3c37a70705090a48acc0d",
+      "bytes": 23226916
+    },
+    {
+      "path": "rag/indexes/local_vectors.json",
+      "role": "local-embedding-vectors",
+      "present": true,
+      "sha256": "996b3b7191de52166cd9a1893feeb4a43929f0351e03bd4b3d114e160a2baf42",
+      "bytes": 12477990
+    },
+    {
+      "path": "rag/documents/cross-border/consular_services.txt",
+      "role": "cross-border-source",
+      "present": true,
+      "sha256": "e1287fed85813eafb6558713de0e55a1fd3a5fbb31ee1b5f5292a4851c651992",
+      "bytes": 12003
+    },
+    {
+      "path": "rag/documents/cross-border/travel_visa_immigration.txt",
+      "role": "cross-border-source",
+      "present": true,
+      "sha256": "cb48f774558df4800aa63a91bf79bbbcadbd371aa1ae02ce3f444856ca5cf7d6",
+      "bytes": 12641
+    },
+    {
+      "path": "rag/documents/cross-border/overseas_employment.txt",
+      "role": "cross-border-source",
+      "present": true,
+      "sha256": "178295b2a96a29c81ac2f2c3a89c59c9e9aef72eab70ece3cfe971e80df82c65",
+      "bytes": 8127
+    },
+    {
+      "path": "rag/documents/cross-border/study_abroad.txt",
+      "role": "cross-border-source",
+      "present": true,
+      "sha256": "157afc6dad2f6f1af0ab53196c8cf1fb0a8ced22e8165c1da412287572a48685",
+      "bytes": 8130
+    },
+    {
+      "path": "rag/documents/cross-border/diplomacy_treaties.txt",
+      "role": "cross-border-source",
+      "present": true,
+      "sha256": "c269658038f1d32626e33b010b12f832e628b5c29eebed31a3b9d614d9be48c2",
+      "bytes": 7120
+    },
+    {
+      "path": "rag/documents/cross-border/cross_border_legal.txt",
+      "role": "cross-border-source",
+      "present": true,
+      "sha256": "b02a82d8258eb52945281b8fc853b6ebc37ad77c43ba92c096debe733209c362",
+      "bytes": 9336
+    },
+    {
+      "path": "rag/corpus_expansion/coverage_matrix.json",
+      "role": "registry",
+      "present": true,
+      "sha256": "608febc7f1d55e54cdb4dd52e21ce635d727d218c55df096729e93e3c5bb479f",
+      "bytes": 14241
+    },
+    {
+      "path": "rag/corpus_expansion/law_registry.json",
+      "role": "registry",
+      "present": true,
+      "sha256": "b620e04765800c7592330a6da3903d6f1ee603d2c3efebe637173c84d91833ed",
+      "bytes": 7717
+    },
+    {
+      "path": "rag/corpus_expansion/case_law_registry.json",
+      "role": "registry",
+      "present": true,
+      "sha256": "5d1a15c6a5c3e43fb937922b2d2b39fd95a4978bd27bd8437bf8b6832bcb3310",
+      "bytes": 160769
+    },
+    {
+      "path": "rag/corpus_expansion/procedure_registry.json",
+      "role": "registry",
+      "present": true,
+      "sha256": "9d3bc8ed44d1661ecb35dfe2dee87c446bbd65c51f871d5b5a2d09c211c41255",
+      "bytes": 3194
+    },
+    {
+      "path": "rag/corpus_expansion/source_registry.json",
+      "role": "registry",
+      "present": true,
+      "sha256": "fddac3dfdc0a3cde6db537ee9949fcb900d2d8337161cbcf56c4f608fc38bdcc",
+      "bytes": 3931
+    },
+    {
+      "path": "rag/corpus_expansion/amendment_registry.json",
+      "role": "registry",
+      "present": true,
+      "sha256": "9fb8603741621b91a0bf7aa9088daaddb5aa3c2245a7e47a1ca2b2a6b091091e",
+      "bytes": 23375
+    },
+    {
+      "path": "rag/documents/constitution/constitution.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "5d44f06f481895312d1efb325d0e1e16fd37a25bc243d207fbbaf70c93b19969",
+      "bytes": 26413
+    },
+    {
+      "path": "rag/documents/ppc/ppc.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "a5b2eca1175870dceac38b5e6c042917f8785d5b89e356cc16ce16a6810f089b",
+      "bytes": 29468
+    },
+    {
+      "path": "rag/documents/crpc/crpc.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "72e2c0946809cb0d9f48c4756de4cd107cc8dd5390f227fc6a701a4e8459a435",
+      "bytes": 42276
+    },
+    {
+      "path": "rag/documents/cpc/cpc.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "ff558ecb74514527a349115283ef173ba97d201094efe2368568cb47b0e6af19",
+      "bytes": 7334
+    },
+    {
+      "path": "rag/documents/peca/peca.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "7e92db6d25c7e21344bccc005b782181b311bd63d46c670ecb8d4ceeb7d4f7b9",
+      "bytes": 13726
+    },
+    {
+      "path": "rag/documents/family/family.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "58e85197c27130a8c9d6be423d469462f9a4e5f506d05d375525d7f55202880c",
+      "bytes": 15888
+    },
+    {
+      "path": "rag/documents/property/property.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "f91ae4c010cfd21f27395531e9c1d14c63558cdb95ad79ff3daff4571fc695ef",
+      "bytes": 9864
+    },
+    {
+      "path": "rag/documents/tenancy/tenancy.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "2fd5c46b5872026d331da8e304d678129072d8277bcc55f76329b125cdc187f4",
+      "bytes": 4174
+    },
+    {
+      "path": "rag/documents/labour/labour.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "d16db254eca149f7914b25f56490b24392131eb1f880f60e7a114f8d9a8efdd9",
+      "bytes": 4665
+    },
+    {
+      "path": "rag/documents/consumer/consumer.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "6f5220f5e5d57ee0e1b5ec1ebc87effd67258bf3032393ae35b669dfedbe4bb7",
+      "bytes": 6696
+    },
+    {
+      "path": "rag/documents/education/education.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "dff5cec7f162953d26e2dda49d554a8507539c51a7f6006d350e18904932c890",
+      "bytes": 3460
+    },
+    {
+      "path": "rag/documents/student/student.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "afcaf378bc81d614d4ef45b0b3af33f091365adc37537515c279f7aedc6c4ad2",
+      "bytes": 7736
+    },
+    {
+      "path": "rag/documents/procedure/procedures.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "ff1a0bc30049051be8d477b967a4ebc47353a0b3b837350bd7e907a39fd87a76",
+      "bytes": 7528
+    },
+    {
+      "path": "rag/documents/court-procedure/procedures.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "2bf9a4e794faba7bd803d415e5c3707ed871f5ee7ec8acb286771ea90a882168",
+      "bytes": 4041
+    },
+    {
+      "path": "rag/documents/legal-aid/aid.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "ed8e70d5529ecfdc744c3655a71667e51a76e4db81c049db565bc2601d06649e",
+      "bytes": 4436
+    },
+    {
+      "path": "rag/documents/case-law/selected_judgments.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "6b4f82d80b671cb9854ee961796fbff38c5170b5feff35bedf985d7bf7c11f06",
+      "bytes": 7591
+    },
+    {
+      "path": "rag/documents/case-studies/case_studies.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "ed7f2520673d2949cde95cc2d1db4d014191c97d6d955d3eb54b9e5d247ffd58",
+      "bytes": 3140
+    },
+    {
+      "path": "rag/documents/remedies/remedies.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "e09b9a78a969f54bbbaef14fbd1df237f9d7908296f79cbe9c22d9d26d0e68ab",
+      "bytes": 3498
+    },
+    {
+      "path": "rag/documents/institutions/institutions.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "33fed92caaed93fa1dd428e7bedca1b02ae5d1d37ab52ea2001388adcc452d6a",
+      "bytes": 1926
+    },
+    {
+      "path": "rag/documents/procedure/workflows.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "1cf305f986a32831c8ea04c0cabf6ead821685ac03180ee6cecd78028a05bd23",
+      "bytes": 24072
+    },
+    {
+      "path": "rag/documents/contract/contract.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "28d09d249899c76a94a80bda6a19921d46f058ab7fef1b6184c03c64771ca13d",
+      "bytes": 17590
+    },
+    {
+      "path": "rag/documents/evidence/evidence.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "d89a5df568286af9cf6d9f46bb176a1916ba187361a9b72eb9a3df19574a829c",
+      "bytes": 8186
+    },
+    {
+      "path": "rag/documents/limitation/limitation.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "256b539763744e8e4bd6a790ca8f5550b761aaefe7f4a3c596819560c9ce162c",
+      "bytes": 5678
+    },
+    {
+      "path": "rag/documents/companies/companies.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "20f0a33d2877e8b450eb473d10e9d539e7e709697f18a4ea2d3ee5f03710b7f8",
+      "bytes": 5958
+    },
+    {
+      "path": "rag/documents/banking/banking.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "396521bd4ed00c1b21d15ade7d6a73bed1e88e903b1b8d6cfedc70ef6ca59659",
+      "bytes": 2390
+    },
+    {
+      "path": "rag/documents/tax/tax.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "8c0c95ae064b6e7fe16ce9bad3733eb755501c145dc1a4e9461c1d30a81ec467",
+      "bytes": 2184
+    },
+    {
+      "path": "rag/documents/nab/nab.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "8ba012a3fcd642eaf82fb450199f7d4148a4906b1e563d444f83a4d943eae3b8",
+      "bytes": 4660
+    },
+    {
+      "path": "rag/documents/ata/ata.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "cdadc0d0ed11d7905dfbe1f59ab95aa5bc9f6465b680a13f6b61c6efe302cbab",
+      "bytes": 4011
+    },
+    {
+      "path": "rag/documents/women/women.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "f9966dd86726306f42fdd8dfab9dfc2c2c352525ca849d28c2454dd56d351c00",
+      "bytes": 4492
+    },
+    {
+      "path": "rag/documents/environment/environment.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "852b66b6e039e528328baf390cb75d953032aa2a88b1d54340c6f004184bd404",
+      "bytes": 4237
+    },
+    {
+      "path": "rag/documents/juvenile/juvenile.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "0dc653018bf65d98eed0478a731abe4295f0dba198d40953f48cf62075ed1de2",
+      "bytes": 4274
+    },
+    {
+      "path": "rag/documents/police/police.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "7b4995f6de4044851d760b7be98a06cdebaa33decbafe4bbba2e0109a733c4f1",
+      "bytes": 3783
+    },
+    {
+      "path": "rag/documents/succession/succession.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "bb4cf6e77b2d086ea2b4138ad2f0318d5fe96b89e647008c99636ebedc88a660",
+      "bytes": 3590
+    },
+    {
+      "path": "rag/documents/commercial/sales_of_goods.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "c93af4c46beceac279d96df0c44e9cf06b4bb4f163e046ac8637cc1860ceefd7",
+      "bytes": 3276
+    },
+    {
+      "path": "rag/documents/commercial/specific_relief.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "49f6e1e27eb22661c391dd2d507302cdf5dc2ebd1f0cccb1013ba9fa3eeca345",
+      "bytes": 3554
+    },
+    {
+      "path": "rag/documents/elections/elections.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "7b5ac6689e6fa2629cd215549134a205538a2f2dd3c53a0526d3ae4864a98e29",
+      "bytes": 2540
+    },
+    {
+      "path": "rag/documents/local-govt/local_govt.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "6c7976577d85459e3f7b99b091a8ecfddcbc7a3b7f5c293220bebadb2275ef98",
+      "bytes": 1787
+    },
+    {
+      "path": "rag/documents/ip/ip.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "6841c7c27a1c205f75988950526fd5d2b61663bc12627610aa492bb331b00dc8",
+      "bytes": 1898
+    },
+    {
+      "path": "rag/documents/prisons/prisons.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "b6b411ecaf64270ae0ef491168b8b385271e821f0e69f73f32b204784a873c0f",
+      "bytes": 1861
+    },
+    {
+      "path": "rag/documents/traffic/traffic.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "4713aaa1ce153461060a0a186f9d5226fffdff4663654494a694644b1e06ed6f",
+      "bytes": 2019
+    },
+    {
+      "path": "rag/documents/arbitration/arbitration.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "2fd3f508ab6cfa6c093963208556ff0f06a955c7e0188cd07eb1be9ea09bbc46",
+      "bytes": 2483
+    },
+    {
+      "path": "rag/documents/competition/competition.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "3e72919c22382dd1e1cc7cff05f4826e822a156a2471bc90a7d8d1883ff1c126",
+      "bytes": 1646
+    },
+    {
+      "path": "rag/documents/provincial/provincial_laws.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "b496ec6c10718fd58cd5574771c2f2f42183173e272d67f895fb0db08e883b66",
+      "bytes": 2257
+    },
+    {
+      "path": "rag/documents/immigration/immigration.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "9fffad63e87c500c8701f4509a3c586642bde126c2ccfe9cdc0795076ed5d2d6",
+      "bytes": 1940
+    },
+    {
+      "path": "rag/documents/court-hierarchy/court_hierarchy.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "ea75d25bf87da2336fbc34e78ea8805437872a89579e1f5d9a51228a05b2de05",
+      "bytes": 4443
+    },
+    {
+      "path": "rag/documents/rights-corpus/rights_corpus.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "c9916f073131b38b13ff2250fa0247d28b4c68982036aa85755ae7510f0b4237",
+      "bytes": 6109
+    },
+    {
+      "path": "rag/documents/expanded-institutions/expanded_institutions.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "7c2c5d9d912da13a90c25a7f46fc8d1a2c1252ba24fb6a29208dd8abcd401fe1",
+      "bytes": 5373
+    },
+    {
+      "path": "rag/documents/expanded-remedies/expanded_remedies.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "f8dccc3f7ad0870b4c0e13c23cdac0eee7cd8aa3699550b6d765452c92789e20",
+      "bytes": 4334
+    },
+    {
+      "path": "rag/documents/expanded-procedures/expanded_procedures.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "347e62848549b546a0f35d5eb825b2014d4814d52e6aa4ec70cd8b2a069cd57a",
+      "bytes": 6281
+    },
+    {
+      "path": "rag/documents/expanded-case-law/expanded_case_law.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "27f7bf69613f9e0acdb950df2b6fe02ed619d5e54288ce9bff06098705e153f5",
+      "bytes": 4368
+    },
+    {
+      "path": "rag/documents/history/pakistan_constitutional_history.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "16633988334c3f6d5ce3c63b2aa67bc682515c0c43f99eb884ca7216b159aec2",
+      "bytes": 3606
+    },
+    {
+      "path": "rag/documents/foreigners/pakistan_visa_categories.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "282f1062f7afc21a879a12df8856bcb41d03173a3732126cc99b5bbea35de4b0",
+      "bytes": 2226
+    },
+    {
+      "path": "rag/documents/civic/civic_services.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "2288ae5d015beb1b5f5ed382500c06d015bceb9ecb2fafbcac5ec352d9c33cee",
+      "bytes": 9472
+    },
+    {
+      "path": "rag/documents/foreigners/foreigner_entry_stay_registration.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "b6d8b2052ae09f6eb808ac2feb6e2f21daed74982efbb865d020cde29fd4e4dd",
+      "bytes": 7515
+    },
+    {
+      "path": "rag/documents/case-law/scp_fcc_official_records.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "641613a77d7466ec43724439bb53741161bbede600e6938db212769a5916ef81",
+      "bytes": 15875
+    },
+    {
+      "path": "rag/documents/offices/public_offices.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "fada8781354e614a4dce60f9445e98481bc15d7e642f2e5e3080b8a115784e9f",
+      "bytes": 32697
+    },
+    {
+      "path": "rag/documents/procedure/citizen_official_procedures.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "4dd9e43ffb79cc4b6528870f95aa92374ca04e317b40219ec08f8d7da8dcaec2",
+      "bytes": 12188
+    },
+    {
+      "path": "rag/documents/hc-judgments/lhc_fulltext_2026.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "a46d0b6b75b38979968ac3ef11f0ac42184ba273903c73b6148f2d7b41ca1b42",
+      "bytes": 860264
+    },
+    {
+      "path": "rag/documents/hc-judgments/lhc_index_2026.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "f7c2766750e6ba55d886eb6a3849c1f679c74868aa9f2b54a9bf6df4ac680eb6",
+      "bytes": 7766
+    },
+    {
+      "path": "rag/documents/hc-judgments/ihc_fulltext_2026.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "3798deb46d31bcfe243ee872281ce0710645b4bfb0bc7e1d49e9c7003e081ad2",
+      "bytes": 278070
+    },
+    {
+      "path": "rag/documents/hc-judgments/ihc_index_2026.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "d0ca2b7142d6ac62958da956a7efa47b7f60009da979b0290c7c3f1648107e7c",
+      "bytes": 8151
+    },
+    {
+      "path": "rag/documents/hc-judgments/phc_fulltext_2026.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "65c5ed5d1752fdcff63c508c5803ab262791d06e1ce2da428adbd5ec010a3d24",
+      "bytes": 127255
+    },
+    {
+      "path": "rag/documents/hc-judgments/phc_index_2026.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "d9c1d603e0a3fb8d8700932f48b8a948406ce0cf81d98e965a0b4e235c1ea0df",
+      "bytes": 123942
+    },
+    {
+      "path": "rag/documents/hc-judgments/bhc_fulltext_2026.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "b64bbce109ed19d3d17fde74f9f0272ac20f41457057e88e7dd021227fd78fdd",
+      "bytes": 199628
+    },
+    {
+      "path": "rag/documents/hc-judgments/bhc_index_2026.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "22b3f106099ca469a00074ca9638d5021163aec081d2ed4aaf9c2102b3797292",
+      "bytes": 17725
+    },
+    {
+      "path": "rag/documents/amendments/amendment_history.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "9f9e4ea58acd4e599244b1fce48da842316824d4aa88ccc5358765e90e6833d8",
+      "bytes": 22786
+    },
+    {
+      "path": "rag/documents/provincial/provincial_fulltext.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "60637f1e8fc901a79dd0938ae9473509418f26037f99fe5d5b9dc7c0e2b49617",
+      "bytes": 14220
+    },
+    {
+      "path": "rag/documents/ajk/ajk_laws.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "ca34de869b5cb7c6860c32f6672042b8044bffb976ff3b24a9a8754cf73dd5f4",
+      "bytes": 4376
+    },
+    {
+      "path": "rag/documents/gb/gb_laws.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "6953c0df5e6df7ced7c36d525fd602afae61f6e92bf5d573b1154c52a6ff3502",
+      "bytes": 4413
+    },
+    {
+      "path": "rag/documents/customs/customs_act_1969.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "3b0b1a49b047ca528cc4697881ebc3fcaac18bbc063fc5246045f1dc131bc841",
+      "bytes": 4820
+    },
+    {
+      "path": "rag/documents/health/health_laws.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "86bc53a0b44d1826fca538112b85e6ef5953f8442cf344c29160652204b99407",
+      "bytes": 5147
+    },
+    {
+      "path": "rag/documents/fia/fia_act_1974.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "efecabfd53a6ad824581af543f89a2c9705a548c048be0bbdae77efd86a76315",
+      "bytes": 5064
+    },
+    {
+      "path": "rag/documents/admin-service/admin_service_laws.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "613cf7b01712e4dc36326e2a17c0fd43623bb67ccc8f5e1234909b6276d51a18",
+      "bytes": 5915
+    },
+    {
+      "path": "rag/documents/torts/torts_laws.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "b3024297e40850e18a075baa542917f3ace12467407d7ec0b27e21c6bd02c8e3",
+      "bytes": 4868
+    },
+    {
+      "path": "rag/documents/civic/civic_workflows.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "554576d8694e7008de27145412ea54fb7cfe5c463bfc6312b67797987fb273cf",
+      "bytes": 10293
+    },
+    {
+      "path": "rag/documents/poa/poa_laws.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "f8202143f09befca19cf9ef86a66e188e0427167c7f5a2a9eb1c55c8d60d93f3",
+      "bytes": 9331
+    },
+    {
+      "path": "rag/documents/foreigners/foreigner_residence_work_study.txt",
+      "role": "pakistan-source",
+      "present": true,
+      "sha256": "6c5af9b72f99b728e5f6c08754fab9fc046cdc1f1de5284242ae4e5872e812fb",
+      "bytes": 7374
+    }
+  ]
+}

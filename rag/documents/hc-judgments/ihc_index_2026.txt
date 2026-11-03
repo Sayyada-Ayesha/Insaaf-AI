@@ -1,0 +1,47 @@
+[SECTION: IHC_INDEX_2026_INDEX]
+Islamabad High Court, Islamabad — Official Judgment Index (metadata-only records) — corpus document (2026-09-06). Each section is one official judgment record (FULL_TEXT_VERBATIM or METADATA_ONLY) with fields as displayed on the official court repository; full-text sections carry the complete verbatim judgment text extracted from the official PDF.
+Court: Islamabad High Court, Islamabad.
+Source: Islamabad High Court official website.
+Source URL: https://mis.ihc.gov.pk/ (official judgments records)
+Status: Verified official court records (verified 2026-09-06).
+[SECTION: IHC_IDX_001]
+Court: Islamabad High Court, Islamabad. Case No: Writ Petition-2239-2018. Title: Pakistan Telecommunication Company Ltd VS Pakistan & others. Author Judge: Honourable Mr. Justice Muhammad Azam Khan. Judgment Date (as displayed): 15-APR-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://mis.ihc.gov.pk/attachments/judgements/90207/1/2239-18_639131564855198868.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: IHC_IDX_002]
+Court: Islamabad High Court, Islamabad. Case No: Writ Petition-4348-2016. Title: M/s Pak Telecom Mobile Ltd. VS Chief Commissioner IR, etc.. Author Judge: Honourable Mr. Justice Muhammad Azam Khan. Judgment Date (as displayed): 07-APR-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://mis.ihc.gov.pk/attachments/judgements/70754/1/4348-16_639117696002417037.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: IHC_IDX_003]
+Court: Islamabad High Court, Islamabad. Case No: Writ Petition-1125-2026. Title: M/s CMPAK Limited VS FOP etc.. Author Judge: Honourable Mr. Justice Muhammad Azam Khan. Judgment Date (as displayed): 25-MAR-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://mis.ihc.gov.pk/attachments/judgements/209048/1/1125-26_639106344575105265.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: IHC_IDX_004]
+Court: Islamabad High Court, Islamabad. Case No: Writ Petition-2665-2025. Title: Maliha Malik VS FOP & others. Author Judge: Honourable Mr. Justice Muhammad Azam Khan. Judgment Date (as displayed): 12-MAR-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://mis.ihc.gov.pk/attachments/judgements/199894/1/2665-25_639093555429098865.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: IHC_IDX_005]
+Court: Islamabad High Court, Islamabad. Case No: Writ Petition-4971-2025. Title: Rana Muhammad Irfan VS Secretary Jammu & Kashmir Housing Society etc.. Author Judge: Honourable Mr. Justice Muhammad Azam Khan. Judgment Date (as displayed): 05-MAR-2026. Citation (as displayed): 2026 YLR 1248. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://mis.ihc.gov.pk/attachments/judgements/205428/1/WRIT_PETITION_NO._4971_OF_2025_639094303005842214.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: IHC_IDX_006]
+Court: Islamabad High Court, Islamabad. Case No: Writ Petition-3124-2023. Title: M/s Ajmal & Brothers VS FOP through Secretary Revenue Division/Chairman FBR etc.. Author Judge: Honourable Mr. Justice Muhammad Azam Khan. Judgment Date (as displayed): 24-FEB-2026. Citation (as displayed): 2026 PTD 816. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://mis.ihc.gov.pk/attachments/judgements/167309/1/3124-23_639077018764277859.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: IHC_IDX_007]
+Court: Islamabad High Court, Islamabad. Case No: Intra Court Appeal-214-2022. Title: Gul Faraz VS ED, FAB etc.. Author Judge: Honourable Mr. Justice Muhammad Azam Khan. Judgment Date (as displayed): 24-NOV-2025. Citation (as displayed): 2026 PLCCS 181. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://mis.ihc.gov.pk/attachments/judgements/145531/1/ICA_No._214-2022_(Approved_for_reporting)_639010587614494970.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: IHC_IDX_008]
+Court: Islamabad High Court, Islamabad. Case No: Criminal Revision-152-2025. Title: Muhammad Shoaib Hassan VS The State etc.. Author Judge: Honourable Mr. Justice Muhammad Azam Khan. Judgment Date (as displayed): 17-NOV-2025. Citation (as displayed): 2026 PCRLJ 277. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://mis.ihc.gov.pk/attachments/judgements/203939/1/CRIMINAL_REVISION_NO.152_OF_2025_639004563677862850.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: IHC_IDX_009]
+Court: Islamabad High Court, Islamabad. Case No: Writ Petition-2820-2025. Title: RAHEELA ZAHEER VS ADJ WEST ISB ETC. Author Judge: Honourable Mr. Justice Muhammad Azam Khan. Judgment Date (as displayed): 03-NOV-2025. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://mis.ihc.gov.pk/attachments/judgements/200628/1/WRIT_PETITION_NO._2820_OF_2025_(AFR)_638984714340922520.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: IHC_IDX_010]
+Court: Islamabad High Court, Islamabad. Case No: Writ Petition-3748-2024. Title: Zafar Yaqoob Khan etc. VS FOP etc. Author Judge: Honourable Mr. Justice Muhammad Azam Khan. Judgment Date (as displayed): 28-OCT-2025. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://mis.ihc.gov.pk/attachments/judgements/189165/1/WRIT_PETITION_NO._3748_OF_2024_(AFR)_638984715265786374.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: IHC_IDX_011]
+Court: Islamabad High Court, Islamabad. Case No: Criminal Miscellaneous-1626-2025. Title: Muhammad Hammad VS The State etc.. Author Judge: Honourable Mr. Justice Muhammad Azam Khan. Judgment Date (as displayed): 28-OCT-2025. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://mis.ihc.gov.pk/attachments/judgements/202592/1/Criminal_Miscellaneous_No._1626-B_of_2025_638981357677901740.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: IHC_IDX_012]
+Court: Islamabad High Court, Islamabad. Case No: Criminal Appeal-89-2025. Title: Mst. Razia Khatoon VS Dr. Arifa Manzoor. Author Judge: Honourable Mr. Justice Muhammad Azam Khan. Judgment Date (as displayed): 28-OCT-2025. Citation (as displayed): 2026 PLD 105. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://mis.ihc.gov.pk/attachments/judgements/193312/1/CRIMINAL_APPEAL_NO._89_OF_2025_(AFR)_638984715925927775.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: IHC_IDX_013]
+Court: Islamabad High Court, Islamabad. Case No: Writ Petition-3767-2025. Title: M/s Nasir Trading Company VS FOP etc.. Author Judge: Honourable Mr. Justice Muhammad Azam Khan. Judgment Date (as displayed): 23-OCT-2025. Citation (as displayed): 2026 CLC 25. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://mis.ihc.gov.pk/attachments/judgements/202757/1/W.P._NO._3767_OF_2025_(AFR)_638984716535897794.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: IHC_IDX_014]
+Court: Islamabad High Court, Islamabad. Case No: Writ Petition-2307-2023. Title: Malik Muhammad Ahsan VS Federal Ombudsman etc.. Author Judge: Honourable Mr. Justice Muhammad Azam Khan. Judgment Date (as displayed): 21-OCT-2025. Citation (as displayed): 2026 CLC 552. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://mis.ihc.gov.pk/attachments/judgements/164289/1/WRIT_PETITION_NO._2307_OF_2023_(AFR)_638984717159893650.pdf. Verified: 2026-09-06 against the official court repository.

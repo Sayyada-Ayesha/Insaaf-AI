@@ -1,0 +1,130 @@
+# Power of Attorney in Pakistan — Law, Execution, Registration and Drafting
+# Coverage: Powers of Attorney Act 1882; Registration Act 1908 registration requirements;
+# stamping; execution and attestation (domestic and overseas); revocation; drafting
+# structures in English and Urdu Script. Sources: Powers of Attorney Act, 1882; Registration
+# Act, 1908; Stamp Act, 1899; settled practice for notarization/consular attestation.
+
+[SECTION: POA_READING_NOTE]
+A power of attorney (mukhtar-nama) is a written instrument by which one person (the
+principal/donor) authorizes another (the attorney/agent) to act on his behalf. Pakistani
+law governing POAs: the Powers of Attorney Act, 1882 (definition and general effect), the
+Registration Act, 1908 (when registration is compulsory), and the Stamp Act, 1899 (stamp
+duty). Requirements below state the settled position; where a figure (stamp duty, fee) is
+not verified it is marked NOT VERIFIED.
+
+[SECTION: POA_TYPES]
+TYPES (Powers of Attorney Act, 1882 framework):
+- General POA: authorizes the attorney to do all acts the principal could do, or a wide
+  class of acts (property dealings, litigation, banking, representation before offices).
+- Special POA: confined to a specific act or matter (e.g., to execute one sale deed, to
+  represent in one case, to collect one specific payment).
+- Property POA: authorizes dealings with immovable property (sale, purchase, mortgage,
+  mutation). Registration considerations apply (see POA_REGISTRATION).
+- Overseas POA: executed by a Pakistani abroad for use in Pakistan, or executed in Pakistan
+  for use abroad — requires notarization and consular attestation (see POA_OVERSEAS).
+SOURCE: Powers of Attorney Act, 1882, Section 2 definition framework. VERIFICATION: verified.
+
+[SECTION: POA_REGISTRATION]
+LAW: Registration Act, 1908, Sections 17 and 18; settled case law. COVERAGE: PARTIAL.
+KEY POSITION (summary):
+- A POA that CREATES or ASSIGNS an interest in immovable property, or that empowers the
+  attorney to sell, mortgage or otherwise transfer immovable property, requires compulsory
+  registration under Section 17 (read with Section 49: an unregistered instrument of that
+  class cannot affect immovable property and is inadmissible as evidence of the transaction).
+- A POA for general representation (appearing in offices, litigation, filing documents) or
+  for acts not transferring immovable property does not require compulsory registration.
+- A power coupled with an interest (where the attorney has an interest in the subject
+  matter) is irrevocable during that interest.
+SOURCE: Registration Act, 1908, ss.17/49; settled case law. VERIFICATION: verified as to the
+settled position (the sale/mortgage POA registration requirement is well-established).
+
+[SECTION: POA_STAMPING]
+LAW: Stamp Act, 1899 (Article 48 POA schedule, as amended provincially). COVERAGE: SUMMARY.
+KEY POSITION: a POA must be stamped with the prescribed stamp duty (general vs special POA
+rates differ; provincial amendments vary). Understamped documents cannot be received in
+evidence (subject to the penalty/validation procedure). AMOUNT: NOT VERIFIED — check the
+current provincial stamp schedule.
+SOURCE: Stamp Act, 1899. VERIFICATION: metadata-verified.
+
+[SECTION: POA_EXECUTION]
+EXECUTION AND ATTESTATION (settled practice):
+- The principal signs (or thumb-impresses if illiterate) in the presence of witnesses.
+- Two witnesses attest the principal's signature/thumb impression; for an illiterate
+  principal the thumb impression must be attested with the attestation recording that the
+  contents were read over and understood.
+- Attestation before a Notary Public (notarized POA) is standard for use in offices, banks
+  and abroad.
+- For court/pleading POAs (vakalatnama for lawyers) the court rules apply.
+SOURCE: settled notarial and stamping practice. VERIFICATION: metadata-verified.
+
+[SECTION: POA_OVERSEAS]
+OVERSEAS POA (Pakistani abroad or foreign POA for use in Pakistan):
+- Execute before a Notary Public in the country of execution (as per that country's law —
+  home-country step).
+- Then attestation: the Pakistani Embassy/Consulate in that country attests the notarized
+  POA (consular attestation) for use in Pakistan; where the foreign country is a party to
+  the Apostille Convention and Pakistan accepts the channel, an apostille may apply —
+  verify the current channel with the Pakistani mission.
+- After attestation, the POA is submitted/registered in Pakistan where registration is
+  required (property POAs).
+- Consular use abroad of a POA executed in Pakistan: notarize in Pakistan, then attest from
+  the Ministry of Foreign Affairs and the foreign mission in Pakistan as required by the
+  destination country (destination-country requirement).
+SOURCE: MOFA consular attestation practice. VERIFICATION: metadata-verified.
+
+[SECTION: POA_REVOCATION]
+REVOCATION (Powers of Attorney Act, 1882, Section 201-208 framework):
+- The principal may revoke the POA at any time (unless it is coupled with an interest).
+- Revocation by: a revocation deed (registered where the POA was registered), or written
+  notice to the attorney, and public notice to persons dealing with the attorney.
+- Termination: POA also terminates on the death, insolvency or incapacity of the principal
+  (subject to the law), or on completion of the specified act (special POA).
+- Until notice of revocation reaches them, third parties who deal with the attorney in good
+  faith may be protected.
+SOURCE: Powers of Attorney Act, 1882. VERIFICATION: verified as to the framework.
+
+[SECTION: POA_DRAFTING_STRUCTURE_EN]
+DRAFTING STRUCTURE — GENERAL POA (English formal document skeleton):
+1. Heading: "GENERAL POWER OF ATTORNEY"
+2. Preamble: donor identification — "I, [NAME], son/daughter of [PARENT], holder of CNIC
+ [CNIC NUMBER], resident of [ADDRESS], do hereby appoint ..."
+3. Attorney identification: "Mr./Ms. [NAME], son/daughter of [PARENT], holder of CNIC
+ [CNIC NUMBER], resident of [ADDRESS], as my true and lawful attorney."
+4. Scope clause: "to do and execute all or any of the following acts, deeds and things on
+ my behalf: (a) to manage, sell, mortgage, lease or otherwise deal with my movable and
+ immovable property; (b) to appear, act and represent me before all courts, offices,
+ banks and authorities; (c) to sign, execute and register all deeds, documents and
+ applications; (d) to receive and recover monies due to me and to give valid receipts;
+ (e) to do all other acts incidental or necessary to the above."
+5. Ratification clause: "I hereby ratify and confirm all acts lawfully done by my attorney
+ in pursuance of this power."
+6. Date and place; 7. Signature of the donor; 8. Attestation of two witnesses (name,
+ CNIC, signature); 9. Notarial attestation where required.
+NOTE: for a SPECIAL POA, replace the scope clause with the single specified act (e.g.,
+"to execute the sale deed of property described as ... in favour of ...").
+VERIFICATION: drafting structure (not statutory form — adapt to the matter and local
+requirements).
+
+[SECTION: POA_DRAFTING_STRUCTURE_UR]
+DRAFTING STRUCTURE — GENERAL POA (Urdu Script formal document skeleton):
+1. سرخی: "مختار نامہ عام"
+2. تمہید: "میں، [نام] ولد [والد کا نام]، شناختی کارڈ نمبر [شناختی کارڈ]، ساکن [پتہ]، بذریعہ
+ اس تحریر مقرر کرتا/کرتی ہوں ..."
+3. مختار کی شناخت: "جناب [نام] ولد [والد کا نام]، شناختی کارڈ نمبر [شناختی کارڈ]، ساکن
+ [پتہ] کو اپنا قانونی مختار مقرر کرتا/کرتی ہوں۔"
+4. اختیارات کی شق: "کہ وہ میری طرف سے درج ذیل امور انجام دے: (الف) میری منقولہ و غیر منقولہ
+ جائیداد کا انتظام، فروخت، رہن، کرایہ یا دیگر معاملات؛ (ب) تمام عدالتوں، دفاتر، بینکوں اور
+ حکام کے سامنے حاضری اور نمائندگی؛ (ج) تمام دستاویزات، درخواستوں اور ہنڈیوں پر دستخط اور
+ اندراج؛ (د) میرے واجبات کی وصولی اور رسیدیں دینا؛ (ہ) مذکورہ بالا امور سے متعلق تمام
+ ضروری کارروائیاں۔"
+5. توثیق کی شق: "میں اپنے مختار کے اس اختیار کے تحت کیے گئے تمام جائز اعمال کی توثیق کرتا/کرتی ہوں۔"
+6. تاریخ اور مقام؛ 7. مؤکل کے دستخط؛ 8. دو گواہوں کی تصدیق (نام، شناختی کارڈ، دستخط)؛
+ 9. ضرورت کے مطابق ناظرِ عام کی تصدیق۔
+VERIFICATION: drafting structure (Urdu Script formal document skeleton; adapt wording to the
+matter).
+
+[SECTION: POA_LIMITS]
+LIMITS: stamp-duty figures, exact registration-office fees and consular attestation fees are
+NOT VERIFIED in this corpus — always state they must be checked with the current schedule.
+For foreign-law execution requirements (notarization abroad), the destination rules control;
+Pakistani law governs the POA's effect within Pakistan.

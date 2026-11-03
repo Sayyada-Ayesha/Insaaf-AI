@@ -1,0 +1,489 @@
+{
+  "reportTitle": "INSAaf AI — Maximum Verified Pakistan Law + Case-Law Corpus Coverage Matrix",
+  "generatedAt": "2026-10-10T15:48:12.464Z",
+  "version": "2.1.0",
+  "methodology": "Additive corpus expansion over the pre-existing RAG corpus. Baseline verified from the previous index (20 documents / 335 chunks). New documents authored as provision-preserving digests citing pakistancode.gov.pk and official bodies; every record carries provenance. Provision numbering preserved via [SECTION: n] / [ARTICLE: n] markers. No existing record deleted; checksums and index regenerated via npm run rag:build.",
+  "disclaimer": "Coverage is \"maximum verified publicly accessible coverage obtained from the searched authoritative sources\" — NOT all Pakistani law. Full-text statutes beyond digest scope, provincial acts and High Court case law remain gaps (marked PARTIAL/MISSING). Case-law entries are digests requiring verification against official reporters before citation.",
+  "before": {
+    "documents": 20,
+    "chunks": 335,
+    "laws": 10,
+    "judgments": 9,
+    "cases": 9,
+    "case_studies": 3,
+    "procedures": 39,
+    "rights": 0,
+    "institutions": 4,
+    "courts": 0,
+    "remedies": 4
+  },
+  "after": {
+    "documents": 116,
+    "chunks": 2142,
+    "original_chunks_preserved": 337,
+    "added_chunks": 1805,
+    "section_markers": 2106,
+    "article_markers": 36,
+    "laws_covered": 56,
+    "federal_laws": 34,
+    "provincial_act_records": 22,
+    "provisions_indexed": 2142,
+    "judgments_case_records": 448,
+    "judgments_supreme_court": 37,
+    "judgments_federal_shariat_court": 0,
+    "judgments_federal_constitutional_court": 10,
+    "judgments_lahore_high_court": 50,
+    "judgments_islamabad_high_court": 20,
+    "judgments_peshawar_high_court": 270,
+    "judgments_balochistan_high_court": 53,
+    "judgments_sindh_high_court": 0,
+    "judgments_other_reported": 0,
+    "suo_motu_records": 5,
+    "case_studies": 3,
+    "procedure_chunks": 60,
+    "curated_workflows": 22,
+    "embedding_nonzero_vectors": 0,
+    "embedding_zero_vectors": 2142,
+    "index_bytes": 35788466
+  },
+  "coverage": [
+    {
+      "domain": "constitution",
+      "docs": [
+        "constitution_1973",
+        "fundamental_rights"
+      ],
+      "status": "CURRENT",
+      "note": "35 constitution chunks + 26 fundamental-rights article digests (Art 8–28, writ remedy, limitations)"
+    },
+    {
+      "domain": "criminal (PPC/ATA)",
+      "docs": [
+        "ppc_1860",
+        "ata_1997"
+      ],
+      "status": "CURRENT",
+      "note": "PPC 71 section digests; ATA 19"
+    },
+    {
+      "domain": "criminal procedure (CrPC)",
+      "docs": [
+        "crpc_1898"
+      ],
+      "status": "CURRENT",
+      "note": "47 sections incl. 22-A/22-B remedy, bail 496–498A, remand, challan"
+    },
+    {
+      "domain": "civil procedure (CPC)",
+      "docs": [
+        "cpc_1908"
+      ],
+      "status": "CURRENT",
+      "note": "29 chunks incl. orders VI–VIII"
+    },
+    {
+      "domain": "cyber (PECA)",
+      "docs": [
+        "peca_2016"
+      ],
+      "status": "CURRENT",
+      "note": "32 chunks incl. FIA complaint procedure"
+    },
+    {
+      "domain": "family",
+      "docs": [
+        "family_laws_1961"
+      ],
+      "status": "CURRENT",
+      "note": "MFLO 1961 + family courts; 19 chunks"
+    },
+    {
+      "domain": "property / land",
+      "docs": [
+        "property_laws"
+      ],
+      "status": "PARTIAL",
+      "note": "TPA/Registration/Rent digest (9 chunks); full TPA text NOT ingested"
+    },
+    {
+      "domain": "tenancy",
+      "docs": [
+        "tenancy_laws"
+      ],
+      "status": "PARTIAL",
+      "note": "Rent-restriction digest (4 chunks); provincial Rent Acts full text NOT ingested"
+    },
+    {
+      "domain": "labour",
+      "docs": [
+        "labour_employment"
+      ],
+      "status": "PARTIAL",
+      "note": "8 digest chunks; provincial standing-orders/factories acts NOT fully ingested"
+    },
+    {
+      "domain": "consumer",
+      "docs": [
+        "consumer_protection"
+      ],
+      "status": "PARTIAL",
+      "note": "7 digest chunks; provincial Consumer Protection Acts full text NOT ingested"
+    },
+    {
+      "domain": "contract",
+      "docs": [
+        "contract_act_1872"
+      ],
+      "status": "CURRENT",
+      "note": "74 section digests of Contract Act 1872"
+    },
+    {
+      "domain": "evidence (QSO 1984)",
+      "docs": [
+        "evidence_qso_1984"
+      ],
+      "status": "CURRENT",
+      "note": "33 section digests"
+    },
+    {
+      "domain": "limitation",
+      "docs": [
+        "limitation_act_1908"
+      ],
+      "status": "CURRENT",
+      "note": "28 section digests"
+    },
+    {
+      "domain": "companies/corporate",
+      "docs": [
+        "companies_act_2017"
+      ],
+      "status": "PARTIAL",
+      "note": "27 section digests; full Companies Act (500+ sections) NOT ingested"
+    },
+    {
+      "domain": "banking/finance",
+      "docs": [
+        "banking_laws"
+      ],
+      "status": "PARTIAL",
+      "note": "10 digest chunks; SBP Act/NBCO full text NOT ingested"
+    },
+    {
+      "domain": "tax",
+      "docs": [
+        "tax_laws"
+      ],
+      "status": "PARTIAL",
+      "note": "10 digest chunks; full Income Tax Ordinance 2001 NOT ingested"
+    },
+    {
+      "domain": "anti-corruption (NAB)",
+      "docs": [
+        "nab_ordinance_1999"
+      ],
+      "status": "CURRENT",
+      "note": "22 section digests of NAO 1999"
+    },
+    {
+      "domain": "women protection",
+      "docs": [
+        "women_protection_laws"
+      ],
+      "status": "PARTIAL",
+      "note": "15 digest chunks; provincial DV Acts full text NOT ingested"
+    },
+    {
+      "domain": "environment",
+      "docs": [
+        "environmental_laws"
+      ],
+      "status": "PARTIAL",
+      "note": "17 digest chunks"
+    },
+    {
+      "domain": "juvenile/child",
+      "docs": [
+        "juvenile_justice_2000"
+      ],
+      "status": "PARTIAL",
+      "note": "18 digest chunks"
+    },
+    {
+      "domain": "police",
+      "docs": [
+        "police_order_2002"
+      ],
+      "status": "PARTIAL",
+      "note": "13 digest chunks"
+    },
+    {
+      "domain": "succession/inheritance",
+      "docs": [
+        "succession_laws"
+      ],
+      "status": "PARTIAL",
+      "note": "17 digest chunks incl. Muslim/Christian succession summary"
+    },
+    {
+      "domain": "sales of goods",
+      "docs": [
+        "sales_of_goods_act_1930"
+      ],
+      "status": "CURRENT",
+      "note": "15 section digests"
+    },
+    {
+      "domain": "specific relief",
+      "docs": [
+        "specific_relief_act_1877"
+      ],
+      "status": "CURRENT",
+      "note": "15 section digests"
+    },
+    {
+      "domain": "elections",
+      "docs": [
+        "elections_act_2017"
+      ],
+      "status": "PARTIAL",
+      "note": "11 digest chunks; ECP rules NOT ingested"
+    },
+    {
+      "domain": "local government",
+      "docs": [
+        "local_government_laws"
+      ],
+      "status": "PARTIAL",
+      "note": "8 digest chunks across provinces"
+    },
+    {
+      "domain": "IP (copyright/TM/patents)",
+      "docs": [
+        "ip_laws"
+      ],
+      "status": "PARTIAL",
+      "note": "8 digest chunks; IPO acts full text NOT ingested"
+    },
+    {
+      "domain": "prisons",
+      "docs": [
+        "prisons_laws"
+      ],
+      "status": "PARTIAL",
+      "note": "8 digest chunks"
+    },
+    {
+      "domain": "traffic/transport",
+      "docs": [
+        "traffic_laws"
+      ],
+      "status": "PARTIAL",
+      "note": "8 digest chunks; Motor Vehicle Ordinance full text NOT ingested"
+    },
+    {
+      "domain": "arbitration/ADR",
+      "docs": [
+        "arbitration_act_1940"
+      ],
+      "status": "CURRENT",
+      "note": "11 section digests; note Act 1940 replaced by Act 2024 in some matters — review"
+    },
+    {
+      "domain": "competition",
+      "docs": [
+        "competition_act_2010"
+      ],
+      "status": "CURRENT",
+      "note": "7 section digests"
+    },
+    {
+      "domain": "provincial laws",
+      "docs": [
+        "provincial_laws"
+      ],
+      "status": "PARTIAL",
+      "note": "8 summary chunks Punjab/Sindh/KP/Balochistan/ICT/AJK/GB"
+    },
+    {
+      "domain": "immigration/citizenship",
+      "docs": [
+        "immigration_laws"
+      ],
+      "status": "PARTIAL",
+      "note": "8 digest chunks"
+    },
+    {
+      "domain": "procedures/practical",
+      "docs": [
+        "court_procedures",
+        "court_workflows",
+        "legal_workflows",
+        "expanded_procedures",
+        "situation_remedies"
+      ],
+      "status": "CURRENT",
+      "note": "51 procedural chunks + 4 situation remedies"
+    },
+    {
+      "domain": "rights",
+      "docs": [
+        "fundamental_rights",
+        "education_student_rights",
+        "student_rights",
+        "women_protection_laws"
+      ],
+      "status": "CURRENT",
+      "note": "26 fundamental-rights digests + student/education rights docs"
+    },
+    {
+      "domain": "institutions",
+      "docs": [
+        "public_institutions",
+        "expanded_institutions"
+      ],
+      "status": "PARTIAL",
+      "note": "26 institution records (role/jurisdiction/legal basis; no invented phones)"
+    },
+    {
+      "domain": "court hierarchy",
+      "docs": [
+        "court_hierarchy"
+      ],
+      "status": "CURRENT",
+      "note": "17 court-hierarchy chunks"
+    },
+    {
+      "domain": "remedies",
+      "docs": [
+        "expanded_remedies",
+        "situation_remedies"
+      ],
+      "status": "CURRENT",
+      "note": "20 remedy records"
+    },
+    {
+      "domain": "legal aid",
+      "docs": [
+        "legal_aid_services"
+      ],
+      "status": "CURRENT",
+      "note": "8 legal-aid chunks"
+    },
+    {
+      "domain": "education/student",
+      "docs": [
+        "education_student_rights",
+        "student_rights"
+      ],
+      "status": "CURRENT",
+      "note": "12 chunks"
+    }
+  ],
+  "jurisdictions": {
+    "federal": {
+      "status": "CURRENT",
+      "note": "Constitution + 30+ federal statute digests"
+    },
+    "punjab": {
+      "status": "PARTIAL",
+      "note": "Provincial summaries + Punjab-specific digests (rented premises, DV act 2016); full provincial statutes NOT ingested"
+    },
+    "sindh": {
+      "status": "PARTIAL",
+      "note": "DV Act 2013, tenancy etc. only at summary level"
+    },
+    "kpk": {
+      "status": "PARTIAL",
+      "note": "DV Act 2021 etc. only at summary level"
+    },
+    "balochistan": {
+      "status": "PARTIAL",
+      "note": "Only summary level"
+    },
+    "ict": {
+      "status": "PARTIAL",
+      "note": "ICT-specific rules not ingested"
+    },
+    "ajk": {
+      "status": "MISSING",
+      "note": "AJK statutes not covered beyond mention"
+    },
+    "gb": {
+      "status": "MISSING",
+      "note": "GB statutes not covered beyond mention"
+    }
+  },
+  "provision_status": {
+    "current": "All indexed statute digests target CURRENT consolidated provisions",
+    "historical": "NOT tracked — historical consolidations not ingested (marked UNKNOWN where amendment history was unclear)",
+    "repealed": "Repeal notes captured inside digests where known (e.g. Arbitration Act 1940 superseded by Arbitration Act 2024 for new arbitrations)",
+    "unknown": "Any provision whose status could not be verified is flagged in its digest text; no repealed text is mixed into CURRENT digests"
+  },
+  "gaps": {
+    "missing_domains": [
+      "customs",
+      "health laws",
+      "public service",
+      "administrative law",
+      "torts (dedicated corpus)",
+      "FIA (dedicated corpus)",
+      "AJK law",
+      "GB law",
+      "full text of major provincial acts"
+    ],
+    "partial_domains": [
+      "companies (full act)",
+      "tax (full Income Tax Ordinance)",
+      "banking (full SBP Act)",
+      "local government acts",
+      "elections rules",
+      "IP acts",
+      "prisons rules",
+      "land revenue acts"
+    ],
+    "case_law_gaps": {
+      "ihc": 0,
+      "lhc": 0,
+      "shc": 0,
+      "phc": 0,
+      "bhc": 0,
+      "fsc_full_judgments": 0,
+      "note": "High Court coverage is the single largest missing area; only SC/FSC digests exist. Full official judgment text ingestion requires network retrieval from court portals."
+    }
+  },
+  "url_health": {
+    "VALID_EXACT_SOURCE": 1,
+    "VALID_OFFICIAL_HOMEPAGE": 19,
+    "REDIRECTED": 0,
+    "BROKEN": 0,
+    "MISSING": 0,
+    "UNVERIFIED": 0,
+    "note": "Status is the last observed classification; URLs are re-checked only by `npm run corpus:audit -- --check-urls` over the network."
+  },
+  "rag_capabilities": {
+    "exact_section_retrieval": "ENABLED (15.0 exact / 8.0 substring boosts; numeric keys domain-scoped)",
+    "semantic_retrieval": "DISABLED_OFFLINE (0 non-zero vectors in index; both GEMINI_API_KEY and OPENAI_API_KEY in .env are currently invalid/unfunded)",
+    "keyword_tfidf": "ENABLED (local TF-IDF over 869 chunks)",
+    "case_retrieval": "ENABLED (case-name + domain routing; landmark fundamental-rights judgments surfaced for rights case queries)",
+    "case_similarity": "PARTIAL (fact-pattern routing to relevant statute/procedure/remedy digests; dedicated similarity vectors require semantic embeddings)",
+    "procedure_retrieval": "ENABLED (procedure keys incl. FIR/bail/khula/writ)",
+    "rights_retrieval": "ENABLED (doc-level boost for fundamental-rights corpus)",
+    "institution_retrieval": "ENABLED",
+    "court_retrieval": "ENABLED (court_hierarchy doc)",
+    "offline": "ENABLED (keyword+exact fully local)"
+  },
+  "update_system": {
+    "audit": "corpus:audit script (detects manifest/index drift, missing files, checksum mismatches, new/removed records)",
+    "update": "corpus:update script (regenerates index for changed documents only)",
+    "validation": "rag:validate + corpus:validate (structure + checksums)",
+    "versioning": "manifest version field + legalStatus per document; additive records only"
+  },
+  "quality": {
+    "duplicates": 0,
+    "invalid_records": 0,
+    "warnings": 0,
+    "unverified_provision_status": "Flagged per digest where amendment history unknown",
+    "provenance_coverage": "100% of documents carry sourceURL/sourceDomain/jurisdiction/legalStatus; source URLs classified in source_registry.json; network re-probe pending"
+  }
+}

@@ -1,0 +1,1285 @@
+# Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: Pakistan (Federal) — higher education
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC | Published/notified: 2026-10-10 | Effective: 2026-10-10 | Status: Current
+Provenance: sections below carry the canonical HEC URL for the document they were extracted from.
+Coverage area: G,B
+Verification note: ISCED 2011 was circulated by HEC as a notification attachment (dated in the HEC register) and is the classification reference behind PQF level mappings.
+
+[SECTION: hec_pqf_qualifications_1_NATIONAL_QUALIFICATIONS_FRAMEWORK_OF_PAKISTAN]
+# National Qualifications Framework of Pakistan
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: National Qualifications Framework of Pakistan
+Official page: https://www.hec.gov.pk/english/services/universities/pqf/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/pqf/Pages/default.aspx
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Services
+Universities
+Pakistan Qualification Frame Work
+- Introduction
+National Qualifications Framework of Pakistan
+Higher Education Commission of Pakistan has approved the "National Qualifications Framework of Pakistan", in its 31st meeting held on January 11, 2016 for posting on the HEC website for any comments from the stakeholders till June 30, 2016.
+The Pakistan Qualification Framework is considered as mechanism for classification of the qualifications on the basis of the learning outcomes i.e. skill, competence, knowledge. It is levels based and outcomes focused. Pakistan Qualification Framework (PQF) encompasses a comprehensive list of all quality assured qualifications in Pakistan. The Pakistan Qualification Framework provides all the information regarding the accredited higher qualifications and institutions recognized by the Higher Education Commission of Pakistan.
+National QualificationsFramework of Pakistan 2015
+Objectives of the PQF
+Helps to make available the Quality Assured and accredited/recognized qualifications to all the stakeholders.
+Helps in establishing the national standards of qualifications
+Provide a base for the comparison of qualifications at national a
+s well as international level
+Helps in international recognition of qualifications
+Facilitates the trans-national mobility of graduates and learners
+Used as an instrument for reforms in education system
+Helps to promote the linkages between industry and education system
+PQF Levels
+Pakistan Qualification Framework has eight levels. Levels are based on the Generic nomenclature used for the qualification in the country. The table below shows the different qualification types which are classified and are used as quality assured qualification in the country.
+
+[SECTION: hec_pqf_qualifications_2_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN]
+# Pakistan Qualification Framework (PQF), Pakistan
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan
+Official page: https://www.hec.gov.pk/english/services/universities/pqr/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/pqr/Pages/default.aspx
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Services
+Universities
+Pakistan Qualification Register
+- About PQR
+- PQR information
+- HEIs Focal Persons
+Pakistan Qualification Register
+T
+he Pakistan Qualification Register (PQR) is the key component of the Pakistan Qualification Framework (PQF). It contains the details of the qualification and providers recognized/accredited by the Higher Education Commission. The qualifications not listed at the PQR are not recognized by Higher Education Commission.
+Pakistan Qualification Register (PQR) is a comprehensive list of all quality assured higher qualifications in Pakistan. The Pakistan Qualification Register is a list containing every Qualification and the providers/Higher Education Institutions recognized/accredited to deliver and issue those qualifications. The register encompasses only Quality Assured Qualifications and Higher Education Institutions recognized by Higher Education Commission Pakistan.
+Objectives of the Pakistan Quality Register
+- I
+t
+helps to make available the Quality Assured and accredited/recognized qualifications/ programs to all the stakeholders
+- It helps in international recognition of the qualifications
+- It facilitates in trans-national mobility of the learners and the graduates
+- It helps in recognition of credit transfer proces
+s
+
+[SECTION: hec_pqf_qualifications_3_NAME_TITLE_OF_QUALIFICATION]
+# Name & Title of Qualification
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Name & Title of Qualification
+Official page: https://www.hec.gov.pk/english/services/universities/pqr/Pages/PQR-information.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/pqr/Pages/PQR-information.aspx
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+Universities
+Pakistan Qualification Register
+PQR information
+- About PQR
+- PQR information
+- HEIs Focal Persons
+PQR information
+- SOPs for PQR
+- Program Registration Proforma
+- PQR Guide Book 
+The following information is publically available on the Register:
+Name & Title of Qualification
+The Register contains the Name & Title of Qualification which is consistent with the criteria for the use of Title and Nomenclature. It will help in reducing the confusion by the use of different nomenclature for similar degrees and use of similar nomenclature for degrees that are actually quite different in duration and scope.
+Qulaification Levels and Program Titles
+The Register has eight levels are based on the Generic nomenclature used for the qualification in the country. A qualification must be assigned to one of the eight levels. The Framework does not describe qualifications at the same level as being equal and qualifications at the same level are not interchangeable, however, they are at a comparable level in terms of knowledge, skills or competence required.
+Learning Outcomes
+Each qualification level contains an Outcomes statement that brings clarity and emphasize on the development of qualification. The development of outcomes for a qualification guides for the development of course content, and processes for teaching, learning and assessment. A qualification outcome statement will inform the students and employers that what the qualification holder will have achieved by the end of the qualification. It will also make the purposes and objectives of learning clear to the learner and also convey information to every employer about what job applicant knows.
+Credit Hours
+- Credit hour means teaching a theory course for 50 minutes each week throughout the Semester.
+- One credit hour in laboratory or practical work / project would require lab contact of two hour per week throughout the semester.
+- The credit hours are denoted by two digits within brackets with a hyphen in between. The first digit represents the theory part while the second (right side) digit represents the practical.
+- Thus 3(3-0) means three credit hours of theory, while 4(3-1) means a total of four credit hours, of which three are of theory while one credit hour is for laboratory
+- The weekly contact hours of a 3(3-0) course will be three, the contact hours of a 4(3-1) course will be six.
+- The contact hours during each week of the Summer Session will be doubled to ensure that the course is completely taught in a semester with half the duration compared with a regular (Fall/Spring) semester.
+Subject Classification
+The Higher Education Commission has adopted subject list of joint Academic classifications of subjects (JACS) developed by Higher Education Statistics Agency (HESA) with certain amendments to match with the national context. It enlists the major disciplines, sub-fields, and helps in standardization of the subject nomenclature along with categorizing each subject into its relevant major discipline.
+Quality Assurance Mechanism
+There are two types of accreditation carried out in most parts of the world i.e. Institutional and Program accreditation. Institutional Accreditation looks at the whole Institution, whereas, the program accreditation emphases on individual and professional programs. In Pakistan Institutional accreditation is carried out by the Higher Education Commission (HEC) while, program accreditation is carried out by the Accreditation Councils.
+Following are existing accreditation councils/Professional Bodies which accredits the respective programs;
+- Pakistan Bar Council (PBC)
+- Pakistan Council for Architects and Town Planners (PCATP)
+- Pakistan Engineering Council (PEC)
+- Pakistan Medical & Dental Council (PMDC)
+- Pakistan Nursing Council (PNC)
+- Pakistan Pharmacy Council (PCP)
+- Pakistan Veterinary Medical Council (PVMC)
+- National Council for Homoeopathy (NCH)
+- National Council for Tibb (NCT)
+- National Accreditation Council for Teachers Education (NACTE)
+- National Agricultural Education Accreditation Council (NAEAC)
+- National Computing Education Accreditation Council (NCEAC)
+- National Business Education Accreditation Council (NBEAC)
+
+[SECTION: hec_pqf_qualifications_4_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 2)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 2)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+INTERNATIONAL STANDARD CLASSIFICATION OF EDUCATION Fields of education and training 2013 (ISCED - F 2013) – Detailed field descriptions UNESCO The constitution of the United Nations Educational, Scientific and Cultural Organization (UNESCO) was adopted by 20 countries at the London Conference in November 1945 and entered into effect on 4 November 1946. The Organization currently has 195 Member States and 9 Associate Members.
+The main objective of UNESCO is to contribute to peace and security in the world by promoting collaboration among nations through education, science, culture and communication in order to foster universal respect for justice, the rule of law, and the human rights and fundamental freedoms that are affirmed for the peoples of the world, without distinction of race, sex, language or religion, by the Charter of the United Nations.
+To fulfil its mandate, UNESCO performs five principal functions: 1) prospective studies on education, science, culture and communication for tomorrow's world; 2) the advancement, transfer and sharing of knowledge through research, training and teaching activities; 3) standard-setting actions for the preparation and adoption of internal instruments and statutory recommendations; 4) expertise through technical co-operation to Member States for their development policies and projects; and 5) the exchange of specialised information.
+UNESCO is headquartered in Paris, France.
+UNESCO Institute for Statistics The UNESCO Institute for Statistics (UIS) is the statistical office of UNESCO and is the UN depository for global statistics in the fields of education, science and technology, culture and communication.
+The UIS was established in 1999. It was created to improve UNESCO's statistical programme and to develop and deliver the timely, accurate and policy- relevant statistics needed in today’s increasingly complex and rapidly changing social, political and economic environments.
+The UIS is based in Montreal, Canada.
+Published in 2015 by:
+UNESCO Institute for Statistics P.O. Box 6128, Succursale Centre-Ville Montreal, Quebec H3C 3J7 Canada Tel: +1-514-343-6880 Email: uis.publications@unesco.org http://www.uis.unesco.org ©UNESCO-UIS 2015 ISBN 978-92-9189-179-5 Ref: UIS/2015/INS/6 DOI http://dx.doi.org/10.15220/978-92-9189-179-5-en This publication is available in Open Access under the Attribution-ShareAlike 3.0 IGO (CC-BY-SA 3.0 IGO) license (http://creativecommons.org/licenses/by-sa/3.0/igo/). By using the content of this publication, the users accept to be bound by the terms of use of the UNESCO Open Access Repository ( http://www.unesco.org/open-access/terms-use-ccbysa-en ).
+The designations employed and the presentation of material throughout this publication do not imply the expression of any opinion whatsoever on the part of UNESCO concerning the legal status of any country, territory, city or area or of its authorities or concerning the delimitation of its frontiers or boundaries.
+- iii -
+Contents Page Introduction  4 00 Generic programmes and qualifications  5 01 Education  7 02 Arts and Humanities  10 03 Social Sciences, Journalism and Information  17 04 Business, Administration and Law  20 05 Natural Sciences, Mathematics and Statistics  25 06 Information and Communication Technologies  29 07 Engineering, Manufacturing and Construction 31 08 Agriculture, Forestry, Fisheries and Veterinary  39 09 Health and Welfare  43 10 Services  48 Appendix I. ISCED-F 2013: List of possible codes  54 Appendix II. Numerical code list  59 Appendix III. Alphabetical list  80
+- 4 -
+
+[SECTION: hec_pqf_qualifications_5_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 3)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 3)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Introduction The International Standard Classification of Education (ISCED) is a framework for assembling, compiling and analysing cross-nationally comparable statistics on education. ISCED is a member of the United Nations International Family of Economic and Social Classifications and is the reference classification for organizing education programmes and related qualifications by levels and fields of education. First developed in the mid-1970s by the United Nations Educational, Scientific and Cultural Organization (UNESCO), ISCED has been revised several times, including in both 2011 and 2013.
+The revision in 2011, concentrated primarily on changes to the levels of education of programmes (ISCED-P) and introduced, for the first time, a classification of levels of educational attainment based on qualifications (ISCED-A). The 2013 revision focused on the fields of education and training (ISCED-F). The ISCED revisions arethe product of international agreement and are adopted formally by the General Conference of UNESCO Member States.
+The current document describes the subject content of each of the detailed fields of the 2013 revision of the ISCED Fields of Education and Training classification (ISCED-F 2013). Where possible each description gives examples both of subjects which belong to each field and some boundary cases which are included in other fields. Such exclusions help to better distinguish one field from another especially where the content of two fields appears to be similar.
+At the end of the document there are alphabetical and numerical listings of subjects and fields.
+These lists include more examples of subjects than are mentioned in the field descriptions themselves.
+A summary of all possible field codes and their place in the classification hierarchy is also included.
+- 5 -
+00 Generic programmes and qualifications
+Generic programmes and qualifications are those providing fundamental and personal skills education which cover a broad range of subjects and do not emphasise or specialise in a particular broad or narrow field.
+This broad field should not be used as a residual category. Programmes and qualifications with a specific subject emphasis should be classified in broad fields 01 to 10. In particular, education at the tertiary level should only by way of exception be classified here.
+001 Basic programmes and qualifications 0011 Basic programmes and qualifications Basic programmes and qualifications are designed to provide participants with fundamental skills in reading, writing and arithmetic along with an elementary understanding of other subjects such as history, geography, natural science, social science, art and music, and in some cases religious instruction. These programmes and qualifications are normally offered at primary and lower secondary levels. Broad, non-specialised programmes at upper secondary level are also classified here even if there is some concentration on, for example, humanities, social science, natural science etc. Vocational programmes and qualifications are included here only by way of exception.
+Programmes and qualifications with the following main subject content are classified here:
+Basic programmes and qualifications Broad, generic (non-specialised) programmes and qualifications General programmes and qualifications with no specific subject emphasis Programmes and qualifications at primary level Inclusions Basic programmes and qualifications at upper secondary level (in some countries at lower secondary level) with some emphasis on e.g. humanities, social sciences or natural sciences but still covering other fields of knowledge are included in this detailed field. In some countries such programmes or qualifications are offered on a modular basis and should also be classified here.
+Exclusions Programmes that are considered as general in the programme orientation sense (nonvocational) but have a clear emphasis on a detailed, narrow or broad field are excluded from this detailed field and included in one of the broad fields 01-10, depending on the subject covered.
+- 6 -
+002 Literacy and numeracy 0021 Literacy and numeracy Literacy and numeracy are programmes or qualifications arranged mainly for adults , designed to teach fundamental skills in reading, writing and arithmetic. The typical age range of participants can be used to distinguish between detailed field 0011 ‘ Basic programmes and qualif ications’ and this detailed field.
+Programmes and qualifications with the following main content are classified here:
+Basic remedial programmes for youth or adults Literacy Numeracy 003 Personal skills 0031 Personal skills Personal skills are defined by reference to the effects on the individual’s capacity (mental, social etc.). This detailed field covers personal skills programmes not included in 0011 ‘ Basic programmes and qualifications’ or 00 21 ‘Literacy and numeracy’, giving key competencies and transferable skills.
+Programmes and qualifications with the following main content are classified here:
+
+[SECTION: hec_pqf_qualifications_6_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 4)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 4)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Argumentation and presentation Assertiveness training Communication skills Co-operation Development of behavioural capacities Development of mental skills Job-seeking programmes Parenting courses Public speaking Self-esteem skills Social competence Time management Inclusions Education and training in leadership in the context of personal development is included here.
+Education and training related to the work place or to work assignments is included in this detailed field if it has more to do with personal development than work development. Personal skills courses can be taught at the workplace, but still be classified here based on their content.
+Programmes for people with special needs on how to cope with their daily life are included here Exclusions Study of leadership in the context of management is excluded from this group and included in detailed field 0413 ‘Management and administration’.
+- 7 -
+01 Education
+011 Education 0111 Education science Education science is the study of the learning process and the theories, methods and techniques of imparting knowledge to others.
+Programmes and qualifications with the following main content are classified here:
+Curriculum studies Didactics Educational assessment, testing and measurement Educational evaluation and research Paedagogical sciences Exclusions Teacher training programmes which combine education science with the practice of teaching are excluded from this detailed field and included in one of the detailed fields for teacher training (0112-0114).
+0112 Training for pre-school teachers Training for pre-school teachers is the study of the theories, methods and practice of teaching very young children up to 7 years of age within formal school settings at pre-primary or early childhood educational development levels.
+Programmes and qualifications with the following main content are classified here:
+Early childhood teaching (within formal school settings) Pre-primary teacher training Exclusions Training in caring for children outside formal school settings is excluded from this detailed field and included in detailed field 0922 “Child care and youth services” 0113 Teacher training without subject specialisation Training for teachers without subject specialisation is the study of the theories, methods and practice of providing children between approximately 5 and 15 years of age with the fundamental skills in reading, writing and mathematics along with an elementary understanding of other subjects such as history, geography, social science etc. and laying the foundation for lifelong learning. Subject specialisation is stressed less than in detailed field 0114 ‘ Teacher training with subject specialis ation’ . The study of teaching children with special needs is included in this detailed field, likewise the study of teaching adults fundamental reading and writing skills and teaching immigrants these types of skills in their home or first language.
+- 8 -
+Programmes and qualifications with the following main content are classified here:
+Class teacher training Indigenous teacher training Primary teaching Teacher training for children with special needs Inclusions The study of teaching adults basic literacy and numeracy skills is included here. Teacher’s aide (teaching assistant) is also included here.
+Exclusions Teacher training with subject specialisation even if intended for the teaching of children in primary or lower secondary education is excluded from this detailed field and included in detailed field 0114 ‘ Teacher training with subject specialisation’ .
+0114 Teacher training with subject specialisation Teacher training with subject specialisation is the study of the theories, methods and practice of teaching a specific subject, mostly at secondary or higher levels of education.
+Programmes and qualifications included in this detailed field often comprise both studies as well as the subject/subjects that are going to be taught.
+Programmes and qualifications with the following main content are classified here:
+Teacher training  arts and crafts Teacher training  commercial subjects Teacher training  music Teacher training  nursing Teacher training  physical training Teacher training – second languages Teacher training  specific theoretical subjects, e.g. English, mathematics, history Teacher training  technical subjects Teacher training – vocational subjects Training of driving instructors Training of trainers Inclusions Teacher training courses for university teachers, instructors of work place and working life skills and in practical and artistic subjects are included here.
+Exclusions Training of sports trainers is excluded from this detailed field and included in detailed field 1014 ‘Sports’.
+- 9 -
+018 Inter-disciplinary programmes and qualifications involving education 0188 Inter-disciplinary programmes and qualifications involving education Inter-disciplinary programmes and qualifications to which the greatest intended learning time is devoted to education are classified here.
+- 10 -
+02 Arts and Humanities
+
+[SECTION: hec_pqf_qualifications_7_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 5)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 5)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+021 Arts 0211 Audio-visual techniques and media production Audio-visual techniques and media production is the study of techniques and skills to produce books or newspapers, radio or TV production, film or video production, recorded music production and graphic reproduction. It includes programmes and qualifications in methods of colour reproduction, photography and computer graphics. Study of combining pictures, words and decorations in the production of books, magazines, posters, adverts etc. is also included.
+Programmes and qualifications with the following main content are classified here:
+Animation Bookbinding Camera operating Compositing (printing) Computer game production Computer type-setting Film and video production Graphic design Graphic reproduction Illustration Interactive media design Media techniques Multimedia production Photography Pre-press operations Print finishing and binding Printing Publishing design, lay-out Radio and TV production Recorded music production Sound techniques Type-setting Inclusions Desktop publishing and lay-out are included here.
+Exclusions Programmes and qualifications in the use of specific software applications for desktop publishing and website development are excluded from this detailed field and included in detailed field 0611 ‘Computer use” .
+Study of journalism (wording and content of messages) is excluded from this detailed field and included in detailed field 0 321 ‘Journalism and reporting’.
+- 11 -
+0212 Fashion, interior and industrial design Fashion, interior and industrial design is the study of creatively combining line, form and fabric in designing and constructing e.g. fashion garments, industrial products and interiors.
+Programmes and qualifications with the following main content are classified here:
+Costume design Design of industrial products Fashion design Interior architecture Interior design Stage designing Window dressing Exclusions Study of Building design is excluded from this detailed field and included in detailed field 0731 ‘Architecture and town planning’.
+Study of Industrial design is excluded from this detailed field if emphasis is given to technical subjects and not to artistic design, and included in the appropriate detailed field under 071 ‘Engineering and engineering trades’.
+Publishing design and graphic design are excluded from this detailed field and included in detailed field 0211 ‘Audio - visual techniques and media production’.
+0213 Fine arts Fine arts is the study of visual forms of creative expression, dealing with theory, history, techniques, performance and production in fine arts.
+Programmes and qualifications with the following main content are classified here:
+Art theory Calligraphy Etching Fine art printmaking History of art Painting Philosophy of art Sculpture Exclusions Training in ceramics, pottery etc is excluded from this detailed field and included in detailed field 0214 ‘ Handicrafts ’.
+Study of architecture is excluded from this detailed field and included in detailed field 0731 ‘Architecture and town planning’.
+Teacher training in arts is excluded from this detailed field and included in detailed field 0114 ‘ Teacher training with subject specialisation’ .
+- 12 -
+0214 Handicrafts Handicrafts is the study of techniques and skills in a chosen craft, such as jewellery, pottery, weaving, woodcarving etc.
+Programmes and qualifications with the following main content are classified here:
+Ceramics Crafts, folk arts and artisan Decorative metal crafts Indigenous crafts Embroidery Floristry (flower arranging) Glass arts and craft Goldsmithing Jewellery Making of musical instruments (not industrial) Musical instruments (repairing and tuning) Silversmithing Stone carving (craft) Weaving (craft) Woodcarving Exclusions Study of industrial (large scaled mechanised) production of pottery, woven materials, embroidery etc. is excluded from this field and included in one of the detailed fields under broad field 07 ‘Engineering, manufacturing and construction’.
+0215 Music and performing arts Music and performing arts is the study of the principles and techniques associated with performance involving music, speech, movement, mime, characterisation, improvisation and stage craft.
+Programmes and qualifications with the following main content are classified here:
+Acting and directing Ballet Choreography Circus Composition (music) Conducting (music) Creative and performance art Dance Drama History of film and theatre History of music Music Music conducting Musicology Theatre/Theatre sciences
+- 13 -
+Inclusions Study of music and performing arts history and theory is included here.
+Exclusions Teacher training in music and other performing arts is excluded from this detailed field and included in detailed field 0114 ‘ Teacher training with subject specialisation’ .
+022 Humanities (except languages) 0221 Religion and theology Religion and theology is the study of religious beliefs, concepts, symbols, expressions and texts of spirituality.
+Programmes and qualifications with the following main content are classified here:
+
+[SECTION: hec_pqf_qualifications_8_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 6)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 6)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Religious history Study of sacred books Study of different religions Theology Inclusions Included in this detailed field are programmes for children and young people, usually given in religious schools or seminars, in monasteries etc., aiming to develop an interest in the tenets of their religion and sufficient familiarity with its philosophy to assist in the propagation of their faith.
+Exclusions Basic programmes given in religious schools, seminars etc. containing religious instruction but not emphasising it or leading to a religious vocation, are excluded from this detailed field and included in 0011 ‘ Basic programmes and qualifications ’. Islamic sharia programmes and qualifications are excluded from this detailed field and included in detailed field 0421 ‘Law’.
+0222 History and archaeology History is the study of past events, especially the political, social and economic development of a country, a continent or the world. History of medicine is classified here, likewise the study of history of science and ideas. Archaeology is the study of ancient civilisations by scientific analysis of what is found in the ground.
+Programmes and qualifications with the following main content are classified here:
+Archaeology Cultural history Folklore studies History History of literature History of medicine History of science and ideas History of technology
+- 14 -
+Inclusions Restoration and preservation of artistic heritage are included here .
+Exclusions Study of literature combined with study of a specific language is excluded from this detailed field and included in detailed field 0232 ‘ Literature and linguistics ’ .
+Study of classical languages (Latin etc.) is excluded from this detailed field and included in detailed field 0231 ‘L anguage acquisition ’.
+Study of History of art is excluded from this detailed field and included in detailed field 0213 ‘Fine arts’.
+Study of Music and performing arts history is excluded from this detailed field and included in detailed field 0215 ‘Music and performing arts’.
+Study of Economic history/history of economics is excluded from this detailed field and included in detailed field 0311 ‘Economics’.
+0223 Philosophy and ethics Philosophy and ethics is the study of philosophy, ethics and related subjects dealing with the conception of life.
+Programmes and qualifications with the following main content are classified here:
+Ethics Logic Morals Philosophy Exclusions Study of religion is excluded from this detailed field and included in detailed field 0221 ‘Religion’.
+Study of Philosophy of arts is excluded from this detailed field and is included in detailed field 0213 ‘Fine arts’ 023 Languages 0231 Language acquisition Language acquisition is the study of the structure and composition of languages taught as second or foreign languages (i.e. that are intended for non-native or non-fluent speakers of the language). It includes the study of related cultures, literature, linguistics and phonetics if related to the specific language being acquired and forms part of the same programme or qualification.
+Classical or dead languages are included here as it is assumed there are no native speakers of the language and hence the manner of teaching and the content of the curriculum are more similar to the teaching of foreign languages.
+- 15 -
+Programmes and qualifications with the following main content are classified here:
+Classical languages Exogenous languages Foreign languages Interpretation Phonetics Second languages, for example English as a second language Sign language Sign language interpreting Translation Inclusions:
+Language and linguistics studies are included here if the linguistics are related to a specific language or languages being acquired and forming part of the same programme or qualification.
+Translation and interpretation are included here.
+Exclusions:
+The study of the mother tongue or first language (i.e. that are intended for native, fluent or competent speakers of the language), even if this language is not a national language of the country of study (e.g. programmes for immigrants learning their mother tongue) are excluded from this detailed field and included in detailed field 02 32 ‘ Literature and linguistics ’.
+0232 Literature and linguistics Literature and linguistics is here defined as the study of language (s) intended for native, fluent or competent speakers of the language. It includ es the study of related literature and linguistics and may or may not include the structure and composition of the language .
+Programmes and qualifications with the following main content are classified here:
+Creative writing First language Indigenous languages Linguistics Literature “ Mother tongue ” languages Native first languages Inclusions Languages taught as the first language ( “ mother tongue ” ) , even if the language is not the national language of the country of study (e.g. programmes for immigrants in their home or first language) are included here. Local and regional languages are included here if they are first languages spoken by a significant minority in the country and are intended for at least competent speakers of the language.
+
+[SECTION: hec_pqf_qualifications_9_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 7)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 7)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Study of comparative literature is included here. Study of general linguistics (not related to the study of a particular language) is included here. Study of literature in general (not combined with study of a special language) is included here.
+- 16 -
+Exclusions Language programmes are excluded from this detail ed field if the language is taught as a foreign or a second language, and are then included in 02 31 ‘ L anguage acquisition ’.
+Programmes in literacy and numeracy are excluded from this detailed field and included in detailed field 0 0 21 ‘Literacy and numeracy’.
+Sign language programmes are excluded from this detailed field and included in detailed field 0231 ‘Language acquis i tion’.
+028 Inter-disciplinary programmes and qualifications involving arts and humanities 0288 Inter-disciplinary programmes and qualifications involving arts and humanities Inter-disciplinary programmes and qualifications to which the greatest intended learning time is devoted to arts and humanities are classified here.
+- 17 -
+03 Social Sciences, Journalism and Information
+031 Social and behavioural sciences 0311 Economics Economics is the study of economic policy, economic theory and economic decisionmaking.
+Programmes and qualifications with the following main content are classified here:
+Econometrics Economic history Economics Political economics Exclusions Study of economics where emphasis is given to business studies is excluded from this detailed field and classified under 04 1 ‘ Business and administration ’. Study of home economics is excluded from this detailed field and included in the detailed field 1011 ‘Domestic services’.
+0312 Political sciences and civics Political sciences and civics is the study of government and political principles or practice.
+The study of the rights and duties of the citizens are included here.
+Programmes and qualifications with the following main content are classified here:
+Civics Human rights International relations Peace and conflict studies Political history Political science Public policy studies Exclusions Study of political economics is excluded from this detailed field and included in the detailed field
+03 11 ‘Economics’.
+0313 Psychology Psychology is the study of the human mind and behaviour as a result of individual differences, experience and environment.
+Programmes and qualifications with the following main content are classified here:
+Cognitive science Psychoanalysis Psychology Psychotherapy
+- 18 -
+0314 Sociology and cultural studies Sociology and cultural studies is the study of human beings and the way they behave in groups and in relation to society. The study of ethnology and social anthropology are included here, likewise the study of human and social geography.
+Programmes and qualifications with the following main content are classified here:
+Criminology Cultural geography Cultural studies Demography/population studies Ethnology Gender studies Social anthropology Sociology Exclusions Social welfare where emphasis is given to practical social work is excluded from this detailed field and included in detailed field 0923 ‘Social work and counselling’.
+Physical geography is excluded from this detailed field and included in detailed field 0532 ‘Earth science’ .
+032 Journalism and information 0321 Journalism and reporting Journalism and reporting is the study of the theory and practices of journalism/reporting as part of the field of mass communication. Journalism and reporting is about the wording and content of messages. It comprises news reporting, writing commentaries and feature stories of public interest etc.
+Programmes and qualifications with the following main content are classified here:
+Broadcast journalism Editing Information (wording and content) Journalism Mass communication (wording and content) News reporting Exclusions Study of techniques for mass communication (e.g. printing and radio/TV production) is excluded from this detailed field and included in detailed field 0211 ‘Audio -visual techniques and media production’.
+Study of lay-out and publishing design is excluded from this detailed field and included in detailed field 0211 ‘Audio - visual techniques and media production’.
+- 19 -
+Study of public relations is excluded from this detailed field and included in detailed field 0414 ‘Marketing and advertising’.
+0322 Library, information and archival studies Library, information and archival studies is the study of the methods of selecting, acquiring, organizing and storing collections of information, and facilitating the use of information. Museum and library studies are included here.
+Programmes and qualifications with the following main content are classified here:
+Archival sciences Curatorial studies Documentation Information science Library studies Museum documentation Museum studies Museology Exclusions Restoration and preservation of artistic heritage are excluded from this field and included in field 0222 ‘History and archaeology’ .
+
+[SECTION: hec_pqf_qualifications_10_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 8)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 8)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+038 Inter-disciplinary programmes and qualifications involving social sciences, journalism and information 0388 Inter-disciplinary programmes and qualifications involving social sciences, journalism and information Inter-disciplinary programmes and qualifications to which the greatest intended learning time is devoted to social sciences, journalism and information are classified here.
+- 20 -
+04 Business, Administration and Law
+041 Business and administration 0411 Accounting and taxation Accounting and taxation is the study of maintaining, auditing and recording financial transactions.
+Programmes and qualifications with the following main content are classified here:
+Accounting Auditing Bookkeeping Tax accounting Tax management Exclusions Study of tax laws is excluded from this detailed field and included in detailed field 0421 ‘Law’.
+0412 Finance, banking and insurance Finance, banking and insurance is the study of planning, directing, organizing and controlling financial activities and services. It includes the control and monitoring of the financial resources of organizations, institutions and individuals, and the provision of financial services at the corporate and individual level.
+Programmes and qualifications with the following main content are classified here:
+Bank teller studies Banking and finance Finance theory Insurance Investment analysis Investments and securities Pension insurance Social insurance Stock-broking Exclusions Study of actuarial science is excluded from this detailed field and included in detailed field 0542 ‘Statistics’.
+0413 Management and administration Management and administration is the study of planning, directing and operating the functions and activities of organizations and institutions. Programmes in management also including administration, economics, finance etc. are included here if emphasis is given to management and administration.
+- 21 -
+Programmes and qualifications with the following main content are classified here:
+Administration Educational management Employment management Entrepreneurship Health administration Logistic management Management science Office management Organizational theory and behaviour Personnel administration Personnel management ‘Start your own business’ courses Supply change management Training management Inclusions:
+Study of leadership in the context of management is included here.
+Exclusions:
+Training in leadership in the context of personal development is excluded from this detailed field and included in detailed field 0031 ‘Personal skills’.
+Study of administration in the meaning of office work is excluded from this detailed field and included in detailed field 0415 ‘Secretarial and office work’.
+0414 Marketing and advertising Marketing and advertising is the study of promoting the exchange processes of goods and services between organizations and/or individuals, and the study of consumer behaviour and requirements. It includes the study of the role of product development, pricing, distribution, promotion and sales in order to maximise business performance.
+Programmes and qualifications with the following main content are classified here:
+Advertising Consumer behaviour Market research Marketing Merchandising Public relations
+- 22 -
+0415 Secretarial and office work Secretarial and office work is the study of administrative procedures and practices, office technology and clerical, shorthand and keyboard skills. Specialised secretarial programmes (bilingual, medical, law, accounting etc) are included if the programme has secretarial work as its objective, rather than work as specialised assistants.
+Programmes and qualifications with the following main content are classified here:
+Administrative and secretarial services Clerical programmes Data entry Foreign language secretary programmes Keyboard skills Legal secretary programmes Medical secretary programmes Operation of office equipment Receptionist training Secretarial programmes Shorthand Switchboard operating Typing Inclusions Broad secretarial programmes comprising among other things computer courses are included here.
+Exclusions Separate programmes or qualifications in using a specific computer software are excluded from this detailed field and included under detailed field 0611 ‘Computer use” .
+Office management is excluded from this detailed field and included in detailed field 0413 ‘Management and administration’.
+Hotel receptionist programmes are excluded from this detailed field and included in detailed field 1013 ‘Hotel, restaurant and catering’.
+0416 Wholesale and retail sales Wholesale and retail sales is the study of buying and selling goods and services, including stock management, pricing practices, loss prevention, sales systems and procedures. It includes the study of the workings and current trends of the wholesale and retail industries.
+Selling of buildings and properties is also included.
+- 23 -
+Programmes and qualifications with the following main content are classified here:
+
+[SECTION: hec_pqf_qualifications_11_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 9)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 9)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Auctioneering Consumer services Demonstration techniques Purchasing Real-estate business Retailing Stock-keeping Ware-housing Wholesaling Inclusions Study of buying and selling buildings and properties is included here.
+0417 Work skills Work skills is the study of the structure and function of working life. It comprises programmes, mainly given as staff training, related to the working place and to work assignments.
+Programmes and qualifications with the following main content are classified here:
+Clients’ needs Company knowledge Customer service training ‘Introduction to work’ courses Organization at work Quality assurance Trade union courses (general) Work development Inclusions Staff training related to the work place or work assignments is included here.
+Exclusions Training related to the work place or work assignments is excluded from this detailed field if it has more to do with personal development than work development and is included in detailed field 0031 ‘Personal skills’.
+Staff training which can be classified to any other field is excluded from this detailed field and included in the appropriate field (e.g. quality courses should, if technical, be included in the detailed fields under 071 ‘Engineering and engineering trades’. ) Programmes in work environment should be included in detailed field 1022 ‘Occupational health and safety’.
+Programmes, mostly at tertiary level, dealing with working life in general in terms of the labour market, the social partners, industrial psychology etc. are excluded from this detailed field and included in the detailed fields under 03 1 ‘Social and behavi our sciences ’.
+- 24 -
+042 Law 0421 Law Law is the study of the principles and procedures for formally maintaining social order, including training for legal professions such as advocate or training for the judicial bench.
+Programmes and qualifications with the following main content are classified here:
+Commercial law Criminal justice studies History of law Indigenous law Jurisprudence Labour law Legal practice Notary/Notary’s practise Paralegal studies Exclusions Court reporting programmes and legal secretary programmes are excluded from this detailed field and included in detailed field 0415 “Secretarial and office work”.
+Police studies are excluded from this detailed field and included in detailed field 1032 ‘ Protection of persons and property’ .
+048 Inter-disciplinary programmes and qualifications involving business, administration and law 0488 Inter-disciplinary programmes and qualifications involving business, administration and law Inter-disciplinary programmes and qualifications to which the greatest intended learning time is devoted to business, administration and law are classified here.
+Inclusions Study of business and administration where emphasis is not given towards any of the detailed fields under 041 is included in this field.
+Exclusions Business programmes where emphasis is given to any of the detailed fields under 041 ‘Business and administration’ (management, administration, marketing etc .) should be classified according to the specialisation.
+- 25 -
+05 Natural Sciences, Mathematics and Statistics
+051 Biological and related sciences 0511 Biology Biology is the study of the structure, function, reproduction, growth, evolution and behaviour of all living organisms.
+Programmes and qualifications with the following main content are classified here:
+Biology Botany Cell biology Entomology Genetics Mycology Zoology Exclusions Study of environmental sciences, which is the study of the relation between living organisms and the environment, is excluded from this detailed field and included in detailed field 0521 ‘Environmental sciences’. Study of chemical processes in living organisms (biochemistry, toxicology, pharmacology etc.) is excluded from this detailed field and included in detailed field
+05 12 ‘Biochemistry’ .
+0512 Biochemistry Biochemistry , sometimes called Biological chemistry, is the study of the chemistry of living organisms, including but not limited to, living matter.
+Programmes and qualifications with the following main content are classified here:
+Biological chemistry Cell technology Forensic sciences Genetic code (DNA, RNA) studies Genetic engineering Pharmacology Tissue culture technology Toxicology Virology Inclusions Biotechnology is included here.
+- 26 -
+052 Environment 0521 Environmental sciences Environmental sciences are the study of organisms in relation to one another and to the environment.
+Programmes and qualifications with the following main content are classified here:
+Ecology Environmental science Exclusions The study of biology and toxicology are excluded from this detailed field and included under narrow field 05 1 ‘Biological and related sciences’.
+0522 Natural environments and wildlife Natural environments and wildlife is the study of the relationships between living organisms in natural environments in order to protect nature and wildlife. It includes the study of establishing and maintaining national parks in order to preserve their original natural state.
+Programmes and qualifications with the following main content are classified here:
+
+[SECTION: hec_pqf_qualifications_12_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 10)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 10)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+National parks and wildlife management Nature conservation Wildlife Exclusions Study of agriculture, horticulture and forestry are excluded from this detailed field and included in some of the detailed fields under 08 ‘Agriculture , forestry, fisheries and veterinary ’.
+Study of hunting and trapping is excluded from this detailed field and included in detailed field 0821 ‘Forestry’.
+053 Physical sciences 0531 Chemistry Chemistry is the study of substances and their elements and how they react when combined.
+Programmes and qualifications with the following main content are classified here:
+Inorganic chemistry Organic chemistry Physical chemistry Exclusions Biochemistry is excluded from this detailed field and included in detailed field 0512 ‘ Biochemistry ’.
+- 27 -
+0532 Earth sciences Earth sciences is the study of the composition and structure of earth including the hydrosphere and the atmosphere.
+Programmes and qualifications with the following main content are classified here:
+Climate research Earth science Geodesy Geography (physical) Geology Geomatics Geospatial technology Meteorology Oceanography Seismology Exclusions Social geography is excluded from this detailed field and included in detailed field 0314 ‘Sociology and cultural studies’. Soil science is excluded from this detailed field and included in detailed field 0811 ‘Crop and livestock production’.
+0533 Physics Physics is the study of properties and interactions of matter and energy. It includes the study of astronomy and space science.
+Programmes and qualifications with the following main content are classified here:
+Astronomy Astrophysics Chemical physics Medical physics Optics Physics Space science Exclusions Opticians’ practice is excluded from this detailed field and included in detailed field 0914 ‘Medical diagnostic and treatment technology’.
+054 Mathematics and statistics 0541 Mathematics Mathematics is the study of abstract deductive systems. It includes algebra, arithmetic, geometry, real and complex analysis and pure and applied mathematics.
+- 28 -
+Programmes and qualifications with the following main content are classified here:
+Algebra Geometry Mathematics Numerical analysis Operational research 0542 Statistics Statistics is the study of collecting, describing, arranging and analysing numerical data. The study of probability theory and actuarial science is included.
+Programmes and qualifications with the following main content are classified here:
+Actuarial science Probability theory Statistics, applied Survey design Survey sampling Inclusions Study of mathematical (theoretical) statistics is included here.
+Exclusions Demography/population studies is excluded from this detailed field and included in detailed field 0314 ‘Sociology and cultural studies’ .
+058 Inter-disciplinary programmes and qualifications involving natural sciences, mathematics and statistics 0588 Inter-disciplinary programmes and qualifications involving natural sciences, mathematics and statistics Inter-disciplinary or broad programmes and qualifications to which the greatest intended learning time is devoted to natural sciences, mathematics and statistics are classified here.
+- 29 -
+06 Information and Communication Technologies
+061 Information and Communication Technologies 0611 Computer use Computer use is the study of using computers and computer software and applications for different purposes. These programmes are generally of short duration.
+Programmes and qualifications with the following main content are classified here:
+Computer use Use of software for calculating (spread sheets) Use of software for data processing Use of software for desk top publishing Use of software for word processing Use of Internet 0612 Database and network design and administration Database and network design and administration is the study of the design, maintenance and integration of software applications. Computer media applications are included.
+Programmes and qualifications with the following main content are classified here:
+Computer administration and management Computer media applications Computer network installation and maintenance Database administrator studies Information technology administration Information technology security Network administration Network design Web design 0613 Software and applications development and analysis Software and applications development and analysis is the study of the design and development of computer systems and computing environments.
+Programmes and qualifications with the following main content are classified here:
+Computer programming Computer science Computer systems analysis Computer systems design Informatics Operating systems Programming languages development Software development Software programming
+- 30 -
+Exclusions Computer engineering (hardware) is excluded from this detailed field and included in detailed field 0714 ‘Electronics and automation’.
+
+[SECTION: hec_pqf_qualifications_13_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 11)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 11)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Programmes and qualifications in using computer applications are excluded from this detailed field and included in detailed field 0611 ‘Computer use’. Da tabase and network design and administration is excluded from this detailed field and included in detailed field 0612 ‘Database and network design and administration’.
+0619 Information and Communication Technologies not elsewhere classified Information technology studies not fitting in the detailed fields are classified here:
+Artificial intelligence 068 Inter-disciplinary programmes and qualifications involving Information and Communication Technologies 0688 Inter-disciplinary programmes and qualifications involving Information and Communication Technologies Inter-disciplinary programmes and qualifications to which the greatest intended learning time is devoted to information and communication technologies (ICTs) are classified here.
+- 31 -
+07 Engineering, Manufacturing and Construction
+071 Engineering and engineering trades 0711 Chemical engineering and processes Chemical engineering and processes is the study of planning, designing, and developing products and processes where chemical and physical changes occur. It includes designing chemical plants and control systems.
+Programmes and qualifications with the following main content are classified here:
+Chemical engineering Chemical process engineering Laboratory technology Oil/gas/petrochemicals processing Plant and machine operation (processing) Process technology Inclusions Laboratory technology is included here if emphasis is not given to a specific application.
+Exclusions Laboratory technology is excluded from this detailed field if emphasis is given to a specific application (biological, medical, etc.) and is included under the appropriate detailed field (0914 etc.). Biotechnology is excluded from this detailed field and included in detailed field 0512 ‘ Biochemistry ’ .
+Programmes and qualifications with emphasis on the production of a specific material are excluded from this detailed field (e.g. studies with emphasis on paper processing should be included in detailed field 0722 ‘Materials ( glass, paper, plastic, wood )’.
+0712 Environmental protection technology Environmental protection technology is the study of processes in order to minimise discharge and waste and avoid pollution. It includes programmes dealing with control of water, air, soil etc.
+Programmes and qualifications with the following main content are classified here:
+Air pollution control Ecological technology Energy efficiency Environmental engineering Industrial discharge control Noise pollution control Recycling Water pollution control
+- 32 -
+Exclusions Programmes and qualifications dealing with hygienic standards in food, water etc. are excluded from this detailed field and included in detailed field 1021 ‘Community sanitation’.
+Construction related to waste and water management is excluded from this detailed field and included in detailed field 0732 ‘Building and civil engineering’.
+0713 Electricity and energy Electricity and energy is the study of installing, maintaining, repairing and diagnosing faults in electrical wiring and related equipment in domestic, commercial and industrial establishments.
+Installation and maintenance of overhead and underground electrical power distribution networks is included. Energy is the study of energy generation.
+Programmes and qualifications with the following main content are classified here:
+Air-conditioning trades Climate engineering Electrical appliances repairing Electrical engineering Electrical fitting Electrical power generation Electrical trades Energy studies Gas distribution Heating trades Nuclear, hydraulic and thermal energy Power line installation and maintenance Power production Refrigeration Solar power Wind turbines Inclusions The study of installing, diagnosing faults in and repairing heating, air-conditioning and refrigeration equipment is included here.
+Exclusions Study of vehicle electrical systems is excluded from this detailed field and included in detailed field 0716 ‘Motor vehicles, ships and aircraft’.
+0714 Electronics and automation Electronics and automation is the study of planning, designing, developing maintaining and monitoring electronic equipment, machinery and systems. It includes designing computers and equipment for communication.
+- 33 -
+Programmes and qualifications with the following main content are classified here:
+Broadcasting electronics Communication systems Communications equipment installation Communications equipment maintenance Computer engineering Computer repairing Control engineering Data processing technology Digital technology Electronic engineering Electronic equipment servicing Network technology Robotics Telecommunications technology Television and radio repairing Exclusions Computer science (Software and applications development) is excluded from this detailed field and included under 0613 ‘ Software and applications development and analysis ’ .
+
+[SECTION: hec_pqf_qualifications_14_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 12)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 12)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+0715 Mechanics and metal trades Mechanics and metal trades is the study of planning, designing, developing, producing, maintaining and monitoring machines, mechanical plants and systems and metal products. It includes designing and maintaining machines which produce goods and services. The focus of study in this detailed field is machines, mechanical systems and metal products.
+Programmes and qualifications with the following main content are classified here:
+Gunsmithing Hydraulics Locksmithing and safe repairing Mechanical engineering Mechanical trades Metal casting and patternmaking Metal fitting, turning and machining Metallurgical engineering Precision mechanics Sheet metal working Steel production Tool and die making Welding Exclusions The study of motor vehicle mechanics and engineering is excluded from this detailed field and included in detailed field 0716 ‘Motor vehicles, ships and aircraft’.
+- 34 -
+0716 Motor vehicles, ships and aircraft Motor vehicles, ships and aircraft is the study of designing, developing, producing, maintaining, diagnosing faults in, repairing and servicing motor vehicles, including earth moving equipment and agriculture machines, ships, trains and aircraft. Typical is the combination of studies in both metal structures and motors.
+Programmes and qualifications with the following main content are classified here:
+Aerospace engineering Aircraft engineering Aircraft maintenance Automotive electrical systems Automotive engineering Avionics Coachwork Marine engineering Motorcycle engineering Panel beating Shipbuilding Train repair and maintenance Vehicle building and repairing Vehicle varnishing/spraying Inclusions Study of vehicle electrical systems is included here.
+Exclusions Study of producing and repairing non-motorised vehicles is excluded from this detailed field and included in 0715 ‘Mechanics and metal work’ (e.g. bicycles) or 0722 ‘Materials (glass, paper, plastic, wood) ’ (e.g. non-motor boats).
+0719 Engineering and engineering trades not elsewhere classified Engineering studies not covered by other detailed fields are classified here:
+Nanotechnology 072 Manufacturing and processing 0721 Food processing Food processing is the study of processing and packaging of food and beverages, and the equipment and procedures used in the production and distribution of foods.
+- 35 -
+Programmes and qualifications with the following main content are classified here:
+Baking Beer brewing Butchery Confectionery Dairy foods Food and drink processing Food preservation Food science and technology Meat processing Pastry cooking Tobacco processing Wine production Inclusions Study of food handling and food hygiene is included here.
+Exclusions Restaurant and catering are excluded from this detailed field and included in detailed field 1013 ‘Hotel, restaurant and catering’.
+Nutrition science is excluded from this detailed field and included in narrow field 051 ‘ Biological and related sciences ’.
+0722 Materials (glass, paper, plastic and wood) Materials is the study of the manufacturing of products in glass, paper, plastic, wood or other materials like stone, clay, artificial materials etc. Programmes and qualifications included in this detailed field have more to do with a specific material than general technical knowledge.
+Programmes and qualifications with the following main content are classified here:
+Boat building (non-motor) Cabinet making Carpentry (furniture) Ceramics (industrial) Furniture making Glass working (industrial) Industrial diamond production Paper manufacturing and processing Plastic manufacturing Rubber processing Timber technology Wood machining and turning Woodwork trades
+- 36 -
+Exclusions Study of metal work is excluded from this detailed field and included in detailed field 0715 ‘Mechanics and metal trades’.
+Study of building carpentry and joinery is excluded from this detailed field and included in detailed field 07 32 ‘Building and civil engineering’.
+Study of chemical processing in general is excluded from this detailed field and included in detailed field 0711 ‘Chemical engineering and processes’.
+Study of printing and bookbinding is excluded from this detailed field and included in detailed field 0211 ‘Audio - visual techniques and media production’.
+Handicrafts programmes (glass arts and crafts, woodcarving etc) are excluded from this detailed field and included in detailed field 0214 ‘ Handicrafts ’.
+0723 Textiles (clothes, footwear and leather) Textiles (clothes, footwear and leather) is the study of the manufacture of textiles, textile and leather products, clothing and related items, shoes and other forms of footwear.
+Programmes and qualifications with the following main content are classified here:
+Clothing trades Dressmaking Footwear making Fur making Garment production Leather processing Saddlery Shoemaking Skins and leather production Spinning Tailoring Textile trades Upholstery Weaving (industrial) Wool science Exclusions Handicrafts studies (weaving, embroidery etc.) are excluded from this detailed field and included in detailed field 0214 ‘ Handicrafts ’.
+
+[SECTION: hec_pqf_qualifications_15_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 13)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 13)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+0724 Mining and extraction Mining and extraction is the study of assessing, planning, developing, and directing the extraction of minerals, oil and gas from the earth.
+- 37 -
+Programmes and qualifications with the following main content are classified here:
+Coal mining Mineral technology Mining of minerals Oil and gas drilling Oil and gas extraction Raw material extraction Exclusions Study of metallurgical engineering is excluded from this detailed field and included in 0715 ‘Mechanics and metal trades ’ Study of geology is excluded from this detailed field and included in detailed field 0532 ‘Earth sciences ’.
+073 Architecture and construction 0731 Architecture and town planning Architecture is the study of the art, science and techniques of building design. It encompasses both utilitarian ends - such as the soundness of the structure and the functional and economic efficiency of the building - and aesthetic considerations. Town planning is the study of the regulated growth and improvement of towns in both functional and aesthetical points of view.
+Programmes and qualifications with the following main content are classified here:
+Architectural urban design and planning Architecture Building design Cartography/Land surveying City planning Community development Landscape architecture Structural architecture Surveying Town and country planning Urban planning Exclusions Study of interior design is excluded from this detailed field and included in detailed field 0212 ‘ Fashion, interior and industrial d esign’. Geomatics is excluded from this detailed field and included in detailed field 05 32 ‘Earth science’.
+The laying out and construction of parks and gardens is excluded from this detailed field and included in detailed field 0812 ‘Horticulture’.
+- 38 -
+0732 Building and civil engineering Building is the study of the science, technology and techniques of assembling, erecting and maintaining public, commercial, industrial and residential structures and their fittings. Civil engineering is the study of planning, designing, testing and directing the construction of large scale buildings and structures, including systems for transport, water supply, sewage etc.
+Programmes and qualifications with the following main content are classified here:
+Bricklaying Bridge construction Building construction Building engineering Building technology Carpentry and joinery (building) Civil engineering Construction equipment Constructional metalwork (building) Dock and harbour engineering Floor and wall tiling Floor covering House building Industrial abseiling (commercial) Masonry and tile setting Painting and wall covering Plastering Plumbing and pipefitting Road building Water engineering and technology Water supply and sewerage engineering Ventilation Exclusions Installation of electricity is excluded from this detailed field and included in detailed field 0713 ‘Electricity and energy’. Similarly, installing and repairing of heating, air -conditioning and refrigeration equipment is excluded from this detailed field and included in detailed field 0713 ‘Electricity and energy’.
+078 Inter-disciplinary programmes and qualifications involving engineering, manufacturing and construction 0788 Inter-disciplinary programmes and qualifications involving engineering, manufacturing and construction Inter-disciplinary or broad programmes and qualifications to which the greatest intended learning time is devoted to engineering, manufacturing and construction are classified here.
+- 39 -
+08 Agriculture, Forestry, Fisheries and Veterinary
+081 Agriculture 0811 Crop and livestock production Crop and livestock production is the study of growing, maintaining and harvesting crops and pastures, and grazing and managing animals. It includes the study of managing and maintaining farms and producing unprocessed plant and animal products.
+Programmes and qualifications with the following main content are classified here:
+Agricultural sciences Agronomy and crop science Animal husbandry Crop growing Dog breeding Farm and ranch management Farming Fruit growing Grain growing Horse breeding Pig farming Poultry husbandry Rice farming Rye and wheat growing Sheep farming Soil science Sugar cane growing Vegetable planting Wine growing Inclusions Study of soil fertility and irrigation techniques are included here.
+Study of growing intensively managed crops such as fruit and vegetables is included here.
+Exclusions Study of wine production is excluded from this detailed field and is included in detailed field 0721 ‘Food processing’.
+Jockeying is excluded from this detailed field and is included in detailed field 1014 ‘Sports’ 0812 Horticulture Horticulture is the study of horticultural technology and management, floriculture, greenhouse methods, nursery management, landscape gardening etc.
+- 40 -
+Programmes and qualifications with the following main content are classified here:
+Floriculture Gardening Green keeping Horticultural techniques Nursery management Turf cultivation Inclusions The laying out and construction of urban and domestic parks and gardens is included here.
+Gardening programmes combining floriculture and growing vegetables are included here.
+
+[SECTION: hec_pqf_qualifications_16_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 14)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 14)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Exclusions Study of growing edible crops (such as wheat, rice, fruit, vegetables etc,) is excluded from this detailed field and included in detailed field 081 1 ‘Crop and livestock production’.
+Study of soil science, soil fertility and irrigation techniques is excluded from this detailed field and included in detailed field 0811 ‘Crop and livestock production’.
+Study of National park management is excluded from this detailed field and included in detailed field 0522 ‘Natural environments and wildlife’.
+Study of Landscape architecture is excluded from this detailed field and included in detailed field 0731 ‘Architecture and town planning’.
+082 Forestry 0821 Forestry Forestry is the study of establishing, cultivating, harvesting and managing forests. It includes the study of hunting and trapping.
+Programmes and qualifications with the following main content are classified here:
+Charcoal burning Forest keeping Forest product techniques Forestry Hunting and trapping Logging Tree felling Exclusions Study of National park management is excluded from this detailed field and included in detailed field 0522 ‘Natural environments and wildlife’.
+Timber technology (sawmill production etc) is excluded from this detailed field and included in detailed field 0722 ‘Materials ( glass, paper, plastic and wood )’.
+- 41 -
+083 Fisheries 0831 Fisheries Fisheries is the study of breeding, rearing and harvesting fish and other seafood.
+Programmes and qualifications with the following main content are classified here:
+Aquaculture Fish breeding Fish farms Fishery science and technology Pearl cultivating Seafood farming Shellfish breeding Inclusions Programmes for operating fishing boats are included here.
+Exclusions Study of industrial processing of fish is excluded from this detailed field and included in detailed field 0721 ‘Food processing’.
+084 Veterinary 0841 Veterinary Veterinary is the study of preventing, diagnosing and treating diseases and injuries in animals, and their general care. The study of caring for sick, injured and infirm animals undergoing treatment in veterinary clinics is included. It also includes the study of providing assistance to veterinary scientists.
+Programmes and qualifications with the following main content are classified here:
+Animal health care Animal reproduction (science) Artificial insemination (of animals) Veterinary assisting Veterinary medicine Veterinary nursing Veterinary science Inclusions The science of animal reproduction is included here.
+Exclusions Study of animal breeding is excluded from this detailed field and included in detailed field 0811 ‘Crop and livestock production’.
+- 42 -
+088 Inter-disciplinary programmes and qualifications involving agriculture, forestry, fisheries and veterinary 0888 Inter-disciplinary programmes and qualifications involving agriculture, forestry, fisheries and veterinary Inter-disciplinary or broad programmes and qualifications to which the greatest intended learning time is devoted to agriculture, forestry, fisheries and veterinary are classified here.
+- 43 -
+09 Health and Welfare
+091 Health 0911 Dental studies Dental studies are the study of diagnosing, treating and preventing diseases and abnormalities of the teeth and gums. It includes the study of designing, making and repairing dental prostheses and orthodontic appliances. It also includes the study of providing assistance to dentists.
+Programmes and qualifications with the following main content are classified here:
+Dental assisting Dental hygiene Dental laboratory technology Dental nursing Dental science Dental surgery Dental technology Odontology Oral surgery Orthodontics Inclusions Study of public dental health is included here.
+0912 Medicine Medicine is the study of the principles and procedures used in preventing, diagnosing, caring for and treating illness, disease and injury in humans and the maintenance of general health.
+Principally, this detailed field consists of training of physicians/doctors.
+Programmes and qualifications with the following main content are classified here:
+Anaesthetics Forensic medicine Forensic pathology General medicine Gerontology Gynaecology Medical science Medical training Medicine Paediatrics Psychiatry Surgery Training of physicians/doctors
+- 44 -
+0913 Nursing and midwifery Nursing is the study of providing health care for the sick, disabled or infirm and assisting physicians and other medical and health professionals diagnose and treat patients. The focus of qualifications in nursing is maintaining and caring for the health of patients during illness and rehabilitation. It includes health care of old people and health care of the disabled. Midwifery is the study of providing care to childbearing women during pregnancy, labour and birth and during the postpartum period. It also includes caring for the new born and assisting the mother with breast feeding.
+Programmes and qualifications with the following main content are classified here:
+
+[SECTION: hec_pqf_qualifications_17_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 15)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 15)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Assistant nursing Basic nursing General nursing Health care of old people Heath care of the disabled Health care programmes Infant hygiene (nursing) Midwifery Nursing aide/Orderly Psychiatric nursing Specialised nursing Inclusions Care programmes comprising both health care and social care e.g. for old people, are included here.
+Exclusions Veterinary nursing is excluded from this detailed field and is included in detailed field 0841 ‘Veterinary’.
+Dental nursing is excluded from this detailed field and is included in detailed field 0911 ‘Dent al studies ’.
+Non-medical care of children (not health care) is excluded from this detailed field and included in detailed field 0922 ‘Child care and youth services’.
+Non-medical care of the elderly (not health care) is excluded from this detailed field and included in detailed field 0921 ‘C are of the elderly and disabled adults ’.
+- 45 -
+0914 Medical diagnostic and treatment technology Medical diagnostic and treatment technology is the study of a wide range of technologies used for diagnosing and treating diseases and handicaps.
+Programmes and qualifications with the following main content are classified here:
+Ambulance technology Hearing aid technology Medical laboratory technology Optical technology Prosthetic technology Radiology technology Radiotherapy X-ray technology (medical) Exclusions Study of laboratory technology is excluded from this detailed field if emphasis is not given to medical laboratory technology. General laboratory technology is included in detailed field 0711 ‘Chemical engineering and processes ’. Laboratory technology wher e emphasis is given to other specific applications (biology, chemistry, physics etc) is included in the appropriate detailed field (0511, 0531, 0533 etc.).
+Study of dental technology is excluded from this detailed field and included in detailed field 0911 ‘Dental studies’.
+0915 Therapy and rehabilitation Therapy and rehabilitation is the study of restoring normal physical conditions to those incapacitated by temporary or permanent disability.
+Programmes and qualifications with the following main content are classified here:
+Dietician programmes Medical massage Nutrition/Dietetics Occupational therapy Physiotherapy Rehabilitation Speech therapy Exclusions Study of psychotherapy is excluded from this detailed field and included in detailed field 0313 ‘Psychology’.
+Study of nutrition science is excluded from this detailed field and included in narrow field 051 ‘ Biological and related sciences ’.
+- 46 -
+0916 Pharmacy Pharmacy is the study of drugs and their effects on humans. It includes their preparation, dispensing and administration.
+Programmes and qualifications with the following main content are classified here:
+Dispensing pharmacy Pharmacy Exclusions Study of pharmacology is excluded from this detailed field and included in detailed field 0511 ‘ Biology ’.
+0917 Traditional and complementary medicine and therapy Traditional and complementary medicine is the study of alternative medicine.
+Programmes and qualifications with the following main content are classified here:
+Acupuncture and oriental medicine Aromatherapy Ayurvedic medicine Herbalism Herbology Holistic medicine Homeopathic medicine Traditional medicine, for example Chinese 092 Welfare 0921 Care of elderly and of disabled adults Care of the elderly and of disabled adults is the study of non-medical care of the elderly and disabled.
+Programmes and qualifications with the following main content are classified here:
+Care of the elderly Non-medical care of disabled adults Personal care of adults Exclusions Study of health care of the elderly and disabled is excluded from this detailed field and included in detailed field 09 13 ‘Nursing and midwifery’.
+0922 Child care and youth services Child care and youth services are the study of the development and non-medical care of children and youths. It includes the study of recreation and leisure activities as a social service for school children and young adults.
+- 47 -
+Programmes and qualifications with the following main content are classified here:
+Child care Child recreation programmes Day care Non-medical care of disabled children Youth services Youth worker programmes Exclusions Study of early childhood education in pre-schools is excluded from this detailed field and included in detailed field 0112 ‘ Training for pre-school teachers ’.
+Study of health care of children is excluded from this detailed field and included in detailed field 0913 ‘Nursing and midwifery ’.
+0923 Social work and counselling Social work and counselling is the study of the welfare needs of communities, specific groups and individuals and the appropriate ways of meeting these needs. The focus is on social welfare with emphasis on social policy and practice.
+Programmes and qualifications with the following main content are classified here:
+
+[SECTION: hec_pqf_qualifications_18_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 16)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 16)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Alcohol and drug abuse counselling Alcohol, tobacco, drugs (knowledge about) Crisis support Family and marriage counselling Mobbing and maltreatment (knowledge about) Parole officer training Probation officer training Social policy Social practice Social theory (applied) Social work (welfare) Vocational counselling Vocational guidance Exclusions Study of sociology and social science is excluded from this detailed field and included in detailed field 0314 ‘Sociology and cultural studies’.
+Studies combining health care and social care (e.g. for old people) are excluded from this detailed field and included in detailed field 0913 ‘Nursing and midwifery ’.
+098 Inter-disciplinary programmes and qualifications involving health and welfare 0988 Inter-disciplinary programmes and qualifications involving health and welfare Inter-disciplinary or broad programmes and qualifications to which the greatest intended learning time is devoted to health and welfare are classified here.
+- 48 -
+10 Services
+101 Personal services 1011 Domestic services Domestic services are the study of various domestic services, such as housekeeping, cleaning, laundering, sewing etc.
+Programmes and qualifications with the following main content are classified here:
+Caretaking, housekeeping and home service workers Chimney sweeping Cleaning Cooking (home) Domestic science Dry-cleaning Funeral services and mortuary science Home economics Laundry Needlework (home) Sewing (home) Window cleaning Inclusions Cleaning is included here even if directed towards cleaning schools, hospitals, factories etc.
+Exclusions Study of building maintenance is excluded from this detailed field and included in detailed field
+07 32 ‘Building and civil engineering’.
+1012 Hair and beauty services Hair and beauty services are the study of caring for the hair and the body for beautification.
+Programmes and qualifications with the following main content are classified here:
+Barbering Beauty therapy Cosmetology (make up) Fitness and weight control Hairdressing Manicure Pedicure 1013 Hotel, restaurants and catering Hotel, restaurants and catering is the study of providing food, beverages, accommodation and related services at hotels, restaurants etc.
+- 49 -
+Programmes and qualifications with the following main content are classified here:
+Catering Cooking (restaurant and hotel-type) Fast food preparation Food serving Hospitality services Hotel and restaurant studies Hotel receptionist training Hotel services Waiting and bar service Exclusions Study of food processing (industrial) is excluded from this detailed field and included in detailed field 0721 ‘Food processing’.
+Receptionist training (general) is excluded from this detailed field and included in detailed field 0415 ‘Secretarial and office work’.
+1014 Sports Sports is the study of techniques and skills in a chosen sport.
+Programmes and qualifications with the following main content are classified here:
+Sport trainer studies Techniques and skills in a chosen sport Training of umpires/referees and other sports officials Inclusions Jockeying is included here. Chess playing is included here.
+Exclusions Training of school teachers in physical education (sports teachers) is excluded from this detailed field and included in detailed field 0114 ‘ Teacher training with subject specialisation’ .
+Fitness services are excluded from this detailed field and included in detailed field 1012 ‘ Hair and beauty services’ .
+- 50 -
+1015 Travel, tourism and leisure Travel and tourism is the study of marketing and advertising tourist destinations and events. It includes the study of ticketing and reservation practices. Leisure is the study of recreational and leisure activities for individuals and groups.
+Programmes and qualifications with the following main content are classified here:
+Abseiling (rope climbing) Adventure based activities Ground crew training (airport) Guiding, tour leading Recreation and leisure Tourist trades programmes Travel agency services Travel and tourism Travel services Inclusions Basic training in how to treat tourists is included here.
+Exclusions Study of recreation and leisure activities for school children is excluded from this detailed field and included in detailed field 0922 ‘ Child care and youth services’.
+102 Hygiene and occupational health services 1021 Community sanitation Community sanitation is the study of community services dealing with items that affect public health such as hygienic standards in food, water supply, disposal of sewage and garbage and street cleaning.
+Programmes and qualifications with the following main content are classified here:
+Hygiene, community Hygienic standards Refuse collection Refuse/sewage disposal Street cleaning Water supply (service) Waste management
+- 51 -
+1022 Occupational health and safety Occupational health and safety is the study of recognising, evaluating and controlling environmental factors associated with the workplace.
+Programmes and qualifications with the following main content are classified here:
+
+[SECTION: hec_pqf_qualifications_19_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 17)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 17)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Ergonomics (occupational health and safety) Health and safety in the workplace Industrial welfare Labour protection Labour security Labour welfare (safety) Occupational health and industrial hygiene Occupational safety Stress management Work environment Exclusions Study of vocational rehabilitation and occupational therapy is excluded from this detailed field and included in detailed field 09 15 ‘Therapy and rehabilitation’.
+Study of labour law is excluded from this detailed field and included in 0421 ‘Law’.
+Study of ergonomics is excluded from this detailed field if emphasis is given to technical aspects and is included in the appropriate detailed field under 07 1 ‘Engineering and engineering trades’.
+103 Security services 1031 Military and defence Military and defence is the study of services to the community connected with war and defence, designed to provide training in the principles and practice of military science.
+Programmes and qualifications with the following main content are classified here:
+Air force training Army training Defence studies Military science Navy training War theory Exclusions Military personnel participating in non-military programmes should be classified according to the subject content of the training programme.
+- 52 -
+1032 Protection of persons and property Protection of persons and property is the study of services to the community concerning protection of property and persons. It comprises training in police work, public security, fire protection and fire-fighting.
+Programmes and qualifications with the following main content are classified here:
+Civil security Customs programmes Fire-protection (fire-fighting) Fire technology Life guarding Police work Policing studies Prison work Public security Security and loss prevention services Security guarding Exclusions Study of law is excluded from this detailed field and included in 0421 ‘Law’.
+Study of criminology is excluded from this detailed field and included in detailed field 0314 ‘Sociology and cultural studies’.
+104 Transport services 1041 Transport services Transport is the study of operating, navigating and directing ships, train, aircraft and other forms of transportation.
+Programmes and qualifications with the following main content are classified here:
+Aircraft operation Air traffic control Air traffic safety Cabin crew training Communication (air, railway, road etc.) programmes Crane and truck driving Driving programmes Flying and navigation Navigation technologies Postal service Railway operations Road motor vehicle operations Ship operation Shipping Transport studies
+- 53 -
+Exclusions Programmes in telephone network services are excluded from this detailed field and included in detailed field 0714 ‘Electronics and automation’. Programmes in switchboard operating are excluded from this detailed field and included in detailed field 0415 ‘Secretarial and office work’.
+108 Inter-disciplinary programmes and qualifications involving services 1088 Inter-disciplinary programmes and qualifications involving services Inter-disciplinary programmes and qualifications to which the greatest intended learning time is devoted to services are classified here.
+- 54 -
+Appendix I ISCED-F 2013: List of possible codes Broad field Narrow field Detailed field
+00 Generic programmes
+and qualifications 000 Generic programmes and qualifications not further defined 0000 Generic programmes and qualifications not further defined 001 Basic programmes and qualifications 0011 Basic programmes and qualifications 002 Literacy and numeracy 0021 Literacy and numeracy 003 Personal skills and development 0031 Personal skills and development 009 Generic programmes and qualifications not elsewhere classified 0099 Generic programmes and qualifications not elsewhere classified
+01 Education 011 Education 0110 Education not further defined
+0111 Education science 0112 Training for pre - school teachers 0113 Teacher training without subject specialisation 0114 Teacher training with subject specialisation 0119 Education not elsewhere classified 018 Inter - disciplinary programmes and qualifications involving education 0188 Inter - disciplinary programmes and qualifications involving education
+02 Arts and humanities 020 Arts and humanities not further
+
+[SECTION: hec_pqf_qualifications_20_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 18)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 18)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+defined 0200 Arts and humanities not further defined 021 Arts 0210 Arts not further defined 0211 Audio - visual techniques and media production 0212 Fashion, interior and industrial design 0213 Fine arts 0214 Handicrafts 0215 Music and performing arts 0219 Arts not elsewhere classified 022 Humanities (except languages) 0220 Humanities (except languages) not further defined 0221 Religion and theology 0222 History and archaeology 0223 Philosophy and ethics 0229 Humanities (except languages) not elsewhere classified 023 Languages 0230 Lang uages not further defined 0231 Language acquisition 0232 Literature and linguistics 0239 Languages not elsewhere classified 028 Inter - disciplinary programmes and qualifications involving arts and humanities 0288 Inter - disciplinary programmes and qualifications involving arts and humanities 029 Arts and humanities not elsewhere classified 0299 Arts and humanities not elsewhere classified
+- 55 -
+Broad field Narrow field Detailed field
+03 Social sciences,
+journalism and information 030 Social sciences, journalism and information not further defined 0300 Social sciences, journalism and information not further defined 031 Social and behavioural sciences 0310 Social and behavioural sciences not further defined 0311 Economics 0312 Political sciences and civics 0313 Psychology 0314 Sociology and cultural studies 0319 Social and behavioural sciences not elsewhere classified 032 Journalism and information 0320 Journalism and information not further defined 0321 Journalism and reporting 0322 Library, information and archival studies 0329 Journalism and information not elsewhere classified 038 Inter - disciplinary programmes and qualifications involving social sciences, journalism and information 0388 Inter - disciplinary programmes and qualifica tions involving social sciences, journalism and information 039 Social sciences, journalism and information not elsewhere classified 0399 Social sciences, journalism and information not elsewhere classified
+04 Business,
+administration and law 040 Business, administration and law not further defined 0400 Business, administration and law not further defined 041 Business and administration 0410 Business and administration not further defined 0411 Accounting and taxation 0412 Finance, banking and i nsurance 0413 Management and administration 0414 Marketing and advertising 0415 Secretarial and office work 0416 Wholesale and retail sales 0417 Work skills 0419 Business and administration not elsewhere classified 042 Law 0421 Law 048 Inter - disciplinary programmes and qualifications involving business, administration and law 0488 Inter - disciplinary programmes and qualifications involving business, administration and law 049 B usiness, administration and law not elsewhere classified 0499 B usi ness, administration and law not elsewhere classified
+- 56 -
+Broad field Narrow field Detailed field
+05 Natural sciences,
+mathematics and statistics 050 Natural sciences, mathematics and statistics not further defined 0500 Natural sciences, mathematics and statistics not further defined 051 Biological and related sciences 0510 Biological and related sciences not further defined 0511 Biology 0512 Biochemistry 0519 Biological and related sciences not elsewhere classified 052 Environment 0520 Environment not further defined 0521 Environmental sciences 0522 Natural environments and wildlife 0529 Environment not elsewhere classified 053 Physical sciences 0530 Physical sciences not further defined 0531 Chemistry 0532 Earth sciences 0533 Physics 0539 Physica l sciences not elsewhere classified 054 Mathematics and statistics 0540 Mathematics and statistics not further defined 0541 Mathematics 0542 Statistics 058 Inter - disciplinary programmes and qualifications involving natural sciences, mathematics and statistics 0588 Inter - disciplinary programmes and qualifications involving natural sciences, mathematics and statistics 059 Natural sciences, mathematics and statistics not elsewhere classified 0599 Natural sciences, mathematics and statistics not elsewh ere classified
+06 Information and
+Communication Technologies (ICTs) 061 Information and Communication Technologies (ICTs) 0610 Information and Communication Technologies (ICTs) not further defined 0611 Computer use 0612 Database and network design and administration 0613 Software and applications development and analysis 0619 Information and Communication Technologies (ICTs) not elsewhere classified 068 Inter - disciplinary programmes and qualifications involving Information and Communication Technologi es (ICTs) 0688 Inter - disciplinary programmes and qualifications involving Information and Communication Technologies (ICTs)
+- 57 -
+Broad field Narrow field Detailed field
+07 Engineering,
+
+[SECTION: hec_pqf_qualifications_21_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 19)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 19)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+manufacturing and construction 070 Engineering, manufacturing and construction not further defined 0700 Engineering, manufacturing and construction not further defined 071 Engineering and engineering trades 0710 Engineering and engineering trades not further defined 0711 Chemical engineering and processes 0712 Environmental protection technology 0713 Electricity and energy 0714 Electronics and automation 0715 Mechanics and metal trades 0716 Motor vehicles, ships and aircraft 0719 Engineering and engineering trades not elsewhere classified 072 Manufacturing and processing 0720 Manufacturing and processing not further defined 0721 Food processing 0722 Materials (glass, paper, plastic and wood) 0723 Textiles (clothes, footwear and leather) 0724 Mining and extraction 0729 Manufacturing and processing not elsewhere classified 073 Architecture and construction 0730 Architecture and construction not further defined 0731 Architecture and town planning 0732 Building and civil engineering 078 Inter - disciplinary programmes and qualifications involving engineering, manufacturing and construction 0788 Inter - disciplinary programmes and qualifications involving engineering, manufacturing and construction 079 Engineering, manufacturing and construction not elsewhere classified 0799 Engineering, manufacturing and constr uction not elsewhere classified
+08 Agriculture, forestry,
+fisheries and veterinary 080 Agriculture, forestry, fisheries and veterinary not further defined 0800 Agriculture, forestry, fisheries and veterinary not further defined 081 Agriculture 0810 Agriculture not further defined 0811 Crop and livestock production 0812 Horticulture 0819 Agriculture not elsewhere classified 082 Forestry 0821 Forestry 083 Fisheries 0831 Fisheries 084 Veterinary 0841 Veterinary 088 Inter - disciplinary programmes and qualifications involving agriculture, forestry, fisheries and veterinary 0888 Inter - disciplinary programmes and qualifications involving agriculture, forestry, fisheries and veterinary 089 Agriculture, forestry, fisheries and veterinary not elsewhe re classified 0899 Agriculture, forestry, fisheries and veterinary not elsewhere classified
+- 58 -
+Broad field Narrow field Detailed field
+09 Health and welfare 090 Health and welfare not further
+defined 0900 Health and welfare not further defined 091 Health 0910 Health not further defined 0911 Dental studies 0912 Medicine 0913 Nursing and midwifery 0914 Medical diagnostic and treatment technology 0915 Therapy and rehabilitation 0916 Pharmacy 0917 Traditional and complementary medicine and therapy 0919 Health not elsewhere classified 092 Welfare 0920 Welfare not further defined 0921 Care of the elderly and of disabled adults 0922 Child care and youth services 0923 Social work and counselling 0929 Welfare not elsewhere classified 098 Inter - disciplinary programmes and qualifications involving health and welfare 0988 Inter - disciplinary programmes and qualifications involving health and welfare 099 H ealth and welfare not elsewhere classified 0999 H ealth and welfare not elsewhere classified
+10 Services 100 Services not further defined 1000 Services not further defined
+101 Personal services 1010 Personal services not further defined 1011 Domestic services 1012 Hair and beauty services 1013 Hotel, restaurants and catering 1014 Sports 1015 Travel, tourism and leisure 1019 Personal services not elsewhere classified 102 Hygiene and occupational health services 1020 Hygiene and occupational health services not further defined 1021 Community sanitation 1022 Occupational health and safety 1029 Hygiene and occupational health services not elsewhere classified 103 Security services 1030 Security services not further defined 1031 Military and defence 1032 Protection of persons and property 1039 Security services not elsewhere classified 104 Transport services 1041 Transport services 108 Inter - disciplinary programmes and qualifications involving services 1088 Inter - disciplinary programmes and qualifications involving services 109 Services not elsewhere classified 1099 Services not elsewhere classified
+99 Field unknown 999 Field unknown 9999 Field unknown
+- 59 -
+Appendix II Numerical code list
+00 Generic programmes and
+
+[SECTION: hec_pqf_qualifications_22_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 20)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 20)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+qualifications 000 Generic programmes and qualifications not further defined 0000 Generic programmes and qualifications not further defined 001 Basic programmes and qualifications 0011 Basic programmes and qualifications Basic programmes and qualifications Broad generic (non-specialised) programmes and qualifications General programmes and qualifications with no specific subject emphasis Programmes and qualifications at primary level 002 Literacy and numeracy 0021 Literacy and numeracy Basic remedial programmes for youth or adults Functional literacy Literacy Numeracy Simple literacy 003 Personal skills and development 0031 Personal skills and development Argumentation and presentation Assertiveness training Communication skills Co-operation Development of behavioural capacities Development of mental skills Development of personal organisational capacities Enhancing personal skills Family life development training Job-seeking programmes Life orientation programmes Parenting courses Personal career planning Personal development Positive thinking Presentation techniques Public speaking Self-confidence Self-esteem skills Social competence Teamwork Time management 009 Generic programmes and qualifications not elsewhere classified 0099 Generic programmes and qualifications not elsewhere classified
+01 Education
+011 Education 0110 Education not further defined 0111 Education science Curriculum development (theory) Curriculum studies Didactics
+- 60 -
+Distance education methodology Education science Educational assessment, testing and measurement Educational evaluation and research Paedagogical sciences (education) 0112 Training for pre-school teachers Early childhood teaching (within formal school settings) Pre-primary teacher training 0113 Teacher training without subject specialisation Adult literacy and numeracy teacher training Class teacher training Elementary teacher education Indigenous teacher training Lower secondary teaching Primary teaching Special education teaching 0114 Teacher training with subject specialisation Teacher training - arts and crafts Teacher training – commercial subjects Teacher training – music Teacher training – nursing Teacher training – physical training Teacher training – second languages Teacher training – specific theoretical subjects (e.g. mathematics, history) Teacher training – technical subjects Teacher training – vocational subjects Teacher training courses for university teachers Training of driving instructors 0119 Education not elsewhere classified 018 Inter-disciplinary programmes and qualifications involving education 0188 Inter-disciplinary programmes and qualifications involving education
+02 Arts and humanities
+020 Arts and humanities not further defined 0200 Arts and humanities not further defined 021 Arts 0210 Arts not further defined 0211 Audio-visual techniques and media production Animation Binding and finishing (printing) Bookbinding Camera operating Cinematography Compositing (printing) Composition equipment operating Computer game production Computer graphics Computer type-setting Desktop publishing Disc jockey training Film and TV editing Film and video production Graphic design Graphic reproduction Illustration Interactive media design Lay-out Media techniques Multimedia production Photo developing Photography
+- 61 -
+Pre-press operations Print finishing and binding Printing Printing machining Publishing design Radio and TV production Recorded music production Sound and vision Sound techniques Type-setting 0212 Fashion, interior and industrial design Costume design Design Design of industrial products (artistic) Fashion design Industrial design (artistic) Interior architecture Interior decorating Interior design Stage designing Three dimensional design Window dressing 0213 Fine arts Aesthetics Art history Art studies Art theory Calligraphy Drawing (artistic) Etching (artistic) Fine art printmaking History of art Lithography Painting (art) Philosophy of art Sculpture Sketching (art) 0214 Handicrafts Ceramics (craft) Conservation of cultural material Craft programmes Crafts, folk arts and artisan Decorative metal crafts Embroidery (craft) Fibre, textile and weaving arts Floristry (flower arranging) Glass arts and craft Goldsmithing Handicrafts Indigenous crafts Jewellery design Jewellery making (craft) Lapidary and jewellery Making of musical instruments (not industrial) Musical instruments (repairing and tuning) Needle craft Picture framing Silversmithing Stone carving (craft) Weaving (craft) Woodcarving 0215 Music and performing arts Acting and directing Ballet Choreography Circus Composition (music)
+- 62 -
+
+[SECTION: hec_pqf_qualifications_23_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 21)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 21)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Conducting (music) Creative and performance art Dance Directing (theatre) Drama Elocution Fashion modelling History of film and theatre History of music Music Music and the stage Music composition Music conducting Musicology Performing arts Theatre/theatre sciences 0219 Arts not elsewhere classified 022 Humanities (excluding languages) 0220 Humanities (excluding languages) not further defined 0221 Religion and theology Religion Religious history Religious studies Study of different religions Study of sacred books Theology 0222 History and archaeology Archaeology Cultural history Folklore studies History History and philosophy of science and technology History of literature History of medicine History of science and ideas History of technology Literature history Medieval and renaissance studies Preservation of artistic heritage 0223 Philosophy and ethics Ethics Logic Morals Philosophy 0229 Humanities (except languages) not elsewhere classified 023 Languages 0230 Languages not further defined 0231 Language acquisition Classical languages Exogenous languages Foreign languages Interpretation programmes Phonetics Second languages Semantics, foreign languages Sign language interpreting Sign languages Translation programmes 0232 Literature and linguistics Comparative literature Creative writing First language programmes Indigenous languages Linguistics, general Literature Mother tongue programmes Native first languages
+- 63 -
+Philology (first language) Semantics (first language) Speech and rhetorical studies 0239 Languages not elsewhere classified 028 Inter-disciplinary programmes and qualifications involving arts and humanities 0288 Inter-disciplinary programmes and qualifications involving arts and humanities 029 Arts and humanities not elsewhere classified 0299 Arts and humanities not elsewhere classified
+03 Social sciences, journalism and
+information 030 Social sciences, journalism and information not further defined 0300 Social sciences, journalism and information not further defined 031 Social and behavioural sciences 0310 Social and behavioural sciences not further defined 0311 Economics Econometrics Economic history Economics International economics Macro economics National accounts Political economics 0312 Political sciences and civics Civics Human rights International relations Peace and conflict studies Political history Political science Politics Public policy studies 0313 Psychology Cognitive sciences Conversational therapy Development and child psychology Psychoanalysis Psychology Psychotherapy 0314 Sociology and cultural studies Criminology Cultural geography Cultural studies Demography/population studies Ethnology Futurology Gender studies Geography (social) Human geography Regional cultures Social anthropology Social conflict theory Social geography Sociology Women ’s studies 0319 Social and behavioural sciences not elsewhere classified 032 Journalism and information 0320 Journalism and information not further defined 0321 Journalism and reporting Broadcast journalism Editing Information (wording and content) Journalism
+- 64 -
+Mass communication (wording and content) News reporting Publishing (dissemination of messages) 0322 Library, information and archival studies Archival sciences Curatorial studies Documentation Information science Information searching Librarianship training Library studies Museum documentation Museum studies Museology 0329 Journalism and information not elsewhere classified 038 Inter-disciplinary programmes and qualifications involving social sciences, journalism and information 0388 Inter-disciplinary programmes and qualifications involving social sciences, journalism and information 039 Social sciences, journalism and information not elsewhere classified 0399 Social sciences, journalism and information not elsewhere classified
+04 Business, administration and law
+040 Business, administration and law not further defined 0400 Business, administration and law not further defined 041 Business and administration 0410 Business and administration not further defined 0411 Accounting and taxation Accounting Auditing Bookkeeping Tax accounting Tax management 0412 Finance, banking and insurance Bank teller studies Banking and finance Business finance Finance, banking, insurance Finance theory Financial management Insurance Investment analysis Investments and securities Pension insurance Social insurance Stock-broking 0413 Management and administration Administration Business administration Educational management Employment management Entrepreneurship Enterprise training Health administration Human resources management Local public administration Logistic management Management of education Management science Management skills Office management Organisational theory and behaviour Performance appraisal
+- 65 -
+
+[SECTION: hec_pqf_qualifications_24_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 22)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 22)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Personnel administration Personnel management Public administration Public and institution management Quality management Recruitment ‘ Start your own business ’ courses Supply change management Training management 0414 Marketing and advertising Advertising Consumer behaviour Market research Marketing Merchandising Public relations Sales and marketing 0415 Secretarial and office work Administrative and secretarial services Business correspondence Clerical programmes Court reporting Data entry Foreign language secretary programmes Information processing/data entry Keyboard skills Legal secretary programmes Management support services Medical secretary programmes Office automation Operation of office equipment Receptionist training Secretarial programmes Shorthand Stenography Switchboard operating Typing 0416 Wholesale and retail sales Auctioneering Buying and selling Consumer services Dairy retailing Demonstration techniques Property sales Purchasing Purchasing, procurement and contracts Real-estate business Retailing Sales representatives Stock-keeping Telephone selling Ware-housing Wholesaling 0417 Work skills Clients’ needs Company knowledge Customer service training Industrial relations Introduction to work courses Organisation at work Quality assurance Trade union courses (general) Work development Work place skills Working life 0419 Business and administration not elsewhere classified 042 Law 0421 Law
+- 66 -
+Commercial law Criminal justice studies History of law Indigenous law Islamic sharia Jurisprudence Labour law Law Legal practice Legal studies Notary/Notary’s practise Paralegal studies 048 Inter-disciplinary programmes and qualifications involving business, administration and law 0488 Inter-disciplinary programmes and qualifications involving business, administration and law 049 Business, administration and law not elsewhere classified 0499 Business, administration and law not elsewhere classified
+05 Natural sciences, mathematics and
+statistics 050 Natural sciences, mathematics and statistics not further defined 0500 Natural sciences, mathematics and statistics not further defined 051 Biological and related sciences 0510 Biological and related sciences not further defined 0511 Biology Biology Biometrics Botany Cell biology Entomology Genetics Life sciences Limnology Microbiology Molecular biology Mycology Ornithology Parasitology Zoology 0512 Biochemistry Biological chemistry Biotechnology Cell technology Forensic sciences Genetic code (DNA, RNA) studies Genetic engineering Pharmacology Tissue culture technology Toxicology Virology 0519 Biological and related sciences not elsewhere classified 052 Environment 0520 Environment not further defined 0521 Environmental sciences Ecology Environmental science 0522 Natural environments and wildlife Conservation and land management National parks and wildlife management Nature conservation Wildlife management Wildlife ranger studies 0529 Environment not elsewhere classified 053 Physical sciences
+- 67 -
+0530 Physical sciences not further defined 0531 Chemistry Analytical chemistry Chemistry Inorganic chemistry Organic chemistry Petrology Physical chemistry Polymer chemistry 0532 Earth sciences Atmospheric sciences Climate research Earth science Geodesy Geographic information systems (GIS) Geography (nature) Geography (physical) Geoinformatics Geology Geomatics Geophysics Geoscience Geospatial technology Hydrogeology Hydrology Marine science Meteorology Mineralogy Ocean life sciences Oceanography Palaeontology Seismology Vulcanology 0533 Physics Acoustics Astronomy Astrophysics Biophysics Chemical physics Medical physics Nuclear physics Optics Physics Planetary sciences Space science 0539 Physical sciences not elsewhere classified 054 Mathematics and statistics 0540 Mathematics and statistics not further defined 0541 Mathematics Algebra Applied mathematics Data analysis (mathematics) Geometry Mathematics Numerical analysis Operational research Pure mathematics 0542 Statistics Actuarial science Applied statistics Mathematical (theoretical) statistics Probability theory Survey design Survey sampling
+- 68 -
+058 Inter-disciplinary programmes and qualifications involving natural sciences, mathematics and statistics 0588 Inter-disciplinary programmes and qualifications involving natural sciences, mathematics and statistics 059 Natural sciences, mathematics and statistics not elsewhere classified 0599 Natural sciences, mathematics and statistics not elsewhere classified
+06 Information and Communication
+
+[SECTION: hec_pqf_qualifications_25_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 23)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 23)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Technologies (ICTs) 061 Information and Communication Technologies (ICTs) 0610 Information and Communication Technologies (ICTs) not further defined 0611 Computer use Computer software use Computer use Internet use Use of software for calculating (spreadsheets) Use of software for data processing Use of software for desktop publishing Use of software for word processing 0612 Database and network design and administration Computer administration and management Computer media applications Computer network installation and maintenance Computer support Database administrator studies Information technology administration Information technology security Network administration Network design Web design 0613 Software and applications development and analysis Computer programming Computer science Computer systems analysis Computer systems design Informatics (computer science) Operating systems Programming (computer) Programming languages development Software development Software localisation Software programming Software testing 0619 Information and Communication Technologies (ICTs) not elsewhere classified Artificial intelligence 068 Inter-disciplinary programmes and qualifications involving Information and Communication Technologies (ICTs) 0688 Inter-disciplinary programmes and qualifications involving Information and Communication Technologies (ICTs)
+07 Engineering, manufacturing and
+construction 070 Engineering, manufacturing and construction not further defined 0700 Engineering, manufacturing and construction not further defined 071 Engineering and engineering trades 0710 Engineering and engineering trades not further defined 0711 Chemical engineering and processes Chemical engineering Chemical process engineering
+- 69 -
+Laboratory assistant programmes Laboratory technician programmes Laboratory technology Oil/gas/petrochemicals processing Oil refining Plant and machine operation (processing) Process technology 0712 Environmental protection technology Air pollution control Ecological technology Energy efficiency Environmental control Environmental engineering Environmental protection technology Industrial discharge control Noise pollution control Recycling Water pollution control 0713 Electricity and energy Air-conditioning trades (installation and maintenance) Climate engineering Electrical appliances repairing Electrical engineering Electrical fitting Electrical power generation Electrical trades Energy studies Gas distribution Heating trades (installation and maintenance) Nuclear, hydraulic and thermal energy Power line installation and maintenance Power production Refrigeration Solar energy Solar power Wind turbines 0714 Electronics and automation Automation Broadcasting electronics Communication systems Communications equipment installation Communications equipment maintenance Computer engineering Computer repairing Control engineering Data processing technology Digital technology Electronic engineering Electronic equipment servicing Network technology Robotics Telecommunications technology Television and radio repairing 0715 Mechanics and metal trades Bicycle production Bicycle repair Boilermaking and welding Gunsmithing Hydraulics Locksmithing and safe repairing Mechanical engineering Mechanical trades Metal casting and patternmaking Metal fitting, turning and machining Metal trades programmes Metallurgical engineering Metallurgical technology
+- 70 -
+Micromechanics Precision mechanics Sheet metal working Steel production Tool and die making Watchmaking Welding 0716 Motor vehicles, ships and aircraft Aeronautical engineering Aerospace engineering Agriculture machinery mechanics Aircraft engineering Aircraft maintenance Automotive electrical systems Automotive engineering Avionics Coachwork Helicopter construction Marine construction Marine engineering Maritime engineering Motorcycle engineering Motorcycle mechanics Naval engineering Panel beating Shipbuilding Train repair and maintenance Vehicle and motor engineering Vehicle building Vehicle diagnostics Vehicle electrical systems Vehicle mechanics Vehicle painting Vehicle repairing Vehicle trimming Vehicle varnishers/sprayers 0719 Engineering and engineering trades not elsewhere classified Nanotechnology 072 Manufacturing and processing 0720 Manufacturing and processing not further defined 0721 Food processing Baking Brewing Butchery Cheese production Confectionery Dairy foods (industrial) Dairy science Distilling Food and drink processing Food handling/hygiene Food preparation Food preservation Food processing industry Food science Food science and technology Food techniques Industrial bakery/flour production Meat processing Pastry cooking Tobacco processing Wine production Wine science Wine storing/maturing 0722 Materials (glass, paper, plastic and wood) Boat building (non-motor) Cabinet making Cane, willow and bamboo work
+- 71 -
+
+[SECTION: hec_pqf_qualifications_26_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 24)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 24)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Carpentry (furniture) Ceramics (industrial) Furniture crafts Furniture making Glass production Glass working (industrial) Industrial diamond production Paper manufacturing and processing Plastic manufacturing Rubber processing Stone cutting Synthetic fibre manufacturing Timber technology Wood machining and turning Wood technology Woodwork trades Woodworking and carpentry 0723 Textiles (clothes, footwear and leather) Clothing, apparel and textile working Clothing industry Clothing trades Custom tailoring Cutting and tailoring Dressmaking Embroidery and needlework (industrial) Footwear making Fur making Furrier Garment production Knitting (industrial) Leather goods production Leather processing Leather trades Pelt worker Saddlery Sewing (industrial) Shoe, boot and leather repairing Shoemaking Skins and leather production Soft furnishings Spinning Tailoring Textiles, clothing and footwear Textile techniques Textile trades Upholstery Weaving (industrial) Wool science 0724 Mining and extraction Coal mining Drilling Mineral technology Mining engineering Mining of minerals Mining technology Oil and gas drilling Oil and gas extraction Quarry supervision Raw material extraction 0729 Manufacturing and processing not elsewhere classified 073 Architecture and construction 0730 Architecture and construction not further defined 0731 Architecture and town planning Architectural urban design and planning Architecture Building design
+- 72 -
+Cartography/Land surveying City planning Community development Community planning Landscape architecture Rural development Structural architecture Surveying Topography Town and country planning Town and regional planning Town planning Urban planning Urban studies 0732 Building and civil engineering Bricklaying Brickwork and masonry Bridge construction Building construction Building engineering Building maintenance Building renovation Building technology Carpentry and joinery (building) Cement working Civil engineering Construction equipment Construction plant operation Construction technology Constructional engineering Constructional metalwork (building) Demolition Dock and harbour engineering Drawing, technical Excavation engineering Floor and wall tiling Floor covering Glazing House building Industrial abseiling (commercial) Insulation Irrigation and drainage (construction) Joinery and carpentry (building) Masonry and tile setting Painting and wall covering Pipe fitting Plastering (building) Plumbing Quantity surveying Road building Roof fixing Sanitation (building) Scaffolding work Stonemasonry Structural engineering Technical drawing Water supply and sewerage engineering Water technology and engineering Ventilation (building) 078 Inter-disciplinary programmes and qualifications involving engineering, manufacturing and construction 0788 Inter-disciplinary programmes and qualifications involving engineering, manufacturing and construction 079 Engineering, manufacturing and construction not elsewhere classified 0799 Engineering, manufacturing and construction not elsewhere classified
+- 73 -
+08 Agriculture, forestry, fisheries and
+veterinary 080 Agriculture, forestry, fisheries and veterinary not further defined 0800 Agriculture, forestry, fisheries and veterinary not further defined 081 Agriculture 0810 Agriculture not further defined 0811 Crop and livestock production Agricultural business/agribusiness operations Agricultural economics Agricultural sciences Agriculture Agronomy and crop science Animal breeding Animal husbandry Animal training Basic skills in agriculture Crop growing Dog breeding Farm and ranch management Farm maintenance Farming Fruit growing Fruit production Goose keeping Grain growing Horse breeding Horse husbandry Irrigation techniques Olive growing Orchards construction Pig farming Poultry husbandry Race horse care Rye and wheat growing Sheep farming Soil and water technician programmes Soil fertility Soil science Sugar cane growing Vegetable plantation Wine growing Vineyard construction Viticulture 0812 Horticulture Floriculture Gardening Green keeping Greenhouse operations Horticultural techniques Horticulture Landscape gardening Nursery management (horticulture) Ornamental plants production Sports grounds maintenance Turf cultivation and management 0819 Agriculture not elsewhere classified 082 Forestry 0821 Forestry Charcoal burning Forest keeping Forest product techniques Forest ranging Forestry Hunting and trapping Logging Tree felling
+- 74 -
+
+[SECTION: hec_pqf_qualifications_27_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 25)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 25)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+083 Fisheries 0831 Fisheries Aquaculture Deep sea fishing Fish breeding Fish farms Fish husbandry Fishery Fishery science and technology Mariculture Pearl cultivating Sea food breeding Shellfish breeding 084 Veterinary 0841 Veterinary Animal health care Animal reproduction (science) Artificial insemination (of animals) Veterinary assisting Veterinary medicine Veterinary nursing Veterinary science 088 Inter-disciplinary programmes and qualifications involving agriculture, forestry, fisheries and veterinary 0888 Inter-disciplinary programmes and qualifications involving agriculture, forestry, fisheries and veterinary 089 Agriculture, forestry, fisheries and veterinary not elsewhere classified 0899 Agriculture, forestry, fisheries and veterinary not elsewhere classified
+09 Health and welfare
+090 Health and welfare not further defined 0900 Health and welfare not further defined 091 Health 0910 Health not further defined 0911 Dental studies Clinical dentistry Dental assisting Dental hygiene Dental laboratory technology Dental nursing Dental science Dental surgery Dental technology Dentistry Odontology Oral surgery Orthodontics 0912 Medicine Anaesthetics Anatomy Audiology/hearing sciences Bacteriology Cardiology Cytology Dermatology Epidemiology Forensic medicine Forensic pathology General medicine Gerontology Gynaecology Haematology Histology Immunology Internal medicine Medical science Medical training
+- 75 -
+Medicine Naturopathic medicine Neurology Obstetrics and gynaecology Oncology Ophthalmic Ophthalmology Paediatrics Pathology Physiology Plastic surgery Preventive and social medicine Psychiatry Stomatology Surgery Training of doctors Training of physicians 0913 Nursing and midwifery Assistant nursing Basic nursing Community nursing General nursing Gerontological services Health care of old people Health care of the disabled Health care programmes Hygiene, medical Infant hygiene (nursing) Midwifery Mother craft nursing Nursing Nursing aide/Orderly Psychiatric nursing Specialised nursing 0914 Medical diagnostic and treatment technology Ambulance service Ambulance technology Auditory prosthetics Emergency para-medical technologies Forensic medicine technology Hearing aid technology Medical laboratory technology Medical technology Nuclear medicine technologies Optical lens making Optical prosthetics Optical technology Orthopaedic prosthetics Prosthetic technology Radiography Radiology technology Radiotherapy X-ray technology (medical) 0915 Therapy and rehabilitation Chiropractice Dietician programmes Massage (medical) Mental health services Nutrition and dietetics Occupational therapy Optometry Osteopathy Physiotherapy Reflexology Rehabilitation Speech pathology and therapy Vocational rehabilitation
+- 76 -
+0916 Pharmacy Dispensing pharmacy Pharmacy 0917 Traditional and complementary medicine and therapy Acupuncture and oriental medicine Aromatherapy Ayurvedic medicine Herbalism Herbology Holistic medicine Homeopathic medicine Traditional medicine, for example Chinese 0919 Health not elsewhere classified 092 Welfare 0920 Welfare not further defined 0921 Care of the elderly and of disabled adults Care (non-medical) of the elderly Non-medical care of disabled adults Personal care of adults 0922 Child care and youth services Child care (non-medical) Child recreation programmes Day care Non-medical care of disabled children Youth recreation programmes Youth services Youth worker programmes 0923 Social work and counselling Alcohol and drug abuse counselling Alcohol, tobacco, drugs (knowledge about) Career advising Counselling Crisis support Family and marriage counselling Maltreatment (knowledge about) Mobbing (knowledge about) Parole officer training Probation officer training Social care Social policy Social practice Social theory (applied) Social work (welfare) Vocational counselling Vocational guidance 0929 Welfare not elsewhere classified 098 Inter-disciplinary programmes and qualifications involving health and welfare 0988 Inter-disciplinary programmes and qualifications involving health and welfare 099 Health and welfare not elsewhere classified 0999 Health and welfare not elsewhere classified
+10 Services
+100 Services not further defined 1000 Services not further defined 101 Personal services 1010 Personal services not further defined 1011 Domestic services Caretaking, housekeeping, home service Chimney sweeping Cleaning Cooking (home) Custodian/caretaker Domestic science
+- 77 -
+
+[SECTION: hec_pqf_qualifications_28_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 26)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 26)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+Dry-cleaning Funeral services and mortuary science Home economics Laundry Needlework (home) Sewing (home) Window cleaning 1012 Hair and beauty services Barbering Beauty therapy Cosmetic services Cosmetology Fitness and weight control Fitness services Hairdressing Make-up Manicure Massage (beauty) Pedicure Salon services (beauty therapy) Wig making 1013 Hotel, restaurants and catering Bar service Bartender/mixologist Catering Cooking (restaurant and hotel-type) Croupier training Culinary arts Fast food preparation Food and hospitality services Food serving Hospitality services Hotel and restaurant studies Hotel receptionist training Hotel services Waiting and bar service 1014 Sports Bookmaking (horses etc) Diving (sport) Football playing Gymnastics Jockeying Physical training (sports) Sport leadership Sport trainer studies Sports Sports coaching Sports instructor training Umpires and other sports officials 1015 Travel, tourism and leisure Abseiling (leisure) Adventure based activities Ground crew training (airports) Guiding, tour leading Leisure and tourism Recreation and leisure Recreation management Tourism Tourist trades Travel agency services Travel and tourism Travel services 1019 Personal services not elsewhere classified 102 Hygiene and occupational health services 1020 Hygiene and occupational health services not further defined 1021 Community sanitation Garbage disposal Hygiene, community
+- 78 -
+Hygienic standards Refuse collection Refuse/sewage disposal Sanitation, community Street cleaning Water supply (service) Waste management 1022 Occupational health and safety Ergonomics (occupational health and safety) Health and safety in the work place Industrial welfare Job safety Labour protection Labour security Labour welfare (safety) Occupational health and industrial hygiene Occupational health and safety Stress management Work environment 1029 Hygiene and occupational health services not elsewhere classified 103 Security services 1030 Security services not further defined 1031 Military and defence Army training Defence studies Military science National security Navy training War theory 1032 Protection of persons and property Civil security Customs programmes Diving (professional) Fire-protection (fire-fighting) Fire technology Law enforcement Life guarding Police work Policing studies Prison work Public security Security and loss prevention services Security guarding 1039 Security services not elsewhere classified 104 Transport services 1041 Transport services Air crew (flying and navigation) Air traffic control Air traffic safety Aircraft operation Aviation Bus and coach driving Cabin crew training Communications (air, railway, road etc.)
+Crane and truck driving Driving training Flying and navigation Fork-lift truck driving Mail operations Nautical science Navigation technologies Postal services Railway operations Road motor vehicle operations Seamanship Seamen's programmes/qualifications Ship operation
+- 79 -
+Shipping Stewardess/steward training (air) Transport studies Truck driving 108 Inter-disciplinary programmes and qualifications involving services 1088 Inter-disciplinary programmes and qualifications involving services 109 Services not elsewhere classified 1099 Services not elsewhere classified
+99 Field unknown
+999 Field unknown 9999 Field unknown
+- 80 -
+Appendix III Alphabetical list A 1015 Abseiling (leisure) 0411 Accounting 0533 Acoustics 0215 Acting and directing 0542 Actuarial science 0917 Acupuncture and oriental medicine 0413 Administration 0415 Administrative and secretarial services 1015 Adventure based activities 0414 Advertising 0113 Adult literacy and numeracy teacher training 0716 Aeronautical engineering 0716 Aerospace engineering 0213 Aesthetics 0811 Agricultural business/agribusiness operations 0811 Agricultural economics 0811 Agricultural sciences 0811 Agriculture 0716 Agriculture machinery mechanics 0811 Agronomy and crop science 1041 Air crew (flying and navigation) 0712 Air pollution control 1041 Air traffic control 1041 Air traffic safety 0713 Air-conditioning programmes 0716 Aircraft engineering 0716 Aircraft maintenance 1041 Aircraft operation 0923 Alcohol and drug abuse counselling 0923 Alcohol, tobacco, drugs (knowledge about) 0541 Algebra 0914 Ambulance service 0914 Ambulance technology 0912 Anaesthetics 0531 Analytical chemistry 0912 Anatomy 0811 Animal breeding 0841 Animal health care 0811 Animal husbandry 0841 Animal reproduction (science) 0811 Animal training 0211 Animation 0541 Applied mathematics 0542 Applied statistics 0831 Aquaculture 0222 Archaeology 0731 Architectural urban design and planning 0731 Architecture 0322 Archival sciences 0031 Argumentation and presentation 1031 Army training 0917 Aromatherapy 0213 Art history 0213 Art studies 0213 Art theory 0841 Artificial insemination (of animals) 0912 Artificial insemination (of humans) 0619 Artificial intelligence 0031 Assertiveness training
+- 81 -
+
+[SECTION: hec_pqf_qualifications_29_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 27)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 27)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+0913 Assistant nursing 0533 Astronomy 0533 Astrophysics 0532 Atmospheric sciences 0416 Auctioneering 0912 Audiology/hearing sciences 0211 Audio-visual techniques and media production 0411 Auditing 0914 Auditory prosthetics 0714 Automation 0716 Automotive electrical systems 0716 Automotive engineering 1041 Aviation 0716 Avionics 0917 Ayurvedic medicine B 0912 Bacteriology 0721 Baking 0215 Ballet 0412 Bank teller studies 0412 Banking and finance 1013 Bar service 1012 Barbering 1013 Bartender/mixologist 0913 Basic nursing 0011 Basic programmes and qualifications 0021 Basic remedial programmes for youth or adults 0811 Basic skills in agriculture 1012 Beauty therapy 0721 Beer brewing 0310 Behavioural sciences 0715 Bicycle production 0715 Bicycle repair 0211 Binding and finishing (printing) 0711 Biochemical technologies 0512 Biochemistry 0512 Biological chemistry 0511 Biology 0511 Biometrics 0533 Biophysics 0512 Biotechnology 0711 Biotechnology engineering 0722 Boat building (non-motor) 0715 Boilermaking and welding 0211 Bookbinding 0411 Bookkeeping 1014 Bookmaking (horses etc) 0511 Botany 0721 Brewing 0732 Bricklaying 0732 Brickwork and masonry 0732 Bridge construction 0011 Broad generic (non-specialised) programmes and qualifications 0321 Broadcast journalism 0714 Broadcasting electronics 0732 Building construction 0731 Building design 0732 Building engineering 0732 Building maintenance 0732 Building renovation 0732 Building technology 1041 Bus and coach driving 0413 Business administration 0415 Business correspondence 0412 Business finance 0721 Butchery
+- 82 -
+0416 Buying and selling C 1041 Cabin crew training 0722 Cabinet making 0213 Calligraphy 0211 Camera operating 0722 Cane, willow and bamboo work 0912 Cardiology 0921 Care (non-medical) of the elderly 0921 Care (non-medical) of disabled adults 0922 Care (non-medical) of disabled children 0923 Career advising 1011 Caretaking, housekeeping, home service 0722 Carpentry (furniture) 0732 Carpentry and joinery (building) 0731 Cartography 1013 Catering 0511 Cell biology 0512 Cell technology 0732 Cement working 0214 Ceramics (craft) 0722 Ceramics (industrial) 0821 Charcoal burning 0721 Cheese production 0711 Chemical engineering 0533 Chemical physics 0711 Chemical process engineering 0531 Chemistry 0922 Child care (non-medical) 0922 Children recreation programmes 1011 Chimney sweeping 0915 Chiropractice 0215 Choreography 0211 Cinematography 0215 Circus 0731 City planning 0312 Civics 0732 Civil engineering 1032 Civil security 0113 Class teacher training 0231 Classical languages 1011 Cleaning 0415 Clerical programmes 0417 Clients’ needs 0713 Climate engineering 0532 Climate research 0911 Clinical dentistry 0912 Clinical medicine 0723 Clothing industry 0723 Clothing trades 0723 Clothing, apparel and textile working 0031 Co-operation 0716 Coachwork 0724 Coal mining 0313 Cognitive sciences 0421 Commercial law 0321 Communication, mass- (wording and content) 1041 Communications (air, railway, road etc.)
+0714 Communications equipment installation 0714 Communications equipment maintenance 0031 Communications skills 0714 Communications systems 0731 Community development 0913 Community nursing 0731 Community planning 0417 Company knowledge
+- 83 -
+0232 Comparative literature 0211 Compositing (printing) 0215 Composition (music) 0211 Composition equipment operating 0612 Computer administration and management 0714 Computer engineering 0211 Computer game production 0211 Computer graphics 0612 Computer media applications 0612 Computer network installation and maintenance 0613 Computer programming 0714 Computer repairing 0613 Computer science 0611 Computer software use 0612 Computer support 0613 Computer systems analysis 0613 Computer systems design 0211 Computer type-setting 0611 Computer use 0215 Conducting (music) 0721 Confectionery 0522 Conservation and land management 0214 Conservation of cultural material 0732 Construction equipment 0732 Construction plant operation 0732 Construction technology 0732 Constructional engineering 0732 Constructional metalwork (building) 0414 Consumer behaviour 1011 Consumer economics 0416 Consumer services 0313 Conversational therapy 0714 Control engineering 1011 Cooking (home) 1013 Cooking (restaurant and hotel-type) 0031 Co-operation skills 1012 Cosmetic services 1012 Cosmetology 0212 Costume design 0923 Counselling 0415 Court reporting 0214 Craft programmes 0214 Crafts, folk arts and artisan 0215 Creative and performance art 1041 Crane and truck driving 0232 Creative writing 0421 Criminal justice studies 0314 Criminology 0923 Crisis support 0811 Crop growing and husbandry 1013 Croupier training 1013 Culinary arts 0314 Cultural geography 0222 Cultural history 0314 Cultural studies 0322 Curatorial studies 0111 Curriculum development (theory) 0111 Curriculum studies 1011 Custodian/caretaker 0723 Custom tailoring 0417 Customer service training 1032 Customs programmes 0723 Cutting and tailoring 0912 Cytology D 0721 Dairy foods (industrial) 0416 Dairy retailing
+- 84 -
+
+[SECTION: hec_pqf_qualifications_30_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 28)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 28)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+0721 Dairy science 0215 Dance 0541 Data analysis (mathematics) 0415 Data entry 0714 Data processing technology 0612 Database administrator studies 0922 Day care (children) 0921 Day care (adults) 0214 Decorative metal crafts 0831 Deep sea fishing 1031 Defence studies 0314 Demography/population studies 0732 Demolition 0416 Demonstration techniques 0911 Dental assisting 0911 Dental hygiene 0911 Dental laboratory technology 0911 Dental nursing 0911 Dental science 0911 Dental surgery 0911 Dental technology 0911 Dentistry 0912 Dermatology 0212 Design 0212 Design of industrial products (artistic) 0211 Desktop publishing 0313 Development and child psychology 0031 Development of behavioural skills 0031 Development of mental skills 0031 Development of personal organisational capacities 0111 Didactics 0915 Dietician programmes 0714 Digital technology 0215 Directing (theatre) 0211 Disc jockey training 0916 Dispensing pharmacy 0111 Distance education methodology 0721 Distilling 1032 Diving (professional) 1014 Diving (sport) 0732 Dock and harbour engineering 0322 Documentation 0811 Dog breeding 1011 Domestic science 0215 Drama 0213 Drawing (artistic) 0732 Drawing, technical 0723 Dressmaking 0724 Drilling (industrial) 0114 Driver and safety teacher education 0114 Driving instructor training 1041 Driving training 1011 Dry-cleaning E 0112 Early childhood teaching (within formal school settings) 0532 Earth science 0712 Ecological technology 0521 Ecology 0311 Econometrics 0311 Economic history 0311 Economics 0311 Economics, business 0321 Editing (newspapers) 0110 Education (not further defined) 0111 Education science 0111 Education technology
+- 85 -
+0111 Educational assessment, testing and measurement 0111 Educational evaluation and research 0413 Educational management 0913 Elder care, health 0713 Electrical appliances repairing 0713 Electrical engineering 0713 Electrical fitting 0713 Electrical power generation 0713 Electrical trades 0714 Electronic data processing 0714 Electronic engineering 0714 Electronic equipment servicing 0113 Elementary teacher education 0215 Elocution 0214 Embroidery (craft) 0723 Embroidery and needlework (industrial) 0914 Emergency para-medical technologies 0413 Employment management 0712 Energy efficiency 0713 Energy studies 0031 Enhancing personal skills 0511 Entomology 0413 Entrepreneurship 0712 Environmental control 0712 Environmental engineering 0712 Environmental protection technology 0521 Environmental science 0912 Epidemiology 1022 Ergonomics (occupational health and safety) 0213 Etching (artistic) 0223 Ethics 0314 Ethnology 0732 Excavation engineering 0231 Exogenous languages F 0923 Family and marriage counselling 0031 Family life development training 0811 Farm and ranch management 0811 Farm maintenance 0811 Farming 0212 Fashion design 0215 Fashion modelling 1013 Fast food preparation 0214 Fibre, textile and weaving arts 0211 Film and video production 0211 Film and TV editing 0412 Finance 0412 Financial management 0213 Fine art printmaking 0213 Fine arts 1032 Fire-protection (fire-fighting) 1032 Fire technology 0232 First language studies 0831 Fish breeding 0831 Fish farming 0831 Fish husbandry 0831 Fishery science and technology 1012 Fitness and weight control 1012 Fitness services 0114 Flight instructor training 0732 Floor and wall tiling 0732 Floor covering 0812 Floriculture 0214 Floristry (flower arranging) 1041 Flying and navigation 0222 Folklore studies 0721 Food and drink processing
+- 86 -
+1013 Food and hospitality services 0721 Food handling/hygiene 0721 Food preparation 0721 Food preservation 0721 Food processing industry 0721 Food science and technology 1013 Food serving 0721 Food techniques 1014 Football playing 0723 Footwear making 0231 Foreign languages (acquisition of) 0415 Foreign language secretary programmes 0912 Forensic medicine 0914 Forensic medicine technology 0912 Forensic pathology 0512 Forensic science 0821 Forest keeping 0821 Forest product techniques 0821 Forest ranging 0821 Forestry 1041 Fork-lift truck driving 0811 Fruit growing 0021 Functional literacy 1011 Funeral services and mortuary science 0723 Fur making 0722 Furniture crafts 0722 Furniture making 0723 Furrier 0314 Futurology G 1021 Garbage disposal 0812 Gardening 0723 Garment production 0713 Gas distribution 0314 Gender studies 0912 General medicine 0913 General nursing 0011 General programmes and qualification with no specific subject emphasis 0511 Genetics 0512 Genetic code (DNA, RNA) studies 0512 Genetic engineering 0532 Geodesy 0532 Geographic information systems (GIS) 0532 Geography (nature) 0532 Geography (physical) 0314 Geography (social) 0532 Geoinformatics 0532 Geology 0532 Geomatics 0541 Geometry 0532 Geophysics 0532 Geoscience 0532 Geospatial technology 0913 Gerontological services 0912 Gerontology 0214 Glass arts and craft 0722 Glass production 0722 Glass working (industrial) 0732 Glazing 0214 Goldsmithing 0811 Goose keeping 0811 Grain growing 0211 Graphic design 0211 Graphic reproduction 0812 Greenhouse operations 0812 Green keeping 1015 Ground crew training (airport)
+- 87 -
+
+[SECTION: hec_pqf_qualifications_31_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 29)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 29)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+1015 Guiding, tour leading 0715 Gunsmithing 1014 Gymnastics 0912 Gynaecology H 0912 Haematology 1012 Hairdressing 0214 Handicrafts 0413 Health administration 1022 Health and safety in the work place 0913 Health care of the elderly 0913 Health care of the disabled 0913 Health care programmes 0914 Hearing aid technology 0713 Heating trades 0917 Herbalism 0917 Herbology 0716 Helicopter construction 0912 Histology 0222 History 0222 History and philosophy of science and technology 0213 History of art 0215 History of film and theatre 0421 History of law 0222 History of literature 0222 History of medicine 0215 History of music 0222 History of science and ideas 0222 History of technology 0917 Holistic medicine 1011 Home economics 0114 Home language teacher training 0917 Homeopathic medicine 0811 Horse breeding 0811 Horse husbandry 0812 Horticultural techniques 0812 Horticulture 1013 Hospitality services 1013 Hotel and restaurant studies 1013 Hotel receptionist training 1013 Hotel services 0732 House building 0314 Human geography 0412 Human resources management 0312 Human rights 0821 Hunting and trapping 0715 Hydraulics 0532 Hydrogeology 0532 Hydrology 1021 Hygiene, community 0913 Hygiene, medical 1021 Hygienic standards I 0211 Illustration 0912 Immunology 0113 Indigenous crafts 0232 Indigenous language studies 0421 Indigenous law 0113 Indigenous teacher training 0732 Industrial abseiling (commercial) 0721 Industrial bakery/flour production 0212 Industrial design (artistic) 0722 Industrial diamond production 0712 Industrial discharge control 0417 Industrial relations 1022 Industrial welfare 0913 Infant hygiene (nursing)
+- 88 -
+0613 Informatics (computer science) 0321 Information (wording and content) 0415 Information processing/data entry 0322 Information science 0322 Information searching 0612 Information technology administration 0612 Information technology security 0532 Inorganic chemistry 0732 Insulation 0412 Insurance 0211 Interactive media design 0212 Interior architecture 0212 Interior decorating 0212 Interior design 0912 Internal medicine 0311 International economics 0312 International relations 0611 Internet use programmes 0231 Interpretation programmes 0417 Introductory courses at work 0412 Investment analysis 0412 Investments and securities 0732 Irrigation and drainage (construction) 0811 Irrigation techniques 0421 Islamic sharia law J 0214 Jewellery design 0214 Jewellery making (craft) 1022 Job safety 0031 Job-seeking programmes 1014 Jockeying 0732 Joinery and carpentry (building) 0321 Journalism 0421 Jurisprudence K 0415 Keyboard skills 0723 Knitting (industrial) L 0711 Laboratory assistant programmes 0711 Laboratory technician programmes 0711 Laboratory technology 0421 Labour law 1022 Labour protection 1022 Labour security 1022 Labour welfare (safety) 0731 Land surveying 0731 Landscape architecture 0812 Landscape gardening 0231 Language acquisition 0214 Lapidary and jewellery 1011 Laundry 0421 Law 1032 Law enforcement 0211 Lay-out 0723 Leather goods production 0723 Leather processing 0723 Leather trades 0421 Legal practice 0415 Legal secretary programmes 0421 Legal studies 1015 Leisure and tourism 0322 Librarianship training 0322 Library programmes 1032 Life guarding 0031 Life orientation programmes 0511 Life sciences 0511 Limnology
+- 89 -
+0232 Linguistics, general 0021 Literacy 0021 Literacy and numeracy 0232 Literature 0222 Literature history 0213 Lithography 0413 Local public administration 0715 Locksmithing and safe repairing 0223 Logic 0821 Logging 0413 Logistic management 0113 Lower secondary teacher training M 0311 Macro economics 1041 Mail operations 0812 Maintaining sports turf 1012 Make-up 0923 Maltreatment (knowledge about) 0413 Management of education 0413 Management science 0413 Management skills 0415 Management support services 1012 Manicure 0831 Mariculture 0716 Marine construction 0716 Marine engineering 0532 Marine science 0716 Maritime engineering 0414 Market research 0414 Marketing 0732 Masonry and tile setting 0321 Mass communication (wording and content) 1012 Massage (beauty) 0915 Massage (medical) 0542 Mathematical (theoretical) statistics 0541 Mathematics 0721 Meat processing 0715 Mechanical engineering 0715 Mechanical trades 0211 Media techniques 0914 Medical laboratory technology 0533 Medical physics 0912 Medical science 0415 Medical secretary programmes 0914 Medical technology 0912 Medical training 0912 Medicine 0222 Medieval and renaissance studies 0915 Mental health services 0414 Merchandising 0715 Metal casting and patternmaking 0715 Metal fitting, turning and machining 0715 Metal trades 0715 Metallurgical engineering 0715 Metallurgical technology 0532 Meteorology 0511 Microbiology 0715 Micromechanics 0913 Midwifery 1031 Military science 0724 Mineral technology 0532 Mineralogy 0724 Mining engineering 0724 Mining of minerals 0724 Mining technology 0923 Mobbing (knowledge about) 0511 Molecular biology 0223 Morals
+- 90 -
+
+[SECTION: hec_pqf_qualifications_32_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 30)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 30)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+0913 Mother craft nursing 0716 Motorcycle engineering 0716 Motorcycle mechanics 0211 Multimedia production 0322 Museology 0322 Museum documentation 0322 Museum studies 0215 Music 0215 Music conducting 0214 Musical instruments (making, repairing and tuning) 0215 Musicology 0511 Mycology N 0719 Nanotechnology 0311 National accounts 0522 National parks and wildlife management 1031 National security 0522 Nature conservation 0912 Naturopathic medicine 1041 Nautical science 0716 Naval engineering 1041 Navigation technologies 1031 Navy training 0214 Needle craft 1011 Needlework (home) 0612 Network administration 0612 Network design (computers) 0714 Network technology 0912 Neurology 0321 News reporting 0712 Noise pollution control 0421 Notary/Notary’s practise 0914 Nuclear medicine technologies 0533 Nuclear physics 0713 Nuclear, hydraulic and thermal energy 0021 Numeracy 0541 Numerical analysis 0812 Nursery management (horticulture) 0913 Nursing 0913 Nursing aide/Orderly 0114 Nursing teacher training 0915 Nutrition and dietetics 0915 Nutrition science O 0912 Obstetrics and gynaecology 1022 Occupational health and industrial hygiene 1022 Occupational health and safety 0915 Occupational therapy 0532 Ocean life sciences 0532 Oceanography 0911 Odontology 0415 Office automation 0413 Office management 0724 Oil and gas drilling 0724 Oil and gas extraction 0711 Oil refining 0711 Oil/gas/petrochemicals processing 0811 Olive growing 0912 Oncology 0613 Operating systems (IT) 0415 Operation of office machines 0541 Operational research 0912 Ophthalmology 0914 Optical lens making 0914 Optical prosthetics 0914 Optical technology
+- 91 -
+0533 Optics 0915 Optometry 0911 Oral surgery 0811 Orchards construction 0531 Organic chemistry 0417 Organisation at work 0413 Organisational theory and behaviour 0812 Ornamental plant production 0511 Ornithology 0911 Orthodontics 0914 Orthopaedic prosthetics 0915 Osteopathy P 0912 Paediatrics 0111 Paedagogical sciences (education) 0213 Painting (art) 0732 Painting and wall covering 0532 Palaeontology 0716 Panel beating 0722 Paper manufacturing and processing 0421 Para-legal studies 0511 Parasitology 0031 Parenting courses 0923 Parole officer training 0721 Pastry cooking 0912 Pathology 0312 Peace and conflict studies 0831 Pearl cultivating 1012 Pedicure 0723 Pelt worker 0412 Pension insurance 0413 Performance appraisal 0215 Performing arts 0921 Personal care of adults 0031 Personal career planning 0031 Personal development 0031 Personal skills 0413 Personnel administration 0413 Personnel management 0531 Petrology 0512 Pharmacology 0916 Pharmacy 0232 Philology (first language) 0223 Philosophy 0213 Philosophy of art 0231 Phonetics 0211 Photo developing 0211 Photography 0114 Physical education teacher training 0531 Physical chemistry 1014 Physical training (sports) 0533 Physics 0912 Physiology 0915 Physiotherapy 0214 Picture framing 0811 Pig farming 0732 Pipe fitting 0533 Planetary sciences 0711 Plant and machine operation (processing) 0732 Plastering (building) 0722 Plastic manufacturing 0912 Plastic surgery 0732 Plumbing 1032 Police work 1032 Policing studies 0311 Political economics 0312 Political history 0312 Political science
+- 92 -
+0312 Politics 0531 Polymer chemistry 0031 Positive thinking 1041 Postal services 0811 Poultry husbandry 0713 Power production 0713 Power line installation and maintenance 0110 Practical paedagogical courses 0211 Pre-press operations 0112 Pre-primary teacher training 0715 Precision mechanics 0031 Presentation skills 0222 Preservation of artistic heritage 0912 Preventive and social medicine 0011 Primary level programmes and qualifications 0113 Primary teaching (without subject specialisation) 0211 Print finishing and binding 0211 Printing 0211 Printing machining 1032 Prison work 0542 Probability theory 0923 Probation officer training 0711 Process technology 0812 Production of ornamental plants 0613 Programming (computer) 0613 Programming languages (Visual Basic, C++ etc.)
+0613 Programming languages development 0416 Property sales 0914 Prosthetic technology 0913 Psychiatric nursing 0912 Psychiatry 0313 Psychoanalysis 0313 Psychology 0313 Psychotherapy 0413 Public administration 0413 Public and institution management 0312 Public policy studies 0414 Public relations 1032 Public security 0031 Public speaking 0321 Publishing (dissemination of messages) 0211 Publishing design 0416 Purchasing 0416 Purchasing, procurement and contracts 0541 Pure mathematics Q 0417 Quality assurance 0413 Quality management 0732 Quantity surveying 0724 Quarry supervision R 0811 Race horse care 0211 Radio and TV production 0914 Radiography 0914 Radiology technology 0914 Radiotherapy 1041 Railway operations 0724 Raw material extraction 0416 Real-estate business 0415 Receptionist training 0211 Recorded music production 1015 Recreation and leisure 1015 Recreation management 0413 Recruitment 0712 Recycling 0915 Reflexology
+- 93 -
+
+[SECTION: hec_pqf_qualifications_33_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 31)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 31)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+0713 Refrigeration 1021 Refuse collection 1021 Refuse/sewage disposal 0314 Regional cultures 0915 Rehabilitation 0221 Religion 0221 Religious history 0221 Religious studies 0321 Reporting (news) 0416 Retailing 0732 Road building 1041 Road motor vehicle operations 0714 Robotics 0732 Roof fixing 0722 Rubber processing 0731 Rural development 0811 Rye and wheat growing S 0221 Sacred books, study of 0723 Saddlery 0414 Sales and marketing 0416 Sales representatives 1012 Salon services (beauty therapy) 0732 Sanitation (building) 1021 Sanitation (community) 0732 Scaffolding work 0211 Screen printing 0213 Sculpture 0831 Sea food breeding 1041 Seamanship 1041 Seamen's programmes 0231 Second languages 0114 Secondary teaching 0415 Secretarial programmes 1032 Security and loss prevention services 1032 Security guarding 0532 Seismology 0031 Self-esteem skills 0031 Self-confidence 0231 Semantics, foreign languages 0232 Semantics, first language 1011 Sewing (home) 0723 Sewing (industrial) 0831 Shellfish breeding 0811 Sheep farming 0715 Sheet metal working 1041 Ship operation 0716 Shipbuilding 1041 Shipping 0723 Shoemaking and repairing 0415 Shorthand 0231 Sign language interpreting 0231 Sign languages 0214 Silversmithing 0031 Simple literacy 0213 Sketching (art) 0723 Skins and leather production 0314 Social anthropology 0923 Social care 0031 Social competence 0314 Social conflict theory 0314 Social geography 0412 Social insurance 0923 Social policy 0923 Social practice 0310 Social sciences 0923 Social theory (applied) 0923 Social work (welfare) 0314 Sociology
+- 94 -
+0723 Soft furnishings 0613 Software development 0611 Software for calculating (spreadsheets), use of 0611 Software for data processing, use of 0611 Software for desktop publishing, use of 0611 Software for word processing, use of 0613 Software localisation 0613 Software programming 0613 Software testing 0522 Soil and water conservation 0811 Soil and water technician programmes 0811 Soil fertility 0811 Soil science 0713 Solar energy 0713 Solar power 0211 Sound and vision 0211 Sound techniques 0533 Space science 0113 Special education teaching 0913 Specialised nursing 0114 Specialised subject teaching 0232 Speech and rhetorical studies (first language) 0915 Speech pathology and therapy 0723 Spinning (industrial) 1014 Sport leadership 1014 Sport trainer training 1014 Sports 1014 Sports coaching 1014 Sports instructor training 0812 Sports grounds maintenance 0212 Stage designing 0413 Start your own business-courses 0542 Statistics 0715 Steel production 0415 Stenography 1041 Stewardess/steward training (air) 0412 Stock-broking 0416 Stock-keeping 0912 Stomatology 0214 Stone carving (craft) 0722 Stone cutting, precious 0732 Stonemasonry 1021 Street cleaning 1022 Stress management 0731 Structural architecture 0732 Structural engineering 0811 Sugar cane growing 0413 Supply change management 0912 Surgery 0542 Survey design 0542 Survey sampling 0731 Surveying 0415 Switchboard operating 0722 Synthetic fibre manufacturing T 0723 Tailoring 0411 Tax accounting 0411 Tax management 0110 Teacher training 0112 Teacher training, pre-school 0113 Teacher training, primary 0113 Teacher training, lower secondary (without subject specialisation) 0114 Teacher training courses for university teachers 0114 Teacher training in arts and crafts 0114 Teacher training in commercial subjects
+- 95 -
+0114 Teacher training in music 0114 Teacher training in nursing 0114 Teacher training in physical training 0114 Teacher training in second languages 0114 Teacher training in specific theoretical subjects (e.g. mathematics, history) 0114 Teacher training in technical subjects 0114 Teacher training in vocational subjects 0114 Teacher training with subject specialisation 0113 Teacher training without subject specialisation 0031 Teamwork 0732 Technical drawing 0114 Technical teaching 0710 Technology 0714 Telecommunication technology 0416 Telephone selling 0714 Television and radio repairing 0723 Textile techniques 0723 Textile trades 0723 Textiles, clothing and footwear 0215 Theatre 0221 Theology 0212 Three dimensional design 0722 Timber technology 0031 Time management 0512 Tissue culture technology 0721 Tobacco processing 0715 Tool and die making 0731 Topography 1015 Tourism 0731 Town and country planning 0512 Toxicology 0417 Trade union courses (general) 0917 Traditional medicine 0716 Train repair and maintenance 0413 Training management 0912 Training of doctors 0114 Training of driving instructors 0912 Training of physicians 0114 Training of trainers (with subject specialisation) 0113 Training of trainers (without subject specialisation) 0231 Translation programmes 1041 Transport studies 1015 Travel agency services 1015 Travel and tourism 1015 Travel services 0821 Tree felling 1041 Truck driving 0812 Turf cultivation 0812 Turf management 0211 Type-setting 0415 Typing U 1014 Umpires and other sports officials 0723 Upholstery 0731 Urban planning 0731 Urban studies V 0716 Varnishers/sprayers (vehicles) 0811 Vegetable plantation 0716 Vehicle and motor engineering 0716 Vehicle building 0716 Vehicle diagnostics 0716 Vehicle electrical systems 0716 Vehicle mechanics
+- 96 -
+
+[SECTION: hec_pqf_qualifications_34_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 32)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 32)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Lists/Notifications/Attachments/53/UNESCO-ISCED.pdf
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+0716 Vehicle painting 0716 Vehicle repairing 0716 Vehicle trimming 0716 Vehicle varnishers/sprayers 0732 Ventilation (building) 0841 Veterinary assisting 0841 Veterinary medicine 0841 Veterinary nursing 0841 Veterinary science 0811 Vineyard construction 0512 Virology 0811 Viticulture 0923 Vocational counselling 0923 Vocational guidance 0915 Vocational rehabilitation 0532 Vulcanology W 1013 Waiting and bar service 1031 War theory 0416 Ware-housing 1021 Waste management 0715 Watchmaking 0712 Water pollution control 1021 Water supply (service) 0732 Water supply and sewerage engineering 0732 Water technology and engineering 0214 Weaving (craft) 0723 Weaving (industrial) 0612 Web design (Internet) 0715 Welding 0416 Wholesaling 1012 Wig making 0522 Wildlife management 0522 Wildlife ranger studies 1011 Window cleaning 0212 Window dressing 0713 Wind turbines 0811 Wine growing 0721 Wine production 0721 Wine science 0721 Wine storing/maturing 0314 Women ’s studies 0722 Wood machining and turning 0722 Wood technology 0214 Woodcarving 0722 Woodwork trades 0722 Woodworking and carpentry 0723 Wool science 0417 Work development 1022 Work environment 0417 Work place skills 0417 Working life X 0914 X-ray technology (medical) Y 0922 Youth recreation programmes 0922 Youth services 0922 Youth worker programmes Z 0511 Zoology
+
+[SECTION: hec_pqf_qualifications_35_PAKISTAN_QUALIFICATION_FRAMEWORK_PQF_PAKISTAN_]
+# Pakistan Qualification Framework (PQF), Pakistan (part 33)
+Title: Pakistan Qualification Framework (PQF), Pakistan Qualification Register (PQR) and UNESCO ISCED classification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Pakistan Qualification Framework (PQF), Pakistan (part 33)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Version: PQF/PQR pages as published, retrieved 2026-10-10; UNESCO ISCED as notified by HEC
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Notifications
+HEC
+Notifications
+
+Type
+Academic
+University
+General Public
+- Recognition of the degree awarded by foreign chartered universities/institutions through virtual/online/distance learning/Blended learning
+Friday, July 22, 2022
+- Academic
+- Deferment of Post PhD Experience for Professors and Associate Professors
+Wednesday, July 20, 2022
+- Academic
+- Extension in maximum duration of MS/MPhil/PhD/equivalent degree programs due to Covid-19
+Friday, April 15, 2022
+- Academic
+- Appointment of TTS faculty on Academic-administrative positions
+Wednesday, March 2, 2022
+- Academic
+- Withdrawal of Migration Certificate/NOC as an admission requirement to the Graduate/ Postgraduate Programs
+Monday, February 28, 2022
+- Academic
+- Collecting hard copies of PhD dissertation to register record in PhD Country Directory (PCD)
+Sunday, December 19, 2021
+- Academic
+- Salary Package for the Vice-Chancellors of Public Sector Universities
+Friday, October 22, 2021
+- University
+- Graduate Education Policy-2023 (GEP-2023)
+Monday, July 10, 2023
+- Academic
+- Applicants having CAF qualification duly verified by ICAP shall be eligible for admission in BS AF
+Wednesday, June 9, 2021
+- Academic
+- Clarification regarding TTS Leave Policy
+Friday, March 5, 2021
+- University
+- Initial appointment of faculty members on TTS
+Friday, March 5, 2021
+- University
+- Amendment of the clause 1.4.1.2 of Model Tenure Track Process Statutes
+Saturday, October 16, 2021
+- University
+- Amendment of the clause 1.1 (d) and Annexure -A of Model Tenure Track Process Statutes
+Friday, October 16, 2020
+- University
+- Transition of BA/BSc Programs to Associate Degree Programs, Phasing Out of MA/ MSc Programs
+Thursday, July 11, 2019
+- Academic
+- Acceptance of USAT (Undergraduate Studies Admission Test)
+Tuesday, July 5, 2022
+- Academic
+- The Requirement of Post-PhD Experience
+Thursday, May 25, 2023
+- Academic
+- Undergraduate Education Policy
+Wednesday, July 12, 2023
+- Academic
+- Revised Interim Placement of Fresh PhDs (IPFP) Policy
+Friday, July 21, 2023
+- Academic
+- Anti-Plagiarism Policy 2023
+Wednesday, August 2, 2023
+- Academic
+- Framework of The HEC Distinguished National Professor (DNP) Program
+Tuesday, September 30, 2025
+- Academic
+- Clarification one time relaxation based on Covid-19 Situation for completion of MS-MPhil equivalent and PhD Degree till 28.02.2023
+Tuesday, April 26, 2022
+- Academic
+- Discontinuation of HEC Approved Supervisor Post Promulgation GEP- 2023
+Friday, December 22, 2023
+- Academic
+- Open and Distance Learning: Policy Provisions and Regulatory Framework
+Wednesday, August 28, 2024
+- Academic
+- Transnational Education (TNE) Policy 2024
+Monday, September 9, 2024
+- Academic
+- Partial Relaxation in Requirement of Full-Time PhD Faculty Members to Launch MS/MPhil or Equivalent and PhD Programs in Basic Medical Sciences and Clinical Health Sciences
+Wednesday, October 2, 2024
+- Academic
+- Journals & Publications Policy 2024
+Monday, September 30, 2024
+- Academic
+- HEC National Fee Refund Policy
+Friday, December 20, 2024
+- Academic
+- Notification Framework for Appointment of Meritorious Professor in HEIs
+Tuesday, September 30, 2025
+- University
+- Notification Framework for Appointment of Professor Emeritus in HEIs
+Tuesday, September 30, 2025
+- University
+- Policy Guidelines for Appointment of Professor of Practice by the Higher Education Institution (HEIs) in Pakistan
+Tuesday, September 30, 2025
+- University
+- HEC-Notification Interim Placement of Fresh PhDs (IPFP)Phase-II
+Friday, February 21, 2025
+- University
+- Notification Post-PhD experience for appointment of Professors (08 years) and Associate Professors (04 years)
+Thursday, July 30, 2026
+- Academic
+- Framework for HEC Best Teacher Award (BUTA)
+Tuesday, September 30, 2025
+- University
+- Policy on Protection Against Harassment in Higher Education Institutions (Revised 2025)
+Tuesday, September 30, 2025
+- University
+- Guidelines for Admissibility of Leave for Professor Emeritus
+Tuesday, December 23, 2025
+- University
+- UNESCO's International Standard Classification of Education-ISCED-F
+Tuesday, January 13, 2026
+- Academic
+- HEC Journals & Publications Policy, 2024
+Monday, March 2, 2026
+- Academic
+- Guidelines for Engagement of Visiting Faculty in HEIs, 2026
+Sunday, May 17, 2026
+- University
+- Mandatory Conduct of GREHAT General & Subject Test through HEC-Education Testing Council (ETC)
+Tuesday, May 12, 2026
+- University
+- Policy on Dual, Double & Joint Degree Programmes, 2026
+Wednesday, May 13, 2026
+- University
+- Notification - Amendments in TNE Policy, 2024
+Wednesday, May 13, 2026
+- University
+- Establishment of the National Chair on AI and Robotics
+Tuesday, May 5, 2026
+- University
+- Notification - Deferred Implementation of Mandatory Conduct of GRE_HAT-General & Subject Test
+Sunday, May 24, 2026
+- General Public
+- Framework for Recognition of Liberal Arts Undergraduate Programs under the HEC Undergraduate Education Policy 2023
+Tuesday, August 4, 2026
+- Academic
+- Framework on the Use of AI (Gen-AI) Tools in HEIs
+Friday, September 4, 2026
+- University
+- HEC Notification | Salary Package for the Vice Chancellors of Public Sector Universities
+Friday, October 2, 2026
+- University
+- HEC Notification | Deferment of Post-PhD Experience Requirement until 31.12.2026
+Friday, October 2, 2026
+- University

@@ -1,0 +1,373 @@
+# HEC Education Testing Council (ETC): HAT/GRE/LAT admission tests and the GRE/HAT mandatory-notification chain
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: Pakistan (Federal) — higher education
+Version: ETC pages as published; notification chain 2026-05-12 -> 2026-05-24 -> 2026-10-02 | Published/notified: 2026-05-12 | Effective: see note | Status: Current
+Provenance: sections below carry the canonical HEC URL for the document they were extracted from.
+Coverage area: B
+Verification note: TIME-SENSITIVE: the HEC notification register records "Mandatory Conduct of GRE/HAT General & Subject Test through HEC-ETC" (2026-05-12) and later deferral notifications. Always read the latest register entry before stating that a test is or is not required.
+
+[SECTION: hec_etc_admission_tests_1_SERVICES]
+# Services
+Title: HEC Education Testing Council (ETC): HAT/GRE/LAT admission tests and the GRE/HAT mandatory-notification chain
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Services
+Official page: https://www.hec.gov.pk/english/services/students/etc/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/students/etc/Pages/default.aspx
+Version: ETC pages as published; notification chain 2026-05-12 -> 2026-05-24 -> 2026-10-02
+Notification / publication date: 2026-05-12
+Effective date: see note
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Services
+Education Testing Council
+- ETC Overview
+- ETC Products / Apply
+- Announcements
+- Content Weightages
+- Sample Papers
+- Result and Keys
+- Test Calendar
+- Important Instructions & SOPs
+- Notification
+- FAQ's
+- Advertisement
+ETC OVERVIEW
+
+Education Testing Council (ETC) was setup by the Higher Education Commission of Pakistan (HEC) vide notification No. 19-54 HEC/HRM/14/584, dated 25th January 2017. Later, the Supreme Court of Pakistan directed the HEC in August 2018 to conduct assessment tests for admission into LLB degree programs and enrollment of law graduates with Pakistan Bar Council. Thus, recognizing the need for a state-of-the-art, independent, financially viable, transparent, and accountable testing service provider, the Commission approved the establishment of a revamped Education Testing Council (ETC) in its 34th meeting held on August 30-31, 2018.
+
+[SECTION: hec_etc_admission_tests_2_OUR_VISION]
+# Our Vision:
+Title: HEC Education Testing Council (ETC): HAT/GRE/LAT admission tests and the GRE/HAT mandatory-notification chain
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Our Vision:
+Official page: https://www.hec.gov.pk/english/services/students/etc/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/students/etc/Pages/default.aspx
+Version: ETC pages as published; notification chain 2026-05-12 -> 2026-05-24 -> 2026-10-02
+Notification / publication date: 2026-05-12
+Effective date: see note
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+#### Our Vision:
+“Be the enabler for coming generations of students to unlock their true potential in service of the nation, as well as establish and help ensure merit at all levels of education, public service and professional endeavor through uncompromising commitment to quality, equity and fairness in all our efforts.”
+
+[SECTION: hec_etc_admission_tests_3_OUR_MISSION]
+# Our Mission:
+Title: HEC Education Testing Council (ETC): HAT/GRE/LAT admission tests and the GRE/HAT mandatory-notification chain
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Our Mission:
+Official page: https://www.hec.gov.pk/english/services/students/etc/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/students/etc/Pages/default.aspx
+Version: ETC pages as published; notification chain 2026-05-12 -> 2026-05-24 -> 2026-10-02
+Notification / publication date: 2026-05-12
+Effective date: see note
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+#### Our Mission:
+To realize the vision of developing a merit-based induction system for higher education, novel methods involving stochastic modeling and probability theory are essential. These methods will help create testing systems that determine students' merit, aptitude, and inclinations, providing feedback on their strengths and areas needing reinforcement. The system aims to standardize assessments across diverse educational backgrounds and align with international best practices, such as those of SAT, GRE, and GMAT.
+Technology plays a crucial role in achieving this goal by reducing human involvement in the testing process. The use of the internet, cloud computing, blockchain, and AI can streamline registration, testing, and result dissemination, ensuring secure, efficient, and timely feedback. An interim plan has been implemented to improve current processes, automating and digitizing some aspects while enhancing printing and binding with better hardware.
+
+[SECTION: hec_etc_admission_tests_4_ETC_OBJECTIVES]
+# ETC Objectives:
+Title: HEC Education Testing Council (ETC): HAT/GRE/LAT admission tests and the GRE/HAT mandatory-notification chain
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: ETC Objectives:
+Official page: https://www.hec.gov.pk/english/services/students/etc/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/students/etc/Pages/default.aspx
+Version: ETC pages as published; notification chain 2026-05-12 -> 2026-05-24 -> 2026-10-02
+Notification / publication date: 2026-05-12
+Effective date: see note
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+#### ETC Objectives:
+- T o develop, Administer and score tests for admission into higher education programs, in such areas and fields as determined by the BOG or as may be directed by the superior judiciary of Pakistan;
+To develop, Administer and score tests for the assessment of graduates of higher education programs with respect to general skills and specific expertise for the purpose of having a pool of duly benchmarked candidates for employment in public and private sectors, in such areas and fields as determined by the BOG;
+- To provide an objective measurement of students' and graduates' knowledge, skills and aptitude, thereby providing a uniform, transparent and standardized evaluation of candidates' abilities;
+- To provide highly effective and efficient testing services by utilizing latest technologies, at a reasonable cost;
+- To provide advisory services and training/ capacity building on educational testing to relevant stakeholders;
+- To undertake high quality research in the field of educational assessment, including focusing on global best practices, for the purpose of developing more effective and innovative assessment tools; and
+- To develop and evolve into a globally recognized testing and assessment solutions provider.
+
+[SECTION: hec_etc_admission_tests_5_IMPORTANT_LINKS]
+# Important Links
+Title: HEC Education Testing Council (ETC): HAT/GRE/LAT admission tests and the GRE/HAT mandatory-notification chain
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Important Links
+Official page: https://www.hec.gov.pk/english/services/students/etc/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/students/etc/Pages/default.aspx
+Version: ETC pages as published; notification chain 2026-05-12 -> 2026-05-24 -> 2026-10-02
+Notification / publication date: 2026-05-12
+Effective date: see note
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+## Important Links
+- - ETC Complaint Portal
+
+[SECTION: hec_etc_admission_tests_6_HEC_EDUCATION_TESTING_COUNCIL_ETC]
+# HEC Education Testing Council (ETC)
+Title: HEC Education Testing Council (ETC): HAT/GRE/LAT admission tests and the GRE/HAT mandatory-notification chain
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Education Testing Council (ETC)
+Official page: https://www.hec.gov.pk/english/services/students/etc/Pages/Announcements.aspx
+Source file: https://www.hec.gov.pk/english/services/students/etc/Pages/Announcements.aspx
+Version: ETC pages as published; notification chain 2026-05-12 -> 2026-05-24 -> 2026-10-02
+Notification / publication date: 2026-05-12
+Effective date: see note
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+Education Testing Council
+Announcements
+- ETC Overview
+- ETC Products / Apply
+- Announcements
+- Content Weightages
+- Sample Papers
+- Result and Keys
+- Test Calendar
+- Important Instructions & SOPs
+- Notification
+- FAQ's
+- Advertisement
+Announcements
+Important Notice: Candidates below 18 years of age who do not have a Juvenile Card are advised to obtain the card from NADRA before the test date. The card must be presented for entry to the test center.
+NEW PROJECTS:
+- Daanish Schools Authority – Centre of Excellence for Autism Spectrum Disorder Company (CEASDC), Islamabad | Portal Open till Friday, 23.10.2026 
+- Daanish Schools Authority – Centre of Excellence for Autism Spectrum Disorder, Islamabad, under the Ministry of Federal Education & Professional Training | Portal Open till Friday, 23.10.2026 
+
+- Daanish Schools Authority – Project Implementation Unit (PIU) – Recruitment Test | Portal Open till Thursday, 22.10.2026
+- Pakistan Infrastructure Development Company Limited (PIDCL) – Recruitment Test |
+Portal Open 
+from Monday, 05.10.2026 to Tuesday, 19.10.2026 
+
+- LAT – Law Admission Test | Portal Open from Sunday, 04.10.2026 to Tuesday, 20.10.2026
+
+- USAT – Undergraduate Studies Admission Test – Portal Closed on 02.10.2026
+- HAT(MS/Phil & PhD) – Higher Education Aptitude Test – Portal Closed on 02.10.2026
+- Advertisement No. AJK-PD-67DB-6-2026 for Faculty and Administrative Positions at the University of Haveli, Kahuta, Azad Jammu and Kashmir – Portal Closed on
+30.09.2026
+- Daanish Schools Authority Recruitment 2026 for Teachers and Principals – Portal Closed on 20.09.2026
+- LAW-GAT – Law Graduate Assessment Test – Portal Closed on 27.09.2026 
+RESULTS:
+- Overseas Scholarship Test Phase-III – Result Announced for the Test Held on
+ Saturday, 19.09.2026
+Click Here to View Result
+
+- HAT (MS/MPhil & PhD) – Result Announced for the Test Held on Sunday, 30.08.2026
+Click Here to View Result
+LAT – Test Held on Sunday, 06.09.2026 – Result will be Announced on Friday, 16.10.2026 (Tentative)
+ANSWER KEYS:
+- ANSWER KEYS OF OVERSEAS SCHOLARSHIP HAT-MS & HAT-PhD Test Held on September 19, 2026
+- Answer Keys of LAT held on 06 Sept, 2026
+
+ROLL NO SLIP:
+- LAW-GAT – Law Graduate Assessment Test Scheduled on Sunday, 18 October 2026 | Roll Number Slips Generated 
+- HEC Recruitment Test | Roll Number Slips Generated
+- University of Makran, Panjgur – Recruitment Test Scheduled on Sunday, 18 October 2026 | Roll Number Slips Generated
+- Daanish Schools Authority Recruitment 2026 for Teachers and Principals – Roll Number Slips will be issued soon
+- USAT – Roll Number Slips will be issued on Friday, 16.10.2026 (Tentative)
+- HAT(MS/MPhil&PhD) – Roll Number Slips will be issued on Friday, 16.10.2026 (Tentative)
+UPCOMING TESTS:
+- HEC Recruitment Test – Electric Wheelchairs and Establishment of Pir Roshan Institute of Progressive Sciences & Technologies, Miranshah – Test will be Held on Sunday, 18 October 2026
+- University of Makran, Panjgur – Recruitment Test will be Held on Sunday, 18 October 2026
+- LAW-GAT – Law Graduate Assessment Test will be Held on Sunday, 18 October 2026
+- HAT (MS/MPhil & PhD) – Higher Education Aptitude Test will be Held on Sunday, 25 October 2026
+
+[SECTION: hec_etc_admission_tests_7_HEC_EDUCATION_TESTING_COUNCIL_ETC_PART_2]
+# HEC Education Testing Council (ETC) (part 2)
+Title: HEC Education Testing Council (ETC): HAT/GRE/LAT admission tests and the GRE/HAT mandatory-notification chain
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Education Testing Council (ETC) (part 2)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Version: ETC pages as published; notification chain 2026-05-12 -> 2026-05-24 -> 2026-10-02
+Notification / publication date: 2026-05-12
+Effective date: see note
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Notifications
+HEC
+Notifications
+
+Type
+Academic
+University
+General Public
+- Recognition of the degree awarded by foreign chartered universities/institutions through virtual/online/distance learning/Blended learning
+Friday, July 22, 2022
+- Academic
+- Deferment of Post PhD Experience for Professors and Associate Professors
+Wednesday, July 20, 2022
+- Academic
+- Extension in maximum duration of MS/MPhil/PhD/equivalent degree programs due to Covid-19
+Friday, April 15, 2022
+- Academic
+- Appointment of TTS faculty on Academic-administrative positions
+Wednesday, March 2, 2022
+- Academic
+- Withdrawal of Migration Certificate/NOC as an admission requirement to the Graduate/ Postgraduate Programs
+Monday, February 28, 2022
+- Academic
+- Collecting hard copies of PhD dissertation to register record in PhD Country Directory (PCD)
+Sunday, December 19, 2021
+- Academic
+- Salary Package for the Vice-Chancellors of Public Sector Universities
+Friday, October 22, 2021
+- University
+- Graduate Education Policy-2023 (GEP-2023)
+Monday, July 10, 2023
+- Academic
+- Applicants having CAF qualification duly verified by ICAP shall be eligible for admission in BS AF
+Wednesday, June 9, 2021
+- Academic
+- Clarification regarding TTS Leave Policy
+Friday, March 5, 2021
+- University
+- Initial appointment of faculty members on TTS
+Friday, March 5, 2021
+- University
+- Amendment of the clause 1.4.1.2 of Model Tenure Track Process Statutes
+Saturday, October 16, 2021
+- University
+- Amendment of the clause 1.1 (d) and Annexure -A of Model Tenure Track Process Statutes
+Friday, October 16, 2020
+- University
+- Transition of BA/BSc Programs to Associate Degree Programs, Phasing Out of MA/ MSc Programs
+Thursday, July 11, 2019
+- Academic
+- Acceptance of USAT (Undergraduate Studies Admission Test)
+Tuesday, July 5, 2022
+- Academic
+- The Requirement of Post-PhD Experience
+Thursday, May 25, 2023
+- Academic
+- Undergraduate Education Policy
+Wednesday, July 12, 2023
+- Academic
+- Revised Interim Placement of Fresh PhDs (IPFP) Policy
+Friday, July 21, 2023
+- Academic
+- Anti-Plagiarism Policy 2023
+Wednesday, August 2, 2023
+- Academic
+- Framework of The HEC Distinguished National Professor (DNP) Program
+Tuesday, September 30, 2025
+- Academic
+- Clarification one time relaxation based on Covid-19 Situation for completion of MS-MPhil equivalent and PhD Degree till 28.02.2023
+Tuesday, April 26, 2022
+- Academic
+- Discontinuation of HEC Approved Supervisor Post Promulgation GEP- 2023
+Friday, December 22, 2023
+- Academic
+- Open and Distance Learning: Policy Provisions and Regulatory Framework
+Wednesday, August 28, 2024
+- Academic
+- Transnational Education (TNE) Policy 2024
+Monday, September 9, 2024
+- Academic
+- Partial Relaxation in Requirement of Full-Time PhD Faculty Members to Launch MS/MPhil or Equivalent and PhD Programs in Basic Medical Sciences and Clinical Health Sciences
+Wednesday, October 2, 2024
+- Academic
+- Journals & Publications Policy 2024
+Monday, September 30, 2024
+- Academic
+- HEC National Fee Refund Policy
+Friday, December 20, 2024
+- Academic
+- Notification Framework for Appointment of Meritorious Professor in HEIs
+Tuesday, September 30, 2025
+- University
+- Notification Framework for Appointment of Professor Emeritus in HEIs
+Tuesday, September 30, 2025
+- University
+- Policy Guidelines for Appointment of Professor of Practice by the Higher Education Institution (HEIs) in Pakistan
+Tuesday, September 30, 2025
+- University
+- HEC-Notification Interim Placement of Fresh PhDs (IPFP)Phase-II
+Friday, February 21, 2025
+- University
+- Notification Post-PhD experience for appointment of Professors (08 years) and Associate Professors (04 years)
+Thursday, July 30, 2026
+- Academic
+- Framework for HEC Best Teacher Award (BUTA)
+Tuesday, September 30, 2025
+- University
+- Policy on Protection Against Harassment in Higher Education Institutions (Revised 2025)
+Tuesday, September 30, 2025
+- University
+- Guidelines for Admissibility of Leave for Professor Emeritus
+Tuesday, December 23, 2025
+- University
+- UNESCO's International Standard Classification of Education-ISCED-F
+Tuesday, January 13, 2026
+- Academic
+- HEC Journals & Publications Policy, 2024
+Monday, March 2, 2026
+- Academic
+- Guidelines for Engagement of Visiting Faculty in HEIs, 2026
+Sunday, May 17, 2026
+- University
+- Mandatory Conduct of GREHAT General & Subject Test through HEC-Education Testing Council (ETC)
+Tuesday, May 12, 2026
+- University
+- Policy on Dual, Double & Joint Degree Programmes, 2026
+Wednesday, May 13, 2026
+- University
+- Notification - Amendments in TNE Policy, 2024
+Wednesday, May 13, 2026
+- University
+- Establishment of the National Chair on AI and Robotics
+Tuesday, May 5, 2026
+- University
+- Notification - Deferred Implementation of Mandatory Conduct of GRE_HAT-General & Subject Test
+Sunday, May 24, 2026
+- General Public
+- Framework for Recognition of Liberal Arts Undergraduate Programs under the HEC Undergraduate Education Policy 2023
+Tuesday, August 4, 2026
+- Academic
+- Framework on the Use of AI (Gen-AI) Tools in HEIs
+Friday, September 4, 2026
+- University
+- HEC Notification | Salary Package for the Vice Chancellors of Public Sector Universities
+Friday, October 2, 2026
+- University
+- HEC Notification | Deferment of Post-PhD Experience Requirement until 31.12.2026
+Friday, October 2, 2026
+- University
+
+[SECTION: hec_etc_admission_tests_8_HEC_EDUCATION_TESTING_COUNCIL_ETC_PART_3]
+# HEC Education Testing Council (ETC) (part 3)
+Title: HEC Education Testing Council (ETC): HAT/GRE/LAT admission tests and the GRE/HAT mandatory-notification chain
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Education Testing Council (ETC) (part 3)
+Official page: https://www.hec.gov.pk/english/HECAnnouncements/Pages/Answer-Keys-OS-HAT.aspx
+Source file: https://www.hec.gov.pk/english/HECAnnouncements/Pages/Answer-Keys-OS-HAT.aspx
+Version: ETC pages as published; notification chain 2026-05-12 -> 2026-05-24 -> 2026-10-02
+Notification / publication date: 2026-05-12
+Effective date: see note
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Announcement
+HEC
+HEC Announcements
+Answer Keys for Overseas Scholarships HAT-MS & HAT-PhD Test Held on September 19, 2026
+-  F-26-1262-OVERSEAS SCHOLARSHIPS-HAT-MS-190926-AnswerKey-Blue.pdf
+- F-26-1262-OVERSEAS SCHOLARSHIPS-HAT-MS-190926-AnswerKey-Green.pdf
+- F-26-1262-OVERSEAS SCHOLARSHIPS-HAT-MS-190926-AnswerKey-Pink.pdf
+- F-26-1262-OVERSEAS SCHOLARSHIPS-HAT-MS-190926-AnswerKey-White.pdf
+- F-26-1262-OVERSEAS SCHOLARSHIPS-HAT-MS-190926-AnswerKey-Yellow.pdf
+- F-26-1262-OVERSEAS SCHOLARSHIPS-HAT-PHD-190926-AnswerKey-Blue.pdf
+- F-26-1262-OVERSEAS SCHOLARSHIPS-HAT-PHD-190926-AnswerKey-Green.pdf
+- F-26-1262-OVERSEAS SCHOLARSHIPS-HAT-PHD-190926-AnswerKey-Pink.pdf
+- F-26-1262-OVERSEAS SCHOLARSHIPS-HAT-PHD-190926-AnswerKey-White.pdf
+- F-26-1262-OVERSEAS SCHOLARSHIPS-HAT-PHD-190926-AnswerKey-Yellow.pdf 
+
+Download & Links
+Useful Links

@@ -1,0 +1,204 @@
+{
+  "knowledgeBase": {
+    "name": "Insaaf AI Pakistani Legal Knowledge Base",
+    "version": "1.0.0",
+    "lastUpdated": "2026-08-21",
+    "maintainer": "Insaaf AI",
+    "description": "Centralized repository of Pakistani legal knowledge for the Insaaf AI system. This knowledge base covers key domains of Pakistani law and is designed for retrieval-augmented generation (RAG) and offline fallback.",
+    "coverageClaims": {
+      "disclaimer": "This knowledge base does NOT claim to be a complete or exhaustive compilation of Pakistani law. It is a curated selection of key provisions from public legal sources for educational and legal guidance purposes.",
+      "actualCoverage": {
+        "constitutionalArticles": 27,
+        "ppcSections": 68,
+        "crpcSections": 47,
+        "cpcOrders": 29,
+        "pecaSections": 32,
+        "familyLawSections": 19,
+        "propertySections": 9,
+        "labourSections": 8,
+        "consumerSections": 7,
+        "studentSections": 7,
+        "legalAidEntries": 8,
+        "courtProcedureSections": 10,
+        "caseLawRecords": 9
+      }
+    }
+  },
+  "domains": [
+    {
+      "id": "constitution",
+      "name": "Constitutional Law",
+      "documentId": "constitution_1973",
+      "localFile": "rag/documents/constitution/constitution.txt",
+      "primaryLaw": "Constitution of Pakistan, 1973",
+      "tier": 1,
+      "sourceAuthority": "Parliament of Pakistan",
+      "sourceURL": "https://pakistancode.gov.pk",
+      "notes": "Covers Fundamental Rights (Articles 4, 8-28), Writ Jurisdiction (Articles 184, 199)"
+    },
+    {
+      "id": "ppc",
+      "name": "Criminal Law (Pakistan Penal Code)",
+      "documentId": "ppc_1860",
+      "localFile": "rag/documents/ppc/ppc.txt",
+      "primaryLaw": "Pakistan Penal Code, 1860 (Act XLV of 1860)",
+      "tier": 1,
+      "sourceAuthority": "Ministry of Law and Justice",
+      "sourceURL": "https://pakistancode.gov.pk",
+      "notes": "Covers offences against person, property, cheating, fraud, forgery, criminal breach of trust, intimidation"
+    },
+    {
+      "id": "crpc",
+      "name": "Criminal Procedure",
+      "documentId": "crpc_1898",
+      "localFile": "rag/documents/crpc/crpc.txt",
+      "primaryLaw": "Code of Criminal Procedure, 1898 (Act V of 1898)",
+      "tier": 1,
+      "sourceAuthority": "Ministry of Law and Justice",
+      "sourceURL": "https://pakistancode.gov.pk",
+      "notes": "Covers FIR, arrest, bail, remand, investigation, trial procedure, appeal"
+    },
+    {
+      "id": "cpc",
+      "name": "Civil Procedure",
+      "documentId": "cpc_1908",
+      "localFile": "rag/documents/cpc/cpc.txt",
+      "primaryLaw": "Code of Civil Procedure, 1908 (Act V of 1908)",
+      "tier": 1,
+      "sourceAuthority": "Ministry of Law and Justice",
+      "sourceURL": "https://pakistancode.gov.pk",
+      "notes": "Covers civil suit filing, pleadings, interim orders, evidence, decree, execution, appeal"
+    },
+    {
+      "id": "peca",
+      "name": "Cybercrime / Digital Rights",
+      "documentId": "peca_2016",
+      "localFile": "rag/documents/peca/peca.txt",
+      "primaryLaw": "Prevention of Electronic Crimes Act, 2016",
+      "tier": 1,
+      "sourceAuthority": "National Assembly of Pakistan",
+      "sourceURL": "https://pakistancode.gov.pk",
+      "notes": "Covers unauthorized access, cyberstalking, harassment, dignity offences, electronic fraud, FIA complaints"
+    },
+    {
+      "id": "family",
+      "name": "Family Law",
+      "documentId": "family_laws_1961",
+      "localFile": "rag/documents/family/family.txt",
+      "primaryLaw": "Muslim Family Laws Ordinance, 1961 and Related Legislation",
+      "tier": 1,
+      "sourceAuthority": "Ministry of Law and Justice",
+      "sourceURL": "https://pakistancode.gov.pk",
+      "notes": "Covers marriage, divorce (talaq/khula), maintenance, dower, custody, guardianship"
+    },
+    {
+      "id": "property",
+      "name": "Property and Tenancy Law",
+      "documentId": "property_tenancy",
+      "localFile": "rag/documents/property/property.txt",
+      "primaryLaw": "Transfer of Property Act, 1882; Registration Act, 1908; Provincial Rent Laws",
+      "tier": 1,
+      "sourceAuthority": "Ministry of Law and Justice / Provincial Governments",
+      "sourceURL": "https://pakistancode.gov.pk",
+      "notes": "Covers property transfer, registration, tenancy, eviction, mutation, property disputes, inheritance"
+    },
+    {
+      "id": "labour",
+      "name": "Labour and Employment Law",
+      "documentId": "labour_employment",
+      "localFile": "rag/documents/labour/labour.txt",
+      "primaryLaw": "Industrial Relations Act, 2012; Standing Orders Ordinance, 1968; Factories Act, 1934",
+      "tier": 1,
+      "sourceAuthority": "Ministry of Overseas Pakistanis & HRD / Provincial Labour Departments",
+      "sourceURL": "https://pakistancode.gov.pk",
+      "notes": "Covers wages, termination, harassment, EOBI, social security, working hours, leave, Labour Court"
+    },
+    {
+      "id": "consumer",
+      "name": "Consumer Protection",
+      "documentId": "consumer_protection",
+      "localFile": "rag/documents/consumer/consumer.txt",
+      "primaryLaw": "Punjab Consumer Protection Act, 2005; Sindh Consumer Protection Act, 2014",
+      "tier": 1,
+      "sourceAuthority": "Provincial Assemblies",
+      "sourceURL": "https://pakistancode.gov.pk",
+      "notes": "Covers consumer rights, defective goods, complaint procedure, Consumer Courts, PSQCA"
+    },
+    {
+      "id": "student",
+      "name": "Student and Education Rights",
+      "documentId": "student_rights",
+      "localFile": "rag/documents/student/student.txt",
+      "primaryLaw": "Constitution Article 25-A; HEC Act, 2002; Harassment Act, 2010",
+      "tier": 2,
+      "sourceAuthority": "Higher Education Commission / Ministry of Federal Education",
+      "sourceURL": "https://www.hec.gov.pk",
+      "notes": "Covers right to education, HEC attestation, university discipline, anti-harassment, scholarships, exam rights"
+    },
+    {
+      "id": "legal-aid",
+      "name": "Legal Aid and Public Resources",
+      "documentId": "legal_aid_services",
+      "localFile": "rag/documents/legal-aid/aid.txt",
+      "primaryLaw": "Legal Aid and Justice Authority Act, 2020",
+      "tier": 2,
+      "sourceAuthority": "Ministry of Human Rights / Pakistan Bar Council",
+      "sourceURL": "https://www.mohr.gov.pk",
+      "notes": "Covers DLAC, free legal aid, helplines, NGOs, ombudsman, human rights cell"
+    },
+    {
+      "id": "court-procedure",
+      "name": "Court Procedures and Practical Guides",
+      "documentId": "court_procedures",
+      "localFile": "rag/documents/procedure/procedures.txt",
+      "primaryLaw": "CrPC, CPC, and Judicial Circulars",
+      "tier": 2,
+      "sourceAuthority": "Judiciary of Pakistan",
+      "sourceURL": "https://pakistancode.gov.pk",
+      "notes": "Covers FIR procedure, bail steps, writ petition, civil/criminal trial stages, consumer/cyber/family procedures"
+    },
+    {
+      "id": "case-law",
+      "name": "Case Law and Precedents",
+      "documentId": "sc_judgments",
+      "localFile": "rag/documents/case-law/selected_judgments.txt",
+      "primaryLaw": "Selected Supreme Court Judgments",
+      "tier": 1,
+      "sourceAuthority": "Supreme Court of Pakistan",
+      "sourceURL": "https://www.supremecourt.gov.pk",
+      "notes": "9 landmark judgments covering fundamental rights, FIR, environmental rights, rule of law, elections"
+    },
+    {
+      "id": "cross_border_pakistan",
+      "name": "Pakistan + Foreign Countries / Overseas Pakistanis (Cross-Border)",
+      "documentId": "cross_border_consular",
+      "localFile": "rag/documents/cross-border/",
+      "primaryLaw": "Pakistan Citizenship Act 1951; Passport Act 1974; Emigration Ordinance 1979; Consular practice; foreign official procedures",
+      "tier": 2,
+      "sourceAuthority": "Ministry of Foreign Affairs / Ministry of Overseas Pakistanis & HRD / Bureau of Emigration & Overseas Employment / DGIP / NADRA / HEC / official foreign government sources",
+      "sourceURL": "https://www.mofa.gov.pk",
+      "notes": "Two-layer knowledge: Layer A = Pakistan law/policy/consular; Layer B = foreign official procedure relevant to a Pakistani user. Jurisdiction metadata is kept on every record and the layers are never mixed. Subdomains: travel, passport, visa, immigration basics, overseas employment, study abroad, scholarships, foreign universities, Pakistani missions, consular services, overseas Pakistani rights, attestation/legalisation/apostille, power of attorney abroad, birth/marriage/death registration abroad, dual nationality, returning to Pakistan, foreign marriage/divorce recognition, cross-border family/property/inheritance, remittance/tax routing, overseas complaints, detention/arrest abroad, lost passport, emergency consular assistance, human trafficking/migrant-worker protection, bilateral agreements, treaties, foreign policy, international organisations, cross-border remedies, extradition/mutual legal assistance. Coverage is source-driven and NOT a claim to know every country's law; time-sensitive items carry a verification date and CURRENT/CLOSED/HISTORICAL status and prefer the live official source.",
+      "documents": [
+        "cross_border_consular",
+        "cross_border_travel",
+        "cross_border_employment",
+        "cross_border_education",
+        "cross_border_diplomacy",
+        "cross_border_legal"
+      ]
+    }
+  ],
+  "sourceHierarchy": {
+    "tier1": "Official legislation, official Gazette, Supreme Court, High Courts, official government departments, official regulators",
+    "tier2": "Official Bar Councils, official court portals, official legal-aid organizations, official institutional resources (HEC, MOHR)",
+    "tier3": "Reputable academic and legal sources (not used in current corpus)"
+  },
+  "prohibitions": [
+    "Do not include private FIRs",
+    "Do not include confidential police records",
+    "Do not include private victim data",
+    "Do not include non-public evidence",
+    "Do not fabricate case numbers or statutory text",
+    "Do not use random blogs as legal authority"
+  ]
+}

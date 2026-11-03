@@ -1,0 +1,58 @@
+[ARTICLE: 25A]
+Title: Article 25A - Right to Education
+Authority: Constitution of the Islamic Republic of Pakistan, 1973
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Fundamental Constitutional Right
+Source URL: https://pakistancode.gov.pk
+
+Text:
+The State shall provide free and compulsory education to all children of the age of five to sixteen years in such manner as may be determined by law.
+
+[SECTION: HEC_HARASSMENT_POLICY]
+Title: HEC Policy on Protection Against Sexual Harassment in Higher Education Institutions
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: All Chartered Universities & Higher Education Institutions in Pakistan
+Legal Status: Active Statutory Policy Regulation
+Source URL: https://www.hec.gov.pk
+
+Key Provisions & Student Rights:
+- Scope: Applies to all students, faculty, staff, and administration in all public and private universities.
+- Inquiry Committee: Every university must constitute a 3-member Inquiry Committee (with at least one female member) to investigate harassment complaints.
+- Harassment Defined: Includes unwelcome sexual advances, requests for sexual favours, verbal or physical conduct of a sexual nature, cyber harassment, or creation of a hostile academic environment.
+- Complaint Procedure:
+  1. Student files written complaint to the University Inquiry Committee or Focal Person within 30 days of incident.
+  2. Committee must complete inquiry within 30 days and submit report to Vice Chancellor.
+  3. Penalties range from written reprimand, fine, debarring from examinations, expulsion of student, or termination of faculty/staff.
+- Ombudsperson Appeal: If university fails to act or student is dissatisfied, appeal lies to the Federal/Provincial Ombudsperson for Harassment.
+
+[SECTION: STUDENT_DUE_PROCESS_DISCIPLINE]
+Title: University Student Disciplinary Rules & Right to Fair Hearing
+Authority: Higher Education Commission / University Syndicates
+Jurisdiction: All Higher Education Institutions
+Legal Status: Administrative Regulations / Constitutional Article 10A
+Source URL: https://www.hec.gov.pk
+
+Key Student Procedural Rights:
+- Right to Notice: Student facing disciplinary charges (expulsion, rustication, debarring) must be served written show-cause notice detailing allegations.
+- Right to Explanation: Student must be given at least 7 to 14 days to submit written explanation and defense.
+- Right to Personal Hearing: Disciplinary Committee must grant student a personal hearing before imposing major penalties.
+- Right of Appeal: Student has right to appeal against disciplinary order to the Vice Chancellor / Syndicate / Appellate Authority within 15 to 30 days.
+
+[SECTION: STUDENT_FEE_REFUND_RULES]
+Title: Student Fee Refund — HEC National Policy and University Schedules
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: All Universities in Pakistan
+Legal Status: Official Policy Guidelines
+Source URL: https://www.hec.gov.pk/english/policies/Pages/Refund-Policy.aspx
+
+HEC National Fee-Refund Policy — refund of Tuition Fee (schedule at section 7.2 of the policy):
+- Upto 10th day of commencement of classes: 100% fee refund.
+- Upto 15th day of commencement of classes: 80% fee refund.
+- Upto 20th day of commencement of classes: 60% fee refund.
+- Upto 30th day of commencement of classes: 50% fee refund.
+- After the schedule above: No Refund.
+- Timelines for refund of tuition fee are inclusive of weekends.
+- Security/Deposit Fee: refundable independently of the tuition schedule above.
+
+Individual university schedules under the same policy: many HEIs publish a shorter window of their own — commonly full refund up to the 7th day of convening of classes, half refund between the 8th and 15th day and no refund after the 16th day. Those are the institution's own notified dates, not the HEC national tiers, and they must be confirmed from that university's fee notification; where they differ from the HEC schedule above, the HEC policy is the federal rule and the university notification is what a student actually applies through.
+- Transcript & Degree Release: Universities cannot withhold official transcript or degree for unearned fees or unrelated disputes once clear of legitimate dues.

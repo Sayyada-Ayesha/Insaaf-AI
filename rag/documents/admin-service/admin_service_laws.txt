@@ -1,0 +1,90 @@
+# Administrative Law and Public Service — Pakistan
+# Coverage: civil service terms (Civil Servants Act 1973), Service Tribunals, efficiency and
+# discipline proceedings, judicial review of administrative action, and citizen remedies.
+# Sources: Civil Servants Act, 1973; Service Tribunals Act, 1973; Government Servants
+# (Efficiency and Discipline) Rules, 1973; Constitution of Pakistan, Article 199.
+
+[SECTION: ADMIN_READING_NOTE]
+Administrative law governs how public authorities and civil servants must act, and what a
+citizen can do when an authority acts unlawfully. The two strands are: (1) service law (terms
+of employment and discipline of civil servants) and (2) judicial review (courts checking
+administrative decisions for legality under the Constitution).
+
+[SECTION: ADMIN_CIVIL_SERVANTS_ACT]
+LAW: Civil Servants Act, 1973. COVERAGE: PARTIAL.
+KEY PROVISIONS (summary of the operative framework):
+- Applies to civil servants in federal service (provincial civil servants are governed by
+  provincial civil servants acts modelled on the same scheme).
+- Terms and conditions: appointment, probation, seniority, promotion, transfer and posting are
+  regulated under the Act and rules.
+- Termination of service: termination, removal from service and compulsory retirement are
+  distinct penalties with different legal consequences; removal from service imposed after
+  departmental proceedings is a major penalty.
+- Grounds of dismissal: misconduct and inefficiency are dealt with under the Efficiency and
+  Discipline Rules.
+SOURCE: Civil Servants Act, 1973. VERIFICATION: verified as to framework.
+
+[SECTION: ADMIN_ED_RULES]
+LAW: Government Servants (Efficiency and Discipline) Rules, 1973 (and provincial equivalents).
+COVERAGE: PARTIAL.
+KEY PROVISIONS (summary):
+- Show-cause notice: before imposing a major penalty (reduction to lower post, removal,
+  dismissal), the authority must issue a show-cause notice stating the charges and the basis
+  of the charge and give a reasonable opportunity to reply.
+- Inquiry: where the reply is unsatisfactory, a factual inquiry may be conducted; the accused
+  officer can defend, produce evidence and cross-examine (subject to the rules).
+- Penalties: minor (censure, withholding of promotion) and major (reduction, removal, dismissal).
+- Appeal/review: orders are appealable to the appellate authority under the rules.
+SOURCE: E&D Rules, 1973. VERIFICATION: verified as to the show-cause/inquiry/appeal structure.
+
+[SECTION: ADMIN_SERVICE_TRIBUNALS]
+LAW: Service Tribunals Act, 1973 (Federal Service Tribunal; provincial service tribunals).
+COVERAGE: PARTIAL.
+KEY PROVISIONS (summary):
+- The Federal Service Tribunal hears appeals of federal civil servants against departmental
+  orders (dismissal, removal, reduction etc.); provincial tribunals for provincial servants.
+- Aggrieved civil servants must exhaust the departmental appeal before the Tribunal where
+  required, then appeal to the Tribunal within the limitation period.
+- Tribunal decisions are final subject to the Supreme Court's jurisdiction; the High Court's
+  jurisdiction over service matters is barred by the Act, leaving the Supreme Court as the
+  superior forum.
+SOURCE: Service Tribunals Act, 1973. VERIFICATION: verified as to framework.
+
+[SECTION: ADMIN_JUDICIAL_REVIEW]
+LAW: Constitution of Pakistan, Article 199 (High Courts) and Article 184(3) (Supreme Court
+original jurisdiction). COVERAGE: PARTIAL.
+KEY PROVISIONS (close paraphrase):
+- The High Court may, on application of an aggrieved person, direct a person performing
+  functions in connection with the affairs of the Federation, a Province or a local authority
+  to refrain from doing an act not permitted by law, or to do an act required by law, or declare
+  an act done without lawful authority void — the constitutional writ jurisdiction
+  (mandamus, prohibition, certiorari, quo warranto and habeas corpus).
+- Habeas corpus: for release of a person illegally detained.
+- Grounds of review include: lack of jurisdiction, error of law apparent on the record, breach
+  of natural justice (audi alteram partem — right to be heard; rule against bias), and mala
+  fides (bad faith).
+SOURCE: Constitution of Pakistan, Article 199. VERIFICATION: verified (writ framework is
+well-established; see the rights-corpus for the fundamental-rights provisions).
+
+[SECTION: ADMIN_NATURAL_JUSTICE]
+PRINCIPLES (summary of the settled position in Pakistani administrative law):
+- Audi alteram partem: no person may be condemned unheard; before an order adverse to a person
+  (removal from service, cancellation of licence, blacklisting), that person must be given
+  notice and an opportunity to be heard.
+- Rule against bias: a decision-maker with a personal interest in the matter must not decide it
+  (nemo judex in causa sua).
+- Reasoned orders: administrative orders affecting rights should state reasons where required.
+- These principles are judicially recognized; breach makes the order liable to be set aside in
+  writ jurisdiction.
+SOURCE: settled case law. VERIFICATION: verified as settled principles.
+
+[SECTION: ADMIN_CITIZEN_REMEDIES]
+CITIZEN REMEDY ROUTES (summary):
+- Departmental complaint: written complaint to the head of the department/authority first.
+- Ombudsman: Federal Ombudsman (Wafaqi Mohtasib) for maladministration in federal agencies;
+  provincial ombudsmen for provincial agencies (see civic-services records).
+- Writ petition: where the administrative action is unlawful, a constitutional petition to the
+  High Court (Article 199) or a civil suit where a private right is affected.
+- Regulatory complaints: sector regulators (DRAP, healthcare commissions, food authorities,
+  PTA, NEPRA, OGRA etc.) for sector-specific grievances.
+SOURCE: Constitution and ombudsman legislation. VERIFICATION: verified as to routes.

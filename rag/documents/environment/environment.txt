@@ -1,0 +1,33 @@
+[SECTION: 1] Pakistan Environmental Protection Act, 1997 (Act No. XXXIV of 1997) — The primary environmental law in Pakistan. Source: Pakistan Code (pakistancode.gov.pk). Status: CURRENT.
+
+[SECTION: 2] Definitions — 'Environment' includes air, water, land, forests, fisheries, wildlife, and the interrelationship between them. 'Environmental pollution' means the contamination of the environment through discharge of emissions, effluents or waste. 'Hazardous waste' includes radioactive waste.
+
+[SECTION: 3] Pakistan Environmental Protection Agency (Pak-EPA) — Pak-EPA is established as the federal regulatory authority. It has powers to: (a) conduct environmental assessment; (b) establish standards for environmental quality; (c) enforce compliance; (d) enter and inspect premises.
+
+[SECTION: 4] Provincial EPAs — Each province has established its own Environmental Protection Agency (EPA Punjab, Sindh EPA, KPK EPA, Balochistan EPA) to enforce environmental laws within the province.
+
+[SECTION: 5] Initial Environmental Examination (IEE) — Any project likely to cause adverse environmental effects must submit an IEE to the EPA. The EPA may approve, reject or require an Environmental Impact Assessment (EIA).
+
+[SECTION: 6] Environmental Impact Assessment (EIA) — Major projects must submit a comprehensive EIA to the EPA. The EPA must make the EIA publicly available. Public hearings may be conducted. Approval is required before construction begins.
+
+[SECTION: 7] Prohibition of pollution — No person shall discharge or emit any effluent, emission or waste in excess of the prescribed standards. Non-compliance attracts penalties: imprisonment up to 2 years or fine up to PKR 1 million, or both. Continuing default: additional fine of PKR 100,000 per day.
+
+[SECTION: 8] Handling of hazardous substances — No person shall import, transport, handle or dispose of hazardous substances except in accordance with regulations. Penalty: imprisonment up to 5 years and fine up to PKR 10 million.
+
+[SECTION: 9] Environmental tribunals — Federal and Provincial Environmental Tribunals are established to adjudicate environmental offences. The tribunal consists of a judicial member and a technical member. Appeals lie to the High Court.
+
+[SECTION: 10] Environmental courts — Environmental Magistrates are appointed to try environmental offences. Procedure follows the Code of Criminal Procedure.
+
+[SECTION: 11] National Environmental Quality Standards (NEQS) — NEQS have been prescribed for: industrial gaseous emissions, industrial liquid effluents, municipal liquid effluents, ambient air quality, drinking water quality, noise levels, and vehicular emissions.
+
+[SECTION: 12] Climate change — The federal government has established the Ministry of Climate Change. Pakistan is a signatory to the Paris Agreement on climate change. National Climate Change Policy 2012 and National Adaptation Plan guide climate action.
+
+[SECTION: 13] Environmental protection orders — EPA may issue environmental protection orders directing a person to: (a) cease polluting activity; (b) install pollution control equipment; (c) restore the environment; (d) pay compensation.
+
+[SECTION: 14] Forest laws — Provincial forest departments administer forests under the Forest Act 1927 as adapted. Protected forests, reserved forests, and village forests are recognized categories. Deforestation without permission is an offence.
+
+[SECTION: 15] Wildlife protection — Provincial wildlife laws protect endangered species. Hunting, trapping, or trading protected species is prohibited. National parks, wildlife sanctuaries and game reserves are protected areas.
+
+[SECTION: 16] Public interest litigation — Courts in Pakistan have recognized environmental rights as part of the right to life under Article 9 of the Constitution. Public interest litigation is an effective tool for environmental protection.
+
+[SECTION: 17] Landmark environmental case — Shehla Zia v. WAPDA (PLD 1994 SC 693): The Supreme Court held that the right to life includes the right to a pollution-free environment. Before undertaking any project that could affect the environment, the government must first conduct a proper study to assess environmental impact.

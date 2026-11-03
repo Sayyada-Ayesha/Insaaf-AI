@@ -1,0 +1,112 @@
+[SECTION: TRANSFER_PROPERTY_ACT]
+Transfer of Property Act, 1882 — Key Provisions
+The Transfer of Property Act, 1882 governs the sale, mortgage, lease, exchange, and gift of immovable property in Pakistan.
+Section 5: Transfer of Property defined — an act by which a living person conveys property, in present or in future, to one or more other living persons.
+Section 6: What may be transferred — only property of which the owner is competent to dispose may be transferred.
+Section 54: "Sale" defined — A sale is a transfer of ownership in exchange for a price paid or promised. Sale of immovable property of the value of one hundred rupees and upwards can only be made by a registered instrument.
+Section 58: Mortgage defined — Transfer of interest in specific immovable property for the purpose of securing the payment of money advanced or to be advanced by way of loan.
+Section 105: Lease defined — A lease of immovable property is a transfer of a right to enjoy such property for a certain time in consideration of a price paid or promised.
+Section 118: Exchange defined — When two persons mutually transfer the ownership of one thing for the ownership of another, neither thing or both things being money only.
+Section 122: Gift defined — Transfer of certain existing moveable or immoveable property made voluntarily and without consideration by one person (donor) to another (donee), accepted by or on behalf of the donee.
+Source: Transfer of Property Act, 1882 (Act IV of 1882); available at pakistancode.gov.pk
+
+[SECTION: REGISTRATION_ACT]
+Registration Act, 1908 — Compulsory Registration of Property Documents
+Section 17: Documents of which registration is compulsory, including:
+  (a) Instruments of gift of immovable property.
+  (b) Other non-testamentary instruments which purport or operate to create, declare, assign, limit or extinguish, whether in present or in future, any right, title or interest, whether vested or contingent, of the value of one hundred rupees and upwards, to or in immovable property.
+  (c) Non-testamentary instruments which acknowledge the receipt or payment of any consideration on account of the creation, declaration, assignment, limitation or extinction of any such right, title or interest.
+Section 18: Documents of which registration is optional — includes wills, authorities to adopt, and agreements not required to be registered.
+Section 23: Time for presenting documents — documents must be presented for registration within 4 months from date of execution.
+Section 28: Place of registration — documents relating to immovable property should be registered at the Sub-Registrar's office of the district/tehsil where the property is situated.
+Key Rule: Sale of immovable property MUST be registered. An unregistered sale deed of immovable property is inadmissible as evidence of a sale.
+Source: Registration Act, 1908 (Act XVI of 1908); available at pakistancode.gov.pk
+
+[SECTION: PUNJAB_RENTED_PREMISES_ACT]
+Punjab Rented Premises Act, 2009 (Punjab Province)
+The Punjab Rented Premises Act, 2009 governs landlord-tenant relationships in Punjab and established Rent Tribunals.
+Section 4: Fair Rent — Tribunal may determine fair rent based on location, size, amenities, and market value.
+Section 10: Grounds for Eviction — A landlord may apply to the Rent Tribunal for eviction of a tenant only on specified grounds:
+  (a) Non-payment of rent for two consecutive months.
+  (b) Subletting without written permission of the landlord.
+  (c) Causing nuisance or damage to the premises.
+  (d) Bona fide need of the premises by the landlord or close family member.
+  (e) Need for structural repairs requiring vacation of premises.
+Section 15: Order for Ejectment — Rent Tribunal passes eviction order after hearing both parties.
+Important Rules:
+- A landlord cannot forcefully evict a tenant without a Rent Tribunal order. Forceful eviction is illegal.
+- Annual rent increase is typically limited to 10% unless otherwise agreed in writing.
+- Tenant has the right to a rent receipt for every payment made.
+- Security deposit must be returned to the tenant at the end of tenancy, minus any lawful deductions for damage.
+- A tenancy agreement should be registered with the Rent Registrar under Section 12.
+Source: Punjab Rented Premises Act, 2009; Punjab Gazette.
+
+[SECTION: SINDH_RENTED_PREMISES_ORDINANCE]
+Sindh Rented Premises Ordinance, 1979
+The Sindh Rented Premises Ordinance, 1979 governs landlord-tenant relationships in Sindh.
+Section 10: No tenant shall be evicted from any rented premises except under an order of the Rent Controller.
+Grounds for eviction in Sindh:
+  - Default in payment of rent.
+  - Subletting without permission.
+  - Use of premises for a purpose other than that for which let.
+  - Causing nuisance or annoyance.
+  - Bona fide requirement of the landlord for personal occupation.
+Section 14: Controller may fix fair rent on application.
+Tenant remedies: A tenant can apply to the Rent Controller for disputes including excess rent demand, harassment, or unlawful eviction attempts.
+Source: Sindh Rented Premises Ordinance, 1979; Sindh Gazette.
+
+[SECTION: KP_URBAN_RENT_RESTRICTION]
+Khyber Pakhtunkhwa Urban Rent Restriction Ordinance, 1959
+Governs rent and tenancy in urban areas of KP.
+- Rent Controller adjudicates landlord-tenant disputes.
+- Eviction order required for any removal of tenant.
+- Fair rent may be fixed by the Rent Controller.
+- Grounds for eviction include: default in rent, sublet without permission, nuisance, personal need of landlord.
+Source: KP Urban Rent Restriction Ordinance, 1959; KP Gazette.
+
+[SECTION: MUTATION_INTEQAL]
+Mutation (Inteqal) — Land Record Transfer
+Mutation is the official process of updating the government land revenue records (Fard/Record of Rights) to reflect a new owner after a property transaction.
+Process:
+1. After execution and registration of a sale deed, the buyer applies for mutation to the local Patwari (revenue official).
+2. Revenue Officer (Tehsildar/Naib-Tehsildar) issues notice to the parties.
+3. If no objection is filed within the notice period, and the transfer is verified, mutation is sanctioned.
+4. The new owner's name is recorded in the Fard-e-Malkiat (ownership record).
+Important Distinction: Mutation does NOT create title. It is merely updating revenue records. Legal title is created by the registered sale deed.
+Mutation contestation: A person aggrieved by a wrongful mutation can file a revision before the Collector/Board of Revenue, or file a civil suit for declaration.
+Source: Board of Revenue Punjab/Sindh/KP/Balochistan; Land Revenue Act, 1967 (Punjab); West Pakistan Land Revenue Act, 1967.
+
+[SECTION: PROPERTY_DISPUTE_PROCEDURE]
+Property Dispute Resolution — Court Procedures
+1. Declaratory Suit (Section 42, Specific Relief Act, 1877): Filed in Civil Court to obtain a declaration of ownership when the defendant denies the plaintiff's title. Court fee based on value of property.
+2. Suit for Possession (Section 8, Specific Relief Act, 1877): Filed to recover possession of specific immovable property when wrongfully dispossessed. Must be filed within 6 years from dispossession.
+3. Injunction Suit (Sections 54-56, Specific Relief Act, 1877): Filed to restrain a party from interfering with property rights (temporary or permanent injunction).
+4. Suit for Partition (Partition Act, 1893): Filed in Civil Court for division of jointly-owned property among co-owners.
+5. Revenue Court / Board of Revenue: For agricultural land disputes and mutation challenges.
+6. Key Documents Required: Title deed (registered sale deed), Fard (Record of Rights/Jamabandi), mutation records, property tax receipts, Nishan-Dahi (demarcation by patwari).
+Limitation Periods: Generally 12 years for recovery of immovable property (Limitation Act, 1908, Article 144).
+Source: Specific Relief Act, 1877; Code of Civil Procedure, 1908; Partition Act, 1893; Limitation Act, 1908.
+
+[SECTION: PROPERTY_INHERITANCE]
+Inheritance of Property — Muslim Personal Law and Succession Act
+Muslim Inheritance in Pakistan is primarily governed by Muslim Personal Law (Shariat) Application Act, 1962, and the West Pakistan Muslim Personal Law (Shariat) Application Act, 1962.
+Key Rules under Islamic Law as applied in Pakistan:
+- Male heir generally receives double the share of a female heir of the same class (e.g., son receives twice daughter's share).
+- Wife's share: 1/8 if children exist; 1/4 if no children.
+- Husband's share: 1/4 if children exist; 1/2 if no children.
+- Mother's share: 1/6 if children exist; 1/3 if no children.
+- Daughter's share: 1/2 if alone; 2/3 jointly if multiple daughters (no son); otherwise daughter receives half of son's share.
+Important: Depriving a female heir (daughter, wife, sister, mother) of her lawful inheritance share is a criminal offence under PPC Section 498-A.
+Succession Certificate: For movable property (bank accounts, savings, vehicles), a Succession Certificate from the Civil Court is required for legal heirs to claim assets.
+Probate: For property left by a will/wasiyat, Probate Court processes the will.
+Source: Muslim Personal Law (Shariat) Application Act, 1962; Succession Act, 1925; PPC Section 498-A.
+
+[SECTION: STAMP_DUTY]
+Stamp Duty on Property Transactions
+Property documents in Pakistan attract Stamp Duty under the Stamp Act, 1899 (federal) and Provincial Stamp Duty Acts.
+- Stamp duty is levied on sale deeds, mortgage deeds, lease deeds, and gift deeds.
+- Rates vary by province and value of transaction.
+- Capital Value Tax (CVT) applies on purchase of immovable property above certain thresholds.
+- Under-valuation of property for stamp duty purposes attracts penalties.
+- Stamp duty must be paid before or at the time of registration of the document.
+Source: Stamp Act, 1899; Provincial Finance Acts; Federal Board of Revenue (FBR).

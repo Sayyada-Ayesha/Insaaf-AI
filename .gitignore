@@ -1,0 +1,75 @@
+node_modules/
+build/
+dist/
+coverage/
+__pycache__/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Model weights are never committed. The trained adapters are large binaries;
+# they are produced by the Colab training run and copied in by the operator.
+training/output/legal_own_v1/adapter/
+training/output/**/*.safetensors
+training/output/**/*.bin
+training/inference/__pycache__/
+
+# Rollback checkpoints are local snapshots; they are never committed or deployed.
+.checkpoint_*/
+
+# Source PDFs/images quarantined in the repo root during corpus harvesting. They
+# are provenance copies on this machine, not runtime assets.
+_gcu_dl_*
+
+# Dated RAG index backups (~87 MB) are local safety copies. The live indexes
+# (rag_index.json, local_vectors.json, islamic_index.json) remain committed
+# because the deployed backend retrieves from them at start-up.
+rag/indexes/*.backup_*.json
+
+# Local snapshot copies at the repo root — no server code reads them, so they
+# stay on this machine instead of adding ~66 MB to a deployed clone.
+/backups/
+.build_prev/
+/Temp/
+
+
+.checkpoint_20260825/
+
+# Large Colab result archives
+training/legal_own_v1/colab results/
+
+# Local and generated files
+.qoder/
+artifacts/
+audits/
+clrscr
+firebase-blueprint.json
+
+# Training files are not needed for Render deployment
+training/
+rag/training/
+rag/.staging/
+rag/corpus_expansion/archive/
+rag/corpus_expansion/backup_*/
+
+# Personal thesis exports
+docs/*.docx
+docs/*.pdf
+docs/thesis_assets/
+docs/GC LOGO.png
+
+# Local thesis and audit documents
+/docs/
+
+/docs/
+
+# Local OCR language data
+/data/
+/eng.traineddata
+/AUDIT_REPORT_2026-09-15.md
+/COMPREHENSIVE_AUDIT_REPORT.md
+/EXPANSION_REPORT.md
+/FINAL_GAP_CLOSURE_REPORT.md
+/TRAINING_READINESS_REPORT.md
+/final_training_readiness.md

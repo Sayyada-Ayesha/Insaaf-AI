@@ -1,0 +1,29 @@
+[SECTION: 1] Sale of Goods Act, 1930 (Act III of 1930) — Defines the law relating to the sale of goods in Pakistan. Source: Pakistan Code (pakistancode.gov.pk). Status: CURRENT.
+
+[SECTION: 2] Definitions — 'Buyer' means a person who buys or agrees to buy goods. 'Seller' means a person who sells or agrees to sell goods. 'Goods' means every kind of movable property other than actionable claims and money. 'Price' means the money consideration for a sale.
+
+[SECTION: 3] Sale and agreement to sell — A contract of sale may be absolute or conditional. If transfer of property in goods is immediate, it is a sale. If transfer is to occur at a future time or subject to a condition, it is an agreement to sell. An agreement to sell becomes a sale when time elapses or condition is fulfilled.
+
+[SECTION: 4] Essential elements — A valid contract of sale requires: (a) two parties (buyer and seller); (b) goods (existing or future); (c) transfer of property; (d) price (money consideration); (e) consent; (f) lawful object.
+
+[SECTION: 5] Existing and future goods — Goods may be existing (owned and possessed by seller), future (to be manufactured or acquired), or contingent (dependent on specified event). Sale of future goods operates as an agreement to sell.
+
+[SECTION: 6] Perished goods — Where goods have perished without seller's knowledge at the time of the contract, the contract is void.
+
+[SECTION: 7] Condition and warranty — A condition is a stipulation essential to the main purpose of the contract. A warranty is a stipulation collateral to the main purpose. Breach of condition may be treated as breach of warranty.
+
+[SECTION: 8] Implied conditions — Implied conditions include: (a) condition as to title (seller has right to sell); (b) condition as to description (goods correspond with description); (c) condition as to fitness for purpose; (d) condition as to merchantable quality.
+
+[SECTION: 9] Caveat emptor — There is no implied warranty or condition as to quality or fitness for any particular purpose (buyer beware). Exceptions: (a) buyer makes known the purpose; (b) goods are bought by description from a seller who deals in such goods.
+
+[SECTION: 10] Transfer of property — Property in goods passes when the parties intend it to pass. For specific goods in deliverable state: property passes when contract is made (regardless of payment or delivery).
+
+[SECTION: 11] Delivery — Delivery may be actual, constructive or symbolic. Unless otherwise agreed, delivery and payment are concurrent conditions.
+
+[SECTION: 12] Acceptance — Buyer is deemed to have accepted goods when: (a) buyer intimates acceptance; (b) goods are delivered and buyer does any act inconsistent with seller's ownership; (c) buyer retains goods beyond a reasonable time without rejection.
+
+[SECTION: 13] Rejection of goods — Buyer has the right to reject goods that do not conform to the contract. Buyer may accept part and reject part.
+
+[SECTION: 14] Remedies of seller — Seller may sue for: (a) the price if property has passed; (b) damages for non-acceptance; (c) interest on the price when due.
+
+[SECTION: 15] Remedies of buyer — Buyer may sue for: (a) damages for non-delivery; (b) specific performance; (c) damages for breach of warranty; (d) interest.

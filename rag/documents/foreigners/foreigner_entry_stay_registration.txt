@@ -1,0 +1,41 @@
+[SECTION: foreigner_entry_stay_overview]
+Title: Foreigners in Pakistan — entry, stay and registration
+This document records the official rules for a foreigner entering, staying in and registering while in Pakistan, as published by the Pakistan Online Visa System (Government of Pakistan, operated with NADRA) and related official pages. Related material: visa categories are in pakistan_visa_categories.txt; identity documents for overseas Pakistanis (NICOP) in the civic services document; immigration rules in immigration.txt. Rules change; always confirm current details on the official sites cited in each record.
+Source: Compiled from the official government pages cited in each record
+Source URL: see each record
+Status: Active guides (each verified 2026-09-06)
+
+[SECTION: foreigner_visa_validity_stay]
+Title: Visa validity and period of stay
+Visa validity is the period during which the visa can be used: all visas are valid for entry into Pakistan for six months from the date of issue, and a visa not utilized within that period becomes invalid. A foreigner may enter Pakistan at any time within the validity of the granted visa. The period of stay is counted from the date of the foreigner's arrival, not from the date of issue of the visa. Stay is governed by the residential permit issued by the foreigner registration office at the time of registration, not by the date of issue of the visa. A stay may be extended by applying for an extension of the relevant visa category.
+Source: Pakistan Online Visa System — Important Terms (official)
+Source URL: https://visa.nadra.gov.pk/important-terms/
+Status: Active (verified 2026-09-06)
+
+[SECTION: foreigner_police_registration]
+Title: Police registration of foreigners — exemption rules
+All foreigners are exempted from registration with the police EXCEPT (a) nationals of: Bangladesh, Bhutan, India, Israel, Nigeria, Palestine Liberation Organization (PLO) and Somalia; and (b) such other foreign nationals who are directed by the immigration authorities to report to the Foreigner Registration Office (FRO) for registration, in which case a stamp to this effect is affixed on their passports. However, nationals in the managerial category who are issued a Work Permit/Visa from these listed countries are exempted from police registration, except Indians and foreigners of Indian origin.
+Source: Pakistan Online Visa System — Important Terms (official)
+Source URL: https://visa.nadra.gov.pk/important-terms/
+Status: Active (verified 2026-09-06)
+
+[SECTION: foreigner_poc_pakistan_origin]
+Title: Pakistan Origin Card (POC) and identity for foreigners
+POC means Pakistan Origin Card: the national identity document issued to foreigners with Pakistan origin. It is distinct from the CNIC (Pakistan's Computerized National Identity Card for citizens) and from the NICOP (National Identity Card for Overseas Pakistanis, issued under Section 12 of the NADRA Ordinance 2000 to Pakistani citizens residing abroad, which allows visa-free entry into Pakistan, as stated on NADRA's official NICOP page). Dual nationality, in the official visa glossary, is a person's citizenship status when he/she is concurrently regarded as a citizen of more than one state.
+Source: Pakistan Online Visa System — Important Terms (official); NADRA official NICOP page
+Source URL: https://visa.nadra.gov.pk/important-terms/ ; https://www.nadra.gov.pk/identityDocument/nicop?action=new
+Status: Active (verified 2026-09-06)
+
+[SECTION: foreigner_online_visa_glossary]
+Title: Official glossary of the Pakistan Online Visa System
+Official terms used by the visa system: Applicant — the person (or persons) applying for a Pakistan Online Visa. Business Visa List — the list of business-friendly countries identified by the Government of Pakistan. CNIC — Pakistan's Computerized National Identity Card. Complete application — an application providing all information necessary for visa application processing, including all necessary supporting documents. Dependent children — a child or stepchild who has not turned 18 years of age, or, if aged 18 years or over, is a dependent; a dependent child must not have a partner or be engaged to be married. Dual nationality — a person's citizenship status when concurrently regarded as a citizen of more than one state. Deeni Madarris — educational institution for Islamic studies. DCO — District Coordination Officer. DGIP — Directorate General of Immigration and Passport. Extension — extending stay by applying for extension of the relevant visa category. FIA — Federal Investigation Agency. Housemaid — domestic servant. Immediate family — the applicant's partner and dependent children. INGO — registered international non-governmental organization in Pakistan. Journalist — journalists, correspondents or reporters representing overseas news organizations. List of Prohibited Areas — list of prohibited areas identified by the Government of Pakistan. Missionary — person sent on a religious mission in Pakistan. Negative List — the list of names of foreigners or entities developed by the Government of Pakistan to be avoided or distrusted. NGO — registered non-profit organization operating independently of government. NOC — No Objection Certificate, a legal certificate issued by any agency, organization, institute or, in certain cases, an individual. Police Registration — see the exemption rules in the police-registration record above. Tourist Friendly Countries — list of countries defined by the Government of Pakistan. Transit Visa — a visa allowing its holder to pass through a country only, not to stay there. Tabligh — a religious gathering or congregation. Visa — permission to travel to, enter and/or remain in Pakistan for a period of time. Visa on Arrival — visa provided on arrival through immigration counters in Pakistan or at Pakistani borders. Visa Validity — period during which the visa can be used (six months from date of issue for entry).
+Source: Pakistan Online Visa System — Important Terms (official)
+Source URL: https://visa.nadra.gov.pk/important-terms/
+Status: Active (verified 2026-09-06)
+
+[SECTION: foreigner_entry_refusal_and_limits]
+Title: Entry controls that apply to foreigners
+FIA (Federal Investigation Agency) is the agency of the Government of Pakistan responsible for immigration control at ports of entry; DGIP (Directorate General of Immigration and Passport) is the passport authority; NOC (No Objection Certificate) approvals are required from the competent agency for entry into or activity in notified areas. The Negative List contains names of foreigners or entities to be avoided or distrusted, and the List of Prohibited Areas restricts travel into notified areas. The foreigner registration office (FRO) issues the residential permit that governs the period of stay, and immigration authorities may direct a foreigner to report to the FRO for registration (stamped on the passport). The legal consequence of overstaying a residential permit is governed by the Foreigners Act 1946, which applies to the entry, presence and departure of foreigners in Pakistan (see also case law on bail after arrest under the Foreigners Act 1946 in the case-law records).
+Source: Pakistan Online Visa System — Important Terms (official)
+Source URL: https://visa.nadra.gov.pk/important-terms/
+Status: Active (verified 2026-09-06; overstay consequences are statute-based, see Foreigners Act 1946)

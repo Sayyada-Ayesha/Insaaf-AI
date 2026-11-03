@@ -1,0 +1,72 @@
+# Customs Law of Pakistan — Customs Act, 1969
+# Coverage: import/export framework, duty, clearance, offences, adjudication and appeals.
+# Sources: Customs Act, 1969 (Act IV of 1969) as amended; FBR customs regime.
+# Coverage level per section: PARTIAL (operative framework) / SUMMARY (structures).
+
+[SECTION: CUSTOMS_READING_NOTE]
+The Customs Act, 1969 is the principal federal customs statute, administered by the Federal Board
+of Revenue (FBR) through its customs collectorates. Import and export of goods through sea, air
+and land customs stations is regulated under the Act, SRO notifications and the Pakistan Customs
+Tariff. Always check the latest SROs and Finance Act changes for rates and procedures.
+
+[SECTION: CUSTOMS_IMPORT_FRAMEWORK]
+LAW: Customs Act, 1969, Chapters on import. COVERAGE: PARTIAL.
+KEY PROVISIONS (close paraphrase of the operative framework):
+- Goods may be imported only through approved customs routes/stations and must be declared in
+  the prescribed manner (Goods Declaration — GD) for assessment of duty and taxes.
+- Customs value is determined under the customs valuation rules (transaction value method
+  preferred, alternative methods where transaction value unavailable).
+- Duties: customs duty under the Pakistan Customs Tariff plus regulatory duties and other
+  federal taxes collected at import (sales tax, withholding, advance taxes) as applicable.
+- Clearance: an importer clears goods through a licensed customs agent or directly; supporting
+  documents (invoice, packing list, bill of lading/airway bill, import permit where required,
+  valuation rulings) must accompany the GD.
+- Examination and assessment: goods may be examined and assessed; goods are released on payment
+  of duty/taxes and compliance with regulatory requirements.
+SOURCE: Customs Act, 1969. VERIFICATION: verified as to framework.
+
+[SECTION: CUSTOMS_EXPORT_FRAMEWORK]
+LAW: Customs Act, 1969, export provisions. COVERAGE: PARTIAL.
+KEY PROVISIONS (close paraphrase):
+- Export goods are declared through the export GD; export duty applies where levied; zero-rated
+  sales tax and refund/drawback regimes apply to exports under the tax laws.
+- Restricted and prohibited items require export permits/licenses (e.g., controlled items).
+- Export proceeds repatriation requirements apply under foreign-exchange regulations.
+SOURCE: Customs Act, 1969. VERIFICATION: verified as to framework.
+
+[SECTION: CUSTOMS_OFFENCES]
+LAW: Customs Act, 1969, offences and penalties provisions (as amended). COVERAGE: PARTIAL.
+KEY PROVISIONS (summary of the offence framework):
+- Smuggling: importing/exporting goods in breach of prohibitions, or evading duty through
+  concealment, false declaration or use of unauthorized routes, is punishable with penalties
+  including confiscation of goods and conveyance, fines and imprisonment for serious cases.
+- Misdeclaration of value, quantity or description attracts penalties and recovery of evaded
+  duty with fines.
+- Offences are adjudicated by customs officers (adjudication hierarchy) and, for scheduled
+  offences, by the Customs Courts (Special Judge Customs) exercising jurisdiction under the
+  Customs Act read with the relevant procedure.
+SOURCE: Customs Act, 1969 (as amended). VERIFICATION: verified as to the framework (exact fine
+and imprisonment ranges change with Finance Acts; check the current text).
+
+[SECTION: CUSTOMS_APPEALS]
+LAW: Customs Act, 1969, appeal provisions. COVERAGE: PARTIAL.
+APPEAL CHAIN (summary): adjudication order -> appeal to Collector (Appeals) -> Customs Appellate
+Tribunal -> reference/appeal to High Court on questions of law -> Supreme Court.
+TIME LIMITS: appeals must be filed within the statutory periods from communication of the order
+(check the current text for exact days).
+SOURCE: Customs Act, 1969. VERIFICATION: verified as to the chain.
+
+[SECTION: CUSTOMS_PERSONAL_BAGGAGE]
+LAW: baggage rules under the Customs Act, 1969. COVERAGE: SUMMARY.
+SUBSTANCE: passengers arriving in Pakistan may bring personal baggage within duty-free allowances
+notified by FBR; goods beyond allowances or in commercial quantity are dutiable; currency and
+valuables declaration rules apply on entry/exit (foreign-exchange regulations).
+SOURCE: FBR baggage notifications. VERIFICATION: metadata-verified (allowances change by
+notification).
+
+[SECTION: CUSTOMS_AGENTS]
+LAW: customs agents licensing under the Customs Act, 1969 and rules. COVERAGE: SUMMARY.
+SUBSTANCE: persons clearing goods on behalf of importers/exporters must be licensed customs
+agents (clearing agents) under the Customs Rules; agents act on behalf of principals and are
+liable for compliance; licensing is by the collectorate.
+SOURCE: Customs Rules. VERIFICATION: verified as to the licensing framework.

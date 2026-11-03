@@ -1,0 +1,81 @@
+[SECTION: DLAC]
+District Legal Advisory Committees (DLACs):
+- Established under the Pakistan Bar Council Legal Aid Rules.
+- Available in every district of Pakistan.
+- Provide free legal representation to deserving litigants.
+- Eligibility: Persons who cannot afford legal representation.
+- Apply through the local District Bar Association or District Court.
+- DLAC assigns a lawyer for civil or criminal cases.
+Source: Pakistan Bar Council; Legal Practitioners and Bar Councils Act, 1973.
+Source URL: https://pakistanbarcouncil.org/
+
+[SECTION: STATE_COUNSEL]
+State-Provided Legal Counsel:
+- Under Pakistani law, the State must provide legal counsel at its own expense for accused persons in capital cases (death penalty cases) who cannot afford a lawyer.
+- In non-capital cases, the accused may apply for state counsel through the court.
+- The trial court assigns a defence counsel from the panel of lawyers maintained for this purpose.
+Source: Code of Criminal Procedure, 1898, Section 340; Constitution of Pakistan, Article 10.
+
+[SECTION: PAKISTAN_BAR_COUNCIL]
+Pakistan Bar Council Free Legal Aid:
+- Pakistan Bar Council oversees provincial bar councils and district bar associations.
+- Maintains Legal Aid Committees at national, provincial, and district levels.
+- Provides free legal assistance to indigent litigants.
+- Contact: Pakistan Bar Council, Islamabad.
+- Website: https://pakistanbarcouncil.org/
+Source: Legal Practitioners and Bar Councils Act, 1973.
+Source URL: https://pakistanbarcouncil.org/
+
+[SECTION: HELPLINES]
+Legal and Protection Helplines:
+1. Pakistan Citizen Portal: Helpline 8171 (for government complaints)
+2. Women Helpline: 1099 (National Commission on the Status of Women)
+3. Child Protection Helpline: 1121 (Child Protection Bureau, Punjab)
+4. FIA Cybercrime Complaint: 1991 (Federal Investigation Agency)
+5. Police Emergency: 15
+6. NADRA Helpline: 17101
+7. Edhi Foundation: 115
+8. Bait-ul-Maal Helpline: 0800-12345 (Pakistan Bait-ul-Maal)
+Source: Official government portals.
+
+[SECTION: NGO_LEGAL_AID]
+NGO Legal Aid Organizations:
+1. AGHS Legal Aid Cell, Lahore - Provides free legal representation in human rights cases.
+2. Legal Aid Society, Karachi - Provides legal aid to underserved communities in Sindh.
+3. Digital Rights Foundation - Provides assistance in cybercrime and online harassment cases. Helpline: 0800-39393.
+4. Aurat Foundation - Women's rights advocacy and legal assistance.
+5. War Against Rape (WAR) - Legal support for survivors of sexual violence.
+6. Sahil - Child protection and legal assistance.
+7. SPARC (Society for the Protection of the Rights of the Child) - Legal advocacy for children's rights.
+Source: Respective organization official websites.
+
+[SECTION: LEGAL_AID_ELIGIBILITY]
+Legal Aid Eligibility:
+- Any person unable to engage a lawyer due to financial constraints.
+- Priority categories: women, children, persons with disabilities, bonded labourers, religious minorities, transgender persons.
+- No income threshold is formally specified in most cases; the applying person must demonstrate financial need.
+- An affidavit declaring inability to pay may be required.
+- In criminal cases, the court may appoint counsel suo motu if the accused appears unrepresented.
+Source: Pakistan Bar Council Legal Aid Rules; Criminal Procedure Code, Section 340.
+
+[SECTION: OMBUDSMAN]
+Ombudsman (Wafaqi Mohtasib):
+- Federal Ombudsman investigates complaints of maladministration against federal government agencies.
+- Provincial Ombudsman (Mohtasib-e-Ala) investigates complaints against provincial government agencies.
+- Free of charge. No lawyer required.
+- Complaint can be filed in writing, by email, or online.
+- Ombudsman can direct the agency to rectify the issue.
+- Federal Ombudsman website: https://mohtasib.gov.pk/
+- Appeal lies to the President of Pakistan.
+Source: Establishment of the Office of Wafaqi Mohtasib (Ombudsman) Order, 1983.
+Source URL: https://mohtasib.gov.pk/
+
+[SECTION: HUMAN_RIGHTS_CELL]
+Supreme Court Human Rights Cell:
+- The Supreme Court of Pakistan operates a Human Rights Cell.
+- Citizens can write letters/complaints directly to the Chief Justice regarding fundamental rights violations.
+- The Chief Justice may convert a letter into a suo motu case under Article 184(3).
+- No fee or lawyer required.
+- Address: Supreme Court of Pakistan, Constitution Avenue, Islamabad.
+Source: Supreme Court of Pakistan.
+Source URL: https://www.supremecourt.gov.pk

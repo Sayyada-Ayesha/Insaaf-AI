@@ -1,0 +1,138 @@
+[SECTION: CIVPROC_INTRO]
+Citizen official procedures — structured workflows (steps / authority / documents / official source)
+This document records citizen-facing official procedures in a structured workflow form: what the citizen wants, which authority handles it, the numbered steps, the documents or forms needed, and the official source (all verified 2026-09-06). It complements the civic-services knowledge record (rag/documents/civic/civic_services.txt) with step-wise procedure fields, and the court procedures digest (rag/documents/procedure/procedures.txt) for the FIR-refusal escalation ladder. Fees, forms and counters change; always confirm current details on the official site cited before relying on them.
+Source: Official government pages cited per workflow (verified 2026-09-06); indexed corpus procedures where noted
+Source URL: see each record
+Status: Active guides (each verified 2026-09-06)
+
+[SECTION: CIVPROC_PASSPORT_IN_PERSON]
+Workflow: Passport — in-person application at a Regional Passport Office
+Authority: Directorate General of Immigration and Passports (DGIP), Ministry of Interior.
+Situation: New passport, renewal or modification applied in person.
+Steps: (1) arrival at the customer service counter of the Regional Passport Office; (2) photograph capture and QR-code token — bring original CNIC/Smart Card/NICOP or CRC/B-Form (under 18) with copies; (3) biometric capture — right thumb, right index, left thumb, left index; (4) data entry — verify and sign the printed data form; changes must be raised at this stage because after the Assistant Director allows "go ahead" no change is possible; give a valid mobile number/email for status via SMS 9988 / Email Rabta; (5) verification against the Exit Control List (ECL) and Black List (BL) — persons on the ECL/BL have their process stopped until removal as per rules/SOP; (6) interview and decision by the Assistant Director/Office In-charge, who may ask for more documents or refer the case to a security agency; applicants below 18 are deferred for attestation of the data form by a Government Gazetted officer (who writes CNIC/contact and affixes a by-name official stamp); (7) fee payment via QR code through digital payment platforms (e.g., EasyPaisa, JazzCash, online banking); (8) delivery at the delivery counter on the given date to the applicant personally or a blood relative, with the original token.
+Facilitation: Regional Passport Offices with a One Window desk process steps 2-5 at one desk.
+Source: Directorate General of Immigration and Passports (DGIP) — official website
+Source URL: https://dgip.gov.pk/passport/process.php
+Status: Active (page last modified 22 July 2026; verified 2026-09-06)
+
+[SECTION: CIVPROC_PASSPORT_ONLINE]
+Workflow: Passport — online application path
+Authority: DGIP (official passport portal).
+Situation: Renewal of a Pakistani passport, minor modifications, and new passports for newborns for overseas Pakistanis can be applied for online; inland applicants needing new/renewal/modification may also use the online path where offered before visiting a Regional Passport Office.
+Steps: (1) register/log in on the official DGIP passport portal; (2) select the service (renewal/newborn/modification) and fill the application; (3) upload the required documents and photograph per the portal guide; (4) pay the fee online through the QR/digital payment channel; (5) track status via SMS 9988 / Email Rabta; (6) where applicable, attend the Regional Passport Office for biometrics/verification on the scheduled appointment.
+Source: Directorate General of Immigration and Passports (DGIP) — official website
+Source URL: https://dgip.gov.pk/passport/process.php
+Status: Active (process summary of the official page; verified 2026-09-06 — always confirm portal steps on dgip.gov.pk)
+
+[SECTION: CIVPROC_NICOP]
+Workflow: NICOP — application by an overseas Pakistani
+Authority: NADRA (National Database and Registration Authority), under Section 12 of the NADRA Ordinance 2000.
+Situation: A Pakistani citizen residing abroad needs the National Identity Card for Overseas Pakistanis (NICOP) — proof of identity and nationality allowing visa-free entry into Pakistan.
+Routes: (a) PakID application — NADRA's official mobile app: create account, select "New NICOP", fill details, upload documents, visit a NADRA Registration Centre if required, track status; (b) in person at a NADRA Registration Centre (biometric verification and photograph may require a visit).
+Document categories (as NADRA states for NICOP): identity card number of parent(s)/blood relative(s), or biometric witness by an ID holder with Undertaking "B" where there is no blood relative; computerized birth certificate (verified) of the Union Council/Municipal Committee/Cantonment, or citizenship/naturalization certificate; foreign detailed/manual birth certificate or S1 form issued by a Pakistan Embassy/Mission, or citizenship/naturalization certificate; Pakistani/foreign passport, residence permit or travel document, or Undertaking "A" attested by a Pakistan Embassy/Mission; biometric verification by a parent or blood relative, or attestation of the CNICF per Regulation 9(a-h), or verification of the application form by any ID holder (for applicants applying from abroad).
+Source: National Database and Registration Authority (NADRA) — official portal
+Source URL: https://www.nadra.gov.pk/identityDocument/nicop?action=new
+Status: Active (verified 2026-09-06; fees and timelines on NADRA's fee-structure page)
+
+[SECTION: CIVPROC_CNIC_NEW]
+Workflow: CNIC — applying for the first time (new Computerised National Identity Card)
+Authority: NADRA (National Database and Registration Authority). NADRA's official CNIC page states the CNIC is "an identity document issued by NADRA under Section 9 & 10 of NADRA Ordinance, 2000" and that it "serves as official proof of a citizen's identity, nationality and legal status within Pakistan".
+Eligibility: Pakistani citizens in or out of Pakistan who have attained the age of 18 years and have either not been previously registered with NADRA or are a holder of a Child Registration Certificate (CRC) / Juvenile Card.
+Requirements: (1) identity card number of parent(s) or blood relative(s), OR biometric witness by an ID holder along with undertaking "B" (as per format) if the applicant has no blood relative — stated by NADRA as applying "for System Independent cases only"; (2) computerised birth certificate (verified) of the Union Council / Municipal Committee / Cantonment, or Citizenship / Naturalization certificate; (3) biometric verification of a parent or blood relative, OR attestation of CNICF as per Regulation 9 (a-h).
+Route through PakID (NADRA's official mobile application for identity registration and tracking): (1) download the PakID mobile app; (2) create an account or sign in; (3) select "New CNIC"; (4) fill in personal details; (5) upload required documents; (6) visit a NADRA Registration Centre (if required); (7) track the application status in the app.
+Route in person: apply at a NADRA Registration Centre. The official page states that biometric verification and photograph may require a visit to a NADRA Registration Centre.
+Card forms named on the official page: CNIC (standard Teslin-based card for adult citizens), Smart CNIC (card with a secure microchip), CNIC with QR-code (machine-readable QR-code for faster verification); the page also lists CNIC (Polycarbonate) and Urdu / Sindhi cards.
+Fees and processing time: the official page links to NADRA's fee-structure page instead of stating figures; no fee amount or processing duration is recorded here because none was verified from the source.
+Source: National Database and Registration Authority (NADRA) — official CNIC page
+Source URL: https://www.nadra.gov.pk/identityDocument/cnic
+Status: Active (page content read from the live official page on 2026-10-12)
+
+[SECTION: CIVPROC_CNIC_RENEW]
+Workflow: CNIC — renewal of an expired card
+Authority: NADRA (National Database and Registration Authority).
+Eligibility: as recorded on NADRA's official CNIC page, "As per Rule 12 of NADRA (NIC) Rules, 2002, a citizen shall at any time but not later than one month after the date of expiry or early termination of validity period, must apply for renewal of his / her card."
+Requirements: CNIC number (the only requirement listed in the Renew panel).
+Routes: NADRA Registration Centre, or the PakID app (NADRA's official mobile application for identity registration and tracking). Biometric verification and photograph may require a visit to a NADRA Registration Centre.
+Fees and processing time: the official page links to NADRA's fee-structure page instead of stating figures; no fee amount or processing duration is recorded here.
+Source: National Database and Registration Authority (NADRA) — official CNIC page (Renew)
+Source URL: https://www.nadra.gov.pk/identityDocument/cnic
+Status: Active (page content read from the live official page on 2026-10-12)
+
+[SECTION: CIVPROC_CNIC_MODIFY]
+Workflow: CNIC — update / modification or correction of card details
+Authority: NADRA (National Database and Registration Authority).
+Eligibility: as recorded on NADRA's official CNIC page, "As per Rule 13 of NADRA (NIC) Rules, 2022, a person is eligible to apply for a change in their card if he / she requires any modification or correction in the card details." (The official page cites Rule 13 of the NADRA (NIC) Rules, 2022 for this panel; the same rule number appears against the year 2002 in the Reprint / Lost panel — the discrepancy is recorded as it appears on the source and is not resolved here.)
+Requirements: the page directs the applicant to the chapter "Change / Correction in Identity Documents" of the NADRA Registration Policy available on the NADRA website; it lists no document set of its own.
+Routes: NADRA Registration Centre, or the PakID app.
+Fees and processing time: the official page links to NADRA's fee-structure page instead of stating figures.
+Source: National Database and Registration Authority (NADRA) — official CNIC page (Update / Modify)
+Source URL: https://www.nadra.gov.pk/identityDocument/cnic
+Status: Active (page content read from the live official page on 2026-10-12)
+
+[SECTION: CIVPROC_CNIC_REPRINT_LOST]
+Workflow: CNIC — reprint, or a duplicate for a lost, stolen or damaged card
+Authority: NADRA (National Database and Registration Authority).
+Eligibility: as recorded on NADRA's official CNIC page, "As per Rule 13 of NADRA (NIC) Rules, 2002, a person is eligible to apply for a duplicate card, if his / her original card has been lost, stolen, or has become damaged or unusable."
+Requirements: CNIC number (the only requirement listed in the Reprint / Lost panel).
+Routes: NADRA Registration Centre, or the PakID app.
+Limitation recorded on the source: the page states the eligibility condition only. It does not state a police-report requirement, a waiting period, or any consequence for the old card, so none is asserted here. NADRA does not publish an individual's card status on this page and this record cannot tell a citizen what their own application will be decided as.
+Fees and processing time: the official page links to NADRA's fee-structure page instead of stating figures.
+Source: National Database and Registration Authority (NADRA) — official CNIC page (Reprint / Lost)
+Source URL: https://www.nadra.gov.pk/identityDocument/cnic
+Status: Active (page content read from the live official page on 2026-10-12)
+
+[SECTION: CIVPROC_CNIC_VS_OTHER_CARDS]
+Workflow: Which NADRA identity document applies — CNIC, NICOP, CRC / Juvenile Card (B-Form), POC
+Authority: NADRA (National Database and Registration Authority).
+Distinction as recorded on NADRA's own pages: the CNIC is the identity document for a Pakistani citizen aged 18 or above, issued under Sections 9 & 10 of the NADRA Ordinance, 2000, and is the document a citizen moves to from a Child Registration Certificate (CRC) / Juvenile Card — commonly called B-Form — which is the record held before first-time CNIC registration. The NICOP (National Identity Card for Overseas Pakistanis) is a different document for a citizen residing abroad; NADRA's NICOP page attributes it to Section 12 of the NADRA Ordinance, 2000 and to visa-free entry into Pakistan, so NICOP requirements — foreign birth certificate or S1 form from a Pakistan Mission, residence permit, Undertaking "A" — must not be applied to a domestic first-time CNIC application. NADRA's own description of its credentials lists CNIC, NICOP and POC as separate documents.
+Applying the distinction: a question about a new CNIC inside Pakistan is answered from the CNIC records; a question about an overseas Pakistani's identity card is answered from the NICOP records; a question about a child's registration is answered from the CRC / Juvenile Card record.
+Source: National Database and Registration Authority (NADRA) — official CNIC and NICOP pages
+Source URL: https://www.nadra.gov.pk/identityDocument/cnic
+Status: Active (page content read from the live official pages on 2026-10-12)
+
+[SECTION: CIVPROC_VOTER]
+Workflow: Voter enrolment, transfer and correction of particulars
+Authority: Election Commission of Pakistan (ECP).
+Eligibility: (a) citizen of Pakistan; (b) at least eighteen years of age; (c) possesses a NADRA CNIC issued at any time till the last day fixed for claims/objections/applications for preparation, revision or correction of electoral rolls; (d) not declared by a competent court to be of unsound mind; (e) resident, or deemed resident under Section 27 of the Elections Act 2017, in the electoral area. An expired CNIC is deemed valid for registration and for casting a vote.
+Steps: (1) obtain the free prescribed form — Form 21 (registration/transfer of vote), Form 22 (objection/deletion), Form 23 (correction of particulars) — online or from the ECP office; (2) attach a copy of the CNIC; (3) submit to the District Election Commissioner (DEC), Registration Officer or Assistant Registration Officer of the district where enrolment is sought; (4) check enrolment status by sending the CNIC number by SMS to 8300.
+Source: Election Commission of Pakistan (ECP) — official website
+Source URL: https://ecp.gov.pk/how-to-register
+Status: Active (verified 2026-09-06)
+
+[SECTION: CIVPROC_OMBUDSMAN]
+Workflow: Complaint to the Federal Ombudsman (Wafaqi Mohtasib) against a federal agency
+Authority: Office of the Wafaqi Mohtasib (Federal Ombudsman).
+Steps: (1) obtain WMS Form 'A' (downloadable from the official website) or complain online; (2) if the complaint is not on Form 'A', accompany it with a solemn affirmation that: the allegations are true to the best of the complainant's knowledge and belief; no prior complaint on the subject was filed with the Secretariat or regional offices; no suit/appeal/petition/judicial proceedings on the subject are pending before any court, tribunal or board (and none will be entertained); and a representation to the competent authority of the agency was made but no reply was given within a reasonable time or it was unjustly turned down; (3) annex copies of relevant documents, including the CNIC and latest correspondence with the agency, where possible; (4) present the complaint at the Mohtasib Secretariat (36 Constitution Avenue, G-5/2, Islamabad) or a regional office, or submit by post/other means; (5) obtain the receipt — immediate when presented in person, within 72 hours by other means; (6) track the inquiry; the Mohtasib can direct the agency to rectify the issue (no fee, no lawyer required).
+Best practice recorded on the official page: first approach the higher authorities of the concerned agency to give them an opportunity to redress the grievance.
+Contacts: phones +92-51-9216762, +92-51-9216763, +92-51-9216764; child-complaints helpline 1056.
+Source: Office of the Wafaqi Mohtasib (Ombudsman) — official website
+Source URL: https://mohtasib.gov.pk/Detail/YzRjMTRjODYtZTU0OC00ODZmLThmN2UtZTU1YmJmNWJhOGQz
+Status: Active (verified 2026-09-06)
+
+[SECTION: CIVPROC_FIA]
+Workflow: Complaint within FIA jurisdiction and feedback on FIA services
+Authority: Federal Investigation Agency (FIA).
+Steps: (1) open the FIA Public Services Portal; (2) register a complaint regarding any unlawful activity falling within FIA's jurisdiction; (3) note the complaint reference for status tracking; (4) use the same portal to check status and to give feedback on the services provided by FIA offices and immigration counters.
+Source: Federal Investigation Agency (FIA) — Public Services Portal (official)
+Source URL: https://complaint.fia.gov.pk/
+Status: Active (verified 2026-09-06)
+
+[SECTION: CIVPROC_FIR_ESCALATION]
+Workflow: What to do when police refuse to register an FIR (escalation ladder)
+Authority: CrPC Sections 154, 22-A/22-B, 200; Constitution Article 199 (as recorded in the court procedures digest).
+Ladder: (1) written application to the SHO requesting FIR registration — keep a copy; (2) if refused, written complaint to the Superintendent of Police (SP) or Deputy Superintendent of Police (DSP) of the area (DSP Complaint Cell); (3) application to the Sessions Judge sitting as ex-officio Justice of Peace under Sections 22-A/22-B CrPC — the Sessions Judge can direct the SHO to register the FIR; (4) private complaint directly before the Magistrate under Section 200 CrPC; (5) in extreme cases, a writ petition before the High Court under Article 199; (6) complaint through the Pakistan Citizen Portal (Helpline 8171); (7) contact the IGP Complaint Cell.
+Note: an FIR must be registered for cognizable offences; refusal is a dereliction of duty (Police Order 2002 / CrPC as recorded in the police digest). The FIR itself is free of charge and the complainant is entitled to a free copy.
+Source: Indexed corpus procedures digest (rag/documents/procedure/procedures.txt) and police digest (rag/documents/police/police.txt)
+Source URL: https://pakistancode.gov.pk/ (as recorded in the digest)
+Status: Corpus-derived workflow (statutory anchors as recorded)
+
+[SECTION: CIVPROC_FOREIGNER_REGISTRATION]
+Workflow: Registration of foreigners present in Pakistan
+Authority: Foreigner registration office (FRO) framework of the Pakistan Online Visa System (Government of Pakistan/NADRA).
+Situation: Who must register — all foreigners are exempted from police registration EXCEPT nationals of Bangladesh, Bhutan, India, Israel, Nigeria, Palestine Liberation Organization (PLO) and Somalia, and any other foreign national directed by the immigration authorities to report to the FRO for registration (a stamp to this effect is affixed on the passport).
+Exemption nuance: nationals in the managerial category who are issued a Work Permit/Visa from the listed countries are exempted from police registration, except Indians and foreigners of Indian origin.
+Effect: on registration, the FRO issues the residential permit that governs the period of stay — the period of stay is counted from the date of arrival, and is governed by the residential permit, not by the date of issue of the visa.
+Steps: (1) enter Pakistan within the visa validity (six months from date of issue; unused visas become invalid); (2) report to the FRO if the passport is stamped for registration or if the holder is a national of a listed country; (3) obtain the residential permit at registration; (4) to stay beyond the permit, apply for an extension of the relevant visa category.
+Source: Pakistan Online Visa System — Important Terms (official)
+Source URL: https://visa.nadra.gov.pk/important-terms/
+Status: Active (verified 2026-09-06; FRO locations and forms per the visa portal)

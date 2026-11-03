@@ -1,0 +1,57 @@
+[SECTION: REMEDY_POLICE_FIR_REFUSAL]
+Title: Situation to Action: Police Refusing to Register FIR
+Authority: Code of Criminal Procedure, 1898
+Jurisdiction: Pakistan (All Provinces)
+Legal Status: Actionable Legal Guidance
+Source URL: https://pakistancode.gov.pk
+
+User Situation: "Police meri FIR register nahi kar rahi." / Police refusing to record crime report.
+Legal Analysis: Registration of FIR for cognizable offences (theft, robbery, assault, murder, fraud) is legally mandatory under Section 154 CrPC.
+Actionable Steps:
+1. Obtain copy of written complaint submitted to SHO.
+2. Send written complaint via registered post to SP / SSP / DPO Police.
+3. If unresolved in 7 days, file application under Section 22A(6) CrPC in District Sessions Court.
+4. Court will order SHO to register FIR. Alternatively, file direct private complaint under Section 200 CrPC before Judicial Magistrate.
+
+[SECTION: REMEDY_CYBER_BLACKMAIL]
+Title: Situation to Action: Online Blackmail and Cyber Harassment
+Authority: Prevention of Electronic Crimes Act (PECA), 2016
+Jurisdiction: Pakistan
+Legal Status: Actionable Legal Guidance
+Source URL: https://complaint.fia.gov.pk
+
+User Situation: "Someone is blackmailing me online." / "Kisi ne meri pictures hack karke blackmail shuru kar diya."
+Legal Analysis: Cyber harassment, extortion, unauthorized data copying, and modesty violation are criminal offences under PECA 2016 (Sections 13, 16, 19, 24).
+Actionable Steps:
+1. DO NOT delete evidence. Take clean screenshots of profiles, messages, numbers, and URL links.
+2. Do not yield to blackmail demands.
+3. Submit online complaint at FIA Cybercrime Wing portal: https://complaint.fia.gov.pk or call 1991 helpline.
+4. Visit nearest FIA Cybercrime Reporting Centre (CCRC) for statement recording.
+
+[SECTION: REMEDY_UNLAWFUL_EMPLOYER_TERMINATION]
+Title: Situation to Action: Termination Without Notice or Wages Withheld
+Authority: Industrial & Commercial Employment (Standing Orders) Ordinance, 1968
+Jurisdiction: Pakistan
+Legal Status: Actionable Legal Guidance
+Source URL: https://pakistancode.gov.pk
+
+User Situation: "My employer fired me without notice and is not paying my salary." / "Malik ne baghair kisi notice ke naukri se nikal diya."
+Legal Analysis: Permanent employees cannot be terminated without written notice (or 1 month salary in lieu) and due process under Standing Order 12.
+Actionable Steps:
+1. Send written grievance notice to employer within 60 days of termination.
+2. If employer fails to settle dues within 15 days, file Grievance Petition under Industrial Relations Act before Labour Court.
+3. Labour Court can order full reinstatement and back-wages.
+
+[SECTION: REMEDY_DEFECTIVE_PRODUCT_CONSUMER]
+Title: Situation to Action: Sold Defective Product / Refusing Refund
+Authority: Provincial Consumer Protection Acts (Punjab, Sindh, KP, ICT)
+Jurisdiction: Pakistan
+Legal Status: Actionable Legal Guidance
+Source URL: https://punjabcode.punjab.gov.pk
+
+User Situation: "I bought a defective product and the shopkeeper is refusing refund or warranty."
+Legal Analysis: Selling defective goods or providing substandard services violates Consumer Protection Acts.
+Actionable Steps:
+1. Send 15-day written legal notice to shopkeeper/manufacturer via registered post.
+2. If unresolved, file claim in District Consumer Court within 30 days of cause of action.
+3. NO court fee required for consumer court complaints. Court can order full refund, product replacement, and financial compensation for mental agony.

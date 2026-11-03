@@ -1,0 +1,144 @@
+[SECTION: GCUH_UG_2026_27_APPLICATION_AND_REGISTRATION_FEE]
+Title: GCU Hyderabad undergraduate admission policy 2026-27 — application process and registration/processing fee
+Authority: Government College University Hyderabad (GCUH), Directorate of Admissions
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Undergraduate Admission Policy 2026-27 (official university publication)
+Source URL: https://www.gcuh.edu.pk/downloads/admissions/GCUH-Admission-Policy-2026-27-Website.pdf
+Publishing page: https://gcuh.edu.pk/pages/undergraduate_policy.html
+Version: Undergraduate Admission Policy 2026-27 (6-page document, page footer "GCUH Admissions Policy 2026-27")
+Legal status: Active for the 2026-27 undergraduate cycle; the policy itself states that admissions are made according to rules framed by the University's statutory bodies "from time to time" and that the University "reserves the right to revise as and when deemed necessary without any notice"
+Retrieved: 2026-10-18
+Extraction note: text extracted verbatim from the official PDF with pdftotext -layout; only line wrapping was repaired. Page footers omitted.
+
+"Admissions should be advertised in the prominent newspapers of national and regional repute as well as on the University website gcuh.edu.pk and social media."
+"The candidates who intend to apply for admission to bachelor's degree programs for the academic year 2026-27 may fill in online registration / admission form at (https://adm.gcuh.edu.pk) by following given guidelines at GCUH website."
+"A valid CNIC, email address, mobile number with WhatsApp number are mandatory to complete the registration process."
+"Applicants are required to deposit Rs. 3,000/- (non-refundable) as registration/processing fee through a challan generated via the prescribed Allied Bank Limited Account No. 0010158949730040".
+"Payment may be made at any ABL branch across Pakistan or through the 1Bill option available in Mobile Banking Apps, Mobile Wallets, ATMs, etc. No other modes of payment (such as Fund Transfer, Credit Card, etc.) shall be accepted."
+"The candidate must upload a passport size picture with a white or blue background, original color scanned copies (100dpi) of all the required documents, paid bank challan or receipt of mobile banking application as indicated above."
+"The eligibility of the candidate for admission shall be decided by the University after scrutinizing the documents provided by the candidates."
+"Since the registration/admission form is legal document, any wrong information provided therein or tempering it in any other way is illegal and may result in rejection of the form out rightly."
+Scope: these are GCU Hyderabad's own rules for its own 2026-27 undergraduate cycle. They are not the rules of any other Sindh or Pakistani university, and they are not nationwide HEC requirements unless the document says so.
+
+[SECTION: GCUH_UG_2026_27_RESERVED_QUOTA_AND_SELF_FINANCE_APPLICATIONS]
+Title: GCU Hyderabad 2026-27 — reserved-quota physical application, self-finance demand draft, and confirmation challan
+Authority: Government College University Hyderabad (GCUH), Directorate of Admissions
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Undergraduate Admission Policy 2026-27
+Source URL: https://www.gcuh.edu.pk/downloads/admissions/GCUH-Admission-Policy-2026-27-Website.pdf
+Version: Undergraduate Admission Policy 2026-27
+Legal status: Active for the 2026-27 undergraduate cycle
+Retrieved: 2026-10-18
+
+"any candidate wishing to apply under any reserved quota category, including Sports Quota, Disability Quota, GCUH Employees Quota, and Religious Minorities Quota, shall be required to submit a separate physical application at the Admissions Desk, GC University Hyderabad (GCUH) along with the required supporting documents/proof for the respective quota category, such as a Disability Certificate, Sports Certificate, Employee Proof, or other relevant documents, as applicable. Admission under all reserved quota categories shall be strictly made on merit and subject to fulfillment of the prescribed eligibility criteria."
+"Self-Finance Quota: Candidates applying under the Self-Finance category shall submit a DD Demand Draft/Pay Order in favour of \"GOVERNMENT COLLEGE UNIVERSITY HYDERABAD ADMISSION FEES (UG)\" along with the separate application form at the Admissions Desk, GC University Hyderabad. Admission under the Self-Finance category shall be made strictly on merit and subject to fulfillment of the prescribed eligibility criteria. (DD will be return if not selected on merit)"
+"Armed Forces / Shuhada Quota: Seats under this quota may be allocated to eligible candidates nominated/recommended by the General Headquarters (GHQ)"
+"A candidate who is offered admission in a department/program other than his/her first preference may confirm admission in the offered department/program at any stage of the merit list by depositing the prescribed Confirmation Challan of PKR 500/- (Rupees Five Hundred only). Once a candidate confirms admission in a department/program, the confirmation shall be treated as final, and no change of department/program or transfer to another department/program shall be allowed at any later stage of the admission process."
+
+[SECTION: GCUH_UG_2026_27_PRE_ENTRY_TEST_AND_MERIT]
+Title: GCU Hyderabad 2026-27 — pre-entry test, 40% minimum and CPN merit weightage (SSC 10% / HSC 40% / PET 50%)
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Undergraduate Admission Policy 2026-27, "THE UNDERGRADUATE ADMISSION POLICY 2026-27 (MORNING /EVENING)"
+Source URL: https://www.gcuh.edu.pk/downloads/admissions/GCUH-Admission-Policy-2026-27-Website.pdf
+Version: Undergraduate Admission Policy 2026-27
+Legal status: Active for the 2026-27 undergraduate cycle
+Retrieved: 2026-10-18
+
+"In accordance with the applicable HEC Undergraduate Education Policy and the admission regulations of the University, candidates seeking admission to BS, BBA and B.Ed. (4-Year) Programs - 2026-27 shall be required to appear in the University's Pre-Entry Test. A candidate must secure at least 40% marks in the Pre-Entry Test to qualify for consideration for admission. (The University reserves the right to determine the minimum merit cut-off/closing percentage for admission to each program)"
+"The merit of eligible candidates shall be determined on the basis of their performance in the Pre-Entry Test, SSC/Matriculation, HSC/Intermediate or equivalent examinations, along with any admissible additional marks as prescribed under the University's Admission Policy. The Composite Percentage Number (CPN)/Merit Score shall be calculated by assigning the approved weightage to the Pre-Entry Test based on the table below:"
+Table as published: "Examination — Percentage": SSC (Matriculation) 10%; HSC (Intermediate) 40%; Pre-entry Test 50%.
+"Pre-Admission Entry Test slips will be available at their GCUH student account portal and also a notification sent to all eligible candidates via portal, website, official social media platforms. The candidates must print the admit slip and bring the same on the day of pre-admission entry test along with original CNIC/B-Form."
+"Appearance/passing in the pre-admission test does not mean that the candidate is eligible for admission."
+
+[SECTION: GCUH_UG_2026_27_DOMICILE_QUOTAS_AND_ADDITIONAL_MARKS]
+Title: GCU Hyderabad 2026-27 — board domicile requirement, other-province quota, Hifz-e-Quran 20 additional marks, sports trials
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Undergraduate Admission Policy 2026-27, "GENERAL INSTRUCTIONS & REGULATIONS UG ADMISSIONS (MORNING /EVENING)"
+Source URL: https://www.gcuh.edu.pk/downloads/admissions/GCUH-Admission-Policy-2026-27-Website.pdf
+Version: Undergraduate Admission Policy 2026-27
+Legal status: Active for the 2026-27 undergraduate cycle
+Retrieved: 2026-10-18
+
+"The candidates who have passed HSC Part-II from B.I.S.E. Hyderabad / Karachi / Mirpurkhas / Larkana / Sukkur, Shaheed Benazirabad or any board shall have domicile of Sindh Province."
+"Candidates belonging to other provinces of Pakistan may apply under the respective provincial quota, subject to the prescribed eligibility criteria and availability of seats."
+"Any quota allocated for different regions of Pakistan, or any other quota announced or prescribed by the Government of Pakistan and/or HEC, shall be followed and implemented by the University, subject to the applicable rules, regulations, and eligibility criteria."
+"In case any seats remain vacant under any reserved quota, such seats shall be transferred to the candidates of Hyderabad Board strictly on merit basis, subject to fulfillment of the prescribed eligibility criteria and University rules."
+"Sports quota seats will be filled on the basis of trials conducted for the candidates and recommendations made by the Directorate of Sports, GCUH."
+"20 marks will be awarded in HSSC to the candidates who have completed Hifz-e-Quran, provided that they produce SANAD/Certificate from registered Madressah and other necessary requirements."
+"The foreign national candidates must be nominated/ recommended by the Ministry of Education/Ministry of Finance & Economic Affairs Division, Government of Pakistan, Islamabad and HEC. (Equivalent certificate is required from BCCI)"
+"A candidate who has not passed an examination from BISE any board shall have to obtain Certificate of Eligibility prior to his/her admission to any class. However, the Registrar may issue a provisional admission certificate if he is satisfied that the applicant is prima facie eligible for admission to this University. At his/her OWN RISK AND COST and on the condition that he/she obtains a final certificate of eligibility within 30 days from the date of admission."
+
+[SECTION: GCUH_UG_2026_27_LEFTOVER_SEATS_AND_NON_PAYMENT]
+Title: GCU Hyderabad 2026-27 — leftover seats, board-wise merit lists and consequence of non-payment of fees
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Undergraduate Admission Policy 2026-27
+Source URL: https://www.gcuh.edu.pk/downloads/admissions/GCUH-Admission-Policy-2026-27-Website.pdf
+Version: Undergraduate Admission Policy 2026-27
+Legal status: Active for the 2026-27 undergraduate cycle
+Retrieved: 2026-10-18
+
+"any seat remaining vacant due to non-payment of fees within the prescribed time limit shall be treated as a leftover seat and filled according to the prescribed procedure. Candidates whose seats are cancelled due to non-payment of fees, for any reason whatsoever, shall have no claim to admission and shall not challenge the admission of any other candidate selected against such vacant seat, whether in a quota-oriented course or any other course of study opted by him/her."
+"Candidates who secure admission under Self Finance, quota, or any other reserved category and deposit the prescribed fee shall not be entertained for transfer or adjustment to another category/merit seat if their CPN appears in any subsequent merit list. Their admission shall remain final in the category under which the fee has been deposited."
+"The merit lists Board Wise shall be published for admissions. In case seats remain vacant after the publication of the final merit list due to non-payment of fees or any other reason, a leftover merit list may be published to fill the remaining vacant seats for Hyderabad Board based on merit criteria."
+"The GCUH authority reserves the right to fill the leftover seats in any BISE Boards/categories from waiting list candidates of BISE Hyderabad on a merit basis."
+
+[SECTION: GCUH_UG_2026_27_FRAUD_CONSEQUENCES]
+Title: GCU Hyderabad 2026-27 — forged or false documents: degree cancellation, three-year debarment and forfeiture
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Undergraduate Admission Policy 2026-27, item xiii
+Source URL: https://www.gcuh.edu.pk/downloads/admissions/GCUH-Admission-Policy-2026-27-Website.pdf
+Version: Undergraduate Admission Policy 2026-27
+Legal status: Active for the 2026-27 undergraduate cycle
+Retrieved: 2026-10-18
+
+"GCUH has zero tolerance for submission of fraudulent or forged documents or for misrepresentation of any kind by applicants. In case of provision of wrong or false information, the applicant shall be held responsible, and the University reserves the right to cancel the degree of such a candidate, at any stage, who succeeds in getting admission by submitting forged / false document(s) or making false entries or take any other action as deemed appropriate. Additionally, they may also be debarred for a period of three years for future admission and all payments made to the University shall be forfeited in favor of the University."
+
+[SECTION: GCUH_UG_2026_27_ATTENDANCE_SESSIONS_AND_ID_RULES]
+Title: GCU Hyderabad 2026-27 — 75% attendance floor to appear in examinations, morning/evening session times, ID card and bonafide fees
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Undergraduate Admission Policy 2026-27, "GENERAL INFORMATION & INSTRUCTIONS (MORNING /EVENING)"
+Source URL: https://www.gcuh.edu.pk/downloads/admissions/GCUH-Admission-Policy-2026-27-Website.pdf
+Version: Undergraduate Admission Policy 2026-27
+Legal status: Active for the 2026-27 undergraduate cycle
+Retrieved: 2026-10-18
+
+"GC University Hyderabad operates only two teaching sessions, namely the Morning Session (8:30 AM onwards) and the Evening Session (3:00 PM onwards)."
+"All students are required to wear and visibly display their University Student Identity Card while on campus."
+"All 3 credit hour classes should be split into 2 that is 1.5 hr class for each."
+"All students of GC University Hyderabad must maintain a minimum of 75% attendance to be eligible to appear in examinations."
+"In case of loss of a Student ID Card, the student shall be required to deposit a fee of Rs. 500/- through the prescribed challan form for issuance of a duplicate Student ID Card. Similarly, for issuance of a Bonafide Certificate, a fee of Rs. 250/- shall be deposited through the prescribed challan form."
+"Students are required to use the GCUH Campus Management System (CMS) for generating/downloading challan forms and uploading paid challans through their student portal for record purposes and further processing."
+
+[SECTION: GCUH_UG_2026_27_ADMISSION_CANCELLATION_AND_REFUND_ROUTE]
+Title: GCU Hyderabad 2026-27 — how an admission is cancelled and when a fee refund is available
+Authority: Government College University Hyderabad (GCUH), Directorate of Admissions
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Undergraduate Admission Policy 2026-27
+Source URL: https://www.gcuh.edu.pk/downloads/admissions/GCUH-Admission-Policy-2026-27-Website.pdf
+Version: Undergraduate Admission Policy 2026-27
+Legal status: Active for the 2026-27 undergraduate cycle
+Retrieved: 2026-10-18
+
+"For cancellation of admission, the candidate/student shall submit an application to the Director Admissions through the concerned Head of Department and Dean of the Faculty for further processing."
+"Admission Letter shall be issued to candidates upon completion of all required admission formalities."
+"An applicant who is already registered or admitted in any degree program at GC University Hyderabad shall be required to cancel their existing admission on or before the closing date of admissions for the current session. Failure to do so may result in the cancellation of the new application/admission, and any fee deposited shall not be refundable."
+"A candidate who secures admission by paying the prescribed fee against a seat and subsequently applies for cancellation of provisional admission shall be eligible for a fee refund in accordance with the latest HEC Fee Refund Policy."
+Note on the national/institutional boundary: GCU Hyderabad does not set its own refund tiers here — it refers the refund to the HEC Fee Refund Policy. The tier-by-tier refund percentages are HEC's national rule (see the indexed HEC fee-refund records), not a GCU Hyderabad rule, and the registration/processing fee of Rs. 3,000/- is expressly stated to be non-refundable by GCUH.
+
+[SECTION: GCUH_UG_2026_27_HSC_GROUP_TO_PROGRAM_ELIGIBILITY]
+Title: GCU Hyderabad 2026-27 — which HSC group opens which BS programme (eligibility table)
+Authority: Government College University Hyderabad (GCUH)
+Jurisdiction: Pakistan (Sindh — GCU Hyderabad, institution-specific)
+Source: GCUH Undergraduate Admission Policy 2026-27, "GENERAL ELIGIBILITY CRITERIA (MORNING / EVENING PROGRAMS)"
+Source URL: https://www.gcuh.edu.pk/downloads/admissions/GCUH-Admission-Policy-2026-27-Website.pdf
+Version: Undergraduate Admission Policy 2026-27
+Legal status: Active for the 2026-27 undergraduate cycle
+Retrieved: 2026-10-18
+
+Table as published, "HSC / Intermediate — Eligible BS Programs / Departments". Under group 1 Pre-Medical the document lists: BS English Language and Literature, BS Sindhi, BS Urdu, Bachelor of Education (B.Ed), BS Political Science, BS Islamic Studies, BS Computer Science, BS Information Technology, BS Artificial Intelligence, BBA Business Administration, BS Botany, BS Chemistry, BS Physics, BS Zoology, BS Biochemistry, BS Biotechnology, BS Economics, BS Microbiology.
+Extraction gap: the eligibility table continues past the group shown here, but the remaining group rows did not survive text extraction as a reliably attributable table (the PDF renders them as a merged multi-column block), so only the first published row group is recorded. Nothing has been inferred for the other groups; read the full table at the source URL above.

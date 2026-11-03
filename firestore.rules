@@ -1,0 +1,147 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default Deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // --- Helpers ---
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    // Read from the verified ID token claim, never from a document a client
+    // could write. Only the Admin SDK provisioning step sets it.
+    function isAdministrator() {
+      return isSignedIn() && request.auth.token.role == 'administrator';
+    }
+
+    // --- User-Owned Resources ---
+    match /users/{userId} {
+      allow read, write, create, update: if isOwner(userId);
+
+      match /chats/{chatId} {
+        allow read, write, create, update, delete: if isOwner(userId);
+
+        match /messages/{messageId} {
+          allow read, write, create, update, delete: if isOwner(userId);
+        }
+      }
+
+      match /drafts/{draftId} {
+        allow read, write, create, update, delete: if isOwner(userId);
+      }
+    }
+
+    // --- Public Lawyer Directory ---
+    match /lawyers/{lawyerId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // --- Public Legal Aid Organizations ---
+    match /legalAidOrganizations/{orgId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // --- Public Emergency Contacts ---
+    match /emergencyContacts/{contactId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // --- Support Requests / Contact Form ---
+    // A visitor asking for legal help is unauthenticated by design, so the write
+    // stays open — but only in the exact shape the contact form submits. Field
+    // validation is what turns "anyone can write here" into "anyone can file one
+    // enquiry", and it stops the collection being used as general-purpose storage
+    // or as a dump for very large payloads.
+    match /supportRequests/{requestId} {
+      // The form sends userId: null for a visitor. A null must pass; a value can
+      // only ever be the caller's own uid, so nobody can file enquiries as
+      // someone else. (Reading request.auth.uid when auth is null would make the
+      // whole rule error out and reject the anonymous submission.)
+      function validRequesterUserId() {
+        let uid = request.resource.data.userId;
+        return uid == null || (request.auth != null && request.auth.uid == uid);
+      }
+
+      function validSupportRequest() {
+        let d = request.resource.data;
+        return d.keys().hasAll(['message', 'createdAt', 'status', 'name', 'email', 'source', 'userId'])
+          && d.keys().hasOnly(['message', 'createdAt', 'status', 'name', 'email', 'source', 'userId'])
+          && d.message is string
+          && d.message.size() >= 10
+          && d.message.size() <= 2000
+          && d.name is string
+          && d.name.size() <= 120
+          && d.email is string
+          && d.email.size() <= 254
+          && (d.email == '' || d.email.matches('^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$'))
+          && d.status == 'new'
+          && d.source is string
+          && d.source.size() <= 60
+          && d.createdAt is int
+          && d.createdAt > request.time.toMillis() - 24 * 60 * 60 * 1000
+          && d.createdAt < request.time.toMillis() + 60 * 60 * 1000
+          && validRequesterUserId();
+      }
+
+      allow create: if validSupportRequest();
+      // The queue is answered from the Firebase Console / an Admin SDK process,
+      // not from a browser. Nothing here is client-readable.
+      allow read, update, delete: if false;
+    }
+
+    // --- Civic Issues (citizen service reports) ---
+    // Writes go through /api/civic, which verifies the caller's ID token and
+    // derives the owner uid from it. A browser therefore reads rather than
+    // writes: an owner sees their own report, an administrator sees the queue,
+    // and nobody — administrator included — can delete a filed report from a
+    // client. Status transitions are audited server-side.
+    match /civicIssues/{issueId} {
+      allow read: if isOwner(resource.data.ownerUid) || isAdministrator();
+      allow create, update, delete: if false;
+    }
+
+    // --- Community posts ---
+    // Same shape as civicIssues: only /api/community writes, after verifying the
+    // ID token. A browser may read a post that is already approved (that is what
+    // the public feed is), its own posts in any state, and — for an
+    // administrator — everything, so the review queue can be served.
+    // A member can never promote their own post out of `pending`, report a
+    // decision, or edit the audit trail from a client.
+    match /communityPosts/{postId} {
+      allow read: if isSignedIn() && (
+        isAdministrator()
+        || resource.data.ownerUid == request.auth.uid
+        || resource.data.status == 'approved'
+      );
+      allow create, update, delete: if false;
+    }
+
+    // Strike state is written only by an administrator's decision on the server.
+    // The member may read their own standing; nobody else may read it, and no
+    // client can lower a violation count or lift a suspension.
+    match /communityMembers/{memberId} {
+      allow read: if isOwner(memberId) || isAdministrator();
+      allow create, update, delete: if false;
+    }
+
+    // Who changed a role, an account status or a feedback ticket, and why.
+    // Append-only from a browser's point of view: an administrator reads the
+    // history through /api/admin/audit and never edits or erases it from a client.
+    match /adminAudit/{auditId} {
+      allow read: if isAdministrator();
+      allow create, update, delete: if false;
+    }
+  }
+}
+
+

@@ -1,0 +1,47 @@
+[SECTION: LHC_INDEX_2026_INDEX]
+Lahore High Court, Lahore — Official Judgment Index (metadata-only records) — corpus document (2026-09-06). Each section is one official judgment record (FULL_TEXT_VERBATIM or METADATA_ONLY) with fields as displayed on the official court repository; full-text sections carry the complete verbatim judgment text extracted from the official PDF.
+Court: Lahore High Court, Lahore.
+Source: Lahore High Court official website.
+Source URL: https://data.lhc.gov.pk/reported_judgments/judgments_approved_for_reporting
+Status: Verified official court records (verified 2026-09-06).
+[SECTION: LHC_IDX_001]
+Court: Lahore High Court, Lahore. Case No: Crl. Misc. 33164/26. Title: Crl. Misc. 33164/26 (Iftikhar Ahmad Vs The State etc). Author Judge: Mr. Justice Muhammad Amjad Rafiq. Judgment Date (as displayed): 24-07-2026. Citation (as displayed): 2026LHC4824. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://sys.lhc.gov.pk/appjudgments/2026LHC4824.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: LHC_IDX_002]
+Court: Lahore High Court, Lahore. Case No: Crl. Misc. 41170/26. Title: Crl. Misc. 41170/26 (Muhammad Tahir Vs The State etc). Author Judge: Mr. Justice Muhammad Amjad Rafiq. Judgment Date (as displayed): 24-07-2026. Citation (as displayed): 2026LHC4814. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://sys.lhc.gov.pk/appjudgments/2026LHC4814.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: LHC_IDX_003]
+Court: Lahore High Court, Lahore. Case No: Crl. Appeal 31263/22. Title: Crl. Appeal 31263/22 (Manazir Ali Vs The State etc). Author Judge: Mr. Justice Syed Shahbaz Ali Rizvi. Judgment Date (as displayed): 24-07-2026. Citation (as displayed): 2026LHC4807. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://sys.lhc.gov.pk/appjudgments/2026LHC4807.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: LHC_IDX_004]
+Court: Lahore High Court, Lahore. Case No: Criminal Proceedings 41376/26. Title: Criminal Proceedings 41376/26 (Faisal Manzoor Vs District & Sessions Judge etc). Author Judge: Mr. Justice Farooq Haider. Judgment Date (as displayed): 21-07-2026. Citation (as displayed): 2026LHC4800. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://sys.lhc.gov.pk/appjudgments/2026LHC4800.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: LHC_IDX_005]
+Court: Lahore High Court, Lahore. Case No: Crl. Misc. 39870/26. Title: Crl. Misc. 39870/26 (Umer Farooq alias Ahtisham Vs The State etc). Author Judge: Mr. Justice Muhammad Tariq Nadeem. Judgment Date (as displayed): 21-07-2026. Citation (as displayed): 2026LHC4789. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://sys.lhc.gov.pk/appjudgments/2026LHC4789.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: LHC_IDX_006]
+Court: Lahore High Court, Lahore. Case No: Crl. Appeal 20513/21. Title: Crl. Appeal 20513/21 (Abid Ali Vs The State etc). Author Judge: Mr. Justice Tariq Mahmood Bajwa. Judgment Date (as displayed): 21-07-2026. Citation (as displayed): 2026LHC4772. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://sys.lhc.gov.pk/appjudgments/2026LHC4772.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: LHC_IDX_007]
+Court: Lahore High Court, Lahore. Case No: Family 20300/23. Title: Family 20300/23 (Arslan . Vs Nisha Shahid etc). Author Judge: Mr. Justice Mohsin Akhtar Kayani. Judgment Date (as displayed): 20-07-2026. Citation (as displayed): 2026LHC4758. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://sys.lhc.gov.pk/appjudgments/2026LHC4758.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: LHC_IDX_008]
+Court: Lahore High Court, Lahore. Case No: Civil Revision 20710/20. Title: Civil Revision 20710/20 (Mushtaq Ahmad etc Vs POP Through DC etc). Author Judge: Mr. Justice Mohsin Akhtar Kayani. Judgment Date (as displayed): 20-07-2026. Citation (as displayed): 2026LHC4741. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://sys.lhc.gov.pk/appjudgments/2026LHC4741.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: LHC_IDX_009]
+Court: Lahore High Court, Lahore. Case No: Family 40585/26. Title: Family 40585/26 (Muhammad Iqbal Afzal Vs Judge Family Court etc). Author Judge: Mr. Justice Mohsin Akhtar Kayani. Judgment Date (as displayed): 20-07-2026. Citation (as displayed): 2026LHC4731. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://sys.lhc.gov.pk/appjudgments/2026LHC4731.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: LHC_IDX_010]
+Court: Lahore High Court, Lahore. Case No: Civil Revision 182375/18. Title: Civil Revision 182375/18 (Lesco etc Vs Sardar Muhammad Yaseen). Author Judge: Mr. Justice Mohsin Akhtar Kayani. Judgment Date (as displayed): 20-07-2026. Citation (as displayed): 2026LHC4722. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://sys.lhc.gov.pk/appjudgments/2026LHC4722.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: LHC_IDX_011]
+Court: Lahore High Court, Lahore. Case No: Development Authorities 49830/22. Title: Development Authorities 49830/22 (AGRICS Cooperative Housing Society Limited Vs Province of Punjab etc). Author Judge: Mr. Justice Raheel Kamran. Judgment Date (as displayed): 15-07-2026. Citation (as displayed): 2026LHC4699. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://sys.lhc.gov.pk/appjudgments/2026LHC4699.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: LHC_IDX_012]
+Court: Lahore High Court, Lahore. Case No: Criminal Proceedings 30718/26. Title: Criminal Proceedings 30718/26 (Muhammad Abid Vs The State etc). Author Judge: Justice Abher Gul Khan. Judgment Date (as displayed): 15-07-2026. Citation (as displayed): 2026LHC4694. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://sys.lhc.gov.pk/appjudgments/2026LHC4694.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: LHC_IDX_013]
+Court: Lahore High Court, Lahore. Case No: Writ Petition-Religion-License of Tazia 5411-22. Title: Writ Petition-Religion-License of Tazia 5411-22 (SYED MUJEEB ALI GILLANI VS PROVINCE OF PB. ETC.). Author Judge: Mr. Justice Anwaar Hussain. Judgment Date (as displayed): 15-07-2026. Citation (as displayed): 2026LHC4681. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://sys.lhc.gov.pk/appjudgments/2026LHC4681.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: LHC_IDX_014]
+Court: Lahore High Court, Lahore. Case No: Misc. Writ 42647/26. Title: Misc. Writ 42647/26 (Ms Al-Kabir Town Ptv Ltd. through Ammad Naseer Chaudhary Vs Muhammad Azam etc). Author Judge: Mr. Justice Muzamil Akhtar Shabir. Judgment Date (as displayed): 14-07-2026. Citation (as displayed): 2026LHC4672. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://sys.lhc.gov.pk/appjudgments/2026LHC4672.pdf. Verified: 2026-09-06 against the official court repository.

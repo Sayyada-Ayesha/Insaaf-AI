@@ -1,0 +1,33 @@
+[SECTION: 1] Expanded Legal Procedures and Workflows — Comprehensive step-by-step legal procedures. Sources: CrPC, CPC, Family Courts Act, provincial laws. Status: CURRENT.
+
+[SECTION: 2] Pre-arrest bail procedure — (1) File application before Sessions Court (or High Court) under CrPC Section 498-A. (2) Notice to prosecutor. (3) Court may grant bail with or without surety. (4) For anticipatory bail: show that arrest is apprehended and not on reasonable grounds. (5) If granted: complies with bail bond, surrenders passport, regular appearance.
+
+[SECTION: 3] Post-arrest bail procedure — (1) File bail application in trial court (Magistrate/Sessions). (2) If refused: file in Sessions Court (if from Magistrate) or High Court. (3) Prosecutor may oppose on grounds of gravity, evidence, flight risk. (4) Court considers: nature of offence, evidence, criminal record, community ties. (5) Bail granted with/without surety and conditions.
+
+[SECTION: 4] Constitutional writ petition procedure (Article 199) — (1) File petition in High Court with supporting affidavit. (2) Relief sought: certiorari (quash orders), mandamus (compel performance), prohibition (restrain proceedings), habeas corpus (produce detainee), quo warranto (challenge appointment). (3) Court issues notice to respondents. (4) Hearing: interim relief may be granted. (5) Final order: petition allowed or dismissed.
+
+[SECTION: 5] Civil suit procedure — (1) Filing of plaint in Civil Court (within limitation period). (2) Court issues summons to defendant (Order 5 CPC). (3) Defendant files written statement (Order 8 CPC) within 30 days. (4) Issues framed by court (Order 14). (5) Plaintiff's evidence (examination-in-chief, cross-examination). (6) Defendant's evidence. (7) Arguments. (8) Judgment and decree. (9) Execution of decree (Order 21).
+
+[SECTION: 6] Criminal trial procedure — (1) FIR registration. (2) Investigation (Section 156-173 CrPC). (3) Challan (police report) filed in court. (4) Framing of charge (Section 221-240). (5) Prosecution evidence. (6) Statement of accused (Section 342). (7) Defense evidence. (8) Arguments. (9) Judgment: conviction or acquittal. (10) Sentence hearing if convicted.
+
+[SECTION: 7] Appeal procedure — Criminal appeal: (a) Sessions Court to High Court: 30 days; (b) High Court to Supreme Court: 30 days (leave to appeal). Civil appeal: (a) Civil Judge to District Judge: 30 days; (b) District Judge to High Court: 90 days; (c) High Court to Supreme Court: 90 days (subject to substantial question of law).
+
+[SECTION: 8] Execution petition procedure — (1) File execution application under Order 21 CPC in the court that passed the decree. (2) Court issues notice to judgment debtor. (3) Modes of execution: (a) delivery of property; (b) attachment and sale of property; (c) arrest and detention of judgment debtor; (d) appointment of receiver. (4) Garnishee orders against third parties.
+
+[SECTION: 9] Legal notice procedure — (1) Draft notice: state facts, legal basis, demand/relief sought. (2) Send via registered post (AD) and courier with acknowledgment. (3) Mandatory for: consumer complaints (15 days), cheque cases (30 days), breach of contract, property disputes. (4) Recipient must respond within specified time. (5) Failure to comply: file suit/complaint.
+
+[SECTION: 10] FIA complaint procedure — (1) Visit FIA office or lodge online complaint through FIA Portal. (2) For cybercrime: call 1991 or file at website fia.gov.pk. (3) Complaint must state: details of incident, evidence, suspect details (if known). (4) FIA evaluates and may register FIR. (5) Investigation by FIA cybercrime wing.
+
+[SECTION: 11] NAB complaint procedure — (1) File complaint at any NAB regional office or NAB website. (2) Provide details of alleged corruption, evidence, identity. (3) NAB verifies complaint (Verification stage). (4) Inquiry by Combined Investigation Team (CIT). (5) If prima facie case: Investigation follows. (6) Reference filed in Accountability Court.
+
+[SECTION: 12] Company registration procedure (SECP) — (1) Reserve company name through SECP e-Services. (2) File incorporation documents: memorandum and articles of association, consent of directors, declaration of compliance, registered office address. (3) Pay registration fee and stamp duty. (4) SECP issues Certificate of Incorporation within 24 hours (e-services). (5) Obtain NTN, register for Sales Tax (if required).
+
+[SECTION: 13] Inheritance procedure — (1) Death certificate. (2) Collect Fard (land record), bank details, property documents. (3) File application for succession certificate in Family Court. (4) Notice to all heirs (public notice if some unknown). (5) Court determines legal heirs and shares. (6) Grant of succession certificate. (7) Mutation (Inteqal) at Board of Revenue for land. (8) Transfer of bank accounts, shares.
+
+[SECTION: 14] Family Court procedure — (1) File petition (khula, maintenance, custody, etc.) in Family Court. (2) Court attempts conciliation (Section 12 Family Courts Act). (3) If conciliation fails: recording of evidence. (4) DNA test may be ordered for parentage disputes. (5) Judgment: Family Court must decide within 6 months. (6) Appeals to High Court.
+
+[SECTION: 15] Consumer court procedure — (1) File complaint in writing to District Consumer Court (no court fee or nominal). (2) Complaint must state: facts, deficiency of goods/services, relief sought. (3) Pre-notice to opposite party (15 days). (4) Court issues notice to respondent. (5) Summary trial. (6) Decision within 90 days. (7) Appeal to Provincial Consumer Commission within 30 days.
+
+[SECTION: 16] Labour court procedure — (1) File statement of claim in Labour Court. (2) For wrongful termination: within 30 days of termination. (3) Court issues notice to employer. (4) Conciliation may be attempted by Labour Department. (5) Trial: evidence, arguments. (6) Decision within 12 months. (7) Appeal to Labour Appellate Tribunal within 30 days.
+
+[SECTION: 17] Police complaint procedure — (1) Write complaint to SHO of concerned police station. (2) If FIR not registered: complaint to DPO/DSP. (3) District Public Safety Commission complaint. (4) Application under Section 22-A/22-B CrPC to Sessions Judge. (5) Writ petition to High Court under Article 199.

@@ -1,0 +1,33 @@
+[SECTION: 1] Court Hierarchy and Structure in Pakistan — The judicial system of Pakistan established under the Constitution of Pakistan 1973, Article 175: Courts are independent and separate from the executive. Source: Constitution, Law and Justice Commission.
+
+[SECTION: 2] Supreme Court of Pakistan — The apex court under Article 175. Composition: Chief Justice of Pakistan and other judges. Jurisdiction: (a) Original (Article 184): fundamental rights of public importance (suo motu); (b) Appellate (Article 185): appeals from High Courts; (c) Advisory (Article 186): Presidential reference; (d) Review (Article 188): review of its own judgments.
+
+[SECTION: 3] High Courts — Each province has a High Court under Article 175 read with Article 192-203: (1) Lahore High Court (Punjab); (2) Sindh High Court (Karachi); (3) Peshawar High Court (KPK); (4) Balochistan High Court (Quetta); (5) Islamabad High Court (ICT). High Courts have: (a) Original constitutional jurisdiction under Article 199; (b) Appellate jurisdiction over civil/criminal decisions of subordinate courts; (c) Revisional jurisdiction; (d) Writ jurisdiction (habeas corpus, certiorari, prohibition, mandamus, quo warranto).
+
+[SECTION: 4] Federal Shariat Court — Established under Article 203-C. Examines laws for conformity with Islam (Injunctions of Islam). Appeals from FSC lie to the Supreme Court's Shariat Appellate Bench. FSC also exercises appellate jurisdiction in Hudood cases.
+
+[SECTION: 5] District and Sessions Court — At district level. The District and Sessions Judge is the highest judicial authority in the district. Jurisdiction: (a) Criminal: Sessions cases (murder, rape, dacoity, etc.); (b) Civil: original suits above the pecuniary limits of civil judges; (c) Appellate: appeals from civil judges and magistrates; (d) Administrative: controls subordinate judiciary in the district.
+
+[SECTION: 6] Civil Judge / First Class Magistrate — Lowest tier of regular judiciary. Civil Judges hear civil suits up to prescribed pecuniary limits. Judicial Magistrates (1st Class) try criminal cases punishable with up to 3 years imprisonment (varies by province).
+
+[SECTION: 7] Family Courts — Established under the Family Courts Act 1964. Exclusive jurisdiction over: marriage, divorce (talaq/khula), maintenance, custody, dower, dowry, guardianship. Summary procedure with mandatory conciliation. Appeals to the High Court.
+
+[SECTION: 8] Anti-Terrorism Courts (ATC) — Established under Anti-Terrorism Act 1997. Try terrorism-related offences. Summary procedure. Judge holds office for 3 years. Appeals to High Court within 30 days.
+
+[SECTION: 9] Banking Courts — Under Banking Companies Ordinance. Exclusive jurisdiction over banking disputes above PKR 500,000. Appeals to High Court within 30 days.
+
+[SECTION: 10] Accountability Courts — Under NAB Ordinance. Try corruption cases referred by NAB. Exclusive jurisdiction. Trial must conclude in 30 days (max 90 days). Appeals to High Court.
+
+[SECTION: 11] Consumer Courts — Under provincial Consumer Protection Acts. Try consumer complaints. Summary procedure. No court fee (or nominal fee). Appeals to High Court.
+
+[SECTION: 12] Labour Courts — Under Industrial Relations Act 2012. Jurisdiction: individual and collective disputes, unfair labour practices, wrongful termination. Appeals to the Labour Appellate Tribunal.
+
+[SECTION: 13] Rent Tribunals — Under provincial Rent Acts. Exclusive jurisdiction over landlord-tenant disputes (eviction, rent, repair). Summary procedure. Appeals to District Judge/high court.
+
+[SECTION: 14] Tax Tribunals — (a) Appellate Tribunal Inland Revenue: income tax and sales tax appeals; (b) Customs Appellate Tribunal: customs appeals. Appeals to High Court on substantial questions of law.
+
+[SECTION: 15] Environmental Tribunals — Under Pakistan Environmental Protection Act 1997. Adjudicate environmental offences. Judicial and technical members. Appeals to High Court.
+
+[SECTION: 16] Special Courts — (a) Special Judge (Central): drug offences; (b) Special Court (Offences in Banks): bank robbery, fraud; (c) Special Judge (Child Protection): child abuse cases (some provinces); (d) Provincial Motor Vehicle Special Judges: traffic offences.
+
+[SECTION: 17] Alternative Dispute Resolution (ADR) — CPC Section 89: Courts may refer disputes to mediation/conciliation. DNA testing, medical reports and other scientific evidence increasingly used.

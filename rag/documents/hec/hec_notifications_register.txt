@@ -1,0 +1,242 @@
+# HEC Notifications register (official dated record of policy notifications, amendments and deferrals)
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: Pakistan (Federal) — higher education
+Version: HEC Notifications page as published, retrieved 2026-10-10 | Published/notified: 2026-10-10 | Effective: 2026-10-10 | Status: Authoritative dated record as published
+Provenance: sections below carry the canonical HEC URL for the document they were extracted from.
+Coverage area: A,B,C,D,E,F,G,H
+Verification note: This is the register used to decide which version of an HEC rule is current. Entries are title + notification date exactly as HEC publishes them.
+
+[SECTION: hec_notifications_register_1_HEC_NOTIFICATIONS_REGISTER_OFFICIAL_DATED_RECO]
+# HEC Notifications register (official dated record of policy
+Title: HEC Notifications register (official dated record of policy notifications, amendments and deferrals)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Notifications register (official dated record of policy
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Version: HEC Notifications page as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Authoritative dated record as published
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Notifications
+HEC
+Notifications
+
+Type
+Academic
+University
+General Public
+- Recognition of the degree awarded by foreign chartered universities/institutions through virtual/online/distance learning/Blended learning
+Friday, July 22, 2022
+- Academic
+- Deferment of Post PhD Experience for Professors and Associate Professors
+Wednesday, July 20, 2022
+- Academic
+- Extension in maximum duration of MS/MPhil/PhD/equivalent degree programs due to Covid-19
+Friday, April 15, 2022
+- Academic
+- Appointment of TTS faculty on Academic-administrative positions
+Wednesday, March 2, 2022
+- Academic
+- Withdrawal of Migration Certificate/NOC as an admission requirement to the Graduate/ Postgraduate Programs
+Monday, February 28, 2022
+- Academic
+- Collecting hard copies of PhD dissertation to register record in PhD Country Directory (PCD)
+Sunday, December 19, 2021
+- Academic
+- Salary Package for the Vice-Chancellors of Public Sector Universities
+Friday, October 22, 2021
+- University
+- Graduate Education Policy-2023 (GEP-2023)
+Monday, July 10, 2023
+- Academic
+- Applicants having CAF qualification duly verified by ICAP shall be eligible for admission in BS AF
+Wednesday, June 9, 2021
+- Academic
+- Clarification regarding TTS Leave Policy
+Friday, March 5, 2021
+- University
+- Initial appointment of faculty members on TTS
+Friday, March 5, 2021
+- University
+- Amendment of the clause 1.4.1.2 of Model Tenure Track Process Statutes
+Saturday, October 16, 2021
+- University
+- Amendment of the clause 1.1 (d) and Annexure -A of Model Tenure Track Process Statutes
+Friday, October 16, 2020
+- University
+- Transition of BA/BSc Programs to Associate Degree Programs, Phasing Out of MA/ MSc Programs
+Thursday, July 11, 2019
+- Academic
+- Acceptance of USAT (Undergraduate Studies Admission Test)
+Tuesday, July 5, 2022
+- Academic
+- The Requirement of Post-PhD Experience
+Thursday, May 25, 2023
+- Academic
+- Undergraduate Education Policy
+Wednesday, July 12, 2023
+- Academic
+- Revised Interim Placement of Fresh PhDs (IPFP) Policy
+Friday, July 21, 2023
+- Academic
+- Anti-Plagiarism Policy 2023
+Wednesday, August 2, 2023
+- Academic
+- Framework of The HEC Distinguished National Professor (DNP) Program
+Tuesday, September 30, 2025
+- Academic
+- Clarification one time relaxation based on Covid-19 Situation for completion of MS-MPhil equivalent and PhD Degree till 28.02.2023
+Tuesday, April 26, 2022
+- Academic
+- Discontinuation of HEC Approved Supervisor Post Promulgation GEP- 2023
+Friday, December 22, 2023
+- Academic
+- Open and Distance Learning: Policy Provisions and Regulatory Framework
+Wednesday, August 28, 2024
+- Academic
+- Transnational Education (TNE) Policy 2024
+Monday, September 9, 2024
+- Academic
+- Partial Relaxation in Requirement of Full-Time PhD Faculty Members to Launch MS/MPhil or Equivalent and PhD Programs in Basic Medical Sciences and Clinical Health Sciences
+Wednesday, October 2, 2024
+- Academic
+- Journals & Publications Policy 2024
+Monday, September 30, 2024
+- Academic
+- HEC National Fee Refund Policy
+Friday, December 20, 2024
+- Academic
+- Notification Framework for Appointment of Meritorious Professor in HEIs
+Tuesday, September 30, 2025
+- University
+- Notification Framework for Appointment of Professor Emeritus in HEIs
+Tuesday, September 30, 2025
+- University
+- Policy Guidelines for Appointment of Professor of Practice by the Higher Education Institution (HEIs) in Pakistan
+Tuesday, September 30, 2025
+- University
+- HEC-Notification Interim Placement of Fresh PhDs (IPFP)Phase-II
+Friday, February 21, 2025
+- University
+- Notification Post-PhD experience for appointment of Professors (08 years) and Associate Professors (04 years)
+Thursday, July 30, 2026
+- Academic
+- Framework for HEC Best Teacher Award (BUTA)
+Tuesday, September 30, 2025
+- University
+- Policy on Protection Against Harassment in Higher Education Institutions (Revised 2025)
+Tuesday, September 30, 2025
+- University
+- Guidelines for Admissibility of Leave for Professor Emeritus
+Tuesday, December 23, 2025
+- University
+- UNESCO's International Standard Classification of Education-ISCED-F
+Tuesday, January 13, 2026
+- Academic
+- HEC Journals & Publications Policy, 2024
+Monday, March 2, 2026
+- Academic
+- Guidelines for Engagement of Visiting Faculty in HEIs, 2026
+Sunday, May 17, 2026
+- University
+- Mandatory Conduct of GREHAT General & Subject Test through HEC-Education Testing Council (ETC)
+Tuesday, May 12, 2026
+- University
+- Policy on Dual, Double & Joint Degree Programmes, 2026
+Wednesday, May 13, 2026
+- University
+- Notification - Amendments in TNE Policy, 2024
+Wednesday, May 13, 2026
+- University
+- Establishment of the National Chair on AI and Robotics
+Tuesday, May 5, 2026
+- University
+- Notification - Deferred Implementation of Mandatory Conduct of GRE_HAT-General & Subject Test
+Sunday, May 24, 2026
+- General Public
+- Framework for Recognition of Liberal Arts Undergraduate Programs under the HEC Undergraduate Education Policy 2023
+Tuesday, August 4, 2026
+- Academic
+- Framework on the Use of AI (Gen-AI) Tools in HEIs
+Friday, September 4, 2026
+- University
+- HEC Notification | Salary Package for the Vice Chancellors of Public Sector Universities
+Friday, October 2, 2026
+- University
+- HEC Notification | Deferment of Post-PhD Experience Requirement until 31.12.2026
+Friday, October 2, 2026
+- University
+
+[SECTION: hec_notifications_register_2_HEC_NOTIFICATIONS_REGISTER_OFFICIAL_DATED_RECO]
+# HEC Notifications register (official dated record of policy (part 2)
+Title: HEC Notifications register (official dated record of policy notifications, amendments and deferrals)
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Notifications register (official dated record of policy (part 2)
+Official page: https://www.hec.gov.pk/english/policies/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/policies/Pages/default.aspx
+Version: HEC Notifications page as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Authoritative dated record as published
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Policies
+HEC
+Policies and Procedures
+
+Type
+Academic
+Research
+- Framework on use of Generative AI (GenAI) Tools in Higher Education Institutes (HEIs)
+- Academic
+- Framework for Recognition of Liberal Arts Undergraduate Programs
+- Academic
+- Policy on Dual, Double and Joint Degree Programmes
+- Academic
+- Guidelines for Engagement of Visiting Faculty in HEIs
+- Academic
+- Framework for HEC Best University Teacher Award (BUTA)
+- Academic
+- Revised Policy Document for Access to Scientific Instruments Program
+- Academic
+- Framework for Appointment of Professor Emeritus in the Higher Education Institutions (HEIs)
+- Academic
+- Framework for Appointment of Meritorious Professor in the Higher Education Institutions (HEIs)
+- Academic
+- Framework for HEC Distinguished National Professor (DNP) Program
+- Academic
+- Policy Guidelines for Appointment of Professor of Practice by the Higher Education Institutions (HEIs) In Pakistan
+- Academic
+- HEC National Fee Refund Policy
+- Academic
+- HEC Institutional Affiliation Policy-2024 (Public Sector Universities/DAIs ONLY)
+- Academic
+- Interim Placement of Fresh PhDs (IPFP) Policy
+- Academic
+- Undergraduate Education Policy (V 1.1)
+- Academic
+- Graduate Education Policy (GEP-2023)
+- Academic
+- Campus Security and Surveillance Policy
+- Academic
+- Research & Innovation Policies
+- Research
+- National Fee-Refund Policy
+- Academic
+- Open and Distance Learning (ODL) Policy
+- Academic
+- Policy on Drug and Tobacco Abuse in Higher Education Institutions
+- Academic
+- Revised Policy on Protection against Harassment in Higher Education Institutions
+- Academic
+- Standardization of SEMESTER System in HEIs
+- Academic
+- Transnational Education Policy (TNE)
+- Academic
+- Plagiarism Policy
+- Research
+- Policy for Student with Disabilities at Higher Education Institutions in Pakistan
+- Academic
+Reset Filters

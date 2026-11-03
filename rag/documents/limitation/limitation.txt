@@ -1,0 +1,55 @@
+[SECTION: 1] The Limitation Act, 1908 (Act IX of 1908) — Consolidates the law of limitation for suits, appeals and applications in Pakistan. Source: Pakistan Code (pakistancode.gov.pk). Status: CURRENT.
+
+[SECTION: 2] Limitation bars remedy not right — When the period of limitation prescribed for a suit has expired, the plaintiff shall not be entitled to any remedy. The right itself is not extinguished except in certain specific cases (property recovery).
+
+[SECTION: 3] Dismissal of suit if barred — Every suit instituted after the prescribed period shall be dismissed, although limitation has not been set up as a defence. The court must consider limitation even if not pleaded.
+
+[SECTION: 4] Expiry of court vacation — Where the prescribed period expires on a day when the court is closed, the suit may be instituted on the day when the court reopens.
+
+[SECTION: 5] Extension in certain cases — An appeal or application for review or revision may be admitted after the prescribed period if the appellant/applicant satisfies the court that there was sufficient cause for not preferring the appeal or making the application within the period.
+
+[SECTION: 6] Legal disability — A person entitled to institute a suit who is a minor or insane may institute the suit within the same period after the disability has ceased, unless the period expires before the cessation of disability.
+
+[SECTION: 7] Continuing disability — Where a person is under disability at the time of the right to sue accruing, and dies while still under disability, no time runs against his legal representative.
+
+[SECTION: 12] Exclusion of time for obtaining copy — In computing the period of limitation for a suit, appeal or application, the day from which the period begins to run shall be excluded. For appeals, the time spent in obtaining a certified copy of the decree/order appealed from is excluded.
+
+[SECTION: 13] Exclusion of time for defendant absence — Where the defendant is absent from Pakistan, time during which the defendant was absent beyond the limits of Pakistan shall be excluded.
+
+[SECTION: 14] Exclusion of time of proceeding bona fide in court without jurisdiction — In computing the period of limitation, time during which the plaintiff has been prosecuting a civil proceeding in good faith in a court which lacks jurisdiction shall be excluded.
+
+[SECTION: 15] Exclusion of time for injunction — Where the institution of a suit has been stayed by injunction or order, the time of the continuance of the injunction shall be excluded.
+
+[SECTION: 18] Acknowledgment in writing — Where an acknowledgment of liability in writing signed by the party is made before the expiration of the period, fresh period starts from the date of acknowledgment.
+
+[SECTION: 19] Payment on account — Where part payment of a debt or interest is made before the expiry of limitation, fresh period starts from the date of payment.
+
+[SECTION: 22] Continuing breach of contract — In the case of a continuing breach of contract or continuing tort, a fresh period begins to run at every moment of the time during which the breach or tort continues.
+
+[SECTION: 23] Suits for compensation for torts not continuing — For torts not continuing, the period runs from the date when the act complained of is done.
+
+[SECTION: 24] Concealed fraud — Where fraud or mistake is the basis, limitation runs from the date of discovery of the fraud or mistake.
+
+[SECTION: 28] Death of plaintiff or defendant — Where the right to sue survives after the death of a plaintiff or defendant, the legal representative may continue the suit.
+
+[SECTION: 43] Limitation for suits under Contract Act — Suits for specific performance of contract: 3 years from the date fixed for performance. Suits for breach of contract: 3 years from the date of breach. Suits for money lent: 3 years from default.
+
+[SECTION: 44] Limitation for recovery of property — Recovery of immovable property: 12 years from the date when possession becomes adverse. Recovery of movable property: 3 years from the date of wrongful taking.
+
+[SECTION: 45] Limitation for torts — Suits for compensation for wrong to person: 1 year (assault, battery, false imprisonment). Defamation: 1 year. Malicious prosecution: 1 year. Wrongful detention of property: 3 years.
+
+[SECTION: 46] Limitation for mortgage suits — Suits by mortgagee for foreclosure: 30 years from due date. Suits for sale: 12 years from due date. Redemption by mortgagor: 30 years from due date.
+
+[SECTION: 47] Limitation for government suits — Suits by or against the government: 30 years or as otherwise provided.
+
+[SECTION: 48] Suits relating to public charities — Suits relating to public trusts or charities: 6 years from the date when the right to sue accrues.
+
+[SECTION: 49] Limitation for appeals — Appeal from a decree of the Civil Court: 30 days (Supreme Court), 90 days (High Court), 30 days (District Court). Appeals from orders: 30 days.
+
+[SECTION: 50] Applications — Application for execution of decree: 6 years from the date of decree or the last order of execution.
+
+[SECTION: 51] Attachment — Applications for attachment of property: 3 years from the date of the order granting attachment.
+
+[SECTION: 55] Specific limitation periods — Recovery of land: 12 years. Recovery of rent: 3 years. Redemption of mortgage: 30 years. Partition of property: 12 years. Accounting: 3 years. Trust property: no limitation. Inheritance: 12 years.
+
+[SECTION: 56] Limitation for criminal appeals — Criminal appeals: 30 days from the date of judgment from Sessions Court to High Court. 30 days from the date of order to Sessions Court from Magistrate.

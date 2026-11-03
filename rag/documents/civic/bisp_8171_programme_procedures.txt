@@ -1,0 +1,255 @@
+[SECTION: BISP_KAFALAAT_IDENTIFICATION_PMT_CUTOFF]
+Title: Benazir Kafaalat — how beneficiaries are identified, and the published PMT cut-off scores
+Authority: Benazir Income Support Programme (BISP), Programme page "Benazir Kafaalat"
+Jurisdiction: Pakistan (Federal programme; provincial disbursement partners differ)
+Source: BISP official website, Benazir Kafaalat programme page
+Source URL: https://bisp.gov.pk/Detail/YTgzNjkxM2YtN2ViMC00MjA5LWI0MDMtNzM4ZWJmMGVlNzc5
+
+"Beneficiaries of \"Benazir Kafaalat Programme\" are identified/selected through scientific mode of Proxy Means Test (PMT) through National Socio Economic Registry (NSER) survey."
+"The current PMT cut-off score of 32 was approved by the BISP Board in its 52 nd meeting held on 23 rd September, 2021. However, for families with a differently abled person, the PMT cut-off score is set at 37 for eligibility."
+Read the two numbers correctly: the cut-off is a ceiling on the household's proxy-means score, and a household containing a differently abled person is assessed against the more generous 37 threshold rather than 32.
+Spelling note: BISP publishes this programme name as "Benazir Kafaalat" on its programme pages and as "BENAZIR Kafaalat" / "BISP Kifalat Programme" in its own registration leaflets, and it is commonly written "Benazir Kafalat". All of these spellings refer to the same cash-transfer programme described in this record.
+Consequence for a citizen: eligibility is decided by the NSER/PMT household record, not by an application form alone. Where the record is stale, the route is a roster update or a new survey, described in the NSER registration record in this file.
+Phrasings this answers: "which forum decides BISP eligibility", "how is the kafalat score worked out", "kafalat ki ahliyat kaun decide karta hai aur score kaise banta hai", "8171 eligibility ka form kaun sa hai". Urdu script: «بے نظیر کفالت کی اہلیت کا فورم کون سا ہے اور اسکور کیسے طے ہوتا ہے؟», «اہلیت کا تعین کس بنیاد پر ہوتا ہے؟». The forum named by the record is the BISP Board approving a PMT cut-off score computed from the NSER survey — not a form the applicant fills in.
+The 32/37 figures are the Board-approved values as published on this page and read on 2026-10-16; a later Board meeting could change them, so re-verify before quoting a cut-off as current.
+
+[SECTION: BISP_KAFALAAT_STIPEND_AMOUNT_AND_BANKS]
+Title: Benazir Kafaalat stipend amount as published, the published conflict, and the biometric disbursement banks
+Authority: Benazir Income Support Programme (BISP)
+Jurisdiction: Pakistan (Federal)
+Source: BISP Benazir Kafaalat programme page and BISP news releases
+Source URL: https://bisp.gov.pk/Detail/YTgzNjkxM2YtN2ViMC00MjA5LWI0MDMtNzM4ZWJmMGVlNzc5
+
+The programme page states: "Starting from Rs. 3,000/-per beneficiary per quarter, the present Benazir Kafaalat stipend is Rs. 8,500/- per beneficiary per quarter."
+"Benazir Kafaalat cash assistance is disbursed to the eligible beneficiaries after Biometric Verification System (BVS) through two partner banks namely HBL in Punjab, Sindh and Baluchistan and Bank Alfalah in KP, GB and AJK."
+Published conflict, recorded rather than resolved: a BISP news page dated "Islamabad, August 28, 2023" describes "quarterly financial assistance of Rs 9,000". The two figures are both on bisp.gov.pk; the programme page read on 2026-10-16 states Rs 8,500 and the 2023 news item states Rs 9,000. Because the amount is time-sensitive and BISP publishes no dated revision table on the programme page, the correct answer to a citizen is that the stipend is a quarterly per-beneficiary amount in this range and the amount payable to that beneficiary must be confirmed on the 8171 portal record or at the Tehsil office — not quoted as a settled single figure.
+The bank that pays a beneficiary depends on the province or territory of residence; the stipend is released only after biometric verification.
+
+[SECTION: BISP_KAFALAAT_REGISTRATION_STEPS]
+Title: Benazir Kafaalat registration and first-installment steps, as published by BISP
+Authority: Benazir Income Support Programme (BISP), "BENAZIR Kafaalat Registration Process" leaflet
+Jurisdiction: Pakistan (Federal)
+Source: BISP official publication (English text layer of the published PDF)
+Source URL: https://bisp.gov.pk/SiteImage/Misc/files/KifalatEngUr_2022.pdf
+
+"CNIC can be checked on 8171 portal to check the eligibility status of an individual."
+"In case female is eligible and declared as beneficiary she will receive an SMS from 8171."
+"On receipt of SMS the beneficiary will be required to visit nearest HBL / BAFL POS / retailer in her tehsil along with her original CNIC to receive the first installment through biometric verification."
+"Next installments may also be received from ATM besides POS/ retailer."
+"In case there is no record on 8171 portal, any adult member of the household may visit nearest Benazir registration desk, established at BISP Tehsil Office, for household survey."
+The leaflet's own numbered steps: "STEP 1:- A household falls within approved cut off will be declared as \"Eligible\". STEP 2:- Only an ever married female with valid CNIC and cleared from profiling in an eligible household will be declared as beneficiary. STEP 3:- Message/SMS will sent to eligible beneficiary on provided mobile number from 8171. STEP 4:-After receiving SMS,Beneficiary will visit nearest POS in her Tehsil / District and receive her first cash grant after biometric verification. STEP 5:- For grievance Redressal she will register her complaint in the respective BISP Tehsil office."
+Two conditions a citizen is often told wrongly: the household being eligible is not the same as being declared a beneficiary, and the beneficiary is the ever-married female member of the household with a valid CNIC who has cleared profiling — not any applicant who submits a form.
+
+[SECTION: BISP_NSER_SURVEY_ROSTER_UPDATE_TOKENS]
+Title: NSER registration at BISP Registration Centres — status check, CNIC screening tokens and documents to bring
+Authority: Benazir Income Support Programme (BISP), "NSER Registration Process at BRCs" leaflet
+Jurisdiction: Pakistan (Federal)
+Source: BISP official publication (English text layer of the published PDF)
+Source URL: https://bisp.gov.pk/SiteImage/Misc/files/NSEREngUrdu_2022.pdf
+
+"The citizen can check their survey and eligibility status through: a) Online on https://8171.pass.gov.pk b) SMS your CNIC number on 8171".
+CNIC screening at the desk: "If already Surveyed and need to perform roaster update will be issued Token for Roaster Update. - If not surveyed yet will be issued token for New Survey."
+"At data entry desk provide your CNIC, Household member's CNIC and B Form of all children in your family. (All CNICs should be updated as per your current status in NADRA e.g. marital status, widow status, or disability etc)"
+Outcome channels as published: "You will receive Survey confirmation SMS from 8171 on your given Mobile Number"; "You may also receive a letter regarding BISP Kifalat Programme (if found eligible)"; "you can also visit nearest BISP Tehsil Office/BRC and meet Assistant Director or relevant BISP Officer and submit your `Application' to know about your eligibility status."
+Practical consequence: a household whose NADRA record is out of date (marital status, widow status, disability) should correct NADRA first, because the same leaflet ties the survey data to the updated CNIC status.
+Availability note verified 2026-10-16: the URL https://8171.pass.gov.pk is cited by BISP itself as the online status channel, but it could not be reached from this host (HTTPS and HTTP connect failures). Treat that address as published-but-unconfirmed and use 8171.bisp.gov.pk or the SMS route.
+
+[SECTION: BISP_8171_PORTAL_FUNCTIONS]
+Title: The 8171 web portal's two published functions and its form fields
+Authority: Benazir Income Support Programme (BISP), 8171 web portal
+Jurisdiction: Pakistan (Federal)
+Source: 8171 portal pages, read 2026-10-16
+Source URL: https://8171.bisp.gov.pk/
+
+The portal is titled "8171 ویب پورٹل" and its footer states "حقوق نقل و اشاعت ۲۰۲۵ بے نظیر انکم سپورٹ پروگرام۔ جملہ حقوق محفوظ ہیں۔" (Benazir Income Support Programme, 2025).
+It publishes exactly two navigation functions: "اہلیت کے بارے میں جانیۓ" (learn about eligibility) at TrackingMain.aspx and "شکایت درج کروائیں" (register a complaint) at TrackingComplaints.aspx.
+The eligibility form exposes a CNIC field limited to 13 characters, a captcha field, and a submit control labelled "معلوم کریں".
+Verification limits, recorded honestly: the complaint page returned HTTP 520 and then 404 on 2026-10-16, so the complaint form's fields, required documents and any processing timeline are unverified. The eligibility enquiry itself requires entering a citizen's own CNIC into BISP's checker; this assistant does not perform that check and does not report an eligibility result — the citizen uses the portal, the 8171 SMS channel, or a BISP Tehsil Office.
+The portal's stated purpose is enquiry and complaint tracking. It is not a registration route: household survey registration happens at a BISP Registration Centre or Tehsil office, per the BISP leaflets.
+
+[SECTION: BISP_NEXT_OF_KIN_DECEDED_BENEFICIARY]
+Title: Benazir Kafaalat after a beneficiary's death — the documents for a legal-heir substitution
+Authority: Benazir Income Support Programme (BISP), Benazir Kafaalat programme page
+Jurisdiction: Pakistan (Federal)
+Source: BISP official website
+Source URL: https://bisp.gov.pk/Detail/YTgzNjkxM2YtN2ViMC00MjA5LWI0MDMtNzM4ZWJmMGVlNzc5
+
+"the legal heirs from the deceased beneficiary family can become beneficiary of the programme through a well devised appeal mechanism. In case of death of a beneficiary, her family is required to submit necessary documents (CNIC of the deceased, CNIC cancellation certificate from NADRA, death certificate from union council and CNIC of family members) in nearest BISP Tehsil Office."
+The four documents named are therefore: the deceased's CNIC; NADRA's CNIC cancellation certificate; the death certificate issued by the union council; and the CNICs of the surviving family members.
+Where to take them: the nearest BISP Tehsil Office — this is a substitution of the beneficiary's name in the programme record, and BISP describes it as an appeal mechanism run through that office, not through a court.
+Phrasings a bereaved family uses for this: "the BISP beneficiary died, who gets the money now", "my mother was receiving the 8171 stipend and she has passed away", "after the death of a kafalat beneficiary what documents are needed", "beneficiary ki maut ke baad qist kis ke naam hogi", "8171 payment death ke baad kya hoga", "kafalat mein heir/waris ka naam kaise hoga". Urdu script: «بینظیر کفالت کی مستحق خاتون وفات پا گئیں، اب قسط کس کے نام ہوگی؟», «وارثوں کے نام کے لیے کون سی دستاویزیں درکار ہیں؟».
+Scope limit: BISP's page describes this as the route for a deceased beneficiary's family. It does not publish a written appeal procedure against a household that was simply assessed above the PMT cut-off — that gap is recorded in the unverified-facts section of this file.
+
+[SECTION: BISP_GRIEVANCE_CHANNEL_FOR_BENEFICIARIES]
+Title: How a BISP beneficiary registers a complaint — the published channels, and the fraud warnings
+Authority: Benazir Income Support Programme (BISP)
+Jurisdiction: Pakistan (Federal)
+Source: BISP Benazir Kafaalat programme page and BISP news releases
+Source URL: https://bisp.gov.pk/Detail/YTgzNjkxM2YtN2ViMC00MjA5LWI0MDMtNzM4ZWJmMGVlNzc5
+
+The programme page's grievance section states: "To lodge complaints, beneficiaries can visit nearest Tehsil office of BISP or call at BISP HQs, Islamabad toll free help line (0800-26477)."
+BISP's own authenticity warning: "It is essential to note that official communication from the Benazir Income Support Programme only originates from the number 8171."
+Deduction and corruption: "If a person demands any kind of deduction or fee for payment, beneficiaries should immediately report to BISP's toll free helpline 080026477 and contact the nearest BISP Tehsil Office." and "For complaints related to deductions or corruption, beneficiaries should contact the BISP Helpline at 0800-26477."
+The Kafaalat leaflet's step 5 is the same route: "For grievance Redressal she will register her complaint in the respective BISP Tehsil office." For Taleemi Wazaif specifically, "BISP field offices are mainly responsible for handling all the complaints."
+So the two substantive beneficiary channels are the BISP Tehsil/field office in person and the toll-free helpline 0800-26477; 8171 is the official number for BISP messages and eligibility enquiry, not a complaint-handling office.
+This is an administrative grievance route inside the programme. BISP's own pages for beneficiaries state no court step and no written appeal deadline for a payment complaint, so the first remedy on the record is the helpline and the Tehsil office, not a civil suit.
+Phrasings a beneficiary uses for this: "someone is taking money out of my BISP payment", "a cut is being deducted from my 8171 stipend", "the person at the bank demanded a fee", "my qist has not come for two quarters", "kafalat ki qist mein katoti ho rahi hai kahan shikayat karun", "8171 payment nahi aa rahi complaint kaise karun", "qist kam aa rahi hai". Urdu script: «بینظیر کفالت کی قسط میں کٹوتی ہو رہی ہے، کہاں شکایت کروں؟», «قسط نہیں آ رہی، کس نمبر پر رابطہ کروں؟», «بازرس فیس مانگ رہا ہے».
+
+[SECTION: BISP_BIDDER_COMPLAINT_TIMELINES_NOT_FOR_BENEFICIARIES]
+Title: BISP's 15-day and 5-day complaint timelines belong to bidders under Public Procurement Rules 2004, not to beneficiaries
+Authority: Benazir Income Support Programme (BISP), Procurement Complaint Redressal mechanism
+Jurisdiction: Pakistan (Federal — procurement)
+Source: BISP "Complaint Redressal" page and the two linked mechanism documents
+Source URL: https://bisp.gov.pk/Detail/ZDk4ZWViMTUtZWQ4ZS00ZjM4LTk3ZGYtYzlkOTAwMGVkOWY4
+
+These numbers are a procurement safeguard for suppliers and contractors. They are not a beneficiary's grievance timeline and must never be attached to a Kafaalat, Taleemi Wazaif, Nashonuma or payment complaint. BISP publishes no equivalent committed acknowledgement or decision period for beneficiary complaints; the beneficiary routes are the Tehsil/field office and 0800-26477. The procurement wording those figures come from is quoted below.
+"In compliance of Public Procurement Rules, 2004, BISP provides a forum to bidders… a separate portal i.e. \"Bidders Complaint Redressal\" is created on BISP's Website".
+"Complaints from bidders are inevitable… the aggrieved bidders may lodge a written complaint with BISP not later than 15 days after announcement of Bid Evaluation results".
+"The complainant will be notified of receipt of his/her complaint within 05 working days." and "The Committee shall investigate and decide upon the complaint within fifteen days."
+
+[SECTION: BISP_TALEEMI_WAZAIF_ENROLMENT_AND_ATTENDANCE]
+Title: Taleemi Wazaif — enrolment place, documents, NADRA verification and the attendance co-responsibility
+Authority: Benazir Income Support Programme (BISP), Taleemi Wazaif programme
+Jurisdiction: Pakistan (Federal)
+Source: BISP Taleemi Wazaif programme page and published leaflet
+Source URL: https://bisp.gov.pk/Detail/YzNlY2Q2ZGYtNjIwZS00MjNiLWFhMmEtZGM5NWNkMjZhMjQ3
+
+"Beneficiary has to visit enrolment camp/field offices along with her child with following documents… CNIC of the beneficiary; B-form/CRC issued by NADRA; School admission slip…"
+"B-form/CRC verification through NADRA database is mandatory".
+"BISP field offices are mainly responsible for handling all the complaints."
+Attendance co-responsibility: BISP publishes that it will "Suspend the beneficiary children from the program who have not complied with the attendance co-responsibility for three consecutive compliance quarters."
+A separate self-enrolment mobile application is published by BISP on the Play Store (pk.gov.bisp.enrollment).
+Practical reading for a family: enrolment is done with the child at a camp or field office, the child must already have a NADRA B-form/CRC, and the school admission slip is required — so a child without a registered B-form cannot be enrolled until NADRA registration is complete. Suspension for three consecutive compliance quarters of poor attendance is a published rule, and it is appealable through the field office complaint route above.
+
+[SECTION: BISP_NASHONUMA_ENROLMENT_AND_CONFLICTING_STIPENDS]
+Title: Nashonuma — facilitation-centre enrolment, required documents, and two conflicting published stipend sets
+Authority: Benazir Income Support Programme (BISP), Nashonuma programme
+Jurisdiction: Pakistan (Federal)
+Source: BISP Nashonuma programme page and the 2022 Nashonuma leaflet
+Source URL: https://bisp.gov.pk/Detail/YjAyMjI5ZDQtN2RlYS00N2NhLTllY2UtY2NhNGE0ZDk3NmM2
+
+"All the eligible beneficiaries have to visit nearby Nashonuma Facilitation centre (FC) for the purpose of enrolment…" with the documents listed there as pregnancy screening, a valid CNIC, an FRC for the child's registration, and immunization — "Valid Immunization Card from EPI".
+Conflict recorded rather than resolved: the current programme page lists stipend amounts of Rs 3,500, Rs 3,500 and Rs 4,000 with a total of "up to Rs. 42,500/-", while BISP's own 2022 Nashonuma leaflet states different, lower quarterly amounts (PKR 2,000 and PKR 2,500 withheld per quarter). The two publications are not reconciled on the site.
+Because of that conflict, the honest answer to a citizen is that Nashonuma amounts are payable per conditional milestone after enrolment at a facilitation centre, and the amount applicable to that beneficiary must be confirmed at the facilitation centre or Tehsil office. Do not quote one figure as authoritative, and do not average or merge the two sets.
+Enrolment requires the child's FRC and an EPI immunization card, so the health and civil-registration steps are conditions of the grant, not paperwork formalities.
+
+[SECTION: BISP_REGIONAL_AND_HEAD_OFFICE_CONTACTS]
+Title: BISP head office, helpline and regional office contacts as published
+Authority: Benazir Income Support Programme (BISP), Contact List and Regional Offices pages
+Jurisdiction: Pakistan (Federal, with provincial and AJK/GB regional offices)
+Source: BISP official website contact pages, read 2026-10-16
+Source URL: https://bisp.gov.pk/Detail/Zjk0OGQ2NTgtZGVlZi00NmFiLWFiNzgtNDg5YThkOTQ0OWU0
+
+Head office: "Exchange 9246427, 9246384 | Helpline: 0800-26477".
+Regional offices as published: Director General Punjab 042-99333274 / 042-99333273; Director General Sindh 021-99332915; Director General KP 091-9331791; Director General Balochistan 081-2870156-7; Director AJ&K 05822-924111; Director GB 05811-920980-1.
+The toll-free helpline 0800-26477 is the number BISP itself publishes for complaints, including complaints about deductions.
+Telephone numbers are published contact data and change; use the BISP contact page as the source of record for the current listing.
+
+[SECTION: BISP_RIGHT_TO_INFORMATION_CHANNEL]
+Title: Getting written records out of BISP — the Right to Information route and the appellate forum
+Authority: BISP Public Information Officer; Pakistan Information Commission on appeal
+Jurisdiction: Pakistan (Federal)
+Source: BISP PIO page on the official website
+Source URL: https://bisp.gov.pk/Detail/NWMwMzQwNWItZTUzMS00ODQ4LWJkNmEtYjMwMzZkN2Y3NDU5
+
+"Requested information should be provided to you within 10 working days."
+"You can lodge appeal with the Pakistan Information Commission on a plain paper…"
+Commission address as published: "Chief Information Commissioner | Pakistan Information Commission | 1st Floor, National Arcade, A4 Plaza, Near PSO | F-8 Markaz, Islamabad", and "The Pakistan Information Commission will decide on your complaint within 60 days."
+BISP's listed PIO: Qurat-ul-Ain Fatima, Director (MCO), 051-9210709.
+This is the documented route when a citizen needs BISP's own record — an assessment outcome, a roster entry, a complaint's status — in writing, and the 10-working-day and 60-day periods are statutory-style timelines published for this route, not to be confused with the bidder complaint periods recorded elsewhere in this file.
+
+[SECTION: BISP_UNVERIFIED_FACTS_AND_DEAD_ENDS]
+Title: BISP / 8171 — facts that could not be verified from official sources, and channels that are not what they appear to be
+Authority: Benazir Income Support Programme (BISP) and related federal systems
+Jurisdiction: Pakistan (Federal)
+Source: Official-source verification pass on 2026-10-16
+Source URL: https://bisp.gov.pk
+
+Verification status: each item below was sought from official BISP or related federal sources during the verification pass of 2026-10-16 and could not be confirmed. The gap itself is the published state of the record, so an answer about these points is complete when it names the gap.
+- No written appeal procedure against a rejected PMT/NSER score is published by BISP. BISP documents an appeal mechanism only for a deceased beneficiary's legal heirs, and the NSER page carries a row labelled "Implementation of Appeal Cut Off" with no procedure text. The routes that are published for such a household are a roster update or a new survey at a BRC/Tehsil office; no appeal form and no appellate body for a score rejection appear in BISP's own publications.
+- The SMS reply format for "SMS your CNIC number on 8171" is not published on any page reached.
+- The 8171 portal's complaint tab exists as a navigation label; its page returned HTTP 520 then 404 on 2026-10-16, so its fields, required documents and processing timeline are unverified.
+- https://8171.pass.gov.pk (cited by BISP's own NSER leaflet) was unreachable from this host on 2026-10-16.
+- https://ehsaas.gov.pk did not resolve; https://nser.nadra.gov.pk did not resolve; https://pcp.bisp.gov.pk/complaint.aspx exceeded the redirect limit; the BISP "FAQs" detail page contains only embedded videos and the "Help Desk / FAQ" navigation entry is an empty link. Several BISP navigation labels (8171, NSER, HBL biometric ATM, Non-BVS) resolve only to YouTube videos, which are not rule sources.
+- BISP's published navigation labels are not procedural content: the site's menu is generated by script and the substantive text sits in the detail pages and leaflets, so a menu label on its own establishes no rule.
+Disambiguation: the Pakistan Citizen Portal (citizenportal.gov.pk, run by PMDU) is a different system from BISP's 8171. Its homepage contains no occurrence of "8171", "BISP" or "Benazir", and BISP links it once, labelled "PMDU", under its Complaint Cell. A complaint filed through the Citizen Portal is not a BISP grievance, and 8171 is not a citizen-complaint helpline — BISP's own complaint channels are the Tehsil/field office and 0800-26477.
+Also disambiguated: pmsa.gov.pk is the Pakistan Maritime Security Agency, not a social-security body, despite the similar acronym.
+
+[SECTION: BISP_KAFALAAT_PMT_SCALE_AND_FISCAL_SPACE]
+Title: How the Kafaalat score is built — the published 0-100 PMT scale, the Board's fiscal-space basis, and the published reach of the programme
+Authority: Benazir Income Support Programme (BISP), Benazir Kafaalat programme page
+Jurisdiction: Pakistan (Federal)
+Source: BISP official website, Benazir Kafaalat programme page, re-read 2026-10-18
+Source URL: https://bisp.gov.pk/Detail/YTgzNjkxM2YtN2ViMC00MjA5LWI0MDMtNzM4ZWJmMGVlNzc5
+
+"The welfare status of a household is determined on a scale between 0-100 of the PMT. The PMT cut-off score for eligibility is decided by BISP Board on the basis of available fiscal space. All families falling within the approved PMT cut-off score are being provided cash assistance under Benazir Kafaalat Programme."
+"BISP is providing cash assistance to around 9 million families under Benazir Kafaalat programme."
+Two things a citizen can conclude from this wording, and one they cannot. It establishes that the household's own score sits on a published 0-100 scale, and that the cut-off line on that scale is a Board decision tied to available fiscal space rather than a fixed statutory number — so a cut-off quoted today can be revised by a later Board meeting, and the 32/37 figures elsewhere in this file are the values published as of the date on this record. What it does not establish is any person's position on the scale: the score is computed from the NSER survey record, so nothing in this wording lets an assistant — or a neighbour — declare a household's score or its eligibility.
+Phrasings this answers: "is the BISP cut-off fixed by law", "why did the 8171 cut-off change", "what is the PMT score range", "kafalat ka score kis scale par banta hai", "cut-off qanoon se tay hota hai ya board se", "itni families ko kyun nahi mil raha". Urdu script: «پی ایم ٹی اسکور کس پیمانے پر بنتا ہے؟», «کٹ آف کیا قانون میں مقرر ہے؟», «کفالت کا کٹ آف کون بدل سکتا ہے؟».
+
+[SECTION: BISP_KAFALAAT_TRANSGENDER_INCLUSION]
+Title: Transgender inclusion in Benazir Kafaalat — the published conditions, and the relaxed cut-off
+Authority: Benazir Income Support Programme (BISP), Benazir Kafaalat programme page ("INCLUSION OF TRANSGENDER IN BENAZIR KAFAALAT PROGRAMME")
+Jurisdiction: Pakistan (Federal)
+Source: BISP official website, Benazir Kafaalat programme page, re-read 2026-10-18
+Source URL: https://bisp.gov.pk/Detail/YTgzNjkxM2YtN2ViMC00MjA5LWI0MDMtNzM4ZWJmMGVlNzc5
+
+"BISP's Board has recently approved Policy for inclusion of transgenders for cash assistance under Benazir Kafaalat Progrmme. Transgenders are required to obtain CNICs from NADRA clearly mentioning gender as transgender. Survey is mandatory at Benazir Registration Centers established in every BISP Tehsil Office. However, PMT cut-off restrictions are relaxed i.e. all transgenders whose survey is conducted successfully, are eligible to apply for inclusion in the programme. After validation/verification of data by NADRA, transgenders are declared as beneficiaries and they can start receiving cash assistance through BISP's partner banks."
+Quoted exactly as published, including BISP's own misprint "Progrmme" in that sentence.
+The procedure this establishes, in order: a transgender applicant's first step is a NADRA CNIC recording gender as transgender; the second is a survey, which BISP states is mandatory and is done at a Benazir Registration Centre, which the page says is established in every BISP Tehsil Office; the third is NADRA validation/verification of the data, after which the person is declared a beneficiary and is paid through BISP's partner banks. The published relaxation is specific: the PMT cut-off restriction is lifted for this group, so a successful survey — not a score below 32 — is the condition the page states.
+Scope limits, stated plainly: the page refers to a Board-approved "Policy" but this record does not reproduce it, because the page's own link labelled "Inclusion of Transgenders in Benazir Kafalaat Programme" resolves to a YouTube video, which is not a rule source, and no policy PDF was reached from this page. So the published conditions are the four quoted above; no additional quota, reserved amount, appeal forum or timeline for transgender applicants exists on this record, and none may be inferred. Disbursement after declaration follows the same Biometric Verification System and the same partner-bank allocation by province recorded in the stipend section of this file.
+Phrasings this answers: "can a transgender person get BISP Kafalat", "what did the BISP board approve for transgenders", "do transgender applicants need the PMT score", "transgender ke liye kafalat ka rule kya hai", "kya transgender ki survey lazmi hai". Urdu script: «ترنسینڈرز کے لیے بے نظیر کفالت کے کیا شرائط ہیں؟», «ان کے لیے پی ایم ٹی کٹ آف لاگو ہوتا ہے؟».
+
+[SECTION: BISP_TALEEMI_WAZAIF_AGE_BANDS_AND_SCHOOL_ADMISSION]
+Title: Taleemi Wazaif — the published age bands per level, the school-admission precondition, and the self-enrolment application
+Authority: Benazir Income Support Programme (BISP), "BENAZIR TALEEMI WAZAIF Registration Process" leaflet
+Jurisdiction: Pakistan (Federal)
+Source: BISP official publication, English text layer of the published PDF (file dated 09162022 in its published name)
+Source URL: https://bisp.gov.pk/SiteImage/Misc/files/Taleemi%20Wazaif_09162022.pdf
+
+"Eligibility criteria for enrollment of children in Benazir Taleemi Wazaif program are as under: Children of active BISP Kafalat Beneficiary. Age criteria of child is 4 - 12 years for enrollment in Primary Education. Age criteria of child is 8 - 18 years for enrollment in Secondary Education. Age criteria of child is 13 - 22 years for enrollment in Higher Secondary Education."
+"In order to become a beneficiary child of the Programme, an eligible child has to be admitted in school/college of any district of the country."
+"School admission slip containing information of class, school name verified by the teacher."
+"A digital application is established for self - enrollment. Children of active Kafalat beneficiaries can also be enrolled in Benazir Taleemi Wazaif programme through this digital application by their parents/teachers, link for download the application is given below: https://play.google.com/store/apps/details?id=pk.gov.bisp.enrollment"
+Read the bands as level gates, not as a single cut-off: the published ranges overlap by design (8-12 appears in both Primary and Secondary, 13-18 in both Secondary and Higher Secondary), so the child's enrolled level, not age alone, decides which band applies. The admission precondition is equally important: a child who is not admitted in a school or college cannot be enrolled, and the admission slip must show the class and school name verified by the teacher — the grant follows an actual school roll entry. The band limits also mean a child aged 22 or above cannot be enrolled under Higher Secondary, and a child under 4 cannot be enrolled under Primary, on this published wording.
+The documents and the mandatory NADRA B-form/CRC verification, and the attendance co-responsibility and three-quarter suspension rule, are recorded in the Taleemi Wazaif section earlier in this file; this section adds the age bands, the admission precondition and the self-enrolment application, and the two must be read together.
+Phrasings this answers: "what age does Taleemi Wazaif cover", "can my 6-year-old be enrolled in Taleemi Wazaif", "is school admission required for Taleemi Wazaif", "Taleemi Wazaif ke liye bachay ki age kitni honi chahiye", "admission slip ka rule kya hai". Urdu script: «تعلیمی وظائف میں بچے کی عمر کی شرط کیا ہے؟», «کیا اسکول میں داخلہ لازمی ہے؟».
+
+[SECTION: BISP_NASHONUMA_CONDITIONS_SNF_AND_WITHHELD_AMOUNTS]
+Title: Nashonuma — published target population, enrolment and compliance procedure, the 90% nutrition condition, and the quarterly amounts withheld against compliance
+Authority: Benazir Income Support Programme (BISP), "BENAZIR NASHONUMA Registration Process" leaflet
+Jurisdiction: Pakistan (Federal)
+Source: BISP official publication, English text layer of the published PDF (Urdu/English leaflet, 2022)
+Source URL: https://bisp.gov.pk/SiteImage/Misc/files/NashonomaUrdu_2022.pdf
+
+"BISP Target population: Pregnant and Lactating Women (PLW). Children 6 – 23 months of age."
+"Following would be the eligibility criteria for the inclusion of the beneficiaries in the Nashonuma programme: Active BISP beneficiaries receiving unconditional cash transfer under Kafalat programme. Resides in any district of Pakistan. It is mandatory that eligible individuals for registration under Nashonuma shall be in any of these three categories i.e., Pregnant and Lactating Woman (PLW) or child 6 – 23 months of age in the family."
+"All the eligible beneficiaries have to visit nearby Nashonuma Facilitation centre (FC) for the purpose of enrolment in Nashonuma programme. To further verify and confirm the status of beneficiaries in NSER database through search CNIC numbers in Nashonuma Android Application."
+Verifications at enrolment, as published: "Pregnant Women – pregnancy test results/ confirmation report & EPI card of vaccination (TT Vaccination in 2nd trimester)"; "Lactating Mother – B-form of new-born/infant child and EPI card for vaccination proof."; "Children 6 - 23 months – B – form and EPI card for vaccination proof."
+"In case of non - verification of pregnancy, lactating and children (0 - 23 months), target population will be referred to registration counter for marking the status of non - eligibility for the intervention."
+Conditionality: "To accelerate the uptake of nutritional and PHC services, the transfer of an agreed portion of the cash transfer will be made conditional to the consumption of at least 90 percent of provided specialized nutrition foods by PLW and/or children in the support households and compliance to ANC, PNC, and routine immunization." "As BISP transfers funds on quarterly basis, the compliance monitoring and reporting will also be aligned with the transfer schedule."
+The specialised nutrition foods named: "PLW – will be provided with SNF – Maamta (75 gram sachet – one per day)"; "Child 6 - 23 months – will be provided with SNF – Wawamum (50 gram sachet – one per day)".
+Amounts on this leaflet: "A sum PKR 2,000 (to PLW and to a male child registered in Nashonuma Programme) and PKR 2,500 to a girl child registered in the Nashonuma Programme over a quarter will be withheld and linked with the consumption of SNF and utilization of essential PHC services i.e. Immunization, ANC and PNC. This amount will be transferred to beneficiaries upon ascertaining compliance by verifying consumption of at least 90% of the provided SNF and other associated services." "This condition shall also apply on twins and triplet children too and PKR 2000/2500 shall be considered as conditionality compliance amount for such cases."
+What this settles and what it does not. It identifies which BISP publication carries the 2,000 / 2,500 quarterly figures: the 2022 Nashonuma registration-process leaflet, and it states what those figures are — a portion withheld against documented compliance, released once 90% consumption and ANC/PNC/immunization are verified, not a separate bonus. It does not resolve the conflict recorded in the Nashonuma section earlier in this file: the current programme page still publishes the higher 3,500 / 3,500 / 4,000 amounts and a total "up to Rs. 42,500/-", and BISP publishes no dated revision table reconciling the two. So the honest answer remains: the structure (quarterly, withheld against compliance, girl child at a higher rate) is documented, and the amount applicable to a given beneficiary must be confirmed at the facilitation centre or Tehsil office.
+Note also what the enrolment conditions mean for a family: Nashonuma enrolment is stated for active Kafaalat beneficiaries, so on this leaflet a household outside the Kafalat roll is directed to the registration counter for a non-eligibility marking rather than enrolled; and the proof required is health-registry proof (EPI card, pregnancy confirmation report) plus NADRA B-form — so an unregistered birth blocks the grant's health condition.
+Phrasings this answers: "what do I have to do to keep getting Nashonuma money", "why is part of my Nashonuma payment being held back", "is an EPI card required for Nashonuma", "Nashonuma ki qist mein se paisa kyun roka ja raha hai", "shartain kya hain Nashonuma ke liye". Urdu script: «نشونما کی رقم جاری ہونے کے لیے کیا شرائط ہیں؟», «ای پی آئی کارڈ لازمی ہے؟».
+
+[SECTION: BISP_SOURCE_AVAILABILITY_2026_10_18]
+Title: BISP / 8171 — which official sources were re-checked on 2026-10-18, with their measured status
+Authority: Benazir Income Support Programme (BISP); verification performed by INSAaf AI
+Jurisdiction: Pakistan (Federal)
+Source: Direct HTTP verification of bisp.gov.pk, 8171.bisp.gov.pk and the published PDFs on 2026-10-18
+Source URL: https://bisp.gov.pk
+
+This record exists so that a citizen can tell which BISP procedure rests on a source that is reachable right now. Measured statuses from the verification pass of 2026-10-18 (HTTP code, then what the response actually contained):
+- Kafaalat programme page /Detail/YTgzNjkxM2YtN2ViMC00MjA5LWI0MDMtNzM4ZWJmMGVlNzc5 — HTTP 200, 77,110 bytes, 14,714 characters of readable page text. The quoted PMT, stipend, next-of-kin and grievance wording in this file is still present on the page today.
+- Taleemi Wazaif programme page /Detail/YzNlY2Q2ZGYtNjIwZS00MjNiLWFhMmEtZGM5NWNkMjZhMjQ3 — HTTP 200, 139,439 bytes.
+- Nashonuma programme page /Detail/YjAyMjI5ZDQtN2RlYS00N2NhLTllY2UtY2NhNGE0ZDk3NmM2 — HTTP 500 (server error, 9,698 bytes, no programme text). The Nashonuma wording carried in this file comes from the 2022 leaflet, whose URL returns HTTP 200, and from the programme page as read on 2026-10-16; the page being unavailable today does not invalidate that text, but it means the higher Nashonuma amounts could not be re-read today.
+- Procurement complaint page /Detail/ZDk4ZWViMTUtZWQ4ZS00ZjM4LTk3ZGYtYzlkOTAwMGVkOWY4 — HTTP 200; Contact list page /Detail/Zjk0OGQ2NTgtZGVlZi00NmFiLWFiNzgtNDg5YThkOTQ0OWU0 — HTTP 200; PIO / Right to Information page /Detail/NWMwMzQwNWItZTUzMS00ODQ4LWJkNmEtYjMwMzZkN2Y3NDU5 — HTTP 200.
+- "BENAZIR Kafaalat Registration Process" leaflet — the URL quoted in the registration-steps section of this file, /SiteImage/Misc/files/KifalatEngUr_2022.pdf, returns HTTP 404 today. The page's own navigation label for the same leaflet points to /SiteImage/Misc/files/KifalatEngUrdu_2022.pdf, which returns HTTP 200 (1,351,632 bytes) but could not be parsed: the PDF reader reported "Invalid PDF structure" and yielded no text. So the Kafaalat registration steps are preserved here from the verbatim capture made on 2026-10-16 when the leaflet was readable, and the correct current address of the leaflet is the KifalatEngUrdu_2022.pdf URL above.
+- "BENAZIR TALEEMI WAZAIF Registration Process" leaflet /SiteImage/Misc/files/Taleemi%20Wazaif_09162022.pdf — HTTP 200, 2,241,117 bytes, 2 pages, English text extracted (age bands, enrolment process, self-enrolment application). "BENAZIR NASHONUMA Registration Process" leaflet /SiteImage/Misc/files/NashonomaUrdu_2022.pdf — HTTP 200, 130,915 bytes, 2 pages, English text extracted.
+- BISP Digital Wallet publication /SiteImage/Misc/files/BISP%20book_compressed.pdf — HTTP 200, 1,387,728 bytes, 11 pages, but only 1,306 extractable characters, which are garbled Urdu. No usable procedure text, so nothing from it is ingested; a citizen asking about the BISP digital wallet has no verified record here.
+- BISP Act 2010 /SiteImage/Misc/files/BISP_ACT_2010.pdf — HTTP 200, 1,941,518 bytes, 10 pages, 0 extractable characters. The Act is image-only, and no OCR of it has been performed, so the statute's own wording on the Programme's powers, survey and eligibility is NOT in this corpus. Do not answer "what does the BISP Act say" from this record; the accurate answer is that the Act is published but not yet readable by this assistant.
+- 8171 web portal: https://8171.bisp.gov.pk/ and /TrackingMain.aspx both returned HTTP 200 with the same 13,573-byte page (the portal is one navigation shell). /TrackingComplaints.aspx returned HTTP 404 again ("The resource cannot be found. Server Error in '/' Application."), so the complaint form's fields, documents and timeline remain unverified — as recorded in the 8171 portal functions section and the unverified-facts section of this file.
+- The historical URL /page.php?cat=8171 returned HTTP 404 on 2026-10-18 as it did previously. It is not a route to rely on; the live 8171 material is the portal above and the detail pages.
+- Navigation labels are still not content: the site menu's "8171", "NSER", "HBL biometric ATM" and "Non-BVS" entries resolve to YouTube videos, the "NSER Registration Centers" label points to nser.nadra.gov.pk (which does not resolve from this host), and "BISP Beneficiaries Portal" points to https://dli7.bisp.gov.pk/. Several BISP hrefs are published malformed as "..//SiteImage/..." — they work in a browser because the browser normalises them, and the normalised forms are the ones recorded above.

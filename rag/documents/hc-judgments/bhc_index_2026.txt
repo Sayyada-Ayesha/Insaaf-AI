@@ -1,0 +1,143 @@
+[SECTION: BHC_INDEX_2026_INDEX]
+Balochistan High Court, Quetta — Official Judgment Index (metadata-only records) — corpus document (2026-09-06). Each section is one official judgment record (FULL_TEXT_VERBATIM or METADATA_ONLY) with fields as displayed on the official court repository; full-text sections carry the complete verbatim judgment text extracted from the official PDF.
+Court: Balochistan High Court, Quetta.
+Source: Balochistan High Court official website.
+Source URL: https://bhc.gov.pk/resources/judgments
+Status: Verified official court records (verified 2026-09-06).
+[SECTION: BHC_IDX_001]
+Court: Balochistan High Court, Quetta. Title: Muhammad Ishaq and others V. Government of Balochistan and others,. Citation (as displayed): PLJ 2025 Quetta 161. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1924.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_002]
+Court: Balochistan High Court, Quetta. Title: Balochistan Bar Council through Vice-Chairman V. Government of Balochistan through Chief Secretary Balochistan, Civil Secretariat and 2 others,. Citation (as displayed): CLD 2024 462. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1584.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_003]
+Court: Balochistan High Court, Quetta. Title: Palwasha Sherani and others V. Pakistan Medical and Dental Council (PMDC) and others,. Citation (as displayed): MLD 2024 623. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1747.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_004]
+Court: Balochistan High Court, Quetta. Title: Messrs Sara Enterprises Government Contractors through Proprietor V. Secretary Finance, Government of Balochistan, Quetta and 2 others,. Citation (as displayed): PDT 2024 196. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1583.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_005]
+Court: Balochistan High Court, Quetta. Title: Messrs Sara Enterprises Government Contractors through Proprietor V. Secretary Finance, Government of Balochistan, Quetta and 2 others,. Citation (as displayed): PLD 2024 Balochistan 13. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1585.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_006]
+Court: Balochistan High Court, Quetta. Title: Muhammad Hassan V. The State,. Citation (as displayed): MLD 2023 1054. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1582.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_007]
+Court: Balochistan High Court, Quetta. Title: Ramzan and others V. The State,. Citation (as displayed): PCrLJ 2023 1489. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1581.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_008]
+Court: Balochistan High Court, Quetta. Title: Muhammad Saleem and others V. The State,. Citation (as displayed): PCrLJ 2022 1356. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/368.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_009]
+Court: Balochistan High Court, Quetta. Title: Ajmal and 2 others V. Additional Sessions Judge-IV, Quetta and 4 others,. Citation (as displayed): PCrLJ 2022 1659. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/369.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_010]
+Court: Balochistan High Court, Quetta. Title: Hafiz Zubair and another V. Mst. Hazar Naz (Widow) and 13 others,. Citation (as displayed): PLJ 2022 Quetta 124. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/372.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_011]
+Court: Balochistan High Court, Quetta. Title: The State through Deputy Attorney General V. Zahid Khan and others,. Citation (as displayed): CLD 2022 484. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/286.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_012]
+Court: Balochistan High Court, Quetta. Title: Sui Southern Gas Company Ltd., Regional office and others V. Muhammad Rahim and others,. Citation (as displayed): MLD 2022 1664. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/367.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_013]
+Court: Balochistan High Court, Quetta. Title: Jamal-Ud-Din V. The State,. Citation (as displayed): MLD 2026 451. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/2002.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_014]
+Court: Balochistan High Court, Quetta. Title: Zulekha V. Muhammad Nabi and another,. Citation (as displayed): CLC 2026 92. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/2004.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_015]
+Court: Balochistan High Court, Quetta. Title: Abdul Qayyum V. The State,. Citation (as displayed): YLR 2025 1817. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1983.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_016]
+Court: Balochistan High Court, Quetta. Title: Muhammad Hamayun V. Shamsullah and 5 others,. Citation (as displayed): PCrLJ 2026 393. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/2000.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_017]
+Court: Balochistan High Court, Quetta. Title: Muhammad Afzal V. The State,. Citation (as displayed): YLR 2025 2239. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1984.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_018]
+Court: Balochistan High Court, Quetta. Title: Muhammad Asad V. The State,. Citation (as displayed): PCrLJ 2025 1540. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1973.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_019]
+Court: Balochistan High Court, Quetta. Title: Daroo Khan and 2 others V. Haji Abdul Zahir and 2 others,. Citation (as displayed): YLR 2025 1213. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1978.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_020]
+Court: Balochistan High Court, Quetta. Title: Naimatullah V. The State,. Citation (as displayed): MLD 2025 894. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1968.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_021]
+Court: Balochistan High Court, Quetta. Title: Mir Hassan V. The State,. Citation (as displayed): YLR 2025 645. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1985.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_022]
+Court: Balochistan High Court, Quetta. Title: Mir Hassan V. The State,. Citation (as displayed): YLR 2025 838. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1991.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_023]
+Court: Balochistan High Court, Quetta. Title: Sadam Khan and another V. The State,. Citation (as displayed): YLR 2025 327. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1807.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_024]
+Court: Balochistan High Court, Quetta. Title: Osama and another V. The State and another,. Citation (as displayed): YLR 2025 215. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1819.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_025]
+Court: Balochistan High Court, Quetta. Title: Muhammad Ismail V. The State,. Citation (as displayed): MLD 2025 778. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1967.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_026]
+Court: Balochistan High Court, Quetta. Title: Najeeb Ullah V. The State,. Citation (as displayed): YLR 2025 1170. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1977.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_027]
+Court: Balochistan High Court, Quetta. Title: Mushtaq Ahmed and 6 others V. Fouzia Nawaz and 14 others,. Citation (as displayed): PLD 2025 Balochistan 60. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1995.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_028]
+Court: Balochistan High Court, Quetta. Title: Muhammad Qaseem V. The State,. Citation (as displayed): PCrLJ 2025 328. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1814.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_029]
+Court: Balochistan High Court, Quetta. Title: Bashir Ahmed V. The State,. Citation (as displayed): YLR 2025 777. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1988.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_030]
+Court: Balochistan High Court, Quetta. Title: Muhammad Yousaf V. The State,. Citation (as displayed): MLD 2025 907. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1969.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_031]
+Court: Balochistan High Court, Quetta. Title: Hajj Organizers Association of Pakistan (HOAP) Balochistan Zone through Executive Body Member V. Government of Pakistan through Federal Secretary, Ministry of Commerce, Islamabad and 2 others,. Citation (as displayed): PLD 2025 Balochistan 137. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1808.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_032]
+Court: Balochistan High Court, Quetta. Title: Bibi PATO and another V. Government of Pakistan, through Secretary Ministry of Interior, Islamabad and 2 others,. Citation (as displayed): CLC 2025 558. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1962.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_033]
+Court: Balochistan High Court, Quetta. Title: Sardar Hafeez Loni and others V. The State and others,. Citation (as displayed): PCrLJ 2025 648. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1974.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_034]
+Court: Balochistan High Court, Quetta. Title: Naimatullah and others V. The State and another,. Citation (as displayed): PCrLJ 2025 963. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1976.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_035]
+Court: Balochistan High Court, Quetta. Title: Wazir Ahmed V. Sana Habib and 2 others,. Citation (as displayed): MLD 2025 198. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1811.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_036]
+Court: Balochistan High Court, Quetta. Title: Mst. Zainab Bibi V. Muhammad Rizwan and another,. Citation (as displayed): YLR 2025 1. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1817.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_037]
+Court: Balochistan High Court, Quetta. Title: Muhammad Rafiq V. The State through Prosecutor General Balochistan,. Citation (as displayed): PCrLJ 2025 1028. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1970.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_038]
+Court: Balochistan High Court, Quetta. Title: Aziz Ahmed V. The State,. Citation (as displayed): YLR 2025 713. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1987.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_039]
+Court: Balochistan High Court, Quetta. Title: Hotak alias Sapak V. The State,. Citation (as displayed): MLD 2025 70. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1809.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_040]
+Court: Balochistan High Court, Quetta. Title: Hotak alias Sapak V. The State,. Citation (as displayed): MLD 2025 139. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1810.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_041]
+Court: Balochistan High Court, Quetta. Title: Civil Revision Petition no 182 of 2014. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1209.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_042]
+Court: Balochistan High Court, Quetta. Title: Constitutional Petition no 964, 965, 966, 967, 968, 969 and 970 of 2017. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1210.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_043]
+Court: Balochistan High Court, Quetta. Title: Civil Revision Petition no 22 of 2016. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/452.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_044]
+Court: Balochistan High Court, Quetta. Title: Civil Revision Petition no 182 of 2014. Judgment Date (as displayed): December 30, 2019. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1209.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_045]
+Court: Balochistan High Court, Quetta. Title: Constitutional Petition no 964, 965, 966, 967, 968, 969 and 970 of 2017. Judgment Date (as displayed): November 29, 2019. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/1210.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: BHC_IDX_046]
+Court: Balochistan High Court, Quetta. Title: Civil Revision Petition no 22 of 2016. Judgment Date (as displayed): November 19, 2019. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://bhc.gov.pk/media/judgments/452.pdf. Verified: 2026-09-06 against the official court repository.

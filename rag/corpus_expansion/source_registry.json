@@ -1,0 +1,140 @@
+{
+  "generatedAt": "2026-10-10T15:48:12.464Z",
+  "methodology": "Verified from official Pakistani legal sources",
+  "primary_sources": [
+    {
+      "name": "Pakistan Code",
+      "url": "https://pakistancode.gov.pk",
+      "type": "OFFICIAL_LEGISLATION",
+      "status": "VALID_EXACT_SOURCE",
+      "note": "Official legislative repository"
+    },
+    {
+      "name": "Supreme Court of Pakistan",
+      "url": "https://www.supremecourt.gov.pk",
+      "type": "APEX_COURT",
+      "status": "VALID_OFFICIAL_HOMEPAGE",
+      "note": "Full judgments available"
+    },
+    {
+      "name": "Lahore High Court",
+      "url": "https://lhc.gov.pk",
+      "type": "HIGH_COURT",
+      "status": "VALID_OFFICIAL_HOMEPAGE"
+    },
+    {
+      "name": "Islamabad High Court",
+      "url": "https://ihc.gov.pk",
+      "type": "HIGH_COURT",
+      "status": "VALID_OFFICIAL_HOMEPAGE"
+    },
+    {
+      "name": "Sindh High Court",
+      "url": "https://shc.gov.pk",
+      "type": "HIGH_COURT",
+      "status": "VALID_OFFICIAL_HOMEPAGE"
+    },
+    {
+      "name": "Peshawar High Court",
+      "url": "https://peshawarhighcourt.gov.pk",
+      "type": "HIGH_COURT",
+      "status": "VALID_OFFICIAL_HOMEPAGE"
+    },
+    {
+      "name": "Balochistan High Court",
+      "url": "https://bhc.gov.pk",
+      "type": "HIGH_COURT",
+      "status": "VALID_OFFICIAL_HOMEPAGE"
+    },
+    {
+      "name": "Federal Shariat Court",
+      "url": "https://federalshariatcourt.gov.pk",
+      "type": "SPECIAL_COURT",
+      "status": "VALID_OFFICIAL_HOMEPAGE"
+    },
+    {
+      "name": "Election Commission of Pakistan",
+      "url": "https://ecp.gov.pk",
+      "type": "CONSTITUTIONAL_BODY",
+      "status": "VALID_OFFICIAL_HOMEPAGE"
+    },
+    {
+      "name": "SECP - Company Registration",
+      "url": "https://secp.gov.pk",
+      "type": "REGULATOR",
+      "status": "VALID_OFFICIAL_HOMEPAGE"
+    },
+    {
+      "name": "FBR - Federal Board of Revenue",
+      "url": "https://fbr.gov.pk",
+      "type": "GOVERNMENT_DEPT",
+      "status": "VALID_OFFICIAL_HOMEPAGE"
+    },
+    {
+      "name": "CCP - Competition Commission",
+      "url": "https://cc.gov.pk",
+      "type": "REGULATOR",
+      "status": "VALID_OFFICIAL_HOMEPAGE"
+    },
+    {
+      "name": "FIA - Cyber Crime Wing",
+      "url": "https://fia.gov.pk",
+      "type": "LAW_ENFORCEMENT",
+      "status": "VALID_OFFICIAL_HOMEPAGE"
+    },
+    {
+      "name": "NAB - National Accountability Bureau",
+      "url": "https://nab.gov.pk",
+      "type": "ANTI_CORRUPTION",
+      "status": "VALID_OFFICIAL_HOMEPAGE"
+    },
+    {
+      "name": "Ministry of Human Rights",
+      "url": "https://mohr.gov.pk",
+      "type": "GOVERNMENT_DEPT",
+      "status": "VALID_OFFICIAL_HOMEPAGE"
+    },
+    {
+      "name": "State Bank of Pakistan",
+      "url": "https://www.sbp.org.pk",
+      "type": "CENTRAL_BANK",
+      "status": "VALID_OFFICIAL_HOMEPAGE"
+    },
+    {
+      "name": "HEC - Higher Education Commission",
+      "url": "https://hec.gov.pk",
+      "type": "REGULATOR",
+      "status": "VALID_OFFICIAL_HOMEPAGE"
+    },
+    {
+      "name": "NADRA",
+      "url": "https://nadra.gov.pk",
+      "type": "GOVERNMENT_DEPT",
+      "status": "VALID_OFFICIAL_HOMEPAGE"
+    },
+    {
+      "name": "Punjab Code",
+      "url": "https://punjabcode.punjab.gov.pk",
+      "type": "PROVINCIAL_LEGISLATION",
+      "status": "VALID_OFFICIAL_HOMEPAGE"
+    },
+    {
+      "name": "Law and Justice Commission of Pakistan",
+      "url": "https://ljcp.gov.pk",
+      "type": "JUDICIAL_BODY",
+      "status": "VALID_OFFICIAL_HOMEPAGE"
+    }
+  ],
+  "source_health": {
+    "counts": {
+      "VALID_EXACT_SOURCE": 1,
+      "VALID_OFFICIAL_HOMEPAGE": 19,
+      "REDIRECTED": 0,
+      "BROKEN": 0,
+      "MISSING": 0,
+      "UNVERIFIED": 0
+    },
+    "note": "Status is the last observed classification; URLs are re-checked only by `npm run corpus:audit -- --check-urls` over the network."
+  },
+  "verifiedAt": "2026-10-10T15:48:12.464Z"
+}

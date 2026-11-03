@@ -1,0 +1,6 @@
+{
+  "name": "Insaaf AI",
+  "description": "A digital legal assistant for Pakistani citizens providing AI-powered legal advice and automated document drafting.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": []
+}

@@ -1,0 +1,328 @@
+# HEC Degree Attestation Service (DAS): attestation of degrees, diplomas and certificates, documents required and verification
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: Pakistan (Federal) — higher education
+Version: HEC DAS pages as published, retrieved 2026-10-10 | Published/notified: 2026-10-10 | Effective: 2026-10-10 | Status: Current
+Provenance: sections below carry the canonical HEC URL for the document they were extracted from.
+Coverage area: C
+Verification note: Attestation is NOT equivalence: HEC attests a degree; the Degree Equivalence Service (DES) decides equivalence. Charges and portals change — verify on the HEC page before quoting.
+
+[SECTION: hec_degree_attestation_1_SERVICES]
+# Services
+Title: HEC Degree Attestation Service (DAS): attestation of degrees, diplomas and certificates, documents required and verification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Services
+Official page: https://www.hec.gov.pk/english/services/students/DAS/Pages/Degree-Attestation.aspx
+Source file: https://www.hec.gov.pk/english/services/students/DAS/Pages/Degree-Attestation.aspx
+Version: HEC DAS pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Services
+Degree Attestation
+- General Information
+- Public Attention Notices
+- AdditionalRequirement for MS/M.Phil. & PhD Degree
+- Degree Verification Status
+- Detail of Documents Attested by HEC
+Attestation of Degrees/Diplomas/Certificates
+|  
+|  Introducing a Fully Online & Paperless Degree Attestation System
+- User Manual New Degree Attestation System
+
+The Higher Education Commission (HEC) has introduced a fully online, paperless Degree Attestation System, replacing the previous process of attestation. This modern system is fast, convenient, and hassle-free, removing the need for applicants to visit HEC offices or submit original documents in hard copy. Applications can be submitted anytime (24/7) through online portal at www.eservices.hec.gov.pk.
+2. Applicants are advised to carefully read and understand all instructions before submitting an online application for attestation. The system operates through the following four steps:
+-  Submission of the online application by the applicant
+- Scrutiny of the application by HEC
+- Verification of academic documents by the respective university/HEI
+- Issuance of the e-Attestation Certificate by HEC
+
+[SECTION: hec_degree_attestation_2_SUBMISSION_OF_ONLINE_APPLICATION_BY_THE_APPLIC]
+# Submission of online Application by the Applicant
+Title: HEC Degree Attestation Service (DAS): attestation of degrees, diplomas and certificates, documents required and verification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Submission of online Application by the Applicant
+Official page: https://www.hec.gov.pk/english/services/students/DAS/Pages/Degree-Attestation.aspx
+Source file: https://www.hec.gov.pk/english/services/students/DAS/Pages/Degree-Attestation.aspx
+Version: HEC DAS pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+### Submission of online Application by the Applicant
+To obtain an HEC e-Attestation Certificate, applicants must complete the online process on the portal in the following sequence:
+
+1. Sign-in / Sign-up
+New users must create an account by selecting the “Sign-up" option, while existing users can log-in using their registered credentials at www.eservices.hec.gov.pk . Applicants are then required to select the “Degree Attestation" option from the menu available on the left side of their dashboard.
+
+2. Personal Details
+Applicants are required to enter personal information, including name, father's name, date of birth, marital status, gender, and address etc. (Applicants must ensure, prior to submitting the application, that their personal details on the CNIC and all educational documents are identical. Failing this, the attestation process will not be initiated).
+
+3. Degree Details
+i . Applicants must provide complete academic information of educational document(s) including level of education, duration, degree title, campus/affiliated college, session and registration/roll/seat/serial number (whichever is applicable) for the attestation of degree / transcript / Provisional Certificate / Equivalence Certificate issued by HEC.
+ii . The applicant must select, from the checkbox options, only the degree program for which attestation is required.
+
+4. Attestation Details
+Based on the selected degree program, the following document types will be available for attestation under this section:
+i. Degree
+ii. Transcript (Result Card/Result Intimation Card/Detailed Marks Certificate)
+iii. Provisional Certificate (only those issued by the university's examination office)
+iv. HEC Equivalence Letter
+The system automatically calculates the fee based on the selected documents. Applicants are advised to select only those degree programs and documents that are required and readily available for attestation.
+
+5. Document Upload
+Applicants are required to upload clear and legible scanned copies of their CNIC (both front and back) along with degree(s) / transcript(s) / Provisional Certificate(s) / Equivalence Certificate(s) issued by HEC. Any additional supporting documents may also be uploaded under the “Other Documents" tab.
+
+[SECTION: hec_degree_attestation_3_6_VERIFY_DETAILS]
+# 6. Verify Details
+Title: HEC Degree Attestation Service (DAS): attestation of degrees, diplomas and certificates, documents required and verification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 6. Verify Details
+Official page: https://www.hec.gov.pk/english/services/students/DAS/Pages/Degree-Attestation.aspx
+Source file: https://www.hec.gov.pk/english/services/students/DAS/Pages/Degree-Attestation.aspx
+Version: HEC DAS pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+6. Verify Details
+Applicants must carefully review all entered information and uploaded documents before proceeding. After ensuring accuracy, they should select the undertaking checkbox. The applicant bears full responsibility for the correctness of the provided information and uploaded documents.
+7. Payment through 1-Link. (1-Bill)
+The attestation fee is Rs. 3,000 per document (degree, transcript, provisional certificate, or HEC equivalence letter). Applicants are advised to carefully select the documents for attestation and ensure that the fee is paid in accordance with their requirements. It is the sole responsibility of the applicant to verify the completeness and accuracy of all attestation details before submitting the application. In case of any incorrect selection, the fee will neither be refunded, adjusted, nor transferred.
+To pay the attestation fee, a Consumer Number is automatically generated when the applicant clicks the “Proceed for Payment" button in their account. Applicants should then complete the payment using their preferred online banking channel or platform. After the payment is successfully made, they must click the “Verify Payment" button in their account. Once the payment is verified, the application is automatically submitted to HEC.
+
+[SECTION: hec_degree_attestation_4_SCRUTINY_OF_APPLICATION_BY_HEC]
+# Scrutiny of Application by HEC
+Title: HEC Degree Attestation Service (DAS): attestation of degrees, diplomas and certificates, documents required and verification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Scrutiny of Application by HEC
+Official page: https://www.hec.gov.pk/english/services/students/DAS/Pages/Degree-Attestation.aspx
+Source file: https://www.hec.gov.pk/english/services/students/DAS/Pages/Degree-Attestation.aspx
+Version: HEC DAS pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+### Scrutiny of Application by HEC
+### i.
+HEC conducts an initial review to ensure:
+- Verification of personal details with NADRA
+- Availability of all required documents
+- Consistency of information across CNIC and academic documents.
+- To ensure the HEC guidelines are followed to issue such degrees.
+- Accuracy of university/campus and degree details.
+- Inclusion of name of degree holder in the PhD Country Directory (for PhD cases)
+- Applicant's name in approved lists, where applicable
+ii. If any deficiencies are identified, the application is returned to the applicant with remarks, and a task is assigned in the “Task Assigned to Me" section of the e-services account of applicant. The applicant is required to fulfill the deficiency or upload required document as per HEC remarks and resubmit the application for re-scrutiny/evaluation.
+iii. If the application is found complete and accurate, it is forwarded to the concerned university for verification. Applicants are notified via SMS, email, and the system, where they can also track the real-time status of their application.
+
+[SECTION: hec_degree_attestation_5_VERIFICATION_BY_THE_UNIVERSITY_HEI]
+# Verification by the University/HEI
+Title: HEC Degree Attestation Service (DAS): attestation of degrees, diplomas and certificates, documents required and verification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Verification by the University/HEI
+Official page: https://www.hec.gov.pk/english/services/students/DAS/Pages/Degree-Attestation.aspx
+Source file: https://www.hec.gov.pk/english/services/students/DAS/Pages/Degree-Attestation.aspx
+Version: HEC DAS pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+### Verification by the University/HEI
+The concerned university verifies the applicant's credentials against its official records and conveys its verification decision to HEC for consideration.
+
+[SECTION: hec_degree_attestation_6_ISSUANCE_OF_E_ATTESTATION_CERTIFICATE]
+# Issuance of e-Attestation Certificate
+Title: HEC Degree Attestation Service (DAS): attestation of degrees, diplomas and certificates, documents required and verification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Issuance of e-Attestation Certificate
+Official page: https://www.hec.gov.pk/english/services/students/DAS/Pages/Degree-Attestation.aspx
+Source file: https://www.hec.gov.pk/english/services/students/DAS/Pages/Degree-Attestation.aspx
+Version: HEC DAS pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+### Issuance of e-Attestation Certificate
+After receiving verification from the university, HEC conducts a final review. If the case meets all requirements and complies with applicable policies, an e-Attestation Certificate is issued against documents applied for attestation. Applicants are notified via SMS and email for issuance of e-Attestation Certificate. The applicants can download the certificate from their online account at HEC Portal.
+General Guidelines:
+- Attestation of photocopies is no longer offered.
+- Documents with overwriting, erasures, or alterations will not be attested. Applicants should obtain corrected/non-altered documents from the awarding university.
+- Transcripts (complete or incomplete) can be attested even if the final degree has not been issued.
+- In cases of incomplete transcripts, the university must clearly indicate the academic status (e.g., degree in progress/incomplete degree program/incomplete transcript). Applicants must also select the appropriate option during online application.
+- Degrees awarded by foreign Universities/DAIs are not attested by HEC. HEC issue equivalence letters against foreign qualifications and ONLY such equivalence letters are attested by HEC through this web portal. The web link for equivalence of foreign degrees is https://eservices.hec.gov.pk .
+- If your degree is in the field of Medical or Nursing, then please upload your professional registration card/certificate of the relevant professional body/council such as PMDC/PNMC, (under heading of other documents) at the time of applying for degrees attestation;
+- For MS/MPhil or equivalent programs launched after 7 November 2013, an HEC-issued NOC is mandatory.
+- For PhD degrees, the applicant's name must appear in the PhD Country Directory (PCD).
+
+[SECTION: hec_degree_attestation_7_5_APPLICANT_S_SUPPORT_AND_ASSISTANCE]
+# 5. Applicant's Support and Assistance
+Title: HEC Degree Attestation Service (DAS): attestation of degrees, diplomas and certificates, documents required and verification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 5. Applicant's Support and Assistance
+Official page: https://www.hec.gov.pk/english/services/students/DAS/Pages/Degree-Attestation.aspx
+Source file: https://www.hec.gov.pk/english/services/students/DAS/Pages/Degree-Attestation.aspx
+Version: HEC DAS pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+5. Applicant's Support and Assistance
+In case of any assistance, applicants are advised to consult the “FAQs" available on the HEC website. For further support & queries, drop your concern at onlinehelp.hec.gov.pk or contact at UAN: 111-119-432 or, 0334 - 111 9432.
+Note:
+- Submission of fake, forged, or bogus documents will result in strict action under applicable laws and policies.
+- Providing incomplete or incorrect information may lead to delays or complications during processing.
+
+| Important Note:
+->> Applicants are strongly advised to enter all information on Attestation Portal as per educational documents with special care to Name and Father Name Spellings, Date of Birth, Degree Title(s), Registration /Seat/Student I.D. Number, Campus/College, CGPA/Marks etc;.
+->> After successful submission of attestation application, applicants are advised to regularly check the dashboard for updates from “Track Application" option available at left side bar. In case any deficiency has been identified, please view the comments under the “Revision Requested" section and resubmit your application accordingly through the “View/Edit" option.
+->>
+Attestation application remains on saved mode/pending payment until the verification of fee paid. Applicants must ensure that paid fee is verified in portal and status of application is submitted.
+->>
+Applicant must ensure the status of application as submitted after meeting the necessary revisions/deficiencies as pointed out by HEC.
+->>
+There may be multiple entries for the same degree program in DAS (e.g., MBA, M.B.A., Master of Business Administration). Therefore, please select all relevant degree titles and check the name of your college, campus, or department under each respective entry.
+->>
+ Ensure the uploading of clear, legible and readable educational documents in PDF file and Passport Size Picture with plain blue/white background.
+
+[SECTION: hec_degree_attestation_8_HEC_DEGREE_ATTESTATION_SERVICE_DAS]
+# HEC Degree Attestation Service (DAS)
+Title: HEC Degree Attestation Service (DAS): attestation of degrees, diplomas and certificates, documents required and verification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Degree Attestation Service (DAS)
+Official page: https://www.hec.gov.pk/english/services/students/DAS/Pages/Documents-Attested.aspx
+Source file: https://www.hec.gov.pk/english/services/students/DAS/Pages/Documents-Attested.aspx
+Version: HEC DAS pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Services
+Degree Attestation
+Detail of Documents Attested by HEC
+- General Information
+- Public Attention Notices
+- AdditionalRequirement for MS/M.Phil. & PhD Degree
+- Degree Verification Status
+- Detail of Documents Attested by HEC
+Detail of Documents Attested by HEC
+ As per mandate, HEC attests the following educational documents:
+|
+Sr. No
+|
+Degree Program
+|
+Documents to be Attested
+|
+(i)
+|
+Bachelor (14/15/16 years education)
+|
+Associate Degree
+Degree/Provisional Certificate
+Detailed Marks Certificate (DMC)/Transcript
+Incomplete Transcript
+Composite Transcripts
+|
+(ii)
+|
+Master (16/17 years education)
+|
+(iii)
+|
+MSc (Hons)/MS/MPhil (17.5/18 years education)
+|
+(iv)
+|
+PhD
+|
+(v)
+|
+Postgraduate Diploma/Diploma with prerequisite as Bachelor degree (minimum 14 years)
+|
+Postgraduate Diploma/Diploma
+Detailed Marks Certificate (if any)
+|
+(vi)
+|
+Membership/Fellowship Certificates
+|
+FCPS & MCPS Certificates awarded by College of Physician and Surgeon of Pakistan (CPSP) duly verified by the Controller of Examination, CPSP.
+|
+(vii)
+|
+Shadatul Alia fil Uloom al Arabia wal Islamia
+|
+After issuance of Equivalence Certificate from HEC, final Sanad of “Shadatul Alia fil Uloom al Arabia wal Islamia” and its transcript (Kashful Darajat) can be attested by providing and entering particulars of Aama, Khasa and Alia through online attestation application form.
+|
+(viii)
+|
+Shadatul Almiya fil Uloom al Arabia wal Islamia
+|
+After issuance of Equivalence Certificate from HEC, final Sanad of “Shadatul Almiya fil Uloom al Arabia wal Islamia” and its transcript (Kashful Darajat) can be attested by providing and entering particulars of Aama, Khasa, Alia and Almiya through online attestation application form.
+|
+(ix)
+|
+Equivalence Certificate (HEC)
+|
+Equivalence Certificate issued by the HEC of any Degree/Certificate (Foreign/Local/Deeni Asnad)
+
+[SECTION: hec_degree_attestation_9_HEC_DEGREE_ATTESTATION_SERVICE_DAS_PART_2]
+# HEC Degree Attestation Service (DAS) (part 2)
+Title: HEC Degree Attestation Service (DAS): attestation of degrees, diplomas and certificates, documents required and verification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Degree Attestation Service (DAS) (part 2)
+Official page: https://www.hec.gov.pk/english/services/students/DAS/Pages/Additional-Requirement.aspx
+Source file: https://www.hec.gov.pk/english/services/students/DAS/Pages/Additional-Requirement.aspx
+Version: HEC DAS pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Services
+Degree Attestation
+AdditionalRequirement for MS/M.Phil. & PhD Degree
+- General Information
+- Public Attention Notices
+- AdditionalRequirement for MS/M.Phil. & PhD Degree
+- Degree Verification Status
+- Detail of Documents Attested by HEC
+AdditionalRequirement for MS/M.Phil. & PhD Degree
+-  If a degree program of MS/MPhil/Equivalent has been launched by university after 07
+th
+November 2013, issuance of NOC by HEC is mandatory. The list showing campus wise detail of NOC is available at web link
+Updated-list-NOC-Issued.pdf
+- For attestation of a PhD degree, name of degree holder should be available in PhD Country Directory (PCD).
+
+[SECTION: hec_degree_attestation_10_HEC_DEGREE_ATTESTATION_SERVICE_DAS_PART_3]
+# HEC Degree Attestation Service (DAS) (part 3)
+Title: HEC Degree Attestation Service (DAS): attestation of degrees, diplomas and certificates, documents required and verification
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Degree Attestation Service (DAS) (part 3)
+Official page: https://www.hec.gov.pk/english/services/students/DAS/Pages/Verification.aspx
+Source file: https://www.hec.gov.pk/english/services/students/DAS/Pages/Verification.aspx
+Version: HEC DAS pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+Degree Attestation
+Degree Verification Status
+- General Information
+- Public Attention Notices
+- AdditionalRequirement for MS/M.Phil. & PhD Degree
+- Degree Verification Status
+- Detail of Documents Attested by HEC
+Degree Verification Status
+ Click here to View the Degree Verification Status 

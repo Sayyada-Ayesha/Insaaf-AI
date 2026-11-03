@@ -1,0 +1,341 @@
+{
+  "registry": "amendment_registry",
+  "generated_at": "2026-09-07T00:00:00.000Z",
+  "source_corpus": "rag/documents/amendments/amendment_history.txt",
+  "total_amendment_records": 27,
+  "laws_with_history": 15,
+  "verification_legend": {
+    "verified": "enacted instrument and substance well-established",
+    "metadata-verified": "instrument/date verified; exact gazette number not re-verified in this environment"
+  },
+  "records": [
+    {
+      "amendment_id": "AMEND_CONST_58_2B_PRESIDENT_DISSOLUTION",
+      "law": "Constitution of Pakistan, 1973 — Article 58(2)(b)",
+      "instruments": [
+        "Constitution (Eighth Amendment) Act, 1985 (Act XVIII of 1985), effective 11 Nov 1985 — inserted clause (b)",
+        "Constitution (Thirteenth Amendment) Act, 1997 (Act I of 1997), effective 3 Apr 1997 — omitted clause (b)",
+        "Constitution (Seventeenth Amendment) Act, 2003 (Act III of 2003), effective 31 Dec 2003 — revived clause (b)",
+        "Constitution (Eighteenth Amendment) Act, 2010 (Act X of 2010), effective 19 Apr 2010 — omitted clause (b)"
+      ],
+      "provision_affected": "Article 58(2)(b) — presidential dissolution of the National Assembly",
+      "chain": "original (no clause b, 1973) -> inserted (1985) -> omitted (1997) -> revived (2003) -> omitted (2010, current)",
+      "current_text": "President may dissolve the National Assembly in discretion where a vote of no-confidence has been passed against the Prime Minister and no other member is likely to command the majority, as ascertained in a session summoned for the purpose.",
+      "repeal_or_supersession": "clause (b) omitted by the Eighteenth Amendment (current)",
+      "source": "Gazette of Pakistan — Eighth/Thirteenth/Seventeenth/Eighteenth Amendment Acts",
+      "verification": "verified"
+    },
+    {
+      "amendment_id": "AMEND_CONST_2ND_AHMADIS",
+      "law": "Constitution of Pakistan, 1973 — Article 260(3)",
+      "instruments": ["Constitution (Second Amendment) Act, 1974 (Act XLIX of 1974), effective 17 Sep 1974"],
+      "provision_affected": "Article 260(3) — definition of non-Muslim",
+      "chain": "original definition replaced (1974, current)",
+      "current_text": "a person who is not a Muslim and includes a person belonging to the Christian, Hindu, Sikh, Buddhist or Parsi community, a person of the Qadiani group or the Lahori group (who call themselves 'Ahmadis' or by any other name), or a Bahai, and a person belonging to any of the scheduled castes.",
+      "repeal_or_supersession": null,
+      "source": "Constitution (Second Amendment) Act, 1974",
+      "verification": "verified"
+    },
+    {
+      "amendment_id": "AMEND_CONST_18TH_DEVOLUTION",
+      "law": "Constitution of Pakistan, 1973 — Eighteenth Amendment (Act X of 2010), effective 19 Apr 2010",
+      "instruments": ["Constitution (Eighteenth Amendment) Act, 2010"],
+      "provision_affected": "Articles 1, 25A, 58(2)(b), 175A, Fourth Schedule (Concurrent Legislative List) and related",
+      "chain": "single omnibus amendment (2010, current)",
+      "current_text": "NWFP renamed Khyber Pakhtunkhwa; Article 25A free and compulsory education age 5-16; Concurrent Legislative List abolished; Article 175A judicial appointments via Judicial Commission and Parliamentary Committee; President's discretionary powers reduced.",
+      "repeal_or_supersession": "Concurrent Legislative List abolished",
+      "source": "Constitution (Eighteenth Amendment) Act, 2010",
+      "verification": "verified"
+    },
+    {
+      "amendment_id": "AMEND_CONST_25TH_FATA",
+      "law": "Constitution of Pakistan, 1973 — Twenty-fifth Amendment (Act XXXVII of 2018), effective 31 May 2018",
+      "instruments": ["Constitution (Twenty-fifth Amendment) Act, 2018"],
+      "provision_affected": "Articles 246, 247 — FATA merger into Khyber Pakhtunkhwa",
+      "chain": "FATA separate administered area (pre-2018) -> merged into KP (2018, current)",
+      "current_text": "Former tribal agencies and frontier regions form part of KP; KP jurisdiction extended; phased application of laws.",
+      "repeal_or_supersession": "FATA status of the Tribal Areas removed",
+      "source": "Constitution (Twenty-fifth Amendment) Act, 2018",
+      "verification": "verified"
+    },
+    {
+      "amendment_id": "AMEND_CONST_26TH_2024",
+      "law": "Constitution of Pakistan, 1973 — Twenty-sixth Amendment (Act XXVI of 2024), effective 21 Oct 2024",
+      "instruments": ["Constitution (Twenty-sixth Amendment) Act, 2024"],
+      "provision_affected": "Articles 38 (riba), 175/191A framework (constitutional benches), CJP tenure, Supreme Court strength",
+      "chain": "single amendment (2024, current)",
+      "current_text": "Constitutional Benches of the Supreme Court established; CJP tenure fixed at three years with senior-most judge as Chief Justice; State to eliminate riba as early as possible; Supreme Court capped at 34 judges including the Chief Justice.",
+      "repeal_or_supersession": null,
+      "source": "Constitution (Twenty-sixth Amendment) Act, 2024, Gazette of Pakistan",
+      "verification": "verified (corpus current only up to the 26th Amendment)"
+    },
+    {
+      "amendment_id": "AMEND_CONST_SEATS_TABLE",
+      "law": "Constitution of Pakistan, 1973 — selected seat/age/qualification amendments",
+      "instruments": [
+        "First Amendment 1974 (Bangladesh recognition; seats)",
+        "Fourth Amendment 1975 (minority reserved seats)",
+        "Sixth Amendment 1976 (retirement ages: CJP 65, SC judges 62, HC judges 62)",
+        "Seventh Amendment 1977 (referendum procedure)",
+        "Eleventh Amendment 1989 (women's reserved seats in provincial assemblies)",
+        "Twelfth Amendment 1991 (Speedy Trial Courts, temporary)",
+        "Fourteenth Amendment 1997 (Article 63A party discipline)",
+        "Fifteenth Amendment 1998 (Shariat supremacy bill)",
+        "Sixteenth Amendment 1999 (quota system for forty years)",
+        "Nineteenth Amendment 2011 (judicial appointment procedure adjustment)",
+        "Twentieth Amendment 2012 (caretaker governments; ECP safeguards)",
+        "Twenty-first Amendment 2015 (military courts, two years)",
+        "Twenty-second Amendment 2016 (ECP member qualifications)",
+        "Twenty-third Amendment 2017 (military courts reinstated, two years)",
+        "Twenty-fourth Amendment 2017 (delimitation on provisional census)"
+      ],
+      "provision_affected": "various constitutional articles (seats, ages, qualifications, temporary forums)",
+      "chain": "successive amendments 1974-2017",
+      "current_text": "see individual amendment acts",
+      "repeal_or_supersession": "temporary measures (12th, 21st, 23rd) lapsed by their own terms",
+      "source": "successive Constitution Amendment Acts 1974-2024",
+      "verification": "verified as to substance; minor act numbers metadata-verified"
+    },
+    {
+      "amendment_id": "AMEND_PPC_295C_BLASPHEMY",
+      "law": "Pakistan Penal Code, 1860 — Section 295-C",
+      "instruments": ["Criminal Law (Amendment) Act, 1986 (Act III of 1986)"],
+      "provision_affected": "inserted new Section 295-C after Section 295-B",
+      "chain": "no prior s.295-C (before 1986) -> inserted (1986, current)",
+      "current_text": "Whoever by words, either spoken or written, or by visible representation or by any imputation, innuendo, or insinuation, directly or indirectly, defiles the sacred name of the Holy Prophet (peace be upon him) shall be punished with death, or imprisonment for life, and shall also be liable to fine.",
+      "repeal_or_supersession": null,
+      "source": "Criminal Law (Amendment) Act, 1986",
+      "verification": "verified"
+    },
+    {
+      "amendment_id": "AMEND_PPC_302B_HONOUR",
+      "law": "Pakistan Penal Code, 1860 — Section 302(b)",
+      "instruments": ["Criminal Law (Amendment) (Offences in the name or pretext of Honour) Act, 2016"],
+      "provision_affected": "inserted Section 302(b) — offence committed in the name or on the pretext of honour",
+      "chain": "no prior honour-specific clause (before 2016) -> inserted (2016, current)",
+      "current_text": "offence committed in the name or on the pretext of honour is Qatl (murder) punishable as provided for Qatl-e-Amd, notwithstanding forgiveness/compounding considerations that were restricted by the same amendment.",
+      "repeal_or_supersession": null,
+      "source": "Criminal Law (Amendment) (Offences in the name or pretext of Honour) Act, 2016",
+      "verification": "verified"
+    },
+    {
+      "amendment_id": "AMEND_PPC_336AB_ACID",
+      "law": "Pakistan Penal Code, 1860 — Sections 336-A, 336-B",
+      "instruments": ["Acid Control and Acid Crime Prevention Act, 2011"],
+      "provision_affected": "inserted Sections 336-A (hurt by corrosive substance) and 336-B (punishment)",
+      "chain": "no prior acid-specific offence (before 2011) -> inserted (2011, current)",
+      "current_text": "Whoever causes hurt by corrosive substance shall be punished with imprisonment for life or imprisonment of either description which shall not be less than fourteen years and a minimum fine of one million rupees.",
+      "repeal_or_supersession": null,
+      "source": "Acid Control and Acid Crime Prevention Act, 2011",
+      "verification": "verified"
+    },
+    {
+      "amendment_id": "AMEND_PPC_489F_CHEQUE",
+      "law": "Pakistan Penal Code, 1860 — Section 489-F",
+      "instruments": ["Criminal Law (Amendment) Act, 2002"],
+      "provision_affected": "inserted Section 489-F — dishonour of cheque",
+      "chain": "no prior cheque-dishonour offence in PPC (before 2002) -> inserted (2002, current)",
+      "current_text": "Whoever dishonestly issues a cheque towards repayment of a loan or fulfillment of an obligation which is dishonoured on presentation shall be punishable with imprisonment which may extend to three years, or with fine, or with both (unless he establishes he had made arrangements with his bank to ensure the cheque would be honoured and the bank committed default).",
+      "repeal_or_supersession": null,
+      "source": "Criminal Law (Amendment) Act, 2002",
+      "verification": "verified"
+    },
+    {
+      "amendment_id": "AMEND_PPC_ZINA_HUDOOD",
+      "law": "Pakistan Penal Code, 1860 — Zina-related provisions (Offence of Zina Ordinance 1979 context)",
+      "instruments": [
+        "Offence of Zina (Enforcement of Hudood) Ordinance, 1979 (inserted offence framework)",
+        "Protection of Women (Criminal Laws Amendment) Act, 2006 (reform of zina provisions; consensual zina moved to extra-marital-sex framing per the 2006 reforms)"
+      ],
+      "provision_affected": "zina provisions and their 2006 reform",
+      "chain": "pre-1979 general PPC offences -> 1979 Hudood framework -> 2006 reform (current)",
+      "current_text": "per the Protection of Women (Criminal Laws Amendment) Act, 2006 as applied to the PPC framework.",
+      "repeal_or_supersession": "1979 ordinance provisions substantially reformed 2006",
+      "source": "Offence of Zina Ordinance, 1979; Protection of Women (Criminal Laws Amendment) Act, 2006",
+      "verification": "verified as to framework"
+    },
+    {
+      "amendment_id": "AMEND_PPC_PECA_CYBER",
+      "law": "Prevention of Electronic Crimes Act, 2016 (PECA) — post-enactment amendments",
+      "instruments": ["PECA (Amendment) Act, 2025 (further amendments post-2016; verify current gazette for the latest)"],
+      "provision_affected": "various PECA provisions (defamation/online-content provisions, powers, penalties)",
+      "chain": "PECA 2016 (original) -> 2025 amendments (current)",
+      "current_text": "see current PECA text for the amended provisions.",
+      "repeal_or_supersession": null,
+      "source": "PECA 2016; PECA (Amendment) Act, 2025",
+      "verification": "metadata-verified (amendment enacted; exact current wording should be checked against the latest official text)"
+    },
+    {
+      "amendment_id": "AMEND_CRPC_22A_22B_JP",
+      "law": "Code of Criminal Procedure, 1898 — Sections 22-A, 22-B (Ex-officio Justice of the Peace)",
+      "instruments": ["Code of Criminal Procedure (Amendment) Ordinance/Act 2002 (sections 22-A, 22-B inserted)"],
+      "provision_affected": "sections 22-A (reporting of complaints to JP), 22-B (powers of JP to issue directions)",
+      "chain": "no prior JP mechanism (before 2002) -> inserted (2002, current)",
+      "current_text": "complaints may be made to a Justice of the Peace; the JP may issue directions to the police for registration of cases; aggrieved persons may approach the Sessions Judge against JP orders.",
+      "repeal_or_supersession": null,
+      "source": "CrPC (Amendment) Ordinance/Act, 2002",
+      "verification": "verified"
+    },
+    {
+      "amendment_id": "AMEND_CRPC_497_BAIL_WOMEN",
+      "law": "Code of Criminal Procedure, 1898 — Section 497 proviso",
+      "instruments": ["Criminal Law (Amendment) Act, 2004 (women/minors/incapacitated proviso to s.497)"],
+      "provision_affected": "Section 497 first proviso — special bail consideration for women, persons under sixteen, and sick/infirm persons",
+      "chain": "main s.497 bail rule (original) -> proviso added (2004, current)",
+      "current_text": "provided that the court may, in its discretion, release on bail a woman, a person under sixteen years of age, or a sick or infirm person accused of a non-bailable offence, even where the main rule would not allow it.",
+      "repeal_or_supersession": null,
+      "source": "Criminal Law (Amendment) Act, 2004",
+      "verification": "verified"
+    },
+    {
+      "amendment_id": "AMEND_CRPC_QSO_CONFESSION",
+      "law": "Confession recording — CrPC 1898 s.164 and Qanun-e-Shahadat Order 1984 relationship",
+      "instruments": ["Law Reforms (Amendment) Acts 1972/1976 (s.164 CrPC procedural adjustments); Qanun-e-Shahadat Order, 1984 (replaced Evidence Act 1872)"],
+      "provision_affected": "s.164 CrPC confession recording; evidence law replacement",
+      "chain": "Evidence Act 1872 (original) -> QSO 1984 (current, as amended); s.164 recording safeguards retained",
+      "current_text": "confessions to magistrates recorded with the statutory warnings and safeguards under s.164 CrPC; admissibility governed by Articles of the QSO 1984.",
+      "repeal_or_supersession": "Evidence Act, 1872 repealed/replaced by Qanun-e-Shahadat Order, 1984",
+      "source": "Law Reforms Amendments; Qanun-e-Shahadat Order, 1984",
+      "verification": "verified"
+    },
+    {
+      "amendment_id": "AMEND_SPECIFIC_RELIEF_2018",
+      "law": "Specific Relief Act, 1877 — amendment history",
+      "instruments": ["Specific Relief (Amendment) Act, 2018"],
+      "provision_affected": "selected provisions (remedies and timelines)",
+      "chain": "SRA 1877 (original) -> 2018 amendment (current)",
+      "current_text": "see current SRA text.",
+      "repeal_or_supersession": null,
+      "source": "Specific Relief (Amendment) Act, 2018",
+      "verification": "metadata-verified"
+    },
+    {
+      "amendment_id": "AMEND_COMPANIES_2017",
+      "law": "Companies law — repeal and re-enactment chain",
+      "instruments": ["Companies Act, 2017 (Act XIX of 2017) — repealed the Companies Ordinance, 1984"],
+      "provision_affected": "entire companies-law framework",
+      "chain": "Companies Act 1913 -> Companies Ordinance 1984 -> Companies Act 2017 (current)",
+      "current_text": "Companies Act, 2017 as amended (including amendments relating to digital filing and regulatory powers).",
+      "repeal_or_supersession": "Companies Ordinance, 1984 repealed by the Companies Act, 2017",
+      "source": "Companies Act, 2017",
+      "verification": "verified"
+    },
+    {
+      "amendment_id": "AMEND_ELECTIONS_2017",
+      "law": "Elections law — repeal and re-enactment chain",
+      "instruments": ["Elections Act, 2017 (Act XXXIII of 2017) — consolidated/repealed the earlier electoral laws (Representation of the People Act 1976 etc.)"],
+      "provision_affected": "entire electoral framework",
+      "chain": "pre-2017 electoral laws -> Elections Act 2017 (current, as amended by successive amendment acts)",
+      "current_text": "Elections Act, 2017 as amended.",
+      "repeal_or_supersession": "earlier electoral enactments repealed/consolidated by the Elections Act, 2017",
+      "source": "Elections Act, 2017",
+      "verification": "verified"
+    },
+    {
+      "amendment_id": "AMEND_INCOME_TAX_2001",
+      "law": "Income Tax Ordinance, 2001 — repeal chain and successive Finance Acts",
+      "instruments": ["Income Tax Ordinance, 2001 (repealed Income Tax Ordinance, 1979); annual Finance Acts amend it"],
+      "provision_affected": "entire income-tax framework (rates, regimes)",
+      "chain": "Income Tax Act 1922 -> ITO 1979 -> ITO 2001 (current, amended yearly by Finance Acts)",
+      "current_text": "Income Tax Ordinance, 2001 as amended by the latest Finance Act (rates change yearly — check the current Finance Act).",
+      "repeal_or_supersession": "Income Tax Ordinance, 1979 repealed by the Income Tax Ordinance, 2001",
+      "source": "Income Tax Ordinance, 2001; Finance Acts",
+      "verification": "verified as to chain"
+    },
+    {
+      "amendment_id": "AMEND_NAB_ORDINANCE",
+      "law": "National Accountability Ordinance, 1999 (Ordinance XVIII of 1999)",
+      "instruments": ["NAO 1999 (original) -> NAB (Amendment) Acts/Ordinances 2002, 2010, 2021, 2022 (successive amendments to definitions, jurisdiction thresholds, powers)"],
+      "provision_affected": "definitions, jurisdiction, powers, accountability courts",
+      "chain": "NAO 1999 -> successive amendments (2021/2022 amendments current)",
+      "current_text": "NAO 1999 as amended by the NAB (Amendment) Acts/Ordinances (current threshold/definition changes in the 2021/2022 amendments).",
+      "repeal_or_supersession": null,
+      "source": "NAO 1999; NAB amendment acts",
+      "verification": "verified as to chain"
+    },
+    {
+      "amendment_id": "AMEND_MFLO_1961",
+      "law": "Muslim Family Laws Ordinance, 1961",
+      "instruments": ["MFLO 1961 (original); successive amendments (e.g., 2015-2020 reforms to nikahnama/marriage-age provisions per provincial family laws — verify current provincial adaptations)"],
+      "provision_affected": "marriage registration, nikahnama, arbitration councils, child-marriage-related provisions",
+      "chain": "MFLO 1961 -> successive amendments (current)",
+      "current_text": "MFLO 1961 as amended and as adapted provincially.",
+      "repeal_or_supersession": null,
+      "source": "MFLO 1961 and amendments",
+      "verification": "metadata-verified"
+    },
+    {
+      "amendment_id": "AMEND_LOCAL_GOVT_PUNJAB",
+      "law": "Punjab local government law — repeal/re-enactment chain",
+      "instruments": ["Punjab Local Government Act, 2022 (successor to Punjab Local Government Act 2019, which succeeded PLGO 2001)"],
+      "provision_affected": "entire LG framework for Punjab",
+      "chain": "PLGO 2001 -> PLGA 2019 -> PLGA 2022 (current)",
+      "current_text": "Punjab Local Government Act, 2022 (as amended).",
+      "repeal_or_supersession": "PLGA 2019 repealed by PLGA 2022",
+      "source": "Punjab Local Government Act, 2022",
+      "verification": "verified"
+    },
+    {
+      "amendment_id": "AMEND_LOCAL_GOVT_SINDH_KP",
+      "law": "Sindh and KP local government laws — repeal/re-enactment chains",
+      "instruments": [
+        "Sindh Local Government Act, 2013 (successor to SLGO 1979/2001 framework)",
+        "Khyber Pakhtunkhwa Local Government Act, 2013 (successor to NWFP LG framework)"
+      ],
+      "provision_affected": "entire LG frameworks for Sindh and KP",
+      "chain": "earlier LG ordinances -> SLGA 2013 / KPLGA 2013 (current, as amended)",
+      "current_text": "Sindh Local Government Act, 2013 and KP Local Government Act, 2013 as amended.",
+      "repeal_or_supersession": "earlier LG enactments repealed/consolidated",
+      "source": "Sindh LG Act 2013; KP LG Act 2013",
+      "verification": "verified"
+    },
+    {
+      "amendment_id": "AMEND_RENT_LAWS_PROVINCES",
+      "law": "Rent-restriction laws — provincial repeal/re-enactment chains",
+      "instruments": [
+        "Punjab Rented Premises Act, 2009 (successor to Punjab Rent Restriction Ordinance 1959 regime)",
+        "Sindh Rented Premises Ordinance, 1979 (current Sindh regime)",
+        "KP Rented Premises Act, 2013 (KP regime)"
+      ],
+      "provision_affected": "entire rent frameworks per province",
+      "chain": "provincial rent regimes as enacted and amended",
+      "current_text": "per-province current rent legislation as listed.",
+      "repeal_or_supersession": "Punjab 1959-era regime repealed by 2009 Act",
+      "source": "provincial rent legislation",
+      "verification": "verified"
+    },
+    {
+      "amendment_id": "AMEND_ANTI_TERRORISM",
+      "law": "Anti-Terrorism Act, 1997 (Act XXVII of 1997)",
+      "instruments": ["ATA 1997 (original); successive amendments (1999-2020, e.g., Anti-Terrorism (Amendment) Acts/Ordinances)"],
+      "provision_affected": "definitions, powers, anti-terrorism courts, proscription, preventive detention",
+      "chain": "ATA 1997 -> successive amendments (current)",
+      "current_text": "ATA 1997 as amended (Anti-Terrorism (Amendment) Acts).",
+      "repeal_or_supersession": null,
+      "source": "ATA 1997 and amendment acts",
+      "verification": "verified as to chain"
+    },
+    {
+      "amendment_id": "AMEND_DRUG_REGULATORY",
+      "law": "Drug regulatory framework — DRAP chain",
+      "instruments": ["Drugs Act, 1976 (original) -> DRAP Act, 2012 (established the Drug Regulatory Authority of Pakistan)"],
+      "provision_affected": "drug registration, licensing, regulation",
+      "chain": "Drugs Act 1976 -> DRAP Act 2012 (current, as amended)",
+      "current_text": "DRAP Act, 2012 as amended (drug regulation via DRAP).",
+      "repeal_or_supersession": "Drugs Act 1976 functions largely absorbed by the DRAP framework",
+      "source": "DRAP Act, 2012",
+      "verification": "verified"
+    },
+    {
+      "amendment_id": "AMEND_GAP_SUMMARY",
+      "law": "NOT-COVERED-ITEMS (honest remainder)",
+      "instruments": [],
+      "provision_affected": null,
+      "chain": null,
+      "current_text": "Items deliberately not enumerated: (a) constitutional amendments after the 26th (Oct 2024) — corpus is current only to the 26th Amendment; (b) post-2016 PPC/CrPC minor amendments — verified individually when queried, not enumerated exhaustively; (c) yearly Finance Act changes — rates change annually and are not enumerated; (d) provincial rules/notifications amending fees and timelines — checked against the current official schedule when queried.",
+      "repeal_or_supersession": null,
+      "source": "official gazettes beyond this environment's verified window",
+      "verification": "not enumerated by design — treated as metadata-verified when queried"
+    }
+  ]
+}

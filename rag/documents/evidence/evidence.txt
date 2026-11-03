@@ -1,0 +1,65 @@
+[SECTION: 1] Qanun-e-Shahadat Order, 1984 (President's Order No. 10 of 1984) — The law of evidence applicable to all judicial proceedings in Pakistan. Repeals and replaces the Evidence Act 1872. Source: Pakistan Code (pakistancode.gov.pk). Status: CURRENT.
+
+[SECTION: 2] Interpretation — In this Order, 'court' includes all judges, magistrates, arbitrators and all persons legally authorized to take evidence. 'Facts' include physical/mental states and conditions. 'Relevant fact' means one fact connected with another in any of the ways referred to in the provisions of this Order.
+
+[SECTION: 3] Definition of evidence — Evidence means and includes: (1) all statements which the court permits or requires to be made before it by witnesses in relation to matters of fact under inquiry (oral evidence); (2) all documents produced for the inspection of the court (documentary evidence).
+
+[SECTION: 4] Res gestae — Facts which, though not in issue, are so connected with a fact in issue as to form part of the same transaction are relevant, whether they occurred at the same time and place or at different times and places.
+
+[SECTION: 5] Facts which are the occasion, cause or effect of facts in issue — Facts which are the occasion, cause or effect, immediate or otherwise, of relevant facts or facts in issue, or which constitute the state of things under which they happened, or which afforded an opportunity for their occurrence or transaction, are relevant.
+
+[SECTION: 6] Motive, preparation and conduct — Any fact which shows motive for any fact in issue or relevant fact, or any fact which constitutes preparation for or previous or subsequent conduct with reference to any fact in issue or relevant fact, is relevant.
+
+[SECTION: 7] Facts necessary to explain or introduce relevant facts — Facts necessary to explain or introduce a fact in issue or relevant fact, or which support or rebut an inference suggested by such fact, or which establish the identity of any person or thing, are relevant.
+
+[SECTION: 8] Admissions defined — An admission is a statement, oral or documentary, which suggests any inference as to any fact in issue or relevant fact, and which is made by any person under the circumstances hereinafter mentioned.
+
+[SECTION: 9] Admission by party to proceeding — Statements made by a party to the proceeding, or by an agent authorized to make them, are admissions. Also statements by persons who have a proprietary or pecuniary interest in the subject-matter of the proceeding.
+
+[SECTION: 10] Confessions defined — A confession is an admission made at any time by a person accused of an offence stating or suggesting the inference that he committed that offence.
+
+[SECTION: 11] Confession caused by inducement, threat or promise — A confession made by an accused person is irrelevant if it appears to the court to have been caused by any inducement, threat or promise proceeding from a person in authority, sufficient to give the accused grounds for supposing that he would gain any advantage or avoid any evil in reference to the proceedings.
+
+[SECTION: 12] Confession to police officer — No confession made to a police officer shall be proved against a person accused of any offence.
+
+[SECTION: 13] Confession in custody — No confession made by any person while in custody of a police officer, unless made in the immediate presence of a Magistrate, shall be proved.
+
+[SECTION: 14] Information leading to discovery — When any fact is deposed to as discovered in consequence of information received from a person accused of any offence, so much of such information as relates distinctly to the fact discovered may be proved.
+
+[SECTION: 15] Confession by co-accused — A confession made by one accused person against another accused person, when they are tried jointly for the same offence, may be taken into consideration against the other accused.
+
+[SECTION: 16] Burden of proof — Whoever desires any court to give judgment as to any legal right or liability dependent on the existence of facts which he asserts must prove that those facts exist. The burden of proof lies on the person who would fail if no evidence at all were given on either side.
+
+[SECTION: 17] Burden of proof in criminal cases — In criminal proceedings, the burden of proving the guilt of the accused lies on the prosecution. This is the principle of presumption of innocence until proven guilty.
+
+[SECTION: 18] Presumptions — The court may presume the existence of certain facts. Presumptions may be rebuttable or irrebuttable. Illustrations: Certified copies of public documents are presumed genuine; a person in possession of stolen goods soon after theft may be presumed to have stolen them.
+
+[SECTION: 19] Estoppel — When one person has by his declaration, act or omission intentionally caused or permitted another person to believe a thing to be true and to act upon such belief, neither he nor his representative shall be allowed to deny the truth of that thing in any suit or proceeding.
+
+[SECTION: 20] Estoppel of tenant — No tenant of immovable property, or person claiming through such tenant, shall be permitted to deny that the landlord had title to the property at the beginning of the tenancy.
+
+[SECTION: 21] Witness competence — All persons shall be competent to testify unless the court considers they are prevented from understanding the questions put to them or from giving rational answers due to tender years, extreme old age, disease of mind or body, or any other similar cause.
+
+[SECTION: 22] Dumb witnesses — A witness who is unable to speak may give his evidence in writing or by signs, which must be interpreted.
+
+[SECTION: 23] Number of witnesses — No particular number of witnesses is required for proof of any fact, unless otherwise provided by any law.
+
+[SECTION: 24] Examination of witnesses — Witnesses shall be first examined-in-chief, then cross-examined, and then re-examined. Leading questions may not be put in examination-in-chief or re-examination without the court's permission, but may be put in cross-examination.
+
+[SECTION: 25] Hostile witness — A party may, with the permission of the court, cross-examine his own witness if the witness appears hostile, adverse or interested in the outcome.
+
+[SECTION: 26] Impeaching credit of witness — The credit of a witness may be impeached by: (1) evidence of persons that they do not believe the witness on oath; (2) proof that the witness has been bribed or accepted offers; (3) former inconsistent statements; (4) evidence of general reputation for untruthfulness.
+
+[SECTION: 27] Primary and secondary evidence — Primary evidence means the document itself produced for inspection. Secondary evidence means copies, counterparts, oral accounts of document content admissible when primary evidence is unavailable.
+
+[SECTION: 28] Proof of documents — Documents must be proved by primary evidence except in cases where secondary evidence is permitted by this Order.
+
+[SECTION: 29] Public documents — The following are public documents: (1) documents forming the acts or records of sovereign authority, official bodies, courts; (2) public records kept in Pakistan of private documents; (3) published official documents.
+
+[SECTION: 30] Private documents — All documents that are not public documents are private documents.
+
+[SECTION: 31] Certified copies — Every public officer having custody of a public document must give a certified copy on demand, on payment of the legal fees. Certified copies may be proved without production of the original.
+
+[SECTION: 32] Presumptions as to documents — The court shall presume the genuineness of every document purporting to be a certified copy, or an official gazette, or a gazette notification, or a document certified by a Pakistani diplomatic or consular officer.
+
+[SECTION: 33] Judicial notice — The court shall take judicial notice of: all laws in force in Pakistan, international treaties, the seals of courts, the seals of notaries public, the accession and sign manuals of the President, geographical divisions, and public holidays.

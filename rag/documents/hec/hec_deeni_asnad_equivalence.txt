@@ -1,0 +1,190 @@
+# HEC equivalence of Deeni Asnad / Shahadat-ul-Alia and madrasah degrees
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: Pakistan (Federal) — higher education
+Version: HEC Deeni Asnad procedure and FAQs as published, retrieved 2026-10-10 | Published/notified: 2026-10-10 | Effective: 2026-10-10 | Status: Current
+Provenance: sections below carry the canonical HEC URL for the document they were extracted from.
+Coverage area: C
+Verification note: Includes the HEC notification on recognition of Shahadat-ul-Alia. The Urdu original is a native single-page PDF typeset in Jameel Noori Nastaleeq whose entire Urdu text layer maps to Private Use Area codepoints (verified 2026-10-18: 979 of 979 non-ASCII characters are U+E000-U+F8FF), so its Urdu wording has no recoverable Unicode layer; see the source-recovery gap recorded at the end of this document. Deeni equivalence is decided by the HEC Equivalence Committee for Deeni Degrees.
+
+[SECTION: hec_deeni_asnad_equivalence_1_HEC_EQUIVALENCE_OF_DEENI_ASNAD_SHAHADAT_UL_ALI]
+# HEC equivalence of Deeni Asnad / Shahadat-ul-Alia and
+Title: HEC equivalence of Deeni Asnad / Shahadat-ul-Alia and madrasah degrees
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC equivalence of Deeni Asnad / Shahadat-ul-Alia and
+Official page: https://www.hec.gov.pk/english/services/students/DES/Pages/Procedure/Deeni-Asnad.aspx
+Source file: https://www.hec.gov.pk/english/services/students/DES/Pages/Procedure/Deeni-Asnad.aspx
+Version: HEC Deeni Asnad procedure and FAQs as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+EQUIVALENCE OF DEENI ASNAD
+EQUIVALENCE OF DEENI ASNAD
+DEENI ASNAD EQUIVALENCE PROCEDURE FOR SANAD SHAHADATUL ALMIYA FIL ULOOM UL ARABIA WAL ISLAMIA:
+- Filling of an application form E-02 duly signed and verified from concerned Madaris Nazim-e-Ala for Deeni Asnad.
+- Photocopy of each Sanad/Kashful Darajat duly signed and verified form concerned Nazim-e-Ala.
+- Photocopy of year-wise Kashful Darajat indicating date of admission and date of completion alongwith duration of each year/term.
+- Attestation of Sanvia Aaama and Sanvia Khasa from IBCC.
+- Copy of National Identity Card or Passport in case of foreigner
+- Equivalence fee of Rs. 2000/- non refundable for each Deeni Sanad i.e. Shahadatul Alia and Shahadatul Almiya
+DEENI ASNAD EQUIVALENCE PROCEDURE FOR SANAD SHAHADATUL ALIA FIL ULOOM UL ARABIA WAL ISLAMIA:
+
+HEC recognizes Sanad "Shahadatul Alia Fil Uloomal Arabia wal Islamia" awarded by approved Deeni Institutions as equivalent to a corresponding Bachelor degree involving 14-year schooling subject to fulfilling the following conditions:
+- Valid and legible copy of CNIC
+- Issuance of Equivalence by IBCC against Sanvia Aaama and Sanvia Khasa as equivalent to Matric and Intermediate respectively.
+- Passing conditional subjects i.e. English and Pakistan Studies at Bachelor (pass) level from HEC recognized University/DAIs.
+- Equivalence fee of Rs 2000/- (non-refundable) deposited through challan form in Favor of HEC income account.
+- List of approved Deeni institutions along with the mode of study
+Note: All above original documents along with one set photocopies must be submitted to following address through TCS courier service in Pakistan and there is no need to visit HEC Islamabad or Regional Centers.
+Local Equivalence Section
+Student Affair Division
+Higher Education Commission
+Sector H-9, East Service Road
+Islamabad
+In case of queries please go through frequently asked questions (FAQs) of Deeni Equivalence Section. If there is still ambiguity please register at: http://onlinehelp.hec.gov.pk
+
+[SECTION: hec_deeni_asnad_equivalence_2_HEC_EQUIVALENCE_OF_DEENI_ASNAD_SHAHADAT_UL_ALI]
+# HEC equivalence of Deeni Asnad / Shahadat-ul-Alia and (part 2)
+Title: HEC equivalence of Deeni Asnad / Shahadat-ul-Alia and madrasah degrees
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC equivalence of Deeni Asnad / Shahadat-ul-Alia and (part 2)
+Official page: https://www.hec.gov.pk/english/services/students/DES/Pages/FAQs/FAQs-Deeni.aspx
+Source file: https://www.hec.gov.pk/english/services/students/DES/Pages/FAQs/FAQs-Deeni.aspx
+Version: HEC Deeni Asnad procedure and FAQs as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+Frequently Asked Questions for obtaining equivalence certificate against Deeni Asnad
+Frequently Asked Questions for obtaining equivalence certificate against Deeni Asnad
+
+#### What is the procedure for getting equivalence letter against Deeni Asnad?
+The applicants are required to send their original as well as photocopies of all the relevant documents as mentioned on equivalence proforma (E-02) to "Deeni Asnad Section, A&A Division, Higher Education Commission, H-9, Islamabad" through TCS service.
+
+#### Which Deeni Asnad does HEC equate?
+HEC equates Deeni Asnad i.e. "Shahadatul Almiya Fil Uloomal Arabia wal Islamia" and "Shahadatul Alia fil Uloomal Arabia wal Islamia" awarded by ten approved Deeni institutions of erstwhile University Grants Commission/Higher Education Commission (List available on HEC website).
+
+#### I have a difference in details on educational documents. Can I get equivalence from HEC?
+It is mandatory for applicants that Name and Father's Name, date of birth and all other details must be same on all educational documents and CNIC or Passport (in case of foreign national).
+
+#### I am an Afghan national. Is there any relaxation for me in case of change in date of birth printed on my Deeni Asnad and Passport?
+Yes, for Afghan Nationals, birth year will be considered as mentioned on Afghan Passport instead of complete date of birth including date/month/year.
+
+#### Are Regional Centers of HEC empowered to issue equivalence letters against Deeni Asnad?
+No, Regional Centers of HEC are not empowered to issue equivalence letters to the applicants.
+
+#### What is the fee for equivalence of Deeni Asnad?
+Rs. 2000/- (non-refundable) will be charged as equivalence fee against each Deeni Sanad i.e. "Shahadatul Almiya Fil Uloomal Arabia wal Islamia" and "Shahadatul Alia fil Uloomal Arabia wal Islamia"
+
+#### I have done "Shahadatul Alia fil Uloomal Arabia wal Islamia" from HEC approved deeni madrassah/Wafaq. Is it equivalent to Bachelor Degree involving 14-year of schooling?
+Yes, HEC recognizes Sanad "Shahadatul Alia Fil Uloomal Arabia wal Islamia" awarded by approved Deeni Institutions as equivalent to corresponding Bachelor degree involving 14-year schooling subject to to fulfilling following conditions:
+- Valid and legible copy of CNIC
+- Issuance of Equivalence by IBCC against Sanvia Aaama amd Sanvia Khasa as equivalent to Matric and Intermediate respectively.
+- Passing conditional subjects i.e. English and Pakistan Studies at Bachelor (pass) level from HEC recognized University/DAIs.
+- Equivalence fee of Rs 2000/- (non-refundable) deposited through challan form in favor of HEC income account.
+
+[SECTION: hec_deeni_asnad_equivalence_3_I_HAVE_DONE_SHAHADATUL_ALMIYA_FIL_ULOOMAL_ARAB]
+# I have done "Shahadatul Almiya fil Uloomal Arabia wal Islamia" from HEC approved deeni madrassah/Wafaq. Is it equivalent to MA Arabic/Islamic Studies involving 16-year of schooling?
+Title: HEC equivalence of Deeni Asnad / Shahadat-ul-Alia and madrasah degrees
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: I have done "Shahadatul Almiya fil Uloomal Arabia wal Islamia" from HEC approved deeni madrassah/Wafaq. Is it equivalent
+Official page: https://www.hec.gov.pk/english/services/students/DES/Pages/FAQs/FAQs-Deeni.aspx
+Source file: https://www.hec.gov.pk/english/services/students/DES/Pages/FAQs/FAQs-Deeni.aspx
+Version: HEC Deeni Asnad procedure and FAQs as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+#### I have done "Shahadatul Almiya fil Uloomal Arabia wal Islamia" from HEC approved deeni madrassah/Wafaq. Is it equivalent to MA Arabic/Islamic Studies involving 16-year of schooling?
+Yes, HEC recognizes Sanad "Shahadatul Almiya Fil Uloomal Arabia wal Islamia" awarded by approved Deeni Institutions as equivalent to corresponding MA Arabic/Islamic Studies degree involving 16 years of schooling subject to completion of following formalities for the purpose of teaching and pursing higher studies.
+- Verified photocopies of all Asnad i.e. Sanvia Aaama, Sanvia Khasa, Shahadatul Alia and Shahadatul Almiya along with Kashful Darajat by respective approved Deeni Institution.
+- Verified photocopies of Asnad Sanvia Aaama and Sanvia Khasa by IBCC
+- Verified photocopy of Gazette Notification and E-02 application form for equivalence by respective approved Deeni Institution.
+- Valid and legible copy of CNIC or passport in case of foreign national only
+- Equivalence fee of Rs 2000/- (non-refundable) deposited through challan form in favor of HEC income account.
+
+[SECTION: hec_deeni_asnad_equivalence_4_HOW_CAN_I_GET_E_02_APPLICATION_PROFORMA_FOR_D]
+# How can I get E-02 Application proforma for Deeni Asnad?
+Title: HEC equivalence of Deeni Asnad / Shahadat-ul-Alia and madrasah degrees
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: How can I get E-02 Application proforma for Deeni Asnad?
+Official page: https://www.hec.gov.pk/english/services/students/DES/Pages/FAQs/FAQs-Deeni.aspx
+Source file: https://www.hec.gov.pk/english/services/students/DES/Pages/FAQs/FAQs-Deeni.aspx
+Version: HEC Deeni Asnad procedure and FAQs as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+#### How can I get E-02 Application proforma for Deeni Asnad?
+The application proforma E-02 for Deeni Asnad is available on HEC official website.
+https://www.hec.gov.pk/english/services/students/Equivalence%20Degree%20Issuance/Documents/E-02.pdf
+
+#### What is the complete procedure for issuance of equivalence letter against Shahadatul Almiya?
+An applicant is required to submit E-02 Application proforma duly verified from concerned Nazim-e-Aala of the approved Deeni Institution alongwith verified photocopies of all Asnad including Kashful Darjat and photocopy of CNIC. Further, Sanad Sanvia Aaama and Sanad Sanvia Khasa must be verified from Inter Board Committee of Chairmen (IBCC). Please note that all original documents must also be submitted to HEC Head office, Islamabad through TCS for endorsement of photocopies.
+
+#### Is it mandatory for equivalence of Shahadatul Almiya to verify Sanvia Aaama and Sanvia Khasa from IBCC?
+Yes, it is mandatory that Sanad Sanvia Aama and Sanad Sanvia Khasa including Kashful Darajat must be verified from IBCC before submitting application proforma E-02 for equivalence of Sanad Shahadatul Almiya. Further, original documents must also be submitted to HEC Head office, Islamabad through TCS for endorsement of photocopies.
+
+#### Which documents are required for getting equivalence letter against Deeni Sanad "Shahadatul Alia fil Uloomal Arabia wal Islamia"?
+Following documents are required for Equivalence of Shahadatul Alia:
+- Equivalence Certificates issued by Inter Board Committee of Chairmen (IBCC) against Deeni Asnad i.e. Shahadatul Sanvia Aama and Shahadatul Sanvia Khasa.
+- Photocopies of Sanad Shahadatul Alia fil Uloomal Arabia wal Islamia including Kashful Darajat along with application proforma E-02 duly verified from concerned Nazim-e-Aala of approved Deeni Institution.
+- Compulsory subjects passed at Bachelor level i.e. English & Pakistan Studies or complete Bachelor (Pass) Degree
+- Verified copy of CNIC or Passport in case of Foreign National only.
+
+#### Is it mandatory that duration of each Sanad must be two years?
+Yes, the minimum study duration of each Sanad must be at least two years.
+
+#### What is the scope of HEC's Equivalence Certificate?
+The equivalence letter issued by HEC against Deeni Asnad awarded by approved Deeni Institutions can be used for the purpose of teaching Arabic/Islamic Studies in Educational Institutions and for pursuing higher studies.
+
+#### Does HEC play any role in the process of recruitment after issuing equivalence certificate?
+No, HEC does not play any role in the process of recruitment or determining eligibility for any post.
+
+[SECTION: hec_deeni_asnad_equivalence_5_DOES_HEC_PLAY_ANY_ROLE_IN_THE_PROCESS_OF_ADMIS]
+# Does HEC play any role in the process of admission of candidates after issuing of equivalence Certificate?
+Title: HEC equivalence of Deeni Asnad / Shahadat-ul-Alia and madrasah degrees
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Does HEC play any role in the process of admission of candidates after issuing of equivalence Certificate?
+Official page: https://www.hec.gov.pk/english/services/students/DES/Pages/FAQs/FAQs-Deeni.aspx
+Source file: https://www.hec.gov.pk/english/services/students/DES/Pages/FAQs/FAQs-Deeni.aspx
+Version: HEC Deeni Asnad procedure and FAQs as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+#### Does HEC play any role in the process of admission of candidates after issuing of equivalence Certificate?
+No, HEC does not play any role in the process of admission of candidates.
+
+#### Does HEC register/affiliate Deeni Madaris?
+No, the mandate of registration of Madaris rests with the Ministry of Federal Education and Professional Training, Government of Pakistan, Islamabad.
+
+#### What is the procedure for getting equivalence letter against Deeni Sanad issued by Darul Uloom Mohammadia Ghousia Bhera Distt. Sargodha and Jamia Islamia Minhaj-ul-Quran, Lahore?
+The applicant is required to submit application proforma E-02 along with a set of original and photocopies including CNIC, Matric, Intermediate certificate, Bachelor's Degree, Result Card and Deeni Sanad along with Kashful Darajat duly verified from concerned Deeni Institution through TCS to HEC Head Office, Islamabad.
+
+#### I have done "Shahadat ul Alia fil Uloomal Arabia wal Islamia" from HEC approved deeni madrassah/Wafaq. Am I eligible for admission in formal Master's degree involving 16-year of education?
+Yes, the students who are desirous to get admission in formal Master degree (other than Islamic Studies or Arabic) in a University/DAI after Shahadatul Aliya may opt any other two (02) elective subjects (other than Islamic Studies or Arabic) in addition to compulsory subjects at Bachelor (Pass) level as per their discretion.
+
+[SECTION: hec_deeni_asnad_equivalence_6_HEC_EQUIVALENCE_OF_DEENI_ASNAD_SHAHADAT_UL_ALI]
+# HEC equivalence of Deeni Asnad / Shahadat-ul-Alia and (part 3)
+Title: HEC equivalence of Deeni Asnad / Shahadat-ul-Alia and madrasah degrees
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC equivalence of Deeni Asnad / Shahadat-ul-Alia and (part 3)
+Official page: https://www.hec.gov.pk/english/services/students/DES/Pages/Procedure/Deeni-Asnad.aspx
+Source file: https://www.hec.gov.pk/english/services/students/DES/Documents/Shahadatul-Alia-Notification-Urdu.pdf
+Version: HEC Deeni Asnad procedure and FAQs as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+SOURCE-RECOVERY GAP (recorded 2026-10-18, not reconstructed): what follows is the complete readable residue of HEC notification No. 8(61)/A&A/2017/HEC/1260, recovered from the Latin/digit glyphs of the Urdu original's own text layer. The notification's Urdu sentences are encoded as Private Use Area glyph slots with no Unicode mapping, and no Urdu OCR path is available for this document, so the Urdu wording could not be recovered verbatim. No Urdu wording has been guessed, translated or substituted. Only the notification number is attributable to a named field; the remaining dates and numbers are left in source order as recovered, without interpretation.
+
+ 2017 13 8(61)/A&A/2017/HEC/1260 2017 02 IBCC 16 2 -Sd 2 1 / 4 3 6 5 2 1 4 6 8 9

@@ -1,0 +1,50 @@
+[SECTION: civic_services_overview]
+Title: Pakistan civic services — official identity, passport, voting, complaints
+This document records official Pakistan civic services a citizen may need: identity documents (NADRA), passport (DGIP), voter enrolment (ECP), complaints against federal agencies (Wafaqi Mohtasib), and complaints within FIA jurisdiction (FIA Public Services Portal). Every record states its official source and the date it was verified. Fees, forms and counters change; always confirm current details on the official site shown in the record before relying on them.
+Source: Compiled from the official government pages cited in each record
+Source URL: see each record
+Status: Active guides (each verified 2026-09-06)
+
+[SECTION: civic_identity_nadra]
+Title: NADRA identity documents — CNIC and NICOP
+The National Database and Registration Authority (NADRA) issues identity documents under the NADRA Ordinance, 2000. The National Identity Card for Overseas Pakistanis (NICOP) is issued under Section 12 of that Ordinance to Pakistani citizens residing abroad; it is the official proof of identity and nationality for Pakistanis living overseas and allows visa-free entry into Pakistan.
+Issued forms of NICOP: (a) NICOP (standard card — NADRA states new standard Teslin-based NICOPs are not currently being issued); (b) Smart NICOP (secure microchip, enhanced security); (c) NICOP with QR-code (machine-readable QR for faster verification); (d) polycarbonate NICOP.
+Eligibility: NICOP is issued to Pakistani citizens residing abroad who (a) live or work outside Pakistan; (b) hold dual nationality of a country recognized by the Government of Pakistan; (c) intend to stay abroad for an extended period and need proof of identity and nationality; or (d) are children of Pakistani citizens born abroad who are eligible to be registered as Pakistani citizens.
+Document requirements (categories stated by NADRA): identity card number of parent(s) or blood relative(s), or biometric witness by an ID holder with Undertaking "B" where the applicant has no blood relative (system-independent cases); computerized birth certificate (verified) of the Union Council/Municipal Committee/Cantonment, or citizenship/naturalization certificate (intending non-residents); foreign detailed birth certificate, manual birth certificate, or S1 form issued by a Pakistan Embassy/Mission, or citizenship/naturalization certificate (non-residents); Pakistani/foreign passport, residence permit or travel document, or Undertaking "A" attested by a Pakistan Embassy/Mission (non-residents); biometric verification by a parent or blood relative, or attestation of the CNICF as per Regulation 9(a-h) (inland Data Acquisition Units), or verification of the application form by any ID holder (applicants applying from abroad).
+Applying: through the PakID application (NADRA's official mobile app: create account, select "New NICOP", fill details, upload documents, visit a NADRA Registration Centre if required, track status) or in person at a NADRA Registration Centre. Biometric verification and photograph may require a visit to a Registration Centre.
+Source: National Database and Registration Authority (NADRA) — official portal
+Source URL: https://www.nadra.gov.pk/identityDocument/nicop?action=new
+Status: Active (verified 2026-09-06; fees and timelines on the NADRA fee-structure page)
+
+[SECTION: civic_passport_dgip]
+Title: Passport application process (Directorate General of Immigration and Passports)
+The Directorate General of Immigration and Passports (DGIP), Ministry of Interior, is the official passport authority. Two application paths exist: (1) online passport renewal for inland and overseas Pakistanis, including minor modifications and new passports for newborns for overseas Pakistanis; (2) applying in person at a Regional Passport Office in Pakistan or a Pakistan Mission abroad for new, renewal and modification cases.
+In-person process steps at a Regional Passport Office: (1) arrival at the customer service counter; (2) photograph capture and QR-code token issuance — original CNIC/Smart Card/NICOP or Children Registration Certificate (CRC)/B-Form (under 18) with copies; (3) biometric (fingerprint) capture — right thumb, right index, left thumb, left index; (4) data entry — the applicant must verify and sign the printed data form; any change must be pointed out at this stage because after the Assistant Director allows "go ahead" no change is possible; a valid mobile number/email is collected for status via SMS 9988 / Email Rabta service; (5) verification against the Exit Control List (ECL) and Black List (BL) — persons on the ECL or BL have their process stopped until removal as per rules/SOP; (6) interview and decision by the Assistant Director/Office In-charge, who may ask for additional documents or refer the case to a security agency; cases of applicants below 18 are deferred for attestation of the data form by a Government Gazetted officer (who writes CNIC/contact and affixes a by-name official stamp); (7) fee payment via QR code through digital payment platforms (e.g., EasyPaisa, JazzCash, online banking); (8) passport delivery — collection at the delivery counter on the given date by the applicant himself/herself or a blood relative, with the original token.
+Regional Passport Offices with a One Window facilitation desk process steps 2-5 at one desk.
+Source: Directorate General of Immigration and Passports (DGIP), Ministry of Interior — official website
+Source URL: https://dgip.gov.pk/passport/process.php
+Status: Active (page last modified 22 July 2026)
+
+[SECTION: civic_voter_enrolment_ecp]
+Title: Voter enrolment and electoral-roll correction (Election Commission of Pakistan)
+A person is entitled to be enrolled as a voter in an electoral area if he/she: (a) is a citizen of Pakistan; (b) is not less than eighteen years of age; (c) possesses a National Identity Card issued by NADRA at any time till the last day fixed for claims, objections and applications for preparation, revision or correction of electoral rolls; (d) is not declared by a competent court to be of unsound mind; and (e) is, or is deemed under section 27 of the Elections Act 2017 to be, resident in the electoral area. An expired National Identity Card is deemed valid for voter registration and for casting a vote.
+To register or transfer a vote, submit the prescribed form with a copy of the CNIC to the District Election Commissioner (DEC), Registration Officer or Assistant Registration Officer of the district where enrolment is sought. Forms are free and available online or from those offices. Voter forms: Form 21 (registration/transfer of vote), Form 22 (objection/deletion of vote), Form 23 (correction of particulars). Enrolment status can be checked by sending the CNIC number by SMS to 8300.
+Source: Election Commission of Pakistan (ECP) — official website
+Source URL: https://ecp.gov.pk/how-to-register
+Status: Active (verified 2026-09-06)
+
+[SECTION: civic_federal_ombudsman]
+Title: Complaints to the Federal Ombudsman (Wafaqi Mohtasib)
+The Office of the Wafaqi Mohtasib (Federal Ombudsman) redresses citizens' complaints against federal government agencies. A complaint written in English or Urdu may be lodged with the Wafaqi Mohtasib Secretariat or any regional office on WMS Form 'A' (downloadable from the official website), or online. If the complaint is not on Form 'A' it must be accompanied by a solemn affirmation that: (1) the allegations are correct and true to the best of the complainant's knowledge and belief; (2) no prior complaint on the subject was filed with the Secretariat or regional offices; (3) no suit, appeal, petition or other judicial proceedings in connection with the subject matter are pending before any court, tribunal or board (and none will be entertained); and (4) a representation to the competent authority of the agency was made but no reply was given within a reasonable time or the representation was unjustly turned down.
+Normally the complainant should first approach the higher authorities of the concerned agency to give them an opportunity to redress the grievance. Copies of relevant documents, including the CNIC and latest correspondence with the agency, should be annexed where possible. A receipt is issued immediately when the complaint is presented in person; when submitted by other means, a receipt is issued within 72 hours.
+Secretariat: 36 Constitution Avenue, G-5/2, Islamabad. Phones: +92-51-9216762, +92-51-9216763, +92-51-9216764. Child-complaints helpline: 1056.
+Source: Office of the Wafaqi Mohtasib (Ombudsman) — official website
+Source URL: https://mohtasib.gov.pk/Detail/YzRjMTRjODYtZTU0OC00ODZmLThmN2UtZTU1YmJmNWJhOGQz
+Status: Active (verified 2026-09-06)
+
+[SECTION: civic_fia_complaints]
+Title: Complaints within FIA jurisdiction (Public Services Portal)
+The Federal Investigation Agency (FIA) Public Services Portal allows a person to register a complaint regarding any unlawful activity falling within FIA's jurisdiction, to check the status of a complaint, and to give feedback on the services provided by FIA offices and immigration counters. The portal is the FIA's official online intake channel for complaints and feedback.
+Source: Federal Investigation Agency (FIA) — Public Services Portal (official)
+Source URL: https://complaint.fia.gov.pk/
+Status: Active (verified 2026-09-06)

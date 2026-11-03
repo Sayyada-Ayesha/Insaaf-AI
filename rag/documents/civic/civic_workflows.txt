@@ -1,0 +1,161 @@
+# Pakistan Civic Services — Citizen Workflows
+# Dedicated workflow corpus. Each workflow records WHO (authority), WHERE (office/portal),
+# DOCUMENTS, STEPS, FEES (where verified), TIME (where verified), APPEAL/ESCALATION, SOURCE.
+# Fees and timelines change by notification — where not verified, the field says
+# "NOT VERIFIED — check the authority's current schedule".
+
+[SECTION: CIVIC_WF_BIRTH_REGISTRATION]
+WORKFLOW: Birth registration (CRC/Form-B basis)
+WHO: Union Council / local government office (and NADRA for the Child Registration
+Certificate after registration).
+WHERE: union council of the child's area; NADRA centres for CRC (Form-B).
+DOCUMENTS: birth certificate/hospital record or affidavit of witnesses, parents' CNICs,
+parent nikahnama (where required).
+STEPS: (1) obtain the birth report/hospital slip; (2) submit at the union council within the
+prescribed period with parents' identity; (3) receive the union council birth certificate;
+(4) apply to NADRA for the CRC (B-Form) using the certificate.
+FEES: union council registration fee NOT VERIFIED (local by-laws); NADRA CRC fee per the
+current NADRA schedule.
+TIME: union council registration usually days; CRC per NADRA's current processing time.
+APPEAL/ESCALATION: for refusal/delay, complaint to the secretary union council / district
+administration, then the provincial local government department or ombudsman.
+SOURCE: local government registration framework; NADRA CRC procedure.
+VERIFICATION: metadata-verified (steps well-established; fees/time vary).
+
+[SECTION: CIVIC_WF_DEATH_REGISTRATION]
+WORKFLOW: Death registration and death certificate
+WHO: Union Council / local government office (death registration); NADRA for cancellation
+of CNIC of the deceased and death certificate where issued.
+WHERE: union council of the area of death/residence.
+DOCUMENTS: medical cause-of-death certificate (hospital) or witnesses' affidavits, CNIC of
+the deceased and of the informant, graveyard/burial proof where required.
+STEPS: (1) obtain medical certificate or witnesses; (2) register the death at the union
+council; (3) obtain the death certificate; (4) notify NADRA for CNIC cancellation and
+succession documentation.
+FEES: NOT VERIFIED (local by-laws).
+APPEAL/ESCALATION: complaint to the district administration / local government department.
+SOURCE: local government registration framework. VERIFICATION: metadata-verified.
+
+[SECTION: CIVIC_WF_MARRIAGE_REGISTRATION]
+WORKFLOW: Marriage registration (nikahnama) and NADRA marriage record
+WHO: nikah registrar (union council) for the nikahnama; NADRA for updating the family record.
+WHERE: union council of the bride's area (registrar's jurisdiction) and NADRA centres.
+DOCUMENTS: CNICs of bride, groom and witnesses, and any documents the registrar requires
+(guardians' CNICs where applicable).
+STEPS: (1) nikah performed; (2) nikahnama registered with the nikah registrar (union
+council) with prescribed fee stamps where required; (3) obtain the registered nikahnama
+copy; (4) optionally update NADRA family records (CRC of children later uses it).
+FEES: nikah registration fee per the local government schedule (NOT VERIFIED here).
+APPEAL/ESCALATION: disputes over registration to the union council secretary / local
+government department; failure to register is an offence under the Muslim Family Laws
+Ordinance, 1961 framework.
+SOURCE: Muslim Family Laws Ordinance, 1961; union council registration practice.
+VERIFICATION: metadata-verified.
+
+[SECTION: CIVIC_WF_DOMICILE]
+WORKFLOW: Domicile certificate
+WHO: Deputy Commissioner / district administration.
+WHERE: DC office of the district of residence.
+DOCUMENTS: CNIC (and family members' where required), proof of residence (utility bill,
+rent agreement, property documents), educational certificates where applying on
+education/profession basis, passport-size photographs, affidavit where required.
+STEPS: (1) fill the prescribed domicile application; (2) attach proofs; (3) submit at the
+DC office (or online where the district portal exists); (4) verification by the local
+police/revenue staff; (5) collect the domicile certificate.
+FEES: nominal provincial fee (NOT VERIFIED here).
+TIME: usually weeks (verification-dependent).
+APPEAL/ESCALATION: for refusal/delay, complaint to the Commissioner's office, then the
+provincial home/services department; courts can be approached where the refusal is unlawful.
+SOURCE: provincial domicile rules. VERIFICATION: metadata-verified.
+
+[SECTION: CIVIC_WF_POLICE_COMPLAINT]
+WORKFLOW: Police complaint for non-cognizable matters and police misconduct
+WHO: SHO (police station) for complaints; complaint cells for misconduct.
+WHERE: local police station; district SP/DSP complaint cell; police complaint authorities
+(e.g., Police Complaints Authority where established); online portals where available.
+DOCUMENTS: written complaint with facts, dates, witnesses, evidence, CNIC copy.
+STEPS: (1) submit written complaint at the station (receipt obtained); (2) if not
+entertained for a cognizable offence, demand FIR registration (CrPC s.154) and escalate
+under s.22-A/22-B; (3) for police misconduct, complaint to the district complaint cell
+or provincial complaint authority; (4) judicial remedy (writ, private complaint under
+s.200 CrPC) where police refuse.
+FEES: none (complaint registration is free).
+APPEAL/ESCALATION: SP/DSP complaint cell -> CPO/IG complaint cell -> provincial complaint
+authority -> court (s.22-A/22-B application or writ petition).
+SOURCE: CrPC 1898 ss.154, 22-A, 22-B, 200; Police Order 2002 complaint provisions.
+VERIFICATION: verified as to the legal routes.
+
+[SECTION: CIVIC_WF_GOVT_DEPT_COMPLAINT]
+WORKFLOW: Complaint against a government department (service delivery failure)
+WHO: the department itself, then grievance mechanisms, then the ombudsman.
+WHERE: department's complaint cell / Pakistan Citizen's Portal (Prime Minister's
+performance delivery portal) / provincial citizens' portals.
+DOCUMENTS: written complaint, reference numbers, receipts, evidence of the grievance.
+STEPS: (1) complain to the department (keep record); (2) escalate to the department head;
+(3) use the Citizen's Portal / provincial portal; (4) file with the Federal Ombudsman
+(Wafaqi Mohtasib) or provincial ombudsman for maladministration; (5) writ petition to the
+High Court where the action is unlawful.
+FEES: none.
+APPEAL/ESCALATION: ombudsman -> representation against ombudsman order -> court.
+SOURCE: ombudsman legislation (Federal Ombudsman); Citizen's Portal practice.
+VERIFICATION: verified as to routes.
+
+[SECTION: CIVIC_WF_PUBLIC_INFO]
+WORKFLOW: Public information requests
+WHO: public bodies under federal/provincial transparency laws (e.g., the federal access
+to information framework and provincial RTI acts — Punjab Transparency and Right to
+Information Act 2013; Sindh Transparency and Right to Information Act 2016; KP Right to
+Information Act 2013; Balochistan equivalent — verify current titles).
+WHERE: the public information officer of the relevant body; provincial information
+commissions for appeals.
+DOCUMENTS: written request describing the information sought.
+STEPS: (1) submit the request to the designated officer; (2) the body must respond within
+the statutory period (check the applicable act); (3) on refusal/delay, appeal to the
+provincial information commission or the designated appellate forum.
+FEES: nominal copying fee where applicable.
+APPEAL/ESCALATION: information commission -> courts.
+SOURCE: federal/provincial right-to-information legislation. VERIFICATION: metadata-verified
+(acts exist; exact procedures vary by province).
+
+[SECTION: CIVIC_WF_LEGAL_AID]
+WORKFLOW: Free legal aid
+WHO: Legal aid authorities (provincial legal aid agencies / district legal empowerment
+committees), bar association free-legal-aid cells, and courts' appointed counsel for
+indigent accused in criminal cases.
+WHERE: district legal aid offices, bar associations, courts (application for state
+counsel under CrPC where indigent).
+DOCUMENTS: proof of identity, proof of income/indigence, case documents.
+STEPS: (1) apply to the legal aid authority/committee with case details; (2) eligibility
+determined (indigence, nature of case); (3) lawyer assigned; (4) for accused persons
+facing serious charges, courts may provide counsel at state expense.
+FEES: free for eligible applicants.
+APPEAL/ESCALATION: refusal to the head of the legal aid agency, then the courts.
+SOURCE: legal aid legislation and court practice (see legal-aid corpus).
+VERIFICATION: verified as to framework.
+
+[SECTION: CIVIC_WF_EMERGENCY_SERVICES]
+WORKFLOW: Emergency services
+WHO/WHERE: Rescue 1122 (emergency ambulance/fire/rescue — provincial); police emergency
+15 (varies by province); Edhi and other voluntary ambulance services; hospital
+emergencies.
+STEPS: (1) call the emergency number of the province (1122 for rescue; 15 police where
+applicable); (2) give location and nature of emergency; (3) for medical emergencies,
+hospital emergency departments treat first.
+FEES: Rescue 1122 service is free; private ambulance services charge.
+APPEAL/ESCALATION: complaints about emergency response to the district administration
+or provincial emergency service.
+SOURCE: provincial emergency services practice. VERIFICATION: metadata-verified
+(numbers/services can change — advise checking the province's current emergency numbers).
+
+[SECTION: CIVIC_WF_VOTER_COMPLAINT]
+WORKFLOW: Voter enrolment and electoral complaints
+WHO: Election Commission of Pakistan (ECP) for enrolment; ECP district offices for
+complaints; courts (election tribunals) for election disputes.
+WHERE: ECP district election office / ECP online services.
+DOCUMENTS: CNIC, address proof for registration/transfer of vote.
+STEPS: (1) apply for voter enrolment/transfer at the ECP office or online (elections
+framework); (2) verification; (3) electoral roll entry; (4) complaints on rolls to the
+ECP; (5) election disputes to election tribunals under the Elections Act 2017.
+FEES: enrolment free.
+APPEAL/ESCALATION: ECP -> election tribunals -> Supreme Court.
+SOURCE: Elections Act, 2017. VERIFICATION: verified as to framework.

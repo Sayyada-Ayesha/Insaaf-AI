@@ -1,0 +1,335 @@
+# HEC Quality Assurance Agency: QA framework, Quality Enhancement Cells, institutional performance evaluation and accreditation councils
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: Pakistan (Federal) — higher education
+Version: QAA pages as published, retrieved 2026-10-10 | Published/notified: 2026-10-10 | Effective: 2026-10-10 | Status: Current
+Provenance: sections below carry the canonical HEC URL for the document they were extracted from.
+Coverage area: G
+Verification note: HEC publishes annual QAA targets as spreadsheets; only the narrative framework pages are in the corpus.
+
+[SECTION: hec_quality_assurance_1_QUALITY_ASSURANCE_AGENCY]
+# Quality Assurance Agency
+Title: HEC Quality Assurance Agency: QA framework, Quality Enhancement Cells, institutional performance evaluation and accreditation councils
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Quality Assurance Agency
+Official page: https://www.hec.gov.pk/english/services/universities/QAA/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/QAA/Pages/default.aspx
+Version: QAA pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Services
+Universities
+Quality Assurance Agency
+- Quality Assurancec Agency
+- Undergraduate Education Policy
+- Accreditation Councils
+- Quality Enhancement Cells in HEIs
+- Revamped QA Framework (PSG-2023)
+- Archives
+- Events & Activities
+- GAP Studies by Advance HE & QAA UK
+Quality Assurance Agency
+With the vision "To promote, enhance and assure the quality of higher education across HEIs in Pakistan" Quality Assurance Agency (QAA) was established in 2005 by the Government of Pakistan through Higher Education Commission (HEC).
+QAA is a policy making and monitoring organization for enhancement and assurance of quality in Higher Education Institutions. It is involved in systematic implementation of quality enhancement procedures/criteria to attain improved levels of international compatibility and competitiveness at institutional and program level.
+HEC is providing funding and logistical support for making QAA fully functional. QAA manages the affairs in collaboration with the Quality Assurance Division of HEC whereas the Quality Assurance Committee (QAC), comprising of eminent educationists, serves as its Advisory board. QAA is working to safeguard public interest by enforcing good practices in education and encouraging continuous improvement in quality in higher education.
+Our Goals:
+
+- Policy making and development of practical guidelines of quality assurance related to the higher degree programs.
+- Developing guidelines for establishment of Quality Enhancement Cells and their Monitoring & Evaluation.
+- Capacity building to enhance the standard of quality assurance in higher education at national level.
+- To monitor and regulate HEIs for implementation of policies to improve quality and standard of higher education in Pakistan.
+
+Our Functions:
+- Developing practical guidelines and policies for establishing Quality Enhancement Cells at public sector universities for integration of quality assurance in the higher education system.
+- Monitoring, Evaluation and Capacity Building of all Quality Enhancement Cells.
+- Capacity building of selected professional staff of Quality Enhancement Cells to serve as Master Trainers after receiving training in quality assurance, to increase the levels of international compatibility through skill enhancement in the respective field.
+- Hiring the services of local as well as foreign experts, having practical exposure of academic quality assurance for conducting trainings/workshops/seminars for the capacity building of QAA & QEC staff.
+
+[SECTION: hec_quality_assurance_2_SURVEY_RESULTS]
+# Survey Results
+Title: HEC Quality Assurance Agency: QA framework, Quality Enhancement Cells, institutional performance evaluation and accreditation councils
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Survey Results
+Official page: https://www.hec.gov.pk/english/services/universities/QAA/Pages/Revamped-QA-Framework.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/QAA/Pages/Revamped-QA-Framework.aspx
+Version: QAA pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+Universities
+Quality Assurance Agency
+Revamped QA Framework (PSG-2023)
+- Quality Assurancec Agency
+- Undergraduate Education Policy
+- Accreditation Councils
+- Quality Enhancement Cells in HEIs
+- Revamped QA Framework (PSG-2023)
+- Archives
+- Events & Activities
+- GAP Studies by Advance HE & QAA UK
+Revamped QA Framework (PSG-2023)
+Please download and read the documents of Revised QA Framework (given below) and provide your feedback on the Survey Form
+Click here for Survey Link
+Survey Results
+Introduction: The Revamped Quality Assurance (QA) Framework, a collaborative effor t between QAA UK and QAA Pakistan. This framework, developed through extensive consultations with key stakeholders such as Vice-Chancellors, Faculty, Directors of Quality Enhancement Cells (QECs), and Students from 22 diverse Public and Private Universities across different regions and institutional types, addresses both global best practices and local contextual challenges.
+The framework not only integrates international QA standards but also incorporates localized solutions to address unique challenges faced by higher education institutions in Pakistan. By contextualizing global best practices within the local landscape, the framework offers tailored solutions that cater to the specific needs and nuances of the Pakistani higher education sector. This approach fosters a dynamic quality assurance mechanism that not only adheres to international benchmarks but also navigates through regional intricacies. The collective insights garnered from extensive consultations have played a crucial role in bridging the gap between global ideals and local realities. As a result, the Revamped QA Framework embodies a holistic approach that aligns international benchmarks with the diverse challenges faced by Pakistani universities. This comprehensive framework underscores the commitment to continuous improvement and the pursuit of excellence in higher education, ultimately contributing to the enhancement of quality and accountability across the sector.
+Revamped QA Framework (PSG-2023) Documents for download:
+- Executive Summary of PSG-2023
+- Pakistan Precepts, Standards, and Guidelines for Quality Assurance in Higher Education PSG-2023 (Version 1.0)
+- REQAAB Reviewing Effectiveness of Quality Assurance and Accreditation Bodies (Version 1.0)
+- Institutional level IQA -EQA Guidance - RIPE: Review of Institutional Performance & Enhancement (Version 1.0)
+- Programme level IQA -EQA Guidance- PREE: Program Review for Effectiveness and Enhancement - (Version 1.0)
+- Sample IPER Template
+QA GAP Studies by Advance HE & QAA UK 
+
+[SECTION: hec_quality_assurance_3_QUALITY_ENHANCEMENT_CELLS_IN_HEIS]
+# Quality Enhancement Cells in HEIs
+Title: HEC Quality Assurance Agency: QA framework, Quality Enhancement Cells, institutional performance evaluation and accreditation councils
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Quality Enhancement Cells in HEIs
+Official page: https://www.hec.gov.pk/english/services/universities/QAA/Pages/QECs.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/QAA/Pages/QECs.aspx
+Version: QAA pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+Universities
+Quality Assurance Agency
+Quality Enhancement Cells in HEIs
+- Quality Assurancec Agency
+- Undergraduate Education Policy
+- Accreditation Councils
+- Quality Enhancement Cells in HEIs
+- Revamped QA Framework (PSG-2023)
+- Archives
+- Events & Activities
+- GAP Studies by Advance HE & QAA UK
+Quality Enhancement Cells in HEIs
+Quality Assurance in education plays a pivotal role in ensuring the consistent delivery of high-quality education and fostering continuous improvement in academic institutions. The Quality Assurance Agency (QAA) is committed to elevating the standard of education by implementing a comprehensive strategy across various areas.
+Establishment of Quality Enhancement Cells:
+The QAA recognizes that Quality Enhancement Cells are fundamental in promoting a culture of quality assurance and continuous improvement in educational institutions. QAA's initiative involves the establishment of QECs in all degree-awarding institutions and their Affiliated Colleges (QECACs). These cells serve as central units responsible for monitoring and enhancing the quality of education by developing and implementing quality assurance policies, procedures, and practices. By instating QECs, institutions are better equipped to identify areas for improvement and implement measures to enhance the overall learning experience.
+Strengthening QEC Functioning:
+To ensure the effectiveness of QECs, the QAA employs several strategies aimed at enhancing their functioning:
+- Progress Review Meetings: Regular progress review meetings are conducted to evaluate the performance of QECs. These meetings facilitate open discussions about challenges, successes, and best practices, fostering a collaborative environment for improvement.
+- Capacity Building of QECs: The QAA invests in enhancing the capabilities of QEC members through workshops, training sessions, and skill development programs. By equipping QECs with up-to-date knowledge and skills, institutions can effectively implement quality assurance measures.
+- Annual Targets: QAA collaborates with institutions to set annual targets for QECs based on revised criteria. These targets are aligned with the institution's overall quality enhancement goals and serve as benchmarks for progress. This structured approach ensures that institutions are continually working towards improving various aspects of education.
+Annual Assessment of QECs:
+QAA's commitment to quality assurance involves conducting rigorous assessments of QECs' performance against the assigned annual targets. These assessments aim to evaluate the effectiveness of QECs in driving quality enhancement initiatives. The evaluation process involves reviewing documentation, analyzing data, and conducting site visits to gain comprehensive insights into each institution's progress. The results of these assessments guide institutions in refining their quality assurance strategies.
+The Quality Assurance Agency's multi-pronged approach to quality enhancement in education demonstrates its dedication to fostering a culture of continuous improvement. By establishing QECs, strengthening their functioning through regular progress reviews and capacity building, and conducting thorough annual performance assessments, the QAA ensures that degree awarding institutions are consistently moving towards higher standards of education quality. This comprehensive strategy contributes to the overall development of a skilled and competitive workforce, better-preparing individuals for the challenges of the modern world.
+List of Established QECs
+- QEC List 2026.pdf 
+List of Established Institutional Quality Circle (IQCs)
+- IQC Sheet 
+Downloads:
+Assessment Criteria
+- Revised Criteria for Assessment of QECs
+Targets for QECs
+- SAR Target Policy 2025-26.xlsx 
+- Targets for QECs for the assessment year 2025-26.docx
+- SAR Target Policy 2024-25.xlsx
+- Targets for QECs for the assessment year 2024-25.pdf
+Yearly Progress Report Proformas
+-  DB. No. Sheet YPR 2025-26.xlsx
+- Main or Sub Campus (Name of Campus) 2025-26.xlsx
+- Affiliated Institution_Name_No. of affiliated institution as mentioned in YPR parameter 5.9.xlsx
+- DB. No. Sheet YPR 2024-25
+- Main or Sub Campus (Name of Campus)
+- Affiliated Institution-Name No. of affiliated institution as mentioned in YPR parameter 5.9
+- YPR Checklist
+
+[SECTION: hec_quality_assurance_4_INSTITUTE_LEVEL_EVALUATION]
+# Institute Level Evaluation
+Title: HEC Quality Assurance Agency: QA framework, Quality Enhancement Cells, institutional performance evaluation and accreditation councils
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Institute Level Evaluation
+Official page: https://www.hec.gov.pk/english/services/universities/QAA/externalQA/IPE/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/QAA/externalQA/IPE/Pages/default.aspx
+Version: QAA pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Services
+Universities
+Quality Assurance Agency
+External Quality Assurance
+Institute Level Evaluation
+- Quality Assurance Agency
+- Undergraduate Education Policy
+Institute Level Evaluation
+The Higher Education Commission is systematically implementing the five-year (2002 -2007) agenda for reforms outlined in the HEC Medium Term Development Framework (MTDF). The key components identified in the MTDF are Access, Quality and Relevance.
+To address these challenges, a comprehensive strategy was outlined that identified the core strategic aims for reform as (i) Faculty Development, (ii) Improving Access, (iii) Excellence in Learning and Research, and (iv) Relevance to National Priorities.
+In order to improve the performance of HEIs, HEC has started with primary step of outlining the Performance Evaluation Standards for the HEIs to be used for the purpose.
+A total of eleven standards are defined in this document and all the eleven standards are equally important to be met by the HEIs to achieve the desired certification to quality provision in higher education, international visibility and significant place in the regional and international rankings of the HEIs.
+Various performance evaluation standards outlining major areas to be focused on by the HEIs for evaluation of their effectiveness and future development are given below:
+Standard 1: Mission Statement and Goals
+Standard 2: Planning and Evaluation
+Standard 3: Organization and Governance
+Standard 4: Integrity
+Standard 5: Faculty
+Standard 6: Students
+S
+t
+andard 7: Institutiona
+l Resources
+Sta
+nd
+ar
+d 8: Academic Programmes and Curricula
+Standard 9: Public Disclosure and Transparency
+Standard 10: Assessment & Quality Assurance
+Standard 11: Student Support Service
+Downloads:
+Institutional Performance Evaluation Manual 
+Presentation on Pre-Visit Preparation of IPE
+Templates for Section-I of UPR (University wide data)
+
+[SECTION: hec_quality_assurance_5_ACCREDITATION_COUNCILS]
+# Accreditation Councils
+Title: HEC Quality Assurance Agency: QA framework, Quality Enhancement Cells, institutional performance evaluation and accreditation councils
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Accreditation Councils
+Official page: https://www.hec.gov.pk/english/services/universities/QAA/Pages/Accreditation-Councils.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/QAA/Pages/Accreditation-Councils.aspx
+Version: QAA pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+Universities
+Quality Assurance Agency
+Accreditation Councils
+- Quality Assurancec Agency
+- Undergraduate Education Policy
+- Accreditation Councils
+- Quality Enhancement Cells in HEIs
+- Revamped QA Framework (PSG-2023)
+- Archives
+- Events & Activities
+- GAP Studies by Advance HE & QAA UK
+Accreditation Councils
+The objective of this section is to assure that all the undergrad-level programs of HEIs are accredited by their respective accreditation council. For this purpose, the section administers the activities in respect of establishing new accreditation councils and coordinating with existing councils, assessing their performance, and build their capacity.
+Existing Accreditation Councils/Professional Bodies:
+Pakistan Bar Council (PBC)
+Pakistan Council for Architects and Town Planners (PCATP)
+- Pakistan Medical & Dental Council (PMDC)
+- Pakistan Engineering Council (PEC)
+Pakistan Nursing Council (PNC)
+Pakistan Pharmacy Council (PCP)
+Pakistan Veterinary Medical Council (PVMC)
+National Council for Homoeopathy (NCH)
+National Council for Tibb (NCT)
+- Allied Health Professionals
+Accreditation Councils Established by HEC:
+
+National Accreditation Council for Teachers Education (NACTE)
+National Agricultural Education Accreditation Council (NAEAC)
+National Computing Education Accreditation Council (NCEAC)
+National Business Education Accreditation Council (NBEAC)
+National Technology Council (NTC)
+
+[SECTION: hec_quality_assurance_6_HEC_QUALITY_ASSURANCE_AGENCY]
+# HEC Quality Assurance Agency
+Title: HEC Quality Assurance Agency: QA framework, Quality Enhancement Cells, institutional performance evaluation and accreditation councils
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Quality Assurance Agency
+Official page: https://www.hec.gov.pk/english/services/universities/QAA/Pages/Progress-Review.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/QAA/Pages/Progress-Review.aspx
+Version: QAA pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+Universities
+Quality Assurance Agency
+HEC Progress Review Meetings
+- Quality Assurancec Agency
+- Undergraduate Education Policy
+- Accreditation Councils
+- Quality Enhancement Cells in HEIs
+- Revamped QA Framework (PSG-2023)
+- Archives
+- Events & Activities
+- GAP Studies by Advance HE & QAA UK
+HEC Progress Review Meetings
+The Progress Review Meeting (PRM), titled “Together for Quality Excellence — Leadership
+Engagement for Transforming QA Systems in Pakistan,” was implemented as a strategic
+national initiative to strengthen institutional capacity for the effective implementation of
+PSG-2023 across Degree Awarding Institutions. The program was conducted under the
+auspices of the Higher Education Commission through its Quality Assurance Agency to
+support institutions in operationalizing the core components of PSG-2023—Review of
+Institutional Performance and Enhancement (RIPE) and Program Review for Effectiveness and
+Enhancement (PREE)—while preparing the sector for the rollout of the revised Internal
+Quality Assurance Framework from FY 2026–27.
+Designed as a system-level intervention, the PRM advanced a strategic shift from complianceoriented monitoring toward leadership-driven governance, institutional ownership, and
+continuous quality improvement. The program functioned simultaneously as a national
+capacity-building platform, a policy alignment forum, and a structured mid-year review
+mechanism for institutional QA targets for 2025–26. Participation from 260 Degree Awarding
+Institutions and 1,692 stakeholders across leadership, governance, academic, and student
+groups demonstrated broad-based institutional readiness to engage in governance-led
+quality reform across Pakistan.
+The program’s three-day structure provided a comprehensive implementation support
+environment. Day 1 established leadership ownership of quality assurance and strengthened
+institutional readiness for PSG-2023 implementation through technical orientation and
+governance engagement. Day 2 enhanced policy coherence by facilitating direct engagement
+between institutions and relevant divisions of the Higher Education Commission, thereby
+clarifying regulatory expectations and strengthening alignment between institutional
+practices and national policy architecture. Day 3 provided a structured platform for
+institutional reflection, peer learning, and evidence-based progress assessment, enabling
+institutions to collectively identify implementation challenges and develop actionable
+improvement pathways.
+Institutional presentations highlighted systemic governance, operational, and resourcerelated constraints affecting PSG-2023 implementation. In response, a structured Strategic
+Support Framework was articulated to strengthen leadership ownership, enhance national
+QA capacity, enable digital QA systems, and ensure sustainable institutional implementation
+mechanisms. These coordinated measures are expected to reduce systemic barriers,
+strengthen institutional systems, and promote consistent implementation across the higher
+education sector.
+Consolidated Report is attached below
+Leadership Engagement Series Report - QAA 2026
+Regional Conferences Reports
+ Leadership Engagement Program - CECOS, Peshawar
+Leadership Engagement Program -FAST Islamabad 
+Leadership Engagement Program - UOL
+Leadership Engagement Program - MUST Multan
+Leadership Engagement Program - Habib University Karachi
+Leadership Engagement Program - Ilma University Karachi
+
+[SECTION: hec_quality_assurance_7_PROGRAM_LEVEL_ACCREDITATION]
+# Program Level Accreditation
+Title: HEC Quality Assurance Agency: QA framework, Quality Enhancement Cells, institutional performance evaluation and accreditation councils
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: Program Level Accreditation
+Official page: https://www.hec.gov.pk/english/services/universities/QAA/externalQA/PLA/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/services/universities/QAA/externalQA/PLA/Pages/default.aspx
+Version: QAA pages as published, retrieved 2026-10-10
+Notification / publication date: 2026-10-10
+Effective date: 2026-10-10
+Legal status: Current
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Services
+Universities
+Quality Assurance Agency
+External Quality Assurance
+Program Level Accreditation
+- Quality Assurance Agency
+- Undergraduate Education Policy
+Program Level Accreditation
+The Quality Assurance Agency, HEC, assures the quality of academic programs by categorizing them as Under-Graduate and Post-Graduate levels. Under-graduate programs are dealt by establishing accreditation councils of various fields. However, at present, the quality of post graduate level programs is reviewed by HEC itself.
+Accreditation of Under Graduate programs by establishing accreditation councils:
+Objective of this section is to assure that all the undergrad level programs of HEIs are accredited by its respective accreditation council. For the purpose, the section administers the activities w.r.t. establishing: new accreditation councils and coordinate with the existing councils, assess their performance and build their capacity.
+Review of Post Graduate Level Programs [MS/MPhil & PhD]:
+Here, two sections, separate for PhD and MS/MPhil level programs, work to assure compliance of HEC's minimum criteria for these programs and enhance their quality to make them internationally compatible. For the purpose, the sections plan and administer activities w.r.t. conducting periodic review visits (after 3 years) of all DAIs that are offering postgrad level programs, as per the defined review process. 

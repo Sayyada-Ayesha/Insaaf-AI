@@ -1,0 +1,31 @@
+[SECTION: 1] Expanded Legal Remedies Guide — Situation-based remedy mapping. Source: Verified legal procedures under Pakistani law. Status: CURRENT.
+
+[SECTION: 2] FIR refused by police — Remedy: (a) Written complaint to Deputy Superintendent of Police (DSP) or District Police Officer (DPO); (b) Application under Section 22-A/22-B CrPC to Sessions Judge/Justice of Peace; (c) Complaint to the Judicial Magistrate under Section 190 CrPC; (d) Constitutional writ under Article 199 to High Court.
+
+[SECTION: 3] Unlawful arrest — Remedy: (a) Produce before magistrate within 24 hours; (b) Bail application under CrPC Section 496/497; (c) Habeas corpus petition under Article 199; (d) Suit for damages for wrongful arrest (tort of false imprisonment).
+
+[SECTION: 4] Cheque dishonour — Remedy: (a) Legal notice to drawer within 30 days of cheque dishonour; (b) Criminal complaint under PPC Section 489-F (if payment not made within 15 days of notice); (c) Civil suit for recovery of amount under Negotiable Instruments Act / Contract Act.
+
+[SECTION: 5] Defective goods (consumer) — Remedy: (a) Written complaint to manufacturer/service provider (legal notice); (b) Failure to resolve within 15 days: file complaint in District Consumer Court; (c) Consumer Court may order: replacement, refund, compensation; (d) Appeal to Provincial Consumer Commission.
+
+[SECTION: 6] Domestic violence — Remedy: (a) Emergency helpline 15 (police); (b) Application to Protection Officer under provincial DV Act; (c) Petition to Family Court or Sessions Court for protection order; (d) Shelter home / Dar-ul-Aman for safe accommodation; (e) Criminal case for assault, hurt under PPC.
+
+[SECTION: 7] Workplace harassment — Remedy: (a) Written complaint to internal Inquiry Committee (3 members, majority women); (b) If unsatisfied: appeal to Ombudsperson; (c) Criminal complaint for sexual harassment under PPC Section 354/509; (d) Labour Court for constructive dismissal.
+
+[SECTION: 8] Breach of contract — Remedy: (a) Legal notice to defaulting party; (b) Civil suit for damages / specific performance in Civil Court; (c) Consider ADR/arbitration if contract has arbitration clause; (d) Recovery suit for money claims.
+
+[SECTION: 9] Property dispute — Remedy: (a) File suit for declaration and permanent injunction in Civil Court; (b) Suit for possession of property; (c) Application for mutation correction to Board of Revenue; (d) Criminal complaint for trespass (PPC Section 447/448).
+
+[SECTION: 10] Tenancy dispute — Remedy: (a) Landlord: file eviction petition in Rent Tribunal; (b) Tenant: file complaint against unlawful eviction; (c) Both: file appeal to District Judge; (d) Civil suit for rent recovery.
+
+[SECTION: 11] Custody of child — Remedy: (a) File guardian/custody petition in Family Court; (b) Apply for interim custody pending final decision; (c) Guardian and Wards Act 1890 governs custody; (d) Best interest of child is paramount consideration.
+
+[SECTION: 12] Khula/Divorce — Remedy: (a) Wife: File suit for khula in Family Court; (b) Husband: Pronounce talaq, give notice to Union Council under Section 7 MFLO; (c) Dissolution of Muslim Marriages Act 1939 provides grounds for judicial divorce; (d) Maintenance during iddat period.
+
+[SECTION: 13] Inheritance rights denied — Remedy: (a) Civil suit for declaration of share and partition; (b) Criminal complaint under PPC Section 498-A (depriving woman of inheritance); (c) Succession certificate from Family Court; (d) Probate/letters of administration.
+
+[SECTION: 14] Tax dispute — Remedy: (a) Departmental appeal to Commissioner (Appeals) within 30 days; (b) Appeal to Appellate Tribunal Inland Revenue within 60 days; (c) Reference to High Court on question of law; (d) Appeal to Supreme Court.
+
+[SECTION: 15] Cyber harassment — Remedy: (a) FIA Cyber Crime Wing complaint (helpline 1991); (b) Complaint on FIA Cyber Crime Portal; (c) PECA Section 20 (dignity), Section 21 (modesty), Section 24 (stalking); (d) Take down request to PTA/platform; (e) Civil suit for damages for defamation.
+
+[SECTION: 16] Wrongful termination — Remedy: (a) Labour Court application for reinstatement and back wages; (b) Notice of termination period (as per contract or Standing Orders); (c) Compensation in lieu of reinstatement; (d) Appeal to Labour Appellate Tribunal.

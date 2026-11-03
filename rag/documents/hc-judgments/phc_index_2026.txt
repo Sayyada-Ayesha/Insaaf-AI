@@ -1,0 +1,803 @@
+[SECTION: PHC_INDEX_2026_INDEX]
+Peshawar High Court, Peshawar — Official Judgment Index (metadata-only records) — corpus document (2026-09-06). Each section is one official judgment record (FULL_TEXT_VERBATIM or METADATA_ONLY) with fields as displayed on the official court repository; full-text sections carry the complete verbatim judgment text extracted from the official PDF.
+Court: Peshawar High Court, Peshawar.
+Source: Peshawar High Court official website.
+Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS/reportedJudgments.php?action=search
+Status: Verified official court records (verified 2026-09-06).
+[SECTION: PHC_IDX_001]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 9066-P of 2026 with IR with C.M No. 2387-P of 2026 Dr. Aziz Hasan Aamir and another Vs Government of Khyber Pakhtunkhwa through its Chief Secretary, Peshawar and others. Judgment Date (as displayed): 13-08-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP.9066-2026-J.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_002]
+Court: Peshawar High Court, Peshawar. Case No: FAO No. 143-P of 2025 Gulzar Ahmad Khan Vs The Director General, Provionial Housing Authority, KP Peshawar.. Judgment Date (as displayed): 10-08-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/FAO-143-2025-08-06-2026-0001.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_003]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 499-B of 2026 Managing-Director, Saydon Pharmaceutical Industries Pvt Ltd, Peshawar Vs Sadiq Niaz Khan, etc. Judgment Date (as displayed): 10-08-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-499-B-2026.....dated 10.08.2026_001.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_004]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 392-A of 2026 Muhammad Ashrafand others Vs Additional Assistant Commissioner (Revenue), Haripur and others.. Judgment Date (as displayed): 27-07-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-392-OF-2026-29-07.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_005]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 8397-P of 2026 Dr. Zahid Khan Vs Mst. Mehreen etc. Judgment Date (as displayed): 27-07-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.-8397-P-of-2026.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_006]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 211-P of 2014 Mst. Zarin Taja Vs Saifullah and others. Judgment Date (as displayed): 21-07-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-No.211-p-2014-(Mst.-Zarin-Taja)-dismissed-(at-variance).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_007]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 381-A of 2021 Saleem Akhtar and anther Vs Shahid Saleem and others. Judgment Date (as displayed): 16-07-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-381-OF-2021-20-07.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_008]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 139-D of 2026 Muhammad Asfraf Vs Nasrullah. Judgment Date (as displayed): 09-07-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Muhammad-Ashraf-C.R.No.139-D-26.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_009]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 182-D of 2026 Amanullah and others Vs Hamad Ali etc. Judgment Date (as displayed): 08-07-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.-182-.-Amanullah-Vs.-Hamad-Ali.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_010]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 1238-P of 2025 Mian Sohrab Gul Vs Muneer & others. Judgment Date (as displayed): 03-07-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/C.R-No.1238-P-of-2025-(Mian-Sohrab-Gul-Vs-Mineer)-REGARDING-OPERATION-OF-UNAUTHORISED-FRUIT-AND-VEGETABLE-MARKET-IN-TANGI-03.07.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_011]
+Court: Peshawar High Court, Peshawar. Case No: RFA No. 12/2024 Muhammad Ijaz Vs Zia-Ul-Haq. Judgment Date (as displayed): 02-07-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/RFA-12-OF-2024-09-07.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_012]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 1233-P of 2026 Ghulam Rasool Vs Secty. Mines & Minerals etc. Judgment Date (as displayed): 02-07-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.1233-P-of-2026.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_013]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 850-P of 2026 Muhammad Zeeshan Ud Din Vs Mst. Rukhsana Shafique & another. Judgment Date (as displayed): 01-07-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/C.R-No.850-P-2026-Zeeshan-ud-Din-Vs.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_014]
+Court: Peshawar High Court, Peshawar. Case No: CR No. 864-P of 2019 Mst. Nighat Sultana alias Kherogai Vs Javed Akhtar and 31 others. Judgment Date (as displayed): 30-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/C.R-No.864-P-of-2019.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_015]
+Court: Peshawar High Court, Peshawar. Case No: Cr. Misc Q.P No. 38-D of 2025 Muhammad Usman Ali Khan Vs The State etc. Judgment Date (as displayed): 29-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-MQ-No.38-D-of-2025-.-Muhamamd-Usman-Ali-vs-the-State-etc-.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_016]
+Court: Peshawar High Court, Peshawar. Case No: CR No. 1292-P of 2019 Shams-ul-Haq vs. Provincial Government through Secretary, Board of Revenue, Peshawar and others. Judgment Date (as displayed): 29-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-No.1292-2019.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_017]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 1216-P of 2025 Habib Ullah Vs The State. Judgment Date (as displayed): 24-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A.-1216-P-of-2025-dismissed-u.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_018]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 641-P of 2025 Sharafat Kazmi Vs The State. Judgment Date (as displayed): 24-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A.-641-P-of-2025-(Dismissed-u.s.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_019]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 112-M of 2024 Sajid Ullah Vs State & others. Judgment Date (as displayed): 24-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A.-No.-112-M-of-2024.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_020]
+Court: Peshawar High Court, Peshawar. Case No: RFA No. 109-P of 2025 Ayaz Ahmed Paracha Vs Dost Muhammad Khan. Judgment Date (as displayed): 22-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Ayaz-Ahmad-vs-Dost-Muhammad-Khan-RFA-Dismissed.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_021]
+Court: Peshawar High Court, Peshawar. Case No: FAO No. 232-P of 2024 Janas Khan and others Vs Director General (Headquarter) Civil Works Organization, Rawalpindi and others. Judgment Date (as displayed): 22-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/FAO-232-P-of-2024.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_022]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 1863-P of 2025 Mst. Salma Bibi etc VS Nawzb Zada. Judgment Date (as displayed): 22-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.1863-p-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_023]
+Court: Peshawar High Court, Peshawar. Case No: CR No. 201-P of 2025 Mirbad (late) through legal heirs Anwar Khan and others vs. Muhammad Umer and others. Judgment Date (as displayed): 22-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-No.-201-p-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_024]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 10023-P of 2025 Mian Junaid Sardar Vs Govt. Judgment Date (as displayed): 19-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Mian-Junaid-Sardar-v-Govt-of-KPK-judgment.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_025]
+Court: Peshawar High Court, Peshawar. Case No: CR No. 768-P of 2023 Ismail Vs Alam Shah etc. Judgment Date (as displayed): 19-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/C.R-No.-768-P-of-2023,-allowed-updated.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_026]
+Court: Peshawar High Court, Peshawar. Case No: RFA No. 263-A of 2023 Shahid Gul and another Vs Ziaullah Wazir and another. Judgment Date (as displayed): 18-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/RFA-No.-263-A-2023-sureties-are-responsible-for-payment-of-decreeal-amount-dismissed-18.06.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_027]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 345-P of 2026 Qamar Zaman S.I Vs The State. Judgment Date (as displayed): 18-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Criminal-Appeal-No.-345-of-2026-Qamar-Zaman-SI-andothers-Vs-the-State....-against-conviction-under-section-174-Cr.P.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_028]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 8159-P of 2025 Muhammad Arshad Khanm vs The State through AG KP. Judgment Date (as displayed): 18-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.-8159-P-2025-Arshad-Khan-etc-vs-The-State-through-AG-etc.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_029]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 530-M of 2025 Dr. Raqib Khan Vs Federation of Pakistan & others. Judgment Date (as displayed): 16-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.-530-M-of-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_030]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 1517-M of 2025 Dilawar Khan Vs The State. Judgment Date (as displayed): 16-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.1517-M-of-2026.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_031]
+Court: Peshawar High Court, Peshawar. Case No: Cr. Rev No. 120-P of 2026 Jalal Ahmad Vs Bilal etc. Judgment Date (as displayed): 15-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.R-No.-120-P-2026-Jalal-Ahmad-versus-Bilal.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_032]
+Court: Peshawar High Court, Peshawar. Case No: RFA No. 215-P of 2025 Rooh Ullah and others vs. Administrator Auqaf, Khyber Pakhtunkhwa and others. Judgment Date (as displayed): 15-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/RFA-No.-215--2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_033]
+Court: Peshawar High Court, Peshawar. Case No: Cr. A No. 424-P of 2025 Jehanzeb Vs The State etc. Judgment Date (as displayed): 11-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A-No.-424-P-2025-Jahanzeb-vs-the-State.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_034]
+Court: Peshawar High Court, Peshawar. Case No: CM No. 193-B of 2026 in WP No. 437-B of 2024 Dilawar Khan & 02 others v. Government of Khyber Pakhtunkhwa through Secretary Home Department & 02 others. Judgment Date (as displayed): 10-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-437-B2024-Final-Judgment pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_035]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 4949-P of 2023 Mian Zahir Shah Vs Raza Jan & others. Judgment Date (as displayed): 10-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.4949-P-of-2023-(MIAN-ZAHIR-SHAH-ETC-VS-RAZA-JAN-AND-OTHERS)-10.06.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_036]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 6436-P of 2026 Rafiq Khan and others Vs Federation of Pakistan through Federation Secretary and others. Judgment Date (as displayed): 10-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.6436-P-of-2026,.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_037]
+Court: Peshawar High Court, Peshawar. Case No: F.A.O No. 14-P of 2022 Mst. Badam Zari Vs Z.T.B.L. Judgment Date (as displayed): 10-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/FAB-14-P-of-2022-Mst.Badam-Zari-10.06.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_038]
+Court: Peshawar High Court, Peshawar. Case No: Cr. R No. 17-P of 2026 Amjid Ali Vs Muhammad Saleem etc. Judgment Date (as displayed): 10-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Criminal-Revision-No.-17-P-of-2026.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_039]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 1129-P of 2025 M/s Kundi Paper Mills Vs Enviromental Protection Agency, KP Peshawar.. Judgment Date (as displayed): 08-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Criminal-Appeal-No.-1129-of-2025--M.s-Kundi-Paper-Mills-Hayatabad-and-another-VS-EPA-KP-Peshawar....-Environmental-Protection-matter...pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_040]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 245-P of 2025 Shahid Ali Khan Vs Olas Khan etc. Judgment Date (as displayed): 08-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-No.-245-P-of-2025-Shahid-Ali-Khan-vs.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_041]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 308-P of 2025 Usman Vs The State & another. Judgment Date (as displayed): 04-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A-No.-308-P-of-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_042]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 401-P of 2026 with C.M No. 14-P of 2026 Muhammad Umair Vs Inspector General of Police, KP at Central Police Office (CPO), Peshawar & another.. Judgment Date (as displayed): 04-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-401-of-2026-(M.-Umair-v.-IGP,-KP-(appointment-denied-being-1-Y-&-4-M-overage)-W.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_043]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 1431-P of 2025 Muhammad Iqbal Vs Abdul Khaliq & another. Judgment Date (as displayed): 03-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/C.R-No.1431-P-2025-Muhammad-Tufail-Vs.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_044]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 518-A of 2025 Hazir Khan and others Vs Government of Khyber Pakhtunkhwa. Judgment Date (as displayed): 02-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Final-WP-No.-518-A-of-2025-02.06.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_045]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 2695-P of 2021 & STR No. 23-P of 2021 Wateen Telecom Limited v. Khyber Pakhtunkhwa Revenue Authority (KPRA) & Others. Judgment Date (as displayed): 02-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P.-2695-&-STR-23P-of-2021.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_046]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 187-B of 2026 Syed Muhammad Vs Khan Bahadur alias Fazal-ur-Rehman, etc. Judgment Date (as displayed): 01-06-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-187-B-2026...Qudrat-dated.....01.06.2026_001.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_047]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 7034-P of 2025 Muhammad Jamal Nasir Vs Governement of Khyber Pakhtunkhwa.. Judgment Date (as displayed): 21-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Writ-Petition-No.7034-P2025-Muhammad-Jamal-Nasir-Vs.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_048]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 3663-P of 2024 Aniqa Waheed Vs Govt of Pakistan through Secretary Communications, Pak Secretariat, Islamabad and others. Judgment Date (as displayed): 21-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.-3663-of-2024-Aniqa-Waheed-and-others-vs-Govt-of-KPK-through-Secretary-Communication,-Pak-Secretariat-Islamabad-and-others.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_049]
+Court: Peshawar High Court, Peshawar. Case No: J. Cr. Appeal No. 1066-P of 2025 Muhammad Amir Vs The State etc. Judgment Date (as displayed): 21-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/J.Cr.A-No.1066-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_050]
+Court: Peshawar High Court, Peshawar. Case No: Cr. Appeal No. 1211-P of 2025 Riaz Khan Vs The State. Judgment Date (as displayed): 21-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.-A-No1211-P-of-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_051]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 12-P of 2026 with IR M/S Zalan Logistics Vs Federation of Pakistan and 10 others. Judgment Date (as displayed): 21-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-12-2026-Ms-Zalan-Logistics.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_052]
+Court: Peshawar High Court, Peshawar. Case No: RFA No. 02-A of 2026 M/s Tariq and Saad Associates Vs M/s Coronet Foods (Pvt) Ltd. Judgment Date (as displayed): 21-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/RFA-No.-02-A-2026-M-s-Tariq-and-Saad-Associates-Commercial-disputes-Courts-Allowed.-21.05.2026.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_053]
+Court: Peshawar High Court, Peshawar. Case No: Cr.M (BA) No. 326-A of 2026 Noor Muhammad Vs The State, etc.. Judgment Date (as displayed): 21-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/BA-326-(Noor-M.)-CONSOL-B.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_054]
+Court: Peshawar High Court, Peshawar. Case No: CR No. 27-P of 2017 Muhammad Iqbal Vs. Abdul Khaliq & another.. Judgment Date (as displayed): 21-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/C.R-No.27-P2017-Muhammad-Iqbal-Vs.-Abdul-Khaliq-&-another.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_055]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 448-M of 2026 Dilasa Khan & others Vs Shah Zaheer & others. Judgment Date (as displayed): 20-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.-448-M-of-2026.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_056]
+Court: Peshawar High Court, Peshawar. Case No: CR Nos. 1379 & 1221 of 2025 The Khyber Pakhtunkhwa Public Service Commission (KPPSC) through its Chairman and others v. Mst. Bibi Aisha and another. Judgment Date (as displayed): 20-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-Nos-1379-&-1221-of-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_057]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 654-P of 2026 M/S Diamond Taste & Health (Pvt) Ltd Vs Pakistan through Federal Secretary, Ministry of Finance, Islamabad and others. Judgment Date (as displayed): 20-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP654P2026-(dismissed).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_058]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 197-A of 2024 with MR No. 05-A of 2024 Syed Mubarak Shah Vs. The State. Judgment Date (as displayed): 19-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.-A-No-197-A-of-2024.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_059]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 5613-P of 2024 Mohammad Rasool Vs Chairman Selection Board & others. Judgment Date (as displayed): 19-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/13-WP-5613-2024-(19-05-2026).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_060]
+Court: Peshawar High Court, Peshawar. Case No: RFA No. 174-P of 2025 Shoaib Rehman Vs Muhammad Ishaq. Judgment Date (as displayed): 19-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/RFA-174P-2025-S-118-Negotiable-Instrument.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_061]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 06-D of 2026 Jamshed Vs The State etc. Judgment Date (as displayed): 19-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A.No.06-D-of-2026-(324-partially-allowed)-Jamshed-etc-v-the-State.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_062]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 672-A of 2026 Waheed Ahmed Vs The State. Judgment Date (as displayed): 19-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.-672-A-of-2026.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_063]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 7875-P of 2025 Muhammad Ishaq Khan Vs Govt: of KP, through Chief Secretary Civil Secretariat, Peshawar, and others. Judgment Date (as displayed): 19-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP7875-P-2025-Muhammad-Ishaq-Khan-Vs.-Govt-of-KP-etc,-Police-Decision-is-the-peragrative-of-the-Govt-and-this-court-cannot-interfere,--Dismissed.-19.05.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_064]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 4234-P of 2026 Dr. Mian Saeed Ahmad CCPO, Peshawar etc Vs Saleema Masood etc. Judgment Date (as displayed): 19-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.-4234---Dr.-Mia-Saeed-Ahmad---(Against-22-A-Cr.P.C.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_065]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 71-A of 2013 Syed Muzammal Shah & others Vs Gohar Aman & others. Judgment Date (as displayed): 18-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Consolidated-CR-71-A-2013-Syed-Muzamal-Shah-Allowed.-07.05.2026.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_066]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 124-A of 2025 Riasat Zaman Vs Govt of Pakistan etc. Judgment Date (as displayed): 13-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.-124-A-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_067]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 5552-P of 2025 Muhammad Usman Vs Cantonment Board through its Executive Officer, Peshawar Cantt & others. Judgment Date (as displayed): 13-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P.No.5552-P-25-Muhammad-Usman-v.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_068]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 27-D of 2024 Dr. Hafiz Muhammad Tahir Vs Muhammad Salam. Judgment Date (as displayed): 12-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Hafiz-Muhammad-tahir-v-Muhammad-salam-judgment-6.5.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_069]
+Court: Peshawar High Court, Peshawar. Case No: Cr. A No. 179-B of 2025 with MR No. 06-B of 2025 Sajjid Ullah etc Vs The State etc. Judgment Date (as displayed): 12-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CrA-179-8-B-2025....dated.....12.05.2026_001-(2)-1.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_070]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 1344-M of 2023 Shah Afzal Shinwari Vs Mst Sara Ihsan. Judgment Date (as displayed): 11-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.1344-M-of-2023-.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_071]
+Court: Peshawar High Court, Peshawar. Case No: Cr. Appeal No. 169-P of 2026 Bilawal Vs The State etc. Judgment Date (as displayed): 11-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A-No.169-2026.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_072]
+Court: Peshawar High Court, Peshawar. Case No: CR No. 584-P of 2023 Mst. Farkhanda Jabeen and others vs. Sakhi Gul and others&rdquo;. Judgment Date (as displayed): 11-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-No.-584-p-2023.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_073]
+Court: Peshawar High Court, Peshawar. Case No: Labour Appeal No. 28-P of 2024 Asim Nisar Vs Ministry of Energy. Judgment Date (as displayed): 11-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Labour-Appeal-No.28-P2024-Asim-Nisar-Vs.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_074]
+Court: Peshawar High Court, Peshawar. Case No: R.F.A No. 193-P of 2025 Mumtaz Khan and another Vs Collector Land Acquisition Nowshera. Judgment Date (as displayed): 07-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/RFA-193-25.7.5.2026.0001.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_075]
+Court: Peshawar High Court, Peshawar. Case No: BA No. 258-B of 2026 Naqib Ullah Vs The State. Judgment Date (as displayed): 07-05-2026. Citation (as displayed): 2026 MLD 1391. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/BA-No-258-B-2026.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_076]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 437-B of 2024 Dilawar Khan & 02 others v. Government of Khyber Pakhtunkhwa through Secretary Home Department & 02 others. Judgment Date (as displayed): 05-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No-437-B-2024.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_077]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 744-B of 2025 Maqsood Ahmad Vs The State. Judgment Date (as displayed): 05-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-744-B-2025-...dated-05.05.2026_001.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_078]
+Court: Peshawar High Court, Peshawar. Case No: Tax Reference No. 02-A of 2024 Ehsanullah Vs The Commissioner Inland Revenue. Judgment Date (as displayed): 05-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/TR-No.-02-A-2024-Revised-Return-may-be-filed-and-should-be-accepted-Ehsanullah-Allowed-05.05.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_079]
+Court: Peshawar High Court, Peshawar. Case No: L.A No. 01-D of 2024 Principal Father Emmanual Fazal OP St: Helen`s School and College, D.I Khan Vs The state and another.. Judgment Date (as displayed): 05-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Principal-Father-School-L.A.No.01-D-24-(1).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_080]
+Court: Peshawar High Court, Peshawar. Case No: F.A.O No. 22-A of 2009 Wazir Zada Afridi Vs Muhammad Akram & others. Judgment Date (as displayed): 04-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/22-A-of-2009-and-31-of-2011-(allow).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_081]
+Court: Peshawar High Court, Peshawar. Case No: RFA No. 61-P of 2024 Muhammad Tariq Khan vs. Ameer Bahader Khan. Judgment Date (as displayed): 04-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/RFA-No.-61-of-2024.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_082]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 99 of 2008 Muhammad Akram and others Vs Qazi Muhammad Ajmal & others. Judgment Date (as displayed): 04-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Consolidated-CR-No.-99-A2008-concurrent-Dismissed-04.05.2026.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_083]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 68-A of 2023 Tahir Rafique Vs The State. Judgment Date (as displayed): 04-05-2026. Citation (as displayed): 2026 PLJ Cr.C N 214. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/68-A-of-2023-(Dismissed-u.s.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_084]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 222-P of 2021 Province of Khyber Pakhtunkhwa through the Secretary to Government of Khyber Pakhtunkhwa, Irregation Department Vs M/S Technicon Engineers & EPC Contractor Group. Judgment Date (as displayed): 04-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/C.R-No.222-P2021-Province-of-KPK-through-the-Secretary-to-Governmet-of-KP,-Irrigation-Department-&-02-others-Vs.-MS-Technicon-Engineers-&-EPC-Contractor-Group-&-03-others.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_085]
+Court: Peshawar High Court, Peshawar. Case No: Cr. A No. 242-B of 2025 Shakir Ullah etc The State etc. Judgment Date (as displayed): 04-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr-A-No-242-B-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_086]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 392-B of 2024 Mst. Amtari Jana Vs Naqeeb Ullah etc. Judgment Date (as displayed): 04-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.-392-B-2024.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_087]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 401-B of 2023 Muhammad Yaqoob Khan & others Vs Mst. Bibi Tahira. Judgment Date (as displayed): 04-05-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-401-B-2023-.qudrat...dated....04.05.2026_001.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_088]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 42-A of 2024 Shahzad Vs The State. Judgment Date (as displayed): 30-04-2026. Citation (as displayed): 2026 PLJ Cr.C N 207. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A-No.-42-A-of-2024-dated-30.04.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_089]
+Court: Peshawar High Court, Peshawar. Case No: R.S.A No. 2-C of 2019 Muhammad Nasir Khan Vs Fardad Ali Shah. Judgment Date (as displayed): 30-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/R.S.A-2-C-of-2019.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_090]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 177-B of 2026 Khan Malook Vs Khan Bahadur and others. Judgment Date (as displayed): 30-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-177-B-2026....dated 30.04.2026_001.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_091]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 406-B of 2024 Muhammad Bilal alias Hazrat Bilal Vs Mst. Naveela Akhtar & others. Judgment Date (as displayed): 30-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-406-B-2024.q....dated...30.04.2026_001.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_092]
+Court: Peshawar High Court, Peshawar. Case No: Syed Muhammad Abeq Vs Mst. Sajida and others CM 12(2) No. 14-P of 2023 in W.P No. 2154 of 2010. Judgment Date (as displayed): 29-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/12(2)-No.-14-P-of-2023-in-W.-P.-No.-2154-2010.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_093]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 307-P of 2025 Shah Room Vs Jehanzeb & others. Judgment Date (as displayed): 29-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Shah-Roomvs-the-STate-302-201-PPC-allowed-accused-acquitted.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_094]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 1040-P of 2025 Abdul Wakeel Vs The State & another. Judgment Date (as displayed): 29-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A-No.-1040---Abdul-Wakeel---302-(Connected-Cr.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_095]
+Court: Peshawar High Court, Peshawar. Case No: Q.P No. 02-C of 2021 Fardad Ahmed Vs Muhammad Zafar and another. Judgment Date (as displayed): 29-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Q.P-No.2-C-of-2021-(Fardad-Ahmed-v.-Muhammad-Zafar-and-another)-allowed.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_096]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 116-A of 2025 Janis alias Jan Muhammad VS The State. Judgment Date (as displayed): 29-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr..A.No.116,-Cr.Rev.No.25-of-2024.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_097]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 69-A of 2009 Mst. Jameela Khanum Vs Chanzeb and others. Judgment Date (as displayed): 27-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-69-Jamila-v-Chanzb-Vendee-sink-wd-vendor-bona-fide-purchaser-if-order-is-invaild,-superstructure-falls-Evacuee-Juris-Displaced-persons-Act-1958-S.M.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_098]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 9313-P of 2025 Azizullah Vs Farah Naz etc. Judgment Date (as displayed): 27-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.9313-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_099]
+Court: Peshawar High Court, Peshawar. Case No: CR No. 360-A of 2014 Fateh Muhammad Khan etc Vs Ghulam Muhammad Khan etc. Judgment Date (as displayed): 27-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-No-360-A-of-2014.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_100]
+Court: Peshawar High Court, Peshawar. Case No: RFA No. 135-D of 2018 Said Badshah Vs Muhammad Nauman Khan Kundi. Judgment Date (as displayed): 27-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Said-Badshah-RFA-No.135-D-18-(single).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_101]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 2725-P of 2023 Syed Waqar Hussain Gilani Vs Federation of Pakistan etc. Judgment Date (as displayed): 22-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.-2725-P-of-2023.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_102]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 6100-P of 2023 Dr. Samdana Wahab Vs The State & another. Judgment Date (as displayed): 22-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.-6100-&-5966-(Dr.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_103]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 944-P of 2025 Zakir Hussain & others Vs The State & another. Judgment Date (as displayed): 22-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Zakir-Hussain-and-others-vs-the-STate-302-34337A(ii)-337-F(i)-Appeal-Partially-allowed-Criminal-Revision-DISMISSED.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_104]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 1536-A of 2025 Muhammad Asim Vs DSJ Mansehra. Judgment Date (as displayed): 22-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P.No-No.-1536-A-of-2026.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_105]
+Court: Peshawar High Court, Peshawar. Case No: J.Cr.A No. 11-M of 2025 with M.R No. 1-M of 2025 Khaista Rahman Vs The State. Judgment Date (as displayed): 22-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/J.Cr.A-11-M-of-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_106]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 184-P of 2024 Murad Ali and another Vs The State and another. Judgment Date (as displayed): 22-04-2026. Citation (as displayed): 2026 PLJ Cr.C N 199. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/184-24-Murad-etc-vs.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_107]
+Court: Peshawar High Court, Peshawar. Case No: Cr. Rev. No. 78-P of 2026 Waseem Vs Aqib etc. Judgment Date (as displayed): 21-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.R-No.-78-P-of-2026.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_108]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 4251-P of 2025 Shakir Farid Vs Government of Khyber Pakhtunkhwa through Chief Secretary & others. Judgment Date (as displayed): 21-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Shakir-Farid-vs-Government-of-KPK-Dismissed.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_109]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 6182-P of 2024 Abdul Haseeb Vs Govt of Kp etc. Judgment Date (as displayed): 21-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No-6182-P-2024.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_110]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 793-B of 2025 Muhammad Younas Vs Government of KP through Chief Secretary, etc. Judgment Date (as displayed): 21-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-793-B-2025.-F.Q...-dated 21.04.2026_001.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_111]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 678-P of 2017 Zulfiqar Khan & others Vs Fazal Ghafoor & others. Judgment Date (as displayed): 20-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-No.678-P-of-2017-(ZULFIQAR-KHAN-AND-OTHERS-VS-FAZAL-GHAFOOR-AND-OTHERS.-20.04.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_112]
+Court: Peshawar High Court, Peshawar. Case No: FAO No. 175-P of 2020 Farman Ullah deceased thrpugh LRs Vs Haji Said Janan etc. Judgment Date (as displayed): 20-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/FAO-NO-175--P-of-2020.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_113]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 1160-P of 2023 Khyber Pakhtunkhwa Riffle Association, through its president & others Vs Government of Khyber Pakhtunkhwa through Chief Secretary & others. Judgment Date (as displayed): 16-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/14-WP-1160-2023-(16-04-2026).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_114]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 263-P of 2024 Iqrar Khan Vs Govt og KP etc. Judgment Date (as displayed): 16-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No-263-P-of-2024.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_115]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 30-A of 2025 Khanpur Boats Association Vs Government of Pakistan through Secretary Water & Power Department, Islamabad & others. Judgment Date (as displayed): 15-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Consolidated-WP-No.-30-2025-Tax-on-boats-etc-by-TMA-21.04.2026.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_116]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 841-B of 2018 Muhammad Kamran Khan, etc Vs The Chief Secretry (Education), FATA Secretariat, Peshawar, etc.. Judgment Date (as displayed): 15-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-841-B-2018.-...Qudrat.-dated 15..04.2026_001.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_117]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 8691-P of 2025 Shahid Zaman Vs Federation of Pakistan through Secty. Cabinat Division Govt. of Pakistan. Judgment Date (as displayed): 15-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P.-No.8691-P2025-Shahid-Zaman-Vs.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_118]
+Court: Peshawar High Court, Peshawar. Case No: RFA No. 13-A of 2024 Abdul Razzaq Vs Abdul Ghafoor. Judgment Date (as displayed): 14-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/RFA-No.-13-A-of-2024.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_119]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 825-M of 2025 Mst. Gulshan Ara Vs Govt: of KPK. Judgment Date (as displayed): 14-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.-825-M-of-2025-mst.-Gulshan-Ara-v.-Govt.-of-KPK-and-others.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_120]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 1462-P of 2024 Faiz Ali Vs United Bank Limited. Judgment Date (as displayed): 14-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No-1462-P-of-2024.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_121]
+Court: Peshawar High Court, Peshawar. Case No: RFA No. 87-A of 2021 Mst. Rukhsana Bibi etc Vs Mst. Parveen Bibi etc. Judgment Date (as displayed): 14-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/RFA-No.-87-A-2021.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_122]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 3948-P of 2024 Hajira Sarwar, Assistant Women Coach PCB, Vs Federation of Pakistan, through Secretary Sports, Islamabad & others. Judgment Date (as displayed): 14-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P.No.3948-P-24-Hajra-Sarwar-v.-F.O.P-(seeks-regularization-&-also-objected-respondent-No.08-holding-multiple-public-office)-Last-&-Final-Draft.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_123]
+Court: Peshawar High Court, Peshawar. Case No: F.A.O No. 195-P of 2025 Israr Khan Shinwari Vs Dr. Naimat Ullah Khan. Judgment Date (as displayed): 09-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/FAO-No.195-P2025-Israr-Khan-Shinwari-Vs.-Dr.-Naimat-Ullah-Khan.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_124]
+Court: Peshawar High Court, Peshawar. Case No: Tax Reference No. 93-P of 2024 M/s Sher Ahmad, Proprietor of M/s General Tyre Merchant, Tous Banda Vs Commissioner of Inland Revenue, Regional Tax Office, Mardan Zone.. Judgment Date (as displayed): 09-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Tax-Ref93P2024-(allowed)-turnover-enhanded-from-ten-million-to-hundred-milliion.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_125]
+Court: Peshawar High Court, Peshawar. Case No: Office Objection No.46-P/2026 in Writ Petition No.3523-P/2026 Zia Ullah vs. Govt. of Khyber Pakhtunkhwa through Chief Secretary and others. Judgment Date (as displayed): 08-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Off-Objection-No.46-P-of-2026-in-W.P-No.3523-of-2026,-Zia-Ullah-Vs-Govt.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_126]
+Court: Peshawar High Court, Peshawar. Case No: CR No. 717-P of 2019 Shahid Sultan Durani etc Vs Khalid Mehmood. Judgment Date (as displayed): 08-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-No.717-2019.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_127]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 975-P of 2025 Abdur Rehman Vs The State & another. Judgment Date (as displayed): 08-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A-No-975-P-of-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_128]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 812-A of 2015 Imran Yousaf Vs Govt of KP, etc. Judgment Date (as displayed): 08-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-812-(25)-DB-Justices-Syed-Mudasser-Ameer+Aurangzeb-(Service-Appoint-next-in-waiting-list,-limitation-90-days-not-apply-if-no-fault-of-candidate)_FF(1).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_129]
+Court: Peshawar High Court, Peshawar. Case No: J Cr A No. 120-A of 2026 Mst. Haleema Bibi Vs The State etc. Judgment Date (as displayed): 08-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/J-Cr-A-120-A-of-2024.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_130]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 1494-P of 2025 Naveed Vs Muhammad Bilal, etc. Judgment Date (as displayed): 07-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/C.R-No.1494-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_131]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 951-P of 2025 Zahir Hussain & another Vs The State & Musarat Ali. Judgment Date (as displayed): 07-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A-No-951-of-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_132]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 4300-P of 2024 Anwar Shamim Vs Secretary Elementary & Secondary Education KP & others. Judgment Date (as displayed): 02-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP.-4300-OF-2024.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_133]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 3417-P of 2023 Salim Shah Hoti Advocate vs. The Government of Khyber Pakhtunkhwa through Chief Secretary, Peshawar and Others.. Judgment Date (as displayed): 02-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.-3417-p-2023.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_134]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 1267-A of 2021 Muhammad Naeem Haider etc Vs Mst. Shazia Riaz & others. Judgment Date (as displayed): 02-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-1267-of-2021_M-Naeem-Haider-v-Shazia-Riaz_Insurance_Takaful.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_135]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 1017-P of 2025 Hamza Mushtaq Malik Vs The State. Judgment Date (as displayed): 02-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A-No-1017-of-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_136]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 1157-P of 2025 Arshad Vs The State. Judgment Date (as displayed): 02-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A-No.1157-P-of-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_137]
+Court: Peshawar High Court, Peshawar. Case No: R.F.A No. 74-D of 2025 Malik Zeeshan Ul Haq Vs Farman Ali. Judgment Date (as displayed): 02-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Malik-Zeeshan-Ul-Haq-RFA-No.74-D-25..pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_138]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 5576-P of 2025 Zafar Ul Islam Vs The Federation of Pakistan etc. Judgment Date (as displayed): 01-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.-5576---Zafar-ul-Islam-with-WP-No.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_139]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 5048-P of 2022 MCB Bank Ltd Vs Rashid Ullah Khan and 03 others. Judgment Date (as displayed): 01-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP5048P2022-and-others.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_140]
+Court: Peshawar High Court, Peshawar. Case No: J.Cr.A No. 327-M of 2025 Hussain Gul Vs The State. Judgment Date (as displayed): 01-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/J.-Cr.A.-No.-327--M-of-2025-.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_141]
+Court: Peshawar High Court, Peshawar. Case No: CR No. 422-P of 2017 Roidad Khan etc Vs Khurshid Muhammad etc. Judgment Date (as displayed): 01-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-No.422-2017.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_142]
+Court: Peshawar High Court, Peshawar. Case No: W.P No 39-P of 2026 Sher Wali & 07 others Vs Deputy Commissioner Khyber (Land Acquisition Collector), Khyber & 03 others. Judgment Date (as displayed): 01-04-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.39-P2026-Sher-Wali-&-others-Vs.-Deputy-Commissioner-Khyber-(land-acquisition-collector)-&-03-others.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_143]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 6445-P of 2024 National Fertilizers Vs Govt of Pakistan etc. Judgment Date (as displayed): 31-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/6445-24-National-Fertilizers-Marketing-Vs-Federation-of-pakisatn-judgment-11.02.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_144]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 69-B of 2025 Muhammad Umar Vs The State etc. Judgment Date (as displayed): 31-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CrA-69-B-2025..PLD.....dated..31..03..2026_001.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_145]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 739-P of 2025 Awal Sher & others Vs Enam Ullah & another. Judgment Date (as displayed): 31-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Awal-Sher-etc-vsTate-302-324-34-Cross-version-Appeal-Allowed-Criminal-Revision-Dismissed.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_146]
+Court: Peshawar High Court, Peshawar. Case No: R.F.A No. 15-A of 2013 Mst. Azram Jan widow & others Vs Muhammad sultan through L.Rs. Judgment Date (as displayed): 31-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/RFA-No.15-2013-Mst.-Azram-Jan-allowed-31.03.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_147]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 1274-P of 2019 Muhammad Farooq Vs The State etc. Judgment Date (as displayed): 31-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A-1274-2019-(302,324,353,34,-r.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_148]
+Court: Peshawar High Court, Peshawar. Case No: Cr.MBA No. 170-P of 2026 Sharif Vs The State etc. Judgment Date (as displayed): 30-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/BA.170-2026-Sec.302,-324,-34.-Dismissed.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_149]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 1040-P of 2022 Sui Northern Gas Pipe Line Limited through its General Manager and others Vs Shahid Siraj and another. Judgment Date (as displayed): 30-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-No.-1040-P-2022-(Sui-Northern-Gas-Pipeline-etc)-dismissed.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_150]
+Court: Peshawar High Court, Peshawar. Case No: B.A No. 82-B of 2026 Naib Gul Vs The State & 03 others. Judgment Date (as displayed): 30-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/BA-82-B-2026 pld-Qudrat-.dated....30...03...2026_001.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_151]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 144-A of 2015 Syed Mustajab Shah and another Vs Syed Hussain Shah. Judgment Date (as displayed): 30-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-No.-144-A-of-2015-concurrent-dismissed-30.03.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_152]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 233-B of 2023 Mashal Khan Vs Government of Khyber Pakhtunkhwa through Secretary LG & RDD, etc. Judgment Date (as displayed): 30-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-233-B-2026....dated...30.04.2026_001.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_153]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 36-D of 2021 Nawabzada Farooq Khan etc Vs Qamar-u-Hakeem etc. Judgment Date (as displayed): 30-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.36-D-of-2021-.-Nawabzada-Farooq-Vs.-Qamar-ul-Hakeem.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_154]
+Court: Peshawar High Court, Peshawar. Case No: R.F.A No. 99-P of 2024 Dunya Gul & another Vs Niaz Muhammad & 02 others. Judgment Date (as displayed): 26-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/RFA-No.99-P2024-Dunya-Gul-&-another-Vs.-Niaz-Muhammad-&-02-others.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_155]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 237- D of 2025 Amanullah Vs Abdul Qayyum. Judgment Date (as displayed): 26-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.-237-D-of-2025-.-Amanullah-Vs.-Abdul-Qayyum-rent-.-default-by-tenant.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_156]
+Court: Peshawar High Court, Peshawar. Case No: B.A No. 152-M of 2026 Hazrat Ullah Vs The State. Judgment Date (as displayed): 26-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/B.A-No.152-M-of-2026-(Hazrat-Ullah-v.-The-State).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_157]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 1092-P of 2025 Islam Noor Vs The State. Judgment Date (as displayed): 26-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A-No.1092-2025-partially-allowed.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_158]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 1287-A of 2025 Muhammad Raqeeb Vs District Police officer, Haripure and other. Judgment Date (as displayed): 24-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No-1287-A-of-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_159]
+Court: Peshawar High Court, Peshawar. Case No: B.A No. 63-B of 2026 sher Ali Vs The State etc.. Judgment Date (as displayed): 18-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/BA-63-B-2026.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_160]
+Court: Peshawar High Court, Peshawar. Case No: F.A.B No. 18-P of 2024 Intikhab Alam Vs M/S Meezan Bank Limited. Judgment Date (as displayed): 18-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/F.A.B-No.-18-P-of-2024-Intikhab-Alam-v.-M.S-Meezan-Bank-Limited.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_161]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 234-P of 2025 Qayyum Jan Vs Jehangir Khan & another. Judgment Date (as displayed): 17-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Qayyum-Jan-vs-the-STate-302-PPC-when-charged-for-Wife-(acquitted).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_162]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 30-A of 2026 Muhammad Riaz & another Vs The State & others. Judgment Date (as displayed): 17-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/30-A-of-2026-Allowed-life-impresonment-302.311.109.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_163]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 680-P of 2020 Abdul Khaliq Vs Wasi Ud Din Khattak etc. Judgment Date (as displayed): 17-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-No.680-P-of-2020-Abdul-Khaliq-decided-on-17.03.2026-remanded--the-case-was-given-to-me-on-25.03.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_164]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 2197-P of 2024 Najeeb Ullah Vs Collector Customs, Model Collectorate, Jamrud road Peshawar. Judgment Date (as displayed): 17-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.-2197-P-of-2024-Najeeb-Ullah-v.-Collector-Customs.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_165]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 620-P of 2026 Fakhr-e-Alam Vs The Chairman NAB Islamabad. Judgment Date (as displayed): 17-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.-620-P-of-2026-Fakhre-Alam-and-another-v.-The-Chairman-NAB-and-others.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_166]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 351-P of 2026 Ali Haider Shinwari & others Vs Muhammad Qubais & others. Judgment Date (as displayed): 17-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Ali-Haider-Shinwari-and-others-vs-M.-Qubais-and-others-C.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_167]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 370-A of 2025 Abdul Maroof Vs Abdul Sudais and others. Judgment Date (as displayed): 16-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.-370-A-2025.-right-of-maintenance-belongs-to-minor,-no-one-can-waive-the-same-Dismissed.-16.03.2026.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_168]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 370-A of 2026 Ghulam Said Khan, etc Vs State, etc. Judgment Date (as displayed): 16-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-370-Ghulam-Said--SB-(514-Cr.PC-release-of-principal-who-violated-terms-of-surety-bond.-Syed-Mudasser-Ameer,-J.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_169]
+Court: Peshawar High Court, Peshawar. Case No: B.A No. 73-B of 2026 Saadullah Khan Vs The State etc. Judgment Date (as displayed): 16-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/BA-73-B-2026.....date..16...03...2026_001.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_170]
+Court: Peshawar High Court, Peshawar. Case No: BCA No. 87-B of 2025 Aman Ullah Khan Vs The State etc.. Judgment Date (as displayed): 16-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/BCA-87-B-2025.....date..16...03...2026_001.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_171]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 1280-B of 2019 Mst. Nayab Akbar etc, Vs Mst. Shamim Begum, etc.. Judgment Date (as displayed): 12-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-1280-B-2019.....date..12...03...2026_001.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_172]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 1246-M of 2025 Najib Ullah Vs Akbar Zada & others. Judgment Date (as displayed): 11-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.-1246-M-of-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_173]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 57-A of 2024 Muhammad Adeel Vs State. Judgment Date (as displayed): 11-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A.-57-A-of-2024-(Dismissed-u.s.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_174]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 414-A of 2026 Jaffar Mansoor Abbasi Vs Government of Khyber Pakhtunkhwa. Judgment Date (as displayed): 11-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P.-414-A-of-2026-Allowed-11.03.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_175]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 320-A of 2019 Mst. Mukhtiar Bibi Vs The State. Judgment Date (as displayed): 11-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/320-A-of-2019-302-452-acquittal-allowed-life.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_176]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 23-D of 2026 Sadar Shaheed Vs Government of Khyber Pakhtunkhwa through Secretary Mines and Minerals Department and others. Judgment Date (as displayed): 11-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/C.R-No.-23-D-of-2026-ouster-of-jurisdiction-plaint-return.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_177]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 2260-P of 2026 Dr. Asad Ali Khan Vs Government of Khyber Pakhtunkhwa through Chief Secretary Civil Secretarit Peshawar and others. Judgment Date (as displayed): 10-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.2260-P-of-2026,-Dr.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_178]
+Court: Peshawar High Court, Peshawar. Case No: Cr. A No. 404-A of 2019 Muhammad Afzal Vs The State. Judgment Date (as displayed): 09-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/404-A-of-2019-SS-allowed-FER-4-and-23.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_179]
+Court: Peshawar High Court, Peshawar. Case No: R.F.A No. 19-A of 2019 Syed Aftab Islam Shah VS Naeem Arshid. Judgment Date (as displayed): 09-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/19-A-2019-dismissed-leave-to-defend-was-rightly-granted-by-setting-aside-ex-parte-decree.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_180]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 145-D of 2025 Mst. Khansa Bibi Vs Javed Iqbal and others. Judgment Date (as displayed): 05-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.-145-D-25-Custody-of-minor-to-the-mother.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_181]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 344-A of 2025 Mst. Motiyan Jan Vs Maqsood & others. Judgment Date (as displayed): 05-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/344-of-2025-(N-restore-the-order-of-trial-and-set-aside-the-order-of-revisional-court).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_182]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 994-P of 2025 Abid Ullah Vs The State. Judgment Date (as displayed): 05-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A.No.-994-p-2025-(Abid-Ullah)-allowed-and-remanded.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_183]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 5367-P of 2023 Dr Azmat Ullah Khattak & others Vs Government of Pakistan & others. Judgment Date (as displayed): 04-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP.-5367-OF-2023.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_184]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 744-P of 2026 Azmat Khan & others Vs The Government of KP through its Secretary Revenue Civil Secretariat & others. Judgment Date (as displayed): 04-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.744-P2026-Azmat-Khan-&-others-Vs.-The-Government-of-KP-through-its-Secretary-Revenue-&-others.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_185]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 2581-P of 2025 Waris Khan Vs District Collector Nowshera/Collector Land Acquisition Nowshera & others. Judgment Date (as displayed): 04-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.2581-P2025-Waris-Khan-Vs.-District-Collector-Nowshera-&-others.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_186]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 93-P of 2012 TMA Mansehra Vs Forest Development Corporation. Judgment Date (as displayed): 03-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-93-TMA-v-FDC-for-Reporting-(no-difference-btw-Or-9-rule-13-set-aside-exparte-decree--Or-41-rule-21-rehearing-of-appeal-SB-Syed-Mudasser-Ameer,-J_F.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_187]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 754-P of 2026 M/S Maidan Ghee & Oil Mills (Pvt) Ltd Vs Government of Pakistan through Federal Secretary Finance and Revenue Division, Islamabad and others.. Judgment Date (as displayed): 03-03-2026. Citation (as displayed): 2026 PLJ Pesh. 110. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP754P2026-&-others-(allowed).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_188]
+Court: Peshawar High Court, Peshawar. Case No: Cr.R No. 66-D of 2025 Fauzia Batool Vs The State and others. Judgment Date (as displayed): 03-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Fauzia-Batool-Cr.R.No.66-D-25.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_189]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 1570-P of 2025 Mst. Yasmeen Shamsher Vs Mst. Alia Zahir & others. Judgment Date (as displayed): 02-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.1570-P2025-Mst.-Yasmeen-Shamsher-&-02-others-Vs.-Mst.-Alia-Zahir-&-others.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_190]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 6420-P of 2024 Abdul Ali and others Vs Senior Member (Judl-1) Board of Revenue, Peshawar and others. Judgment Date (as displayed): 02-03-2026. Citation (as displayed): 2026 PLJ Pesh. 128. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP6420P2024-(allowed).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_191]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 87-A of 2025 Khursheed Vs The State & 1 other. Judgment Date (as displayed): 02-03-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/87-A-of-2025-337-336-cutting-of-nose-partially-allowed.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_192]
+Court: Peshawar High Court, Peshawar. Case No: Writ Petition No.1518-P/2026 Mushtaq Ahmad & others vs. Federation of Pakistan & others. Judgment Date (as displayed): 27-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.1518-P-of-2026,-Mushtaq-Ahmad-etc,-dismissed,-26.02.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_193]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 9663-P of 2025 Niaz Ahmad and another Vs Federation of Pakistan. Judgment Date (as displayed): 26-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No-9663-p-of-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_194]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 5526-P of 2018 Saif Textile Mills Ltd and others Vs Government of Khyber Pakhtunkhwa through its Chief Secretary Peshawar. Judgment Date (as displayed): 25-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP5526P2018-&-others-(dismissed)-Electricity-Duty.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_195]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 1535-A of 2025 Sohail Abid Vs The State and others. Judgment Date (as displayed): 25-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/1535-A-of-2025-Police-Clearance-allowed.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_196]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 901-P of 2025 with Murder Reference No. 18-P of 2025 Zeeshan Durrani Vs The State & another. Judgment Date (as displayed): 25-02-2026. Citation (as displayed): 2026 PCrLJ 1504. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Zeeshan-Durrani-vs-the-STate-302-34-Appeal-Partially-allowed-Sentenced-Reduced-to-Life-consolidated-Criminal-Revision-DISMISSED.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_197]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 650-P of 2025 Jamil Khan Vs The State etc. Judgment Date (as displayed): 25-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A-650-2025-(u.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_198]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 459-P of 2024 Inhabitants of Jungle Khel Vs CEO PESCO etc.. Judgment Date (as displayed): 24-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-No-459-of-2024.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_199]
+Court: Peshawar High Court, Peshawar. Case No: Cr. Misc (B.A) No. 66-A of 2026 Azhar Khan Vs The State. Judgment Date (as displayed): 23-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/B.A-66-A-of-2026-(Allowed-u.s.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_200]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 9815-P of 2025 Mohammad Jamil etc Vs Federation of Pakistan etc. Judgment Date (as displayed): 23-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Judgment-in-WP-9815-of-25-Muhammad-Jamil-vs-FoP.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_201]
+Court: Peshawar High Court, Peshawar. Case No: COC No. 249-P of 2025 State Vs Asadullah, Advocate. Judgment Date (as displayed): 23-02-2026. Citation (as displayed): 2026 PLJ Pesh. 90. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/COC-No.-249-of-2025-State-Vs-Asadulah-advocate.....allowed.-convicted.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_202]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 18-D of 2024 Muhammad Jawad Ahmad Vs The State etc.. Judgment Date (as displayed): 23-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A.No.18-D-of-2024-(IDA-SB)-M-Jawad-Ahmad-v-State.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_203]
+Court: Peshawar High Court, Peshawar. Case No: Cr.R No. 04-D of 2026 Jamshed Ahmad and others Vs Allah Noor and another. Judgment Date (as displayed): 23-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Jamshed-Ahmad-Khan-Cr.Rev.No.04-D-26.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_204]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 4958-P of 2024 Muhammad Wakeel Khattak Vs Government of KP through Secretary Industries, Commerce and Technical Education Department, Peshawar & others. Judgment Date (as displayed): 17-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P.No.4958-P-24-M.-Wakeel-Khattak-v.-Govt-of-K.P-(seeks-pension-for-period-of-contract-project-employment)-Dismiss-(Final).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_205]
+Court: Peshawar High Court, Peshawar. Case No: R.F.A No. 41-D of 2024 Sami Ullah Khan Vs President Faisal Bank Ltd, and others. Judgment Date (as displayed): 17-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Sami-Ullah-Khan-RFA-No.41-D-24.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_206]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 582-P of 2018 Ashfaq Ahmad Vs Mst Mehrun Nisa. Judgment Date (as displayed): 17-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/C.R-No.-582-p-2018-(Ishfaq-Ahmad)-dismissed-(petitioner-has-not-exhausted-remedies-available-under-the-special-law-(order-of-Appellate-Court-maintained).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_207]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 332-A of 2017 Muhammad Malook Vs Mst. Sabah Sultan etc. Judgment Date (as displayed): 16-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-No.-332-A-of-2017-concurrent-allowed-16.02.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_208]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 03-D of 2020 Government of KP through Secretary Fisheries Department & another Vs Ghulam Sarwar and others. Judgment Date (as displayed): 16-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-No.03-D-of-2020-.-Govt-of-KPK-vs-Ghulam-Sarwar-etc.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_209]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 532-P of 2025 Arshad & another Vs Abdul Khaliq & another. Judgment Date (as displayed): 10-02-2026. Citation (as displayed): 2026 PLJ Cr.C 377. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Arshad-and-others-vs-the-STate-302-324-PPC-allowed-Acquitted.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_210]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 395-A of 2010 Zardad & others Vs Mst. Muhammad Zubair & others. Judgment Date (as displayed): 10-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-No.-395-A-of-2010-concurrent-dismissed-10.02.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_211]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 165-M of 2026 Dr. Amjad Vs The State etc. Judgment Date (as displayed): 10-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.165-M-of-2026.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_212]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 476-P of 2025 Ihsan Ullah Vs Jehangir Khan etc. Judgment Date (as displayed): 10-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-No.-476-Ihsan-Ullah-etv.-Jahangir-Khan-etc.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_213]
+Court: Peshawar High Court, Peshawar. Case No: C.R NO. 368-A of 2009 Mst. Habib Un Nisa Vs Mst. Jameela Khatoon. Judgment Date (as displayed): 09-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/368-A-of-2009-(dismiss-N-RL-II-excess-land-rightly-cancelled).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_214]
+Court: Peshawar High Court, Peshawar. Case No: F.A.O No. 103-P of 2024 SDO Sub Division Sheikh Maltoon & others Vs Murad Ali Shah. Judgment Date (as displayed): 09-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/FAO103---------------FINAL.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_215]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 342-M of 2024 Mst. Fatima & others Vs Rahim Ullah & others. Judgment Date (as displayed): 09-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/w.p-342-OF-2024-.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_216]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 974-P of 2024 Nazir Khan & others Vs Noor Shah. Judgment Date (as displayed): 09-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Nazir-Khan-and-others-vs-Noor-Shha-CR-No.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_217]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 2892-P of 2025 Mst. Minhas Begum & others Vs Manir Akbar Khan & others. Judgment Date (as displayed): 06-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-.No.2892-P-25-Minhas-etc-v.--Manir-Akhtar-(Final-Revised-Draft-dated-13.02.2026).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_218]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 6141-P of 2025 Qaisar Khan & others Vs Hamshaid & others. Judgment Date (as displayed): 06-02-2026. Citation (as displayed): 2026 PLJ Pesh.71. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.6141-P2025-Qaiser-Khan-&-others-Vs.-Hamshaid-&-others.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_219]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 439-P of 2025 Mushtaq Ali Vs The State. Judgment Date (as displayed): 04-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A-No.-439-p-2025-(Mushtaq-Ali-)-allowed.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_220]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 932-P of 2025 Muhammad Tariq Vs The State. Judgment Date (as displayed): 04-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Consolidated-Cr.A-No.-932-&-937---M.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_221]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 1539-M of 2025 Muhammad Safdar Khan Vs Assiatant Commissioner Nawagai etc. Judgment Date (as displayed): 03-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-1539-of-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_222]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 5560-P of 2024 Manzoor Ahmad Pahsteen Vs Federation of Pakistan & others. Judgment Date (as displayed): 03-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP5560-P-2024-Manzoor-Ahmed-Pashteen-etc-versus-Federation-of-Pakistan-etc,-dismissed.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_223]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 7810-P of 2022 Barrister Muhammad Yousaf Khan Vs Government of KPK and others. Judgment Date (as displayed): 02-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Barrister-M.-Yousaf-Vs-GOKPK-02.02.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_224]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 119-P of 2026 Bakht Jamal and others Vs Khushdil. Judgment Date (as displayed): 02-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/119-2026-Bakht-Jamal-vs-Khushdil-objection-petiton-dis.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_225]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 1807-P of 2019 Shams-ur-Rehman & others Vs Said Shah & others. Judgment Date (as displayed): 02-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.1807-P2019-Shams-Ur-Rehman-&-others-Vs.-Said-Shah-&-others.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_226]
+Court: Peshawar High Court, Peshawar. Case No: RFA No. 426-P of 2023 Pakistan Water & Power Develeopment Authority Vs M/s Zardad Khan & Co. Judgment Date (as displayed): 02-02-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/RFA-No.-426-P-of-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_227]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 733-D of 2025 Dr. Qaisar Anwar Vs Controlling Authority BISE, K.P and others. Judgment Date (as displayed): 29-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Dr.-Qaisar-Anwar-W.P.No.733-D-25.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_228]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 360-M of 2019 Muhammad Zuhrab Khan Vs Falak Nawab. Judgment Date (as displayed): 29-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/C.R-No.-360-M-of-2019.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_229]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 847-M of 2025 Khurshid Ali Vs Govt. of KP. Judgment Date (as displayed): 28-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.-847-M-of-2025-.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_230]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 356-P of 2025 Muhammad Ali Vs The State & another. Judgment Date (as displayed): 27-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Muhammad-Ali-vs-the-STate-302-34-Appeal-allowed-ACQUITTED-consolidated-Criminal-Revision-DISMISSED.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_231]
+Court: Peshawar High Court, Peshawar. Case No: STR No. 131-P of 2025 Commissioner Inland Revenue (Refund Zone), Regional Tax Office, Peshawar Vs M/s AGE Industries (Pvt) Ltd, Peshawar. Judgment Date (as displayed): 27-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/STR131P2025-(dismissed).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_232]
+Court: Peshawar High Court, Peshawar. Case No: Cr. A No. 668-P of 2025 Muhammad Sajid Vs The State. Judgment Date (as displayed): 27-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.-A-No.-668-P-of-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_233]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 469-M of 2022 Fazalullah Vs Managing Director PTV & others. Judgment Date (as displayed): 27-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.-469-M-of-2022-.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_234]
+Court: Peshawar High Court, Peshawar. Case No: RFA No. 162-P of 2023 SNGPL through its GM at Peshawar Vs M/S Fuel Zone through its Authorized officer, Peshawar. Judgment Date (as displayed): 26-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/RFA-162-P-2023.....Final-Judgment..26.01.2026 pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_235]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 1321-A of 2024 Abid Niyyar etc Vs Ghulam Kibriya and others. Judgment Date (as displayed): 26-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.-1321-A-of-2024-26.01.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_236]
+Court: Peshawar High Court, Peshawar. Case No: CR No. 917-P opf 2025 Hahiz Hussain Ahmad etc Vs Sartaj Ali etc. Judgment Date (as displayed): 26-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-No.-917-p-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_237]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 274-P of 2026 Dr. Azhar Jadoon Vs Registrar, Peshawar High Court, Peshawar & others. Judgment Date (as displayed): 23-01-2026. Citation (as displayed): 2026 PLJ Pesh. 100. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Dr.-Azhar-Khan-v.Registrar-16.02.2026-revised-draft.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_238]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 40-P of 2025 Yousaf Vs The state & another. Judgment Date (as displayed): 22-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Yousaf-vs-the-STate-302-PPC-allowed-Acquitted-DYING-DECLARATION.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_239]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 5372-P of 2024 with IR M/s Ghazi Security Guards Pvt Ltd Vs EOBI. Judgment Date (as displayed): 22-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.5372of-2024-4.3.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_240]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 5588-P of 2025 Ali Azim Afridi Vs Syed Wiqar Shah & others. Judgment Date (as displayed): 22-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.5588-P-of-2025-Ali-Azim-Afridi-(22.01.2026)-sent-by-Mr.-Aslam-Riaz-saab-through-Usama,-JSS-on-whatsApp-on-15.04.2026-at-01-43-p.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_241]
+Court: Peshawar High Court, Peshawar. Case No: R.F.A No. 116-M of 2024 Muhammad Sadiq Vs Government of KP through Secretary Board of Revenue and others. Judgment Date (as displayed): 21-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/R.F.A-No.116-M-of-2024-(Muhammad-Sadiq-Vs.-Govt.-of-KPK-and-others).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_242]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 868-P of 2024 Salman Akbar Vs The State etc. Judgment Date (as displayed): 21-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/868-P-of-2024.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_243]
+Court: Peshawar High Court, Peshawar. Case No: Intra Court Appeal No. 01-P of 2017 Chairman Privatization Commission Vs M/S Swat Ceramic Company Pvt Ltd and 2 others. Judgment Date (as displayed): 21-01-2026. Citation (as displayed): 2026 PLJ Pesh. 64. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/ICA-No.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_244]
+Court: Peshawar High Court, Peshawar. Case No: FAO No. 206-P of 2025 M/S Shah Medicos Vs Government of Khyber Pakhtunkhwa and 02 others. Judgment Date (as displayed): 21-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/MS-Shah-Medicos-v-Govt-of-KP-FAO-206-of-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_245]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 208-D of 2025 Noor Jamal Vs Muhammad Shakoor. Judgment Date (as displayed): 21-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-208-D-of-2025-Noor-Jamal-Vs.-Muhamamd-Shakoor.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_246]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 2732-P of 2023 Zulfiqar Ali Shah etc Vs Government of KP through Chief Secretary, Peshawar etc.. Judgment Date (as displayed): 20-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.-2732-of-2023-Zulfiqar-Ali-Khan-vs-KP-Govt-Judgment.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_247]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 10041-P of 2025 Wilayat Ali Vs Federation of Pakistan & others. Judgment Date (as displayed): 20-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP10041-P-25-Wilayat-Ali-vs-FOP-final-and-consolidated-judgment.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_248]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 1142-M of 2022 Iqbal Hussain Vs Govt. of KP & others. Judgment Date (as displayed): 20-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-No.-1142-M-of-2022-.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_249]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 761-P of 2022 Ayaz ul Haq Vs Haji Gul Rehman and another. Judgment Date (as displayed): 19-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/C.R-No.761-2022-(Ayaz-ul-Haq-vs.-Haji-Gul-Rehman)-allowed-Mazhar-Ali-Khan.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_250]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 376-M of 2019 Fazal Karim Vs Said Karim Khan & others. Judgment Date (as displayed): 19-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/C.R-376-M-OF-2019-JUDGMENT.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_251]
+Court: Peshawar High Court, Peshawar. Case No: Service Appeal No. 07 of 2013 Syed Ali Raza Vs Hon`ble Administratiion Committee Peshawar High Court, Peshawar through Registrar, Peshawar High Court, Peshawar and other. Judgment Date (as displayed): 17-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/S.A-No.-7-p-2023-(syed-Ali-Raza).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_252]
+Court: Peshawar High Court, Peshawar. Case No: WP No. 5504-P and WP No. 5560-P of 2025 Asif Ullah Vs Govt of KP etc and Shabbir Hussain Gigyani Vs DG Prosecution KP etc. Judgment Date (as displayed): 15-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Asif-Ullah-Vs-GOKPK-Final-judgment-Draft-15.01.2025-1.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_253]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 158-M of 2025 Sawab Khan Vs The State and others. Judgment Date (as displayed): 14-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A-No.158-M-of-2025-(Sawab-Khan-Vs.-The-State-and-others).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_254]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 905-P of 2025 Said Jalal Vs Anwar Ali & another. Judgment Date (as displayed): 14-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Said-Jalal-vs-the-sTate-376-PPC-Remanded-with-Criminal-Revision-consolidated2nd-time.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_255]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 212-B of 2018 Nausher Khan Vs The State etc. Judgment Date (as displayed): 13-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CrA-212-B-2018 Final-Judgmet-dated.....N...13.01.2026-(1).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_256]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 446-P of 2025 Amjid Hussain Vs The State & another. Judgment Date (as displayed): 13-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Amjad-Hussain-vs-the-STate-302-324-PPC-allowed-Acquitted.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_257]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 104-M of 2025 Asghar Ali Vs The State. Judgment Date (as displayed): 13-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Cr.A.-No.-104-M-of-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_258]
+Court: Peshawar High Court, Peshawar. Case No: Cr.A No. 721-P of 2025 Tariq Vs Khitab Gul & another. Judgment Date (as displayed): 12-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/Tariq-vs-the-STate-324-ACQUITTED-Two-Appeal-consolidated-Criminal-Revision-DISMISSED.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_259]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 3028-P of 2025 Mst. Saira Noor Vs Nisar Ahmad & others. Judgment Date (as displayed): 12-01-2026. Citation (as displayed): 2026 PLJ Pesh. 43. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/W.P-3028-Mst-Saira-v-Nisar-Ahmad.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_260]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 965-M of 2025 Amjad Ali Vs M/S DKT Pakistan (Pvt) Ltd. through Its authorized representative.. Judgment Date (as displayed): 12-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/C.R-No.-965-M-of-2025-.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_261]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 1241-P of 2011 Secretary to Government of Pakistan, Ministry of Defence, Islamabad Vs M/S Model Town Corporation Ltd, through its Chairman Abdul Rehman. Judgment Date (as displayed): 12-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/C.R-No.1241-2011-Govt-of-Pakistan-through-Secretary-Defence,-Islamabad-Vs.-M-S-Model-Town-Corporation-Ltd.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_262]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 128-P of 2025 Daulat Khan Khilji etc Vs Ministry of Interior through Secretary Interior, Government of Pakistan etc.. Judgment Date (as displayed): 12-01-2026. Citation (as displayed): 2026 PLJ Pesh.79. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/WP-No.-128-Daulat-Khan-Khilji-etc.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_263]
+Court: Peshawar High Court, Peshawar. Case No: C.R No. 1027-P of 2024 Sher Ali Khan and another Vs Muhammad Sher Khan and others. Judgment Date (as displayed): 12-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR1027P2024-(allowed).pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_264]
+Court: Peshawar High Court, Peshawar. Case No: CR No. 369-P of 2020 Farhat Ullah etc Vs Abdul Malik etc. Judgment Date (as displayed): 12-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/CR-No-369-P-of-2020.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_265]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 9509-P of 2025 Tehmina Bibi Vs Shaheed Banazir Bhutto Women University, Peshawar through its Registrar & others. Judgment Date (as displayed): 02-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/9509-2025.pdf. Verified: 2026-09-06 against the official court repository.
+
+[SECTION: PHC_IDX_266]
+Court: Peshawar High Court, Peshawar. Case No: W.P No. 10473-P of 2025 Kamran Khan Vs University of Malakand through its Registrar & others. Judgment Date (as displayed): 02-01-2026. Record Type: METADATA_ONLY (official court listing entry; full judgment PDF not ingested). Source URL: https://www.peshawarhighcourt.gov.pk/PHCCMS//judgments/wp-10473p-of-2025-(kamran-khan-vs-university-of-malakand).pdf. Verified: 2026-09-06 against the official court repository.

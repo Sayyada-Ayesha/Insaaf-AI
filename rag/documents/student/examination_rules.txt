@@ -1,0 +1,191 @@
+[SECTION: EXAMINATION_AUTHORITY_AND_FRAMEWORK]
+Title: Examination Authority and Legal Framework
+Authority: University Act and Statutes (varies by institution); HEC Guidelines
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Statutory and Regulatory
+Source: University Acts and Statutes; HEC Guidelines
+
+Overview:
+- Examinations in Pakistani universities are conducted under the authority of the respective University Act and Statutes.
+- The Academic Council and the Controller of Examinations are typically responsible for examination policies, scheduling, and conduct.
+- The Syndicate/Board of Governors has overall supervisory authority over examinations.
+- HEC has issued guidelines on examination standards, academic integrity, and fair evaluation.
+- Each university frames its own examination rules and regulations under its Statutes.
+
+Note: Specific examination rules, schedules, and procedures vary by university. Consult your university's applicable examination regulations.
+
+[SECTION: EXAMINATION_SCHEDULING]
+Title: Examination Scheduling and Notification
+Authority: University Statutes and Examination Rules (varies by institution)
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Institutional Regulation
+Source: University Statutes and Examination Rules
+
+General Principles:
+- Universities must notify examination schedules in advance (typically 2-4 weeks before the examination period).
+- The date sheet/time table is published by the Controller of Examinations/Examination Department.
+- Examinations are typically held at the end of each semester/term (semester system) or annually (annual system), as per the university's academic calendar.
+- Students must be informed of the examination venue, date, and time.
+- Any change in the schedule must be notified with reasonable advance notice.
+- Admit cards/roll number slips are issued to students before the examination.
+
+Note: Specific scheduling practices, notification periods, and admit card procedures vary by university. Consult your university's applicable examination regulations.
+
+[SECTION: UNFAIR_MEANS_AND_MALPRACTICE]
+Title: Unfair Means and Examination Malpractice — Definitions and Consequences
+Authority: University Statutes and Examination Rules; Pakistan Penal Code
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Statutory and Institutional
+Source: University Statutes; PPC
+
+Unfair Means (commonly defined across universities):
+- Bringing unauthorized material (notes, books, electronic devices) into the examination hall.
+- Copying from another student's answer script.
+- Communicating with another student during the examination.
+- Impersonation (appearing in someone else's examination).
+- Obtaining or attempting to obtain examination paper before the scheduled time.
+- Using electronic devices (mobile phones, smartwatches, etc.) in the examination hall (unless specifically permitted).
+- Any other conduct that gives an unfair advantage or disrupts the examination.
+
+Consequences:
+- Students caught using unfair means may face:
+  - Cancellation of the examination paper.
+  - Debarment from future examinations for a specified period.
+  - Disciplinary action (show-cause, hearing, penalty as per university regulations).
+  - In serious cases (e.g., paper leak, impersonation ring), criminal proceedings under PPC (Section 420 — cheating, Section 465 — forgery, Section 471 — using forged document as genuine).
+
+Due Process:
+- Before any penalty is imposed, the student must be given a show-cause notice and an opportunity to be heard (as per university regulations and Article 10-A of the Constitution).
+
+Note: The specific definition of unfair means, penalties, and procedures vary by university. Consult your university's applicable examination regulations.
+
+[SECTION: PAPER_LEAK_AND_IRREGULARITIES]
+Title: Paper Leak and Examination Irregularities — Student Rights
+Authority: University Statutes; HEC Guidelines
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Statutory and Regulatory
+Source: University Statutes; HEC Guidelines
+
+Student Rights in Case of Paper Leak/Irregularity:
+- If an examination paper is leaked or there is a serious irregularity (e.g., wrong paper distributed, mass cheating), the university may:
+  - Cancel the examination and order a re-examination.
+  - The re-examination must be conducted fairly and without disadvantage to affected students.
+  - Students should not be penalized for irregularities not caused by them.
+- Students affected by a paper leak or irregularity have the right to:
+  - Request a re-examination if the integrity of the original examination is compromised.
+  - Report the irregularity to the Controller of Examinations, Proctor, or Vice-Chancellor.
+  - Approach the HEC if the university fails to address the irregularity.
+  - Approach the High Court via writ petition under Article 199 if fundamental rights are violated.
+
+Note: The specific procedure for handling paper leaks and irregularities varies by university. Consult your university's applicable examination regulations.
+
+[SECTION: RE_EVALUATION_AND_RECHECKING]
+Title: Re-evaluation and Rechecking of Answer Scripts
+Authority: University Statutes and Examination Rules (varies by institution)
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Institutional Regulation
+Source: University Statutes and Examination Rules
+
+General Principles:
+- Most universities allow students to apply for rechecking and/or re-evaluation of their answer scripts.
+- Rechecking: Verification of total marks and whether all questions were evaluated.
+- Re-evaluation: Re-assessment of the answer script by a different examiner.
+- Students must apply within the prescribed time limit (typically 15-30 days from result declaration).
+- A prescribed fee is charged for rechecking/re-evaluation (refundable if marks change significantly, as per university rules).
+- If re-evaluation results in a change of marks, the revised result is issued.
+- The university's decision on re-evaluation is typically final, unless there is evidence of procedural irregularity.
+
+Note: Specific time limits, fees, procedures, and conditions for rechecking/re-evaluation vary by university. Consult your university's applicable examination regulations.
+
+[SECTION: SUPPLEMENTARY_EXAMINATIONS]
+Title: Supplementary and Improvement Examinations
+Authority: University Statutes and Examination Rules (varies by institution)
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Institutional Regulation
+Source: University Statutes and Examination Rules
+
+General Principles:
+- Students who fail one or more courses/subjects may be allowed to appear in supplementary examinations.
+- Eligibility, number of attempts allowed, and time limits for supplementary exams are prescribed by the university's regulations.
+- Some universities also offer "improvement" examinations for students who have passed but wish to improve their grades/marks.
+- Supplementary exams are typically held within a specified period after the main examination results.
+- Students must register for supplementary exams and pay the prescribed fee.
+- The maximum number of supplementary attempts and the time limit for degree completion are governed by the university's regulations.
+
+Note: Specific supplementary exam rules, eligibility, and time limits vary by university. Consult your university's applicable examination regulations.
+
+[SECTION: RESULT_DECLARATION_AND_GAZETTE]
+Title: Result Declaration and Gazette
+Authority: University Statutes and Examination Rules
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Institutional Regulation
+Source: University Statutes and Examination Rules
+
+General Principles:
+- Examination results are declared by the Controller of Examinations after the evaluation process is complete.
+- Results are published through the university's website, student portal, and/or official gazette.
+- Students receive their marks sheets/grade cards through the examination department.
+- The result gazette is an official document and must be preserved by the student.
+- Discrepancies in results (wrong marks, missing subjects, name errors) should be reported to the Controller of Examinations immediately for correction.
+- Universities are required to maintain examination records for a specified period.
+
+Note: Specific result declaration timelines, formats, and correction procedures vary by university. Consult your university's applicable examination regulations.
+
+[SECTION: DEGREE_ATTESTATION_AND_TRANSCRIPT]
+Title: Degree Attestation and Transcript — Procedure
+Authority: University Statutes; HEC
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Statutory and Institutional
+Source: University Statutes; HEC Guidelines
+
+General Principles:
+- Upon completion of the degree, students receive their degree certificate and official transcript from the university.
+- The degree must be attested by the HEC for use abroad or for certain government employment purposes.
+- Transcript requests: Students may apply for official transcripts through the university's examination department. A prescribed fee is charged.
+- Degree attestation procedure:
+  1. Obtain the original degree certificate and transcript from the university.
+  2. Apply online through the HEC portal (hec.gov.pk).
+  3. Pay the prescribed attestation fee.
+  4. Submit physical documents to the HEC office/Regional Centre.
+  5. HEC verifies the degree with the issuing university.
+  6. Attested documents are returned to the student.
+- Universities cannot withhold the degree or transcript for unreasonable reasons (e.g., unrelated disputes). Legitimate outstanding dues may be a valid ground for withholding until cleared.
+
+Note: Specific procedures, fees, and timelines for degree attestation and transcripts vary by university and HEC. Consult your university's applicable regulations and HEC's official website.
+
+[SECTION: EXAMINATION_GRIEVANCE_AND_APPEAL]
+Title: Examination Grievance Redressal and Appeal
+Authority: University Statutes; Constitution of Pakistan, Article 199
+Jurisdiction: Pakistan (Federal & Provincial)
+Legal Status: Statutory and Constitutional
+Source: University Statutes; Constitution of Pakistan, 1973
+
+Grievance Mechanism:
+- Students with examination-related grievances may approach:
+  1. Controller of Examinations — for result discrepancies, rechecking/re-evaluation requests, scheduling issues.
+  2. Dean of the Faculty/Department — for academic disputes related to course content or evaluation.
+  3. Vice-Chancellor — for escalated grievances or appeals against examination decisions.
+  4. University Syndicate/Academic Council — for policy-level grievances.
+  5. High Court — via writ petition under Article 199 if fundamental rights are violated or the examination process is tainted by illegality or mala fides.
+
+Note: Specific grievance procedures and appellate authorities vary by university. Consult your university's applicable examination regulations.
+
+[SECTION: HYDERABAD_SPECIFIC_RESOURCES]
+Title: Examination Resources for Students in Hyderabad
+Authority: University of Sindh Act, 1972; MUET Act, 1976; LUMHS Act, 2006; HEC
+Jurisdiction: Hyderabad, Sindh
+Legal Status: Statutory and Institutional
+Source: University Acts and Statutes; HEC Guidelines
+
+Hyderabad-Specific Information:
+- University of Sindh (Jamshoro/Hyderabad): Examinations conducted by the Controller of Examinations under the University of Sindh Act, 1972 and Statutes. Rechecking/re-evaluation applications are processed as per University of Sindh examination rules.
+- MUET (Jamshoro): Examinations conducted under the MUET Act, 1976 and Statutes. Students may approach the Controller of Examinations, MUET for grievances.
+- LUMHS (Hyderabad): Examinations conducted under the LUMHS Act, 2006 and regulations. Students may approach the examination department for grievances.
+- University of Sindh: Official website: https://www.usindh.edu.pk | Examinations Wing: https://www.usindh.edu.pk (Examinations section)
+- MUET: Official website: https://www.muet.edu.pk | Admissions: https://www.muet.edu.pk/admissions
+- LUMHS: Official website: https://www.lumhs.edu.pk | Admissions: https://www.lumhs.edu.pk/admissions/undergraduate_admission.php
+- All Hyderabad universities follow HEC guidelines on examination standards.
+- If internal grievance mechanisms fail, students may approach the Sindh Provincial Ombudsman for complaints against provincial universities.
+- Students may approach the Sindh High Court (Hyderabad Bench) under Article 199 of the Constitution if examination-related fundamental rights are violated.
+
+Note: Specific examination procedures, schedules, and grievance mechanisms vary by university. Consult your university's applicable examination regulations.

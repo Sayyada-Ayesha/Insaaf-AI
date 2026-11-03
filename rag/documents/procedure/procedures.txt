@@ -1,0 +1,146 @@
+[SECTION: FIR_PROCEDURE]
+FIR (First Information Report) Filing Procedure:
+1. Go to the police station that has jurisdiction over the area where the offence occurred.
+2. Provide information about the cognizable offence to the Station House Officer (SHO) or officer in charge.
+3. The police officer is LEGALLY BOUND to record your FIR (Section 154 CrPC). Police cannot refuse.
+4. The information will be reduced to writing and read over to you.
+5. You must sign the FIR after verification.
+6. You are entitled to a free copy of the FIR.
+7. The police will then begin investigation.
+Required Documents: CNIC (national identity card), any evidence available.
+Source: Code of Criminal Procedure, 1898, Section 154.
+Source URL: https://pakistancode.gov.pk/
+
+[SECTION: FIR_REFUSAL_REMEDY]
+What To Do If Police Refuse To Register FIR:
+If the police refuse to register your FIR, you have several legal remedies:
+1. Written Application: Submit a written application to the SHO requesting FIR registration. Keep a copy.
+2. SP/DSP Complaint: If the SHO refuses, file a written complaint to the Superintendent of Police (SP) or Deputy Superintendent of Police (DSP) of the area.
+3. Ex-Officio Justice of Peace (Section 22-A/22-B CrPC): File an application before the Sessions Judge sitting as Ex-Officio Justice of Peace. The Sessions Judge can direct the SHO to register the FIR.
+4. Direct Complaint to Magistrate (Section 200 CrPC): File a private complaint directly before the Magistrate.
+5. High Court (Article 199): In extreme cases, file a writ petition before the High Court.
+6. Pakistan Citizen Portal: File a complaint through the Pakistan Citizen Portal (Helpline 8171).
+7. IGP Complaint Cell: Contact the Inspector General of Police complaint cell.
+Source: CrPC Sections 22-A, 22-B, 154, 200; Constitution Article 199.
+
+[SECTION: BAIL_PROCEDURE]
+Bail Procedure in Pakistan:
+There are three main types of bail:
+
+A. Bail in Bailable Offences (Section 496 CrPC):
+- This is a matter of RIGHT. The police or court MUST grant bail.
+- The accused executes a bail bond with or without sureties.
+
+B. Bail in Non-Bailable Offences (Section 497 CrPC):
+- Not a matter of right; it is at the discretion of the court.
+- Application is filed before the Sessions Court or High Court.
+- Court considers: nature of offence, evidence, likelihood of fleeing, criminal record.
+- Bail may be refused if accused is charged with offence punishable by death or life imprisonment and there are reasonable grounds to believe guilt.
+
+C. Pre-Arrest Bail / Anticipatory Bail (Section 498-A CrPC):
+- Filed BEFORE arrest when there is apprehension of arrest.
+- Application filed before the Sessions Court or High Court.
+- Court grants interim pre-arrest bail and issues notice to prosecution.
+- After hearing both sides, court either confirms or recalls the bail.
+
+Required Documents: Copy of FIR, surety bonds, CNIC, any supporting documents.
+Costs: Court fee for bail application is minimal (stamp paper). Lawyer fees vary.
+Source: CrPC Sections 496, 497, 498-A.
+Source URL: https://pakistancode.gov.pk/
+
+[SECTION: WRIT_PETITION_PROCEDURE]
+Writ Petition Procedure (Article 199 of Constitution):
+1. File writ petition before the High Court of the province where the cause of action arose.
+2. Types of writs: Habeas Corpus, Mandamus, Certiorari, Prohibition, Quo Warranto.
+3. Petition must state fundamental right violated or illegal action by government/authority.
+4. Attach supporting documents and affidavit.
+5. Court may issue interim orders.
+6. Notice is issued to respondent (government/authority).
+7. Arguments are heard from both sides.
+8. Court passes final order.
+Required: Written petition, court fee (varies by High Court), supporting documents, affidavit.
+Source: Constitution of Pakistan, Article 199; High Court Rules.
+
+[SECTION: CRIMINAL_TRIAL_STAGES]
+Criminal Trial Stages in Pakistan:
+1. FIR Registration (Section 154 CrPC)
+2. Investigation by Police (Section 156-173 CrPC)
+3. Challan (Police Report) submitted to Magistrate (Section 173)
+4. Framing of Charge (Section 242/265-C CrPC)
+5. Plea of Accused (Guilty/Not Guilty)
+6. Prosecution Evidence (examination-in-chief, cross-examination)
+7. Statement of Accused under Section 342 CrPC
+8. Defence Evidence (if accused wishes to produce)
+9. Final Arguments
+10. Judgment (conviction or acquittal)
+11. Sentencing (if convicted)
+12. Appeal to Higher Court (within 30 days)
+Source: Code of Criminal Procedure, 1898.
+
+[SECTION: CIVIL_SUIT_STAGES]
+Civil Suit Stages in Pakistan:
+1. Filing of Plaint (suit initiation) with court fee
+2. Service of Summons to defendant
+3. Written Statement by defendant (within 30 days)
+4. Replication by plaintiff (if needed)
+5. Framing of Issues
+6. Documentary Evidence filing
+7. Oral Evidence (examination of witnesses)
+8. Final Arguments
+9. Judgment and Decree
+10. Execution of Decree (if needed)
+11. Appeal to Appellate Court (within 30 days)
+12. Second Appeal to High Court on question of law
+13. Revision (Section 115 CPC)
+Source: Code of Civil Procedure, 1908.
+
+[SECTION: FAMILY_CASE_PROCEDURE]
+Family Court Case Procedure:
+1. Filing of suit in Family Court by wife/husband.
+2. Court issues notice to opposite party.
+3. Written Statement within 30 days.
+4. Pre-trial/Reconciliation hearing (mandatory).
+5. If reconciliation fails, case proceeds to trial.
+6. Evidence from both parties.
+7. Final arguments.
+8. Judgment by Family Court.
+9. Appeal to High Court within 30 days.
+Types of family cases: dissolution of marriage (Khula/divorce), maintenance, custody, dower recovery, restitution of conjugal rights, dowry recovery.
+Source: West Pakistan Family Courts Act, 1964.
+
+[SECTION: CYBER_COMPLAINT_PROCEDURE]
+Cybercrime Complaint Procedure:
+1. Register complaint online at https://complaint.fia.gov.pk/ OR call FIA Helpline 1991.
+2. Visit nearest FIA Cybercrime Circle Office with CNIC.
+3. Provide written complaint describing the offence.
+4. Attach evidence: screenshots, URLs, messages, call records, emails.
+5. FIA registers complaint and assigns investigation officer.
+6. FIA may summon the accused and investigate.
+7. If evidence is sufficient, FIA files challan in Cybercrime Court.
+8. Trial proceeds in the designated Cybercrime Court.
+Required Documents: CNIC, written complaint, evidence (screenshots, URLs).
+Source: PECA 2016; FIA website.
+Source URL: https://complaint.fia.gov.pk/
+
+[SECTION: CONSUMER_COMPLAINT_STEPS]
+Consumer Court Complaint Steps:
+1. Send Legal Notice (15 days) to seller/manufacturer.
+2. If not resolved, file complaint in District Consumer Court.
+3. No court fee required.
+4. Attach receipt, warranty, evidence of defect.
+5. Court issues notice to seller/manufacturer.
+6. Evidence and arguments.
+7. Court order: refund, replacement, or compensation.
+8. Appeal within 30 days.
+Source: Provincial Consumer Protection Acts.
+
+[SECTION: NIKAH_NAMA_REGISTRATION]
+Nikah Nama (Marriage Certificate) Registration:
+1. Marriage is performed by a licensed Nikah Registrar (Nikah Khwan).
+2. Nikah Nama (marriage contract) is filled out with details of bride, groom, witnesses, and dower (Mehr).
+3. The Nikah Registrar submits the Nikah Nama to the Union Council within 30 days.
+4. Union Council registers the marriage and issues a certified copy.
+5. The marriage certificate can be used for CNIC update, passport, visa applications.
+6. Failure to register a Nikah is an offence under Muslim Family Laws Ordinance, 1961.
+Required Documents: CNICs of bride and groom, CNICs of witnesses.
+Source: Muslim Family Laws Ordinance, 1961, Section 5.

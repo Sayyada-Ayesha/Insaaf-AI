@@ -1,0 +1,362 @@
+# HEC Refund / National Fee-Refund Policy at HEIs: refund entitlements and timelines
+Authority: Higher Education Commission (HEC) of Pakistan
+Jurisdiction: Pakistan (Federal) — higher education
+Version: Revised National Fee-Refund Policy (HEC page states the policy was revised in 2015) | Published/notified: 2015-01-01 | Effective: 2015-01-01 | Status: Current (policy text as published)
+Provenance: sections below carry the canonical HEC URL for the document they were extracted from.
+Coverage area: D,E
+Verification note: CAUTION: the "National Fee Refund Policy.pdf" and "Fee-Refund-Policy.pdf" notification attachment published on the HEC site are image-only scans with no text layer; the machine-readable policy text here is the Refund-Policy.pdf that HEC also publishes, plus the HEC policy page statement.
+
+[SECTION: hec_fee_refund_policy_1_HEC_REFUND_NATIONAL_FEE_REFUND_POLICY_AT_HEIS]
+# HEC Refund / National Fee-Refund Policy at HEIs
+Title: HEC Refund / National Fee-Refund Policy at HEIs: refund entitlements and timelines
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Refund / National Fee-Refund Policy at HEIs
+Official page: https://www.hec.gov.pk/english/policies/Pages/Refund-Policy.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Refund-Policy.pdf
+Version: Revised National Fee-Refund Policy (HEC page states the policy was revised in 2015)
+Notification / publication date: 2015-01-01
+Effective date: 2015-01-01
+Legal status: Current (policy text as published)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+HEC NATIONAL FEE REFUND POLICY Revised 2024 Contents 1. INTRODUCTION  4 2. AIMS AND OBJECTIVES  4 3. SCOPE  4 4. CANCELLATION/WITHDRAWAL  5 5. POSTPONEMENT  5 6. REFUNDABLE FEE  5 7. NON - REFUNDABLE FEE  7 Glossary of Terms and Abbreviations HEC Higher Education Commission HEI Higher Education Institute NLFRP National Leve Fee Refund Policy NFRP National fee refund policy
+
+[SECTION: hec_fee_refund_policy_2_1_INTRODUCTION]
+# 1. INTRODUCTION
+Title: HEC Refund / National Fee-Refund Policy at HEIs: refund entitlements and timelines
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 1. INTRODUCTION
+Official page: https://www.hec.gov.pk/english/policies/Pages/Refund-Policy.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Refund-Policy.pdf
+Version: Revised National Fee-Refund Policy (HEC page states the policy was revised in 2015)
+Notification / publication date: 2015-01-01
+Effective date: 2015-01-01
+Legal status: Current (policy text as published)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+1. INTRODUCTION
+This policy covers important information about tuition , other fee charges and the circumstances in which students are entitled to receive a refund.
+Previously, the Higher Education Commission approved and circulated T wo (02) fee refund policies in 2012 , namely “National Leve Fee Refund Policy (NLFRP) , 2012” and National fee refund policy (NFRP) in 2015 respectively .
+
+[SECTION: hec_fee_refund_policy_3_2_AIMS_AND_OBJECTIVES]
+# 2. AIMS AND OBJECTIVES
+Title: HEC Refund / National Fee-Refund Policy at HEIs: refund entitlements and timelines
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 2. AIMS AND OBJECTIVES
+Official page: https://www.hec.gov.pk/english/policies/Pages/Refund-Policy.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Refund-Policy.pdf
+Version: Revised National Fee-Refund Policy (HEC page states the policy was revised in 2015)
+Notification / publication date: 2015-01-01
+Effective date: 2015-01-01
+Legal status: Current (policy text as published)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+2. AIMS AND OBJECTIVES
+2.1. The purpose of the policy is to set out clearly the conditions on which refunds of such fee may be made, the amount, the applicable dates, any deduction made from the refund and the process by which withdrawals from programs are officially recorded.
+2.2. A student who withdraws from a semester/course(s) completely or is otherwise withdrawn or de enrolled by a university is subject to a Fee Refund as per this policy.
+2.3. The purpose of this policy is to provide guidance on when refunds of fee will be made by a u niversity when a student ( s ) withdraw s , or a program is withdrawn and how refunds will be calculated. This relates to the portion of the fee that is paid directly by the student his/her guardian or by a private sponsor and covers full undergraduate and postgraduate programs .
+2.4. To ensure that HEIs contribute to the betterment of students , this policy has been made pursuant to the powers granted to the HEC under the Higher Education Commission Ordinance, 2002. The implementation of this policy is binding on all HEIs in the country, whether operating in the public or private sectors. Violation ( s ) or failure ( s ) to comply with the HEC’s policies may lead to regulatory action by HEC against that non - compliant HEI ( s ) .
+
+[SECTION: hec_fee_refund_policy_4_3_SCOPE]
+# 3. SCOPE
+Title: HEC Refund / National Fee-Refund Policy at HEIs: refund entitlements and timelines
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 3. SCOPE
+Official page: https://www.hec.gov.pk/english/policies/Pages/Refund-Policy.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Refund-Policy.pdf
+Version: Revised National Fee-Refund Policy (HEC page states the policy was revised in 2015)
+Notification / publication date: 2015-01-01
+Effective date: 2015-01-01
+Legal status: Current (policy text as published)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+3. SCOPE
+3.1. This policy applies to all categories and levels of Pakistani students enrolled in a higher education undergraduate and graduate degree program in Public and Private Sector Institutions including affiliated colleges in Pakistan.
+
+4. CANCELLATION/WITHDRAWAL
+4.1. Students canceling or withdrawing from a program of study may be entitled to a refund of Tuition Fee. Generally, those students will qualify for a refund whose request for a fee refund falls under one of the categories:
+i. Personal Emergencies.
+ii. Health Reasons ,
+iii. Care of and medical reasons for Family Members .
+iv. Legal/Immigration Matters .
+v. Delay in admission in other Universities .
+vi. Other (these reasons will be considered on an individual case basis).
+4.2. If a student is required to leave the program due to non - fulfillment of entry/admission requirements upon official announcement of examination results, he/she will be eligible for a refund.
+
+5. POSTPONEMENT
+5.1. The Tuition Fee can be carried forward and utilized for the following subsequent semester if a student seeks postpon ement of his /her studies within Two (2) weeks of the commencement of the semester.
+5.2. However, after the above - mentioned time frame, any request for the Tuition Fee to be carried forward shall only be permitted on medical grounds, duly verified by a medical officer of the University or by a Doctor of a Government Hospital. The HEI, however, may inquire about the authenticity/validity of the medical certificate/advice of the doctor.
+
+6. REFUNDABLE FEE
+
+7. Tuition Fee :
+7.1. Application for a refund of Fee can be made by completing the appropriate form and submitting the proof of payment. Any refund will be paid to the student or his/her parents/guardians/ sponsoring body.
+7.2. The refund amount of Tuition Fee is subject to the following schedule:
+Schedule of refundable tuition fee (Timeline | Percentage of Fee):
+- Upto 10th day of commencement of classes: 100% fee refund
+- Upto 15th day of commencement of classes: 80% fee refund
+- Upto 20th day of commencement of classes: 60% fee refund
+- Upto 30th day of commencement of classes: 50% fee refund
+- —st day onwards of commencement of classes: No Refund. EXTRACTION GAP: the day number of this row is not machine-readable in the extracted text, and Refund-Policy.pdf as published by HEC is an image-only scan, so the number is not restated here.
+Note: The timelines for refund of tuition fee are inclusive of the weekends.
+
+8. Laboratory Fee :
+The Laboratory fee contains the following types:
+a. Computer Laboratory: Compulsory for all students b. Science Laboratory: Compulsory for all students who enroll in one or more science subjects such as Biology, Chemistry, Physics etc.
+c. Engineering Laboratory: Compulsory for all engineering students.
+d. Medical Laboratory: Compulsory for Medical and Health Sciences students.
+e. Other Laboratory: Compulsory for students f. The laboratory fee is 100% refundable minus ( - ) the days a student has availed of that facility( e s) .
+
+[SECTION: hec_fee_refund_policy_5_9_LIBRARY_FEE]
+# 9. Library Fee
+Title: HEC Refund / National Fee-Refund Policy at HEIs: refund entitlements and timelines
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: 9. Library Fee
+Official page: https://www.hec.gov.pk/english/policies/Pages/Refund-Policy.aspx
+Source file: https://www.hec.gov.pk/english/policies/Documents/Refund-Policy.pdf
+Version: Revised National Fee-Refund Policy (HEC page states the policy was revised in 2015)
+Notification / publication date: 2015-01-01
+Effective date: 2015-01-01
+Legal status: Current (policy text as published)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+9. Library Fee :
+9.1. The library/digital library fee is completely refundable.
+
+10. Transport Fee :
+10.1. The fee submitted for transportation is completely refundable.
+10.2. T he transport fee is 100% refundable minus ( - ) the days a student has availed of that facility(es).
+
+11. Utilities Fee :
+11.1. The fee submitted for utilities/services is completely refundable.
+11.2. The Utilities fee is 100% refundable minus ( - ) the days a student has availed of that facility(es).
+12. Security/Deposit Fee :
+12.1. Payable by all new students together with the first - semester tuition fee, this fee is refundable after deductions are made for the damage/loss ( if any ) caused by the student .
+12.2. The deposit is fully refundable after the student has completed his/her duration of studies or has withdrawn/transferred to another university.
+
+13. Examination Fee :
+13.1. The fee submitted as an examination fee is completely refundable.
+14. Fee for Curricular/Co - Curricular Activities :
+14.1. The fee submitted for curricular, co - curricular, extra - curricular, sports, tours, field trips etc. activities is completely refundable.
+The Cu rricular /c o - curricular, extra - curricular, fee is 100% refundable minus ( - ) the days a student has availed of that activity(es).
+
+15. Fee Transfer :
+15.1. A student who transfers to another program within the university will be eligible for fee transfer to the new program. If there’s difference of fee in between the two programs of that university tha n :
+a. In case the fee difference is Positive then the difference will be paid by the student.
+b. In case the fee d if ference is negative then the difference will be paid to the student.
+
+16. NON - REFUNDABLE FEE
+
+17. Admission Fee:
+17.1. The fee paid as an admission fee is nonrefundable .
+17.2. However, it may be noted that in case , a student paid admission fee in one of the constituents /affiliated colleges of the university , and he/she/transgender is also offered admission in another college in the same program , then the admission fee paid to the earlier college is to be transferred to the later college in respect of that student.
+18. Registration/Application Fee :
+18.1. Any Fee, payable at the time of initial application is non - refundable under any circumstances.
+
+19. No Refund :
+19.1. A student expelled from the u niversity due to disciplinary misconduct , shall not be eligible for any refund, except for the refundable Security/Deposit Fee.
+
+[SECTION: hec_fee_refund_policy_6_HEC_REFUND_NATIONAL_FEE_REFUND_POLICY_AT_HEIS_]
+# HEC Refund / National Fee-Refund Policy at HEIs (part 2)
+Title: HEC Refund / National Fee-Refund Policy at HEIs: refund entitlements and timelines
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Refund / National Fee-Refund Policy at HEIs (part 2)
+Official page: https://www.hec.gov.pk/english/policies/Pages/Refund-Policy.aspx
+Source file: https://www.hec.gov.pk/english/policies/Pages/Refund-Policy.aspx
+Version: Revised National Fee-Refund Policy (HEC page states the policy was revised in 2015)
+Notification / publication date: 2015-01-01
+Effective date: 2015-01-01
+Legal status: Current (policy text as published)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+HEC
+Policies and Procedures
+HEC National Fee Refund Policy
+This policy covers important information about tuition, other fee charges and the circumstances in which students are entitled to receive a refund.
+Previously, the Higher Education Commission approved and circulated Two (02) fee refund policies in 2012, namely “National Leve Fee Refund Policy (NLFRP), 2012" and National fee refund policy (NFRP) in 2015 respectively.
+Click here to Download HEC National Fee Refund Policy
+
+[SECTION: hec_fee_refund_policy_7_HEC_REFUND_NATIONAL_FEE_REFUND_POLICY_AT_HEIS_]
+# HEC Refund / National Fee-Refund Policy at HEIs (part 3)
+Title: HEC Refund / National Fee-Refund Policy at HEIs: refund entitlements and timelines
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Refund / National Fee-Refund Policy at HEIs (part 3)
+Official page: https://www.hec.gov.pk/english/policies/Pages/Fee-Refund-Policy.aspx
+Source file: https://www.hec.gov.pk/english/policies/Pages/Fee-Refund-Policy.aspx
+Version: Revised National Fee-Refund Policy (HEC page states the policy was revised in 2015)
+Notification / publication date: 2015-01-01
+Effective date: 2015-01-01
+Legal status: Current (policy text as published)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# HEC
+HEC
+Policies and Procedures
+National Fee-Refund Policy
+Higher Education Commission revised the National Level fee refund policy in 2015 for the facilitation of students.
+Students may apply for a refund the of fee in accordance with the given timelines. The policy document is available the at below link:-
+Click here to download National Fee-Refund Policy at HEIs of Pakistan: Revised
+
+[SECTION: hec_fee_refund_policy_8_HEC_REFUND_NATIONAL_FEE_REFUND_POLICY_AT_HEIS_]
+# HEC Refund / National Fee-Refund Policy at HEIs (part 4)
+Title: HEC Refund / National Fee-Refund Policy at HEIs: refund entitlements and timelines
+Authority: Higher Education Commission (HEC) of Pakistan
+Section: HEC Refund / National Fee-Refund Policy at HEIs (part 4)
+Official page: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Source file: https://www.hec.gov.pk/english/Notifications/Pages/default.aspx
+Version: Revised National Fee-Refund Policy (HEC page states the policy was revised in 2015)
+Notification / publication date: 2015-01-01
+Effective date: 2015-01-01
+Legal status: Current (policy text as published)
+Extracted verbatim from the official HEC source on 2026-10-10; only layout was repaired (line wraps, page markup) — no wording was changed.
+
+# Notifications
+HEC
+Notifications
+
+Type
+Academic
+University
+General Public
+- Recognition of the degree awarded by foreign chartered universities/institutions through virtual/online/distance learning/Blended learning
+Friday, July 22, 2022
+- Academic
+- Deferment of Post PhD Experience for Professors and Associate Professors
+Wednesday, July 20, 2022
+- Academic
+- Extension in maximum duration of MS/MPhil/PhD/equivalent degree programs due to Covid-19
+Friday, April 15, 2022
+- Academic
+- Appointment of TTS faculty on Academic-administrative positions
+Wednesday, March 2, 2022
+- Academic
+- Withdrawal of Migration Certificate/NOC as an admission requirement to the Graduate/ Postgraduate Programs
+Monday, February 28, 2022
+- Academic
+- Collecting hard copies of PhD dissertation to register record in PhD Country Directory (PCD)
+Sunday, December 19, 2021
+- Academic
+- Salary Package for the Vice-Chancellors of Public Sector Universities
+Friday, October 22, 2021
+- University
+- Graduate Education Policy-2023 (GEP-2023)
+Monday, July 10, 2023
+- Academic
+- Applicants having CAF qualification duly verified by ICAP shall be eligible for admission in BS AF
+Wednesday, June 9, 2021
+- Academic
+- Clarification regarding TTS Leave Policy
+Friday, March 5, 2021
+- University
+- Initial appointment of faculty members on TTS
+Friday, March 5, 2021
+- University
+- Amendment of the clause 1.4.1.2 of Model Tenure Track Process Statutes
+Saturday, October 16, 2021
+- University
+- Amendment of the clause 1.1 (d) and Annexure -A of Model Tenure Track Process Statutes
+Friday, October 16, 2020
+- University
+- Transition of BA/BSc Programs to Associate Degree Programs, Phasing Out of MA/ MSc Programs
+Thursday, July 11, 2019
+- Academic
+- Acceptance of USAT (Undergraduate Studies Admission Test)
+Tuesday, July 5, 2022
+- Academic
+- The Requirement of Post-PhD Experience
+Thursday, May 25, 2023
+- Academic
+- Undergraduate Education Policy
+Wednesday, July 12, 2023
+- Academic
+- Revised Interim Placement of Fresh PhDs (IPFP) Policy
+Friday, July 21, 2023
+- Academic
+- Anti-Plagiarism Policy 2023
+Wednesday, August 2, 2023
+- Academic
+- Framework of The HEC Distinguished National Professor (DNP) Program
+Tuesday, September 30, 2025
+- Academic
+- Clarification one time relaxation based on Covid-19 Situation for completion of MS-MPhil equivalent and PhD Degree till 28.02.2023
+Tuesday, April 26, 2022
+- Academic
+- Discontinuation of HEC Approved Supervisor Post Promulgation GEP- 2023
+Friday, December 22, 2023
+- Academic
+- Open and Distance Learning: Policy Provisions and Regulatory Framework
+Wednesday, August 28, 2024
+- Academic
+- Transnational Education (TNE) Policy 2024
+Monday, September 9, 2024
+- Academic
+- Partial Relaxation in Requirement of Full-Time PhD Faculty Members to Launch MS/MPhil or Equivalent and PhD Programs in Basic Medical Sciences and Clinical Health Sciences
+Wednesday, October 2, 2024
+- Academic
+- Journals & Publications Policy 2024
+Monday, September 30, 2024
+- Academic
+- HEC National Fee Refund Policy
+Friday, December 20, 2024
+- Academic
+- Notification Framework for Appointment of Meritorious Professor in HEIs
+Tuesday, September 30, 2025
+- University
+- Notification Framework for Appointment of Professor Emeritus in HEIs
+Tuesday, September 30, 2025
+- University
+- Policy Guidelines for Appointment of Professor of Practice by the Higher Education Institution (HEIs) in Pakistan
+Tuesday, September 30, 2025
+- University
+- HEC-Notification Interim Placement of Fresh PhDs (IPFP)Phase-II
+Friday, February 21, 2025
+- University
+- Notification Post-PhD experience for appointment of Professors (08 years) and Associate Professors (04 years)
+Thursday, July 30, 2026
+- Academic
+- Framework for HEC Best Teacher Award (BUTA)
+Tuesday, September 30, 2025
+- University
+- Policy on Protection Against Harassment in Higher Education Institutions (Revised 2025)
+Tuesday, September 30, 2025
+- University
+- Guidelines for Admissibility of Leave for Professor Emeritus
+Tuesday, December 23, 2025
+- University
+- UNESCO's International Standard Classification of Education-ISCED-F
+Tuesday, January 13, 2026
+- Academic
+- HEC Journals & Publications Policy, 2024
+Monday, March 2, 2026
+- Academic
+- Guidelines for Engagement of Visiting Faculty in HEIs, 2026
+Sunday, May 17, 2026
+- University
+- Mandatory Conduct of GREHAT General & Subject Test through HEC-Education Testing Council (ETC)
+Tuesday, May 12, 2026
+- University
+- Policy on Dual, Double & Joint Degree Programmes, 2026
+Wednesday, May 13, 2026
+- University
+- Notification - Amendments in TNE Policy, 2024
+Wednesday, May 13, 2026
+- University
+- Establishment of the National Chair on AI and Robotics
+Tuesday, May 5, 2026
+- University
+- Notification - Deferred Implementation of Mandatory Conduct of GRE_HAT-General & Subject Test
+Sunday, May 24, 2026
+- General Public
+- Framework for Recognition of Liberal Arts Undergraduate Programs under the HEC Undergraduate Education Policy 2023
+Tuesday, August 4, 2026
+- Academic
+- Framework on the Use of AI (Gen-AI) Tools in HEIs
+Friday, September 4, 2026
+- University
+- HEC Notification | Salary Package for the Vice Chancellors of Public Sector Universities
+Friday, October 2, 2026
+- University
+- HEC Notification | Deferment of Post-PhD Experience Requirement until 31.12.2026
+Friday, October 2, 2026
+- University

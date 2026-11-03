@@ -1,0 +1,118 @@
+{
+  "generatedAt": "2026-10-10T15:48:12.464Z",
+  "total_procedures": 22,
+  "procedures": [
+    {
+      "id": "fir_registration",
+      "title": "FIR Registration Procedure",
+      "authority": "CrPC Section 154"
+    },
+    {
+      "id": "fir_refusal_remedy",
+      "title": "FIR Refusal Remedy",
+      "authority": "CrPC Section 22-A/22-B, Article 199"
+    },
+    {
+      "id": "pre_arrest_bail",
+      "title": "Pre-arrest Bail (Anticipatory Bail)",
+      "authority": "CrPC Section 498-A"
+    },
+    {
+      "id": "post_arrest_bail",
+      "title": "Post-arrest Bail Procedure",
+      "authority": "CrPC Section 496/497"
+    },
+    {
+      "id": "arrest_procedure",
+      "title": "Arrest Procedure",
+      "authority": "CrPC Sections 46, 54, 61"
+    },
+    {
+      "id": "criminal_trial",
+      "title": "Criminal Trial Stages",
+      "authority": "CrPC Sections 221-367"
+    },
+    {
+      "id": "civil_suit_procedure",
+      "title": "Civil Suit Procedure",
+      "authority": "CPC Orders 1-21"
+    },
+    {
+      "id": "writ_petition",
+      "title": "Constitutional Writ Petition (Article 199)",
+      "authority": "Constitution Article 199"
+    },
+    {
+      "id": "appeal_procedure",
+      "title": "Appeal Procedure (Civil & Criminal)",
+      "authority": "CPC / CrPC"
+    },
+    {
+      "id": "execution_petition",
+      "title": "Execution Petition Procedure",
+      "authority": "CPC Order 21"
+    },
+    {
+      "id": "khula_procedure",
+      "title": "Khula/Divorce Procedure",
+      "authority": "MFLO Section 7, Family Courts Act"
+    },
+    {
+      "id": "child_custody_procedure",
+      "title": "Child Custody Procedure",
+      "authority": "Guardian and Wards Act 1890"
+    },
+    {
+      "id": "family_case_procedure",
+      "title": "Family Court Procedure",
+      "authority": "Family Courts Act 1964"
+    },
+    {
+      "id": "consumer_complaint_steps",
+      "title": "Consumer Complaint Procedure",
+      "authority": "Provincial Consumer Protection Acts"
+    },
+    {
+      "id": "cyber_complaint_procedure",
+      "title": "Cyber Crime Complaint Procedure",
+      "authority": "PECA 2016, FIA"
+    },
+    {
+      "id": "nab_complaint_procedure",
+      "title": "NAB Complaint Procedure",
+      "authority": "NAB Ordinance 1999"
+    },
+    {
+      "id": "fia_complaint_procedure",
+      "title": "FIA Complaint Procedure",
+      "authority": "FIA Act 1974"
+    },
+    {
+      "id": "labour_court_procedure",
+      "title": "Labour Court Procedure",
+      "authority": "Industrial Relations Act 2012"
+    },
+    {
+      "id": "inheritance_procedure",
+      "title": "Inheritance/Succession Procedure",
+      "authority": "Muslim Personal Law, Succession Act"
+    },
+    {
+      "id": "legal_notice_procedure",
+      "title": "Legal Notice Procedure",
+      "authority": "CPC, Various Acts"
+    },
+    {
+      "id": "company_registration_procedure",
+      "title": "Company Registration Procedure",
+      "authority": "Companies Act 2017, SECP"
+    },
+    {
+      "id": "police_complaint_procedure",
+      "title": "Police Complaint Procedure",
+      "authority": "Police Order 2002, CrPC"
+    }
+  ],
+  "total_procedure_chunks": 60,
+  "total_curated_workflows": 22
+}

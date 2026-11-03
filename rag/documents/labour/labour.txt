@@ -1,0 +1,79 @@
+[SECTION: MINIMUM_WAGES]
+Minimum Wages in Pakistan
+- Each province sets its own minimum wage through Minimum Wages Ordinance/Act.
+- The Federal Government sets minimum wage for Islamabad Capital Territory.
+- Minimum wage applies to all workers in industrial and commercial establishments.
+- Employers paying below minimum wage commit an offence punishable by fine.
+- Workers can file complaints with the Labour Inspector or Labour Court.
+Source: Provincial Minimum Wages Ordinances/Acts; Ministry of Overseas Pakistanis & HRD.
+
+[SECTION: EMPLOYMENT_CONTRACTS]
+Employment Contracts
+- Employment contracts may be oral or written, but written contracts are strongly recommended.
+- Standing Orders Ordinance, 1968 requires establishments with 20+ workers to have written standing orders.
+- Key terms: wages, working hours, leave, termination notice, gratuity.
+- Probation period is typically 3-6 months.
+- Permanent employees cannot be terminated without due process.
+Source: Standing Orders Ordinance, 1968; Industrial Relations Act, 2012.
+
+[SECTION: WRONGFUL_TERMINATION]
+Wrongful Termination
+- An employer must give proper notice (typically one month or as per contract) before terminating a permanent employee.
+- Termination without cause or without proper notice is wrongful termination.
+- Worker can file a grievance petition before the Labour Court within 30 days.
+- Labour Court may order reinstatement and/or back wages.
+- Retrenchment (due to business closure) requires 30 days notice and payment of retrenchment benefits.
+Source: Industrial and Commercial Employment (Standing Orders) Ordinance, 1968; Industrial Relations Act, 2012.
+
+[SECTION: WORKPLACE_HARASSMENT]
+Workplace Harassment
+- The Protection against Harassment of Women at the Workplace Act, 2010 applies to all workplaces.
+- Every organization must constitute an Inquiry Committee to investigate harassment complaints.
+- Harassment includes unwelcome sexual advances, requests for sexual favours, and verbal or physical conduct of sexual nature.
+- Complaint must be filed in writing with the Inquiry Committee.
+- If organization fails to constitute committee, complaint may be made to the Ombudsperson.
+- Federal and Provincial Ombudspersons for harassment are established.
+- Penalty includes minor to major penalties (censure, transfer, compulsory retirement, dismissal).
+Source: Protection against Harassment of Women at the Workplace Act, 2010.
+
+[SECTION: EOBI]
+Employees Old-Age Benefits Institution (EOBI)
+- EOBI provides pensions to retired workers.
+- Applies to establishments with 5 or more employees.
+- Employer contributes 5% of minimum wage per employee per month.
+- Employee contributes 1% of minimum wage per month.
+- Pension is payable after retirement at age 55 (women) or 60 (men) with minimum 15 years of insurable employment.
+- Old-Age Pension, Invalidity Pension, and Survivors Pension are available.
+Source: Employees' Old-Age Benefits Act, 1976.
+
+[SECTION: SOCIAL_SECURITY]
+Social Security (PESSI/SESSI)
+- Provincial Social Security Institutions (PESSI in Punjab, SESSI in Sindh, etc.) provide medical and financial benefits.
+- Applies to workers earning below a specified wage ceiling.
+- Benefits include medical treatment, sickness benefit, maternity benefit, injury benefit, death grant.
+- Employer registers workers and pays contribution.
+Source: Provincial Employees Social Security Ordinance, 1965.
+
+[SECTION: WORKING_HOURS_LEAVE]
+Working Hours and Leave
+- Shops and Establishments Ordinance: Maximum 48 hours per week, 8 hours per day.
+- Factories Act, 1934: Maximum 48 hours per week for factory workers.
+- Weekly holiday: One day per week (usually Friday or Sunday).
+- Annual leave: 14 days per year after completing 12 months of service.
+- Sick leave: As per establishment policy or standing orders.
+- Casual leave: Typically 10 days per year.
+- Maternity leave: 12 weeks (6 weeks before and 6 weeks after delivery) with full pay under applicable laws.
+Source: Factories Act, 1934; Shops and Establishments Ordinance (various provinces).
+
+[SECTION: LABOUR_COURT_PROCEDURE]
+Labour Court Procedure
+1. Filing Grievance: Worker files grievance petition in the Labour Court.
+2. Notice: Court issues notice to employer.
+3. Written Reply: Employer submits written reply.
+4. Conciliation: Labour Officer may attempt conciliation.
+5. Evidence: Both parties present evidence.
+6. Arguments: Final arguments.
+7. Award: Labour Court announces award/decision.
+8. Appeal: Appeal lies to the Labour Appellate Tribunal within 30 days.
+9. Enforcement: Award can be enforced as a decree of civil court.
+Source: Industrial Relations Act, 2012; Punjab Industrial Relations Act, 2010.

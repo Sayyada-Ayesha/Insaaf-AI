@@ -1,0 +1,72 @@
+[
+  {
+    "topic": "Constitution",
+    "keywords": ["constitution", "fundamental right", "article 9", "article 10", "article 19"],
+    "content": "**1973 Constitution of Pakistan — Fundamental Rights (Articles 8–28):**\n- **Article 9 (Right to Life & Liberty):** \"No person shall be deprived of life or liberty save in accordance with law.\"\n- **Article 10 (Safeguards as to Arrest):** Entitles arrested persons to be informed of grounds for arrest and to consult/be defended by a legal practitioner of choice within 24 hours.\n- **Article 10A (Right to Fair Trial):** Guarantees determination of civil rights and obligations or criminal charges in a fair, public trial.\n- **Article 19 (Freedom of Speech):** Guarantees freedom of speech and expression, subject to reasonable restrictions imposed by law."
+  },
+  {
+    "topic": "Criminal Law (PPC & CrPC)",
+    "keywords": ["check", "cheque", "489-f", "420", "fraud", "fir", "police", "complaint", "arrest"],
+    "content": "**Pakistan Penal Code (PPC) & Criminal Procedure Code (CrPC):**\n- **PPC Section 489-F (Dishonest Issuance of Cheque):** Punishable with imprisonment up to 3 years or fine for issuing a dishonored cheque.\n- **PPC Section 420 (Cheating):** Covers fraud, deception, and misrepresentation. Punishable with up to 7 years imprisonment.\n- **CrPC Section 154 (Registration of FIR):** Information relating to a cognizable offense must be reduced to writing by the police. Police CANNOT refuse to register an FIR for a cognizable offence. If refused, file application under Section 22-A / 22-B CrPC to Sessions Judge.\n- **Pre-arrest Bail:** Can be sought from Sessions Court to avoid arrest."
+  },
+  {
+    "topic": "Family Law",
+    "keywords": ["khula", "divorce", "family", "custody", "maintenance"],
+    "content": "**Pakistani Family Laws Framework:**\n- **Khula:** A Muslim wife has the legal right to seek Khula (dissolution of marriage) through the Family Court.\n- **Child Custody (Hizanat):** Governed primarily by the welfare of the minor child. Usually, mother has right to custody of son until 7 years and daughter until puberty.\n- **Maintenance (Nafafa):** A father is legally obligated under Pakistani law to maintain his minor children.\n- **Dowry Articles:** Wife can claim return of dowry articles (Jahez) and Haq Mehr through Family Courts."
+  },
+  {
+    "topic": "Cyber Law (PECA)",
+    "keywords": ["cyber", "harassment", "peca", "online"],
+    "content": "**Prevention of Electronic Crimes Act (PECA 2016):**\n- **Section 20 (Offenses Against Dignity):** Online defamation, unauthorized sharing of photos, or harassment.\n- **FIA Cybercrime Wing:** Complaints regarding cyber harassment or online fraud can be submitted to the FIA (Helpline 1991).\n- **Section 21 (Modesty):** Non-consensual sharing of intimate images is strictly punishable.\n- **Section 24 (Cyber Stalking):** Repeatedly following, contacting, or attempting to contact someone online despite disinterest."
+  },
+  {
+    "topic": "Property Law",
+    "keywords": ["property", "land", "mutation", "registry", "transfer"],
+    "content": "**Property & Land Law in Pakistan:**\n- **Transfer of Property Act 1882:** Governs the sale, mortgage, lease, and exchange of immovable property.\n- **Registration Act 1908:** Sale of immovable property valued over Rs. 100 must be registered.\n- **Mutation (Inteqal):** Updating land revenue records (Fard) to reflect the new owner after registry.\n- **Board of Revenue:** Authority dealing with land records and agricultural property disputes."
+  },
+  {
+    "topic": "Labour Law",
+    "keywords": ["labour", "labor", "wage", "eobi", "worker"],
+    "content": "**Labour Laws & Worker Rights:**\n- **Minimum Wage:** Provinces set statutory minimum wages that employers must legally pay.\n- **Shops and Establishments Ordinance:** Regulates working hours, leaves, and holidays for commercial establishments.\n- **EOBI (Employees Old-Age Benefits Institution):** Mandatory pension contribution for establishments with 5 or more employees.\n- **Social Security (PESSI/SESSI):** Provides medical and financial benefits to secured workers."
+  },
+  {
+    "topic": "Consumer Protection",
+    "keywords": ["consumer", "defective", "warranty", "service"],
+    "content": "**Consumer Protection Laws:**\n- **Consumer Protection Acts:** Each province has its own act (e.g., Punjab Consumer Protection Act 2005) protecting against defective products and faulty services.\n- **Legal Notice:** A mandatory 15-day legal notice must be sent to the manufacturer/service provider before filing a claim.\n- **Consumer Courts:** District Consumer Courts offer a fast-track remedy without court fee.\n- **Damages:** Consumers can claim refund, replacement, or compensation for mental agony and financial loss."
+  },
+  {
+    "topic": "Tenancy Law",
+    "keywords": ["tenant", "rent", "eviction", "landlord"],
+    "content": "**Tenant Rights & Rent Laws:**\n- **Rent Restriction Laws:** e.g., Punjab Rented Premises Act 2009 regulates landlord-tenant relationships.\n- **Tenancy Agreement:** Must be in writing and registered with the Rent Registrar/Police.\n- **Eviction:** A landlord cannot forcefully evict a tenant; they must file an eviction petition before the Rent Tribunal.\n- **Annual Increment:** Typically 10% annual increase in rent, unless otherwise agreed in the contract."
+  },
+  {
+    "topic": "Women's Rights",
+    "keywords": ["women", "inheritance", "domestic violence", "protection"],
+    "content": "**Women's Rights & Protection:**\n- **Inheritance:** Muslim Personal Law guarantees a woman's share in inherited property. Depriving women of inheritance is a criminal offense under PPC.\n- **Domestic Violence:** Provincial laws (e.g., Punjab Protection of Women against Violence Act) provide protection, residence orders, and penalties.\n- **Workplace Harassment:** The Protection against Harassment of Women at the Workplace Act 2010 mandates internal inquiry committees in organizations.\n- **Protection of Women Act 2006:** Separated Hudood offenses from the PPC and provided legal safeguards."
+  },
+  {
+    "topic": "Education Law",
+    "keywords": ["student", "education", "hec", "school"],
+    "content": "**Student Rights & Education Laws:**\n- **Article 25A:** The State shall provide free and compulsory education to all children of the age of 5 to 16 years.\n- **HEC Regulations:** Higher Education Commission governs university policies, degree verification, and quality assurance.\n- **Disciplinary Actions:** Students have the right to a fair hearing (due process) before any university disciplinary committee.\n- **Harassment:** HEC has strict anti-harassment policies that all universities must implement."
+  },
+  {
+    "topic": "Traffic Law",
+    "keywords": ["traffic", "vehicle", "license", "challan"],
+    "content": "**Traffic & Motor Vehicle Laws:**\n- **Motor Vehicle Ordinance 1965:** Governs vehicle registration, licensing, and traffic rules.\n- **Driving License:** It is a legal requirement to hold a valid driving license to operate a motor vehicle on public roads.\n- **Traffic Challans:** Fines imposed for violations like over-speeding, breaking signals, or riding without a helmet.\n- **Accidents:** In case of a serious accident (hit and run), an FIR should be registered for negligence or rash driving under PPC."
+  },
+  {
+    "topic": "Tax Law",
+    "keywords": ["tax", "fbr", "ntn", "sales tax", "income tax"],
+    "content": "**Tax Laws in Pakistan:**\n- **Income Tax Ordinance 2001:** Regulates taxation on personal and corporate income.\n- **FBR (Federal Board of Revenue):** The federal body responsible for tax collection and issuing NTN (National Tax Number).\n- **Filer vs Non-Filer:** Active taxpayers (filers) pay significantly lower withholding taxes on banking, property, and vehicle transactions.\n- **Sales Tax:** A consumption tax (generally 18%) imposed on the sale of goods and certain services."
+  },
+  {
+    "topic": "Court Process",
+    "keywords": ["court", "appeal", "suit", "petition", "writ"],
+    "content": "**General Court Process & Litigation:**\n- **Civil Suit:** Initiated by filing a \"Plaint\" in the Civil Court, detailing the claim. Code of Civil Procedure (CPC 1908).\n- **Writ Petition:** Filed in the High Court under Article 199 for enforcement of fundamental rights or against unlawful government actions.\n- **Appeals:** Decisions of lower courts can be appealed to District Courts, then High Courts, and finally the Supreme Court.\n- **Limitation Act:** Prescribes strict time limits within which a lawsuit or appeal must be filed."
+  },
+  {
+    "topic": "Legal Aid",
+    "keywords": ["legal aid", "free lawyer", "poor", "cannot afford"],
+    "content": "**Legal Aid & Free Assistance:**\n- **Pakistan Bar Council:** Has free legal aid committees at district, provincial, and national levels for deserving litigants.\n- **State Expense:** Under certain severe criminal charges (like murder), the State provides a lawyer (defense counsel) if the accused cannot afford one.\n- **District Legal Empowerment Committees (DLEC):** Formed to provide financial assistance for legal representation to vulnerable citizens.\n- **NGOs/Clinics:** Organizations like AGHS or university law clinics offer pro bono legal assistance. Free Legal Aid Cell (1099)."
+  }
+]
