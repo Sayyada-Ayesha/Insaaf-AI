@@ -30,6 +30,7 @@
     "dataset:validate": "node server/validateFineTuneDataset.js"
   },
   "dependencies": {
+    "@gradio/client": "^2.7.2",
     "@tailwindcss/vite": "^4.1.14",
     "@types/dompurify": "^3.0.5",
     "@vitejs/plugin-react": "^5.0.4",

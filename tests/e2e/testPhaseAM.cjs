@@ -129,7 +129,7 @@ const URDU = /[\u0600-\u06FF]/;
   };
   const readAloudSpeaks = async (lastButton) => page.evaluate(async (useLast) => {
     for (let i = 0; i < 20 && window.speechSynthesis.getVoices().length === 0; i++) { await new Promise(r => setTimeout(r, 200)); }
-    const btns = document.querySelectorAll('button[title="Read Aloud"]');
+    const btns = document.querySelectorAll('button[data-testid="chat-action-read-aloud"], button[title="Read Aloud"], button[aria-label="Read Aloud"]');
     const btn = useLast ? btns[btns.length - 1] : btns[0];
     if (!btn) return { btn: false, speaking: false, voices: window.speechSynthesis.getVoices().length };
     try { window.speechSynthesis.cancel(); } catch {}

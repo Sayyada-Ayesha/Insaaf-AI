@@ -279,12 +279,12 @@ function computeChunkScope(chunk) {
  * Urdu and Urdu script), so a query that names no place is not pinned to one.
  * @returns {{city: string|null, province: string|null, nationalExplicit: boolean,
  *   institutionNamed: boolean, universityContext: boolean, studentContext: boolean,
- *   signals: string[]}}
+ *   text: string, signals: string[]}}
  */
 export function detectQueryScope(query) {
   const q = String(query || '');
   const low = q.toLowerCase();
-  const out = { city: null, province: null, nationalExplicit: false, institutionNamed: false, universityContext: false, studentContext: false, educationTopic: false, signals: [] };
+  const out = { city: null, province: null, nationalExplicit: false, institutionNamed: false, universityContext: false, studentContext: false, educationTopic: false, text: low, signals: [] };
 
   for (const p of PROVINCE_NAMES) {
     if (new RegExp(`\\b${p}\\b`, 'i').test(low) || /سندھ/.test(q) && p === 'sindh' || /پنجاب/.test(q) && p === 'punjab') {
@@ -427,22 +427,85 @@ export function institutionScoped(qs) {
   return Boolean(qs.studentContext || qs.universityContext);
 }
 
+/** Words that name a KIND of institution, never a particular one. */
+const GENERIC_INSTITUTION_WORDS = new Set([
+  'university', 'universities', 'college', 'colleges', 'institute', 'institutes',
+  'academy', 'campus', 'board', 'commission', 'the', 'of', 'and', 'a', 'de',
+]);
+
+/** The words that single an institution out from all the others. */
+function distinctiveInstitutionWords(name) {
+  return String(name || '').toLowerCase()
+    .replace(/[^a-z0-9\u0600-\u06FF ]+/g, ' ')
+    .split(' ')
+    .filter(w => w.length > 1 && !GENERIC_INSTITUTION_WORDS.has(w));
+}
+
+/** Did the user's own words place this matter in the layer being named? */
+function placeStated(asked, scope) {
+  if (!asked) return true;
+  const low = s => String(s || '').toLowerCase();
+  if (scope.scopeLevel === 'provincial') {
+    return Boolean(scope.province)
+      && (low(asked.province) === low(scope.province)
+        || (asked.city && CITY_PROVINCE[low(asked.city)] && low(CITY_PROVINCE[low(asked.city)]) === low(scope.province)));
+  }
+  if (scope.scopeLevel === 'local_city') {
+    return Boolean(scope.city) && (low(asked.city) === low(scope.city) || low(asked.province) === low(scope.city));
+  }
+  if (scope.scopeLevel === 'university') {
+    // The record's institution counts as named only when the user wrote the
+    // words that single it out ("GC University Hyderabad", "university of
+    // Sindh"). institutionNamed is a flag, not a name, so it cannot be compared
+    // against the register; the user's own wording is what settles it.
+    const text = low(asked.text || '');
+    if (!text) return Boolean(asked.institutionNamed);
+    const talkingAboutAnInstitution = asked.universityContext || asked.institutionNamed
+      || /\b(university|universities|college|institute|campus)\b/i.test(text);
+    if (!talkingAboutAnInstitution) return false;
+    return (scope.institutions || []).some(i => {
+      const words = distinctiveInstitutionWords(i);
+      return words.length > 0 && words.every(w => new RegExp(`\\b${w}\\b`, 'i').test(text));
+    });
+  }
+  return true;
+}
+
 /** Part 7 phrasing: say which layer each rule comes from. */
-export function scopeLabel(scope, lang = 'en') {
+export function scopeLabel(scope, lang = 'en', asked = null) {
   const roman = lang === 'roman_urdu';
   if (!scope) return null;
+  // A provincial, city or university record answers the question of whoever the
+  // rule covers. When the user named no such place, stating the layer as
+  // "Punjab law" would assign them a jurisdiction they never claimed.
+  const conditional = !placeStated(asked, scope);
   switch (scope.scopeLevel) {
     case 'university': {
       const who = scope.institutions.length ? scope.institutions.slice(0, 3).join(' / ') : null;
+      if (conditional) {
+        return roman
+          ? (who ? `Agar aap ${who} ke hain to` : 'Agar aap us university ke student hain to')
+          : (who ? `If you are at ${who}` : 'If this is that university');
+      }
       return roman
         ? (who ? `${who} ke university rules ke mutabiq` : 'University ke apne rules ke mutabiq')
         : (who ? `Under the ${who} university rules` : 'Under the university\'s own rules');
     }
     case 'local_city':
+      if (conditional) {
+        return roman
+          ? `Agar mamla ${scope.city || 'aap ke shehar'} mein hai to`
+          : `If this is in ${scope.city || 'your city'}`;
+      }
       return roman
         ? `${scope.city || 'Local'} / local procedure mein`
         : `In ${scope.city || 'local'} city-level procedure`;
     case 'provincial':
+      if (conditional) {
+        return roman
+          ? `Agar mamla ${scope.province || 'aap ke soobe'} mein hai to`
+          : `If this is in ${scope.province || 'your province'}`;
+      }
       return roman
         ? `${scope.province || 'Provincial'} law ke under`
         : `Under ${scope.province || 'provincial'} law`;

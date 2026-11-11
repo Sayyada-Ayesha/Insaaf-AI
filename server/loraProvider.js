@@ -125,6 +125,15 @@ const ROMAN_LABELS = {
   sources: 'Masdar',
   limit: 'Zaroori tahaffuz',
 };
+const URDU_LABELS = {
+  law: 'قابلِ اطلاق قانون',
+  procedure: 'کیا کرنا چاہیے / طریقہ',
+  nextStep: 'اگلا قدم',
+  sources: 'مصادر',
+  limit: 'اہم حدود',
+};
+const LIMIT_UR =
+  'یہ تصدیق شدہ پاکستانی قانونی ذخیرے سے لی گئی عمومی قانونی معلومات ہیں، کسی لائسنس یافتہ وکیل کے مشورے کا متبادل نہیں۔ مقدمہ کیسے آگے بڑھے گا اور اس کا نتیجہ آپ کے مخصوص حقائق، شواہد اور عدالت پر منحصر ہے۔ اگر کوئی آخری تاریخ یا پیشی شامل ہے تو فوراً قدم اٹھائیں اور وکیل یا متعلقہ عدالت/دفتر سے تصدیق کریں۔';
 
 const LIMIT_EN =
   'This is general legal information assembled from the verified Pakistani law corpus, not a substitute for advice from a licensed advocate. How a case proceeds and its outcome depend on the specific facts, the evidence, and the court. If a deadline or an appearance date is involved, act promptly and confirm with a lawyer or the relevant court/office.';
@@ -438,7 +447,8 @@ export function stripModelUrls(text) {
 
 /** Turn the validated fields into the answer text the chat route sends. */
 export function formatLoraAnswer(answer, language, evidence = []) {
-  const labels = language === 'roman_urdu' ? ROMAN_LABELS : EN_LABELS;
+  const labels =
+    language === 'roman_urdu' ? ROMAN_LABELS : language === 'ur' ? URDU_LABELS : EN_LABELS;
   const parts = [];
   parts.push(stripModelUrls(answer.answer));
   if (String(answer.law || '').trim()) {
@@ -456,7 +466,7 @@ export function formatLoraAnswer(answer, language, evidence = []) {
     parts.push(`**${labels.sources}**\n${sourceUrls.join('\n')}`);
   }
   // The disclaimer is the server's, never the model's.
-  const limit = language === 'roman_urdu' ? LIMIT_ROMAN : LIMIT_EN;
+  const limit = language === 'roman_urdu' ? LIMIT_ROMAN : language === 'ur' ? LIMIT_UR : LIMIT_EN;
   parts.push(`**${labels.limit}**\n${String(answer.limitation || '').trim()}\n${limit}`);
   return parts.filter(Boolean).join('\n\n');
 }

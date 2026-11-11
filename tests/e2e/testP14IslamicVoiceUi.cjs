@@ -53,12 +53,15 @@ function bootstrap() {
     try {
       const u = String(url);
       if (u.indexOf('/api/ai/') !== -1 && opts && opts.body) {
-        entry = { url: u, body: String(opts.body) };
+        entry = { url: u, body: String(opts.body), status: 0, sse: '' };
         aud.aiRequests.push(entry);
       }
     } catch (e) { /* ignore */ }
     return origFetch.apply(this, arguments).then(function (res) {
-      if (entry) entry.status = res.status;
+      if (entry) {
+        entry.status = res.status;
+        try { res.clone().text().then(t => { entry.sse = t; }).catch(function () {}); } catch (e) { /* ignore */ }
+      }
       return res;
     });
   };
@@ -198,16 +201,52 @@ const visibleComposer = () => {
   ta.dispatchEvent(new Event('input', { bubbles: true }));
   return { placeholder: ta.getAttribute('placeholder'), count: tas.length };
 };
-const readBadge = () => {
-  const t = document.body.innerText || '';
-  const all = t.match(/VERIFIED ISLAMIC \+ PAKISTAN LAW SOURCES|VERIFIED ISLAMIC SOURCE|VERIFIED LEGAL KNOWLEDGE/g);
-  return all ? all[all.length - 1] : '';
+/* Every evidence class the UI is allowed to print (src/lib/answerEvidence.ts). A chip
+   outside this list — a placeholder, a bare "[Tasdeeq Shuda …]", an invented label — is
+   a FAIL, not a different name for the same thing. */
+const EVIDENCE_CLASSES = [
+  'VERIFIED ISLAMIC + PAKISTAN LAW SOURCES', 'VERIFIED ISLAMIC SOURCE', 'VERIFIED LEGAL KNOWLEDGE',
+  'PARTIAL MATCH — CLOSEST ISLAMIC + LAW RECORDS', 'PARTIAL MATCH — CLOSEST ISLAMIC RECORD',
+  'PARTIAL MATCH — CLOSEST LEGAL RECORD',
+  'GENERAL GUIDANCE — NO MATCHING RECORD', 'MORE INFORMATION NEEDED'
+];
+const VERIFIED_CLASS = /^VERIFIED/;
+/** Which chip each gate verdict entitles the UI to show, and nothing else. */
+const ENTITLED = {
+  strong: EVIDENCE_CLASSES.filter(l => VERIFIED_CLASS.test(l)),
+  weak: EVIDENCE_CLASSES.filter(l => /^PARTIAL/.test(l)),
+  none: ['GENERAL GUIDANCE — NO MATCHING RECORD'],
+  clarify: ['MORE INFORMATION NEEDED']
+};
+/** An unqualified "VERIFIED …" claim about the answer itself (the composer qualifies a
+ *  weak answer as PARTIALLY / QISMAN VERIFIED, and a provision lookup as DIRECT). */
+const UNQUALIFIED_VERIFIED = /(?<!PARTIALLY )(?<!QISMAN )(?<!DIRECT )\bVERIFIED (?:LEGAL )?(?:REFERENCE|JAWAB|MAKHAAZ|QANOONI HAWALA)/i;
+
+/* The chip on the surface the user is looking at, read from the DOM. The class list is
+   passed in: page.evaluate serializes this function, so it cannot close over constants. */
+const readChip = (classes) => {
+  const root = document.querySelector('[data-testid="answer-result"]');
+  const spans = root ? Array.from(root.querySelectorAll('nav span')) : [];
+  const texts = spans.map(s => (s.textContent || '').trim().replace(/\s+/g, ' ')).filter(t => t.length > 3);
+  return { chip: texts.find(t => classes.includes(t)) || '', shown: texts };
+};
+/** The gate's own verdict, parsed out of the SSE body the browser received. */
+const verdictOf = (sse) => {
+  const hits = String(sse || '').match(/"verdict":"(strong|weak|none|clarify)"/g) || [];
+  return hits.length ? hits[hits.length - 1].slice(11, -1) : '';
 };
 
-const countBadges = () => {
-  const t = document.body.innerText || '';
-  return (t.match(/VERIFIED ISLAMIC \+ PAKISTAN LAW SOURCES|VERIFIED ISLAMIC SOURCE|VERIFIED LEGAL KNOWLEDGE/g) || []).length;
-};
+/* The three-way evidence-path group exists on all three chat surfaces: the search-first
+   home page (label id home-evidence-path-label), the open-conversation hero (label id
+   evidence-path-label) and the answer page (data-testid answer-evidence-path-group).
+   Which one is on screen depends only on how far into a conversation the user is, never
+   on whether the selector works, so every assertion below addresses all three and still
+   reads its state back from the real DOM. */
+const GROUP = '[role="group"][aria-labelledby="evidence-path-label"], '
+  + '[role="group"][aria-labelledby="home-evidence-path-label"], '
+  + '[data-testid="answer-evidence-path-group"]';
+/* ":is(a, b) button" — a bare "a, b button" would match the group element itself. */
+const GROUP_BTN = `:is(${GROUP}) button`;
 
 /* ---------------- main ---------------- */
 (async () => {
@@ -234,10 +273,11 @@ const countBadges = () => {
       else ok(`R1.${vp.name}.nav`, 'opened Islamic Guidance by mouse click');
       await sleep(900);
 
-      const sel = await page.evaluate(() => {
-        const g = document.querySelector('[role="group"][aria-labelledby="evidence-path-label"]');
+      const sel = await page.evaluate((sel) => {
+        const g = document.querySelector(sel);
         if (!g) return { present: false };
-        const label = (document.getElementById('evidence-path-label') || {}).textContent || '';
+        const label = ((document.getElementById('evidence-path-label')
+          || document.getElementById('home-evidence-path-label') || {}).textContent || '');
         const btns = Array.from(g.querySelectorAll('button')).map(b => {
           const r = b.getBoundingClientRect();
           return {
@@ -247,7 +287,7 @@ const countBadges = () => {
           };
         });
         return { present: true, label: label.trim(), btns, innerWidth: window.innerWidth };
-      });
+      }, GROUP);
       if (!sel.present) { bad(`R1.${vp.name}.selector`, 'three-way selector not rendered'); await page.close(); continue; }
       if (sel.btns.length !== 3) bad(`R1.${vp.name}.selector`, `expected 3 mode buttons, found ${sel.btns.length}`);
       else ok(`R1.${vp.name}.selector`, `3 buttons, group label "${sel.label}"`);
@@ -265,25 +305,25 @@ const countBadges = () => {
       } else ok(`R1.${vp.name}.overflow`, `no sideways overflow (${overflow.docScroll} <= ${overflow.inner})`);
 
       /* real mouse click on the combined option, then read aria-pressed back */
-      const c = await clickText(page, '[role="group"][aria-labelledby="evidence-path-label"] button', 'Pakistan Law');
+      const c = await clickText(page, GROUP_BTN, 'Pakistan Law');
       if (!c.clicked) bad(`R1.${vp.name}.clickLaw`, `could not click "Pakistan Law": ${JSON.stringify(c)}`);
       else {
         await sleep(350);
-        const st = await page.evaluate(() => Array.from(document.querySelectorAll('[role="group"][aria-labelledby="evidence-path-label"] button'))
-          .map(b => ({ t: (b.textContent || '').trim(), p: b.getAttribute('aria-pressed') })));
+        const st = await page.evaluate((sel) => Array.from(document.querySelectorAll(sel))
+          .map(b => ({ t: (b.textContent || '').trim(), p: b.getAttribute('aria-pressed') })), GROUP_BTN);
         const law = st.find(x => x.t.indexOf('Pakistan Law') === 0 || x.t === 'Pakistan Law');
         if (!law || law.p !== 'true') bad(`R1.${vp.name}.clickLaw`, `aria-pressed not true after mouse click: ${JSON.stringify(st)}`);
         else ok(`R1.${vp.name}.clickLaw`, 'mouse click switched the evidence path (aria-pressed=true)');
       }
 
       /* keyboard operability: focus the first option, Tab to the next, Enter to activate */
-      const kb = await page.evaluate(() => {
-        const g = document.querySelector('[role="group"][aria-labelledby="evidence-path-label"]');
+      const kb = await page.evaluate((sel) => {
+        const g = document.querySelector(sel);
         const b0 = g && g.querySelectorAll('button')[0];
         if (!b0) return false;
         b0.focus();
         return document.activeElement === b0;
-      });
+      }, GROUP);
       if (!kb) bad(`R1.${vp.name}.kbd`, 'selector button cannot receive keyboard focus');
       else {
         await page.keyboard.press('Tab');
@@ -327,8 +367,31 @@ const countBadges = () => {
     await openNavTab(page, 'Islamic Guidance');
     await sleep(900);
 
-    const ask = async (modeLabel, question, expectBadgeRe) => {
-      const cl = await clickText(page, '[role="group"][aria-labelledby="evidence-path-label"] button', modeLabel);
+    /* Suggestion chips live above the home search field and follow the selected
+       evidence path. Compared here, before any question is asked, because the
+       answer page deliberately has no chip row. */
+    {
+      const chipsOf = () => page.evaluate(() => Array.from(
+        document.querySelectorAll('[data-testid="home-suggestion"]'))
+        .filter(e => !!(e.offsetParent || e.getClientRects().length))
+        .map(e => (e.textContent || '').trim()));
+      const islamicChips = await chipsOf();
+      const toLaw = await clickText(page, GROUP_BTN, 'Pakistan Law');
+      await sleep(450);
+      const lawChips = await chipsOf();
+      const back = await clickText(page, GROUP_BTN, 'Islamic Guidance');
+      await sleep(450);
+      if (!toLaw.clicked || !back.clicked) bad('R2.chips.setup', `could not switch paths to compare chips (law=${toLaw.clicked}, islamic=${back.clicked})`);
+      else if (!islamicChips.length || !lawChips.length) bad('R2.chips', `a path rendered no suggestion chips (islamic=${islamicChips.length}, law=${lawChips.length})`);
+      else {
+        const shared = islamicChips.filter(c => lawChips.includes(c));
+        if (shared.length) bad('R2.chips', `Islamic and law chips are not mode-specific, shared: ${JSON.stringify(shared)}`);
+        else ok('R2.chips', `Islamic mode offers ${islamicChips.length} of its own chips, none shared with the ${lawChips.length} law chips (first: "${islamicChips[0].slice(0, 34)}")`);
+      }
+    }
+
+    const ask = async (modeLabel, question) => {
+      const cl = await clickText(page, GROUP_BTN, modeLabel);
       if (!cl.clicked) { bad('R2.pick.' + modeLabel, `could not pick "${modeLabel}"`); return null; }
       await sleep(300);
       const comp = await page.evaluate(visibleComposer);
@@ -336,40 +399,54 @@ const countBadges = () => {
       info('R2.type.' + modeLabel, `typed into the visible composer "${comp.placeholder.slice(0, 28)}" (${comp.count} textareas in DOM)`);
       await page.keyboard.type(question, { delay: 12 });
       const before = await page.evaluate(() => window.__AUD.aiRequests.length);
-      const badgesBefore = await page.evaluate(countBadges);
       await page.keyboard.press('Enter');
       const req = await waitEval(page, (n) => {
         const r = window.__AUD.aiRequests;
         if (r.length <= n) return null;
         const last = r[r.length - 1];
-        return last.status ? JSON.stringify(last) : null;
-      }, before, 30000);
-      if (!req) { bad('R2.submit.' + modeLabel, 'no /api/ai request was sent (or it never completed)'); return null; }
+        return last.status && last.sse ? JSON.stringify(last) : null;
+      }, before, 45000);
+      if (!req) { bad('R2.submit.' + modeLabel, 'no /api/ai request was sent (or its body never arrived)'); return null; }
       const parsed = JSON.parse(req);
       let body = {};
       try { body = JSON.parse(parsed.body); } catch (e) { /* not JSON */ }
       info('R2.body.' + modeLabel, `submitted to ${parsed.url} → HTTP ${parsed.status}, mode=${JSON.stringify(body.mode)} preferredLanguage=${JSON.stringify(body.preferredLanguage)}`);
       if (parsed.status !== 200) {
-        blocked('R2.badge.' + modeLabel, `request answered HTTP ${parsed.status}; the rendered-evidence assertions for this mode could not run`);
-        return { body, badge: '', rendered: '', asked: question, httpStatus: parsed.status };
+        blocked('R2.class.' + modeLabel, `request answered HTTP ${parsed.status}; the rendered-evidence assertions for this mode could not run`);
+        return { body, badge: '', verdict: '', rendered: '', asked: question, httpStatus: parsed.status };
       }
 
-      const badge = await waitEval(page, (n) => {
-        const t = document.body.innerText || '';
-        const all = t.match(/VERIFIED ISLAMIC \+ PAKISTAN LAW SOURCES|VERIFIED ISLAMIC SOURCE|VERIFIED LEGAL KNOWLEDGE/g);
-        return all && all.length > n ? all[all.length - 1] : null;
-      }, badgesBefore, 90000) || '';
-      if (!expectBadgeRe.test(badge)) bad('R2.badge.' + modeLabel, `badge mismatch: "${badge}"`);
-      else ok('R2.badge.' + modeLabel, `badge "${badge}"`);
+      const verdict = verdictOf(parsed.sse);
+      if (!verdict) bad('R2.verdict.' + modeLabel, 'the response carries no evidence-gate verdict at all');
+      else ok('R2.verdict.' + modeLabel, `gate verdict on the wire: ${verdict}`);
 
-      const rendered = await waitEval(page, (re) => {
-        const t = document.body.innerText;
-        return new RegExp(re).test(t) ? t : null;
-      }, 'Direct answer|Evidence gate|no verified|Not available|sorry|try again', 90000) || '';
-      return { body, badge, rendered, asked: question };
+      const surf = await waitEval(page, readChip, EVIDENCE_CLASSES, 60000);
+      const chip = surf ? surf.chip : '';
+      if (!surf || !chip) {
+        bad('R2.class.' + modeLabel, `no evidence-class chip rendered; the answer header shows ${JSON.stringify(surf ? surf.shown : [])}`);
+      } else if (verdict && !ENTITLED[verdict].includes(chip)) {
+        bad('R2.class.' + modeLabel, `chip "${chip}" is not the class verdict "${verdict}" entitles (${JSON.stringify(ENTITLED[verdict])})`);
+      } else {
+        ok('R2.class.' + modeLabel, `chip "${chip}" = the class verdict "${verdict || 'n/a'}" entitles`);
+      }
+
+      const rendered0 = await waitEval(page, () => {
+        const el = document.querySelector('[data-testid="result-answer"]');
+        const t = el ? (el.innerText || '') : '';
+        return t.trim().length > 30 ? t : null;
+      }, null, 90000) || '';
+      if (!rendered0) bad('R2.render.' + modeLabel, 'the answer surface never rendered answer text');
+      else ok('R2.render.' + modeLabel, `answer text read from [data-testid="result-answer"] (${rendered0.length} chars)`);
+
+      if (UNQUALIFIED_VERIFIED.test(rendered0) && verdict !== 'strong') {
+        bad('R2.claim.' + modeLabel, `answer body prints an unqualified VERIFIED heading on verdict "${verdict}"`);
+      } else {
+        ok('R2.claim.' + modeLabel, `no unqualified VERIFIED claim beyond what verdict "${verdict || 'n/a'}" grants`);
+      }
+      return { body, badge: chip, verdict, rendered: rendered0, asked: question };
     };
 
-    const isl = await ask('Islamic Guidance', ISLAMIC_Q, /VERIFIED ISLAMIC SOURCE/);
+    const isl = await ask('Islamic Guidance', ISLAMIC_Q);
     if (isl && !isl.httpStatus) {
       if (isl.body.mode !== 'islamic') bad('R2.mode.islamic', `server mode should be "islamic", got ${JSON.stringify(isl.body.mode)}`);
       else ok('R2.mode.islamic', 'selector → request mode "islamic"');
@@ -400,8 +477,6 @@ const countBadges = () => {
         if (clipped.length) bad('R2.actions.clip', clipped.length + ' action control(s) outside the ' + act.vw + 'px viewport: ' + clipped.map(c => c.id + '@' + c.right).join(', '));
         else ok('R2.actions.clip', act.items.length + ' answer action controls fully inside the ' + act.vw + 'px viewport');
       }
-      if (!act.chip) bad('R2.chips.islamic', 'Islamic Guidance mode rendered no suggestion chip');
-      else ok('R2.chips.islamic', 'Islamic mode offers its own chips, first: "' + act.chip.slice(0, 34) + '"');
       const before = await page.evaluate(() => window.__AUD.tts.length);
       const cl = await clickTestId(page, 'chat-action-read-aloud');
       if (!cl.clicked) bad('R2.actions.readaloud', 'read-aloud control was not clickable (' + (cl.reason || '?') + ')');
@@ -412,7 +487,7 @@ const countBadges = () => {
       }
     }
 
-    const com = await ask('Islamic Guidance + Pakistan Law', COMBINED_Q, /VERIFIED ISLAMIC \+ PAKISTAN LAW SOURCES/);
+    const com = await ask('Islamic Guidance + Pakistan Law', COMBINED_Q);
     if (com && !com.httpStatus) {
       if (com.body.mode !== 'combined') bad('R2.mode.combined', `server mode should be "combined", got ${JSON.stringify(com.body.mode)}`);
       else ok('R2.mode.combined', 'selector → request mode "combined"');
@@ -437,33 +512,35 @@ const countBadges = () => {
       await sleep(25000);
     }
 
-    /* badge must not be re-labelled when the selector is moved afterwards */
-    await clickText(page, '[role="group"][aria-labelledby="evidence-path-label"] button', 'Islamic Guidance');
+    /* the answer's evidence class must not be re-labelled when the selector is moved */
+    await clickText(page, GROUP_BTN, 'Islamic Guidance');
     await sleep(500);
-    const badgeAfter = await page.evaluate(readBadge);
-    if (!/VERIFIED ISLAMIC \+ PAKISTAN LAW SOURCES/.test(badgeAfter)) {
-      bad('R2.badge.sticky', `switching the selector retroactively changed an older answer's badge to "${badgeAfter}"`);
-    } else ok('R2.badge.sticky', 'older answer keeps its own evidence badge after the selector moves');
+    if (!com || !com.badge) {
+      blocked('R2.badge.sticky', 'the combined answer carried no evidence chip, so chip stickiness could not be measured');
+    } else {
+      const chipAfter = (await page.evaluate(readChip, EVIDENCE_CLASSES)).chip;
+      if (chipAfter !== com.badge) {
+        bad('R2.badge.sticky', `switching the selector retroactively changed an older answer's evidence chip from "${com.badge}" to "${chipAfter}"`);
+      } else ok('R2.badge.sticky', `older answer keeps its own evidence chip ("${chipAfter}") after the selector moves`);
+    }
 
     /* Urdu-script legal wording on the law path — measured, then rendered honestly */
-    const urd = await ask('Pakistan Law', URDU_Q, /VERIFIED/);
+    const urd = await ask('Pakistan Law', URDU_Q);
     if (urd && !urd.httpStatus) {
       if (typeof urd.body.mode !== 'undefined') bad('R2.mode.law', `law path must not send a mode, got ${JSON.stringify(urd.body.mode)}`);
       else ok('R2.mode.law', 'law path submits without an Islamic/combined mode');
-      /* Scope to the LAST rendered answer bubble: a page-wide innerText scan reads the
-         Islamic and combined answers above it, so their absence lines fail this check. */
+      /* Read the answer surface itself: it holds exactly the answer under test, so a
+         stale Islamic or combined bubble can never satisfy or poison this check. */
       const scoped = await page.evaluate(() => {
-        const bs = Array.from(document.querySelectorAll('div.ProseMirror'))
-          .filter(e => !!(e.offsetParent || e.getClientRects().length));
-        const b = bs[bs.length - 1];
-        if (!b) return { text: '', anchors: 0, bubbles: bs.length };
-        return { text: b.innerText, anchors: b.querySelectorAll('a[target="_blank"]').length, bubbles: bs.length };
+        const el = document.querySelector('[data-testid="result-answer"]');
+        if (!el) return { text: '', anchors: 0, present: false };
+        return { text: el.innerText || '', anchors: el.querySelectorAll('a[target="_blank"]').length, present: true };
       });
       const last = scoped.text || '';
       const gate = /Evidence gate classification|QISMAN VERIFIED|PARTIALLY VERIFIED/i.test(last);
       const refusal = /not a calculator|hisab ke liye|Insufficient evidence|could not reach its service/i.test(last);
       const legal = /Section [0-9]+|Ordinance|Act,|court|nafqa|talaq|qanoon/i.test(last);
-      info('R2.urdu.outcome', `last of ${scoped.bubbles} answer bubbles: ${last.length} chars, ${scoped.anchors} citation anchors, gateLine=${gate}, refusal=${refusal}, legal=${legal}`);
+      info('R2.urdu.outcome', `answer surface ${scoped.present ? 'present' : 'MISSING'}: ${last.length} chars, ${scoped.anchors} citation anchors, verdict=${urd.verdict || 'n/a'}, chip=${JSON.stringify(urd.badge)}, gateLine=${gate}, refusal=${refusal}, legal=${legal}`);
       if (refusal) bad('R2.urdu.answered', `Urdu-script legal wording hit an out-of-scope or service refusal: ${JSON.stringify(last.slice(0, 160))}`);
       else if (!legal) bad('R2.urdu.answered', `Urdu-script answer carries no legal provision wording: ${JSON.stringify(last.slice(0, 160))}`);
       else if (last.length < 300) bad('R2.urdu.answered', `Urdu-script answer is only ${last.length} chars`);

@@ -8,6 +8,13 @@ __pycache__/
 .env*
 !.env.example
 
+# Generated evaluation evidence (multi-MB run reports). The harness under
+# tests/eval/ is source; only its outputs stay local.
+/tests/eval/reports/
+
+# Local sprint checkpoint patches.
+/tmp_*.patch
+
 # Model weights are never committed. The trained adapters are large binaries;
 # they are produced by the Colab training run and copied in by the operator.
 training/output/legal_own_v1/adapter/

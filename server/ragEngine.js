@@ -4,6 +4,8 @@ import { fileURLToPath } from 'url';
 import { getLocalEmbedder } from './localEmbedder.js';
 import { expandSearchText } from './legalGlossary.js';
 import { findProvisionRefs } from './provisionRef.js';
+import { detectWrittenLanguage, registerRomanGlossary } from './languageDetect.js';
+import { isSelfReferentialAuthority } from './corpusMetadata.js';
 
 // P23 cloud readiness: anchor the index path to this file's directory so
 // retrieval works from any working directory.
@@ -314,6 +316,15 @@ export class RAGEngine {
     'ہاسٹل': 'hostel', 'میٹرک': 'matric', 'انٹر': 'intermediate',
     'پلاجرزم': 'plagiarism', 'پلیجرزم': 'plagiarism',
     'شکایت': 'complaint grievance',
+    // Banking, documents and family-violence nouns measured missing on 2026-11-09:
+    // an Urdu-script "بینک … اکاؤنٹ سے فیس کاٹ لی" produced no English term beyond
+    // 'fee', so the cards came back from the education fee family. Deliberately
+    // unambiguous, multi-syllable words only — بل and ثبوت were tried and a
+    // substring-prone or over-broad gloss lets another subject's row through.
+    'بینک': 'bank banking', 'اکاؤنٹ': 'account', 'وارنٹ': 'warrant',
+    'پیدائش': 'birth', 'سرٹیفکیٹ': 'certificate',
+    'شوہر': 'husband', 'بیوی': 'wife', 'تشدد': 'violence assault',
+    'گھریلو': 'domestic', 'ویزا': 'visa',
     'تعلیمی': 'educational academic',
     'ایف آئی آر': 'FIR first information report',
     // Grammatical and institutional glue words. An Urdu-script question carries
@@ -380,6 +391,19 @@ export class RAGEngine {
         const regex = new RegExp(`(^|${B})${escaped}(?=$|${B})`, 'g');
         normalized = normalized.replace(regex, `$1${en}`);
       }
+      // ہیک is how Urdu script spells BOTH "HEC" (the Commission) and "hack". The
+      // dictionary resolves it to the Commission, which is right for a degree
+      // attestation ask and wrong for a break-in report: an account/WhatsApp
+      // complaint reached the HEC fee-refund corpus on that expansion alone, and
+      // the PECA records that state the offence were never candidates. A device,
+      // account, platform or named intruder beside ہیک settles which word the
+      // citizen wrote; an education artefact word keeps the Commission reading.
+      if (/ہیک/.test(query)
+        && /(اکاؤنٹ|اكاؤنٹ|اڪاؤنٹ|پاسورڈ|پاس\s?ورڈ|موبائل|فون|انٹرنیٹ|سائبر|آن\s*لائن|واٹس|وٹس|ای\s*میل|کسی\s*(?:نے|اور)|سسٹم|ڈیٹا)/.test(query)
+        && !/(ڈگری|اتیسٹیشن|اٹیسٹیشن|ٹرانسکرپٹ|یونیورسٹی|جامعہ|کالج|امتحان|نتیجہ|اسکالرشپ|ہاسٹل|مساوی|سرٹیفکیٹ)/.test(query)) {
+        normalized = normalized.replace(/hec higher education commission/gi,
+          'hack hacked hacking unauthorized access information system data');
+      }
     }
 
     // English legal vocabulary the statutory records state in their own Roman /
@@ -402,13 +426,10 @@ export class RAGEngine {
   static processQuery(query) {
     const clean = (query || '').toLowerCase().trim();
     
-    // 1. Language Detection Heuristics
-    let detectedLang = 'en';
-    if (/[\u0600-\u06FF]/.test(query)) {
-      detectedLang = 'ur';
-    } else if (/\b(kya|hai|hein|bataen|masla|mera|meri|mujhe|mjhe|zaroori|tareeqa|police|thana|chahiye|pehle|baad|mutabiq|karun|krun|ab|likh|darj|zamanat|talaq|nikah|shadi|haq|tarah|karna|dawa|kya|saza|chori|qatl|dhamki|kiraya|tankhwa|batao|kaise|rasta|karo|karna|nahi|rahi|main|kuch|abhi|yeh|woh|kon|kahan|kitna|kitni|kab|kyun|agr|koi|to)\b/i.test(clean)) {
-      detectedLang = 'roman_urdu';
-    }
+    // 1. Language Detection — one shared detector decides prose and retrieval
+    // language together; a question cannot be answered in one language and
+    // retrieved in another.
+    const detectedLang = detectWrittenLanguage(query);
 
     // 2. Normalize query for retrieval (translate Urdu/Roman Urdu terms to English)
     const normalizedQuery = RAGEngine.normalizeQuery(query, detectedLang);
@@ -426,7 +447,20 @@ export class RAGEngine {
     // "refund", "leave" — and run before the education branch, so without this
     // flag an HEC question is routed by the trigger word instead of its topic.
     const isHigherEdQuery = /\b(hec|higher education commission|degree|degrees|diploma|pgd|undergraduate|postgraduate|graduate|mphil|m\.?phil|phd|credit hour\w*|semester|transcript|convocation|provisional certificate|associate degree|matric|intermediate|fsc|hssc|a.?level|o.?level)\b/i.test(normalizedQuery)
-      || /(ہیک|ڈگری|سند|تعلیم|تعلیمی|یونیورسٹی|یونیورسٹیاں|کالج|جامعہ|طالب علم|طالبات|امتحان|فیس|اسکالرشپ|ہاسٹل|میٹرک|انٹر)/.test(query);
+      || /(ڈگری|سند|تعلیم|تعلیمی|یونیورسٹی|یونیورسٹیاں|کالج|جامعہ|طالب علم|طالبات|امتحان|فیس|اسکالرشپ|ہاسٹل|میٹرک|انٹر)/.test(query);
+
+    // "salary account" names a banking product, not a wage claim. The labour
+    // branch matches single words, so on its own that phrase pulled bank-charge
+    // complaints into minimum-wages records. The wage words are neutralised only
+    // when the query also names a bank product and nothing describing an
+    // employment relationship, so "company ne naukri se nikal diya, tankhwah
+    // baki hai" still routes to labour.
+    const labourQueryText = (
+      /\b(salary|wage|deposit|saving|savings|current|joint)\s+(?:bank\s+)?account\b|\bbank\s+account\b|\bbanking\s+account\b|\bcheque\b|\bdishonou?r\b/i.test(normalizedQuery)
+      && !/\b(employer|employee|employ\w*|worker|naukri|mulazim|staff|overtime|boss|colleague|workplace|job|terminat\w*|dismiss\w*|retrench|eobi|factory)\b/i.test(normalizedQuery)
+    )
+      ? normalizedQuery.replace(/\b(salary|wages?|tankhwa\w*)\b/gi, 'banking')
+      : normalizedQuery;
 
     // ---- Cross-border / Overseas Pakistanis layer (INSAaf foreign knowledge) ----
     // Engages ONLY when a FOREIGN country is named or an unambiguous "abroad"
@@ -605,7 +639,7 @@ export class RAGEngine {
     // no trigger, stayed domainless, and retrieved HEC degree-attestation
     // records because they are the corpus's other "apply with documents" text.
     else if ((/\b(domicile|cnic|nicop|b.?form|crc|child registration|birth (?:certificate|registration)|death (?:certificate|registration)|marriage registr|nikah.?nama|nikah register|voter|vote|vote enrol|electoral|constituency|union council|nadra|election commission|government department complaint|complaint against (?:a )?government|complain.{0,15}government|government.{0,15}(?:not providing|complaint)|civic|citizen portal|b-form|register.{0,20}(?:birth|death|marriage)|passport|dgip|frc|family registration certificate|pak.?id|tracking id|(?:renew|reprint|modify)\w*.{0,12}cnic|(?:birth|death|marriage).{0,20}registr)\b/i.test(normalizedQuery)
-      || /(پاسپورٹ|شناختی\s*کارڈ|ب\s*فارم|ڈومیسائل|خاندانی\s*شناختی\s*کارڈ|رجسٹریشن\s*سرٹیفکیٹ|ووٹر|الیکشن\s*کمیشن)/.test(query))
+      || /(پاسپورٹ|شناختی\s*کارڈ|ب\s*فارم|ڈومیسائل|خاندانی\s*شناختی\s*کارڈ|رجسٹریشن\s*سرٹیفکیٹ|ووٹر|الیکشن\s*کمیشن|پیدائش|وفات|نکاح)/.test(query))
       && !/\b(abroad|overseas|foreign|nicop abroad)\b/i.test(normalizedQuery)) {
       domain = 'civic';
       const civicTerms = [];
@@ -624,7 +658,7 @@ export class RAGEngine {
     // domestic labour/criminal/cyber domains). Offline
     // workplace/teacher harassment must NOT route here (it is covered by the
     // workplace-harassment laws via the labour/rights domains).
-    else if ((/\b(cyber|internet|harass\w*|stalk\w*|hack\w*|online|peca|cybercrime|bully|bullying|blackmail\w*|extort\w*|whatsapp|data|website|fia|1991|identity|electronic|digital|information.?system|unauthorized)\b/i.test(normalizedQuery) || /(ہراسگی|انٹرنیٹ|سائبر|بلیک\s*میل|آن\s*لائن|بلیک\s*میلنگ)/.test(query))
+    else if ((/\b(cyber|internet|harass\w*|stalk\w*|hack\w*|online|peca|cybercrime|bully|bullying|blackmail\w*|extort\w*|whatsapp|data|website|fia|1991|identity|electronic|digital|information.?system|unauthorized|social media|social network|facebook|instagram|tiktok|snapchat|twitter|deepfake|morphed|fake (?:profile|account|id)|(?:profile|account) (?:photo|picture|image|video))\b/i.test(normalizedQuery) || /(ہراسگی|انٹرنیٹ|سائبر|بلیک\s*میل|آن\s*لائن|بلیک\s*میلنگ|سوشل\s*میڈیا|جعلی\s*پروفائل|پروفائل)/.test(query))
         && !isHigherEdQuery
         && !(/\b(workplace|office|employer|boss|colleague|coworker|universit(?:y|ies)|uni|campus|student\w*|hostel\w*|teacher\w*|professor\w*|lecturer\w*|faculty|staff|manager|job|work)\b/i.test(normalizedQuery) && !/\b(online|internet|social|facebook|whatsapp|sms|email|website|mobile|phone|account|profile|message|youtube|twitter|instagram|tiktok|app)\b/i.test(normalizedQuery))) {
       domain = 'cyber';
@@ -632,10 +666,10 @@ export class RAGEngine {
       if (/harass|stalk|bully/i.test(normalizedQuery)) cyberTerms.push('cyberstalking harassment Section 19 24 PECA punishment');
       if (/hack|unauthorized|access/i.test(normalizedQuery)) cyberTerms.push('unauthorized access Section 3 4 5 PECA punishment');
       if (/blackmail|extort/i.test(normalizedQuery)) cyberTerms.push('blackmail extortion online threat Section 24 PECA');
-      if (/identity|fake|impersonat/i.test(normalizedQuery)) cyberTerms.push('identity theft Section 13 PECA unauthorized use');
+      if (/identity|fake|impersonat|profile/i.test(normalizedQuery)) cyberTerms.push('identity information Section 13 PECA unauthorized use false information reputation privacy Section 24 PECA');
       if (/fraud|scam/i.test(normalizedQuery)) cyberTerms.push('electronic fraud Section 11 PECA');
-      if (/modesty|photo|image|intimate/i.test(normalizedQuery)) cyberTerms.push('modesty Section 16 PECA intimate images');
-      if (/complain|report|fia/i.test(normalizedQuery)) cyberTerms.push('FIA complaint procedure 1991 helpline cybercrime');
+      if (/modesty|intimate|nude|sexually|morphed|superimpos|private (?:photo|picture|image|video)/i.test(normalizedQuery)) cyberTerms.push('modesty Section 16 PECA intimate images');
+      if (/complain|report|fia|profile|social|fake/i.test(normalizedQuery)) cyberTerms.push('FIA complaint procedure 1991 helpline cybercrime');
       if (/dignity|defam/i.test(normalizedQuery)) cyberTerms.push('dignity Section 24 PECA defamation online');
       rewrittenQuery = cyberTerms.length > 0 ? cyberTerms.join(' ') : 'PECA 2016 cybercrime harassment unauthorized access FIA complaint Section 3 19 24';
     }
@@ -647,6 +681,7 @@ export class RAGEngine {
     else if ((/\b(consumer|defective|product|saman|dukaan|shopkeeper|warranty|refund|purchase|bought|khareedari|store)\b/i.test(normalizedQuery))
         && !isHigherEdQuery
         && !/\b(rent|rental|tenancy|tenant|landlord|premises|makan|ghar|kiraya|qaba)\b/i.test(normalizedQuery)
+        && !/\b(bank|banking|cheque|sbp|state bank)\b/i.test(normalizedQuery)
         && !/\b(neighbour|neighbor|encroach\w*|common passage)\b/i.test(normalizedQuery)
         && !(/\b(university|school|college|students?|tuition|scholarship)\b/i.test(normalizedQuery) && !/\b(consumer|product|shop|purchase|goods|defective|seller)\b/i.test(normalizedQuery))) {
       domain = 'consumer';
@@ -697,6 +732,19 @@ export class RAGEngine {
       domain = 'amendment';
       rewrittenQuery = 'amendment history law section added introduced Pakistan Penal Code PPC statute legislative change year enacted';
     }
+    // Domestic violence — must run BEFORE the generic offence regex below. A
+    // spouse's violence normalises to husband/wife + violence/assault, which that
+    // regex reads as a general assault question, so the answer quoted PPC s.352
+    // and s.355 punishments while the records that state what a survivor can
+    // actually do (provincial Domestic Violence Acts, Protection Officer, shelter,
+    // emergency helpline) were never candidates. A query about killing or a sexual
+    // offence is a criminal question, and stays with the criminal corpus.
+    else if (/\b(domestic\s+violence|violence\s+(?:against|towards)\s+(?:a\s+)?(?:woman|women|wife|husband|spouse)|wife|husband|spouse|in[- ]?laws?)\b/i.test(normalizedQuery)
+        && /\b(domestic|violence|assault|beat\w*|abuse\w*|cruelt\w*|harass\w*|tortur\w*|zabardasti|zordeed)\b/i.test(normalizedQuery)
+        && !/\b(murder|qatl|kill(?:ed|ing)?|caus\w+\s+death|302|324|rape|zina|honour)\b/i.test(normalizedQuery)) {
+      domain = 'family';
+      rewrittenQuery = 'domestic violence Protection of Women against Violence Act provincial Domestic Violence Prevention and Protection Act complaint Protection Officer shelter home emergency helpline remedy wife husband';
+    }
     // Offence / Punishment queries (CRITICAL - must route to PPC)
     else if (/\b(punish|penalty|saza|offence|offense|crime|theft|steal|rob|robbery|dacoity|murder|kill|qatl|hurt|assault|cheat|fraud|forgery|forge|trespass|mischief|intimidat|threat|dhamki|kidnap|abduct|extort|blackmail|defam|chori|loot|daketi|maar|badnami|rape|zina|burglar\w*|house.?break\w*|break.?in|broke into|raat ko.*chori|ghar.*tod|breach.?trust|entrust\w*|refused.to.(?:return|pay|repay)|has.not.returned|did.not.return)\b/i.test(normalizedQuery)) {
       domain = 'criminal';
@@ -726,7 +774,12 @@ export class RAGEngine {
     // Protection against Harassment of Women at Workplace Act 2010 route).
     // Academic-context harassment (university/school/teacher) is handled by
     // the rights branch below (HEC/student policies) instead.
-    else if ((/\b(labour|labor|employ\w*|worker|wage|salary|terminat\w*|dismiss\w*|retrench|eobi|social.?security|workplace|factory|tankhwa|naukri|mulazim|harass\w*|boss|office|colleague|manager|job|work)\b|(?:\bshop\b.*\b(employer|employee|worker|wage|salary|job|naukri|mulazim|dismiss|terminat|overtime|leave|timing|staff)\b|\b(?:employer|employee|worker|wage|salary|job|naukri|mulazim|dismiss|terminat|overtime|leave|timing|staff)\b.*\bshop\b)/i.test(normalizedQuery))
+    //
+    // "salary account" is the name of a banking product, not a wage claim (see
+    // labourQueryText above): the labour cue list matches single words, so a
+    // bank-charge complaint used to route to minimum-wages records and the
+    // banking records that answer it never competed.
+    else if ((/\b(labour|labor|employ\w*|worker|wage|salary|terminat\w*|dismiss\w*|retrench|eobi|social.?security|workplace|factory|tankhwa|naukri|mulazim|harass\w*|boss|office|colleague|manager|job|work)\b|(?:\bshop\b.*\b(employer|employee|worker|wage|salary|job|naukri|mulazim|dismiss|terminat|overtime|leave|timing|staff)\b|\b(?:employer|employee|worker|wage|salary|job|naukri|mulazim|dismiss|terminat|overtime|leave|timing|staff)\b.*\bshop\b)/i.test(labourQueryText))
         && !isHigherEdQuery
         && !(/\b(universit(?:y|ies)|schools?|colleges?|students?|teachers?|principal)\b/i.test(normalizedQuery) && !/\b(employ\w*|workplace|office|job|staff|company)\b/i.test(normalizedQuery))) {
       domain = 'labour';
@@ -742,7 +795,8 @@ export class RAGEngine {
     // Legal Aid / affordability (must run BEFORE the rights branch so
     // "fees ke paise nahi hain" routes to legal aid, not student fee rights)
     else if ((/\b(aid|free.?lawyer|free.?legal|dlac|helpline|1099|1991|ngo|ombudsman|mohtasib|bait.?ul.?maal|pro.?bono|afford|affordability|garib|poor|madad|mufti|paise|paisa|budget|no money|no budget|nahi hain)\b/i.test(normalizedQuery) || /(مدد|مفت|قانونی\s*امداد)/.test(query))
-        && !/\b(university|school|college|students?|tuition|scholarship|hostel)\b/i.test(normalizedQuery)) {
+        && !/\b(university|school|college|students?|tuition|scholarship|hostel)\b/i.test(normalizedQuery)
+        && !/\b(bank|banking|cheque|sbp|state bank)\b/i.test(normalizedQuery)) {
       domain = 'legal-aid';
       rewrittenQuery = 'legal aid DLAC free lawyer helpline 1099 1991 NGO ombudsman mohtasib Pakistan Bar Council eligibility pro bono Human Rights Cell affordability no fee';
     }
@@ -802,6 +856,11 @@ export class RAGEngine {
       && !/consumer.*(?:court|complaint|product|shop|goods|defective|seller)/i.test(normalizedQuery)
       && !/labour.*(?:wage|factory|worker|employ\w*|workplace|office|job|staff|company)/i.test(normalizedQuery)
       && !/\b(?:employ\w*|workplace|office|job|staff|company|factory|worker|wage|salary)\b/i.test(normalizedQuery)
+      // فیس is the Urdu word for ANY fee, and the script trigger below matches it
+      // without an education partner word, so a bank charge taken from an account
+      // was classified as education and answered from the HEC fee-refund policy.
+      // A query that names a bank is a banking question whichever fee it cites.
+      && !/\b(bank|banking|cheque|dishonou?r|SBP|State Bank)\b/i.test(normalizedQuery)
     ) {
       domain = 'education';
       const eduTerms = [];
@@ -841,7 +900,8 @@ export class RAGEngine {
     else if ((/\b(rights?|fundamental|constitution|article|liberty|education|equality|dignity|freedom|speech|religion|fair.?trial|due.?process|writ|habeas|mandamus|azadi|musawat|huqooq|aain|students?|university|school|degree|fee|scholarship|hostel)\b/i.test(normalizedQuery) || /(بنیادی\s*حقوق|حقوق|زندگی|آزادی|آئین|قانون|آرٹیکل|یونیورسٹی|فیس|تعلیم|اسکالرشپ)/.test(query))
         && (/\b(article|constitution|aain|fundamental|human rights)\b/i.test(normalizedQuery) || /(آئین|بنیادی\s*حقوق)/.test(query)
           || !(/\b(landlord|landlady|tenant|tenancy|rent|rental|premises|eviction|qaba|makan|kiraya|kiraye|kirayedar|malik)\b/i.test(normalizedQuery)
-            || /\b(husband|wife|biwi|khawand|shohar|spouse|khula|talaq|divorce|maintenance|nafqa|custody|hizanat|dowry|jahez|mehr|dower|iddat)\b/i.test(normalizedQuery)))) {
+            || /\b(husband|wife|biwi|khawand|shohar|spouse|khula|talaq|divorce|maintenance|nafqa|custody|hizanat|dowry|jahez|mehr|dower|iddat)\b/i.test(normalizedQuery)
+            || /\b(bank|banking|cheque|dishonou?r|SBP|State Bank)\b/i.test(normalizedQuery)))) {
       domain = 'rights';
       // Check for specific article numbers
       const artMatch = /\b(article|art)\s*(\d+[a-zA-Z]?)\b/i.exec(normalizedQuery);
@@ -998,7 +1058,8 @@ export class RAGEngine {
       rewrittenQuery = 'civil suit procedure CPC plaint summons written statement issues evidence judgment decree appeal revision execution Order injunction';
     }
     // Consumer
-    else if (/\b(consumer|defective|warranty|product|refund|complain|goods|service|purchase|khareed|nuqsan)\b/i.test(normalizedQuery)) {
+    else if (/\b(consumer|defective|warranty|product|refund|complain|goods|service|purchase|khareed|nuqsan)\b/i.test(normalizedQuery)
+        && !/\b(bank|banking|cheque|sbp|state bank)\b/i.test(normalizedQuery)) {
       domain = 'consumer';
       rewrittenQuery = 'consumer complaint defective goods services refund Consumer Protection Act Consumer Court procedure legal notice warranty';
     }
@@ -1063,6 +1124,17 @@ export class RAGEngine {
       const bankTerms = [];
       if (/cheque|dishonour|insufficient|489/i.test(normalizedQuery)) bankTerms.push('dishonour of cheque Section 489F PPC punishment banking law remedy');
       if (/bank|banking|SBP|State Bank/i.test(normalizedQuery)) bankTerms.push('banking law State Bank SBP regulation Banking Companies Ordinance');
+      // A dispute about money taken from the customer's own account is not a
+      // question about what a central bank does. Without this the corpus record
+      // that names the SBP's currency and monetary-policy functions outranked
+      // the records that speak to the customer's problem, and the answer to
+      // "the bank deducted my money and will not return it" described SBP's
+      // mandate. The complaint/remedy vocabulary below is the corpus's own
+      // (public offices names the Banking Mohtasib; banking laws name the
+      // Banking Court and depositor protection).
+      if (/deduct|debit|kaat|kat |kat\b|withdr|not (?:return|refund)|wapis|refund|reversal|unauthori[sz]ed|fraud/i.test(normalizedQuery)) {
+        bankTerms.push('wrongful deduction debit account refund reversal complaint Banking Mohtasib Banking Court dispute depositor protection');
+      }
       rewrittenQuery = bankTerms.length > 0 ? bankTerms.join(' ') : 'banking laws Pakistan bank cheque dishonour remedy SBP';
     }
     // Environmental laws
@@ -1369,6 +1441,20 @@ export class RAGEngine {
     const isComplaintIntent = /\b(complain|report|helpline|procedure|kahan|darj|file)\b/i.test(lowercaseQuery);
     if (domain === 'cyber' && !hasConcreteProvision && !isComplaintIntent && /\b(peca|cybercrime|act|law|section|stalk|harass\w*|bully|blackmail)\b/i.test(normalizedQuery)) {
       docBoostIds.push('peca_2016');
+    }
+    // Social-media identity abuse names no provision but is answered by the
+    // identity-information (s.13) and false-information/reputation (s.24)
+    // records. Without this, the semantic channel lifted an unrelated HEC
+    // faculty record to the top of a cyber-routed query.
+    if (domain === 'cyber' && /\b(fake|profile|identity|impersonat|social media|picture|photo|image)\b/i.test(normalizedQuery)) {
+      exactSectionKeys.push(
+        { key: '13', type: 'SECTION', docIds: ['peca_2016'] },
+        { key: '24', type: 'SECTION', docIds: ['peca_2016'] },
+        // Identity abuse is also a reportable offence: lift the corpus's own FIA
+        // complaint-channel record so the answer can name where to complain
+        // instead of stopping at the punishment clause.
+        { key: 'fia_complaint_procedure', type: 'SECTION' }
+      );
     }
 
     // Domain-scoped ranking: routed domains lift their own corpus documents so
@@ -1996,7 +2082,7 @@ export class RAGEngine {
       title: chunk.title,
       chunkTitle: chunk.chunkTitle,
       key: chunk.key,
-      court: chunk.issuingAuthority || null,
+      court: isSelfReferentialAuthority(chunk.issuingAuthority) ? null : (chunk.issuingAuthority || null),
       jurisdiction: chunk.jurisdiction || null,
       similarityScore: Number(score.toFixed(4)),
       vectorScore: Number(vectorScore.toFixed(4)),
@@ -2012,3 +2098,7 @@ export class RAGEngine {
     };
   }
 }
+
+// The shared language detector reads its everyday-content evidence from this
+// glossary, so detection and query normalisation stay one inventory.
+registerRomanGlossary(RAGEngine.ROMAN_URDU_MAP);

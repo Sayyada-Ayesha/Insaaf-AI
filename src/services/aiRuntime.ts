@@ -4,17 +4,23 @@ import { fillCourtLineTokens } from '../lib/courtLineTokens';
 import { getSettings } from '../lib/settings';
 import { resolveResponseLanguage } from '../lib/responseLanguage';
 import type { SupportedLanguage } from '../lib/i18n';
+import type { EvidenceVerdict } from './storage';
 
 let lastResponseSource: 'LIVE_AI' | 'OFFLINE_KNOWLEDGE' | 'ERROR' = 'LIVE_AI';
 export function getLastResponseSource() { return lastResponseSource; }
 
 function getBoundedLocalKnowledge(userQuery: string, preferredLanguage?: SupportedLanguage): string | null {
   const query = userQuery.toLowerCase();
-  
+
+  // A single shared word is not a topic match: "tenant" alone used to pull the whole
+  // tenancy digest under a "verified" banner, answering a question the app never
+  // actually resolved. Requiring two of the entry's own words keeps the digest for
+  // questions that genuinely name that subject.
   let content = "";
-  
+
   for (const entry of offlineKnowledge) {
-    if (entry.keywords.some(kw => query.includes(kw))) {
+    const matched = entry.keywords.filter(kw => query.includes(kw)).length;
+    if (matched >= 2) {
       content = entry.content;
       break;
     }
@@ -25,10 +31,14 @@ function getBoundedLocalKnowledge(userQuery: string, preferredLanguage?: Support
     // an Urdu-script preference resolves to Roman Urdu, exactly as the server's
     // resolveChatLanguage does for the composed answer.
     const roman = resolveResponseLanguage(preferredLanguage, userQuery) === 'roman_urdu';
-    const header = roman ? '[Tasdeeq Shuda Maloomat Ka Hawala]' : '[Verified Offline Knowledge Reference]';
-    const footer = roman ? '*Yeh jawab tasdeeq shuda kanooni maloomat se liya gaya hai.*' : '*This answer comes from the verified offline legal knowledge base.*';
+    const header = roman
+      ? '**⚠️ AAM MAALOOMAT — AAP KE KHAAS HALAAT KE LIYE TASDEEQ SHUDA NAHI**\n\n*Neeche di gayi baat app ke aam notes hai, is sawal ka verified record nahi. Koi bhi percentage, muddat, fee ya registration ka rule likha ho to woh soobe-khaas hai; har soobe ka qanoon alag hai, is liye amal se pehle apne sheher ke authority se tasdeeq karein.*\n\n'
+      : '**⚠️ GENERAL REFERENCE — NOT VERIFIED FOR YOUR CASE**\n\n*What follows is the app\'s built-in general notes, not a verified record answering this question. Any percentage, deadline, fee or registration requirement named below is province-specific; the laws differ by province, so confirm with the authority in your city before acting.*\n\n';
+    const footer = roman
+      ? '*Yeh tasdeeq shuda jawab nahi. Insaaf AI se dobara rabta kar ke apne soobe/shahar ka verified record maloom karein.*'
+      : '*This is not a verified answer. Reconnect to INSAaf AI to get the verified record for your province and city.*';
 
-    return `${header}\n\n${content}\n\n${footer}`;
+    return `${header}${content}\n\n${footer}`;
   }
 
   return null;
@@ -96,7 +106,7 @@ export async function* streamLegalAdvice(
         if (nonStreamingRes.ok) {
           const data = await nonStreamingRes.json();
           if (data && data.text) {
-            yield { chunk: data.text, isOffline: true };
+            yield { chunk: data.text, isOffline: true, ...(data.evidence ? { evidence: data.evidence } : {}) };
             return;
           }
         }
@@ -106,7 +116,9 @@ export async function* streamLegalAdvice(
 
       const fallback = mode ? null : getBoundedLocalKnowledge(userQuery, preferredLanguage);
       if (fallback) {
-        yield fallback;
+        // The digest is the browser's own general note, never a record answering this
+        // question, so it is reported as 'none' and badged as general guidance.
+        yield { chunk: fallback, isOffline: true, evidence: { verdict: 'none' } };
       } else {
         lastResponseSource = 'ERROR';
         yield { chunk: resolveResponseLanguage(preferredLanguage, userQuery) === 'roman_urdu'
@@ -160,7 +172,7 @@ export async function* streamLegalAdvice(
       if (nonStreamingRes.ok) {
         const data = await nonStreamingRes.json();
         if (data && data.text) {
-          yield { chunk: data.text, isOffline: true };
+          yield { chunk: data.text, isOffline: true, ...(data.evidence ? { evidence: data.evidence } : {}) };
           return;
         }
       }
@@ -170,7 +182,7 @@ export async function* streamLegalAdvice(
 
     const fallback = getBoundedLocalKnowledge(userQuery, preferredLanguage);
     if (fallback) {
-      yield fallback;
+      yield { chunk: fallback, isOffline: true, evidence: { verdict: 'none' } };
     } else {
       lastResponseSource = 'ERROR';
       yield { chunk: resolveResponseLanguage(preferredLanguage, userQuery) === 'roman_urdu'
@@ -614,7 +626,7 @@ export interface AgentStep {
 }
 
 export interface AgentEvidence {
-  verdict?: string;
+  verdict?: EvidenceVerdict;
   reasons?: string[];
   domain?: string;
   supportedCount?: number;

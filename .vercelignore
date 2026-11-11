@@ -1,0 +1,43 @@
+# Vercel build input filter. Everything here stays on this machine: it is either a
+# secret, a local backup, or an artifact that no runtime code reads.
+
+# Secrets — .env is never uploaded; Vercel supplies env vars in the project.
+.env
+.env.*
+!.env.example
+
+# Rollback checkpoints and operator backups.
+.checkpoint_*/
+backups/
+.build_prev/
+Temp/
+clrscr/
+artifacts/
+.server_*.log
+_p19.log
+_srv.log
+*.log
+
+# Downloaded source PDFs / scratch harvests (fetched locally, already ingested).
+_gcu_dl_*
+data/
+
+# Model weights, adapters and training outputs are never shipped.
+training/
+models/
+rag/training/
+
+# Superseded RAG index snapshots (~107 MB). Only the live indexes are read at
+# runtime; shipping backups would blow the 250 MB function bundle limit.
+rag/indexes/*.backup_*.json
+
+# Test harnesses, Puppeteer suites, internal reports and the thesis documents:
+# `npm run build` only needs src/, index.html, firebase-applet-config.json and
+# vite.config.ts.
+tests/
+audits/
+docs/
+
+# Local tooling state.
+.qoder/
+node_modules/

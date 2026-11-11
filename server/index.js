@@ -8,6 +8,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { execFile } from 'child_process';
 import { RAGEngine, parseOverseasIntent } from './ragEngine.js';
+import { detectWrittenLanguage } from './languageDetect.js';
 import { AIProviderFactory } from './aiProviders.js';
 import { composeOwnedModelAnswer, isLegalProblemQuery, askClarification, crossBorderNudge, displayTitle, isCorpusMetaLine, rankRecords, policyFamilyOrder, askedServiceSet, recordServiceSet, scopePoolToServices, recordSource, recordAuthority } from './ownedModel.js';
 import { detectQueryScope, deriveChunkScope } from './corpusScope.js';
@@ -26,10 +27,14 @@ import { buildAssignmentPack } from './assignmentTools.js';
 import { runLegalAgent, sanitizeAgentContext, deriveIntake } from './legalAgent.js';
 import { buildComplaintDraft, buildLawyerBrief } from './incidentDocuments.js';
 import { auditCitations, citationAdvisory } from './citationAudit.js';
-import { answerWithLora, loraEnabled, loraHealth, loraServiceConfigured } from './loraProvider.js';
+import { resolveEverydayIntent, everydayClarification, everydayUnverifiedNote } from './everydayIntent.js';
+import { normalizeHistory, resolveThread } from './conversationContext.js';
+import { answerWithModel, modelInferenceEnabled, modelInferenceConfigured, modelInferenceHealth } from './modelInferenceClient.js';
+import { getModelStatus, publicModelStatus } from './modelStatus.js';
 import { analyzeDocumentText, draftFromDocument, applyLocalEdit, explainDocumentType, INSAF_DOC_FOOTER, renderFullLegalDocument, composeDraftFromRequest, compareDocumentsLocal, getReadinessChecklist, assessDocumentReadability } from './docModel.js';
 import { renderUrduOfflineDocument } from './docUrdu.js';
 import { fillCourtLineTokens } from './courtLineTokens.js';
+import { asksForeignRule, foreignRuleSubject } from './askedJurisdiction.js';
 
 dotenv.config();
 
@@ -227,6 +232,20 @@ function gatePayload(retrieval) {
   };
 }
 
+/**
+ * The evidence object of a clarification, built from the gate's own payload rather
+ * than copied by hand. Each route used to write its own literal and each copy
+ * dropped `domain` — so a citizen asking "tenant ke sath masla hai" got a question
+ * back with no record of which subject the system was asking about, and nothing
+ * downstream (Library routing, the evaluator, the voice screen) could tell whether
+ * the right domain had even been routed.
+ */
+function clarifyEvidence(retrieval, extra = {}) {
+  const base = gatePayload(retrieval).evidence
+    || { verdict: 'clarify', reasons: [], domain: null, supportedCount: 0, rejected: 0 };
+  return { ...base, verdict: 'clarify', ...extra };
+}
+
 // With the owned-model runtime the chain is always empty, so this always rejects
 // and each caller composes its answer from the offline composer inside its catch
 // block. The rejection is the normal path; the catch is the renderer.
@@ -369,16 +388,16 @@ function toSourceMeta(chunks, domain, forQuery = null) {
   // civic document holds several services. Resolved per record, exactly as the
   // composer resolves the citation it prints, so an evidence card cannot show a
   // NADRA card URL under a DGIP passport excerpt.
-  const asked = forQuery ? askedServiceSet(forQuery) : null;
+  const asked = forQuery ? askedServiceSet(forQuery) : new Set();
   return (chunks || []).map(c => ({
     title: c.title,
-    authority: asked ? recordAuthority(c) : c.issuingAuthority,
+    authority: recordAuthority(c),
     jurisdiction: c.jurisdiction,
     type: c.type,
     key: c.key,
     legalStatus: c.legalStatus,
     version: c.version,
-    sourceURL: asked ? recordSource(c, asked) : c.sourceURL,
+    sourceURL: recordSource(c, asked),
     domain, // F14: powers "Open in INSAaf Library"
     text: c.text
   }));
@@ -535,8 +554,8 @@ function sectionNotFoundText(userQuery, activeLang) {
   const askedRef = (findProvisionRefs(userQuery)[0] || {}).raw || '';
   if (!askedRef) return null;
   return activeLang === 'roman_urdu'
-    ? `Aap ke pooche gaye hawale (${askedRef}) ki tasdeeq shuda tafseel verified law corpus mein nahi mili. Baraye meharbani number aur qanoon dobara check karein — maslan "Section 379 PPC" ya "Article 25 Constitution".`
-    : `A direct verified match for "${askedRef}" was not found in the verified law corpus. Please double-check the number and the law — for example "Section 379 PPC" or "Article 25 of the Constitution".`;
+    ? `Aap ke pooche gaye hawale (${askedRef}) ki tasdeeq shuda tafseel verified law corpus mein nahi mili. Baraye meharbani number aur qanoon dobara check karein — maslan "chori ki saza Pakistan Penal Code ke tahat" ya "aain ke tahat barabari ka haq".`
+    : `A direct verified match for "${askedRef}" was not found in the verified law corpus. Please double-check the number and the law — for example "punishment for theft under the Pakistan Penal Code" or "the right to equality under the Constitution".`;
 }
 
 // Legal / civic subjects a citizen actually asks about, in all three scripts. The
@@ -643,9 +662,47 @@ function offTopicAbstentionText(userQuery, activeLang, evidence) {
   const corpusSaysNoSupport = ev.domain === 'unknown' || reasons.some(r => OFF_TOPIC_REASONS.has(r));
   if (!corpusSaysNoSupport) return null;
   return activeLang === 'roman_urdu'
-    ? 'Aap ke sawal mein koi qanoon, dafa, adalat, haq ya civic mauzoo naam se zahir nahi hota, aur verified law corpus mein is sawal ka koi jawab mojood nahi hai — is liye yahan koi text ya hawala pesh nahi kiya ja raha. Qanooni madad ke liye apna sawal kisi qanoon, dafa, court ya haq ke hawale se poochein — maslan "Section 379 PPC" ya "kiralay ka ghar khali karwana".'
-    : 'This question names no statute, provision, court, right or civic subject, and the verified law corpus holds no record that answers it, so no text and no source is being presented as an answer. For legal help, ask with a law, section, court or right in the question — for example "Section 379 PPC" or "evicting a tenant".';
+    ? 'Aap ke sawal mein koi qanoon, dafa, adalat, haq ya civic mauzoo naam se zahir nahi hota, aur verified law corpus mein is sawal ka koi jawab mojood nahi hai — is liye yahan koi text ya hawala pesh nahi kiya ja raha. Qanooni madad ke liye apna sawal kisi qanoon, court ya haq ke hawale se poochein — maslan "chori ki saza Pakistan Penal Code ke tahat" ya "kiralay ka ghar khali karwana".'
+    : 'This question names no statute, provision, court, right or civic subject, and the verified law corpus holds no record that answers it, so no text and no source is being presented as an answer. For legal help, ask with a law, section, court or right in the question — for example "punishment for theft under the Pakistan Penal Code" or "evicting a tenant".';
 }
+
+/**
+ * The verified corpus carries Pakistani law and Pakistani civic procedure only.
+ * When the ask is another country's OWN rule ("the sentence for murder under
+ * Indian law", "the legal drinking age in California"), the best match in the
+ * corpus is a Pakistani provision about the same subject — which is a wrong
+ * answer wearing a "VERIFIED LEGAL REFERENCE" banner. This abstention is the
+ * only honest output, and it fires whatever the evidence gate scored.
+ */
+function foreignRuleAbstentionText(userQuery, activeLang) {
+  if (!asksForeignRule(userQuery)) return null;
+  const country = foreignRuleSubject(userQuery);
+  const isRoman = activeLang === 'roman_urdu';
+  const subject = isRoman
+    ? (country ? `Yeh sawal ${country} ke apne qanoon ke baare mein hai.` : 'Yeh sawal kisi aur mulk ke apne qanoon ke baare mein hai.')
+    : (country ? `This question asks what the law of ${country} itself provides.` : 'This question asks what the law of a country other than Pakistan provides.');
+  return isRoman
+    ? `${subject} INSAaf AI ka verified corpus sirf Pakistan ke qanoon aur Pakistani civic procedure par mabni records rakhta hai — is mein koi foreign statute, court faisla ya tax rule shamil nahi, is liye koi record yeh nahi bata sakta ke us mulk ka qanoon kya kehta hai. Yahan koi text ya hawala pesh nahi kiya ja raha. Us mulk ke qanoon ke liye us mulk ka official source ya wahan eligible wakeel dekhein. Agar is maslay ka koi Pakistani pehlu hai — Pakistan mein koi dastavez, adalat, ya shakhs — to woh batayein, main us hisse mein madad kar sakta hoon.`
+    : `${subject} INSAaf AI's verified corpus holds Pakistani law and Pakistani civic procedure only — no foreign statute, court decision or tax rule — so no record in it can state what that country's law provides, and nothing is being presented as an answer here. For that country's rule, use its official source or a lawyer qualified there. If your matter has a Pakistani side — a document, a forum or a person in Pakistan — describe that part and I can help with it.`;
+}
+
+/**
+ * The one decision every response branch consults before it composes anything:
+ * does this ask get an answer at all? An abstention beats a clarifying question
+ * (asking "which province?" implies a matching record exists) and beats the
+ * closest keyword-matched record (which would wear a verified banner).
+ */
+function abstentionFor(userQuery, activeLang, evidence, retrievedChunks) {
+  const topChunkScore = retrievedChunks && retrievedChunks.length > 0 ? (retrievedChunks[0].exactScore || 0) : 0;
+  const isSectionLookup = /\b(?:section|sec|article|art|dafa|دفعہ)\s*\.?\s*\d+/i.test(userQuery);
+  const sectionMiss = (isSectionLookup && topChunkScore < 8.0) ? sectionNotFoundText(userQuery, activeLang) : null;
+  return sectionMiss || offTopicAbstentionText(userQuery, activeLang, evidence)
+    || foreignRuleAbstentionText(userQuery, activeLang);
+}
+
+/** What a curated reply did, in the response contract's words: a refusal rule
+ * abstains, everything else (directory pointer, small talk) answers. */
+const curatedAction = (answer) => (answer && answer.kind === 'abstain' ? 'abstain' : 'answer');
 
 /**
  * Words that carry no legal subject at all — grammar, copulas, question verbs and
@@ -695,8 +752,17 @@ const SCOPE_WORD_RE = /[a-z]+|[\u0621-\u064A\u0671-\u06D3]+/g;
  * retrieval alone: outcome predictions, illegal-request refusals, lawyer
  * discovery, app usage, greetings, math and gibberish.
  * Returns { text, actions } or null when no curated rule applies.
+ *
+ * opts.safetyOnly — run only the safety rules (refusals, domestic violence,
+ * overseas emergency, invented citation) and stop before the pointer rules.
+ * A caller that still has to ask a clarifying question must not let a pointer
+ * answer first, but must still refuse an unlawful request immediately.
+ * opts.legalSituation — the caller already identified a concrete citizen
+ * dispute, so the lawyer / legal-aid directory pointers stand down. A named
+ * problem ("university fees refund nahi kar rahi") is not a request for a
+ * directory, even though it contains a word the pointer rules look for.
  */
-function curatedOfflineAnswer(userQuery, activeLang) {
+function curatedOfflineAnswer(userQuery, activeLang, opts = {}) {
   const q = (userQuery || '').toLowerCase().trim();
   const isRoman = activeLang === 'roman_urdu';
 
@@ -707,6 +773,7 @@ function curatedOfflineAnswer(userQuery, activeLang) {
     && /\b(win|winning|jeet\w*|result|outcome|faisla|natija|success)\b/i.test(q);
   if (/\b(100%|pakka|jeetne|jeet|win my case|win the case|will i win|result batao|outcome batao|case ka faisla|faisla kya hoga)\b/i.test(q) || asksOutcomeGuarantee) {
     return {
+      kind: 'abstain',
       text: isRoman
         ? 'Koi bhi wakil ya app pehle se nahi bata sakta ke case ka result kya hoga. Faisla hamesha adalat ka hota hai aur woh saboot, gawahi aur haalat par depend karta hai. Main aap ko sirf mutalqa qanooni dafa aur procedure bata sakta hoon. Mera mashwara: apne saboot mehfooz karein aur registered wakil se raabta karein.'
         : 'No lawyer or app can predict the outcome of a case. The result always depends on the evidence, witnesses and the court. I can tell you the law that may apply and the procedure to follow — but not whether you will win. My advice: preserve your evidence and consult a registered advocate.',
@@ -721,7 +788,28 @@ function curatedOfflineAnswer(userQuery, activeLang) {
   // when the qualifier and the artefact are not one contiguous phrase (e.g.
   // "fake FIR document", "draft a fake Supreme Court judgment").
   const fabricatedArtefact = /\b(?:fake|false|fabricated?|forged|counterfeit|banawati|jaali|jhoot(?:a|i|e)?|jhooth(?:a|i|e)?)\s+(?:[a-z']+\s+){0,3}?(?:f\.?i\.?r\.?|report|judgment|judgement|decree|court[- ]?order|order|certificate|document|dastavez|deed|nikah[- ]?nama|contract|affidavit|statement|bayan|signature|dastakhat|stamp[- ]?paper|case|evidence|gawahi)\b/i.test(q);
-  const illegalIntent = fabricatedArtefact || /\b(fake case|jhoota case|false case|fake evidence|false evidence|fabricated? evidence|jhooti gawahi|jhoothi gawahi|jhoota bayan|false statement|fake statement|perjury|falsif(?:y|ication)|tamper(?:ing)? (?:with )?evidence|forge|forged|forgery|bribe|rishwat|pay off|influence the judge|threatening letter|dhamki dena|blackmail karna|jaali dastavez|jaali evidence|fake document)\b/i.test(q);
+  // Taking over a device, network or account that is not yours is an offence in
+  // its own right, so an ask to do it is refused like a fabrication. Both word
+  // orders are matched: "hack my neighbour's wifi" and "wifi hack karo".
+  const asksUnauthorizedAccess = /\b(hack\w*|crack(?:ed|ing)?|break\s+into|bypass\w*|unauthoriz(?:ed|e)|unauthoris(?:ed|e)|steal(?:ing|s)?|churana|chura\w*|gisalna)\b[^.?;\n]{0,40}?\b(wi-?fi|internet|router|modem|password|pin|otp|account|e-?mail|phone|mobile|laptop|computer|sim|instagram|whatsapp|facebook|tiktok)\b/i.test(q)
+    || /\b(wi-?fi|internet|router|modem|password|pin|otp|account|e-?mail|phone|mobile|laptop|computer|sim|instagram|whatsapp|facebook|tiktok)\b[^.?;\n]{0,40}?\b(hack\w*|crack\w*|churana|bina\s+ijazat|without\s+(?:my|their|the\s+owner'?s?)\s+(?:permission|consent|ijazat))\b/i.test(q);
+  const illegalIntent = fabricatedArtefact || asksUnauthorizedAccess || /\b(fake case|jhoota case|false case|fake evidence|false evidence|fabricated? evidence|jhooti gawahi|jhoothi gawahi|jhoota bayan|false statement|fake statement|perjury|falsif(?:y|ication)|tamper(?:ing)? (?:with )?evidence|forge|forged|forgery|bribe|rishwat|pay off|influence the judge|threatening letter|dhamki dena|blackmail karna|jaali dastavez|jaali evidence|fake document)\b/i.test(q);
+  // "Someone hacked my WhatsApp" is a victim reporting a crime, not an ask to
+  // commit one: a past or passive marker on the speaker's own system keeps the
+  // unauthorised-access class silent. Fabrication asks are unaffected.
+  const reportsOwnHack = /\b(was|were|had|got|is|hai)\s+(hack|crack|steal|chhupa)\w*|\bhack(ed)?\s+(my|meri|mera|hisaab)|\b(meri|mera|my)\s+(wi-?fi|password|account|phone|sim|email)\b[^.?;]{0,30}?\b(hack\w*|chori|chur|gisla|stolen|kisi\s+ne|ho\s+gay)\b/i.test(q);
+  // "Kisi ne hack kar liya" / "was hacked" describes something that ALREADY
+  // HAPPENED TO THE SPEAKER, so it is a crime report, not an instruction. The
+  // completed-event or unnamed-perpetrator marker has to accompany the access
+  // verb; a bare "how do I hack" carries no such marker and stays refused.
+  const reportsCompletedHack = (/\b(was|were|got|had|ho\s*(?:gaya|gya|diya|liya)|kar\s*(?:liya|diya|diya)|kisi\s+(?:ne|aur\s+ne)|by\s+someone|someone\s+els\w*|chura\s*(?:liya|diya))\b/i.test(q))
+    && (/\b(hack|crack|steal|chur|gisal)\w*|\bstolen\b|\bchori\b/i.test(q));
+  // "hack MY wifi" and "hack my NEIGHBOUR's wifi" both contain "hack my", so the
+  // veto above cannot tell a victim report from a targeted ask. What decides it is
+  // whether the system named is owned by somebody else: a possessor (English
+  // possessive or Roman-Urdu ka/ki/ke) bound to a target system means the speaker
+  // is asking to break into a third party's device, which no victim reading covers.
+  const thirdPartyOwnedTarget = /\b(neighbou?r|neighbou?rs|pados(?:an|i|hi|ni)|dost|friend|friends?|colleague|classmate|roommate|bhai|behin|boss|teacher|uska|uske|iske|unka|her|his|their)\b[^.?;\n]{0,12}?\b(wi-?fi|internet|router|modem|password|pin|otp|account|e-?mail|phone|mobile|laptop|computer|sim|instagram|whatsapp|facebook|tiktok)\b/i.test(q);
   const actionAsk = /\b(how to|how can i|how do i|tell me how|write|draft|create|prepare|make|produce|generate|likh|banana|banayein|banani|banao|bana|taiyar|karna|karun|karo|dena|chahiye)\b/i.test(q);
   const wantsToReport = /\b(report|complain|shikayat)\b/i.test(q);
   // Never refuse a VICTIM/defendant who wants to cancel, quash, withdraw, defend
@@ -729,8 +817,19 @@ function curatedOfflineAnswer(userQuery, activeLang) {
   // not a request to fabricate. Deliberately EXCLUDES the broad "against my" so a
   // perpetrator ("file a fake case against my enemy") is still refused.
   const victimContext = /\b(against me|filed against|lodged against|registered against|khilaf|mere khilaf|cancel|quash|withdraw|defend|defen[cs]e|protect|bachna|bachao|victim|framed|phasaya|jhoote case mein)\b/i.test(q);
-  if (illegalIntent && actionAsk && !wantsToReport && !victimContext) {
+  if (illegalIntent && (actionAsk || asksUnauthorizedAccess) && !wantsToReport && !victimContext
+    && !(asksUnauthorizedAccess && (reportsOwnHack || reportsCompletedHack) && !thirdPartyOwnedTarget)) {
+    if (asksUnauthorizedAccess && !fabricatedArtefact) {
+      return {
+        kind: 'abstain',
+        text: isRoman
+          ? 'Main kisi aur ke Wi-Fi, router, account, email ya phone tak bina ijazat pohanchne ka tareeqa nahi bata sakta — doosre ke system mein bina ijazat dakhla khud jurm hai aur is par saza ho sakti hai. Agar aap ka apna account, number ya device kisi ne haasil kar liya hai, ya aap ko shak hai ke koi aap ka internet istemal kar raha hai, to yeh report karne layak baat hai — taareekh aur saboot ke saath batayein, main FIA Cybercrime Wing mein shikayat ka tareeqa aur qanooni raasta bata sakta hoon.'
+          : 'I will not explain how to get into someone else\'s Wi-Fi, router, account, email or phone. Accessing a system that is not yours without authorisation is itself a criminal offence and can be punished. If it is YOUR account, number or device that someone took over, or you suspect another person is using your connection, that is a matter to report: tell me what happened and when, and I will explain how to complain to the FIA Cybercrime Wing and what the law provides.',
+        actions: []
+      };
+    }
     return {
+      kind: 'abstain',
       text: isRoman
         ? 'Main sirf jaiz qanooni tareeqay se madad kar sakta hoon. Jaali case banana, jaali FIR ya jaali qanooni/adalti dastavez tayar karna, jaali evidence ya jhooti gawahi dena, rishwat dena ya dhamki dena khud jurm hai aur PPC ke tahet saza ka sabab ban sakta hai. Agar aap ke saath nainsafi hui hai — maslan aap par jaali case ya FIR banai gayi hai — to mujhe apna masla batayein, main aap ko jaiz qanooni raasta (defence/quash/report) bataunga.'
         : 'I can only help through lawful means. Fabricating a case, forging a fake FIR or a fake legal/court document, creating false evidence or a false statement, bribing anyone, or writing threats are themselves criminal offences under the PPC and can lead to prosecution. If you have been wronged — for example a fake case or FIR was made against you — describe what happened and I will explain the legitimate legal path (defence, quashment or reporting).',
@@ -749,7 +848,7 @@ function curatedOfflineAnswer(userQuery, activeLang) {
     || /\bpretend\b[\s\S]{0,25}?\byou\s+have\s+no\b/i.test(q)
     || /\b(pretend|act)\s+(to\s+be|as\s+(if\s+)?you)\b[\s\S]{0,40}?\b(no\s+rules|unrestricted|without\s+(any\s+)?restrictions|have\s+no\s+limits)\b/i.test(q);
   const exfilVerb = /\b(reveal|show|print|display|output|dump|leak|repeat|paste|share|send|expose|give|provide|disclose|hand\s+over|tell\s+me|bhejo|bata(?:o|en|ein)?|dikha(?:o|en|ein)?)\b/i.test(q);
-  const assistantArtifact = /\b(system\s+prompt|hidden\s+(?:prompts?|instructions?|rules?|messages?)|developer\s+(?:prompts?|messages?)|initial\s+prompt|your\s+(?:original|initial|secret|real|underlying|actual)\s+(?:instructions?|prompts?|rules?)|internal\s+(?:instructions?|prompts?|config(?:uration)?|settings?|ends?|logs?)|apna\s+(?:system\s+)?prompt|apni\s+instructions)\b/i.test(q)
+  const assistantArtifact = /\b(system\s+prompt|system\s+instructions?|system\s+rules?|hidden\s+(?:prompts?|instructions?|rules?|messages?)|developer\s+(?:prompts?|messages?)|initial\s+prompt|your\s+(?:original|initial|secret|real|underlying|actual)\s+(?:instructions?|prompts?|rules?)|internal\s+(?:instructions?|prompts?|config(?:uration)?|settings?|ends?|logs?)|apna\s+(?:system\s+)?prompt|apni\s+instructions)\b/i.test(q)
     || /\b(your|aap\s+ka|aap\s+ki|apni|apna|internal|backend|server|this\s+app(?:'s)?)\s+(?:the\s+)?(api[\s_-]?keys?|secret[\s_-]?keys?|access[\s_-]?tokens?|bearer[\s_-]?tokens?|private[\s_-]?keys?|credentials?|secrets?)\b/i.test(q)
     || /\b(service\s+account|firebase\s+(?:api|service|credentials?)|google\s+service\s+account)\b[\s\S]{0,40}?\b(credentials?|keys?|tokens?|json|secret)\b/i.test(q)
     || /\b(secret\s+(?:phrase|word|handshake|question)|what\s+is\s+your\s+secret)\b/i.test(q)
@@ -763,7 +862,7 @@ function curatedOfflineAnswer(userQuery, activeLang) {
   // A question can ask for the same internals without using an exfiltration
   // verb ("what is the secret handshake of this assistant"). Refuse only when
   // the artifact is unambiguously assistant-side AND anchored to the assistant.
-  const strongInternalArtifact = /\b(system\s+prompt|hidden\s+(?:prompts?|instructions?|rules?|messages?)|raw\s+prompt|system\s+message|secret\s+(?:phrase|word|handshake)|debug\s+logs?|backend\s+logs?|service\s+account|api[\s_-]?keys?)\b/i.test(q)
+  const strongInternalArtifact = /\b(system\s+prompt|system\s+instructions?|system\s+rules?|hidden\s+(?:prompts?|instructions?|rules?|messages?)|raw\s+prompt|system\s+message|secret\s+(?:phrase|word|handshake)|debug\s+logs?|backend\s+logs?|service\s+account|api[\s_-]?keys?)\b/i.test(q)
     && /\b(your|aap\b|aap\s+k[a-i]|apn[ai]|yeh|this|assistant|chatbot|bot|ai|model|app|backend|server|internal|firebase|inaaf|insaaf)\b/i.test(q);
   // Urdu script is a separate writing system — the Latin patterns above can
   // never see it, so the same internals are matched in Urdu directly.
@@ -771,6 +870,7 @@ function curatedOfflineAnswer(userQuery, activeLang) {
   const urduRequestVerb = /(?:دکھ|بت|بھیج|کھول|چاپ|نکال)|دی?\s*(?:جئیے|یں)|مل\s*جائ/i.test(q);
   if ((overrideAttempt || (exfilVerb && assistantArtifact) || strongInternalArtifact || (urduInternalArtifact && urduRequestVerb)) && !aboutUsersOwnCredential) {
     return {
+      kind: 'abstain',
       text: isRoman
         ? 'Main apni internal instructions, system prompt, API keys ya koi bhi confidential configuration nahi dikha sakta — yeh sawal qanoonsi maloomat se related nahi hai. Lekin agar aap ka masla haqeeqat mein kisi ke apne password, OTP ya account ki chori/khurdaat se related ho (maslan online fraud), to woh PPC aur Prevention of Electronic Crimes Act 2016 ke tahet jurm hai aur main us qanoon aur report karne ke tareeqay mein madad kar sakta hoon.'
         : 'I cannot share my internal instructions, system prompt, API keys or any backend configuration — that is not a legal question and the information is not available through this app. If your actual concern is about someone else taking a password, OTP or account (online fraud), that is an offence under the Prevention of Electronic Crimes Act 2016 and the PPC — describe what happened and I will explain the law and how to report it.',
@@ -841,12 +941,19 @@ function curatedOfflineAnswer(userQuery, activeLang) {
   const randomCitationIntent = /\b(random|any random|make up|invent|fabricate|banao|banana|koi bhi (?:ek )?hawala|koi random)\b/i.test(q);
   if (citationWord && randomCitationIntent) {
     return {
+      kind: 'abstain',
       text: isRoman
         ? 'Main koi case citation nahi banaunga — aik banaya hua ya "random" hawala aap ki qanooni daleel ko gumrah kar sakta hai, is liye main andaaze se hawala nahi doonga. Asli Pakistani hawalaat sirf verified law reports (PLD, SCMR, CLC, MLR, PLJ) aur Supreme Court / High Court portals se milte hain. Mujhe apna qanooni masla aur mutalqa qanoon ya dafa batayein — main aap ko Library mein verified case-law sources ki taraf le jaunga, bajaye koi hawala banane ke.'
         : 'I will not invent a case citation — a made-up or "random" citation can seriously mislead a legal argument, so I will not guess one. Genuine Pakistani citations come only from verified law reports (PLD, SCMR, CLC, MLR, PLJ) and the Supreme Court / High Court portals. Tell me the legal issue and the relevant law or section, and I will point you to the verified case-law sources in the Library instead of fabricating a reference.',
       actions: ['library']
     };
   }
+
+  // Everything above is a safety rule: it refuses an unlawful or unhedgable ask,
+  // or routes a person in danger. A caller that has not yet established WHAT the
+  // dispute is checks only these, so an illegal request is still refused before
+  // any clarifying question is asked.
+  if (opts.safetyOnly) return null;
 
   // 3. Lawyer discovery pointer — direct to the verified in-app directory.
   // Guard (Part T): a structured "explain this legal document type" request (or
@@ -870,7 +977,7 @@ function curatedOfflineAnswer(userQuery, activeLang) {
   const lawyerContext = /\b(?:lawyer|wakil|vakeel|wakeel|advocate|attorney|barrister|fees|legal\s+(?:aid|help|advice|service|assistance))\b/i.test(q);
   const cannotAffordLawyer = wantsFreeLawyer || (cannotAfford && lawyerContext) || /(?:lawyer|wakil|vakeel|advocate|attorney)\s+(?:ki\s+)?fees\s+(?:nahi|pay nahi|afford nahi|inteza?am nahi|bhar nahi)/i.test(q);
 
-  if (!cannotAffordLawyer && /\b(lawyer|wakil|vakeel|advocate|attorney|barrister)\b/i.test(q) && /\b(need|chahiye|find|dhoond|locate|search|recommend|kahan|where|koi|in [a-z]+)\b/i.test(q)) {
+  if (!opts.legalSituation && !cannotAffordLawyer && /\b(lawyer|wakil|vakeel|advocate|attorney|barrister)\b/i.test(q) && /\b(need|chahiye|find|dhoond|locate|search|recommend|kahan|where|koi|in [a-z]+)\b/i.test(q)) {
     return {
       text: isRoman
         ? 'Tasdeeq shuda wakilon ki directory app ke Legal Aid & Vakeel Directory section mein mojood hai — shehar aur specialization ke mutabiq search karein. Main khud kisi khaas wakil ki sifarish nahi karta. Directory mein bar council ki detail ke saath profiles hain.'
@@ -885,7 +992,7 @@ function curatedOfflineAnswer(userQuery, activeLang) {
   // real legal problem that merely mentions "emergency"/"help" is never mis-routed.
   const wantsLegalAidDir = /\b(legal aid|free legal (?:help|aid|advice|service|assistance)|muft (?:qanooni )?(?:madad|wakeel|legal aid|advice)|ngo|non-?government(?:al)? (?:organization|org)|pro bono)\b/i.test(q);
   const legalAidDirIntent = /\b(need|chahiye|find|dhoond|locate|search|where|kahan|koi|get|contact|raabta|recommend|list|available)\b/i.test(q);
-  if ((wantsLegalAidDir && legalAidDirIntent) || cannotAffordLawyer) {
+  if (!opts.legalSituation && ((wantsLegalAidDir && legalAidDirIntent) || cannotAffordLawyer)) {
     return {
       text: isRoman
         ? 'Muft qanooni madad, legal aid organizations aur NGOs ki verified directory app ke Legal Aid & NGOs section mein mojood hai — shehar ke mutabiq organization ka contact dekhein. Main khud kisi khaas NGO ki sifarish nahi karta, lekin directory mein verified idaray mojood hain.'
@@ -1047,9 +1154,13 @@ function generalLifeAnswer(userQuery, activeLang) {
   // A. CURRENT / TIME-SENSITIVE data — never invent live facts.
   const isCurrentData = /\b(market price|market rate|aaj ka|today'?s (price|rate)|current (price|rate)|live (price|rate|score)|gold (rate|price)|silver (rate|price)|sona|chandi|dollar|exchange rate|currency rate|forex|petrol|diesel|fuel price|cng price|weather|temperature|mausam|barish|cricket|match score|live score|election result|latest news|aaj ki khabar|bitcoin|crypto|share (price|market)|stock (price|market))\b/i.test(q)
     || /(kitna|kya|kitni)\s+(rate|price|bhao|qeemat)\b/i.test(q)
-    || /\b(aaj|today|right now|abhi)\b.*\b(price|rate|bhao|qeemat|score|weather|mausam)\b/i.test(q);
+    || /\b(aaj|today|right now|abhi)\b.*\b(price|rate|bhao|qeemat|score|weather|mausam)\b/i.test(q)
+    // Urdu script is a separate writing system: \b cannot bound these words, so
+    // the same classes are matched as plain substrings.
+    || /(موسم|درجہ حرارت|سونے|چاندی|ریٹ|قیمت|بھاؤ|ڈالر|زر مبادلہ|پٹرول|ڈیزل|کرکٹ|میچ|اسکور|الیکشن کا نتیجہ|خبر|تازہ)/.test(q);
   if (isCurrentData && !wantsLegalRoute) {
     return {
+      kind: 'abstain',
       text: isRoman
         ? 'Yeh aik waqt-haasil (real-time) maloomat hai — maslan aaj ka rate, qeemat, mausam ya score. Mere paas live data feed nahi hai, is liye main sahih mojooda qeemat nahi bata sakta aur main jaan-boojh kar galat number nahi banaunga. Baraye meharbani mutalqa live source — jaise utility/market ki official website, bank, ya news service — se tasdeeq karein. Agar is mein koi qanooni pehlu ho (maslan over-billing ya consumer ka masla), to mujhe batayein — main aap ko qanooni raasta bata sakta hoon.'
         : 'This is real-time information (for example a current rate, price, weather or score). I do not have a live data feed, so I cannot give you an accurate current value — and I will not invent one. Please verify it from the relevant live source such as the official utility/market website, your bank, or a news service. If there is a legal angle to it (for example over-billing or a consumer dispute), tell me and I can explain your legal options.',
@@ -1259,10 +1370,18 @@ function validateChatInput(body) {
       return `history exceeds maximum of ${MAX_HISTORY_ITEMS} items.`;
     }
     for (const item of body.history) {
-      if (!item || typeof item !== 'object' || typeof item.text !== 'string') {
-        return 'history items must be objects with a string text field.';
+      // Two clients, two field names: /chat posts {role,text}, the Legal Agent and
+      // the document editor post {role,content}. Rejecting the second shape made a
+      // follow-up turn a hard 400 for a real user of the app.
+      if (!item || typeof item !== 'object') {
+        return 'history items must be objects with a string text or content field.';
       }
-      if (item.text.length > MAX_HISTORY_ITEM_LENGTH) {
+      const length = typeof item.text === 'string' ? item.text.length
+        : typeof item.content === 'string' ? item.content.length : null;
+      if (length === null) {
+        return 'history items must be objects with a string text or content field.';
+      }
+      if (length > MAX_HISTORY_ITEM_LENGTH) {
         return `history item exceeds maximum length of ${MAX_HISTORY_ITEM_LENGTH} characters.`;
       }
     }
@@ -1354,17 +1473,14 @@ function detectLanguage(text) {
   const q = String(text || '');
   if (/[\u0600-\u06FF]/.test(q)) return 'roman_urdu';
 
-  // Roman verb-composites ("kar do", "badal den") are unambiguous Roman Urdu but
-  // carry none of the words below, so a short editing instruction like
-  // "amount 500,000 ko 750,000 kar do" was detected as English.
-  const strongPhrases = /\b(kya hai|kya ho|kya tha|mera hai|meri hai|mujhe bataen|bataen ke|kaise ho|kaise hai|kya karen|kya karun|kahan hai|kab hai|kaun hai|kaun tha|kitna hai|kitni hai|nahi hai|nhi hai|theek hai|achha hai|koi baat|sab kuch|kuch bhi|mera masla|meri masla|kar\s*(?:do|den|de|diya|dijiye|na\s*hai)|badal\s*(?:do|den|de|diya)|ho\s*jaaye|ho\s*gaya|kar\s*sakta|likh\s*(?:do|den|de)|hata\s*(?:do|den|de)|nikaal\s*(?:do|den|de)|bana\s*(?:do|den|de))\b/i;
-  if (strongPhrases.test(q)) return 'roman_urdu';
-
-  const distinctiveWords = /\b(kya|hai|hein|hain|bataen|batayein|bataein|batao|batana|masla|mamla|muqadma|mera|meri|apna|apni|mujhe|zaroori|zaroor|tareeqa|kaise|kyun|kyunki|karen|karun|karoon|karo|kar|ko|karunga|karoonga|karega|karegi|loon|lunga|lungi|doonga|dena|leena|kahan|kab|kabhi|kahin|kaun|kon|lekin|magar|mein|par|bhi|koi|kisi|kisne|sab|kuch|nahi|nhi|haan|ji|theek|achha|acha|agar|aur|liye|saath|wala|wali|raha|rahi|sakta|sakti|hoga|hona|hoti|jaunga|jaungi|jeet|jeetna|haara|pakka|soch|samajh|chahta|chahti|chahiye|chahye|wakeel|vakeel|adalat|shikayat|bilkul|thaka|pareshan|yaken|yaqeen|dastavez|vakalatnama|nikah|talaq|khula|nafqa|iddat|hizanat|kiraya|malik|qabze|qanoon|haq|saza|jurm|chori|dhoka|bhej|bulaya|bula|aya|gaya|jao|jaoonga)\b/gi;
-  const matches = q.match(distinctiveWords);
-  if (matches && matches.length >= 2) return 'roman_urdu';
-
-  return 'en';
+  // P0 — prose language is decided by ONE detector for the whole product
+  // (server/languageDetect.js). This function used to count its own hand-listed
+  // cue words while ragEngine.processQuery counted a different list, so a plain
+  // Roman Urdu ask — "office ne salary rok di", "saman kharab nikla", "mere
+  // huqooq maar diye ja rahe hain" — cleared neither count and was answered in
+  // English. The shared classifier scores Urdu grammar against English grammar
+  // instead of counting one fixed inventory.
+  return detectWrittenLanguage(q) === 'en' ? 'en' : 'roman_urdu';
 }
 
 /**
@@ -1544,25 +1660,39 @@ function isSignedInRequest(req) {
   return !!(req.headers.authorization && req.headers.authorization.startsWith('Bearer '));
 }
 
-// Reports the real state of the optional LoRA inference provider: whether it is
-// enabled, whether the service is reachable and whether it really has the
-// adapter loaded. It never claims a loaded model the service did not report.
+// Reports the real state of the selected model transport (deterministic composer,
+// Cloudflare Workers AI, Hugging Face ZeroGPU Space, or the private LoRA service):
+// whether it is enabled, whether it is configured and what the transport actually
+// reports. Workers AI is serverless, so it never claims a loaded model; it reports
+// `modelAvailable` from a real, quota-free account probe. `?probe=1` performs it.
 app.get('/api/ai/lora-status', async (req, res) => {
-  const health = await loraHealth();
+  const health = await modelInferenceHealth({ probe: req.query.probe === '1' });
   res.json({
-    enabled: loraEnabled(),
-    serviceConfigured: loraServiceConfigured(),
+    enabled: modelInferenceEnabled(),
+    serviceConfigured: modelInferenceConfigured(),
     ...health
   });
 });
 
 app.get('/api/ai/health', async (req, res) => {
+  // Phase 1.5 — the model fields below are MEASURED (files on disk, the OS, the
+  // inference service's own report). `ownedModelPrimary` is a routing fact about
+  // which chain is selected; it is deliberately accompanied by what actually
+  // generated the text, so a fine-tuned model can never be implied by a name in
+  // the environment.
+  const model = await getModelStatus();
   const publicStatus = {
     status: 'ok',
-    // Part C/AE: with the owned model primary the online chain is empty and RAG
-    // retrieval is local, so normal legal answers make NO external LLM call.
-    runtimeExternalLLMCalls: 'NONE',
+    // Part C/AE: with only the deterministic composer, RAG retrieval is local and
+    // normal legal answers make NO external LLM call. An enabled hosted provider
+    // (Cloudflare Workers AI / the HF Space / the LoRA service) changes that, so
+    // this field reports the routing fact instead of a constant.
+    runtimeExternalLLMCalls: modelInferenceEnabled() ? 'ENABLED_FOR_LEGAL_ANSWERS' : 'NONE',
     ownedModelPrimary: isOwnedModelPrimary ? 'YES' : 'NO',
+    // The routing fact above says which chain is selected; these say what
+    // actually generated the text (a deterministic composer, not trained weights).
+    fineTunedModelInUse: model.fineTunedModelInUse,
+    ...publicModelStatus(model),
     ragIndexLoaded: fs.existsSync(path.join(RAG_ROOT, 'indexes', 'rag_index.json')) ? 'YES' : 'NO',
     ragDocumentsCount: fs.existsSync(path.join(RAG_ROOT, 'manifest.json')) ? JSON.parse(fs.readFileSync(path.join(RAG_ROOT, 'manifest.json'), 'utf8')).documents.length : 0,
     // Corrective-RAG quality-control layer (Parts 1-2): counts since boot.
@@ -1577,12 +1707,25 @@ app.get('/api/ai/health', async (req, res) => {
   if (!isSignedInRequest(req)) {
     return res.json(publicStatus);
   }
+  // The full picture carries absolute paths and a host inventory (RAM, GPU,
+  // python). `isSignedInRequest` only checks that a bearer header is present, so
+  // that tier is not a trust boundary — the operator has to ask for the details.
+  const verboseHealth = process.env.INSAF_HEALTH_VERBOSE === '1';
   res.json({
     ...publicStatus,
     activeProvider: (process.env.AI_PROVIDER || 'insaaf').toLowerCase().trim(),
     activeModel: aiProvider.getModelName(),
     ragEmbeddingMode: 'local-embedder',
-    configurationFile: 'server/aiProviders.js'
+    configurationFile: 'server/aiProviders.js',
+    ...(verboseHealth
+      // Adapter inventory with byte sizes and parameter counts, base-weight cache
+      // state, host RAM/GPU/PyTorch probes, the inference test, every unmet
+      // requirement.
+      ? { fineTunedModel: model }
+      : {
+        modelDetail: 'redacted — set INSAF_HEALTH_VERBOSE=1 to include the adapter inventory, '
+          + 'base-weight state and host requirements in this response',
+      }),
   });
 });
 
@@ -1744,7 +1887,11 @@ app.post('/api/ai/chat', rateLimiterMiddleware, asyncRoute(async (req, res) => {
   if (validationError) {
     return res.status(400).json({ error: validationError });
   }
-  const { userQuery, history = [], preferredLanguage, responseDetail } = req.body;
+  const { userQuery, history: rawHistory = [], preferredLanguage, responseDetail } = req.body;
+  // One thread shape for every client. `askLegalAgent` and the document editor post
+  // {role:'assistant', content}, the chat posts {role:'model', text}; both are the
+  // product's own, and each used to lose the other's facts.
+  const history = normalizeHistory(rawHistory);
   // Part 4: answer level (beginner | intermediate | advanced). It controls only
   // HOW an answer is explained — never which records count as evidence.
   const answerLevel = normalizeAnswerLevel(req.body.answerLevel);
@@ -1823,26 +1970,49 @@ app.post('/api/ai/chat', rateLimiterMiddleware, asyncRoute(async (req, res) => {
   if (diAction) {
     const analysis = analyzeDocumentText(diAction.text, '', { preferredLanguage: activeLang });
     const formatted = formatDocIntelligenceResponse(diAction.action, analysis, activeLang);
-    res.write(`data: ${JSON.stringify({ chunk: formatted, isOffline: true })}\n\n`);
+    res.write(`data: ${JSON.stringify({ chunk: formatted, isOffline: true, action: 'answer' })}\n\n`);
     res.write('data: [DONE]\n\n');
     res.end();
     return;
   }
 
-  // Curated answers first: safety refusals, directory/app pointers and small
-  // talk are answered instantly from verified app knowledge — no provider call
-  // and no keyword retrieval noise.
-  const curatedAnswer = curatedOfflineAnswer(userQuery, activeLang);
+  // Safety refusals win over everything below: an unlawful ask or a person in
+  // danger is answered before the system worries about what the dispute is.
+  const safetyAnswer = curatedOfflineAnswer(userQuery, activeLang, { safetyOnly: true });
+  if (safetyAnswer) {
+    res.write(`data: ${JSON.stringify({ chunk: safetyAnswer.text, isOffline: true, action: curatedAction(safetyAnswer) })}\n\n`);
+    res.write('data: [DONE]\n\n');
+    res.end();
+    return;
+  }
+
+  // Everyday-situation resolution (Rule 2). Retrieval matches words, so
+  // "tenant … paise … wapis" (someone owes the tenant) and "tenant … rent nahi
+  // de raha" (the tenant owes money) look alike while they are opposite cases.
+  // When the direction cannot be told from the words, the honest answer is the
+  // ONE question that decides it — never a generic rent-law list.
+  const thread = resolveThread(userQuery, history);
+  const everyday = resolveEverydayIntent(userQuery, thread.priorUser, thread.priorModel);
+  const everydayAsk = everydayClarification(everyday, activeLang);
+
+  // Curated answers next: directory/app pointers and small talk are answered
+  // instantly from verified app knowledge — no provider call and no keyword
+  // retrieval noise. A resolved everyday dispute is NOT a directory request, so
+  // the pointer rules stand down when the citizen has named an actual problem.
+  const curatedAnswer = curatedOfflineAnswer(userQuery, activeLang, { legalSituation: !!everyday.situation });
   if (curatedAnswer) {
-    res.write(`data: ${JSON.stringify({ chunk: curatedAnswer.text, isOffline: true })}\n\n`);
+    res.write(`data: ${JSON.stringify({ chunk: curatedAnswer.text, isOffline: true, action: curatedAction(curatedAnswer) })}\n\n`);
     res.write('data: [DONE]\n\n');
     res.end();
     return;
   }
 
-  // Retrieve RAG context with caching (P47)
-  const ragCacheKey = cacheKeyFor('rag', userQuery, activeLang, lastIndexModified);
-  
+  // Retrieve RAG context with caching (P47). A follow-up turn is searched with the
+  // subject the citizen already stated, and that subject is part of the cache key —
+  // the fragment alone ("aur uska kya natija niklega?") means a different thing in
+  // every thread, so sharing one key would serve another case's evidence.
+  const ragCacheKey = cacheKeyFor('rag', thread.retrievalQuery, activeLang, lastIndexModified, everyday.situation || '');
+
   let retrievalResult;
   let retrieval_ms = 0;
   const retrievalStart = Date.now();
@@ -1852,7 +2022,7 @@ app.post('/api/ai/chat', rateLimiterMiddleware, asyncRoute(async (req, res) => {
     retrieval_ms = Date.now() - retrievalStart;
   } else {
     metrics.ragCacheMisses++;
-    retrievalResult = await retrieveCorrected(userQuery, { isOnline: false });
+    retrievalResult = await retrieveCorrected(thread.retrievalQuery, { isOnline: false, extraQuery: everyday.retrievalQuery });
     retrieval_ms = Date.now() - retrievalStart;
     cacheRagResult(ragCacheKey, retrievalResult);
   }
@@ -1862,6 +2032,38 @@ app.post('/api/ai/chat', rateLimiterMiddleware, asyncRoute(async (req, res) => {
   // are all driven by this metadata. Every path that returns an answer built from
   // retrieved records must emit it, not only the generated-answer path.
 
+  // Honest abstention, decided here and before anything below can reply. Each of
+  // the branches that follows either answers from a record or asks a clarifying
+  // question, and both would misrepresent an ask the verified corpus simply cannot
+  // answer (another country's own rule, a bare section number, no subject at all).
+  const abstentionText = abstentionFor(userQuery, activeLang, retrievalResult.evidence, retrievedChunks);
+  if (abstentionText) {
+    res.write(`data: ${JSON.stringify({
+      chunk: offlineKnowledgeHeader(activeLang, 'refusal', '') + abstentionText,
+      sources: [], isOffline: true, answerLevel, action: 'abstain',
+      ...gatePayload(retrievalResult)
+    })}\n\n`);
+    res.write('data: [DONE]\n\n');
+    res.end();
+    return;
+  }
+
+  // The everyday-situation question is asked only when the corpus cannot already
+  // place the dispute. It used to short-circuit ahead of retrieval, which made it
+  // ask "whose money is it?" about a maintenance claim and an inheritance claim —
+  // questions whose subject the verified records name directly. Retrieval decides,
+  // because retrieval is what knows what the corpus covers.
+  if (everydayAsk && retrievalResult.evidence && retrievalResult.evidence.verdict !== 'strong') {
+    res.write(`data: ${JSON.stringify({
+      chunk: everydayAsk, isOffline: true, answerLevel,
+      evidence: clarifyEvidence(retrievalResult, { reasons: ['ambiguous_situation'], candidates: everyday.candidates, supportedCount: 0, rejected: 0 }),
+      relevance: 'clarify', action: 'clarify'
+    })}\n\n`);
+    res.write('data: [DONE]\n\n');
+    res.end();
+    return;
+  }
+
   // Refusal Check — Phase 1/2 (A/B/C): never a cold "data unavailable" reply. If
   // no verified record matched, ask the MINIMUM clarifying question that lets
   // the pipeline answer next: for an overseas/move question that is the target
@@ -1869,8 +2071,8 @@ app.post('/api/ai/chat', rateLimiterMiddleware, asyncRoute(async (req, res) => {
   // Library / legal-aid / lawyer routing. Only askClarification itself may say
   // that no verified record matched (the genuinely exhausted case).
   if (!retrievedChunks || retrievedChunks.length === 0) {
-    const clarificationText = askClarification(userQuery, activeLang);
-    res.write(`data: ${JSON.stringify({ chunk: clarificationText, isOffline: true, answerLevel, ...gatePayload(retrievalResult) })}\n\n`);
+    const clarificationText = everydayUnverifiedNote(everyday, activeLang) || askClarification(userQuery, activeLang);
+    res.write(`data: ${JSON.stringify({ chunk: clarificationText, isOffline: true, answerLevel, action: /[?؟]/.test(clarificationText) ? 'clarify' : 'abstain', ...gatePayload(retrievalResult) })}\n\n`);
     res.write('data: [DONE]\n\n');
     res.end();
     return;
@@ -1898,13 +2100,15 @@ app.post('/api/ai/chat', rateLimiterMiddleware, asyncRoute(async (req, res) => {
         : null
     };
   };
-  const cacheKey = cacheKeyFor('ans', userQuery, activeLang, answerLevel);
-  const queryIsSafeToCache = isSafeToCache(userQuery, retrievalResult.domain);
+  // Keyed on the thread query, never the bare turn: "and the interest?" must not
+  // serve the answer cached for a different subject's follow-up.
+  const cacheKey = cacheKeyFor('ans', thread.retrievalQuery, activeLang, answerLevel);
+  const queryIsSafeToCache = isSafeToCache(thread.retrievalQuery, retrievalResult.domain);
   if (queryIsSafeToCache && responseCache.has(cacheKey)) {
     metrics.cacheHits++;
     const cachedResponse = responseCache.get(cacheKey);
     res.write(`data: ${JSON.stringify({ meta: { sources: toSourceMeta(answerEvidenceOrder(userQuery, retrievedChunks, answerLevel).slice(0, 4), retrievalResult.domain, userQuery), isOffline: true } })}\n\n`);
-    res.write(`data: ${JSON.stringify({ chunk: cachedResponse, ...gatePayload(retrievalResult), ...citationPayload(cachedResponse, retrievedChunks) })}\n\n`);
+    res.write(`data: ${JSON.stringify({ chunk: cachedResponse, action: 'answer', ...gatePayload(retrievalResult), ...citationPayload(cachedResponse, retrievedChunks) })}\n\n`);
     res.write('data: [DONE]\n\n');
     res.end();
     return;
@@ -1922,7 +2126,7 @@ app.post('/api/ai/chat', rateLimiterMiddleware, asyncRoute(async (req, res) => {
     // (e.g. "Section 379 PPC" must not drag in inheritance or abetment).
     const direct = directLookupAnswer(userQuery, retrievedChunks, activeLang);
     if (direct.refusal) {
-      res.write(`data: ${JSON.stringify({ chunk: direct.refusal, ...gatePayload(retrievalResult), ...citationPayload(direct.refusal, retrievedChunks, false) })}\n\n`);
+      res.write(`data: ${JSON.stringify({ chunk: direct.refusal, action: 'abstain', ...gatePayload(retrievalResult), ...citationPayload(direct.refusal, retrievedChunks, false) })}\n\n`);
       res.write('data: [DONE]\n\n');
       res.end();
       return;
@@ -1988,31 +2192,33 @@ app.post('/api/ai/chat', rateLimiterMiddleware, asyncRoute(async (req, res) => {
     contextStr += `Text: ${c.text}\n\n`;
   });
 
-  // Optional adapter-backed answer path (server/loraProvider.js). It is OFF by
-  // default. When it is on, the model only ever sees the retrieved records
-  // above, its reply must pass the answer contract and the evidence check, and
-  // anything that fails falls through to the deterministic composer below.
-  if (loraEnabled()) {
-    const loraTopScore = (retrievedChunks && retrievedChunks[0] && retrievedChunks[0].exactScore) || 0;
-    const loraIsSectionLookup = /\b(?:section|sec|article|art|dafa|دفعہ)\s*\.?\s*\d+/i.test(userQuery);
-    if (loraIsSectionLookup && loraTopScore < 8.0) {
-      console.warn('[Backend] LoRA provider skipped: section lookup below the exact-match threshold.');
+  // Optional model-backed answer path (server/modelInferenceClient.js): Cloudflare
+  // Workers AI, the HF ZeroGPU Space or the private LoRA service. It is OFF by
+  // default. When it is on, the model only ever sees the retrieved records above,
+  // its reply must pass the answer contract and the evidence check, and anything
+  // that fails falls through to the deterministic composer below.
+  if (modelInferenceEnabled()) {
+    const modelTopScore = (retrievedChunks && retrievedChunks[0] && retrievedChunks[0].exactScore) || 0;
+    const modelIsSectionLookup = /\b(?:section|sec|article|art|dafa|دفعہ)\s*\.?\s*\d+/i.test(userQuery);
+    if (modelIsSectionLookup && modelTopScore < 8.0) {
+      console.warn('[Backend] Model provider skipped: section lookup below the exact-match threshold.');
     } else {
-      const loraResult = await answerWithLora({
+      const modelResult = await answerWithModel({
         question: userQuery,
         chunks: cappedChunks,
         language: activeLang,
-        answerLevel
+        answerLevel,
+        history
       });
-      if (loraResult.ok) {
-        const modelText = loraResult.text;
-        res.write(`data: ${JSON.stringify({ meta: { sources: mappedSources, isOffline: true, provider: loraResult.provider } })}\n\n`);
-        res.write(`data: ${JSON.stringify({ chunk: modelText, sources: mappedSources, isOffline: true, answerLevel, ...citationPayload(modelText, cappedChunks), ...gatePayload(retrievalResult) })}\n\n`);
+      if (modelResult.ok) {
+        const modelText = modelResult.text;
+        res.write(`data: ${JSON.stringify({ meta: { sources: mappedSources, isOffline: true, provider: modelResult.provider } })}\n\n`);
+        res.write(`data: ${JSON.stringify({ chunk: modelText, sources: mappedSources, isOffline: true, answerLevel, action: 'answer', ...citationPayload(modelText, cappedChunks), ...gatePayload(retrievalResult) })}\n\n`);
         res.write('data: [DONE]\n\n');
         res.end();
         return;
       }
-      console.warn(`[Backend] LoRA provider not used: ${loraResult.reason}`);
+      console.warn(`[Backend] Model provider not used: ${modelResult.reason}`);
     }
   }
 
@@ -2113,33 +2319,30 @@ ${contextStr}`;
     res.end();
   } else {
     // Offline VERIFIED KNOWLEDGE fallback — build a structured answer from retrieved passages
-    const curated = curatedOfflineAnswer(userQuery, activeLang);
+    const curated = curatedOfflineAnswer(userQuery, activeLang, { legalSituation: !!everyday.situation });
     // A curated paragraph is generic and cites nothing. When the evidence gate
     // rates the retrieved corpus records as directly on point, the grounded
     // composer below must answer instead — otherwise an official provincial or
-    // institutional record is hidden behind boilerplate.
+    // institutional record is hidden behind boilerplate. A resolved everyday
+    // dispute is answered the same way: naming a lawyer directory is not an
+    // answer to "my landlord is keeping my deposit".
     const gateVerdict = (retrievalResult.evidence || {}).verdict;
-    if (curated && gateVerdict !== 'strong') {
-      res.write(`data: ${JSON.stringify({ chunk: curated.text, sources: mappedSources, isOffline: true, ...gatePayload(retrievalResult) })}\n\n`);
+    if (curated && gateVerdict !== 'strong' && !everyday.situation) {
+      const curatedAbstains = curatedAction(curated) === 'abstain';
+      res.write(`data: ${JSON.stringify({ chunk: curated.text, sources: curatedAbstains ? [] : mappedSources, isOffline: true, action: curatedAction(curated), ...gatePayload(retrievalResult) })}\n\n`);
       res.write('data: [DONE]\n\n');
       res.end();
       return;
     }
 
-    // Honest guard: a query naming a specific section/article must never be
-    // answered with a keyword-match dump from a different law.
-    const topChunkScore = retrievedChunks && retrievedChunks.length > 0 ? (retrievedChunks[0].exactScore || 0) : 0;
-    const isSectionLookup = /\b(?:section|sec|article|art|dafa|دفعہ)\s*\.?\s*\d+/i.test(userQuery);
-    const notFoundText = (isSectionLookup && topChunkScore < 8.0) ? sectionNotFoundText(userQuery, activeLang) : null;
-    const offTopicText = offTopicAbstentionText(userQuery, activeLang, retrievalResult.evidence);
-    const guardText = notFoundText || offTopicText;
-
-    const isRefusalOnly = Boolean(guardText) || !(retrievedChunks && retrievedChunks.length > 0);
+    // Any abstention (unverified provision, no legal subject, another country's
+    // own rule) already returned above, so reaching here means the corpus does
+    // have something to say — and the only remaining refusal is a true empty
+    // retrieval, which gets the information-limitation reply below.
+    const isRefusalOnly = !(retrievedChunks && retrievedChunks.length > 0);
     let offlineText = offlineKnowledgeHeader(activeLang, isRefusalOnly ? 'refusal' : (retrievalResult.evidence || {}).verdict,
       isRefusalOnly ? '' : jurisdictionNoteFor(userQuery, retrievedChunks, activeLang));
-    if (guardText) {
-      offlineText += guardText;
-    } else if (retrievedChunks && retrievedChunks.length > 0) {
+    if (retrievedChunks && retrievedChunks.length > 0) {
       // Part AD / Phase 3 — INSAaf owned-model inference. Whenever the RAG layer
       // returned records we ANSWER FROM THEM (never a cold "not available"). We
       // compose the structured professional guidance answer (Issue -> Law that
@@ -2211,6 +2414,7 @@ ${contextStr}`;
     // the answer, so a citation the corpus cannot back is surfaced instead of hidden.
     res.write(`data: ${JSON.stringify({
       chunk: offlineText, sources: isRefusalOnly ? [] : mappedSources, isOffline: true, answerLevel,
+      action: isRefusalOnly ? 'abstain' : 'answer',
       ...citationPayload(offlineText, retrievedChunks, !isRefusalOnly),
       ...gatePayload(retrievalResult)
     })}\n\n`);
@@ -2270,7 +2474,8 @@ app.post('/api/ai/advice', rateLimiterMiddleware, async (req, res) => {
   if (validationError) {
     return res.status(400).json({ error: validationError });
   }
-  const { userQuery, history = [], preferredLanguage } = req.body;
+  const { userQuery, history: rawHistory = [], preferredLanguage } = req.body;
+  const history = normalizeHistory(rawHistory);
   // Part 4: answer level — depth only, identical evidence rules at every level.
   const answerLevel = normalizeAnswerLevel(req.body.answerLevel);
   const overseasMode = req.body.overseasMode === true;
@@ -2279,6 +2484,12 @@ app.post('/api/ai/advice', rateLimiterMiddleware, async (req, res) => {
   // provider chain is empty, so the catch below is the NORMAL path — reusing the
   // already-gated retrieval keeps the bounded correction loop at its 1–2 attempts.
   let gatedRetrieval = null;
+  // Resolved before the try: with the owned model primary the catch below is the
+  // NORMAL response path, and it must route a named citizen dispute the same way
+  // the try block does.
+  const adviceLang = resolveChatLanguage(preferredLanguage, userQuery);
+  const thread = resolveThread(userQuery, history);
+  const everyday = resolveEverydayIntent(userQuery, thread.priorUser, thread.priorModel);
   try {
     // 0. Cache Invalidation Check (P47)
     checkCacheInvalidation();
@@ -2286,7 +2497,7 @@ app.post('/api/ai/advice', rateLimiterMiddleware, async (req, res) => {
     // F3: development timing diagnostics
     const requestStart = Date.now();
 
-    const activeLang = resolveChatLanguage(preferredLanguage, userQuery);
+    const activeLang = adviceLang;
 
     // Selected evidence paths, identical to the streaming route: an Islamic or
     // combined request on this endpoint is answered from the same composers, not
@@ -2335,9 +2546,19 @@ app.post('/api/ai/advice', rateLimiterMiddleware, async (req, res) => {
       return res.json({ text: formatted, isOffline: true });
     }
 
-    // Curated answers first: safety refusals, directory/app pointers and small
+    // Same order as /api/ai/chat: a safety refusal is never delayed behind a
+    // clarifying question, and a clarifying question is never answered by a
+    // directory pointer.
+    const safetyAnswer = curatedOfflineAnswer(userQuery, activeLang, { safetyOnly: true });
+    if (safetyAnswer) {
+      return res.json({ text: safetyAnswer.text, isOffline: true });
+    }
+
+    const everydayAsk = everydayClarification(everyday, activeLang);
+
+    // Curated answers next: directory/app pointers and small
     // talk are answered instantly from verified app knowledge.
-    const curatedAnswer = curatedOfflineAnswer(userQuery, activeLang);
+    const curatedAnswer = curatedOfflineAnswer(userQuery, activeLang, { legalSituation: !!everyday.situation });
     if (curatedAnswer) {
       return res.json({ text: curatedAnswer.text, isOffline: true });
     }
@@ -2357,8 +2578,10 @@ app.post('/api/ai/advice', rateLimiterMiddleware, async (req, res) => {
       return res.json({ text: explainDocumentType(explainDocName, activeLang), isOffline: true });
     }
 
-    // Retrieve RAG context with caching (P47)
-    const ragCacheKey = cacheKeyFor('rag', userQuery, activeLang, lastIndexModified);
+    // Retrieve RAG context with caching (P47). The thread query carries the
+    // subject a follow-up turn only points at, so caching and retrieval agree
+    // with what the user is actually still asking about.
+    const ragCacheKey = cacheKeyFor('rag', thread.retrievalQuery, activeLang, lastIndexModified, everyday.situation || '');
     
     let retrievalResult;
     let retrieval_ms = 0;
@@ -2369,7 +2592,7 @@ app.post('/api/ai/advice', rateLimiterMiddleware, async (req, res) => {
       retrieval_ms = Date.now() - retrievalStart;
     } else {
       metrics.ragCacheMisses++;
-      retrievalResult = await retrieveCorrected(userQuery, { isOnline: false });
+      retrievalResult = await retrieveCorrected(thread.retrievalQuery, { isOnline: false, extraQuery: everyday.retrievalQuery });
       retrieval_ms = Date.now() - retrievalStart;
       cacheRagResult(ragCacheKey, retrievalResult);
     }
@@ -2377,13 +2600,35 @@ app.post('/api/ai/advice', rateLimiterMiddleware, async (req, res) => {
     gatedRetrieval = retrievalResult;
     gateMetrics(retrievalResult);
 
+    // Same decision order as /api/ai/chat: an ask the verified corpus cannot
+    // answer abstains here, ahead of every branch that would otherwise ask a
+    // clarifying question or answer from the nearest record.
+    const abstentionText = abstentionFor(userQuery, activeLang, retrievalResult.evidence, retrievedChunks);
+    if (abstentionText) {
+      return res.json({
+        text: offlineKnowledgeHeader(activeLang, 'refusal', '') + abstentionText,
+        sources: [], isOffline: true, answerLevel, action: 'abstain',
+        ...gatePayload(retrievalResult)
+      });
+    }
+
+    // Same rule as /api/ai/chat: the everyday-situation question is asked only
+    // when retrieval cannot place the dispute in the corpus. One pipeline, one
+    // decision order, whichever route the caller used.
+    if (everydayAsk && retrievalResult.evidence && retrievalResult.evidence.verdict !== 'strong') {
+      return res.json({
+        text: everydayAsk, isOffline: true, answerLevel, relevance: 'clarify', action: 'clarify',
+        evidence: clarifyEvidence(retrievalResult, { reasons: ['ambiguous_situation'], candidates: everyday.candidates, supportedCount: 0, rejected: 0 })
+      });
+    }
+
     // Refusal Check — Phase 1/2 (A/B/C): zero verified matches never produce a
     // cold "outside scope" reply; the minimum clarifying question is returned
     // instead (country + purpose for overseas/move questions; issue-area probe
     // otherwise) with Library / legal-aid / lawyer routing as next steps.
     if (!retrievedChunks || retrievedChunks.length === 0) {
-      const clarificationText = askClarification(userQuery, activeLang);
-      return res.json({ text: clarificationText, isOffline: true, answerLevel, ...gatePayload(retrievalResult) });
+      const clarificationText = everydayUnverifiedNote(everyday, activeLang) || askClarification(userQuery, activeLang);
+      return res.json({ text: clarificationText, sources: [], isOffline: true, answerLevel, action: /[?؟]/.test(clarificationText) ? 'clarify' : 'abstain', ...gatePayload(retrievalResult) });
     }
 
     // 1. Caching Layer Check (P45 Cost Control)
@@ -2391,7 +2636,7 @@ app.post('/api/ai/advice', rateLimiterMiddleware, async (req, res) => {
     const queryIsSafeToCache = isSafeToCache(userQuery, retrievalResult.domain);
     if (queryIsSafeToCache && responseCache.has(cacheKey)) {
       metrics.cacheHits++;
-      return res.json({ text: responseCache.get(cacheKey), sources: toSourceMeta(retrievedChunks.slice(0, 4), retrievalResult.domain), ...gatePayload(retrievalResult) });
+      return res.json({ text: responseCache.get(cacheKey), sources: toSourceMeta(retrievedChunks.slice(0, 4), retrievalResult.domain), action: 'answer', ...gatePayload(retrievalResult) });
     }
     if (queryIsSafeToCache) {
       metrics.cacheMisses++;
@@ -2402,13 +2647,13 @@ app.post('/api/ai/advice', rateLimiterMiddleware, async (req, res) => {
     const hasExactMatch = topChunk && topChunk.exactScore >= 8.0;
     if (hasExactMatch && isPureLookupQuery(userQuery, [{ key: topChunk.key, type: topChunk.type }])) {
       const direct = directLookupAnswer(userQuery, retrievedChunks, activeLang);
-      if (direct.refusal) return res.json({ text: direct.refusal, ...gatePayload(retrievalResult) });
+      if (direct.refusal) return res.json({ text: direct.refusal, sources: [], action: 'abstain', ...gatePayload(retrievalResult) });
       metrics.retrievalOnlyResponses++;
       const directResponse = direct.text;
       if (queryIsSafeToCache) {
         cacheResponse(cacheKey, directResponse);
       }
-      return res.json({ text: directResponse, sources: toSourceMeta(direct.chunks, retrievalResult.domain), ...gatePayload(retrievalResult) });
+      return res.json({ text: directResponse, sources: toSourceMeta(direct.chunks, retrievalResult.domain), action: 'answer', ...gatePayload(retrievalResult) });
     }
 
     let langInstruction = "Respond in the user's language. NEVER respond in Urdu script (اردو). Respond only in English or Roman Urdu (Latin alphabet).";
@@ -2421,6 +2666,37 @@ app.post('/api/ai/advice', rateLimiterMiddleware, async (req, res) => {
     // Construct Grounding Context (Part 4: depth follows the Answer Level; the
     // evidence pool itself is level-independent and never grows past the gate).
     const cappedChunks = retrievedChunks.slice(0, Math.max(4, ANSWER_LEVELS[answerLevel].chunkCap));
+
+    // Same optional model-backed path as /api/ai/chat, on the same shared client and
+    // the same contract. A failure here is logged and the route continues to the
+    // deterministic providers below — never a half-model answer.
+    if (modelInferenceEnabled()) {
+      const modelResult = await answerWithModel({
+        question: userQuery,
+        chunks: cappedChunks,
+        language: activeLang,
+        answerLevel,
+        history
+      });
+      if (modelResult.ok) {
+        if (queryIsSafeToCache) cacheResponse(cacheKey, modelResult.text);
+        const timings = { retrieval_ms, provider_ms: Date.now() - requestStart, total_ms: Date.now() - requestStart };
+        logTimings('/api/ai/advice', timings);
+        return res.json({
+          text: modelResult.text,
+          sources: toSourceMeta(cappedChunks, retrievalResult.domain),
+          isOffline: true,
+          answerLevel,
+          action: 'answer',
+          provider: modelResult.provider,
+          ...citationPayload(modelResult.text, cappedChunks),
+          ...gatePayload(retrievalResult),
+          ...debugTimingsPayload(timings)
+        });
+      }
+      console.warn(`[Backend] Model provider not used in advice: ${modelResult.reason}`);
+    }
+
     let contextStr = "Retrieved Authoritative Evidence:\n\n";
     cappedChunks.forEach((c, index) => {
       contextStr += `[Source ${index + 1}]:\nTitle: ${c.title}\nAuthority: ${c.issuingAuthority}\nProvision: ${c.type} ${c.key}\nText: ${c.text}\n\n`;
@@ -2474,7 +2750,7 @@ ${contextStr}`;
       }
       const timings = { retrieval_ms, provider_ms, total_ms: Date.now() - requestStart };
       logTimings('/api/ai/advice', timings);
-      const payload = { text, ...gatePayload(retrievalResult) };
+      const payload = { text, action: 'answer', ...gatePayload(retrievalResult) };
       const debugPayload = debugTimingsPayload(timings);
       if (debugPayload) {
         Object.assign(payload, debugPayload);
@@ -2493,7 +2769,7 @@ ${contextStr}`;
     } else {
       console.error(`[Backend] Non-streaming advice error:`, err.message);
     }
-    const retrievalResult = gatedRetrieval || await retrieveCorrected(userQuery, { isOnline: false });
+    const retrievalResult = gatedRetrieval || await retrieveCorrected(thread.retrievalQuery, { isOnline: false, extraQuery: everyday.retrievalQuery });
     const retrievedChunks = retrievalResult.chunks;
     if (!gatedRetrieval) gateMetrics(retrievalResult);
 
@@ -2504,27 +2780,23 @@ ${contextStr}`;
 
     const mappedSources = toSourceMeta(retrievedChunks, retrievalResult.domain);
 
-    const curated = curatedOfflineAnswer(userQuery, fallbackLang);
-    if (curated) {
-      return res.json({ text: curated.text, sources: mappedSources, isOffline: true, ...gatePayload(retrievalResult) });
+    const curated = curatedOfflineAnswer(userQuery, fallbackLang, { legalSituation: !!everyday.situation });
+    if (curated && !everyday.situation) {
+      const curatedAbstains = curatedAction(curated) === 'abstain';
+      return res.json({
+        text: curated.text, sources: curatedAbstains ? [] : mappedSources, isOffline: true,
+        action: curatedAction(curated), ...gatePayload(retrievalResult)
+      });
     }
 
-    // Honest guard: a query naming a specific section/article must never be
-    // answered with a keyword-match dump from a different law.
-    const topChunkScore = retrievedChunks && retrievedChunks.length > 0 ? (retrievedChunks[0].exactScore || 0) : 0;
-    const isSectionLookup = /\b(?:section|sec|article|art|dafa|دفعہ)\s*\.?\s*\d+/i.test(userQuery);
-    const notFoundText = (isSectionLookup && topChunkScore < 8.0) ? sectionNotFoundText(userQuery, fallbackLang) : null;
-    const offTopicText = offTopicAbstentionText(userQuery, fallbackLang, retrievalResult.evidence);
-    const guardText = notFoundText || offTopicText;
-
-    // A refusal is not a verified answer: with no record to stand behind the
-    // text, the header must say "no verified match", not "partially verified".
-    const isRefusalOnly = Boolean(guardText) || !(retrievedChunks && retrievedChunks.length > 0);
+    // Any abstention already returned above, so the only refusal left to compose
+    // here is a true empty retrieval — and a refusal is not a verified answer:
+    // with no record to stand behind the text, the header must say
+    // "no verified match", not "partially verified".
+    const isRefusalOnly = !(retrievedChunks && retrievedChunks.length > 0);
     let offlineText = offlineKnowledgeHeader(fallbackLang, isRefusalOnly ? 'refusal' : (retrievalResult.evidence || {}).verdict,
       isRefusalOnly ? '' : jurisdictionNoteFor(userQuery, retrievedChunks, fallbackLang));
-    if (guardText) {
-      offlineText += guardText;
-    } else if (retrievedChunks && retrievedChunks.length > 0) {
+    if (retrievedChunks && retrievedChunks.length > 0) {
       // Part AD — INSAaf owned-model inference (non-streaming advice endpoint).
       // Same rule as chat: whenever records were retrieved, answer FROM them at
       // the requested Answer Level (the raw-chunk dump below stays as fallback).
@@ -2569,10 +2841,11 @@ ${contextStr}`;
         offlineText += `${completeText}`;
       }
     } else {
-      offlineText += askClarification(userQuery, fallbackLang);
+      offlineText += everydayUnverifiedNote(everyday, fallbackLang) || askClarification(userQuery, fallbackLang);
     }
     res.json({
       text: offlineText, sources: isRefusalOnly ? [] : mappedSources, isOffline: true, answerLevel,
+      action: isRefusalOnly ? (/[?؟]/.test(offlineText) ? 'clarify' : 'abstain') : 'answer',
       ...gatePayload(retrievalResult)
     });
   }
@@ -2602,8 +2875,11 @@ app.post('/api/ai/generate', rateLimiterMiddleware, asyncRoute(async (req, res) 
   if (String(requestText || '').trim().length > 0 && !type) {
     let draftChunks = [];
     try {
-      const retrievalResult = await RAGEngine.retrieve(String(requestText).slice(0, 400), ragSemanticOnline);
-      draftChunks = retrievalResult.chunks || [];
+      // §7: one evidence path for every mode. A draft that quotes law is held to
+      // the same gate as a chat answer, and records the gate rejects are not
+      // passed on to be printed in a document a person will file.
+      const gated = await retrieveCorrected(String(requestText).slice(0, 400), { isOnline: ragSemanticOnline });
+      if (gated && gated.evidence && gated.evidence.verdict !== 'none') draftChunks = gated.chunks || [];
     } catch (ragErr) {
       console.warn('[Backend] RAG failed for free-text document request:', ragErr.message);
     }
@@ -3425,10 +3701,11 @@ app.post('/api/ai/agent', rateLimiterMiddleware, async (req, res) => {
   const preferredLanguage = body.preferredLanguage;
   // Part 4: the Legal Agent honours the same Answer Level as chat/advice.
   const answerLevel = normalizeAnswerLevel(body.answerLevel);
-  const history = Array.isArray(body.history) ? body.history.slice(-6) : [];
-  // Voice / multi-turn continuity: remembered facts only. `message` remains the
-  // single retrieval query and the only text in ragCacheKey below — context is
-  // never concatenated into either, so it cannot shift evidence or the cache.
+  const history = normalizeHistory(body.history).slice(-6);
+  // Voice / multi-turn continuity: remembered facts only. `context` is never
+  // concatenated into the retrieval query or the cache key, so it cannot shift
+  // evidence. History is different: it is what the citizen themselves said, and a
+  // follow-up turn that names no subject is unsearchable without it.
   const agentContext = sanitizeAgentContext(body.context);
   const overseasMode = body.overseasMode === true;
   const preferredCountry = String(body.preferredCountry || '').replace(/[<>]/g, '').trim().slice(0, 60);
@@ -3438,17 +3715,37 @@ app.post('/api/ai/agent', rateLimiterMiddleware, async (req, res) => {
 
   const activeLang = resolveChatLanguage(preferredLanguage, message);
 
-  // Curated answers first: safety refusals, directory/app pointers and small
-  // talk are answered instantly from verified app knowledge, with navigation
-  // actions so the app can deep-link (e.g. lawyer questions → Vakil Directory).
-  const curatedAnswer = curatedOfflineAnswer(message, activeLang);
-  if (curatedAnswer) {
-    const curatedActions = curatedAnswer.actions.filter(id => AGENT_ROUTE_MANIFEST.some(r => r.id === id));
-    return res.json({ reply: curatedAnswer.text, actions: curatedActions, sources: [], isOffline: true, intake: deriveIntake(message, agentContext, null) });
+  // Same ordering as /api/ai/chat. Safety first: an unlawful ask or a person in
+  // danger is answered before the system worries about what the dispute is.
+  const safetyAnswer = curatedOfflineAnswer(message, activeLang, { safetyOnly: true });
+  if (safetyAnswer) {
+    return res.json({
+      reply: safetyAnswer.text,
+      actions: safetyAnswer.actions.filter(id => AGENT_ROUTE_MANIFEST.some(r => r.id === id)),
+      sources: [], isOffline: true, intake: deriveIntake(message, agentContext, null)
+    });
   }
 
-  // RAG retrieval (cached, mirroring /api/ai/chat)
-  const ragCacheKey = cacheKeyFor('agent', message, activeLang, lastIndexModified);
+  // Retrieval matches words, not who owes whom, so the agent route sees the same
+  // "tenant … paise … wapis" / "tenant … rent nahi de raha" collision chat does.
+  // When the direction cannot be told from the user's own words AND the corpus
+  // cannot place the dispute, the reply is the ONE question that decides it.
+  const thread = resolveThread(message, history);
+  const everyday = resolveEverydayIntent(message, thread.priorUser, thread.priorModel);
+  const everydayAsk = everydayClarification(everyday, activeLang);
+
+  // Curated answers next: directory/app pointers and small talk are answered from
+  // verified app knowledge. A resolved everyday dispute is not a directory
+  // request, so the pointer rules stand down when the citizen named a real problem.
+  const curatedAnswer = curatedOfflineAnswer(message, activeLang, { legalSituation: !!everyday.situation });
+  if (curatedAnswer) {
+    const curatedActions = curatedAnswer.actions.filter(id => AGENT_ROUTE_MANIFEST.some(r => r.id === id));
+    return res.json({ reply: curatedAnswer.text, actions: curatedActions, sources: [], isOffline: true, action: curatedAction(curatedAnswer), intake: deriveIntake(message, agentContext, null) });
+  }
+
+  // RAG retrieval (cached, mirroring /api/ai/chat). A follow-up turn is searched —
+  // and cached — with the subject the citizen already gave, not the fragment alone.
+  const ragCacheKey = cacheKeyFor('agent', thread.retrievalQuery, activeLang, lastIndexModified, everyday.situation || '');
   let retrievalResult;
   let retrieval_ms = 0;
   const retrievalStart = Date.now();
@@ -3458,12 +3755,51 @@ app.post('/api/ai/agent', rateLimiterMiddleware, async (req, res) => {
     retrieval_ms = Date.now() - retrievalStart;
   } else {
     metrics.ragCacheMisses++;
-    retrievalResult = await retrieveCorrected(message, { isOnline: false });
+    retrievalResult = await retrieveCorrected(thread.retrievalQuery, { isOnline: false, extraQuery: everyday.retrievalQuery });
     retrieval_ms = Date.now() - retrievalStart;
     cacheRagResult(ragCacheKey, retrievalResult);
   }
   const retrievedChunks = retrievalResult.chunks || [];
   gateMetrics(retrievalResult);
+
+  // One decision order on every route: an ask the verified corpus cannot answer
+  // abstains here, instead of becoming a clarifying question or an answer built
+  // from the nearest record.
+  const agentAbstention = abstentionFor(message, activeLang, retrievalResult.evidence, retrievedChunks);
+  if (agentAbstention) {
+    return res.json({
+      reply: offlineKnowledgeHeader(activeLang, 'refusal', '') + agentAbstention,
+      actions: [], sources: [], isOffline: true, answerLevel, action: 'abstain',
+      intake: deriveIntake(message, agentContext, retrievalResult),
+      ...gatePayload(retrievalResult)
+    });
+  }
+
+  // One decision order on every route: the situation question is asked only when
+  // retrieval could not place the dispute in the corpus. Before this, an agent
+  // question the records answer directly (a wife's maintenance, an inheritance
+  // share) was met with "whose money is it?".
+  if (everydayAsk && retrievalResult.evidence && retrievalResult.evidence.verdict !== 'strong') {
+    return res.json({
+      reply: everydayAsk, actions: [], sources: [], isOffline: true, answerLevel, action: 'clarify',
+      intake: deriveIntake(message, agentContext, retrievalResult),
+      evidence: clarifyEvidence(retrievalResult, { reasons: ['ambiguous_situation'], candidates: everyday.candidates, supportedCount: 0, rejected: 0 }),
+      relevance: 'clarify'
+    });
+  }
+
+  // A named dispute the corpus does not actually cover gets said out loud, rather
+  // than being answered from an empty evidence pool. Other queries keep their
+  // existing path — this only fires when the citizen named a real situation.
+  if (retrievedChunks.length === 0 && everyday.situation) {
+    const timings = { retrieval_ms, provider_ms: 0, total_ms: Date.now() - requestStart };
+    logTimings('/api/ai/agent', timings);
+    return res.json({
+      reply: everydayUnverifiedNote(everyday, activeLang), actions: ['library', 'lawyers'], sources: [],
+      isOffline: true, answerLevel, action: 'abstain', intake: deriveIntake(message, agentContext, retrievalResult),
+      ...gatePayload(retrievalResult), ...debugTimingsPayload(timings)
+    });
+  }
 
   // The reply is composed from the scoped, ordered evidence pool, so the cards
   // and the provider context must come from that SAME pool — raw retrieval order
@@ -3471,6 +3807,38 @@ app.post('/api/ai/agent', rateLimiterMiddleware, async (req, res) => {
   // document-level manifest URL mislabeled which record a civic answer cited.
   const cappedChunks = answerEvidenceOrder(message, retrievedChunks, answerLevel).slice(0, 4);
   const mappedSources = toSourceMeta(cappedChunks, retrievalResult.domain, message);
+
+  // Same optional model-backed path as /ai/chat and /ai/advice, through the shared
+  // client and contract. A route the model names is only accepted when it exists
+  // in the manifest, and any failure falls through to the deterministic agent.
+  if (modelInferenceEnabled()) {
+    const modelResult = await answerWithModel({
+      question: message,
+      chunks: cappedChunks,
+      language: activeLang,
+      answerLevel,
+      history,
+      navAllowList: AGENT_ROUTE_MANIFEST.map(r => r.id)
+    });
+    if (modelResult.ok) {
+      const timings = { retrieval_ms, provider_ms: Date.now() - requestStart, total_ms: Date.now() - requestStart };
+      logTimings('/api/ai/agent', timings);
+      return res.json({
+        reply: String(modelResult.text).replace(/^NAV:.*$/gim, '').trim(),
+        actions: modelResult.navIds || [],
+        sourceUrls: modelResult.sourceUrls || [],
+        sources: mappedSources,
+        isOffline: true,
+        answerLevel,
+        action: 'answer',
+        intake: deriveIntake(message, agentContext, retrievalResult),
+        provider: modelResult.provider,
+        ...gatePayload(retrievalResult),
+        ...debugTimingsPayload(timings)
+      });
+    }
+    console.warn(`[Backend] Model provider not used in agent: ${modelResult.reason}`);
+  }
 
   let contextStr = "Retrieved Authoritative Evidence:\n\n";
   cappedChunks.forEach((c, index) => {
@@ -3529,7 +3897,7 @@ ${contextStr}`;
 
     const timings = { retrieval_ms, provider_ms, total_ms: Date.now() - requestStart };
     logTimings('/api/ai/agent', timings);
-    return res.json({ reply, actions, sources: mappedSources, isOffline: false, intake: deriveIntake(message, agentContext, retrievalResult), ...debugTimingsPayload(timings) });
+    return res.json({ reply, actions, sources: mappedSources, isOffline: false, action: 'answer', intake: deriveIntake(message, agentContext, retrievalResult), ...gatePayload(retrievalResult), ...debugTimingsPayload(timings) });
   } catch (err) {
     provider_ms = Date.now() - providerStart;
     // Part C/AE: with the owned model primary the online chain is empty, so this
@@ -3541,11 +3909,11 @@ ${contextStr}`;
     }
 
     // Curated answers (safety refusals, directory/app pointers, small talk)
-    const curated = curatedOfflineAnswer(message, activeLang);
+    const curated = curatedOfflineAnswer(message, activeLang, { legalSituation: !!everyday.situation });
     if (curated) {
       const timings = { retrieval_ms, provider_ms, total_ms: Date.now() - requestStart };
       logTimings('/api/ai/agent', { ...timings, cached: 'offline-fallback' });
-      return res.json({ reply: curated.text, actions: curated.actions, sources: mappedSources, isOffline: true, intake: deriveIntake(message, agentContext, retrievalResult), ...gatePayload(retrievalResult), ...debugTimingsPayload(timings) });
+      return res.json({ reply: curated.text, actions: curated.actions, sources: curatedAction(curated) === 'abstain' ? [] : mappedSources, isOffline: true, action: curatedAction(curated), intake: deriveIntake(message, agentContext, retrievalResult), ...gatePayload(retrievalResult), ...debugTimingsPayload(timings) });
     }
 
     // Part 3 — the Legal Agent orchestration layer runs ABOVE retrieval and
@@ -3625,26 +3993,37 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'An unexpected server error occurred.' });
 });
 
-const httpServer = http.createServer(app);
+// A serverless runtime (Vercel sets VERCEL=1) imports this module and calls the
+// exported app per invocation; opening a listening socket there would keep the
+// invocation alive and never serve a request. Local `npm start` is unaffected.
+const IS_SERVERLESS = Boolean(process.env.VERCEL);
 
-// A stalled or half-closed request must not hold a socket open forever: under
-// load those pile up and the service stops answering even though the process is
-// still alive. Bounds are generous enough for streamed legal answers.
-httpServer.requestTimeout = 120000;
-httpServer.headersTimeout = 65000;
-httpServer.keepAliveTimeout = 61000;
-httpServer.on('clientError', (err, socket) => {
-  console.warn('[Backend] Client error ignored:', err && err.code ? err.code : err && err.message);
-  if (socket.writable) {
-    socket.end('HTTP/1.1 400 Bad Request\r\n{"error":"Malformed request."}\r\n\r\n');
-  } else {
-    socket.destroy();
-  }
-});
+if (!IS_SERVERLESS) {
+  const httpServer = http.createServer(app);
 
-httpServer.listen(PORT, () => {
-  console.log(`[Insaaf AI Backend] Server running cleanly on port ${PORT}`);
-});
+  // A stalled or half-closed request must not hold a socket open forever: under
+  // load those pile up and the service stops answering even though the process is
+  // still alive. Bounds are generous enough for streamed legal answers.
+  httpServer.requestTimeout = 120000;
+  httpServer.headersTimeout = 65000;
+  httpServer.keepAliveTimeout = 61000;
+  httpServer.on('clientError', (err, socket) => {
+    console.warn('[Backend] Client error ignored:', err && err.code ? err.code : err && err.message);
+    if (socket.writable) {
+      socket.end('HTTP/1.1 400 Bad Request\r\n{"error":"Malformed request."}\r\n\r\n');
+    } else {
+      socket.destroy();
+    }
+  });
+
+  httpServer.listen(PORT, () => {
+    console.log(`[Insaaf AI Backend] Server running cleanly on port ${PORT}`);
+  });
+}
+
+// A serverless catch-all handler imports this module and calls the app with the
+// platform's req/res, so every existing /api/* route is served unchanged.
+export default app;
 
 // A single rejected promise must not take the whole service down: Node 15+ exits
 // on an unhandled rejection by default, which earlier killed the backend with no

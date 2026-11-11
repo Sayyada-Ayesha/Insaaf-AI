@@ -313,6 +313,7 @@ export interface Translations {
   homePrivacyTitle: string;
   homePrivacyBody: string;
   homeDisclaimerBody: string;
+  externalModelNotice: string;
 
   // Error messages
   errorLoadAdvocates: string;
@@ -395,8 +396,8 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     chatVoiceInput: "Voice Input",
     chatNewChat: "New Consultation",
     chatDisclaimer: "Insaaf AI provides general legal information based on Pakistani laws. Consult a verified advocate for court representation.",
-    chatKnowledgeOnline: "Verified Answers Ready",
-    chatKnowledgeOffline: "Verified Legal Knowledge",
+    chatKnowledgeOnline: "INSAaf corpus answer",
+    chatKnowledgeOffline: "General reference (offline)",
     suggestion1Label: "Women Rights",
     suggestion2Label: "Property Fraud",
     suggestion3Label: "Child Custody",
@@ -586,7 +587,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     dropdownSettings: "Settings",
     dropdownCitizenUser: "Citizen User",
 
-    chatVerifiedSources: "Verified Legal Sources",
+    chatVerifiedSources: "Source Records Behind This Answer",
     chatSourcesMetadata: "Authoritative Pakistani Legal Corpus Metadata",
     chatSourceAuthority: "Authority",
     chatSourceJurisdiction: "Jurisdiction",
@@ -639,6 +640,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     homePrivacyTitle: "Privacy and sources",
     homePrivacyBody: "Your chat stays in this browser unless you save it. Never enter CNIC numbers, passwords or account credentials.",
     homeDisclaimerBody: "INSAaf AI gives legal information from retrieved Pakistani sources, not legal advice. For a decision about your case, consult a licensed lawyer.",
+    externalModelNotice: "When a hosted model is enabled, your question and the retrieved legal references are processed by an external inference provider (Cloudflare Workers AI or Hugging Face) and are not covered by lawyer-client confidentiality. Never send passwords, CNIC images or account credentials.",
 
     // Error messages
     errorLoadAdvocates: "Failed to load advocate profiles",
@@ -720,8 +722,8 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     chatVoiceInput: "صوتی ان پٹ",
     chatNewChat: "نیا مشورہ",
     chatDisclaimer: "انصاف اے آئی پاکستانی قوانین کی روشنی میں معلومات فراہم کرتا ہے۔ عدالت میں پیشی کے لیے تصدیق شدہ وکیل سے رجوع کریں۔",
-    chatKnowledgeOnline: "تصدیق شدہ معلومات تیار ہیں",
-    chatKnowledgeOffline: "تصدیق شدہ قانونی معلومات",
+    chatKnowledgeOnline: "انساف قانونی ذخیرے سے جواب",
+    chatKnowledgeOffline: "عمومی معلومات (آف لائن)",
     suggestion1Label: "خواتین کے حقوق",
     suggestion2Label: "جائیداد کا فراڈ",
     suggestion3Label: "بچوں کی تحویل",
@@ -911,7 +913,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     dropdownSettings: "ترتیبات",
     dropdownCitizenUser: "شہری صارف",
 
-    chatVerifiedSources: "تصدیق شدہ قانونی ماخذ",
+    chatVerifiedSources: "جواب کے پیچھے کے ماخذ ریکارڈ",
     chatSourcesMetadata: "مستند پاکستانی قانونی ڈیٹا",
     chatSourceAuthority: "اختیار",
     chatSourceJurisdiction: "دائرہ اختیار",
@@ -964,6 +966,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     homePrivacyTitle: "رازداری اور ماخذ",
     homePrivacyBody: "آپ کی گفتگو اس براؤزر میں رہتی ہے جب تک آپ اسے محفوظ نہ کریں۔ شناختی کارڈ نمبر، پاس ورڈ یا اکاؤنٹ کی تفصیلات درج نہ کریں۔",
     homeDisclaimerBody: "انساف اے آئی تصدیق شدہ پاکستانی ماخذ سے قانونی معلومات دیتا ہے، قانونی مشورہ نہیں۔ اپنے مقدمے کے فیصلے کے لیے مستند وکیل سے رجوع کریں۔",
+    externalModelNotice: "جب کوئی ہوسٹڈ ماڈل فعال ہو تو آپ کا سوال اور حاصل شدہ قانونی حوالہ جات ایک بیرونی انفرنس فراہم کنندہ (Cloudflare Workers AI یا Hugging Face) پراسیس کرتا ہے، اور یہ وکیل–موکل کی رازداری کے دائرے میں نہیں آتا۔ پاس ورڈ، شناختی کارڈ کی تصاویر یا اکاؤنٹ کی تفصیلات کبھی نہ بھیجیں۔",
 
     // Error messages
     errorLoadAdvocates: "وکیل کے پروفائلز لوڈ کرنے میں ناکامی",
@@ -1045,8 +1048,8 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     chatVoiceInput: "Awaaz Se Likhain",
     chatNewChat: "Naya Sawal",
     chatDisclaimer: "Insaaf AI Pakistani qawaneen ke mutabiq maloomat deta hai. Adalat ke liye certified vakeel se mashwara karen.",
-    chatKnowledgeOnline: "Verified Jawab Tayyar",
-    chatKnowledgeOffline: "Tasdeeq Shuda Qanooni Maloomat",
+    chatKnowledgeOnline: "INSAaf corpus ka jawab",
+    chatKnowledgeOffline: "Aam maalomat (offline)",
     suggestion1Label: "Khawateen Ke Haqooh",
     suggestion2Label: "Jaidad Ka Fraud",
     suggestion3Label: "Bachon Ki Tahweel",
@@ -1236,7 +1239,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     dropdownSettings: "Settings",
     dropdownCitizenUser: "Shehri User",
 
-    chatVerifiedSources: "Tasdeeq Shuda Qanooni Zariye",
+    chatVerifiedSources: "Jawab Ke Peeche Ke Makhaz Records",
     chatSourcesMetadata: "Mutasad Pakistani Qanooni Data",
     chatSourceAuthority: "Ikhtiyar",
     chatSourceJurisdiction: "Daira Ikhtiyar",
@@ -1289,6 +1292,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     homePrivacyTitle: "Razdari aur makhaz",
     homePrivacyBody: "Aap ki guftagu is browser mein rehti hai jab tak aap save na karen. CNIC number, password ya account details kabhi na likhen.",
     homeDisclaimerBody: "INSAaf AI tasdeeq-shuda Pakistani makhaz se qanooni maloomat deta hai, qanooni mashwara nahi. Apne muqadme ke faisle ke liye licensed wakeel se rabta karen.",
+    externalModelNotice: "Jab koi hosted model enable ho to aap ka sawaal aur retrieved qanooni hawale ek external inference provider (Cloudflare Workers AI ya Hugging Face) process karta hai, aur ye wakeel–client raazdari mein nahi aata. Passwords, CNIC tasveerein ya account credentials kabhi na bhejein.",
 
     // Error messages
     errorLoadAdvocates: "Wakeel ke profiles load karne mein nakami",

@@ -84,6 +84,7 @@ const PRIVACY: PolicyDoc = {
     {
       id: 'infrastructure', en: '7. Infrastructure and third parties', ro: '7. Infrastructure aur third parties', blocks: [
         { kind: 'p', en: 'Firebase Authentication and Cloud Firestore are the configured external infrastructure, using the project configuration in this repository. Firestore access is intended to be default-deny and governed by security rules. Official source links open external websites whose own privacy practices apply; clicking them leaves INSAaf AI.', ro: 'Firebase Authentication aur Cloud Firestore configured external infrastructure hain, is repository ki project configuration ke sath. Firestore access default-deny aur security rules ke tehat hai. Official source links bahar ki websites kholte hain jahan un ki apni privacy practices lagti hain; click karne par aap INSAaf AI se bahar chale jate hain.' },
+        { kind: 'p', en: 'If the operator enables a hosted model provider, the question you submit and the retrieved legal references are processed by an external inference provider on the operator account — Cloudflare Workers AI or Hugging Face. Only the question, the retrieved records, the selected language and a short trimmed conversation history are sent. Authentication credentials, uploaded files, file paths and your identity are not sent. Cloudflare states that it does not retain Workers AI inputs or outputs after they are no longer needed, subject to its published safety and abuse-investigation exceptions. This processing is not covered by lawyer–client confidentiality. When the deterministic provider is active (the default), answers are composed on the INSAaf AI server and no external model receives your question.', ro: 'Agar operator koi hosted model provider enable karta hai to aap ka diya hua sawaal aur retrieved qanooni hawale operator ke account par external inference provider — Cloudflare Workers AI ya Hugging Face — par process hote hain. Sirf sawaal, retrieved records, chuni hui zaban aur chhoti trimmed guftagu history bheji jati hai. Authentication credentials, uploaded files, file paths aur aap ki identity nahi bheji jati. Cloudflare kehti hai ke Workers AI ke inputs aur outputs zaroorat khatam hone ke baad retain nahi kiye jate, magar us ki published safety aur abuse-investigation exceptions ke tehat. Ye processing wakeel–client raazdari mein nahi aati. Jab deterministic provider active ho (default) to jawab INSAaf AI server par tayar hote hain aur koi external model aap ka sawaal receive nahi karta.' },
       ],
     },
     {
@@ -220,7 +221,7 @@ const COPYRIGHT: PolicyDoc = {
 
 const PAGES: Record<PolicyPageId, PolicyDoc> = { privacy: PRIVACY, terms: TERMS, copyright: COPYRIGHT };
 
-const EFFECTIVE = '20 October 2026';
+const EFFECTIVE = '10 November 2026';
 
 export default function PolicyPage({ page, onBack }: { page: PolicyPageId; onBack: () => void }) {
   useLanguageVersion();

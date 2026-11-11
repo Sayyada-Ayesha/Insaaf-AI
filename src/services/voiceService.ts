@@ -40,6 +40,20 @@ export interface VoiceCapabilities {
   totalVoices: number;
 }
 
+/**
+ * Reported after an answer is spoken: which voice really produced the audio and
+ * whether an Urdu answer had to fall back to a voice that is not Urdu.
+ */
+export interface SpeakReport {
+  /** Urdu script was spoken (or Roman Urdu was requested as Urdu). */
+  urduRequested: boolean;
+  /** At least one chunk needed Urdu and no Urdu voice was used for it. */
+  urduVoiceMissing: boolean;
+  voiceName: string | null;
+  voiceLang: string | null;
+  chunkCount: number;
+}
+
 export type VoiceErrorCode =
   | 'unsupported'
   | 'unsupported-locale'
@@ -50,6 +64,7 @@ export type VoiceErrorCode =
   | 'timeout'
   | 'cancelled'
   | 'tts-unavailable'
+  | 'urdu-voice-missing'
   | 'unknown';
 
 export class VoiceError extends Error {
@@ -71,12 +86,28 @@ export class VoiceService {
    */
   private static speakGeneration = 0;
 
+  /**
+   * Urdu from the voice's language metadata alone. A display name is not evidence:
+   * Chrome exposes several voices whose name mentions a language the locale does not
+   * match, and treating the name as truth would let the UI claim an Urdu voice the
+   * device does not have.
+   */
+  static isUrduLang(lang?: string): boolean {
+    const l = (lang || '').toLowerCase();
+    return l === 'ur' || l.startsWith('ur-');
+  }
+
+  /** What actually spoke a chunk, so the UI can name the voice it used. */
+  static lastSpeak: SpeakReport | null = null;
+
   /** Honest capability snapshot used by the UI to label voice support accurately. */
   static getCapabilities(): VoiceCapabilities {
     const browserSTT = !!(typeof window !== 'undefined' && ((window as any).SpeechRecognition || (window as any).webkitSpeechRecognition));
     const browserTTS = !!(typeof window !== 'undefined' && window.speechSynthesis);
     const voices = this.getAvailableVoices();
-    const urduVoice = voices.find(v => /ur/.test((v.lang || '').toLowerCase()) || /urdu/i.test(v.name || ''));
+    // Language metadata only: a voice named "…Urdu…" whose lang is en-US is an English
+    // voice, and calling it available would be a claim this device cannot back up.
+    const urduVoice = voices.find(v => this.isUrduLang(v.lang));
     return {
       browserSTT,
       browserTTS,
@@ -158,9 +189,10 @@ export class VoiceService {
   static getAvailableVoices(): SpeechSynthesisVoice[] {
     if (typeof window === 'undefined' || !window.speechSynthesis) return [];
     const live = window.speechSynthesis.getVoices();
-    // Chrome fills getVoices() asynchronously; keep the longest list seen so a
-    // read that lands before voiceschanged does not report an empty device.
-    if (live.length >= this.voiceCache.length) this.voiceCache = live;
+    // Chrome fills getVoices() asynchronously, so an empty read is ignored; a
+    // non-empty read is always the engine's current truth, even when it now lists
+    // fewer voices than before — a voice that is gone must not stay "available".
+    if (live.length > 0) this.voiceCache = live;
     if (!this.voiceListenerAttached) {
       this.voiceListenerAttached = true;
       try {
@@ -200,7 +232,9 @@ export class VoiceService {
   }
 
   /**
-   * Selects the optimal SpeechSynthesisVoice based on language detection and scoring heuristic.
+   * Picks a voice by its language metadata only — never by its display name — so an
+   * English voice that happens to be marketed with an Urdu-sounding name can never
+   * be reported as the Urdu voice.
    */
   static selectBestVoice(
     voices: SpeechSynthesisVoice[],
@@ -212,35 +246,23 @@ export class VoiceService {
 
     let bestVoice: SpeechSynthesisVoice | null = null;
     let maxScore = 0;
-    let isGenuineUrdu = false;
 
     for (const v of voices) {
-      let score = 0;
       const vLang = (v.lang || '').toLowerCase();
-      const vName = (v.name || '').toLowerCase();
+      let score = 0;
 
-      if (langType === 'ur') {
-        if (vLang.includes('ur-pk') || vName.includes('pakistan') || vName.includes('urdu (pakistan)')) {
-          score += 1000;
-          isGenuineUrdu = true;
-        } else if (vLang.includes('ur') || vName.includes('urdu')) {
-          score += 800;
-          isGenuineUrdu = true;
-        } else if (vLang.includes('hi-in') || vLang.includes('hi') || vName.includes('hindi')) {
-          score += 500;
-        } else if (vLang.includes('-in') || vLang.includes('-pk')) {
-          score += 200;
-        }
-      } else if (langType === 'roman_urdu') {
-        if (vLang.includes('ur-pk') || vLang.includes('ur')) score += 1000;
-        else if (vLang.includes('hi-in') || vLang.includes('hi')) score += 800;
-        else if (vLang.includes('en-pk') || vLang.includes('en-in')) score += 600;
-        else if (vLang.includes('en-us') || vLang.includes('en-gb') || vLang.includes('en')) score += 300;
+      if (langType === 'ur' || langType === 'roman_urdu') {
+        if (vLang === 'ur-pk') score += 1000;
+        else if (this.isUrduLang(vLang)) score += 900;
+        else if (vLang === 'hi-in' || vLang.startsWith('hi-')) score += 500;
+        else if (vLang === 'en-pk') score += 400;
+        else if (vLang === 'en-in') score += 350;
+        else if (vLang.startsWith('en-') || vLang === 'en') score += 200;
       } else {
-        if (vLang.includes('en-pk')) score += 1000;
-        else if (vLang.includes('en-us')) score += 900;
-        else if (vLang.includes('en-gb')) score += 850;
-        else if (vLang.includes('en')) score += 500;
+        if (vLang === 'en-pk') score += 1000;
+        else if (vLang === 'en-us') score += 900;
+        else if (vLang === 'en-gb') score += 850;
+        else if (vLang.startsWith('en-') || vLang === 'en') score += 500;
       }
 
       if (score > maxScore) {
@@ -249,9 +271,16 @@ export class VoiceService {
       }
     }
 
-    const hasPlatformLimitation = (langType === 'ur' && !isGenuineUrdu);
+    // No scored candidate at all: fall back to the first voice rather than reporting
+    // a silence the browser did not impose.
+    const chosen = bestVoice || voices[0];
+    const isGenuineUrdu = this.isUrduLang(chosen.lang);
 
-    return { voice: bestVoice, isGenuineUrdu, hasPlatformLimitation };
+    return {
+      voice: chosen,
+      isGenuineUrdu,
+      hasPlatformLimitation: (langType === 'ur' || langType === 'roman_urdu') && !isGenuineUrdu
+    };
   }
 
   /**
@@ -445,33 +474,57 @@ export class VoiceService {
     });
   }
 
-  /** Browser SpeechSynthesis chunk with a watchdog so stuck synthesis can't hang the UI. */
-  private static browserSpeakChunk(text: string, langType: VoiceLangType, voices: SpeechSynthesisVoice[]): Promise<void> {
-    return new Promise<void>((resolve) => {
+  /**
+   * Browser SpeechSynthesis chunk with a watchdog so stuck synthesis can't hang the UI.
+   * Resolves with the voice that actually produced the audio; rejects only on a real
+   * engine failure, not on the cancel our own stop() issues.
+   */
+  private static browserSpeakChunk(
+    text: string,
+    langType: VoiceLangType,
+    voices: SpeechSynthesisVoice[]
+  ): Promise<{ voiceName: string | null; voiceLang: string | null; genuineUrdu: boolean }> {
+    return new Promise((resolve, reject) => {
       const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = (langType === 'ur' || langType === 'roman_urdu') ? 'ur-PK' : 'en-US';
-      const { voice } = this.selectBestVoice(voices, langType);
+      const { voice, isGenuineUrdu } = this.selectBestVoice(voices, langType);
       if (voice) utterance.voice = voice;
+      // The locale follows the voice that will speak, never an aspiration the device
+      // cannot honour — a ur-PK label on an English voice changes nothing.
+      utterance.lang = voice?.lang || (langType === 'en' ? 'en-US' : 'ur-PK');
       utterance.rate = 0.9;
       utterance.pitch = 1.0;
 
+      const outcome = {
+        voiceName: voice ? voice.name : null,
+        voiceLang: voice ? voice.lang : null,
+        genuineUrdu: isGenuineUrdu
+      };
+
       const estMs = Math.min(25000, Math.max(4000, text.length * 80 + 1500));
       let done = false;
-      const finish = () => {
+      const settle = () => {
         if (done) return;
         done = true;
         clearTimeout(timer);
-        resolve();
+      };
+      const finish = () => { settle(); resolve(outcome); };
+      const fail = () => {
+        if (done) return;
+        settle();
+        reject(new VoiceError('tts-unavailable', 'Speech output failed on this device.'));
       };
       const timer = setTimeout(() => {
         if (done) return;
-        done = true;
         try { window.speechSynthesis.cancel(); } catch { /* noop */ }
-        resolve();
+        finish();
       }, estMs);
 
       utterance.onend = finish;
-      utterance.onerror = finish;
+      utterance.onerror = (ev: SpeechSynthesisErrorEvent) => {
+        const reason = (ev && (ev as any).error) || '';
+        if (reason === 'canceled' || reason === 'interrupted') finish();
+        else fail();
+      };
       window.speechSynthesis.speak(utterance);
     });
   }
@@ -480,13 +533,16 @@ export class VoiceService {
    * Speaks text through the browser SpeechSynthesis engine, chunk by chunk, using
    * the best locally available voice for each chunk's script. Roman Urdu is spoken
    * with the best available voice rather than routed to any external service.
+   * An Urdu-script answer that only a non-Urdu voice can read is reported, never
+   * passed off as Urdu speech.
    */
   static async speak(
     text: string,
     onStart?: () => void,
     onEnd?: () => void,
     onError?: (err: any) => void,
-    preferredLang?: string
+    preferredLang?: string,
+    onSpoken?: (report: SpeakReport) => void
   ): Promise<void> {
     if (typeof window === 'undefined' || !window.speechSynthesis) {
       if (onError) onError(new VoiceError('unsupported', 'Speech output is not supported in this browser.'));
@@ -512,11 +568,21 @@ export class VoiceService {
     }
 
     let started = false;
+    let urduRequested = false;
+    let urduChunksFallenBack = 0;
+    let urduChunks = 0;
+    let firstVoice: { name: string | null; lang: string | null } | null = null;
 
     for (const chunk of chunks) {
       if (generation !== VoiceService.speakGeneration) break;
       try {
-        await this.browserSpeakChunk(chunk.text, chunk.langType, voices);
+        const used = await this.browserSpeakChunk(chunk.text, chunk.langType, voices);
+        if (!firstVoice) firstVoice = { name: used.voiceName, lang: used.voiceLang };
+        if (chunk.langType === 'ur') {
+          urduRequested = true;
+          urduChunks++;
+          if (!used.genuineUrdu) urduChunksFallenBack++;
+        }
         if (!started) {
           started = true;
           if (onStart) onStart();
@@ -525,6 +591,23 @@ export class VoiceService {
         if (onError) onError(err);
       }
       if (generation !== VoiceService.speakGeneration) break;
+    }
+
+    const report: SpeakReport = {
+      urduRequested,
+      urduVoiceMissing: urduChunks > 0 && urduChunksFallenBack === urduChunks,
+      voiceName: firstVoice ? firstVoice.name : null,
+      voiceLang: firstVoice ? firstVoice.lang : null,
+      chunkCount: chunks.length
+    };
+    VoiceService.lastSpeak = report;
+    if (onSpoken) onSpoken(report);
+
+    if (report.urduVoiceMissing && generation === VoiceService.speakGeneration) {
+      if (onError) onError(new VoiceError(
+        'urdu-voice-missing',
+        'This answer is in Urdu script, but this device has no Urdu voice, so another voice read it.'
+      ));
     }
 
     if (onEnd) onEnd();

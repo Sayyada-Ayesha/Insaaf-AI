@@ -25,22 +25,69 @@ export type ResponseLanguage = 'en' | 'roman_urdu';
 
 export const isUrduScript = (text: string): boolean => /[؀-ۿ]/.test(String(text || ''));
 
-// A deliberately short list of words that are Roman Urdu and not English. Two of
-// them in one message is what the server also requires before it calls Latin
-// script Roman Urdu.
-const ROMAN_WORDS = new Set([
-  'kya', 'hai', 'hain', 'hein', 'mera', 'meri', 'mujhe', 'aap', 'apna', 'apni', 'karen',
-  'karoon', 'karna', 'kar', 'ko', 'nahi', 'nhi', 'chahiye', 'zaroori', 'tareeqa', 'kaise', 'kyun',
-  'qanoon', 'wakeel', 'adalat', 'shikayat', 'darkhast', 'kiraya', 'malik', 'wapas',
-  'liye', 'saath', 'lekin', 'magar', 'agar', 'aur', 'koi', 'kuch', 'sab', 'bhi', 'haan',
-  'raha', 'rahi', 'sakta', 'sakti', 'hoga', 'kahan', 'kabhi', 'jaunga', 'doonga', 'masla'
+// The client mirror of server/languageDetect.js: same shape, same rule. Urdu
+// evidence is scored AGAINST English evidence, because "two hits from one short
+// list" (the previous rule) read plain Roman Urdu asks such as "office ne salary
+// rok di" or "saman kharab nikla" as English, so the browser's own fallback
+// wording contradicted the answer the server had just produced. The server stays
+// authoritative for every networked answer; this decides local fallback and
+// validation wording only.
+const GRAMMAR = new Set([
+  'ne', 'ko', 'se', 'ka', 'ki', 'ke', 'tak', 'bina', 'liye', 'waale', 'waali', 'wala', 'wali',
+  'baad', 'waqt', 'jagah', 'tarah', 'taraf', 'mera', 'meri', 'mere', 'mujhe', 'mjhe', 'ham',
+  'hamein', 'hamen', 'hamara', 'hamari', 'hamare', 'tum', 'tumhe', 'aap', 'aapko', 'aapka',
+  'aapki', 'apna', 'apni', 'apne', 'yeh', 'ye', 'woh', 'wo', 'unhon', 'yahan', 'wahan',
+  'hai', 'hain', 'hein', 'ho', 'hota', 'hoti', 'hote', 'hona', 'hone', 'hoga', 'hogi', 'tha',
+  'thi', 'hoon', 'raha', 'rahe', 'rahi', 'chahiye', 'chahye', 'chahta', 'chahti', 'sakta',
+  'sakti', 'sakte', 'karta', 'karti', 'karte', 'karna', 'karne', 'karoon', 'karein', 'karen',
+  'karo', 'kar', 'kiya', 'kia', 'diya', 'diye', 'di', 'dena', 'denge', 'dega', 'lega', 'legi',
+  'lena', 'liya', 'bataen', 'batayein', 'jaata', 'jaati', 'gaya', 'gayi', 'aaya', 'aayi',
+  'mila', 'mili', 'mile', 'kya', 'kaun', 'kis', 'kise', 'kisne', 'kyun', 'kyon', 'kyunki',
+  'magar', 'lekin', 'agar', 'warna', 'phir', 'ab', 'abhi', 'kab', 'kabhi', 'kahan', 'kaise',
+  'kitna', 'kitni', 'kitne', 'kuch', 'koi', 'kisi', 'nahi', 'nhi', 'nahin', 'haan', 'ji',
+  'bilkul', 'zaroor', 'bohat', 'bahut', 'zyada', 'thora', 'thori', 'sab', 'sara', 'sirf',
+  'aur', 'bhi', 'saath', 'theek', 'achha', 'acha', 'masla', 'mamla', 'baat', 'tareeqa',
+  'mutaliq', 'mukhtasar', 'mein'
+]);
+
+const EVERYDAY = new Set([
+  'saman', 'kharab', 'kharida', 'khareed', 'udhaar', 'qarz', 'wapas', 'wapsi', 'paisa', 'paise',
+  'raqam', 'tankhwa', 'naukri', 'mulazim', 'malik', 'kiraya', 'makan', 'ghar', 'chor', 'chori',
+  'dhoka', 'jhoota', 'thana', 'wakeel', 'vakeel', 'adalat', 'qanoon', 'haq', 'huqooq', 'shikayat',
+  'darkhwast', 'darkhast', 'kaghaz', 'dastavez', 'khawand', 'biwi', 'bhai', 'behn', 'beta', 'beti',
+  'bachcha', 'bachon', 'bachay', 'nikla', 'nikli', 'ruka', 'ruke', 'jama', 'bhej', 'shuru', 'khatam',
+  'dusra', 'tareekh', 'qism', 'sarkari', 'nikaah', 'shadi', 'talaq', 'khula', 'hizanat', 'nafqa',
+  'mehr', 'iddat', 'wirasat', 'jaidad', 'zameen', 'malkiat', 'qabza', 'intqal', 'khat', 'taleem',
+  'imtihan', 'daftar', 'bimari', 'ilaj', 'jaali', 'naqli', 'dhamki', 'badnami', 'tauheen'
+]);
+
+const ENGLISH = new Set([
+  'the', 'this', 'that', 'these', 'those', 'there', 'here', 'is', 'are', 'was', 'were', 'am', 'be',
+  'been', 'of', 'to', 'in', 'on', 'at', 'for', 'with', 'without', 'and', 'or', 'but', 'if', 'then',
+  'so', 'because', 'my', 'your', 'our', 'their', 'they', 'them', 'i', 'you', 'he', 'she', 'it',
+  'him', 'her', 'his', 'hers', 'what', 'when', 'where', 'which', 'who', 'why', 'how', 'can',
+  'could', 'would', 'should', 'may', 'might', 'must', 'do', 'does', 'did', 'have', 'has', 'had',
+  'please', 'want', 'need', 'against', 'under', 'according', 'about', 'from', 'into', 'than',
+  'will', 'shall', 'not', 'no', 'yes', 'any', 'some', 'all', 'each', 'other', 'more', 'very',
+  'get', 'got', 'make', 'made', 'give', 'take', 'file', 'case', 'court', 'law', 'a', 'an', 'as',
+  'too', 'also', 'just', 'still'
 ]);
 
 export function isRomanUrduText(text: string): boolean {
-  const words = String(text || '').toLowerCase().split(/[^a-z']+/).filter(Boolean);
-  let hits = 0;
-  for (const w of words) if (ROMAN_WORDS.has(w) && ++hits >= 2) return true;
-  return false;
+  const s = String(text || '');
+  if (!s.trim() || isUrduScript(s)) return false;
+  const words = s.toLowerCase().match(/[a-z]+/g) || [];
+  if (!words.length) return false;
+  let roman = 0;
+  let english = 0;
+  for (const w of words) {
+    if (GRAMMAR.has(w)) roman += 3;
+    else if (EVERYDAY.has(w)) roman += 2;
+    else if (ENGLISH.has(w)) english += 3;
+  }
+  const inflected = words.some(w => /^[a-z]{3,}(?:gaa|gey|egi|ega|enge|unga|ungi|oo|ey|na)$/.test(w) && !ENGLISH.has(w));
+  if (inflected) roman += 2;
+  return roman >= 4 && roman > english;
 }
 
 export function resolveResponseLanguage(

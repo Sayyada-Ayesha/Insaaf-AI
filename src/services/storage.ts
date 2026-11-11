@@ -18,6 +18,10 @@ export interface CitationWarning {
   unverified?: string[];
 }
 
+/** How well the evidence behind an answer actually answers the question asked.
+ *  'clarify' means the pipeline deliberately asked one question instead of answering. */
+export type EvidenceVerdict = 'strong' | 'weak' | 'none' | 'clarify';
+
 export interface LocalChatMessage {
   role: 'user' | 'model';
   text: string;
@@ -27,6 +31,8 @@ export interface LocalChatMessage {
   citationWarning?: CitationWarning | null;
   /** Evidence path that produced this answer; the badge reads this, not the live selector. */
   evidenceMode?: 'islamic' | 'combined' | 'legal';
+  /** Evidence gate verdict for THIS answer; absent means nothing was retrieved or curated answered. */
+  evidenceVerdict?: EvidenceVerdict;
 }
 
 export interface LocalChat {

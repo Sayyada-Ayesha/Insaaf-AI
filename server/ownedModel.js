@@ -15,11 +15,13 @@
 // ============================================================================
 
 import { parseOverseasIntent } from './ragEngine.js';
-import { ANSWER_LEVELS, normalizeAnswerLevel, evidenceNoteText } from './evidenceGate.js';
+import { ANSWER_LEVELS, normalizeAnswerLevel, evidenceNoteText, queryEvidenceTokens, queryOwnWordForms } from './evidenceGate.js';
+import { documentMetadata, isSelfReferentialAuthority } from './corpusMetadata.js';
 import {
   deriveChunkScope, scopeLabel, applicabilityNote, missingScopeMessage,
   scopeLayerName, detectQueryScope
 } from './corpusScope.js';
+import { groundAnswerCitations } from './answerGrounding.js';
 
 const EN = {
   issue: 'Issue',
@@ -98,11 +100,37 @@ const QUERY_STOP = new Set(('the a an and or of to in for on with is are was be 
  */
 const BOILERPLATE_TERMS = new Set(('court courts supreme high honble judge judges judgment judgement order orders case cases law laws legal act acts section sections article articles subsection rule rules regulation petition petitions petitioner petitioners respondent respondents appellant applicants applicant plaintiff defendant counsel advocate learned decision decisions decided decide decide appeal appeals revision review constitution constitutional government province provincial state rules plaintiff government petitioner pltf').split(/\s+/));
 
+/**
+ * What the words of a script-only question are called in the corpus. Retrieval
+ * already decided WHICH records came back; this only names the question's own
+ * vocabulary in the language those records are written in, so ranking can tell
+ * an account-fee record from an education-fee record for the same Urdu word فیس.
+ */
+function glossedCorpusTerms(query) {
+  const out = [];
+  try {
+    for (const entry of queryOwnWordForms(String(query || ''), undefined)) {
+      for (const form of (entry && entry.forms) || []) {
+        const w = String(form).toLowerCase();
+        if (/^[a-z']{3,}$/.test(w) && !QUERY_STOP.has(w) && !BOILERPLATE_TERMS.has(w)) out.push(w);
+      }
+    }
+  } catch { return []; }
+  return [...new Set(out)];
+}
+
 /** How many of the question's own words this record actually carries. */
-function queryTermHits(query, chunk) {
+function queryTermHits(query, chunk, gloss = null) {
   const words = new Set((String(query || '').toLowerCase().match(/[a-z']{3,}/g) || [])
     .filter(w => !QUERY_STOP.has(w) && !BOILERPLATE_TERMS.has(w)));
-  if (!words.size || !chunk) return 0;
+  if (!chunk) return 0;
+  // An Urdu-script question has no Latin token, so the set above is empty and the
+  // record that answers it cannot be told from the record that merely rode in on
+  // a vector distance. The gloss list is that question's own words translated to
+  // the vocabulary the corpus prints, and it is only used when there is no other
+  // reading of what the user wrote.
+  const terms = words.size ? words : new Set(gloss || []);
+  if (!terms.size) return 0;
   // The WHOLE record, not its first 900 characters. A rule stated further down a
   // long record was invisible here, so the drug-abuse clause of a 3,828-character
   // welfare record outranked "Student Right to Appeal Disciplinary Decisions" for
@@ -110,7 +138,7 @@ function queryTermHits(query, chunk) {
   // scan cannot inflate a record the way raw term frequency would.
   const hay = `${chunk.chunkTitle || ''} ${chunk.title || ''} ${String(chunk.text || '').slice(0, 6000)}`.toLowerCase();
   let hits = 0;
-  for (const w of words) if (hay.includes(w)) hits++;
+  for (const w of terms) if (hay.includes(w)) hits++;
   return hits;
 }
 
@@ -124,14 +152,16 @@ function stemTerm(w) {
  * register from a scholarship list sitting in the same corpus file — and the
  * distinguishing words of such questions are boilerplate-filtered away.
  */
-function ownIdentityHits(query, chunk) {
+function ownIdentityHits(query, chunk, gloss = null) {
   const raw = `${String(chunk?.key || '').replace(/_/g, ' ')} ${chunk?.chunkTitle || ''}`.toLowerCase();
   const own = new Set((raw.match(/[a-z']{3,}/g) || []).filter(w => !QUERY_STOP.has(w)).map(stemTerm));
   if (!own.size) return 0;
   const words = new Set((String(query || '').toLowerCase().match(/[a-z']{3,}/g) || [])
     .filter(w => !QUERY_STOP.has(w)).map(stemTerm));
+  const terms = words.size ? words : new Set((gloss || []).map(stemTerm));
+  if (!terms.size) return 0;
   let hits = 0;
-  for (const w of own) if (words.has(w)) hits++;
+  for (const w of own) if (terms.has(w)) hits++;
   return hits;
 }
 
@@ -152,10 +182,14 @@ function ownIdentityHits(query, chunk) {
 function rankRecords(query, chunks) {
   const words = new Set((String(query || '').toLowerCase().match(/[a-z']{3,}/g) || [])
     .filter(w => !QUERY_STOP.has(w)));
-  if (!words.size) return [...(chunks || [])];
+  // Nothing to rank on in Latin — ask the same dictionary the evidence gate uses
+  // what the user's own words are called in the corpus. With no gloss either,
+  // order is left exactly as retrieval returned it.
+  const gloss = words.size ? null : glossedCorpusTerms(query);
+  if (!words.size && !gloss.length) return [...(chunks || [])];
   const scored = (chunks || []).map((c, i) => {
-    const own = ownIdentityHits(query, c);
-    return { c, i, s: own + queryTermHits(query, c), own };
+    const own = ownIdentityHits(query, c, gloss);
+    return { c, i, s: own + queryTermHits(query, c, gloss), own };
   });
   return scored.sort((a, b) => b.s - a.s || b.own - a.own || a.i - b.i).map(s => s.c);
 }
@@ -337,13 +371,21 @@ function scopePoolToServices(pool, asked) {
 
 const SOURCE_URL_LINE = /^\s*source\s*url\s*:\s*(https?:\/\/\S+)[\s,]*$/im;
 
+/** An address as printed inside a record runs into the punctuation of the line
+ *  it sits in ("https://x.gov.pk;" in a semi-colon separated Source block), and
+ *  a citation is only a citation if it is clickable. Only trailing punctuation
+ *  is removed — a trailing slash is part of an address, not decoration. */
+function cleanUrl(url) {
+  return String(url || '').trim().replace(/["'`,;:)\]}]+$/g, '');
+}
+
 /** A record's own stated source address where it carries one. The manifest holds
  *  ONE url per document, while a civic/procedure document holds many services —
  *  so every record of that file, the passport one included, inherited the NADRA
  *  NICOP address. The line inside the record describes the record. */
 function recordSourceUrl(chunk) {
   const own = String(chunk?.text || '').match(SOURCE_URL_LINE);
-  return (own && own[1]) || String(chunk?.sourceURL || '');
+  return cleanUrl((own && own[1]) || chunk?.sourceURL || '');
 }
 
 const URL_SERVICES = [
@@ -363,31 +405,75 @@ function urlServiceSet(url) {
 }
 
 /** The citation for a record: its own address, and where that address belongs to
- *  a different service than the one asked, the same authority's portal root —
- *  never another service's page, and never no source at all. */
+ *  a different service than the one asked, the address the corpus registered for
+ *  the document. Never another service's page, and never an address we composed
+ *  ourselves — a truncated portal root is not where this record came from. */
 function recordSource(chunk, asked) {
   const url = recordSourceUrl(chunk);
   if (!url || !asked || !asked.size) return url;
   const tag = urlServiceSet(url);
   if (!tag.size) return url;
   for (const s of tag) if (asked.has(s)) return url;
-  try { return new URL(url).origin; } catch { return url; }
+  const registered = cleanUrl(documentMetadata(chunk?.docId)?.sourceUrl || chunk?.sourceURL || '');
+  return registered || url;
 }
-/** The authority a record names for ITSELF. The manifest carries one
- *  issuingAuthority per document, so a civic record reported the whole list
- *  "NADRA/DGIP/ECP/Mohtasib/FIA" — including agencies the quoted record has
- *  nothing to do with. The record's own Authority/Source line is the truthful
- *  attribution. */
-const RECORD_AUTH_LINE = /^\s*(?:authority|issuing authority)\s*:\s*(.+)$/im;
-const RECORD_SOURCE_LINE = /^\s*source\s*:\s*(.+)$/im;
+
+/**
+ * The authority a record is attributed to. Only ever a string the corpus
+ * registers for THIS document — never prose lifted out of the record.
+ *
+ * THE DEFECT THIS KILLS: the previous version returned the record's own
+ * "Authority:" line for guide documents, which is free text written by whoever
+ * harvested the page. Cards then read "NADRA (National Database and Registration
+ * Authority)", "CrPC Sections 154, 22-A/22-B, 200", "Respective organization
+ * official websites." and "Stamp Act, 1899. VERIFICATION: metadata-verified" —
+ * some of those are statutes or ingest notes rather than institutions, none of
+ * them is checkable against the corpus registry, and the last one shows internal
+ * pipeline metadata reaching a citizen-facing card.
+ *
+ * A multi-service document registers several authorities in one slash-separated
+ * field, so the field is split and the entry the record actually names is the one
+ * published — spelled exactly as the registry spells it, because a citation that
+ * cannot be matched back to the corpus is not a citation. When the record names
+ * none of them and more than one is registered, nothing is claimed.
+ */
+const contentTokens = s => new Set(String(s || '').toLowerCase()
+  .replace(/[^a-z0-9\u0600-\u06FF]+/g, ' ').split(' ').filter(w => w.length >= 4));
+const abbreviations = s => (String(s || '').match(/\b[A-Z]{2,}\b/g) || []);
+
 function recordAuthority(chunk) {
-  const fallback = String(chunk?.issuingAuthority || '');
-  const isGuide = /guide|digest|workflow|handbook|manual|directory/i.test(String(chunk?.documentType || ''));
-  if (!isGuide) return fallback;
-  const text = String(chunk?.text || '');
-  const own = text.match(RECORD_AUTH_LINE) || text.match(RECORD_SOURCE_LINE);
-  const line = own && own[1] ? own[1].replace(/\s*[—-]\s*(?:the\s+)?official\s+(?:portal|website|site)\s*$/i, '').trim() : '';
-  return line || fallback;
+  if (!chunk) return '';
+  const registered = String(documentMetadata(chunk.docId)?.authority || chunk.issuingAuthority || '').trim();
+  if (!registered || isSelfReferentialAuthority(registered)) return '';
+  // The separator is " / ", not "/": a registered string may hold a slash-list
+  // of abbreviations inside parentheses, and splitting that apart publishes a
+  // fragment of an institution's name.
+  const entries = registered.split(/\s+\/\s+/).map(s => s.trim()).filter(Boolean);
+  const text = String(chunk.text || '');
+  const recordTokens = contentTokens(`${chunk.key || ''} ${chunk.chunkTitle || ''} ${text}`);
+  const spoken = abbreviations(registered).filter(a => text.includes(a));
+  if (spoken.length) {
+    // A document registered as several agencies is about one of them per record,
+    // and the record's own letterhead says which. The abbreviation is published
+    // exactly as it appears inside the registered string.
+    const counts = new Map();
+    for (const m of text.matchAll(/\b[A-Z]{3,}\b/g)) {
+      if (spoken.includes(m[0])) counts.set(m[0], (counts.get(m[0]) || 0) + 1);
+    }
+    const ranked = [...counts.entries()].sort((a, b) => b[1] - a[1]);
+    if (ranked.length === 1 || ranked[0][1] > (ranked[1] || [0, 0])[1]) return ranked[0][0];
+    return '';
+  }
+  if (entries.length <= 1) return entries[0] || registered;
+  const fit = entries.map(e => {
+    const tk = contentTokens(e);
+    let shared = 0;
+    for (const w of tk) if (recordTokens.has(w)) shared++;
+    return { e, s: tk.size ? shared / tk.size : 0 };
+  }).sort((a, b) => b.s - a.s);
+  // One agency, named by the record itself, and clearly better than the rest.
+  if (fit[0].s >= 0.34 && fit[0].s > (fit[1] ? fit[1].s : 0)) return fit[0].e;
+  return '';
 }
 export { askedServiceSet, recordServiceSet, scopePoolToServices, recordSourceUrl, recordSource, recordAuthority };
 
@@ -402,6 +488,8 @@ const norm = s => String(s || '').toLowerCase().replace(/[^a-z0-9\u0600-\u06FF]/
  */
 function displayTitle(raw) {
   return String(raw || '')
+    .replace(/^\s*#{1,6}\s+/, '')
+    .replace(/^\s*\d+[.)]\s+/, '')
     .replace(/^\s*(?:laws?|title)\s*:\s*/i, '')
     .replace(/\s*[.—-]?\s*coverage\s*:[\s\S]*$/i, '')
     .replace(/_/g, ' ')
@@ -420,6 +508,65 @@ export { isCorpusMetaLine };
 export { queryTermHits, rankRecords, policyFamilyOrder };
 
 /**
+ * A line that is only a label — "Library Fee :", "2. Transport Fee :" — is a
+ * table stub whose value sits in the next row of the source layout, not a rule
+ * and not a step. Quoted as either it prints a heading with nothing said.
+ */
+function isLabelStubLine(line) {
+  return /^(?:\d+[.)]\s+)?[^:\n]{1,60}:\s*$/.test(String(line || '').trim());
+}
+export { isLabelStubLine };
+
+/**
+ * "Consumer Complaint Procedure — Step-by-Step" names the block it sits above;
+ * it is not a step and not a rule. A Title-Cased run of words with no sentence
+ * terminator is a heading in every ingest format in this corpus.
+ */
+function isHeadingLine(line) {
+  const l = String(line || '').trim();
+  if (/[.!?]$/.test(l)) return false;
+  const toks = l.match(/[A-Za-z][A-Za-z'’-]*/g) || [];
+  if (toks.length < 3) return false;
+  return toks.filter(t => /^[A-Z]/.test(t)).length / toks.length >= 0.8;
+}
+export { isHeadingLine };
+
+/**
+ * The ingest convention for "what this record is about": a sentence that opens
+ * with a document-describing verb and never names an actor —
+ * "- Governs residential and commercial tenancy disputes in Islamabad.",
+ * "Governs rent and tenancy in urban areas of KP.",
+ * "Arbitration Act, 1940 — Governs domestic arbitration in Pakistan."
+ * It describes the filing cabinet, not the rule, so it can never answer a
+ * citizen. Statutory sentences that state their own subject ("This Act applies
+ * to …") are left alone: those are the instrument speaking, not the indexer.
+ */
+function isScopeAnnotationLine(line) {
+  const l = String(line || '').trim()
+    .replace(/^[-*•\s]+/, '')
+    .replace(/^[\s\S]{0,120}?\s[—–]\s*/, '');
+  return /^(governs?|covered|covers|deals with|concerns|describes?|summaris(?:es|ing)|summariz(?:es|ing)|enumerat(?:es|ing)|lists|recorded|it (?:covers|lists|describes)|this (?:record|document|note|entry|chunk|file) (?:covers|lists|describes|contains))\b/i.test(l);
+}
+export { isScopeAnnotationLine };
+
+/**
+ * A line whose whole content is a pointer to something else. The corpus is built
+ * in passes, so a record can carry "See Circular No. 4/2025." where the rule
+ * should be, and an indexer's "This provision applies to tenancy disputes
+ * involving students." beside the provision it filed. Neither states a rule, and
+ * an answer built on one tells a citizen nothing they can act on. An instrument
+ * name is not a plumbing subject: "This Act applies to …" is the law speaking
+ * about its own reach, which is a fact a citizen can use.
+ */
+function isCrossReferenceLine(line) {
+  const l = String(line || '').trim().replace(/^[-*•\s]+/, '');
+  if (/^(?:also\s+)?see\b/i.test(l) || /^refer(?:s|ed)?\s+to\b/i.test(l)
+    || /^as\s+per\b/i.test(l)) return true;
+  return /^this\s+(?:provision|section|subsection|sub-section|clause|paragraph|para|item|entry|rule)\b[^.!?]{0,90}\b(?:applies to|applies in|is applicable|extends to|relates to|pertains to)\b/i.test(l);
+}
+export { isCrossReferenceLine };
+
+/**
  * What THIS record says, in its own words: its metadata header and any line that
  * only repeats its title are dropped, so the answer quotes the provision rather
  * than describing the topic it belongs to. Returns '' when the record has no
@@ -430,7 +577,15 @@ function recordBody(chunk) {
   if (!raw.trim()) return '';
   const title = norm(chunk.chunkTitle || chunk.title);
   const all = raw.split('\n').map(l => l.trim()).filter(Boolean)
-    .filter(l => !isCorpusMetaLine(l) && !SECTION_LABEL_RE.test(l) && !isFeeRowLine(l))
+    // A markdown heading is the source file's layout, not the rule it contains.
+    .filter(l => !l.startsWith('#'))
+    // "Transport Fee :" with nothing after the colon is a table stub, a
+    // Title-Cased line names the block and a "Governs …" line describes the
+    // record; a "See …" or "This provision applies to …" line points somewhere
+    // else. None of the four states a rule.
+    .filter(l => !isLabelStubLine(l) && !isHeadingLine(l) && !isCorpusMetaLine(l)
+      && !SECTION_LABEL_RE.test(l) && !isFeeRowLine(l) && !isScopeAnnotationLine(l)
+      && !isCrossReferenceLine(l))
     .map(l => l.replace(/^[-*•]\s+/, ''));
   if (!all.length) return '';
   // Summary records store the provision itself in their title and repeat it as
@@ -444,6 +599,27 @@ function recordBody(chunk) {
 }
 
 /**
+ * One sentence splitter for every quote path. Corpus clause numbering
+ * ("9.1. No student shall …") reads as its own sentence because the last period
+ * is followed by a space, so a naive split cut the marker away from the
+ * provision it numbers — the window then scored and returned the provision
+ * without its number, and a one-sentence clip returned the bare number.
+ * A marker belongs to the sentence it numbers, never on its own.
+ */
+function splitSentences(text) {
+  const raw = String(text || '').split(/(?<=[.!?])\s+/).filter(Boolean);
+  const parts = [];
+  let pending = '';
+  for (const p of raw) {
+    if (!hasSubstance(p, 1)) { pending += `${p} `; continue; }
+    parts.push(pending ? `${pending}${p}` : p);
+    pending = '';
+  }
+  if (pending && !parts.length) parts.push(pending.trim());
+  return parts;
+}
+
+/**
  * The part of a record that answers THIS question. A record can run to several
  * unrelated sections, and printing its opening sentences let a ragging complaint
  * be answered with scholarship-eligibility text, a suspension appeal with a
@@ -454,20 +630,39 @@ function recordBody(chunk) {
  * record does not address the ask"; it never reaches outside the record.
  */
 function onTopicWindow(body, query, maxSentences = 2) {
-  const words = [...new Set((String(query || '').toLowerCase().match(/[a-z']{4,}/g) || [])
-    .filter(w => !QUERY_STOP.has(w) && !BOILERPLATE_TERMS.has(w)))];
+  const literal = (String(query || '').toLowerCase().match(/[a-z']{4,}/g) || []);
+  // The corpus is English-language. A Roman Urdu or Urdu-script question shares
+  // no literal word with the record that answers it, so matching only the words
+  // as typed left this function always answering "the opening is fine" — and the
+  // opening of an ingest-built record is frequently a coverage description
+  // ("Governs X disputes in Y"), not a rule. The gate's own gloss is the single
+  // place that already turns these questions into corpus vocabulary.
+  let glossed = [];
+  try { glossed = queryEvidenceTokens(query); } catch { glossed = []; }
+  const words = [...new Set([...literal, ...glossed]
+    .filter(w => w.length >= 4 && !QUERY_STOP.has(w) && !BOILERPLATE_TERMS.has(w)))];
   if (!words.length) return '';
-  const parts = String(body || '').split(/(?<=[.!?])\s+/).filter(Boolean);
+  const parts = splitSentences(body);
   if (parts.length < 3) return '';
   const scoreOf = (s) => {
     const l = s.toLowerCase();
     let n = 0;
-    for (const w of words) if (l.includes(w)) n++;
+    // A hit must BEGIN at a word boundary: "rent" inside "current" and
+    // "different" is not the subject, and substring matching let unrelated
+    // sentences clear the topical floor. Stems still reach their longer forms,
+    // so "evict" scores "eviction" the way the gloss intends.
+    for (const w of words) if (new RegExp(`(?:^|[^a-z0-9])${w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`).test(l)) n++;
     return n;
   };
-  if (scoreOf(parts[0]) > 0) return '';
-  let best = -1;
-  let bestScore = 0;
+  // One shared word is not the subject, and two incidental ones do not make a
+  // sentence the answer. The opening used to keep its place whenever it cleared
+  // that floor, so a tenant asking about being turned out was quoted the lease-
+  // registration bullet of the same Act — the eviction sentence right below it
+  // shared three of the question's words and was never consulted. Every sentence
+  // is now scored on the same footing, and the opening is displaced only when
+  // another is strictly more on-topic.
+  let best = 0;
+  let bestScore = scoreOf(parts[0]);
   parts.forEach((p, i) => {
     const s = scoreOf(p);
     if (s > bestScore) { bestScore = s; best = i; }
@@ -479,8 +674,23 @@ function onTopicWindow(body, query, maxSentences = 2) {
 function recordLead(chunk, maxSentences = 2, maxChars = 520, query = null) {
   const body = recordBody(chunk);
   if (body.replace(/[^A-Za-z\u0600-\u06FF]/g, '').length < 45) return '';
+  // A block that never ends a sentence is a layout listing — a table of column
+  // values or a publication index — not a rule stated in words. Named as a
+  // source it is evidence; quoted as prose it pasted an entire contents page
+  // into a citizen's answer, because joining the lines erases the table.
+  if (body.length > 300 && (body.match(/[.!?](?:\s|$)/g) || []).length < 2) return '';
   const windowed = query ? onTopicWindow(body, query, maxSentences) : '';
-  return clipSentences(windowed || body, maxSentences, maxChars);
+  const out = clipSentences(windowed || body, maxSentences, maxChars);
+  // The floor belongs under the PART that is quoted, not under the record it
+  // came from: a clause that reads "9.1." sits inside a document long enough to
+  // clear any body-wide test, and quoting it told a student that was the rule.
+  return hasSubstance(out) ? out : '';
+}
+
+/** Words a reader can act on. Clause numbers, cross-references and layout
+ *  fragments have characters but no content. */
+function hasSubstance(text, minAlpha = 30) {
+  return String(text || '').replace(/[^A-Za-z\u0600-\u06FF]/g, '').length >= minAlpha;
 }
 
 /** What the SAME record says after the part already quoted — a record is only
@@ -488,13 +698,14 @@ function recordLead(chunk, maxSentences = 2, maxChars = 520, query = null) {
 function recordContinuation(chunk, shown, maxSentences = 2, maxChars = 520) {
   const body = recordBody(chunk);
   if (!body) return '';
-  const parts = body.split(/(?<=[.!?])\s+/).filter(Boolean);
+  const parts = splitSentences(body);
   const shownNorm = norm(shown);
   let start = 0;
   while (start < parts.length && shownNorm.includes(norm(parts[start]))) start++;
   const rest = parts.slice(start).join(' ');
   if (rest.replace(/[^A-Za-z\u0600-\u06FF]/g, '').length < 45) return '';
-  return clipSentences(rest, maxSentences, maxChars);
+  const out = clipSentences(rest, maxSentences, maxChars);
+  return hasSubstance(out) ? out : '';
 }
 
 // A Roman Urdu answer explains in Roman Urdu. Where it quotes the corpus it
@@ -760,82 +971,29 @@ function synthesizeRomanAnswer(query, intent, topics, domain, chunks) {
   }
 }
 
-// Build a simple explanation from the primary chunk's text — extract the key
-// point, not the full legal text.
-function buildExplanation(query, primary, domain, isRoman) {
-  // Provide a simple plain-language bridge based on the query and retrieved chunk.
-  let intent = detectQueryIntent(query, domain);
-  // A social-protection or civic programme question is answered by the
-  // programme's own published channel — a Tehsil/field office, a helpline, a
-  // registration desk. The intent templates below name court remedies, and
-  // "recovery" fires on words like paisa/qist, so a citizen reporting a
-  // deduction from their 8171 payment was being told to file a civil suit: a
-  // remedy no retrieved record states. On these domains the ask gets the
-  // programme bridge instead.
-  if (domain === 'social-protection' || domain === 'civic') intent = 'programme-channel';
-  const chunkTitle = String(primary?.chunkTitle || primary?.title || '').replace(/^title:\s*/i, '').trim();
-  const topic = chunkTitle || topicFromChunk(primary) || 'your legal matter';
-
-  if (isRoman) {
-    switch (intent) {
-      case 'programme-channel':
-        return `Yeh maloomat programme ke apne verified records se li gayi hai. Is mein jo tareeqa likha hai woh programme ka apna registration ya shikayat ka channel hai — maslan Tehsil/field office ya toll-free helpline. Adalat ya civil suit is ka pehla qadam nahi, jab tak record khud woh na kahe.`;
-      case 'police-fir':
-        return `FIR (First Information Report) darj karwana aap ka qanooni haq hai. Police cognizable offence ki FIR register karne ki paband hai.`;
-      case 'harassment':
-        return `Harassment ke khilaf qanoon aap ki hifazat karta hai. Aap likhit shikayat de sakte hain aur inquiry ka haq rakhte hain.`;
-      case 'rights':
-        return `Yeh aap ke qanooni huqooq hain jo verified qanooni zakhire se sabit hain. In ka maqsad aap ki hifazat aur insaaf hai.`;
-      case 'fee-scholarship':
-      case 'student-general':
-        return `Yeh rights aur protections aap ki university ke regulations aur HEC ki policies mein darj hain. In ka maqsad yeh hai ke students ke saath insaaf ho.`;
-      case 'recovery':
-        return `Qarz ya recovery ke liye qanooni tareeqay majood hain. Aap legal notice ya civil suit ke zariye apna haq hasil kar sakte hain.`;
-      case 'property':
-        return `Property ke qanooni huqooq protected hain. Registry, possession aur transfer ke liye clear qanooni provisions hain.`;
-      case 'family':
-        return `Family matters mein qanoon aap ko rights deta hai — maintenance, custody ya divorce ke liye clear tareeqay hain.`;
-      case 'bail':
-        return `Bail ka haq qanoon mein darj hai. Zamanat ke liye aap court mein application de sakte hain.`;
-      case 'consumer':
-        return `Consumer protection qanoon ke tehet aap defective goods ya substandard services ke khilaf shikayat kar sakte hain.`;
-      case 'legal-notice':
-        return `Legal notice ek rasmi tareeqa hai jisme aap apni baat doosri party tak pohanchate hain aur qanooni action ki warning dete hain.`;
-      default:
-        return `Yeh maloomat verified Pakistani qanooni zakhire se li gayi hai. Is ka maqsad aap ko aap ke huqooq aur tareeqay samjhana hai.`;
-    }
+/**
+ * The next record that carries the ask, for the "what the law says" section.
+ * The section used to fall back on a keyword table: `detectQueryIntent` picked
+ * a canned paragraph — "Property rights are protected by law. Clear provisions
+ * govern registration, possession, and transfer." — which no retrieved record
+ * states and which answered a different question from the one asked. A tenant
+ * told the eviction rule they were entitled to instead read a generic property
+ * blurb, because the table fired before the evidence was used up.
+ *
+ * Now the section is filled from the records or not at all: each grounded
+ * record in retrieval order gets the same topical floor every other quote has
+ * to clear, and an answer that has nothing left to say leaves the section out.
+ */
+function nextGroundedExplanation(userQuery, grounded, answerRecord, lvl) {
+  for (const c of grounded) {
+    if (!c || c === answerRecord) continue;
+    if (queryTermHits(userQuery, c) < 2) continue;
+    const lead = recordLead(c, lvl.answerSentences, lvl.explanationChars, userQuery);
+    if (lead) return lead;
   }
-
-  switch (intent) {
-    case 'programme-channel':
-      return `This is drawn from the programme's own verified records. The route stated in them is the programme's registration or grievance channel — a Tehsil/field office, a helpline — not a court claim, unless a record says otherwise.`;
-    case 'police-fir':
-      return `Registering an FIR is your legal right. The police are obligated to register a First Information Report for cognizable offences under Section 154 CrPC.`;
-    case 'harassment':
-      return `The law protects you from harassment. You can submit a written complaint and have the right to an inquiry.`;
-    case 'rights':
-      return `These are your legal rights, verified from the Pakistani law corpus. Their purpose is to ensure your protection and access to justice.`;
-    case 'fee-scholarship':
-    case 'student-general':
-      return `These rights and protections are set out in your university's regulations and HEC policies. Their purpose is to ensure fair treatment for students.`;
-    case 'recovery':
-      return `Legal remedies exist for debt recovery. You can pursue your claim through a legal notice or civil suit.`;
-    case 'property':
-      return `Property rights are protected by law. Clear provisions govern registration, possession, and transfer.`;
-    case 'family':
-      return `Family law provides clear rights and procedures for maintenance, custody, and divorce matters.`;
-    case 'bail':
-      return `Bail is a legal right. You can apply for bail through the appropriate court.`;
-    case 'consumer':
-      return `Consumer protection law allows you to file complaints against defective goods or substandard services.`;
-    case 'legal-notice':
-      return `A legal notice is a formal way to communicate your position to the other party and warn of potential legal action.`;
-    default:
-      return `This information is from the verified Pakistani law corpus. Its purpose is to help you understand your rights and the relevant procedures.`;
-  }
+  return '';
 }
 
-/** A record's own numbered action list, quoted verbatim. */
 /** A published fee-schedule row: "<name> — <amount>". Numbered in the source, but
  *  it prices a service; it is not a procedural step, and rendering it as one would
  *  invent an application process the document never describes. */
@@ -888,20 +1046,14 @@ function feeScheduleBlock(chunk, maxRows = 12, roman = false, query = '') {
 
 function numberedSteps(chunk, max = 5) {
   const lines = String(chunk?.text || '').split('\n').map(l => l.trim()).filter(Boolean);
-  const steps = lines.filter(l => /^\d+[.)]\s+\S/.test(l) && !isFeeRowLine(l)).slice(0, max);
+  const steps = lines.filter(l => /^\d+[.)]\s+\S/.test(l) && !isFeeRowLine(l) && !isLabelStubLine(l)).slice(0, max);
   return steps.length >= 2 ? steps : [];
 }
 
 /** Whole-sentence bound that never cuts mid-word: legal text is never left as a
- *  fragment. clipSentences keeps its first sentence whole, so an oversized
- *  single sentence is trimmed at the last space inside the limit. */
+ *  fragment. clipSentences enforces both limits, sentence count and length. */
 function boundSentence(text, maxChars) {
-  const s = String(text || '').trim();
-  if (s.length <= maxChars) return s;
-  const whole = clipSentences(s, 3, maxChars);
-  if (whole.length <= maxChars) return whole;
-  const cut = whole.slice(0, maxChars);
-  return cut.slice(0, Math.max(cut.lastIndexOf(' '), 20)).replace(/[,;:\s]+$/, '');
+  return clipSentences(text, 3, maxChars);
 }
 
 /** Steps for a "what do I do" answer: the record that actually lists them.
@@ -920,9 +1072,13 @@ function stepsFromRecords(procedures, chunks, max = 5, roman = false) {
     // A procedure record opens with its metadata card (Title / Authority /
     // Jurisdiction) and labels its blocks ("Step-by-Step Practical Workflow:").
     // Those describe the document; the steps themselves are its content lines.
-    const lines = String(procedures[0].text).split('\n').map(l => l.trim()).filter(Boolean)
-      .filter(l => !META_LINE_RE.test(l) && !SECTION_LABEL_RE.test(l) && !/:\s*$/.test(l) && !isFeeRowLine(l))
-      .map(l => l.replace(/^step\s*\d+\s*[.:)\-]\s*/i, '').replace(/^\d+[.)]\s+/, '')
+    // An indented line belongs to the step above it, and a Title-Cased line
+    // names the block. Neither is a step the citizen can act on.
+    const lines = String(procedures[0].text).split('\n')
+      .filter(l => l.trim() && !/^\s/.test(l))
+      .map(l => l.trim())
+      .filter(l => !META_LINE_RE.test(l) && !SECTION_LABEL_RE.test(l) && !isLabelStubLine(l) && !isFeeRowLine(l) && !isHeadingLine(l))
+      .map(l => l.replace(/^step\s*\d+\s*[.:)\-\u2013\u2014]\s*/i, '').replace(/^\d+[.)]\s+/, '')
         .replace(/^[-*•]\s+/, '').trim())
       .filter(l => l.length > 25).slice(0, max).map(b => boundSentence(b, cap));
     if (lines.length) return [lead, ...lines.map((s, i) => `${i + 1}. ${s}`)].filter(Boolean).join('\n');
@@ -931,52 +1087,26 @@ function stepsFromRecords(procedures, chunks, max = 5, roman = false) {
 }
 
 // Build practical steps from procedure chunks and query intent.
+//
+// The ONLY two forms a step line may take: a step the retrieved record itself
+// numbers, or a content line of the retrieved procedure record. An intent-keyed
+// table of ready-made advice used to answer here instead — "Understand your
+// rights and check the relevant rules", "you can approach the court under
+// Section 200 CrPC", "contact the HEC or the provincial Ombudsperson" — none of
+// which any retrieved record stated for that question. Such lines are not
+// grounded advice, they are the same template for every citizen who asks
+// anything in that domain, and the brief forbids them. No steps in evidence
+// means no steps section, which the caller already handles.
 function buildPracticalSteps(query, chunks, domain, isRoman) {
-  const intent = detectQueryIntent(query, domain);
   const procedures = chunks.filter(c => /PROCEDURE|WORKFLOW|_STAGES|_PROCESS|MARAHIL/i.test(String(c.key || '')));
-
-  if (isRoman) {
-    switch (intent) {
-      case 'rights':
-        if (domain === 'education') {
-          return `- Apni university ka student handbook ya regulations check karein\n- Agar koi masla hai to pehle relevant department ya student affairs office se baat karein\n- Shikayat likhit mein den aur copy zaroor rakh lein\n- Agar university se insaaf na mile to HEC ya provincial Ombudsperson se rujoo kar sakte hain`;
-        }
-        return `- Apne rights ko samjhein aur mutaliqa rules check karein\n- Maslay ko likhit mein document karein\n- Mutaliqa authority ya forum ko likhit darkhwast den\n- Agar zaroorat ho to qanooni mashwara lein`;
-      case 'harassment':
-        return `- Jo hua uski tareekh, waqt aur gawahon ki detail likh kar mehfooz karein\n- Apni university ki anti-harassment committee ya inquiry body ko likhit shikayat den\n- Shikayat ki copy apne paas rakh lein aur receipt lein\n- Agar university action na le to provincial Ombudsperson se rujoo karein\n- Qanooni madad ke liye legal aid services se bhi raabta kar sakte hain`;
-      case 'discipline':
-        return `- Show-cause notice mein di gayi deadline ka khayal rakhein\n- Likhit jawab tayar karein jis mein har allegation ka jawab ho\n- Saboot aur gawah agar hain to unki list attach karein\n- University ke appeal tareeqay ke mutabiq appeal kar sakte hain`;
-      case 'police-fir':
-        return `- Nazdeek police station jayein aur waqia bayan karein\n- Agar FIR register na ho to SP ko likhit bhejein\n- FIR ki copy zaroor lein\n- Agar police madad na kare to adalat se rujoo ka option hai`;
-      default:
-        return stepsFromRecords(procedures, chunks, 5, true);
-    }
-  }
-
-  switch (intent) {
-    case 'rights':
-      if (domain === 'education') {
-        return `- Check your university's student handbook or regulations for the specific rules\n- If you have a problem, first talk to the relevant department or student affairs office\n- Submit your complaint in writing and always keep a copy\n- If the university does not resolve it, you can approach the HEC or the provincial Ombudsperson`;
-      }
-      return `- Understand your rights and check the relevant rules\n- Document the issue in writing\n- Submit a written application to the relevant authority or forum\n- Seek legal advice if needed`;
-    case 'harassment':
-      return `- Document what happened: dates, times, witnesses, any messages or evidence\n- File a written complaint with your institution's anti-harassment committee or inquiry body\n- Keep a copy of your complaint and get a receipt\n- If the institution does not act, approach the provincial Ombudsperson\n- Legal aid services are available if you need support`;
-    case 'discipline':
-      return `- Note the deadline in the show-cause notice\n- Prepare a written reply addressing each allegation\n- Attach any evidence or list of witnesses\n- Follow your university's appeal procedure if the outcome is unfavorable`;
-    case 'police-fir':
-      return `- Go to the nearest police station and report the incident\n- If the FIR is not registered, send the information in writing to the Superintendent of Police (SP)\n- Always obtain a copy of the FIR\n- If the police do not help, you can approach the court under Section 200 CrPC`;
-    case 'fee-scholarship':
-      return `- First raise the issue with your university's finance office or student affairs\n- If not resolved, check if your university has a fee grievance committee\n- For scholarship issues, contact the HEC or relevant scholarship authority\n- Keep all fee receipts and correspondence as evidence`;
-    default:
-      return stepsFromRecords(procedures, chunks);
-  }
+  return stepsFromRecords(procedures, chunks, 5, isRoman);
 }
 
 // Trim to whole sentences only — legal text is never cut mid-clause.
 function clipSentences(text, maxSentences = 3, maxChars = 900) {
   const s = String(text || '').trim();
   if (!s) return '';
-  const parts = s.split(/(?<=[.!?])\s+/).filter(Boolean);
+  const parts = splitSentences(s);
   let out = [];
   let len = 0;
   for (const p of parts) {
@@ -985,8 +1115,28 @@ function clipSentences(text, maxSentences = 3, maxChars = 900) {
     out.push(p);
     len += p.length + 1;
   }
-  if (!out.length) return s.slice(0, maxChars);
-  return out.join(' ');
+  if (!out.length) return clipAtBoundary(s, maxChars);
+  return clipAtBoundary(out.join(' '), maxChars);
+}
+
+/**
+ * Hard length ceilings meet unbounded corpus sentences here, and a plain slice
+ * cut legal text mid-word — "this fee is refundable after". Always land on a
+ * boundary: a finished sentence, then a clause, then a word. Nothing is added to
+ * make the fragment read as a complete rule.
+ */
+function clipAtBoundary(text, maxChars) {
+  const s = String(text || '').trim();
+  if (s.length <= maxChars) return s;
+  const head = s.slice(0, maxChars);
+  const floor = Math.floor(maxChars * 0.4);
+  const at = (chars) => Math.max(...chars.map(ch => head.lastIndexOf(ch)));
+  const sentence = at(['.', '!', '?']);
+  if (sentence > floor) return head.slice(0, sentence + 1).trim();
+  const clause = at([';', ':']);
+  if (clause > floor) return head.slice(0, clause).trim();
+  const space = head.lastIndexOf(' ');
+  return space > floor ? head.slice(0, space).trim() : head.trim();
 }
 
 // Exceptions/conditions copied VERBATIM out of a retrieved record. The Advanced
@@ -995,7 +1145,7 @@ function clipSentences(text, maxSentences = 3, maxChars = 900) {
 const PROVISO_RE = /\b(provided that|provided no|unless|subject to|save as|shall not apply|exempt|notwithstanding)\b/i;
 function extractProvisos(chunk, max = 2) {
   if (!chunk || !PROVISO_RE.test(String(chunk.text || ''))) return [];
-  const sentences = String(chunk.text).split(/(?<=[.!?])\s+/).map(s => s.trim()).filter(Boolean);
+  const sentences = splitSentences(chunk.text);
   const out = [];
   for (const s of sentences) {
     if (out.length >= max) break;
@@ -1049,7 +1199,7 @@ function buildConciseLegalBasis(chunks, L, cap = 4, scopeLang = null) {
     // section. Legislation and case law keep the instrument's name and court.
     const isGuide = /guide|digest|workflow|handbook|manual|directory/i.test(String(c.documentType || ''));
     const name = isGuide ? (displayTitle(c.chunkTitle || '') || c.title) : c.title;
-    const authority = isGuide ? (recordAuthority(c) || c.issuingAuthority) : c.issuingAuthority;
+    const authority = recordAuthority(c);
     const auth = authority ? ` (${authority})` : '';
     const layer = scopeLang ? scopeLabel(deriveChunkScope(c), scopeLang) : null;
     lines.push(`- ${label}${layer ? ` [${layer}]` : ''} — ${name}${auth}${L.statusNote(c.legalStatus)}`);
@@ -1112,6 +1262,30 @@ function clipList(text, max = 99) {
   if (!text) return text;
   const lines = String(text).split('\n').filter(l => l.trim());
   return lines.slice(0, max).join('\n');
+}
+
+/**
+ * One record can be both the answer and the step list, and the same bound text
+ * reaches each section at a different length. Repeating it reads as padding
+ * rather than guidance, so a later section keeps only what has not been said.
+ */
+function dropRepeatedLines(block, composed) {
+  if (!block) return block;
+  const hay = norm(composed);
+  if (!hay) return block;
+  let n = 0;
+  return String(block).split('\n')
+    .filter(line => {
+      const l = norm(line.replace(/^[-*•\s]+/, '').replace(/^\d+[.)]\s+/, ''));
+      return l.length < 40 || !hay.includes(l.slice(0, 60));
+    })
+    .map(line => {
+      const m = line.match(/^(\d+)([.)])\s+/);
+      if (!m) return line;
+      n += 1;
+      return `${n}${m[2]} ${line.slice(m[0].length)}`;
+    })
+    .join('\n');
 }
 
 /**
@@ -1206,18 +1380,21 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   //    composition: quoting an English statute inside a Roman answer would break
   //    the language rule.
   const aScope = deriveChunkScope(answerRecord);
-  const askedHere = evidence && evidence.scope && evidence.scope.asked;
+  const askedHere = (evidence && evidence.scope && evidence.scope.asked) || detectQueryScope(userQuery);
   const showFraming = aScope.scopeLevel !== 'national'
     || Boolean(askedHere && (askedHere.city || askedHere.province || askedHere.institutionNamed));
-  const framing = showFraming ? scopeLabel(aScope, scopeLang) : null;
+  const framing = showFraming ? scopeLabel(aScope, scopeLang, askedHere) : null;
   const synthesis = clipSentences(synthesizePlainAnswer(userQuery, focus, domain, isRoman), lvl.answerSentences, lvl.answerChars);
   // Roman Urdu quotes one bounded clause, not the paragraph it sits in — the same
   // ceiling the "says" part already uses. Quoting nothing left the Roman answer
   // with only topic titles, so a citizen reporting a deduction from an 8171
   // payment never got the helpline number the retrieved record states.
   const romanClause = clipSentences(recordLead(answerRecord, 1, ROMAN_QUOTE_CHARS, userQuery), 1, ROMAN_QUOTE_CHARS);
+  // The record leads in Roman Urdu as it does in English. The intent template is
+  // what a citizen falls back on when the record has nothing quotable, not a
+  // standing preamble that pushes the actual rule out of the first paragraph.
   const lead = isRoman
-    ? [synthesis, romanClause ? `Record ke mutabiq: ${romanClause}` : ''].filter(Boolean).join(' ')
+    ? (romanClause ? `Record ke mutabiq: ${romanClause}` : synthesis)
     : recordLead(answerRecord, lvl.answerSentences, lvl.answerChars, userQuery);
   let directAnswer = lead || synthesis;
   if (directAnswer && framing) directAnswer = `${framing}: ${directAnswer}`;
@@ -1241,15 +1418,17 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   const second = nextCandidate
     && queryTermHits(userQuery, nextCandidate) >= 2
     && ownIdentityHits(userQuery, nextCandidate) >= 1 ? nextCandidate : null;
-  const secondLead = recordLead(second, lvl.answerSentences, lvl.explanationChars);
+  const secondLead = recordLead(second, lvl.answerSentences, lvl.explanationChars, userQuery);
   const selfRest = secondLead ? '' : recordContinuation(answerRecord, lead, lvl.answerSentences, lvl.explanationChars);
-  const bridge = clipSentences(buildExplanation(userQuery, primary, domain, isRoman), lvl.answerSentences, lvl.explanationChars);
+  const unusedRest = secondLead || selfRest
+    ? '' : nextGroundedExplanation(userQuery, grounded, answerRecord, lvl);
+  const saysText = secondLead || selfRest || unusedRest;
   // Roman Urdu explains first and quotes only the clause that carries the rule;
   // an English answer keeps the record's own wording in full.
-  const romanQuote = clipSentences(secondLead, 1, ROMAN_QUOTE_CHARS);
+  const romanQuote = clipSentences(saysText, 1, ROMAN_QUOTE_CHARS);
   const explanation = isRoman
-    ? [bridge, romanQuote ? `Verifiable record ke mutabiq: ${romanQuote}` : ''].filter(Boolean).join(' ')
-    : (secondLead || selfRest || bridge);
+    ? (romanQuote ? `Verifiable record ke mutabiq: ${romanQuote}` : '')
+    : saysText;
   if (!shortStyle && plan.has('says') && explanation) {
     push(L.says, explanation);
   }
@@ -1267,13 +1446,14 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   }
   if (!shortStyle && plan.has('procedure')) {
     const steps = buildPracticalSteps(userQuery, grounded, domain, isRoman);
-    if (steps) push(L.procedure, clipList(steps, lvl.steps));
+    const fresh = dropRepeatedLines(steps, out.join('\n'));
+    if (fresh) push(L.procedure, clipList(fresh, lvl.steps));
   }
 
   // 5. Remedy — only if a remedy chunk was retrieved and the level wants it.
   if (!shortStyle && plan.has('remedy') && lvl.remedy) {
     const remedyText = isRoman
-      ? (romanRecordLine(remedies[0]) || recordLead(remedies[0], 1, ROMAN_QUOTE_CHARS))
+      ? (romanRecordLine(remedies[0]) || recordLead(remedies[0], 1, ROMAN_QUOTE_CHARS, userQuery))
       : (remedies[0] ? leadParagraphs(remedies[0].text, 2, 400) : '');
     if (remedyText) push(L.remedy, remedyText);
   }
@@ -1288,7 +1468,7 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   // 7. Jurisdiction / forum — the authority the record itself names.
   if (!shortStyle && plan.has('forum') && lvl.forum && (primary.jurisdiction || primary.issuingAuthority)) {
     const layer = scopeLayerName(aScope.scopeLevel, detectQueryScope(userQuery), scopeLang);
-    push(L.forum, [primary.jurisdiction, recordAuthority(primary) || primary.issuingAuthority, layer].filter(Boolean).join(' · '));
+    push(L.forum, [primary.jurisdiction, recordAuthority(primary), layer].filter(Boolean).join(' · '));
   }
 
   // 8. Exceptions and nuances — copied verbatim from the accepted record, so a
@@ -1325,7 +1505,10 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   const scopeGap = (evidence && evidence.scope && missingScopeMessage(evidence.scope, scopeLang)) || '';
   push(L.limit, `${L.limitText}${scopeGap}`);
 
-  return out.join('\n\n');
+  // 12. Citation grounding — the one exit every mode passes through, so a section
+  //     number that no cited record states cannot be printed by chat, advice,
+  //     voice or the agent alike.
+  return groundAnswerCitations(out.join('\n\n'), focus, userQuery).text;
 }
 
 // ----------------------------------------------------------------------------

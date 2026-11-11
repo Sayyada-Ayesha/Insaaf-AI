@@ -26,7 +26,7 @@ import {
 } from "lucide-react";
 import { MarkdownBody } from "./MarkdownBody";
 import { askLegalAgent, buildIncidentDocuments, type AgentSource, type IncidentDocuments, type IntakeSummary } from "../services/aiRuntime";
-import { VoiceService, VoiceError } from "../services/voiceService";
+import { VoiceService, VoiceError, type SpeakReport } from "../services/voiceService";
 import { StorageService, type LocalChat } from "../services/storage";
 import { FirestoreService } from "../services/firestoreService";
 import { useAuth } from "../contexts/AuthContext";
@@ -110,6 +110,10 @@ export default function VoiceAgentSection({ onNavigate }: { onNavigate?: (route:
   const [review, setReview] = useState<string | null>(null);
   /** The recognition locale this browser rejected; keeps the honest fallback visible. */
   const [localeIssue, setLocaleIssue] = useState<string | null>(null);
+  /** The voice that really produced the last spoken answer, reported not assumed. */
+  const [spokenVoice, setSpokenVoice] = useState<SpeakReport | null>(null);
+  /** A speech-output limitation the device actually hit, stated rather than hidden. */
+  const [ttsIssue, setTtsIssue] = useState<string | null>(null);
   const endRef = useRef<HTMLDivElement>(null);
   const pendingRef = useRef<string | null>(null);
 
@@ -136,14 +140,28 @@ export default function VoiceAgentSection({ onNavigate }: { onNavigate?: (route:
     if (!text.trim()) return;
     dispatch({ type: 'SPOKEN', text });
     dispatch({ type: 'PHASE', phase: 'speaking' });
+    setTtsIssue(null);
     VoiceService.speak(
       text,
       undefined,
       () => dispatch({ type: 'PHASE', phase: 'listening' }),
-      () => dispatch({ type: 'PHASE', phase: 'listening' }),
-      currentLang
+      (err: any) => {
+        dispatch({ type: 'PHASE', phase: 'listening' });
+        if (err?.code === 'urdu-voice-missing') {
+          setTtsIssue(label(
+            'No Urdu voice is installed on this device, so the Urdu answer was read by another voice. The words are correct; the pronunciation is not Urdu.',
+            'Is device par Urdu voice install nahi hai, is liye Urdu jawab doosri voice ne parha. Alfaaz durust hain, talaffuz Urdu nahi.'
+          ));
+        } else if (err?.code === 'tts-unavailable' || err?.code === 'unsupported') {
+          setTtsIssue(err?.code === 'unsupported'
+            ? label('This browser cannot read answers aloud.', 'Is browser mein jawab bulwana mumkeen nahi.')
+            : label('No voice is available on this device.', 'Is device par koi awaaz available nahi hai.'));
+        }
+      },
+      currentLang,
+      (report) => setSpokenVoice(report)
     );
-  }, [currentLang]);
+  }, [currentLang, rom]);
 
   // ---- one turn: current message is the only query, context is continuity only ----
   const runTurn = useCallback(async (text: string) => {
@@ -626,13 +644,24 @@ export default function VoiceAgentSection({ onNavigate }: { onNavigate?: (route:
           </p>
         )}
 
+        {error && (
+          <p data-testid="voice-error" className="text-[11px] font-bold text-red-600 bg-red-50 border border-red-100 rounded-xl px-3 py-2">{error}</p>
+        )}
         {!sttAvailable && (
           <p data-testid="voice-stt-unavailable" className="text-[11px] font-bold text-amber-700 bg-amber-50 border border-amber-100 rounded-xl px-3 py-2">
             {label("Voice input is not available in this browser. You can continue in text mode.", "Is browser mein awaz se baat nahi ho sakti. Aap text mode mein jaari rakh sakte hain.")}
           </p>
         )}
-        {error && (
-          <p data-testid="voice-error" className="text-[11px] font-bold text-red-600 bg-red-50 border border-red-100 rounded-xl px-3 py-2">{error}</p>
+        {ttsIssue && (
+          <p data-testid="voice-tts-issue" className="text-[11px] font-bold text-amber-700 bg-amber-50 border border-amber-100 rounded-xl px-3 py-2">
+            {ttsIssue}
+          </p>
+        )}
+        {spokenVoice && spokenVoice.voiceName && (
+          <p data-testid="voice-tts-voice" className="text-[10px] font-bold text-gray-400">
+            {label(`Spoken with the device voice “${spokenVoice.voiceName}” (${spokenVoice.voiceLang || 'unknown locale'})`,
+              `Device voice “${spokenVoice.voiceName}” (${spokenVoice.voiceLang || 'maloom nahi'}) se parha gaya`)}
+          </p>
         )}
         {localeIssue && (
           <p data-testid="voice-locale-unavailable" className="text-[11px] font-bold text-amber-700 bg-amber-50 border border-amber-100 rounded-xl px-3 py-2">

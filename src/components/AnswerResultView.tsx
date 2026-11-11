@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import {
   ArrowLeft, ArrowRight, BookOpen, CheckCircle2, Copy, ExternalLink, FileText,
+  AlertCircle,
   GraduationCap, HeartHandshake, Landmark, Loader2, MessageSquare, Mic, MicOff,
   Scale, Search, Share2, ShieldCheck, Sparkles, Users, Volume2, VolumeX,
 } from "lucide-react";
@@ -9,12 +10,7 @@ import { cn } from "./Layout";
 import type { LocalChatMessage } from "../services/storage";
 import type { Translations } from "../lib/i18n";
 import { getLibrarySectionId } from "../config/ragDomainMap";
-
-const EVIDENCE_BADGE: Record<'islamic' | 'combined' | 'legal', string> = {
-  combined: 'VERIFIED ISLAMIC + PAKISTAN LAW SOURCES',
-  islamic: 'VERIFIED ISLAMIC SOURCE',
-  legal: 'VERIFIED LEGAL KNOWLEDGE',
-};
+import { evidenceBadge } from "../lib/answerEvidence";
 
 const EXPLORE_TOPICS = [
   { tab: 'learning', en: 'Legal Library', ro: 'Legal Library', Icon: GraduationCap, tint: 'bg-violet-50 text-violet-700' },
@@ -43,6 +39,9 @@ export interface AnswerResultViewProps {
   searchRef: React.RefObject<HTMLTextAreaElement | null>;
   isListening: boolean;
   onToggleListening: () => void;
+  micLang: 'ur-PK' | 'en-US';
+  onMicLang: (lang: 'ur-PK' | 'en-US') => void;
+  voiceStatus: { kind: 'error' | 'info'; text: string } | null;
   isRomanUI: boolean;
   isLawPath: boolean;
   t: Translations;
@@ -68,7 +67,7 @@ export default function AnswerResultView(props: AnswerResultViewProps) {
   const {
     chatMode, islamicView, onIslamicView, messages, resultIndex, onSelectResult,
     isLoading, responseSource, input, onInput, onSubmit, searchRef, isListening,
-    onToggleListening, isRomanUI, isLawPath, t, onNewSearch, onBackToTopics,
+    onToggleListening, micLang, onMicLang, voiceStatus, isRomanUI, isLawPath, t, onNewSearch, onBackToTopics,
     onExplore, onOpenLibrary, onOpenSources, onCopy, copyState, onReadAloud,
     isSpeaking, onShare, onShowConversation, saveNotice,
   } = props;
@@ -101,15 +100,19 @@ export default function AnswerResultView(props: AnswerResultViewProps) {
             <ShieldCheck className="h-3.5 w-3.5" />
             {chatMode === 'islamic' ? t.navIslamic : tr('Legal information service', 'Qanooni maloomat service')}
           </span>
-          {answer && (
-            <span className={cn(
-              "inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[10px] font-black uppercase tracking-wider",
-              answer.isOffline ? "border-amber-200 bg-amber-50 text-amber-700" : "border-emerald-200 bg-emerald-50 text-emerald-700",
-            )}>
-              {answer.isOffline ? <ShieldCheck className="h-3 w-3" /> : <Sparkles className="h-3 w-3" />}
-              {EVIDENCE_BADGE[evidenceMode]}
-            </span>
-          )}
+          {answer && (() => {
+            const badge = evidenceBadge(answer.evidenceVerdict, evidenceMode, sources.length > 0);
+            if (!badge) return null;
+            return (
+              <span className={cn(
+                "inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[10px] font-black uppercase tracking-wider",
+                badge.grounded ? "border-emerald-200 bg-emerald-50 text-emerald-700" : "border-amber-200 bg-amber-50 text-amber-700",
+              )}>
+                {badge.grounded ? <Sparkles className="h-3 w-3" /> : <ShieldCheck className="h-3 w-3" />}
+                {badge.label}
+              </span>
+            );
+          })()}
         </div>
         <div className="flex flex-wrap items-center gap-2">
           <button type="button" onClick={onShowConversation}
@@ -133,8 +136,11 @@ export default function AnswerResultView(props: AnswerResultViewProps) {
           {question || tr('Your legal answer', 'Aap ka qanooni jawab')}
         </h1>
         <p className="mt-2 text-xs font-medium text-gray-500 sm:text-sm">
-          {tr('Ask a follow-up below. This answer is based on the verified sources listed on this page.',
-            'Neeche follow-up poochen. Yeh jawab is page par diye gaye verified makhaz par mabni hai.')}
+          {answer?.evidenceVerdict === 'strong' && sources.length > 0
+            ? tr('Ask a follow-up below. This answer is grounded in the source records listed on this page.',
+                 'Neeche follow-up poochen. Yeh jawab is page par diye gaye makhaz records par mabni hai.')
+            : tr('Ask a follow-up below. This answer is general guidance — confirm the rule for your province before acting.',
+                 'Neeche follow-up poochen. Yeh jawab aam rehnumai hai — amal se pehle apne soobe ka qanoon tasdeeq karein.')}
         </p>
       </div>
 
@@ -154,7 +160,8 @@ export default function AnswerResultView(props: AnswerResultViewProps) {
             className="h-[52px] sm:h-[58px] min-w-0 flex-1 resize-none bg-transparent py-2 text-xs font-bold text-gray-800 placeholder:text-gray-400 focus:outline-none sm:py-3 sm:text-sm"
           />
           <button type="button" onClick={onToggleListening}
-            aria-label={isListening ? t.chatStopSpeaking : t.chatVoiceLabel}
+            aria-label={isListening ? t.chatStopSpeaking : `${t.chatVoiceLabel}: ${micLang === 'ur-PK' ? 'Urdu' : 'English'}`}
+            title={`Speech Language: ${micLang === 'ur-PK' ? 'Urdu (Pakistan)' : 'English (US)'}`}
             className={cn("shrink-0 rounded-xl p-2.5 transition-all sm:p-3",
               isListening ? "animate-pulse bg-rose-500 text-white" : "text-gray-400 hover:bg-[#01411C]/5 hover:text-[#01411C]")}>
             {isListening ? <MicOff className="h-5 w-5" /> : <Mic className="h-5 w-5" />}
@@ -166,7 +173,7 @@ export default function AnswerResultView(props: AnswerResultViewProps) {
           </button>
         </div>
         {chatMode === 'islamic' && (
-          <div role="group" aria-label={t.evidencePathLabel} className="mt-3 flex flex-wrap items-center gap-2">
+          <div role="group" aria-label={t.evidencePathLabel} data-testid="answer-evidence-path-group" className="mt-3 flex flex-wrap items-center gap-2">
             <span className="text-[10px] font-black uppercase tracking-widest text-gray-400">{t.evidencePathLabel}</span>
             {([
               { key: 'islamic', label: t.viewIslamic },
@@ -174,6 +181,7 @@ export default function AnswerResultView(props: AnswerResultViewProps) {
               { key: 'combined', label: t.viewCombined },
             ] as const).map(opt => (
               <button key={opt.key} type="button" onClick={() => onIslamicView(opt.key)} aria-pressed={islamicView === opt.key}
+                data-testid={`answer-evidence-path-${opt.key}`}
                 className={cn("rounded-full border px-3 py-1.5 text-[11px] font-bold transition-colors md:text-xs",
                   islamicView === opt.key ? "border-[#01411C] bg-[#01411C] text-white" : "border-gray-200 bg-white text-gray-600 hover:border-[#01411C]/40")}>
                 {opt.label}
@@ -181,6 +189,39 @@ export default function AnswerResultView(props: AnswerResultViewProps) {
             ))}
           </div>
         )}
+        <div className="mt-3 flex flex-wrap items-center gap-2">
+          <div role="group" aria-label={t.chatVoiceLabel} className="flex shrink-0 items-center gap-1 rounded-xl border border-gray-100 bg-gray-50 p-1">
+            <span className="px-2 text-[9px] font-black uppercase text-gray-400">{t.chatVoiceLabel}</span>
+            {([
+              { code: 'ur-PK' as const, label: 'Urdu' },
+              { code: 'en-US' as const, label: 'English' },
+            ]).map(opt => (
+              <button key={opt.code} type="button" onClick={() => onMicLang(opt.code)} aria-pressed={micLang === opt.code}
+                className={cn("rounded-lg px-2.5 py-1 text-[9px] font-black uppercase transition-all",
+                  micLang === opt.code ? "bg-[#01411C] text-white shadow-sm" : "text-gray-400 hover:text-gray-600")}>
+                {opt.label}
+              </button>
+            ))}
+          </div>
+          {(isListening || voiceStatus) && (
+            <div role="status" aria-live="polite" data-testid="result-voice-status"
+              className={cn("flex items-center gap-2 rounded-xl border px-3 py-1.5 text-[10px] font-bold",
+                voiceStatus ? "border-rose-100 bg-rose-50 text-rose-600" : "border-emerald-100 bg-emerald-50 text-[#01411C]")}>
+              {isListening && !voiceStatus && (
+                <>
+                  <Loader2 className="h-3 w-3 animate-spin" />
+                  <span>{t.chatListening}</span>
+                </>
+              )}
+              {voiceStatus && (
+                <>
+                  <MicOff className="h-3.5 w-3.5 shrink-0" />
+                  <span>{voiceStatus.text}</span>
+                </>
+              )}
+            </div>
+          )}
+        </div>
       </form>
 
       {saveNotice}
@@ -224,7 +265,7 @@ export default function AnswerResultView(props: AnswerResultViewProps) {
                       : tr('The answer', 'Jawab')}
                 </h2>
                 <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">
-                  {isAnswering ? tr('Researching sources…', 'Makhaz mein dekha ja raha hai…') : tr('Verified sources', 'Verified makhaz')}
+                  {isAnswering ? tr('Researching sources…', 'Makhaz mein dekha ja raha hai…') : tr('Source records', 'Makhaz records')}
                 </span>
               </div>
               {isAnswering ? (
@@ -249,13 +290,16 @@ export default function AnswerResultView(props: AnswerResultViewProps) {
               {answer.text && (
                 <div className="mt-5 flex flex-wrap items-center gap-2 border-t border-gray-100 pt-4">
                   <button type="button" onClick={() => onReadAloud(answer.text, activeIdx)}
+                    data-testid="chat-action-read-aloud"
                     aria-label={isSpeaking === activeIdx ? t.chatStopSpeaking : t.chatReadAloud}
+                    title={isSpeaking === activeIdx ? t.chatStopSpeaking : t.chatReadAloud}
                     className={cn("inline-flex items-center gap-1.5 rounded-xl px-3 py-2 text-[10px] font-bold uppercase tracking-wider transition-colors",
                       isSpeaking === activeIdx ? "bg-[#01411C] text-white" : "bg-gray-50 text-gray-500 hover:bg-[#01411C]/5 hover:text-[#01411C]")}>
                     {isSpeaking === activeIdx ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
                     {isSpeaking === activeIdx ? t.chatStopSpeaking : t.chatReadAloud}
                   </button>
                   <button type="button" onClick={() => onCopy(answer.text, activeIdx)}
+                    data-testid="chat-action-copy"
                     aria-label={t.chatCopy}
                     className={cn("inline-flex items-center gap-1.5 rounded-xl px-3 py-2 text-[10px] font-bold uppercase tracking-wider transition-colors",
                       copyState?.idx === activeIdx && copyState.ok ? "bg-emerald-500 text-white"
@@ -264,6 +308,7 @@ export default function AnswerResultView(props: AnswerResultViewProps) {
                     <Copy className="h-4 w-4" /> {copyState?.idx === activeIdx && !copyState.ok ? tr('Copy failed', 'Copy nahi hua') : t.chatCopy}
                   </button>
                   <button type="button" onClick={() => onShare(answer.text)}
+                    data-testid="chat-action-share"
                     className="inline-flex items-center gap-1.5 rounded-xl bg-gray-50 px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-gray-500 transition-colors hover:bg-green-50 hover:text-green-700">
                     <Share2 className="h-4 w-4" /> {t.chatShareWhatsApp}
                   </button>
@@ -304,9 +349,15 @@ export default function AnswerResultView(props: AnswerResultViewProps) {
                           {[src.authority, src.jurisdiction].filter(Boolean).join(' · ') || t.chatSourceUnrecorded}
                         </p>
                       </div>
-                      <span className="inline-flex shrink-0 items-center gap-1 rounded bg-emerald-50 px-2 py-0.5 text-[9px] font-bold text-emerald-700">
-                        <CheckCircle2 className="h-2.5 w-2.5" /> {t.chatSourceVerified}
-                      </span>
+                      {answer?.evidenceVerdict === 'strong' ? (
+                        <span className="inline-flex shrink-0 items-center gap-1 rounded bg-emerald-50 px-2 py-0.5 text-[9px] font-bold text-emerald-700">
+                          <CheckCircle2 className="h-2.5 w-2.5" /> {t.chatSourceVerified}
+                        </span>
+                      ) : answer?.evidenceVerdict === 'weak' ? (
+                        <span className="inline-flex shrink-0 items-center gap-1 rounded bg-amber-50 px-2 py-0.5 text-[9px] font-bold text-amber-700">
+                          <AlertCircle className="h-2.5 w-2.5" /> Closest related record
+                        </span>
+                      ) : null}
                     </div>
                     <div className="mt-2 flex flex-wrap gap-2">
                       {src.sourceURL?.startsWith('http') && (

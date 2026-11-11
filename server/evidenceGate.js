@@ -33,6 +33,7 @@ import {
   scopeConflict, scopeCoverage, institutionScoped, namedInstitutionQuery
 } from './corpusScope.js';
 import { askedProvisionKeys, chunkCarriesProvision } from './provisionRef.js';
+import { analyzeSubject, subjectCheck, domainSubjectTerms, GENERIC_RELATION_TERMS } from './domainProfile.js';
 
 /** Hard ceiling on corrective retries per query — no retrieval loops. */
 export const MAX_CORRECTIVE_ATTEMPTS = 2;
@@ -257,6 +258,10 @@ const URDU_GLOSS = {
   گھروں: 'house',
   گھر: 'house',
   کرائےدار: 'tenant',
+  // "گھر خالی کروانا" is the citizen's phrase for eviction; the corpus writes it
+  // in English ("cannot evict … except by order"). Untranslatable, the ask
+  // shares no word with the provision that answers it and reads as uncovered.
+  خالی: 'vacate evict eviction empty',
   نوکری: 'employment job',
   ملازمت: 'employment job',
   تنخواہ: 'salary',
@@ -379,7 +384,7 @@ const EVIDENCE_VARIANTS = {
   kiraye: 'kiraya', kirayein: 'kiraya',
   makan: 'ghar', makaan: 'ghar',
   tankhwah: 'tankhwa',
-  khali: 'vacate empty',
+  khali: 'vacate empty evict eviction',
   nokar: 'employee',
   // PPC 497 is headed "Adultery"; the citizen's word is zina. The record uses the
   // statute's term, so the gloss must count as the user's own word for grounding.
@@ -476,6 +481,33 @@ export function evaluateEvidence(userQuery, retrieval, opts = {}) {
   const own = opts.own || queryOwnTokens(userQuery);
   const ownForms = opts.ownForms || queryOwnWordForms(userQuery, opts.lang);
   const probe = opts.foreign || parseOverseasIntent(userQuery);
+  // WHAT the sentence is about, read from the corpus's own vocabulary and from
+  // the case roles the user's words sit in — not from whichever domain a keyword
+  // cascade happened to fire first. `decisive` stays false whenever the ask
+  // reading is thin, so the gate keeps its existing behaviour on questions this
+  // cannot judge confidently.
+  const subject = opts.subject
+    || analyzeSubject(own, { text: userQuery, glosses: ownForms.map(e => ({ source: e.word, forms: e.forms })) });
+  // The caller's canonical wording of the situation it resolved from the user's OWN
+  // sentence (everydayIntent's retrieval phrase). An everyday complaint names the
+  // thing, not the legal category — "washing machine", never "defective goods" — and
+  // statute text carries no consumer product nouns, so the citizen's literal words
+  // alone can never show that a record covers their case. Two DISTINCT words of the
+  // resolved situation must appear in the record to license it; one incidental match
+  // licenses nothing, and these words never replace the user's own coverage test.
+  const licensed = opts.situationTerms
+    ? [...tokenizeInformative(String(opts.situationTerms))]
+      .filter(t => t.length >= 5 && !GENERIC_RELATION_TERMS.has(t))
+    : [];
+  // The resolved situation IS a reading of what the question is about — in the
+  // corpus's own category vocabulary — while the citizen's literal words may name no
+  // legal subject at all ("washing machine", "stopped working"). Without this, one
+  // generic English word the lexicon happens to file under another domain set the
+  // records that answer the question aside as off-subject.
+  const askedFromSituation = licensed.length >= 3 ? analyzeSubject(licensed, {}).asked : [];
+  const subjectForRecords = askedFromSituation.length
+    ? { ...subject, asked: [...new Set([...subject.asked, ...askedFromSituation])] }
+    : subject;
   const wantsProcedure = PROCEDURE_RE.test(userQuery);
   const wantsCaseLaw = CASE_LAW_RE.test(userQuery);
   const namedProvince = PROVINCES.find(p => String(userQuery).toLowerCase().includes(p));
@@ -601,6 +633,26 @@ export function evaluateEvidence(userQuery, retrieval, opts = {}) {
     const headingWords = new Set(tokenizeInformative(c.chunkTitle || ''));
     const headingSubject = cover >= MIN_COVERAGE
       && [...headingWords].some(w => ownLexicon.has(w) && !GENERIC_HEADING_TERMS.has(w));
+    // Which case the record is about, judged against the ask reading rather
+    // than against a routed document list. A record from a subject the user did
+    // not describe is not evidence for this answer, however well its words fit.
+    const subj = subjectCheck(c, subjectForRecords);
+    // An exact provision hit on a record belonging to the domain the question
+    // was routed to is the engine's own, query-derived subject decision. The
+    // term-profile reading beneath is a statistical guess that generic
+    // vocabulary can fool: the word "social" is frequent in education records,
+    // so "someone made a fake profile using my pictures on social media" was
+    // read as an education ask and PECA 13/24 — exact hits on routed-domain
+    // documents — were set aside as off-subject, leaving HEC records answering
+    // a cybercrime question. The weaker reading may not veto the stronger one.
+    const subjectOverridden = subj.checked && !subj.ok && domainOk && exact >= 8;
+    const offSubject = subj.checked && !subj.ok && !subjectOverridden;
+    // Words of the resolved situation this record actually carries. Two of them,
+    // in a record the router already filed under the domain that was asked about,
+    // is the same agreement test the user's own words face — it just speaks the
+    // corpus's category vocabulary instead of the citizen's object nouns.
+    const situationHits = licensed.length
+      ? licensed.filter(t => evidenceHay(c).includes(t)).length : 0;
     const support = exact >= 8
       || (cover >= SUPPORT_COVERAGE && (own.length === 0 || ownHits >= 1))
       || (headingSubject && ownHits >= 1)
@@ -609,13 +661,16 @@ export function evaluateEvidence(userQuery, retrieval, opts = {}) {
       // branch is carried by agreement on the user's own words: TWO of them, not
       // one incidental match. Runtime calibration over answerable vs adjacent-only
       // queries separated the two sets cleanly on exactly this count.
-      || (vector >= 0.5 && cover >= MIN_COVERAGE && ownHits >= 2);
+      || (vector >= 0.5 && cover >= MIN_COVERAGE && ownHits >= 2)
+      || (licensed.length >= 3 && situationHits >= 2 && domainOk && cover >= MIN_COVERAGE);
     const keep = support && score >= ACCEPT_SCORE && !jurisMismatch && !scopeMismatch
-      && !regionEducationGap && (domainOk || cover >= SUPPORT_COVERAGE);
+      && !regionEducationGap && !offSubject && (domainOk || cover >= SUPPORT_COVERAGE);
     return {
       chunk: c, docId: c.docId, score, exact, rawExact, vector, tfidf,
-      coverage: Number(cover.toFixed(2)), ownHits, headingSubject,
-      domainOk, statuteOk, jurisMismatch, regionEducationGap, provisionHit, stale: isStale(c), authority: authorityScore(c),
+      coverage: Number(cover.toFixed(2)), ownHits, headingSubject, situationHits,
+      domainOk, statuteOk, jurisMismatch, regionEducationGap, provisionHit,
+      subjectOk: subj.ok || subjectOverridden, subjectWhy: subj.why, offSubject,
+      stale: isStale(c), authority: authorityScore(c),
       caseLaw: isCaseLaw(c), procedureLike: isProcedureLike(c), support, keep,
       scope, scopeWeight, scopeMismatch
     };
@@ -660,6 +715,12 @@ export function evaluateEvidence(userQuery, retrieval, opts = {}) {
     if (accepted.length && own.length && accepted.every(r => r.ownHits === 0) && best.exact < 8) {
       add('unsupported_evidence');
     }
+    // The words overlapped; the case did not. Every record that matched the
+    // user's vocabulary belongs to a subject their own sentence does not
+    // describe, so there is nothing here this answer may be built from.
+    if (subject.decisive && rows.some(r => r.offSubject) && !accepted.some(r => r.subjectOk)) {
+      add('subject_mismatch');
+    }
   }
 
   // -- scope verdicts (Parts 6-8) ---------------------------------------------
@@ -692,7 +753,7 @@ export function evaluateEvidence(userQuery, retrieval, opts = {}) {
   if (noStatedIssue && accepted.length) add('no_stated_issue');
   const blocking = reasons.some(r => r === 'wrong_domain' || r === 'wrong_jurisdiction'
     || r === 'unsupported_evidence' || r === 'no_evidence' || r === 'insufficient_evidence'
-    || r === 'irrelevant_chunks' || r === 'scope_missing');
+    || r === 'irrelevant_chunks' || r === 'scope_missing' || r === 'subject_mismatch');
   let verdict = 'weak';
   if (!accepted.length) verdict = 'none';
   else if (
@@ -707,6 +768,12 @@ export function evaluateEvidence(userQuery, retrieval, opts = {}) {
 
   return {
     verdict, reasons, domain, routedDocs, wantsProcedure, wantsCaseLaw, tokens, own,
+    // The ask reading the gate judged against, carried out so a refusal can say
+    // what was understood and the retry can chase the subject that was asked.
+    subject: {
+      decisive: subject.decisive, asked: subjectForRecords.asked, hasRoles: subject.hasRoles,
+      top: subject.top ? { domain: subject.top.domain, score: subject.top.score, terms: subject.top.terms } : null
+    },
     namedStatutes: namedStatutes.map(s => s.label),
     accepted, rows, supportedCount: accepted.length,
     queryScope: qs, ladder, institutionQuery,
@@ -715,6 +782,7 @@ export function evaluateEvidence(userQuery, retrieval, opts = {}) {
         city: qs.city, province: qs.province, institutionNamed: qs.institutionNamed,
         universityContext: qs.universityContext, studentContext: qs.studentContext,
         nationalExplicit: qs.nationalExplicit, educationTopic: qs.educationTopic,
+        text: qs.text,
         layerAsked
       },
       ladder,
@@ -765,10 +833,16 @@ function buildCorrectiveQuery(userQuery, ev, attemptNo) {
   if (attemptNo === 1) {
     const needsDomainTerms = ev.reasons.includes('wrong_domain')
       || ev.reasons.includes('insufficient_evidence')
-      || ev.reasons.includes('irrelevant_chunks');
+      || ev.reasons.includes('irrelevant_chunks')
+      || ev.reasons.includes('subject_mismatch');
     // The user named a statute the evidence missed: re-scope on THEIR reference
     // first, so the retry looks for the law they asked about, not a synonym.
     const statuteTerms = (ev.namedStatutes || []).join(' ');
+    // The evidence answered a different case. Chase the subject the sentence
+    // actually describes with that subject's OWN corpus vocabulary — words taken
+    // from the documents this repository ships, never invented for the query.
+    const subjectTerms = ev.reasons.includes('subject_mismatch') && ev.subject && ev.subject.top
+      ? domainSubjectTerms(ev.subject.top.domain, 6).join(' ') : '';
     // A narrower legal layer was asked for (or records from another place were
     // set aside): re-state the question with the place the USER named plus the
     // corpus vocabulary of that layer. An institution is named only when the
@@ -792,18 +866,21 @@ function buildCorrectiveQuery(userQuery, ev, attemptNo) {
     }
     const scopeExtra = scopeTerms.join(' ').replace(/\s+/g, ' ').trim();
     const extra = statuteTerms
-      || (scopeExtra && ev.reasons.includes('scope_missing') ? `${scopeExtra} ${domainTerm}`.trim()
-        : needsDomainTerms ? (scopeExtra ? `${scopeExtra} ${domainTerm}`.trim() : domainTerm)
-        : (ev.wantsProcedure && ev.reasons.includes('procedure_mismatch')) ? 'procedure steps filing court'
-        : (ev.wantsCaseLaw && ev.reasons.includes('case_law_mismatch')) ? 'judgment reported decision precedent'
-        : (scopeExtra || domainTerm));
+      || (subjectTerms ? subjectTerms
+        : (scopeExtra && ev.reasons.includes('scope_missing') ? `${scopeExtra} ${domainTerm}`.trim()
+          : needsDomainTerms ? (scopeExtra ? `${scopeExtra} ${domainTerm}`.trim() : domainTerm)
+          : (ev.wantsProcedure && ev.reasons.includes('procedure_mismatch')) ? 'procedure steps filing court'
+          : (ev.wantsCaseLaw && ev.reasons.includes('case_law_mismatch')) ? 'judgment reported decision precedent'
+          : (scopeExtra || domainTerm)))
+      || '';
     if (!extra) return null;
     const q = `${clean} ${extra}`.replace(/\s+/g, ' ').trim();
     if (q.toLowerCase() === String(userQuery).toLowerCase().trim()) return null;
     return {
       query: q,
-      strategy: scopeReason || (nothingAccepted && scopeExtra)
-        ? 'reformulate_scope' : 'reformulate_domain_scope'
+      strategy: !statuteTerms && subjectTerms ? 'reformulate_subject'
+        : (scopeReason || (nothingAccepted && scopeExtra))
+          ? 'reformulate_scope' : 'reformulate_domain_scope'
     };
   }
   if (attemptNo === 2) {
@@ -826,6 +903,9 @@ function gateScore(row, ev) {
   if (row.headingSubject) g += 1.5;
   g += 1.5 * row.authority;
   if (row.jurisMismatch) g -= 6.0;
+  // Evidence about another subject answers a question nobody asked — the same
+  // class of error as evidence about another place, so it carries the same weight.
+  if (row.offSubject) g -= 8.0;
   if (row.stale) g -= 2.0;
   if (ev.wantsCaseLaw) g += row.caseLaw ? 2.0 : -1.0;
   if (ev.wantsProcedure && row.procedureLike) g += 1.5;
@@ -843,7 +923,7 @@ function gateScore(row, ev) {
  * Returns an object shaped exactly like RAGEngine.retrieve() (so every existing
  * consumer keeps working unchanged) plus `correction` and `evidence` diagnostics.
  */
-export async function retrieveCorrected(userQuery, { isOnline = true, apiKey = null, maxCorrections = MAX_CORRECTIVE_ATTEMPTS } = {}) {
+export async function retrieveCorrected(userQuery, { isOnline = true, apiKey = null, maxCorrections = MAX_CORRECTIVE_ATTEMPTS, extraQuery = null } = {}) {
   const started = Date.now();
   const foreign = parseOverseasIntent(userQuery);
   let qLang = 'en';
@@ -853,9 +933,20 @@ export async function retrieveCorrected(userQuery, { isOnline = true, apiKey = n
   const ownForms = queryOwnWordForms(userQuery, qLang);
   const queryScope = detectQueryScope(userQuery);
   const ladder = scopeLadder(queryScope);
+  // One ask reading for the whole correction loop: retries may add evidence,
+  // they may never redefine what the question was about.
+  const subject = analyzeSubject(own, {
+    text: userQuery, glosses: ownForms.map(e => ({ source: e.word, forms: e.forms }))
+  });
+  // A caller that has already worked out WHAT the question is about hands in one
+  // paraphrase of the same situation. Lifting it above the judge lets it ADD
+  // evidence on the primary pass too; it never redefines the ask, because every
+  // row is still scored against the user's own words.
+  const extra = String(extraQuery || '').trim();
   const judge = (retrieval, origExact) =>
     evaluateEvidence(userQuery, retrieval, {
-      tokens, own, ownForms, foreign, lang: qLang, origExact, queryScope, ladder
+      tokens, own, ownForms, foreign, lang: qLang, origExact, queryScope, ladder, subject,
+      situationTerms: extra && extra.toLowerCase() !== String(userQuery || '').toLowerCase().trim() ? extra : ''
     });
 
   const first = await RAGEngine.retrieve(userQuery, isOnline, apiKey);
@@ -889,6 +980,21 @@ export async function retrieveCorrected(userQuery, { isOnline = true, apiKey = n
     }
   };
   absorb(ev.rows, first.domain);
+
+  // A caller that has already worked out WHAT the question is about may hand in
+  // one paraphrase of the same situation. It only ADDS candidates: every row it
+  // brings is scored against the user's own words by judge(), so a record that
+  // matches the paraphrase but not the question still fails the gate.
+  if (extra && ev.verdict !== 'strong'
+      && extra.toLowerCase() !== String(userQuery || '').toLowerCase().trim()) {
+    const pass = await RAGEngine.retrieve(extra, isOnline, apiKey);
+    absorb(judge(pass).rows, pass.domain);
+    ev = judge({ chunks: [...pool.values()].map(r => r.chunk), domain: poolDomain }, origExact);
+    attempts.push({
+      n: 0, strategy: 'situation_paraphrase', query: extra,
+      verdict: ev.verdict, chunks: (pass.chunks || []).length, online: isOnline
+    });
+  }
 
   while (ev.verdict !== 'strong' && corrections < maxCorrections) {
     const next = buildCorrectiveQuery(userQuery, ev, corrections + 1);
@@ -927,6 +1033,7 @@ export async function retrieveCorrected(userQuery, { isOnline = true, apiKey = n
       verdict: ev.verdict,
       reasons: ev.reasons,
       domain: ev.domain,
+      subject: ev.subject,
       namedStatutes: ev.namedStatutes,
       supportedCount: accepted.length,
       rejected: scored.length - accepted.length,

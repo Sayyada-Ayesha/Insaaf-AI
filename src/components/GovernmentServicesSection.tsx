@@ -253,7 +253,7 @@ export default function GovernmentServicesSection({
                 {/* Evidence verdict — never hidden, so an unsupported answer does not look authoritative */}
                 {answer.evidence && (
                   <div className={cn('p-4 rounded-2xl border-2 text-xs',
-                    answer.evidence.verdict === 'supported' ? 'bg-emerald-50 border-emerald-200 text-emerald-800' : 'bg-orange-50 border-orange-200 text-orange-800')}>
+                    answer.evidence.verdict === 'strong' ? 'bg-emerald-50 border-emerald-200 text-emerald-800' : 'bg-orange-50 border-orange-200 text-orange-800')}>
                     <p className="font-bold mb-1">
                       {isRoman ? 'Daleel ka hukm' : 'Evidence verdict'}: {answer.evidence.verdict || 'unknown'}
                       {typeof answer.evidence.supportedCount === 'number' ? ` · ${answer.evidence.supportedCount}` : ''}

@@ -13,7 +13,7 @@
  */
 import { useState, useRef, useEffect } from "react";
 import { motion } from "motion/react";
-import { Bot, Send, Loader2, Sparkles, MapPin, Scale, Phone, ExternalLink, Building2, ShieldCheck, Navigation, Briefcase, BookOpen, ClipboardList, AlertCircle, CheckCircle2 } from "lucide-react";
+import { Bot, Send, Loader2, Sparkles, MapPin, Scale, Phone, ExternalLink, Building2, ShieldCheck, Navigation, Briefcase, BookOpen, ClipboardList, AlertCircle, CheckCircle2, Download } from "lucide-react";
 import { MarkdownBody } from "./MarkdownBody";
 import { askLegalAgent, type AgentSource } from "../services/aiRuntime";
 import { FirestoreService } from "../services/firestoreService";
@@ -21,12 +21,20 @@ import { findCityInText, searchLawyerCards, searchOrgCards, searchEmergencyCards
 import { APP_ROUTES, getRoute, type AppRoute } from "../config/appRoutes";
 import { getLibrarySectionId } from "../config/ragDomainMap";
 import { getCurrentLanguage, useLanguageVersion } from "../lib/i18n";
+import { evidenceBadge } from "../lib/answerEvidence";
+import type { EvidenceVerdict } from "../services/storage";
 import { useSettings } from "../lib/settings";
+import {
+  CASE_INTAKE_FIELDS, INTAKE_STEPS, fieldLabel, fieldStep, intakeToAgentContext, intakeQuery,
+  outstandingFieldKeys, buildCaseBrief, caseBriefToText, saveCaseIntake, loadCaseIntake,
+  clearCaseIntake, type CaseBriefSection, type CaseIntakeData
+} from "../lib/caseIntake";
+import { copyTextToClipboard } from "../lib/clipboard";
 import { cn } from "./Layout";
 
 type AgentMsg =
   | { role: 'user'; text: string }
-  | { role: 'agent'; text: string; actions?: AppRoute[]; sources?: AgentSource[]; isOffline?: boolean; cards?: DirectoryCard[] };
+  | { role: 'agent'; text: string; actions?: AppRoute[]; sources?: AgentSource[]; isOffline?: boolean; evidenceVerdict?: EvidenceVerdict; cards?: DirectoryCard[]; brief?: CaseBriefSection[]; disclaimer?: string };
 
 const SUGGESTIONS = [
   { en: "Find a criminal lawyer in Lahore", roman: "Lahore mein criminal vakeel dhounden" },
@@ -74,10 +82,38 @@ export default function AgentSection({ onNavigate, onOpenLibrary, embedded = fal
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const messagesContainerRef = useRef<HTMLDivElement>(null);
 
-  // Structured Case Intake
+  // Structured Case Intake. Restored per user so closing the panel, navigating
+  // away or a page refresh never throws away a case someone spent time describing.
   const [showCaseIntake, setShowCaseIntake] = useState(false);
   const [caseIntakeStep, setCaseIntakeStep] = useState(0);
-  const [caseIntakeData, setCaseIntakeData] = useState<Record<string, string>>({});
+  const [caseIntakeData, setCaseIntakeData] = useState<CaseIntakeData>(() => loadCaseIntake());
+  const [caseIntakeOutstanding, setCaseIntakeOutstanding] = useState<string[]>([]);
+  const [isAnalyzing, setIsAnalyzing] = useState(false);
+  const isReviewStep = caseIntakeStep >= INTAKE_STEPS.length;
+  const byKeyStep = (key: string) => Math.max(0, INTAKE_STEPS.indexOf(fieldStep(key)));
+  const [briefCopied, setBriefCopied] = useState<string | null>(null);
+  const copyBrief = async (text: string) => {
+    const ok = await copyTextToClipboard(text);
+    setBriefCopied(ok ? 'ok' : 'fail');
+    setTimeout(() => setBriefCopied(null), 3000);
+  };
+  const downloadBrief = (text: string) => {
+    const url = URL.createObjectURL(new Blob([text], { type: 'text/plain;charset=utf-8' }));
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'insaaf-case-brief.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  };
+  const setIntakeField = (key: string, value: string) => {
+    setCaseIntakeData(prev => {
+      const next = { ...prev, [key]: value };
+      saveCaseIntake(next);
+      return next;
+    });
+  };
 
   useEffect(() => {
     // Scroll only the panel. scrollIntoView on the sentinel also scrolls the
@@ -325,7 +361,8 @@ export default function AgentSection({ onNavigate, onOpenLibrary, embedded = fal
         text: reply.reply,
         actions,
         sources: reply.sources,
-        isOffline: reply.isOffline
+        isOffline: reply.isOffline,
+        evidenceVerdict: reply.evidence?.verdict
       }]);
     } catch {
       setMessages(prev => [...prev, {
@@ -340,9 +377,58 @@ export default function AgentSection({ onNavigate, onOpenLibrary, embedded = fal
     }
   };
 
-  // ---------------------------------------------------------------
-  // RENDER
-  // ---------------------------------------------------------------
+  /**
+   * Analyse the collected intake. `intakeQuery` puts the facts themselves into the
+   * retrieval query and `intakeToAgentContext` carries them as structured context —
+   * the previous build passed `null` here, so the case was collected and then thrown away.
+   */
+  const handleCaseAnalysis = async () => {
+    if (isAnalyzing) return;
+    const context = intakeToAgentContext(caseIntakeData);
+    if (!context) {
+      setMessages(prev => [...prev, {
+        role: 'agent',
+        text: label(
+          "There is nothing in the intake to analyse yet. At least tell me what happened.",
+          "Intake mein abhi koi maloomat nahi ke un ka jaiza liya ja sake. Kam az kam yeh batayen ke hua kya."
+        )
+      }]);
+      return;
+    }
+    const query = intakeQuery(caseIntakeData);
+    setMessages(prev => [...prev, { role: 'user', text: query }]);
+    setIsAnalyzing(true);
+    try {
+      const reply = await askLegalAgent(query, currentLang, context, []);
+      const actions = reply.actions
+        .map(id => getRoute(id))
+        .filter((r): r is AppRoute => !!r);
+      const brief = buildCaseBrief({ data: caseIntakeData, intake: reply.intake, sources: reply.sources, rom });
+      setCaseIntakeOutstanding(outstandingFieldKeys(caseIntakeData, reply.intake));
+      setMessages(prev => [...prev, {
+        role: 'agent',
+        text: reply.reply,
+        actions,
+        sources: reply.sources,
+        isOffline: reply.isOffline,
+        evidenceVerdict: reply.evidence?.verdict,
+        brief: brief.sections,
+        disclaimer: brief.disclaimer
+      }]);
+    } catch {
+      setMessages(prev => [...prev, {
+        role: 'agent',
+        text: label(
+          "The case could not be analysed right now. Your intake answers are kept — try again in a moment.",
+          "Abhi case ka jaiza nahi ho saka. Aap ke intake javab mehfooz hain — thori der baad dobara koshish karein."
+        )
+      }]);
+    } finally {
+      setIsAnalyzing(false);
+    }
+  };
+
+
 
   return (
     <div className={cn(
@@ -389,6 +475,54 @@ export default function AgentSection({ onNavigate, onOpenLibrary, embedded = fal
                   <div className="markdown-body text-sm">
                     <MarkdownBody text={m.text} />
                   </div>
+
+                  {/* Case brief A–K — the structured result of the intake analysis */}
+                  {m.brief && m.brief.length > 0 && (
+                    <div data-testid="case-brief" className="rounded-2xl border border-gray-200 bg-gray-50/60 p-4 space-y-3">
+                      <div className="flex items-start justify-between gap-3">
+                        <p className="text-[10px] font-black uppercase tracking-widest text-[#01411C]">
+                          {label("Case brief", "Case brief")}
+                        </p>
+                        <div className="flex gap-2 shrink-0">
+                          <button
+                            data-testid="case-brief-copy"
+                            onClick={() => copyBrief(caseBriefToText({ sections: m.brief!, disclaimer: m.disclaimer || '' }))}
+                            className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-white border border-gray-200 text-[10px] font-bold text-gray-600 hover:border-[#01411C] hover:text-[#01411C] transition-all"
+                          >
+                            {briefCopied === 'ok'
+                              ? <><CheckCircle2 className="w-3 h-3" /> {label("Copied", "Copy ho gaya")}</>
+                              : briefCopied === 'fail'
+                                ? <><AlertCircle className="w-3 h-3" /> {label("Copy failed", "Copy nahi hua")}</>
+                                : <><ClipboardList className="w-3 h-3" /> {label("Copy", "Copy")}</>}
+                          </button>
+                          <button
+                            data-testid="case-brief-download"
+                            onClick={() => downloadBrief(caseBriefToText({ sections: m.brief!, disclaimer: m.disclaimer || '' }))}
+                            className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-white border border-gray-200 text-[10px] font-bold text-gray-600 hover:border-[#01411C] hover:text-[#01411C] transition-all"
+                          >
+                            <Download className="w-3 h-3" /> {label("Download", "Download")}
+                          </button>
+                        </div>
+                      </div>
+                      <div className="space-y-2.5">
+                        {m.brief.map(s => (
+                          <div key={s.id}>
+                            <p className="text-[10px] font-black uppercase tracking-widest text-gray-500">{s.title}</p>
+                            <ul className="mt-0.5 space-y-1">
+                              {s.lines.map((line, li) => (
+                                <li key={li} className="text-xs text-gray-700 whitespace-pre-wrap break-words leading-relaxed">{line}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                      {m.disclaimer && (
+                        <p className="text-[10px] text-gray-500 bg-amber-50 border border-amber-100 rounded-xl px-3 py-2 leading-relaxed">
+                          {m.disclaimer}
+                        </p>
+                      )}
+                    </div>
+                  )}
 
                   {/* Directory cards (verified local data) */}
                   {m.cards && m.cards.length > 0 && (
@@ -470,12 +604,16 @@ export default function AgentSection({ onNavigate, onOpenLibrary, embedded = fal
                   {/* Sources — compact citations (F14: never bulky citation blocks) */}
                   {showSources && m.sources && m.sources.length > 0 && (
                     <div className="pt-1 border-t border-gray-100">
-                      {m.sources.map((s, si) => (
+                      {m.sources.map((s, si) => {
+                        const ref = [s.type, s.key].filter(Boolean).join(' ');
+                        const heading = s.title || ref;
+                        if (!heading) return null;
+                        return (
                         <div key={si} className="text-[10px] text-gray-400 flex items-center gap-1.5 mt-1.5 flex-wrap">
                           <ShieldCheck className="w-3 h-3 shrink-0 text-[#01411C]" />
-                          {s.title || 'Verified source'}
+                          {heading}
                           {s.authority ? ` · ${s.authority}` : ''}
-                          {s.key && s.type ? ` · ${s.type} ${s.key}` : ''}
+                          {s.title && ref ? ` · ${ref}` : ''}
                           {onOpenLibrary && getLibrarySectionId(s.domain) && (
                             <button
                               onClick={() => onOpenLibrary(getLibrarySectionId(s.domain)!)}
@@ -490,16 +628,28 @@ export default function AgentSection({ onNavigate, onOpenLibrary, embedded = fal
                             </a>
                           )}
                         </div>
-                      ))}
+                        );
+                      })}
                     </div>
                   )}
 
-                  {m.isOffline && (
-                    <p className="text-[10px] font-bold text-amber-600 bg-amber-50 border border-amber-100 rounded-full px-3 py-1 inline-flex items-center gap-1.5">
-                      <ShieldCheck className="w-3 h-3" />
-                      {label("Verified legal knowledge", "Tasdeeq shuda qanooni maloomat")}
-                    </p>
-                  )}
+                  {(() => {
+                    const badge = evidenceBadge(m.evidenceVerdict, 'legal', (m.sources || []).length > 0);
+                    if (!badge) return null;
+                    return (
+                      <p className={cn(
+                        "text-[10px] font-bold rounded-full px-3 py-1 inline-flex items-center gap-1.5 border",
+                        badge.grounded
+                          ? "text-emerald-700 bg-emerald-50 border-emerald-100"
+                          : "text-amber-700 bg-amber-50 border-amber-100"
+                      )}>
+                        {badge.grounded
+                          ? <CheckCircle2 className="w-3 h-3" />
+                          : <AlertCircle className="w-3 h-3" />}
+                        {badge.label}
+                      </p>
+                    );
+                  })()}
                 </div>
               )}
             </div>
@@ -531,7 +681,8 @@ export default function AgentSection({ onNavigate, onOpenLibrary, embedded = fal
           </button>
         ))}
         <button
-          onClick={() => { setShowCaseIntake(!showCaseIntake); setCaseIntakeStep(0); setCaseIntakeData({}); }}
+          data-testid="case-intake-toggle"
+          onClick={() => { setShowCaseIntake(!showCaseIntake); setCaseIntakeStep(0); }}
           className={cn("px-3.5 py-2 rounded-full border text-[11px] font-bold transition-all whitespace-nowrap shrink-0 flex items-center gap-1.5",
             showCaseIntake ? "bg-[#01411C] border-[#01411C] text-white" : "bg-white border-gray-200 text-gray-500 hover:border-[#01411C] hover:text-[#01411C]")}
         >
@@ -571,10 +722,11 @@ export default function AgentSection({ onNavigate, onOpenLibrary, embedded = fal
         </p>
       </div>
 
-      {/* Structured Case Intake Panel */}
+      {/* Structured Case Intake Panel — 12 items, every one skippable, reviewed
+          and editable before anything is analysed. */}
       {showCaseIntake && (
         <div className="shrink-0 pt-4 border-t border-gray-100 mt-2">
-          <div className="bg-white rounded-3xl border border-gray-100 shadow-xl p-6 space-y-4">
+          <div data-testid="case-intake-panel" className="bg-white rounded-3xl border border-gray-100 shadow-xl p-6 space-y-4">
             <div className="flex items-center justify-between gap-3">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-[#01411C]/10 text-[#01411C] flex items-center justify-center">
@@ -582,136 +734,159 @@ export default function AgentSection({ onNavigate, onOpenLibrary, embedded = fal
                 </div>
                 <div>
                   <h3 className="text-sm font-black text-gray-900">{label("Structured Case Intake", "Structured Case Intake")}</h3>
-                  <p className="text-[10px] text-gray-400 font-medium">{label("Step", "Qadam")} {caseIntakeStep + 1} / 6</p>
+                  <p className="text-[10px] text-gray-400 font-medium">
+                    {isReviewStep
+                      ? label("Review before analysis", "Jaiza se pehle check karen")
+                      : `${label("Step", "Qadam")} ${caseIntakeStep + 1} / ${INTAKE_STEPS.length + 1}`}
+                  </p>
                 </div>
               </div>
-              <button onClick={() => { setShowCaseIntake(false); setCaseIntakeStep(0); setCaseIntakeData({}); }} aria-label={label("Close", "Band karen")} title={label("Close", "Band karen")} className="text-[10px] font-black uppercase tracking-widest text-gray-400 hover:text-gray-900">
+              <button onClick={() => setShowCaseIntake(false)} aria-label={label("Close", "Band karen")} title={label("Close", "Band karen")} className="text-[10px] font-black uppercase tracking-widest text-gray-400 hover:text-gray-900">
                 ✕
               </button>
             </div>
 
-            {caseIntakeStep === 0 && (
-              <div className="space-y-3">
-                <label className="text-[10px] font-black uppercase tracking-widest text-gray-400">{label("What happened? Brief facts", "Kya hua? Mukhtasir waqiyat")}</label>
-                <textarea
-                  value={caseIntakeData.facts || ''}
-                  onChange={(e) => setCaseIntakeData({ ...caseIntakeData, facts: e.target.value })}
-                  rows={3}
-                  placeholder={label("Describe the issue briefly...", "Masla mukhtasir likhein...")}
-                  className="w-full bg-gray-50 border border-gray-200 rounded-2xl py-3 px-4 text-sm font-medium text-gray-900 placeholder-gray-400 focus:ring-4 focus:ring-[#01411C]/5 outline-none resize-none"
-                />
-              </div>
-            )}
+            <p className="text-[10px] text-gray-400 font-medium">
+              {label(
+                "Anything you leave blank is reported as missing — INSAaf never fills a case fact in for you. Your answers are kept on this device for you alone.",
+                "Jo jagah aap khali chhoren ge, wohi kami batayi jayegi — INSAaf aap ke liye koi qanooni baat ijadah nahi karta. Aap ke javab sirf aap ke liye is device par mehfooz hain."
+              )}
+            </p>
 
-            {caseIntakeStep === 1 && (
-              <div className="space-y-3">
-                <label className="text-[10px] font-black uppercase tracking-widest text-gray-400">{label("Who is involved? (Parties)", "Kaun shamil hai? (Fareeqain)")}</label>
-                <input
-                  type="text"
-                  value={caseIntakeData.parties || ''}
-                  onChange={(e) => setCaseIntakeData({ ...caseIntakeData, parties: e.target.value })}
-                  placeholder={label("e.g. I am the tenant, landlord is Ahmed", "Masalan: Main kirayedar hoon, malik Ahmed hai")}
-                  className="w-full bg-gray-50 border border-gray-200 rounded-2xl py-3 px-4 text-sm font-medium text-gray-900 placeholder-gray-400 focus:ring-4 focus:ring-[#01411C]/5 outline-none"
-                />
-              </div>
-            )}
-
-            {caseIntakeStep === 2 && (
-              <div className="space-y-3">
-                <label className="text-[10px] font-black uppercase tracking-widest text-gray-400">{label("Where? (City / Jurisdiction)", "Kahan? (Shehar / Adalat)")}</label>
-                <input
-                  type="text"
-                  value={caseIntakeData.jurisdiction || ''}
-                  onChange={(e) => setCaseIntakeData({ ...caseIntakeData, jurisdiction: e.target.value })}
-                  placeholder={label("e.g. Lahore, District Court", "Masalan: Lahore, Zila Adalat")}
-                  className="w-full bg-gray-50 border border-gray-200 rounded-2xl py-3 px-4 text-sm font-medium text-gray-900 placeholder-gray-400 focus:ring-4 focus:ring-[#01411C]/5 outline-none"
-                />
-              </div>
-            )}
-
-            {caseIntakeStep === 3 && (
-              <div className="space-y-3">
-                <label className="text-[10px] font-black uppercase tracking-widest text-gray-400">{label("How urgent is it?", "Kitni jaldi hai?")}</label>
-                <div className="grid grid-cols-3 gap-2">
-                  {['low', 'medium', 'high'].map((urg) => (
+            {caseIntakeOutstanding.length > 0 && (
+              <div data-testid="case-intake-still-needed" className="p-3 rounded-2xl bg-amber-50 border border-amber-200">
+                <p className="text-[10px] font-black uppercase tracking-widest text-amber-800 mb-1">
+                  {label("The verified records still need", "Tasdeeq shuda records ko abhi yeh chahiye")}
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {caseIntakeOutstanding.map(k => (
                     <button
-                      key={urg}
-                      onClick={() => setCaseIntakeData({ ...caseIntakeData, urgency: urg })}
-                      className={cn("px-3 py-2 rounded-xl border text-[10px] font-black uppercase tracking-wider transition-all",
-                        caseIntakeData.urgency === urg
-                          ? urg === 'high' ? 'bg-red-100 border-red-300 text-red-800'
-                            : urg === 'medium' ? 'bg-amber-100 border-amber-300 text-amber-800'
-                            : 'bg-green-100 border-green-300 text-green-800'
-                          : 'bg-gray-50 border-gray-200 text-gray-500 hover:border-gray-400')}
+                      key={k}
+                      data-testid={`intake-jump-${k}`}
+                      onClick={() => setCaseIntakeStep(byKeyStep(k))}
+                      className="px-2 py-1 rounded-lg bg-white border border-amber-300 text-[10px] font-bold text-amber-800 hover:bg-amber-100"
                     >
-                      {urg === 'high' ? label("Urgent", "Fauri") : urg === 'medium' ? label("Soon", "Jald") : label("Normal", "Aam")}
+                      {fieldLabel(k, rom)}
                     </button>
                   ))}
                 </div>
               </div>
             )}
 
-            {caseIntakeStep === 4 && (
-              <div className="space-y-3">
-                <label className="text-[10px] font-black uppercase tracking-widest text-gray-400">{label("What evidence do you have?", "Kya saboot hai?")}</label>
-                <textarea
-                  value={caseIntakeData.evidence || ''}
-                  onChange={(e) => setCaseIntakeData({ ...caseIntakeData, evidence: e.target.value })}
-                  rows={2}
-                  placeholder={label("e.g. Written agreement, WhatsApp messages, witnesses", "Masalan: Likhita muahida, WhatsApp messages, gawah")}
-                  className="w-full bg-gray-50 border border-gray-200 rounded-2xl py-3 px-4 text-sm font-medium text-gray-900 placeholder-gray-400 focus:ring-4 focus:ring-[#01411C]/5 outline-none resize-none"
-                />
-              </div>
-            )}
-
-            {caseIntakeStep === 5 && (
-              <div className="space-y-4">
-                <div className="p-4 rounded-2xl bg-[#01411C]/5 border border-[#01411C]/10">
-                  <p className="text-[10px] font-black uppercase tracking-widest text-[#01411C] mb-2">{label("Case Summary", "Case Khulasa")}</p>
-                  <div className="space-y-2 text-xs text-gray-700">
-                    {caseIntakeData.facts && <p><b>{label("Facts:", "Waqiyat:")}</b> {caseIntakeData.facts}</p>}
-                    {caseIntakeData.parties && <p><b>{label("Parties:", "Fareeqain:")}</b> {caseIntakeData.parties}</p>}
-                    {caseIntakeData.jurisdiction && <p><b>{label("Jurisdiction:", "Adalat:")}</b> {caseIntakeData.jurisdiction}</p>}
-                    {caseIntakeData.urgency && <p><b>{label("Urgency:", "Jaldi:")}</b> {caseIntakeData.urgency}</p>}
-                    {caseIntakeData.evidence && <p><b>{label("Evidence:", "Saboot:")}</b> {caseIntakeData.evidence}</p>}
+            {!isReviewStep && CASE_INTAKE_FIELDS.filter(f => f.step === INTAKE_STEPS[caseIntakeStep]).map(f => (
+              <div key={f.key} className="space-y-2">
+                <label htmlFor={`intake-${f.key}`} className="text-[10px] font-black uppercase tracking-widest text-gray-400">
+                  {rom ? f.labelRoman : f.labelEn}
+                  <span className="normal-case font-medium text-gray-300"> · {label("optional", "ikhtiyari")}</span>
+                </label>
+                {f.kind === 'choice' ? (
+                  <div className="grid grid-cols-3 gap-2" role="group" aria-label={rom ? f.labelRoman : f.labelEn}>
+                    {(f.options || []).map(o => (
+                      <button
+                        key={o.value}
+                        type="button"
+                        id={`intake-${f.key}-${o.value}`}
+                        data-testid={`intake-${f.key}-${o.value}`}
+                        aria-pressed={caseIntakeData[f.key] === o.value}
+                        onClick={() => setIntakeField(f.key, caseIntakeData[f.key] === o.value ? '' : o.value)}
+                        className={cn("px-3 py-2 rounded-xl border text-[10px] font-black uppercase tracking-wider transition-all",
+                          caseIntakeData[f.key] === o.value
+                            ? o.value === 'high' ? 'bg-red-100 border-red-300 text-red-800'
+                              : o.value === 'medium' ? 'bg-amber-100 border-amber-300 text-amber-800'
+                              : 'bg-green-100 border-green-300 text-green-800'
+                            : 'bg-gray-50 border-gray-200 text-gray-500 hover:border-gray-400')}
+                      >
+                        {rom ? o.roman : o.en}
+                      </button>
+                    ))}
                   </div>
-                </div>
-                <div className="p-4 rounded-2xl bg-green-50 border border-green-200">
-                  <p className="text-[10px] font-black uppercase tracking-widest text-green-800 mb-2">{label("Suggested Next Steps", "Agla Qadam")}</p>
-                  <ul className="list-disc list-inside text-green-700 space-y-1 text-xs">
-                    <li>{label("Consult a lawyer in your area for detailed advice", "Apne ilaqe mein wakeel se mashwara karen")}</li>
-                    <li>{label("Gather and organize all evidence documents", "Tamam saboot documents jama aur tarteeb den")}</li>
-                    <li>{label("Check if legal aid is available if you cannot afford a lawyer", "Agar wakeel ki fee nahi de sakte to muft qanooni madad check karen")}</li>
-                  </ul>
-                </div>
-                <div className="grid grid-cols-2 gap-2">
-                  <button onClick={() => { setShowCaseIntake(false); onNavigate(getRoute('lawyers')!); }} className="px-4 py-2 bg-[#01411C] text-white rounded-xl text-[10px] font-black uppercase tracking-wider hover:scale-105 transition-all flex items-center justify-center gap-2">
-                    <Briefcase className="w-3.5 h-3.5" /> {label("Find Lawyer", "Wakeel Dhundhen")}
-                  </button>
-                  <button onClick={() => { setShowCaseIntake(false); onNavigate(getRoute('legalaid')!); }} className="px-4 py-2 bg-white border border-[#01411C] text-[#01411C] rounded-xl text-[10px] font-black uppercase tracking-wider hover:bg-[#01411C] hover:text-white transition-all flex items-center justify-center gap-2">
-                    <ShieldCheck className="w-3.5 h-3.5" /> {label("Legal Aid", "Muft Madad")}
-                  </button>
-                </div>
+                ) : (
+                  <textarea
+                    id={`intake-${f.key}`}
+                    data-testid={`intake-${f.key}`}
+                    value={caseIntakeData[f.key] || ''}
+                    onChange={(e) => setIntakeField(f.key, e.target.value)}
+                    rows={f.kind === 'area' ? 3 : 1}
+                    maxLength={1200}
+                    placeholder={rom ? (f.helpRoman || "Likhein…") : (f.helpEn || "Type here…")}
+                    className="w-full bg-gray-50 border border-gray-200 rounded-2xl py-3 px-4 text-sm font-medium text-gray-900 placeholder-gray-400 focus:ring-4 focus:ring-[#01411C]/5 outline-none resize-none"
+                  />
+                )}
+                {f.kind === 'choice' && (f.helpEn || f.helpRoman) && (
+                  <p className="text-[10px] text-gray-400">{rom ? f.helpRoman : f.helpEn}</p>
+                )}
+              </div>
+            ))}
+
+            {isReviewStep && (
+              <div className="space-y-2">
+                {CASE_INTAKE_FIELDS.map(f => (
+                  <div key={f.key} data-testid={`intake-review-${f.key}`} className="flex items-start justify-between gap-3 p-3 rounded-2xl bg-gray-50 border border-gray-100">
+                    <div className="min-w-0">
+                      <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">{rom ? f.labelRoman : f.labelEn}</p>
+                      <p className={cn("text-xs mt-0.5 whitespace-pre-wrap break-words", caseIntakeData[f.key] ? "text-gray-800" : "text-gray-400 italic")}>
+                        {caseIntakeData[f.key] || label("Not stated", "Bayan nahi kiya gaya")}
+                      </p>
+                    </div>
+                    <button
+                      onClick={() => setCaseIntakeStep(INTAKE_STEPS.indexOf(f.step))}
+                      className="text-[10px] font-black uppercase tracking-wider text-[#01411C] hover:underline shrink-0"
+                    >
+                      {label("Edit", "Tarmeem")}
+                    </button>
+                  </div>
+                ))}
               </div>
             )}
 
-            {caseIntakeStep < 5 && (
-              <div className="flex items-center justify-between gap-2">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <button
+                onClick={() => setCaseIntakeStep(Math.max(0, caseIntakeStep - 1))}
+                disabled={caseIntakeStep === 0}
+                className="px-4 py-2 rounded-xl border border-gray-200 text-[10px] font-black uppercase tracking-wider text-gray-500 hover:border-gray-400 disabled:opacity-30 transition-all"
+              >
+                {label("Back", "Wapas")}
+              </button>
+              <div className="flex flex-wrap gap-2">
+                {!isReviewStep && (
+                  <button
+                    data-testid="case-intake-skip"
+                    onClick={() => setCaseIntakeStep(Math.min(INTAKE_STEPS.length, caseIntakeStep + 1))}
+                    className="px-4 py-2 rounded-xl border border-gray-200 text-[10px] font-black uppercase tracking-wider text-gray-500 hover:border-gray-400 transition-all"
+                  >
+                    {label("Skip question", "Sawal chhoren")}
+                  </button>
+                )}
+                {!isReviewStep ? (
+                  <button
+                    data-testid="case-intake-next"
+                    onClick={() => setCaseIntakeStep(Math.min(INTAKE_STEPS.length, caseIntakeStep + 1))}
+                    className="px-4 py-2 rounded-xl bg-[#01411C] text-white text-[10px] font-black uppercase tracking-wider hover:scale-105 transition-all flex items-center gap-1.5"
+                  >
+                    {caseIntakeStep === INTAKE_STEPS.length - 1 ? label("Review", "Jaiza") : label("Next", "Agla")} <CheckCircle2 className="w-3.5 h-3.5" />
+                  </button>
+                ) : (
+                  <button
+                    data-testid="case-intake-analyse"
+                    onClick={handleCaseAnalysis}
+                    disabled={isAnalyzing}
+                    className="px-4 py-2 rounded-xl bg-[#01411C] text-white text-[10px] font-black uppercase tracking-wider hover:scale-105 disabled:opacity-50 transition-all flex items-center gap-1.5"
+                  >
+                    {isAnalyzing
+                      ? <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                      : <Scale className="w-3.5 h-3.5" />}
+                    {label("Analyse my case", "Mera case jaizen")}
+                  </button>
+                )}
                 <button
-                  onClick={() => setCaseIntakeStep(Math.max(0, caseIntakeStep - 1))}
-                  disabled={caseIntakeStep === 0}
-                  className="px-4 py-2 rounded-xl border border-gray-200 text-[10px] font-black uppercase tracking-wider text-gray-500 hover:border-gray-400 disabled:opacity-30 transition-all"
+                  data-testid="case-intake-clear"
+                  onClick={() => { clearCaseIntake(); setCaseIntakeData({}); setCaseIntakeOutstanding([]); setCaseIntakeStep(0); }}
+                  className="px-4 py-2 rounded-xl border border-gray-200 text-[10px] font-black uppercase tracking-wider text-gray-400 hover:border-red-300 hover:text-red-600 transition-all"
                 >
-                  {label("Back", "Wapas")}
-                </button>
-                <button
-                  onClick={() => setCaseIntakeStep(Math.min(5, caseIntakeStep + 1))}
-                  className="px-4 py-2 rounded-xl bg-[#01411C] text-white text-[10px] font-black uppercase tracking-wider hover:scale-105 transition-all flex items-center gap-1.5"
-                >
-                  {caseIntakeStep === 4 ? label("Review", "Jaiza") : label("Next", "Agla")} <CheckCircle2 className="w-3.5 h-3.5" />
+                  {label("Clear intake", "Intake mitayen")}
                 </button>
               </div>
-            )}
+            </div>
           </div>
         </div>
       )}

@@ -30,7 +30,7 @@
  */
 import { RAGEngine, parseOverseasIntent } from './ragEngine.js';
 import { retrieveCorrected, normalizeAnswerLevel, ANSWER_LEVELS, statuteMentions } from './evidenceGate.js';
-import { composeOwnedModelAnswer, askClarification, crossBorderNudge } from './ownedModel.js';
+import { composeOwnedModelAnswer, askClarification, crossBorderNudge, askedServiceSet, recordSource, recordAuthority } from './ownedModel.js';
 import { CITY_PROVINCE, scopeLayerName } from './corpusScope.js';
 
 const CITIES = CITY_PROVINCE;
@@ -481,8 +481,9 @@ export async function runLegalAgent(p = {}) {
     : (isRoman ? 'is jawab ke liye koi procedure record nahi mila — steps sirf aam qadam hain' : 'no procedure record matched, so the steps above stay general'));
 
   // 10 — forum / authority, only where a retrieved record states one.
+  const askedServices = askedServiceSet(message);
   const forums = [...new Set((retrieval.chunks || []).slice(0, lvl.chunkCap)
-    .map(c => [c.jurisdiction, c.issuingAuthority].filter(Boolean).join(' · ')).filter(Boolean))];
+    .map(c => [c.jurisdiction, recordAuthority(c)].filter(Boolean).join(' · ')).filter(Boolean))];
   add('forum_authority', isRoman ? 'Adalat / authority' : 'Forum / authority', forums.length
     ? forums.slice(0, 3).join(' | ')
     : (isRoman ? 'koi forum record mein zikr nahi — adalat/office ki tasdeeq karein' : 'no forum stated in the records — confirm the office/court'));
@@ -515,8 +516,8 @@ export async function runLegalAgent(p = {}) {
     relevance: retrieval.relevance,
     detectedLang: retrieval.detectedLang,
     sources: (retrieval.chunks || []).slice(0, 4).map(c => ({
-      title: c.title, authority: c.issuingAuthority, type: c.type, key: c.key,
-      jurisdiction: c.jurisdiction, sourceURL: c.sourceURL, domain: retrieval.domain
+      title: c.title, authority: recordAuthority(c), type: c.type, key: c.key,
+      jurisdiction: c.jurisdiction, sourceURL: recordSource(c, askedServices), domain: retrieval.domain
     })),
     chunkCount: (retrieval.chunks || []).length
   };

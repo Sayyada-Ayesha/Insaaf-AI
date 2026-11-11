@@ -6,11 +6,12 @@ import { getLegalAdvice, streamLegalAdvice, getLastResponseSource } from "../ser
 import { copyTextToClipboard } from "../lib/clipboard";
 import { cn } from "./Layout";
 import { useAuth } from "../contexts/AuthContext";
-import { StorageService, LocalChat, LocalChatMessage, SourceMetadata, CitationWarning } from "../services/storage";
+import { StorageService, LocalChat, LocalChatMessage, SourceMetadata, CitationWarning, EvidenceVerdict } from "../services/storage";
 import { FirestoreService } from "../services/firestoreService";
 import { VoiceService } from "../services/voiceService";
 import { getTranslations, getCurrentLanguage, SupportedLanguage, useLanguageVersion } from "../lib/i18n";
 import { getLibrarySectionId } from "../config/ragDomainMap";
+import { evidenceBadge } from "../lib/answerEvidence";
 import { getSettings, useSettings } from "../lib/settings";
 import AnswerResultView from "./AnswerResultView";
 
@@ -23,13 +24,6 @@ const linkifyCitations = (text: string): string => text.replace(
   /https?:\/\/[^\s,)\]]+/g,
   (m) => { try { void new URL(m); return `[${m}](${m})`; } catch { return m; } }
 );
-
-/** Badge per evidence path, keyed to the mode that produced the answer. */
-const EVIDENCE_BADGE: Record<'islamic' | 'combined' | 'legal', string> = {
-  combined: 'VERIFIED ISLAMIC + PAKISTAN LAW SOURCES',
-  islamic: 'VERIFIED ISLAMIC SOURCE',
-  legal: 'VERIFIED LEGAL KNOWLEDGE',
-};
 
 const LAW_SUGGESTIONS = [
   { label: "Women Rights", roman: "Khawateen ke Huqooq" },
@@ -148,6 +142,9 @@ export default function ChatSection({ chatMode, activeChatId, openChatSignal, on
         : 'This browser has no speech engine for the selected voice language. Choose the other voice language, or type your question.';
       case 'timeout': return roman ? 'Time khatam. Dobara bolein.' : 'Listening timed out. Please try again and speak clearly.';
       case 'tts-unavailable': return roman ? 'Is device par koi awaaz available nahi hai.' : 'No voice is available on this device.';
+      case 'urdu-voice-missing': return roman
+        ? 'Is device par Urdu voice install nahi hai, is liye jawab doosri voice ne parha (awaz Urdu nahi hai).'
+        : 'This device has no Urdu voice, so another voice read the answer — the audio is not Urdu.';
       default: return roman ? 'Voice input fail hua. Dobara koshish karen.' : 'Voice input failed. Please try again.';
     }
   };
@@ -325,6 +322,7 @@ export default function ChatSection({ chatMode, activeChatId, openChatSignal, on
     let botSources: SourceMetadata[] = [];
     let botIsOffline = false;
     let botCitationWarning: CitationWarning | null = null;
+    let botVerdict: EvidenceVerdict | undefined;
 
     try {
       const stream = streamLegalAdvice(userMessage, history, userPrefLang, controller.signal, getSettings().responseDetail, requestMode);
@@ -340,6 +338,8 @@ export default function ChatSection({ chatMode, activeChatId, openChatSignal, on
           if (data.sources) botSources = data.sources;
           if (typeof data.isOffline === 'boolean') botIsOffline = data.isOffline;
           if (data.citationWarning !== undefined) botCitationWarning = data.citationWarning;
+          const frameVerdict = data.evidence?.verdict ?? data.meta?.evidence?.verdict;
+          if (frameVerdict) botVerdict = frameVerdict;
           if (data.chunk) botResponse += data.chunk;
         }
 
@@ -352,7 +352,8 @@ export default function ChatSection({ chatMode, activeChatId, openChatSignal, on
             sources: botSources.length > 0 ? botSources : updated[lastIdx].sources,
             isOffline: botIsOffline,
             citationWarning: botCitationWarning,
-            evidenceMode: requestMode ?? 'legal'
+            evidenceMode: requestMode ?? 'legal',
+            evidenceVerdict: botVerdict ?? updated[lastIdx].evidenceVerdict
           };
           return updated;
         });
@@ -441,7 +442,7 @@ export default function ChatSection({ chatMode, activeChatId, openChatSignal, on
   };
 
   const startNewChat = () => {
-    window.speechSynthesis.cancel();
+    VoiceService.stop();
     // F3: cancel any in-flight stream before replacing the conversation
     streamAbortRef.current?.abort();
     setIsSpeaking(null);
@@ -583,7 +584,7 @@ export default function ChatSection({ chatMode, activeChatId, openChatSignal, on
               )}
               <div className="mt-3 sm:mt-4 flex flex-wrap justify-center gap-1.5 sm:gap-2">
                 {(chatMode === 'islamic'
-                  ? (islamicView === 'combined' ? COMBINED_SUGGESTIONS : ISLAMIC_SUGGESTIONS)
+                  ? (isLawPath ? LAW_SUGGESTIONS : islamicView === 'combined' ? COMBINED_SUGGESTIONS : ISLAMIC_SUGGESTIONS)
                   : LAW_SUGGESTIONS
                 ).slice(0, 6).map((s, i) => (
                   <button
@@ -719,22 +720,25 @@ export default function ChatSection({ chatMode, activeChatId, openChatSignal, on
                 {message.role === 'user' ? <User className="w-6 h-6" /> : <Bot className="w-6 h-6" />}
               </div>
               <div className="group relative max-w-[92%] sm:max-w-[85%] space-y-2">
-                {message.role === 'model' && idx > 0 && (
-                  <div className="flex items-center gap-2">
-                    <span className={cn(
-                      "px-2.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider border flex items-center gap-1.5",
-                      message.isOffline 
-                        ? "bg-amber-50 text-amber-700 border-amber-200" 
-                        : "bg-emerald-50 text-emerald-700 border-emerald-200"
-                    )}>
-                      {message.isOffline ? (
-                        <><ShieldCheck className="w-3 h-3 text-amber-600" /> {EVIDENCE_BADGE[message.evidenceMode ?? (isLawPath ? 'legal' : islamicView)]}</>
-                      ) : (
-                        <><Sparkles className="w-3 h-3 text-emerald-600" /> VERIFIED ANSWER</>
-                      )}
-                    </span>
-                  </div>
-                )}
+                {message.role === 'model' && idx > 0 && (() => {
+                  const mode = message.evidenceMode ?? (isLawPath ? 'legal' : islamicView);
+                  const badge = evidenceBadge(message.evidenceVerdict, mode, (message.sources || []).length > 0);
+                  if (!badge) return null;
+                  return (
+                    <div className="flex items-center gap-2">
+                      <span className={cn(
+                        "px-2.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider border flex items-center gap-1.5",
+                        badge.grounded
+                          ? "bg-emerald-50 text-emerald-700 border-emerald-200"
+                          : "bg-amber-50 text-amber-700 border-amber-200"
+                      )}>
+                        {badge.grounded
+                          ? <><Sparkles className="w-3 h-3 text-emerald-600" /> {badge.label}</>
+                          : <><ShieldCheck className="w-3 h-3 text-amber-600" /> {badge.label}</>}
+                      </span>
+                    </div>
+                  );
+                })()}
                 <div className={cn(
                   "p-4 sm:p-6 rounded-[1.5rem] sm:rounded-[2rem] text-[13px] sm:text-sm md:text-base leading-relaxed shadow-sm",
                   message.role === 'user' 
@@ -764,9 +768,16 @@ export default function ChatSection({ chatMode, activeChatId, openChatSignal, on
                       <div className="flex items-center gap-1.5 font-medium truncate max-w-[70%]">
                         <span className="font-bold text-gray-700 dark:text-gray-300">{t.chatSourceLabel}</span>
                         <span className="truncate">{message.sources[0].title}, {message.sources[0].type || 'Section'} {message.sources[0].key || ''}</span>
-                        <span className="inline-flex items-center gap-1 px-1.5 py-0.5 bg-emerald-50 text-emerald-700 rounded text-[9px] font-bold shrink-0">
-                          <CheckCircle2 className="w-2.5 h-2.5" /> {t.chatSourceVerified}
-                        </span>
+                        {message.evidenceVerdict === 'strong' && (
+                          <span className="inline-flex items-center gap-1 px-1.5 py-0.5 bg-emerald-50 text-emerald-700 rounded text-[9px] font-bold shrink-0">
+                            <CheckCircle2 className="w-2.5 h-2.5" /> {t.chatSourceVerified}
+                          </span>
+                        )}
+                        {message.evidenceVerdict === 'weak' && (
+                          <span className="inline-flex items-center gap-1 px-1.5 py-0.5 bg-amber-50 text-amber-700 rounded text-[9px] font-bold shrink-0">
+                            <AlertCircle className="w-2.5 h-2.5" /> Closest related record
+                          </span>
+                        )}
                       </div>
                       <div className="flex items-center gap-1.5 shrink-0">
                         {onOpenLibrary && getLibrarySectionId(message.sources[0].domain) && (
@@ -1002,6 +1013,9 @@ export default function ChatSection({ chatMode, activeChatId, openChatSignal, on
         searchRef={resultSearchRef}
         isListening={isListening}
         onToggleListening={toggleListening}
+        micLang={micLang}
+        onMicLang={setMicLang}
+        voiceStatus={voiceStatus}
         isRomanUI={currentLang === 'roman_urdu'}
         isLawPath={isLawPath}
         t={t}
@@ -1224,6 +1238,7 @@ export default function ChatSection({ chatMode, activeChatId, openChatSignal, on
                 <h4 className="text-[10px] font-black uppercase tracking-[0.2em]">{t.footerTerms}</h4>
               </div>
               <p className="mt-3 text-xs text-gray-500 leading-relaxed font-medium">{t.homeDisclaimerBody}</p>
+              <p className="mt-2 text-xs text-gray-400 leading-relaxed font-medium">{t.externalModelNotice}</p>
             </div>
           </div>
         </section>
