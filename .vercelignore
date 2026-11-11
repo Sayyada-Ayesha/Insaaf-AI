@@ -1,5 +1,9 @@
 # Vercel build input filter. Everything here stays on this machine: it is either a
 # secret, a local backup, or an artifact that no runtime code reads.
+#
+# Root-anchored patterns (leading "/") are deliberate. An unanchored directory rule
+# like "data/" also matches nested directories such as "src/data/", which silently
+# removed production source from the upload and broke the build.
 
 # Secrets — .env is never uploaded; Vercel supplies env vars in the project.
 .env
@@ -7,37 +11,47 @@
 !.env.example
 
 # Rollback checkpoints and operator backups.
-.checkpoint_*/
-backups/
-.build_prev/
-Temp/
-clrscr/
-artifacts/
+/.checkpoint_*/
+/backups/
+/.build_prev/
+/Temp/
+/clrscr/
+/artifacts/
 .server_*.log
 _p19.log
 _srv.log
 *.log
 
-# Downloaded source PDFs / scratch harvests (fetched locally, already ingested).
-_gcu_dl_*
-data/
+# Root-only downloaded source PDFs / scratch harvests (already ingested).
+# NOT "data/": src/data/ is production source and must be uploaded.
+/_gcu_dl_*
+/data/
 
 # Model weights, adapters and training outputs are never shipped.
-training/
-models/
+/training/
+/models/
 rag/training/
+
+# Build output is produced during the Vercel build, never uploaded.
+/dist/
 
 # Superseded RAG index snapshots (~107 MB). Only the live indexes are read at
 # runtime; shipping backups would blow the 250 MB function bundle limit.
 rag/indexes/*.backup_*.json
 
-# Test harnesses, Puppeteer suites, internal reports and the thesis documents:
-# `npm run build` only needs src/, index.html, firebase-applet-config.json and
-# vite.config.ts.
-tests/
-audits/
-docs/
+# Test harnesses, Puppeteer suites, internal reports and the thesis documents.
+# Production build inputs are src/, index.html, firebase-applet-config.json and
+# vite.config.ts; none of those live under these directories.
+/tests/
+/audits/
+/docs/
+
+# ZeroGPU Space code is uploaded to Hugging Face separately, not deployed here.
+/hf-space/
+
+# Local sprint checkpoint patches.
+/tmp_*.patch
 
 # Local tooling state.
-.qoder/
+/.qoder/
 node_modules/
