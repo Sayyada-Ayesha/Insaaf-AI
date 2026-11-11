@@ -7,16 +7,7 @@
   "functions": {
     "api/[...all].js": {
       "maxDuration": 60,
-      "includeFiles": [
-        "rag/manifest.json",
-        "rag/documents/**",
-        "rag/indexes/rag_index.json",
-        "rag/indexes/local_vectors.json",
-        "rag/indexes/islamic_index.json",
-        "rag/knowledge/**",
-        "rag/metadata/**",
-        "rag/updates/**"
-      ]
+      "includeFiles": "rag/**"
     }
   },
   "headers": [
