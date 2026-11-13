@@ -27,7 +27,7 @@ import { buildAssignmentPack } from './assignmentTools.js';
 import { runLegalAgent, sanitizeAgentContext, deriveIntake } from './legalAgent.js';
 import { buildComplaintDraft, buildLawyerBrief } from './incidentDocuments.js';
 import { auditCitations, citationAdvisory } from './citationAudit.js';
-import { resolveEverydayIntent, everydayClarification, everydayUnverifiedNote } from './everydayIntent.js';
+import { resolveEverydayIntent, everydayClarification, everydayUnverifiedNote, bareComplaintClarification } from './everydayIntent.js';
 import { normalizeHistory, resolveThread } from './conversationContext.js';
 import { answerWithModel, modelInferenceEnabled, modelInferenceConfigured, modelInferenceHealth } from './modelInferenceClient.js';
 import { getModelStatus, publicModelStatus } from './modelStatus.js';
@@ -791,8 +791,11 @@ function curatedOfflineAnswer(userQuery, activeLang, opts = {}) {
   // Taking over a device, network or account that is not yours is an offence in
   // its own right, so an ask to do it is refused like a fabrication. Both word
   // orders are matched: "hack my neighbour's wifi" and "wifi hack karo".
+  // The second word order needs BOTH an intrusion verb and a permission phrase.
+  // A permission phrase alone ("the bank took money from my account without my
+  // permission") is a complaint about a debit, not a request to break in.
   const asksUnauthorizedAccess = /\b(hack\w*|crack(?:ed|ing)?|break\s+into|bypass\w*|unauthoriz(?:ed|e)|unauthoris(?:ed|e)|steal(?:ing|s)?|churana|chura\w*|gisalna)\b[^.?;\n]{0,40}?\b(wi-?fi|internet|router|modem|password|pin|otp|account|e-?mail|phone|mobile|laptop|computer|sim|instagram|whatsapp|facebook|tiktok)\b/i.test(q)
-    || /\b(wi-?fi|internet|router|modem|password|pin|otp|account|e-?mail|phone|mobile|laptop|computer|sim|instagram|whatsapp|facebook|tiktok)\b[^.?;\n]{0,40}?\b(hack\w*|crack\w*|churana|bina\s+ijazat|without\s+(?:my|their|the\s+owner'?s?)\s+(?:permission|consent|ijazat))\b/i.test(q);
+    || /\b(wi-?fi|internet|router|modem|password|pin|otp|account|e-?mail|phone|mobile|laptop|computer|sim|instagram|whatsapp|facebook|tiktok)\b[^.?;\n]{0,40}?\b(hack\w*|crack\w*|churana|chura\w*|access\w*|enter|get\s+into|log\s*in|login|sign\s*in|unlock|take\s+over|istemal\w*|use)\b[^.?;\n]{0,30}?\b(?:bina\s+(?:ijazat|permission)|without\s+(?:my|their|his|her|the\s+owner'?s?|someone'?s?)\s+(?:permission|consent|ijazat))\b/i.test(q);
   const illegalIntent = fabricatedArtefact || asksUnauthorizedAccess || /\b(fake case|jhoota case|false case|fake evidence|false evidence|fabricated? evidence|jhooti gawahi|jhoothi gawahi|jhoota bayan|false statement|fake statement|perjury|falsif(?:y|ication)|tamper(?:ing)? (?:with )?evidence|forge|forged|forgery|bribe|rishwat|pay off|influence the judge|threatening letter|dhamki dena|blackmail karna|jaali dastavez|jaali evidence|fake document)\b/i.test(q);
   // "Someone hacked my WhatsApp" is a victim reporting a crime, not an ask to
   // commit one: a past or passive marker on the speaker's own system keeps the
@@ -1995,6 +1998,21 @@ app.post('/api/ai/chat', rateLimiterMiddleware, asyncRoute(async (req, res) => {
   const everyday = resolveEverydayIntent(userQuery, thread.priorUser, thread.priorModel);
   const everydayAsk = everydayClarification(everyday, activeLang);
 
+  // A complaint with no subject is not a question about FIR refusal. Retrieval
+  // matches the word "complaint" to that record, so the honest reply is the one
+  // question that picks the forum; a follow-up turn is answered from its thread.
+  const bareComplaint = thread.followUp ? null : bareComplaintClarification(userQuery, activeLang);
+  if (bareComplaint) {
+    res.write(`data: ${JSON.stringify({
+      chunk: bareComplaint, sources: [], isOffline: true, answerLevel,
+      evidence: { verdict: 'clarify', reasons: ['ambiguous_complaint'], domain: 'general', supportedCount: 0, rejected: 0 },
+      relevance: 'clarify', action: 'clarify'
+    })}\n\n`);
+    res.write('data: [DONE]\n\n');
+    res.end();
+    return;
+  }
+
   // Curated answers next: directory/app pointers and small talk are answered
   // instantly from verified app knowledge — no provider call and no keyword
   // retrieval noise. A resolved everyday dispute is NOT a directory request, so
@@ -2555,6 +2573,16 @@ app.post('/api/ai/advice', rateLimiterMiddleware, async (req, res) => {
     }
 
     const everydayAsk = everydayClarification(everyday, activeLang);
+
+    // Same guard as /api/ai/chat: a subjectless complaint gets the one question
+    // that picks its forum instead of the FIR-refusal remedy record.
+    const bareComplaint = thread.followUp ? null : bareComplaintClarification(userQuery, activeLang);
+    if (bareComplaint) {
+      return res.json({
+        text: bareComplaint, sources: [], isOffline: true, answerLevel, action: 'clarify', relevance: 'clarify',
+        evidence: { verdict: 'clarify', reasons: ['ambiguous_complaint'], domain: 'general', supportedCount: 0, rejected: 0 }
+      });
+    }
 
     // Curated answers next: directory/app pointers and small
     // talk are answered instantly from verified app knowledge.

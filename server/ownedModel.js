@@ -90,7 +90,7 @@ function categorize(chunks) {
   return { provisions, procedures, remedies, precedents, topics };
 }
 
-const QUERY_STOP = new Set(('the a an and or of to in for on with is are was be what which how why when who whom whose can could should would do does did not no my me i you your our we they it this that these those about from as at by if into over under very much many more most all any some there here then than who\'s let make makes please tell explain define meaning used use works work ka ke ki ko mein main hai hain ho hota hoti kar karna kare karon karta karti raha rahe diya diya kya kis kon sa liye par se tak bhi hi awara').split(/\s+/));
+const QUERY_STOP = new Set(('the a an and or of to in for on with without is are was be what which how why when who whom whose can could should would do does did not no my me i you your our we they it this that these those about from as at by if into over under very much many more most all any some there here then than who\'s let make makes please tell explain define meaning used use works work ka ke ki ko mein main hai hain ho hota hoti kar karna kare karon karta karti raha rahe diya diya kya kis kon sa liye par se tak bhi hi awara').split(/\s+/));
 
 /**
  * Forensic boilerplate: every judgment and every statute carries these words, so
@@ -165,6 +165,33 @@ function ownIdentityHits(query, chunk, gloss = null) {
   return hits;
 }
 
+/** A question about money the customer says the bank took wrongly. Used both for
+ *  ranking (which record leads) and for the supporting-quote choice (the forum
+ *  record, not the deposit-insurance clause). */
+function isBankDeductionAsk(query) {
+  const q = String(query || '');
+  return /\b(bank|banking|account)\b/i.test(q)
+    && /\b(deduct\w*|debit\w*|wrongful\w*|unauthori[sz]ed|dispute\w*|reversal|revers(?:e|ed)|refund\w*|not\s+(?:return|refund)\w*|wapis|kaat\w*)\b/i.test(q);
+}
+
+/** A policy's own cover section — scope, definitions, applicability — names the
+ *  policy but states no rule. Retrieval's authorityLead mark belongs to the
+ *  instrument, not to this heading, so it must not become the direct answer: a
+ *  withdrawal-refund question was led by "3. SCOPE" and quoted a later clause
+ *  starting "5.2. However…" whose "above-mentioned time frame" was never shown.
+ *  The heading alone is not the test: the HEC refund policy's "# 3. SCOPE" chunk
+ *  carries sections 3.1 through 8, so the cover heading sits on the operative
+ *  text. Only a cover chunk that states nothing operative is excluded. */
+function isNonOperativeSection(chunk) {
+  const head = String((chunk && (chunk.chunkTitle || chunk.title)) || '').trim();
+  const key = String((chunk && chunk.key) || '');
+  const isCover = /^(?:#\s*)?(?:\d+(?:\.\d+)*\.?\s*)?(?:SCOPE|PREAMBLE|DEFINITIONS?|APPLICABILITY|OBJECTIVES?|INTRODUCTION)\b/i.test(head)
+    || /_(?:SCOPE|PREAMBLE|DEFINITIONS|APPLICABILITY|OBJECTIVES|INTRODUCTION)$/i.test(key);
+  if (!isCover) return false;
+  const body = String((chunk && chunk.text) || '');
+  return !/%|per\s?cent|\bdays?\b|\bweeks?\b|\bmonths?\b|deduct|cancel|withdraw|refund|shall\b|\bmust\b|liable|entitled|penalt|deadline|time\s*frame/i.test(body);
+}
+
 /**
  * Records that carry the user's OWN words rank above records that merely scored.
  * A heading match alone is not enough: inside one institution's document family
@@ -187,9 +214,43 @@ function rankRecords(query, chunks) {
   // order is left exactly as retrieval returned it.
   const gloss = words.size ? null : glossedCorpusTerms(query);
   if (!words.size && !gloss.length) return [...(chunks || [])];
+  // A "how do I recover X" question is answered by the procedural record. The
+  // substance records state the right, but the citizen asked what to DO; a
+  // statutory digest with one overlapping noun used to outrank the step-by-step
+  // record. A deposit question ("refusing to return") keeps its substantive
+  // answer because it names none of the recovery situations below.
+  // A tenant whose rent was not paid, or a worker whose wages were withheld, is
+  // asking how to recover money. The words they use for that are not the word
+  // "recover", so those situations earn the procedure lift too.
+  const recoveryAsk = /\b(recover\w*|wasool|not\s+paid|unpaid|arrears?|non.?payment|default\w*|evict\w*|withh(?:o|e)ld\w*|rok\w*|nahi\s+mila|na\s+diya)\b/i.test(String(query || ''));
+  // A bank-deduction question asks WHICH FORUM hears the dispute. The record
+  // that names the Banking Court or the Banking Mohtasib answers it, but the
+  // depositor-protection clause shares the generic nouns "bank" and "account"
+  // with the question and outranked it. The lift is gated on the deduction/dispute
+  // wording, so ordinary banking-regulation questions keep their own order.
+  const bankDisputeAsk = isBankDeductionAsk(query);
+  // A survivor asking for protection from an abusive spouse is answered by the
+  // protection-order record, not by the maintenance clause: both name "husband"
+  // and "wife", and the maintenance record happened to rank first, so an abuse
+  // question was answered with the right to maintenance. Gated on the violence
+  // words in the same turn so an ordinary maintenance question keeps its record.
+  const dvProtectionAsk = /\b(domestic\s+violence|abus\w*|batter\w*|beat\w*|assault\w*|zabardasti|zordeed|maar\s*p?eet)\b/i.test(String(query || ''))
+    && /\b(husband|wife|spouse|shohar|biwi|partner|in[- ]?laws?|aurat|woman|women)\b/i.test(String(query || ''));
+  // "How do I register an FIR" is answered by the filing procedure. The refusal
+  // record repeats "register FIR" throughout its list of remedies, so it
+  // out-scored the filing record and the answer opened with "the Sessions Judge
+  // can direct the SHO" — a remedy for a refusal the user never mentioned. The
+  // lift only applies when the question does not itself raise a refusal.
+  const firFilingAsk = /\b(fir|first\s+information\s+report)\b/i.test(String(query || ''))
+    && /\b(register|lodge|file|filing|darj|likhwa|kataw\w*)\b/i.test(String(query || ''))
+    && !/\b(refus\w*|deni\w*|not\s+register\w*|mana|inkaar)\b/i.test(String(query || ''));
   const scored = (chunks || []).map((c, i) => {
     const own = ownIdentityHits(query, c, gloss);
-    return { c, i, s: own + queryTermHits(query, c, gloss), own };
+    const procedural = recoveryAsk && /PROCEDURE|WORKFLOW|_STAGES|_PROCESS|STEPS/i.test(String(c.key || '')) ? 2 : 0;
+    const forum = bankDisputeAsk && /\b(banking\s+court|mohtasib|complaint)\b/i.test(`${c.chunkTitle || ''} ${c.text || ''}`) ? 3 : 0;
+    const protection = dvProtectionAsk && /\b(protection\s+order|protection\s+officer|residence\s+order|domestic\s+violence)\b/i.test(`${c.chunkTitle || ''} ${c.text || ''}`) ? 4 : 0;
+    const filing = firFilingAsk && /FIR_(?:PROCEDURE|FILING)|FIR_FILING|WORKFLOW_FIR_FILING/i.test(String(c.key || '')) ? 3 : 0;
+    return { c, i, s: own + queryTermHits(query, c, gloss) + procedural + forum + protection + filing, own };
   });
   return scored.sort((a, b) => b.s - a.s || b.own - a.own || a.i - b.i).map(s => s.c);
 }
@@ -227,7 +288,7 @@ const POLICY_FAMILIES = [
     id: 'refund',
     test: /refund/i,
     docs: ['hec_fee_refund_policy'],
-    operative: /%|per\s?cent|\bday[s]?\b|deduct|cancell|withdraw/i,
+    operative: /%|per\s?cent|\bday[s]?\b|deduct|cancell|withdr(?:aw|ew|awn)|refundabl|nonrefundable/i,
   },
   {
     id: 'nbs',
@@ -269,11 +330,28 @@ function policyFamilyOrder(query, records) {
     if (pool.some(c => String(`${c.title || ''} ${c.chunkTitle || ''} ${c.text || ''}`).toLowerCase().includes(who))) return pool;
   }
   const inDoc = (c) => fam.docs.includes(String(c.docId));
-  const isFam = (c) => inDoc(c) && (!fam.mustMatch || fam.mustMatch.test(String(`${c.chunkTitle || ''} ${c.text || ''}`)));
+  // A cover section (SCOPE / DEFINITIONS / APPLICABILITY) is in the family's
+  // document but states no rule. Treating it as the family's operative record
+  // made "3. SCOPE" lead a withdrawal-refund answer and quote a later "5.2.
+  // However…" whose antecedent was never shown.
+  const isFam = (c) => inDoc(c) && !isNonOperativeSection(c)
+    && (!fam.mustMatch || fam.mustMatch.test(String(`${c.chunkTitle || ''} ${c.text || ''}`)));
   const inFam = pool.filter(isFam);
   if (!inFam.length) return pool;
   let head = inFam;
-  if (fam.operative.test(String(query || ''))) {
+  // A refund after withdrawal is governed by the cancellation/withdrawal rules
+  // and the tuition-fee schedule, which sit in the policy's earlier sections. The
+  // library/deposit/exam clauses also say "refundable", so without this the answer
+  // quoted them instead of the tiers the student asked about.
+  if (fam.id === 'refund' && /\b(withdr\w*|withdrew|cancel\w*|left|quit|drop\w*)\b/i.test(String(query || ''))) {
+    const rank = (c) => (/canceling or withdrawing/i.test(String(c.text || '')) ? 2 : 0)
+      + (/Percentage of Fee|\b100\s*%/i.test(String(c.text || '')) ? 1 : 0);
+    inFam.sort((a, b) => rank(b) - rank(a));
+  }
+  // A refund question always wants the operative tiers, whether it says
+  // "withdraw", "withdrew" or just "refusing to refund"; the other families
+  // still only reorder when the question itself asks for their operative detail.
+  if (fam.id === 'refund' || fam.operative.test(String(query || ''))) {
     const hit = inFam.filter(c => fam.operative.test(String(c.text || '')));
     if (hit.length) head = [...hit, ...inFam.filter(c => !hit.includes(c))];
   }
@@ -525,6 +603,11 @@ export { isLabelStubLine };
 function isHeadingLine(line) {
   const l = String(line || '').trim();
   if (/[.!?]$/.test(l)) return false;
+  // Section labels are frequently one or two ALL-CAPS words ("SCOPE",
+  // "CANCELLATION/WITHDRAWAL", "REFUNDABLE FEE"). They name the block that
+  // follows; quoted as prose they printed as a bare heading in the answer.
+  const bare = l.replace(/^\d+(?:\.\d+)*[.)]?\s*/, '').trim();
+  if (bare && !/[a-z]/.test(bare) && /[A-Z]{2,}/.test(bare) && bare.split(/\s+/).length <= 6) return true;
   const toks = l.match(/[A-Za-z][A-Za-z'’-]*/g) || [];
   if (toks.length < 3) return false;
   return toks.filter(t => /^[A-Z]/.test(t)).length / toks.length >= 0.8;
@@ -592,10 +675,53 @@ function recordBody(chunk) {
   // their only body line — there, the title IS the content, so keep it.
   let lines = all.filter(l => !(title && norm(l) === title));
   if (!lines.length) lines = all;
-  const bullets = lines.filter(l => /^(\d+[.)]\s+|[-*•]\s+)/.test(l));
-  return (bullets.length >= 2 ? bullets : lines)
-    .map(l => l.replace(/^(\d+[.)]|[-*•])\s+/, ''))
-    .join(' ');
+  // "a." / "b)" sub-items belong to the numbered item above them. Leaving them
+  // out of bullet mode dropped the item a sentence introduces ("… may approach:
+  // a. The relevant Ombudsman …") and the quote ended on the colon.
+  const bullets = lines.filter(l => /^(?:\d{1,3}|[a-z]{1,6})[.)]\s+|[-*•]\s+/.test(l));
+  // Bullet mode is for records whose body IS the list (a label plus its items).
+  // The HEC refund policy's clause chunk also carries a laboratory sub-list, and
+  // bullets-only left "Personal Emergencies… Computer Laboratory…" while every
+  // refund clause (3.1, 4.1, 7.2) was dropped — the answer then led with "5.2.
+  // However…", whose antecedent was never shown. Multi-sentence prose outside
+  // the list means the record states its rules in prose; keep every line.
+  const prose = lines.filter(l => !bullets.includes(l)).join(' ');
+  const proseSentences = splitSentences(prose).filter(s => hasSubstance(s, 25));
+  const listOnly = proseSentences.length < 2;
+  const kept = bullets.length >= 2 && listOnly ? bullets : lines;
+  // Items introduced by a colon ("… under one of the categories:") are one
+  // sentence, not six. Joining them with a space left each item as its own
+  // "sentence", so a two-sentence quote stopped after the first item and the
+  // answer read "… categories: Personal Emergencies."
+  const joined = [];
+  let listing = false;
+  for (const l of kept) {
+    const m = l.match(/^(?:(?:[ivxlcdm]{1,6}|\d{1,3}|[a-z])[.)]|[-*•])\s+(.*)$/);
+    if (!m) {
+      if (listing && joined.length) joined[joined.length - 1] = joined[joined.length - 1].replace(/[;,]\s*$/, '') + '.';
+      listing = false;
+      joined.push(l);
+      continue;
+    }
+    // The marker belongs to the list item; its sentence punctuation does not.
+    // Stripping the period from a STANDALONE item ("1. The employer has 15 days
+    // to reply.") glued it to the next item and printed a wage answer as one
+    // unpunctuated run.
+    const raw = m[1].trim();
+    const item = raw.replace(/\s*[;,]\s*$/, '').replace(/\.\s*$/, '');
+    if (listing) {
+      // An item that itself ends on a colon ("… the student may approach:")
+      // introduces a nested list, so the next item follows the colon directly.
+      joined[joined.length - 1] += `${/:\s*$/.test(joined[joined.length - 1]) ? ' ' : '; '}${item}`;
+      continue;
+    }
+    if (joined.length && /:\s*$/.test(joined[joined.length - 1])) {
+      joined[joined.length - 1] += ` ${item}`;
+      listing = true;
+    } else joined.push(raw);
+  }
+  if (listing && joined.length) joined[joined.length - 1] = joined[joined.length - 1].replace(/[;,]\s*$/, '') + '.';
+  return joined.join(' ');
 }
 
 /**
@@ -639,19 +765,35 @@ function onTopicWindow(body, query, maxSentences = 2) {
   // place that already turns these questions into corpus vocabulary.
   let glossed = [];
   try { glossed = queryEvidenceTokens(query); } catch { glossed = []; }
-  const words = [...new Set([...literal, ...glossed]
-    .filter(w => w.length >= 4 && !QUERY_STOP.has(w) && !BOILERPLATE_TERMS.has(w)))];
+  // "Fee" is three letters but it is the subject of a fee question, and the
+  // refund tier sentences each carry it; without it a sentence that says
+  // "100% fee refund" scored below the floor and the scope paragraph answered.
+  const feeTerms = /\b(fee|fees|refund|tuition|challan)\b/i.test(String(query || '')) ? ['fee', 'fees'] : [];
+  // A withdrawal question is answered by the withdrawal clause ("Students
+  // canceling or withdrawing … entitled to a refund"), whose words never appear
+  // literally in "I withdrew" — include the record's own forms of the ask.
+  const refundTerms = /\b(refund\w*|withdr(?:ew|aw|awn)|cancell?\w*)\b/i.test(String(query || ''))
+    ? ['refund', 'withdraw', 'canceling', 'tuition'] : [];
+  const words = [...new Set([...literal, ...glossed, ...feeTerms, ...refundTerms]
+    .filter(w => w.length >= 4 || (w === 'fee' || w === 'fees'))
+    .filter(w => !QUERY_STOP.has(w) && !BOILERPLATE_TERMS.has(w)))];
   if (!words.length) return '';
   const parts = splitSentences(body);
   if (parts.length < 3) return '';
   const scoreOf = (s) => {
     const l = s.toLowerCase();
+    // Weight by the matched word's LENGTH, not by a flat count: when several
+    // sentences carry one query word each, the one carrying the long, specific
+    // word ("admission") is the answer and the ones carrying a short generic
+    // one ("fee", "refund") are context. A flat count tied and kept whichever
+    // sentence came first, so an admission-fee question was answered from the
+    // library-fee clause printed above it.
     let n = 0;
     // A hit must BEGIN at a word boundary: "rent" inside "current" and
     // "different" is not the subject, and substring matching let unrelated
     // sentences clear the topical floor. Stems still reach their longer forms,
     // so "evict" scores "eviction" the way the gloss intends.
-    for (const w of words) if (new RegExp(`(?:^|[^a-z0-9])${w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`).test(l)) n++;
+    for (const w of words) if (new RegExp(`(?:^|[^a-z0-9])${w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`).test(l)) n += w.length;
     return n;
   };
   // One shared word is not the subject, and two incidental ones do not make a
@@ -667,8 +809,24 @@ function onTopicWindow(body, query, maxSentences = 2) {
     const s = scoreOf(p);
     if (s > bestScore) { bestScore = s; best = i; }
   });
-  if (best < 1 || bestScore < 2) return '';
-  return parts.slice(best, best + Math.max(1, maxSentences)).join(' ');
+  if (best < 1 || bestScore < 7) return '';
+  // A step title ("Step 4: Written Statement & Leave to Contest.") carries no
+  // instruction of its own; the sentence after it does. Starting on the body
+  // pulled the NEXT step's bare title into the quote, so a rent-recovery answer
+  // ended on "Step 4: Written Statement & Leave to Contest." — start on the
+  // heading that introduced the chosen sentence, and always carry a heading's
+  // own body line even when that spends one sentence beyond the cap.
+  const isStepHeading = (s) => /^Step\s*\d+\s*[.:)\-\u2013\u2014]\s*\S/i.test(s)
+    && /[.:]$/.test(s) && (s.match(/[A-Za-z]+/g) || []).length <= 10;
+  let start = best;
+  if (start > 0 && isStepHeading(parts[start - 1])) start -= 1;
+  const picked = [];
+  for (let i = start; i < parts.length; i++) {
+    picked.push(parts[i]);
+    if (picked.length >= Math.max(1, maxSentences) && !isStepHeading(parts[i])) break;
+    if (picked.length > Math.max(1, maxSentences)) break;
+  }
+  return picked.join(' ');
 }
 
 function recordLead(chunk, maxSentences = 2, maxChars = 520, query = null) {
@@ -680,7 +838,10 @@ function recordLead(chunk, maxSentences = 2, maxChars = 520, query = null) {
   // into a citizen's answer, because joining the lines erases the table.
   if (body.length > 300 && (body.match(/[.!?](?:\s|$)/g) || []).length < 2) return '';
   const windowed = query ? onTopicWindow(body, query, maxSentences) : '';
-  const out = clipSentences(windowed || body, maxSentences, maxChars);
+  const clipped = clipSentences(windowed || body, maxSentences, maxChars);
+  // A quote that lands on a bare list marker ("… under one of the categories:
+  // i.") reads as a broken sentence; drop the orphan marker and its colon.
+  const out = clipped.replace(/\s+(?:[ivx]{1,4}|[a-z])\.\s*$/i, '').replace(/[:;,]\s*$/, '').trim();
   // The floor belongs under the PART that is quoted, not under the record it
   // came from: a clause that reads "9.1." sits inside a document long enough to
   // clear any body-wide test, and quoting it told a student that was the rule.
@@ -695,16 +856,59 @@ function hasSubstance(text, minAlpha = 30) {
 
 /** What the SAME record says after the part already quoted — a record is only
  *  finished with once it has nothing left to give. */
-function recordContinuation(chunk, shown, maxSentences = 2, maxChars = 520) {
+function recordContinuation(chunk, shown, maxSentences = 2, maxChars = 520, query = null) {
   const body = recordBody(chunk);
   if (!body) return '';
   const parts = splitSentences(body);
   const shownNorm = norm(shown);
   let start = 0;
-  while (start < parts.length && shownNorm.includes(norm(parts[start]))) start++;
-  const rest = parts.slice(start).join(' ');
+  // The lead quote is trimmed at its tail (a dangling "… categories: i."), so an
+  // exact containment test no longer recognises it and the continuation started
+  // by repeating the same clause. Compare on the head of each sentence too.
+  while (start < parts.length) {
+    const n = norm(parts[start]);
+    if (n && (shownNorm.includes(n) || (n.length >= 40 && shownNorm.includes(n.slice(0, 40))))) start++;
+    else if (!n) start++;
+    else break;
+  }
+  // A multi-section record has more than one topic. Continuing with the next
+  // sentence regardless pasted the following section into the answer — a
+  // security-deposit question was "explained" by the Fair Rent clause printed
+  // below it. The continuation must still carry a word of the ask; a record that
+  // has nothing left about the question leaves the section out.
+  let restParts = parts.slice(start);
+  let end = start;
+  if (query) {
+    const words = (String(query).toLowerCase().match(/[a-z']{4,}/g) || [])
+      .filter(w => !QUERY_STOP.has(w) && !BOILERPLATE_TERMS.has(w));
+    if (words.length) {
+      const carriesAsk = (p) => {
+        const l = p.toLowerCase();
+        return words.some(w => new RegExp(`(?:^|[^a-z0-9])${w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`).test(l));
+      };
+      const next = parts.findIndex((p, i) => i >= start && carriesAsk(p));
+      if (next < 0) return '';
+      start = next;
+      // Stop at the first sentence that no longer speaks about the ask: the Fair
+      // Rent clause below a security-deposit rule shares the record's subject but
+      // not the question's, and continuing past it pasted a different rule in.
+      end = start;
+      while (end < parts.length && end - start < Math.max(1, maxSentences) && carriesAsk(parts[end])) end++;
+      restParts = parts.slice(start, end);
+    }
+  }
+  // A sentence that introduces a list ("… the student may approach: a.") is
+  // completed by the item after it. That item repeats none of the question's
+  // words, so the ask scan stopped there and the quote ended on "may approach".
+  const lastPart = restParts[restParts.length - 1] || '';
+  if (end < parts.length && /[:;]\s*(?:(?:[ivx]{1,4}|[a-z])\.)?\s*$/i.test(lastPart)) {
+    restParts = [...restParts, parts[end]];
+  }
+  const rest = restParts.join(' ');
   if (rest.replace(/[^A-Za-z\u0600-\u06FF]/g, '').length < 45) return '';
-  const out = clipSentences(rest, maxSentences, maxChars);
+  const out = clipSentences(rest, maxSentences, maxChars)
+    .replace(/([:;])\s+(?:[ivx]{1,4}|[a-z])\.\s+/gi, '$1 ')
+    .replace(/\s+(?:[ivx]{1,4}|[a-z])\.\s*$/i, '').replace(/[:;,]\s*$/, '').trim();
   return hasSubstance(out) ? out : '';
 }
 
@@ -1044,9 +1248,25 @@ function feeScheduleBlock(chunk, maxRows = 12, roman = false, query = '') {
   return [lead, ...lines, omitted ? `_${omitted}_` : ''].filter(Boolean).join('\n');
 }
 
+/** Published percentage refund tiers ("Upto 10th day … 100% fee refund"). They
+ *  are the operative answer to a refund question, and they are not amounts, so
+ *  the fee-schedule parser above cannot read them. */
+const REFUND_TIER_RE = /^[-*•]?\s*(Upto\s+.+?)\s*:\s*(\d{1,3})\s*%\s*(?:fee\s*)?refund/i;
+function refundTiers(chunk) {
+  const rows = [];
+  for (const line of String(chunk?.text || '').split('\n')) {
+    const m = REFUND_TIER_RE.exec(line.trim());
+    if (m) rows.push({ when: m[1].replace(/\s+/g, ' ').trim(), percent: m[2] });
+  }
+  return rows;
+}
+
 function numberedSteps(chunk, max = 5) {
   const lines = String(chunk?.text || '').split('\n').map(l => l.trim()).filter(Boolean);
-  const steps = lines.filter(l => /^\d+[.)]\s+\S/.test(l) && !isFeeRowLine(l) && !isLabelStubLine(l)).slice(0, max);
+  // "3. SCOPE" / "4. CANCELLATION/WITHDRAWAL" are numbered section labels in a
+  // policy document, not steps; treating them as steps printed a list of
+  // headings under "What to do / procedure".
+  const steps = lines.filter(l => /^\d+[.)]\s+\S/.test(l) && !isFeeRowLine(l) && !isLabelStubLine(l) && !isHeadingLine(l)).slice(0, max);
   return steps.length >= 2 ? steps : [];
 }
 
@@ -1182,7 +1402,7 @@ function topicLabel(chunk) {
 // Build concise legal basis — just the law names and sections, not full text.
 // Each line also names the LAYER it belongs to (Part 7), so a university rule and
 // an Act of Parliament are never printed as the same kind of rule.
-function buildConciseLegalBasis(chunks, L, cap = 4, scopeLang = null) {
+function buildConciseLegalBasis(chunks, L, cap = 4, scopeLang = null, asked = null) {
   const { provisions, topics } = categorize(chunks);
   const lines = [];
   for (const c of [...provisions, ...topics].slice(0, cap)) {
@@ -1201,7 +1421,7 @@ function buildConciseLegalBasis(chunks, L, cap = 4, scopeLang = null) {
     const name = isGuide ? (displayTitle(c.chunkTitle || '') || c.title) : c.title;
     const authority = recordAuthority(c);
     const auth = authority ? ` (${authority})` : '';
-    const layer = scopeLang ? scopeLabel(deriveChunkScope(c), scopeLang) : null;
+    const layer = scopeLang ? scopeLabel(deriveChunkScope(c), scopeLang, asked) : null;
     lines.push(`- ${label}${layer ? ` [${layer}]` : ''} — ${name}${auth}${L.statusNote(c.legalStatus)}`);
   }
   return lines.length > 0 ? lines.join('\n') : null;
@@ -1316,7 +1536,25 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   // PART 3-A — a civic question is about ONE service. Records tagged to another
   // service leave the pool before anything is ranked or cited.
   const askedServices = askedServiceSet(userQuery);
-  const pool = scopePoolToServices(chunks.slice(0, lvl.chunkCap), askedServices);
+  // "My tenant has not paid rent — what are my options?" is a question about
+  // what to do, not about which clause scored first. A registration/escalation
+  // clause of the rent statute used to lead the answer because it matched the
+  // same nouns; the step-by-step record is what the citizen asked for.
+  const asksHowToRecover = /\b(recover\w*|wasool|not\s+paid|unpaid|arrears?|non.?payment|evict\w*|withh(?:o|e)ld\w*)\b/i.test(String(userQuery || ''));
+  const isProcedureRecord = (c) => /PROCEDURE|WORKFLOW|_STAGES|_PROCESS|STEPS/i.test(String(c?.key || ''));
+  let pool = scopePoolToServices(chunks.slice(0, lvl.chunkCap), askedServices);
+  // The depth cap selects the first N records the gate returned. When the gate's
+  // own ordering placed a clause above the procedure, the procedure fell outside
+  // the cap and the answer lost the only record that says what to do. For a
+  // recovery question the procedure earns a slot in place of the last record.
+  if (asksHowToRecover && !pool.some(isProcedureRecord)) {
+    const proc = scopePoolToServices(chunks, askedServices).find(c => isProcedureRecord(c) && !pool.includes(c));
+    if (proc) {
+      pool = pool.length >= lvl.chunkCap
+        ? [...pool.slice(0, lvl.chunkCap - 1), proc]
+        : [...pool, proc];
+    }
+  }
   const isRoman = activeLang === 'roman_urdu';
   const L = isRoman ? ROMAN : EN;
   const scopeLang = isRoman ? 'roman_urdu' : 'en';
@@ -1332,9 +1570,10 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   // answer, pushing the ragging rule into a supporting bullet. Provisions break a
   // tie; they no longer outrank relevance.
   const topicalScoreOf = (c) => (c ? ownIdentityHits(userQuery, c) + queryTermHits(userQuery, c) : -1);
-  const primary = (provisions[0] && topicalScoreOf(provisions[0]) >= topicalScoreOf(focus[0]))
+  const proceduralAnswer = asksHowToRecover ? focus.find(isProcedureRecord) : null;
+  const primary = proceduralAnswer || ((provisions[0] && topicalScoreOf(provisions[0]) >= topicalScoreOf(focus[0]))
     ? provisions[0]
-    : (focus[0] || provisions[0]);
+    : (focus[0] || provisions[0]));
   // PART 1b — the question's own words choose WHICH RECORD answers, never WHICH
   // DOCUMENT. Across documents generic overlap wins: a supporting digest record
   // repeating "admission", "fee" and "policy" displaced the HEC fee-refund
@@ -1343,7 +1582,7 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   // and the word-match picked a supporting record, the instrument answers.
   // Between two instruments the word-match still decides, because choosing
   // between two policies is a relevance question, not an attribution one.
-  const leadRecord = pool[0] && pool[0].authorityLead ? pool[0] : null;
+  const leadRecord = pool[0] && pool[0].authorityLead && !isNonOperativeSection(pool[0]) ? pool[0] : null;
   // ...but only when that same-document record is at least as on-topic as the
   // word-match. Measured on a suspension-appeal question: the HEC welfare policy
   // carries an authorityLead mark, so its drug-abuse clause replaced "Student
@@ -1405,7 +1644,7 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
 
   // 2. Legal basis — only where the level asks for provisions, never a law dump.
   if (!shortStyle && plan.has('law') && lvl.legalBasis > 0) {
-    const lawLines = buildConciseLegalBasis(support, L, lvl.legalBasis, scopeLang);
+    const lawLines = buildConciseLegalBasis(support, L, lvl.legalBasis, scopeLang, askedHere);
     if (lawLines) push(L.law, lawLines);
   }
 
@@ -1415,14 +1654,24 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   //    the thing that was asked, and quoting such a record pastes a different
   //    case's facts into this answer.
   const nextCandidate = grounded.find(c => c !== answerRecord);
-  const second = nextCandidate
+  // A bank-deduction answer already names the forum in its first two sentences.
+  // The generic clause that passes the word tests here is depositor protection
+  // (deposit insurance and account secrecy), which shares "bank" and "account"
+  // with the question but says nothing about disputing a debit; the answer
+  // record's own next sentence (the appeal route) is the useful support.
+  const second = !isBankDeductionAsk(userQuery) && nextCandidate
     && queryTermHits(userQuery, nextCandidate) >= 2
     && ownIdentityHits(userQuery, nextCandidate) >= 1 ? nextCandidate : null;
   const secondLead = recordLead(second, lvl.answerSentences, lvl.explanationChars, userQuery);
-  const selfRest = secondLead ? '' : recordContinuation(answerRecord, lead, lvl.answerSentences, lvl.explanationChars);
-  const unusedRest = secondLead || selfRest
+  const selfRest = secondLead ? '' : recordContinuation(answerRecord, lead, lvl.answerSentences, lvl.explanationChars, userQuery);
+  const unusedRest = (secondLead || selfRest || isBankDeductionAsk(userQuery))
     ? '' : nextGroundedExplanation(userQuery, grounded, answerRecord, lvl);
-  const saysText = secondLead || selfRest || unusedRest;
+  const rawSays = secondLead || selfRest || unusedRest;
+  // A continuation or sibling record can repeat the very clause the direct
+  // answer just quoted; printing it twice adds nothing.
+  const leadNorm = norm(lead || '');
+  const saysText = rawSays && leadNorm
+    && norm(rawSays).slice(0, 60) === leadNorm.slice(0, 60) ? '' : rawSays;
   // Roman Urdu explains first and quotes only the clause that carries the rule;
   // an English answer keeps the record's own wording in full.
   const romanQuote = clipSentences(saysText, 1, ROMAN_QUOTE_CHARS);
@@ -1439,14 +1688,42 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   //    "application step" invents a process the document never states.
   const asksFee = /\b(fee|fees|charge|charges|cost|price|amount)\b/i.test(userQuery)
     || detectQueryIntent(userQuery, domain) === 'fee-scholarship';
+  const asksAmount = /\b(how much|how many|fee amount|amount of (?:the )?fee|fees? kitn[aei]|kitn[aei] (?:fee|fees|paisa|paise))\b/i.test(userQuery);
   const feeRecord = [answerRecord, ...grounded].find(c => c && hasFeeSchedule(c)) || null;
+  let feeGap = '';
   if (!shortStyle && asksFee && feeRecord) {
     const table = feeScheduleBlock(feeRecord, Math.max(6, lvl.steps || 6), isRoman, userQuery);
     if (table) push(L.fees, table);
+  } else if (!shortStyle && asksFee) {
+    const tierRecord = [answerRecord, ...grounded].find(c => c && refundTiers(c).length >= 3);
+    if (tierRecord) {
+      const lead = isRoman
+        ? 'Document mein likhi hui refund schedule yeh hai:'
+        : 'The published refund tiers are:';
+      const rows = refundTiers(tierRecord).slice(0, 8)
+        .map(r => `- ${r.when} — ${r.percent}% fee refund`);
+      push(L.fees, [lead, ...rows].join('\n'));
+    } else if (asksAmount) {
+      // The question asks a price the corpus does not carry. Say that, and point
+      // at the official portal named by the record that was retrieved — never
+      // invent an amount.
+      const src = [answerRecord, ...grounded]
+        .map(c => recordSource(c, askedServices))
+        .find(u => /^https?:\/\/(?:[a-z0-9-]+\.)+gov\.pk\b/i.test(String(u || '')));
+      feeGap = isRoman
+        ? ` Verified record tareeqa batata hai lekin fees ki raqam nahi likhta; taza fees ${src ? `official portal (${src})` : 'mutaliqa official portal'} ya daftar se tasdeeq karein.`
+        : ` The verified records here describe the procedure but do not publish the fee amount; confirm the current fee ${src ? `on the official portal (${src})` : 'on the relevant official portal'} or at the office before paying.`;
+    }
   }
   if (!shortStyle && plan.has('procedure')) {
     const steps = buildPracticalSteps(userQuery, grounded, domain, isRoman);
-    const fresh = dropRepeatedLines(steps, out.join('\n'));
+    // A numbered sequence is only honest whole: dropping the step the direct
+    // answer already quoted renumbered the rest (source steps 1, 2, 4 printed as
+    // 1, 2, 3) and made the opposing party's reply look like the reader's third
+    // action.
+    const fresh = steps && /(?:^|\n)1[.)]\s/.test(steps)
+      ? steps
+      : dropRepeatedLines(steps, out.join('\n'));
     if (fresh) push(L.procedure, clipList(fresh, lvl.steps));
   }
 
@@ -1502,8 +1779,20 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   // 11. Limitation — every level, unchanged, plus the honest scope gap: where the
   //     corpus holds no record for the layer the user asked about, the answer says
   //     so instead of quietly answering from a wider one.
+  // A bank-deduction dispute is only partly covered: the corpus names the forum
+  // (Banking Court above PKR 500,000) and the channel (the Banking Mohtasib), but
+  // publishes no step-by-step complaint procedure. Say so rather than letting the
+  // depositor-protection clause stand in for an answer about how to dispute.
+  const bankingDisputeGap = !shortStyle && domain === 'banking'
+    && /\b(bank|banking|account)\b/i.test(userQuery)
+    && /\b(deduct\w*|debit\w*|wrongful\w*|unauthori[sz]ed|dispute\w*|refund\w*|reversal|revers(?:e|ed)|not\s+(?:return|refund)\w*|wapis|kaat\w*)\b/i.test(userQuery)
+    && !grounded.some(c => /PROCEDURE|WORKFLOW|_STEPS|_STAGES|_PROCESS/i.test(String(c.key || '')))
+    ? (isRoman
+      ? ' Verified records Banking Court (PKR 500,000 se zyada ke disputes) aur Banking Mohtasib ka zikr karte hain, lekin bank ke andar shikayat darj karne ka step-by-step tareeqa corpus mein nahi hai; taza tareeqa bank ke complaint office aur Mohtasib se tasdeeq karein.'
+      : ' The verified records name the Banking Court (for disputes involving amounts above PKR 500,000) and the Banking Mohtasib for consumer grievances against banks, but they do not publish a step-by-step complaint procedure; confirm the current process with the bank\'s complaint office and the Mohtasib before filing.')
+    : '';
   const scopeGap = (evidence && evidence.scope && missingScopeMessage(evidence.scope, scopeLang)) || '';
-  push(L.limit, `${L.limitText}${scopeGap}`);
+  push(L.limit, `${L.limitText}${feeGap}${bankingDisputeGap}${scopeGap}`);
 
   // 12. Citation grounding — the one exit every mode passes through, so a section
   //     number that no cited record states cannot be printed by chat, advice,

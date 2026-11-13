@@ -562,7 +562,13 @@ export function evaluateEvidence(userQuery, retrieval, opts = {}) {
     const ownHits = ownForms.length
       ? ownForms.reduce((n, e) => n + (e.forms.some(f => coverageHit(f, c)) ? 1 : 0), 0)
       : 0;
-    const domainOk = !routedDocs.length || routedDocs.includes(c.docId);
+    // Some records are cross-domain by construction: the situation-to-action and
+    // workflow registries hold the complaint/recovery route for labour, tenancy,
+    // family and consumer questions alike, so their absence from the routed
+    // domain's own document list is not evidence of the wrong domain. The
+    // topical coverage tests still decide whether the record supports this ask.
+    const CROSS_DOMAIN_DOCS = new Set(['situation_remedies', 'legal_workflows', 'expanded_remedies']);
+    const domainOk = !routedDocs.length || routedDocs.includes(c.docId) || CROSS_DOMAIN_DOCS.has(c.docId);
     const statuteOk = !namedStatutes.length
       || namedStatutes.some(s => s.match.test(`${c.docId || ''} ${c.title || ''}`));
     // A record is "about another province" only when it NAMES exactly one

@@ -25,7 +25,7 @@ import {
   ExternalLink, CheckCircle2, XCircle, Info, BookOpen, AlertCircle, Share2
 } from "lucide-react";
 import { MarkdownBody } from "./MarkdownBody";
-import { askLegalAgent, buildIncidentDocuments, type AgentSource, type IncidentDocuments, type IntakeSummary } from "../services/aiRuntime";
+import { askLegalAgent, describeApiFailure, buildIncidentDocuments, type AgentSource, type IncidentDocuments, type IntakeSummary } from "../services/aiRuntime";
 import { VoiceService, VoiceError, type SpeakReport } from "../services/voiceService";
 import { StorageService, type LocalChat } from "../services/storage";
 import { FirestoreService } from "../services/firestoreService";
@@ -196,10 +196,9 @@ export default function VoiceAgentSection({ onNavigate }: { onNavigate?: (route:
       }
     } catch (err: any) {
       dispatch({ type: 'PHASE', phase: 'listening' });
-      setError(err?.message || label(
-        "The Voice Agent could not respond. Please try again.",
-        "Voice Agent jawab nahi de saka. Dobara koshish karein."
-      ));
+      // The service already classified the failure; a raw message like "HTTP 404"
+      // would tell the user nothing, and a connection claim would be false.
+      setError(describeApiFailure(err, rom ? 'roman_urdu' : 'en'));
     }
   }, [rom, voiceOut, speakText]);
 

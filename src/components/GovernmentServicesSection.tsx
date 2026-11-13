@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 import { cn } from './Layout';
 import { getCurrentLanguage, useLanguageVersion } from '../lib/i18n';
-import { askLegalAgent, AgentReply } from '../services/aiRuntime';
+import { askLegalAgent, describeApiFailure, AgentReply } from '../services/aiRuntime';
 import { getRoute } from '../config/appRoutes';
 import {
   GOV_SOURCES, GOV_TOPICS, CATEGORY_LABELS, CORPUS_STATS, REGISTRY_COUNTS,
@@ -93,10 +93,11 @@ export default function GovernmentServicesSection({
           ? 'Is sawal ka jawab nahi mil saka. Dobara koshish karen ya sawal doosre alfaaz mein likhen.'
           : 'No answer came back for this question. Try again, or rephrase it.');
       }
-    } catch {
-      setError(isRoman
-        ? 'Server se rabta nahi ho saka. Kuch lamhon baad dobara koshish karen.'
-        : 'The server could not be reached. Please try again in a moment.');
+    } catch (err) {
+      // "The server could not be reached" was printed for every failure, including
+      // a deployment whose /api/ai/agent route simply is not there (HTTP 404).
+      // The status is carried up from the service so the notice names the cause.
+      setError(describeApiFailure(err, isRoman ? 'roman_urdu' : 'en'));
     } finally {
       setIsLoading(false);
     }

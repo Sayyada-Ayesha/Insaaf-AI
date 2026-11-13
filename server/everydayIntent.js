@@ -299,3 +299,23 @@ export function everydayUnverifiedNote(resolved, activeLang = 'en') {
     ? `Main aap ki baat samajh gaya: aap ka masla ${label} hai. Lekin mere verified zakhire mein is muamlay par poora madad-ga record nahi mila, is liye main koi dafa, deadline ya fee ka andaaza nahi lagao ga. ${ask}`
     : `I understood your situation as: ${label}. I could not find a record in the verified corpus that covers it well enough, so I will not guess a section, deadline or fee. ${ask}`;
 }
+
+/**
+ * A request to "file a complaint" that names no subject at all. Retrieval matches
+ * the word "complaint" to the FIR-refusal record, so a citizen who never said a
+ * crime happened was told how to challenge a refused FIR. The forum depends
+ * entirely on the subject, so the honest reply is the one question that picks it.
+ */
+const COMPLAINT_ACTION = /\b(file|lodge|register|make|submit|darj|likh\w*|karna|karun|karoon|kaise|how\s+(?:do|can|should)\s+i|what\s+should\s+i\s+do)\b/i;
+const COMPLAINT_SUBJECT = /\b(police|fir|thana|crime|criminal|offence|offense|theft|chori|robbery|dacoity|loot|fraud|cheat\w*|dhoka|forger\w*|jaali|harass\w*|assault|hurt|maar|threat\w*|dhamki|blackmail|extort\w*|tenant|landlord|kiraya|kiraye|rent|deposit|employer|malik|salary|wages|tankhwa|university|college|school|student|teacher|bank|cheque|consumer|product|service|shop|dukan|trader|neighbou?r|padosi|husband|wife|shohar|biwi|family|inheritance|wirasat|property|jaidad|land|zameen|doctor|hospital|company|online|cyber|social media|whatsapp|facebook|instagram|fake|defam\w*|utility|electric\w*|gas|water|society|insurance|bima|vehicle|traffic|accident|dowry|jahez|child|bacha|job|workplace|office|boss|manager|discriminat\w*)\b/i;
+
+export function bareComplaintClarification(userQuery, activeLang = 'en') {
+  const q = String(userQuery || '');
+  if (!/\b(complaint|shikayat)\b/i.test(q) && !/شکایت/.test(q)) return null;
+  if (!COMPLAINT_ACTION.test(q)) return null;
+  if (COMPLAINT_SUBJECT.test(q)) return null;
+  const roman = activeLang === 'roman_urdu';
+  return roman
+    ? 'Shikayat kahan darj hogi, yeh is baat par depend karta hai ke shikayat kis cheez ke baare mein hai — koi jurm ya jaan ka khatra (police/FIR), dukandar ya service ka masla (consumer forum), tankhwa ya naukri (Labour Court), university/school ka faisla (institutional grievance), bank ka charge (Banking Mohtasib), ya online jali profile (FIA cybercrime). Baraye meharbani bataayein: **kya hua, shikayat kis ke khilaf hai, aur aap kis shehar ya province mein hain?** Phir main sahi forum, dastavez aur agla qadam bata dunga — bina kisi andaaze ke.'
+    : 'Where a complaint goes depends entirely on what it is about — a crime or a threat to safety (police / FIR), a trader or service problem (consumer forum), withheld wages or a job dispute (Labour Court), a university or school decision (institutional grievance or Ombudsperson), a bank charge (Banking Mohtasib), or online impersonation (FIA cybercrime). Please tell me **what happened, who the complaint is against, and your city or province** — then I will name the correct forum, the document to file, and the next step, without guessing.';
+}

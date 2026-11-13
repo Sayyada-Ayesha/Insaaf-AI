@@ -15,7 +15,7 @@ import { useState, useRef, useEffect } from "react";
 import { motion } from "motion/react";
 import { Bot, Send, Loader2, Sparkles, MapPin, Scale, Phone, ExternalLink, Building2, ShieldCheck, Navigation, Briefcase, BookOpen, ClipboardList, AlertCircle, CheckCircle2, Download } from "lucide-react";
 import { MarkdownBody } from "./MarkdownBody";
-import { askLegalAgent, type AgentSource } from "../services/aiRuntime";
+import { askLegalAgent, describeApiFailure, type AgentSource } from "../services/aiRuntime";
 import { FirestoreService } from "../services/firestoreService";
 import { findCityInText, searchLawyerCards, searchOrgCards, searchEmergencyCards, type DirectoryCard } from "../lib/directorySearch";
 import { APP_ROUTES, getRoute, type AppRoute } from "../config/appRoutes";
@@ -364,13 +364,16 @@ export default function AgentSection({ onNavigate, onOpenLibrary, embedded = fal
         isOffline: reply.isOffline,
         evidenceVerdict: reply.evidence?.verdict
       }]);
-    } catch {
+    } catch (err) {
+      // Name the real fault: an absent API route is a deployment problem, not a
+      // user connection problem, and must not be reported as a retry nudge.
+      const detail = describeApiFailure(err, currentLang === 'roman_urdu' ? 'roman_urdu' : 'en');
       setMessages(prev => [...prev, {
         role: 'agent',
-        text: label(
-          "The Legal Agent could not respond right now. Please try again — the lawyer directory and app guidance are still available.",
-          "Qanooni Agent abhi jawab nahi de paya. Dobara koshish karein — wakilon ki directory aur app rehnumai ab bhi mojood hain."
-        )
+        text: `${detail}\n\n${label(
+          "The lawyer directory and app guidance are still available.",
+          "Wakilon ki directory aur app rehnumai ab bhi mojood hain."
+        )}`
       }]);
     } finally {
       setIsLoading(false);

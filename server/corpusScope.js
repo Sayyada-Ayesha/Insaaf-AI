@@ -179,11 +179,20 @@ function computeChunkScope(chunk) {
   // for every Sindh or Karachi question.
   const ownHeading = String(c.chunkTitle || '').toLowerCase();
   const provHit = firstProvinceIn(ownHeading) || firstProvinceIn(declared);
-  if (provHit) {
+  // A compilation that states several provinces' laws is not one province's
+  // rule: the domestic-violence record quotes the Punjab, Sindh and KPK Acts,
+  // and pinning it to the first province named made the answer read "This is
+  // Punjab law" while quoting Sindh and KPK. Only a single-province record keeps
+  // the provincial label; a multi-province one stays at the umbrella layer.
+  const umbrella = /federal\s*(?:&|and|\/)\s*provincial|provincial\s*(?:&|and|\/)\s*(?:federal|ict|icts)/i.test(declared);
+  const provincesNamed = PROVINCE_NAMES.filter(p => new RegExp(`\\b${p}\\b`, 'i').test(h));
+  if (provHit && !(umbrella && provincesNamed.length > 1)) {
     province = provHit.replace(/^\w/, ch => ch.toUpperCase())
       .replace('Khyber pakhtunkhwa', 'Khyber Pakhtunkhwa')
       .replace('Azad kashmir', 'Azad Kashmir');
     derivedFrom.push('province-name-in-record');
+  } else if (provHit) {
+    derivedFrom.push('multi-province-record');
   }
 
   let city = null;
@@ -220,8 +229,14 @@ function computeChunkScope(chunk) {
   const crossBorder = /cross.?border|consular|embassy|consulate|missions abroad|foreign policy/.test(declared)
     || /cross[-_]border/.test(String(c.docId || ''));
   // Federal / national / apex wording in the record's own jurisdiction
-  // declaration outranks any city or province named inside it.
-  const isFederal = /federal|national|parliament|apex|constitutional|supreme court|whole of pakistan/i.test(declared);
+  // declaration outranks any city or province named inside it. Two labels are
+  // NOT federal: the umbrella "Pakistan (Federal & Provincial)" names both
+  // layers, and "Federal Capital Administration" is an ICT authority. Reading
+  // either as federal made a Punjab Act report as Pakistan-wide law.
+  const umbrellaJurisdiction = /federal\s*(?:&|and|\/)\s*provincial|provincial\s*(?:&|and|\/)\s*(?:federal|ict|icts)/i.test(declared);
+  const federalCapitalAuthority = /federal capital/i.test(declared) && !/federal\s*(?:&|and)\s*provincial/i.test(declared);
+  const isFederal = !umbrellaJurisdiction && !federalCapitalAuthority
+    && /federal|national|parliament|apex|constitutional|supreme court|whole of pakistan/i.test(declared);
   const isHighCourt = /high court/i.test(declared);
   // "Sindh Local Government Act, 2013 — Metropolitan Corporation
   // (Karachi/Hyderabad)" names cities as examples inside a provincial statute:
@@ -236,6 +251,15 @@ function computeChunkScope(chunk) {
   // precedent provincial — only a record whose own jurisdiction is a single
   // High Court is.
   else if (isHighCourt && !isFederal) scopeLevel = 'provincial';
+  // "Pakistan (Federal & Provincial)" names BOTH layers. With no province of its
+  // own it is national guidance that spans the layers — not "provincial law" with
+  // an unnamed province, which told a student their university appeal "may differ
+  // in other provinces". Only a record that actually names a province is
+  // provincial.
+  else if (umbrellaJurisdiction && !province && !city) {
+    scopeLevel = 'national';
+    derivedFrom.push('jurisdiction:federal-and-provincial');
+  }
   else if (city && !isFederal && !namedProvinceStatute) scopeLevel = 'local_city';
   else if ((province || /provincial/i.test(declared)) && !isFederal) scopeLevel = 'provincial';
   else {
@@ -500,15 +524,18 @@ export function scopeLabel(scope, lang = 'en', asked = null) {
       return roman
         ? `${scope.city || 'Local'} / local procedure mein`
         : `In ${scope.city || 'local'} city-level procedure`;
-    case 'provincial':
+    case 'provincial': {
+      // "ICT" is a territory, not a province; spell it out when it is the layer.
+      const pname = scope.province === 'ICT' ? 'Islamabad Capital Territory' : scope.province;
       if (conditional) {
         return roman
-          ? `Agar mamla ${scope.province || 'aap ke soobe'} mein hai to`
-          : `If this is in ${scope.province || 'your province'}`;
+          ? `Agar mamla ${pname || 'aap ke soobe'} mein hai to`
+          : `If this is in ${pname || 'your province'}`;
       }
       return roman
-        ? `${scope.province || 'Provincial'} law ke under`
-        : `Under ${scope.province || 'provincial'} law`;
+        ? `${pname || 'Provincial'} law ke under`
+        : `Under ${pname || 'provincial'} law`;
+    }
     case 'national':
       return roman ? 'Pakistan-wide qanooni position' : 'The Pakistan-wide legal position';
     case 'cross_border':
@@ -538,9 +565,10 @@ export function applicabilityNote(scope, lang = 'en') {
       : `This is ${scope.city}${scope.province ? `, ${scope.province}` : ''} local-level practice, not Pakistan-wide law.`;
   }
   if (scope.scopeLevel === 'provincial') {
+    const pname = scope.province === 'ICT' ? 'Islamabad Capital Territory' : (scope.province || 'provincial');
     return roman
-      ? `Yeh ${scope.province || 'provincial'} ki qanoon hai — doosre provinces mein rules mukhtalif ho sakte hain.`
-      : `This is ${scope.province || 'provincial'} law — other provinces may follow different rules.`;
+      ? `Yeh ${pname} ki qanoon hai — doosre provinces mein rules mukhtalif ho sakte hain.`
+      : `This is ${pname} law — other provinces may follow different rules.`;
   }
   return null;
 }

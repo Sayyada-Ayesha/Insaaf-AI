@@ -9,6 +9,57 @@ import type { EvidenceVerdict } from './storage';
 let lastResponseSource: 'LIVE_AI' | 'OFFLINE_KNOWLEDGE' | 'ERROR' = 'LIVE_AI';
 export function getLastResponseSource() { return lastResponseSource; }
 
+/**
+ * A failed API call is a statement about the server, not the citizen's internet.
+ * This screen used to print "check your internet connection" for every non-2xx,
+ * so a deployment whose /api/ai/chat route answered 404 told users their
+ * connection was broken while the corpus was intact. The HTTP status decides the
+ * wording; only a fetch that never received a response may blame the connection.
+ */
+export type BackendFailureKind = 'route-missing' | 'server-error' | 'timeout' | 'network';
+
+export function backendFailureKind(status?: number | null, err?: unknown): BackendFailureKind {
+  if (typeof status === 'number' && Number.isFinite(status) && status > 0) {
+    if (status === 404 || status === 405 || status === 501) return 'route-missing';
+    if (status >= 500) return 'server-error';
+  }
+  if (err && typeof err === 'object' && (err as { name?: string }).name === 'AbortError') return 'timeout';
+  // fetch() rejects with TypeError only when no HTTP response arrived at all.
+  if (err instanceof TypeError) return 'network';
+  return 'server-error';
+}
+
+export function backendFailureNotice(kind: BackendFailureKind, lang: 'en' | 'roman_urdu', status?: number | null): string {
+  const code = status ? ` (HTTP ${status})` : '';
+  if (lang === 'roman_urdu') {
+    if (kind === 'route-missing') return `⚠️ **Backend Ka Masla:** INSAaf AI ka jawab dene wala server is deployment par mojood nahi${code}. Yeh aap ke internet ka masla nahi — server deployment theek karna zaroori hai. Aap ka sawal khoya nahi hai.`;
+    if (kind === 'timeout') return '⚠️ **Waqt Ki Had:** Server ne waqt par jawab nahi diya. Thori der baad dobara koshish karen — aap ka sawal khoya nahi hai.';
+    if (kind === 'network') return '⚠️ **Rubat Ki Khabar:** Server tak rasai nahi hui. Apna internet check karen aur dobara koshish karen.';
+    return `⚠️ **Server Ki Kharabi:** Backend ne server error diya${code}. Yeh aap ke internet ka masla nahi — thori der baad dobara koshish karen.`;
+  }
+  if (kind === 'route-missing') return `⚠️ **Backend Problem:** The INSAaf AI answer service is not available on this deployment${code}. This is a server/deployment fault, not your internet connection. Your question was not lost.`;
+  if (kind === 'timeout') return '⚠️ **Timed Out:** The server did not answer in time. Please try again shortly — your question was not lost.';
+  if (kind === 'network') return '⚠️ **Connection Notice:** The INSAaf AI server could not be reached. Please check your internet connection and try again in a moment.';
+  return `⚠️ **Server Error:** The INSAaf AI backend returned a server error${code}. This is not your internet connection — please try again shortly.`;
+}
+
+/** A backend failure that keeps its HTTP status and cause for the caller's UI. */
+export class ApiFailure extends Error {
+  status: number | null;
+  kind: BackendFailureKind;
+  constructor(message: string, status: number | null, cause?: unknown) {
+    super(message);
+    this.name = 'ApiFailure';
+    this.status = status;
+    this.kind = backendFailureKind(status, cause);
+  }
+}
+
+export function describeApiFailure(err: unknown, lang: 'en' | 'roman_urdu'): string {
+  if (err instanceof ApiFailure) return backendFailureNotice(err.kind, lang, err.status);
+  return backendFailureNotice(backendFailureKind(null, err), lang);
+}
+
 function getBoundedLocalKnowledge(userQuery: string, preferredLanguage?: SupportedLanguage): string | null {
   const query = userQuery.toLowerCase();
 
@@ -93,6 +144,11 @@ export async function* streamLegalAdvice(
         return;
       }
       lastResponseSource = 'OFFLINE_KNOWLEDGE';
+      // The second endpoint's own status is the truest description of the service:
+      // if /chat answers 404, /advice answering 404 too means the whole API prefix
+      // is absent from this deployment, not that the user is offline.
+      let adviceStatus: number | null = null;
+      let adviceError: unknown = null;
       // /api/ai/advice answers only from the legal corpus. Using it for a mode-selected
       // question would put a legal paragraph under an Islamic-source badge, so Islamic
       // and combined requests report the connection failure instead of re-routing.
@@ -109,8 +165,11 @@ export async function* streamLegalAdvice(
             yield { chunk: data.text, isOffline: true, ...(data.evidence ? { evidence: data.evidence } : {}) };
             return;
           }
+        } else {
+          adviceStatus = nonStreamingRes.status;
         }
       } catch (e) {
+        adviceError = e;
         // Fallback to local
       }
 
@@ -121,9 +180,12 @@ export async function* streamLegalAdvice(
         yield { chunk: fallback, isOffline: true, evidence: { verdict: 'none' } };
       } else {
         lastResponseSource = 'ERROR';
-        yield { chunk: resolveResponseLanguage(preferredLanguage, userQuery) === 'roman_urdu'
-          ? '⚠️ **Rubat Ki Khabar:** Insaaf AI abhi connect nahi ho saka. Baraye meharbani apna internet check karein aur thori der baad dobara koshish karen.'
-          : "⚠️ **Connection Notice:** Insaaf AI could not connect right now. Please check your internet connection and try again in a moment.", isOffline: true };
+        const lang = resolveResponseLanguage(preferredLanguage, userQuery) === 'roman_urdu' ? 'roman_urdu' : 'en';
+        const status = adviceStatus ?? response.status;
+        yield {
+          chunk: backendFailureNotice(backendFailureKind(status, adviceError), lang, status),
+          isOffline: true
+        };
       }
       return;
     }
@@ -160,8 +222,10 @@ export async function* streamLegalAdvice(
     }
     console.warn("[Frontend] Backend stream error, using local fallback:", err);
     lastResponseSource = 'OFFLINE_KNOWLEDGE';
-    
+
     // Attempt non-streaming endpoint fallback
+    let adviceStatus: number | null = null;
+    let adviceError: unknown = null;
     try {
       const nonStreamingRes = await fetch('/api/ai/advice', {
         method: 'POST',
@@ -175,8 +239,11 @@ export async function* streamLegalAdvice(
           yield { chunk: data.text, isOffline: true, ...(data.evidence ? { evidence: data.evidence } : {}) };
           return;
         }
+      } else {
+        adviceStatus = nonStreamingRes.status;
       }
     } catch (e) {
+      adviceError = e;
       // Fallback
     }
 
@@ -185,9 +252,11 @@ export async function* streamLegalAdvice(
       yield { chunk: fallback, isOffline: true, evidence: { verdict: 'none' } };
     } else {
       lastResponseSource = 'ERROR';
-      yield { chunk: resolveResponseLanguage(preferredLanguage, userQuery) === 'roman_urdu'
-        ? '⚠️ **Connection Error:** Insaaf AI ki service se rabta nahi ho saka. Baraye meharbani chand lamhe baad dobara koshish karein.'
-        : '⚠️ **Connection Error:** Insaaf AI could not reach its service. Please try again in a moment.', isOffline: true };
+      const lang = resolveResponseLanguage(preferredLanguage, userQuery) === 'roman_urdu' ? 'roman_urdu' : 'en';
+      yield {
+        chunk: backendFailureNotice(backendFailureKind(adviceStatus, adviceError || err), lang, adviceStatus),
+        isOffline: true
+      };
     }
   }
 }
@@ -713,10 +782,13 @@ export async function askLegalAgent(
         };
       }
     }
-    throw new Error("Backend response not ok or missing reply.");
+    throw new ApiFailure(`Agent endpoint answered HTTP ${res.status}.`, res.status);
   } catch (err) {
     console.error("askLegalAgent backend error", err);
-    throw new Error("The Legal Agent could not respond right now. Please try again.");
+    // The caller (Government Services, Agent) needs the real cause: an absent
+    // route is not a user connection problem and must not be reported as one.
+    if (err instanceof ApiFailure) throw err;
+    throw new ApiFailure("The Legal Agent could not respond right now.", null, err);
   }
 }
 

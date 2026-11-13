@@ -57,7 +57,11 @@ export const DOMAIN_DOCS = {
       foreigner: ['foreigner_entry_stay_registration', 'foreigner_residence_work_study', 'pakistan_visa_categories', 'immigration_laws'],
       'cross-border': ['cross_border_consular', 'cross_border_travel', 'cross_border_employment', 'cross_border_education', 'cross_border_diplomacy', 'cross_border_legal', 'immigration_laws', 'poa_laws'],
       evidence: ['evidence_qso_1984'],
-      banking: ['banking_laws', 'ppc_1860'],
+      // public_offices carries the regulator record that names the Banking
+      // Mohtasib — the only complaint channel the corpus holds for a bank
+      // customer — so it belongs to the banking evidence domain; the gate's
+      // topical tests still reject its unrelated office records.
+      banking: ['banking_laws', 'ppc_1860', 'public_offices'],
       customs: ['customs_act_1969'],
       environment: ['environmental_laws'],
       torts: ['torts_laws'],
@@ -740,7 +744,7 @@ export class RAGEngine {
     // emergency helpline) were never candidates. A query about killing or a sexual
     // offence is a criminal question, and stays with the criminal corpus.
     else if (/\b(domestic\s+violence|violence\s+(?:against|towards)\s+(?:a\s+)?(?:woman|women|wife|husband|spouse)|wife|husband|spouse|in[- ]?laws?)\b/i.test(normalizedQuery)
-        && /\b(domestic|violence|assault|beat\w*|abuse\w*|cruelt\w*|harass\w*|tortur\w*|zabardasti|zordeed)\b/i.test(normalizedQuery)
+        && /\b(domestic|violen\w*|assault|beat\w*|abus\w*|batter\w*|cruelt\w*|harass\w*|tortur\w*|zabardasti|zordeed)\b/i.test(normalizedQuery)
         && !/\b(murder|qatl|kill(?:ed|ing)?|caus\w+\s+death|302|324|rape|zina|honour)\b/i.test(normalizedQuery)) {
       domain = 'family';
       rewrittenQuery = 'domestic violence Protection of Women against Violence Act provincial Domestic Violence Prevention and Protection Act complaint Protection Officer shelter home emergency helpline remedy wife husband';
@@ -784,7 +788,11 @@ export class RAGEngine {
         && !(/\b(universit(?:y|ies)|schools?|colleges?|students?|teachers?|principal)\b/i.test(normalizedQuery) && !/\b(employ\w*|workplace|office|job|staff|company)\b/i.test(normalizedQuery))) {
       domain = 'labour';
       const labourTerms = [];
-      if (/wage|salary|tankhwa|minimum|pay/i.test(normalizedQuery)) labourTerms.push('minimum wages salary payment Ordinance');
+      if (/\b(withh(?:o|e)ld\w*|unpaid|not\s+paid|non.?payment|arrear\w*|pending\s+(?:salary|wages)|salary\s+(?:nahi|not)|wage\s+(?:nahi|not)|tankhwa\s+(?:nahi|not)|maheena\s+(?:nahi|not))\b/i.test(normalizedQuery)) {
+        labourTerms.push('unpaid wages withheld salary recovery Labour Court recovery of dues grievance notice Standing Orders employer');
+      } else if (/wage|salary|tankhwa|minimum|pay/i.test(normalizedQuery)) {
+        labourTerms.push('minimum wages salary payment Ordinance');
+      }
       if (/terminat|dismiss|fire|retrench|without notice/i.test(normalizedQuery)) labourTerms.push('wrongful termination notice Labour Court reinstatement Standing Orders');
       if (/harass|workplace/i.test(normalizedQuery)) labourTerms.push('workplace harassment Protection Women Workplace Act 2010 Ombudsperson');
       if (/eobi|pension|retirement/i.test(normalizedQuery)) labourTerms.push('EOBI pension retirement old age benefits');
@@ -1661,6 +1669,22 @@ export class RAGEngine {
     const domesticPassportBoost = (chunk) => (
       domesticPassportAsked && String(chunk.key || '') === 'CIVPROC_PASSPORT_IN_PERSON' ? 10.0 : 0
     );
+    // A customer asking how to dispute money taken from their own account needs
+    // the forum and the complaint channel, not the SBP's monetary-policy mandate.
+    // The corpus holds two records that answer it — the Banking Court record in
+    // the banking laws and the regulator record that names the Banking Mohtasib
+    // — but both are short sections competing against longer general text, so
+    // they are lifted at chunk level. Nothing is asserted beyond what those two
+    // records state; the composer's limitation note names the gap.
+    const bankingDisputeAsked = /\b(bank|banking|account)\b/i.test(normalizedQuery)
+      && /\b(deduct\w*|debit\w*|wrongful\w*|unauthori[sz]ed|dispute\w*|refund\w*|reversal|revers(?:e|ed)|not\s+(?:return|refund)\w*|wapis|kaat\w*|kat\b|money\s+(?:taken|gone))\b/i.test(normalizedQuery);
+    const bankingDisputeBoost = (chunk) => {
+      if (!bankingDisputeAsked) return 0;
+      const key = String(chunk.key || '');
+      if (chunk.docId === 'banking_laws' && (key === '7' || /banking.?court/i.test(`${chunk.chunkTitle || ''} ${chunk.title || ''}`))) return 14.0;
+      if (chunk.docId === 'public_offices' && key === 'OFFICE_REGULATORS') return 11.0;
+      return 0;
+    };
     // Education Equity records: each cue requires the question to name the
     // scheme, the authority or the disability subject itself, so an ordinary
     // scholarship or admission question keeps the evidence it already used.
@@ -1689,6 +1713,32 @@ export class RAGEngine {
         || /(لاہور|فیصل آباد|سرگودھا|سکھر|لاڑکانہ|بہاولپور|ملتان|پشاور|کوئٹہ|راولپنڈی)/.test(query);
       if (!otherGcuCity) extraDocBoostMap['gcuh_institutional_rules'] = 15.0;
     }
+    // Survivor-facing domestic-violence records. The family domain already
+    // lifts women_protection_laws, but the protection route (Protection Officer,
+    // shelter, interim orders, helpline 15) also lives in the remedies and
+    // provincial fulltext documents, which share no domain membership with it.
+    // Gated on the violence subject so an ordinary assault or rights question
+    // keeps its own records.
+    // "physically abusive" is the phrasing survivors actually use, and "abuse\w*"
+    // never matched it — the whole protection route stayed unretrieved while the
+    // maintenance clause of the same document answered for a violence question.
+    if (/\b(domestic\s+violence|violen\w*|abus\w*|batter\w*)\b/i.test(normalizedQuery)
+      && /\b(wife|husband|spouse|in[- ]?laws?|woman|women|aurat|biwi|shohar)\b/i.test(normalizedQuery)) {
+      extraDocBoostMap['women_protection_laws'] = 13.0;
+      extraDocBoostMap['expanded_remedies'] = 12.0;
+      extraDocBoostMap['provincial_fulltext'] = 10.0;
+    }
+    // Unpaid wages: the recovery route (grievance notice, Labour Court, standing
+    // orders) sits in the remedies and workflow records, not in the Labour
+    // domain's own documents, so a "salary withheld" question was answered from
+    // termination or minimum-wage text. The bank/cheque exclusion keeps a
+    // salary-account charge question in the banking domain it was routed to.
+    if (/\b(salary|wage|tankhwa|maheena|arrear\w*|pay)\b/i.test(normalizedQuery)
+      && /\b(withh(?:o|e)ld\w*|unpaid|not\s+paid|non.?payment|arrear\w*|pending|due|deduct\w*|cut\s+(?:my|the)|rok\w*|nahi\s+mil|na\s+diya)\b/i.test(normalizedQuery)
+      && !/\b(bank|banking|cheque|account|atm|sbp|state bank)\b/i.test(normalizedQuery)) {
+      extraDocBoostMap['situation_remedies'] = 14.0;
+      extraDocBoostMap['legal_workflows'] = 12.0;
+    }
     if (domain === 'case-law') {
       if (/supreme.?court/i.test(normalizedQuery) && /independence|judiciary/i.test(normalizedQuery)) {
         extraDocBoostMap['sc_judgments'] = 5.0;
@@ -1707,7 +1757,10 @@ export class RAGEngine {
         && !/\b(transport|uni van|student bus|campus transport)\b/i.test(normalizedQuery)) {
         extraDocBoostMap['edu_anti_harassment'] = 15.0;
       }
-      if (/\b(disciplinary|discipline|show.?cause|expulsion|suspension|rustication|debarment|ragging|hazing|misconduct.*notice)\b/i.test(normalizedQuery)) {
+      // Stems cover every inflected form the student actually types ("suspended",
+      // "expelled", "rusticated"); the noun-only list let "suspended unfairly"
+      // fall through to the HEC welfare/whistleblower record.
+      if (/\b(disciplinary|discipline|show.?cause|susp\w*|expel\w*|expulsion|rusticat\w*|debar\w*|ragging|hazing|misconduct.*notice)\b/i.test(normalizedQuery)) {
         extraDocBoostMap['edu_discipline_grievance'] = 15.0;
       }
       if (/\b(exam\w*|examination|paper|recheck|re.?evaluat\w*|supplementary|backlog|unfair means|copying|paper leak|result|CGPA|GPA|mark.?sheet)\b/i.test(normalizedQuery)) {
@@ -1864,6 +1917,21 @@ export class RAGEngine {
     // No external embedding call exists here: when the local embedder yields
     // nothing, scoring falls back to keyword / TF-IDF only.
 
+    // A fee-refund question against the HEC policy must reach the records that
+    // carry the operative refund rules (the published percentage schedule and the
+    // refundable/non-refundable list). The lifted document's own cover pages
+    // repeat "refund" far more often than the schedule does, so they scored
+    // highest and — under the per-document slot cap — filled all three of its
+    // slots, leaving the answer to quote a download page instead of the policy.
+    const refundPolicyAsk = /\b(refund\w*|reimburse\w*|withdr(?:ew|aw|awn)|cancell?\w*\s+admission)\b/i.test(normalizedQuery)
+      && /\b(university|college|hec|student|students|tuition|semester|fee)\b/i.test(normalizedQuery);
+    // Operative records state the rule itself — the cancellation/withdrawal
+    // entitlement and the dated percentage schedule. The policy's cover and
+    // download pages repeat the word "refund" (and "refundable" in the contents
+    // list) far more often, so they outscore the schedule lexically; they must
+    // not be allowed to fill the document's slots in its place.
+    const REFUND_OPERATIVE_RE = /Percentage of Fee|Upto\s+\d+(?:st|nd|rd|th)\s+day|canceling or withdrawing/i;
+
     // 3. Compute scores for all chunks
     const scoredChunks = idx.chunks.map(chunk => {
       let exactScore = 0;
@@ -1876,7 +1944,13 @@ export class RAGEngine {
       // can outrank domain membership: with the local vector index live,
       // a semantically-perfect hit in another document must beat a generic
       // same-domain chunk (e.g. a civic workflow must beat consumer noise).
-      const docBoost = (docBoostIds.includes(chunk.docId) ? 3.0 : 0) + (extraDocBoostMap[chunk.docId] || 0) + foreignRegionEduPenalty(chunk) + bispSectionBoost(chunk) + domesticPassportBoost(chunk);
+      // Within the lifted refund policy, the operative schedule/withdrawal record
+      // is the answer; the cover pages only echo its vocabulary. The boost is
+      // applied here so the record survives the per-document slot cap below.
+      const refundOperative = refundPolicyAsk && chunk.docId === 'hec_fee_refund_policy'
+        && REFUND_OPERATIVE_RE.test(String(chunk.text || chunk.content || ''));
+      const docBoost = (docBoostIds.includes(chunk.docId) ? 3.0 : 0) + (extraDocBoostMap[chunk.docId] || 0) + foreignRegionEduPenalty(chunk) + bispSectionBoost(chunk) + domesticPassportBoost(chunk) + bankingDisputeBoost(chunk)
+        + (refundOperative ? 20.0 : 0);
 
       // Exact key match — check against ALL exact section keys
       const chunkKeyClean = chunk.key.toLowerCase();
@@ -1980,6 +2054,13 @@ export class RAGEngine {
     // existed, and narrowing a digest window loses the digest's own detail.
     const saturatedDocs = Object.keys(extraDocBoostMap).filter(d => extraDocBoostMap[d] > 15.0);
     const MAX_SLOTS_PER_LIFTED_DOC = 3;
+    // When a refund question lifted the HEC refund policy, its operative records
+    // compete for that document's slots — its cover/download pages do not.
+    const operativeOnly = new Set();
+    if (refundPolicyAsk) {
+      const op = sorted.filter(c => c.docId === 'hec_fee_refund_policy' && REFUND_OPERATIVE_RE.test(String(c.text || '')));
+      if (op.length) operativeOnly.add('hec_fee_refund_policy');
+    }
     const topChunks = [];
     if (saturatedDocs.length === 0) {
       topChunks.push(...sorted.slice(0, 8));
@@ -1988,6 +2069,7 @@ export class RAGEngine {
       for (const c of sorted) {
         if (topChunks.length >= 8) break;
         if (saturatedDocs.includes(c.docId)) {
+          if (operativeOnly.has(c.docId) && !REFUND_OPERATIVE_RE.test(String(c.text || ''))) continue;
           used[c.docId] = (used[c.docId] || 0) + 1;
           if (used[c.docId] > MAX_SLOTS_PER_LIFTED_DOC) continue;
         }
