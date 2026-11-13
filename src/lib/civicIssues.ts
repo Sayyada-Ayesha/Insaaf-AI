@@ -204,16 +204,16 @@ export function generateComplaint(input: CivicReportInput, opts: { roman?: boole
     ? {
       title: 'Shikayat Darkhwast (Civic Issue)', cat: 'Zabaata', desc: 'Tafseel', loc: 'Muqam', area: 'Ilaqa / Shehar',
       dur: 'Muddat /tareekh', ref: 'Gawahi', auth: 'Kon se idaray ko bheji gayi', action: 'Guzaarish',
-      prepared: 'Tayyar shuda', missingHdr: 'Mojud nahi', noAuth: 'Idara nahi bataaya gaya — INSAF AI ke paas is mamlay ke liye koi verified authority record nahi hai',
+      prepared: 'Tayyar shuda', missingHdr: 'Mojud nahi', noAuth: 'Idara nahi bataaya gaya — INSAaf AI ke paas is mamlay ke liye koi verified authority record nahi hai',
       actionLine: 'Baraye meharbani is shikayat ka muafqa tareeqa amal kiya jaye aur natijay se awaz-deh ki jaye.',
-      note: 'Yeh darkhwast INSAF AI mein tayyar hui hai. Is ka koi sarkari idaray ko bhejna ya us mein entry karna is build mein mumkin nahi — bhejna zaroori hai to citizen khud mutalqa idare ke official channel se bheje.'
+      note: 'Yeh darkhwast INSAaf AI mein tayyar hui hai. Is ka koi sarkari idaray ko bhejna ya us mein entry karna is build mein mumkin nahi — bhejna zaroori hai to citizen khud mutalqa idare ke official channel se bheje.'
     }
     : {
       title: 'Civic Issue Complaint', cat: 'Category', desc: 'Description', loc: 'Location', area: 'Area / city',
       dur: 'Duration / date', ref: 'Evidence', auth: 'Addressed to', action: 'Requested action',
-      prepared: 'Prepared on', missingHdr: 'Not provided', noAuth: 'Not stated — INSAF AI holds no verified authority record for this matter',
+      prepared: 'Prepared on', missingHdr: 'Not provided', noAuth: 'Not stated — INSAaf AI holds no verified authority record for this matter',
       actionLine: 'It is requested that this complaint be looked into through the appropriate channel and that the complainant be informed of the outcome.',
-      note: 'This draft was prepared in INSAF AI. It has not been submitted to any government department in this build — sending it remains the citizen\'s own step through that department\'s official channel.'
+      note: 'This draft was prepared in INSAaf AI. It has not been submitted to any government department in this build — sending it remains the citizen\'s own step through that department\'s official channel.'
     };
 
   const missing: string[] = [];

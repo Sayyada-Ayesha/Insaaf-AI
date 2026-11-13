@@ -5,14 +5,12 @@
  * exists so that client-side fallback prose and local validation messages make the
  * same decision as the server instead of inventing a second one:
  *
- *   English input      → English answer
+ *   English input      → English answer (unless another language is chosen)
  *   Roman Urdu input   → Roman Urdu answer
- *   Urdu SCRIPT input  → Roman Urdu answer
+ *   Urdu SCRIPT input  → Urdu script answer
  *
- * Urdu Script is an input language and a DOCUMENT output language, never an answer
- * language. A user who selects Urdu script in the UI still receives answers in
- * Roman Urdu; only the printable document they explicitly ask for is rendered in
- * Urdu script.
+ * An explicit selection in the chat header ('en' / 'roman_urdu' / 'ur') is
+ * honoured exactly. Only Auto detects from the user's own words.
  *
  * Note: this mirror detects Urdu SCRIPT plus a bounded set of distinctive Roman
  * Urdu words. The server's full detector (server/index.js detectLanguage) knows
@@ -21,7 +19,7 @@
  */
 import type { SupportedLanguage } from './i18n';
 
-export type ResponseLanguage = 'en' | 'roman_urdu';
+export type ResponseLanguage = 'en' | 'roman_urdu' | 'ur';
 
 export const isUrduScript = (text: string): boolean => /[؀-ۿ]/.test(String(text || ''));
 
@@ -94,13 +92,16 @@ export function resolveResponseLanguage(
   preferredLanguage?: SupportedLanguage | 'auto' | 'Auto' | null,
   userText = ''
 ): ResponseLanguage {
-  // The language the user wrote in decides. The UI chrome offers only English and
-  // Roman Urdu (i18n getCurrentLanguage), and English is the DEFAULT, so an 'en'
-  // preference is a floor, never a ceiling: it may not pull a Roman Urdu or
-  // Urdu-script question back into English.
-  if (isUrduScript(userText)) return 'roman_urdu';
+  // An explicit choice is a contract, not a hint: 'ur' answers in Urdu script,
+  // 'roman_urdu' in Roman Urdu and 'en' in English even when the question was
+  // typed in another script. Only Auto (or no choice at all) detects from the
+  // user's own words.
+  if (preferredLanguage === 'ur' || preferredLanguage === 'roman_urdu' || preferredLanguage === 'en') {
+    return preferredLanguage;
+  }
+  if (isUrduScript(userText)) return 'ur';
   if (isRomanUrduText(userText)) return 'roman_urdu';
-  return preferredLanguage === 'roman_urdu' ? 'roman_urdu' : 'en';
+  return 'en';
 }
 
 /** Pick the wording for the resolved response language. */

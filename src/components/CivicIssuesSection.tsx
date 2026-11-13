@@ -40,7 +40,7 @@ function labels(roman: boolean) {
       durQ: 'Kab se / kitni muddat se', durPh: 'Jaise: 2 hafte se',
       detailsQ: 'Izafi tafseel (ikhtiyari)', detailsPh: 'Kitne log mutasir, koi khaas khatra waghera',
       authQ: 'Kis idaray ko bhejna hai (ikhtiyari)', authPh: 'Sirf woh naam likhein jo aap ko maloom ho',
-      authHint: 'Agar idaray ka yaqeen nahi to khaali chhodein — INSAF AI koi idara ka naam apni taraf se nahi likhega.',
+      authHint: 'Agar idaray ka yaqeen nahi to khaali chhodein — INSAaf AI koi idara ka naam apni taraf se nahi likhega.',
       evidQ: 'Tasveer / gawahi (ikhtiyari)',
       chooseFile: 'Tasveer chunein', replacing: 'Tasveer process ho rahi hai...',
       evidNote: 'Tasveer browser mein hi chhoti ki jaati hai aur camera metadata (GPS samet) hata diya jata hai. Yeh device se bahar nahi jaati.',
@@ -61,7 +61,7 @@ function labels(roman: boolean) {
       lookupPh: 'CI-XXXX-XXXX', lookup: 'Reference se dhoondein',
       lookupMiss: 'Is reference se koi report is browser mein nahi mili. Doosre device par bani reports yahan nahi milteen.',
       createdOn: 'Record', statusHdr: 'Status',
-      statusSource: 'Status ki soorat-e-haal: yeh status INSAF AI ke apne record se aata hai. Yeh is baat ka saboot nahi ke sarkari idaray ne kaam shuru kiya hai ya poora kiya hai. Is build mein koi sarkari entry nahi hoti.',
+      statusSource: 'Status ki soorat-e-haal: yeh status INSAaf AI ke apne record se aata hai. Yeh is baat ka saboot nahi ke sarkari idaray ne kaam shuru kiya hai ya poora kiya hai. Is build mein koi sarkari entry nahi hoti.',
       updatesHdr: 'Updates', noUpdates: 'Koi update record nahi.',
       draftNote: 'Report ki status sirf authorized reviewer badal sakta hai — citizen khud nahi.',
       storLocal: 'Device-local',
@@ -94,7 +94,7 @@ function labels(roman: boolean) {
       durQ: 'Since when / how long', durPh: 'e.g. 2 weeks',
       detailsQ: 'Extra details (optional)', detailsPh: 'How many people are affected, any special risk, etc.',
       authQ: 'Which authority should receive it (optional)', authPh: 'Only write a name you actually know',
-      authHint: 'If you are not sure, leave it blank — INSAF AI will not write a department name on its own.',
+      authHint: 'If you are not sure, leave it blank — INSAaf AI will not write a department name on its own.',
       evidQ: 'Photo / evidence (optional)',
       chooseFile: 'Choose a photo', replacing: 'Processing photo...',
       evidNote: 'The photo is downscaled in your browser and camera metadata (including GPS) is removed. It never leaves this device.',
@@ -115,7 +115,7 @@ function labels(roman: boolean) {
       lookupPh: 'CI-XXXX-XXXX', lookup: 'Look up a reference',
       lookupMiss: 'No report with that reference was found in this browser. Reports recorded on another device cannot be found here.',
       createdOn: 'Recorded', statusHdr: 'Status',
-      statusSource: 'Where a status comes from: it comes from INSAF AI\'s own records. It is not proof that a government department has started or finished any work. No government entry happens in this build.',
+      statusSource: 'Where a status comes from: it comes from INSAaf AI\'s own records. It is not proof that a government department has started or finished any work. No government entry happens in this build.',
       updatesHdr: 'Updates', noUpdates: 'No updates recorded.',
       draftNote: 'Report status can only be changed by an authorised reviewer — not by the citizen.',
       storLocal: 'Device-local',
@@ -899,8 +899,8 @@ export default function CivicIssuesSection({
               </h3>
               <p className="text-[11px] text-gray-600">
                 {isRoman
-                  ? 'Category ka maswada mukhtasar lafzi jaanch se banta hai (AI model nahi). Galat ho to aap khud chunein — aap ki chunai hi record hoti hai. Idaray ka naam sirf tab likhein jab aap ko yaqeen ho; INSAF AI ke paas is build mein municipal idaron ka koi verified record nahi hai, is liye yeh khud koi naam nahi likhta.'
-                  : 'The category suggestion comes from quick keyword matching, not an AI model. If it is wrong, choose the right one — your choice is what gets recorded. Write a recipient authority only if you actually know it. INSAF AI has no verified record of municipal authorities in this build, so it will not name one for you.'}
+                  ? 'Category ka maswada mukhtasar lafzi jaanch se banta hai (AI model nahi). Galat ho to aap khud chunein — aap ki chunai hi record hoti hai. Idaray ka naam sirf tab likhein jab aap ko yaqeen ho; INSAaf AI ke paas is build mein municipal idaron ka koi verified record nahi hai, is liye yeh khud koi naam nahi likhta.'
+                  : 'The category suggestion comes from quick keyword matching, not an AI model. If it is wrong, choose the right one — your choice is what gets recorded. Write a recipient authority only if you actually know it. INSAaf AI has no verified record of municipal authorities in this build, so it will not name one for you.'}
               </p>
               <p className="text-[11px] text-gray-600">
                 {isRoman

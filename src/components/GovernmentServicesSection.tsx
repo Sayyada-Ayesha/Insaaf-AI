@@ -186,8 +186,8 @@ export default function GovernmentServicesSection({
           <AlertTriangle className="w-4 h-4 shrink-0 mt-0.5" />
           <p>
             {isRoman
-              ? 'INSAF AI sarkari idara nahi, aik aazad maloomati platform hai. Yahan diya gaya link aap ko asli authority ki website le jata hai — INSAF AI woh kaam khud nahi karta. Fees, ahmiyat aur procedure badal sakte hain; khaas zaroorat asli website se confirm karen.'
-              : 'INSAF AI is an independent information platform, not a government department. An official link takes you to the authority’s own website — INSAF AI does not perform that service. Eligibility, fees and procedures change, so confirm critical requirements with the official source.'}
+              ? 'INSAaf AI sarkari idara nahi, aik aazad maloomati platform hai. Yahan diya gaya link aap ko asli authority ki website le jata hai — INSAaf AI woh kaam khud nahi karta. Fees, ahmiyat aur procedure badal sakte hain; khaas zaroorat asli website se confirm karen.'
+              : 'INSAaf AI is an independent information platform, not a government department. An official link takes you to the authority’s own website — INSAaf AI does not perform that service. Eligibility, fees and procedures change, so confirm critical requirements with the official source.'}
           </p>
         </div>
 
@@ -303,8 +303,8 @@ export default function GovernmentServicesSection({
                     </h3>
                     <p className="text-[11px] text-gray-500 mb-3">
                       {isRoman
-                        ? 'Yeh bahar ki authority ki website hai. Link kholne se aap ki application INSAF AI se nahi bheji ja rahi.'
-                        : 'These are external authority websites. Opening a link does not submit anything through INSAF AI.'}
+                        ? 'Yeh bahar ki authority ki website hai. Link kholne se aap ki application INSAaf AI se nahi bheji ja rahi.'
+                        : 'These are external authority websites. Opening a link does not submit anything through INSAaf AI.'}
                     </p>
                     <ul className="grid sm:grid-cols-2 gap-3">
                       {destinations.map(s => (
@@ -453,8 +453,8 @@ export default function GovernmentServicesSection({
                 </p>
                 <p className="text-xs text-gray-500 mt-2 max-w-md mx-auto">
                   {isRoman
-                    ? 'Registry mein abhi sirf woh idaray hain jo yahan shamil kiye gaye hain. Doosre alfaaz mein azmaien, ya filter hatayen. Jo source registry mein nahi, us ka naam ya URL INSAF AI tasdeeq nahi karta.'
-                    : 'This directory only lists the organisations registered here. Try different words or clear the filters. INSAF AI does not vouch for a department or URL that is not in this registry.'}
+                    ? 'Registry mein abhi sirf woh idaray hain jo yahan shamil kiye gaye hain. Doosre alfaaz mein azmaien, ya filter hatayen. Jo source registry mein nahi, us ka naam ya URL INSAaf AI tasdeeq nahi karta.'
+                    : 'This directory only lists the organisations registered here. Try different words or clear the filters. INSAaf AI does not vouch for a department or URL that is not in this registry.'}
                 </p>
                 <button onClick={() => { setDirQuery(''); setDirCategory('all'); setDirJurisdiction('all'); }}
                   className="mt-4 inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#01411C] text-white text-xs font-bold">

@@ -60,6 +60,29 @@ const ROMAN = {
   statusNote: (s) => (s && String(s).toLowerCase() !== 'in force' ? ` — halat: ${s}` : '')
 };
 
+// Urdu Script answer surface. Section headings and framing prose are Urdu; a
+// record's statutory wording is quoted unchanged (it is the evidence), and the
+// English legal term stays bracketed next to its Urdu explanation so the reader
+// can match it to the document they will file or the office they will visit.
+const URDU = {
+  issue: 'مسئلہ',
+  answer: 'جواب',
+  law: 'قابلِ اطلاق قانون',
+  says: 'قانون کیا کہتا ہے',
+  procedure: 'کیا کرنا چاہیے / طریقہ',
+  fees: 'شائع شدہ فیس',
+  remedy: 'ممکنہ ازالہ',
+  precedent: 'متعلقہ نظیر',
+  forum: 'دائرہ اختیار / فورم',
+  source: 'ماخذ',
+  evidence: 'یہ کس حد تک مستند ریکارڈ پر ہے',
+  exceptions: 'استثنات و تفصیلات',
+  limit: 'ضروری وضاحت',
+  limitText: 'یہ معلومات مستند پاکستانی قانونی ذخیرے (verified law corpus) سے لی گئی عمومی قانونی رہنمائی ہے اور کسی لائسنس یافتہ وکیل (licensed advocate) کے مشورے کا متبادل نہیں۔ مقدمہ کیسے آگے بڑھے گا اور اس کا نتیجہ آپ کے مخصوص حقائق، شواہد اور عدالت پر منحصر ہے۔ اگر کوئی مقررہ مدت (deadline) یا پیشی کی تاریخ شامل ہو تو فوراً قدم اٹھائیں اور وکیل یا متعلقہ عدالت/دفتر سے تصدیق کریں۔',
+  provision: (type, key) => `${type === 'ARTICLE' ? 'آرٹیکل' : 'دفعہ'} ${key}`,
+  statusNote: (s) => (s && String(s).toLowerCase() !== 'in force' ? ` — حیثیت: ${s}` : '')
+};
+
 // First N non-empty paragraphs, so we never truncate mid-sentence.
 function leadParagraphs(text, maxParas = 3, maxChars = 900) {
   const paras = String(text || '').split(/\n\n+/).map(p => p.trim()).filter(Boolean);
@@ -568,8 +591,9 @@ function displayTitle(raw) {
   return String(raw || '')
     .replace(/^\s*#{1,6}\s+/, '')
     .replace(/^\s*\d+[.)]\s+/, '')
-    .replace(/^\s*(?:laws?|title)\s*:\s*/i, '')
+    .replace(/^\s*(?:laws?|title|wing|office|authority)\s*:\s*/i, '')
     .replace(/\s*[.—-]?\s*coverage\s*:[\s\S]*$/i, '')
+    .replace(/\s*[.—-]?\s*(?:source|verification)\s*:[\s\S]*$/i, '')
     .replace(/_/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
@@ -669,7 +693,11 @@ function recordBody(chunk) {
     .filter(l => !isLabelStubLine(l) && !isHeadingLine(l) && !isCorpusMetaLine(l)
       && !SECTION_LABEL_RE.test(l) && !isFeeRowLine(l) && !isScopeAnnotationLine(l)
       && !isCrossReferenceLine(l))
-    .map(l => l.replace(/^[-*•]\s+/, ''));
+    // "SUBSTANCE:" is an ingest label sitting in front of the rule itself; the
+    // rule is quotable, the label is not. Provenance lines (WING / SOURCE /
+    // VERIFICATION) describe the record, not the law, and never reach a reader.
+    .filter(l => !/^\s*(?:wing|office|source|verification)\s*:/i.test(l))
+    .map(l => l.replace(/^[-*•]\s+/, '').replace(/^\s*substance\s*:\s*/i, ''));
   if (!all.length) return '';
   // Summary records store the provision itself in their title and repeat it as
   // their only body line — there, the title IS the content, so keep it.
@@ -1556,8 +1584,9 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
     }
   }
   const isRoman = activeLang === 'roman_urdu';
-  const L = isRoman ? ROMAN : EN;
-  const scopeLang = isRoman ? 'roman_urdu' : 'en';
+  const isUrdu = activeLang === 'ur';
+  const L = isUrdu ? URDU : (isRoman ? ROMAN : EN);
+  const scopeLang = isUrdu ? 'ur' : (isRoman ? 'roman_urdu' : 'en');
   // PART 1 — answer the question that was asked. The gate hands records over in
   // evidence order; re-rank them by the words of THIS question so the section
   // content comes from the record that addresses the ask, not the one that merely
@@ -1632,9 +1661,17 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   // The record leads in Roman Urdu as it does in English. The intent template is
   // what a citizen falls back on when the record has nothing quotable, not a
   // standing preamble that pushes the actual rule out of the first paragraph.
-  const lead = isRoman
-    ? (romanClause ? `Record ke mutabiq: ${romanClause}` : synthesis)
-    : recordLead(answerRecord, lvl.answerSentences, lvl.answerChars, userQuery);
+  const urduClause = clipSentences(recordLead(answerRecord, 1, ROMAN_QUOTE_CHARS, userQuery), 1, ROMAN_QUOTE_CHARS);
+  // Urdu answers keep the record's own (usually English) wording as the quoted
+  // evidence and wrap it in Urdu framing, so the selected language is never
+  // silently swapped for a different one.
+  const lead = isUrdu
+    ? (urduClause
+      ? `اس معاملے میں مستند ریکارڈ کے مطابق (اصل قانونی متن انگریزی میں نقل کیا گیا ہے): «${urduClause}»`
+      : 'اس سوال کا جواب درج ذیل مستند ریکارڈ سے ملتا ہے۔')
+    : isRoman
+      ? (romanClause ? `Record ke mutabiq: ${romanClause}` : synthesis)
+      : recordLead(answerRecord, lvl.answerSentences, lvl.answerChars, userQuery);
   let directAnswer = lead || synthesis;
   if (directAnswer && framing) directAnswer = `${framing}: ${directAnswer}`;
   // Never let a university/city/province record read as Pakistan-wide law.
@@ -1675,9 +1712,11 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   // Roman Urdu explains first and quotes only the clause that carries the rule;
   // an English answer keeps the record's own wording in full.
   const romanQuote = clipSentences(saysText, 1, ROMAN_QUOTE_CHARS);
-  const explanation = isRoman
-    ? (romanQuote ? `Verifiable record ke mutabiq: ${romanQuote}` : '')
-    : saysText;
+  const explanation = isUrdu
+    ? (saysText ? `مستند ریکارڈ مزید یہ بتاتا ہے (اصل متن انگریزی میں): «${clipSentences(saysText, 2, ROMAN_QUOTE_CHARS * 2)}»` : '')
+    : isRoman
+      ? (romanQuote ? `Verifiable record ke mutabiq: ${romanQuote}` : '')
+      : saysText;
   if (!shortStyle && plan.has('says') && explanation) {
     push(L.says, explanation);
   }
@@ -1724,7 +1763,12 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
     const fresh = steps && /(?:^|\n)1[.)]\s/.test(steps)
       ? steps
       : dropRepeatedLines(steps, out.join('\n'));
-    if (fresh) push(L.procedure, clipList(fresh, lvl.steps));
+    if (fresh) {
+      const stepText = isUrdu
+        ? `درج ذیل اقدامات متعلقہ مستند ریکارڈ سے لیے گئے ہیں (اصل متن انگریزی میں):\n${clipList(fresh, lvl.steps)}`
+        : clipList(fresh, lvl.steps);
+      push(L.procedure, stepText);
+    }
   }
 
   // 5. Remedy — only if a remedy chunk was retrieved and the level wants it.
@@ -1773,7 +1817,7 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   const srcLines = buildSources(focus, lvl.sources, askedServices);
   const portals = srcLines ? siblingPortals(focus.slice(0, lvl.sources), chunks) : [];
   if (plan.has('source') && srcLines) {
-    push(L.source, [srcLines, ...portals.map(u => `- ${isRoman ? 'Sarkari portal' : 'Official portal'}: ${u}`)].join('\n'));
+    push(L.source, [srcLines, ...portals.map(u => `- ${isUrdu ? 'سرکاری پورٹل' : isRoman ? 'Sarkari portal' : 'Official portal'}: ${u}`)].join('\n'));
   }
 
   // 11. Limitation — every level, unchanged, plus the honest scope gap: where the
@@ -1847,17 +1891,27 @@ function displayCountry(country) {
  */
 export function askClarification(userQuery, activeLang = 'en') {
   const isRoman = activeLang === 'roman_urdu';
+  const isUrdu = activeLang === 'ur';
   const probe = parseOverseasIntent(String(userQuery || ''));
   if (probe.isOverseas) {
     const place = displayCountry(probe.country);
     if (place) {
+      if (isUrdu) {
+        return `مجھے ${place} کے قانون سے متعلق اس ذخیرے میں کوئی مستند (verified) ریکارڈ نہیں ملا، اور میں کسی ملک کا قانون یاد سے نہیں بتاؤں گا۔ جو میں مستند پاکستانی مواد سے دے سکتا ہوں وہ یہ ہے: دستاویزات اور تصدیق (attestation)، پاکستانی مشن/قونصلر مدد، ویزا اور امیگریشن کی بنیادی باتیں، بیرونِ ملک ملازمت، بیرونِ ملک تعلیم، اور سرحد پار خاندانی/جائیداد کے معاملات۔ آپ کو ان میں سے کس چیز کی ضرورت ہے، اور اصل مسئلہ کیا ہے؟ اگر کوئی نوٹس یا خط موصول ہوا ہو تو اسے یہاں اپ لوڈ کریں — میں اس کا تجزیہ کروں گا۔ ${place} کے موجودہ سرکاری قواعد (ویزا، فیس، مقررہ تاریخیں) کے لیے میں صرف سرکاری ماخذ کی طرف رہنمائی کروں گا، کوئی اندازہ نہیں لگاؤں گا۔`;
+      }
       return isRoman
         ? `Mujhe ${place} ke qanoon ka koi verified record is zakhire mein nahi mila, aur main kisi mulk ka qanoon yaad se nahi bataunga. Main aap ko yeh verified Pakistan-facing rehnumai de sakta hoon: documents aur attestation, Pakistani mission/consular madad, visa aur immigration basics, overseas employment, study abroad, aur cross-border family/property muamlat. Aap ko in mein se kis cheez ki zaroorat hai, aur asal masla kya hai? Agar koi notice ya khat mila hai to use yahan upload karein — main uska tajzia karunga. ${place} ke maujooda sarkari rules (visa, fees, deadlines) ke liye main sirf official source ki taraf bhejunga, koi andaaza nahi lagao ga.`
         : `I could not find a verified record covering ${place}'s law in this corpus, and I will not guess any country's law from memory. What I CAN give you — from verified Pakistan-facing material — is guidance on: documents and attestation, Pakistani mission/consular help, visa and immigration basics, overseas employment, study abroad, and cross-border family/property matters. Which of these do you need, and what exactly happened? If you have received a notice or letter, upload it and I will analyze it for you. For ${place}'s current official rules (visa, fees, deadlines) I will only point you to the official authority — I will not invent them.`;
     }
+    if (isUrdu) {
+      return `مجھے آپ کے سوال کا کوئی مستند (verified) ریکارڈ نہیں ملا، اور میں اندازے سے قانونی جواب نہیں دوں گا۔ درست رہنمائی کے لیے براہِ کرم بتائیں: **آپ کس ملک جا رہے ہیں (یا رہ رہے ہیں)؟** اور **مقصد کیا ہے — نوکری، تعلیم، مستقل سکونت، خاندان، یا وزٹ؟** ملک اور مقصد معلوم ہوتے ہی میں مستند رہنمائی دے سکتا ہوں: دستاویزات، تصدیق، ویزا/امیگریشن کی بنیادی باتیں، بیرونِ ملک ملازمت کے قواعد، بیرونِ ملک تعلیم کی ضروریات، قونصلر مدد، یا سرحد پار خاندانی/جائیداد کا طریقہ۔ اگر کوئی نوٹس یا خط ملا ہو تو وہ بھی اپ لوڈ کر سکتے ہیں۔`;
+    }
     return isRoman
       ? `Mujhe aap ke sawal ka koi verified record nahi mila, aur main andaaze se qanooni jawab nahi dunga. Sahih rehnumai ke liye baraye meharbani bataayein: **aap kis mulk mein ja rahe hain (ya reh rahe hain)?** aur **maqsad kya hai — naukri/work, parhai/study, mustaqil rehna/settlement, family, ya visit?** Country aur maqsad batate hi main aap ko verified rehnumai de sakta hoon: documents, attestation, visa/immigration basics, overseas employment ke rules, study abroad ki zarooratain, consular madad, ya cross-border family/property ka tareeqa. Agar koi notice ya khat mila hai to use bhi upload kar sakte hain.`
       : `I could not find a verified record matching this yet, and I will not guess legal facts. To give you accurate, verified guidance, please tell me: **which country are you moving to (or living in)?** and **what is the purpose — work, study, permanent settlement, family, or a visit?** Once I know the country and purpose, I can give you the verified guidance that applies: documents and attestation, visa and immigration basics, overseas employment rules, study-abroad requirements, consular help, or cross-border family/property procedure. If you have received a notice or letter, upload it and I will analyze it.`;
+  }
+  if (isUrdu) {
+    return `مجھے آپ کے سوال سے ملتا جلتا کوئی مستند پاکستانی قانونی ریکارڈ نہیں ملا، اور میں قانونی حقیقت گھڑ کر نہیں بتاؤں گا۔ میں پھر بھی مدد کر سکتا ہوں — براہِ کرم کچھ اور تفصیل بتائیں: **اصل مسئلہ کیا ہوا** (مثلاً جائیداد، خاندان، ملازمت، کرایہ داری، یا کوئی فوجداری معاملہ) **اور آپ کس شہر/صوبے میں ہیں؟** اگر کوئی نوٹس، خط یا دستاویز ہو تو اسے یہاں اپ لوڈ کریں — میں اسے پڑھ کر سمجھاؤں گا۔ آپ کسی طریقۂ کار کے بارے میں بھی پوچھ سکتے ہیں (مثلاً "مجھے کیا کرنا چاہیے...")، یا ایپ میں Legal Library، قانونی امداد اور مستند وکیل کی مدد لے سکتے ہیں۔`;
   }
   return isRoman
     ? `Mujhe aap ke sawal se milta-julta koi verified Pakistani qanooni record nahi mila, aur main qanooni haqeeqat ghad kar nahi bataunga. Main phir bhi madad kar sakta hoon — baraye meharbani thori si aur detail bataayein: **asal masla kya hua** (masalan property, family, naukri, tenancy, ya koi criminal muamla) **aur aap kis shehar/province mein hain?** Agar koi notice, khat ya dastavez hai to use yahan upload karein — main use parh kar samjhaunga. Aap kisi procedure ke baare mein bhi pooch sakte hain (masalan "main kya karun..."), ya app mein Legal Library, legal-aid aur verified wakeel ki madad le sakte hain.`
@@ -1873,13 +1927,18 @@ export function crossBorderNudge(userQuery, activeLang = 'en') {
   const probe = parseOverseasIntent(String(userQuery || ''));
   if (!probe.isOverseas) return '';
   const isRoman = activeLang === 'roman_urdu';
+  const isUrdu = activeLang === 'ur';
   const asks = [];
   if (!probe.country) {
-    asks.push(isRoman
+    asks.push(isUrdu
+      ? '**ایک ضروری بات:** آپ کے سوال میں کسی ملک کا نام نہیں ہے۔ اگر آپ بتا دیں کہ کس ملک جا رہے ہیں / رہ رہے ہیں، تو میں دستاویزات، تصدیق اور سرکاری اقدامات اسی ملک کے حساب سے ترتیب دے سکتا ہوں — نوکری، تعلیم، مستقل سکونت یا خاندان — بغیر کسی اندازے کے۔'
+      : isRoman
       ? '**Ek zaroori baat:** aap ke sawal mein kisi mulk (country) ka naam nahi hai. Agar aap bata dein ke kis mulk mein ja rahe hain / reh rahe hain, to main documents, attestation aur official qadam us mulk ke hisaab se tailor kar sakta hoon — work, study, settlement ya family — bina kisi andaaze ke.'
       : '**One thing that would make this precise:** your question does not name a country. If you tell me which country you are moving to (or living in), I can tailor the documents, attestation and official steps for that destination — whether it is for work, study, settlement or family — without any guesswork.');
   } else if (!probe.purpose && probe.move) {
-    asks.push(isRoman
+    asks.push(isUrdu
+      ? '**ایک اور بات:** کس مقصد کے لیے جا رہے ہیں — **نوکری، تعلیم، مستقل سکونت، خاندان، یا وزٹ**؟ مقصد بتانے سے میں درست مستند طریقۂ کار اور دستاویزات کی طرف رہنمائی کر سکتا ہوں۔'
+      : isRoman
       ? '**Ek aur baat:** kis maqsad ke liye move ho rahe hain — **naukri/work, parhai/study, mustaqil rehna/settlement, family, ya visit**? Maqsad batane se main sahi verified procedure aur documents ki taraf le ja sakta hoon.'
       : '**One more thing:** what is the purpose of the move — **work, study, permanent settlement, family, or a visit**? Knowing the purpose lets me point you to the right verified procedure and documents.');
   }

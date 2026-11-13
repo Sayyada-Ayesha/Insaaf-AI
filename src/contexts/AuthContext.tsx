@@ -75,7 +75,7 @@ async function attempt<T>(method: AuthMethod, action: () => Promise<T>): Promise
     return result;
   } catch (error) {
     if (isCapabilityError(error)) noteAuthUnavailable(method, error);
-    console.warn('Insaaf AI sign-in:', describeForLogs(error));
+    console.warn('INSAaf AI sign-in:', describeForLogs(error));
     throw error;
   }
 }

@@ -1,5 +1,5 @@
 /**
- * Insaaf AI — Voice & Speech Engine (Feature 2)
+ * INSAaf AI — Voice & Speech Engine (Feature 2)
  *
  * BROWSER-ONLY VOICE ARCHITECTURE (non-negotiable):
  *  - Speech-to-text: Web Speech API `SpeechRecognition` / `webkitSpeechRecognition`.

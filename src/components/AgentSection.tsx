@@ -22,6 +22,7 @@ import { APP_ROUTES, getRoute, type AppRoute } from "../config/appRoutes";
 import { getLibrarySectionId } from "../config/ragDomainMap";
 import { getCurrentLanguage, useLanguageVersion } from "../lib/i18n";
 import { evidenceBadge } from "../lib/answerEvidence";
+import { provisionLabel } from "../lib/sourceLabel";
 import type { EvidenceVerdict } from "../services/storage";
 import { useSettings } from "../lib/settings";
 import {
@@ -43,8 +44,8 @@ const SUGGESTIONS = [
   { en: "I need free legal aid", roman: "Mujhe muft qanooni madad chahiye" }
 ];
 
-const GREETING_EN = "Assalam-o-Alaikum! I am the **INSAaf Legal Agent** — your guide to Pakistani law *and* to this app.\n\nAsk me about the law, about legal procedures, or how any feature of Insaaf AI works. I can also search the verified lawyer directory by city and specialization.";
-const GREETING_ROMAN = "Assalam-o-Alaikum! Main **INSAaf Qanooni Agent** hoon — Pakistani qanoon *aur* is app ke liye aap ka guide.\n\nMujh se qanoon, qanooni karwaiyan, ya Insaaf AI ki koi feature kaise use karein, ke baare mein poochein. Main verified vakeel directory ko shehar aur specialization se bhi talaash kar sakta hoon.";
+const GREETING_EN = "Assalam-o-Alaikum! I am the **INSAaf Legal Agent** — your guide to Pakistani law *and* to this app.\n\nAsk me about the law, about legal procedures, or how any feature of INSAaf AI works. I can also search the verified lawyer directory by city and specialization.";
+const GREETING_ROMAN = "Assalam-o-Alaikum! Main **INSAaf Qanooni Agent** hoon — Pakistani qanoon *aur* is app ke liye aap ka guide.\n\nMujh se qanoon, qanooni karwaiyan, ya INSAaf AI ki koi feature kaise use karein, ke baare mein poochein. Main verified vakeel directory ko shehar aur specialization se bhi talaash kar sakta hoon.";
 
 /** Internal app route intents — ids only, never invented URLs (F13). */
 const ROUTE_RULES: [RegExp, string][] = [
@@ -608,7 +609,7 @@ export default function AgentSection({ onNavigate, onOpenLibrary, embedded = fal
                   {showSources && m.sources && m.sources.length > 0 && (
                     <div className="pt-1 border-t border-gray-100">
                       {m.sources.map((s, si) => {
-                        const ref = [s.type, s.key].filter(Boolean).join(' ');
+                        const ref = provisionLabel(s);
                         const heading = s.title || ref;
                         if (!heading) return null;
                         return (

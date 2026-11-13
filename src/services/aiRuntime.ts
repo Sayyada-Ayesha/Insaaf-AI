@@ -86,7 +86,7 @@ function getBoundedLocalKnowledge(userQuery: string, preferredLanguage?: Support
       ? '**⚠️ AAM MAALOOMAT — AAP KE KHAAS HALAAT KE LIYE TASDEEQ SHUDA NAHI**\n\n*Neeche di gayi baat app ke aam notes hai, is sawal ka verified record nahi. Koi bhi percentage, muddat, fee ya registration ka rule likha ho to woh soobe-khaas hai; har soobe ka qanoon alag hai, is liye amal se pehle apne sheher ke authority se tasdeeq karein.*\n\n'
       : '**⚠️ GENERAL REFERENCE — NOT VERIFIED FOR YOUR CASE**\n\n*What follows is the app\'s built-in general notes, not a verified record answering this question. Any percentage, deadline, fee or registration requirement named below is province-specific; the laws differ by province, so confirm with the authority in your city before acting.*\n\n';
     const footer = roman
-      ? '*Yeh tasdeeq shuda jawab nahi. Insaaf AI se dobara rabta kar ke apne soobe/shahar ka verified record maloom karein.*'
+      ? '*Yeh tasdeeq shuda jawab nahi. INSAaf AI se dobara rabta kar ke apne soobe/shahar ka verified record maloom karein.*'
       : '*This is not a verified answer. Reconnect to INSAaf AI to get the verified record for your province and city.*';
 
     return `${header}${content}\n\n${footer}`;

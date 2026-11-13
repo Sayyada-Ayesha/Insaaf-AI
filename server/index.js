@@ -383,6 +383,18 @@ function directLookupAnswer(userQuery, retrievedChunks, activeLang) {
   return { text: formatDirectResponse(shown, activeLang), chunks: shown };
 }
 
+// Ingest labels are corpus plumbing, not law: a source card must never show
+// "WING:", "SUBSTANCE:", "COVERAGE:" or a verification note to the reader.
+function stripCorpusMeta(text) {
+  return String(text || '')
+    .replace(/\b(?:WING|OFFICE|COVERAGE|SOURCE|VERIFICATION)\s*:[^.\n]*(?:\.|$)/gi, ' ')
+    .split(/\r?\n/)
+    .filter(l => !/^\s*(?:source|wing|office|verification)\s*:/i.test(l))
+    .map(l => l.replace(/^\s*substance\s*:\s*/i, '').replace(/\s{2,}/g, ' ').trim())
+    .join('\n')
+    .trim();
+}
+
 function toSourceMeta(chunks, domain, forQuery = null) {
   // The manifest carries ONE sourceURL/issuingAuthority per document, while a
   // civic document holds several services. Resolved per record, exactly as the
@@ -399,7 +411,7 @@ function toSourceMeta(chunks, domain, forQuery = null) {
     version: c.version,
     sourceURL: recordSource(c, asked),
     domain, // F14: powers "Open in INSAaf Library"
-    text: c.text
+    text: stripCorpusMeta(c.text)
   }));
 }
 
@@ -486,20 +498,29 @@ function formatDirectResponse(retrievedChunks, detectedLang) {
   retrievedChunks.forEach((c) => {
     const isCaseLaw = /case_|judg|LHC_|SC_|PLD|CLC|PCrLJ|YLR/i.test(String(c.key || '')) || /VERBATIM|FULL_TEXT/i.test(String(c.text || '').substring(0, 200));
     const maxLen = isCaseLaw ? 200 : 800;
-    let chunkText = String(c.text || '').split('\n').filter(l => !isCorpusMetaLine(l)).join('\n').trim();
+    let chunkText = String(c.text || '').split('\n')
+      .filter(l => !isCorpusMetaLine(l) && !/^\s*(?:wing|office|source|verification)\s*:/i.test(l))
+      .map(l => l.replace(/^\s*substance\s*:\s*/i, ''))
+      .join('\n').trim();
     if (chunkText.length > maxLen) {
       chunkText = chunkText.slice(0, maxLen);
       const lastPeriod = chunkText.lastIndexOf('.');
       if (lastPeriod > maxLen * 0.5) chunkText = chunkText.slice(0, lastPeriod + 1);
       chunkText += ' [...]';
     }
-    text += `### ${c.type === 'ARTICLE' ? 'Article' : 'Section'} ${c.key} — ${displayTitle(c.chunkTitle || c.title)}\n\n`;
+    // A record key is a filing label, not a citation: only a real section /
+    // article number may be printed in front of a reader.
+    const numberedKey = /^\d+[A-Za-z]*(?:\([0-9ivxIVX]+\))?$/.test(String(c.key || ''));
+    const citeLabel = numberedKey ? `${c.type === 'ARTICLE' ? 'Article' : 'Section'} ${c.key} — ` : '';
+    text += `### ${citeLabel}${displayTitle(c.chunkTitle || c.title)}\n\n`;
     text += `${chunkText}\n\n`;
   });
   
   text += `---\n\n**Sources**\n\n`;
   retrievedChunks.forEach((c, i) => {
-    text += `${i + 1}. [${displayTitle(c.title)} — ${c.type} ${c.key}](${c.sourceURL})\n`;
+    const numberedKey = /^\d+[A-Za-z]*(?:\([0-9ivxIVX]+\))?$/.test(String(c.key || ''));
+    const tail = numberedKey ? ` — ${c.type} ${c.key}` : '';
+    text += `${i + 1}. [${displayTitle(c.title)}${tail}](${c.sourceURL})\n`;
   });
   
   return text;
@@ -514,9 +535,17 @@ function formatDirectResponse(retrievedChunks, detectedLang) {
 function offlineKnowledgeHeader(activeLang, verdict, jurisdictionNote = '') {
   const partial = verdict === 'weak' || verdict === 'none';
   if (verdict === 'refusal') {
+    if (activeLang === 'ur') {
+      return `**📖 کوئی مستند مطابقت نہیں ملی**\n\n*مستند قانونی ذخیرے میں آپ کے سوال سے ملتا جلتا کوئی ریکارڈ نہیں ملا، اس لیے نیچے کچھ بھی تصدیق شدہ قانون کے طور پر پیش نہیں کیا جا رہا۔*\n\n`;
+    }
     return activeLang === 'roman_urdu'
       ? `**📖 TASDEEQ SHUDA MATCH NAHI MILA**\n\n*Verified law corpus mein aap ke sawal se milta-julta koi record nahi mila, is liye neeche kuch bhi tasdeeq shuda qanoon ke tor par pesh nahi kiya ja raha.*\n\n`
       : `**📖 NO VERIFIED MATCH**\n\n*No record in the verified law corpus matches this question, so nothing below is presented as verified law.*\n\n`;
+  }
+  if (activeLang === 'ur') {
+    return (partial
+      ? `**📖 جزوی طور پر مستند قانونی حوالہ**\n\n*یہ معلومات مستند قانونی ذخیرے کے قریب ترین ملتے جلتے ریکارڈز سے تیار کی گئی ہیں؛ ذخیرے میں آپ کے سوال سے مکمل مطابقت رکھنے والا ریکارڈ نہیں ملا۔*\n\n`
+      : `**📖 مستند قانونی حوالہ**\n\n*یہ معلومات مستند قانونی ذخیرے سے فراہم کی گئی ہیں۔*\n\n`) + jurisdictionNote;
   }
   if (activeLang === 'roman_urdu') {
     return (partial
@@ -541,6 +570,9 @@ function jurisdictionNoteFor(userQuery, chunks, activeLang) {
   const [, covers, label] = cue;
   const covered = (chunks || []).some((c) => covers.test(`${c.title || ''} ${c.jurisdiction || ''} ${c.text || ''}`));
   if (covered) return '';
+  if (activeLang === 'ur') {
+    return `*نوٹ: مستند قانونی ذخیرے میں ${label} کا اس موضوع سے متعلق کوئی قاعدہ موجود نہیں؛ نیچے دیے گئے ریکارڈ وفاقی یا کسی دوسرے علاقے کے ہیں اور ان کا آپ کے علاقے پر لاگو ہونا ضروری نہیں۔ عمل سے پہلے اس علاقے کے متعلقہ اختیار سے تصدیق کریں۔*\n\n`;
+  }
   if (activeLang === 'roman_urdu') {
     return `*Note: verified law corpus mein ${label} ka is topic ka koi rule record nahi hai; neeche diye gaye records federal ya doosre ilaaqe ke hain aur in ka aap ke ilaaqe par laazim hona zaroori nahi. Amal se pehle us ilaaqe ke authority se tasdeeq karein.*\n\n`;
   }
@@ -553,6 +585,9 @@ function jurisdictionNoteFor(userQuery, chunks, activeLang) {
 function sectionNotFoundText(userQuery, activeLang) {
   const askedRef = (findProvisionRefs(userQuery)[0] || {}).raw || '';
   if (!askedRef) return null;
+  if (activeLang === 'ur') {
+    return `آپ کے پوچھے گئے حوالے (${askedRef}) کی مستند تفصیل قانونی ذخیرے میں نہیں ملی۔ براہِ کرم نمبر اور قانون دوبارہ جانچ لیں — مثلاً "چوری کی سزا پاکستان پنل کوڈ کے تحت" یا "آئین کے تحت برابری کا حق"۔`;
+  }
   return activeLang === 'roman_urdu'
     ? `Aap ke pooche gaye hawale (${askedRef}) ki tasdeeq shuda tafseel verified law corpus mein nahi mili. Baraye meharbani number aur qanoon dobara check karein — maslan "chori ki saza Pakistan Penal Code ke tahat" ya "aain ke tahat barabari ka haq".`
     : `A direct verified match for "${askedRef}" was not found in the verified law corpus. Please double-check the number and the law — for example "punishment for theft under the Pakistan Penal Code" or "the right to equality under the Constitution".`;
@@ -1186,7 +1221,7 @@ function generalLifeAnswer(userQuery, activeLang) {
   // Kafalat). Two different asks arrive here and only one of them is dangerous.
   // A citizen asking for their OWN eligibility or payment result cannot be
   // answered at all: that verdict is BISP's record system checking a CNIC, and
-  // INSAF AI holds no authorised integration with it, so any answer would be
+  // INSAaf AI holds no authorised integration with it, so any answer would be
   // invented. A citizen asking what the programme itself publishes — the PMT
   // cut-off, the registration steps, the documents, the next-of-kin route, where
   // to complain — is now a normal retrieval question: bisp_8171_programme_procedures
@@ -1212,8 +1247,8 @@ function generalLifeAnswer(userQuery, activeLang) {
   if (namesSupportProgramme && asksOwnVerdict && !isProcedureHowTo && !isEducationScholarshipContext && !wantsLegalRoute) {
     return {
       text: isRoman
-        ? 'Main aap ki **nijati** BISP / 8171 ya Ehsaas eligibility ya payment ka result nahi bata sakta — yeh faisla sirf BISP ka apna record system aap ke CNIC ke khilaf deta hai, aur INSAF AI ka us se koi authorized integration nahi. Is liye main aap ke ghar ke baare mein koi baat likhna inkaar karta hoon: woh tarfeeq hoti.\n\nJo cheez verified corpus mein mojood hai, woh BISP ka apna **shayahd programme material** hai: Proxy Means Test aur NSER survey se beneficiaries ki pehchaan, PMT ka shayahd cut-off score, Kafaalat registration ke steps aur required documents, beneficiary ki maut ke baad waris ka route aur us ke documents, aur shikayat ka tareeqa (qareebi Tehsil office, toll-free helpline 0800-26477, aur BISP ki warning ke official communication sirf 8171 se aati hai). Aise sawal is tarah likhein — "BISP Kafaalat ki registration ke liye kaunse documents chahiye?" — main un records se jawab doonga aur BISP ke URLs hawale karunga.\n\nApne nijati status ke liye published channel 8171 web portal (8171.bisp.gov.pk) aur bisp.gov.pk hai — yeh destination hai, suboot nahi.'
-        : 'I cannot give you **your own** BISP / 8171 or Ehsaas eligibility or payment result — that verdict comes only from BISP\'s record system checking your CNIC, and INSAF AI has no authorised integration with it. So I will not write anything about your household: it would be invented.\n\nWhat the verified corpus does hold is BISP\'s own published programme material: how beneficiaries are identified through the Proxy Means Test and the NSER survey, the published PMT cut-off score, the Kafaalat registration steps and required documents, the next-of-kin route when a beneficiary dies and the documents it needs, and how a beneficiary complains (nearest Tehsil office, the toll-free helpline 0800-26477, and BISP\'s own warning that official communication originates only from 8171). Ask it that way — for example "which documents are required to register for Benazir Kafaalat?" — and I will answer from those records and cite BISP.\n\nFor your own status the published channel is the 8171 web portal (8171.bisp.gov.pk) and bisp.gov.pk — a destination, not evidence.',
+        ? 'Main aap ki **nijati** BISP / 8171 ya Ehsaas eligibility ya payment ka result nahi bata sakta — yeh faisla sirf BISP ka apna record system aap ke CNIC ke khilaf deta hai, aur INSAaf AI ka us se koi authorized integration nahi. Is liye main aap ke ghar ke baare mein koi baat likhna inkaar karta hoon: woh tarfeeq hoti.\n\nJo cheez verified corpus mein mojood hai, woh BISP ka apna **shayahd programme material** hai: Proxy Means Test aur NSER survey se beneficiaries ki pehchaan, PMT ka shayahd cut-off score, Kafaalat registration ke steps aur required documents, beneficiary ki maut ke baad waris ka route aur us ke documents, aur shikayat ka tareeqa (qareebi Tehsil office, toll-free helpline 0800-26477, aur BISP ki warning ke official communication sirf 8171 se aati hai). Aise sawal is tarah likhein — "BISP Kafaalat ki registration ke liye kaunse documents chahiye?" — main un records se jawab doonga aur BISP ke URLs hawale karunga.\n\nApne nijati status ke liye published channel 8171 web portal (8171.bisp.gov.pk) aur bisp.gov.pk hai — yeh destination hai, suboot nahi.'
+        : 'I cannot give you **your own** BISP / 8171 or Ehsaas eligibility or payment result — that verdict comes only from BISP\'s record system checking your CNIC, and INSAaf AI has no authorised integration with it. So I will not write anything about your household: it would be invented.\n\nWhat the verified corpus does hold is BISP\'s own published programme material: how beneficiaries are identified through the Proxy Means Test and the NSER survey, the published PMT cut-off score, the Kafaalat registration steps and required documents, the next-of-kin route when a beneficiary dies and the documents it needs, and how a beneficiary complains (nearest Tehsil office, the toll-free helpline 0800-26477, and BISP\'s own warning that official communication originates only from 8171). Ask it that way — for example "which documents are required to register for Benazir Kafaalat?" — and I will answer from those records and cite BISP.\n\nFor your own status the published channel is the 8171 web portal (8171.bisp.gov.pk) and bisp.gov.pk — a destination, not evidence.',
       actions: []
     };
   }
@@ -1512,15 +1547,23 @@ function detectLanguage(text) {
  * text available to detect from.
  */
 function resolveChatLanguage(preferredLanguage, userQuery) {
-  if (/[\u0600-\u06FF]/.test(String(userQuery || ''))) return 'roman_urdu';
+  // An explicit Urdu or Roman Urdu selection is honoured exactly; the assistant
+  // must never swap the language the user selected. 'en' and Auto keep the
+  // input-detection floor, because the default UI chrome is English and letting
+  // it outrank the question silenced Roman Urdu answers.
+  if (preferredLanguage === 'ur') return 'ur';
+  if (preferredLanguage === 'roman_urdu') return 'roman_urdu';
+  if (/[\u0600-\u06FF]/.test(String(userQuery || ''))) return 'ur';
   if (detectLanguage(userQuery) === 'roman_urdu') return 'roman_urdu';
-  return preferredLanguage === 'roman_urdu' ? 'roman_urdu' : 'en';
+  return 'en';
 }
 
 // P0 — a refusal is part of the answer, so it is written in the resolved response
 // language instead of staying a hardcoded English string.
-function prose(lang, en, roman) {
-  return lang === 'roman_urdu' ? roman : en;
+function prose(lang, en, roman, urdu) {
+  if (lang === 'roman_urdu') return roman;
+  if (lang === 'ur') return urdu || en;
+  return en;
 }
 
 function detectDocIntelligenceAction(userQuery) {
@@ -1646,7 +1689,7 @@ function formatDocIntelligenceResponse(action, analysis, activeLang) {
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'ok',
-    service: 'Insaaf AI Backend API',
+    service: 'INSAaf AI Backend API',
     timestamp: new Date().toISOString(),
     runtime: 'owned-model-local'
   });
@@ -2273,7 +2316,7 @@ ${levelInstruction}
 5. Answer ONLY what the user explicitly asked — do not volunteer unrelated laws or background.
 6. DO NOT write a Sources block at the end. The system will handle citations automatically.
 7. DO NOT use raw HTML tags. Use clean text or markdown.
-8. NEVER introduce yourself (e.g. 'Greetings! I am Insaaf AI'). Start your legal response immediately with the direct answer.
+8. NEVER introduce yourself (e.g. 'Greetings! I am INSAaf AI'). Start your legal response immediately with the direct answer.
 9. CASE LAW CITATIONS (F15): When the answer is grounded in a judgment, cite it compactly IN-LINE as "Case: {Title} ({Citation}, {Court} {Year})". State ONLY the holding, outcome and significance that appear in the retrieved evidence. NEVER invent case names, citations, facts, or reasoning.
 10. CASE COMPARISONS (F15): NEVER state that two cases are "exactly the same" or "identical". Use hedged language such as "may be similar to" or "can be distinguished from". Precedent guides — it does not decide.
 11. STUDENT / UNIVERSITY QUERIES: When the query relates to university or college matters (admissions, fees, examinations, harassment, discipline, hostel, scholarships, degree attestation, student rights, transport, academic probation, show-cause notices), use the retrieved student-domain evidence. Where a rule or policy is university-specific, state clearly that it "depends on your university's applicable regulations" and do NOT present one university's rule as a universal Pakistan-wide standard. When the user is in Hyderabad or mentions a Hyderabad university (University of Sindh, MUET, Liaquat University), prioritize Hyderabad-relevant information from the evidence. Respond in the user's language — English or Roman Urdu.
@@ -4008,7 +4051,7 @@ if (fs.existsSync(DIST_DIR)) {
     }
     next();
   });
-  console.log(`[Insaaf AI Backend] Serving built frontend from ${DIST_DIR}`);
+  console.log(`[INSAaf AI Backend] Serving built frontend from ${DIST_DIR}`);
 }
 
 // P21 security: global error handler — malformed/oversized JSON and unexpected
@@ -4045,7 +4088,7 @@ if (!IS_SERVERLESS) {
   });
 
   httpServer.listen(PORT, () => {
-    console.log(`[Insaaf AI Backend] Server running cleanly on port ${PORT}`);
+    console.log(`[INSAaf AI Backend] Server running cleanly on port ${PORT}`);
   });
 }
 

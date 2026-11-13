@@ -1919,6 +1919,38 @@ function cleanFactSentence(s) {
   return t;
 }
 
+// A request that only NAMES the document — "Khula ki application bana do (wife
+// ki janib se)" — is an instruction, never a case fact. The bracketed party
+// phrase says who files it; it is not a ground for the relief. The instruction
+// is removed as a whole, and the remaining content decides whether any facts
+// were actually supplied.
+const DIRECTIVE_VERB_RE = /\b(?:bana\s*(?:do|dein|dena|dijiye)|banado|banao|bana\s*de|likh\s*(?:do|dein|dena|dijiye)|likhdo|likho|likhein|likh\s*de|tayyar\s*(?:karo|karein|kar\s*do|kijiye|karna|kiya)|draft|write|prepare|make|create|generate)\b/i;
+const DOCUMENT_NOUN_RE = /\b(?:application|darkhwast|darakhwast|notice|shikayat|complaint|appeal|petition|letter|khat|reply|jawab|affidavit|fir|suit|claim)\b|(?:درخواست|نوٹس|شکایت|اپیل|خط|جواب|ضمانت|ایف\s*آئی\s*آر)/i;
+const PARTY_CLAUSE_RE = /\((?:[^)]*?)\b(?:janib|taraf|traaf)\b[^)]*\)|\b(?:janib|taraf|traaf)\s*(?:se)\b/gi;
+const DIRECTIVE_FILLER_RE = /\b(?:ki|ka|ke|se|ne|ko|meri|mera|mere|mujhe|hamari|hamara|please|kindly|a|an|the|for|of|to|my|me|i|main|mein|ek|aik|complete|mukammal)\b/gi;
+const PARTY_SIDE_RES = [
+  [/\b(?:wife|biwi|zoja|بیوی)\b/i, 'wife'],
+  [/\b(?:husband|shohar|khavand|khawand|mian|شوہر)\b/i, 'husband']
+];
+
+function detectDraftDirective(raw) {
+  const text = String(raw || '').trim();
+  if (!text) return { instructionOnly: false, partySide: null };
+  let partySide = null;
+  for (const [re, side] of PARTY_SIDE_RES) if (re.test(text)) { partySide = side; break; }
+  const isDirective = DIRECTIVE_VERB_RE.test(text) && DOCUMENT_NOUN_RE.test(text);
+  if (!isDirective) return { instructionOnly: false, partySide: null };
+  const remainder = text
+    .replace(PARTY_CLAUSE_RE, ' ')
+    .replace(DIRECTIVE_VERB_RE, ' ')
+    .replace(DOCUMENT_NOUN_RE, ' ')
+    .replace(DIRECTIVE_FILLER_RE, ' ')
+    .replace(/[^A-Za-z\u0600-\u06FF\s]/g, ' ')
+    .split(/\s+/)
+    .filter(w => w.length >= 3 && !/^(?:khula|divorce|talaq|طلاق|خلع)$/i.test(w));
+  return { instructionOnly: remainder.length < 2, partySide };
+}
+
 // Phase 8 — a purely directive Urdu sentence ("درخواست تیار کریں", "قانونی نوٹس
 // بنائیں") carries no facts and must never become a clause of the document.
 function isUrduDirective(s) {
@@ -1991,6 +2023,10 @@ export function analyzeDraftRequest(requestText) {
   const raw = String(requestText || '').trim();
   const detected = classifyDraftType(raw);
   const label = detected.label;
+  // An instruction that only names the document contributes no facts. Dropping
+  // it here is what stops the request text from being rendered as clause 1 of
+  // the user's own document.
+  const directive = detectDraftDirective(raw);
 
   const sentences = splitRequestSentences(raw);
   const facts = [];
@@ -2015,6 +2051,9 @@ export function analyzeDraftRequest(requestText) {
     framingRecitals[src] = { en, ur: salvageClaimSentenceUrdu(src) || en };
   };
   for (const s of sentences) {
+    // An instruction-only request ("Khula ki application bana do") supplies no
+    // facts at all; every sentence is the command itself.
+    if (directive.instructionOnly) break;
     // Phase 8 — a purely directive Urdu command ("درخواست تیار کریں") is app
     // framing, never a fact: drop it so it can never leak into a document clause.
     if (isUrduDirective(s)) continue;
@@ -2146,7 +2185,21 @@ export function analyzeDraftRequest(requestText) {
   const issuerKnown = /reply|show cause|response/i.test(label) && /(?:from|by)\s+(?:the\s+)?[A-Z]/i.test(t);
   if (/(?:notice|reply|letter)/i.test(label) && !(/(?:to|against|addressee|recipient)\s+[A-Z\u0600-\u06FF]|(?:کو|کی\s*طرف)\s+[A-Z\u0600-\u06FF]/i.test(t) || issuerKnown)) missing.push('The name and address of the addressee (the person/party to be served)');
 
-  return { label, facts, missing, salvaged, framingRecitals, academic: detected.academic, forum: detected.rule ? detected.rule.forum : null };
+  // A Khula application requested by instruction only is still a complete,
+  // usable draft: the parties and personal details become labelled placeholders
+  // and the asks below are the family-law questions that actually matter. Mehr
+  // return is never added as a requirement — it is not a condition of Khula.
+  if (directive.instructionOnly && /khula/i.test(label)) {
+    missing.length = 0;
+    missing.push('The applicant\'s and respondent\'s full names (and father\'s names)');
+    missing.push('The city/province where the marriage took place and where the application will be filed');
+    missing.push('The date of marriage and the Nikahnama registration details (union council / registrar)');
+    missing.push('Whether there are children — their ages and who has their custody');
+    missing.push('The reasons for seeking Khula, in the applicant\'s own words');
+    missing.push('Whether any prior notice, family-court proceeding or mediation is pending');
+  }
+
+  return { label, facts, missing, salvaged, framingRecitals, academic: detected.academic, forum: detected.rule ? detected.rule.forum : null, partySide: directive.partySide, instructionOnly: directive.instructionOnly };
 }
 
 // Urdu-script equivalents of the ACADEMIC_REQUEST_RULES `forum` classes, used
@@ -2209,6 +2262,27 @@ export function composeDraftFromRequest(requestText, opts = {}) {
     const key = language === 'ur' ? 'ur' : 'en';
     facts = facts.map(f => (ana.framingRecitals[f] || {})[key] || f);
   }
+  // A Khula application asked for by instruction only still needs a real
+  // structure: correct parties, a labelled placeholder for every personal
+  // detail the user has not supplied, and the statutory route. Nothing about
+  // Mehr is asserted — it is a separate claim, not a condition of Khula.
+  const khulaInstructionOnly = /khula/i.test(ana.label) && !facts.length;
+  if (khulaInstructionOnly) {
+    facts = language === 'ur' ? [
+      'درخواست گزرندہ کی بیوی کی حیثیت سے اپنے حق میں پیش کی جا رہی ہے؛ درخواست گزار زوجہ اور جواب دہندہ شوہر ہیں۔',
+      'دونوں فریقین کا نکاح [نکاح کی تاریخ] کو ہوا اور نکاح نامہ [یونین کونسل / رجسٹریشن دفتر] میں رجسٹرڈ ہے۔',
+      'درخواست گزار کا پتہ [درخواست گزار کا پتہ] اور جواب دہندہ کا پتہ [جواب دہندہ کا پتہ] ہے۔',
+      'دونوں فریقین کے درمیان اختلافات پیدا ہو گئے جن کی وجوہات درخواست گزار کے اپنے الفاظ میں یہ ہیں: [خلع کی وجوہات]۔',
+      'درخواست گزار مسلم فیملی لاز آرڈیننس 1961 کے تحت خلع کے ذریعے نکاح کی تنسیخ کا مطالبہ کرتی ہے۔ مؤخر مہر، اگر کوئی واجب الادا ہو، ایک علیحدہ مطالبہ ہے اور اس درخواست کی شرط نہیں۔'
+    ] : [
+      'The Applicant is the wife and files this application in her own right; the Respondent is her husband.',
+      'The parties were married on [MISSING: date of marriage], and the Nikahnama is registered at [MISSING: union council / registration office].',
+      'The Applicant resides at [MISSING: applicant\'s address] and the Respondent resides at [MISSING: respondent\'s address].',
+      'Differences arose between the parties, the reasons being: [MISSING: the reasons for seeking Khula, in the Applicant\'s own words].',
+      'The Applicant seeks dissolution of marriage by way of Khula under the Muslim Family Laws Ordinance, 1961. Any deferred Mehr is a separate claim and is not a condition of this application.'
+    ];
+  }
+
   const { label, missing } = ana;
   const chunks = Array.isArray(opts.chunks) ? opts.chunks : [];
   // Phase 4 — replies (incl. show-cause) go back to the office that sent the
@@ -2345,8 +2419,11 @@ export function composeDraftFromRequest(requestText, opts = {}) {
   // facts: the same mandatory ask that surfaces in `missingInformation` is also
   // marked inline, so the document itself stays honest about what is absent.
   const factsIncomplete = missing.some(m => /full facts/i.test(String(m)));
+  const khulaHeading = /khula/i.test(label)
+    ? { heading: 'APPLICATION FOR DISSOLUTION OF MARRIAGE (KHULA)' }
+    : null;
   return {
-    html: renderFullLegalDocument({ type: label, details: detailsStr, chunks, paragraphs: tidy, factsIncomplete, academic: ana.academic, forum: ana.forum }) + INSAF_DOC_FOOTER,
+    html: renderFullLegalDocument({ type: label, details: detailsStr, chunks, paragraphs: tidy, factsIncomplete, academic: ana.academic, forum: ana.forum, structure: khulaHeading }) + INSAF_DOC_FOOTER,
     type: label,
     missingInformation: localizeMissingAsks(missing, opts.metaLanguage === 'roman_urdu'),
     isOffline: true,

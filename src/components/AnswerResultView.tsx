@@ -11,6 +11,7 @@ import type { LocalChatMessage } from "../services/storage";
 import type { Translations } from "../lib/i18n";
 import { getLibrarySectionId } from "../config/ragDomainMap";
 import { evidenceBadge } from "../lib/answerEvidence";
+import { provisionLabel } from "../lib/sourceLabel";
 
 const EXPLORE_TOPICS = [
   { tab: 'learning', en: 'Legal Library', ro: 'Legal Library', Icon: GraduationCap, tint: 'bg-violet-50 text-violet-700' },
@@ -343,7 +344,7 @@ export default function AnswerResultView(props: AnswerResultViewProps) {
                   <li key={i} className="rounded-2xl border border-gray-100 bg-gray-50/50 p-4">
                     <div className="flex flex-wrap items-start justify-between gap-2">
                       <div className="min-w-0">
-                        <p className="text-[10px] font-black uppercase tracking-wider text-[#01411C]">{[src.type, src.key].filter(Boolean).join(' ') || t.chatSourceLabel}</p>
+                        <p className="text-[10px] font-black uppercase tracking-wider text-[#01411C]">{provisionLabel(src) || t.chatSourceLabel}</p>
                         <h3 className="mt-1 break-words text-sm font-bold leading-snug text-gray-900">{src.title}</h3>
                         <p className="mt-1 text-xs text-gray-500">
                           {[src.authority, src.jurisdiction].filter(Boolean).join(' · ') || t.chatSourceUnrecorded}

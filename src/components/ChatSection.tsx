@@ -12,6 +12,7 @@ import { VoiceService } from "../services/voiceService";
 import { getTranslations, getCurrentLanguage, SupportedLanguage, useLanguageVersion } from "../lib/i18n";
 import { getLibrarySectionId } from "../config/ragDomainMap";
 import { evidenceBadge } from "../lib/answerEvidence";
+import { provisionLabel } from "../lib/sourceLabel";
 import { getSettings, useSettings } from "../lib/settings";
 import AnswerResultView from "./AnswerResultView";
 
@@ -87,10 +88,10 @@ export default function ChatSection({ chatMode, activeChatId, openChatSignal, on
   const resultSearchRef = useRef<HTMLTextAreaElement>(null);
   const [isListening, setIsListening] = useState(false);
   const [micLang, setMicLang] = useState<'ur-PK' | 'en-US'>('ur-PK');
-  const [chatLang, setChatLang] = useState<'auto' | 'en' | 'roman_urdu'>(() => {
-    // Feature 1: 'ur' (Urdu Script) is no longer a chat response language — legacy values fall back to Auto.
+  const [chatLang, setChatLang] = useState<'auto' | 'en' | 'roman_urdu' | 'ur'>(() => {
+    // An explicit choice is honoured; Auto detects the language of the question.
     const stored = localStorage.getItem('insaaf_chat_lang');
-    return stored === 'en' || stored === 'roman_urdu' ? stored : 'auto';
+    return stored === 'en' || stored === 'roman_urdu' || stored === 'ur' ? stored : 'auto';
   });
   const [islamicView, setIslamicView] = useState<'islamic' | 'law' | 'combined'>('islamic');
   // Each selection routes the query down a different evidence path server-side:
@@ -767,7 +768,7 @@ export default function ChatSection({ chatMode, activeChatId, openChatSignal, on
                     <div className="mt-4 pt-3 border-t border-gray-100 dark:border-slate-800 flex flex-wrap items-center justify-between gap-2 text-xs text-gray-500">
                       <div className="flex items-center gap-1.5 font-medium truncate max-w-[70%]">
                         <span className="font-bold text-gray-700 dark:text-gray-300">{t.chatSourceLabel}</span>
-                        <span className="truncate">{message.sources[0].title}, {message.sources[0].type || 'Section'} {message.sources[0].key || ''}</span>
+                        <span className="truncate">{[message.sources[0].title, provisionLabel(message.sources[0])].filter(Boolean).join(', ')}</span>
                         {message.evidenceVerdict === 'strong' && (
                           <span className="inline-flex items-center gap-1 px-1.5 py-0.5 bg-emerald-50 text-emerald-700 rounded text-[9px] font-bold shrink-0">
                             <CheckCircle2 className="w-2.5 h-2.5" /> {t.chatSourceVerified}
@@ -884,7 +885,8 @@ export default function ChatSection({ chatMode, activeChatId, openChatSignal, on
                 {[
                   { id: 'auto', label: 'Auto' },
                   { id: 'en', label: 'En' },
-                  { id: 'roman_urdu', label: 'Roman' }
+                  { id: 'roman_urdu', label: 'Roman' },
+                  { id: 'ur', label: 'اردو' }
                 ].map((opt) => (
                   <button
                     key={opt.id}
@@ -1087,9 +1089,9 @@ export default function ChatSection({ chatMode, activeChatId, openChatSignal, on
                   <div key={i} className="p-5 rounded-2xl border border-gray-100 dark:border-slate-800 bg-gray-50/30 dark:bg-slate-800/30 space-y-4">
                     <div className="flex flex-wrap items-start justify-between gap-2">
                       <div>
-                        {(src.type || src.key) && (
+                        {provisionLabel(src) && (
                           <span className="text-[10px] font-black uppercase tracking-widest text-[#01411C] bg-[#01411C]/10 px-2.5 py-0.5 rounded-md inline-block mb-1">
-                            {[src.type, src.key].filter(Boolean).join(' ')}
+                            {provisionLabel(src)}
                           </span>
                         )}
                         <h4 className="font-bold text-gray-900 dark:text-white text-sm md:text-base leading-snug">
