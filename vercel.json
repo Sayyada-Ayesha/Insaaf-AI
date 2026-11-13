@@ -8,6 +8,10 @@
     "api/[...all].js": {
       "maxDuration": 60,
       "includeFiles": "rag/**"
+    },
+    "api/index.js": {
+      "maxDuration": 60,
+      "includeFiles": "rag/**"
     }
   },
   "headers": [
@@ -22,6 +26,10 @@
     }
   ],
   "rewrites": [
+    {
+      "source": "/api/:p1/:p2*",
+      "destination": "/api/index?__vpath=:p1/:p2*"
+    },
     {
       "source": "/((?!api/).*)",
       "destination": "/index.html"
