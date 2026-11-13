@@ -182,12 +182,12 @@ try {
   fetchImpl = makeFetch({ content: JSON.stringify(VALID()) });
   result = await answerWithModel({ question: 'FIR kaise darj karwayen?', chunks: CHUNKS, language: 'roman_urdu', fetchImpl });
   check('Roman Urdu instruction is sent to the model', fetchImpl.calls[0]?.body.messages[0].content.includes('ROMAN URDU'));
-  check('Roman Urdu answer uses Roman section labels', result.text.includes('Laagu hone wala qanoon') && result.text.includes('Agla qadam'), result.text?.slice(0, 160));
+  check('Roman Urdu answer uses Roman section labels', result.text.includes('Laagu hone wala qanoon') && result.text.includes('Ab aap kya karein?'), result.text?.slice(0, 160));
 
   fetchImpl = makeFetch({ content: JSON.stringify(VALID()) });
   result = await answerWithModel({ question: 'ایف آئی آر کیسے درج کرائیں؟', chunks: CHUNKS, language: 'ur', fetchImpl });
   check('Urdu-script instruction is sent to the model', fetchImpl.calls[0]?.body.messages[0].content.includes('Urdu script'));
-  check('Urdu answer uses Urdu section labels', result.text.includes('قابلِ اطلاق قانون') && result.text.includes('اگلا قدم'), result.text?.slice(0, 160));
+  check('Urdu answer uses Urdu section labels', result.text.includes('متعلقہ قانون') && result.text.includes('اب آپ کیا کریں؟'), result.text?.slice(0, 160));
 
   // 6. Contract violations are rejected, never shown.
   fetchImpl = makeFetch({

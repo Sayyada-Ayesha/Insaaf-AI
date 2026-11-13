@@ -488,9 +488,13 @@ function answerEvidenceOrder(userQuery, chunks, answerLevel = 'beginner') {
 }
 
 function formatDirectResponse(retrievedChunks, detectedLang) {
-  let text = `**📖 DIRECT VERIFIED LEGAL REFERENCE**\n\n`;
-  if (detectedLang === 'roman_urdu' || detectedLang === 'ur') {
-    text += `*Yeh maloomat directly verified law corpus se li gayi hai — is mein koi AI generation nahi hai, is liye yeh bilkul asli qanooni matan hai.*\n\n*Neeche dafa ka matan qanoon ki asli (angrezi) zaban mein hai, kyunke qanooni ibarat ko badalna ghalat ho sakta hai. Agar aap ko is ka aasan Roman Urdu matlab chahiye to mujhe batayein — main aap ko samjha dunga.*\n\n---\n\n`;
+  const isUr = detectedLang === 'ur';
+  const isRoman = detectedLang === 'roman_urdu';
+  let text = isUr ? `**متعلقہ قانون**\n\n` : isRoman ? `**Laagu hone wala qanoon**\n\n` : `**Relevant law**\n\n`;
+  if (isUr) {
+    text += `یہ عبارت براہِ راست مستند قانونی ذخیرے سے لی گئی ہے اور اس میں کوئی تخلیقی اضافہ نہیں کیا گیا۔ قانونی عبارت انگریزی میں نقل کی گئی ہے تاکہ آپ اسے اصل دستاویز سے مل سکیں۔\n\n---\n\n`;
+  } else if (isRoman) {
+    text += `Yeh ibarat seedha verified qanooni zakhire se li gayi hai — is mein koi AI ka izafa nahi. Qanooni matan angrezi mein naqal kiya gaya hai taake aap use asal document se mila sakein.\n\n---\n\n`;
   } else {
     text += `*This information is retrieved directly from the verified law corpus without AI generation.*\n\n---\n\n`;
   }
@@ -516,7 +520,7 @@ function formatDirectResponse(retrievedChunks, detectedLang) {
     text += `${chunkText}\n\n`;
   });
   
-  text += `---\n\n**Sources**\n\n`;
+  text += `---\n\n**${isUr ? 'قانونی حوالے' : isRoman ? 'Qanooni hawalay' : 'Sources'}**\n\n`;
   retrievedChunks.forEach((c, i) => {
     const numberedKey = /^\d+[A-Za-z]*(?:\([0-9ivxIVX]+\))?$/.test(String(c.key || ''));
     const tail = numberedKey ? ` — ${c.type} ${c.key}` : '';

@@ -1728,6 +1728,17 @@ export class RAGEngine {
       extraDocBoostMap['expanded_remedies'] = 12.0;
       extraDocBoostMap['provincial_fulltext'] = 10.0;
     }
+    // A broad "women's rights" question is not about one clause. The consolidated
+    // women-protection document covers harassment, inheritance, domestic violence,
+    // maintenance, dowry and marriage registration; without a lift the equality
+    // article alone fills the window and the broad answer has nothing to work
+    // from. Specific women's questions are excluded — they keep their own
+    // records and do not need the whole document.
+    if (/(khawateen|women|woman|aurat|aurton|خواتین|عورت|عورتوں)/i.test(normalizedQuery)
+      && /(huqooq|haqooq|rights|protection|hifazat|حقوق|تحفظ)/i.test(normalizedQuery)
+      && !/\b(inheritance|wirasat|marriage|nikah|divorce|talaq|khula|maintenance|nafaqa|domestic|violence|custody|harass\w*|property|jaidad|dowry|jahez|acid)\b|وراثت|طلاق|خلع|نفقہ|تشدد|حراست|ہراسانی|جائیداد|جہیز/i.test(normalizedQuery)) {
+      extraDocBoostMap['women_protection_laws'] = 15.0;
+    }
     // Unpaid wages: the recovery route (grievance notice, Labour Court, standing
     // orders) sits in the remedies and workflow records, not in the Labour
     // domain's own documents, so a "salary withheld" question was answered from
@@ -2083,6 +2094,18 @@ export class RAGEngine {
     // policy the retrieval ranked first, while two instruments may still be
     // ranked against each other on the question's own words.
     topChunks.forEach(c => { c.authorityLead = saturatedDocs.includes(c.docId); });
+
+    // A broad women's-rights question is answered from several sections of the
+    // consolidated protection document (inheritance, harassment, domestic
+    // violence, maintenance, dowry, marriage registration), not from whichever
+    // three scored first. Widen this one window so the overview can name the
+    // areas the records actually cover; every other query keeps its 8-record set.
+    if (extraDocBoostMap['women_protection_laws'] === 15.0 && topChunks.length < 15) {
+      for (const c of sorted) {
+        if (topChunks.length >= 15) break;
+        if (c.docId === 'women_protection_laws' && !topChunks.includes(c)) topChunks.push(c);
+      }
+    }
 
     // Phase 3 context-strength signal for the composer: it must distinguish
     //   high  (A) a strong, directly-grounded match  -> answer from it

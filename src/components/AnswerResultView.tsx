@@ -266,7 +266,7 @@ export default function AnswerResultView(props: AnswerResultViewProps) {
                       : tr('The answer', 'Jawab')}
                 </h2>
                 <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">
-                  {isAnswering ? tr('Researching sources…', 'Makhaz mein dekha ja raha hai…') : tr('Source records', 'Makhaz records')}
+                  {isAnswering ? tr('Researching sources…', 'Makhaz mein dekha ja raha hai…') : tr('Sources', 'Qanooni hawalay')}
                 </span>
               </div>
               {isAnswering ? (

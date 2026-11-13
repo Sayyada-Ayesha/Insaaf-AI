@@ -85,7 +85,7 @@ async function answer(q, lang = 'en') {
   const a = await answer(q, 'roman_urdu');
   ok('F1 Roman CNIC answer produced', a.composed.length > 80, a.composed.slice(0, 200));
   ok('F2 Roman CNIC answer has no passport procedure', !/regional passport office|exit control list/i.test(a.composed));
-  ok('F3 Roman headings intact', /Masla|Laagu hone wala qanoon|Zaroori tahaffuz/.test(a.composed), a.composed.slice(0, 160));
+  ok('F3 Roman headings intact', /Jawab|Laagu hone wala qanoon|Zaroori tahaffuz/.test(a.composed), a.composed.slice(0, 160));
 }
 
 // --- 7. PART 3-B routing: domestic passport in either script, abroad stays abroad
@@ -110,7 +110,7 @@ async function answer(q, lang = 'en') {
   ok('G6 genuine Urdu abroad query still routes cross-border', rUrAb.domain === 'cross-border', rUrAb.domain);
 
   const aUr = await answer(UR_DOM, 'roman_urdu');
-  ok('G7 Urdu passport answer is composed in Roman Urdu', /Masla|Zaroori tahaffuz|qanoon/i.test(aUr.composed), aUr.composed.slice(0, 200));
+  ok('G7 Urdu passport answer is composed in Roman Urdu', /Jawab|Zaroori tahaffuz|qanoon/i.test(aUr.composed), aUr.composed.slice(0, 200));
   ok('G8 Urdu passport answer cites the passport authority', /dgip|passport/i.test(aUr.composed), aUr.composed.slice(0, 250));
   ok('G9 Urdu passport answer carries no consular/abroad framing', !/consular|embassy|overseas|abroad/i.test(aUr.composed),
     (aUr.composed.match(/[^\n]*(?:consular|embassy|overseas|abroad)[^\n]*/i) || [''])[0]);

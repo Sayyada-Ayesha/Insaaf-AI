@@ -32,7 +32,7 @@ const EN_PROBLEM = [
   'The police refused to register my FIR, how can I take action?',
   'My employer terminated me without notice or pay, what remedy do I have?'
 ];
-const EN_LABELS = ['Issue', 'Law that may apply', 'What the law says', 'Source', 'Important limitation'];
+const EN_LABELS = ['Answer', 'Relevant law', 'What you can do', 'Sources', 'Important limitation'];
 
 (async () => {
   // --- EN legal-problem queries get the structured owned-model answer ---
@@ -48,7 +48,7 @@ const EN_LABELS = ['Issue', 'Law that may apply', 'What the law says', 'Source',
 
   // --- Roman Urdu legal-problem query gets the Roman structure ---
   const ru = await ask('Mera landlord mujhe baghair notice ghar se nikal raha hai, main kya karun?', 'roman_urdu');
-  const ROMAN_LABELS = ['Masla', 'Laagu hone wala qanoon', 'Qanoon kya kehta hai', 'Makhaz', 'Zaroori tahaffuz'];
+  const ROMAN_LABELS = ['Jawab', 'Laagu hone wala qanoon', 'Ab aap kya karein?', 'Qanooni hawalay', 'Zaroori tahaffuz'];
   const rp = ROMAN_LABELS.filter(l => ru.includes(l));
   record('Roman Urdu structured answer', rp.length >= 4, `${rp.length}/5 labels [${rp.join(', ')}]`);
   record('  Roman answer has no Urdu script', !/[\u0600-\u06FF]/.test(ru), '');

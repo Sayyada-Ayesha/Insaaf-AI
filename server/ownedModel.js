@@ -26,14 +26,14 @@ import { groundAnswerCitations } from './answerGrounding.js';
 const EN = {
   issue: 'Issue',
   answer: 'Answer',
-  law: 'Law that may apply',
+  law: 'Relevant law',
   says: 'What the law says',
-  procedure: 'What to do / procedure',
+  procedure: 'What you can do',
   fees: 'Published fee schedule',
   remedy: 'Possible remedy',
   precedent: 'Relevant precedent',
   forum: 'Jurisdiction / forum',
-  source: 'Source',
+  source: 'Sources',
   evidence: 'How strongly this is grounded',
   exceptions: 'Exceptions and nuances',
   limit: 'Important limitation',
@@ -47,11 +47,11 @@ const ROMAN = {
   answer: 'Jawab',
   law: 'Laagu hone wala qanoon',
   says: 'Qanoon kya kehta hai',
-  procedure: 'Kya karna chahiye / tareeqa',
+  procedure: 'Ab aap kya karein?',
   remedy: 'Mumkina tadaruk',
   precedent: 'Mutaliqa misali faisla',
   forum: 'Jurisdiction / forum',
-  source: 'Makhaz',
+  source: 'Qanooni hawalay',
   evidence: 'Yeh kitne mazboot record par hai',
   exceptions: 'Istisnat aur nuqsaat',
   limit: 'Zaroori tahaffuz',
@@ -67,14 +67,14 @@ const ROMAN = {
 const URDU = {
   issue: 'مسئلہ',
   answer: 'جواب',
-  law: 'قابلِ اطلاق قانون',
+  law: 'متعلقہ قانون',
   says: 'قانون کیا کہتا ہے',
-  procedure: 'کیا کرنا چاہیے / طریقہ',
+  procedure: 'اب آپ کیا کریں؟',
   fees: 'شائع شدہ فیس',
   remedy: 'ممکنہ ازالہ',
   precedent: 'متعلقہ نظیر',
   forum: 'دائرہ اختیار / فورم',
-  source: 'ماخذ',
+  source: 'قانونی حوالے',
   evidence: 'یہ کس حد تک مستند ریکارڈ پر ہے',
   exceptions: 'استثنات و تفصیلات',
   limit: 'ضروری وضاحت',
@@ -987,7 +987,7 @@ export function detectAnswerStyle(userQuery) {
 }
 
 function answerPlan(intent, isProblem, hasProcedure, hasProvision, hasRecord = false) {
-  const sections = new Set(['issue', 'answer', 'says', 'source', 'limit']);
+  const sections = new Set(['answer', 'says', 'source', 'limit']);
   if (hasProvision || (isProblem && hasRecord)) sections.add('law');
   if (hasProcedure) sections.add('procedure');
   if (isProblem || PROBLEM_INTENTS.has(intent)) {
@@ -1201,6 +1201,297 @@ function synthesizeRomanAnswer(query, intent, topics, domain, chunks) {
       }
       return '';
   }
+}
+
+// ----------------------------------------------------------------------------
+// NATURAL GUIDANCE — what a knowledgeable person would say first.
+// A citizen asking "how do I get an FIR registered" needs the human sequence
+// (where to go, what to take, what to do if the police refuse) before a quoted
+// clause. These blocks are plain-language guidance in the selected language,
+// keyed to the question's intent. They are deliberately generic and accurate:
+// no right, deadline, fee or section number is invented, and the retrieved
+// records still drive the "Relevant law" and "Sources" sections. Nothing here
+// claims that every complaint qualifies for an FIR or any other remedy.
+// ----------------------------------------------------------------------------
+
+const WOMEN_AREA_LABELS = [
+  { re: /inheritance|succession|wirasat/i, en: 'inheritance', roman: 'wirasat', ur: 'وراثت' },
+  { re: /harass/i, en: 'protection from harassment at the workplace', roman: 'kaam ki jagah harassment se hifazat', ur: 'کام کی جگہ ہراسانی سے تحفظ' },
+  { re: /domestic violence|protection of women against violence|women against violence/i, en: 'protection from domestic violence', roman: 'gharelu tashaddud se hifazat', ur: 'گھریلو تشدد سے تحفظ' },
+  { re: /maintenance/i, en: 'maintenance (nafaqa)', roman: 'nafaqa', ur: 'نان نفقہ' },
+  { re: /dowry|bridal/i, en: 'dowry and bridal gifts', roman: 'jahez aur shaadi ke tohfe', ur: 'جہیز اور شادی کے تحفے' },
+  { re: /nikkah|nikah|marriage/i, en: 'marriage registration', roman: 'nikah ki registration', ur: 'نکاح کی رجسٹریشن' },
+  { re: /property|possession|residence order/i, en: 'property and residence rights', roman: 'jaidad aur rehaish ke huqooq', ur: 'جائیداد اور رہائش کے حقوق' }
+];
+
+function womenRightsLead(focus, lang) {
+  const areas = [];
+  for (const c of focus || []) {
+    const hay = `${c.chunkTitle || ''} ${c.title || ''}`;
+    for (const a of WOMEN_AREA_LABELS) {
+      if (a.re.test(hay) && !areas.includes(a[lang])) areas.push(a[lang]);
+    }
+  }
+  const list = areas.slice(0, 6);
+  const joined = list.length > 1
+    ? `${list.slice(0, -1).join(', ')}${lang === 'ur' ? ' اور ' : lang === 'roman' ? ' aur ' : ' and '}${list[list.length - 1]}`
+    : (list[0] || '');
+  if (lang === 'ur') {
+    return `پاکستانی قانون عورتوں کو کئی شعبوں میں تحفظ دیتا ہے${joined ? `، جن میں ${joined} شامل ہیں` : ''}۔ ہر معاملے پر کون سا قانون لاگو ہوگا یہ اس بات پر منحصر ہے کہ مسئلہ کیا ہے اور آپ کس صوبے میں ہیں۔`;
+  }
+  if (lang === 'roman') {
+    return `Pakistani qanoon khawateen ko kai shebon mein hifazat deta hai${joined ? `, jin mein ${joined} shamil hain` : ''}. Har mamlay par kaunsa qanoon laagu hoga yeh is baat par munhasir hai ke masla kya hai aur aap kis province mein hain.`;
+  }
+  return `Pakistani law gives women protection in several areas${joined ? `, including ${joined}` : ''}. Which law applies depends on the issue and on your province.`;
+}
+
+const GUIDANCE = {
+  'police-fir': {
+    en: {
+      lead: 'If something happened to you that can be reported as a cognizable offence, go to the police station for the area where it happened and tell the duty officer or the SHO what happened. Section 154 of the Code of Criminal Procedure deals with information given to the police about a cognizable offence. It does not mean every complaint automatically becomes an FIR — the police first look at whether the information discloses such an offence. Keep the date, place, details of the person involved and any evidence with you.',
+      steps: [
+        'Write down what happened in order: date, time, place, and who was involved.',
+        'Take the evidence you have — photos, messages, medical papers, witness names and phone numbers.',
+        'Go to the police station for the area where the incident happened and meet the duty officer or the SHO.',
+        'Tell them what happened clearly and ask that your information be recorded; ask for your copy or receipt.',
+        'If the police refuse to record it, send the same written complaint to the Superintendent of Police or District Police Officer and keep proof that you delivered it.',
+        'If that still does not work, ask a lawyer or a legal-aid service about filing a complaint before the court.'
+      ],
+      followUp: 'Tell me what happened and in which city or district, and I can point you to the right police station and the law that applies more closely.'
+    },
+    roman: {
+      lead: 'Agar aap ke saath aisa waqia pesh aaya hai jis par FIR darj ho sakti hai to apne ilaqe ke mutaliqa thane jayein aur duty officer ya SHO ko waqia ki tafseel batayein. Section 154 CrPC police ko cognizable offence ki ittila dene ke mamlay se mutaliq hai. Iska matlab yeh nahi ke har shikayat khud-ba-khud FIR ban jati hai — police pehle dekhti hai ke ittila mein aisa jurm nazar aata hai ya nahi. Waqia ki tareekh, jagah, mulzim ki maloomat aur maujood saboot saath rakhein.',
+      steps: [
+        'Waqia tarteeb se likhein: tareekh, waqt, jagah aur kaun shamil tha.',
+        'Jo saboot aap ke paas hai saath lein — tasveerein, messages, medical papers, gawahon ke naam aur phone numbers.',
+        'Jis ilaqe mein waqia hua us thane jayein aur duty officer ya SHO se milein.',
+        'Waqia saaf saaf batayein aur keh dein ke aap ki ittila record ki jaye; apni copy ya receipt zaroor lein.',
+        'Agar police record karne se inkaar kare to wahi likhit shikayat Superintendent of Police ya District Police Officer ko bhejein aur delivery ka saboot rakhein.',
+        'Agar phir bhi kaam na bane to wakeel ya legal-aid service se poochein ke adalat mein shikayat kaise dair ki jati hai.'
+      ],
+      followUp: 'Agar aap bata dein ke kya hua aur kis shehar ya zile mein, to main sahi thana aur mutaliqa qanoon zyada qareeb se bata sakta hoon.'
+    },
+    ur: {
+      lead: 'اگر آپ کے ساتھ کوئی ایسا واقعہ پیش آیا ہے جس پر ایف آئی آر درج ہو سکتی ہے تو اپنے علاقے کے متعلقہ تھانے میں جائیں اور ڈیوٹی افسر یا ایس ایچ او کو واقعے کی تفصیل بتائیں۔ دفعہ 154 ضابطہ فوجداری (CrPC) پولیس کو قابلِ سماعت جرم کی اطلاع دینے سے متعلق ہے۔ اس کا مطلب یہ نہیں کہ ہر شکایت خود بخود ایف آئی آر بن جاتی ہے — پولیس پہلے دیکھتی ہے کہ اطلاع میں ایسا جرم نظر آتا ہے یا نہیں۔ واقعے کی تاریخ، جگہ، ملزم کی معلومات اور موجود ثبوت ساتھ رکھیں۔',
+      steps: [
+        'واقعہ ترتیب سے لکھیں: تاریخ، وقت، جگہ اور کون شامل تھا۔',
+        'جو ثبوت آپ کے پاس ہے ساتھ لے جائیں — تصاویر، پیغامات، میڈیکل کاغذات، گواہوں کے نام اور فون نمبر۔',
+        'جس علاقے میں واقعہ پیش آیا اس تھانے میں جائیں اور ڈیوٹی افسر یا ایس ایچ او سے ملیں۔',
+        'واقعہ صاف صاف بتائیں اور کہیں کہ آپ کی اطلاع ریکارڈ کی جائے؛ اپنی کاپی یا رسید ضرور لیں۔',
+        'اگر پولیس ریکارڈ کرنے سے انکار کرے تو وہی تحریری شکایت ایس پی یا ڈسٹرکٹ پولیس آفیسر کو بھیجیں اور ثبوت رکھیں کہ وہ پہنچی ہے۔',
+        'اگر پھر بھی کام نہ بنے تو وکیل یا قانونی امداد سے پوچھیں کہ عدالت میں شکایت کیسے دائر کی جاتی ہے۔'
+      ],
+      followUp: 'اگر آپ بتا دیں کہ کیا ہوا اور کس شہر یا ضلع میں، تو میں صحیح تھانہ اور متعلقہ قانون زیادہ قریب سے بتا سکتا ہوں۔'
+    }
+  },
+  'cyber-harassment': {
+    en: {
+      lead: 'Online harassment, blackmail, fake accounts and sharing someone\'s private pictures without consent are offences under Pakistani law, including the Prevention of Electronic Crimes Act 2016. You can complain to the FIA Cyber Crime Wing and to the police for your area. Do not delete anything — the messages, screenshots and account links are your evidence.',
+      steps: [
+        'Save every message, post, comment and profile link, with screenshots that show the account name, date and time.',
+        'Write down what happened in order: date, time, platform, account names and what was said or sent.',
+        'Do not reply to or delete the material; block the account only after the evidence is saved.',
+        'Report the account to the platform as well.',
+        'File a written complaint with the FIA Cyber Crime Wing (complaint.fia.gov.pk) or the police station for your area, and keep the complaint copy or receipt.',
+        'If you feel unsafe, tell a trusted person and ask the police about protection; legal aid is available.'
+      ],
+      followUp: 'Tell me which platform was used and what was sent, and I can explain the next step for that situation.'
+    },
+    roman: {
+      lead: 'Online harassment, blackmail, fake accounts aur kisi ki private tasveerein ijazat ke baghair share karna Pakistani qanoon ke tehat jurm hain, jin mein Prevention of Electronic Crimes Act 2016 bhi shamil hai. Aap FIA Cyber Crime Wing aur apne ilaqe ki police ko shikayat de sakte hain. Kuch bhi delete na karein — messages, screenshots aur account links hi aap ka saboot hain.',
+      steps: [
+        'Har message, post, comment aur profile link mehfooz karein; screenshots mein account ka naam, tareekh aur waqt nazar aaye.',
+        'Waqia tarteeb se likhein: tareekh, waqt, platform, account ke naam aur kya kaha ya bheja gaya.',
+        'Jawab na dein aur material delete na karein; saboot mehfooz karne ke baad account block karein.',
+        'Platform ko bhi report karein.',
+        'FIA Cyber Crime Wing (complaint.fia.gov.pk) ya apne ilaqe ke thane mein likhit shikayat dair karein, aur uski copy ya receipt rakhein.',
+        'Agar aap khud ko ghair mehfooz mehsoos karein to kisi bharosemand insaan ko batayein aur police se hifazat ke baare mein poochein; legal aid bhi maujood hai.'
+      ],
+      followUp: 'Batayein kis platform par yeh hua aur kya bheja gaya, to main us surat-e-haal ka agla qadam bata sakta hoon.'
+    },
+    ur: {
+      lead: 'آن لائن ہراسانی، بلیک میلنگ، جعلی اکاؤنٹس اور کسی کی نجی تصاویر اس کی اجازت کے بغیر شیئر کرنا پاکستانی قانون کے تحت جرم ہیں، جن میں پریوینشن آف الیکٹرانک کرائمز ایکٹ 2016 شامل ہے۔ آپ ایف آئی اے سائبر کرائم ونگ اور اپنے علاقے کی پولیس کو شکایت دے سکتے ہیں۔ کچھ بھی ڈیلیٹ نہ کریں — پیغامات، اسکرین شاٹس اور اکاؤنٹ لنکس ہی آپ کے ثبوت ہیں۔',
+      steps: [
+        'ہر پیغام، پوسٹ، تبصرہ اور پروفائل لنک محفوظ کریں؛ اسکرین شاٹ میں اکاؤنٹ کا نام، تاریخ اور وقت نظر آئے۔',
+        'واقعہ ترتیب سے لکھیں: تاریخ، وقت، پلیٹ فارم، اکاؤنٹ کے نام اور کیا کہا یا بھیجا گیا۔',
+        'جواب نہ دیں اور مواد ڈیلیٹ نہ کریں؛ ثبوت محفوظ کرنے کے بعد اکاؤنٹ بلاک کریں۔',
+        'پلیٹ فارم کو بھی رپورٹ کریں۔',
+        'ایف آئی اے سائبر کرائم ونگ (complaint.fia.gov.pk) یا اپنے علاقے کے تھانے میں تحریری شکایت دائر کریں، اور اس کی کاپی یا رسید رکھیں۔',
+        'اگر آپ خود کو غیر محفوظ محسوس کریں تو کسی بھروسے مند شخص کو بتائیں اور پولیس سے تحفظ کے بارے میں پوچھیں؛ قانونی امداد بھی موجود ہے۔'
+      ],
+      followUp: 'بتائیں کہ یہ کس پلیٹ فارم پر ہوا اور کیا بھیجا گیا، تو میں اس صورتِ حال کا اگلا قدم بتا سکتا ہوں۔'
+    }
+  },
+  harassment: {
+    en: {
+      lead: 'If someone is harassing you at work, at university or in public, Pakistani law gives you protection. A workplace or educational institution must have an Inquiry Committee to receive a written complaint, and you can complain to the provincial Ombudsperson if the institution does not act.',
+      steps: [
+        'Write down the dates, places, what was said or done, and who saw it.',
+        'Keep messages, emails, screenshots or any other evidence.',
+        'File a written complaint with the institution\'s Inquiry Committee, or with the relevant authority for your situation.',
+        'Keep your copy and the receipt or diary number of the complaint.',
+        'If no action is taken, complain to the provincial Ombudsperson and ask a legal-aid service for help.'
+      ],
+      followUp: 'Tell me where the harassment happened — at work, at a university, or somewhere else — and I can be more specific.'
+    },
+    roman: {
+      lead: 'Agar koi aap ko kaam ki jagah, university ya kisi aur jagah pareshan kar raha hai to Pakistani qanoon aap ko hifazat deta hai. Workplace ya taleemi idara mein written shikayat ke liye Inquiry Committee hona zaroori hai, aur agar idara action na le to aap provincial Ombudsperson ko shikayat kar sakte hain.',
+      steps: [
+        'Tareekhen, jagah, kya kaha ya kiya gaya aur kis ne dekha — sab likh lein.',
+        'Messages, emails, screenshots ya koi aur saboot mehfooz karein.',
+        'Idare ki Inquiry Committee ya apne maslay ki mutaliqa authority ko likhit shikayat dein.',
+        'Shikayat ki apni copy aur receipt ya diary number zaroor rakhein.',
+        'Agar koi action na ho to provincial Ombudsperson ko shikayat karein aur legal-aid se madad lein.'
+      ],
+      followUp: 'Batayein yeh kaam ki jagah par hua, university mein ya kisi aur jagah, to main zyada wazeh rehnumai de sakta hoon.'
+    },
+    ur: {
+      lead: 'اگر کوئی آپ کو کام کی جگہ، یونیورسٹی یا کسی اور جگہ ہراساں کر رہا ہے تو پاکستانی قانون آپ کو تحفظ دیتا ہے۔ کام کی جگہ یا تعلیمی ادارے میں تحریری شکایت کے لیے انکوائری کمیٹی ہونا ضروری ہے، اور اگر ادارہ کارروائی نہ کرے تو آپ صوبائی محتسب (Ombudsperson) کو شکایت کر سکتے ہیں۔',
+      steps: [
+        'تاریخیں، جگہیں، کیا کہا یا کیا گیا اور کس نے دیکھا — سب لکھ لیں۔',
+        'پیغامات، ای میلز، اسکرین شاٹس یا کوئی اور ثبوت محفوظ کریں۔',
+        'ادارے کی انکوائری کمیٹی یا اپنے معاملے کی متعلقہ اتھارٹی کو تحریری شکایت دیں۔',
+        'شکایت کی اپنی کاپی اور رسید یا ڈائری نمبر ضرور رکھیں۔',
+        'اگر کوئی کارروائی نہ ہو تو صوبائی محتسب کو شکایت کریں اور قانونی امداد سے مدد لیں۔'
+      ],
+      followUp: 'بتائیں یہ کام کی جگہ پر ہوا، یونیورسٹی میں یا کسی اور جگہ، تو میں زیادہ واضح رہنمائی دے سکتا ہوں۔'
+    }
+  },
+  khula: {
+    en: {
+      lead: 'Khula is a wife\'s application to the Family Court to end the marriage. The court sends notice to the husband and tries reconciliation; if that does not work, the court decides the case according to the law. The application is filed in writing in the Family Court that has jurisdiction where you live.',
+      steps: [
+        'Gather your Nikah Nama, CNIC, marriage-registration papers and any documents about dowry, children or property.',
+        'Talk to a family lawyer or a legal-aid service about your situation and the correct Family Court.',
+        'File a written khula application in the Family Court.',
+        'Attend the hearings, including the reconciliation stage, and keep every notice and order.',
+        'After the decree, get a certified copy and ask your lawyer about the registration and waiting-period steps that follow.'
+      ],
+      followUp: 'Tell me your province and whether there are children or property involved, and I can add the points that matter for your case.'
+    },
+    roman: {
+      lead: 'Khula biwi ki taraf se Family Court mein shaadi khatam karne ki darkhwast hai. Court shohar ko notice bhejti hai aur sulah ki koshish karti hai; agar sulah na ho to court qanoon ke mutabiq faisla karti hai. Darkhwast likhit mein us Family Court mein dair hoti hai jahan aap rehti hain.',
+      steps: [
+        'Nikah Nama, CNIC, nikah registration ke kaghazat aur jahez, bachon ya jaidad se mutaliq documents ikatthe karein.',
+        'Family wakeel ya legal-aid service se apni surat-e-haal aur sahi Family Court ke baare mein baat karein.',
+        'Family Court mein likhit khula application dair karein.',
+        'Sunnaiyon mein hazir hon, jis mein sulah ka marhala bhi shamil hai, aur har notice aur order sambhal kar rakhein.',
+        'Decree ke baad certified copy lein aur wakeel se registration aur iddat ke agle qawaneen ke baare mein poochein.'
+      ],
+      followUp: 'Apna province aur yeh batayein ke bachay ya jaidad shamil hai ya nahi, to main aap ke case ke mutaliq mazeed nuktay bata sakta hoon.'
+    },
+    ur: {
+      lead: 'خلع بیوی کی طرف سے فیملی کورٹ میں نکاح ختم کرنے کی درخواست ہے۔ عدالت شوہر کو نوٹس بھیجتی ہے اور صلح کی کوشش کرتی ہے؛ اگر صلح نہ ہو تو عدالت قانون کے مطابق فیصلہ کرتی ہے۔ درخواست تحریری طور پر اس فیملی کورٹ میں دائر ہوتی ہے جہاں آپ رہتی ہیں۔',
+      steps: [
+        'نکاح نامہ، شناختی کارڈ، نکاح کی رجسٹریشن کے کاغذات اور جہیز، بچوں یا جائیداد سے متعلق دستاویزات جمع کریں۔',
+        'فیملی وکیل یا قانونی امداد سے اپنی صورتِ حال اور درست فیملی کورٹ کے بارے میں بات کریں۔',
+        'فیملی کورٹ میں تحریری خلع کی درخواست دائر کریں۔',
+        'سماعتوں میں حاضر ہوں، جن میں صلح کا مرحلہ بھی شامل ہے، اور ہر نوٹس اور حکم نامہ سنبھال کر رکھیں۔',
+        'ڈگری کے بعد تصدیق شدہ کاپی لیں اور وکیل سے رجسٹریشن اور عدت کے بعد کے قانونی مراحل کے بارے میں پوچھیں۔'
+      ],
+      followUp: 'اپنا صوبہ اور یہ بتائیں کہ بچے یا جائیداد شامل ہیں یا نہیں، تو میں آپ کے معاملے سے متعلق مزید نکات بتا سکتا ہوں۔'
+    }
+  },
+  tenancy: {
+    en: {
+      lead: 'A landlord cannot simply keep your security deposit without a legal reason. What you can do depends on your written tenancy agreement and on the rent law of your province, so keep the agreement and any receipt for the deposit.',
+      steps: [
+        'Read the tenancy agreement for the deposit, notice and handover clauses.',
+        'Write a written demand to the landlord asking for the deposit back, and keep proof that it was delivered.',
+        'Gather proof of payment — bank transfer, receipt, or witnesses.',
+        'If the landlord still refuses, ask a lawyer or legal-aid service about the Rent Controller or civil court for your area.',
+        'If you are moving out, do not hand over the keys without a written condition and handover report.'
+      ],
+      followUp: 'Tell me your province and whether you have a written agreement, and I can narrow down the correct forum.'
+    },
+    roman: {
+      lead: 'Makaan malik kisi qanooni wajah ke baghair aap ka security deposit nahi rakh sakta. Aap kya kar sakte hain yeh aap ke likhit kiraya agreement aur aap ke province ke rent qanoon par munhasir hai, is liye agreement aur deposit ki receipt sambhal kar rakhein.',
+      steps: [
+        'Kiraya agreement mein deposit, notice aur handover ki shartein parhein.',
+        'Makaan malik ko likhit demand bhejein ke deposit wapas kiya jaye, aur us ke pahunchne ka saboot rakhein.',
+        'Payment ka saboot ikattha karein — bank transfer, receipt ya gawah.',
+        'Agar makaan malik phir bhi inkaar kare to wakeel ya legal-aid se apne ilaqe ke Rent Controller ya civil court ke baare mein poochein.',
+        'Agar aap ghar chhod rahe hain to likhit condition aur handover report ke baghair chabiyan na dein.'
+      ],
+      followUp: 'Apna province aur yeh batayein ke likhit agreement hai ya nahi, to main sahi forum tak baat mehdood kar sakta hoon.'
+    },
+    ur: {
+      lead: 'مکان مالک کسی قانونی وجہ کے بغیر آپ کا سیکیورٹی ڈپازٹ نہیں رکھ سکتا۔ آپ کیا کر سکتے ہیں یہ آپ کے تحریری کرایہ نامے اور آپ کے صوبے کے کرایہ داری قانون پر منحصر ہے، اس لیے کرایہ نامہ اور ڈپازٹ کی رسید سنبھال کر رکھیں۔',
+      steps: [
+        'کرایہ نامے میں ڈپازٹ، نوٹس اور حوالگی کی شرائط پڑھیں۔',
+        'مکان مالک کو تحریری مطالبہ بھیجیں کہ ڈپازٹ واپس کیا جائے، اور اس کے پہنچنے کا ثبوت رکھیں۔',
+        'ادائیگی کا ثبوت جمع کریں — بینک ٹرانسفر، رسید یا گواہ۔',
+        'اگر مکان مالک پھر بھی انکار کرے تو وکیل یا قانونی امداد سے اپنے علاقے کے رنٹ کنٹرولر یا سول عدالت کے بارے میں پوچھیں۔',
+        'اگر آپ گھر چھوڑ رہے ہیں تو تحریری حالت اور حوالگی رپورٹ کے بغیر چابیاں نہ دیں۔'
+      ],
+      followUp: 'اپنا صوبہ اور یہ بتائیں کہ تحریری معاہدہ ہے یا نہیں، تو میں صحیح فورم تک بات محدود کر سکتا ہوں۔'
+    }
+  },
+  student: {
+    en: {
+      lead: 'Students in Pakistan have protections under their university\'s own regulations and HEC policies. These usually cover fair treatment, a written disciplinary process, protection from harassment, fee and refund rules, and a way to complain when a decision is unfair. The exact rule depends on your university.',
+      steps: [
+        'Read your university\'s student handbook or regulations and note the complaint and appeal channel.',
+        'Put your request or complaint in writing.',
+        'Get it received with a diary number or stamp, and keep a copy.',
+        'Follow the internal complaint or appeal path in the order the regulations set.',
+        'If the university does not respond, ask HEC or a legal-aid service about the next step.'
+      ],
+      followUp: 'Tell me which university and what the problem is, and I can point to the rule that usually covers it.'
+    },
+    roman: {
+      lead: 'Pakistan mein students ko apni university ke regulations aur HEC policies ke tehat hifazat hasil hai. In mein aam tor par insaaf, likhit disciplinary tareeqa, harassment se hifazat, fees aur refund ke rules, aur ghair-munsif faislay ke khilaf shikayat ka raasta shamil hota hai. Asal rule aap ki university par munhasir hai.',
+      steps: [
+        'Apni university ka student handbook ya regulations parhein aur complaint aur appeal ka channel note karein.',
+        'Apni darkhwast ya shikayat likhit mein dein.',
+        'Us par diary number ya stamp laga kar receive karwayein aur copy rakhein.',
+        'Regulations ke mutabiq internal complaint ya appeal ke marahil tarteeb se follow karein.',
+        'Agar university jawab na de to HEC ya legal-aid service se agle qadam ke baare mein poochein.'
+      ],
+      followUp: 'Batayein kaunsi university hai aur masla kya hai, to main us qanoon ki taraf ishara kar sakta hoon jo aam tor par is par lagta hai.'
+    },
+    ur: {
+      lead: 'پاکستان میں طلبہ کو اپنی یونیورسٹی کے ضوابط اور ایچ ای سی کی پالیسیوں کے تحت تحفظ حاصل ہے۔ ان میں عام طور پر انصاف، تحریری تادیبی طریقہ کار، ہراسانی سے تحفظ، فیس اور ریفنڈ کے قواعد، اور غیر منصفانہ فیصلے کے خلاف شکایت کا راستہ شامل ہوتا ہے۔ اصل قاعدہ آپ کی یونیورسٹی پر منحصر ہے۔',
+      steps: [
+        'اپنی یونیورسٹی کا طلبہ ہینڈ بک یا ضوابط پڑھیں اور شکایت اور اپیل کا راستہ نوٹ کریں۔',
+        'اپنی درخواست یا شکایت تحریری طور پر دیں۔',
+        'اس پر ڈائری نمبر یا مہر لگوا کر وصول کریں اور ایک کاپی رکھیں۔',
+        'ضوابط کے مطابق ادارے کے اندر شکایت یا اپیل کے مراحل ترتیب سے مکمل کریں۔',
+        'اگر یونیورسٹی جواب نہ دے تو ایچ ای سی یا قانونی امداد سے اگلے قدم کے بارے میں پوچھیں۔'
+      ],
+      followUp: 'بتائیں کون سی یونیورسٹی ہے اور مسئلہ کیا ہے، تو میں اس قاعدے کی طرف اشارہ کر سکتا ہوں جو عام طور پر اس پر لاگو ہوتا ہے۔'
+    }
+  }
+};
+
+const WOMEN_BROAD_RE = /(khawateen|khawateen\s+ke\s+huqooq|women'?s\s+rights|rights\s+of\s+women|خواتین|عورت|عورتوں)/i;
+const WOMEN_SPECIFIC_RE = /\b(inheritance|wirasat|marriage|nikah|divorce|talaq|khula|maintenance|nafaqa|domestic|violence|custody|harass\w*|workplace|job|property|jaidad|dowry|jahez|acid)\b|وراثت|شادی|طلاق|خلع|نفقہ|گھریلو|تشدد|حراست|ہراسانی|جائیداد|جہیز/i;
+
+function guidanceKey(query) {
+  const q = String(query || '');
+  if (WOMEN_BROAD_RE.test(q) && !WOMEN_SPECIFIC_RE.test(q)) return 'women-rights';
+  if (/(cyber|online|internet|facebook|whatsapp|instagram|snapchat|tiktok|blackmail|fake account|سائبر|آن لائن|انٹرنیٹ|بلیک میل|جعلی اکاؤنٹ)/i.test(q)) return 'cyber-harassment';
+  if (/(khula|خلع)/i.test(q)) return 'khula';
+  if (/(\bfir\b|first information report|police complaint|police refuse|ایف\s*آئی\s*آر|تھانہ|تھانے)/i.test(q)) return 'police-fir';
+  if (/(harass|ہراساں|ہراسانی|pareshan)/i.test(q)) return 'harassment';
+  if (/(security deposit|tenant|landlord|kiraya|kirayadar|rent(?:ed)?\s+(?:house|flat)|deposit|کرایہ|کرایہ دار|مالک مکان|ڈپازٹ)/i.test(q)) return 'tenancy';
+  if (/(student|university|college|hostel|scholarship|طالب علم|طلبہ|یونیورسٹی|کالج|وظیفہ)/i.test(q)) return 'student';
+  return null;
+}
+
+function naturalGuidance(key, lang, ctx = {}) {
+  if (key === 'women-rights') {
+    const lead = womenRightsLead(ctx.focus, lang);
+    const followUp = lang === 'ur'
+      ? 'آپ کو ان میں سے کس معاملے کی معلومات چاہیے؟ مسئلہ بتائیں تو میں متعلقہ قانون اور عملی اقدامات سمجھا دوں گا۔'
+      : lang === 'roman'
+        ? 'Aap ko in mein se kis mamlay ki maloomat chahiye? Masla bata dein to main mutaliqa qanoon aur amli qadam samjha doon ga.'
+        : 'Which of these areas is your situation about? Tell me the issue and I will explain the law and the practical steps that apply.';
+    return { lead, steps: [], followUp };
+  }
+  const block = GUIDANCE[key];
+  if (!block) return null;
+  return block[lang] || block.en || null;
 }
 
 /**
@@ -1420,11 +1711,25 @@ function recordCitation(chunk) {
 /** A short heading for a record that is not a numbered statutory provision. */
 function topicLabel(chunk) {
   const raw = displayTitle(chunk?.chunkTitle || '')
-    .replace(/^\s*(?:overview|summary)\s*:\s*/i, '').trim();
+    // Ingest labels ("SCOPE:", "WING:", "SUBSTANCE:") name the parsing layer,
+    // not the record, and must never be printed as a source card title.
+    .replace(/^\s*(?:overview|summary|scope|wing|office|coverage|source|verification|substance)\s*:\s*/i, '')
+    .replace(/[\s:;.,—–-]+$/, '')
+    .trim();
   const head = (raw.split(/\s+[—–:]\s+|\.\s/)[0] || '').trim();
   const label = (head.length >= 8 ? head : raw).replace(/\s+/g, ' ');
-  if (!label) return String(chunk?.title || 'Relevant record');
+  if (!label || /^(?:scope|wing|office|coverage|source|verification|substance|overview|summary)$/i.test(label)) {
+    return String(chunk?.title || 'Relevant record');
+  }
   return label.length > 90 ? `${label.slice(0, 90).replace(/\s+\S*$/, '')}…` : label;
+}
+
+/** The record's own text must name this provision; a sequential chunk key does not. */
+function recordStatesOwnKey(chunk, key) {
+  const k = String(key || '');
+  if (!/^\d+[a-z]*$/i.test(k)) return true;
+  const text = `${chunk?.chunkTitle || ''} ${chunk?.text || ''}`;
+  return new RegExp(`(?:section|article|rule|order|dafa|dhara|دفعہ|آرٹیکل)\\s*(?:no\\.?)?\\s*#?\\s*${k}\\b`, 'i').test(text);
 }
 
 // Build concise legal basis — just the law names and sections, not full text.
@@ -1436,21 +1741,26 @@ function buildConciseLegalBasis(chunks, L, cap = 4, scopeLang = null, asked = nu
   for (const c of [...provisions, ...topics].slice(0, cap)) {
     // Only legislation records carry a real section/article number in their key.
     // Guides and directories number their entries sequentially, so printing
-    // "Section 1" for one would quote a citation that does not exist.
+    // "Section 1" for one would quote a citation that does not exist, and the
+    // last grounding pass would then delete the invented label mid-line.
     const isLegislation = String(c.documentType || '') === 'Legislation';
     const numbered = /^\d+[a-z]*$/i.test(String(c.key)) || /^ORDER_/i.test(String(c.key));
-    const own = recordCitation(c);
-    const label = own
-      || (isLegislation && numbered ? L.provision(c.type, c.key) : topicLabel(c));
+    const own = (recordCitation(c) || '').trim();
+    let label = (own
+      || (isLegislation && numbered && recordStatesOwnKey(c, c.key) ? L.provision(c.type, c.key) : topicLabel(c))
+      || displayTitle(c.title || '')
+      || 'Record').trim();
     // A guide document holds many services; its own title lists them all. For
     // those documents the record IS its section, so name and attribute the
     // section. Legislation and case law keep the instrument's name and court.
     const isGuide = /guide|digest|workflow|handbook|manual|directory/i.test(String(c.documentType || ''));
     const name = isGuide ? (displayTitle(c.chunkTitle || '') || c.title) : c.title;
+    if (label === name) label = '';
     const authority = recordAuthority(c);
     const auth = authority ? ` (${authority})` : '';
-    const layer = scopeLang ? scopeLabel(deriveChunkScope(c), scopeLang, asked) : null;
-    lines.push(`- ${label}${layer ? ` [${layer}]` : ''} — ${name}${auth}${L.statusNote(c.legalStatus)}`);
+    lines.push(label
+      ? `- ${label} — ${name}${auth}${L.statusNote(c.legalStatus)}`
+      : `- ${name}${auth}${L.statusNote(c.legalStatus)}`);
   }
   return lines.length > 0 ? lines.join('\n') : null;
 }
@@ -1459,16 +1769,24 @@ function buildConciseLegalBasis(chunks, L, cap = 4, scopeLang = null, asked = nu
 // the file it sits in: one civic document carries the CNIC, passport and NICOP
 // records, and quoting the file title made every civic answer look like it came
 // from the same generic page.
-function buildSources(chunks, cap = 4, asked = null) {
+function buildSources(chunks, cap = 4, asked = null, lang = 'en') {
   const seen = new Set();
   const lines = [];
   for (const c of chunks.slice(0, cap)) {
-    const label = displayTitle(c.chunkTitle || '') || c.title;
+    const label = topicLabel(c);
     const url = recordSource(c, asked);
     const id = `${label}|${url}`;
     if (seen.has(id)) continue;
     seen.add(id);
-    lines.push(url ? `- ${label}: ${url}` : `- ${label}`);
+    // A portal home page is the publisher, not a link to this record. Saying so
+    // stops a bare pakistancode.gov.pk (or any ministry home page) from reading
+    // as a direct link to the provision or complaint form the answer describes.
+    let bareHome = false;
+    try { bareHome = Boolean(url) && new URL(url).pathname.replace(/\/+$/, '') === ''; } catch { bareHome = false; }
+    const note = bareHome
+      ? (lang === 'ur' ? ' (سرکاری ویب سائٹ)' : lang === 'roman_urdu' ? ' (sarkari website)' : ' (official website)')
+      : '';
+    lines.push(url ? `- ${label}: ${url}${note}` : `- ${label}`);
   }
   return lines.length > 0 ? lines.join('\n') : null;
 }
@@ -1570,7 +1888,10 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   // same nouns; the step-by-step record is what the citizen asked for.
   const asksHowToRecover = /\b(recover\w*|wasool|not\s+paid|unpaid|arrears?|non.?payment|evict\w*|withh(?:o|e)ld\w*)\b/i.test(String(userQuery || ''));
   const isProcedureRecord = (c) => /PROCEDURE|WORKFLOW|_STAGES|_PROCESS|STEPS/i.test(String(c?.key || ''));
-  let pool = scopePoolToServices(chunks.slice(0, lvl.chunkCap), askedServices);
+  const naturalKey = guidanceKey(userQuery);
+  const broadTopic = naturalKey === 'women-rights';
+  const chunkCap = broadTopic ? 15 : lvl.chunkCap;
+  let pool = scopePoolToServices(chunks.slice(0, chunkCap), askedServices);
   // The depth cap selects the first N records the gate returned. When the gate's
   // own ordering placed a clause above the procedure, the procedure fell outside
   // the cap and the answer lost the only record that says what to do. For a
@@ -1578,8 +1899,8 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   if (asksHowToRecover && !pool.some(isProcedureRecord)) {
     const proc = scopePoolToServices(chunks, askedServices).find(c => isProcedureRecord(c) && !pool.includes(c));
     if (proc) {
-      pool = pool.length >= lvl.chunkCap
-        ? [...pool.slice(0, lvl.chunkCap - 1), proc]
+      pool = pool.length >= chunkCap
+        ? [...pool.slice(0, chunkCap - 1), proc]
         : [...pool, proc];
     }
   }
@@ -1635,23 +1956,23 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   const plan = answerPlan(detectQueryIntent(userQuery, domain), isLegalProblemQuery(userQuery),
     hasProcedure, provisions.length > 0, focus.length > 0);
 
-  // 0. Issue — one line naming what the user asked, then the answer. Skipped for
-  //    non-Latin input: echoing an Urdu-script question here would put Urdu script
-  //    inside an answer that Part 5 requires to come back in Roman Urdu.
-  const statedIssue = String(userQuery || '').trim().replace(/\s+/g, ' ');
-  if (!shortStyle && plan.has('issue') && statedIssue && !/[\u0600-\u06FF\u0900-\u097F]/.test(statedIssue)) {
-    push(L.issue, clipSentences(statedIssue, 2, 240));
-  }
+  // 0. No "Issue" restatement: repeating the user's question above the answer
+  //    adds nothing a reader needs and was the first place a raw query leaked
+  //    into a supposed legal explanation.
 
-  // 1. Direct answer — this record's own words where it has them, and the legal
-  //    LAYER those words belong to (Part 7). Roman Urdu keeps the plain-language
-  //    composition: quoting an English statute inside a Roman answer would break
-  //    the language rule.
+  // 1. Direct answer — natural guidance in the selected language first, then the
+  //    record's own wording where there is no guidance block, and the legal
+  //    LAYER those words belong to (Part 7). Roman/Urdu guidance is written in
+  //    that language: quoting an English procedure dump inside a Roman answer
+  //    broke the language rule and buried the actionable part.
   const aScope = deriveChunkScope(answerRecord);
   const askedHere = (evidence && evidence.scope && evidence.scope.asked) || detectQueryScope(userQuery);
   const showFraming = aScope.scopeLevel !== 'national'
     || Boolean(askedHere && (askedHere.city || askedHere.province || askedHere.institutionNamed));
   const framing = showFraming ? scopeLabel(aScope, scopeLang, askedHere) : null;
+  const natural = naturalKey
+    ? naturalGuidance(naturalKey, isUrdu ? 'ur' : (isRoman ? 'roman' : 'en'), { focus, userQuery, domain })
+    : null;
   const synthesis = clipSentences(synthesizePlainAnswer(userQuery, focus, domain, isRoman), lvl.answerSentences, lvl.answerChars);
   // Roman Urdu quotes one bounded clause, not the paragraph it sits in — the same
   // ceiling the "says" part already uses. Quoting nothing left the Roman answer
@@ -1672,7 +1993,8 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
     : isRoman
       ? (romanClause ? `Record ke mutabiq: ${romanClause}` : synthesis)
       : recordLead(answerRecord, lvl.answerSentences, lvl.answerChars, userQuery);
-  let directAnswer = lead || synthesis;
+  let directAnswer = (natural && natural.lead) || lead || synthesis;
+  if (natural && natural.followUp) directAnswer = `${directAnswer}\n\n${natural.followUp}`;
   if (directAnswer && framing) directAnswer = `${framing}: ${directAnswer}`;
   // Never let a university/city/province record read as Pakistan-wide law.
   const guard = applicabilityNote(aScope, scopeLang);
@@ -1680,8 +2002,14 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   if (plan.has('answer') && directAnswer) push(L.answer, directAnswer);
 
   // 2. Legal basis — only where the level asks for provisions, never a law dump.
+  //    The record the answer itself was built from leads, so the "law" line names
+  //    the instrument the guidance above came from rather than a record that only
+  //    shares a word with the question.
   if (!shortStyle && plan.has('law') && lvl.legalBasis > 0) {
-    const lawLines = buildConciseLegalBasis(support, L, lvl.legalBasis, scopeLang, askedHere);
+    const lawSupport = answerRecord
+      ? [answerRecord, ...support.filter(c => c !== answerRecord)]
+      : support;
+    const lawLines = buildConciseLegalBasis(lawSupport, L, lvl.legalBasis, scopeLang, askedHere);
     if (lawLines) push(L.law, lawLines);
   }
 
@@ -1717,7 +2045,7 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
     : isRoman
       ? (romanQuote ? `Verifiable record ke mutabiq: ${romanQuote}` : '')
       : saysText;
-  if (!shortStyle && plan.has('says') && explanation) {
+  if (!shortStyle && plan.has('says') && explanation && !natural) {
     push(L.says, explanation);
   }
 
@@ -1755,19 +2083,23 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
     }
   }
   if (!shortStyle && plan.has('procedure')) {
-    const steps = buildPracticalSteps(userQuery, grounded, domain, isRoman);
-    // A numbered sequence is only honest whole: dropping the step the direct
-    // answer already quoted renumbered the rest (source steps 1, 2, 4 printed as
-    // 1, 2, 3) and made the opposing party's reply look like the reader's third
-    // action.
-    const fresh = steps && /(?:^|\n)1[.)]\s/.test(steps)
-      ? steps
-      : dropRepeatedLines(steps, out.join('\n'));
-    if (fresh) {
-      const stepText = isUrdu
-        ? `درج ذیل اقدامات متعلقہ مستند ریکارڈ سے لیے گئے ہیں (اصل متن انگریزی میں):\n${clipList(fresh, lvl.steps)}`
-        : clipList(fresh, lvl.steps);
-      push(L.procedure, stepText);
+    if (natural && natural.steps && natural.steps.length) {
+      push(L.procedure, natural.steps.map((s, i) => `${i + 1}. ${s}`).join('\n'));
+    } else {
+      const steps = buildPracticalSteps(userQuery, grounded, domain, isRoman);
+      // A numbered sequence is only honest whole: dropping the step the direct
+      // answer already quoted renumbered the rest (source steps 1, 2, 4 printed as
+      // 1, 2, 3) and made the opposing party's reply look like the reader's third
+      // action.
+      const fresh = steps && /(?:^|\n)1[.)]\s/.test(steps)
+        ? steps
+        : dropRepeatedLines(steps, out.join('\n'));
+      if (fresh) {
+        const stepText = isUrdu
+          ? `درج ذیل اقدامات متعلقہ مستند ریکارڈ سے لیے گئے ہیں (اصل متن انگریزی میں):\n${clipList(fresh, lvl.steps)}`
+          : clipList(fresh, lvl.steps);
+        push(L.procedure, stepText);
+      }
     }
   }
 
@@ -1814,7 +2146,7 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   // 10. Source. Portals named inside the cited document's own accepted records
   //     are listed too — clipping depth must not silently drop a source the
   //     evidence itself provides.
-  const srcLines = buildSources(focus, lvl.sources, askedServices);
+  const srcLines = buildSources(focus, broadTopic ? 4 : lvl.sources, askedServices, scopeLang);
   const portals = srcLines ? siblingPortals(focus.slice(0, lvl.sources), chunks) : [];
   if (plan.has('source') && srcLines) {
     push(L.source, [srcLines, ...portals.map(u => `- ${isUrdu ? 'سرکاری پورٹل' : isRoman ? 'Sarkari portal' : 'Official portal'}: ${u}`)].join('\n'));
