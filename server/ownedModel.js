@@ -1715,7 +1715,12 @@ function naturalGuidance(key, lang, ctx = {}) {
     const base = block && (block[lang] || block.en);
     const sub = cyberSubtype(ctx.userQuery);
     if (!base || !sub) return base || null;
-    const steps = base.steps.slice();
+    let steps = base.steps.slice();
+    // The impersonation step already says to report the profile, so the generic
+    // "report the account to the platform" line would only repeat it.
+    if (sub === 'impersonation') {
+      steps = steps.filter(s => !/platform ko bhi report|report the account to the platform|پلیٹ فارم کو بھی رپورٹ/i.test(s));
+    }
     const extra = CYBER_SUB_STEP[sub][lang];
     if (extra) steps.splice(Math.min(2, steps.length), 0, extra);
     return {
@@ -1957,12 +1962,12 @@ function topicLabel(chunk) {
   const raw = displayTitle(chunk?.chunkTitle || '')
     // Ingest labels ("SCOPE:", "WING:", "SUBSTANCE:") name the parsing layer,
     // not the record, and must never be printed as a source card title.
-    .replace(/^\s*(?:overview|summary|scope|wing|office|coverage|source|verification|substance)\s*:\s*/i, '')
+    .replace(/^\s*(?:overview|summary|scope|wing|office|coverage|source|verification|substance|procedure|steps)\s*:\s*/i, '')
     .replace(/[\s:;.,—–-]+$/, '')
     .trim();
   const head = (raw.split(/\s+[—–:]\s+|\.\s/)[0] || '').trim();
   const label = (head.length >= 8 ? head : raw).replace(/\s+/g, ' ');
-  if (!label || /^(?:scope|wing|office|coverage|source|verification|substance|overview|summary)$/i.test(label)) {
+  if (!label || /^(?:scope|wing|office|coverage|source|verification|substance|overview|summary|procedure|steps)$/i.test(label)) {
     return String(chunk?.title || 'Relevant record');
   }
   return label.length > 90 ? `${label.slice(0, 90).replace(/\s+\S*$/, '')}…` : label;
