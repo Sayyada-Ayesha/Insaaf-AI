@@ -662,17 +662,20 @@ export class RAGEngine {
     // domestic labour/criminal/cyber domains). Offline
     // workplace/teacher harassment must NOT route here (it is covered by the
     // workplace-harassment laws via the labour/rights domains).
-    else if ((/\b(cyber|internet|harass\w*|stalk\w*|hack\w*|online|peca|cybercrime|bully|bullying|blackmail\w*|extort\w*|whatsapp|data|website|fia|1991|identity|electronic|digital|information.?system|unauthorized|social media|social network|facebook|instagram|tiktok|snapchat|twitter|deepfake|morphed|fake (?:profile|account|id)|(?:profile|account) (?:photo|picture|image|video))\b/i.test(normalizedQuery) || /(ہراسگی|انٹرنیٹ|سائبر|بلیک\s*میل|آن\s*لائن|بلیک\s*میلنگ|سوشل\s*میڈیا|جعلی\s*پروفائل|پروفائل)/.test(query))
+    else if ((/\b(cyber|internet|harass\w*|stalk\w*|hack\w*|online|peca|cybercrime|bully|bullying|blackmail\w*|extort\w*|whatsapp|data|website|fia|1991|identity|electronic|digital|information.?system|unauthorized|social media|social network|facebook|instagram|tiktok|snapchat|twitter|deepfake|morphed|fake (?:profile|account|id)|(?:profile|account) (?:photo|picture|image|video)|tasveer\w*|tasvir\w*|tasviren|be-?ijaazat|ijazat (?:ke )?baghair|private (?:photo|picture|image|video)|intimate (?:photo|picture|image|video))\b/i.test(normalizedQuery) || /(ہراسگی|انٹرنیٹ|سائبر|بلیک\s*میل|آن\s*لائن|بلیک\s*میلنگ|سوشل\s*میڈیا|جعلی\s*پروفائل|پروفائل|تصویر|تصاویر|نجی\s*تصاویر|بے\s*اجازت)/.test(query))
         && !isHigherEdQuery
         && !(/\b(workplace|office|employer|boss|colleague|coworker|universit(?:y|ies)|uni|campus|student\w*|hostel\w*|teacher\w*|professor\w*|lecturer\w*|faculty|staff|manager|job|work)\b/i.test(normalizedQuery) && !/\b(online|internet|social|facebook|whatsapp|sms|email|website|mobile|phone|account|profile|message|youtube|twitter|instagram|tiktok|app)\b/i.test(normalizedQuery))) {
       domain = 'cyber';
       const cyberTerms = [];
       if (/harass|stalk|bully/i.test(normalizedQuery)) cyberTerms.push('cyberstalking harassment Section 19 24 PECA punishment');
       if (/hack|unauthorized|access/i.test(normalizedQuery)) cyberTerms.push('unauthorized access Section 3 4 5 PECA punishment');
-      if (/blackmail|extort/i.test(normalizedQuery)) cyberTerms.push('blackmail extortion online threat Section 24 PECA');
-      if (/identity|fake|impersonat|profile/i.test(normalizedQuery)) cyberTerms.push('identity information Section 13 PECA unauthorized use false information reputation privacy Section 24 PECA');
+      // Urdu-script cues name the same offences but share no Latin token with the
+      // English record text, so an Urdu blackmail question fell through to the
+      // generic cyber string and was answered from the cyber-terrorism provision.
+      if (/blackmail|extort/i.test(normalizedQuery) || /بلیک\s*میل|دھمکی/.test(query)) cyberTerms.push('blackmail extortion online threat Section 24 PECA');
+      if (/identity|fake|impersonat|profile/i.test(normalizedQuery) || /جعلی\s*(?:اکاؤنٹ|پروفائل)|میرے\s*نام\s*پر/.test(query)) cyberTerms.push('identity information Section 13 PECA unauthorized use false information reputation privacy Section 24 PECA');
       if (/fraud|scam/i.test(normalizedQuery)) cyberTerms.push('electronic fraud Section 11 PECA');
-      if (/modesty|intimate|nude|sexually|morphed|superimpos|private (?:photo|picture|image|video)/i.test(normalizedQuery)) cyberTerms.push('modesty Section 16 PECA intimate images');
+      if (/modesty|intimate|nude|sexually|morphed|superimpos|private (?:photo|picture|image|video)|tasveer|tasvir|تصویر|تصاویر|be-?ijaazat|ijazat (?:ke )?baghair/i.test(normalizedQuery) || /تصویر|تصاویر|بے\s*اجازت/.test(query)) cyberTerms.push('modesty Section 16 PECA intimate images');
       if (/complain|report|fia|profile|social|fake/i.test(normalizedQuery)) cyberTerms.push('FIA complaint procedure 1991 helpline cybercrime');
       if (/dignity|defam/i.test(normalizedQuery)) cyberTerms.push('dignity Section 24 PECA defamation online');
       rewrittenQuery = cyberTerms.length > 0 ? cyberTerms.join(' ') : 'PECA 2016 cybercrime harassment unauthorized access FIA complaint Section 3 19 24';

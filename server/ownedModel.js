@@ -22,6 +22,7 @@ import {
   scopeLayerName, detectQueryScope
 } from './corpusScope.js';
 import { groundAnswerCitations } from './answerGrounding.js';
+import { resolveEverydayIntent } from './everydayIntent.js';
 
 const EN = {
   issue: 'Issue',
@@ -113,7 +114,7 @@ function categorize(chunks) {
   return { provisions, procedures, remedies, precedents, topics };
 }
 
-const QUERY_STOP = new Set(('the a an and or of to in for on with without is are was be what which how why when who whom whose can could should would do does did not no my me i you your our we they it this that these those about from as at by if into over under very much many more most all any some there here then than who\'s let make makes please tell explain define meaning used use works work ka ke ki ko mein main hai hain ho hota hoti kar karna kare karon karta karti raha rahe diya diya kya kis kon sa liye par se tak bhi hi awara').split(/\s+/));
+const QUERY_STOP = new Set(('the a an and or of to in for on with without is are was be what which how why when who whom whose can could should would do does did not no my me i you your our we they it this that these those about from as at by if into over under very much many more most all any some there here then than who\'s let make makes please tell explain define meaning used use works work ka ke ki ko mein main hai hain ho hota hoti kar karna kare karon karta karti raha rahe diya diya kya kis kon sa liye par se tak bhi hi awara share shared sharing').split(/\s+/));
 
 /**
  * Forensic boilerplate: every judgment and every statute carries these words, so
@@ -1461,25 +1462,268 @@ const GUIDANCE = {
       ],
       followUp: 'بتائیں کون سی یونیورسٹی ہے اور مسئلہ کیا ہے، تو میں اس قاعدے کی طرف اشارہ کر سکتا ہوں جو عام طور پر اس پر لاگو ہوتا ہے۔'
     }
+  },
+  'student-refund': {
+    en: {
+      lead: 'A university or college that takes fees has to follow its own refund rules and HEC\'s published refund policy. The refund percentage usually depends on how soon after the start of classes you withdraw, so the date of your written request matters. Ask in writing and keep the date-stamped copy.',
+      steps: [
+        'Read your admission offer and the fee/refund clause of your university\'s prospectus, and note the refund tiers.',
+        'Write to the university finance office or registrar asking for the refund under those rules, and give the date you withdrew.',
+        'Submit the original fee receipt and any admission or withdrawal documents; get a received stamp or diary number.',
+        'If the refund is refused or ignored, write to the Vice Chancellor or the student grievance cell and attach your earlier request.',
+        'If the university still does not act, ask HEC or a legal-aid service about the complaint route; keep every reply.'
+      ],
+      followUp: 'Tell me which university it is and when you withdrew, and I can point to the refund rule that usually applies.'
+    },
+    roman: {
+      lead: 'Fees lene wali university ya college ko apne refund rules aur HEC ki published refund policy follow karni hoti hai. Refund ka percentage aam tor par is baat par munhasir hota hai ke aap classes shuru hone ke kitne din baad withdraw karte hain, is liye aap ki likhit darkhwast ki tareekh ahem hai. Likh kar maangein aur tareekh wali copy sambhal kar rakhein.',
+      steps: [
+        'Apni admission offer aur university ke prospectus mein fees/refund ki shart parhein aur refund tiers note karein.',
+        'University ke finance office ya registrar ko likhein ke unhi rules ke tehat refund diya jaye, aur withdraw karne ki tareekh likhein.',
+        'Fees ki original receipt aur admission ya withdrawal ke kaghazat jama karein; received stamp ya diary number zaroor lein.',
+        'Agar refund se inkaar ho ya jawab na mile to Vice Chancellor ya student grievance cell ko likhein aur apni pehli darkhwast attach karein.',
+        'Agar university phir bhi amal na kare to HEC ya legal-aid service se shikayat ka raasta poochein; har jawab sambhal kar rakhein.'
+      ],
+      followUp: 'Batayein kaunsi university hai aur aap ne kab withdraw kiya, to main us refund rule ki taraf ishara kar sakta hoon jo aam tor par lagta hai.'
+    },
+    ur: {
+      lead: 'فیس لینے والی یونیورسٹی یا کالج کو اپنے ریفنڈ قواعد اور ایچ ای سی کی شائع شدہ ریفنڈ پالیسی پر عمل کرنا ہوتا ہے۔ ریفنڈ کا فیصد عام طور پر اس بات پر منحصر ہوتا ہے کہ آپ کلاسز شروع ہونے کے کتنے دن بعد دستبردار ہوتے ہیں، اس لیے آپ کی تحریری درخواست کی تاریخ اہم ہے۔ تحریری طور پر مطالبہ کریں اور تاریخ والی کاپی سنبھال کر رکھیں۔',
+      steps: [
+        'اپنی ایڈمیشن آفر اور یونیورسٹی کے پراسپیکٹس میں فیس اور ریفنڈ کی شق پڑھیں اور ریفنڈ کے درجات نوٹ کریں۔',
+        'یونیورسٹی کے فنانس آفس یا رجسٹرار کو لکھیں کہ انہی قواعد کے تحت ریفنڈ دیا جائے، اور دستبرداری کی تاریخ لکھیں۔',
+        'فیس کی اصل رسید اور ایڈمیشن یا دستبرداری کے کاغذات جمع کریں؛ وصولی کی مہر یا ڈائری نمبر ضرور لیں۔',
+        'اگر ریفنڈ سے انکار ہو یا جواب نہ ملے تو وائس چانسلر یا طلبہ شکایت سیل کو لکھیں اور اپنی پہلی درخواست منسلک کریں۔',
+        'اگر یونیورسٹی پھر بھی کارروائی نہ کرے تو ایچ ای سی یا قانونی امداد سے شکایت کا راستہ پوچھیں؛ ہر جواب سنبھال کر رکھیں۔'
+      ],
+      followUp: 'بتائیں کون سی یونیورسٹی ہے اور آپ نے کب دستبرداری کی، تو میں اس ریفنڈ قاعدے کی طرف اشارہ کر سکتا ہوں جو عام طور پر لاگو ہوتا ہے۔'
+    }
+  },
+  'tenancy-rent-arrears': {
+    en: {
+      lead: 'If your tenant has stopped paying rent, the first step is a written demand that records the unpaid months and the amount. What you can do next depends on your written tenancy agreement and on the rent law of your province, so keep the agreement, the rent receipts and the bank record.',
+      steps: [
+        'Add up the unpaid rent month by month and write it in a dated demand letter to the tenant.',
+        'Send the letter in a way you can prove — registered post, courier receipt, or a witnessed delivery.',
+        'Give the tenant a reasonable written notice as the agreement or your province\'s rent law requires, and keep a copy.',
+        'Gather the agreement, rent receipts, bank statements and any messages about the rent.',
+        'If the tenant still does not pay, ask a lawyer or legal-aid service about the Rent Controller or civil court for your area.',
+        'Do not change the locks, cut utilities or force the tenant out yourself; that can turn the case against you.'
+      ],
+      followUp: 'Tell me your province, whether you have a written agreement, and how many months are unpaid, and I can narrow down the correct forum.'
+    },
+    roman: {
+      lead: 'Agar aap ka kirayedar kiraya dena band kar chuka hai to pehla qadam ek likhit demand hai jis mein baqi mahine aur raqam likhi ho. Aage kya kar sakte hain yeh aap ke likhit kiraya agreement aur aap ke province ke rent qanoon par munhasir hai, is liye agreement, kiraya receipts aur bank record sambhal kar rakhein.',
+      steps: [
+        'Baqi kiraya mahine ke hisaab se jama karein aur tareekh wali demand letter mein likhein.',
+        'Khat aise bhejein ke pahunchne ka saboot rahe — registered post, courier receipt ya gawah ke samne delivery.',
+        'Agreement ya aap ke province ke rent qanoon ke mutabiq munasib likhit notice dein aur copy rakhein.',
+        'Agreement, kiraya receipts, bank statements aur kiraye ke baare mein messages ikattha karein.',
+        'Agar kirayedar phir bhi na de to wakeel ya legal-aid se apne ilaqe ke Rent Controller ya civil court ke baare mein poochein.',
+        'Khud tala na badlein, bijli/paani na kaatein aur zor se bahar na nikalein; is se muqadma aap ke khilaf ho sakta hai.'
+      ],
+      followUp: 'Apna province, yeh ke likhit agreement hai ya nahi, aur kitne mahine baqi hain — bata dein to main sahi forum tak baat mehdood kar sakta hoon.'
+    },
+    ur: {
+      lead: 'اگر آپ کا کرایہ دار کرایہ دینا بند کر چکا ہے تو پہلا قدم ایک تحریری مطالبہ ہے جس میں باقی مہینے اور رقم درج ہو۔ آگے آپ کیا کر سکتے ہیں یہ آپ کے تحریری کرایہ نامے اور آپ کے صوبے کے کرایہ داری قانون پر منحصر ہے، اس لیے معاہدہ، کرایہ کی رسیدیں اور بینک ریکارڈ سنبھال کر رکھیں۔',
+      steps: [
+        'باقی کرایہ مہینے کے حساب سے جمع کریں اور تاریخ والے مطالبے کی تحریر میں لکھیں۔',
+        'خط ایسے بھیجیں کہ پہنچنے کا ثبوت رہے — رجسٹرڈ ڈاک، کوریئر کی رسید یا گواہ کے سامنے حوالگی۔',
+        'معاہدے یا آپ کے صوبے کے کرایہ داری قانون کے مطابق مناسب تحریری نوٹس دیں اور کاپی رکھیں۔',
+        'معاہدہ، کرایہ کی رسیدیں، بینک اسٹیٹمنٹ اور کرایے سے متعلق پیغامات جمع کریں۔',
+        'اگر کرایہ دار پھر بھی نہ دے تو وکیل یا قانونی امداد سے اپنے علاقے کے رنٹ کنٹرولر یا سول عدالت کے بارے میں پوچھیں۔',
+        'خود تالا نہ بدلیں، بجلی یا پانی نہ کاٹیں اور زبردستی باہر نہ نکالیں؛ اس سے مقدمہ آپ کے خلاف ہو سکتا ہے۔'
+      ],
+      followUp: 'اپنا صوبہ، یہ کہ تحریری معاہدہ ہے یا نہیں، اور کتنے مہینے باقی ہیں — بتا دیں تو میں صحیح فورم تک بات محدود کر سکتا ہوں۔'
+    }
+  },
+  'tenancy-broad': {
+    en: {
+      lead: 'Tenancy in Pakistan is mostly governed by provincial rent laws and by your own written agreement. The main areas are rent and its increase, the security deposit, notice before eviction, repairs, and the handover of the premises. Which rule applies depends on your province and on what the agreement says.',
+      steps: [],
+      followUp: 'Tell me which of these is happening — unpaid rent, a deposit not returned, an eviction notice, or repairs — and your province, and I will explain the law and the steps for that.'
+    },
+    roman: {
+      lead: 'Pakistan mein kiraya dari zyadatar provincial rent qanoon aur aap ke apne likhit agreement se chalti hai. Bunyadi mamlay hain kiraya aur us ka izafa, security deposit, eviction se pehle notice, marammat, aur premises ki handover. Kaunsa rule lagta hai yeh aap ke province aur agreement ki sharton par munhasir hai.',
+      steps: [],
+      followUp: 'Batayein in mein se kya ho raha hai — kiraya baqi, deposit wapas nahi, eviction notice, ya marammat — aur aap ka province, to main us mamlay ka qanoon aur qadam samjha doon ga.'
+    },
+    ur: {
+      lead: 'پاکستان میں کرایہ داری زیادہ تر صوبائی کرایہ داری قوانین اور آپ کے اپنے تحریری معاہدے سے چلتی ہے۔ بنیادی معاملات کرایہ اور اس کا اضافہ، سیکیورٹی ڈپازٹ، بے دخلی سے پہلے نوٹس، مرمت، اور جگہ کی حوالگی ہیں۔ کون سا قاعدہ لاگو ہوگا یہ آپ کے صوبے اور معاہدے کی شرائط پر منحصر ہے۔',
+      steps: [],
+      followUp: 'بتائیں ان میں سے کیا ہو رہا ہے — کرایہ باقی، ڈپازٹ واپس نہیں، بے دخلی کا نوٹس، یا مرمت — اور آپ کا صوبہ، تو میں اس معاملے کا قانون اور اقدامات سمجھا دوں گا۔'
+    }
+  },
+  'employee-rights': {
+    en: {
+      lead: 'Employees in Pakistan are protected mainly by provincial labour laws and by the terms of their appointment. These cover payment of wages, written terms of service, notice before termination, working hours and leave, social security, and protection from harassment at the workplace. Which law applies depends on your province, your employer and the kind of work.',
+      steps: [],
+      followUp: 'Tell me what has happened — unpaid salary, dismissal, harassment, or another issue — and your province, and I will explain the law and the steps that apply.'
+    },
+    roman: {
+      lead: 'Pakistan mein mulazmeen ko zyadatar provincial labour qanoon aur apni appointment ki sharton ke tehat hifazat hasil hai. In mein tankhwa ki adaigi, likhit terms of service, termination se pehle notice, kaam ke ghante aur chutti, social security, aur kaam ki jagah harassment se hifazat shamil hai. Kaunsa qanoon lagta hai yeh aap ke province, employer aur kaam ki qisam par munhasir hai.',
+      steps: [],
+      followUp: 'Batayein kya hua — tankhwa nahi mili, naukri se nikala gaya, harassment, ya koi doosra masla — aur aap ka province, to main laagu qanoon aur qadam samjha doon ga.'
+    },
+    ur: {
+      lead: 'پاکستان میں ملازمین کو زیادہ تر صوبائی محنت کشی کے قوانین اور اپنی تقرری کی شرائط کے تحت تحفظ حاصل ہے۔ ان میں تنخواہ کی ادائیگی، تحریری شرائطِ ملازمت، برطرفی سے پہلے نوٹس، کام کے اوقات اور چھٹی، سوشل سیکیورٹی، اور کام کی جگہ ہراسانی سے تحفظ شامل ہیں۔ کون سا قانون لاگو ہوگا یہ آپ کے صوبے، آجر اور کام کی نوعیت پر منحصر ہے۔',
+      steps: [],
+      followUp: 'بتائیں کیا ہوا — تنخواہ نہیں ملی، نوکری سے نکالا گیا، ہراسانی، یا کوئی دوسرا مسئلہ — اور آپ کا صوبہ، تو میں لاگو قانون اور اقدامات سمجھا دوں گا۔'
+    }
+  },
+  'salary-unpaid': {
+    en: {
+      lead: 'An employer that has not paid your wages owes you that money, and the law gives you a way to claim it. Start with a written demand that lists the months and the amount, because the record of that demand is what supports the next step. Which forum hears the claim depends on your province and on whether the establishment is covered by the labour law.',
+      steps: [
+        'Collect your appointment letter or contract, salary slips, bank statements and attendance records.',
+        'Write a dated demand to the employer listing each unpaid month and the amount, and keep a copy.',
+        'Send it so that you can prove delivery — courier receipt, registered post, or email that is acknowledged.',
+        'Keep any reply, and note down what your supervisor or HR says about the payment.',
+        'If the employer does not pay, contact the labour department of your province or ask a lawyer or legal-aid service which forum — Labour Court or another authority — applies to your establishment.',
+        'Do not sign any resignation or settlement without understanding what it gives up; ask first.'
+      ],
+      followUp: 'Tell me your province, how many months are unpaid, and whether you have a written contract, and I can narrow down where the claim goes.'
+    },
+    roman: {
+      lead: 'Jis employer ne aap ki tankhwa nahi di, wo aap ka paisa daindaar hai, aur qanoon aap ko us ke mutalbe ka raasta deta hai. Shuru likhit demand se karein jis mein mahine aur raqam likhi ho, kyunke usi demand ka record agle qadam ko support karta hai. Muamla kis forum mein suna jayega yeh aap ke province aur is baat par munhasir hai ke wo idara labour qanoon ke daire mein aata hai ya nahi.',
+      steps: [
+        'Appointment letter ya contract, salary slips, bank statements aur attendance record ikattha karein.',
+        'Employer ko tareekh wali demand likhein jis mein har baqi mahina aur raqam ho, aur copy rakhein.',
+        'Aise bhejein ke pahunchne ka saboot rahe — courier receipt, registered post, ya email jis ka jawab mile.',
+        'Har jawab sambhal kar rakhein, aur supervisor ya HR ne paise ke baare mein kya kaha us ka note rakhein.',
+        'Agar employer na de to apne province ke labour department se rabta karein, ya wakeel/legal-aid se poochein ke aap ke idare par Labour Court ya doosra forum lagta hai.',
+        'Kisi resignation ya settlement par bina samjhe dastakhat na karein ke us se aap kya chhod rahe hain; pehle poochein.'
+      ],
+      followUp: 'Apna province, kitne mahine ki tankhwa baqi hai, aur likhit contract hai ya nahi — bata dein to main batata hoon mutalba kahan jayega.'
+    },
+    ur: {
+      lead: 'جس آجر نے آپ کی تنخواہ نہیں دی، وہ آپ کا پیسہ دینے کا پابند ہے، اور قانون آپ کو اس کے مطالبے کا راستہ دیتا ہے۔ آغاز ایک تحریری مطالبے سے کریں جس میں مہینے اور رقم درج ہو، کیونکہ اسی مطالبے کا ریکارڈ اگلے قدم کو سہارا دیتا ہے۔ معاملہ کس فورم میں سنا جائے گا یہ آپ کے صوبے اور اس بات پر منحصر ہے کہ ادارہ محنت کشی قانون کے دائرے میں آتا ہے یا نہیں۔',
+      steps: [
+        'اپنے تقررنامے یا معاہدے، تنخواہ کی پرچیاں، بینک اسٹیٹمنٹ اور حاضری کا ریکارڈ جمع کریں۔',
+        'آجر کو تاریخ والا مطالبہ لکھیں جس میں ہر باقی مہینہ اور رقم ہو، اور کاپی رکھیں۔',
+        'ایسے بھیجیں کہ پہنچنے کا ثبوت رہے — کوریئر کی رسید، رجسٹرڈ ڈاک، یا ای میل جس کا جواب ملے۔',
+        'ہر جواب سنبھال کر رکھیں، اور سپروائزر یا ایچ آر نے ادائیگی کے بارے میں کیا کہا اس کا نوٹ رکھیں۔',
+        'اگر آجر نہ دے تو اپنے صوبے کے محکمہ محنت سے رابطہ کریں، یا وکیل یا قانونی امداد سے پوچھیں کہ آپ کے ادارے پر لیبر کورٹ یا کوئی دوسرا فورم لاگو ہوتا ہے۔',
+        'کسی استعفیٰ یا تصفیے پر بغیر سمجھے دستخط نہ کریں کہ اس سے کیا ترک ہو رہا ہے؛ پہلے پوچھیں۔'
+      ],
+      followUp: 'اپنا صوبہ، کتنے مہینوں کی تنخواہ باقی ہے، اور تحریری معاہدہ ہے یا نہیں — بتا دیں تو میں بتاؤں گا کہ مطالبہ کہاں جائے گا۔'
+    }
   }
 };
 
 const WOMEN_BROAD_RE = /(khawateen|khawateen\s+ke\s+huqooq|women'?s\s+rights|rights\s+of\s+women|خواتین|عورت|عورتوں)/i;
 const WOMEN_SPECIFIC_RE = /\b(inheritance|wirasat|marriage|nikah|divorce|talaq|khula|maintenance|nafaqa|domestic|violence|custody|harass\w*|workplace|job|property|jaidad|dowry|jahez|acid)\b|وراثت|شادی|طلاق|خلع|نفقہ|گھریلو|تشدد|حراست|ہراسانی|جائیداد|جہیز/i;
 
-function guidanceKey(query) {
+function guidanceKey(query, situation = null) {
   const q = String(query || '');
+  // A resolved everyday dispute decides the DIRECTION. "Mera kirayedar kiraya
+  // nahi de raha" and "deposit wapas nahi mil raha" share every noun, and the
+  // keyword ladder used to answer both with the tenant-side deposit text.
+  if (situation === 'rent_arrears') return 'tenancy-rent-arrears';
+  if (situation === 'salary_unpaid') return 'salary-unpaid';
+  if (situation === 'fee_refund') return 'student-refund';
   if (WOMEN_BROAD_RE.test(q) && !WOMEN_SPECIFIC_RE.test(q)) return 'women-rights';
-  if (/(cyber|online|internet|facebook|whatsapp|instagram|snapchat|tiktok|blackmail|fake account|سائبر|آن لائن|انٹرنیٹ|بلیک میل|جعلی اکاؤنٹ)/i.test(q)) return 'cyber-harassment';
+  // Broad "…Rights" topics are overviews, never one aspect of the topic.
+  if (/\b(tenant|tenants|renter|renters|landlord|landlords)\s+rights\b|kiray(?:a|e|edar)\s+(?:ke\s+)?huqooq|کرایہ\s*دار\s*کے\s*حقوق|مکان\s*مالک\s*کے\s*حقوق/i.test(q)) return 'tenancy-broad';
+  if (/\b(employee|employees|worker|workers|labour|labor|employment)\s+rights\b|mulaz(?:im|min)\s+ke\s+huqooq|ملازمین\s*کے\s*حقوق|مزدوروں\s*کے\s*حقوق/i.test(q)) return 'employee-rights';
+  if (/\b(student|students)\s+rights\b|talaba\s+ke\s+huqooq|طلبہ\s*کے\s*حقوق/i.test(q)) return 'student-rights';
+  if (/(cyber|online|internet|facebook|whatsapp|instagram|snapchat|tiktok|blackmail|fake account|tasveer|tasvir|tasviren|private (?:photo|picture|image|video)|intimate (?:photo|picture|image|video)|be-?ijaazat|ijazat ke baghair|morphed|deepfake|jaali profile|impersonat|سائبر|آن لائن|انٹرنیٹ|بلیک میل|جعلی اکاؤنٹ|جعلی پروفائل|تصویر|تصاویر|نجی تصاویر)/i.test(q)) return 'cyber-harassment';
   if (/(khula|خلع)/i.test(q)) return 'khula';
   if (/(\bfir\b|first information report|police complaint|police refuse|ایف\s*آئی\s*آر|تھانہ|تھانے)/i.test(q)) return 'police-fir';
   if (/(harass|ہراساں|ہراسانی|pareshan)/i.test(q)) return 'harassment';
+  // Salary before tenancy: "company ne salary nahi di" names its own payer.
+  if (/(salary|tankhwah|tankhwa|wages|مزدوری|تنخواہ|salar|ucret)/i.test(q)
+    && /(nahi|na\s+de|unpaid|not\s+pay|withh|rok|stop|atak|ruki|روک|نہیں|معطل)/i.test(q)) return 'salary-unpaid';
+  if (/(fee|fees|فیس)/i.test(q) && /(refund|wapas|return|واپس|ریفنڈ)/i.test(q)) return 'student-refund';
   if (/(security deposit|tenant|landlord|kiraya|kirayadar|rent(?:ed)?\s+(?:house|flat)|deposit|کرایہ|کرایہ دار|مالک مکان|ڈپازٹ)/i.test(q)) return 'tenancy';
   if (/(student|university|college|hostel|scholarship|طالب علم|طلبہ|یونیورسٹی|کالج|وظیفہ)/i.test(q)) return 'student';
   return null;
 }
 
+/**
+ * Online harassment is not one problem: an intimate-image threat, a fake profile
+ * in the citizen's name and a blackmail demand are handled by different offences
+ * and different first steps. Detection is on the words the citizen used, and the
+ * generic block stays the fallback so a vague "someone is harassing me online"
+ * still gets a real answer.
+ */
+const CYBER_SUBTYPES = [
+  ['blackmail', /blackmail|extort|dhamki|دھمکی|بلیک\s*میل|threaten\w*\s+to\s+(?:share|post|publish|expose)|paise\s+maang|paisay\s+maang|پیسے\s+مانگ/i],
+  ['intimate', /private\s+(?:photo|picture|image|video)s?|intimate\s+(?:photo|picture|image|video)|nude|tasveer|tasvir|tasviren|morphed|deepfake|be-?ijaazat|ijazat\s+(?:ke\s+)?baghair|(?:تصویر|تصاویر)|بے\s*اجازت|نجی\s*تصاویر|غیر\s*اخلاقی/i],
+  ['impersonation', /fake\s+(?:account|profile|id)|jaali\s+(?:profile|account)|جعلی\s*(?:اکاؤنٹ|پروفائل)|impersonat|using\s+my\s+(?:name|photo|picture)|میرے\s*نام\s*(?:پر|سے)/i],
+];
+const CYBER_SUB_LEAD = {
+  blackmail: {
+    en: 'Threatening to publish something, or demanding money or a favour to stay silent, is blackmail and is an offence under Pakistani law. Do not pay or agree to a meeting, and do not delete the threats — they are the evidence.',
+    roman: 'Kisi cheez ko publish karne ki dhamki dena, ya chup rehne ke badle paise ya koi aur faida maangna blackmail hai aur Pakistani qanoon ke tehat jurm hai. Kuch na dein aur milne par raazi na hon, aur dhamkiyon ko delete na karein — wohi aap ka saboot hain.',
+    ur: 'کسی چیز کو شائع کرنے کی دھمکی دینا، یا خاموش رہنے کے بدلے پیسے یا کوئی اور فائدہ مانگنا بلیک میلنگ ہے اور پاکستانی قانون کے تحت جرم ہے۔ کچھ نہ دیں اور ملنے پر راضی نہ ہوں، اور دھمکیاں ڈیلیٹ نہ کریں — وہی آپ کا ثبوت ہیں۔',
+  },
+  intimate: {
+    en: 'Sharing someone\'s private pictures without consent, or threatening to share them, is a specific offence under the Prevention of Electronic Crimes Act 2016 — and it stays an offence even if the pictures were first sent to one person, or were edited to look real. Keep them as evidence and do not forward them to anyone.',
+    roman: 'Kisi ki private tasveerein ijazat ke baghair share karna, ya share karne ki dhamki dena, Prevention of Electronic Crimes Act 2016 ke tehat alag jurm hai — aur agar tasveerein pehle kisi ek shakhs ko bheji gayi thin, ya edited hain, tab bhi jurm rahta hai. Inhein saboot ke tor par rakhein aur kisi aur ko forward na karein.',
+    ur: 'کسی کی نجی تصاویر اس کی اجازت کے بغیر شیئر کرنا، یا شیئر کرنے کی دھمکی دینا، پریوینشن آف الیکٹرانک کرائمز ایکٹ 2016 کے تحت الگ جرم ہے — اور اگر تصاویر پہلے کسی ایک شخص کو بھیجی گئی تھیں یا ایڈٹ کی گئی ہیں، تب بھی جرم باقی رہتا ہے۔ انہیں ثبوت کے طور پر رکھیں اور کسی اور کو فارورڈ نہ کریں۔',
+  },
+  impersonation: {
+    en: 'Running a fake account or profile in someone else\'s name is an offence under the Prevention of Electronic Crimes Act 2016, and that is separate from whatever the account then posted. The platform\'s impersonation report and a complaint to the FIA can go ahead at the same time.',
+    roman: 'Kisi ke naam par fake account ya profile chalana Prevention of Electronic Crimes Act 2016 ke tehat jurm hai, aur yeh us baat se alag jurm hai ke us account se kya post kiya gaya. Platform ki impersonation report aur FIA mein shikayat dono sath sath ho sakti hain.',
+    ur: 'کسی کے نام پر جعلی اکاؤنٹ یا پروفائل چلانا پریوینشن آف الیکٹرانک کرائمز ایکٹ 2016 کے تحت جرم ہے، اور یہ اس بات سے الگ جرم ہے کہ اس اکاؤنٹ سے کیا پوسٹ کیا گیا۔ پلیٹ فارم کی امپرسنیشن رپورٹ اور ایف آئی اے میں شکایت دونوں ساتھ ساتھ ہو سکتی ہیں۔',
+  },
+};
+const CYBER_SUB_STEP = {
+  blackmail: {
+    en: 'Keep each threat exactly as sent — screenshot with date, time and the account name — and save any payment demand without replying.',
+    roman: 'Har dhamki ko jaisa bheja gaya hai waisa hi rakhein — date, waqt aur account ke naam ke sath screenshot — aur paise ke mutalbe ko jawab diye baghair mehfooz karein.',
+    ur: 'ہر دھمکی کو جیسا بھیجا گیا ہے ویسا ہی رکھیں — تاریخ، وقت اور اکاؤنٹ کے نام کے ساتھ اسکرین شاٹ — اور پیسے کے مطالبے کو جواب دیے بغیر محفوظ کریں۔',
+  },
+  intimate: {
+    en: 'Ask the platform to remove and preserve the material, and give the FIA the account link and the time the images were posted or sent.',
+    roman: 'Platform se darkhwast karein ke material hata kar mehfooz rakhe, aur FIA ko account ka link aur waqt batayein jab tasveerein post ya bheji gayi thin.',
+    ur: 'پلیٹ فارم سے درخواست کریں کہ مواد ہٹا کر محفوظ رکھے، اور ایف آئی اے کو اکاؤنٹ کا لنک اور وہ وقت بتائیں جب تصاویر پوسٹ یا بھیجی گئی تھیں۔',
+  },
+  impersonation: {
+    en: 'Report the profile to the platform as impersonation, keep the report number, and screenshot the profile and any message it sent from that account.',
+    roman: 'Platform ko profile impersonation ke tor par report karein, report number rakhein, aur profile aur us account se aaye har message ka screenshot lein.',
+    ur: 'پلیٹ فارم کو پروفائل امپرسنیشن کے طور پر رپورٹ کریں، رپورٹ نمبر رکھیں، اور پروفائل اور اس اکاؤنٹ سے آنے والے ہر پیغام کا اسکرین شاٹ لیں۔',
+  },
+};
+const CYBER_SUB_FOLLOWUP = {
+  blackmail: {
+    en: 'What are they asking for, and have they already posted or sent anything?',
+    roman: 'Woh kya maang rahe hain, aur kya unhone kuch post ya bhej diya hai?',
+    ur: 'وہ کیا مانگ رہے ہیں، اور کیا انہوں نے کچھ پوسٹ یا بھیج دیا ہے؟',
+  },
+  intimate: {
+    en: 'Is the person behind this known to you, or is it an anonymous account?',
+    roman: 'Is ke peeche wala shakhs aap ko maloom hai, ya account gumnaam hai?',
+    ur: 'اس کے پیچھے والا شخص آپ کو معلوم ہے، یا اکاؤنٹ گمنام ہے؟',
+  },
+  impersonation: {
+    en: 'Is the fake profile using your name and pictures, and is it asking people for money or information?',
+    roman: 'Kya fake profile aap ka naam aur tasveerein use kar raha hai, aur logon se paise ya maloomat maang raha hai?',
+    ur: 'کیا جعلی پروفائل آپ کا نام اور تصاویر استعمال کر رہا ہے، اور لوگوں سے پیسے یا معلومات مانگ رہا ہے؟',
+  },
+};
+
+function cyberSubtype(query) {
+  const q = String(query || '');
+  for (const [name, re] of CYBER_SUBTYPES) if (re.test(q)) return name;
+  return null;
+}
+
 function naturalGuidance(key, lang, ctx = {}) {
+  if (key === 'cyber-harassment') {
+    const block = GUIDANCE['cyber-harassment'];
+    const base = block && (block[lang] || block.en);
+    const sub = cyberSubtype(ctx.userQuery);
+    if (!base || !sub) return base || null;
+    const steps = base.steps.slice();
+    const extra = CYBER_SUB_STEP[sub][lang];
+    if (extra) steps.splice(Math.min(2, steps.length), 0, extra);
+    return {
+      lead: CYBER_SUB_LEAD[sub][lang],
+      steps,
+      followUp: CYBER_SUB_FOLLOWUP[sub][lang],
+    };
+  }
   if (key === 'women-rights') {
     const lead = womenRightsLead(ctx.focus, lang);
     const followUp = lang === 'ur'
@@ -1489,7 +1733,7 @@ function naturalGuidance(key, lang, ctx = {}) {
         : 'Which of these areas is your situation about? Tell me the issue and I will explain the law and the practical steps that apply.';
     return { lead, steps: [], followUp };
   }
-  const block = GUIDANCE[key];
+  const block = GUIDANCE[key] || (key === 'student-rights' ? GUIDANCE.student : null);
   if (!block) return null;
   return block[lang] || block.en || null;
 }
@@ -1775,7 +2019,10 @@ function buildSources(chunks, cap = 4, asked = null, lang = 'en') {
   for (const c of chunks.slice(0, cap)) {
     const label = topicLabel(c);
     const url = recordSource(c, asked);
-    const id = `${label}|${url}`;
+    // One line per source document. Two records from the same document were
+    // printed as two differently labelled bullets pointing at the same page,
+    // which reads as two independent authorities.
+    const id = url || label;
     if (seen.has(id)) continue;
     seen.add(id);
     // A portal home page is the publisher, not a link to this record. Saying so
@@ -1888,7 +2135,12 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   // same nouns; the step-by-step record is what the citizen asked for.
   const asksHowToRecover = /\b(recover\w*|wasool|not\s+paid|unpaid|arrears?|non.?payment|evict\w*|withh(?:o|e)ld\w*)\b/i.test(String(userQuery || ''));
   const isProcedureRecord = (c) => /PROCEDURE|WORKFLOW|_STAGES|_PROCESS|STEPS/i.test(String(c?.key || ''));
-  const naturalKey = guidanceKey(userQuery);
+  // Who owes what to whom is decided before the topic: a rent-arrears question
+  // and a deposit-return question name the same nouns and have opposite answers.
+  const everydaySituation = (() => {
+    try { return resolveEverydayIntent(userQuery).situation; } catch { return null; }
+  })();
+  const naturalKey = guidanceKey(userQuery, everydaySituation);
   const broadTopic = naturalKey === 'women-rights';
   const chunkCap = broadTopic ? 15 : lvl.chunkCap;
   let pool = scopePoolToServices(chunks.slice(0, chunkCap), askedServices);

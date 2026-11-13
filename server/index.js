@@ -401,18 +401,30 @@ function toSourceMeta(chunks, domain, forQuery = null) {
   // composer resolves the citation it prints, so an evidence card cannot show a
   // NADRA card URL under a DGIP passport excerpt.
   const asked = forQuery ? askedServiceSet(forQuery) : new Set();
-  return (chunks || []).map(c => ({
-    title: c.title,
-    authority: recordAuthority(c),
-    jurisdiction: c.jurisdiction,
-    type: c.type,
-    key: c.key,
-    legalStatus: c.legalStatus,
-    version: c.version,
-    sourceURL: recordSource(c, asked),
-    domain, // F14: powers "Open in Insaaf AI Library"
-    text: stripCorpusMeta(c.text)
-  }));
+  const seen = new Set();
+  const cards = [];
+  for (const c of chunks || []) {
+    const card = {
+      title: c.title,
+      authority: recordAuthority(c),
+      jurisdiction: c.jurisdiction,
+      type: c.type,
+      key: c.key,
+      legalStatus: c.legalStatus,
+      version: c.version,
+      sourceURL: recordSource(c, asked),
+      domain, // F14: powers "Open in Insaaf AI Library"
+      text: stripCorpusMeta(c.text)
+    };
+    // Retrieval returns several chunks of the same document; the citizen reads
+    // ONE card per authority and document, not the same title eleven times.
+    const id = `${card.title}|${card.authority || ''}|${card.sourceURL || ''}`;
+    if (seen.has(id)) continue;
+    seen.add(id);
+    cards.push(card);
+    if (cards.length >= 6) break;
+  }
+  return cards;
 }
 
 /**
@@ -547,15 +559,16 @@ function offlineKnowledgeHeader(activeLang, verdict, jurisdictionNote = '') {
       : `*The records available to me do not cover this question, so nothing below is presented as law.*\n\n`;
   }
   // A matching record needs no banner: the answer opens with its own heading and
-  // carries an honest limitation note. Only a weak match says so, plainly.
+  // carries an honest limitation note. A weak match says only that part of the
+  // question is unanswered — never how retrieval scored or matched it.
   if (!partial) return jurisdictionNote;
   if (activeLang === 'ur') {
-    return `*یہ جواب قریب ترین ملتے جلتے ریکارڈز سے تیار کیا گیا ہے؛ کوئی ریکارڈ آپ کے سوال سے پوری مطابقت نہیں رکھتا۔*\n\n` + jurisdictionNote;
+    return `*آپ کے سوال کا کچھ حصہ میرے پاس موجود ریکارڈز میں نہیں ملتا۔ اس کی مزید تفصیل بتائیں تو میں دوبارہ دیکھ سکتا ہوں۔*\n\n` + jurisdictionNote;
   }
   if (activeLang === 'roman_urdu') {
-    return `*Yeh jawab qareeb tareen milte-julte records se banaya gaya hai; koi record aap ke sawal se poora nahi milta.*\n\n` + jurisdictionNote;
+    return `*Aap ke sawal ka kuch hissa mere paas maujood records mein nahi milta. Mazeed tafseel batayein to main dobara dekh sakta hoon.*\n\n` + jurisdictionNote;
   }
-  return `*This answer is built from the closest matching records; none matches your question exactly.*\n\n` + jurisdictionNote;
+  return `*Part of what you asked is not covered by the records I have. Tell me a little more and I will look again.*\n\n` + jurisdictionNote;
 }
 
 // A national record cannot establish the rule of a territory the user named. When
