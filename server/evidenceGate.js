@@ -287,7 +287,19 @@ const URDU_GLOSS = {
   طے: 'decided determined',
   ڈیٹا: 'data',
   ذاتی: 'personal',
-  معلومات: 'information'
+  معلومات: 'information',
+  // Cyber harassment. The corpus states these offences in English ("threat",
+  // "pictures", "blackmail"); without these the Urdu question shares no word
+  // with the record that answers it and the gate refuses it as uncovered.
+  دھمکی: 'threat threats threaten intimidation',
+  دھمکیاں: 'threat threats threaten intimidation',
+  تصویر: 'picture pictures image images photo photos',
+  تصاویر: 'pictures images photos',
+  ویڈیو: 'video videos',
+  بلیک: 'blackmail',
+  میل: 'mail email',
+  ہراسانی: 'harassment harass',
+  ہراسمنٹ: 'harassment harass'
 };
 
 /**
@@ -386,6 +398,23 @@ const EVIDENCE_VARIANTS = {
   tankhwah: 'tankhwa',
   khali: 'vacate empty evict eviction',
   nokar: 'employee',
+  // The corpus states the electronic offences in its own vocabulary (PECA says
+  // "photo", "image", "consent", "distribute"); the citizen says tasveer,
+  // ijazat and share. Without the bridge the record that answers the question
+  // shares no word with it and reads as uncovered.
+  tasveer: 'picture pictures image images photo photos',
+  tasveerein: 'pictures images photos',
+  tasviren: 'pictures images photos',
+  ijazat: 'consent permission',
+  share: 'distribute distribution',
+  // PECA's offence clauses say "intimidation" and "threat" where the citizen says
+  // "threatening" / "dhamki"; the stems have to meet for the record to count.
+  threat: 'threat threats intimidation intimidate',
+  threats: 'threat intimidation',
+  threatening: 'threat threats intimidation intimidate',
+  threatened: 'threat threats intimidation',
+  dhamki: 'threat threats intimidation',
+  dhamkian: 'threat threats intimidation',
   // PPC 497 is headed "Adultery"; the citizen's word is zina. The record uses the
   // statute's term, so the gloss must count as the user's own word for grounding.
   zina: 'adultery', zinaa: 'adultery'
@@ -651,7 +680,19 @@ export function evaluateEvidence(userQuery, retrieval, opts = {}) {
     // read as an education ask and PECA 13/24 — exact hits on routed-domain
     // documents — were set aside as off-subject, leaving HEC records answering
     // a cybercrime question. The weaker reading may not veto the stronger one.
-    const subjectOverridden = subj.checked && !subj.ok && domainOk && exact >= 8;
+    //
+    // The same applies to an offence-domain ask with no section number. "Someone
+    // is threatening me on WhatsApp and demanding money" scored its own words
+    // under civil and evidence ("money", "private"), so every PECA record — the
+    // ones that answer it — was vetoed for belonging to another subject. A
+    // cyber/criminal routing that fired on offence wording is itself the
+    // stronger reading: those domains ARE offences, so a civil-context score is
+    // not evidence the record is about a different subject.
+    const OFFENCE_DOMAINS = new Set(['cyber', 'criminal']);
+    const OFFENCE_ASK_RE = /\b(?:threat\w*|blackmail\w*|extort\w*|harass\w*|stalk\w*|intimidat\w*|impersonat\w*|bully\w*|bullying|fake\s+(?:account|profile|id)|private\s+(?:photo|picture|image|video)s?|intimate\s+(?:photo|picture|image|video)s?|morphed|deepfake|nude|obscene|revenge\s+porn|tasveer\w*|tasvir\w*|bina\s+ijazat)\b|(?:دھمکی|بلیک\s*میل|ہراسانی|تصاویر|جعلی|بے\s*اجازت)/i;
+    const subjectOverridden = subj.checked && !subj.ok && domainOk
+      && (exact >= 8
+        || (OFFENCE_DOMAINS.has(domain) && OFFENCE_ASK_RE.test(String(userQuery))));
     const offSubject = subj.checked && !subj.ok && !subjectOverridden;
     // Words of the resolved situation this record actually carries. Two of them,
     // in a record the router already filed under the domain that was asked about,

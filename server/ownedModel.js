@@ -1670,9 +1670,9 @@ const CYBER_SUB_LEAD = {
 };
 const CYBER_SUB_STEP = {
   blackmail: {
-    en: 'Keep each threat exactly as sent — screenshot with date, time and the account name — and save any payment demand without replying.',
-    roman: 'Har dhamki ko jaisa bheja gaya hai waisa hi rakhein — date, waqt aur account ke naam ke sath screenshot — aur paise ke mutalbe ko jawab diye baghair mehfooz karein.',
-    ur: 'ہر دھمکی کو جیسا بھیجا گیا ہے ویسا ہی رکھیں — تاریخ، وقت اور اکاؤنٹ کے نام کے ساتھ اسکرین شاٹ — اور پیسے کے مطالبے کو جواب دیے بغیر محفوظ کریں۔',
+    en: 'Write down exactly what they are demanding — the amount, how they want it paid and any account number — and how the demand was made. Do not negotiate or pay a small amount as a test.',
+    roman: 'Yeh bhi likh lein ke woh kya maang rahe hain — rakam, adayigi ka tareeqa aur account number — aur mutalba kis tarah kiya gaya. Baat-cheet na karein aur test ke tor par thori adayigi bhi na karein.',
+    ur: 'یہ بھی لکھ لیں کہ وہ کیا مانگ رہے ہیں — رقم، ادائیگی کا طریقہ اور اکاؤنٹ نمبر — اور مطالبہ کس طرح کیا گیا۔ بات چیت نہ کریں اور آزمائش کے طور پر تھوڑی ادائیگی بھی نہ کریں۔',
   },
   intimate: {
     en: 'Ask the platform to remove and preserve the material, and give the FIA the account link and the time the images were posted or sent.',

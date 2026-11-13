@@ -454,11 +454,6 @@ export async function runLegalAgent(p = {}) {
       verdict: ev.verdict, supportedCount: ev.supportedCount, rejected: ev.rejected,
       corrections: corr.attempts, scope: ev.scope || null, institutionQuery: ev.institutionQuery || null
     });
-    if (retrieval.relevance === 'low') {
-      body += isRoman
-        ? "\n\nYe milti-julti (partial) records par mabni hai. Wazeh jawab ke liye qanoon/dafa, shehar aur haal-e-waqia batayein, ya niche diye gaye section mein chalein."
-        : "\n\nThis is based on partially-matching records. For a precise answer, share the relevant law/section, city and facts, or use the app section suggested.";
-    }
     if (retrieval.domain === 'cross-border') {
       const nudge = crossBorderFor(message, activeLang);
       if (nudge) body += nudge;

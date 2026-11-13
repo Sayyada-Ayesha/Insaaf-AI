@@ -673,6 +673,11 @@ export class RAGEngine {
       // English record text, so an Urdu blackmail question fell through to the
       // generic cyber string and was answered from the cyber-terrorism provision.
       if (/blackmail|extort/i.test(normalizedQuery) || /بلیک\s*میل|دھمکی/.test(query)) cyberTerms.push('blackmail extortion online threat Section 24 PECA');
+      // A threat with a demand is the blackmail/stalking route even when the
+      // citizen never says "blackmail": "threatening me on WhatsApp and demanding
+      // money" fell through to the generic cyber string and was answered from the
+      // unauthorized-access and FIA-procedure records.
+      if (/threat\w*|intimidat\w*|dhamki\w*|دھمکی/.test(normalizedQuery) || /دھمکی/.test(query)) cyberTerms.push('criminal intimidation cyberstalking threat Section 24 PECA');
       if (/identity|fake|impersonat|profile/i.test(normalizedQuery) || /جعلی\s*(?:اکاؤنٹ|پروفائل)|میرے\s*نام\s*پر/.test(query)) cyberTerms.push('identity information Section 13 PECA unauthorized use false information reputation privacy Section 24 PECA');
       if (/fraud|scam/i.test(normalizedQuery)) cyberTerms.push('electronic fraud Section 11 PECA');
       if (/modesty|intimate|nude|sexually|morphed|superimpos|private (?:photo|picture|image|video)|tasveer|tasvir|تصویر|تصاویر|be-?ijaazat|ijazat (?:ke )?baghair/i.test(normalizedQuery) || /تصویر|تصاویر|بے\s*اجازت/.test(query)) cyberTerms.push('modesty Section 16 PECA intimate images');

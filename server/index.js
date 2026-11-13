@@ -544,12 +544,11 @@ function formatDirectResponse(retrievedChunks, detectedLang) {
 
 // Neutral offline header — states that the knowledge is verified, never that a
 // provider failed or that "Live AI" is down (internal state must not leak).
-// A weak/none gate verdict must not be served under an unconditional
-// "VERIFIED" claim, so it gets the partial form instead. 'refusal' is the case
-// where the reply carries NO record: claiming the answer was "assembled from
-// closest matching records" would assert verification that isn't there.
+// 'refusal' is the case where the reply carries NO record: claiming the answer
+// was "assembled from closest matching records" would assert verification that
+// isn't there. Weak/none passes get no banner — the answer's own limitation note
+// says what it rests on, without contradicting the answer it introduces.
 function offlineKnowledgeHeader(activeLang, verdict, jurisdictionNote = '') {
-  const partial = verdict === 'weak' || verdict === 'none';
   if (verdict === 'refusal') {
     if (activeLang === 'ur') {
       return `*میرے پاس موجود ریکارڈز اس سوال کا احاطہ نہیں کرتے، اس لیے نیچے کچھ بھی قانون کے طور پر پیش نہیں کیا جا رہا۔*\n\n`;
@@ -558,17 +557,11 @@ function offlineKnowledgeHeader(activeLang, verdict, jurisdictionNote = '') {
       ? `*Mere paas maujood records is sawal ko cover nahi karte, is liye neeche kuch bhi qanoon ke tor par pesh nahi kiya ja raha.*\n\n`
       : `*The records available to me do not cover this question, so nothing below is presented as law.*\n\n`;
   }
-  // A matching record needs no banner: the answer opens with its own heading and
-  // carries an honest limitation note. A weak match says only that part of the
-  // question is unanswered — never how retrieval scored or matched it.
-  if (!partial) return jurisdictionNote;
-  if (activeLang === 'ur') {
-    return `*آپ کے سوال کا کچھ حصہ میرے پاس موجود ریکارڈز میں نہیں ملتا۔ اس کی مزید تفصیل بتائیں تو میں دوبارہ دیکھ سکتا ہوں۔*\n\n` + jurisdictionNote;
-  }
-  if (activeLang === 'roman_urdu') {
-    return `*Aap ke sawal ka kuch hissa mere paas maujood records mein nahi milta. Mazeed tafseel batayein to main dobara dekh sakta hoon.*\n\n` + jurisdictionNote;
-  }
-  return `*Part of what you asked is not covered by the records I have. Tell me a little more and I will look again.*\n\n` + jurisdictionNote;
+  // A weak/none pass that still produced an answer carries its own honest
+  // limitation note, and the citizenship-facing partial-evidence banner read as
+  // the answer contradicting itself ("part of this is not covered" above a
+  // supported answer). Only a refusal with no record is framed.
+  return jurisdictionNote;
 }
 
 // A national record cannot establish the rule of a territory the user named. When
@@ -629,6 +622,8 @@ const LEGAL_CUES_EN = [
   'exam', 'result', 'degree', 'transcript', 'hostel', 'fee', 'fees', 'scholarship', 'ragging',
   'harassment', 'harass', 'assault', 'abuse', 'molest', 'theft', 'stole', 'robbery', 'fraud',
   'cheating', 'forgery', 'counterfeit', 'blackmail', 'cyber', 'online', 'password', 'rights',
+  'threat', 'threaten', 'intimidat', 'stalk', 'bully', 'impersonat', 'deepfake', 'morphed',
+  'obscene', 'pornograph', 'abusive', 'defame',
   'duty', 'duties', 'speech', 'religion', 'minor', 'child', 'women', 'wife', 'husband', 'parent',
   'guardianship', 'passport', 'cnic', 'domicile', 'vote', 'election', 'tax', 'taxation', 'customs',
   'bank', 'banking', 'loan', 'debt', 'recover', 'cheque', 'dishonour', 'stamp', 'company',
@@ -654,7 +649,8 @@ const LEGAL_CUES_ROMAN_URDU = [
   'domisail', 'vote', 'chunao', 'sarkar', 'mahkama', 'idara', 'kagaz', 'dastavez', 'tasdeeq',
   'halefnama', 'dastakhat', 'khat', 'muhr', 'kharid', 'farokht', 'bazaar', 'dukan', 'dau',
   'kompani', 'sharakat', 'ijazat', 'muafiqat', 'injury', 'hukam', 'jurm',
-  'sunwai', 'vakalatnama', 'gawah', 'saboot', 'faizla',
+  'sunwai', 'vakalatnama', 'gawah', 'saboot', 'faizla', 'dhamki', 'dhamkian', 'dhamkiyan',
+  'tasveerein', 'tasveer', 'harasani', 'harrasani',
 ];
 
 const LEGAL_CUES_URDU_SCRIPT = [
@@ -669,7 +665,7 @@ const LEGAL_CUES_URDU_SCRIPT = [
   'کسٹم', 'پاسپورٹ', 'قومی شناختی کارڈ', 'ڈومیسائل', 'ووٹ', 'الیکشن', 'حکومت', 'محکمہ',
   'ادارہ', 'کاغذ', 'دستاویز', 'تصدیق', 'حلف نامہ', 'دستخط', 'خط', 'مہر', 'خرید',
   'فروخت', 'کمپنی', 'شراکت', 'اجازت', 'معاوضہ', 'دعوی', 'موروث',
-  'ثبوت', 'گواہ', 'سماعت', 'فیصلہ', 'وکالت نامہ',
+  'ثبوت', 'گواہ', 'سماعت', 'فیصلہ', 'وکالت نامہ', 'بلیک میل', 'دھمکی', 'ہراسانی', 'تصاویر',
 ];
 
 const escRe = (s) => String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -710,6 +706,9 @@ function offTopicAbstentionText(userQuery, activeLang, evidence) {
   const reasons = ev.reasons || [];
   const corpusSaysNoSupport = ev.domain === 'unknown' || reasons.some(r => OFF_TOPIC_REASONS.has(r));
   if (!corpusSaysNoSupport) return null;
+  if (activeLang === 'ur') {
+    return 'آپ کے سوال میں کوئی قانون، دفعہ، عدالت، حق یا شہری موضوع نام سے ظاہر نہیں ہوتا، اور مستند قانونی ذخیرے میں اس سوال کا کوئی جواب موجود نہیں ہے — اس لیے یہاں کوئی متن یا حوالہ جواب کے طور پر پیش نہیں کیا جا رہا۔ قانونی مدد کے لیے اپنا سوال کسی قانون، عدالت یا حق کے حوالے سے پوچھیں — مثلاً "چوری کی سزا پاکستان پنل کوڈ کے تحت" یا "کرائے کا مکان خالی کروانا"۔';
+  }
   return activeLang === 'roman_urdu'
     ? 'Aap ke sawal mein koi qanoon, dafa, adalat, haq ya civic mauzoo naam se zahir nahi hota, aur verified law corpus mein is sawal ka koi jawab mojood nahi hai — is liye yahan koi text ya hawala pesh nahi kiya ja raha. Qanooni madad ke liye apna sawal kisi qanoon, court ya haq ke hawale se poochein — maslan "chori ki saza Pakistan Penal Code ke tahat" ya "kiralay ka ghar khali karwana".'
     : 'This question names no statute, provision, court, right or civic subject, and the verified law corpus holds no record that answers it, so no text and no source is being presented as an answer. For legal help, ask with a law, section, court or right in the question — for example "punishment for theft under the Pakistan Penal Code" or "evicting a tenant".';
@@ -2437,11 +2436,6 @@ ${contextStr}`;
       } : null);
       if (composed) {
         offlineText += composed;
-        if (retrievalResult.relevance === 'low') {
-          offlineText += activeLang === 'roman_urdu'
-            ? "\n\nYe maloomat verified corpus se milti-julti (partial) records par mabni hai. Behtar aur durust jawab ke liye mutaliqa qanoon/dafa, shehar aur haal-e-waqia wazeh karein."
-            : "\n\nThis is based on partially-matching records from the verified corpus. For a more precise answer, please confirm the relevant law/section, your city, and the specific facts.";
-        }
         // Phase 2: answered from generic cross-border context — ask the MINIMUM
         // country/purpose follow-up so the guidance can be sharpened (official
         // country-specific details are never guessed).

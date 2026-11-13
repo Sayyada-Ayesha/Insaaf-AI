@@ -520,7 +520,16 @@ export function subjectCheck(chunk, subject) {
   if (!build() || !subject || !subject.decisive) return { checked: false, ok: true, why: 'undecisive' };
   const asked = new Set(subject.asked);
   const d = domainsOfDoc(chunk.docId);
-  if (d.size && [...d].some(x => asked.has(x))) return { checked: true, ok: true, why: 'domain' };
+  if (!d.size) {
+    // Shared registries (situation-to-action, workflows) belong to no single
+    // domain by construction, so the profile has no ground to call them another
+    // subject's records. Measured on a Roman Urdu blackmail question: the
+    // remedy record that answers it was discarded as off-subject merely because
+    // its document is not listed under a domain, and the gate refused a question
+    // the corpus does answer. Topical coverage still decides whether it is kept.
+    return { checked: false, ok: true, why: 'unregistered' };
+  }
+  if ([...d].some(x => asked.has(x))) return { checked: true, ok: true, why: 'domain' };
   const titles = docTitleTerms.get(chunk.docId) || new Set();
   const heads = new Set([...(chunk.chunkTitle ? informativeTerms(chunk.chunkTitle) : []), ...titles]);
   const coreBar = subject.hasRoles ? 0.9 : 0.7;
