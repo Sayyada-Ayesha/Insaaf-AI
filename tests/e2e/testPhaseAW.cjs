@@ -546,8 +546,10 @@ async function silenceSpeech(page) {
     !!verified && /verified legal record/i.test(verified.text) && !partial && !noRecord,
     verified ? verified.text.replace(/\s+/g, ' ').slice(0, 70)
       : `verified=${!!verified} partial=${!!partial} none=${!!noRecord}`);
-  record('W3.9 the legal answer is grounded on the tenancy subject with verified citations',
-    !!answer && /deposit|tenant|landlord/i.test(answer.text) && /VERIFIED LEGAL REFERENCE/i.test(answer.text)
+  record('W3.9 the legal answer is grounded on the tenancy subject with clean headings',
+    !!answer && /deposit|tenant|landlord/i.test(answer.text)
+      && /What you can do|Ab aap kya karein\?|Kaam/i.test(answer.text)
+      && !/VERIFIED LEGAL REFERENCE/i.test(answer.text)
       && !/not a calculator/i.test(answer.text),
     answer ? answer.text.replace(/\s+/g, ' ').slice(0, 70) : '');
 

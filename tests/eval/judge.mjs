@@ -18,6 +18,7 @@ const PROVINCIES = ['punjab', 'sindh', 'khyber pakhtunkhwa', 'kpk', 'balochistan
 
 const REFUSAL = [
   /NO VERIFIED MATCH/i, /TASDEEQ SHUDA MATCH NAHI MILA/i,
+  /do not cover this question/i, /is sawal ko cover nahi karte/i, /اس سوال کا احاطہ نہیں کرتے/,
   /no record in the verified law corpus matches/i,
   /milta-julta koi record nahi/i, /poora madad-ga record nahi mila/i,
   /I could not find a record in the verified corpus/i,

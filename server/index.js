@@ -540,25 +540,22 @@ function offlineKnowledgeHeader(activeLang, verdict, jurisdictionNote = '') {
   const partial = verdict === 'weak' || verdict === 'none';
   if (verdict === 'refusal') {
     if (activeLang === 'ur') {
-      return `**📖 کوئی مستند مطابقت نہیں ملی**\n\n*مستند قانونی ذخیرے میں آپ کے سوال سے ملتا جلتا کوئی ریکارڈ نہیں ملا، اس لیے نیچے کچھ بھی تصدیق شدہ قانون کے طور پر پیش نہیں کیا جا رہا۔*\n\n`;
+      return `*میرے پاس موجود ریکارڈز اس سوال کا احاطہ نہیں کرتے، اس لیے نیچے کچھ بھی قانون کے طور پر پیش نہیں کیا جا رہا۔*\n\n`;
     }
     return activeLang === 'roman_urdu'
-      ? `**📖 TASDEEQ SHUDA MATCH NAHI MILA**\n\n*Verified law corpus mein aap ke sawal se milta-julta koi record nahi mila, is liye neeche kuch bhi tasdeeq shuda qanoon ke tor par pesh nahi kiya ja raha.*\n\n`
-      : `**📖 NO VERIFIED MATCH**\n\n*No record in the verified law corpus matches this question, so nothing below is presented as verified law.*\n\n`;
+      ? `*Mere paas maujood records is sawal ko cover nahi karte, is liye neeche kuch bhi qanoon ke tor par pesh nahi kiya ja raha.*\n\n`
+      : `*The records available to me do not cover this question, so nothing below is presented as law.*\n\n`;
   }
+  // A matching record needs no banner: the answer opens with its own heading and
+  // carries an honest limitation note. Only a weak match says so, plainly.
+  if (!partial) return jurisdictionNote;
   if (activeLang === 'ur') {
-    return (partial
-      ? `**📖 جزوی طور پر مستند قانونی حوالہ**\n\n*یہ معلومات مستند قانونی ذخیرے کے قریب ترین ملتے جلتے ریکارڈز سے تیار کی گئی ہیں؛ ذخیرے میں آپ کے سوال سے مکمل مطابقت رکھنے والا ریکارڈ نہیں ملا۔*\n\n`
-      : `**📖 مستند قانونی حوالہ**\n\n*یہ معلومات مستند قانونی ذخیرے سے فراہم کی گئی ہیں۔*\n\n`) + jurisdictionNote;
+    return `*یہ جواب قریب ترین ملتے جلتے ریکارڈز سے تیار کیا گیا ہے؛ کوئی ریکارڈ آپ کے سوال سے پوری مطابقت نہیں رکھتا۔*\n\n` + jurisdictionNote;
   }
   if (activeLang === 'roman_urdu') {
-    return (partial
-      ? `**📖 QISMAN VERIFIED QANOONI HAWALA**\n\n*Yeh maloomat verified law corpus ke qareeb tareen milte-julte records se banayi gayi hai; corpus mein aap ke sawal se poora milta-julta record nahi mila.*\n\n`
-      : `**📖 VERIFIED QANOONI HAWALA**\n\n*Yeh maloomat verified law corpus se faraham ki gayi hai.*\n\n`) + jurisdictionNote;
+    return `*Yeh jawab qareeb tareen milte-julte records se banaya gaya hai; koi record aap ke sawal se poora nahi milta.*\n\n` + jurisdictionNote;
   }
-  return (partial
-    ? `**📖 PARTIALLY VERIFIED LEGAL REFERENCE**\n\n*This information is assembled from the closest matching records in the verified law corpus; no record matches your question exactly.*\n\n`
-    : `**📖 VERIFIED LEGAL REFERENCE**\n\n*This information is retrieved from the verified law corpus.*\n\n`) + jurisdictionNote;
+  return `*This answer is built from the closest matching records; none matches your question exactly.*\n\n` + jurisdictionNote;
 }
 
 // A national record cannot establish the rule of a territory the user named. When
