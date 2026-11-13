@@ -1,8 +1,8 @@
 // ============================================================================
-// server/docModel.js — INSAaf OWNED-MODEL LOCAL DOCUMENT ANALYZER (Part N/O/T)
+// server/docModel.js — Insaaf AI OWNED-MODEL LOCAL DOCUMENT ANALYZER (Part N/O/T)
 // ----------------------------------------------------------------------------
 // Analyzes uploaded document text entirely locally (no network, no external
-// LLM). It is the document counterpart of ownedModel.js: when the INSAaf owned
+// LLM). It is the document counterpart of ownedModel.js: when the Insaaf AI owned
 // model is the primary provider, /api/ai/document-understanding composes its
 // answer from THIS engine instead of giving up.
 //
@@ -1011,7 +1011,7 @@ export function summarize(text, docType, isRoman, facts = {}) {
   return cleanLine(prefix + picked).slice(0, 900);
 }
 
-/** Map the document type / content to a known INSAaf procedure (Part K). */
+/** Map the document type / content to a known Insaaf AI procedure (Part K). */
 export function matchRelevantProcedure(docType, text) {
   const t = String(text || '').toLowerCase();
   const dt = String(docType || '').toLowerCase();
@@ -1412,8 +1412,8 @@ export function analyzeDocumentText(text, question, opts = {}) {
     : 'Pakistan';
   const foreignProcedureNote = foreign.isForeign
     ? (isRoman
-        ? `Ye document ${foreign.country ? foreign.country + ' ke' : 'kisi foreign mulk ke'} court/authority ka hai, is liye is par USKA apna mulqi qanoon/law lagu hoga — Pakistani law ya Pakistani court procedure nahi. Na hi MOFA/Pakistani authority ye foreign case chalegi. For next steps, deadline par amal aur jawab ke liye us mulk ka qualified local lawyer zaroori hai; Pakistani mission (MOFA) sirf consular support de sakti hai. INSAaf foreign law, fees ya deadline nahi ghadta — live official source se confirm karein.`
-        : `This document appears to come from ${foreign.country ? 'a ' + foreign.country : 'a foreign'} court/authority, so it is governed by THAT country's own law and procedure — not Pakistani law, and Pakistani court procedure does not apply. Pakistani authorities do not adjudicate a foreign case. Respond on the document's own terms and within its stated deadline, using a qualified local lawyer in that country; a Pakistani mission (MOFA) can provide consular support only. INSAaf does not fabricate foreign law, fees or deadlines — confirm current rules with the country's official source.`)
+        ? `Ye document ${foreign.country ? foreign.country + ' ke' : 'kisi foreign mulk ke'} court/authority ka hai, is liye is par USKA apna mulqi qanoon/law lagu hoga — Pakistani law ya Pakistani court procedure nahi. Na hi MOFA/Pakistani authority ye foreign case chalegi. For next steps, deadline par amal aur jawab ke liye us mulk ka qualified local lawyer zaroori hai; Pakistani mission (MOFA) sirf consular support de sakti hai. Insaaf AI foreign law, fees ya deadline nahi ghadta — live official source se confirm karein.`
+        : `This document appears to come from ${foreign.country ? 'a ' + foreign.country : 'a foreign'} court/authority, so it is governed by THAT country's own law and procedure — not Pakistani law, and Pakistani court procedure does not apply. Pakistani authorities do not adjudicate a foreign case. Respond on the document's own terms and within its stated deadline, using a qualified local lawyer in that country; a Pakistani mission (MOFA) can provide consular support only. Insaaf AI does not fabricate foreign law, fees or deadlines — confirm current rules with the country's official source.`)
     : null;
 
   const data = { documentType: docType, summary, parties, dates, authorities, requirements, deadlines, provisions, caseNumbers, amounts };
@@ -1461,7 +1461,7 @@ export function analyzeDocumentText(text, question, opts = {}) {
 
 // --- Part S: mandatory footer for every AI-generated document ----------------
 export const INSAF_DOC_FOOTER = `<div style="margin-top:48px; padding-top:12px; border-top:1px solid #d1d5db; text-align:center; font-size:0.8em; color:#6b7280; font-family:'Times New Roman', serif;">
-  <p style="margin:0; font-weight:bold; color:#374151;">Prepared with INSAaf AI</p>
+  <p style="margin:0; font-weight:bold; color:#374151;">Prepared with Insaaf AI</p>
   <p style="margin:4px 0 0;">AI-assisted draft for guidance only &mdash; not legal advice and not filed with any court or authority. Please verify all details and consult a registered advocate before use.</p>
 </div>`;
 
@@ -3159,7 +3159,7 @@ export function applyLocalEdit(html, userInput) {
     const translateToUrdu = /(?:convert|translate|تبدیل)\s+(?:this\s+(?:document|draft)|it|iska|is\s+ko|document)\s+(?:into|to|mein)?\s+(?:urdu\s+script\s*|urdu\s*|اردو)/i.test(low);
     if (wantsUrdu || translateToUrdu) {
       if (/[\u0600-\u06FF]/.test(h)) {
-        return { changed: false, html: h, summary: 'This document is already in Urdu Script (اردو), so there is nothing to translate. Note: INSAaf drafts formal documents only in English or Urdu Script — Roman Urdu is never used inside documents.' };
+        return { changed: false, html: h, summary: 'This document is already in Urdu Script (اردو), so there is nothing to translate. Note: Insaaf AI drafts formal documents only in English or Urdu Script — Roman Urdu is never used inside documents.' };
       }
       const heading = (h.match(/<h2[^>]*>([\s\S]*?)<\/h2>/i) || [])[1];
       const headingText = heading ? plainText(heading) : '';
@@ -3199,7 +3199,7 @@ export function applyLocalEdit(html, userInput) {
     // ---- E. Language-conversion requests (honest guidance only where the
     // deterministic converter above could not run) -----------------------------
     if (!gripe && /roman\s+urdu/i.test(low) && /(?:karo|make|convert|change|turn|main|mein)/i.test(low)) {
-      return { changed: false, html: h, summary: 'INSAaf drafts formal documents only in English or Urdu Script (اردو) — Roman Urdu is not a document language, so this draft cannot be rendered in Roman Urdu. Choose English or اردو (Urdu Script) in the document language setting and regenerate. The current draft is unchanged.' };
+      return { changed: false, html: h, summary: 'Insaaf AI drafts formal documents only in English or Urdu Script (اردو) — Roman Urdu is not a document language, so this draft cannot be rendered in Roman Urdu. Choose English or اردو (Urdu Script) in the document language setting and regenerate. The current draft is unchanged.' };
     }
     if (!gripe && /(?:english|angrezi|انگریزی)/i.test(low) && /(?:karo|make|convert|change|turn|main|mein)/i.test(low)) {
       return { changed: false, html: h, summary: 'To render this document in English, choose English in the document language setting and regenerate — the whole document is then re-rendered cleanly in English. The current draft is unchanged.' };

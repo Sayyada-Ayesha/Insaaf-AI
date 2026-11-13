@@ -32,15 +32,15 @@ export function backendFailureKind(status?: number | null, err?: unknown): Backe
 export function backendFailureNotice(kind: BackendFailureKind, lang: 'en' | 'roman_urdu', status?: number | null): string {
   const code = status ? ` (HTTP ${status})` : '';
   if (lang === 'roman_urdu') {
-    if (kind === 'route-missing') return `⚠️ **Backend Ka Masla:** INSAaf AI ka jawab dene wala server is deployment par mojood nahi${code}. Yeh aap ke internet ka masla nahi — server deployment theek karna zaroori hai. Aap ka sawal khoya nahi hai.`;
+    if (kind === 'route-missing') return `⚠️ **Backend Ka Masla:** Insaaf AI ka jawab dene wala server is deployment par mojood nahi${code}. Yeh aap ke internet ka masla nahi — server deployment theek karna zaroori hai. Aap ka sawal khoya nahi hai.`;
     if (kind === 'timeout') return '⚠️ **Waqt Ki Had:** Server ne waqt par jawab nahi diya. Thori der baad dobara koshish karen — aap ka sawal khoya nahi hai.';
     if (kind === 'network') return '⚠️ **Rubat Ki Khabar:** Server tak rasai nahi hui. Apna internet check karen aur dobara koshish karen.';
     return `⚠️ **Server Ki Kharabi:** Backend ne server error diya${code}. Yeh aap ke internet ka masla nahi — thori der baad dobara koshish karen.`;
   }
-  if (kind === 'route-missing') return `⚠️ **Backend Problem:** The INSAaf AI answer service is not available on this deployment${code}. This is a server/deployment fault, not your internet connection. Your question was not lost.`;
+  if (kind === 'route-missing') return `⚠️ **Backend Problem:** The Insaaf AI answer service is not available on this deployment${code}. This is a server/deployment fault, not your internet connection. Your question was not lost.`;
   if (kind === 'timeout') return '⚠️ **Timed Out:** The server did not answer in time. Please try again shortly — your question was not lost.';
-  if (kind === 'network') return '⚠️ **Connection Notice:** The INSAaf AI server could not be reached. Please check your internet connection and try again in a moment.';
-  return `⚠️ **Server Error:** The INSAaf AI backend returned a server error${code}. This is not your internet connection — please try again shortly.`;
+  if (kind === 'network') return '⚠️ **Connection Notice:** The Insaaf AI server could not be reached. Please check your internet connection and try again in a moment.';
+  return `⚠️ **Server Error:** The Insaaf AI backend returned a server error${code}. This is not your internet connection — please try again shortly.`;
 }
 
 /** A backend failure that keeps its HTTP status and cause for the caller's UI. */
@@ -86,8 +86,8 @@ function getBoundedLocalKnowledge(userQuery: string, preferredLanguage?: Support
       ? '**⚠️ AAM MAALOOMAT — AAP KE KHAAS HALAAT KE LIYE TASDEEQ SHUDA NAHI**\n\n*Neeche di gayi baat app ke aam notes hai, is sawal ka verified record nahi. Koi bhi percentage, muddat, fee ya registration ka rule likha ho to woh soobe-khaas hai; har soobe ka qanoon alag hai, is liye amal se pehle apne sheher ke authority se tasdeeq karein.*\n\n'
       : '**⚠️ GENERAL REFERENCE — NOT VERIFIED FOR YOUR CASE**\n\n*What follows is the app\'s built-in general notes, not a verified record answering this question. Any percentage, deadline, fee or registration requirement named below is province-specific; the laws differ by province, so confirm with the authority in your city before acting.*\n\n';
     const footer = roman
-      ? '*Yeh tasdeeq shuda jawab nahi. INSAaf AI se dobara rabta kar ke apne soobe/shahar ka verified record maloom karein.*'
-      : '*This is not a verified answer. Reconnect to INSAaf AI to get the verified record for your province and city.*';
+      ? '*Yeh tasdeeq shuda jawab nahi. Insaaf AI se dobara rabta kar ke apne soobe/shahar ka verified record maloom karein.*'
+      : '*This is not a verified answer. Reconnect to Insaaf AI to get the verified record for your province and city.*';
 
     return `${header}${content}\n\n${footer}`;
   }
@@ -661,14 +661,14 @@ ${sectionsHtml}
   }
 }
 
-// F12/F13: INSAaf Legal Agent — legal Q&A + app self-knowledge with deep-link actions.
+// F12/F13: Insaaf AI Legal Agent — legal Q&A + app self-knowledge with deep-link actions.
 export interface AgentSource {
   title?: string;
   type?: string;
   key?: string;
   authority?: string;
   sourceURL?: string;
-  /** F14: RAG domain id used for "Open in INSAaf Library" deep-links. */
+  /** F14: RAG domain id used for "Open in Insaaf AI Library" deep-links. */
   domain?: string;
 }
 

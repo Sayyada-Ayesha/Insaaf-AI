@@ -1,5 +1,5 @@
 // ============================================================================
-// INSAaf AI — LOCAL SEMANTIC EMBEDDER (F12 / Phase 11 — Semantic Retrieval)
+// Insaaf AI — LOCAL SEMANTIC EMBEDDER (F12 / Phase 11 — Semantic Retrieval)
 // ----------------------------------------------------------------------------
 // Genuine semantic embeddings WITHOUT any paid external generative-AI API.
 // Uses the open model Xenova/multilingual-e5-small served locally through

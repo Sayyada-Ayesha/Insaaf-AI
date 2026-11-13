@@ -377,7 +377,7 @@ export default function Layout({ children, activeTab, setActiveTab, onOpenLibrar
               <Scale className="text-white w-6 h-6" />
             </span>
             <span className="hidden sm:block">
-              <span className="block text-xl font-bold tracking-tight text-[#01411C]">INSAaf AI</span>
+              <span className="block text-xl font-bold tracking-tight text-[#01411C]">Insaaf AI</span>
               <span className="block text-[10px] uppercase tracking-widest font-black opacity-40">Justice for All</span>
             </span>
           </button>
@@ -907,7 +907,7 @@ export default function Layout({ children, activeTab, setActiveTab, onOpenLibrar
               <div className="w-8 h-8 bg-[#01411C] rounded-lg flex items-center justify-center">
                 <Scale className="text-white w-5 h-5" />
               </div>
-              <span className="font-black text-[#01411C] uppercase tracking-wider">INSAaf AI</span>
+              <span className="font-black text-[#01411C] tracking-wider">Insaaf AI</span>
             </div>
             <p className="text-sm text-gray-500 leading-relaxed font-medium">
               {t.footerMission}

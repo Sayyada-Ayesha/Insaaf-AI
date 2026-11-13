@@ -2115,7 +2115,7 @@ export const FirestoreService = {
 
     const outcome = chatSaveOutcome({ writeAcknowledged, queueDrained, existsOnServer });
     // Target and path are what a report needs; the chat text is not.
-    console.info('INSAaf chat save:', JSON.stringify({
+    console.info('Insaaf AI chat save:', JSON.stringify({
       projectId: firestoreTarget.projectId,
       databaseId: firestoreTarget.databaseId,
       path: `users/${maskUid(uid)}/chats/${chat.id}`,
@@ -2231,16 +2231,16 @@ export const FirestoreService = {
 
         cachedLawyers = [...fsLawyers, ...missingSeedLawyers];
         lawyerDataSource = 'firestore';
-        console.info(`[INSAaf AI] Loaded ${fsLawyers.length} lawyers from Firestore, merged with ${missingSeedLawyers.length} verified records (Total: ${cachedLawyers.length})`);
+        console.info(`[Insaaf AI] Loaded ${fsLawyers.length} lawyers from Firestore, merged with ${missingSeedLawyers.length} verified records (Total: ${cachedLawyers.length})`);
         return cachedLawyers;
       }
       // Firestore is accessible but collection is empty — use local fallback
-      console.info(`[INSAaf AI] Firestore lawyers collection is empty, using ${SEED_LAWYERS.length} verified local records`);
+      console.info(`[Insaaf AI] Firestore lawyers collection is empty, using ${SEED_LAWYERS.length} verified local records`);
       cachedLawyers = SEED_LAWYERS;
       lawyerDataSource = 'local_fallback';
       return SEED_LAWYERS;
     } catch (error) {
-      console.warn("[INSAaf AI] Firestore lawyers query failed, using verified local directory:", error instanceof Error ? error.message : error);
+      console.warn("[Insaaf AI] Firestore lawyers query failed, using verified local directory:", error instanceof Error ? error.message : error);
       cachedLawyers = SEED_LAWYERS;
       lawyerDataSource = 'local_fallback';
       return SEED_LAWYERS;
@@ -2270,15 +2270,15 @@ export const FirestoreService = {
 
         cachedOrgs = [...fsOrgs, ...missingSeedOrgs];
         orgDataSource = 'firestore';
-        console.info(`[INSAaf AI] Loaded ${fsOrgs.length} legal aid organizations from Firestore, merged with ${missingSeedOrgs.length} verified records (Total: ${cachedOrgs.length})`);
+        console.info(`[Insaaf AI] Loaded ${fsOrgs.length} legal aid organizations from Firestore, merged with ${missingSeedOrgs.length} verified records (Total: ${cachedOrgs.length})`);
         return cachedOrgs;
       }
-      console.info(`[INSAaf AI] Firestore legalAidOrganizations collection is empty, using ${SEED_LEGAL_AID_ORGS.length} verified local records`);
+      console.info(`[Insaaf AI] Firestore legalAidOrganizations collection is empty, using ${SEED_LEGAL_AID_ORGS.length} verified local records`);
       cachedOrgs = SEED_LEGAL_AID_ORGS;
       orgDataSource = 'local_fallback';
       return SEED_LEGAL_AID_ORGS;
     } catch (error) {
-      console.warn("[INSAaf AI] Firestore legal aid query failed, using verified seed data:", error instanceof Error ? error.message : error);
+      console.warn("[Insaaf AI] Firestore legal aid query failed, using verified seed data:", error instanceof Error ? error.message : error);
       cachedOrgs = SEED_LEGAL_AID_ORGS;
       orgDataSource = 'local_fallback';
       return SEED_LEGAL_AID_ORGS;
@@ -2308,15 +2308,15 @@ export const FirestoreService = {
 
         cachedEmergency = [...fsContacts, ...missingSeedContacts];
         emergencyDataSource = 'firestore';
-        console.info(`[INSAaf AI] Loaded ${fsContacts.length} emergency contacts from Firestore, merged with ${missingSeedContacts.length} verified records (Total: ${cachedEmergency.length})`);
+        console.info(`[Insaaf AI] Loaded ${fsContacts.length} emergency contacts from Firestore, merged with ${missingSeedContacts.length} verified records (Total: ${cachedEmergency.length})`);
         return cachedEmergency;
       }
-      console.info(`[INSAaf AI] Firestore emergencyContacts collection is empty, using ${SEED_EMERGENCY_CONTACTS.length} verified local records`);
+      console.info(`[Insaaf AI] Firestore emergencyContacts collection is empty, using ${SEED_EMERGENCY_CONTACTS.length} verified local records`);
       cachedEmergency = SEED_EMERGENCY_CONTACTS;
       emergencyDataSource = 'local_fallback';
       return SEED_EMERGENCY_CONTACTS;
     } catch (error) {
-      console.warn("[INSAaf AI] Firestore emergency contacts query failed, using verified seed data:", error instanceof Error ? error.message : error);
+      console.warn("[Insaaf AI] Firestore emergency contacts query failed, using verified seed data:", error instanceof Error ? error.message : error);
       cachedEmergency = SEED_EMERGENCY_CONTACTS;
       emergencyDataSource = 'local_fallback';
       return SEED_EMERGENCY_CONTACTS;

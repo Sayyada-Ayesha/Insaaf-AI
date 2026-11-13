@@ -27,7 +27,7 @@ export const CROSS_BORDER_SECTIONS: LibrarySection[] = [
         subsections: [
           { title: "What a consular post can do", body: "Give guidance, help you contact a local lawyer or interpreter, help with a lost passport (emergency travel document), pass welfare messages to family, and register your situation. It CANNOT intervene in or decide a foreign court case, pay your legal fees, or get you exempted from that country's law." },
           { title: "Jurisdiction reminder", body: "While abroad, the foreign country's law applies to you - not Pakistani law. Pakistani authorities do not adjudicate foreign matters; a local qualified lawyer in that country is usually required." },
-          { title: "Coverage note", body: "INSAaf provides verified Pakistan-facing cross-border guidance for covered countries/topics only, and never claims to know every country's rules." }
+          { title: "Coverage note", body: "Insaaf AI provides verified Pakistan-facing cross-border guidance for covered countries/topics only, and never claims to know every country's rules." }
         ]
       },
       ur: {
@@ -62,7 +62,7 @@ export const CROSS_BORDER_SECTIONS: LibrarySection[] = [
         subsections: [
           { title: "Lost or stolen passport abroad", body: "Report to the local police and contact the nearest Pakistani mission for an Emergency Travel Document / duplicate passport. Never buy or use a second identity; the mission and NADRA (https://nadra.gov.pk) are the proper channels." },
           { title: "Entry into Pakistan", body: "A Pakistani passport may only be held/used by a Pakistani citizen. Entry/exit and any NOC/clearance requirements are set by Pakistani rules - verify with DGIP/mission. Emigration clearance for work abroad is handled by the Bureau of Emigration (see Working Abroad)." },
-          { title: "Foreign entry rules are Layer B", body: "Whether you may enter another country, visa-free or on a visa, is decided by that country's immigration law - check its official immigration/embassy source; INSAaf does not state another country's visa rules." }
+          { title: "Foreign entry rules are Layer B", body: "Whether you may enter another country, visa-free or on a visa, is decided by that country's immigration law - check its official immigration/embassy source; Insaaf AI does not state another country's visa rules." }
         ]
       },
       ur: {
@@ -98,7 +98,7 @@ export const CROSS_BORDER_SECTIONS: LibrarySection[] = [
         subsections: [
           { title: "Unpaid wages / mistreated abroad", body: "Complain to the recruiting agent's regulator (Bureau of Emigration complaint channels), the nearest Pakistani mission, and, for the contract itself, the local labour authority/courts of that country. Keep the contract, receipts, and messages as evidence." },
           { title: "Trafficking / forced labour", body: "If trapped, passport confiscated or forced to work, contact local police for immediate safety, the Pakistani mission, and in Pakistan the FIA Human Trafficking Research & Investigation Wing (https://fia.gov.pk) and the Bureau of Emigration." },
-          { title: "Never fabricate", body: "INSAaf does not invent job offers, sponsor names, visa quotas or specific current rules for any country - it routes you to the official regulator." }
+          { title: "Never fabricate", body: "Insaaf AI does not invent job offers, sponsor names, visa quotas or specific current rules for any country - it routes you to the official regulator." }
         ]
       },
       ur: {
@@ -133,7 +133,7 @@ export const CROSS_BORDER_SECTIONS: LibrarySection[] = [
         ],
         subsections: [
           { title: "Known official scholarship programs", body: "Real programs open to Pakistanis include Fulbright (USA), Chevening (UK - https://www.chevening.org), Commonwealth Scholarships (UK), DAAD (Germany - https://www.daad.de), Turkiye Burslari (https://www.turkiyeburslari.gov.tr), MEXT (Japan), Chinese Government Scholarships/CSC (https://www.campuschina.org), Australia Awards, and HEC scholarships (https://www.hec.gov.pk)." },
-          { title: "Time-sensitive warning", body: "Scholarship eligibility, amounts, deadlines and open/closed status change every cycle. Always confirm live on the official program page - INSAaf does not present expired scholarships as current and does not invent per-cycle details." }
+          { title: "Time-sensitive warning", body: "Scholarship eligibility, amounts, deadlines and open/closed status change every cycle. Always confirm live on the official program page - Insaaf AI does not present expired scholarships as current and does not invent per-cycle details." }
         ]
       },
       ur: {
@@ -200,7 +200,7 @@ export const CROSS_BORDER_SECTIONS: LibrarySection[] = [
           "A document from a FOREIGN court or authority (a U.S./UK/Gulf court summons, a visa/immigration decision, a deportation/removal notice, foreign police or tax letter) is governed by the ISSUING country's law and procedure - NOT Pakistani law. Respond on the document's own terms and within its stated deadline."
         ],
         subsections: [
-          { title: "What to do", body: "(1) Read what it commands (appear/respond/pay/leave), (2) note the deadline and the named authority/court, (3) get a qualified lawyer in THAT country. Ignoring a foreign court deadline can have real consequences under that country's system. Use INSAaf's Document Analyzer to understand the text, but treat the matter as foreign-jurisdiction." },
+          { title: "What to do", body: "(1) Read what it commands (appear/respond/pay/leave), (2) note the deadline and the named authority/court, (3) get a qualified lawyer in THAT country. Ignoring a foreign court deadline can have real consequences under that country's system. Use Insaaf AI's Document Analyzer to understand the text, but treat the matter as foreign-jurisdiction." },
           { title: "Enforcement across borders", body: "Enforcing a foreign judgment in Pakistan (or a Pakistani judgment abroad) is not automatic; Pakistan's Code of Civil Procedure, 1908 deals with recognition/enforcement of foreign judgments (distinguishing reciprocating territories) and needs a court process where enforcement is sought." },
           { title: "Consular support only", body: "A Pakistani mission can support your welfare and give lawyer lists (https://www.mofa.gov.pk) but cannot act in the foreign case." }
         ]
@@ -272,7 +272,7 @@ export const CROSS_BORDER_SECTIONS: LibrarySection[] = [
         subsections: [
           { title: "Cross-border inheritance", body: "Where assets or a death span two countries, succession can engage the foreign country's probate rules for assets there AND Pakistani succession/personal law for assets in Pakistan; foreign grants of probate may need recognition. Which law applies depends on where each asset sits and the personal law." },
           { title: "Power of attorney from abroad", body: "A Pakistani abroad often signs via a Power of Attorney executed/attested through the mission so a person in Pakistan can act - confirm the format with the mission and the registering authority." },
-          { title: "No invented tax/treaty terms", body: "Tax residence, withholding and DTAA relief are precise and changeable - verify with FBR, the host country's tax authority and a qualified adviser; INSAaf does not invent treaty terms." }
+          { title: "No invented tax/treaty terms", body: "Tax residence, withholding and DTAA relief are precise and changeable - verify with FBR, the host country's tax authority and a qualified adviser; Insaaf AI does not invent treaty terms." }
         ]
       },
       ur: {
@@ -340,7 +340,7 @@ export const CROSS_BORDER_SECTIONS: LibrarySection[] = [
           "Pakistan's foreign policy, its missions abroad, and treaty work are handled by MOFA (https://www.mofa.gov.pk). Pakistan is a documented member of bodies such as the UN, OIC, ECO, SAARC, D-8, SCO and the Commonwealth."
         ],
         subsections: [
-          { title: "Treaties & bilateral agreements", body: "Whether a specific agreement (e.g., a workers' MoU or extradition/MLA arrangement) exists between Pakistan and a given country is precise and changeable - confirm it from MOFA/the relevant ministry's official publication. INSAaf does not claim an agreement exists without a verified source." },
+          { title: "Treaties & bilateral agreements", body: "Whether a specific agreement (e.g., a workers' MoU or extradition/MLA arrangement) exists between Pakistan and a given country is precise and changeable - confirm it from MOFA/the relevant ministry's official publication. Insaaf AI does not claim an agreement exists without a verified source." },
           { title: "Extradition & MLA", body: "Extradition and Mutual Legal Assistance depend on the specific treaties/arrangements and each country's domestic law - no universal rule. For an ordinary citizen's cross-border problem, the practical fora are the domestic courts/authorities of the relevant country, plus consular channels." }
         ]
       },

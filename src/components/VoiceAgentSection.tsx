@@ -332,7 +332,7 @@ export default function VoiceAgentSection({ onNavigate }: { onNavigate?: (route:
     const text = buildIntakeSummary(stateRef.current);
     if (typeof navigator !== 'undefined' && typeof navigator.share === 'function') {
       try {
-        await navigator.share({ title: 'INSAaf client intake summary', text });
+        await navigator.share({ title: 'Insaaf AI client intake summary', text });
         setShareStatus('shared');
       } catch {
         setShareStatus('cancelled');
@@ -1026,8 +1026,8 @@ export default function VoiceAgentSection({ onNavigate }: { onNavigate?: (route:
           <div data-testid="voice-incident-panel" className="rounded-2xl border border-gray-100 bg-gray-50 p-4 space-y-3">
             <p className="text-[11px] text-gray-600">
               {label(
-                "Two documents assembled by INSAaf from what you told this session: a written complaint to take to the officer at the police station, and a one-page case summary for a lawyer. Under section 154 of the Code of Criminal Procedure the police record your statement themselves, so the complaint deliberately names no offence section — deciding that is the officer's job, and a wrong section in your own statement weakens you. Nothing here is filed, submitted or sent anywhere automatically.",
-                "Do dastawez INSAaf ne is baat-cheet mein aap ke kaha hua se banaye hain: SHO ke liye likhi shikayat, aur wukil ke liye ek safha ka case khulasa. CrPC ki dhara 154 ke tehat police aap ka bayaan khud likhti hai, is liye shikayat jaan-boojh kar koi afraad ka section nahi likhti — yeh faisla officer ka kaam hai, aur aap ke apne bayaan mein ghalt section aap ko kamzor karta hai. Yahan se kuch bhi khud-ba-khud file ya kisi ko nahi bheja jaata."
+                "Two documents assembled by Insaaf AI from what you told this session: a written complaint to take to the officer at the police station, and a one-page case summary for a lawyer. Under section 154 of the Code of Criminal Procedure the police record your statement themselves, so the complaint deliberately names no offence section — deciding that is the officer's job, and a wrong section in your own statement weakens you. Nothing here is filed, submitted or sent anywhere automatically.",
+                "Do dastawez Insaaf AI ne is baat-cheet mein aap ke kaha hua se banaye hain: SHO ke liye likhi shikayat, aur wukil ke liye ek safha ka case khulasa. CrPC ki dhara 154 ke tehat police aap ka bayaan khud likhti hai, is liye shikayat jaan-boojh kar koi afraad ka section nahi likhti — yeh faisla officer ka kaam hai, aur aap ke apne bayaan mein ghalt section aap ko kamzor karta hai. Yahan se kuch bhi khud-ba-khud file ya kisi ko nahi bheja jaata."
               )}
             </p>
             <button

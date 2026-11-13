@@ -1,5 +1,5 @@
 /**
- * server/appSupport.js — a scoped assistant for questions about using INSAaf AI itself,
+ * server/appSupport.js — a scoped assistant for questions about using Insaaf AI itself,
  * plus the in-app report routes Phase 4 §C asks for.
  *
  * Two failure modes had to be designed out at once. The first is a help bot that answers
@@ -53,8 +53,8 @@ export const TOPICS = [
       ur: ['ماخذ', 'تصدیق', 'دلیل', 'گلت', 'کون سا قانون']
     },
     answer: {
-      en: 'Every legal answer is built from a frozen collection of Pakistani statute, case law and official procedure, and each card links to the record that supplied it. If the collection holds nothing on the point, the app says so instead of inventing a provision — that is the intended behaviour, not an error. INSAaf AI is not a lawyer: it cannot file, appear or decide for you, and a printed provision must be checked against the current official text before it is relied on.',
-      roman_urdu: 'Har qanooni jawab Pakistan ke qanoon, muqadmaat aur sarkari procedure ke jama shuda makhazon se banta hai, aur har card us record ki link dikhata hai. Agar us mauzu par kuch nahi mila to app saaf kehti hai — dhara gadh kar nahi likhti. INSAaf AI wakeel nahi hai; file karna, pesh hona ya faisla aap ka kaam hai.'
+      en: 'Every legal answer is built from a frozen collection of Pakistani statute, case law and official procedure, and each card links to the record that supplied it. If the collection holds nothing on the point, the app says so instead of inventing a provision — that is the intended behaviour, not an error. Insaaf AI is not a lawyer: it cannot file, appear or decide for you, and a printed provision must be checked against the current official text before it is relied on.',
+      roman_urdu: 'Har qanooni jawab Pakistan ke qanoon, muqadmaat aur sarkari procedure ke jama shuda makhazon se banta hai, aur har card us record ki link dikhata hai. Agar us mauzu par kuch nahi mila to app saaf kehti hai — dhara gadh kar nahi likhti. Insaaf AI wakeel nahi hai; file karna, pesh hona ya faisla aap ka kaam hai.'
     }
   },
   {
@@ -105,8 +105,8 @@ export const TOPICS = [
       ur: ['شکایت', 'درخواست', 'حالت']
     },
     answer: {
-      en: 'A civic report filed while signed in is stored on the server and gets a tracking reference; the Civic Issues tab lists the reports you filed and shows each status as a reviewer moves it through SUBMITTED, IN REVIEW, ASSIGNED, IN PROGRESS, RESOLVED or CLOSED. Filing here records the report with INSAaf AI for review — it does not itself lodge anything with a municipal agency, and the app will not tell you an outside body has acted unless that is verified.',
-      roman_urdu: 'Signed in hone par civic report server par mehfooz hoti hai aur tracking number deti hai; Civic Issues tab mein aap ki reports aur un ka status nazar aata hai. Yeh INSAaf AI ke paas record hota hai — sarkari idare mein aap ki taraf se darkhast nahi jati, aur kisi baharhi karrawai ke bare mein app tab tak nahi kehti jab tak saabit na ho.'
+      en: 'A civic report filed while signed in is stored on the server and gets a tracking reference; the Civic Issues tab lists the reports you filed and shows each status as a reviewer moves it through SUBMITTED, IN REVIEW, ASSIGNED, IN PROGRESS, RESOLVED or CLOSED. Filing here records the report with Insaaf AI for review — it does not itself lodge anything with a municipal agency, and the app will not tell you an outside body has acted unless that is verified.',
+      roman_urdu: 'Signed in hone par civic report server par mehfooz hoti hai aur tracking number deti hai; Civic Issues tab mein aap ki reports aur un ka status nazar aata hai. Yeh Insaaf AI ke paas record hota hai — sarkari idare mein aap ki taraf se darkhast nahi jati, aur kisi baharhi karrawai ke bare mein app tab tak nahi kehti jab tak saabit na ho.'
     }
   },
   {
@@ -219,7 +219,7 @@ export function answerSupport(rawQuery, { lang } = {}) {
   if (!decided.inScope) {
     const off = decided.reason === 'not-understood'
       ? (use === 'roman_urdu' ? 'Aap ka matlab samajh nahi aaya. Thora tor par likhein ke aap ko app mein karna kya hai.' : use === 'ur' ? 'آپ کا مطلب واضح نہیں ہوا۔ براہ کرم بتائیں کہ آپ ایپ میں کیا کرنا چاہتے ہیں۔' : 'I could not make that out. Tell me what you are trying to do in the app, in as few words as you like.')
-      : (use === 'roman_urdu' ? 'Yeh sawal INSAaf AI ke madat ke ghere se bahar hai. Aap qanoon, sarkari kaam, parheei ya app ke istemal ke bare mein pooch sakte hain.' : use === 'ur' ? 'یہ سوال انساف کے معاونت کے دائرے سے باہر ہے۔ آپ قانون، سرکاری کام، تعلیق یا ایپ کے استعمال کے بارے میں پوچھ سکتے ہیں۔' : 'That one is outside what INSAaf AI helps with. I can help with the law, government services, academic legal work, or using this app itself.');
+      : (use === 'roman_urdu' ? 'Yeh sawal Insaaf AI ke madat ke ghere se bahar hai. Aap qanoon, sarkari kaam, parheei ya app ke istemal ke bare mein pooch sakte hain.' : use === 'ur' ? 'یہ سوال انصاف اے آئی کی معاونت کے دائرے سے باہر ہے۔ آپ قانون، سرکاری کام، تعلیق یا ایپ کے استعمال کے بارے میں پوچھ سکتے ہیں۔' : 'That one is outside what Insaaf AI helps with. I can help with the law, government services, academic legal work, or using this app itself.');
     return { inScope: false, reason: decided.reason, text: off, sources: [], routing: ['Library', 'Civic Issues', 'Contact form'] };
   }
   if (decided.kind !== 'app-support') {
@@ -235,7 +235,7 @@ export function answerSupport(rawQuery, { lang } = {}) {
     topicTitle: t.title[use] || t.title.en,
     text,
     alsoRelevant: also,
-    sources: [{ label: 'INSAaf AI product behaviour in this build', note: 'Described from the code and status documents of this version, not from marketing copy.' }],
+    sources: [{ label: 'Insaaf AI product behaviour in this build', note: 'Described from the code and status documents of this version, not from marketing copy.' }],
     // Honest routing: an app-support answer is never presented as verified law.
     notLegalAdvice: true
   };
@@ -297,7 +297,7 @@ export function createSupportRouter({ authorizer, store, rateLimiters = {} }) {
 
   router.post('/ask', ...(write ? [write] : []), (req, res) => {
     const q = typeof req.body?.question === 'string' ? req.body.question : '';
-    if (!q.trim()) return res.status(400).json({ error: 'MISSING_QUESTION', message: 'Ask a question about using INSAaf AI.' });
+    if (!q.trim()) return res.status(400).json({ error: 'MISSING_QUESTION', message: 'Ask a question about using Insaaf AI.' });
     const out = answerSupport(q, { lang: req.body?.lang });
     return res.json(out);
   });

@@ -66,7 +66,7 @@ export default function FloatingAgent({
             : "opacity-0 translate-y-4 pointer-events-none invisible"
         )}
         role="dialog"
-        aria-label={label("INSAaf Legal Agent", "INSAaf Qanooni Agent")}
+        aria-label={label("Insaaf AI Legal Agent", "Insaaf AI Qanooni Agent")}
         aria-hidden={!isOpen}
       >
         {/* Panel header (mobile gets its own bar; desktop uses the embedded header) */}
@@ -76,7 +76,7 @@ export default function FloatingAgent({
               <Bot className="w-4 h-4 text-white" />
             </div>
             <span className="text-sm font-black text-gray-900">
-              {label("INSAaf Legal Agent", "INSAaf Qanooni Agent")}
+              {label("Insaaf AI Legal Agent", "Insaaf AI Qanooni Agent")}
             </span>
           </div>
           <button
@@ -118,7 +118,7 @@ export default function FloatingAgent({
             onClick={() => setIsOpen(true)}
             className="fixed bottom-6 right-6 z-[96] w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#01411C] text-white shadow-2xl shadow-[#01411C]/40 flex items-center justify-center hover:scale-110 active:scale-95 transition-transform"
             aria-label={label("Open Legal Agent", "Qanooni Agent kholein")}
-            title={label("INSAaf Legal Agent", "INSAaf Qanooni Agent")}
+            title={label("Insaaf AI Legal Agent", "Insaaf AI Qanooni Agent")}
           >
             <Bot className="w-7 h-7 sm:w-8 sm:h-8" />
             <span className="absolute -top-1 -right-1 w-4 h-4 bg-emerald-400 rounded-full border-2 border-white animate-pulse" />

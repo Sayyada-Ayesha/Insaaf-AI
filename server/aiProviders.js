@@ -1,7 +1,7 @@
 // ============================================================================
 // OWNED AI RUNTIME — single provider abstraction.
 //
-// There is exactly one generation path in this application: the INSAaf owned
+// There is exactly one generation path in this application: the Insaaf AI owned
 // model, which composes answers deterministically from the verified corpus in
 // server/ownedModel.js and server/evidenceGate.js. It makes NO network call and
 // needs NO third-party API key.
@@ -61,15 +61,15 @@ export class InsaafProvider extends AIProvider {
   }
 
   getProviderName() {
-    return 'INSAaf Owned Model';
+    return 'Insaaf AI Owned Model';
   }
 
   async generateStream(_prompt, _history, _systemInstruction, _onChunk, _onDone, onError) {
-    onError(new Error('The INSAaf owned model generates locally via the corpus composer, not the streaming provider interface.'));
+    onError(new Error('The Insaaf AI owned model generates locally via the corpus composer, not the streaming provider interface.'));
   }
 
   async generateContent() {
-    throw new Error('The INSAaf owned model generates locally via the corpus composer.');
+    throw new Error('The Insaaf AI owned model generates locally via the corpus composer.');
   }
 }
 

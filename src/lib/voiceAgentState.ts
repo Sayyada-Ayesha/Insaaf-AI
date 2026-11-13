@@ -266,7 +266,7 @@ export function buildIntakeSummary(state: VoiceSessionState): string {
   const head = state.issue ? clean(state.issue, CAPS.field) : NOT_STATED;
   const place = [state.location, state.jurisdiction].filter(Boolean).join(', ');
   const block = [
-    'INSAaf AI — Client Intake Summary',
+    'Insaaf AI — Client Intake Summary',
     ''.padEnd(38, '='),
     line('Issue', head),
     line('Subject area', state.domain),
@@ -322,7 +322,7 @@ export function buildCaseBrief(state: VoiceSessionState, sources: AgentSource[] 
     ].filter(Boolean).join('\n'))
   ];
   return [
-    'INSAaf AI — Case Brief',
+    'Insaaf AI — Case Brief',
     ''.padEnd(38, '='),
     ...parts,
     `Prepared ${new Date().toLocaleString()} from one voice session.`,

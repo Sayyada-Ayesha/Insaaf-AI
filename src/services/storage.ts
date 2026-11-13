@@ -8,7 +8,7 @@ export interface SourceMetadata {
   version?: string;
   sourceURL?: string;
   text?: string;
-  /** F14: RAG domain id (e.g. "ppc") used to deep-link "Open in INSAaf Library". */
+  /** F14: RAG domain id (e.g. "ppc") used to deep-link "Open in Insaaf AI Library". */
   domain?: string;
 }
 

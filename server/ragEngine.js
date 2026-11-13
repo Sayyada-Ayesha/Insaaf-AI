@@ -466,7 +466,7 @@ export class RAGEngine {
       ? normalizedQuery.replace(/\b(salary|wages?|tankhwa\w*)\b/gi, 'banking')
       : normalizedQuery;
 
-    // ---- Cross-border / Overseas Pakistanis layer (INSAaf foreign knowledge) ----
+    // ---- Cross-border / Overseas Pakistanis layer (Insaaf AI foreign knowledge) ----
     // Engages ONLY when a FOREIGN country is named or an unambiguous "abroad"
     // cue is present, so purely domestic Pakistani-law routing below stays
     // untouched. Central principle: never default to Pakistani law just because

@@ -179,7 +179,7 @@ function buildCloudflareMessages({ question, evidence, language, answerLevel, hi
     CLOUDFLARE_LANGUAGE[language === 'roman_urdu' || language === 'ur' ? language : 'en'];
   const levelRule = CLOUDFLARE_LEVEL[answerLevel] || CLOUDFLARE_LEVEL.beginner;
 
-  const system = `You are the legal-information assistant inside INSAaf AI (Pakistan).
+  const system = `You are the legal-information assistant inside Insaaf AI (Pakistan).
 You answer ONLY from the EVIDENCE records supplied in the user message. Treat them as the complete record: if they do not state a fact, you do not know it.
 
 Return ONE JSON object and nothing else - no markdown fence, no commentary before or after:

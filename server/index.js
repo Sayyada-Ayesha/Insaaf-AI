@@ -410,7 +410,7 @@ function toSourceMeta(chunks, domain, forQuery = null) {
     legalStatus: c.legalStatus,
     version: c.version,
     sourceURL: recordSource(c, asked),
-    domain, // F14: powers "Open in INSAaf Library"
+    domain, // F14: powers "Open in Insaaf AI Library"
     text: stripCorpusMeta(c.text)
   }));
 }
@@ -717,8 +717,8 @@ function foreignRuleAbstentionText(userQuery, activeLang) {
     ? (country ? `Yeh sawal ${country} ke apne qanoon ke baare mein hai.` : 'Yeh sawal kisi aur mulk ke apne qanoon ke baare mein hai.')
     : (country ? `This question asks what the law of ${country} itself provides.` : 'This question asks what the law of a country other than Pakistan provides.');
   return isRoman
-    ? `${subject} INSAaf AI ka verified corpus sirf Pakistan ke qanoon aur Pakistani civic procedure par mabni records rakhta hai — is mein koi foreign statute, court faisla ya tax rule shamil nahi, is liye koi record yeh nahi bata sakta ke us mulk ka qanoon kya kehta hai. Yahan koi text ya hawala pesh nahi kiya ja raha. Us mulk ke qanoon ke liye us mulk ka official source ya wahan eligible wakeel dekhein. Agar is maslay ka koi Pakistani pehlu hai — Pakistan mein koi dastavez, adalat, ya shakhs — to woh batayein, main us hisse mein madad kar sakta hoon.`
-    : `${subject} INSAaf AI's verified corpus holds Pakistani law and Pakistani civic procedure only — no foreign statute, court decision or tax rule — so no record in it can state what that country's law provides, and nothing is being presented as an answer here. For that country's rule, use its official source or a lawyer qualified there. If your matter has a Pakistani side — a document, a forum or a person in Pakistan — describe that part and I can help with it.`;
+    ? `${subject} Insaaf AI ka verified corpus sirf Pakistan ke qanoon aur Pakistani civic procedure par mabni records rakhta hai — is mein koi foreign statute, court faisla ya tax rule shamil nahi, is liye koi record yeh nahi bata sakta ke us mulk ka qanoon kya kehta hai. Yahan koi text ya hawala pesh nahi kiya ja raha. Us mulk ke qanoon ke liye us mulk ka official source ya wahan eligible wakeel dekhein. Agar is maslay ka koi Pakistani pehlu hai — Pakistan mein koi dastavez, adalat, ya shakhs — to woh batayein, main us hisse mein madad kar sakta hoon.`
+    : `${subject} Insaaf AI's verified corpus holds Pakistani law and Pakistani civic procedure only — no foreign statute, court decision or tax rule — so no record in it can state what that country's law provides, and nothing is being presented as an answer here. For that country's rule, use its official source or a lawyer qualified there. If your matter has a Pakistani side — a document, a forum or a person in Pakistan — describe that part and I can help with it.`;
 }
 
 /**
@@ -1047,8 +1047,8 @@ function curatedOfflineAnswer(userQuery, activeLang, opts = {}) {
       || (/\bhow do i (use|open|find)\b/i.test(q) && appFeatureNames.test(q))) {
     return {
       text: isRoman
-        ? 'INSAaf AI ke sections: Legal Chat (qanooni sawal), Legal Agent (raahnumai), Legal Library (qanoon aur dafaat), Document Analyzer (apni document samajhne ke liye), Document Drafter (arzi/notice banane ke liye), Lawyer Directory, Legal Procedures, Legal Aid & NGOs, aur Emergency Helplines. Shuru Legal Chat se karein — apna sawal English ya Roman Urdu mein likhein.'
-        : 'INSAaf AI has these sections: Legal Chat (ask legal questions), Legal Agent (guided assistance), Legal Library (laws and sections), Document Analyzer (understand your documents), Document Drafter (create applications and notices), Lawyer Directory, Legal Procedures, Legal Aid & NGOs, and Emergency Helplines. Start with Legal Chat — type your question in English or Roman Urdu.',
+        ? 'Insaaf AI ke sections: Legal Chat (qanooni sawal), Legal Agent (raahnumai), Legal Library (qanoon aur dafaat), Document Analyzer (apni document samajhne ke liye), Document Drafter (arzi/notice banane ke liye), Lawyer Directory, Legal Procedures, Legal Aid & NGOs, aur Emergency Helplines. Shuru Legal Chat se karein — apna sawal English ya Roman Urdu mein likhein.'
+        : 'Insaaf AI has these sections: Legal Chat (ask legal questions), Legal Agent (guided assistance), Legal Library (laws and sections), Document Analyzer (understand your documents), Document Drafter (create applications and notices), Lawyer Directory, Legal Procedures, Legal Aid & NGOs, and Emergency Helplines. Start with Legal Chat — type your question in English or Roman Urdu.',
       actions: ['chat']
     };
   }
@@ -1067,8 +1067,8 @@ function curatedOfflineAnswer(userQuery, activeLang, opts = {}) {
   if (asksProductIdentity) {
     return {
       text: isRoman
-        ? 'Main INSAaf AI hoon — Pakistan ke qanoon, procedures aur legal documents ke liye banaya gaya ek khas (domain-specific) assistant. jawab hamesha verified Pakistani law corpus se retrieve hotay hain aur INSAaf ke apne composer se tayyar hotay hain; main general-purpose chatbot nahi hoon aur kisi foreign model ki tarah behave nahi karta. Androoni technical configuration ke baray mein zyada maloomat app ki documentation mein hai. Qanooni sawal ke liye Legal Chat ya Legal Agent istemal karein.'
-        : 'I am INSAaf AI — a purpose-built assistant for Pakistani law, court procedure and legal documents. My answers are assembled by INSAaf from its own verified Pakistani-law corpus, using the INSAaf answer composer. I am not a general-purpose chatbot and I do not go beyond Pakistani legal scope. Internal technical configuration is described in the project documentation, not here in chat. For a legal question, use Legal Chat or the Legal Agent.',
+        ? 'Main Insaaf AI hoon — Pakistan ke qanoon, procedures aur legal documents ke liye banaya gaya ek khas (domain-specific) assistant. jawab hamesha verified Pakistani law corpus se retrieve hotay hain aur Insaaf AI ke apne composer se tayyar hotay hain; main general-purpose chatbot nahi hoon aur kisi foreign model ki tarah behave nahi karta. Androoni technical configuration ke baray mein zyada maloomat app ki documentation mein hai. Qanooni sawal ke liye Legal Chat ya Legal Agent istemal karein.'
+        : 'I am Insaaf AI — a purpose-built assistant for Pakistani law, court procedure and legal documents. My answers are assembled by Insaaf AI from its own verified Pakistani-law corpus, using the Insaaf AI answer composer. I am not a general-purpose chatbot and I do not go beyond Pakistani legal scope. Internal technical configuration is described in the project documentation, not here in chat. For a legal question, use Legal Chat or the Legal Agent.',
       actions: ['chat']
     };
   }
@@ -1078,8 +1078,8 @@ function curatedOfflineAnswer(userQuery, activeLang, opts = {}) {
       || /^(salam|salaam|assalam|hello|hi|hey|aoa)\b.*\b(kya|kaise|how)\b.*\b(ho|hai|you|doing|chal)\b/i.test(q)) {
     return {
       text: isRoman
-        ? 'Assalam-o-Alaikum! Main INSAaf AI hoon — Pakistan ke qanoon, procedures aur legal documents ke baare mein aap ki madad ke liye. Apna sawal English ya Roman Urdu mein likhein.'
-        : 'Hello! I am INSAaf AI — your assistant for Pakistani law, legal procedures and documents. Ask your question in English or Roman Urdu.',
+        ? 'Assalam-o-Alaikum! Main Insaaf AI hoon — Pakistan ke qanoon, procedures aur legal documents ke baare mein aap ki madad ke liye. Apna sawal English ya Roman Urdu mein likhein.'
+        : 'Hello! I am Insaaf AI — your assistant for Pakistani law, legal procedures and documents. Ask your question in English or Roman Urdu.',
       actions: []
     };
   }
@@ -1221,7 +1221,7 @@ function generalLifeAnswer(userQuery, activeLang) {
   // Kafalat). Two different asks arrive here and only one of them is dangerous.
   // A citizen asking for their OWN eligibility or payment result cannot be
   // answered at all: that verdict is BISP's record system checking a CNIC, and
-  // INSAaf AI holds no authorised integration with it, so any answer would be
+  // Insaaf AI holds no authorised integration with it, so any answer would be
   // invented. A citizen asking what the programme itself publishes — the PMT
   // cut-off, the registration steps, the documents, the next-of-kin route, where
   // to complain — is now a normal retrieval question: bisp_8171_programme_procedures
@@ -1247,8 +1247,8 @@ function generalLifeAnswer(userQuery, activeLang) {
   if (namesSupportProgramme && asksOwnVerdict && !isProcedureHowTo && !isEducationScholarshipContext && !wantsLegalRoute) {
     return {
       text: isRoman
-        ? 'Main aap ki **nijati** BISP / 8171 ya Ehsaas eligibility ya payment ka result nahi bata sakta — yeh faisla sirf BISP ka apna record system aap ke CNIC ke khilaf deta hai, aur INSAaf AI ka us se koi authorized integration nahi. Is liye main aap ke ghar ke baare mein koi baat likhna inkaar karta hoon: woh tarfeeq hoti.\n\nJo cheez verified corpus mein mojood hai, woh BISP ka apna **shayahd programme material** hai: Proxy Means Test aur NSER survey se beneficiaries ki pehchaan, PMT ka shayahd cut-off score, Kafaalat registration ke steps aur required documents, beneficiary ki maut ke baad waris ka route aur us ke documents, aur shikayat ka tareeqa (qareebi Tehsil office, toll-free helpline 0800-26477, aur BISP ki warning ke official communication sirf 8171 se aati hai). Aise sawal is tarah likhein — "BISP Kafaalat ki registration ke liye kaunse documents chahiye?" — main un records se jawab doonga aur BISP ke URLs hawale karunga.\n\nApne nijati status ke liye published channel 8171 web portal (8171.bisp.gov.pk) aur bisp.gov.pk hai — yeh destination hai, suboot nahi.'
-        : 'I cannot give you **your own** BISP / 8171 or Ehsaas eligibility or payment result — that verdict comes only from BISP\'s record system checking your CNIC, and INSAaf AI has no authorised integration with it. So I will not write anything about your household: it would be invented.\n\nWhat the verified corpus does hold is BISP\'s own published programme material: how beneficiaries are identified through the Proxy Means Test and the NSER survey, the published PMT cut-off score, the Kafaalat registration steps and required documents, the next-of-kin route when a beneficiary dies and the documents it needs, and how a beneficiary complains (nearest Tehsil office, the toll-free helpline 0800-26477, and BISP\'s own warning that official communication originates only from 8171). Ask it that way — for example "which documents are required to register for Benazir Kafaalat?" — and I will answer from those records and cite BISP.\n\nFor your own status the published channel is the 8171 web portal (8171.bisp.gov.pk) and bisp.gov.pk — a destination, not evidence.',
+        ? 'Main aap ki **nijati** BISP / 8171 ya Ehsaas eligibility ya payment ka result nahi bata sakta — yeh faisla sirf BISP ka apna record system aap ke CNIC ke khilaf deta hai, aur Insaaf AI ka us se koi authorized integration nahi. Is liye main aap ke ghar ke baare mein koi baat likhna inkaar karta hoon: woh tarfeeq hoti.\n\nJo cheez verified corpus mein mojood hai, woh BISP ka apna **shayahd programme material** hai: Proxy Means Test aur NSER survey se beneficiaries ki pehchaan, PMT ka shayahd cut-off score, Kafaalat registration ke steps aur required documents, beneficiary ki maut ke baad waris ka route aur us ke documents, aur shikayat ka tareeqa (qareebi Tehsil office, toll-free helpline 0800-26477, aur BISP ki warning ke official communication sirf 8171 se aati hai). Aise sawal is tarah likhein — "BISP Kafaalat ki registration ke liye kaunse documents chahiye?" — main un records se jawab doonga aur BISP ke URLs hawale karunga.\n\nApne nijati status ke liye published channel 8171 web portal (8171.bisp.gov.pk) aur bisp.gov.pk hai — yeh destination hai, suboot nahi.'
+        : 'I cannot give you **your own** BISP / 8171 or Ehsaas eligibility or payment result — that verdict comes only from BISP\'s record system checking your CNIC, and Insaaf AI has no authorised integration with it. So I will not write anything about your household: it would be invented.\n\nWhat the verified corpus does hold is BISP\'s own published programme material: how beneficiaries are identified through the Proxy Means Test and the NSER survey, the published PMT cut-off score, the Kafaalat registration steps and required documents, the next-of-kin route when a beneficiary dies and the documents it needs, and how a beneficiary complains (nearest Tehsil office, the toll-free helpline 0800-26477, and BISP\'s own warning that official communication originates only from 8171). Ask it that way — for example "which documents are required to register for Benazir Kafaalat?" — and I will answer from those records and cite BISP.\n\nFor your own status the published channel is the 8171 web portal (8171.bisp.gov.pk) and bisp.gov.pk — a destination, not evidence.',
       actions: []
     };
   }
@@ -1291,8 +1291,8 @@ function generalLifeAnswer(userQuery, activeLang) {
   if (isCasual && !wantsLegalRoute) {
     return {
       text: isRoman
-        ? 'Main INSAaf AI hoon — Pakistan ke qanoon, procedures aur documents ke liye aik sanjeeda madadgar. Main general knowledge, jokes ya dil-bahlaa baatein nahi karta, lekin qanooni madad zaroor kar sakta hoon: apna masla batayein, koi dafa pochein, document samjhein ya banayein, ya wakeel/legal aid dhoondein.'
-        : 'I am INSAaf AI — a serious assistant for Pakistani law, procedures and documents. I don\'t handle general-knowledge, jokes or casual chat, but I can genuinely help with legal matters: describe your problem, ask about a law or section, understand or draft a document, or find a lawyer/legal aid.',
+        ? 'Main Insaaf AI hoon — Pakistan ke qanoon, procedures aur documents ke liye aik sanjeeda madadgar. Main general knowledge, jokes ya dil-bahlaa baatein nahi karta, lekin qanooni madad zaroor kar sakta hoon: apna masla batayein, koi dafa pochein, document samjhein ya banayein, ya wakeel/legal aid dhoondein.'
+        : 'I am Insaaf AI — a serious assistant for Pakistani law, procedures and documents. I don\'t handle general-knowledge, jokes or casual chat, but I can genuinely help with legal matters: describe your problem, ask about a law or section, understand or draft a document, or find a lawyer/legal aid.',
       actions: ['chat']
     };
   }
@@ -1689,7 +1689,7 @@ function formatDocIntelligenceResponse(action, analysis, activeLang) {
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'ok',
-    service: 'INSAaf AI Backend API',
+    service: 'Insaaf AI Backend API',
     timestamp: new Date().toISOString(),
     runtime: 'owned-model-local'
   });
@@ -2316,7 +2316,7 @@ ${levelInstruction}
 5. Answer ONLY what the user explicitly asked — do not volunteer unrelated laws or background.
 6. DO NOT write a Sources block at the end. The system will handle citations automatically.
 7. DO NOT use raw HTML tags. Use clean text or markdown.
-8. NEVER introduce yourself (e.g. 'Greetings! I am INSAaf AI'). Start your legal response immediately with the direct answer.
+8. NEVER introduce yourself (e.g. 'Greetings! I am Insaaf AI'). Start your legal response immediately with the direct answer.
 9. CASE LAW CITATIONS (F15): When the answer is grounded in a judgment, cite it compactly IN-LINE as "Case: {Title} ({Citation}, {Court} {Year})". State ONLY the holding, outcome and significance that appear in the retrieved evidence. NEVER invent case names, citations, facts, or reasoning.
 10. CASE COMPARISONS (F15): NEVER state that two cases are "exactly the same" or "identical". Use hedged language such as "may be similar to" or "can be distinguished from". Precedent guides — it does not decide.
 11. STUDENT / UNIVERSITY QUERIES: When the query relates to university or college matters (admissions, fees, examinations, harassment, discipline, hostel, scholarships, degree attestation, student rights, transport, academic probation, show-cause notices), use the retrieved student-domain evidence. Where a rule or policy is university-specific, state clearly that it "depends on your university's applicable regulations" and do NOT present one university's rule as a universal Pakistan-wide standard. When the user is in Hyderabad or mentions a Hyderabad university (University of Sindh, MUET, Liaquat University), prioritize Hyderabad-relevant information from the evidence. Respond in the user's language — English or Roman Urdu.
@@ -2404,7 +2404,7 @@ ${contextStr}`;
     let offlineText = offlineKnowledgeHeader(activeLang, isRefusalOnly ? 'refusal' : (retrievalResult.evidence || {}).verdict,
       isRefusalOnly ? '' : jurisdictionNoteFor(userQuery, retrievedChunks, activeLang));
     if (retrievedChunks && retrievedChunks.length > 0) {
-      // Part AD / Phase 3 — INSAaf owned-model inference. Whenever the RAG layer
+      // Part AD / Phase 3 — Insaaf AI owned-model inference. Whenever the RAG layer
       // returned records we ANSWER FROM THEM (never a cold "not available"). We
       // compose the structured professional guidance answer (Issue -> Law that
       // may apply -> What the law says -> Procedure -> Remedy -> Precedent ->
@@ -2836,7 +2836,7 @@ ${contextStr}`;
     // not an error (avoids false production alerts). A real provider failure is
     // still logged as an error when an external provider is primary.
     if (isOwnedModelPrimary) {
-      console.info('[Backend] Non-streaming advice: INSAaf owned-model local inference (no external provider).');
+      console.info('[Backend] Non-streaming advice: Insaaf AI owned-model local inference (no external provider).');
     } else {
       console.error(`[Backend] Non-streaming advice error:`, err.message);
     }
@@ -2868,7 +2868,7 @@ ${contextStr}`;
     let offlineText = offlineKnowledgeHeader(fallbackLang, isRefusalOnly ? 'refusal' : (retrievalResult.evidence || {}).verdict,
       isRefusalOnly ? '' : jurisdictionNoteFor(userQuery, retrievedChunks, fallbackLang));
     if (retrievedChunks && retrievedChunks.length > 0) {
-      // Part AD — INSAaf owned-model inference (non-streaming advice endpoint).
+      // Part AD — Insaaf AI owned-model inference (non-streaming advice endpoint).
       // Same rule as chat: whenever records were retrieved, answer FROM them at
       // the requested Answer Level (the raw-chunk dump below stays as fallback).
       const ev = retrievalResult.evidence || null;
@@ -3025,7 +3025,7 @@ ${contextInstructions}`;
     const responseText = await generateWithFallback(completePrompt, sysPrompt);
     res.json({ html: responseText.replace(/```html|```/g, '').trim() });
   } catch (err) {
-    if (isOwnedModelPrimary) console.info('[Backend] Generate: INSAaf owned-model offline document rendering (no external provider).');
+    if (isOwnedModelPrimary) console.info('[Backend] Generate: Insaaf AI owned-model offline document rendering (no external provider).');
     else console.error(`[Backend] Generate error:`, err.message);
     // Part A / Phase AJ: when the user chose Urdu Script, render the SAME
     // type-specific structure in Urdu (RTL) — never fall through to the English
@@ -3263,7 +3263,7 @@ Rules:
 
   const userPrompt = `Document text:\n${cleanText}\n\nUser's question: ${question || 'What do I need to know from this document?'}`;
 
-  // Part C/N/O/T — when the INSAaf owned model is primary, analyze the document
+  // Part C/N/O/T — when the Insaaf AI owned model is primary, analyze the document
   // entirely LOCALLY: no external LLM call, every field grounded in the text.
   if (isOwnedModelPrimary) {
     return res.json(analyzeDocumentText(cleanText, question, { preferredLanguage: responseLang, ocrQuality }));
@@ -3396,7 +3396,7 @@ app.post('/api/ai/translate', rateLimiterMiddleware, async (req, res) => {
   // for Roman Urdu or Urdu-script questions (resolveChatLanguage), and legal
   // documents rendered in Urdu Script when the user explicitly chooses it.
   return res.status(501).json({
-    error: 'Sentence-level translation is not available in INSAaf AI offline mode. Ask your question in English or Roman Urdu and the answer is written in that language; a generated legal document can also be produced in Urdu Script when you choose it.',
+    error: 'Sentence-level translation is not available in Insaaf AI offline mode. Ask your question in English or Roman Urdu and the answer is written in that language; a generated legal document can also be produced in Urdu Script when you choose it.',
     code: 'UNSUPPORTED_TRANSLATION',
     supported: false,
     direction: dir,
@@ -3486,7 +3486,7 @@ Return ONLY valid JSON exactly matching:
 
   const userPrompt = `SOURCE DOCUMENT TEXT:\n${cleanText}\n\nUSER INSTRUCTION: ${instruction || 'Iska jawab bana do (draft a reply)'}`;
 
-  // Part C/P — when the INSAaf owned model is primary, draft the response
+  // Part C/P — when the Insaaf AI owned model is primary, draft the response
   // entirely LOCALLY from the uploaded text (grounded; [MISSING] for unknowns).
   if (isOwnedModelPrimary) {
     return res.json(draftFromDocument(cleanText, { replyType: validType, language, metaLanguage: metaLang, structure, instruction }));
@@ -3583,11 +3583,11 @@ Return ONLY valid JSON exactly matching:
   }
 });
 
-// F12/F13: INSAaf Legal Agent — legal Q&A + app self-knowledge + deep-link markers.
+// F12/F13: Insaaf AI Legal Agent — legal Q&A + app self-knowledge + deep-link markers.
 // The route manifest below MUST mirror src/config/appRoutes.ts APP_ROUTES.
 const AGENT_ROUTE_MANIFEST = [
   { id: 'chat', label: 'Legal Chat' },
-  { id: 'agent', label: 'INSAaf Legal Agent' },
+  { id: 'agent', label: 'Insaaf AI Legal Agent' },
   { id: 'library', label: 'Legal Library' },
   { id: 'analyze', label: 'Document Analyzer' },
   { id: 'draft', label: 'Document Drafter' },
@@ -3923,8 +3923,8 @@ app.post('/api/ai/agent', rateLimiterMiddleware, async (req, res) => {
     langInstruction = "RESPONSE SCRIPT MANDATE: You MUST respond strictly in ENGLISH.";
   }
 
-  const sysPrompt = `You are "INSAaf Legal Agent", the assistant inside the INSAaf AI legal application for Pakistan.
-You help citizens with TWO things: (1) Pakistani legal questions, and (2) using the INSAaf AI app itself.
+  const sysPrompt = `You are "Insaaf AI Legal Agent", the assistant inside the Insaaf AI legal application for Pakistan.
+You help citizens with TWO things: (1) Pakistani legal questions, and (2) using the Insaaf AI app itself.
 
 APP SELF-KNOWLEDGE — the app has these sections with these EXACT route ids:
 ${AGENT_ROUTE_MANIFEST.map(r => `- ${r.id}: ${r.label}`).join('\n')}
@@ -3974,7 +3974,7 @@ ${contextStr}`;
     // Part C/AE: with the owned model primary the online chain is empty, so this
     // catch is the EXPECTED local-inference path — log as info, not an error.
     if (isOwnedModelPrimary) {
-      console.info('[Backend] Legal Agent: INSAaf owned-model local inference (no external provider).');
+      console.info('[Backend] Legal Agent: Insaaf AI owned-model local inference (no external provider).');
     } else {
       console.error('[Backend] Legal Agent provider error:', err.message);
     }
@@ -4051,7 +4051,7 @@ if (fs.existsSync(DIST_DIR)) {
     }
     next();
   });
-  console.log(`[INSAaf AI Backend] Serving built frontend from ${DIST_DIR}`);
+  console.log(`[Insaaf AI Backend] Serving built frontend from ${DIST_DIR}`);
 }
 
 // P21 security: global error handler — malformed/oversized JSON and unexpected
@@ -4088,7 +4088,7 @@ if (!IS_SERVERLESS) {
   });
 
   httpServer.listen(PORT, () => {
-    console.log(`[INSAaf AI Backend] Server running cleanly on port ${PORT}`);
+    console.log(`[Insaaf AI Backend] Server running cleanly on port ${PORT}`);
   });
 }
 

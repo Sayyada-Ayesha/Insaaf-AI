@@ -1,5 +1,5 @@
 /**
- * F12: INSAaf Legal Agent — legal Q&A + app self-knowledge + deep links.
+ * F12: Insaaf AI Legal Agent — legal Q&A + app self-knowledge + deep links.
  *
  * Two-layer design (never hallucinate):
  *  1. LOCAL RULE-BASED LAYER (offline-capable): directory intents are answered
@@ -44,8 +44,8 @@ const SUGGESTIONS = [
   { en: "I need free legal aid", roman: "Mujhe muft qanooni madad chahiye" }
 ];
 
-const GREETING_EN = "Assalam-o-Alaikum! I am the **INSAaf Legal Agent** — your guide to Pakistani law *and* to this app.\n\nAsk me about the law, about legal procedures, or how any feature of INSAaf AI works. I can also search the verified lawyer directory by city and specialization.";
-const GREETING_ROMAN = "Assalam-o-Alaikum! Main **INSAaf Qanooni Agent** hoon — Pakistani qanoon *aur* is app ke liye aap ka guide.\n\nMujh se qanoon, qanooni karwaiyan, ya INSAaf AI ki koi feature kaise use karein, ke baare mein poochein. Main verified vakeel directory ko shehar aur specialization se bhi talaash kar sakta hoon.";
+const GREETING_EN = "Assalam-o-Alaikum! I am the **Insaaf AI Legal Agent** — your guide to Pakistani law *and* to this app.\n\nAsk me about the law, about legal procedures, or how any feature of Insaaf AI works. I can also search the verified lawyer directory by city and specialization.";
+const GREETING_ROMAN = "Assalam-o-Alaikum! Main **Insaaf AI Qanooni Agent** hoon — Pakistani qanoon *aur* is app ke liye aap ka guide.\n\nMujh se qanoon, qanooni karwaiyan, ya Insaaf AI ki koi feature kaise use karein, ke baare mein poochein. Main verified vakeel directory ko shehar aur specialization se bhi talaash kar sakta hoon.";
 
 /** Internal app route intents — ids only, never invented URLs (F13). */
 const ROUTE_RULES: [RegExp, string][] = [
@@ -446,7 +446,7 @@ export default function AgentSection({ onNavigate, onOpenLibrary, embedded = fal
         </div>
         <div>
           <h2 className={cn("font-black tracking-tight text-gray-900", embedded ? "text-base" : "text-2xl")}>
-            {label("INSAaf Legal Agent", "INSAaf Qanooni Agent")}
+            {label("Insaaf AI Legal Agent", "Insaaf AI Qanooni Agent")}
           </h2>
           {!embedded && (
             <p className="text-xs font-medium text-gray-400 mt-0.5">
@@ -752,8 +752,8 @@ export default function AgentSection({ onNavigate, onOpenLibrary, embedded = fal
 
             <p className="text-[10px] text-gray-400 font-medium">
               {label(
-                "Anything you leave blank is reported as missing — INSAaf never fills a case fact in for you. Your answers are kept on this device for you alone.",
-                "Jo jagah aap khali chhoren ge, wohi kami batayi jayegi — INSAaf aap ke liye koi qanooni baat ijadah nahi karta. Aap ke javab sirf aap ke liye is device par mehfooz hain."
+                "Anything you leave blank is reported as missing — Insaaf AI never fills a case fact in for you. Your answers are kept on this device for you alone.",
+                "Jo jagah aap khali chhoren ge, wohi kami batayi jayegi — Insaaf AI aap ke liye koi qanooni baat ijadah nahi karta. Aap ke javab sirf aap ke liye is device par mehfooz hain."
               )}
             </p>
 

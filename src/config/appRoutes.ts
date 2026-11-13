@@ -1,6 +1,6 @@
 import type { Tab } from "../components/Layout";
 
-// F13: INSAaf AI internal route registry.
+// F13: Insaaf AI internal route registry.
 // The Legal Agent uses these route ids to deep-link users inside the app.
 // Rule: NEVER invent route ids — only ids from this registry are valid navigation targets.
 export type LegalaidSubTab = "directory" | "process" | "aid";
@@ -20,7 +20,7 @@ export interface AppRoute {
 
 export const APP_ROUTES: AppRoute[] = [
   { id: "chat", tab: "chat", labelEn: "Legal Chat", labelRoman: "Qanooni Chat", description: "Ask legal questions and get answers grounded in verified Pakistani law." },
-  { id: "agent", tab: "chat", labelEn: "INSAaf Legal Agent", labelRoman: "INSAaf Qanooni Agent", description: "Your guide to the law and to this app: legal answers, procedures, directory searches and app navigation." },
+  { id: "agent", tab: "chat", labelEn: "Insaaf AI Legal Agent", labelRoman: "Insaaf AI Qanooni Agent", description: "Your guide to the law and to this app: legal answers, procedures, directory searches and app navigation." },
   { id: "library", tab: "learning", labelEn: "Legal Library", labelRoman: "Qanooni Library", description: "28 legal domains with 13-point verified guides and official sources." },
   { id: "analyze", tab: "draft", target: "analyze", labelEn: "Document Analyzer", labelRoman: "Document Analyzer", description: "Upload a legal document to understand it, spot risks and get a plain explanation." },
   { id: "draft", tab: "draft", target: "draft", labelEn: "Document Drafter", labelRoman: "Document Drafter", description: "Draft FIRs, legal notices, replies and court applications with professional structure." },

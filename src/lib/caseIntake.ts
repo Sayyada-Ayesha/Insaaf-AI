@@ -37,7 +37,7 @@ export const CASE_INTAKE_FIELDS: IntakeField[] = [
   { key: 'parties', step: 1, labelEn: 'Who is involved (parties)', labelRoman: 'Kaun shamil hai (fareeqain)', kind: 'text', slot: 'institution' },
   { key: 'dates', step: 1, labelEn: 'When did it happen (dates)', labelRoman: 'Kab hua (tareekhein)', kind: 'text', slot: 'dates' },
   { key: 'place', step: 2, labelEn: 'City or district', labelRoman: 'Shehar ya zila', kind: 'text', slot: 'location' },
-  { key: 'forum', step: 2, labelEn: 'Court, office or committee involved', labelRoman: 'Adalat, office ya committee', kind: 'text', helpEn: 'Leave blank if you do not know — INSAaf works out the forum from the verified records.', helpRoman: 'Na jaante hon to khali chhoren — tasdeeq shuda records se forum maloom ho jata hai.' },
+  { key: 'forum', step: 2, labelEn: 'Court, office or committee involved', labelRoman: 'Adalat, office ya committee', kind: 'text', helpEn: 'Leave blank if you do not know — Insaaf AI works out the forum from the verified records.', helpRoman: 'Na jaante hon to khali chhoren — tasdeeq shuda records se forum maloom ho jata hai.' },
   { key: 'institution', step: 2, labelEn: 'Institution or opposite party named', labelRoman: 'Institution ya doosre fareeq ka naam', kind: 'text', slot: 'institution' },
   { key: 'documents', step: 3, labelEn: 'Documents or evidence you already have', labelRoman: 'Jo documents ya saboot aap ke paas hain', kind: 'area', slot: 'documents' },
   { key: 'witnesses', step: 3, labelEn: 'Witnesses available (if any)', labelRoman: 'Gawah (agar hon)', kind: 'text' },
@@ -149,12 +149,12 @@ export interface CaseBriefSection {
 }
 
 export const CASE_BRIEF_DISCLAIMER_EN =
-  'This case brief is prepared by the INSAaf AI legal assistant from the facts you entered and the '
+  'This case brief is prepared by the Insaaf AI legal assistant from the facts you entered and the '
   + 'verified records retrieved for them. It is general legal information for intake and handoff, not '
   + 'personalised professional legal advice, and it has not been checked by a lawyer. No outcome is '
   + 'predicted or guaranteed.';
 export const CASE_BRIEF_DISCLAIMER_ROMAN =
-  'Y case brief INSAaf AI legal assistant ne aap ke diay gaye haqaiq aur tasdeeq shuda records se banaya '
+  'Y case brief Insaaf AI legal assistant ne aap ke diay gaye haqaiq aur tasdeeq shuda records se banaya '
   + 'hai. Yeh aam qanooni maloomat hai — intake aur handoff ke liye — kisi licensed wakeel ke mashware ka '
   + 'mutabadil nahi, aur isay kisi wakeel ne check nahi kiya. Kisi natijay ki pishan-goi ya guarantee nahi ki gayi.';
 
@@ -260,8 +260,8 @@ export function buildCaseBrief(opts: {
     {
       id: 'J', title: T('J. Document assistance', 'J. Document ki madad'),
       lines: [T(
-        'INSAaf can draft the notice, application, complaint or appeal this matter needs from these facts in the Document Assistant — the draft states as [MISSING: …] anything the intake did not answer, and never invents a fact to fill a blank.',
-        'INSAaf Document Assistant mein in haqaiq se zaroori notice, darkhwast, shikayat ya appeal ka maswoda tayyar kar sakta hai — jahan intake mein jawab na ho, wahan maswoda [MISSING: …] likhta hai, khaali jagah bharne ke liye koi baat ijadah nahi karta.'
+        'Insaaf AI can draft the notice, application, complaint or appeal this matter needs from these facts in the Document Assistant — the draft states as [MISSING: …] anything the intake did not answer, and never invents a fact to fill a blank.',
+        'Insaaf AI Document Assistant mein in haqaiq se zaroori notice, darkhwast, shikayat ya appeal ka maswoda tayyar kar sakta hai — jahan intake mein jawab na ho, wahan maswoda [MISSING: …] likhta hai, khaali jagah bharne ke liye koi baat ijadah nahi karta.'
       )]
     },
     {
@@ -272,8 +272,8 @@ export function buildCaseBrief(opts: {
               'Aap ko qadam uthane se pehle yeh matter wakeel ya muft qanooni madad ke organisation ko dikhana chahiye.')
           : T('You may still want an advocate to confirm these facts and the forum before you file anything.',
               'Koi bhi darkhwast jama karne se pehle ek advocate se haqaiq aur forum tasdeeq karana behtar hai.'),
-        T('Open the verified lawyer directory or the free legal aid list to find someone near you. INSAaf does not contact anyone for you and cannot book an appointment.',
-          'Apne qareeb kisi vakeel ke liye verified lawyer directory, ya muft madad ke liye legal aid list kholein. INSAaf aap ki taraf se kisi se raabta nahi karta aur appointment book nahi kar sakta.')
+        T('Open the verified lawyer directory or the free legal aid list to find someone near you. Insaaf AI does not contact anyone for you and cannot book an appointment.',
+          'Apne qareeb kisi vakeel ke liye verified lawyer directory, ya muft madad ke liye legal aid list kholein. Insaaf AI aap ki taraf se kisi se raabta nahi karta aur appointment book nahi kar sakta.')
       ]
     }
   ];
@@ -282,7 +282,7 @@ export function buildCaseBrief(opts: {
 
 export function caseBriefToText(brief: { sections: CaseBriefSection[]; disclaimer: string }): string {
   return [
-    'INSAaf AI — Case Brief (Legal Agent intake)',
+    'Insaaf AI — Case Brief (Legal Agent intake)',
     '='.repeat(46),
     ...brief.sections.map(s => `${s.title}\n${s.lines.join('\n')}`),
     '',

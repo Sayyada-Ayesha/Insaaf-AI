@@ -22,7 +22,7 @@ export const db: Firestore = firebaseConfig.firestoreDatabaseId
   : getFirestore(app);
 export const auth = getAuth(app);
 export const googleProvider = new GoogleAuthProvider();
-console.info('INSAaf Firestore target:', JSON.stringify(firestoreTarget));
+console.info('Insaaf AI Firestore target:', JSON.stringify(firestoreTarget));
 
 export enum OperationType {
   CREATE = 'create',

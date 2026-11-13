@@ -68,7 +68,7 @@ export default function App() {
   }, []);
 
   // F13: Legal Agent deep-links. Only registry routes are used (never invented URLs).
-  // F14: "Open in INSAaf Library" deep-links to a specific verified library section.
+  // F14: "Open in Insaaf AI Library" deep-links to a specific verified library section.
   const handleOpenLibrary = (sectionId: string) => {
     setPolicyPage(null);
     setLearningFocusId(sectionId);

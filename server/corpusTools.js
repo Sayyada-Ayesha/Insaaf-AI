@@ -1,5 +1,5 @@
 /**
- * INSAaf AI — Reproducible corpus pipeline (spec §20).
+ * Insaaf AI — Reproducible corpus pipeline (spec §20).
  *
  *   npm run corpus:audit      drift detection (offline, deterministic)
  *   npm run corpus:update     rebuild index ONLY when drift requires it

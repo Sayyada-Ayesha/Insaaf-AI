@@ -383,7 +383,7 @@ ${pastedText}
     if (!content) return;
     const w = window.open('', '_blank');
     if (!w) return;
-    w.document.write(`<html><head><title>INSAaf AI</title><style>body{font-family:system-ui,sans-serif;padding:2rem;line-height:1.6;max-width:800px;margin:auto}pre{white-space:pre-wrap}</style></head><body><pre>${content.replace(/</g, '&lt;')}</pre><script>window.print()</script></body></html>`);
+    w.document.write(`<html><head><title>Insaaf AI</title><style>body{font-family:system-ui,sans-serif;padding:2rem;line-height:1.6;max-width:800px;margin:auto}pre{white-space:pre-wrap}</style></head><body><pre>${content.replace(/</g, '&lt;')}</pre><script>window.print()</script></body></html>`);
     w.document.close();
   };
 
@@ -429,7 +429,7 @@ ${pastedText}
     if (!text) return;
     const w = window.open('', '_blank');
     if (!w) return;
-    w.document.write(`<html><head><title>INSAaf AI — Comparison</title><style>body{font-family:system-ui,sans-serif;padding:2rem;line-height:1.6;max-width:800px;margin:auto}pre{white-space:pre-wrap}</style></head><body><pre>${text.replace(/</g, '&lt;')}</pre><script>window.print()</script></body></html>`);
+    w.document.write(`<html><head><title>Insaaf AI — Comparison</title><style>body{font-family:system-ui,sans-serif;padding:2rem;line-height:1.6;max-width:800px;margin:auto}pre{white-space:pre-wrap}</style></head><body><pre>${text.replace(/</g, '&lt;')}</pre><script>window.print()</script></body></html>`);
     w.document.close();
   };
 
@@ -471,7 +471,7 @@ ${pastedText}
     if (!text) return;
     const w = window.open('', '_blank');
     if (!w) return;
-    w.document.write(`<html><head><title>INSAaf AI — Checklist</title><style>body{font-family:system-ui,sans-serif;padding:2rem;line-height:1.6;max-width:800px;margin:auto}pre{white-space:pre-wrap}</style></head><body><pre>${text.replace(/</g, '&lt;')}</pre><script>window.print()</script></body></html>`);
+    w.document.write(`<html><head><title>Insaaf AI — Checklist</title><style>body{font-family:system-ui,sans-serif;padding:2rem;line-height:1.6;max-width:800px;margin:auto}pre{white-space:pre-wrap}</style></head><body><pre>${text.replace(/</g, '&lt;')}</pre><script>window.print()</script></body></html>`);
     w.document.close();
   };
 

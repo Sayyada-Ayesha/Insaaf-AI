@@ -425,7 +425,7 @@ function urduTitleForType(type) {
  * numbered fact paragraphs in real prose, a corpus-grounded legal basis ONLY
  * when chunks were actually retrieved (never decorative), demand/prayer per
  * document class, declaration, signature block, format-variation note and the
- * INSAaf footer. It is NOT a form of dotted blanks: user data renders as prose;
+ * Insaaf AI footer. It is NOT a form of dotted blanks: user data renders as prose;
  * genuinely unknown items stay marked "[درج کریں: ...]" for the user to fill.
  *
  * @param {object} p

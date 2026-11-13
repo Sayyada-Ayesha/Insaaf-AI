@@ -1,10 +1,10 @@
 /**
- * F14: RAG domain → INSAaf Library section mapping.
+ * F14: RAG domain → Insaaf AI Library section mapping.
  *
  * The backend RAG engine returns a short `domain` id (e.g. "ppc", "case-law").
- * The INSAaf Library (src/data/libraryDomains.ts) uses its own section ids
+ * The Insaaf AI Library (src/data/libraryDomains.ts) uses its own section ids
  * (e.g. "domain_ppc", "domain_case_law"). This registry maps between them so
- * the UI can offer "Open in INSAaf Library" links that ALWAYS resolve to a
+ * the UI can offer "Open in Insaaf AI Library" links that ALWAYS resolve to a
  * real library section — never a guessed or broken id.
  */
 export const RAG_DOMAIN_TO_LIBRARY: Record<string, string> = {

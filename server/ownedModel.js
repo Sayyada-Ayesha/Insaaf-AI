@@ -1,7 +1,7 @@
 // ============================================================================
-// INSAaf OWNED-MODEL INFERENCE  (Part C / AC / AD)
+// Insaaf AI OWNED-MODEL INFERENCE  (Part C / AC / AD)
 // ----------------------------------------------------------------------------
-// This is INSAaf AI's OWN local legal-reasoning engine. It is the runtime's only
+// This is Insaaf AI's OWN local legal-reasoning engine. It is the runtime's only
 // inference path — there is no external-provider mode to fall back to.
 // It performs NO network calls and NEVER fabricates: every line it emits is
 // assembled from (a) the user's own question and (b) fields of chunks that were
