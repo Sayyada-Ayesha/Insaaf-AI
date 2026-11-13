@@ -75,7 +75,7 @@ const RETURNED = ['wapis', 'wapas', 'vaapas', 'wapass', 'return', 'refund', 'ل�
 const MONEY_WORDS = ['paisa', 'paise', 'paison', 'raqam', 'rukam', 'amount', 'money', 'cash', 'پیسہ', 'پیسے', 'رقم'];
 
 const VERB = {
-  evict: ['khali', 'khaali', 'khala', 'nikal', 'evict', 'خالی', 'نکال'],
+  evict: ['khali', 'khaali', 'khala', 'nikal', 'evict', 'vacat', 'خالی', 'نکال'],
   suspend: ['suspend', 'suspension', 'معطل', 'تعلیق'],
   notice: ['notice', 'ایذار', 'نوٹس', 'legal notice'],
   damage: ['damaged', 'damage', 'kar diya', 'kar di', 'kr diya', 'pohancha', 'broke', 'destroy',
@@ -109,6 +109,7 @@ const RETRIEVAL_PHRASE = {
   property_damage: 'tenant damaged rented property landlord claim compensation eviction',
   defective_product: 'defective goods seller refusing refund replacement consumer protection court complaint',
   forced_eviction: 'landlord asking tenant to vacate forced eviction notice rent tribunal',
+  tenant_not_vacating: 'landlord eviction petition tenant refusing to vacate notice to quit Rent Controller Rent Tribunal rent act procedure',
   unfair_suspension: 'suspension of student or employee inquiry procedure rules',
   legal_notice_received: 'legal notice received how to reply within notice period',
   official_letter_unclear: 'understanding an official government letter or notice',
@@ -164,6 +165,19 @@ export function resolveEverydayIntent(userQuery, priorUserText = '', priorAssist
   if (objects.length === 1 && wordCount(q) <= 5 && askedClarification) {
     const s = SITUATION_BY_OBJECT[objects[0]];
     if (s) return { ...base, situation: s, retrievalQuery: RETRIEVAL_PHRASE[s] };
+  }
+
+  // A tenant who will not leave is the LANDLORD's problem, not an eviction
+  // threat against the citizen. "Mera kirayedar ghar khali nahi kar raha" also
+  // contains "nahi … raha", which the money-complaint vocabulary reads as a
+  // refusal to pay, so this must be settled before that branch runs. Who
+  // possesses the other party decides the direction.
+  // ASCII alternatives use \b; the Urdu-script ones cannot, because JS treats
+  // those letters as non-word characters and a leading \b would never match.
+  const ownsTenant = /\b(?:my|mera|meri|apna|apni)\s+(?:tenant|renter|kirayedar|kirayadar)\b/i.test(q)
+    || /(?:میرا|میری|میرے|اپنا|اپنی)\s*(?:tenant|کرایہ\s*دار)/.test(q);
+  if (ownsTenant && has(q, VERB.evict)) {
+    return { ...base, situation: 'tenant_not_vacating', retrievalQuery: RETRIEVAL_PHRASE.tenant_not_vacating };
   }
 
   const withheld = has(q, WITHHELD);

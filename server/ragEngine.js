@@ -758,7 +758,16 @@ export class RAGEngine {
       rewrittenQuery = 'domestic violence Protection of Women against Violence Act provincial Domestic Violence Prevention and Protection Act complaint Protection Officer shelter home emergency helpline remedy wife husband';
     }
     // Offence / Punishment queries (CRITICAL - must route to PPC)
-    else if (/\b(punish|penalty|saza|offence|offense|crime|theft|steal|rob|robbery|dacoity|murder|kill|qatl|hurt|assault|cheat|fraud|forgery|forge|trespass|mischief|intimidat|threat|dhamki|kidnap|abduct|extort|blackmail|defam|chori|loot|daketi|maar|badnami|rape|zina|burglar\w*|house.?break\w*|break.?in|broke into|raat ko.*chori|ghar.*tod|breach.?trust|entrust\w*|refused.to.(?:return|pay|repay)|has.not.returned|did.not.return)\b/i.test(normalizedQuery)) {
+    else if (/\b(punish|penalty|saza|offence|offense|crime|theft|steal|rob|robbery|dacoity|murder|kill|qatl|hurt|assault|cheat|fraud|forgery|forge|trespass|mischief|intimidat|threat|dhamki|kidnap|abduct|extort|blackmail|defam|chori|loot|daketi|maar|badnami|rape|zina|burglar\w*|house.?break\w*|break.?in|broke into|raat ko.*chori|ghar.*tod|breach.?trust|entrust\w*|refused.to.(?:return|pay|repay)|has.not.returned|did.not.return)\b/i.test(normalizedQuery)
+        // "Fraud" is not a domain. A card/account dispute and a property
+        // transaction dispute name their own records, but the offence branch
+        // used to run first on the single word "fraud", so a card-fraud
+        // complaint was answered with PPC 420 and the Banking Mohtasib records
+        // were never candidates; the same happened to a double-sale plot.
+        && !(/\b(bank|banking|card|atm|account|cheque|sbp|state\s+bank)\b/i.test(normalizedQuery)
+          && /\b(fraud|scam|deduct\w*|debit\w*|refund|reversal|unauthori[sz]ed|chargeback)\b/i.test(normalizedQuery))
+        && !(/\b(property|plot|land|zameen|builder|flat|registry|mutation|jaidad|double\s*sale)\b/i.test(normalizedQuery)
+          && /\b(fraud|cheat\w*|dhoka|forger\w*|double\s*sale)\b/i.test(normalizedQuery))) {
       domain = 'criminal';
       // Build a more targeted rewrite based on the specific offence mentioned
       const offenceTerms = [];
@@ -1138,18 +1147,20 @@ export class RAGEngine {
         && !/\b(regulat\w*|overse\w*|which body|who regulates)\b/i.test(normalizedQuery)) {
       domain = 'banking';
       const bankTerms = [];
-      if (/cheque|dishonour|insufficient|489/i.test(normalizedQuery)) bankTerms.push('dishonour of cheque Section 489F PPC punishment banking law remedy');
-      if (/bank|banking|SBP|State Bank/i.test(normalizedQuery)) bankTerms.push('banking law State Bank SBP regulation Banking Companies Ordinance');
       // A dispute about money taken from the customer's own account is not a
-      // question about what a central bank does. Without this the corpus record
-      // that names the SBP's currency and monetary-policy functions outranked
-      // the records that speak to the customer's problem, and the answer to
-      // "the bank deducted my money and will not return it" described SBP's
-      // mandate. The complaint/remedy vocabulary below is the corpus's own
-      // (public offices names the Banking Mohtasib; banking laws name the
-      // Banking Court and depositor protection).
-      if (/deduct|debit|kaat|kat |kat\b|withdr|not (?:return|refund)|wapis|refund|reversal|unauthori[sz]ed|fraud/i.test(normalizedQuery)) {
-        bankTerms.push('wrongful deduction debit account refund reversal complaint Banking Mohtasib Banking Court dispute depositor protection');
+      // question about what a central bank does. The SBP-mandate vocabulary is
+      // therefore pushed ONLY when no customer dispute is named: joining the two
+      // strings still let the record describing SBP's currency and monetary
+      // policy outrank the Banking Mohtasib / Banking Court records that answer
+      // "the bank did not return my money after card fraud". The dispute
+      // vocabulary is the corpus's own (public offices names the Banking
+      // Mohtasib; banking laws name the Banking Court and depositor protection).
+      const customerDispute = /deduct|debit|kaat|kat |kat\b|withdr|not (?:return|refund)|wapis|refund|reversal|unauthori[sz]ed|fraud|card|atm|chargeback/i.test(normalizedQuery);
+      if (/cheque|dishonour|insufficient|489/i.test(normalizedQuery)) bankTerms.push('dishonour of cheque Section 489F PPC punishment banking law remedy');
+      if (customerDispute) {
+        bankTerms.push('customer money not returned card unauthorized transaction wrongful deduction debit account refund reversal complaint Banking Mohtasib Banking Court dispute depositor protection');
+      } else if (/bank|banking|SBP|State Bank/i.test(normalizedQuery)) {
+        bankTerms.push('banking law State Bank SBP regulation Banking Companies Ordinance');
       }
       rewrittenQuery = bankTerms.length > 0 ? bankTerms.join(' ') : 'banking laws Pakistan bank cheque dishonour remedy SBP';
     }

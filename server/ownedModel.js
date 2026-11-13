@@ -1536,6 +1536,44 @@ const GUIDANCE = {
       followUp: 'اپنا صوبہ، یہ کہ تحریری معاہدہ ہے یا نہیں، اور کتنے مہینے باقی ہیں — بتا دیں تو میں صحیح فورم تک بات محدود کر سکتا ہوں۔'
     }
   },
+  'tenancy-eviction': {
+    en: {
+      lead: 'A landlord who wants a tenant to leave must go through the written tenancy agreement and the rent law of the province. Force is not an option: changing the locks, cutting utilities or throwing belongings out can itself be an offence and can spoil the eviction case. The right route is a written notice to quit followed, if the tenant still stays, by an application to the Rent Controller or Rent Tribunal.',
+      steps: [
+        'Read the agreement for the term, the notice clause and how the tenancy can be ended, and note the exact dates.',
+        'Write a notice to quit that names the date by which possession is required, and send it the way the agreement or the provincial rent law allows.',
+        'Keep proof that the notice reached the tenant — registered post receipt, courier slip, or a witnessed delivery.',
+        'Gather the agreement, rent receipts and bank records, and every message about the tenancy.',
+        'If the tenant still does not vacate, apply to the Rent Controller or Rent Tribunal for your area; your provincial rent law sets the grounds and the procedure.',
+        'Do not change the locks, cut water or electricity, or remove the tenant\'s belongings yourself — ask a lawyer or legal-aid service before taking any step of that kind.'
+      ],
+      followUp: 'Tell me your province, whether there is a written agreement, and whether the term has ended or the rent is unpaid, and I can narrow down the grounds and the forum.'
+    },
+    roman: {
+      lead: 'Makaan malik jo chahta hai ke kirayedar ghar chhod de, usay likhit kiraya agreement aur province ke rent qanoon ke raaste se chalna hoga. Zor zabaardasti koi hal nahi: tala badalna, bijli/paani kaatna ya saaman bahar phenkna khud jurm ho sakta hai aur eviction ka muqadma kharab kar deta hai. Sahi raasta likhit notice to quit hai, aur agar kirayedar phir bhi na jaye to Rent Controller ya Rent Tribunal mein darkhwast.',
+      steps: [
+        'Agreement mein term, notice ki shart aur kiraya dari khatam karne ka tareeqa parhein aur tareekhein note karein.',
+        'Notice to quit likhein jis mein woh tareekh ho jis tak qabza wapas chahiye, aur agreement ya province ke rent qanoon ke mutabiq bhejein.',
+        'Notice kirayedar tak pahunchne ka saboot rakhein — registered post receipt, courier slip ya gawah ke samne delivery.',
+        'Agreement, kiraya receipts, bank record aur kiraya dari ke baare mein tamam messages ikattha karein.',
+        'Agar kirayedar phir bhi na jaye to apne ilaqe ke Rent Controller ya Rent Tribunal mein darkhwast dein; aap ke province ka rent qanoon grounds aur tareeqa-e-kar muqarrar karta hai.',
+        'Khud tala na badlein, paani ya bijli na kaatein aur kirayedar ka saaman bahar na nikalein — aisa koi qadam uthane se pehle wakeel ya legal-aid se poochein.'
+      ],
+      followUp: 'Apna province, yeh ke likhit agreement hai ya nahi, aur term khatam hui hai ya kiraya baqi hai — bata dein to main grounds aur forum tak baat mehdood kar sakta hoon.'
+    },
+    ur: {
+      lead: 'مکان مالک جو چاہتا ہے کہ کرایہ دار مکان چھوڑ دے، اسے تحریری کرایہ نامے اور صوبے کے کرایہ داری قانون کے راستے سے چلنا ہوگا۔ زور زبردستی کوئی حل نہیں: تالا بدلنا، بجلی یا پانی کاٹنا یا سامان باہر پھینکنا بذات خود جرم ہو سکتا ہے اور بے دخلی کا مقدمہ خراب کر دیتا ہے۔ صحیح راستہ تحریری نوٹس ٹو کِوِٹ ہے، اور اگر کرایہ دار پھر بھی نہ جائے تو رنٹ کنٹرولر یا رنٹ ٹریبونل میں درخواست۔',
+      steps: [
+        'معاہدے میں مدت، نوٹس کی شرط اور کرایہ داری ختم کرنے کا طریقہ پڑھیں اور تاریخیں نوٹ کریں۔',
+        'نوٹس ٹو کِوِٹ لکھیں جس میں وہ تاریخ ہو جس تک قبضہ واپس چاہیے، اور معاہدے یا صوبے کے کرایہ داری قانون کے مطابق بھیجیں۔',
+        'نوٹس کرایہ دار تک پہنچنے کا ثبوت رکھیں — رجسٹرڈ ڈاک کی رسید، کوریئر سلپ یا گواہ کے سامنے حوالگی۔',
+        'معاہدہ، کرایہ کی رسیدیں، بینک ریکارڈ اور کرایہ داری سے متعلق تمام پیغامات جمع کریں۔',
+        'اگر کرایہ دار پھر بھی نہ جائے تو اپنے علاقے کے رنٹ کنٹرولر یا رنٹ ٹریبونل میں درخواست دیں؛ آپ کے صوبے کا کرایہ داری قانون بنیادیں اور طریقہ کار مقرر کرتا ہے۔',
+        'خود تالا نہ بدلیں، پانی یا بجلی نہ کاٹیں اور کرایہ دار کا سامان باہر نہ نکالیں — ایسا کوئی قدم اٹھانے سے پہلے وکیل یا قانونی امداد سے پوچھیں۔'
+      ],
+      followUp: 'اپنا صوبہ، یہ کہ تحریری معاہدہ ہے یا نہیں، اور مدت ختم ہوئی ہے یا کرایہ باقی ہے — بتا دیں تو میں بنیادوں اور فورم تک بات محدود کر سکتا ہوں۔'
+    }
+  },
   'tenancy-broad': {
     en: {
       lead: 'Tenancy in Pakistan is mostly governed by provincial rent laws and by your own written agreement. The main areas are rent and its increase, the security deposit, notice before eviction, repairs, and the handover of the premises. Which rule applies depends on your province and on what the agreement says.',
@@ -1619,6 +1657,7 @@ function guidanceKey(query, situation = null) {
   // nahi de raha" and "deposit wapas nahi mil raha" share every noun, and the
   // keyword ladder used to answer both with the tenant-side deposit text.
   if (situation === 'rent_arrears') return 'tenancy-rent-arrears';
+  if (situation === 'tenant_not_vacating') return 'tenancy-eviction';
   if (situation === 'salary_unpaid') return 'salary-unpaid';
   if (situation === 'fee_refund') return 'student-refund';
   if (WOMEN_BROAD_RE.test(q) && !WOMEN_SPECIFIC_RE.test(q)) return 'women-rights';
@@ -2181,6 +2220,27 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   const primary = proceduralAnswer || ((provisions[0] && topicalScoreOf(provisions[0]) >= topicalScoreOf(focus[0]))
     ? provisions[0]
     : (focus[0] || provisions[0]));
+  // A description of an institution's own mandate is background, not an answer
+  // to a citizen's problem. Measured on "the bank did not return my money after
+  // card fraud": the depositor-protection record was retrieved first, but the
+  // record describing the State Bank's currency and monetary-policy functions
+  // scored higher on the shared words "bank" and "money" and became the direct
+  // answer. When the leading record only states what a body does, the first
+  // record that speaks to the citizen's problem answers instead.
+  const GENERIC_MANDATE_RE = /\b(?:issue[sd]? currency|regulate[sd]? money supply|monetary policy (?:committee|through)|supervise[sd]? banks|advise[sd]? government)\b/i;
+  const mandateOnly = primary && GENERIC_MANDATE_RE.test(String(primary.text || ''));
+  // Prefer the citizen-facing record from the SAME instrument (depositor
+  // protection sits in the same banking_laws document as the SBP mandate); a
+  // record from an unrelated document is not a substitute just because it shares
+  // a word.
+  const problemAnswer = mandateOnly
+    ? (focus.find(c => c && c !== primary && c.docId === primary.docId
+        && !GENERIC_MANDATE_RE.test(String(c.text || '')))
+      || focus.find(c => c && c !== primary && c.docId !== primary.docId
+        && !GENERIC_MANDATE_RE.test(String(c.text || ''))
+        && /(consumer|deposit|refund|complaint|account holder)/i.test(String(c.text || ''))
+        && (ownIdentityHits(userQuery, c) > 0 || queryTermHits(userQuery, c) > 0)))
+    : null;
   // PART 1b — the question's own words choose WHICH RECORD answers, never WHICH
   // DOCUMENT. Across documents generic overlap wins: a supporting digest record
   // repeating "admission", "fee" and "policy" displaced the HEC fee-refund
@@ -2196,10 +2256,10 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   // Right to Appeal Disciplinary Decisions" as the direct answer — attribution
   // decided a relevance question.
   const leadMatch = leadRecord ? focus.find(c => c.docId === leadRecord.docId) : null;
-  const answerRecord = (leadMatch && primary && !primary.authorityLead
+  const answerRecord = problemAnswer || ((leadMatch && primary && !primary.authorityLead
     && topicalScoreOf(leadMatch) >= topicalScoreOf(primary))
     ? leadMatch
-    : primary;
+    : primary);
   // Supporting sections cite the records that address THIS question, not every
   // record that scored well enough to be retrieved.
   const support = focus.filter(c => !siblingOffTopic(c, answerRecord, userQuery));

@@ -673,19 +673,37 @@ const escRe = (s) => String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 // ASCII cues match as a prefix at a word start, so a stem like 'penalt' or
 // 'evict' still covers 'penalty' and 'eviction'. Urdu-script cues can not use
 // \b, so they are substring-tested.
-const LEGAL_CUES_ASCII_RE = new RegExp(
-  `\\b(?:${[...new Set([...LEGAL_CUES_EN, ...LEGAL_CUES_ROMAN_URDU])].map(escRe).join('|')})`,
-  'i'
-);
+// Cue words whose everyday sense is at least as common as their legal one
+// ("what is the capital of France", "a bank of the river", "charge the phone").
+// One of these alone is not evidence that a question is about law.
+const AMBIGUOUS_CUES = new Set(['capital', 'bank', 'charge', 'party', 'interest', 'act',
+  'title', 'duty', 'trust', 'will', 'share', 'notice', 'evidence', 'right']);
+
+function asciiCueCount(s) {
+  const hits = new Set();
+  const re = new RegExp(`\\b(?:${[...new Set([...LEGAL_CUES_EN, ...LEGAL_CUES_ROMAN_URDU])].map(escRe).join('|')})`, 'gi');
+  let m;
+  while ((m = re.exec(s)) !== null) hits.add(m[0].toLowerCase());
+  return hits;
+}
 
 // Does the question name a legal or civic subject at all? Deliberately
-// permissive: an over-broad hit only means the guard stays out of the way.
-function hasLegalOrCivicSignal(userQuery) {
+// permissive by default: an over-broad hit only means the guard stays out of the
+// way. `strict` is used where the corpus itself classified NOTHING (domain
+// unknown): there, one ambiguous English word ("capital", "bank") was enough to
+// keep a trivia question behind the guard while the corpus answered it from an
+// unrelated statute. A strict ask needs two distinct cues, one unambiguous cue,
+// a provision reference, or an Urdu-script cue.
+function hasLegalOrCivicSignal(userQuery, { strict = false } = {}) {
   const s = String(userQuery || '');
   if (!s.trim()) return false;
-  if (LEGAL_CUES_ASCII_RE.test(s)) return true;
   if (LEGAL_CUES_URDU_SCRIPT.some(cue => s.includes(cue))) return true;
-  return findProvisionRefs(s).length > 0;
+  if (findProvisionRefs(s).length > 0) return true;
+  const hits = asciiCueCount(s);
+  if (!hits.size) return false;
+  if (!strict) return true;
+  if (hits.size >= 2) return true;
+  return [...hits].some(w => !AMBIGUOUS_CUES.has(w));
 }
 
 /**
@@ -702,7 +720,9 @@ const OFF_TOPIC_REASONS = new Set(['wrong_domain', 'wrong_jurisdiction', 'scope_
 function offTopicAbstentionText(userQuery, activeLang, evidence) {
   const ev = evidence || {};
   if (ev.verdict === 'strong') return null;
-  if (hasLegalOrCivicSignal(userQuery)) return null;
+  // The corpus classified nothing for this ask, so a single ambiguous English
+  // word is the only thing keeping the guard out of the way — read it strictly.
+  if (hasLegalOrCivicSignal(userQuery, { strict: ev.domain === 'unknown' })) return null;
   const reasons = ev.reasons || [];
   const corpusSaysNoSupport = ev.domain === 'unknown' || reasons.some(r => OFF_TOPIC_REASONS.has(r));
   if (!corpusSaysNoSupport) return null;
