@@ -675,138 +675,50 @@ function sectionNotFoundText(userQuery, activeLang) {
     : `A direct verified match for "${askedRef}" was not found in the verified law corpus. Please double-check the number and the law — for example "punishment for theft under the Pakistan Penal Code" or "the right to equality under the Constitution".`;
 }
 
-// Legal / civic subjects a citizen actually asks about, in all three scripts. The
-// off-topic guard below refuses only when NONE of these appears, so a real legal
-// question can never be silenced by it — the near-miss answer path stays as is.
-// Stopwords are deliberately excluded: a cue must name a subject, not a copula.
-const LEGAL_CUES_EN = [
-  'law', 'legal', 'legality', 'legislature', 'act', 'ordinance', 'amendment', 'section', 'article',
-  'clause', 'subsection', 'penal', 'criminal', 'civil', 'offence', 'offense', 'crime', 'punishment',
-  'punished', 'sentence', 'fine', 'penalt', 'jurisdiction', 'court', 'judge', 'bench', 'trial',
-  'appeal', 'petition', 'revision', 'suit', 'plaint', 'defence', 'acquit', 'convict', 'bail', 'remand',
-  'arrest', 'police', 'fir', 'challan', 'complaint', 'notice', 'summon', 'warrant', 'subsidiar',
-  'case', 'verdict', 'hearing', 'witness', 'evidence', 'injunction', 'arbitration', 'mediation',
-  'settlement', 'probate', 'dowry', 'mehr', 'lien', 'adjourn', 'contempt', 'perjury', 'defamation',
-  'libel', 'slander', 'detention', 'kidnap', 'abduction', 'murder',
-  'contract', 'agreement', 'deed', 'registry', 'registration', 'mutation', 'property', 'land',
-  'tenant', 'tenancy', 'rent', 'evict', 'possession', 'encroach', 'marriage', 'nikah', 'talaq',
-  'divorce', 'khula', 'custody', 'maintenance', 'guardian', 'inheritance', 'estate', 'heir',
-  'employer', 'employee', 'employment', 'salary', 'wage', 'appointment', 'termination', 'dismissal',
-  'suspension', 'departmental', 'disciplinary', 'labour', 'labor', 'union', 'consumer', 'refund',
-  'warranty', 'education', 'student', 'school', 'college', 'university', 'admission', 'examination',
-  'exam', 'result', 'degree', 'transcript', 'hostel', 'fee', 'fees', 'scholarship', 'ragging',
-  'harassment', 'harass', 'assault', 'abuse', 'molest', 'theft', 'stole', 'robbery', 'fraud',
-  'cheating', 'forgery', 'counterfeit', 'blackmail', 'cyber', 'online', 'password', 'rights',
-  'threat', 'threaten', 'intimidat', 'stalk', 'bully', 'impersonat', 'deepfake', 'morphed',
-  'obscene', 'pornograph', 'abusive', 'defame',
-  'duty', 'duties', 'speech', 'religion', 'minor', 'child', 'women', 'wife', 'husband', 'parent',
-  'guardianship', 'passport', 'cnic', 'domicile', 'vote', 'election', 'tax', 'taxation', 'customs',
-  'bank', 'banking', 'loan', 'debt', 'recover', 'cheque', 'dishonour', 'stamp', 'company',
-  'partnership', 'business', 'license', 'licence', 'permit', 'vehicle', 'accident', 'insurance',
-  'claim', 'hospital', 'medicine', 'drug', 'narcotic', 'smuggling', 'terrorism', 'anti',
-  'money laundering', 'nab', 'ombudsman', 'advocate', 'lawyer', 'legal aid', 'affidavit',
-  'notary', 'attestation', 'signature', 'document', 'gazette', 'crpc', 'ppc', 'pei', 'hta',
-  'ipc', 'fia', 'nadra', 'bisp', '8171', 'kafaalat', 'kifalat', 'punjab', 'sindh', 'balochistan',
-  'baluchistan', 'pakhtunkhwa', 'gilgit', 'baltistan', 'azad', 'kashmir', 'federal', 'provincial',
-  'government', 'govt', 'authority', 'municipal', 'council', 'ministry', 'department', 'official',
-];
-
-const LEGAL_CUES_ROMAN_URDU = [
-  'qanoon', 'kanoon', 'qawaneen', 'haq', 'huqooq', 'haqooq', 'adalat', 'kachehri', 'vakhtiyari',
-  'wakil', 'wakeel', 'vakil', 'muqadma', 'dawa', 'dafa', 'dhara', 'saza', 'jurmana', 'shikayat',
-  'faryad', 'darkhwast', 'police', 'thana', 'fir', 'qaboo', 'giraftari', 'zamanat', 'puchhtagi',
-  'karardad', 'moahida', 'registri', 'intiqal', 'bayana', 'maqadma', 'zameen', 'jakri', 'kirayedar',
-  'kiraye', 'kira', 'qabza', 'khalisi', 'nikah', 'talaq', 'khula', 'hadlat', 'nafaqa', 'zauj',
-  'zauja', 'balish', 'bacha', 'aulad', 'waris', 'taqseem', 'miras', 'mulazim', 'mulazmat', 'naukri',
-  'tankhwa', 'khidmat', 'tardid', 'khilaf', 'taleem', 'talib', 'imtihan', 'nateeja', 'marksheet',
-  'hostel', 'haraasni', 'herasgen', 'chori', 'sargoshi', 'dukaati', 'dhoka', 'qalbi', 'sazi',
-  'cyber', 'bank', 'qarz', 'wasli', 'wapsi', 'saleq', 'tax', 'customs', 'passport', 'cnic',
-  'domisail', 'vote', 'chunao', 'sarkar', 'mahkama', 'idara', 'kagaz', 'dastavez', 'tasdeeq',
-  'halefnama', 'dastakhat', 'khat', 'muhr', 'kharid', 'farokht', 'bazaar', 'dukan', 'dau',
-  'kompani', 'sharakat', 'ijazat', 'muafiqat', 'injury', 'hukam', 'jurm',
-  'sunwai', 'vakalatnama', 'gawah', 'saboot', 'faizla', 'dhamki', 'dhamkian', 'dhamkiyan',
-  'tasveerein', 'tasveer', 'harasani', 'harrasani',
-];
-
-const LEGAL_CUES_URDU_SCRIPT = [
-  'قانون', 'قوانین', 'حق', 'حقوق', 'عدالت', 'کچہری', 'اختیارات', 'وکیل', 'مقدمہ', 'دعوی',
-  'دفعہ', 'سزا', 'جرمانہ', 'نوٹس', 'شکایت', 'فریاد', 'درخواست', 'پولیس', 'تھانہ', 'مقدم',
-  'قبضو', 'گرفتاری', 'جیل', 'زمانت', 'پوچھتاچ', 'ترجمان', 'معاہدہ', 'رجسٹری', 'انتقال',
-  'بیعانہ', 'معاملہ', 'زمین', 'جاگیر', 'کرایہ', 'قبضہ', 'کھالی', 'نکاح', 'طلاق', 'خلع',
-  'حضانت', 'نفقہ', 'زوج', 'زوجہ', 'والد', 'والدہ', 'بچہ', 'اولاد', 'وارث', 'تقسیم',
-  'بھٹکہ', 'ملازمت', 'نوکری', 'تنخواہ', 'خدمتگار', 'تعدد', 'خلاف', 'تعلیم', 'طالب',
-  'علم', 'امتحان', 'نتیجہ', 'مارک شیٹ', 'ہاسٹل', 'فیس', 'ہراساں', 'مشکل', 'چوری',
-  'سرقت', 'دھوکا', 'تقلب', 'سائبر', 'بیت', 'مال', 'بینک', 'قرض', 'واپسی', 'ٹیکس',
-  'کسٹم', 'پاسپورٹ', 'قومی شناختی کارڈ', 'ڈومیسائل', 'ووٹ', 'الیکشن', 'حکومت', 'محکمہ',
-  'ادارہ', 'کاغذ', 'دستاویز', 'تصدیق', 'حلف نامہ', 'دستخط', 'خط', 'مہر', 'خرید',
-  'فروخت', 'کمپنی', 'شراکت', 'اجازت', 'معاوضہ', 'دعوی', 'موروث',
-  'ثبوت', 'گواہ', 'سماعت', 'فیصلہ', 'وکالت نامہ', 'بلیک میل', 'دھمکی', 'ہراسانی', 'تصاویر',
-];
-
-const escRe = (s) => String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-
-// ASCII cues match as a prefix at a word start, so a stem like 'penalt' or
-// 'evict' still covers 'penalty' and 'eviction'. Urdu-script cues can not use
-// \b, so they are substring-tested.
-// Cue words whose everyday sense is at least as common as their legal one
-// ("what is the capital of France", "a bank of the river", "charge the phone").
-// One of these alone is not evidence that a question is about law.
-const AMBIGUOUS_CUES = new Set(['capital', 'bank', 'charge', 'party', 'interest', 'act',
-  'title', 'duty', 'trust', 'will', 'share', 'notice', 'evidence', 'right']);
-
-function asciiCueCount(s) {
-  const hits = new Set();
-  const re = new RegExp(`\\b(?:${[...new Set([...LEGAL_CUES_EN, ...LEGAL_CUES_ROMAN_URDU])].map(escRe).join('|')})`, 'gi');
-  let m;
-  while ((m = re.exec(s)) !== null) hits.add(m[0].toLowerCase());
-  return hits;
-}
-
-// Does the question name a legal or civic subject at all? Deliberately
-// permissive by default: an over-broad hit only means the guard stays out of the
-// way. `strict` is used where the corpus itself classified NOTHING (domain
-// unknown): there, one ambiguous English word ("capital", "bank") was enough to
-// keep a trivia question behind the guard while the corpus answered it from an
-// unrelated statute. A strict ask needs two distinct cues, one unambiguous cue,
-// a provision reference, or an Urdu-script cue.
-function hasLegalOrCivicSignal(userQuery, { strict = false } = {}) {
-  const s = String(userQuery || '');
-  if (!s.trim()) return false;
-  if (LEGAL_CUES_URDU_SCRIPT.some(cue => s.includes(cue))) return true;
-  if (findProvisionRefs(s).length > 0) return true;
-  const hits = asciiCueCount(s);
-  if (!hits.size) return false;
-  if (!strict) return true;
-  if (hits.size >= 2) return true;
-  return [...hits].some(w => !AMBIGUOUS_CUES.has(w));
-}
 
 /**
  * An off-topic question (a stock tip, a travel fact, a trivia ask) must not be
- * answered from a corpus record that matched it only by accident. Fires when the
- * gate did NOT reach a strong verdict, the question names no legal or civic
- * subject in any script, and the corpus itself says nothing supports the answer
- * (no domain classified, or an explicit no-support reason). Returns null in every
- * other case, so near-miss legal questions keep their honest partial answer.
+ * answered from a corpus record that matched it only by accident. The decision is
+ * made from the evidence state alone: the corpus placed nothing (no domain) or
+ * kept nothing that backs an answer. Vocabulary no longer decides — a citizen who
+ * describes a real problem in ordinary words is never refused for failing to
+ * name a law, section, court or right.
  */
-const OFF_TOPIC_REASONS = new Set(['wrong_domain', 'wrong_jurisdiction', 'scope_mismatch',
-  'insufficient_evidence', 'no_evidence', 'irrelevant_chunks', 'unsupported_evidence']);
+// A first-person ask describes the citizen's own situation ("my landlord",
+// "mujhe", "میرا"). Such an ask gets an invitation to say what happened, not a
+// flat refusal, even when no record covers it yet.
+const PERSONAL_ASK = [
+  /\b(?:i|me|my|mine|we|our|us)\b/i,
+  /\b(?:mujhe|mera|meri|mere|main|hum|hama(?:ra|ri)|apna|apni|apne)\b/i,
+  /(?:مجھے|میرا|میری|میرے|میں|ہم|ہمارا|ہماری|اپنا|اپنی|اپنے)/,
+];
 
-function offTopicAbstentionText(userQuery, activeLang, evidence) {
+function offTopicAbstentionText(userQuery, activeLang, evidence, everyday = null) {
   const ev = evidence || {};
   if (ev.verdict === 'strong') return null;
-  // The corpus classified nothing for this ask, so a single ambiguous English
-  // word is the only thing keeping the guard out of the way — read it strictly.
-  if (hasLegalOrCivicSignal(userQuery, { strict: ev.domain === 'unknown' })) return null;
-  const reasons = ev.reasons || [];
-  const corpusSaysNoSupport = ev.domain === 'unknown' || reasons.some(r => OFF_TOPIC_REASONS.has(r));
+  // A situation the pipeline already recognises is answered or clarified by the
+  // branches below, never refused here for lacking legal terminology.
+  if (everyday && (everyday.situation || (everyday.candidates || []).length)) return null;
+  // A weak verdict that still retained a supported record is a partial answer,
+  // not a refusal; another country's own rule has its own abstention below.
+  const supported = ev.supportedCount || 0;
+  const corpusSaysNoSupport = ev.domain === 'unknown' || ev.verdict === 'none'
+    || (ev.verdict === 'weak' && supported === 0);
   if (!corpusSaysNoSupport) return null;
+  const personal = PERSONAL_ASK.some(re => re.test(String(userQuery || '')));
   if (activeLang === 'ur') {
-    return 'آپ کے سوال میں کوئی قانون، دفعہ، عدالت، حق یا شہری موضوع نام سے ظاہر نہیں ہوتا، اور مستند قانونی ذخیرے میں اس سوال کا کوئی جواب موجود نہیں ہے — اس لیے یہاں کوئی متن یا حوالہ جواب کے طور پر پیش نہیں کیا جا رہا۔ قانونی مدد کے لیے اپنا سوال کسی قانون، عدالت یا حق کے حوالے سے پوچھیں — مثلاً "چوری کی سزا پاکستان پنل کوڈ کے تحت" یا "کرائے کا مکان خالی کروانا"۔';
+    return personal
+      ? 'میرے پاس موجود مستند ریکارڈز اس مخصوص بات کا قابلِ اعتماد جواب نہیں دیتے۔ براہِ کرم اپنے الفاظ میں بتائیں: اصل میں کیا ہوا، کس کے ساتھ ہوا، اور آپ کس شہر یا صوبے میں ہیں؟ کوئی قانونی اصطلاح استعمال کرنا ضروری نہیں۔ اگر کوئی نوٹس، خط یا دستاویز ہو تو وہ اپ لوڈ کر دیں، میں اسے پڑھ کر سمجھاؤں گا۔'
+      : 'یہاں موجود مستند ریکارڈز اس موضوع کا احاطہ نہیں کرتے، اس لیے میں کوئی اندازہ جواب کے طور پر پیش نہیں کروں گا۔ اگر آپ کا کوئی قانونی یا شہری مسئلہ ہے تو عام الفاظ میں بتائیں کہ کیا ہوا اور کون شامل ہے — میں متعلقہ ریکارڈ تلاش کروں گا۔';
   }
-  return activeLang === 'roman_urdu'
-    ? 'Aap ke sawal mein koi qanoon, dafa, adalat, haq ya civic mauzoo naam se zahir nahi hota, aur verified law corpus mein is sawal ka koi jawab mojood nahi hai — is liye yahan koi text ya hawala pesh nahi kiya ja raha. Qanooni madad ke liye apna sawal kisi qanoon, court ya haq ke hawale se poochein — maslan "chori ki saza Pakistan Penal Code ke tahat" ya "kiralay ka ghar khali karwana".'
-    : 'This question names no statute, provision, court, right or civic subject, and the verified law corpus holds no record that answers it, so no text and no source is being presented as an answer. For legal help, ask with a law, section, court or right in the question — for example "punishment for theft under the Pakistan Penal Code" or "evicting a tenant".';
+  if (activeLang === 'roman_urdu') {
+    return personal
+      ? 'Mere paas maujood verified records is exact baat ka bharosa mand jawab nahi dete. Baraye meharbani apne alfaaz mein bataayein: asal mein kya hua, kis ke saath hua, aur aap kis shehar ya soobe mein hain? Koi qanooni istilah istemaal karna zaroori nahi. Agar koi notice, khat ya dastavez ho to upload kar dein, main parh kar samjhaunga.'
+      : 'Yahan maujood verified records is mauzoo ko cover nahi karte, is liye main koi andaaza jawab ke tor par pesh nahi karunga. Agar aap ka koi qanooni ya civic masla hai to aam alfaaz mein bataayein ke kya hua aur kaun shamil hai — main mutalliq records talash karunga.';
+  }
+  return personal
+    ? 'The verified records I have do not support a reliable answer to this exact point yet. Could you describe in your own words what actually happened, who was involved, and which city or province you are in? You do not need to use any legal terms. If you have a notice, letter or document, upload it and I will read and explain it.'
+    : 'The verified records available here do not cover this subject, so I will not present a guess as an answer. If you have a legal or civic problem, describe in ordinary words what happened and who is involved, and I will look for the records that apply.';
 }
 
 /**
@@ -835,11 +747,11 @@ function foreignRuleAbstentionText(userQuery, activeLang) {
  * (asking "which province?" implies a matching record exists) and beats the
  * closest keyword-matched record (which would wear a verified banner).
  */
-function abstentionFor(userQuery, activeLang, evidence, retrievedChunks) {
+function abstentionFor(userQuery, activeLang, evidence, retrievedChunks, everyday = null) {
   const topChunkScore = retrievedChunks && retrievedChunks.length > 0 ? (retrievedChunks[0].exactScore || 0) : 0;
   const isSectionLookup = /\b(?:section|sec|article|art|dafa|دفعہ)\s*\.?\s*\d+/i.test(userQuery);
   const sectionMiss = (isSectionLookup && topChunkScore < 8.0) ? sectionNotFoundText(userQuery, activeLang) : null;
-  return sectionMiss || offTopicAbstentionText(userQuery, activeLang, evidence)
+  return sectionMiss || offTopicAbstentionText(userQuery, activeLang, evidence, everyday)
     || foreignRuleAbstentionText(userQuery, activeLang);
 }
 
@@ -2224,11 +2136,11 @@ app.post('/api/ai/chat', rateLimiterMiddleware, asyncRoute(async (req, res) => {
   // the branches that follows either answers from a record or asks a clarifying
   // question, and both would misrepresent an ask the verified corpus simply cannot
   // answer (another country's own rule, a bare section number, no subject at all).
-  const abstentionText = abstentionFor(userQuery, activeLang, retrievalResult.evidence, retrievedChunks);
+  const abstentionText = abstentionFor(userQuery, activeLang, retrievalResult.evidence, retrievedChunks, everyday);
   if (abstentionText) {
     res.write(`data: ${JSON.stringify({
       chunk: offlineKnowledgeHeader(activeLang, 'refusal', '') + abstentionText,
-      sources: [], isOffline: true, answerLevel, action: 'abstain',
+      sources: [], isOffline: true, answerLevel, action: /[?؟]/.test(abstentionText) ? 'clarify' : 'abstain',
       ...gatePayload(retrievalResult)
     })}\n\n`);
     res.write('data: [DONE]\n\n');
@@ -2809,11 +2721,11 @@ app.post('/api/ai/advice', rateLimiterMiddleware, async (req, res) => {
     // Same decision order as /api/ai/chat: an ask the verified corpus cannot
     // answer abstains here, ahead of every branch that would otherwise ask a
     // clarifying question or answer from the nearest record.
-    const abstentionText = abstentionFor(userQuery, activeLang, retrievalResult.evidence, retrievedChunks);
+    const abstentionText = abstentionFor(userQuery, activeLang, retrievalResult.evidence, retrievedChunks, everyday);
     if (abstentionText) {
       return res.json({
         text: offlineKnowledgeHeader(activeLang, 'refusal', '') + abstentionText,
-        sources: [], isOffline: true, answerLevel, action: 'abstain',
+        sources: [], isOffline: true, answerLevel, action: /[?؟]/.test(abstentionText) ? 'clarify' : 'abstain',
         ...gatePayload(retrievalResult)
       });
     }
@@ -3981,11 +3893,11 @@ app.post('/api/ai/agent', rateLimiterMiddleware, async (req, res) => {
   // One decision order on every route: an ask the verified corpus cannot answer
   // abstains here, instead of becoming a clarifying question or an answer built
   // from the nearest record.
-  const agentAbstention = abstentionFor(message, activeLang, retrievalResult.evidence, retrievedChunks);
+  const agentAbstention = abstentionFor(message, activeLang, retrievalResult.evidence, retrievedChunks, everyday);
   if (agentAbstention) {
     return res.json({
       reply: offlineKnowledgeHeader(activeLang, 'refusal', '') + agentAbstention,
-      actions: [], sources: [], isOffline: true, answerLevel, action: 'abstain',
+      actions: [], sources: [], isOffline: true, answerLevel, action: /[?؟]/.test(agentAbstention) ? 'clarify' : 'abstain',
       intake: deriveIntake(message, agentContext, retrievalResult),
       ...gatePayload(retrievalResult)
     });
