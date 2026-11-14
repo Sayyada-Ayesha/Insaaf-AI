@@ -32,7 +32,7 @@ const wordCount = (t) => (t.match(/\S+/g) || []).length;
 
 const PARTY = {
   tenant: ['tenant', 'tenent', 'kirayedar', 'کرایہ دار', 'کرایہدار', 'rehne wala', 'renter'],
-  landlord: ['landlord', 'makaan malik', 'maqan malik', 'malik', 'مکانات', 'مالک', 'house owner', 'property owner', 'malkin'],
+  landlord: ['landlord', 'makaan malik', 'maqan malik', 'malik', 'مکانات', 'مالک', 'مکان مالک', 'house owner', 'property owner', 'malkin'],
   employer: ['employer', 'company', 'boss', 'office', 'روزگار', 'ملازمین'],
   employee: ['employee', 'naukar', 'worker', 'staff', 'ملازم', 'کارکن'],
   university: ['university', 'college', 'institute', 'school', 'hostel', 'یونیورسٹی', 'کالج', 'ہاسٹل'],
@@ -42,7 +42,7 @@ const PARTY = {
 
 const OBJECT = {
   rent: ['rent', 'kiraya', 'kiraye', 'qiraya', 'qiraye', 'کرایہ', 'ماہوارہ', 'monthly rent'],
-  deposit: ['deposit', 'security', 'advance', 'bedles', 'zamanat', 'ایڈوانس', 'سیکورٹی', 'ضمانت'],
+  deposit: ['deposit', 'security', 'advance', 'bedles', 'zamanat', 'ایڈوانس', 'سیکورٹی', 'سیکیورٹی', 'ضمانت', 'ڈپازٹ'],
   salary: ['salary', 'tankhwah', 'تنخواہ', 'مزدوری', 'wages'],
   fees: ['fee', 'fees', 'tuition', 'فیس', 'زلف'],
   loan: ['udhaar', 'udhar', 'qarz', 'loan', 'قرض', 'ادھار', 'borrow'],
@@ -70,6 +70,7 @@ const WITHHELD = [
   'nahi kara', 'nh kara', 'nahi kar raha', 'nahi kar rahi', 'nh kar raha', 'کر رہا', 'نہیں دے', 'نہیں دیتا',
   'refuse', 'refused', 'inkar', 'inakar', 'deny', 'denies', 'hold kar', 'roke', 'rok raha',
   'nahi mil', 'mil nahi', 'nahi mili', 'nahi mila', 'baqi', 'baki', 'unpaid', 'not pay', 'not paid', 'نہیں دی',
+  'واپس نہیں', 'نہیں واپس', 'نہیں کیا', 'نہیں کر رہا', 'نہیں کر رہی', 'دینے سے انکار', 'انکار کر',
 ];
 const RETURNED = ['wapis', 'wapas', 'vaapas', 'wapass', 'return', 'refund', 'لौٹ', 'واپس', 'لوٹ'];
 const MONEY_WORDS = ['paisa', 'paise', 'paison', 'raqam', 'rukam', 'amount', 'money', 'cash', 'پیسہ', 'پیسے', 'رقم'];
@@ -86,17 +87,17 @@ const VERB = {
 const PLACE = /\b(pakistan|punjab|sindh|balochistan|khyber pakhtunkhwa|kpk|islamabad|ict|hyderabad|karachi|lahore|multan|rawalpindi|faisalabad|gujranwala|sargodha|sukkur|larkana|abbottabad|peshawar|quetta|zhob|mardan|bahawalpur|khairpur|navabshah|mirpur|kotli|bagh|sudhanoti|gilgit|baltistan|azad kashmir)\b/i;
 
 const SITUATION_SLOTS = {
-  rent_arrears: { object: 'rent', payer: 'tenant', payee: 'landlord', label: { en: 'the tenant is not paying you rent', roman: 'tenant aap ko kiraya nahi de raha' } },
-  deposit_return: { object: 'deposit', payer: 'landlord', payee: 'tenant', label: { en: 'someone is holding your security / advance money and will not return it', roman: 'kisi ne aapki security / advance ki raqam wapas nahi ki' } },
-  loan_return: { object: 'loan', payer: 'borrower', payee: 'lender', label: { en: 'someone borrowed money from you and will not return it', roman: 'kisi ne aap se udhaar liye paise wapas nahi kiye' } },
-  salary_unpaid: { object: 'salary', payer: 'employer', payee: 'employee', label: { en: 'your employer has not paid your salary', roman: 'aap ke employer ne salary nahi di' } },
-  fee_refund: { object: 'fees', payer: 'institution', payee: 'student', label: { en: 'the university or college is not refunding your fees', roman: 'university aap ki fees refund nahi kar rahi' } },
-  property_damage: { object: 'damage', payer: 'tenant', payee: 'landlord', label: { en: 'rented property was damaged', roman: 'kiraye ki property nuqsan pohanchaya gaya' } },
-  defective_product: { object: 'product', payer: 'seller', payee: 'buyer', label: { en: 'a shop or company sold you something defective and will not refund or replace it', roman: 'kisi ne aap ko kharab saman becha aur paisa wapas ya tabdeeli nahi kar raha' } },
-  forced_eviction: { object: null, payer: 'landlord', payee: 'tenant', label: { en: 'the landlord is forcing you to vacate', roman: 'landlord aap ko ghar khali karne par majboor kar raha hai' } },
-  unfair_suspension: { object: null, payer: 'institution', payee: 'student', label: { en: 'a suspension order', roman: 'taliq (suspension) ka order' } },
-  legal_notice_received: { object: null, payer: null, payee: null, label: { en: 'a legal notice you received', roman: 'aap ko mila qanooni notice' } },
-  official_letter_unclear: { object: null, payer: null, payee: null, label: { en: 'an official letter you want explained', roman: 'sarkari khat jiska matlab chahiye' } },
+  rent_arrears: { object: 'rent', payer: 'tenant', payee: 'landlord', label: { en: 'the tenant is not paying you rent', roman: 'tenant aap ko kiraya nahi de raha', ur: 'کرایہ دار آپ کو کرایہ نہیں دے رہا' } },
+  deposit_return: { object: 'deposit', payer: 'landlord', payee: 'tenant', label: { en: 'someone is holding your security / advance money and will not return it', roman: 'kisi ne aapki security / advance ki raqam wapas nahi ki', ur: 'کسی نے آپ کی سیکورٹی / ایڈوانس کی رقم واپس نہیں کی' } },
+  loan_return: { object: 'loan', payer: 'borrower', payee: 'lender', label: { en: 'someone borrowed money from you and will not return it', roman: 'kisi ne aap se udhaar liye paise wapas nahi kiye', ur: 'کسی نے آپ سے اُدھار لیے پیسے واپس نہیں کیے' } },
+  salary_unpaid: { object: 'salary', payer: 'employer', payee: 'employee', label: { en: 'your employer has not paid your salary', roman: 'aap ke employer ne salary nahi di', ur: 'آپ کے مالک/کمپنی نے تنخواہ نہیں دی' } },
+  fee_refund: { object: 'fees', payer: 'institution', payee: 'student', label: { en: 'the university or college is not refunding your fees', roman: 'university aap ki fees refund nahi kar rahi', ur: 'یونیورسٹی یا کالج آپ کی فیس واپس نہیں کر رہا' } },
+  property_damage: { object: 'damage', payer: 'tenant', payee: 'landlord', label: { en: 'rented property was damaged', roman: 'kiraye ki property nuqsan pohanchaya gaya', ur: 'کرائے کی جائیداد کو نقصان پہنچایا گیا' } },
+  defective_product: { object: 'product', payer: 'seller', payee: 'buyer', label: { en: 'a shop or company sold you something defective and will not refund or replace it', roman: 'kisi ne aap ko kharab saman becha aur paisa wapas ya tabdeeli nahi kar raha', ur: 'کسی دکان یا کمپنی نے آپ کو خراب سامان بیچا اور پیسے واپس یا تبدیلی نہیں کر رہا' } },
+  forced_eviction: { object: null, payer: 'landlord', payee: 'tenant', label: { en: 'the landlord is forcing you to vacate', roman: 'landlord aap ko ghar khali karne par majboor kar raha hai', ur: 'مالک مکان آپ کو گھر خالی کرنے پر مجبور کر رہا ہے' } },
+  unfair_suspension: { object: null, payer: 'institution', payee: 'student', label: { en: 'a suspension order', roman: 'taliq (suspension) ka order', ur: 'معطلی (suspension) کا حکم' } },
+  legal_notice_received: { object: null, payer: null, payee: null, label: { en: 'a legal notice you received', roman: 'aap ko mila qanooni notice', ur: 'آپ کو ملنے والا قانونی نوٹس' } },
+  official_letter_unclear: { object: null, payer: null, payee: null, label: { en: 'an official letter you want explained', roman: 'sarkari khat jiska matlab chahiye', ur: 'سرکاری خط جس کا مطلب چاہیے' } },
 };
 
 /** Canonical English phrasing: what to search when the situation IS resolved. */
@@ -265,32 +266,47 @@ export function resolveEverydayIntent(userQuery, priorUserText = '', priorAssist
 export function everydayClarification(resolved, activeLang = 'en') {
   if (!resolved || !resolved.ambiguous || resolved.candidates.length < 2) return null;
   const roman = activeLang === 'roman_urdu';
+  const urdu = activeLang === 'ur';
   const out = [];
   // The either-or lead names the two directions ONE known party can mean. When the
   // money itself is untyped there is no pair to choose between — reciting every
   // situation would only pad the one question that decides the case.
   if (!resolved.unknownObject && resolved.candidates.length === 2) {
     const labels = resolved.candidates
-      .map(c => SITUATION_SLOTS[c]?.label?.[roman ? 'roman' : 'en'])
+      .map(c => SITUATION_SLOTS[c]?.label?.[urdu ? 'ur' : roman ? 'roman' : 'en'])
       .filter(Boolean);
     const joined = labels.length > 1
-      ? `${labels.slice(0, -1).join(roman ? ', ' : ', ')}${roman ? ' ya ' : ' or '}${labels[labels.length - 1]}`
+      ? `${labels.slice(0, -1).join(urdu ? '، ' : ', ')}${urdu ? ' یا ' : roman ? ' ya ' : ' or '}${labels[labels.length - 1]}`
       : labels[0];
-    out.push(roman
-      ? `Main pehle sirf ek baat saaf karna chahta hoon, kyunke in dono suraton ka tareeqa alag ho sakta hai: kya baat yeh hai ke ${joined}?`
-      : `Let me clear one thing first, because these two situations are handled differently: is it that ${joined}?`);
+    if (urdu) {
+      out.push(`پہلے صرف ایک بات واضح کر لوں، کیونکہ اِن دونوں صورتوں کا طریقۂ کار مختلف ہو سکتا ہے: کیا معاملہ یہ ہے کہ ${joined}؟`);
+    } else {
+      out.push(roman
+        ? `Main pehle sirf ek baat saaf karna chahta hoon, kyunke in dono suraton ka tareeqa alag ho sakta hai: kya baat yeh hai ke ${joined}?`
+        : `Let me clear one thing first, because these two situations are handled differently: is it that ${joined}?`);
+    }
+  } else if (urdu) {
+    out.push('پہلے صرف ایک بات واضح کر لوں، کیونکہ ہر قسم کے پیسے کا طریقۂ کار الگ ہوتا ہے۔');
   } else {
     out.push(roman
       ? 'Main pehle sirf ek baat saaf karna chahta hoon, kyunke har qisam ke paise ka tareeqa alag hota hai.'
       : 'Let me clear one thing first, because money of each kind is handled differently.');
   }
-  out.push(roman
-    ? 'Paise kis cheez ke hain — kiraya, security/advance, ya udhaar — aur kitne arsay se ruke hain?'
-    : 'What is the money for — rent, security/advance, or a loan — and how long has it been outstanding?');
-  if (!resolved.cityGiven) {
+  if (urdu) {
+    out.push('رقم کس چیز کی ہے — کرایہ، سیکورٹی/ایڈوانس، یا اُدھار — اور کتنے عرصے سے رکی ہوئی ہے؟');
+  } else {
     out.push(roman
-      ? 'Aur muamla kis shehar ya province mein hai?'
-      : 'And which city or province is the matter in?');
+      ? 'Paise kis cheez ke hain — kiraya, security/advance, ya udhaar — aur kitne arsay se ruke hain?'
+      : 'What is the money for — rent, security/advance, or a loan — and how long has it been outstanding?');
+  }
+  if (!resolved.cityGiven) {
+    if (urdu) {
+      out.push('اور معاملہ کس شہر یا صوبے میں ہے؟');
+    } else {
+      out.push(roman
+        ? 'Aur muamla kis shehar ya province mein hai?'
+        : 'And which city or province is the matter in?');
+    }
   }
   return out.join(' ');
 }
@@ -304,7 +320,7 @@ export const EVERYDAY_SITUATIONS = Object.keys(SITUATION_SLOTS);
 export function situationLabel(resolved, activeLang = 'en') {
   const slot = resolved && resolved.situation ? SITUATION_SLOTS[resolved.situation] : null;
   if (!slot) return null;
-  return slot.label[activeLang === 'roman_urdu' ? 'roman' : 'en'];
+  return slot.label[activeLang === 'ur' ? 'ur' : activeLang === 'roman_urdu' ? 'roman' : 'en'];
 }
 
 /**
@@ -319,14 +335,22 @@ export function situationLabel(resolved, activeLang = 'en') {
 export function everydayUnverifiedNote(resolved, activeLang = 'en') {
   if (!resolved || !resolved.situation) return null;
   const roman = activeLang === 'roman_urdu';
+  const urdu = activeLang === 'ur';
   const label = situationLabel(resolved, activeLang);
   const ask = resolved.cityGiven
-    ? (roman
-      ? 'Baraye meharbani bataayein ke aap ke paas is muamlay ka koi likhata hai — agreement, receipt, notice ya email? Us se sahi qanoon aur procedure dhoondna asaan ho jata hai.'
-      : 'Please tell me whether you have anything in writing about this — an agreement, a receipt, a notice or an email. It makes the right law and procedure much easier to find.')
-    : (roman
-      ? 'Baraye meharbani bataayein ke aap ka muamla kis shehar ya province mein hai, kyunke qanoon shehar ke hisaab se badal sakta hai.'
-      : 'Please tell me which city or province the matter is in, because the applicable law changes by province.');
+    ? (urdu
+      ? 'براہِ کرم بتائیں کہ آپ کے پاس اِس معاملے کا کوئی تحریری ثبوت ہے — معاہدہ، رسید، نوٹس یا ای میل؟ اِس سے صحیح قانون اور طریقۂ کار ڈھونڈنا آسان ہو جاتا ہے۔'
+      : roman
+        ? 'Baraye meharbani bataayein ke aap ke paas is muamlay ka koi likhata hai — agreement, receipt, notice ya email? Us se sahi qanoon aur procedure dhoondna asaan ho jata hai.'
+        : 'Please tell me whether you have anything in writing about this — an agreement, a receipt, a notice or an email. It makes the right law and procedure much easier to find.')
+    : (urdu
+      ? 'براہِ کرم بتائیں کہ آپ کا معاملہ کس شہر یا صوبے میں ہے، کیونکہ قانون شہر کے حساب سے بدل سکتا ہے۔'
+      : roman
+        ? 'Baraye meharbani bataayein ke aap ka muamla kis shehar ya province mein hai, kyunke qanoon shehar ke hisaab se badal sakta hai.'
+        : 'Please tell me which city or province the matter is in, because the applicable law changes by province.');
+  if (urdu) {
+    return `میں آپ کی بات سمجھ گیا: آپ کا مسئلہ ${label} ہے۔ لیکن میرے مستند ذخیرے میں اِس معاملے پر پورا مددگار ریکارڈ نہیں ملا، اِس لیے میں کوئی دفعتًا، مہلت یا فیس کا اندازہ نہیں لگاؤں گا۔ ${ask}`;
+  }
   return roman
     ? `Main aap ki baat samajh gaya: aap ka masla ${label} hai. Lekin mere verified zakhire mein is muamlay par poora madad-ga record nahi mila, is liye main koi dafa, deadline ya fee ka andaaza nahi lagao ga. ${ask}`
     : `I understood your situation as: ${label}. I could not find a record in the verified corpus that covers it well enough, so I will not guess a section, deadline or fee. ${ask}`;

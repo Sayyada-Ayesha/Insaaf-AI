@@ -246,6 +246,10 @@ export class RAGEngine {
     'batao': 'tell explain guide', 'jeetne': 'win succeed', 'jeet': 'win success',
     'rishwat': 'bribe corruption', 'bribe': 'bribe corruption',
     'jhoota': 'false fabricated', 'vakeel': 'lawyer advocate', 'advocate': 'lawyer advocate',
+    // "muft wakeel kaise milega" reached no domain at all: neither word was
+    // translated, so the legal-aid branch never saw "free lawyer" and the
+    // question fell through to the generic no-record reply.
+    'wakeel': 'lawyer advocate', 'wakil': 'lawyer advocate', 'muft': 'free legal aid',
     'tauheen': 'insult contempt', 'cyber': 'cyber online internet',
     'online': 'online cyber internet', 'mobile': 'mobile electronic',
     'consumer': 'consumer complaint', 'khareedari': 'purchase consumer',
@@ -327,6 +331,19 @@ export class RAGEngine {
     // substring-prone or over-broad gloss lets another subject's row through.
     'بینک': 'bank banking', 'اکاؤنٹ': 'account', 'وارنٹ': 'warrant',
     'پیدائش': 'birth', 'سرٹیفکیٹ': 'certificate',
+    // Everyday nouns whose Urdu form shares no token with the English records.
+    // Without a gloss the evidence gate sees a question made almost entirely of
+    // unmapped words and rejects the records that answer it: "قبضہ" produced a
+    // zero-chunk property answer, "دکان … خراب موبائل … رقم واپس" produced a
+    // zero-chunk consumer one. Each gloss is the word the indexed record uses.
+    'ڈپازٹ': 'deposit security', 'قبضہ': 'possession encroach', 'قبضے': 'possession encroach',
+    'پلاٹ': 'plot property', 'پڑوسی': 'neighbour neighbor', 'منتقلی': 'transfer mutation',
+    'مکان': 'house property', 'مالک': 'landlord owner',
+    'دکان': 'shop seller', 'دکاندار': 'shopkeeper seller', 'خراب': 'defective faulty',
+    'موبائل': 'mobile electronic', 'رقم': 'amount money', 'واپس': 'return refund',
+    'فیس بک': 'facebook social media', 'سوشل': 'social', 'میڈیا': 'media',
+    'والد': 'father', 'والدہ': 'mother', 'انتقال': 'death deceased', 'وفات': 'death deceased',
+    'بیٹی': 'daughter', 'بیٹیوں': 'daughters', 'بیٹا': 'son', 'بیٹے': 'sons', 'حصہ': 'share',
     'شوہر': 'husband', 'بیوی': 'wife', 'تشدد': 'violence assault',
     'گھریلو': 'domestic', 'ویزا': 'visa',
     'تعلیمی': 'educational academic',
@@ -450,8 +467,12 @@ export class RAGEngine {
     // consumer and labour branches below match on incidental words — "online",
     // "refund", "leave" — and run before the education branch, so without this
     // flag an HEC question is routed by the trigger word instead of its topic.
+    // "فیس بک" (Facebook) contains the Urdu word فیس (fee), so a social-media
+    // question was read as higher education and the cyber branch was skipped.
+    // The platform name is removed before the education cue list is tested.
+    const urduEduText = String(query || '').replace(/فیس\s*بک|فیسبک/g, ' ');
     const isHigherEdQuery = /\b(hec|higher education commission|degree|degrees|diploma|pgd|undergraduate|postgraduate|graduate|mphil|m\.?phil|phd|credit hour\w*|semester|transcript|convocation|provisional certificate|associate degree|matric|intermediate|fsc|hssc|a.?level|o.?level)\b/i.test(normalizedQuery)
-      || /(ڈگری|سند|تعلیم|تعلیمی|یونیورسٹی|یونیورسٹیاں|کالج|جامعہ|طالب علم|طالبات|امتحان|فیس|اسکالرشپ|ہاسٹل|میٹرک|انٹر)/.test(query);
+      || /(ڈگری|سند|تعلیم|تعلیمی|یونیورسٹی|یونیورسٹیاں|کالج|جامعہ|طالب علم|طالبات|امتحان|فیس|اسکالرشپ|ہاسٹل|میٹرک|انٹر)/.test(urduEduText);
 
     // "salary account" names a banking product, not a wage claim. The labour
     // branch matches single words, so on its own that phrase pulled bank-charge
@@ -643,7 +664,14 @@ export class RAGEngine {
     // no trigger, stayed domainless, and retrieved HEC degree-attestation
     // records because they are the corpus's other "apply with documents" text.
     else if ((/\b(domicile|cnic|nicop|b.?form|crc|child registration|birth (?:certificate|registration)|death (?:certificate|registration)|marriage registr|nikah.?nama|nikah register|voter|vote|vote enrol|electoral|constituency|union council|nadra|election commission|government department complaint|complaint against (?:a )?government|complain.{0,15}government|government.{0,15}(?:not providing|complaint)|civic|citizen portal|b-form|register.{0,20}(?:birth|death|marriage)|passport|dgip|frc|family registration certificate|pak.?id|tracking id|(?:renew|reprint|modify)\w*.{0,12}cnic|(?:birth|death|marriage).{0,20}registr)\b/i.test(normalizedQuery)
-      || /(پاسپورٹ|شناختی\s*کارڈ|ب\s*فارم|ڈومیسائل|خاندانی\s*شناختی\s*کارڈ|رجسٹریشن\s*سرٹیفکیٹ|ووٹر|الیکشن\s*کمیشن|پیدائش|وفات|نکاح)/.test(query))
+      // A bare Urdu "وفات" (death) is not a registration ask: it is how an
+      // inheritance question says a parent died. Registration is only named when
+      // the death word sits beside its certificate/registration word.
+      || /(پاسپورٹ|شناختی\s*کارڈ|ب\s*فارم|ڈومیسائل|خاندانی\s*شناختی\s*کارڈ|رجسٹریشن\s*سرٹیفکیٹ|ووٹر|الیکشن\s*کمیشن|پیدائش|(?:وفات|موت)\s*(?:کا\s*)?(?:سرٹیفکیٹ|رجسٹریشن|اندراج)|نکاح\s*(?:رجسٹریشن|نامہ))/.test(query))
+      // An estate question that mentions a death is a family/succession ask; the
+      // civic workflow records hold no shares and would answer with a form.
+      && !/\b(inherit\w*|heir\w*|succession|estate|warisa\w*)\b/i.test(normalizedQuery)
+      && !/(وراثت|ورثہ|ورثاء|ترکہ)/.test(query)
       && !/\b(abroad|overseas|foreign|nicop abroad)\b/i.test(normalizedQuery)) {
       domain = 'civic';
       const civicTerms = [];
@@ -662,9 +690,24 @@ export class RAGEngine {
     // domestic labour/criminal/cyber domains). Offline
     // workplace/teacher harassment must NOT route here (it is covered by the
     // workplace-harassment laws via the labour/rights domains).
-    else if ((/\b(cyber|internet|harass\w*|stalk\w*|hack\w*|online|peca|cybercrime|bully|bullying|blackmail\w*|extort\w*|whatsapp|data|website|fia|1991|identity|electronic|digital|information.?system|unauthorized|social media|social network|facebook|instagram|tiktok|snapchat|twitter|deepfake|morphed|fake (?:profile|account|id)|(?:profile|account) (?:photo|picture|image|video)|tasveer\w*|tasvir\w*|tasviren|be-?ijaazat|ijazat (?:ke )?baghair|private (?:photo|picture|image|video)|intimate (?:photo|picture|image|video))\b/i.test(normalizedQuery) || /(ہراسگی|انٹرنیٹ|سائبر|بلیک\s*میل|آن\s*لائن|بلیک\s*میلنگ|سوشل\s*میڈیا|جعلی\s*پروفائل|پروفائل|تصویر|تصاویر|نجی\s*تصاویر|بے\s*اجازت)/.test(query))
+    else if ((/\b(cyber|internet|harass\w*|stalk\w*|hack\w*|online|peca|cybercrime|bully|bullying|blackmail\w*|extort\w*|whatsapp|data|website|fia|1991|identity|electronic|digital|information.?system|unauthorized|social media|social network|facebook|instagram|tiktok|snapchat|twitter|deepfake|morphed|fake (?:profile|account|id)|(?:profile|account) (?:photo|picture|image|video)|tasveer\w*|tasvir\w*|tasviren|be-?ijaazat|ijazat (?:ke )?baghair|private (?:photo|picture|image|video)|intimate (?:photo|picture|image|video))\b/i.test(normalizedQuery) || /(ہراسگی|انٹرنیٹ|سائبر|بلیک\s*میل|آن\s*لائن|بلیک\s*میلنگ|سوشل\s*میڈیا|فیس\s*بک|فیسبک|جعلی\s*پروفائل|پروفائل|تصویر|تصاویر|نجی\s*تصاویر|بے\s*اجازت)/.test(query))
         && !isHigherEdQuery
-        && !(/\b(workplace|office|employer|boss|colleague|coworker|universit(?:y|ies)|uni|campus|student\w*|hostel\w*|teacher\w*|professor\w*|lecturer\w*|faculty|staff|manager|job|work)\b/i.test(normalizedQuery) && !/\b(online|internet|social|facebook|whatsapp|sms|email|website|mobile|phone|account|profile|message|youtube|twitter|instagram|tiktok|app)\b/i.test(normalizedQuery))) {
+        // A defective-goods complaint is about the seller, not the network. The
+        // Roman word for a phone normalizes to "electronic", which alone opened
+        // this branch: "Dukan ne kharab mobile becha, refund nahi kar rahi" was
+        // answered from cybercrime records. Goods-trade words settle the subject.
+        && !(/\b(?:shop|shops|store|seller|goods|product|products|defective|faulty|warranty|guarantee|refund|purchase[ds]?|bought|sold|kharab|dukaan)\b/i.test(normalizedQuery) || /(دکان|بیچا|خراب\s*(?:مال|موبائل|سامان|چیز))/.test(query))
+        && !(/\b(workplace|office|employer|boss|colleague|coworker|universit(?:y|ies)|uni|campus|student\w*|hostel\w*|teacher\w*|professor\w*|lecturer\w*|faculty|staff|manager|job|work)\b/i.test(normalizedQuery) && !/\b(online|internet|social|facebook|whatsapp|sms|email|website|mobile|phone|account|profile|message|youtube|twitter|instagram|tiktok|app)\b/i.test(normalizedQuery))
+        // "Bank ne meri ijazat ke baghair account se paise kaat liye" names no
+        // cyber medium at all. "Without permission" alone is not a cyber offence;
+        // with a bank/ATM/card debit it is a wrongful deduction, whose records
+        // live in the banking branch below.
+        && !(/\b(bank|banking|atm|card|debit|transaction)\b/i.test(normalizedQuery)
+          && /\b(deduct\w*|debit\w*|kaat|kat|withdr\w*|unauthori[sz]ed|transaction|balance|refund|reversal)\b/i.test(normalizedQuery)
+          && !/\b(cyber|online|internet|whatsapp|facebook|instagram|hack|peca|photo|picture|image|video|profile)\b/i.test(normalizedQuery))
+        && !(/(بینک|اے\s*ٹی\s*ایم|کارڈ|اکاؤنٹ)/.test(query)
+          && /(کاٹ|منہا|غیر\s*مجاز|بغیر\s*اجازت|ٹرانزیکشن|رقم)/.test(query)
+          && !/(سائبر|آن\s*لائن|انٹرنیٹ|ہیک|تصویر|پروفائل|فیس\s*بک)/.test(query))) {
       domain = 'cyber';
       const cyberTerms = [];
       if (/harass|stalk|bully/i.test(normalizedQuery)) cyberTerms.push('cyberstalking harassment Section 19 24 PECA punishment');
@@ -690,9 +733,10 @@ export class RAGEngine {
     // questions about rent, a landlord or premises are tenancy matters handled
     // by the property branch, because normalization puts the word "refund" in
     // the query for either of them).
-    else if ((/\b(consumer|defective|product|saman|dukaan|shopkeeper|warranty|refund|purchase|bought|khareedari|store)\b/i.test(normalizedQuery))
+    else if ((/\b(consumer|defective|product|faulty|goods|seller|saman|dukaan|dukandar|shop|shopkeeper|warranty|refund|purchase|bought|sold|becha|kharab|khareedari|store|mobile)\b/i.test(normalizedQuery)
+        || /(دکان|دکاندار|خراب|موبائل|بیچا|واپس|رقم)/.test(query))
         && !isHigherEdQuery
-        && !/\b(rent|rental|tenancy|tenant|landlord|premises|makan|ghar|kiraya|qaba)\b/i.test(normalizedQuery)
+        && !/\b(rent|rental|tenancy|tenant|landlord|deposit|premises|makan|ghar|kiraya|qaba)\b/i.test(normalizedQuery)
         && !/\b(bank|banking|cheque|sbp|state bank)\b/i.test(normalizedQuery)
         && !/\b(neighbour|neighbor|encroach\w*|common passage)\b/i.test(normalizedQuery)
         && !(/\b(university|school|college|students?|tuition|scholarship)\b/i.test(normalizedQuery) && !/\b(consumer|product|shop|purchase|goods|defective|seller)\b/i.test(normalizedQuery))) {
@@ -720,8 +764,14 @@ export class RAGEngine {
     }
     // Torts / civil wrongs — must run BEFORE the offence regex so "newspaper
     // publishes defamatory story — remedy" routes to torts_laws, not PPC s.499.
+    // Land possession is excluded: a neighbour who encroaches on a plot, or an
+    // occupant who refuses to vacate, is answered by the property/possession
+    // records (Specific Relief Act suit), not by the defamation/trespass digest.
     else if (/\b(newspaper|defamatory story|tort|torts|negligence|nuisance|trespass to person|civil wrong|damages claim|defamation.*remedy|remedy.*defamation|libel|slander|encroach\w*|neighbou?r.{0,80}(?:block\w*|obstruct\w*|stop\w*|grab\w*|catch\w*))\b/i.test(normalizedQuery)
-        && !/\b(punish|penalty|offence|offense|crime|saza|fir|police)\b/i.test(normalizedQuery)) {
+        && !/\b(punish|penalty|offence|offense|crime|saza|fir|police)\b/i.test(normalizedQuery)
+        && !(/\b(plot|land|zameen|jaidad|house|flat|property|qabza|kabza|possess\w*|dispossess\w*|mutation|registry|occup\w*)\b/i.test(normalizedQuery)
+          && /\b(encroach\w*|trespass\w*|dispossess\w*|occup\w*|grab\w*|qabza|kabza)\b/i.test(normalizedQuery))
+        && !(/(پلاٹ|زمین|جائیداد|مکان|قبضہ|قبضے)/.test(query) && /(قبض|متصرف|تجاو)/.test(query))) {
       domain = 'torts';
       rewrittenQuery = 'torts defamation newspaper remedy damages civil wrong libel slander negligence nuisance Pakistan civil suit';
     }

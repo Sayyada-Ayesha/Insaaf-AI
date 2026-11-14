@@ -43,12 +43,23 @@ const RULE = [
   'court', 'courts', 'judge', 'judiciary', 'constitution', 'act', 'enactment', 'ordinance', 'rule',
   'rules', 'regulation', 'regulations', 'penalty', 'penalties', 'punishment', 'sentence', 'offence',
   'offense', 'crime', 'tax', 'taxes', 'taxation', 'voting age', 'drinking age', 'age of consent',
-  'speed limit', 'building code', 'licence law', 'license law',
+  'speed limit', 'building code', 'licence law', 'license law', 'challan', 'challans', 'fine', 'fines',
+  'traffic fine', 'traffic ticket', 'driving licence', 'driving license',
 ].map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
 
 const FOREIGN_RULE = new RegExp(
   `(?:\\b(?:${RULE})\\b[^.?;\\n]{0,40}?\\b(?:${COUNTRY})\\b)` +
   `|(?:\\b(?:${COUNTRY})\\b[^.?;\\n]{0,30}?\\b(?:${RULE})\\b)`, 'i');
+
+// Urdu script cannot be bounded by \b, so the same two shapes are matched as
+// substrings with a short gap. The country list mirrors the Latin one: Saudi
+// Arabia / UAE are deliberately absent because a Pakistani procedure carried
+// out there is still a Pakistani ask the corpus can answer.
+const COUNTRY_UR = '(?:جاپان|بھارت|انڈیا|امریک[ہے]|برطانیہ|انگلینڈ|کینیڈا|آسٹریلیا|جرمنی|فرانس|اٹلی|سپین|چین|کوریا|ملائیشیا|سنگاپور|تھائی لینڈ|انڈونیشیا|فلپائن|ویتنام|برازیل|ارجنٹائن|جنوبی افریقہ|ترکیہ|ترکی|ایران|عراق|افغانستان|بنگلہ دیش|نیپال|سری لنکا|میکسیکو)';
+const RULE_UR = '(?:قانون|قانونی|عدالت|ضابط[ہے]|ایکٹ|سزا|جرمان[ہے]|چالان|ٹیکس|پینل کوڈ|تعزیرات)';
+const FOREIGN_RULE_UR = new RegExp(
+  `(?:${RULE_UR}[^۔؟\\n]{0,40}?${COUNTRY_UR})` +
+  `|(?:${COUNTRY_UR}[^۔؟\\n]{0,30}?${RULE_UR})`);
 
 // Latin-script Pakistan cues, then the Urdu-script ones. \b cannot bound an Urdu
 // word, so the Urdu list is matched as a plain substring test.
@@ -64,7 +75,7 @@ export function asksForeignRule(text) {
   const s = String(text || '');
   if (!s.trim()) return false;
   if (PAKISTAN_NEXUS.test(s) || PAKISTAN_NEXUS_UR.test(s)) return false;
-  return FOREIGN_RULE.test(s);
+  return FOREIGN_RULE.test(s) || FOREIGN_RULE_UR.test(s);
 }
 
 /**
@@ -72,6 +83,9 @@ export function asksForeignRule(text) {
  * Falls back to the empty string so callers can print a generic sentence.
  */
 export function foreignRuleSubject(text) {
-  const m = String(text || '').match(new RegExp(`\\b(?:${COUNTRY})\\b`, 'i'));
-  return m ? m[0].toLowerCase() : '';
+  const s = String(text || '');
+  const m = s.match(new RegExp(`\\b(?:${COUNTRY})\\b`, 'i'));
+  if (m) return m[0].toLowerCase();
+  const ur = s.match(new RegExp(COUNTRY_UR));
+  return ur ? ur[0] : '';
 }

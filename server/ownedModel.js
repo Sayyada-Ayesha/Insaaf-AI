@@ -198,9 +198,15 @@ function isBankDeductionAsk(query) {
   // stated as "nahi kiye" rather than "not return"; without those forms a citizen
   // saying "Bank ne paise wapas nahi kiye" was not recognised as a bank dispute
   // at all, so the banking route never learned it had a banking question.
-  return /\b(bank|banking|account)\b/i.test(q)
-    && /\b(deduct\w*|debit\w*|wrongful\w*|unauthori[sz]ed|dispute\w*|reversal|revers(?:e|ed)|refund\w*|not\s+(?:return|refund)\w*|wapas|wapis|wapass|waapas|kaat\w*)\b/i.test(q)
-    || (/\b(bank|banking|account)\b/i.test(q) && /\b(nahi\s+(?:kiye|kiya|diya|di|deti|deta)|not\s+paid|withheld|rok\w*)\b/i.test(q));
+  // The Urdu-script form shares no Latin token with the English records, so a
+  // "بینک نے میری اجازت کے بغیر رقم کاٹ لی" complaint fell through to the generic
+  // composer and was answered by the "no company may carry on banking business"
+  // provision — a licensing clause, not the citizen's dispute.
+  const bankCue = /\b(bank|banking|account)\b/i.test(q) || /(بینک|اکاؤنٹ)/.test(q);
+  const debitCue = /\b(deduct\w*|debit\w*|wrongful\w*|unauthori[sz]ed|dispute\w*|reversal|revers(?:e|ed)|refund\w*|not\s+(?:return|refund)\w*|wapas|wapis|wapass|waapas|kaat\w*)\b/i.test(q)
+    || /(کاٹ|کٹ\s*لی|اجازت\s*کے\s*بغیر|واپس)/.test(q);
+  return bankCue && debitCue
+    || (bankCue && /\b(nahi\s+(?:kiye|kiya|diya|di|deti|deta)|not\s+paid|withheld|rok\w*)\b/i.test(q));
 }
 
 /** A policy's own cover section — scope, definitions, applicability — names the
@@ -1762,14 +1768,21 @@ function guidanceKey(query, situation = null) {
   // keyword ladder used to answer both with the tenant-side deposit text.
   if (situation === 'rent_arrears') return 'tenancy-rent-arrears';
   if (situation === 'tenant_not_vacating') return 'tenancy-eviction';
+  if (situation === 'deposit_return') return 'tenancy';
   if (situation === 'salary_unpaid') return 'salary-unpaid';
   if (situation === 'fee_refund') return 'student-refund';
+  // A disputed bank/ATM debit is answered from the banking records, not from the
+  // cyber lead: "ijazat ke baghair" describes the unauthorised deduction, and no
+  // online medium is named. Cyber guidance still applies when one is.
+  if (/\b(bank|banking|atm|debit|transaction)\b/i.test(q)
+    && /\b(deduct\w*|debit\w*|kaat|kat|withdr\w*|unauthori[sz]ed|transaction|balance|refund|reversal)\b/i.test(q)
+    && !/(cyber|online|internet|blackmail|dhamki|tasveer|tasvir|photo|picture|image|profile|hack|facebook|whatsapp|instagram|سائبر|آن لائن|بلیک میل|تصویر|تصاویر)/i.test(q)) return null;
   if (WOMEN_BROAD_RE.test(q) && !WOMEN_SPECIFIC_RE.test(q)) return 'women-rights';
   // Broad "…Rights" topics are overviews, never one aspect of the topic.
   if (/\b(tenant|tenants|renter|renters|landlord|landlords)\s+rights\b|kiray(?:a|e|edar)\s+(?:ke\s+)?huqooq|کرایہ\s*دار\s*کے\s*حقوق|مکان\s*مالک\s*کے\s*حقوق/i.test(q)) return 'tenancy-broad';
   if (/\b(employee|employees|worker|workers|labour|labor|employment)\s+rights\b|mulaz(?:im|min)\s+ke\s+huqooq|ملازمین\s*کے\s*حقوق|مزدوروں\s*کے\s*حقوق/i.test(q)) return 'employee-rights';
   if (/\b(student|students)\s+rights\b|talaba\s+ke\s+huqooq|طلبہ\s*کے\s*حقوق/i.test(q)) return 'student-rights';
-  if (/(cyber|online|internet|facebook|whatsapp|instagram|snapchat|tiktok|blackmail|fake account|tasveer|tasvir|tasviren|private (?:photo|picture|image|video)|intimate (?:photo|picture|image|video)|be-?ijaazat|ijazat ke baghair|morphed|deepfake|jaali profile|impersonat|سائبر|آن لائن|انٹرنیٹ|بلیک میل|جعلی اکاؤنٹ|جعلی پروفائل|تصویر|تصاویر|نجی تصاویر)/i.test(q)) return 'cyber-harassment';
+  if (/(cyber|online|internet|facebook|whatsapp|instagram|snapchat|tiktok|blackmail|fake account|tasveer|tasvir|tasviren|private (?:photo|picture|image|video)|intimate (?:photo|picture|image|video)|(?:be-?ijaazat|ijazat ke baghair)[^.]{0,40}\b(?:photo|picture|image|video|post|profile|account|message|record\w*|data|conversation|call\w*)\b|morphed|deepfake|jaali profile|impersonat|سائبر|آن لائن|انٹرنیٹ|بلیک میل|جعلی اکاؤنٹ|جعلی پروفائل|تصویر|تصاویر|نجی تصاویر)/i.test(q)) return 'cyber-harassment';
   if (/(khula|خلع)/i.test(q)) return 'khula';
   if (/(\bfir\b|first information report|police complaint|police refuse|ایف\s*آئی\s*آر|تھانہ|تھانے)/i.test(q)) return 'police-fir';
   if (/(harass|ہراساں|ہراسانی|pareshan)/i.test(q)) return 'harassment';

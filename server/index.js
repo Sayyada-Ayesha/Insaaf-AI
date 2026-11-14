@@ -35,6 +35,7 @@ import { analyzeDocumentText, draftFromDocument, applyLocalEdit, explainDocument
 import { renderUrduOfflineDocument } from './docUrdu.js';
 import { fillCourtLineTokens } from './courtLineTokens.js';
 import { asksForeignRule, foreignRuleSubject } from './askedJurisdiction.js';
+import { traceEnabled, buildAnswerTrace } from './answerTrace.js';
 
 dotenv.config();
 
@@ -94,6 +95,61 @@ app.use(cors({
   }
 }));
 app.use(express.json({ limit: '15mb' }));
+
+// Local-only answer diagnostics (server/answerTrace.js), enabled with INSAF_TRACE=1.
+// Each route stashes what it already computed on res.locals.traceBase; this fills in
+// the remaining fields at the moment the answer leaves. A trace is a sibling of the
+// answer payload, never part of the answer text, and is disabled in production.
+function traceDiagnostics(req, res, next) {
+  if (!traceEnabled() || IS_PRODUCTION) return next();
+  const traced = (payload, base) => {
+    try {
+      const text = typeof payload.text === 'string' ? payload.text
+        : (typeof payload.reply === 'string' ? payload.reply
+          : (typeof payload.chunk === 'string' ? payload.chunk : null));
+      let finalLanguage = null;
+      if (text) { try { finalLanguage = detectWrittenLanguage(text); } catch { finalLanguage = null; } }
+      const trace = buildAnswerTrace({
+        query: base.query,
+        lang: base.lang,
+        processed: base.processed,
+        retrieval: base.retrieval,
+        intent: base.intent,
+        action: payload.action || base.action || 'answer',
+        composerPath: res.locals.composerPath || base.composerPath || null,
+        finalLanguage,
+        reason: base.reason
+      });
+      return trace ? { ...payload, trace } : payload;
+    } catch {
+      return payload;
+    }
+  };
+  const json = res.json.bind(res);
+  res.json = (payload) => {
+    const base = res.locals.traceBase;
+    if (base && payload && typeof payload === 'object' && !Array.isArray(payload)) {
+      payload = traced(payload, base);
+    }
+    return json(payload);
+  };
+  const write = res.write.bind(res);
+  res.write = (chunk, ...rest) => {
+    const base = res.locals.traceBase;
+    // Streaming token frames carry only { chunk } and no action: leave them alone.
+    if (base && typeof chunk === 'string' && chunk.startsWith('data: ') && !chunk.includes('[DONE]')) {
+      try {
+        const payload = JSON.parse(chunk.slice(6).trim());
+        if (payload && payload.action) {
+          return write(`data: ${JSON.stringify(traced(payload, base))}\n\n`, ...rest);
+        }
+      } catch { /* not a JSON frame */ }
+    }
+    return write(chunk, ...rest);
+  };
+  next();
+}
+app.use(traceDiagnostics);
 
 // P21 security: baseline response headers for every API route
 app.use((req, res, next) => {
@@ -852,6 +908,7 @@ const SCOPE_WORD_RE = /[a-z]+|[\u0621-\u064A\u0671-\u06D3]+/g;
 function curatedOfflineAnswer(userQuery, activeLang, opts = {}) {
   const q = (userQuery || '').toLowerCase().trim();
   const isRoman = activeLang === 'roman_urdu';
+  const isUrdu = activeLang === 'ur';
 
   // 1. Outcome prediction refusal — a court decides; nobody can guarantee a result.
   // "Guarantee" alone is ordinary legal vocabulary (a constitutional guarantee, a
@@ -1069,9 +1126,11 @@ function curatedOfflineAnswer(userQuery, activeLang, opts = {}) {
 
   if (!opts.legalSituation && !cannotAffordLawyer && /\b(lawyer|wakil|vakeel|advocate|attorney|barrister)\b/i.test(q) && /\b(need|chahiye|find|dhoond|locate|search|recommend|kahan|where|koi|in [a-z]+)\b/i.test(q)) {
     return {
-      text: isRoman
-        ? 'Tasdeeq shuda wakilon ki directory app ke Legal Aid & Vakeel Directory section mein mojood hai — shehar aur specialization ke mutabiq search karein. Main khud kisi khaas wakil ki sifarish nahi karta. Directory mein bar council ki detail ke saath profiles hain.'
-        : 'A verified lawyer directory is available in the Legal Aid & Vakeel Directory section of the app — searchable by city and specialization, with bar council details. I do not personally recommend individual lawyers. Open that section to see the verified profiles.',
+      text: isUrdu
+        ? 'تصدیق شدہ وکلاء کی ڈائریکٹری ایپ کے Legal Aid & Vakeel Directory سیکشن میں موجود ہے — شہر اور تخصص کے مطابق تلاش کریں۔ میں کسی خاص وکیل کی سفارش نہیں کرتا۔ ڈائریکٹری میں بار کونسل کی تفصیل کے ساتھ پروفائلز موجود ہیں۔'
+        : isRoman
+          ? 'Tasdeeq shuda wakilon ki directory app ke Legal Aid & Vakeel Directory section mein mojood hai — shehar aur specialization ke mutabiq search karein. Main khud kisi khaas wakil ki sifarish nahi karta. Directory mein bar council ki detail ke saath profiles hain.'
+          : 'A verified lawyer directory is available in the Legal Aid & Vakeel Directory section of the app — searchable by city and specialization, with bar council details. I do not personally recommend individual lawyers. Open that section to see the verified profiles.',
       actions: ['lawyers']
     };
   }
@@ -1082,11 +1141,21 @@ function curatedOfflineAnswer(userQuery, activeLang, opts = {}) {
   // real legal problem that merely mentions "emergency"/"help" is never mis-routed.
   const wantsLegalAidDir = /\b(legal aid|free legal (?:help|aid|advice|service|assistance)|muft (?:qanooni )?(?:madad|wakeel|legal aid|advice)|ngo|non-?government(?:al)? (?:organization|org)|pro bono)\b/i.test(q);
   const legalAidDirIntent = /\b(need|chahiye|find|dhoond|locate|search|where|kahan|koi|get|contact|raabta|recommend|list|available)\b/i.test(q);
-  if (!opts.legalSituation && ((wantsLegalAidDir && legalAidDirIntent) || cannotAffordLawyer)) {
+  // A "how do I get free legal aid" question asks for the procedure, which the
+  // verified corpus holds; the pointer only answers a directory-discovery ask.
+  // Without this the English and Roman forms were answered by the pointer while
+  // the Urdu form reached retrieval — three languages, two different answers.
+  const wantsDirectoryNoun = /\b(directory|organi[sz]ations?|ngos?|list|contacts?|offices?|near(?:by| me)?|city|centre|center)\b/i.test(q)
+    || /(ڈائریکٹری|ادارے|ادارہ|تنظیم|فہرست|رابطہ|دفتر|شہر)/.test(userQuery || '');
+  const asksAidProcedure = /\b(how (?:can|do|does|to|would|should)|kaise|kis tarah|tareeqa|procedure|process|eligib\w*|qualify|entitled|right to)\b/i.test(q)
+    || /(کیسے|کیسا|طریقہ|طریقۂ|اہلیت|حقدار|حق ہے)/.test(userQuery || '');
+  if (!opts.legalSituation && (!asksAidProcedure || wantsDirectoryNoun) && ((wantsLegalAidDir && legalAidDirIntent) || cannotAffordLawyer)) {
     return {
-      text: isRoman
-        ? 'Muft qanooni madad, legal aid organizations aur NGOs ki verified directory app ke Legal Aid & NGOs section mein mojood hai — shehar ke mutabiq organization ka contact dekhein. Main khud kisi khaas NGO ki sifarish nahi karta, lekin directory mein verified idaray mojood hain.'
-        : 'A verified directory of free legal aid, legal-aid organizations and NGOs is available in the Legal Aid & NGOs section of the app — open it to find organizations by city with their contacts. I do not personally recommend any specific NGO, but the directory lists verified organizations.',
+      text: isUrdu
+        ? 'مفت قانونی مدد، لیگل ایڈ اداروں اور این جی اوز کی تصدیق شدہ ڈائریکٹری ایپ کے Legal Aid & NGOs سیکشن میں موجود ہے — شہر کے مطابق ادارے کا رابطہ دیکھیں۔ میں کسی خاص این جی او کی سفارش نہیں کرتا، لیکن ڈائریکٹری میں تصدیق شدہ ادارے موجود ہیں۔'
+        : isRoman
+          ? 'Muft qanooni madad, legal aid organizations aur NGOs ki verified directory app ke Legal Aid & NGOs section mein mojood hai — shehar ke mutabiq organization ka contact dekhein. Main khud kisi khaas NGO ki sifarish nahi karta, lekin directory mein verified idaray mojood hain.'
+          : 'A verified directory of free legal aid, legal-aid organizations and NGOs is available in the Legal Aid & NGOs section of the app — open it to find organizations by city with their contacts. I do not personally recommend any specific NGO, but the directory lists verified organizations.',
       actions: ['legalaid']
     };
   }
@@ -1321,8 +1390,8 @@ function generalLifeAnswer(userQuery, activeLang) {
   // actual NADRA / DGIP / Deputy Commissioner workflows, so these must reach
   // retrieval instead of being answered by the blurb below.
   const isCivicProcedure = (
-    /\b(cnic|nicop|poc\s*card|b.?form|child registration certificate|frc|family registration certificate|passport|domicile)\b/i.test(q)
-    || /(شناختی\s*کارڈ|پاسپورٹ|ب\s*فارم|ڈومیسائل|خاندانی\s*شناختی)/.test(userQuery || '')
+    /\b(cnic|nicop|poc\s*card|b.?form|child registration certificate|frc|family registration certificate|birth certificate|death certificate|marriage certificate|nikah nama|passport|domicile)\b/i.test(q)
+    || /(شناختی\s*کارڈ|پاسپورٹ|ب\s*فارم|ڈومیسائل|خاندانی\s*شناختی|پیدائشی\s*سرٹیفکیٹ|وفات\s*کا\s*سرٹیفکیٹ|نکاح\s*نامہ)/.test(userQuery || '')
   ) && (
     /\b(how|procedure|process|apply|application|renew|renewal|modify|modification|reprint|document|documents|required|requirement|fee|fees|charge|charges|where|office|track|status|eligib\w*|lost|issue|form|difference|distin\w*|compar\w*|versus|vs\.?|same as)\b/i.test(q)
     || /\b(kaise|kas|karna|karo|bana|banwa|lena|chahiye|kahan|kitna|kitni|tareeqa|tareeq|raasta|farq|alag)\b/i.test(q)
@@ -2011,6 +2080,11 @@ app.post('/api/ai/chat', rateLimiterMiddleware, asyncRoute(async (req, res) => {
 
   // 1. Urdu-script input maps to a Roman Urdu response — Urdu Script is not a chat response language.
   const activeLang = resolveChatLanguage(preferredLanguage, userQuery);
+  if (traceEnabled()) {
+    let processed = null;
+    try { processed = RAGEngine.processQuery(userQuery || ''); } catch { processed = null; }
+    res.locals.traceBase = { query: userQuery, lang: activeLang, processed };
+  }
 
   // Islamic Guidance mode. An explicitly selected mode is carried in the request
   // body; it switches the candidate pool to rag/indexes/islamic_index.json and is
@@ -2141,6 +2215,7 @@ app.post('/api/ai/chat', rateLimiterMiddleware, asyncRoute(async (req, res) => {
   }
   const retrievedChunks = retrievalResult.chunks;
   gateMetrics(retrievalResult);
+  if (res.locals.traceBase) res.locals.traceBase.retrieval = retrievalResult;
   // The chat source footer, the "Open in Library" button and the Read-more modal
   // are all driven by this metadata. Every path that returns an answer built from
   // retrieved records must emit it, not only the generated-answer path.
@@ -2249,6 +2324,7 @@ app.post('/api/ai/chat', rateLimiterMiddleware, asyncRoute(async (req, res) => {
     if (queryIsSafeToCache) {
       cacheResponse(cacheKey, directResponse);
     }
+    res.locals.composerPath = 'direct-lookup';
     res.write(`data: ${JSON.stringify({ meta: { sources: toSourceMeta(answerEvidenceOrder(userQuery, direct.chunks, answerLevel), retrievalResult.domain, userQuery), isOffline: true } })}\n\n`);
     res.write(`data: ${JSON.stringify({ chunk: directResponse, ...gatePayload(retrievalResult), ...citationPayload(directResponse, direct.chunks) })}\n\n`);
     res.write('data: [DONE]\n\n');
@@ -2325,6 +2401,7 @@ app.post('/api/ai/chat', rateLimiterMiddleware, asyncRoute(async (req, res) => {
       });
       if (modelResult.ok) {
         const modelText = modelResult.text;
+        res.locals.composerPath = 'model-provider';
         res.write(`data: ${JSON.stringify({ meta: { sources: mappedSources, isOffline: true, provider: modelResult.provider } })}\n\n`);
         res.write(`data: ${JSON.stringify({ chunk: modelText, sources: mappedSources, isOffline: true, answerLevel, action: 'answer', ...citationPayload(modelText, cappedChunks), ...gatePayload(retrievalResult) })}\n\n`);
         res.write('data: [DONE]\n\n');
@@ -2442,6 +2519,7 @@ ${contextStr}`;
     const gateVerdict = (retrievalResult.evidence || {}).verdict;
     if (curated && gateVerdict !== 'strong' && !everyday.situation) {
       const curatedAbstains = curatedAction(curated) === 'abstain';
+      res.locals.composerPath = 'curated';
       res.write(`data: ${JSON.stringify({ chunk: curated.text, sources: curatedAbstains ? [] : mappedSources, isOffline: true, action: curatedAction(curated), ...gatePayload(retrievalResult) })}\n\n`);
       res.write('data: [DONE]\n\n');
       res.end();
@@ -2520,6 +2598,7 @@ ${contextStr}`;
     // backed by the evidence shown, which exist in the verified corpus but were not
     // retrieved, and which cannot be found at all. Reported, never rewritten into
     // the answer, so a citation the corpus cannot back is surfaced instead of hidden.
+    res.locals.composerPath = isRefusalOnly ? 'refusal' : 'owned-composer';
     res.write(`data: ${JSON.stringify({
       chunk: offlineText, sources: isRefusalOnly ? [] : mappedSources, isOffline: true, answerLevel,
       action: isRefusalOnly ? 'abstain' : 'answer',
@@ -2596,6 +2675,11 @@ app.post('/api/ai/advice', rateLimiterMiddleware, async (req, res) => {
   // NORMAL response path, and it must route a named citizen dispute the same way
   // the try block does.
   const adviceLang = resolveChatLanguage(preferredLanguage, userQuery);
+  if (traceEnabled()) {
+    let processed = null;
+    try { processed = RAGEngine.processQuery(userQuery || ''); } catch { processed = null; }
+    res.locals.traceBase = { query: userQuery, lang: adviceLang, processed };
+  }
   const thread = resolveThread(userQuery, history);
   const everyday = resolveEverydayIntent(userQuery, thread.priorUser, thread.priorModel);
   try {
@@ -2678,7 +2762,10 @@ app.post('/api/ai/advice', rateLimiterMiddleware, async (req, res) => {
     // talk are answered instantly from verified app knowledge.
     const curatedAnswer = curatedOfflineAnswer(userQuery, activeLang, { legalSituation: !!everyday.situation });
     if (curatedAnswer) {
-      return res.json({ text: curatedAnswer.text, isOffline: true });
+      return res.json({
+        text: curatedAnswer.text, sources: [], isOffline: true,
+        action: curatedAction(curatedAnswer), relevance: curatedAction(curatedAnswer),
+      });
     }
 
     // Part T — "Explain This Document": the Drafter sends a fixed 11-point
@@ -2717,6 +2804,7 @@ app.post('/api/ai/advice', rateLimiterMiddleware, async (req, res) => {
     const retrievedChunks = retrievalResult.chunks;
     gatedRetrieval = retrievalResult;
     gateMetrics(retrievalResult);
+    if (res.locals.traceBase) res.locals.traceBase.retrieval = retrievalResult;
 
     // Same decision order as /api/ai/chat: an ask the verified corpus cannot
     // answer abstains here, ahead of every branch that would otherwise ask a
@@ -2800,6 +2888,7 @@ app.post('/api/ai/advice', rateLimiterMiddleware, async (req, res) => {
         if (queryIsSafeToCache) cacheResponse(cacheKey, modelResult.text);
         const timings = { retrieval_ms, provider_ms: Date.now() - requestStart, total_ms: Date.now() - requestStart };
         logTimings('/api/ai/advice', timings);
+        res.locals.composerPath = 'model-provider';
         return res.json({
           text: modelResult.text,
           sources: toSourceMeta(cappedChunks, retrievalResult.domain),
@@ -2890,6 +2979,7 @@ ${contextStr}`;
     const retrievalResult = gatedRetrieval || await retrieveCorrected(thread.retrievalQuery, { isOnline: false, extraQuery: everyday.retrievalQuery });
     const retrievedChunks = retrievalResult.chunks;
     if (!gatedRetrieval) gateMetrics(retrievalResult);
+    if (res.locals.traceBase) res.locals.traceBase.retrieval = retrievalResult;
 
     // Recompute the response language — activeLang is scoped to the try block.
     // Same resolver as /chat and /agent, otherwise this route answers Urdu-script
@@ -2901,6 +2991,7 @@ ${contextStr}`;
     const curated = curatedOfflineAnswer(userQuery, fallbackLang, { legalSituation: !!everyday.situation });
     if (curated && !everyday.situation) {
       const curatedAbstains = curatedAction(curated) === 'abstain';
+      res.locals.composerPath = 'curated';
       return res.json({
         text: curated.text, sources: curatedAbstains ? [] : mappedSources, isOffline: true,
         action: curatedAction(curated), ...gatePayload(retrievalResult)
@@ -2961,6 +3052,7 @@ ${contextStr}`;
     } else {
       offlineText += everydayUnverifiedNote(everyday, fallbackLang) || askClarification(userQuery, fallbackLang);
     }
+    res.locals.composerPath = isRefusalOnly ? 'refusal' : 'owned-composer';
     res.json({
       text: offlineText, sources: isRefusalOnly ? [] : mappedSources, isOffline: true, answerLevel,
       action: isRefusalOnly ? (/[?؟]/.test(offlineText) ? 'clarify' : 'abstain') : 'answer',
@@ -3832,6 +3924,11 @@ app.post('/api/ai/agent', rateLimiterMiddleware, async (req, res) => {
   checkCacheInvalidation();
 
   const activeLang = resolveChatLanguage(preferredLanguage, message);
+  if (traceEnabled()) {
+    let processed = null;
+    try { processed = RAGEngine.processQuery(message); } catch { processed = null; }
+    res.locals.traceBase = { query: message, lang: activeLang, processed };
+  }
 
   // Same ordering as /api/ai/chat. Safety first: an unlawful ask or a person in
   // danger is answered before the system worries about what the dispute is.
@@ -3878,6 +3975,7 @@ app.post('/api/ai/agent', rateLimiterMiddleware, async (req, res) => {
     cacheRagResult(ragCacheKey, retrievalResult);
   }
   const retrievedChunks = retrievalResult.chunks || [];
+  if (res.locals.traceBase) res.locals.traceBase.retrieval = retrievalResult;
   gateMetrics(retrievalResult);
 
   // One decision order on every route: an ask the verified corpus cannot answer
@@ -4015,6 +4113,7 @@ ${contextStr}`;
 
     const timings = { retrieval_ms, provider_ms, total_ms: Date.now() - requestStart };
     logTimings('/api/ai/agent', timings);
+    res.locals.composerPath = 'model-provider';
     return res.json({ reply, actions, sources: mappedSources, isOffline: false, action: 'answer', intake: deriveIntake(message, agentContext, retrievalResult), ...gatePayload(retrievalResult), ...debugTimingsPayload(timings) });
   } catch (err) {
     provider_ms = Date.now() - providerStart;
@@ -4031,6 +4130,7 @@ ${contextStr}`;
     if (curated) {
       const timings = { retrieval_ms, provider_ms, total_ms: Date.now() - requestStart };
       logTimings('/api/ai/agent', { ...timings, cached: 'offline-fallback' });
+      res.locals.composerPath = 'curated';
       return res.json({ reply: curated.text, actions: curated.actions, sources: curatedAction(curated) === 'abstain' ? [] : mappedSources, isOffline: true, action: curatedAction(curated), intake: deriveIntake(message, agentContext, retrievalResult), ...gatePayload(retrievalResult), ...debugTimingsPayload(timings) });
     }
 
@@ -4071,6 +4171,7 @@ ${contextStr}`;
         agentClarifyActions = ['library'];
       }
     }
+    res.locals.composerPath = retrievedChunks.length ? 'owned-composer' : 'refusal';
     return res.json({
       reply: offlineReply, actions: agentClarifyActions, sources: mappedSources, isOffline: true,
       answerLevel: agentRun.answerLevel, steps: agentRun.steps, intake: agentRun.intake,

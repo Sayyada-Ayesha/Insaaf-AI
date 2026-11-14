@@ -498,6 +498,7 @@ function placeStated(asked, scope) {
 /** Part 7 phrasing: say which layer each rule comes from. */
 export function scopeLabel(scope, lang = 'en', asked = null) {
   const roman = lang === 'roman_urdu';
+  const urdu = lang === 'ur';
   if (!scope) return null;
   // A provincial, city or university record answers the question of whoever the
   // rule covers. When the user named no such place, stating the layer as
@@ -507,20 +508,24 @@ export function scopeLabel(scope, lang = 'en', asked = null) {
     case 'university': {
       const who = scope.institutions.length ? scope.institutions.slice(0, 3).join(' / ') : null;
       if (conditional) {
+        if (urdu) return who ? `اگر آپ ${who} کے ہیں تو` : 'اگر آپ اُس یونیورسٹی کے طالبِ علم ہیں تو';
         return roman
           ? (who ? `Agar aap ${who} ke hain to` : 'Agar aap us university ke student hain to')
           : (who ? `If you are at ${who}` : 'If this is that university');
       }
+      if (urdu) return who ? `${who} کے یونیورسٹی قواعد کے مطابق` : 'یونیورسٹی کے اپنے قواعد کے مطابق';
       return roman
         ? (who ? `${who} ke university rules ke mutabiq` : 'University ke apne rules ke mutabiq')
         : (who ? `Under the ${who} university rules` : 'Under the university\'s own rules');
     }
     case 'local_city':
       if (conditional) {
+        if (urdu) return `اگر معاملہ ${scope.city || 'آپ کے شہر'} میں ہے تو`;
         return roman
           ? `Agar mamla ${scope.city || 'aap ke shehar'} mein hai to`
           : `If this is in ${scope.city || 'your city'}`;
       }
+      if (urdu) return `${scope.city || 'مقامی'} کی مقامی طریقۂ کار میں`;
       return roman
         ? `${scope.city || 'Local'} / local procedure mein`
         : `In ${scope.city || 'local'} city-level procedure`;
@@ -528,17 +533,21 @@ export function scopeLabel(scope, lang = 'en', asked = null) {
       // "ICT" is a territory, not a province; spell it out when it is the layer.
       const pname = scope.province === 'ICT' ? 'Islamabad Capital Territory' : scope.province;
       if (conditional) {
+        if (urdu) return `اگر معاملہ ${pname || 'آپ کے صوبے'} میں ہے تو`;
         return roman
           ? `Agar mamla ${pname || 'aap ke soobe'} mein hai to`
           : `If this is in ${pname || 'your province'}`;
       }
+      if (urdu) return `${pname || 'صوبائی'} قانون کے تحت`;
       return roman
         ? `${pname || 'Provincial'} law ke under`
         : `Under ${pname || 'provincial'} law`;
     }
     case 'national':
+      if (urdu) return 'پاکستان بھر میں قانونی حیثیت';
       return roman ? 'Pakistan-wide qanooni position' : 'The Pakistan-wide legal position';
     case 'cross_border':
+      if (urdu) return 'سرحد پار / قونصلر حیثیت';
       return roman ? 'Cross-border / consular position' : 'The cross-border / consular position';
     default:
       return null;
