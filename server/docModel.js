@@ -1506,6 +1506,13 @@ function isMetaInstructionLine(p) {
 // request — "Do not infer 'court' merely because the text contains legal language").
 const DEPOSIT_CONTEXT_CUE = /(?:kirayedar|kiraya|kiraay|landlord|landlady|tenant|rent|makan|ghar|malik|jaaydaad|security\s+deposit|deposit|jama\b|raqam|amount|rupees|pai?sa)|کرایہ|کرایہ ?دار|مکان|گھر|مالک|جمع\s*(?:شده|شدہ)|رقم|ضمانت\s*(?:رقم|کی\s*رقم)|(?:واپس|لوٹا|رٹ)\s*(?:نہیں\s*)?(?:کر|رہا|دی)/i;
 
+// Returning a deposit is a claim for money back; eviction is a claim for
+// possession. They share the landlord/tenant words but not the relief.
+const DEPOSIT_REFUND_CUE = /security\s+deposit|advance\s+(?:rent|deposit)|سیکیورٹی\s*ڈپازٹ|ضمانت\s*(?:کی\s*)?واپسی|(?:deposit|zamanat|ضمانت)[^.!?\n]{0,40}(?:wapas|laut|return|refund|واپس|لوٹا)|(?:wapas|laut|return|refund|واپس|لوٹا)[^.!?\n]{0,40}(?:deposit|zamanat|ضمانت)/i;
+// "after I vacated the flat" reports a past fact; only a demand that someone
+// else vacate makes the request an eviction.
+const EVICTION_CUE = /\bevict\w*|\b(?:ask|want|tell|direct|notice|require)[^.!?\n]{0,40}\bvacat\w*|khali\s*kar\w*|bedakhli|possession|qabza|خالی|بے\s*دخلی|قبضہ/i;
+
 const DRAFT_REQUEST_RULES = [
   { label: 'Defamation Notice', re: /defamat|hataq|toheen|badnami|هتک|توہین/i },
   { label: 'Show-Cause Reply', re: /show[\s-]?cause/i },
@@ -1632,7 +1639,12 @@ export function classifyDraftType(raw) {
       return { label: r.label, rule: r, academic: true };
     }
   }
-  const rule = DRAFT_REQUEST_RULES.find(r => r.re.test(text) && !(r.unless && r.unless.test(text)));
+  // A request to get the tenant's own deposit back is a money claim, not an
+  // eviction: the tenancy rule would otherwise win on the word "landlord" and
+  // produce the generic tenancy shell.
+  const depositRefundOnly = DEPOSIT_REFUND_CUE.test(text) && !EVICTION_CUE.test(text);
+  const rule = DRAFT_REQUEST_RULES.find(r => r.re.test(text) && !(r.unless && r.unless.test(text))
+    && !(r.label === 'Tenancy / Eviction Notice' && depositRefundOnly));
   const label = rule ? rule.label : (/(?:notice|recover|outstanding|unpaid|demand|نوٹس)/i.test(text) ? 'Legal Notice for Recovery of Unpaid Money' : 'Application / Request');
   return { label, rule: rule || null, academic: false };
 }

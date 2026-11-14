@@ -96,7 +96,7 @@ const ROMAN_URDU_HINTS = new Set([
 // Asking for a document, forum or authority is a NEW ask, not a reference. This
 // list is only the cheap first pass; anything it misses is settled by the
 // corpus's own vocabulary in namesItsOwnSubject().
-const SELF_CONTAINED_RE = /\b(act|section|dafa|court|tribunal|police|bank|university|fee|rent|cheque|loan|contract|notice|fir|complaint|appeal|passport|visa|doctor|hospital|salary|deposit|tenancy|arrest|custody|agreement|lawyer)\b/i;
+const SELF_CONTAINED_RE = /\b(act|section|dafa|court|tribunal|police|bank|university|fee|rent|cheque|loan|contract|notice|fir|complaint|appeal|passport|visa|doctor|hospital|salary|deposit|tenancy|arrest|custody|agreement|lawyer|inheritance|probate|warasat|will|land|plot|property|jaidad|qabza|encroach\w*|divorce|khula|maintenance|nafaqa|wages?|employer|cyber\w*|blackmail|harass\w*|abus\w*|murder|theft|dacoity|dowry|child|children)\b/i;
 
 export function tokenizeTurn(query) {
   return String(query || '').toLowerCase().trim().split(/[^'\p{L}\p{N}]+/u).filter(Boolean);
@@ -132,8 +132,11 @@ export function isFollowUpTurn(query) {
   };
   // A connector in second position ("to ab main kya karoon") or a referential
   // frame ("what if they refuse?") only counts when the turn carries no subject
-  // of its own.
-  const refersBack = refers(0)
+  // of its own. A leading connector alone is not enough either: "Now tell me how
+  // inheritance shares work" opens with "now" but names a whole new subject, and
+  // inheriting the previous thread's tenancy words would answer it with rent law.
+  const namesSubject = SELF_CONTAINED_RE.test(String(query || ''));
+  const refersBack = (refers(0) && !namesSubject)
     || (thin && (refers(1) || REFERENTIAL_PAIRS.has(words.slice(0, 2).join(' '))));
   return refersBack || (thin && words.length <= 5);
 }
@@ -162,10 +165,43 @@ export function resolveThread(userQuery, history, { maxPriorChars = 320 } = {}) 
   const lastModel = lastTurn(items, 'model');
   // A reply to a clarification question is a follow-up even when it reads as a
   // complete sentence: "account Sindh mein hai" states a fact, it does not ask
-  // a searchable question.
+  // a searchable question. A statement with no question in it ("I have a written
+  // agreement and the notice period was completed") is likewise supplying a fact
+  // to the thread. It names a legal word or two, so the keyword test called it
+  // self-contained and searched it alone — where "notice period … agreement …
+  // completed" matches employment records, and a tenancy-deposit thread was
+  // answered with wrongful termination. Only a turn that asks something may stand
+  // alone once a thread exists.
+  const asksQuestion = /[?؟]/.test(q)
+    || /^(?:(?:now|so|and|ok|okay|well|phir|aur|ab|to)\s+)?(what|how|why|when|where|who|which|can|could|do|does|did|is|are|should|shall|will|would|kya|kaise|kaun|kab|kahan|kyun|kidhar|کیا|کیسے|کیوں|کب|کہاں|کون)\b/i.test(q)
+    || /\b(tell me|explain|describe|guide me|advise me|batao|bataen|batayein|samjhao|samjhayein|rehnumai)\b|بتائیں|بتاؤ|سمجھائیں|رہنمائی/i.test(q);
+  const supplyingFact = !asksQuestion;
+  // "What can I do next?" names nothing the corpus can search for, but the
+  // corpus-vocabulary test can still see a stray lexicon word in it. A short turn
+  // with no subject noun in it is a follow-up in a live thread.
+  const turnWords = tokenizeTurn(q);
+  const shortBare = turnWords.length > 0 && turnWords.length <= 6 && !SELF_CONTAINED_RE.test(q);
   const followUp = items.length > 0
-    && (isFollowUpTurn(q) || (lastModel.trim() !== '' && priorTurnAskedQuestion(lastModel)));
-  let source = lastTurn(items, 'user');
+    && (isFollowUpTurn(q) || shortBare || supplyingFact || (lastModel.trim() !== '' && priorTurnAskedQuestion(lastModel)));
+  // The subject may sit two turns back: "…security deposit…" → "I have a written
+  // agreement…" → "What can I do next?". Taking only the LAST user turn dropped
+  // the deposit subject and left the follow-up with a bare fact sentence to
+  // search on. A follow-up therefore carries the last two user turns, and only
+  // widens further if those two still name nothing searchable. The window never
+  // crosses back past a turn that already carried a subject, so an older topic
+  // cannot bleed into a new one.
+  let source = '';
+  if (followUp) {
+    const userTexts = items.filter(h => h && h.role === 'user')
+      .map(h => String(h.text || '').trim()).filter(Boolean);
+    const start = Math.min(2, userTexts.length);
+    for (let take = start; take <= Math.min(4, userTexts.length); take++) {
+      const candidate = userTexts.slice(-take).join(' ');
+      source = candidate;
+      if (namesItsOwnSubject(candidate)) break;
+    }
+  }
+  if (!source.trim()) source = lastTurn(items, 'user');
   if (!source.trim()) source = lastModel;
   source = String(source || '').trim().slice(0, maxPriorChars);
   const subjectFromThread = followUp && source.length > 0;

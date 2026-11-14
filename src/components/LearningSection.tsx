@@ -5,6 +5,22 @@ import { cn } from "./Layout";
 import { getTranslations, getCurrentLanguage, SupportedLanguage, useLanguageVersion } from "../lib/i18n";
 import { LIBRARY_DATA } from "../data/libraryData";
 import { searchLaw, LawSearchResult } from "../services/aiRuntime";
+
+// The topic cards use the statute's vocabulary ("rent", "tenant"), not the words
+// a citizen types. These aliases let the same search box reach them.
+const LIBRARY_ALIASES: [RegExp, string[]][] = [
+  [/security\s+deposit|advance\s+(rent|deposit)|سیکیورٹی\s*ڈپازٹ|ضمانت\s*(کی\s*)?واپسی/i, ["rent", "tenant", "landlord", "kiraya"]],
+  [/kiraya(?:dar|dari)?|makan\s+malik|کرایہ\s*دار/i, ["rent", "tenant", "landlord"]],
+  [/warasat|wirasat|وراثت/i, ["inheritance", "heirs", "succession"]],
+  [/cheque\s+bounce|چیک\s*باؤنس/i, ["negotiable", "cheque", "banking"]],
+];
+
+function searchTerms(query: string): string[] {
+  const terms = [query];
+  for (const [re, aliases] of LIBRARY_ALIASES) if (re.test(query)) terms.push(...aliases);
+  return terms;
+}
+
 export default function LearningSection({ focusSectionId }: { focusSectionId?: string | null }) {
   const currentLang = getCurrentLanguage();
   const t = getTranslations(currentLang);
@@ -27,6 +43,8 @@ export default function LearningSection({ focusSectionId }: { focusSectionId?: s
     if (!query || lawLoading) return;
     setLawLoading(true);
     setLawError(null);
+    // A new search must never leave the previous query's records on screen.
+    setLawResults(null);
     try {
       const res = await searchLaw(query, 8);
       setLawResults(res.results);
@@ -71,7 +89,12 @@ export default function LearningSection({ focusSectionId }: { focusSectionId?: s
         (item.postDetails?.role.toLowerCase().includes(query)) ||
         guideText.includes(query);
       
-      return matchesCategory && matchesSearch;
+      const aliasedMatch = searchTerms(query).slice(1).some(term =>
+        item.title[currentLang].toLowerCase().includes(term) ||
+        guideText.includes(term) ||
+        item.content[currentLang].heading.toLowerCase().includes(term)
+      );
+      return matchesCategory && (matchesSearch || aliasedMatch);
     });
   }, [searchQuery, selectedCategory, currentLang]);
 
@@ -106,7 +129,13 @@ export default function LearningSection({ focusSectionId }: { focusSectionId?: s
                   type="text"
                   placeholder={t.searchLibrary}
                   value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onChange={(e) => {
+                    setSearchQuery(e.target.value);
+                    // The records on screen answer the previous query; clear them
+                    // as soon as that query changes.
+                    setLawResults(null);
+                    setLawError(null);
+                  }}
                   onKeyDown={(e) => { if (e.key === 'Enter') runLawSearch(); }}
                   className="w-full pl-10 pr-4 py-2 bg-gray-50 border border-gray-100 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#01411C]/20"
                 />

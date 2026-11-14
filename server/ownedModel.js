@@ -176,11 +176,22 @@ function stemTerm(w) {
  * register from a scholarship list sitting in the same corpus file — and the
  * distinguishing words of such questions are boilerplate-filtered away.
  */
+/** For SECTION records `chunkTitle` is "Heading — the provision sentence". Only the
+ *  heading names the record; the sentence is substance. Treating the whole title as
+ *  identity let a Probate record claim "left"/"property" as its own subject and
+ *  outrank the Father's-share record for an inheritance question. */
+function identityHeading(chunkTitle) {
+  const text = String(chunkTitle || '');
+  const heading = text.split(/\s+[—–]\s+|\s+-\s+|\s*:\s+|\.\s/)[0] || text;
+  return heading.split(/\s+/).slice(0, 8).join(' ');
+}
+
 function ownIdentityHits(query, chunk, gloss = null) {
-  const raw = `${String(chunk?.key || '').replace(/_/g, ' ')} ${chunk?.chunkTitle || ''}`.toLowerCase();
+  const raw = `${String(chunk?.key || '').replace(/_/g, ' ')} ${identityHeading(chunk?.chunkTitle)}`
+    .toLowerCase().replace(/'s\b/g, '');
   const own = new Set((raw.match(/[a-z']{3,}/g) || []).filter(w => !QUERY_STOP.has(w)).map(stemTerm));
   if (!own.size) return 0;
-  const words = new Set((String(query || '').toLowerCase().match(/[a-z']{3,}/g) || [])
+  const words = new Set((String(query || '').toLowerCase().replace(/'s\b/g, '').match(/[a-z']{3,}/g) || [])
     .filter(w => !QUERY_STOP.has(w)).map(stemTerm));
   const terms = words.size ? words : new Set((gloss || []).map(stemTerm));
   if (!terms.size) return 0;
@@ -296,7 +307,7 @@ function rankRecords(query, chunks) {
     const forum = bankDisputeAsk && /\b(banking\s+court|mohtasib|complaint)\b/i.test(`${c.chunkTitle || ''} ${c.text || ''}`) ? 3 : 0;
     const protection = dvProtectionAsk && /\b(protection\s+order|protection\s+officer|residence\s+order|domestic\s+violence)\b/i.test(`${c.chunkTitle || ''} ${c.text || ''}`) ? 4 : 0;
     const filing = firFilingAsk && /FIR_(?:PROCEDURE|FILING)|FIR_FILING|WORKFLOW_FIR_FILING/i.test(String(c.key || '')) ? 3 : 0;
-    const immovable = immovableAsk && /\bimmovable\b/i.test(String(c.chunkTitle || '')) ? 3 : 0;
+    const immovable = immovableAsk && /\bimmovable\b/i.test(identityHeading(c.chunkTitle)) ? 3 : 0;
     const saleRemedy = saleDisputeAsk
       && /\b(declaratory|declaration|injunction|specific\s+performance|suit\s+for\s+possession|recover\s+possession)\b/i.test(`${c.chunkTitle || ''} ${c.text || ''}`) ? 4 : 0;
     return { c, i, s: own + queryTermHits(query, c, gloss) + procedural + forum + protection + filing + immovable + saleRemedy, own };
@@ -1865,6 +1876,28 @@ function cyberSubtype(query) {
   return null;
 }
 
+const PROVINCE_NAMED_RE = /\b(sindh|punjab|khyber|pakhtunkhwa|balochistan|islamabad|gilgit|ajk|azad\s+kashmir)\b|سندھ|پنجاب|خیبر|بلوچستان|اسلام\s*آباد/i;
+const WRITTEN_AGREEMENT_RE = /written\s+(?:tenancy\s+|rent\s+)?agreement|written\s+contract|likhit\s+(?:kiraya\s+)?agreement|تحریری\s+(?:کرایہ\s*)?معاہدہ|تحریری\s+کرایہ\s*نامہ/i;
+
+/** The situation templates end by asking for the province and the written
+ *  agreement. Repeating a question the citizen just answered is the defect: a
+ *  turn that already says "Hyderabad, Sindh" and "written agreement" keeps being
+ *  told "Tell me your province and whether you have a written agreement". Only
+ *  the facts the turn did NOT supply are asked again. */
+function trimAnsweredFollowUp(followUp, query) {
+  if (!followUp) return '';
+  const q = String(query || '');
+  if (!PROVINCE_NAMED_RE.test(q)) return followUp;
+  if (WRITTEN_AGREEMENT_RE.test(q)) return '';
+  return String(followUp)
+    .replace(/^Tell me your province and whether\s*/i, 'Tell me whether ')
+    .replace(/^Tell me your province,\s*(?:and\s+)?/i, 'Tell me ')
+    .replace(/^Apna province aur yeh batayein ke\s*/i, 'Batayein ke ')
+    .replace(/^Apna province,\s*/i, '')
+    .replace(/^اپنا صوبہ اور یہ بتائیں کہ\s*/, 'بتائیں کہ ')
+    .replace(/^اپنا صوبہ،\s*/, '');
+}
+
 function naturalGuidance(key, lang, ctx = {}) {
   if (key === 'cyber-harassment') {
     const block = GUIDANCE['cyber-harassment'];
@@ -2436,7 +2469,8 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
       ? (synthesis || romanQuoteLead)
       : recordLead(answerRecord, lvl.answerSentences, lvl.answerChars, userQuery);
   let directAnswer = (natural && natural.lead) || lead || synthesis;
-  if (natural && natural.followUp) directAnswer = `${directAnswer}\n\n${natural.followUp}`;
+  const followUp = natural ? trimAnsweredFollowUp(natural.followUp, userQuery) : '';
+  if (followUp) directAnswer = `${directAnswer}\n\n${followUp}`;
   if (directAnswer && framing) directAnswer = `${framing}: ${directAnswer}`;
   // Never let a university/city/province record read as Pakistan-wide law.
   const guard = applicabilityNote(aScope, scopeLang);

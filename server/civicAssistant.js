@@ -84,7 +84,7 @@ const SERVICES = {
 
   birth_registration: {
     level: 'Local / district',
-    keywords: ['birth certificate', 'birth registration', 'birth register', 'b-form', 'b form', 'crc', 'child registration', 'paidaish', 'paidayish', 'bachay ka birth', 'پیدائش', 'پیدائشی', 'برتھ سرٹیفکیٹ', 'بی فارم'],
+    keywords: ['birth certificate', 'birth registration', 'register the birth', 'register birth', 'birth of my child', 'birth register', 'b-form', 'b form', 'crc', 'child registration', 'paidaish', 'paidayish', 'bachay ka birth', 'پیدائش', 'پیدائشی', 'برتھ سرٹیفکیٹ', 'بی فارم'],
     label: { en: 'Birth registration and birth certificate', roman_urdu: 'Birth registration aur birth certificate', ur: 'پیدائش کا اندراج اور پیدائشی سرٹیفکیٹ' },
     authority: {
       en: 'Union Council / local government office of the child’s area; NADRA for the Child Registration Certificate (CRC / B-Form) after registration',
@@ -136,7 +136,10 @@ const SERVICES = {
       roman_urdu: 'Union council ki fee aur registration ki mukammal muddat yahan verified nahi; ye local by-laws ke mutabiq hain. Neeche NADRA ka page official CRC channel hai; union council ka marhala record shuda admin workflow hai, verified page nahi.',
       ur: 'یونین کونسل کی فیس اور اندراج کی مکمل مدت یہاں تصدیق شدہ نہیں؛ یہ مقامی ضوابط کے مطابق ہیں۔ نیچے نادرا کا صفحہ سرکاری سی آر سی چینل ہے؛ یونین کونسل کا مرحلہ درج شدہ انتظامی ورک فلو ہے، تصدیق شدہ صفحہ نہیں۔'
     },
-    requiresDistrict: true,
+    // The union council of the child's own area is the forum wherever the birth
+    // happened, so the recorded steps answer a district-less question; unlike a
+    // domicile, there is no district-specific office to look up first.
+    requiresDistrict: false,
     procedureVerification: 'metadata',
     sources: [
       { title: 'Civic workflows — Birth registration (metadata-verified)', url: null, verification: 'metadata-verified' },
@@ -720,6 +723,98 @@ export function analyzeCivicProblem(input = {}) {
       userReportedStates: ['drafted', 'edited', 'downloaded_or_copied', 'portal_opened', 'reported_submitted_by_user']
     }
   };
+}
+
+const CHAT_HEADINGS = {
+  en: {
+    answer: '**Answer**', steps: '**Steps recorded for this service**', documents: '**Documents to attach**',
+    route: '**Where to apply**', official: '**Official pages**', limit: '**What is not verified**',
+    submit: '**Submission status**', ask: '**One thing I still need**', metadata: 'The steps below come from the civic workflow recorded in this repository. The exact current form, fee or counter at your office is not verified here — confirm it with the office named above.'
+  },
+  roman_urdu: {
+    answer: '**Jawab**', steps: '**Is service ke record shuda marhale**', documents: '**Sath lagane wali dastavezein**',
+    route: '**Kahan apply karein**', official: '**Official pages**', limit: '**Kya verify nahi hua**',
+    submit: '**Submission status**', ask: '**Ek cheez jo abhi chahiye**', metadata: 'Neeche diye marhale is repository mein record shuda civic workflow se hain. Aap ke office ka mojooda form, fee ya counter yahan verify nahi hua — upar diye office se confirm karein.'
+  },
+  ur: {
+    answer: '**جواب**', steps: '**اس خدمت کے درج شدہ مراحل**', documents: '**ساتھ لگانے والی دستاویزات**',
+    route: '**کہاں درخواست دیں**', official: '**سرکاری صفحات**', limit: '**کیا تصدیق نہیں ہوا**',
+    submit: '**جمع کرنے کی حیثیت**', ask: '**ایک چیز جو ابھی درکار ہے**', metadata: 'نیچے دیے مراحل اس ذخیرے میں درج شدہ civic workflow سے ہیں۔ آپ کے دفتر کا موجودہ فارم، فیس یا کاؤنٹر یہاں تصدیق شدہ نہیں — اوپر دیے دفتر سے تصدیق کریں۔'
+  }
+};
+
+/** The civic registry knows six services; a bare "apply for a government service"
+ *  names none of them, so the honest reply is the one question that picks one. */
+export function civicNoServiceQuestion(lang) {
+  return CLARIFY_QUESTIONS[LANGUAGES.has(lang) ? lang : 'en'].no_service;
+}
+
+export function civicChatCards(result) {
+  if (!result || !result.service) return [];
+  return (result.sources || []).map((s) => ({
+    title: s.title,
+    authority: result.authority ? result.authority.name : '',
+    jurisdiction: result.analysis ? result.analysis.level : '',
+    type: 'civic-service',
+    key: result.service.id,
+    legalStatus: s.verification,
+    version: '',
+    sourceURL: s.url || null,
+    domain: 'civic',
+    text: ''
+  }));
+}
+
+export function composeCivicChatAnswer(result) {
+  if (!result || result.status !== 'analysed') {
+    return result && result.clarifyQuestion ? result.clarifyQuestion : null;
+  }
+  const lang = LANGUAGES.has(result.language) ? result.language : 'en';
+  const h = CHAT_HEADINGS[lang];
+  const lines = [];
+  lines.push(h.answer);
+  lines.push(`${result.service.label} — ${result.authority.name}.`);
+  if (result.analysis && result.analysis.why) lines.push(result.analysis.why);
+  if (result.steps && result.steps.length) {
+    lines.push('');
+    lines.push(h.steps);
+    for (const s of result.steps) lines.push(`${s.n}. ${s.text}`);
+  }
+  if (result.documents && result.documents.length) {
+    lines.push('');
+    lines.push(h.documents);
+    for (const d of result.documents) lines.push(`- ${d}`);
+  }
+  if (result.route) {
+    lines.push('');
+    lines.push(h.route);
+    lines.push(result.route.label);
+    if (result.route.note) lines.push(result.route.note);
+  }
+  const withUrl = (result.sources || []).filter((s) => s && s.url);
+  lines.push('');
+  lines.push(h.official);
+  if (withUrl.length) {
+    for (const s of withUrl) lines.push(`- ${s.title}: ${s.url}`);
+  } else {
+    lines.push(lang === 'ur' ? 'اس مخصوص مرحلے کے لیے کوئی سرکاری صفحہ تصدیق نہیں ہو سکا۔' : lang === 'roman_urdu' ? 'Is khaas marhale ke liye koi official page confirm nahi ho saka.' : 'No official page for this exact step could be confirmed.');
+  }
+  if (result.analysis && result.analysis.procedureVerification !== 'official') {
+    lines.push('');
+    lines.push(h.limit);
+    lines.push(result.limitations || h.metadata);
+  }
+  lines.push('');
+  lines.push(h.submit);
+  lines.push(result.submission.note);
+  if (result.clarifyQuestion) {
+    lines.push('');
+    lines.push(h.ask);
+    lines.push(result.clarifyQuestion);
+  }
+  lines.push('');
+  lines.push(result.disclosure);
+  return lines.join('\n');
 }
 
 export const CIVIC_SERVICE_IDS = SERVICE_ORDER;

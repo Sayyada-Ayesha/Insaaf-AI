@@ -14,7 +14,7 @@ import { composeOwnedModelAnswer, isLegalProblemQuery, askClarification, crossBo
 import { detectQueryScope, deriveChunkScope } from './corpusScope.js';
 import { authorizer as civicAuthorizer, getAdmin as getFirebaseAdmin, authBackendStatus } from './authz.js';
 import { createCivicRouter, createFirestoreStore } from './civicRoutes.js';
-import { analyzeCivicProblem } from './civicAssistant.js';
+import { analyzeCivicProblem, composeCivicChatAnswer, civicChatCards, civicNoServiceQuestion } from './civicAssistant.js';
 import { createCommunityRouter, createCommunityStore } from './communityRoutes.js';
 import { createAdminRouter, createAdminServices } from './adminRoutes.js';
 import { createSupportRouter } from './appSupport.js';
@@ -1978,6 +1978,53 @@ const updateScheduler = startUpdateScheduler({
 });
 console.log(`[updates] registry=${updateRegistryInit.sources} sources (${updateRegistryInit.created ? 'derived this boot' : 'loaded from rag/updates/sources.json'}), scheduler=${updateScheduler.started ? `running every ${describeUpdateScheduler(process.env).intervalMs}ms` : `not running (${updateScheduler.reason})`}`);
 
+// Government-service and civic-service questions belong to the civic registry,
+// not to the legal corpus. Retrieval matches words, so a bare "apply online for a
+// government service" was answered with a cybercrime clause and "complain about a
+// government office" with a passport-visa glossary — neither is a procedure and
+// neither can be turned into one. A question that names an actual legal dispute
+// (inheritance, rent, land, salary, banking, FIR…) keeps the legal pipeline even
+// when it mentions a department, because a statute, not a service route, decides it.
+// The cues come in two regexes: `\b` is defined against ASCII word characters, so
+// an Urdu-script sentence never satisfied the Latin one and fell through to the
+// civic classifier — a police-refusal FIR question was answered as a police
+// complaint and a neighbour-encroachment question became a district clarification.
+const CIVIC_DISPUTE_RE = /\b(inheritance|warasat|probate|will|landlord|tenant|kiraya|rent|security\s+deposit|evict|qabza|encroach\w*|plot|land|property|jaidad|salary|tankhwah|wages|employer|dismiss\w*|terminat\w*|bank|cheque|loan|cyber\w*|blackmail|hack\w*|divorce|khula|maintenance|nafqa|nafaqa|kharcha|shohar|shauhar|talaq|talaaq|custody|consumer|defective|accident|negligence|defamation|assault|theft|murder|dacoity|drug|fir)\b/i;
+const CIVIC_DISPUTE_URDU_RE = /ایف\s*آئی\s*آر|پولیس|تھانہ|قبضہ|پلاٹ|زمین|جائیداد|وراثت|کرایہ|تنخواہ|بینک|چیک|طلاق|خلع|نفقہ|خرچہ|شوہر|گرفتاری|ملازم|ڈپازٹ|مکان|مالک/;
+
+/**
+ * One civic decision for every answer route: `{via:'none'}` when the question is
+ * a legal dispute or an unnamed service, `{via:'clarify'}` when a required fact
+ * is missing, `{via:'answer'}` with the composed text and cards.
+ */
+function civicChatReply(userQuery, activeLang) {
+  if (CIVIC_DISPUTE_RE.test(userQuery) || CIVIC_DISPUTE_URDU_RE.test(userQuery)) return { via: 'none' };
+  const civic = analyzeCivicProblem({ description: userQuery, language: activeLang });
+  if (!civic) return { via: 'none' };
+  // The registry matches keywords as substrings, which is right for "CNIC" in
+  // "CNIC correction" but wrong for "road" inside "abroad" — a moving-abroad
+  // question was answering as a municipal complaint. A match only counts when
+  // the keyword appears as a word of its own.
+  const asWord = (kw) => {
+    const esc = String(kw).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return new RegExp(`(?:^|[^\\p{L}\\p{N}])${esc}(?:$|[^\\p{L}\\p{N}])`, 'iu').test(userQuery);
+  };
+  const matched = civic.service && Array.isArray(civic.service.matchedKeywords) ? civic.service.matchedKeywords : [];
+  if (matched.length && !matched.some(asWord)) return { via: 'none' };
+  if (civic.status === 'clarify') {
+    return { via: 'clarify', text: civic.clarifyQuestion, reasons: ['civic_district_missing'] };
+  }
+  if (civic.status !== 'analysed') return { via: 'none' };
+  // "Government service" is a category, not a service. The registry holds six
+  // named services; a complaint must name the office it is against, and a bare
+  // "apply online" ask must name the service before a procedure can be quoted.
+  const isComplaint = /complaint|complain|shikayat|not\s+doing|kaam\s+nahi|کام\s+نہیں|شکایت/i.test(userQuery);
+  if (civic.service.id === 'public_office_complaint' && !isComplaint) {
+    return { via: 'clarify', text: civicNoServiceQuestion(activeLang), reasons: ['civic_service_unnamed'] };
+  }
+  return { via: 'answer', result: civic, text: composeCivicChatAnswer(civic), cards: civicChatCards(civic) };
+}
+
 app.post('/api/ai/chat', rateLimiterMiddleware, asyncRoute(async (req, res) => {
   const validationError = validateChatInput(req.body);
   if (validationError) {
@@ -2082,6 +2129,30 @@ app.post('/api/ai/chat', rateLimiterMiddleware, asyncRoute(async (req, res) => {
   const safetyAnswer = curatedOfflineAnswer(userQuery, activeLang, { safetyOnly: true });
   if (safetyAnswer) {
     res.write(`data: ${JSON.stringify({ chunk: safetyAnswer.text, isOffline: true, action: curatedAction(safetyAnswer) })}\n\n`);
+    res.write('data: [DONE]\n\n');
+    res.end();
+    return;
+  }
+
+  // Government-service and civic-service questions belong to the civic registry,
+  // not to the legal corpus (see civicChatReply above).
+  const civic = civicChatReply(userQuery, activeLang);
+  if (civic.via === 'clarify') {
+    res.write(`data: ${JSON.stringify({
+      chunk: civic.text, sources: [], isOffline: true, answerLevel,
+      evidence: { verdict: 'clarify', reasons: civic.reasons, domain: 'civic', supportedCount: 0, rejected: 0 },
+      relevance: 'clarify', action: 'clarify'
+    })}\n\n`);
+    res.write('data: [DONE]\n\n');
+    res.end();
+    return;
+  }
+  if (civic.via === 'answer') {
+    res.write(`data: ${JSON.stringify({ meta: { sources: civic.cards, isOffline: true } })}\n\n`);
+    res.write(`data: ${JSON.stringify({
+      chunk: civic.text, isOffline: true, answerLevel, action: 'answer',
+      evidence: { verdict: 'strong', reasons: ['civic_service_registry'], domain: 'civic', supportedCount: civic.cards.length, rejected: 0 }
+    })}\n\n`);
     res.write('data: [DONE]\n\n');
     res.end();
     return;
@@ -2673,6 +2744,22 @@ app.post('/api/ai/advice', rateLimiterMiddleware, async (req, res) => {
     const safetyAnswer = curatedOfflineAnswer(userQuery, activeLang, { safetyOnly: true });
     if (safetyAnswer) {
       return res.json({ text: safetyAnswer.text, isOffline: true });
+    }
+
+    // Same civic decision as /api/ai/chat: a procedure question is answered from
+    // the service registry, never from a legal record that merely shares words.
+    const adviceCivic = civicChatReply(userQuery, activeLang);
+    if (adviceCivic.via === 'clarify') {
+      return res.json({
+        text: adviceCivic.text, sources: [], isOffline: true, answerLevel, action: 'clarify', relevance: 'clarify',
+        evidence: { verdict: 'clarify', reasons: adviceCivic.reasons, domain: 'civic', supportedCount: 0, rejected: 0 }
+      });
+    }
+    if (adviceCivic.via === 'answer') {
+      return res.json({
+        text: adviceCivic.text, sources: adviceCivic.cards, isOffline: true, answerLevel, action: 'answer', relevance: 'high',
+        evidence: { verdict: 'strong', reasons: ['civic_service_registry'], domain: 'civic', supportedCount: adviceCivic.cards.length, rejected: 0 }
+      });
     }
 
     const everydayAsk = everydayClarification(everyday, activeLang);
@@ -3670,6 +3757,33 @@ const AGENT_ROUTE_MANIFEST = [
 ];
 
 /**
+ * Everyday words a citizen types rarely appear in a statute's own wording, so a
+ * literal lookup of "security deposit" never reaches the tenancy record that
+ * governs it. This maps the common phrasings (English, Roman Urdu, Urdu script)
+ * onto the vocabulary the corpus actually uses. The user's own words stay in the
+ * echoed `query`; only the retrieval text is widened.
+ */
+const LIBRARY_QUERY_EXPANSIONS = [
+  [/\bsecurity\s+deposit\b|\badvance\s+(?:rent|deposit)\b|\bdeposit\s+(?:refund|return|wapas)\b|\bdeposit\s+wapas\b|سیکیورٹی\s*ڈپازٹ|ضمانت\s*(?:کی\s*)?واپسی|zamanat\s+wapas/i,
+    'security deposit tenancy rent landlord tenant eviction premises'],
+  [/\bkiraya(?:dar|dari)?\b|\bmakan\s+malik\b|کرایہ\s*دار|کرایہ\s*داری/i,
+    'tenancy rent landlord tenant eviction premises'],
+  [/\bwarasat\b|\bwirasat\b|وراثت/i, 'inheritance shares legal heirs succession'],
+  [/\bzamanat\b|ضمانت/i, 'bail surety bond criminal procedure'],
+  [/\bcheque\s+bounce\b|\bcheque\s+bounced\b|چیک\s*باؤنس/i, 'cheque dishonour section 489-F negotiable instruments'],
+];
+
+function expandLibraryQuery(query) {
+  // First match wins: a phrase like "zamanat wapas" means the tenancy deposit,
+  // and also appending the bail vocabulary would pull criminal records into a
+  // rent question.
+  for (const [re, terms] of LIBRARY_QUERY_EXPANSIONS) {
+    if (re.test(query)) return `${query} ${terms}`;
+  }
+  return query;
+}
+
+/**
  * Search the law itself — no model writing, no paraphrase. Every result is a
  * record from the verified corpus with the canonical source URL that was indexed
  * with it, so a person can read the exact statutory wording before acting on it.
@@ -3686,7 +3800,7 @@ app.post('/api/ai/law-search', rateLimiterMiddleware, async (req, res) => {
   }
   const limit = Math.min(Math.max(parseInt(body.limit, 10) || 10, 1), 25);
   try {
-    const result = await RAGEngine.retrieve(query);
+    const result = await RAGEngine.retrieve(expandLibraryQuery(query));
     const metadataLine = (text, label) => {
       const m = new RegExp(`${label}:\\s*(.+)`, 'i').exec(String(text || '').slice(0, 1200));
       return m ? m[1].trim().slice(0, 220) : '';
@@ -3867,6 +3981,27 @@ app.post('/api/ai/agent', rateLimiterMiddleware, async (req, res) => {
       reply: safetyAnswer.text,
       actions: safetyAnswer.actions.filter(id => AGENT_ROUTE_MANIFEST.some(r => r.id === id)),
       sources: [], isOffline: true, intake: deriveIntake(message, agentContext, null)
+    });
+  }
+
+  // Government-service questions are answered by the civic registry on this
+  // route too, so the Government Services screen cannot show a legal-corpus
+  // record where it asks for a procedure.
+  const agentCivic = civicChatReply(message, activeLang);
+  if (agentCivic.via === 'clarify') {
+    return res.json({
+      reply: agentCivic.text, actions: ['procedures'], sources: [], isOffline: true, answerLevel, action: 'clarify',
+      intake: deriveIntake(message, agentContext, null),
+      evidence: { verdict: 'clarify', reasons: agentCivic.reasons, domain: 'civic', supportedCount: 0, rejected: 0 },
+      relevance: 'clarify'
+    });
+  }
+  if (agentCivic.via === 'answer') {
+    return res.json({
+      reply: agentCivic.text, actions: ['procedures'], sources: agentCivic.cards, isOffline: true, answerLevel, action: 'answer',
+      intake: deriveIntake(message, agentContext, null),
+      evidence: { verdict: 'strong', reasons: ['civic_service_registry'], domain: 'civic', supportedCount: agentCivic.cards.length, rejected: 0 },
+      relevance: 'high'
     });
   }
 

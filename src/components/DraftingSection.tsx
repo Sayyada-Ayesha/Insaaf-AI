@@ -113,10 +113,21 @@ export default function DraftingSection({ onNavigate, focusMode }: { onNavigate?
     { id: 'legal_notice', labelEn: 'Draft a Legal Notice', labelUr: 'Legal Notice Draft Karen', defaultInstruction: 'Is document ka jawab legal notice ki shakal mein draft karen (draft a legal notice responding to this document)' }
   ];
 
-  // F8: quick edit suggestions shown in the editor chat
+  // F8: quick edit suggestions shown in the editor chat. These must fit whatever
+  // document is open — a salary figure is only offered when the request itself
+  // mentioned salary, otherwise it invites an edit the document cannot carry.
+  const mentionsSalary = /salary|tankhwa|wage|تنخواہ/i.test(requestText);
   const EDIT_SUGGESTIONS = currentLang === 'roman_urdu'
-    ? ['salary 100,000 se 150,000 karo', 'ye paragraph remove karo', 'applicant ka naam change karo', 'isko Urdu Script mein karo', 'isko English mein karo']
-    : ['Increase salary to 150,000', 'Remove this paragraph', 'Change the applicant name', 'Convert to Urdu script', 'Make it more formal'];
+    ? [
+        ...(mentionsSalary ? ['Salary barha kar 150,000 karo'] : []),
+        'Yeh paragraph remove karo', 'Applicant ka naam change karo',
+        'Isko Urdu Script mein karo', 'Isko English mein karo'
+      ]
+    : [
+        ...(mentionsSalary ? ['Increase the salary to 150,000'] : []),
+        'Remove this paragraph', 'Change the applicant name',
+        'Convert to Urdu script', 'Convert to English'
+      ];
 
   const openReplyAction = (action: DocumentReplyType) => {
     const meta = REPLY_ACTIONS.find(a => a.id === action);
