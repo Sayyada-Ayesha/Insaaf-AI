@@ -14,6 +14,7 @@ import { composeOwnedModelAnswer, isLegalProblemQuery, askClarification, crossBo
 import { detectQueryScope, deriveChunkScope } from './corpusScope.js';
 import { authorizer as civicAuthorizer, getAdmin as getFirebaseAdmin, authBackendStatus } from './authz.js';
 import { createCivicRouter, createFirestoreStore } from './civicRoutes.js';
+import { analyzeCivicProblem } from './civicAssistant.js';
 import { createCommunityRouter, createCommunityStore } from './communityRoutes.js';
 import { createAdminRouter, createAdminServices } from './adminRoutes.js';
 import { createSupportRouter } from './appSupport.js';
@@ -1847,6 +1848,22 @@ app.get('/api/civic/auth-status', (_req, res) => {
     roles: ['student', 'lawyer', 'administrator']
   });
 });
+
+// Civic assistant: understand the problem, name the responsible authority, and
+// draft the application. It reads only the civic workflow registry, never the
+// legal retrieval corpus, and it never submits anything.
+app.post('/api/civic/assist', rateLimiterMiddleware, (req, res) => {
+  try {
+    const result = analyzeCivicProblem(req.body || {});
+    return res.status(result.status === 'invalid' ? 400 : 200).json(result);
+  } catch {
+    return res.status(500).json({
+      error: 'ASSIST_FAILED',
+      message: 'The civic assistant could not analyse this request. Nothing was submitted.'
+    });
+  }
+});
+
 app.use('/api/civic', createCivicRouter({
   authorizer: civicAuthorizer,
   store: lazyCivicStore,

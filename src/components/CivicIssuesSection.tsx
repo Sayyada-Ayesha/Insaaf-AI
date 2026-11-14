@@ -15,6 +15,8 @@ import {
 import {
   CivicCloudOutcome, CivicCloudReport, fileCivicReport, listMyCivicReports, civicCloudStatus
 } from '../services/civicIssuesCloud';
+import CivicAssistantPanel from './CivicAssistantPanel';
+import type { CivicLanguage } from '../services/civicAssistant';
 
 type SubTab = 'report' | 'mine' | 'assistant';
 type GeoState = 'idle' | 'locating' | 'ok' | 'denied' | 'unsupported' | 'error';
@@ -155,6 +157,7 @@ export default function CivicIssuesSection({
   const currentLang = getCurrentLanguage();
   useLanguageVersion();
   const isRoman = currentLang === 'roman_urdu';
+  const assistantLanguage: CivicLanguage = isRoman ? 'roman_urdu' : 'en';
   const L = useMemo(() => labels(isRoman), [isRoman]);
   const { isAuthenticated, setShowLoginModal } = useAuth();
 
@@ -348,6 +351,23 @@ export default function CivicIssuesSection({
     } finally {
       setCloudListBusy(false);
     }
+  }
+
+  // Hand the assistant's own draft over to the report form. Only the citizen's
+  // words and the analysed authority travel; nothing is filed or sent.
+  function handleAssistantUse(payload: { description: string; authority: string; draft: string }) {
+    const category = classifyIssue(payload.description).categoryId;
+    setDescription(payload.description);
+    setConfirmedCategory(category);
+    setCitizenPicked(true);
+    setAuthority(payload.authority);
+    setComplaint(payload.draft);
+    setComplaintEditable(true);
+    setMissing([]);
+    setBlockers([]);
+    setSaved(null);
+    setCloudOutcome(null);
+    setSubTab('report');
   }
 
   function resetForm() {
@@ -880,6 +900,11 @@ export default function CivicIssuesSection({
 
         {subTab === 'assistant' && (
           <div className="space-y-3">
+            <CivicAssistantPanel
+              defaultLanguage={assistantLanguage}
+              onUseInReport={handleAssistantUse}
+            />
+
             <article className="bg-white border border-gray-200 rounded-2xl p-4 space-y-2">
               <h3 className="text-sm font-extrabold text-[#01411C]">
                 {isRoman ? 'Masla kaise likhein' : 'How to describe an issue'}
@@ -899,8 +924,8 @@ export default function CivicIssuesSection({
               </h3>
               <p className="text-[11px] text-gray-600">
                 {isRoman
-                  ? 'Category ka maswada mukhtasar lafzi jaanch se banta hai (AI model nahi). Galat ho to aap khud chunein — aap ki chunai hi record hoti hai. Idaray ka naam sirf tab likhein jab aap ko yaqeen ho; Insaaf AI ke paas is build mein municipal idaron ka koi verified record nahi hai, is liye yeh khud koi naam nahi likhta.'
-                  : 'The category suggestion comes from quick keyword matching, not an AI model. If it is wrong, choose the right one — your choice is what gets recorded. Write a recipient authority only if you actually know it. Insaaf AI has no verified record of municipal authorities in this build, so it will not name one for you.'}
+                  ? 'Category ka maswada mukhtasar lafzi jaanch se banta hai (AI model nahi). Galat ho to aap khud chunein — aap ki chunai hi record hoti hai. Idaray ka naam sirf tab likhein jab aap ko yaqeen ho; upar ka assistant documented services ke liye mutalliq idara batata hai, lekin municipal shikayat ka exact office aap ke zila ke record par munhasir hai, is liye woh aap ke ilaqay ka naam apni taraf se nahi likhta.'
+                  : 'The category suggestion comes from quick keyword matching, not an AI model. If it is wrong, choose the right one — your choice is what gets recorded. Write a recipient authority only if you actually know it; the assistant above names the responsible authority for recorded services, but the exact municipal office depends on your district record, so it will not invent a local office name.'}
               </p>
               <p className="text-[11px] text-gray-600">
                 {isRoman
@@ -953,7 +978,7 @@ export default function CivicIssuesSection({
               <ul className="text-[11px] text-gray-600 space-y-1 list-disc list-inside">
                 <li>{isRoman ? 'Cross-device tracking — reports sirf is browser mein.' : 'Cross-device tracking — reports live in this browser only.'}</li>
                 <li>{isRoman ? 'Map par pin karna mojood nahi — muqam likhein ya location button istemal karein.' : 'Map pin selection is not implemented — type the location or use the location button.'}</li>
-                <li>{isRoman ? 'Administrative review dashboard mojood nahi (secure server-side authorization is not configured).' : 'An administrative review dashboard is not present (secure server-side authorisation is not configured).'}</li>
+                <li>{isRoman ? 'Administrative review page sirf authorized administrator ke liye hai, aur woh server-side sign-in verification par munhasir hai — is browser se review nahi hota.' : 'The administrative review page is limited to authorised administrators and depends on server-side sign-in verification — no review happens from this browser.'}</li>
                 <li>{isRoman ? 'Kisi sarkari idaray tak pohnchne ka integration mojood nahi.' : 'Delivery to any government department is not integrated.'}</li>
               </ul>
             </article>

@@ -19,6 +19,7 @@
     "rag:test-vectors": "node server/testLocalVectors.js",
     "rag:validate": "node server/ragValidate.js",
     "test:runtime": "node server/testRuntimeFixes.js",
+    "test:civic": "node server/testCivicAssistant.js",
     "corpus:audit": "node server/corpusTools.js audit",
     "corpus:update": "node server/corpusTools.js update",
     "corpus:validate": "node server/corpusTools.js validate",
