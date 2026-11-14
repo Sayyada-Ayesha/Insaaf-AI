@@ -417,7 +417,24 @@ const EVIDENCE_VARIANTS = {
   dhamkian: 'threat threats intimidation',
   // PPC 497 is headed "Adultery"; the citizen's word is zina. The record uses the
   // statute's term, so the gloss must count as the user's own word for grounding.
-  zina: 'adultery', zinaa: 'adultery'
+  zina: 'adultery', zinaa: 'adultery',
+  // Land-possession vocabulary. The records state proprietary remedies in the
+  // statutes' own words ("possession", "dispossession", "ejectment", "immovable
+  // property"); citizens say qabza or "occupied my plot". Without the bridge the
+  // record that answers the ask shares no word with it, so a grounded
+  // dispossession question read as uncovered and the gate refused it.
+  qabza: 'possession dispossession occupation occupied encroachment',
+  qabzay: 'qabza possession dispossession occupation',
+  qabzaa: 'qabza possession dispossession',
+  occupy: 'possession occupied occupation dispossession',
+  occupied: 'possession occupy occupation dispossession',
+  occupying: 'possession occupation occupied',
+  occupation: 'possession occupied occupy dispossession',
+  dispossess: 'dispossession dispossessed possession',
+  dispossessed: 'dispossession dispossess possession',
+  jaidad: 'property immovable',
+  plot: 'property land immovable',
+  plots: 'property land immovable'
 };
 
 /**
@@ -690,9 +707,19 @@ export function evaluateEvidence(userQuery, retrieval, opts = {}) {
     // not evidence the record is about a different subject.
     const OFFENCE_DOMAINS = new Set(['cyber', 'criminal']);
     const OFFENCE_ASK_RE = /\b(?:threat\w*|blackmail\w*|extort\w*|harass\w*|stalk\w*|intimidat\w*|impersonat\w*|bully\w*|bullying|fake\s+(?:account|profile|id)|private\s+(?:photo|picture|image|video)s?|intimate\s+(?:photo|picture|image|video)s?|morphed|deepfake|nude|obscene|revenge\s+porn|tasveer\w*|tasvir\w*|bina\s+ijazat)\b|(?:دھمکی|بلیک\s*میل|ہراسانی|تصاویر|جعلی|بے\s*اجازت)/i;
+    // A dispossession or encroachment ask is about possession of immovable
+    // property. The term-profile reading can file "land" under the revenue or
+    // rent family and then veto the possession remedies that DO name the ask's
+    // subject — the same failure the offence override exists to correct. The
+    // override stays tied to the record's own possession vocabulary, so a
+    // record about a different subject cannot borrow it.
+    const POSSESSION_ASK_RE = /\b(?:qabza\w*|kabza\w*|dispossess\w*|encroach\w*|trespass\w*|occup(?:y|ied|ying|ation)|illegal\w*\s+possession|ejectment|evict\w*)\b|(?:قبضہ|قبضے|متصرف)/i;
+    const recordNamesPossession = /\b(?:possess\w*|dispossess\w*|ejectment|encroach\w*|occupat\w*|eviction)\b/i
+      .test(`${c.chunkTitle || ''} ${c.text || ''}`);
     const subjectOverridden = subj.checked && !subj.ok && domainOk
       && (exact >= 8
-        || (OFFENCE_DOMAINS.has(domain) && OFFENCE_ASK_RE.test(String(userQuery))));
+        || (OFFENCE_DOMAINS.has(domain) && OFFENCE_ASK_RE.test(String(userQuery)))
+        || (POSSESSION_ASK_RE.test(String(userQuery)) && recordNamesPossession));
     const offSubject = subj.checked && !subj.ok && !subjectOverridden;
     // Words of the resolved situation this record actually carries. Two of them,
     // in a record the router already filed under the domain that was asked about,

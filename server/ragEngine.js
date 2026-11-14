@@ -1028,9 +1028,13 @@ export class RAGEngine {
       rewrittenQuery = draftTerms.length > 0 ? draftTerms.join(' ') : 'power of attorney POA drafting structure template';
     }
     // Family Law
-    else if (/\b(marri\w*|bride|groom|underage|divorce|maintenance|family|wife|husband|talaq|khula|polygamy|nikah|mehr|dower|custody|guardian|hizanat|nafqa|iddat|dowry|jahez)\b/i.test(normalizedQuery) || /(طلاق|شادی|نکاح|خاندانی|مہر|خرچہ|حضانت|خلع|نفقہ)/.test(query)) {
+    else if (/\b(marri\w*|bride|groom|underage|divorce|maintenance|family|wife|husband|talaq|khula|polygamy|nikah|mehr|dower|custody|guardian|hizanat|nafqa|iddat|dowry|jahez|inherit\w*|heir\w*|succession|warisa\w*)\b/i.test(normalizedQuery) || /(طلاق|شادی|نکاح|خاندانی|مہر|خرچہ|حضانت|خلع|نفقہ|وراثت|ورثہ|ورثاء)/.test(query)) {
       domain = 'family';
       const famTerms = [];
+      // A daughter's share of an estate is settled by the succession rules, not
+      // by a property-registration clause; without its own term list this branch
+      // never ran and the question was classified `unknown`.
+      if (/inherit\w*|heir\w*|succession|warisa|وراثت|ورثہ/i.test(normalizedQuery) || /(وراثت|ورثہ|ورثاء)/.test(query)) famTerms.push('inheritance succession legal shares daughter son widow mother estate distribution succession certificate');
       if (/divorce|talaq/i.test(normalizedQuery)) famTerms.push('talaq divorce Section 7 Muslim Family Laws notice Union Council');
       if (/khula|dissolution/i.test(normalizedQuery)) famTerms.push('khula dissolution Section 2 wife Family Court');
       if (/maintenance|nafqa|kharcha/i.test(normalizedQuery)) famTerms.push('maintenance Section 9 wife children nafaqa');
@@ -1042,7 +1046,7 @@ export class RAGEngine {
       rewrittenQuery = famTerms.length > 0 ? famTerms.join(' ') : 'Muslim Family Laws Ordinance 1961 marriage divorce maintenance custody Section 5 6 7 9';
     }
     // Property / Tenancy / Land
-    else if (/\b(property|land|tenancy|rent|lease|eviction|landlord|tenant|transfer|registry|mutation|zameen|kiraya|makan|kirayedar|plot|flat|house|builder|sold|double\s*sale)\b/i.test(normalizedQuery) || /(جائیداد|زمین|کرایہ|مکان)/.test(query)) {
+    else if (/\b(property|land|tenancy|rent|lease|eviction|landlord|tenant|transfer|registry|mutation|zameen|kiraya|makan|kirayedar|plot|flat|house|builder|sold|double\s*sale|jaidad|qabza|kabza|dispossess\w*|encroach\w*|trespass\w*|illegal\s+possession)\b/i.test(normalizedQuery) || /(جائیداد|زمین|کرایہ|مکان|قبضہ|قبضے)/.test(query)) {
       domain = 'civil';
       const propTerms = [];
       if (/tenant|rent|kiraya|kirayedar|evict|landlord/i.test(normalizedQuery)) propTerms.push('tenancy rent eviction landlord tenant Punjab Rented Premises Act Rent Tribunal');
@@ -1051,6 +1055,8 @@ export class RAGEngine {
       if (/mutation|inteqal|fard/i.test(normalizedQuery)) propTerms.push('mutation inteqal land revenue records Patwari Tehsildar Board Revenue');
       if (/inherit|heir|succession|estate|warisha|legal share|father.*died|parent/i.test(normalizedQuery)) propTerms.push('inheritance succession Muslim law shares legal heir certificate estate partition suit unauthorized sale by one heir');
       if (/dispute|claim|possess|plot|builder|double/i.test(normalizedQuery)) propTerms.push('property dispute Specific Relief Act declaration injunction possession suit double sale fraud remedy');
+      if (/qabza|kabza|dispossess|encroach|trespass|occup\w*/i.test(normalizedQuery) || /(قبضہ|قبضے|متصرف)/.test(query)) propTerms.push('illegal dispossession unlawful occupation encroachment ejectment recovery of possession suit for possession Specific Relief Act declaration injunction partition civil court');
+      if (/double\s*sale|sold.*(?:another|second|two)|another\s+buyer|two\s+buyers|same\s+property\W.{0,20}(?:two|sold)/i.test(normalizedQuery)) propTerms.push('double sale of immovable property two buyers another purchaser specific performance identified immovable property Transfer of Property Act registration fraud cheating remedy civil suit');
       rewrittenQuery = propTerms.length > 0 ? propTerms.join(' ') : 'property land tenancy rent Transfer Property Act Registration Act mutation eviction';
     }
     // Customs laws — must run BEFORE court hierarchy / civil procedure so

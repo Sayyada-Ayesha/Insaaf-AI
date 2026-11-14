@@ -194,8 +194,13 @@ function ownIdentityHits(query, chunk, gloss = null) {
  *  record, not the deposit-insurance clause). */
 function isBankDeductionAsk(query) {
   const q = String(query || '');
+  // Roman spelling varies (wapas / wapis / waapas) and the refusal is often
+  // stated as "nahi kiye" rather than "not return"; without those forms a citizen
+  // saying "Bank ne paise wapas nahi kiye" was not recognised as a bank dispute
+  // at all, so the banking route never learned it had a banking question.
   return /\b(bank|banking|account)\b/i.test(q)
-    && /\b(deduct\w*|debit\w*|wrongful\w*|unauthori[sz]ed|dispute\w*|reversal|revers(?:e|ed)|refund\w*|not\s+(?:return|refund)\w*|wapis|kaat\w*)\b/i.test(q);
+    && /\b(deduct\w*|debit\w*|wrongful\w*|unauthori[sz]ed|dispute\w*|reversal|revers(?:e|ed)|refund\w*|not\s+(?:return|refund)\w*|wapas|wapis|wapass|waapas|kaat\w*)\b/i.test(q)
+    || (/\b(bank|banking|account)\b/i.test(q) && /\b(nahi\s+(?:kiye|kiya|diya|di|deti|deta)|not\s+paid|withheld|rok\w*)\b/i.test(q));
 }
 
 /** A policy's own cover section — scope, definitions, applicability — names the
@@ -268,13 +273,27 @@ function rankRecords(query, chunks) {
   const firFilingAsk = /\b(fir|first\s+information\s+report)\b/i.test(String(query || ''))
     && /\b(register|lodge|file|filing|darj|likhwa|kataw\w*)\b/i.test(String(query || ''))
     && !/\b(refus\w*|deni\w*|not\s+register\w*|mana|inkaar)\b/i.test(String(query || ''));
+  // A land/plot/house ask is answered by the record about IMMOVABLE property.
+  // The Sale of Goods Act and the movable-property clause share "sale",
+  // "property" and "possession" with it and tied on words, so a dispossession
+  // question was answered with the movable-property remedy ("within 3 years")
+  // and a double-sale question opened with the definition of a contract of
+  // sale. The lift only reorders candidates the gate already admitted.
+  const immovableAsk = /\b(land|plot|plots|property|house|makan|zameen|jaidad|flat|building|agricultural|immovable|qabza\w*|kabza\w*|dispossess\w*|occup(?:ied|y|ation))\b/i.test(String(query || ''));
+  // A double-sale question asks what to DO about the disputed sale. The Transfer
+  // of Property Act's definitions share "sale" and "immovable property" but
+  // state no remedy; the declaratory/injunction/possession records do.
+  const saleDisputeAsk = /\b(double\s*sale|another\s+buyer|two\s+buyers|same\s+property\W.{0,20}(?:two|sold))\b/i.test(String(query || ''));
   const scored = (chunks || []).map((c, i) => {
     const own = ownIdentityHits(query, c, gloss);
     const procedural = recoveryAsk && /PROCEDURE|WORKFLOW|_STAGES|_PROCESS|STEPS/i.test(String(c.key || '')) ? 2 : 0;
     const forum = bankDisputeAsk && /\b(banking\s+court|mohtasib|complaint)\b/i.test(`${c.chunkTitle || ''} ${c.text || ''}`) ? 3 : 0;
     const protection = dvProtectionAsk && /\b(protection\s+order|protection\s+officer|residence\s+order|domestic\s+violence)\b/i.test(`${c.chunkTitle || ''} ${c.text || ''}`) ? 4 : 0;
     const filing = firFilingAsk && /FIR_(?:PROCEDURE|FILING)|FIR_FILING|WORKFLOW_FIR_FILING/i.test(String(c.key || '')) ? 3 : 0;
-    return { c, i, s: own + queryTermHits(query, c, gloss) + procedural + forum + protection + filing, own };
+    const immovable = immovableAsk && /\bimmovable\b/i.test(String(c.chunkTitle || '')) ? 3 : 0;
+    const saleRemedy = saleDisputeAsk
+      && /\b(declaratory|declaration|injunction|specific\s+performance|suit\s+for\s+possession|recover\s+possession)\b/i.test(`${c.chunkTitle || ''} ${c.text || ''}`) ? 4 : 0;
+    return { c, i, s: own + queryTermHits(query, c, gloss) + procedural + forum + protection + filing + immovable + saleRemedy, own };
   });
   return scored.sort((a, b) => b.s - a.s || b.own - a.own || a.i - b.i).map(s => s.c);
 }
@@ -864,8 +883,10 @@ function recordLead(chunk, maxSentences = 2, maxChars = 520, query = null) {
   // A block that never ends a sentence is a layout listing — a table of column
   // values or a publication index — not a rule stated in words. Named as a
   // source it is evidence; quoted as prose it pasted an entire contents page
-  // into a citizen's answer, because joining the lines erases the table.
-  if (body.length > 300 && (body.match(/[.!?](?:\s|$)/g) || []).length < 2) return '';
+  // into a citizen's answer, because joining the lines erases the table. A
+  // semicolon separates clauses in drafted legal prose ("… when: (a) …; (b) …"),
+  // so it counts as sentence punctuation here; table columns do not use it.
+  if (body.length > 300 && (body.match(/[.!?;](?:\s|$)/g) || []).length < 2) return '';
   const windowed = query ? onTopicWindow(body, query, maxSentences) : '';
   const clipped = clipSentences(windowed || body, maxSentences, maxChars);
   // A quote that lands on a bare list marker ("… under one of the categories:
@@ -1024,13 +1045,18 @@ function detectQueryIntent(query, domain) {
   // Latin-script patterns — specific domains first, then general patterns
   if (/\b(harass|harassment|harassing|harassed|herass|herassment)\b/i.test(q)) return 'harassment';
   if (/\b(rights)\b/i.test(q)) return 'rights';
+  // "What is the punishment for X" is a question type of its own, not a subject.
+  // Without it the answer had no explanation to give and led with the record's
+  // English sentence even in Urdu, because only a subject match could reach the
+  // synthesiser at all.
+  if (/\b(punish\w*|penalt\w*|sentenc\w*|imprison\w*)\b/i.test(q) || /\b(saza|sazaa|sazayen)\b/i.test(q) || /(سزا|سزائیں|سزاؤں)/.test(q)) return 'punishment';
   // Specific domain patterns (checked before general 'how-to')
-  if (/\b(fir|police|report|cognizable|arrest)\b/i.test(q)) return 'police-fir';
+  if (/\b(fir|police|report|cognizable|arrest)\b/i.test(q) || /(پولیس|ایف\s*آئی\s*آر)/.test(q)) return 'police-fir';
   if (/\b(recovery|loan|debt|money back|paisa)\b/i.test(q)) return 'recovery';
-  if (/\b(property|land|house|rent|tenant|evict|registry|possession)\b/i.test(q)) return 'property';
-  if (/\b(divorce|khula|dissolution|maintenance|custody|family)\b/i.test(q)) return 'family';
+  if (/\b(property|land|house|rent|tenant|evict|registry|possession|zameen|jaidad|qabza\w*|kabza\w*|makan|makaan|kiraya|kirayedar)\b/i.test(q) || /(جائیداد|زمین|قبضہ|قبضے|مکان|کرایہ)/.test(q)) return 'property';
+  if (/\b(divorce|khula|dissolution|maintenance|custody|family|talaq|nafaqa|nafaqah|hizanat|nikah)\b/i.test(q) || /(طلاق|خلع|نفقہ|حضانت|نکاح)/.test(q)) return 'family';
   if (/\b(bail|arrest|remand|zamanat)\b/i.test(q)) return 'bail';
-  if (/\b(consumer|defective|substandard|service provider)\b/i.test(q)) return 'consumer';
+  if (/\b(consumer|defective|substandard|service provider)\b/i.test(q) || /صارف/.test(q)) return 'consumer';
   if (/\b(legal notice|demand notice)\b/i.test(q)) return 'legal-notice';
   if (/\b(injunction|stay order|temporary injunction)\b/i.test(q)) return 'injunction';
   if (/\b(guardian|guardianship|minor|custody of minor)\b/i.test(q)) return 'guardianship';
@@ -1083,7 +1109,7 @@ function topicFromChunk(chunk) {
 // Build a plain-language direct answer from query intent + chunk metadata.
 // This NEVER fabricates legal facts — it summarizes what the retrieved records
 // cover, in language a normal person can understand.
-function synthesizePlainAnswer(query, chunks, domain, isRoman) {
+function synthesizePlainAnswer(query, chunks, domain, isRoman, isUrdu = false) {
   const intent = detectQueryIntent(query, domain);
   // Only records that share the question's own subject may name its topics. One
   // incidental word ("punishment") let an unrelated record ("high court's powers
@@ -1097,6 +1123,24 @@ function synthesizePlainAnswer(query, chunks, domain, isRoman) {
   const topics = topicChunks.map(topicFromChunk).filter(Boolean);
   const uniqueTopics = [...new Set(topics)];
 
+  // A disputed debit is answered by the banking route in the reader's own
+  // language. The record that carries it is often a table of State Bank
+  // functions, which is not quotable prose, so a Roman or Urdu answer began at
+  // the law heading with no explanation at all — headings without the legal
+  // explanation they introduce.
+  if (domain === 'banking' && isBankDeductionAsk(query)) {
+    if (isUrdu) {
+      return 'کسی ایسی رقم کا معاملہ جو بینک نے آپ کی اجازت کے بغیر کاٹی ہو یا واپس نہ کی ہو، پہلے بینک ہی کا معاملہ ہوتا ہے: بینک کے شکایت دفتر کو تحریری شکایت دیں اور شکایت نمبر سنبھال کر رکھیں۔ اگر بینک حل نہ کرے تو مستند ریکارڈ دو راستے بتاتے ہیں — بینک کے خلاف صارف شکایت کے لیے بینکنگ محتسب (Banking Mohtasib)، اور بڑے مالی تنازعات کے لیے بینکنگ کورٹ۔ بینک کے اندر کی مرحلہ وار شکایت کا طریقہ ریکارڈ میں موجود نہیں، اس لیے کسی مہلت پر بھروسا کرنے سے پہلے بینک کے شکایت دفتر سے موجودہ طریقہ تصدیق کریں۔';
+    }
+    if (isRoman) {
+      return 'Kisi aisi raqam ka mamla jo bank ne aap ki ijazat ke baghair kaati ho ya wapas na ki ho, pehle bank hi ka mamla hota hai: bank ke complaint office ko likhit shikayat dein aur complaint number sambhal kar rakhein. Agar bank hal na kare to mustanad records do raaste batate hain — bank ke khilaf consumer shikayat ke liye Banking Mohtasib, aur bare maali tanazaon ke liye Banking Court. Bank ke andar ki marhala-war shikayat ka tareeqa record mein maujood nahi, is liye kisi deadline par bharosa karne se pehle bank ke complaint office se maujooda tareeqa tasdeeq karein.';
+    }
+    return 'Money the bank has taken from your account without your authority, or has not returned, is first a dispute with the bank itself: put the complaint in writing to the bank\'s own complaint office and keep the complaint number. If the bank does not resolve it, the verified records name two routes — a complaint to the Banking Mohtasib for consumer grievances against a bank, and the Banking Court for larger financial disputes. The records do not publish the bank\'s internal step-by-step complaint process, so confirm the current procedure with the bank before relying on any deadline.';
+  }
+
+  if (isUrdu) {
+    return synthesizeUrduAnswer(query, intent, uniqueTopics, domain, chunks);
+  }
   if (isRoman) {
     return synthesizeRomanAnswer(query, intent, uniqueTopics, domain, chunks);
   }
@@ -1110,6 +1154,9 @@ function synthesizeEnglishAnswer(query, intent, topics, domain, chunks) {
         return `A university student in Pakistan has several important rights. You have the right to fair treatment and due process in all university matters. You have the right to protection from harassment — every university must have an anti-harassment committee. You have the right to a fair hearing before any disciplinary action like expulsion or suspension. You have the right to see your exam papers and request rechecking. You have the right to fee refunds as per HEC policy. These rights come from your university's regulations, HEC policies, and applicable laws.`;
       }
       return `Based on the available legal records, your rights in this matter include protections relating to: ${topics.length > 0 ? topics.slice(0, 5).join(', ') : 'the relevant legal provisions'}. The exact application depends on the specific facts of your situation and the applicable law.`;
+
+    case 'punishment':
+      return `The punishment for an offence is the legal consequence the law itself prescribes for it. The verified record retrieved for this question states the offence and the sentence provided for it, and its own wording is quoted below. How a sentence applies, and how much is imposed, is decided on the facts of the case — I will not state a term the record does not carry.`;
 
     case 'harassment':
       return `If you are being harassed, you are protected under Pakistani law. Most institutions including universities are required to have an anti-harassment policy and an inquiry committee. You can file a written complaint describing what happened, with dates and any evidence you have. If your institution does not have a committee or does not act on your complaint, you can approach the provincial Ombudsperson. You do not need to face this alone — legal aid is available if you need it.`;
@@ -1153,6 +1200,60 @@ function synthesizeEnglishAnswer(query, intent, topics, domain, chunks) {
   }
 }
 
+// Urdu-script counterpart of the Roman synthesiser. Its job is the same: say in
+// the reader's language what the retrieved records mean, before any statutory
+// wording is quoted. It states no right, deadline, fee or forum the corpus does
+// not carry; the records still drive the law and source sections.
+function synthesizeUrduAnswer(query, intent, topics, domain, chunks) {
+  switch (intent) {
+    case 'rights':
+      if (domain === 'education') {
+        return 'پاکستان میں یونیورسٹی کے طالب علم کے کئی اہم حقوق ہیں۔ آپ کو ہر یونیورسٹی معاملے میں انصاف اور مناسب طریقۂ کار (due process) کا حق ہے۔ آپ کو ہراسانی سے تحفظ کا حق ہے — ہر یونیورسٹی میں انسدادِ ہراسانی کمیٹی کا ہونا ضروری ہے۔ کسی بھی تادیبی کارروائی (جیسے داخلہ منسوخی یا معطلی) سے پہلے آپ کو منصفانہ سماعت کا حق ہے۔ آپ اپنے امتحانی پرچے دیکھ سکتے ہیں اور دوبارہ جانچ کی درخواست کر سکتے ہیں۔ HEC پالیسی کے مطابق فیس کی واپسی کا بھی حق ہے۔ یہ حقوق آپ کی یونیورسٹی کے قواعد، HEC پالیسیوں اور متعلقہ قوانین سے ملتے ہیں۔';
+      }
+      return 'دستیاب قانونی ریکارڈ کے مطابق اس معاملے میں آپ کے متعلقہ قانونی تحفظات لاگو ہو سکتے ہیں۔ اصل اطلاق آپ کے حالات اور لاگو قانون پر منحصر ہے؛ تفصیل اور قانونی حوالے نیچے مستند ریکارڈ سے دیے گئے ہیں۔';
+
+    case 'punishment':
+      // The selected language carries the explanation; the English statutory
+      // sentence follows below as the quoted record, not as the answer itself.
+      return 'کسی جرم کی سزا وہی قانونی نتیجہ ہوتی ہے جو متعلقہ قانون خود اس جرم کے لیے مقرر کرتا ہے۔ اس سوال کے لیے جو مستند ریکارڈ ملا ہے، اُس میں جرم اور اُس کے لیے مقرر کردہ سزا کا ذکر ہے (اصل قانونی متن نیچے انگریزی میں نقل کیا گیا ہے)۔ سزا کی نوعیت، مقدار اور اطلاق مقدمے کے حقائق اور عدالت کے فیصلے پر منحصر ہوتا ہے — میں کوئی ایسی سزا یا مدت خود سے نہیں بتاؤں گا جو ریکارڈ میں موجود نہ ہو۔';
+
+    case 'harassment':
+      return 'اگر کسی شخص کی طرف سے آپ کو ہراساں کیا جا رہا ہے تو پاکستانی قانون آپ کو تحفظ دیتا ہے۔ جامعات سمیت بیشتر اداروں کے لیے انسدادِ ہراسانی پالیسی اور تحقیقاتی کمیٹی کا ہونا ضروری ہے۔ آپ تحریری شکایت درج کروا سکتے ہیں جس میں واقعہ، تاریخیں اور دستیاب ثبوت بیان ہوں۔ اگر ادارے میں کمیٹی نہیں ہے یا وہ کارروائی نہیں کرتی تو آپ صوبائی محتسب (Ombudsperson) سے رجوع کر سکتے ہیں۔ آپ کو یہ اکیلے نہیں سہنا چاہیے — قانونی مدد بھی دستیاب ہے۔';
+
+    case 'how-to':
+      if (domain === 'education') {
+        return 'ایسی صورت میں آپ عام طور پر یہ کر سکتے ہیں: پہلے، ہر بات تحریری طور پر محفوظ کریں (تاریخیں، افراد، کوئی تحریری رابطہ)۔ دوسرا، اپنی یونیورسٹی کے قواعد دیکھیں کہ درست راستہ کون سا ہے — عام طور پر شکایت کمیٹی، گریوانس سیل یا متعلقہ انتظامی دفتر۔ تیسرا، اپنی شکایت یا درخواست تحریری طور پر دیں اور اس کی نقل رکھیں۔ اگر یونیورسٹی حل نہ کرے تو آپ HEC یا متعلقہ ادارے سے رجوع کر سکتے ہیں۔';
+      }
+      return 'عام اقدامات یہ ہیں: پہلے، متعلقہ حقائق اور دستاویزات محفوظ کریں۔ دوسرا، درست ادارہ یا فورم معلوم کریں۔ تیسرا، تحریری شکایت یا درخواست دیں اور ہر چیز کی نقل رکھیں۔ اصل طریقۂ کار معاملے کی نوعیت اور آپ کے علاقے پر منحصر ہے۔';
+
+    case 'fee-scholarship':
+      // No generic HEC fee/refund paragraph: the record's own clause leads.
+      return '';
+
+    case 'discipline':
+      return 'تادیبی معاملات میں آپ کو مناسب طریقۂ کار (due process) کا حق ہے۔ اس کا مطلب ہے: آپ کو الزامات سے آگاہ کیا جائے، آپ کو جواب دینے کا مناسب موقع ملے، اور فیصلہ یونیورسٹی کے مقررہ طریقے کے مطابق ہو۔ شو کاز نوٹس کا جواب دی گئی مہلت میں دینا ضروری ہے۔ اگر آپ کو لگے کہ کارروائی منصفانہ نہیں تھی تو آپ کے پاس اپیل کی بنیاد ہو سکتی ہے۔';
+
+    case 'police-fir':
+      return 'FIR یا پولیس کے معاملے کے لیے: ضابطہ فوجداری (CrPC) کی دفعہ 154 کے تحت قابلِ دست اندازی جرم کی اطلاع ملنے پر پولیس کے لیے FIR درج کرنا لازم ہے۔ اگر پولیس FIR درج کرنے سے انکار کرے تو آپ ایس پی کو تحریری اطلاع بھیج سکتے ہیں یا دفعہ 200 CrPC کے تحت عدالت سے رجوع کر سکتے ہیں۔';
+
+    case 'family':
+      return 'خاندانی معاملات میں پاکستانی قانون مخصوص تحفظات اور طریقے فراہم کرتا ہے۔ درست فورم مسئلے کی نوعیت پر منحصر ہے — فیملی کورٹس طلاق، خلع، نفقہ اور حضانت کے معاملات سنتی ہیں۔ طریقۂ کار اور آپ کے حقوق لاگو ذاتی قانون پر منحصر ہیں۔';
+
+    case 'property':
+      return 'جائیداد کے معاملات میں آپ کے حقوق اور طریقۂ کار مسئلے کی نوعیت پر منحصر ہیں (ملکیت، کرایہ داری، قبضہ وغیرہ)۔ متعلقہ قوانین میں ٹرانسفر آف پراپرٹی ایکٹ، کرایہ کے قوانین اور دیوانی طریقۂ کار کا ضابطہ شامل ہیں۔ درست فورم عام طور پر جائیداد کے علاقے کی دیوانی عدالت ہوتی ہے۔';
+
+    case 'consumer':
+      return 'بطور صارف آپ متعلقہ صارف تحفظ قانون (وفاقی یا صوبائی، آپ کے علاقے کے مطابق) کے تحت محفوظ ہیں۔ اگر آپ کو ناقص اشیاء یا خراب سروس ملی ہے تو آپ صارف تحفظ کونسل اور ضرورت پڑنے پر صارف عدالت میں شکایت کر سکتے ہیں۔';
+
+    case 'civic-document':
+      return 'ڈومیسائل، پاسپورٹ یا شناختی کارڈ جیسی دستاویزات کے لیے طریقہ اور درکار کاغذات دستاویز اور صوبے کے مطابق مختلف ہوتے ہیں۔ عام طور پر متعلقہ سرکاری ادارے میں مطلوبہ حمایتی دستاویزات کے ساتھ درخواست دینی ہوتی ہے۔';
+
+    case 'student-general':
+    default:
+      return '';
+  }
+}
+
 function synthesizeRomanAnswer(query, intent, topics, domain, chunks) {
   switch (intent) {
     case 'rights':
@@ -1160,6 +1261,9 @@ function synthesizeRomanAnswer(query, intent, topics, domain, chunks) {
         return `University ke student ke Pakistan mein kai ahem rights hain. Aap ko har university mamlay mein insaaf aur due process ka haq hai. Aap ko harassment se hifazat ka haq hai — har university mein anti-harassment committee hona zaroori hai. Kisi bhi disciplinary action (masalan expulsion ya suspension) se pehle aap ko fair hearing ka haq hai. Aap apne exam papers dekh sakte hain aur rechecking ki darkhwast kar sakte hain. HEC policy ke mutabiq aap ko fee refund ka bhi haq hai. Yeh rights aap ki university ke rules, HEC policies aur mutaliqa qawaneen se aate hain.`;
       }
       return `Verified qanooni records ke mutabiq, aap ke is mamlay mein yeh rights hain: ${topics.length > 0 ? topics.slice(0, 5).join(', ') : 'mutaliqa qanooni dafa'} . Is ka amli itlaq aap ke haal-e-waqia par depend karta hai.`;
+
+    case 'punishment':
+      return `Kisi jurm ki saza wohi qanooni nateeja hoti hai jo mutaliqa qanoon khud us jurm ke liye muqarrar karta hai. Is sawal ke liye jo mustanad record mila hai, us mein jurm aur us ke liye muqarrar ki gayi saza ka zikr hai. Saza ki noiyat, miqdar aur itlaq muqadmay ke haqaiq aur adalat ke faislay par depend karta hai — main koi aisi saza ya muddat khud se nahi bataunga jo record mein maujood na ho.`;
 
     case 'harassment':
       return `Agar aap ko koi pareshan kar raha hai to aap Pakistani qanoon ke tehat mehfooz hain. Taqreeban tamam institutions jin mein universities bhi shamil hain, ke liye anti-harassment policy aur inquiry committee hona zaroori hai. Aap likhit shikayat darj karwa sakte hain jis mein waqia, tareekhen aur saboot bayan hon. Agar aap ke institution mein committee nahi hai ya wo action nahi leti to aap provincial Ombudsperson se rujoo kar sakte hain. Aap ko akele nahi jhelna chahiye — qanooni madad bhi available hai.`;
@@ -1886,9 +1990,11 @@ function boundSentence(text, maxChars) {
 /** Steps for a "what do I do" answer: the record that actually lists them.
  *  `roman` keeps the framing Roman Urdu — the steps stay quoted but bounded, so
  *  the answer explains in Roman and carries only short verifiable clauses. */
-function stepsFromRecords(procedures, chunks, max = 5, roman = false) {
+function stepsFromRecords(procedures, chunks, max = 5, roman = false, urdu = false) {
   const cap = roman ? ROMAN_QUOTE_CHARS : 150;
-  const lead = roman ? 'Ye qadam verified record se liye gaye hain:' : '';
+  const lead = roman
+    ? 'Ye qadam verified record se liye gaye hain:'
+    : urdu ? 'یہ اقدامات مستند ریکارڈ سے لیے گئے ہیں (اصل متن انگریزی میں):' : '';
   const source = procedures.find(c => numberedSteps(c, max).length)
     || (chunks || []).find(c => numberedSteps(c, max).length);
   const steps = numberedSteps(source, max).map(s => boundSentence(s.replace(/^\d+[.)]\s+/, ''), cap));
@@ -1924,9 +2030,9 @@ function stepsFromRecords(procedures, chunks, max = 5, roman = false) {
 // grounded advice, they are the same template for every citizen who asks
 // anything in that domain, and the brief forbids them. No steps in evidence
 // means no steps section, which the caller already handles.
-function buildPracticalSteps(query, chunks, domain, isRoman) {
+function buildPracticalSteps(query, chunks, domain, isRoman, isUrdu = false) {
   const procedures = chunks.filter(c => /PROCEDURE|WORKFLOW|_STAGES|_PROCESS|MARAHIL/i.test(String(c.key || '')));
-  return stepsFromRecords(procedures, chunks, 5, isRoman);
+  return stepsFromRecords(procedures, chunks, 5, isRoman, isUrdu);
 }
 
 // Trim to whole sentences only — legal text is never cut mid-clause.
@@ -2187,18 +2293,19 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   const naturalKey = guidanceKey(userQuery, everydaySituation);
   const broadTopic = naturalKey === 'women-rights';
   const chunkCap = broadTopic ? 15 : lvl.chunkCap;
-  let pool = scopePoolToServices(chunks.slice(0, chunkCap), askedServices);
-  // The depth cap selects the first N records the gate returned. When the gate's
-  // own ordering placed a clause above the procedure, the procedure fell outside
-  // the cap and the answer lost the only record that says what to do. For a
-  // recovery question the procedure earns a slot in place of the last record.
+  // The depth cap decides how MANY records the answer may use — it must not
+  // decide WHICH ones. Slicing the gate's order before ranking cut off the
+  // record that answers the ask whenever the gate listed a broadly matching
+  // clause first: a double-sale question lost the declaratory/injunction
+  // records at positions 5–6 and answered from "Mutation" instead. Rank the
+  // whole candidate window, then cap the ranked list.
+  const candidateWindow = Math.max(chunkCap, 12);
+  let pool = scopePoolToServices(chunks.slice(0, candidateWindow), askedServices);
+  // A recovery question still guarantees the step-by-step record a slot even
+  // when the word ranking would place it below the cap.
   if (asksHowToRecover && !pool.some(isProcedureRecord)) {
     const proc = scopePoolToServices(chunks, askedServices).find(c => isProcedureRecord(c) && !pool.includes(c));
-    if (proc) {
-      pool = pool.length >= chunkCap
-        ? [...pool.slice(0, chunkCap - 1), proc]
-        : [...pool, proc];
-    }
+    if (proc) pool = [...pool, proc];
   }
   const isRoman = activeLang === 'roman_urdu';
   const isUrdu = activeLang === 'ur';
@@ -2208,7 +2315,7 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   // evidence order; re-rank them by the words of THIS question so the section
   // content comes from the record that addresses the ask, not the one that merely
   // scored highest on generic terms.
-  const focus = policyFamilyOrder(userQuery, rankRecords(userQuery, pool));
+  const focus = policyFamilyOrder(userQuery, rankRecords(userQuery, pool)).slice(0, chunkCap);
   const { provisions, remedies, precedents } = categorize(focus);
   // Being a PROVISION does not qualify a record to answer. Measured on a ragging
   // complaint: the topically first record was "Prohibition of Ragging in Hostels",
@@ -2290,7 +2397,7 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   const natural = naturalKey
     ? naturalGuidance(naturalKey, isUrdu ? 'ur' : (isRoman ? 'roman' : 'en'), { focus, userQuery, domain })
     : null;
-  const synthesis = clipSentences(synthesizePlainAnswer(userQuery, focus, domain, isRoman), lvl.answerSentences, lvl.answerChars);
+  const synthesis = clipSentences(synthesizePlainAnswer(userQuery, focus, domain, isRoman, isUrdu), lvl.answerSentences, lvl.answerChars);
   // Roman Urdu quotes one bounded clause, not the paragraph it sits in — the same
   // ceiling the "says" part already uses. Quoting nothing left the Roman answer
   // with only topic titles, so a citizen reporting a deduction from an 8171
@@ -2300,15 +2407,20 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   // what a citizen falls back on when the record has nothing quotable, not a
   // standing preamble that pushes the actual rule out of the first paragraph.
   const urduClause = clipSentences(recordLead(answerRecord, 1, ROMAN_QUOTE_CHARS, userQuery), 1, ROMAN_QUOTE_CHARS);
-  // Urdu answers keep the record's own (usually English) wording as the quoted
-  // evidence and wrap it in Urdu framing, so the selected language is never
-  // silently swapped for a different one.
+  // Urdu answers lead with the Urdu synthesis: the selected language must carry
+  // the explanation, not just the heading above an English paragraph. The
+  // record's own wording follows as the quoted evidence ("What the law says"),
+  // which is where an English statutory clause belongs. When no synthesis exists
+  // (a factual ask with no intent layer) the bounded quote still leads rather
+  // than leaving the answer empty.
+  const urduQuoteLead = urduClause
+    ? `اس معاملے میں مستند ریکارڈ کے مطابق (اصل قانونی متن انگریزی میں نقل کیا گیا ہے): «${urduClause}»`
+    : 'اس سوال کا جواب درج ذیل مستند ریکارڈ سے ملتا ہے۔';
+  const romanQuoteLead = romanClause ? `Record ke mutabiq: ${romanClause}` : '';
   const lead = isUrdu
-    ? (urduClause
-      ? `اس معاملے میں مستند ریکارڈ کے مطابق (اصل قانونی متن انگریزی میں نقل کیا گیا ہے): «${urduClause}»`
-      : 'اس سوال کا جواب درج ذیل مستند ریکارڈ سے ملتا ہے۔')
+    ? (synthesis || urduQuoteLead)
     : isRoman
-      ? (romanClause ? `Record ke mutabiq: ${romanClause}` : synthesis)
+      ? (synthesis || romanQuoteLead)
       : recordLead(answerRecord, lvl.answerSentences, lvl.answerChars, userQuery);
   let directAnswer = (natural && natural.lead) || lead || synthesis;
   if (natural && natural.followUp) directAnswer = `${directAnswer}\n\n${natural.followUp}`;
@@ -2358,7 +2470,7 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
   // an English answer keeps the record's own wording in full.
   const romanQuote = clipSentences(saysText, 1, ROMAN_QUOTE_CHARS);
   const explanation = isUrdu
-    ? (saysText ? `مستند ریکارڈ مزید یہ بتاتا ہے (اصل متن انگریزی میں): «${clipSentences(saysText, 2, ROMAN_QUOTE_CHARS * 2)}»` : '')
+    ? (saysText ? `مستند ریکارڈ مزید یہ بتاتا ہے (اصل متن انگریزی میں): «${clipSentences(saysText, 1, ROMAN_QUOTE_CHARS)}»` : '')
     : isRoman
       ? (romanQuote ? `Verifiable record ke mutabiq: ${romanQuote}` : '')
       : saysText;
@@ -2403,7 +2515,7 @@ export function composeOwnedModelAnswer(userQuery, chunks, activeLang = 'en', do
     if (natural && natural.steps && natural.steps.length) {
       push(L.procedure, natural.steps.map((s, i) => `${i + 1}. ${s}`).join('\n'));
     } else {
-      const steps = buildPracticalSteps(userQuery, grounded, domain, isRoman);
+      const steps = buildPracticalSteps(userQuery, grounded, domain, isRoman, isUrdu);
       // A numbered sequence is only honest whole: dropping the step the direct
       // answer already quoted renumbered the rest (source steps 1, 2, 4 printed as
       // 1, 2, 3) and made the opposing party's reply look like the reader's third

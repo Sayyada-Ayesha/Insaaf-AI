@@ -160,6 +160,16 @@ export function resolveEverydayIntent(userQuery, priorUserText = '', priorAssist
   const OFFENCE_CONTEXT = /\b(?:blackmail\w*|extort\w*|threat\w*|harass\w*|stalk\w*|intimidat\w*|impersonat\w*|tasveer\w*|tasvir\w*|private\s+(?:photo|picture|image|video)s?|intimate\s+(?:photo|picture|image|video)s?)\b|(?:بلیک\s*میل|دھمکی|ہراسانی|تصاویر|بے\s*اجازت)/i;
   if (OFFENCE_CONTEXT.test(q)) return base;
 
+  // A disputed bank transaction names its own institution, so the direction of an
+  // everyday money complaint is already decided: the bank/ATM holds the money, not
+  // a landlord, employer or borrower. "The bank deducted money from my account and
+  // will not return it after card fraud" was being met with "what is the money
+  // for — rent, security or a loan?", a question the citizen had just answered by
+  // naming the bank. The banking records answer it instead.
+  const BANK_INSTITUTION = /\b(?:bank|banking|atm|banking mohtasib)\b|(?:بینک|اے\s*ٹی\s*ایم)/i;
+  const BANK_TRANSACTION = /\b(?:deduct\w*|debit\w*|withdr[ae]w\w*|transaction\w*|transfer\w*|card|account|cheque|check)\b|(?:اکاؤنٹ|کارڈ|رقم\s*کٹ)/i;
+  if (BANK_INSTITUTION.test(q) && BANK_TRANSACTION.test(q)) return base;
+
   // A one-word answer to our own either-or question resolves the dispute; the
   // object alone carries the direction, so it must not be re-asked.
   if (objects.length === 1 && wordCount(q) <= 5 && askedClarification) {

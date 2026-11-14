@@ -246,6 +246,25 @@ function clarifyEvidence(retrieval, extra = {}) {
   return { ...base, verdict: 'clarify', ...extra };
 }
 
+/**
+ * Whether the everyday-situation question must still be asked after retrieval.
+ *
+ * A weak verdict is the plain case: no record carries the ask, so the ONE
+ * question that picks the right record is the honest reply. A strong verdict
+ * normally answers — but it cannot settle WHO OWES WHAT TO WHOM, because
+ * retrieval matches words, not direction: the single word "Tenant" matches the
+ * deposit records strongly while the citizen has said nothing about an actual
+ * dispute. When the resolver reports exactly two directions for one named party
+ * and nothing in the question picks one, that question is still owed even though
+ * a record matched.
+ */
+function everydayClarifyNeeded(everyday, everydayAsk, retrievalResult) {
+  if (!everydayAsk || !retrievalResult || !retrievalResult.evidence) return false;
+  if (retrievalResult.evidence.verdict !== 'strong') return true;
+  return Boolean(everyday && everyday.ambiguous && !everyday.unknownObject
+    && Array.isArray(everyday.candidates) && everyday.candidates.length === 2);
+}
+
 // With the owned-model runtime the chain is always empty, so this always rejects
 // and each caller composes its answer from the offline composer inside its catch
 // block. The rejection is the normal path; the catch is the renderer.
@@ -2147,7 +2166,7 @@ app.post('/api/ai/chat', rateLimiterMiddleware, asyncRoute(async (req, res) => {
   // ask "whose money is it?" about a maintenance claim and an inheritance claim —
   // questions whose subject the verified records name directly. Retrieval decides,
   // because retrieval is what knows what the corpus covers.
-  if (everydayAsk && retrievalResult.evidence && retrievalResult.evidence.verdict !== 'strong') {
+  if (everydayClarifyNeeded(everyday, everydayAsk, retrievalResult)) {
     res.write(`data: ${JSON.stringify({
       chunk: everydayAsk, isOffline: true, answerLevel,
       evidence: clarifyEvidence(retrievalResult, { reasons: ['ambiguous_situation'], candidates: everyday.candidates, supportedCount: 0, rejected: 0 }),
@@ -2714,7 +2733,7 @@ app.post('/api/ai/advice', rateLimiterMiddleware, async (req, res) => {
     // Same rule as /api/ai/chat: the everyday-situation question is asked only
     // when retrieval cannot place the dispute in the corpus. One pipeline, one
     // decision order, whichever route the caller used.
-    if (everydayAsk && retrievalResult.evidence && retrievalResult.evidence.verdict !== 'strong') {
+    if (everydayClarifyNeeded(everyday, everydayAsk, retrievalResult)) {
       return res.json({
         text: everydayAsk, isOffline: true, answerLevel, relevance: 'clarify', action: 'clarify',
         evidence: clarifyEvidence(retrievalResult, { reasons: ['ambiguous_situation'], candidates: everyday.candidates, supportedCount: 0, rejected: 0 })
@@ -3878,7 +3897,7 @@ app.post('/api/ai/agent', rateLimiterMiddleware, async (req, res) => {
   // retrieval could not place the dispute in the corpus. Before this, an agent
   // question the records answer directly (a wife's maintenance, an inheritance
   // share) was met with "whose money is it?".
-  if (everydayAsk && retrievalResult.evidence && retrievalResult.evidence.verdict !== 'strong') {
+  if (everydayClarifyNeeded(everyday, everydayAsk, retrievalResult)) {
     return res.json({
       reply: everydayAsk, actions: [], sources: [], isOffline: true, answerLevel, action: 'clarify',
       intake: deriveIntake(message, agentContext, retrievalResult),
