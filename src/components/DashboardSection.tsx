@@ -14,6 +14,9 @@ export default function DashboardSection({ onOpenChat }: { onOpenChat?: (id: str
   const [drafts, setDrafts] = useState<LocalDraft[]>([]);
   const [chats, setChats] = useState<LocalChat[]>([]);
   const [loading, setLoading] = useState(true);
+  // A failed cloud read must not look like an empty vault: the person would read it
+  // as "my saved work is gone". Say the read failed and show what this browser kept.
+  const [cloudUnavailable, setCloudUnavailable] = useState(false);
 
   useEffect(() => {
     let isMounted = true;
@@ -28,14 +31,21 @@ export default function DashboardSection({ onOpenChat }: { onOpenChat?: (id: str
           if (isMounted) {
             setDrafts(loadedDrafts);
             setChats(loadedChats);
+            setCloudUnavailable(false);
           }
         } catch (err) {
           console.error("Error loading Vault data from Firestore:", err);
+          if (isMounted) {
+            setDrafts(StorageService.getDrafts());
+            setChats(StorageService.getChats());
+            setCloudUnavailable(true);
+          }
         }
       } else {
         if (isMounted) {
           setDrafts(StorageService.getDrafts());
           setChats(StorageService.getChats());
+          setCloudUnavailable(false);
         }
       }
       if (isMounted) setLoading(false);
@@ -114,6 +124,17 @@ export default function DashboardSection({ onOpenChat }: { onOpenChat?: (id: str
   );
 
   return (
+    <>
+    {cloudUnavailable && (
+      <div
+        role="status"
+        aria-live="polite"
+        data-testid="vault-cloud-unavailable"
+        className="mb-6 p-4 bg-amber-50 border border-amber-100 rounded-2xl text-amber-800 text-xs font-bold"
+      >
+        {t.vaultCloudUnavailable}
+      </div>
+    )}
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
       {/* Drafts Section */}
       <div className="space-y-6">
@@ -234,5 +255,6 @@ export default function DashboardSection({ onOpenChat }: { onOpenChat?: (id: str
         </div>
       </div>
     </div>
+    </>
   );
 }

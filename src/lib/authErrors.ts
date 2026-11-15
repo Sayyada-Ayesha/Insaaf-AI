@@ -94,20 +94,39 @@ export function describeForLogs(error: unknown): string {
 interface Capability {
   i18nKey: string;
   code: string;
+  /** Epoch ms of the observed failure. */
+  at: number;
 }
 
 /**
  * Remembered for the tab, so the sign-in screen can say "this path is not open on
  * this deployment" instead of letting a person push on a door that will not open.
- * It is a record of an observed failure, not a claim about the project: a reload
- * starts unknown again, and "Try again" re-opens the form immediately.
+ * It is a record of an observed failure, not a claim about the project — so it
+ * expires: an administrator can add an authorized domain minutes after the
+ * failure, and a record without an expiry would keep telling the next person the
+ * door is closed. "Try again" clears it immediately.
  */
 const STORE_KEY = 'insaaf_auth_capability';
+const CAPABILITY_TTL_MS = 10 * 60 * 1000;
+
+function isFresh(entry: Capability | undefined): entry is Capability {
+  return !!entry && typeof entry.at === 'number' && Date.now() - entry.at < CAPABILITY_TTL_MS;
+}
+
+function prune(all: Partial<Record<AuthMethod, Capability>>): Partial<Record<AuthMethod, Capability>> {
+  const next: Partial<Record<AuthMethod, Capability>> = {};
+  (Object.keys(all) as AuthMethod[]).forEach(method => {
+    const entry = all[method];
+    if (isFresh(entry)) next[method] = entry;
+  });
+  return next;
+}
+
 let capabilities: Partial<Record<AuthMethod, Capability>> = {};
 
 try {
   const raw = sessionStorage.getItem(STORE_KEY);
-  if (raw) capabilities = JSON.parse(raw) as Partial<Record<AuthMethod, Capability>>;
+  if (raw) capabilities = prune(JSON.parse(raw) as Partial<Record<AuthMethod, Capability>>);
 } catch {
   capabilities = {};
 }
@@ -123,7 +142,7 @@ function persist() {
 
 export function noteAuthUnavailable(method: AuthMethod, error: unknown) {
   if (!isCapabilityError(error)) return;
-  capabilities = { ...capabilities, [method]: { i18nKey: authErrorKey(error, method), code: authCodeOf(error) } };
+  capabilities = { ...capabilities, [method]: { i18nKey: authErrorKey(error, method), code: authCodeOf(error), at: Date.now() } };
   persist();
 }
 
@@ -138,5 +157,10 @@ export function clearAuthUnavailable(method?: AuthMethod) {
 }
 
 export function getAuthCapabilities(): Partial<Record<AuthMethod, Capability>> {
-  return capabilities;
+  const fresh = prune(capabilities);
+  if (Object.keys(fresh).length !== Object.keys(capabilities).length) {
+    capabilities = fresh;
+    persist();
+  }
+  return fresh;
 }

@@ -11,6 +11,8 @@
  * routes never fall open so that a local run "passes".
  */
 
+import { firestoreDatabaseId } from './adminSdk.js';
+
 export const ROLES = Object.freeze(['student', 'lawyer', 'administrator']);
 
 /** Signed-in users without an issued role may still file and read their own reports. */
@@ -112,6 +114,7 @@ export function authBackendStatus() {
     initializing: initAttempted && !adminRef && !initError,
     credentialSource: credentialSource(),
     projectIdConfigured: Boolean(process.env.FIREBASE_PROJECT_ID || process.env.VITE_FIREBASE_PROJECT_ID || ''),
+    firestoreDatabaseId: firestoreDatabaseId(),
     initError: initError ? initError.code || initError.name || 'unknown' : null
   };
 }

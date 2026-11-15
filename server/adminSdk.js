@@ -12,6 +12,18 @@
  */
 import fs from 'fs';
 
+/**
+ * The client SDK is bound to a named database (`firestoreDatabaseId` in
+ * firebase-applet-config.json), not to `(default)`. The Admin SDK must target the
+ * same database or the server writes where the app never reads. `getFirestore(app,
+ * projectId)` would silently open a database *named after the project* instead.
+ */
+export const DEFAULT_FIRESTORE_DATABASE_ID = 'ai-studio-remixinsaafai-083714b3-5a31-4cec-8b91-019837a5c6e8';
+
+export function firestoreDatabaseId(env = process.env) {
+  return env.FIRESTORE_DATABASE_ID || env.FIREBASE_FIRESTORE_DATABASE_ID || DEFAULT_FIRESTORE_DATABASE_ID;
+}
+
 function readCredential(env) {
   if (env.FIREBASE_SERVICE_ACCOUNT_JSON) {
     return { value: env.FIREBASE_SERVICE_ACCOUNT_JSON, from: 'FIREBASE_SERVICE_ACCOUNT_JSON' };
@@ -68,5 +80,5 @@ export async function initAdminSdk(env = process.env) {
     databaseURL: env.FIREBASE_DATABASE_URL || env.VITE_FIREBASE_DATABASE_URL || undefined
   });
 
-  return { app, auth: () => getAuth(app), firestore: () => getFirestore(app, projectId) };
+  return { app, auth: () => getAuth(app), firestore: () => getFirestore(app, firestoreDatabaseId(env)) };
 }

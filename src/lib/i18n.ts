@@ -169,6 +169,7 @@ export interface Translations {
   errAppNotConfigured: string;
   errSignInUnsupported: string;
   capSignInClosed: string;
+  capGoogleClosed: string;
   capGuestNote: string;
   capTryAgain: string;
   errAuthGeneric: string;
@@ -290,6 +291,7 @@ export interface Translations {
   vaultDeleteDraftConfirm: string;
   vaultDeleteChatConfirm: string;
   vaultGuestMode: string;
+  vaultCloudUnavailable: string;
   vaultDefaultQueryTitle: string;
   vaultLastUpdated: string;
 
@@ -478,7 +480,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     authEmailInvalid: "Please enter a valid email address.",
     authPasswordShort: "Password must be at least 6 characters long.",
     authEnterEmail: "Please enter your email address.",
-    errUnauthorizedDomain: "Sign-in cannot be used from this web address yet. Please continue as a guest, or open Insaaf AI from its main address.",
+    errUnauthorizedDomain: "Google sign-in cannot be used from {origin} because this web address is not on the app's approved sign-in domain list. The site administrator must add this exact address to the app's sign-in settings. Email and password sign-in still works, and guest mode is unaffected.",
     errPopupClosed: "Google sign-in was cancelled.",
     errPopupBlocked: "Please allow popups in your browser and try again.",
     errEmailInUse: "An account with this email already exists.",
@@ -499,6 +501,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     errAppNotConfigured: "Sign-in cannot start because this copy of the app is not connected to an account service.",
     errSignInUnsupported: "Sign-in cannot open from this browser view. Please use a normal browser window.",
     capSignInClosed: "Sign-in is not available here yet",
+    capGoogleClosed: "Google sign-in is not available here yet",
     capGuestNote: "Everything else still works as a guest. Your chats and drafts stay on this device.",
     capTryAgain: "Try sign-in again",
     errAuthGeneric: "An authentication error occurred.",
@@ -617,6 +620,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     vaultDeleteDraftConfirm: "Are you sure you want to delete this draft?",
     vaultDeleteChatConfirm: "Are you sure you want to delete this chat session?",
     vaultGuestMode: "Guest Mode",
+    vaultCloudUnavailable: "We could not load the saved work on your account just now. Showing what is kept in this browser instead — those items are not synced to your account.",
     vaultDefaultQueryTitle: "Pakistani Law Query",
     vaultLastUpdated: "Last Updated:",
 
@@ -804,7 +808,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     authEmailInvalid: "براہ کرم درست ای میل ایڈریس درج کریں۔",
     authPasswordShort: "پاس ورڈ کم از کم 6 حروف کا ہونا چاہیے۔",
     authEnterEmail: "براہ کرم اپنا ای میل ایڈریس درج کریں۔",
-    errUnauthorizedDomain: "اس ویب پتے سے سائن ان ابھی ممکن نہیں ہے۔ براہ کرم مہمان کے طور پر جاری رکھیں یا انصاف اے آئی کو اس کے اصل پتے سے کھولیں۔",
+    errUnauthorizedDomain: "اس ویب پتے ({origin}) سے گوگل سائن ان استعمال نہیں ہو سکتا کیونکہ یہ پتہ ایپ کی منظور شدہ سائن ان ڈومین فہرست میں شامل نہیں۔ سائٹ ایڈمنسٹریٹر کو یہی پتہ ایپ کی سائن ان سیٹنگز میں شامل کرنا ہوگا۔ ای میل اور پاس ورڈ سائن ان پھر بھی کام کرتا ہے، اور مہمان موڈ متاثر نہیں ہوتا۔",
     errPopupClosed: "گوگل سائن ان منسوخ کر دیا گیا۔",
     errPopupBlocked: "براہ کرم براؤزر میں پاپ اپ کی اجازت دیں اور دوبارہ کوشش کریں۔",
     errEmailInUse: "اس ای میل سے اکاؤنٹ پہلے سے موجود ہے۔",
@@ -825,6 +829,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     errAppNotConfigured: "یہ ایپ اکاؤنٹ سروس سے منسلک نہیں ہے، اس لیے سائن ان شروع نہیں ہو سکتا۔",
     errSignInUnsupported: "اس براؤزر نظر سے سائن ان کھل نہیں سکتا۔ براہ کرم عام براؤزر ونڈو استعمال کریں۔",
     capSignInClosed: "سائن ان یہاں ابھی دستیاب نہیں",
+    capGoogleClosed: "گوگل سائن ان یہاں ابھی دستیاب نہیں",
     capGuestNote: "مہمان کے طور پر باقی سب کچھ چلتا رہتا ہے۔ آپ کی چیٹ اور ڈرافٹ اسی ڈیوائس پر رہتی ہیں۔",
     capTryAgain: "سائن ان دوبارہ آزمائیں",
     errAuthGeneric: "تصدیق میں خرابی پیش آئی۔",
@@ -943,6 +948,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     vaultDeleteDraftConfirm: "کیا آپ واقعی یہ ڈرافٹ حذف کرنا چاہتے ہیں؟",
     vaultDeleteChatConfirm: "کیا آپ واقعی یہ چیٹ سیشن حذف کرنا چاہتے ہیں؟",
     vaultGuestMode: "مہمان موڈ",
+    vaultCloudUnavailable: "ابھی آپ کے اکاؤنٹ سے محفوظ کام لوڈ نہیں ہو سکا۔ اس کے بجائے یہ براؤزر میں محفوظ چیزیں دکھائی جا رہی ہیں — یہ آپ کے اکاؤنٹ سے ہم آہنگ نہیں ہیں۔",
     vaultDefaultQueryTitle: "پاکستانی قانون کی استفسار",
     vaultLastUpdated: "آخری اپ ڈیٹ:",
 
@@ -1130,7 +1136,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     authEmailInvalid: "Barah-e-meharbani sahi email address likhen.",
     authPasswordShort: "Password kam az kam 6 huroof ka hona chahiye.",
     authEnterEmail: "Barah-e-meharbani apna email address likhen.",
-    errUnauthorizedDomain: "Is web address se sign-in abhi mumkin nahi hai. Barah-e-meharbani guest ke tor par jari rakhen, ya Insaaf AI ko us ke main address se kholen.",
+    errUnauthorizedDomain: "Is web address ({origin}) se Google sign-in istemal nahi ho sakta kyunke yeh address app ki manzoor-shuda sign-in domain list mein shamil nahi. Site administrator ko yehi exact address app ki sign-in settings mein shamil karna hoga. Email aur password sign-in phir bhi chalta hai, aur guest mode mutasir nahi hota.",
     errPopupClosed: "Google sign-in mansookh kar diya gaya.",
     errPopupBlocked: "Barah-e-meharbani browser mein popups allow karein aur dobara koshish karein.",
     errEmailInUse: "Is email se account pehle se mojood hai.",
@@ -1151,6 +1157,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     errAppNotConfigured: "Yeh app account service se muttasil nahi hai, is liye sign-in shuru nahi ho sakta.",
     errSignInUnsupported: "Is browser view se sign-in nahi khul sakta. Barah-e-meharbani aam browser window istemal karein.",
     capSignInClosed: "Sign-in yahan abhi mojood nahi",
+    capGoogleClosed: "Google sign-in yahan abhi mojood nahi",
     capGuestNote: "Guest ke tor par baqi sab kuch chalta rehta hai. Aap ki chat aur drafts isi device par rehti hain.",
     capTryAgain: "Sign-in dobara azmayen",
     errAuthGeneric: "Tasdeeq mein masla pesh aaya.",
@@ -1269,6 +1276,7 @@ export const TRANSLATIONS: Record<SupportedLanguage, Translations> = {
     vaultDeleteDraftConfirm: "Kya aap waqai ye draft hazf karna chahte hain?",
     vaultDeleteChatConfirm: "Kya aap waqai ye chat session hazf karna chahte hain?",
     vaultGuestMode: "Mehman Mode",
+    vaultCloudUnavailable: "Abhi aap ke account se saved kaam load nahi ho saka. Is ke bajaye yeh browser mein mehfooz cheezen dikhayi ja rahi hain — yeh aap ke account se sync nahi hain.",
     vaultDefaultQueryTitle: "Pakistani Qanoon Ki Istefsar",
     vaultLastUpdated: "Aakhri Update:",
 

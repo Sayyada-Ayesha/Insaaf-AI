@@ -1721,11 +1721,22 @@ function formatDocIntelligenceResponse(action, analysis, activeLang) {
 }
 
 app.get('/api/health', (req, res) => {
+  const auth = authBackendStatus();
   res.json({
     status: 'ok',
     service: 'Insaaf AI Backend API',
     timestamp: new Date().toISOString(),
-    runtime: 'owned-model-local'
+    runtime: 'owned-model-local',
+    // Presence flags only: which credential is configured (never its value), and
+    // which database the server-side SDK would write to. Enough to tell a missing
+    // environment variable from a mismatched database binding.
+    auth: {
+      configured: auth.configured,
+      credentialSource: auth.credentialSource || 'none',
+      projectIdConfigured: auth.projectIdConfigured,
+      firestoreDatabaseId: auth.firestoreDatabaseId,
+      initializationError: auth.initError
+    }
   });
 });
 
@@ -1844,6 +1855,7 @@ app.get('/api/civic/auth-status', (_req, res) => {
     serverVerificationConfigured: authBackendStatus().configured,
     credentialSource: authBackendStatus().credentialSource || 'none',
     projectIdConfigured: authBackendStatus().projectIdConfigured,
+    firestoreDatabaseId: authBackendStatus().firestoreDatabaseId,
     initializationError: authBackendStatus().initError,
     roles: ['student', 'lawyer', 'administrator']
   });

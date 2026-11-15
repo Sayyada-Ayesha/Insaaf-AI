@@ -278,8 +278,9 @@ export default function Layout({ children, activeTab, setActiveTab, onOpenLibrar
   /** A normal user never reads an SDK string: the code is picked up here, the words
    *  come from the locale, and an unknown code still lands on a safe sentence.
    *  AuthContext logs the code once per failure; this stays silent. */
+  const withOrigin = (text: string) => text.replace('{origin}', window.location.origin);
   const getFriendlyErrorMessage = (error: unknown, method: 'password' | 'google') =>
-    t[authErrorKey(error, method) as keyof Translations];
+    withOrigin(t[authErrorKey(error, method) as keyof Translations]);
 
   const handleAuthSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -721,9 +722,11 @@ export default function Layout({ children, activeTab, setActiveTab, onOpenLibrar
                   data-testid="auth-capability"
                   className="mb-6 p-4 bg-amber-50 border border-amber-100 rounded-2xl text-amber-800 text-xs font-bold space-y-2"
                 >
-                  <p className="font-black text-[11px]">{t.capSignInClosed}</p>
-                  {authCaps.password && <p>{t[authCaps.password.i18nKey as keyof Translations]}</p>}
-                  {authCaps.google && <p>{t[authCaps.google.i18nKey as keyof Translations]}</p>}
+                  <p className="font-black text-[11px]">
+                    {authCaps.google && !authCaps.password ? t.capGoogleClosed : t.capSignInClosed}
+                  </p>
+                  {authCaps.password && <p>{withOrigin(t[authCaps.password.i18nKey as keyof Translations])}</p>}
+                  {authCaps.google && <p>{withOrigin(t[authCaps.google.i18nKey as keyof Translations])}</p>}
                   <p className="text-amber-700/90 font-medium">{t.capGuestNote}</p>
                   <button
                     type="button"

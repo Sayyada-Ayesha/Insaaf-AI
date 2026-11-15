@@ -190,7 +190,7 @@ let page;
   // Not a claim that Google was probed: this writes the remembered record the app
   // would write and checks that the screen tells the truth about that case too.
   await page.evaluate(() => sessionStorage.setItem('insaaf_auth_capability',
-    JSON.stringify({ google: { i18nKey: 'errGoogleNotEnabled', code: 'auth/configuration-not-found' } })));
+    JSON.stringify({ google: { i18nKey: 'errGoogleNotEnabled', code: 'auth/configuration-not-found', at: Date.now() } })));
   await page.reload({ waitUntil: 'networkidle2' });
   await sleep(1500);
   ok(await openLoginDialog(), 'the dialog opens with a remembered Google record');
